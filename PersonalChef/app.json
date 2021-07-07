@@ -1,0 +1,12 @@
+{
+  "name": "PersonalChef",
+  "displayName": "PersonalChef",
+  "expo": {
+    "name": "PersonalChef",
+    "slug": "PersonalChef",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
