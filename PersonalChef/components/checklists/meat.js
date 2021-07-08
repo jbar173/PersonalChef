@@ -14,9 +14,11 @@ class MeatChecklist extends React.Component {
       },
       updated:false,
       confirmedList:[],
+      confirmed: false
     }
     this.itemSelectedHandler = this.itemSelectedHandler.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.confirmedHandler = this.confirmedHandler.bind(this)
   };
 
   itemSelectedHandler(item){
@@ -50,42 +52,57 @@ class MeatChecklist extends React.Component {
         confirmedList: confirmed
       })
     }
+  }
 
+  confirmedHandler(){
+    var new_state = !this.state.confirmed
+    this.setState({
+      confirmed:new_state,
+    })
   }
 
   render(){
     var list = this.state.initialList
-    var confirmed = this.state.confirmedList
     var self = this
+    var confirmed = this.state.confirmed
 
     return(
-      <View>
-        <View style={{alignItems:"flex-start"}}>
-          {Object.entries(list).map(function(item,index){
-            return(
-              <Pressable key={index} onPress={() => self.itemSelectedHandler(item)}>
-                {item[1] === false ?
-                  (
-                    <Text style={styles.blueButton}>{item}</Text>
-                  )
-                  :
-                  (
-                    <Text style={styles.greenButton}>{item}</Text>
-                  )
-                }
-              </Pressable>
-            )
-           }
-          )}
-        </View>
-        <View style={{alignItems:"center"}}>
-            <Pressable onPress={() =>this.props.updateListHandler(this.state.confirmedList)}>
-                <Text style={styles.blueButton}>Confirm Selection</Text>
-            </Pressable>
-        </View>
-      </View>
-    );
-  }
+            <View>
+                <View style={{alignItems:"flex-start"}}>
+                  {Object.entries(list).map(function(item,index){
+                    return(
+                      <Pressable key={index} onPress={() => self.itemSelectedHandler(item)}>
+                        {item[1] === false ?
+                          (
+                            <Text style={styles.blueButton}>{item}</Text>
+                          )
+                          :
+                          (
+                            <Text style={styles.greenButton}>{item}</Text>
+                          )
+                        }
+                      </Pressable>
+                    )
+                   }
+                  )}
+                </View>
+                <View style={{alignItems:"center"}}>
+                    <Pressable onPress={() => this.props.updateListHandler(this.state.confirmedList)}
+                        onPressIn={this.confirmedHandler}>
+                        { confirmed === false ?
+                          (
+                            <Text style={styles.greenButton}>Confirm Selection</Text>
+                          )
+                          :
+                          (
+                            <Text style={styles.blueButton}>Change selection</Text>
+                          )
+                        }
+                    </Pressable>
+                </View>
+             </View>
+        );
+    }
 };
 
 
@@ -115,4 +132,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export {MeatChecklist};
+export { MeatChecklist };

@@ -14,8 +14,11 @@ class ConfirmList extends React.Component {
         "ingredientCount":0,
         "type":'',
       },
+      both:false,
+      confirmed:false,
       initialRecipeList: [],
       refinedRecipeList:[],
+      ingredients_rough: {},
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.fetchInitialList = this.fetchInitialList.bind(this)
@@ -23,6 +26,15 @@ class ConfirmList extends React.Component {
 
   componentDidMount(){
     console.log("confirm list mounted")
+    var initial_data = this.props.location.state.initial_data
+    console.log("initial_data.type: " + initial_data.type)
+    var ingreds = this.props.location.state.ingreds
+    var either = this.props.location.state.either
+    this.setState({
+      initialData:initial_data,
+      ingredients_rough:ingreds,
+      both:either
+    })
   }
 
   fetchInitialList(){
@@ -39,32 +51,51 @@ class ConfirmList extends React.Component {
     var initial = this.state.initialData
     var either = this.state.both
     var recipe_list = this.state.initialRecipeList
-    console.log("recipe_list.length: " + recipe_list.length)
+    var ingreds = this.state.ingredients_rough
+    var confirmed = this.state.confirmed
 
     return(
 
       <View style={styles.container}>
           <Text style={styles.mainTitle}>Confirm ingredients</Text>
+
+          {Object.entries(ingreds).map(function(item,index){
+            return(
+              <View style={{alignItems:"center", marginBottom:10 }}>
+                <Text key={index} style={{fontSize:20,fontWeight:"bold"}}>{item[0]}:</Text>
+                    {item[1].map(function(ingredient,ind){
+                      return(
+                          <Text key={ind} >{ingredient}</Text>
+                        )
+                      })
+                    }
+              </View>
+             )
+            }
+          )}
+
           <Pressable onPress={this.fetchInitialList}>
             <Text style={styles.blueButton}>Confirm</Text>
           </Pressable>
-          <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either } }}>
+
+          <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
             <Text style={styles.blueButton}>Back to tinned ingredients list</Text>
           </Link>
 
-        {recipe_list.length !== 0 ?
-          (
-            <Link to={{pathname:"/results-initial/", state:{ initial_data: initial, either: either } }}>
-              <Text style={styles.blueButton}>See results</Text>
-            </Link>
-          )
-          :
-          (
-            <TouchableWithoutFeedback underlayColor="white">
-              <Text style={styles.palerBlueButton}>See results</Text>
-            </TouchableWithoutFeedback>
-          )
-        }
+          {recipe_list.length !== 0 ?
+            (
+              <Link to={{pathname:"/results-initial/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                <Text style={styles.blueButton}>See results</Text>
+              </Link>
+            )
+            :
+            (
+              <TouchableWithoutFeedback underlayColor="white">
+                <Text style={styles.palerBlueButton}>See results</Text>
+              </TouchableWithoutFeedback>
+            )
+           }
+
       </View>
 
     );
