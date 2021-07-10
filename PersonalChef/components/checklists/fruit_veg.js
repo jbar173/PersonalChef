@@ -8,9 +8,10 @@ class FruitAndVegChecklist extends React.Component {
     super(props);
     this.state = {
       initialList: {
-        apples: false,
-        bananas: false,
-        peppers: false,
+        "apples": false,
+        "bananas": false,
+        "peppers": false,
+        "carrots": false,
       },
       updated:false,
       confirmedList:[],

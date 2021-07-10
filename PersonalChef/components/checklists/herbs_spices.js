@@ -8,9 +8,12 @@ class HerbsAndSpicesChecklist extends React.Component {
     super(props);
     this.state = {
       initialList: {
-        cinnamon: false,
-        turmeric: false,
-        mint: false,
+        "salt": false,
+        "pepper": false,
+        "cinnamon": false,
+        "nutmeg": false,
+        "turmeric": false,
+        "mint": false,
       },
       updated:false,
       confirmedList:[],

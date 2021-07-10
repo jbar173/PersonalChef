@@ -8,9 +8,13 @@ class DryIngredientsChecklist extends React.Component {
     super(props);
     this.state = {
       initialList: {
-        flour: false,
-        sugar: false,
-        pasta: false,
+        "flour": false,
+        "sugar": false,
+        "brown sugar": false,
+        "pasta": false,
+        "baking powder": false,
+        "baking soda": false,
+        "pecans": false,
       },
       updated:false,
       confirmedList:[],

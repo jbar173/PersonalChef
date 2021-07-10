@@ -8,9 +8,9 @@ class MeatChecklist extends React.Component {
     super(props);
     this.state = {
       initialList: {
-        beef: false,
-        chicken: false,
-        pork: false,
+        "beef": false,
+        "chicken": false,
+        "pork": false,
       },
       updated:false,
       confirmedList:[],

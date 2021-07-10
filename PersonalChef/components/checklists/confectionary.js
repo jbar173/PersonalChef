@@ -8,9 +8,9 @@ class ConfectionaryChecklist extends React.Component {
     super(props);
     this.state = {
       initialList: {
-        milkChocolate: false,
-        whiteChocolate: false,
-        darkChocolate: false,
+        "milk chocolate": false,
+        "white chocolate": false,
+        "dark chocolate": false,
       },
       updated:false,
       confirmedList:[],

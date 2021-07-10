@@ -8,9 +8,9 @@ class TinnedChecklist extends React.Component {
     super(props);
     this.state = {
       initialList: {
-        plumTomatoes: false,
-        kidneyBeans: false,
-        apricots: false,
+        "plum tomatoes": false,
+        "kidney beans": false,
+        "apricots": false,
       },
       updated:false,
       confirmedList:[],

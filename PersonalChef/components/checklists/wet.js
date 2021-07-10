@@ -8,9 +8,14 @@ class WetIngredientsChecklist extends React.Component {
     super(props);
     this.state = {
       initialList: {
-        milk: false,
-        butter: false,
-        cream: false,
+        "milk": false,
+        "butter": false,
+        "cream": false,
+        "eggs": false,
+        "cream cheese": false,
+        "vanilla extract": false,
+        "cooking oil": false,
+        "cooking spray": false,
       },
       updated:false,
       confirmedList:[],
@@ -32,7 +37,7 @@ class WetIngredientsChecklist extends React.Component {
       },
       updated:true,
     })
-   }
+  }
 
   componentDidUpdate(){
     console.log("did update")
