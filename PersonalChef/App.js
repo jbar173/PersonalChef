@@ -8,7 +8,7 @@ import { MeatIngredientsList, FishIngredientsList } from './components/other.js'
 import { HerbsAndSpicesList, TinnedGoodsList, DryIngredientsList,
           WetIngredientsList, FruitAndVegList, } from './components/in_both.js';
 import { ConfirmList } from './components/confirm.js';
-import { ResultsInitial } from './components/results.js';
+import { RecipeResults } from './components/results.js';
 
 
 
@@ -56,7 +56,7 @@ class App extends React.Component {
                 <Route exact path = "/both-tinned/" component={TinnedGoodsList} />
 
                 <Route exact path = "/confirm/" component={ConfirmList} />
-                <Route exact path = "/results-initial/" component={ResultsInitial} />
+                <Route exact path = "/results-initial/" component={RecipeResults} />
             </View>
         </NativeRouter>
       );

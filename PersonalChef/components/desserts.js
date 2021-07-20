@@ -57,18 +57,8 @@ class ConfectionaryIngredientsList extends React.Component {
 
     componentDidUpdate(){
       console.log("confectionary updated")
-      //
-      // var final_list = this.state.ingredients_rough
-      // var i = 0
-      // for([key,value] of Object.entries(final_list)){
-      //     console.log("AFTER")
-      //     console.log("AFTER key: " + `final_list[${i}]: ` + final_list[i])
-      //     console.log("AFTER value: " + final_list[key])
-      //     i++
-      // }
 
       if(this.state.initialData.time === '0'){
-        console.log("!!updating time in initial data")
         var hrs = parseInt(this.state.times.hours)
         var mins = parseInt(this.state.times.mins)
         var added = hrs + mins
@@ -82,7 +72,6 @@ class ConfectionaryIngredientsList extends React.Component {
         })
       }
       if(this.state.sweets_updated === true){
-        console.log("updating ingredients_rough")
         this.updateIngredientsRoughHandler()
       }
     }
@@ -98,12 +87,6 @@ class ConfectionaryIngredientsList extends React.Component {
     updateIngredientsRoughHandler(){
       var new_key = "sweets"
       var final_list = this.state.ingredients_rough
-      // var i = 0
-      // for([key,value] of Object.entries(final_list)){
-      //     console.log("**BEFORE key: " + + `final_list[${i}]: ` + final_list[i])
-      //     console.log("**BEFORE value: " + final_list[key])
-      //     i++
-      //   }
       for([key,value] of Object.entries(final_list)){
          if(key === new_key){
              console.log(new_key + " replaced")

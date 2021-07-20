@@ -16,12 +16,10 @@ class ConfirmList extends React.Component {
       },
       both:false,
       confirmed:false,
-      initialRecipeList: [],
-      refinedRecipeList:[],
       ingredients_rough: {},
     }
     this.componentDidMount = this.componentDidMount.bind(this)
-    this.fetchInitialList = this.fetchInitialList.bind(this)
+    this.confirmIngredients = this.confirmIngredients.bind(this)
   };
 
   componentDidMount(){
@@ -37,20 +35,16 @@ class ConfirmList extends React.Component {
     })
   }
 
-  fetchInitialList(){
-    console.log("fetching recipes")
-    var list = this.state.initialRecipeList
-    list.push("first recipe")
-    list.push("second recipe")
+  confirmIngredients(){
+    console.log("confirm ingredients")
     this.setState({
-      initialRecipeList:list
+      confirmed:true
     })
   }
 
   render(){
     var initial = this.state.initialData
     var either = this.state.both
-    var recipe_list = this.state.initialRecipeList
     var ingreds = this.state.ingredients_rough
     var confirmed = this.state.confirmed
 
@@ -59,22 +53,22 @@ class ConfirmList extends React.Component {
       <View style={styles.container}>
           <Text style={styles.mainTitle}>Confirm ingredients</Text>
 
-          {Object.entries(ingreds).map(function(item,index){
+          {Object.entries(ingreds).map(function(item){
             return(
-              <View style={{alignItems:"center", marginBottom:10 }}>
-                <Text key={index} style={{fontSize:20,fontWeight:"bold"}}>{item[0]}:</Text>
-                    {item[1].map(function(ingredient,ind){
-                      return(
-                          <Text key={ind} >{ingredient}</Text>
-                        )
-                      })
-                    }
-              </View>
-             )
+                <View key={item} style={{ alignItems:"center", marginBottom:10 }}>
+                  <Text style={{fontSize:20,fontWeight:"bold"}}>{item[0]}:</Text>
+                      {item[1].map(function(ingredient){
+                        return(
+                            <Text key={ingredient} >{ingredient}</Text>
+                          )
+                        })
+                      }
+                </View>
+               )
             }
           )}
 
-          <Pressable onPress={this.fetchInitialList}>
+          <Pressable onPress={this.confirmIngredients}>
             <Text style={styles.blueButton}>Confirm</Text>
           </Pressable>
 
@@ -82,18 +76,22 @@ class ConfirmList extends React.Component {
             <Text style={styles.blueButton}>Back to tinned ingredients list</Text>
           </Link>
 
-          {recipe_list.length !== 0 ?
-            (
-              <Link to={{pathname:"/results-initial/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                <Text style={styles.blueButton}>See results</Text>
-              </Link>
-            )
-            :
-            (
-              <TouchableWithoutFeedback underlayColor="white">
-                <Text style={styles.palerBlueButton}>See results</Text>
-              </TouchableWithoutFeedback>
-            )
+          {confirmed === true ?
+
+              (
+                <Link to={{pathname:"/results-initial/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                  <Text style={styles.blueButton}>See results</Text>
+                </Link>
+              )
+
+              :
+
+              (
+                <TouchableWithoutFeedback underlayColor="white">
+                  <Text style={styles.palerBlueButton}>See results</Text>
+                </TouchableWithoutFeedback>
+              )
+              
            }
 
       </View>
