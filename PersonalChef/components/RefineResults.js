@@ -23,7 +23,7 @@ const RefineResults = props => {
   return(
       <View>
         <Pressable onPress={() => props.filterIndividualRecipes(filtered_results)}>
-          <Text style={styles.greenButton}>See your recipes</Text>
+          <Text  accessible={true} accessibilityLabel="See your recipes" style={styles.greenButton}>See your recipes</Text>
         </Pressable>
       </View>
     );

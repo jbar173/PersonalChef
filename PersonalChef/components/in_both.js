@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, TouchableHighlight, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, SafeAreaView, ScrollView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
+
 import { DryIngredientsChecklist } from "./checklists/dry.js";
 import { WetIngredientsChecklist } from "./checklists/wet.js";
 import { FruitAndVegChecklist } from "./checklists/fruit_veg.js";
@@ -21,8 +22,6 @@ class DryIngredientsList extends React.Component {
         "type":'',
       },
       both: false,
-      initialRecipeList: [],
-      refinedRecipeList:[],
       ingredients_rough: {},
       dries: [],
       dries_updated: false,
@@ -88,32 +87,35 @@ class DryIngredientsList extends React.Component {
 
         return(
 
-          <View style={styles.container}>
-            <Text style={styles.mediTitle}>Dry ingredients checklist</Text>
+          <SafeAreaView style={styles.container}>
+            <ScrollView>
+                  <Text accessible={true} accessibilityLabel="Dry ingredients checklist"
+                    style={styles.mainTitle}>Dry ingredients checklist</Text>
 
-            <DryIngredientsChecklist updateListHandler={this.updateListHandler} />
+                  <DryIngredientsChecklist updateListHandler={this.updateListHandler} />
 
-            <Link to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-              <Text style={styles.blueButton}>Link to wet ingredients</Text>
-            </Link>
+                  <Link style={{marginTop:30}} to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                    <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                  </Link>
 
-            {recipe_type === "dessert" || either === true ?
+                  {recipe_type === "dessert" || either === true ?
 
-              (
-                <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text style={styles.blueButton}>Back to confectionary list</Text>
-                </Link>
-              )
-              :
-              (
-                <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text style={styles.blueButton}>Back to fish list</Text>
-                </Link>
-              )
+                    (
+                      <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                        <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                      </Link>
+                    )
+                    :
+                    (
+                      <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                        <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                      </Link>
+                    )
 
-            }
+                  }
 
-          </View>
+            </ScrollView>
+          </SafeAreaView>
 
         );
      }
@@ -132,8 +134,6 @@ class WetIngredientsList extends React.Component {
         "type":'',
       },
       both: false,
-      initialRecipeList: [],
-      refinedRecipeList:[],
       ingredients_rough: {},
       wets: [],
       wets_updated: false,
@@ -198,18 +198,21 @@ class WetIngredientsList extends React.Component {
 
       return(
 
-        <View style={styles.container}>
-          <Text style={styles.mediTitle}>Wet ingredients checklist</Text>
+        <SafeAreaView style={styles.container}>
+          <ScrollView>
+                <Text accessible={true} accessibilityLabel="Wet ingredients checklist"
+                  style={styles.mainTitle}>Wet ingredients checklist</Text>
 
-          <WetIngredientsChecklist updateListHandler={this.updateListHandler} />
+                <WetIngredientsChecklist updateListHandler={this.updateListHandler} />
 
-          <Link to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-            <Text style={styles.blueButton}>Link to fruit and veg list</Text>
-          </Link>
-          <Link to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-            <Text style={styles.blueButton}>Back to dry ingredients</Text>
-          </Link>
-        </View>
+                <Link style={{marginTop:30}} to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                  <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                </Link>
+                <Link to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                  <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                </Link>
+          </ScrollView>
+        </SafeAreaView>
 
       );
    }
@@ -228,8 +231,6 @@ class FruitAndVegList extends React.Component {
         "type":'',
       },
       both:false,
-      initialRecipeList: [],
-      refinedRecipeList:[],
       ingredients_rough: {},
       fruits: [],
       fruits_updated: false,
@@ -294,18 +295,21 @@ class FruitAndVegList extends React.Component {
 
         return(
 
-          <View style={styles.container}>
-            <Text style={styles.mediTitle}>Fruit And Veg checklist</Text>
+          <SafeAreaView style={styles.container}>
+            <ScrollView>
+                  <Text accessible={true} accessibilityLabel="Fruits and Vegetables checklist"
+                    style={styles.mainTitle}>Fruits and Vegetables checklist</Text>
 
-            <FruitAndVegChecklist updateListHandler={this.updateListHandler} />
+                  <FruitAndVegChecklist updateListHandler={this.updateListHandler} />
 
-            <Link to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-              <Text style={styles.blueButton}>Link to herbs and spices list</Text>
-            </Link>
-            <Link to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-              <Text style={styles.blueButton}>Back to wet ingredients</Text>
-            </Link>
-          </View>
+                  <Link style={{marginTop:30}} to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                    <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                  </Link>
+                  <Link to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                    <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                  </Link>
+            </ScrollView>
+          </SafeAreaView>
 
         );
      }
@@ -324,8 +328,6 @@ class HerbsAndSpicesList extends React.Component {
         "type":'',
       },
       both: false,
-      initialRecipeList: [],
-      refinedRecipeList:[],
       ingredients_rough: {},
       herbs: [],
       herbs_updated: false,
@@ -390,18 +392,21 @@ class HerbsAndSpicesList extends React.Component {
 
         return(
 
-          <View style={styles.container}>
-            <Text style={styles.mediTitle}>Herbs and spices checklist</Text>
+          <SafeAreaView style={styles.container}>
+            <ScrollView>
+                  <Text accessible={true} accessibilityLabel="Herbs and spices checklist"
+                    style={styles.mainTitle}>Herbs and spices checklist</Text>
 
-            <HerbsAndSpicesChecklist updateListHandler={this.updateListHandler} />
+                  <HerbsAndSpicesChecklist updateListHandler={this.updateListHandler} />
 
-            <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-              <Text style={styles.blueButton}>Link to tinned ingredients list</Text>
-            </Link>
-            <Link to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-              <Text style={styles.blueButton}>Back to fruit and veg list</Text>
-            </Link>
-          </View>
+                  <Link style={{marginTop:30}} to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                    <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                  </Link>
+                  <Link to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                    <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                  </Link>
+            </ScrollView>
+          </SafeAreaView>
 
         );
      }
@@ -420,8 +425,6 @@ class TinnedGoodsList extends React.Component {
         "type":'',
       },
       both:false,
-      initialRecipeList: [],
-      refinedRecipeList:[],
       ingredients_rough: {},
       tins: [],
       tins_updated: false,
@@ -486,18 +489,21 @@ class TinnedGoodsList extends React.Component {
 
       return(
 
-        <View style={styles.container}>
-          <Text style={styles.mediTitle}>Tinned ingredients checklist</Text>
+        <SafeAreaView style={styles.container}>
+          <ScrollView>
+                <Text accessible={true} accessibilityLabel="Tinned ingredients checklist"
+                  style={styles.mainTitle}>Tinned ingredients checklist</Text>
 
-          <TinnedChecklist updateListHandler={this.updateListHandler} />
+                <TinnedChecklist updateListHandler={this.updateListHandler} />
 
-          <Link to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-            <Text style={styles.blueButton}>Link to confirm ingredients</Text>
-          </Link>
-          <Link to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-            <Text style={styles.blueButton}>Back to herbs and spices</Text>
-          </Link>
-        </View>
+                <Link style={{marginTop:30}} to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                  <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                </Link>
+                <Link to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                  <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                </Link>
+          </ScrollView>
+        </SafeAreaView>
 
       );
    }
@@ -509,16 +515,20 @@ class TinnedGoodsList extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexWrap: 'wrap',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingVertical: 20,
+  },
+  mainTitle: {
+    fontSize:28,
+    marginBottom:20,
+    textAlign:'center',
   },
   mediTitle: {
     fontSize:24,
     marginBottom:20
-  },
-  title: {
-    fontSize:18,
   },
   greenButton: {
     padding: 10,
@@ -526,13 +536,17 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     borderColor: 'white',
     backgroundColor:'lightgreen',
+    textAlign: "center",
+    marginHorizontal: 128,
   },
   blueButton: {
-    padding: 10,
+    padding: 7,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
+    textAlign: "center",
+    marginHorizontal: 128,
   },
 });
 

@@ -16,9 +16,10 @@ class HomePage extends React.Component {
       return(
         <View style={styles.container}>
 
-            <Text style={styles.mainTitle}>PersonalChef</Text>
+            <Text accessible={true} accessibilityLabel="Welcome to PersonalChef" style={styles.mainTitle}>PersonalChef</Text>
+
             <TouchableHighlight underlayColor="white">
-                <Link to="/type-time/" >
+                <Link accessible={true} accessibilityLabel="Find a recipe for your ingredients" to="/type-time/" >
                   <Text style={styles.greenButton}>Find a recipe for your ingredients</Text>
                 </Link>
             </TouchableHighlight>
@@ -35,17 +36,19 @@ class TimeAndType extends React.Component {
     this.state = {
       userId: 12345,
       initialData: {
-        "time":'0',
-        "ingredients":[],
-        "ingredientCount":0,
-        "type":'',
+        "time": '0',
+        "ingredients": [],
+        "ingredientCount": 0,
+        "type": '',
       },
       both: false,
-      initialRecipeList: [],
-      refinedRecipeList:[],
+      validHoursInput: true,
+      validMinutesInput: true,
+      validTimes: false,
+      finished: true,
       times: {
-        "hours":'0',
-        "mins":'0'
+        "hours": '0',
+        "mins": '0'
       },
     }
     this.radioButtonPressedHandler = this.radioButtonPressedHandler.bind(this)
@@ -54,147 +57,294 @@ class TimeAndType extends React.Component {
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
   };
 
+
    radioButtonPressedHandler(value){
       if (value === "dessert" || value === "other"){
         this.setState({
           initialData:{
             ...this.state.initialData,
-            type:value
+            type: value
           }
         })
       }else{
         this.setState({
           initialData:{
             ...this.state.initialData,
-            type:"other"
+            type: "other"
           },
-          both:true
+          both: true
         })
       }
-    }
+   }
 
-    onChangeTimeHoursHandler(input){
-      var hours_in_mins = input*60
+
+  onChangeTimeHoursHandler(hrs){
+      var chars = [ '', '0' ]
+
+      if(isNaN(hrs)){
+        this.setState({
+          validHoursInput: false,
+          validTimes: false
+        });
+        return 0;
+      }else{
+        this.setState({
+          validHoursInput: true,
+          times:{
+            ...this.state.times,
+            hours: hrs
+          },
+        })
+      }
+
+      if(chars.includes(hrs) && chars.includes(this.state.times.mins)){
+        this.setState({
+          validTimes: false,
+        })
+      }else if(this.state.validMinutesInput === false || this.state.validHoursInput === false){
+        this.setState({
+          validTimes: false,
+          finished: false
+        })
+      }else{
+        this.setState({
+          validTimes: true,
+        })
+      }
+   }
+
+
+  onChangeTimeMinsHandler(minutes){
+      var chars = [ '', '0' ]
+
+      if(isNaN(minutes)){
+        this.setState({
+          validMinutesInput: false,
+          validTimes: false,
+        });
+        return 0;
+      }else{
+        this.setState({
+          validMinutesInput: true,
+          times: {
+            ...this.state.times,
+            mins: minutes
+          },
+        })
+      }
+
+      if(chars.includes(minutes) && chars.includes(this.state.times.hours)){
+        this.setState({
+          validTimes: false,
+          times:{
+            ...this.state.times,
+            mins: minutes
+          },
+        })
+      }else if(this.state.validMinutesInput === false || this.state.validHoursInput === false){
+        this.setState({
+          validTimes: false,
+          finished: false
+        })
+      }else{
+        this.setState({
+          validTimes: true,
+        })
+      }
+   }
+
+
+  componentDidUpdate(){
+    console.log("did update")
+    if(this.state.finished === false){
+      this.onChangeTimeHoursHandler(this.state.times.hours);
+      this.onChangeTimeMinsHandler(this.state.times.mins);
       this.setState({
-        times:{
-          ...this.state.times,
-          hours:hours_in_mins
-        }
+        finished:true
       })
     }
+  }
 
-    onChangeTimeMinsHandler(input){
-      this.setState({
-        times:{
-          ...this.state.times,
-          mins:input
-        }
-      })
-    }
-
-    componentDidUpdate(){
-      console.log("# updated")
-    }
 
     render(){
       var recipe_type = this.state.initialData.type
       var initial = this.state.initialData
       var either = this.state.both
       var times = this.state.times
+      var valid = this.state.validTimes
+
 
       return(
+
             <View style={styles.container}>
-                <View style={styles.container}>
-                <Text style={styles.mediTitle}>Time and type page</Text>
-                    <Text>How much time do you have?</Text>
-                    <TextInput
-                      style={styles.input}
-                      onChangeText={text => this.onChangeTimeHoursHandler(text)}
-                      placeholder='0 hours'
-                      keyboardType="numeric"
-                    />
-                    <TextInput
-                      style={styles.input}
-                      onChangeText={text => this.onChangeTimeMinsHandler(text)}
-                      placeholder='10 minutes'
-                      keyboardType="numeric"
-                    />
+
+                <View>
+
+                        <Text accessible={true} accessibilityLabel="How much time do you have?" accessibilityRole="text"
+                          style={{marginBottom:20,marginTop:20}}>How much time do you have?</Text>
+                        <TextInput
+                          style={styles.input}
+                          onChangeText={text => this.onChangeTimeHoursHandler(text)}
+                          placeholder='0 hours'
+                          keyboardType="numeric"
+                          accessibilityLabel="hours textbox"
+                          accessibilityHint:"type number of hours here"
+                          accessibilityRole="adjustable"
+                        />
+                        {this.state.validHoursInput === false && <Text accessible={true} accessibilityLabel="Please enter a number"
+                          accessibilityRole="alert" style={styles.red}>Please enter a number</Text>}
+                        <TextInput
+                          style={styles.input}
+                          onChangeText={text => this.onChangeTimeMinsHandler(text)}
+                          placeholder='20 minutes'
+                          keyboardType="numeric"
+                          accessibilityLabel="minutes textbox"
+                          accessibilityHint:"type number of minutes here"
+                          accessibilityRole="adjustable"
+                        />
+                        {this.state.validMinutesInput === false && <Text accessible={true} accessibilityLabel="Please enter a number"
+                          accessibilityRole="alert" style={styles.red}>Please enter a number</Text>}
+
                 </View>
-                <View style={styles.container}>
+
+                <View>
 
                     { recipe_type === "" ?
 
                        (
-                        <View style={styles.container}>
-                            <Text style={{paddingBottom:10}}>What type of meal are you looking for?</Text>
+                         <View>
 
-                                <TouchableHighlight underlayColor="white">
-                                  <Button onPress={() => this.radioButtonPressedHandler("dessert")} style={styles.blueButton}
-                                    title="Dessert" accessibilityLabel="Dessert" />
-                                </TouchableHighlight>
+                              <Text accessible={true} accessibilityLabel="What type of meal are you looking for?" accessibilityRole="text"
+                                style={{marginBottom:30,marginTop:40,textAlign:"center"}}>What type of meal are you looking for?</Text>
 
-                                <TouchableHighlight underlayColor="white">
-                                  <Button onPress={() => this.radioButtonPressedHandler("other")} style={styles.blueButton}
-                                    title="Starter or Main" accessibilityLabel="Starter or Main" />
-                                </TouchableHighlight>
+                                    <TouchableHighlight accessible={true} accessibilityLabel="Dessert" accessibilityRole="button"
+                                      underlayColor="white" onPress={() => this.radioButtonPressedHandler("dessert")}>
+                                        <Text style={styles.blueButton}>Dessert</Text>
+                                    </TouchableHighlight>
 
-                                <TouchableHighlight underlayColor="white">
-                                  <Button onPress={() => this.radioButtonPressedHandler("both")} style={styles.blueButton}
-                                    title="Either" accessibilityLabel="Either" />
-                                </TouchableHighlight>
+                                    <TouchableHighlight accessible={true} accessibilityLabel="Starter or Main" accessibilityRole="button"
+                                       underlayColor="white" onPress={() => this.radioButtonPressedHandler("other")}>
+                                      <Text style={styles.blueButton}>Starter or Main</Text>
+                                    </TouchableHighlight>
 
-                            <TouchableHighlight underlayColor="white">
-                                  <Link to="/"><Text style={styles.blueButton}>Back</Text></Link>
-                            </TouchableHighlight>
+                                    <TouchableHighlight accessible={true} accessibilityLabel="Either" accessibilityRole="button"
+                                       underlayColor="white" onPress={() => this.radioButtonPressedHandler("both")}>
+                                      <Text style={styles.blueButton}>Either</Text>
+                                    </TouchableHighlight>
 
-                        </View>
+                                    <TouchableHighlight accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                      underlayColor="white">
+                                          <Link style={{marginTop:90}} to="/"><Text style={styles.blueButton}>Back</Text></Link>
+                                    </TouchableHighlight>
+
+                          </View>
                        )
 
                        :
 
                        (
-                         <View style={styles.container}>
+                          <View>
 
-                             <Text style={{paddingBottom:10}}>What type of meal are you looking for?</Text>
+                                 <Text accessible={true} accessibilityLabel="What type of meal are you looking for?" accessibilityRole="text"
+                                  style={{marginBottom:30,marginTop:40,textAlign:"center"}}>What type of meal are you looking for?</Text>
 
-                                   <TouchableHighlight underlayColor="white">
-                                     <Button onPress={() => this.radioButtonPressedHandler("dessert")} style={styles.blueButton}
-                                       title="Dessert" accessibilityLabel="Dessert" />
-                                   </TouchableHighlight>
+                                       <TouchableHighlight accessible={true} accessibilityLabel="Dessert" accessibilityRole="button"
+                                          underlayColor="white" onPress={() => this.radioButtonPressedHandler("dessert")}>
+                                         <Text style={styles.blueButton}>Dessert</Text>
+                                       </TouchableHighlight>
 
-                                   <TouchableHighlight underlayColor="white">
-                                     <Button onPress={() => this.radioButtonPressedHandler("other")} style={styles.blueButton}
-                                       title="Starter or Main" accessibilityLabel="Starter or Main" />
-                                   </TouchableHighlight>
+                                       <TouchableHighlight accessible={true} accessibilityLabel="Starter or Main" accessibilityRole="button"
+                                          underlayColor="white" onPress={() => this.radioButtonPressedHandler("other")}>
+                                         <Text style={styles.blueButton}>Starter or Main</Text>
+                                       </TouchableHighlight>
 
-                                   <TouchableHighlight underlayColor="white">
-                                     <Button onPress={() => this.radioButtonPressedHandler("both")} style={styles.blueButton}
-                                       title="Either" accessibilityLabel="Either" />
-                                   </TouchableHighlight>
+                                       <TouchableHighlight accessible={true} accessibilityLabel="Either" accessibilityRole="button"
+                                          underlayColor="white" onPress={() => this.radioButtonPressedHandler("both")}>
+                                         <Text style={styles.blueButton}>Either</Text>
+                                       </TouchableHighlight>
 
-                                { recipe_type === "dessert" ?
+                                  { recipe_type === "dessert" ?
 
-                                  (
-                                    <View>
-                                        <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, times: times } }} >
-                                           <Text style={styles.greenButton}>Link to confectionary list</Text>
-                                        </Link>
-                                        <Link to="/"><Text style={styles.blueButton}>Back to homepage</Text></Link>
-                                    </View>
-                                  )
-                                  :
-                                  (
-                                    <View>
-                                        <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, times: times } }} >
-                                            <Text style={styles.greenButton}>Link to meat list</Text>
-                                        </Link>
-                                        <Link to="/"><Text style={styles.blueButton}>Back to homepage</Text></Link>
-                                    </View>
-                                  )
+                                        (
+                                          <View>
 
-                                }
+                                               {valid === true ?
 
-                           </View>
+                                                  (
+                                                    <View>
+                                                        <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, times: times } }} >
+                                                           <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
+                                                            accessibilityRole="button" style={styles.greenButton}>Dessert ingredients</Text>
+                                                        </Link>
+                                                        <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                          style={{marginTop:90}} to="/"><Text style={styles.blueButton}>Back</Text>
+                                                        </Link>
+                                                    </View>
+                                                  )
+
+                                                  :
+
+                                                  (
+                                                    <View>
+                                                        <TouchableHighlight underlayColor="white" nPress={() => this.setState({ showInvalid: true })}>
+                                                            <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
+                                                              accessibilityRole="button" style={styles.greenButton}>Dessert ingredients</Text>
+                                                        </TouchableHighlight>
+
+                                                        {this.state.showInvalid === true && <Text accessible={true} accessibilityLabel="Please enter times above"
+                                                         accessibilityRole="alert" style={styles.red}>Please enter times above</Text>}
+
+                                                        <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                          style={{marginTop:90}} to="/"><Text style={styles.blueButton}>Back</Text>
+                                                        </Link>
+                                                    </View>
+                                                  )
+
+                                                }
+
+                                          </View>
+                                        )
+
+                                        :
+
+                                        (
+                                          <View>
+                                                {valid === true ?
+                                                  (
+                                                    <View>
+                                                        <Link accessible={true} accessibilityLabel="Go to savoury ingredients" accessibilityRole="button"
+                                                          to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, times: times } }} >
+                                                          <Text accessible={true} accessibilityLabel="Go to savoury ingredients"
+                                                            style={styles.greenButton}>Savoury ingredients</Text>
+                                                        </Link>
+                                                        <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                          style={{marginTop:90}} to="/"><Text style={styles.blueButton}>Back</Text>
+                                                        </Link>
+                                                    </View>
+                                                  )
+                                                  :
+                                                  (
+                                                    <View>
+                                                        <TouchableHighlight accessible={true} accessibilityLabel="Go to savoury ingredients"
+                                                           accessibilityRole="button" underlayColor="white" onPress={ () => this.setState({ showInvalid: true }) }>
+                                                           <Text style={styles.greenButton}>Savoury ingredients</Text>
+                                                        </TouchableHighlight>
+
+                                                        {this.state.showInvalid === true && <Text accessible={true} accessibilityLabel="Please enter times above"
+                                                          accessibilityRole="alert" style={styles.red}>Please enter times above</Text>}
+
+                                                        <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                          style={{marginTop:90}} to="/"><Text style={styles.blueButton}>Back</Text>
+                                                        </Link>
+                                                    </View>
+                                                  )
+                                                }
+                                          </View>
+                                        )
+
+                                  }
+
+                            </View>
                          )
                      }
                 </View>
@@ -214,51 +364,41 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  mediTitle: {
-    fontSize:26,
-    marginBottom:20
-  },
-  title: {
-    fontSize:18,
-    marginBottom:20,
-  },
   mainTitle: {
     fontSize:28,
     marginBottom:20
   },
   greenButton: {
     padding: 10,
+    marginTop: 3,
+    marginHorizontal: 50,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: 'white',
     backgroundColor:'lightgreen',
+    textAlign: "center",
   },
   blueButton: {
     padding: 10,
+    marginTop: 3,
+    marginHorizontal: 50,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
-  },
-  greenShadowButton: {
-    padding: 10,
-    borderWidth: 1,
-    borderRadius: 6,
-    borderColor: "white",
-    backgroundColor:'lightgreen',
-    shadowColor:'black',
-    shadowOpacity: 1,
-    shadowOffset: {
-      height:0,
-      width:0,
-    },
-    elevation: 3,
+    textAlign: "center",
   },
   input: {
     height: 40,
-    margin: 12,
+    marginTop: 3,
+    marginHorizontal: 50,
     borderWidth: 1,
+    textAlign: "center",
   },
+  red: {
+    color: 'red',
+    textAlign: 'center',
+  }
 });
 
 export { HomePage, TimeAndType };

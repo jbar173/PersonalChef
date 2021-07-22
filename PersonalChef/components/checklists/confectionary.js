@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Button, Pressable, SafeAreaView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
 
 
@@ -11,6 +11,17 @@ class ConfectionaryChecklist extends React.Component {
         "milk chocolate": false,
         "white chocolate": false,
         "dark chocolate": false,
+        "chocolate buttons": false,
+        "hundreds and thousands": false,
+        "chocolate sprinkles": false,
+        "milk chocolate drops": false,
+        "white chocolate drops": false,
+        "dark chocolate drops": false,
+        "jelly tots": false,
+        "smarties": false,
+        "skittles": false,
+        "maltesers":false,
+        "mini eggs": false,
       },
       updated:false,
       confirmedList:[],
@@ -62,45 +73,45 @@ class ConfectionaryChecklist extends React.Component {
   }
 
   render(){
-    var list = this.state.initialList
+    var ingredients = this.state.initialList
     var self = this
     var confirmed = this.state.confirmed
 
     return(
-      <View>
-        <View style={{alignItems:"flex-start"}}>
-          {Object.entries(list).map(function(item,index){
-            return(
-              <Pressable key={index} onPress={() => self.itemSelectedHandler(item)}>
-                {item[1] === false ?
-                  (
-                    <Text style={styles.blueButton}>{item}</Text>
-                  )
-                  :
-                  (
-                    <Text style={styles.greenButton}>{item}</Text>
-                  )
-                }
-              </Pressable>
-            )
-           }
-          )}
-        </View>
-        <View style={{alignItems:"center"}}>
-            <Pressable onPress={() =>this.props.updateListHandler(this.state.confirmedList)}
-                onPressIn={this.confirmedHandler}>
-                  { confirmed === false ?
-                    (
-                      <Text style={styles.greenButton}>Confirm Selection</Text>
-                    )
-                    :
-                    (
-                      <Text style={styles.blueButton}>Change selection</Text>
-                    )
-                  }
-            </Pressable>
-        </View>
-      </View>
+      <SafeAreaView>
+            <View style={styles.container}>
+              {Object.entries(ingredients).map(function(item,index){
+                return(
+                  <Pressable key={index} onPress={() => self.itemSelectedHandler(item)}>
+                    {item[1] === false ?
+                      (
+                        <Text style={styles.blueButton}>{item}</Text>
+                      )
+                      :
+                      (
+                        <Text style={styles.greenButton}>{item}</Text>
+                      )
+                    }
+                  </Pressable>
+                )
+               }
+              )}
+            </View>
+            <View style={{alignItems:"center",marginTop:40}}>
+                <Pressable onPress={() =>this.props.updateListHandler(this.state.confirmedList)}
+                    onPressIn={this.confirmedHandler}>
+                      { confirmed === false ?
+                        (
+                          <Text style={styles.greenButton}>Confirm Selection</Text>
+                        )
+                        :
+                        (
+                          <Text style={styles.blueButton}>Change selection</Text>
+                        )
+                      }
+                </Pressable>
+            </View>
+      </SafeAreaView>
     );
   }
 };
@@ -109,6 +120,8 @@ class ConfectionaryChecklist extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',

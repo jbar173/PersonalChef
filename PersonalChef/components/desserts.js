@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, SafeAreaView, ScrollView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
+
 import { ConfectionaryChecklist } from "./checklists/confectionary.js";
 
 
@@ -15,9 +16,7 @@ class ConfectionaryIngredientsList extends React.Component {
           "ingredientCount":0,
           "type":'',
         },
-        both:false,
-        initialRecipeList: [],
-        refinedRecipeList:[],
+        both: false,
         times: {
           "hours":'0',
           "mins":'0'
@@ -25,7 +24,6 @@ class ConfectionaryIngredientsList extends React.Component {
         ingredients_rough: {},
         sweets: [],
         sweets_updated: false,
-        visit_number:0,
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
@@ -57,7 +55,6 @@ class ConfectionaryIngredientsList extends React.Component {
 
     componentDidUpdate(){
       console.log("confectionary updated")
-
       if(this.state.initialData.time === '0'){
         var hrs = parseInt(this.state.times.hours)
         var mins = parseInt(this.state.times.mins)
@@ -108,34 +105,37 @@ class ConfectionaryIngredientsList extends React.Component {
 
         return(
 
-          <View style={styles.container}>
-            <Text style={styles.mainTitle}>Confectionary checklist</Text>
+          <SafeAreaView style={styles.container}>
+            <ScrollView>
+                  <Text accessible={true} accessibilityLabel="Confectionary checklist"
+                    style={styles.mainTitle}>Confectionary checklist</Text>
 
-            <ConfectionaryChecklist updateListHandler={this.updateListHandler} />
+                  <ConfectionaryChecklist updateListHandler={this.updateListHandler} />
 
-            <Link to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-              <Text style={styles.blueButton}>Link to dry ingredients</Text>
-            </Link>
+                  <Link style={{marginTop:30}} to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                    <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                  </Link>
 
-            {recipe_type === "dessert" ?
+                  {recipe_type === "dessert" ?
 
-              (
-                <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text style={styles.blueButton}>Back to type and time</Text>
-                </Link>
-              )
+                      (
+                        <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                          <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                        </Link>
+                      )
 
-              :
+                      :
 
-              (
-                <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text style={styles.blueButton}>Back to fish</Text>
-                </Link>
-              )
+                      (
+                        <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                          <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                        </Link>
+                      )
 
-            }
+                   }
 
-          </View>
+            </ScrollView>
+          </SafeAreaView>
 
         );
     }
@@ -146,20 +146,16 @@ class ConfectionaryIngredientsList extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexWrap: 'wrap',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingVertical: 20,
   },
   mainTitle: {
     fontSize:28,
-    marginBottom:20
-  },
-  mediTitle: {
-    fontSize:24,
-    marginBottom:20
-  },
-  title: {
-    fontSize:18,
+    marginBottom:20,
+    textAlign:'center',
   },
   greenButton: {
     padding: 10,
@@ -167,13 +163,17 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     borderColor: 'white',
     backgroundColor:'lightgreen',
+    textAlign: "center",
+    marginHorizontal: 128,
   },
   blueButton: {
-    padding: 10,
+    padding: 7,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
+    textAlign: "center",
+    marginHorizontal: 128,
   },
 });
 

@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, SafeAreaView, ScrollView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
+
 import { MeatChecklist } from "./checklists/meat.js";
 import { FishChecklist } from "./checklists/fish.js";
 
@@ -18,8 +19,6 @@ class MeatIngredientsList extends React.Component {
         "type":'',
       },
       both: false,
-      initialRecipeList: [],
-      refinedRecipeList:[],
       times: {
         "hours":'0',
         "mins":'0'
@@ -36,7 +35,6 @@ class MeatIngredientsList extends React.Component {
 
     componentDidMount(){
       console.log("meats mounted")
-      console.log("meat.length: " + this.state.meat.length)
       var initial_data = this.props.location.state.initial_data
       var either = this.props.location.state.either
       var times = this.props.location.state.times
@@ -63,7 +61,6 @@ class MeatIngredientsList extends React.Component {
         })
       }
       if(this.state.meat_updated === true){
-        console.log("updating ingredients_rough")
         this.updateIngredientsRoughHandler()
       }
     }
@@ -101,22 +98,27 @@ class MeatIngredientsList extends React.Component {
 
         return(
 
-          <View style={styles.container}>
+          <SafeAreaView style={styles.container}>
+            <ScrollView>
 
-                <Text style={styles.mainTitle}>Meats checklist</Text>
+                  <Text accessible={true} accessibilityLabel="Meats checklist"
+                    accessibilityRole="text" style={styles.mainTitle}>Meats checklist</Text>
 
-                <MeatChecklist updateListHandler={this.updateListHandler} />
+                  <MeatChecklist updateListHandler={this.updateListHandler} />
 
-                <View>
-                    <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }} >
-                       <Text style={styles.greenButton}>Link to fish ingredients</Text>
-                    </Link>
-                    <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                      <Text style={styles.blueButton}>Back to type and time</Text>
-                    </Link>
-                </View>
+                  <Link style={{marginTop:30}} to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }} >
+                     <Text accessible={true} accessibilityLabel="Next page"
+                      accessibilityRole="button" style={styles.greenButton}>Next
+                     </Text>
+                  </Link>
+                  <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                    <Text accessible={true} accessibilityLabel="Go back"
+                      accessibilityRole="button" style={styles.blueButton}>Back
+                    </Text>
+                  </Link>
 
-          </View>
+            </ScrollView>
+          </SafeAreaView>
 
         );
      }
@@ -135,8 +137,6 @@ class FishIngredientsList extends React.Component {
         "type":'',
       },
       both: false,
-      initialRecipeList: [],
-      refinedRecipeList:[],
       ingredients_rough: {},
       fish: [],
       fish_updated: false,
@@ -201,38 +201,45 @@ class FishIngredientsList extends React.Component {
 
         return(
 
-          <View style={styles.container}>
-            <Text style={styles.mediTitle}>Fish ingredients checklist</Text>
+          <SafeAreaView style={styles.container}>
+            <ScrollView>
+                  <Text accessible={true} accessibilityLabel="Fish checklist" accessibilityRole="text"
+                    style={styles.mainTitle}>Fish checklist</Text>
 
-            <FishChecklist updateListHandler={this.updateListHandler} />
+                  <FishChecklist updateListHandler={this.updateListHandler} />
 
-              { either === false ?
+                    { either === false ?
 
-                (
-                  <View>
-                      <Link to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }} >
-                         <Text style={styles.greenButton}>Link to dry ingredients</Text>
-                      </Link>
-                      <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                        <Text style={styles.blueButton}>Back to meat list</Text>
-                      </Link>
-                  </View>
-                )
-                :
-                (
-                  <View>
-                      <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds} }} >
-                          <Text style={styles.greenButton}>link to confectionary list</Text>
-                      </Link>
-                      <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                        <Text style={styles.blueButton}>Back to meat list</Text>
-                      </Link>
-                  </View>
-                 )
+                      (
+                        <View>
+                            <Link style={{marginTop:30}} to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }} >
+                               <Text accessible={true} accessibilityLabel="Next page"
+                                 accessibilityRole="button" style={styles.greenButton}>Next</Text>
+                            </Link>
+                            <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                              <Text accessible={true} accessibilityLabel="Go back"
+                                accessibilityRole="button" style={styles.blueButton}>Back</Text>
+                            </Link>
+                        </View>
+                      )
+                      :
+                      (
+                        <View>
+                            <Link style={{marginTop:30}} to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds} }} >
+                                <Text accessible={true} accessibilityLabel="Next page"
+                                  accessibilityRole="button" style={styles.greenButton}>Next</Text>
+                            </Link>
+                            <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                              <Text accessible={true} accessibilityLabel="Go back"
+                                accessibilityRole="button" style={styles.blueButton}>Back</Text>
+                            </Link>
+                        </View>
+                       )
 
-               }
+                     }
 
-          </View>
+             </ScrollView>
+           </SafeAreaView>
 
         );
      }
@@ -245,20 +252,20 @@ class FishIngredientsList extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexWrap: 'wrap',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingVertical: 20,
   },
   mainTitle: {
     fontSize:28,
-    marginBottom:20
+    marginBottom:20,
+    textAlign:'center',
   },
   mediTitle: {
     fontSize:24,
     marginBottom:20
-  },
-  title: {
-    fontSize:18,
   },
   greenButton: {
     padding: 10,
@@ -266,13 +273,17 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     borderColor: 'white',
     backgroundColor:'lightgreen',
+    textAlign: "center",
+    marginHorizontal: 90,
   },
   blueButton: {
-    padding: 10,
+    padding: 7,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
+    textAlign: "center",
+    marginHorizontal: 90,
   },
 });
 

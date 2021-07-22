@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Pressable, Linking } from 'react-native';
+import { StyleSheet, Text, View, Button, Pressable, Linking, SafeAreaView, ScrollView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
 import { RefineResults } from './RefineResults.js';
 import { ApiCalls } from './ApiCalls.js';
@@ -142,21 +142,23 @@ class RecipeResults extends React.Component {
 
                   (
                     <View style={styles.container}>
-                        <Text style={styles.mainTitle}>Searching...</Text>
-                        <Text style={styles.mainTitle}>Complete</Text>
-                          {api_call === true ?
-                            (
-                              <ApiCalls firstAPICall={this.firstAPICall}
-                                keywords={this.state.initialData.ingredients}
-                                initialRecipeLinkList={this.state.initialRecipeLinkList}/>
-                            )
-                            :
-                            (
-                              <Text>.</Text>
-                            )
-                          }
-                        <RefineResults filterIndividualRecipes={this.filterIndividualRecipes}
-                          initialResponseList={this.state.responseList} maxTime={this.state.initialData.time}/>
+                          <Text accessible={true} accessibilityLabel= "Searching" accessibilityRole="text"
+                            style={styles.mainTitle}>Searching...</Text>
+                          <Text accessible={true} accessibilityLabel= "Search is complete" accessibilityRole="text"
+                            style={styles.mainTitle}>Complete</Text>
+                            {api_call === true ?
+                              (
+                                <ApiCalls firstAPICall={this.firstAPICall}
+                                  keywords={this.state.initialData.ingredients}
+                                  initialRecipeLinkList={this.state.initialRecipeLinkList}/>
+                              )
+                              :
+                              (
+                                <br/>
+                              )
+                            }
+                          <RefineResults filterIndividualRecipes={this.filterIndividualRecipes}
+                            initialResponseList={this.state.responseList} maxTime={this.state.initialData.time}/>
                     </View>
                   )
 
@@ -167,17 +169,28 @@ class RecipeResults extends React.Component {
                         {refined.map(function(item,index){
                            return(
                                     <View key={item} style={styles.container}>
-                                        <Text style={styles.title}>{index+1}. {item['recipe']['label']}</Text>
-                                        <Text>Takes: {item['recipe']['totalTime']} minutes</Text>
+
+                                        <Text accessible={true} accessibilityLabel= {item['recipe']['label']} accessibilityRole="text"
+                                          style={styles.title}>{index+1}. {item['recipe']['label']}</Text>
+
+                                        <Text accessible={true} accessibilityHint="Total time to make dish" accessibilityRole="text"
+                                          accessibilityLabel= {item['recipe']['totalTime']}>
+                                          Takes: {item['recipe']['totalTime']} minutes
+                                        </Text>
+
                                         <Pressable onPress={() => Linking.openURL(`${item['recipe']['url']}`)}>
-                                          <Text style={styles.greenButton}>Go to recipe website</Text>
+                                          <Text accessible={true} accessibilityLabel= "Go to recipe website" accessibilityRole="link"
+                                            style={styles.greenButton}>Go to recipe website</Text>
                                         </Pressable>
+
                                     </View>
                                   )
                              }
                            )
                          }
-                        <Link to="/"><Text style={styles.blueButton}>Start again</Text></Link>
+                        <Link accessible={true} accessibilityLabel= "Start again" to="/" accessibilityRole="button">
+                          <Text style={styles.blueButton}>Start again</Text>
+                        </Link>
                      </View>
                    )
 
@@ -195,9 +208,11 @@ class RecipeResults extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexWrap: 'wrap',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingVertical: 20,
   },
   mediTitle: {
     fontSize:24,
@@ -219,11 +234,12 @@ const styles = StyleSheet.create({
     backgroundColor:'lightgreen',
   },
   blueButton: {
-    padding: 10,
+    padding: 7,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
+    marginHorizontal: 80,
   },
 });
 
