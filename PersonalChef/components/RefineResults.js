@@ -2,28 +2,62 @@ import React from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
 
 
+
 const RefineResults = props => {
 
   console.log("refining")
-  console.log("props.initialResponseList: " + props.initialResponseList)
-  var max_time = props.maxTime
-  var response_list = props.initialResponseList.flat()
-  response_list = response_list.flat()
+
+  var response_list = props.initialResponseList
+  var length = response_list.length
   var filtered_results = []
-  if(response_list[0] != undefined){
-    for(item in response_list){
-      if(response_list[item]['recipe']['totalTime'] > max_time || response_list[item]['recipe']['totalTime'] == 0){
-        response_list.splice(item,1);
-        console.log("2. response_list.length: " + response_list.length);
-      }
+
+ // filter out dishes that take too long to make:
+  var max_time = props.maxTime
+  var i
+  for(i=0;i<length;i++){
+    try{
+      var recipe_time = response_list[i]['recipe']['totalTime']
+      if(recipe_time > max_time || recipe_time == '0'){
+          response_list.splice(i,1);
+          length = response_list.length
+          i--;
+        }
+    }catch(error){
+      console.log(i + ": times error: " + error);
+      response_list.splice(i,1)
     }
   }
+
+// filter out recipes which contain more ingredients than user has:
+  var length = response_list.length
+  var max_ingredients = props.maxIngredients
+  var j
+  for(j=0;j<length;j++){
+    try{
+      var recipe_ings = response_list[j]['recipe']['ingredients']
+      var ingredient_list_length = recipe_ings.length
+      if(ingredient_list_length > max_ingredients){
+        response_list.splice(j,1)
+        length = response_list.length
+        j--;
+      }
+    }catch(error){
+      console.log(j + ": ingredient count error: " + error)
+      response_list.splice(j,1)
+    }
+  }
+
   filtered_results = response_list
 
   return(
       <View>
-        <Pressable onPress={() => props.filterIndividualRecipes(filtered_results)}>
-          <Text  accessible={true} accessibilityLabel="See your recipes" style={styles.greenButton}>See your recipes</Text>
+        <Text accessible={true}
+              accessibilityLabel= "Search is complete"
+              accessibilityRole="text"
+              style={styles.mainTitle}>Complete!</Text>
+        <Pressable onPress={() => props.getFilteredRecipes(filtered_results)}>
+          <Text accessible={true} accessibilityLabel="Go to your recipes" accessibilityRole="button"
+           style={styles.greenButton}>See your recipes</Text>
         </Pressable>
       </View>
     );
@@ -39,6 +73,10 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     borderColor: 'white',
     backgroundColor:'lightgreen',
+  },
+  mainTitle: {
+    fontSize:28,
+    marginBottom:20
   },
 });
 

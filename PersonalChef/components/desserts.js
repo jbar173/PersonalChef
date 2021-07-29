@@ -60,7 +60,6 @@ class ConfectionaryIngredientsList extends React.Component {
         var mins = parseInt(this.state.times.mins)
         var added = hrs + mins
         var sum = added.toString()
-        console.log("sum: " + sum)
         this.setState({
           initialData: {
             ...this.state.initialData,
@@ -86,7 +85,6 @@ class ConfectionaryIngredientsList extends React.Component {
       var final_list = this.state.ingredients_rough
       for([key,value] of Object.entries(final_list)){
          if(key === new_key){
-             console.log(new_key + " replaced")
              delete final_list[key]
            }
       }
@@ -108,19 +106,21 @@ class ConfectionaryIngredientsList extends React.Component {
           <SafeAreaView style={styles.container}>
             <ScrollView>
                   <Text accessible={true} accessibilityLabel="Confectionary checklist"
-                    style={styles.mainTitle}>Confectionary checklist</Text>
+                    accessibilityRole="text" style={styles.mainTitle}>Confectionary checklist</Text>
 
                   <ConfectionaryChecklist updateListHandler={this.updateListHandler} />
 
                   <Link style={{marginTop:30}} to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                      <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                      style={styles.blueButton}>Next</Text>
                   </Link>
 
                   {recipe_type === "dessert" ?
 
                       (
                         <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                          <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                          <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                          style={styles.blueButton}>Back</Text>
                         </Link>
                       )
 
@@ -128,7 +128,8 @@ class ConfectionaryIngredientsList extends React.Component {
 
                       (
                         <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                          <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                          <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                          style={styles.blueButton}>Back</Text>
                         </Link>
                       )
 

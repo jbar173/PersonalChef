@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Button, TouchableHighlight, TextInput } from 'r
 import { NativeRouter, Route, Link } from "react-router-native";
 
 
-
 class HomePage extends React.Component {
       constructor(props){
       super(props);
@@ -16,11 +15,13 @@ class HomePage extends React.Component {
       return(
         <View style={styles.container}>
 
-            <Text accessible={true} accessibilityLabel="Welcome to PersonalChef" style={styles.mainTitle}>PersonalChef</Text>
+            <Text accessible={true} accessibilityLabel="Welcome to PersonalChef" accessibilityRole="text"
+             style={styles.mainTitle}>PersonalChef</Text>
 
             <TouchableHighlight underlayColor="white">
-                <Link accessible={true} accessibilityLabel="Find a recipe for your ingredients" to="/type-time/" >
-                  <Text style={styles.greenButton}>Find a recipe for your ingredients</Text>
+                <Link accessible={true} accessibilityLabel="Find a recipe for your ingredients"
+                  accessibilityRole="button" to="/type-time/" >
+                   <Text style={styles.greenButton}>Find a recipe for your ingredients</Text>
                 </Link>
             </TouchableHighlight>
 
@@ -50,6 +51,14 @@ class TimeAndType extends React.Component {
         "hours": '0',
         "mins": '0'
       },
+
+      ingredients_rough: {},
+      firstResponse: [],
+
+      initialRecipeLinkList: [],
+      responseList: [],
+
+      refinedRecipeList: [],
     }
     this.radioButtonPressedHandler = this.radioButtonPressedHandler.bind(this)
     this.onChangeTimeHoursHandler = this.onChangeTimeHoursHandler.bind(this)
@@ -78,16 +87,17 @@ class TimeAndType extends React.Component {
    }
 
 
-  onChangeTimeHoursHandler(hrs){
+  onChangeTimeHoursHandler(h){
       var chars = [ '', '0' ]
 
-      if(isNaN(hrs)){
+      if(isNaN(h)){
         this.setState({
           validHoursInput: false,
           validTimes: false
         });
         return 0;
       }else{
+        var hrs = h*60
         this.setState({
           validHoursInput: true,
           times:{
@@ -97,7 +107,7 @@ class TimeAndType extends React.Component {
         })
       }
 
-      if(chars.includes(hrs) && chars.includes(this.state.times.mins)){
+      if(chars.includes(h) && chars.includes(this.state.times.mins)){
         this.setState({
           validTimes: false,
         })
@@ -188,7 +198,7 @@ class TimeAndType extends React.Component {
                           placeholder='0 hours'
                           keyboardType="numeric"
                           accessibilityLabel="hours textbox"
-                          accessibilityHint:"type number of hours here"
+                          accessibilityHint="type number of hours here"
                           accessibilityRole="adjustable"
                         />
                         {this.state.validHoursInput === false && <Text accessible={true} accessibilityLabel="Please enter a number"
@@ -199,7 +209,7 @@ class TimeAndType extends React.Component {
                           placeholder='20 minutes'
                           keyboardType="numeric"
                           accessibilityLabel="minutes textbox"
-                          accessibilityHint:"type number of minutes here"
+                          accessibilityHint="type number of minutes here"
                           accessibilityRole="adjustable"
                         />
                         {this.state.validMinutesInput === false && <Text accessible={true} accessibilityLabel="Please enter a number"

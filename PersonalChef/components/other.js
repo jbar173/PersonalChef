@@ -125,6 +125,7 @@ class MeatIngredientsList extends React.Component {
 };
 
 
+
 class FishIngredientsList extends React.Component {
     constructor(props){
     super(props);

@@ -90,25 +90,28 @@ class DryIngredientsList extends React.Component {
           <SafeAreaView style={styles.container}>
             <ScrollView>
                   <Text accessible={true} accessibilityLabel="Dry ingredients checklist"
-                    style={styles.mainTitle}>Dry ingredients checklist</Text>
+                    accessibilityRole="text" style={styles.mainTitle}>Dry ingredients checklist</Text>
 
                   <DryIngredientsChecklist updateListHandler={this.updateListHandler} />
 
                   <Link style={{marginTop:30}} to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                     style={styles.blueButton}>Next</Text>
                   </Link>
 
                   {recipe_type === "dessert" || either === true ?
 
                     (
                       <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                        <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                        <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                          style={styles.blueButton}>Back</Text>
                       </Link>
                     )
                     :
                     (
                       <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                        <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                        <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                         style={styles.blueButton}>Back</Text>
                       </Link>
                     )
 
@@ -200,16 +203,16 @@ class WetIngredientsList extends React.Component {
 
         <SafeAreaView style={styles.container}>
           <ScrollView>
-                <Text accessible={true} accessibilityLabel="Wet ingredients checklist"
+                <Text accessible={true} accessibilityLabel="Wet ingredients checklist" accessibilityRole="text"
                   style={styles.mainTitle}>Wet ingredients checklist</Text>
 
                 <WetIngredientsChecklist updateListHandler={this.updateListHandler} />
 
                 <Link style={{marginTop:30}} to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                  <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button" style={styles.blueButton}>Next</Text>
                 </Link>
                 <Link to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                  <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button" style={styles.blueButton}>Back</Text>
                 </Link>
           </ScrollView>
         </SafeAreaView>
@@ -298,15 +301,17 @@ class FruitAndVegList extends React.Component {
           <SafeAreaView style={styles.container}>
             <ScrollView>
                   <Text accessible={true} accessibilityLabel="Fruits and Vegetables checklist"
-                    style={styles.mainTitle}>Fruits and Vegetables checklist</Text>
+                    accessibilityRole="text" style={styles.mainTitle}>Fruits and Vegetables checklist</Text>
 
                   <FruitAndVegChecklist updateListHandler={this.updateListHandler} />
 
                   <Link style={{marginTop:30}} to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                      style={styles.blueButton}>Next</Text>
                   </Link>
                   <Link to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                     style={styles.blueButton}>Back</Text>
                   </Link>
             </ScrollView>
           </SafeAreaView>
@@ -394,16 +399,18 @@ class HerbsAndSpicesList extends React.Component {
 
           <SafeAreaView style={styles.container}>
             <ScrollView>
-                  <Text accessible={true} accessibilityLabel="Herbs and spices checklist"
+                  <Text accessible={true} accessibilityLabel="Herbs and spices checklist" accessibilityRole="text"
                     style={styles.mainTitle}>Herbs and spices checklist</Text>
 
                   <HerbsAndSpicesChecklist updateListHandler={this.updateListHandler} />
 
                   <Link style={{marginTop:30}} to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                     style={styles.blueButton}>Next</Text>
                   </Link>
                   <Link to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                     style={styles.blueButton}>Back</Text>
                   </Link>
             </ScrollView>
           </SafeAreaView>
@@ -492,15 +499,17 @@ class TinnedGoodsList extends React.Component {
         <SafeAreaView style={styles.container}>
           <ScrollView>
                 <Text accessible={true} accessibilityLabel="Tinned ingredients checklist"
-                  style={styles.mainTitle}>Tinned ingredients checklist</Text>
+                  accessibilityRole="text" style={styles.mainTitle}>Tinned ingredients checklist</Text>
 
                 <TinnedChecklist updateListHandler={this.updateListHandler} />
 
                 <Link style={{marginTop:30}} to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text accessible={true} accessibilityLabel="Next page" style={styles.blueButton}>Next</Text>
+                  <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                   style={styles.blueButton}>Next</Text>
                 </Link>
                 <Link to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+                  <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                   style={styles.blueButton}>Back</Text>
                 </Link>
           </ScrollView>
         </SafeAreaView>

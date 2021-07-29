@@ -25,7 +25,6 @@ class ConfirmList extends React.Component {
   componentDidMount(){
     console.log("confirm list mounted")
     var initial_data = this.props.location.state.initial_data
-    console.log("initial_data.type: " + initial_data.type)
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
     this.setState({
@@ -52,7 +51,7 @@ class ConfirmList extends React.Component {
 
       <View style={styles.container}>
           <Text accessible={true} accessibilityLabel="Confirm your ingredients here, or click go back to edit them."
-            style={styles.mainTitle}>Confirm ingredients</Text>
+            accessibilityRole="text" style={styles.mainTitle}>Confirm ingredients</Text>
 
           {Object.entries(ingreds).map(function(item){
             return(
@@ -60,7 +59,7 @@ class ConfirmList extends React.Component {
                   <Text style={{fontSize:20,fontWeight:"bold"}}>{item[0]}:</Text>
                       {item[1].map(function(ingredient){
                         return(
-                            <Text accessible={true} accessibilityLabel={ingredient}
+                            <Text accessible={true} accessibilityLabel={ingredient} accessibilityRole="text"
                               key={ingredient} >{ingredient}</Text>
                           )
                         })
@@ -71,18 +70,21 @@ class ConfirmList extends React.Component {
           )}
 
           <Pressable onPress={this.confirmIngredients}>
-            <Text accessible={true} accessibilityLabel="Confirm" style={styles.blueButton}>Confirm</Text>
+            <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
+             style={styles.blueButton}>Confirm</Text>
           </Pressable>
 
           <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-            <Text accessible={true} accessibilityLabel="Go back" style={styles.blueButton}>Back</Text>
+            <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+              style={styles.blueButton}>Back</Text>
           </Link>
 
           {confirmed === true ?
 
               (
                 <Link to={{pathname:"/results-initial/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text accessible={true} accessibilityLabel="See results" style={styles.blueButton}>See results</Text>
+                  <Text accessible={true} accessibilityLabel="See results" accessibilityRole="button"
+                   style={styles.blueButton}>See results</Text>
                 </Link>
               )
 

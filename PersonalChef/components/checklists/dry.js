@@ -78,11 +78,13 @@ class DryIngredientsChecklist extends React.Component {
                   <Pressable key={index} onPress={() => self.itemSelectedHandler(item)}>
                     {item[1] === false ?
                       (
-                        <Text style={styles.blueButton}>{item}</Text>
+                        <Text accessible={true} accessibilityLabel={item[0]} accessibilityRole="button"
+                          accessibilityHint="Click to select this ingredient" style={styles.blueButton}>{item}</Text>
                       )
                       :
                       (
-                        <Text style={styles.greenButton}>{item}</Text>
+                        <Text accessible={true} accessibilityLabel={item[0]} accessibilityRole="button"
+                          accessibilityHint="Click to deselect this ingredient" style={styles.greenButton}>{item}</Text>
                       )
                     }
                   </Pressable>
@@ -95,11 +97,13 @@ class DryIngredientsChecklist extends React.Component {
                   onPressIn={this.confirmedHandler}>
                     { confirmed === false ?
                       (
-                        <Text style={styles.greenButton}>Confirm Selection</Text>
+                        <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
+                         accessibilityHint="Click to confirm your ingredients" style={styles.greenButton}>Confirm Selection</Text>
                       )
                       :
                       (
-                        <Text style={styles.blueButton}>Change selection</Text>
+                        <Text accessible={true} accessibilityLabel="Change selection" accessibilityRole="button"
+                         accessibilityHint="Click to change your ingredients" style={styles.blueButton}>Change selection</Text>
                       )
                     }
                 </Pressable>
