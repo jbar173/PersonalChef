@@ -8,90 +8,107 @@ class ApiCalls extends React.Component{
     this.state = {
       fResponse: [],
       keywords: this.props.keywords,
-      initial: this.props.initialRecipeLinkList,
+      next: 'first',
+      count: null,
+      call: 0,
+      maxCalls: 0,
       call_over: false,
     },
     this.apiCall = this.apiCall.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
-    this.sortResponse = this.sortResponse.bind(this)
+    this.finishedHandler = this.finishedHandler.bind(this)
   };
 
-    componentDidMount(){
-      console.log("Api component mounted")
+  componentDidMount(){
+    console.log("Api component mounted")
+    this.apiCall()
+  }
+
+  componentDidUpdate(){
+    console.log("this.state.next: " + this.state.next)
+    console.log("this.state.count: " + this.state.count)
+
+    if(this.state.count !== null){
+      console.log("count has been set")
+    }else{
+      var values = [10,]
+      var maximum = count/20
+      console.log("maximum: " + maximum)
+      if(maximum >= 10){
+        this.setState({
+          maxCalls:10
+        })
+      }else{
+        this.setState({
+          maxCalls: maximum
+        })
+        values.push(maximum)
+      }
+    }
+    // Checks whether api function has finished calling
+    //  each page, triggers next function if so:
+    if(values.includes(this.state.call)) {
+      this.finishedHandler()
+    }else{
       this.apiCall()
     }
-
-    componentDidUpdate(){
-      if(this.state.fResponse.length != 0 && this.state.initial.length === 0) {
-        this.sortResponse()
-      }
-      if(this.state.call_over === true){
-        this.finishedHandler()
-      }
+    // Marks the component as finished with its calls:
+    if(this.state.call_over === true){
+      console.log("finished")
+      this.finishedHandler()
     }
+ }
 
-// Calls first api, returns a list of recipe urls for recipe
-//  labels which contain one or more of the keywords:
-    apiCall(){
-      console.log("calling APIs")
-      var keywords = this.state.keywords
-      // var b = 'b'     app_id
-      // var c = 'c'     app_key
-      var test_url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&app_id=f70ab024&app_key=ac8f093ed1576baa704c95c1df284d3f&field=label`
-      fetch(test_url)
-      .then(response => response.json())
-      .then(data => {
-          this.setState({
-            fResponse: data,
-          })
-      })
+// Calls first api 10 times (allowance is 10 hits per minute),
+//  collects 200 recipe apis (if that many are returned):
+  apiCall(){
+    console.log("calling APIs")
+
+    var keywords = this.state.keywords
+    var num = this.state.call
+
+    if(this.state.next === 'first'){
+      var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&app_id=f70ab024&app_key=ac8f093ed1576baa704c95c1df284d3f&field=label`
+
+    }else{
+      var url = this.state.next
     }
+    num += 1
 
-// Catches if 0 responses found, else pushes the url for each
-//  recipe's individual api call into a list:
-    sortResponse(){
-      var count = this.state.fResponse['count']
-      var urls = []
-      console.log("count: " + count)
-      if(count > 0 && count < 30){
-        console.log("Less than 30 recipes found")
-      }
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        this.setState({
+          fResponse: [
+            ...this.state.fResponse,
+            data
+          ],
+          next: data['_links']['next']['href'],
+          count: data['count'],
+          call: num
+        })
+    })
+  }
 
-      if(count === undefined){
-         console.log("pass")
-      }else if(count === 0){
-         console.log("No recipes found, widening search")
-      }else{
-         console.log("Less than 30 recipes found")
-         for(recipe in this.state.fResponse['hits']){
-           var link = this.state.fResponse['hits'][recipe]['_links']['self']['href']
-           urls.push(link)
-         }
-         this.setState({
-           initial: urls,
-           call_over: true,
-         })
-       }
-    }
 
 // Passes back the recipe url list to the
 //  main RecipeResults component:
-    finishedHandler(){
-      var initial = this.state.initial
-      this.props.passDataBack(initial)
-      this.setState({
-        call_over: false
-      })
-    }
+  finishedHandler(){
+    var initial = this.state.fResponse
+    this.props.passDataBack(initial)
+    this.setState({
+      call_over: true
+    })
+  }
 
-    render(){
-      return(
-              <View>
-                <Text></Text>
-              </View>
-           );
-    }
+  render(){
+    return(
+            <View>
+              <Text></Text>
+            </View>
+         );
+   }
 
 };
 

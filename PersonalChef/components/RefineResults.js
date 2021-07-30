@@ -7,7 +7,7 @@ const RefineResults = props => {
 
   console.log("refining")
 
-  var response_list = props.initialResponseList
+  var response_list = props.recipeResponseList
   var length = response_list.length
   var filtered_results = []
 
@@ -23,8 +23,8 @@ const RefineResults = props => {
           i--;
         }
     }catch(error){
-      console.log(i + ": times error: " + error);
-      response_list.splice(i,1)
+        console.log(i + ": times error: " + error);
+        response_list.splice(i,1)
     }
   }
 
@@ -34,33 +34,34 @@ const RefineResults = props => {
   var j
   for(j=0;j<length;j++){
     try{
-      var recipe_ings = response_list[j]['recipe']['ingredients']
-      var ingredient_list_length = recipe_ings.length
-      if(ingredient_list_length > max_ingredients){
-        response_list.splice(j,1)
-        length = response_list.length
-        j--;
-      }
+        var recipe_ings = response_list[j]['recipe']['ingredients']
+        var ingredient_list_length = recipe_ings.length
+        if(ingredient_list_length > max_ingredients){
+          response_list.splice(j,1)
+          length = response_list.length
+          j--;
+        }
     }catch(error){
-      console.log(j + ": ingredient count error: " + error)
-      response_list.splice(j,1)
+        console.log(j + ": ingredient count error: " + error)
+        response_list.splice(j,1)
     }
   }
 
   filtered_results = response_list
 
   return(
-      <View>
-        <Text accessible={true}
-              accessibilityLabel= "Search is complete"
-              accessibilityRole="text"
-              style={styles.mainTitle}>Complete!</Text>
-        <Pressable onPress={() => props.getFilteredRecipes(filtered_results)}>
-          <Text accessible={true} accessibilityLabel="Go to your recipes" accessibilityRole="button"
-           style={styles.greenButton}>See your recipes</Text>
-        </Pressable>
-      </View>
-    );
+          <View>
+              <Text accessible={true}
+                    accessibilityLabel= "Search is complete"
+                    accessibilityRole="text"
+                    style={styles.mainTitle}>Complete!</Text>
+              <Pressable onPress={() => props.getFilteredRecipes(filtered_results)}>
+                  <Text accessible={true} accessibilityLabel="Go to your recipes"
+                    accessibilityRole="button"
+                    style={styles.greenButton}>See your recipes</Text>
+              </Pressable>
+          </View>
+        );
 
 };
 

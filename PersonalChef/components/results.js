@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button, Pressable, Linking, SafeAreaView, Scrol
 import { NativeRouter, Route, Link } from "react-router-native";
 import { RefineResults } from './RefineResults.js';
 import { ApiCalls } from './ApiCalls.js';
+import { Searching } from "./SearchingAnimation.js";
 
 
 class RecipeResults extends React.Component {
@@ -17,217 +18,165 @@ class RecipeResults extends React.Component {
           "type": '',
         },
         both: false,
-        update_initial: false,
 
-        apiCall: false,
-        callIndividual: false,
         checked: false,
+        callIndividual: false,
+        timerStarted: false,
 
         startRefine: false,
         filtered: false,
-        finished: false,
-        batch: 1,
 
         ingredients_rough: {},
         firstResponse: [],
 
-        initialRecipeLinkList: [],
-        secondHalfLinkList: [],
-        responseList: [],
+        populateLinksList: false,
+        recipeLinksList: [],
+        round: 0,
+
+        thisRoundResponseList: [],
+        recipeResponseList: [],
 
         refinedRecipeList: [],
-
       }
-
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
-      this.populateInitialData = this.populateInitialData.bind(this)
+      this.getRecipeApiLinks = this.getRecipeApiLinks.bind(this)
       this.fetchIndividualRecipes = this.fetchIndividualRecipes.bind(this)
       this.getFilteredRecipes = this.getFilteredRecipes.bind(this)
-      this.apiCallFinished = this.apiCallFinished.bind(this)
-      this.checkResponseList = this.checkResponseList.bind(this)
-
+      this.startStopwatch = this.startStopwatch.bind(this)
+      this.getNextRound = this.getNextRound.bind(this)
     };
+
 
   componentDidMount(){
     console.log("Results mounted")
     var initial_data = this.props.location.state.initial_data
     var either = this.props.location.state.either
     var ingreds = this.props.location.state.ingreds
+    var first_response = this.props.state.first_response
     this.setState({
       initialData: initial_data,
       ingredients_rough: ingreds,
       both: either,
-      update_initial: true
+      firstResponse: first_response,
+      populateLinksList: true
     })
   }
+
 
   componentDidUpdate(){
     console.log("results did update")
-    this.checkResponseList()
 
-    if(this.state.update_initial === true){
-        this.populateInitialData()
+    if(this.state.populateLinkList){
+        this.getRecipeApiLinks()
     }
-    if(this.state.callIndividual === true){
+    if(this.state.callIndividual){
         this.fetchIndividualRecipes()
+        var next_round = this.state.round
+        next_round += 9
         this.setState({
-          callIndividual: false,
+          round: next_round,
+          callIndividual: false
         })
-    }
-  }
-
-// Takes data passed from confirm.js (previous screen),
-//  populates this component's state with the data,
-//  then triggers ApiCalls component to load (by setting
-//  apiCall:true ):
-  populateInitialData(){
-    console.log("populating initial data")
-    var rough = this.state.ingredients_rough
-    var final = []
-    for([key,value] of Object.entries(rough)){
-      final.push(rough[key])
-    }
-    final = final.flat()
-    this.setState({
-      initialData: {
-        ...this.state.initialData,
-        ingredients: final,
-        ingredientCount: final.length
-      },
-      update_initial: false,
-      apiCall: true
-    })
-  }
-
-// Function is triggered by ApiCalls' finishedHandler function.
-//  If the first api call returns nothing it catches here
-//  at the moment (will write something in ApiCalls to make sure
-//  something is returned), (eg.
-//  knock an ingredient off (one with the lowest ranking)
-//  until some results are found, using ingredientsRanked.js.)
-//  The remainder of the function divides the url list
-//  into two (explanation below). Finally the function sets
-//  callIndividual:true which triggers the next function
-//  via ComponentDidUpdate():
-  apiCallFinished(initial){
-    console.log("api call finished function")
-    if(initial.length === 0){
-      console.log("Still searching...")
-      this.setState({
-        apiCall:false,
-      })
-     // deal with this catch in ApiCalls (explained above)
      }
-    // Site only allows 10 api calls/min. Statement below reduces from
-    // a potential 20 responses to 10 maximum (stores the other half
-    // to be called later in getFilteredRecipes() ):
-    var second = this.state.secondHalfLinkList
-    if(initial.length>10){
-      var second_half = initial.slice(0,10)
-      initial.splice(0,10)
-      this.setState({
-        initialRecipeLinkList: initial,
-        secondHalfLinkList: second_half,
-        apiCall: false,
-        callIndividual: true
-      })
-    }
   }
 
-// Calls api for each recipe, stores responses in responseList:
+// Takes each recipe's api call url from firstResponse,
+//  stores the links in recipeLinksList:
+  getRecipeApiLinks(){
+    console.log("populating recipe link list")
+    var urls = []
+    for(page in this.state.firstResponse){
+      for(recipe in page['hits']){
+         var link = recipe['_links']['self']['href']
+         urls.push(link)
+       }
+    }
+    this.setState({
+      recipeLinksList: urls,
+      populateLinksList: false,
+      callIndividual: true
+    })
+    console.log("this.state.firstResponse.length: " + this.state.firstResponse.length)
+  }
+
+
+// Calls api for each individual recipe, stores responses in responseList:
   fetchIndividualRecipes(){
-    var url_list = this.state.initialRecipeLinkList
-    for(link in url_list){
-      var url = `${url_list[link]}`
+    var url_list = this.state.recipeLinksList
+    var round = this.state.round
+    var first_index = round
+    var last_index = round+9
+    var this_round = url_list.slice[first_index,last_index]
+
+    for(link in this_round){
+      var url = `${this_round[link]}`
       console.log("individual url: " + url + "\n")
       fetch(url)
       .then(response => response.json())
       .then(data =>
           this.setState({
-            responseList: [
-              ...this.state.responseList,
+            thisRoundResponseList: [
+              ...this.state.thisRoundResponseList,
+              data
+            ],
+            recipeResponseList: [
+              ...this.state.recipeResponseList,
               data
             ],
           })
        )
-    }
+     }
+     this.startStopwatch()
   }
 
-// On each component update, runs a check to make sure
-//  that each individual recipe response has been
-//  collected and stored in responseList (checks length
-//  of responseList compared to length of
-//  initialRecipeLinkList to verify this), before triggering
-//  startRefine if it has (which triggers RefineResults component):
-  checkResponseList(){
-    console.log("...check triggered...")
-    var values = [undefined,0]
-    var length = this.state.responseList.length
 
-    if(!(values.includes(this.state.responseList.length)) && this.state.checked === false){
-      if(length==this.state.initialRecipeLinkList.length){
-        console.log("***same length")
-        this.setState({
-          checked:true,
-          startRefine: true
-        })
-      }else{
-        console.log("pass")
-      }
-    }
-  };
+ startStopwatch(){
+   console.log("starting stopwatch")
+   this.setState({
+     timerStarted: true,
+     startRefine: true
+   })
+   // After a minute, set timerStarted to false
+ }
 
-// When RefineResults component has finished, this function is triggered
-//  via onPress(). Function catches if 0 results have been returned,
-//  checks whether all 20 responses have been called and refined yet,
-//  or just the first 10 (state.batch will be 1 if only 10).
-//  If batch is 1, increments batch and sets state
-//  initialRecipeLinkList: secondHalfLinkList, then call_individual: true,
-//  starts the above process again with the second 10 links:
+
+ getNextRound(){
+   if(this.state.timerStarted){
+     // wait until timer stops, then call next round
+   }else{
+     this.setState({
+       thisRoundResponseList: [],
+       callIndividual: true
+     })
+   }
+ }
+
+
   getFilteredRecipes(filtered_results){
     console.log("filtered initial")
-    var next = this.state.secondHalfLinkList
-
     if(filtered_results.length === 0){
-      console.log("0 results. Results section not rendered")
-      var count = this.state.batch
-      if(count === 1){
-        this.setState({
-          initialRecipeLinkList: next,
-          callIndividual: true,
-          checked: false,
-          startRefine: false,
-          batch: 2
-        })
-        return 1;
-      }else{
-        console.log("No matches in the first 20 responses")
-        // Build app out further to get next 20 responses (count 21 - 41)
-        this.setState({
-          finished: true,
-          startRefine: false
-        })
-        return 1;
-      }
+      console.log("No results in this round")
+      this.setState({
+        startRefine: false,
+        filtered: false
+      })
+      this.getNextRound()
+    }else{
+      this.setState({
+        refinedRecipeList: filtered_results,
+        callIndividual: false,
+        startRefine: false,
+        filtered: true
+      })
     }
-
-    console.log("Results found")
-    this.setState({
-      refinedRecipeList: filtered_results,
-      filter: true,
-      finished: true,
-      startRefine: false
-    })
-
   }
 
 
   render(){
     var first_response = this.state.firstResponse
     var refined = this.state.refinedRecipeList
-    var filter = this.state.filter
-    var api_call = this.state.apiCall
+    var filtered = this.state.filtered
     var start_refine = this.state.startRefine
 
     return(
@@ -235,24 +184,16 @@ class RecipeResults extends React.Component {
       <SafeAreaView style={styles.container}>
         <ScrollView>
 
-            { filter === false ?
+            { filtered === false ?
 
                 (
                   <View style={styles.container}>
 
-                        <Text accessible={true} accessibilityLabel="Searching"
-                          accessibilityRole="text"
-                          style={styles.mainTitle}>Searching...</Text>
-
-                        {api_call === true && <ApiCalls
-                            keywords={this.state.initialData.ingredients}
-                            initialRecipeLinkList={this.state.initialRecipeLinkList}
-                            passDataBack = {this.apiCallFinished} />
-                        }
+                        <Searching />
 
                         {start_refine === true && <RefineResults
                             getFilteredRecipes={this.getFilteredRecipes}
-                            initialResponseList={this.state.responseList}
+                            recipeResponseList={this.state.recipeResponseList}
                             maxTime={this.state.initialData.time}
                             maxIngredients={this.state.initialData.ingredientCount}/>
                         }
@@ -284,24 +225,29 @@ class RecipeResults extends React.Component {
                                             style={styles.greenButton}>Go to recipe website</Text>
                                         </Pressable>
 
-                                    </View>
+                                     </View>
                                   )
                              }
                            )
                          }
+
+                        <Pressable onPress={this.getNextRound} style={styles.blueButton}>
+                          <Text>Next page</Text>
+                        </Pressable>
+
                         <Pressable style={styles.blueButton}>
                             <Link accessible={true} accessibilityLabel= "Start again"
                                 accessibilityHint="Click button to go back to homepage"
-                                to="/" accessibilityRole="button">Start again
+                                to="/" accessibilityRole="button"><Text>Start again</Text>
                             </Link>
                         </Pressable>
                    </View>
                  )
 
-            }
+              }
 
-          </ScrollView>
-        </SafeAreaView>
+            </ScrollView>
+          </SafeAreaView>
 
       );
     }
