@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button, Pressable, Linking, SafeAreaView, Scrol
 import { NativeRouter, Route, Link } from "react-router-native";
 import { RefineResults } from './RefineResults.js';
 import { ApiCalls } from './ApiCalls.js';
-import { Searching } from "./SearchingAnimation.js";
+import { Searching, Loading } from "./Animations.js";
 
 
 class RecipeResults extends React.Component {
@@ -21,7 +21,9 @@ class RecipeResults extends React.Component {
 
         checked: false,
         callIndividual: false,
-        timerStarted: false,
+        thirtyTimerStarted: false,
+        sixtyTimerStarted: false,
+        displayAnimation: false,
 
         startRefine: false,
         filtered: false,
@@ -33,17 +35,22 @@ class RecipeResults extends React.Component {
         recipeLinksList: [],
         round: 0,
 
-        thisRoundResponseList: [],
         recipeResponseList: [],
+        thisRoundResponseList: [],
+        nextRound: false,
 
         refinedRecipeList: [],
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
+
       this.getRecipeApiLinks = this.getRecipeApiLinks.bind(this)
+      this.startThirtyStopwatch = this.startThirtyStopwatch.bind(this)
+
       this.fetchIndividualRecipes = this.fetchIndividualRecipes.bind(this)
+      this.startSixtyStopwatch = this.startSixtyStopwatch.bind(this)
       this.getFilteredRecipes = this.getFilteredRecipes.bind(this)
-      this.startStopwatch = this.startStopwatch.bind(this)
+
       this.getNextRound = this.getNextRound.bind(this)
     };
 
@@ -53,13 +60,15 @@ class RecipeResults extends React.Component {
     var initial_data = this.props.location.state.initial_data
     var either = this.props.location.state.either
     var ingreds = this.props.location.state.ingreds
-    var first_response = this.props.state.first_response
+    var first_response = this.props.location.state.first_response
+
     this.setState({
       initialData: initial_data,
       ingredients_rough: ingreds,
       both: either,
       firstResponse: first_response,
-      populateLinksList: true
+      populateLinksList: true,
+      thirtyTimerStarted: true
     })
   }
 
@@ -67,10 +76,12 @@ class RecipeResults extends React.Component {
   componentDidUpdate(){
     console.log("results did update")
 
-    if(this.state.populateLinkList){
+    if(this.state.populateLinksList){
+        console.log("1")
         this.getRecipeApiLinks()
     }
-    if(this.state.callIndividual){
+    if(this.state.callIndividual && this.state.thirtyTimerStarted === false){
+        console.log("2")
         this.fetchIndividualRecipes()
         var next_round = this.state.round
         next_round += 9
@@ -79,35 +90,48 @@ class RecipeResults extends React.Component {
           callIndividual: false
         })
      }
+    if(this.state.nextRound && this.state.sixtyTimerStarted){
+      console.log("3")
+      console.log("waiting...")
+      // this.setState({ displayAnimation: true }) ?
+    }
+    if(this.state.nextRound && this.state.sixtyTimerStarted === false){
+      console.log("4")
+      this.getNextRound()
+    }
   }
 
 // Takes each recipe's api call url from firstResponse,
 //  stores the links in recipeLinksList:
   getRecipeApiLinks(){
     console.log("populating recipe link list")
+    this.startThirtyStopwatch()
     var urls = []
-    for(page in this.state.firstResponse){
-      for(recipe in page['hits']){
-         var link = recipe['_links']['self']['href']
+    var resp = this.state.firstResponse
+    for(page in resp){
+      var hits = resp[page]['hits']
+      for(recipe in hits){
+         var link = hits[recipe]['_links']['self']['href']
          urls.push(link)
        }
     }
     this.setState({
       recipeLinksList: urls,
       populateLinksList: false,
-      callIndividual: true
+      callIndividual: true,
     })
-    console.log("this.state.firstResponse.length: " + this.state.firstResponse.length)
+    console.log("urls.length: " + urls.length)
   }
-
 
 // Calls api for each individual recipe, stores responses in responseList:
   fetchIndividualRecipes(){
+    console.log("fetching individual")
     var url_list = this.state.recipeLinksList
     var round = this.state.round
     var first_index = round
     var last_index = round+9
-    var this_round = url_list.slice[first_index,last_index]
+    var this_round = url_list.slice(first_index,last_index)
+    // console.log("this_round.length: " + this_round.length)
 
     for(link in this_round){
       var url = `${this_round[link]}`
@@ -126,45 +150,75 @@ class RecipeResults extends React.Component {
             ],
           })
        )
+      .catch(error => {
+        console.log("individual error: " + error)
+      })
      }
-     this.startStopwatch()
-  }
-
-
- startStopwatch(){
-   console.log("starting stopwatch")
    this.setState({
-     timerStarted: true,
-     startRefine: true
+     sixtyTimerStarted: true
    })
-   // After a minute, set timerStarted to false
+   this.startSixtyStopwatch()
  }
 
+ startThirtyStopwatch(){
+   console.log("starting 30 sec stopwatch")
+   var cmponent = this
+   setTimeout(function(){
+     console.log("30 sec stopwatch finished")
+     cmponent.setState({
+       thirtyTimerStarted: false,
+     })
+   }, 30000)
+ }
+
+ startSixtyStopwatch(){
+   console.log("starting 60 sec stopwatch")
+
+   var cmponent = this
+   if(this.state.thisRoundResponseList.length === 9){
+       cmponent.setState({
+         startRefine: true
+       })
+   }else{
+     setTimeout(function(){
+       console.log("starting refine")
+       console.log("thisRoundResponseList.length: " + cmponent.state.thisRoundResponseList.length)
+       cmponent.setState({
+         startRefine: true
+       })
+     },5000)
+   }
+   setTimeout(function(){
+     console.log("60 sec stopwatch finished")
+     cmponent.setState({
+       sixtyTimerStarted: false,
+     })
+   }, 60000)
+ }
 
  getNextRound(){
-   if(this.state.timerStarted){
-     // wait until timer stops, then call next round
-   }else{
-     this.setState({
-       thisRoundResponseList: [],
-       callIndividual: true
-     })
-   }
+   console.log("get next round function")
+   this.setState({
+     thisRoundResponseList: [],
+     callIndividual: true,
+     nextRound: false
+   })
  }
 
-
-  getFilteredRecipes(filtered_results){
+  getFilteredRecipes(response_list){
     console.log("filtered initial")
-    if(filtered_results.length === 0){
+    console.log("filtered_results.length: " + response_list.length)
+    if(response_list.length === 0){
       console.log("No results in this round")
       this.setState({
         startRefine: false,
-        filtered: false
+        callIndividual: false,
+        filtered: false,
+        nextRound: true,
       })
-      this.getNextRound()
     }else{
       this.setState({
-        refinedRecipeList: filtered_results,
+        refinedRecipeList: response_list,
         callIndividual: false,
         startRefine: false,
         filtered: true
@@ -178,6 +232,7 @@ class RecipeResults extends React.Component {
     var refined = this.state.refinedRecipeList
     var filtered = this.state.filtered
     var start_refine = this.state.startRefine
+    var display_animation = this.state.displayAnimation
 
     return(
 
@@ -189,14 +244,16 @@ class RecipeResults extends React.Component {
                 (
                   <View style={styles.container}>
 
-                        <Searching />
+                        <Text>Filtering..</Text>
 
                         {start_refine === true && <RefineResults
-                            getFilteredRecipes={this.getFilteredRecipes}
-                            recipeResponseList={this.state.recipeResponseList}
+                            filteredResults={this.getFilteredRecipes}
+                            thisRoundResponseList={this.state.thisRoundResponseList}
                             maxTime={this.state.initialData.time}
                             maxIngredients={this.state.initialData.ingredientCount}/>
                         }
+
+                        {display_animation && <Loading />}
 
                   </View>
                 )
@@ -241,6 +298,9 @@ class RecipeResults extends React.Component {
                                 to="/" accessibilityRole="button"><Text>Start again</Text>
                             </Link>
                         </Pressable>
+
+                        {display_animation && <Loading />}
+
                    </View>
                  )
 

@@ -11,12 +11,14 @@ class ApiCalls extends React.Component{
       next: 'first',
       count: null,
       call: 0,
-      maxCalls: 0,
+      maxCalls: null,
       call_over: false,
+      finish: false
     },
-    this.apiCall = this.apiCall.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.apiCall = this.apiCall.bind(this)
+    this.onePageOfResults = this.onePageOfResults.bind(this)
     this.finishedHandler = this.finishedHandler.bind(this)
   };
 
@@ -26,14 +28,15 @@ class ApiCalls extends React.Component{
   }
 
   componentDidUpdate(){
-    console.log("this.state.next: " + this.state.next)
+    // console.log("this.state.next: " + this.state.next)
     console.log("this.state.count: " + this.state.count)
 
-    if(this.state.count !== null){
-      console.log("count has been set")
+    if(this.state.maxCalls !== null){
+      console.log("maxCalls has been set")
+      console.log("maxCalls: " + this.state.maxCalls)
     }else{
       var values = [10,]
-      var maximum = count/20
+      var maximum = this.state.count/20
       console.log("maximum: " + maximum)
       if(maximum >= 10){
         this.setState({
@@ -46,18 +49,18 @@ class ApiCalls extends React.Component{
         values.push(maximum)
       }
     }
+
+    if(this.state.next === 'none'){
+      this.onePageOfResults()
+    }
     // Checks whether api function has finished calling
     //  each page, triggers next function if so:
-    if(values.includes(this.state.call)) {
+    if(this.state.call === this.state.maxCalls || this.state.finish) {
       this.finishedHandler()
-    }else{
+    }else if(this.state.next !== 'none'){
       this.apiCall()
     }
-    // Marks the component as finished with its calls:
-    if(this.state.call_over === true){
-      console.log("finished")
-      this.finishedHandler()
-    }
+
  }
 
 // Calls first api 10 times (allowance is 10 hits per minute),
@@ -70,12 +73,12 @@ class ApiCalls extends React.Component{
 
     if(this.state.next === 'first'){
       var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&app_id=f70ab024&app_key=ac8f093ed1576baa704c95c1df284d3f&field=label`
-
+      console.log("test_url: " + url)
     }else{
       var url = this.state.next
+      console.log("this url: " + url)
     }
     num += 1
-
     fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -89,7 +92,40 @@ class ApiCalls extends React.Component{
           call: num
         })
     })
+    .catch(error => {
+      console.log("api call error: " + error)
+      this.setState({
+        call: 0,
+        maxCalls: 1,
+        next: 'none',
+      })
+    });
+}
+
+
+// In case only 1 page of results (executes after catch statement in apiCall() sets next:'none'):
+  onePageOfResults(){
+    var keywords = this.state.keywords
+    if(this.state.next === 'none'){
+      var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&app_id=f70ab024&app_key=ac8f093ed1576baa704c95c1df284d3f&field=label`
+      fetch(url)
+      .then(response => response.json())
+      .then(data => {
+          this.setState({
+            fResponse: [
+              ...this.state.fResponse,
+              data
+            ],
+            count: data['count'],
+            finish: true
+          })
+      })
+      .catch(error => {
+        console.log("Single page error: " + error)
+      })
   }
+}
+
 
 
 // Passes back the recipe url list to the
@@ -98,11 +134,12 @@ class ApiCalls extends React.Component{
     var initial = this.state.fResponse
     this.props.passDataBack(initial)
     this.setState({
-      call_over: true
+      finish: false
     })
   }
 
   render(){
+
     return(
             <View>
               <Text></Text>

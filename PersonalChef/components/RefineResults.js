@@ -7,10 +7,11 @@ const RefineResults = props => {
 
   console.log("refining")
 
-  var response_list = props.recipeResponseList
+  var response_list = props.thisRoundResponseList
   var length = response_list.length
   var filtered_results = []
-
+  console.log("response_list.length: " + response_list.length)
+  
  // filter out dishes that take too long to make:
   var max_time = props.maxTime
   var i
@@ -21,6 +22,7 @@ const RefineResults = props => {
           response_list.splice(i,1);
           length = response_list.length
           i--;
+          console.log("not enough time")
         }
     }catch(error){
         console.log(i + ": times error: " + error);
@@ -29,37 +31,34 @@ const RefineResults = props => {
   }
 
 // filter out recipes which contain more ingredients than user has:
-  var length = response_list.length
-  var max_ingredients = props.maxIngredients
-  var j
-  for(j=0;j<length;j++){
-    try{
-        var recipe_ings = response_list[j]['recipe']['ingredients']
-        var ingredient_list_length = recipe_ings.length
-        if(ingredient_list_length > max_ingredients){
-          response_list.splice(j,1)
-          length = response_list.length
-          j--;
-        }
-    }catch(error){
-        console.log(j + ": ingredient count error: " + error)
-        response_list.splice(j,1)
-    }
-  }
 
-  filtered_results = response_list
+
+  // var length = response_list.length
+  // var max_ingredients = props.maxIngredients
+  // var j
+  // for(j=0;j<length;j++){
+  //   try{
+  //       var recipe_ings = response_list[j]['recipe']['ingredients']
+  //       var ingredient_list_length = recipe_ings.length
+  //       if(ingredient_list_length > max_ingredients){
+  //         response_list.splice(j,1)
+  //         length = response_list.length
+  //         j--;
+  //         console.log("not enough ingredients")
+  //       }
+  //   }catch(error){
+  //       console.log(j + ": ingredient count error: " + error)
+  //       response_list.splice(j,1)
+  //   }
+  // }
+  //
+  // console.log("*** response_list.length: " + response_list.length)
+
+  props.filteredResults(response_list)
 
   return(
           <View>
-              <Text accessible={true}
-                    accessibilityLabel= "Search is complete"
-                    accessibilityRole="text"
-                    style={styles.mainTitle}>Complete!</Text>
-              <Pressable onPress={() => props.getFilteredRecipes(filtered_results)}>
-                  <Text accessible={true} accessibilityLabel="Go to your recipes"
-                    accessibilityRole="button"
-                    style={styles.greenButton}>See your recipes</Text>
-              </Pressable>
+              <Text></Text>
           </View>
         );
 
