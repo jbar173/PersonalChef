@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button, Pressable, Linking, SafeAreaView, Scrol
 import { NativeRouter, Route, Link } from "react-router-native";
 import { RefineResults } from './RefineResults.js';
 import { ApiCalls } from './ApiCalls.js';
-import { Searching, Loading } from "./Animations.js";
+import { SearchingPage, LoadingPage } from "./Animations.js";
 
 
 class RecipeResults extends React.Component {
@@ -253,7 +253,7 @@ class RecipeResults extends React.Component {
                             maxIngredients={this.state.initialData.ingredientCount}/>
                         }
 
-                        {display_animation && <Loading />}
+                        {display_animation && <LoadingPage />}
 
                   </View>
                 )
@@ -299,7 +299,7 @@ class RecipeResults extends React.Component {
                             </Link>
                         </Pressable>
 
-                        {display_animation && <Loading />}
+                        {display_animation && <LoadingPage />}
 
                    </View>
                  )

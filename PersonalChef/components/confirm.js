@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable } from 'react-native';
 import { NativeRouter, Route, Link, Redirect } from "react-router-native";
-import { Searching } from "./Animations.js";
+import { SearchingPage } from "./Animations.js";
 import { ApiCalls } from './ApiCalls.js';
 
 
@@ -129,7 +129,7 @@ class ConfirmList extends React.Component {
             (
                   <View>
 
-                      <Searching />
+                      <SearchingPage />
 
                       {call_api === true && <ApiCalls
                         keywords={this.state.initialData.ingredients}
