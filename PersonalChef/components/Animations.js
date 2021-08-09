@@ -1,92 +1,91 @@
 import React from 'react';
-import { StyleSheet, Text, View, Animated } from 'react-native';
+import { StyleSheet, Text, View, Animated, Easing } from 'react-native';
 
 
 
 class ThreeDots extends React.Component{
     constructor(props){
       super(props);
-      this.state ={
-        count:0,
-      }
-      this.opacity = new Animated.Value(0);
-      this.opacityOne = new Animated.Value(0);
-      this.opacityTwo = new Animated.Value(0);
+
+      this.opacity = new Animated.Value(0.01);
+      this.opacityOne = new Animated.Value(0.01);
+      this.opacityTwo = new Animated.Value(0.01);
 
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
 
-      this.firstDotAnimation = this.firstDotAnimation.bind(this)
-      this.secondDotAnimation = this.secondDotAnimation.bind(this)
-      this.thirdDotAnimation = this.thirdDotAnimation.bind(this)
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(this.opacity, {
+            duration: 1000,
+            toValue: 1,
+            easing: Easing.linear,
+            useNativeDriver: false,
+          }),
+          Animated.delay(2000),
+          Animated.timing(this.opacity, {
+            duration: 0,
+            toValue: 0,
+            easing: Easing.linear,
+            useNativeDriver: false,
+          }),
+        ]),
+      ).start(),
+
+
+      Animated.loop(
+        Animated.sequence([
+          Animated.delay(1000),
+          Animated.timing(this.opacityOne, {
+            duration: 1000,
+            toValue: 1,
+            easing: Easing.linear,
+            useNativeDriver: false,
+          }),
+          Animated.delay(994),
+          Animated.timing(this.opacityOne, {
+            duration: 0,
+            toValue: 0,
+            easing: Easing.linear,
+            useNativeDriver: false,
+          }),
+        ]),
+        ).start(),
+
+
+      Animated.loop(
+        Animated.sequence([
+          Animated.delay(2000),
+          Animated.timing(this.opacityTwo, {
+            duration: 1000,
+            toValue: 1,
+            easing: Easing.linear,
+            useNativeDriver: false
+          }),
+          Animated.timing(this.opacityTwo, {
+            duration: 0,
+            toValue: 0,
+            easing: Easing.linear,
+            useNativeDriver: false,
+          }),
+        ]),
+        ).start()
 
     };
 
 
   componentDidMount(){
-    console.log("ThreeDots mounted")
-    this.firstDotAnimation()
-    this.secondDotAnimation()
-    this.thirdDotAnimation()
-  }
-
-
-  componentDidUpdate(){
-    console.log("ThreeDots updated")
-  }
-
-
-  firstDotAnimation(){
-    return(
-              Animated.loop(
-                Animated.sequence([
-                  Animated.timing(this.opacity, {
-                    duration: 500,
-                    toValue: 1,
-                    useNativeDriver: false,
-                  }),
-                  Animated.delay(1500),
-                ]),
-              ).start()
-          );
+      console.log("ThreeDots mounted")
     }
 
 
-  secondDotAnimation(){
-    return(
-              Animated.loop(
-                Animated.sequence([
-                  Animated.delay(750),
-                  Animated.timing(this.opacityOne, {
-                    duration: 500,
-                    toValue: 1,
-                    useNativeDriver: false,
-                  }),
-                  Animated.delay(750)
-                ]),
-              ).start()
-          );
-      }
-
-
-  thirdDotAnimation(){
-    return(
-              Animated.loop(
-                Animated.sequence([
-                  Animated.delay(1500),
-                  Animated.timing(this.opacityTwo, {
-                    duration: 500,
-                    toValue: 1,
-                    useNativeDriver: false
-                  }),
-                ]),
-              ).start()
-          );
-      }
+  componentDidUpdate(){
+      console.log("ThreeDots updated")
+    }
 
 
   render(){
-    console.log("rendered")
+      console.log("rendered")
 
       return(
               <View style={{display:'flex'}}>
@@ -145,7 +144,8 @@ class SearchingPage extends React.Component{
       return(
               <View style={{display:'flex'}}>
                 <View style={{flexWrap:"wrap", flexDirection:"row"}}>
-                    <Text style={{fontSize:30}}>Searching</Text>
+                    <Text accessibilityLabel="Searching" accessibilityHint="Loading page"
+                     style={{fontSize:30}}>Searching</Text>
                     <ThreeDots />
                 </View>
               </View>
@@ -175,8 +175,9 @@ class LoadingPage extends React.Component{
 
       return(
               <View style={{display:'flex'}}>
-                <View style={{flexFlow:"row wrap"}}>
-                    <Text style={{fontSize:30}}>Loading</Text>
+                <View style={{flexWrap:"wrap", flexDirection:"row"}}>
+                    <Text accessibilityLabel="Loading" accessibilityHint="Loading page"
+                     style={{fontSize:30}}>Loading</Text>
                     <ThreeDots />
                 </View>
               </View>

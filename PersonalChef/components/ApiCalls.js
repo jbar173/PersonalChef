@@ -15,20 +15,27 @@ class ApiCalls extends React.Component{
       call_over: false,
       finish: false
     },
+    this.abortController = new AbortController()
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
     this.apiCall = this.apiCall.bind(this)
     this.onePageOfResults = this.onePageOfResults.bind(this)
     this.finishedHandler = this.finishedHandler.bind(this)
   };
+
 
   componentDidMount(){
     console.log("Api component mounted")
     this.apiCall()
   }
 
+  componentWillUnmount(){
+    console.log("Api component unmounted")
+    this.abortController.abort()
+  }
+
   componentDidUpdate(){
-    // console.log("this.state.next: " + this.state.next)
     console.log("this.state.count: " + this.state.count)
 
     if(this.state.maxCalls !== null){
@@ -79,7 +86,7 @@ class ApiCalls extends React.Component{
       console.log("this url: " + url)
     }
     num += 1
-    fetch(url)
+    fetch(url, { signal: this.abortController.signal } )
     .then(response => response.json())
     .then(data => {
         this.setState({
@@ -108,7 +115,7 @@ class ApiCalls extends React.Component{
     var keywords = this.state.keywords
     if(this.state.next === 'none'){
       var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&app_id=f70ab024&app_key=ac8f093ed1576baa704c95c1df284d3f&field=label`
-      fetch(url)
+      fetch(url, { signal: this.abortController.signal } )
       .then(response => response.json())
       .then(data => {
           this.setState({
@@ -125,7 +132,6 @@ class ApiCalls extends React.Component{
       })
   }
 }
-
 
 
 // Passes back the recipe url list to the
@@ -146,7 +152,6 @@ class ApiCalls extends React.Component{
             </View>
          );
    }
-
 };
 
 export { ApiCalls };

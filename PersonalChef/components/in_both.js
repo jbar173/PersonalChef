@@ -94,24 +94,27 @@ class DryIngredientsList extends React.Component {
 
                   <DryIngredientsChecklist updateListHandler={this.updateListHandler} />
 
-                  <Link style={{marginTop:30}} to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                     style={styles.blueButton}>Next</Text>
+                  <Link style={{marginTop:30}} to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                   underlayColor="transparent">
+                      <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                       style={styles.blueButton}>Next</Text>
                   </Link>
 
                   {recipe_type === "dessert" || either === true ?
 
                     (
-                      <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                        <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                          style={styles.blueButton}>Back</Text>
+                      <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                       underlayColor="transparent">
+                          <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                            style={styles.blueButton}>Back</Text>
                       </Link>
                     )
                     :
                     (
-                      <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                        <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                         style={styles.blueButton}>Back</Text>
+                      <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                       underlayColor="transparent">
+                          <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                           style={styles.blueButton}>Back</Text>
                       </Link>
                     )
 
@@ -208,11 +211,13 @@ class WetIngredientsList extends React.Component {
 
                 <WetIngredientsChecklist updateListHandler={this.updateListHandler} />
 
-                <Link style={{marginTop:30}} to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button" style={styles.blueButton}>Next</Text>
+                <Link style={{marginTop:30}} to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                 underlayColor="transparent">
+                   <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button" style={styles.blueButton}>Next</Text>
                 </Link>
-                <Link to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button" style={styles.blueButton}>Back</Text>
+                <Link to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                 underlayColor="transparent">
+                   <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button" style={styles.blueButton}>Back</Text>
                 </Link>
           </ScrollView>
         </SafeAreaView>
@@ -305,13 +310,15 @@ class FruitAndVegList extends React.Component {
 
                   <FruitAndVegChecklist updateListHandler={this.updateListHandler} />
 
-                  <Link style={{marginTop:30}} to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                      style={styles.blueButton}>Next</Text>
+                  <Link style={{marginTop:30}} to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                   underlayColor="transparent">
+                      <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                        style={styles.blueButton}>Next</Text>
                   </Link>
-                  <Link to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                     style={styles.blueButton}>Back</Text>
+                  <Link to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                   underlayColor="transparent">
+                      <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                       style={styles.blueButton}>Back</Text>
                   </Link>
             </ScrollView>
           </SafeAreaView>
@@ -404,13 +411,15 @@ class HerbsAndSpicesList extends React.Component {
 
                   <HerbsAndSpicesChecklist updateListHandler={this.updateListHandler} />
 
-                  <Link style={{marginTop:30}} to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                     style={styles.blueButton}>Next</Text>
+                  <Link style={{marginTop:30}} to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                   underlayColor="transparent">
+                      <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                       style={styles.blueButton}>Next</Text>
                   </Link>
-                  <Link to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                     style={styles.blueButton}>Back</Text>
+                  <Link to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                   underlayColor="transparent">
+                      <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                       style={styles.blueButton}>Back</Text>
                   </Link>
             </ScrollView>
           </SafeAreaView>
@@ -503,13 +512,15 @@ class TinnedGoodsList extends React.Component {
 
                 <TinnedChecklist updateListHandler={this.updateListHandler} />
 
-                <Link style={{marginTop:30}} to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                   style={styles.blueButton}>Next</Text>
+                <Link style={{marginTop:30}} to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                 underlayColor="transparent">
+                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                     style={styles.blueButton}>Next</Text>
                 </Link>
-                <Link to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                  <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                   style={styles.blueButton}>Back</Text>
+                <Link to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                 underlayColor="transparent">
+                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                     style={styles.blueButton}>Back</Text>
                 </Link>
           </ScrollView>
         </SafeAreaView>

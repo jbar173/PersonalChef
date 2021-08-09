@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable, SafeAreaView, ScrollView } from 'react-native';
 import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { SearchingPage } from "./Animations.js";
 import { ApiCalls } from './ApiCalls.js';
@@ -24,6 +24,7 @@ class ConfirmList extends React.Component {
 
       apiCall: false,
       timerStarted: false,
+      foundResults: true,
 
       firstResponse: [],
       redirect: false,
@@ -34,7 +35,6 @@ class ConfirmList extends React.Component {
     this.populateInitialData = this.populateInitialData.bind(this)
     this.startStopwatch = this.startStopwatch.bind(this)
     this.apiCallFinished = this.apiCallFinished.bind(this)
-
   };
 
   componentDidMount(){
@@ -61,16 +61,26 @@ class ConfirmList extends React.Component {
   startStopwatch(){
     console.log("starting stopwatch")
     // After a minute, set timerStarted to false
-    // and redirect to true
+    // and redirect to true (if response count > 0)
     var cmponent = this
     setTimeout(function(){
       console.log("stopwatch finished")
-      cmponent.setState({
-        timerStarted: false,
-        redirect: true
-      })
+      if(cmponent.state.firstResponse != undefined){
+          if(cmponent.state.firstResponse[0]['count'] == 0){
+            cmponent.setState({
+              timerStarted: false,
+              foundResults: false
+            })
+          }else{
+            cmponent.setState({
+              timerStarted: false,
+              redirect: true
+            })
+          }
+      }else{
+        console.log("error")
+      }
     }, 30000)
-    // 180000000000
   }
 
   confirmIngredients(){
@@ -120,16 +130,23 @@ class ConfirmList extends React.Component {
     var timer_started = this.state.timerStarted
     var redirect = this.state.redirect
 
+    if(this.state.foundResults === false){
+      console.log("Count is 0, alter keywords")
+    }
+
     return(
 
-      <View>
+      <SafeAreaView style={styles.container}>
+        <ScrollView>
 
         {timer_started === true ?
 
             (
-                  <View>
+                  <View style={styles.loadingContainer}>
 
-                      <SearchingPage />
+                      <View style={{justifyContent:"center"}}>
+                        <SearchingPage />
+                      </View>
 
                       {call_api === true && <ApiCalls
                         keywords={this.state.initialData.ingredients}
@@ -168,9 +185,10 @@ class ConfirmList extends React.Component {
                          style={styles.blueButton}>Confirm</Text>
                       </Pressable>
 
-                      <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                        <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                          style={styles.blueButton}>Back</Text>
+                      <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                       underlayColor="transparent">
+                          <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                            style={styles.blueButton}>Back</Text>
                       </Link>
 
                       {redirect === true && <Redirect to={{ pathname:'/results-initial/',
@@ -179,10 +197,11 @@ class ConfirmList extends React.Component {
 
                    </View>
 
-                )
-            }
+              )
+          }
 
-      </View>
+        </ScrollView>
+      </SafeAreaView>
 
     );
   }
@@ -194,9 +213,20 @@ class ConfirmList extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingVertical: 20,
+    paddingHorizontal:20,
+  },
+  loadingContainer: {
+    flex: 1,
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 280,
+    paddingVertical: 20,
+    paddingRight:20,
+    paddingLeft: 30,
   },
   mediTitle: {
     fontSize:24,

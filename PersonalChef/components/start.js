@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, TouchableHighlight, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableHighlight, TouchableOpacity, TextInput } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
 
 
@@ -18,12 +18,12 @@ class HomePage extends React.Component {
             <Text accessible={true} accessibilityLabel="Welcome to PersonalChef" accessibilityRole="text"
              style={styles.mainTitle}>PersonalChef</Text>
 
-            <TouchableHighlight underlayColor="white">
+            <TouchableOpacity activeOpacity={1} underlayColor="transparent">
                 <Link accessible={true} accessibilityLabel="Find a recipe for your ingredients"
-                  accessibilityRole="button" to="/type-time/" >
+                  accessibilityRole="button" to="/type-time/" underlayColor="transparent" >
                    <Text style={styles.greenButton}>Find a recipe for your ingredients</Text>
                 </Link>
-            </TouchableHighlight>
+            </TouchableOpacity>
 
         </View>
       );
@@ -227,25 +227,27 @@ class TimeAndType extends React.Component {
                               <Text accessible={true} accessibilityLabel="What type of meal are you looking for?" accessibilityRole="text"
                                 style={{marginBottom:30,marginTop:40,textAlign:"center"}}>What type of meal are you looking for?</Text>
 
-                                    <TouchableHighlight accessible={true} accessibilityLabel="Dessert" accessibilityRole="button"
+                                    <TouchableOpacity accessible={true} accessibilityLabel="Dessert" accessibilityRole="button"
                                       underlayColor="white" onPress={() => this.radioButtonPressedHandler("dessert")}>
                                         <Text style={styles.blueButton}>Dessert</Text>
-                                    </TouchableHighlight>
+                                    </TouchableOpacity>
 
-                                    <TouchableHighlight accessible={true} accessibilityLabel="Starter or Main" accessibilityRole="button"
+                                    <TouchableOpacity accessible={true} accessibilityLabel="Starter or Main" accessibilityRole="button"
                                        underlayColor="white" onPress={() => this.radioButtonPressedHandler("other")}>
                                       <Text style={styles.blueButton}>Starter or Main</Text>
-                                    </TouchableHighlight>
+                                    </TouchableOpacity>
 
-                                    <TouchableHighlight accessible={true} accessibilityLabel="Either" accessibilityRole="button"
+                                    <TouchableOpacity accessible={true} accessibilityLabel="Either" accessibilityRole="button"
                                        underlayColor="white" onPress={() => this.radioButtonPressedHandler("both")}>
                                       <Text style={styles.blueButton}>Either</Text>
-                                    </TouchableHighlight>
+                                    </TouchableOpacity>
 
-                                    <TouchableHighlight accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                    <TouchableOpacity accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                                       underlayColor="white">
-                                          <Link style={{marginTop:90}} to="/"><Text style={styles.blueButton}>Back</Text></Link>
-                                    </TouchableHighlight>
+                                          <Link style={{marginTop:90}} to="/" underlayColor="transparent">
+                                            <Text style={styles.blueButton}>Back</Text>
+                                          </Link>
+                                    </TouchableOpacity>
 
                           </View>
                        )
@@ -282,12 +284,14 @@ class TimeAndType extends React.Component {
 
                                                   (
                                                     <View>
-                                                        <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, times: times } }} >
-                                                           <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
-                                                            accessibilityRole="button" style={styles.greenButton}>Dessert ingredients</Text>
+                                                        <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, times: times } }}
+                                                          underlayColor="transparent">
+                                                             <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
+                                                              accessibilityRole="button" style={styles.greenButton}>Dessert ingredients</Text>
                                                         </Link>
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/"><Text style={styles.blueButton}>Back</Text>
+                                                          style={{marginTop:90}} to="/" underlayColor="transparent">
+                                                             <Text style={styles.blueButton}>Back</Text>
                                                         </Link>
                                                     </View>
                                                   )
@@ -296,7 +300,7 @@ class TimeAndType extends React.Component {
 
                                                   (
                                                     <View>
-                                                        <TouchableHighlight underlayColor="white" nPress={() => this.setState({ showInvalid: true })}>
+                                                        <TouchableHighlight underlayColor="none" onPress={() => this.setState({ showInvalid: true })}>
                                                             <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
                                                               accessibilityRole="button" style={styles.greenButton}>Dessert ingredients</Text>
                                                         </TouchableHighlight>
@@ -305,7 +309,8 @@ class TimeAndType extends React.Component {
                                                          accessibilityRole="alert" style={styles.red}>Please enter times above</Text>}
 
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/"><Text style={styles.blueButton}>Back</Text>
+                                                          style={{marginTop:90}} to="/" underlayColor="transparent">
+                                                             <Text style={styles.blueButton}>Back</Text>
                                                         </Link>
                                                     </View>
                                                   )
@@ -323,12 +328,14 @@ class TimeAndType extends React.Component {
                                                   (
                                                     <View>
                                                         <Link accessible={true} accessibilityLabel="Go to savoury ingredients" accessibilityRole="button"
-                                                          to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, times: times } }} >
-                                                          <Text accessible={true} accessibilityLabel="Go to savoury ingredients"
-                                                            style={styles.greenButton}>Savoury ingredients</Text>
+                                                          to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, times: times } }}
+                                                          underlayColor="transparent" >
+                                                            <Text accessible={true} accessibilityLabel="Go to savoury ingredients"
+                                                              style={styles.greenButton}>Savoury ingredients</Text>
                                                         </Link>
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/"><Text style={styles.blueButton}>Back</Text>
+                                                          style={{marginTop:90}} to="/" underlayColor="transparent">
+                                                            <Text style={styles.blueButton}>Back</Text>
                                                         </Link>
                                                     </View>
                                                   )
@@ -344,7 +351,8 @@ class TimeAndType extends React.Component {
                                                           accessibilityRole="alert" style={styles.red}>Please enter times above</Text>}
 
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/"><Text style={styles.blueButton}>Back</Text>
+                                                          style={{marginTop:90}} to="/" underlayColor="transparent">
+                                                            <Text style={styles.blueButton}>Back</Text>
                                                         </Link>
                                                     </View>
                                                   )
@@ -373,6 +381,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingVertical: 20,
   },
   mainTitle: {
     fontSize:28,

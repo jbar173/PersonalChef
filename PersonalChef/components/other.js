@@ -106,15 +106,17 @@ class MeatIngredientsList extends React.Component {
 
                   <MeatChecklist updateListHandler={this.updateListHandler} />
 
-                  <Link style={{marginTop:30}} to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }} >
-                     <Text accessible={true} accessibilityLabel="Next page"
-                      accessibilityRole="button" style={styles.greenButton}>Next
-                     </Text>
+                  <Link style={{marginTop:30}} to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                   underlayColor="transparent">
+                       <Text accessible={true} accessibilityLabel="Next page"
+                        accessibilityRole="button" style={styles.greenButton}>Next
+                       </Text>
                   </Link>
-                  <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                    <Text accessible={true} accessibilityLabel="Go back"
-                      accessibilityRole="button" style={styles.blueButton}>Back
-                    </Text>
+                  <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                   underlayColor="transparent">
+                      <Text accessible={true} accessibilityLabel="Go back"
+                        accessibilityRole="button" style={styles.blueButton}>Back
+                      </Text>
                   </Link>
 
             </ScrollView>
@@ -213,24 +215,28 @@ class FishIngredientsList extends React.Component {
 
                       (
                         <View>
-                            <Link style={{marginTop:30}} to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }} >
+                            <Link style={{marginTop:30}} to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                             underlayColor="transparent">
                                <Text accessible={true} accessibilityLabel="Next page"
                                  accessibilityRole="button" style={styles.greenButton}>Next</Text>
                             </Link>
-                            <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                              <Text accessible={true} accessibilityLabel="Go back"
-                                accessibilityRole="button" style={styles.blueButton}>Back</Text>
+                            <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                             underlayColor="transparent">
+                                <Text accessible={true} accessibilityLabel="Go back"
+                                  accessibilityRole="button" style={styles.blueButton}>Back</Text>
                             </Link>
                         </View>
                       )
                       :
                       (
                         <View>
-                            <Link style={{marginTop:30}} to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds} }} >
+                            <Link style={{marginTop:30}} to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds} }}
+                             underlayColor="transparent">
                                 <Text accessible={true} accessibilityLabel="Next page"
                                   accessibilityRole="button" style={styles.greenButton}>Next</Text>
                             </Link>
-                            <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                            <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                             underlayColor="transparent">
                               <Text accessible={true} accessibilityLabel="Go back"
                                 accessibilityRole="button" style={styles.blueButton}>Back</Text>
                             </Link>

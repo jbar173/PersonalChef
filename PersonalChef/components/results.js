@@ -19,7 +19,6 @@ class RecipeResults extends React.Component {
         },
         both: false,
 
-        checked: false,
         callIndividual: false,
         thirtyTimerStarted: false,
         sixtyTimerStarted: false,
@@ -68,7 +67,8 @@ class RecipeResults extends React.Component {
       both: either,
       firstResponse: first_response,
       populateLinksList: true,
-      thirtyTimerStarted: true
+      thirtyTimerStarted: true,
+      displayAnimation: true
     })
   }
 
@@ -90,14 +90,19 @@ class RecipeResults extends React.Component {
           callIndividual: false
         })
      }
-    if(this.state.nextRound && this.state.sixtyTimerStarted){
-      console.log("3")
+     if(this.state.nextRound && this.state.sixtyTimerStarted && this.state.displayAnimation){
+       console.log("3")
+       console.log("waiting...")
+     }
+    if(this.state.nextRound && this.state.sixtyTimerStarted && this.state.displayAnimation === false){
+      console.log("4")
       console.log("waiting...")
-      // this.setState({ displayAnimation: true }) ?
+      this.setState({ displayAnimation: true })
     }
     if(this.state.nextRound && this.state.sixtyTimerStarted === false){
       console.log("4")
       this.getNextRound()
+      this.setState({ displayAnimation: false })
     }
   }
 
@@ -129,9 +134,11 @@ class RecipeResults extends React.Component {
     var url_list = this.state.recipeLinksList
     var round = this.state.round
     var first_index = round
+    console.log("first_index: " + first_index)
     var last_index = round+9
+    console.log("last_index: " + last_index)
     var this_round = url_list.slice(first_index,last_index)
-    // console.log("this_round.length: " + this_round.length)
+    console.log("this_round.length: " + this_round.length)
 
     for(link in this_round){
       var url = `${this_round[link]}`
@@ -155,7 +162,8 @@ class RecipeResults extends React.Component {
       })
      }
    this.setState({
-     sixtyTimerStarted: true
+     sixtyTimerStarted: true,
+     round:last_index+1
    })
    this.startSixtyStopwatch()
  }
@@ -167,6 +175,7 @@ class RecipeResults extends React.Component {
      console.log("30 sec stopwatch finished")
      cmponent.setState({
        thirtyTimerStarted: false,
+       displayAnimation: false
      })
    }, 30000)
  }
@@ -234,6 +243,7 @@ class RecipeResults extends React.Component {
     var start_refine = this.state.startRefine
     var display_animation = this.state.displayAnimation
 
+
     return(
 
       <SafeAreaView style={styles.container}>
@@ -242,9 +252,7 @@ class RecipeResults extends React.Component {
             { filtered === false ?
 
                 (
-                  <View style={styles.container}>
-
-                        <Text>Filtering..</Text>
+                  <View style={styles.loadingContainer}>
 
                         {start_refine === true && <RefineResults
                             filteredResults={this.getFilteredRecipes}
@@ -253,7 +261,9 @@ class RecipeResults extends React.Component {
                             maxIngredients={this.state.initialData.ingredientCount}/>
                         }
 
-                        {display_animation && <LoadingPage />}
+                        <View style={styles.loadingContainer}>
+                          {display_animation && <LoadingPage />}
+                        </View>
 
                   </View>
                 )
@@ -295,11 +305,14 @@ class RecipeResults extends React.Component {
                         <Pressable style={styles.blueButton}>
                             <Link accessible={true} accessibilityLabel= "Start again"
                                 accessibilityHint="Click button to go back to homepage"
-                                to="/" accessibilityRole="button"><Text>Start again</Text>
+                                to="/" accessibilityRole="button" underlayColor="transparent">
+                                    <Text>Start again</Text>
                             </Link>
                         </Pressable>
 
-                        {display_animation && <LoadingPage />}
+                        <View style={styles.loadingContainer}>
+                          {display_animation && <LoadingPage />}
+                        </View>
 
                    </View>
                  )
@@ -324,6 +337,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingVertical: 20,
+    paddingHorizontal:20,
+  },
+  loadingContainer: {
+    flex: 1,
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 150,
+    paddingVertical: 20,
+    paddingRight:20,
+    paddingLeft: 30,
   },
   mediTitle: {
     fontSize:24,

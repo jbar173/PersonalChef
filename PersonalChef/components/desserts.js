@@ -110,7 +110,8 @@ class ConfectionaryIngredientsList extends React.Component {
 
                   <ConfectionaryChecklist updateListHandler={this.updateListHandler} />
 
-                  <Link style={{marginTop:30}} to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
+                  <Link style={{marginTop:30}} to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                   underlayColor="transparent">
                       <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
                       style={styles.blueButton}>Next</Text>
                   </Link>
@@ -118,18 +119,20 @@ class ConfectionaryIngredientsList extends React.Component {
                   {recipe_type === "dessert" ?
 
                       (
-                        <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                          <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                          style={styles.blueButton}>Back</Text>
+                        <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                         underlayColor="transparent">
+                            <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                            style={styles.blueButton}>Back</Text>
                         </Link>
                       )
 
                       :
 
                       (
-                        <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}>
-                          <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                          style={styles.blueButton}>Back</Text>
+                        <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                         underlayColor="transparent">
+                            <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                            style={styles.blueButton}>Back</Text>
                         </Link>
                       )
 
