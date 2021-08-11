@@ -258,7 +258,8 @@ class RecipeResults extends React.Component {
                             filteredResults={this.getFilteredRecipes}
                             thisRoundResponseList={this.state.thisRoundResponseList}
                             maxTime={this.state.initialData.time}
-                            maxIngredients={this.state.initialData.ingredientCount}/>
+                            maxIngredients={this.state.initialData.ingredientCount}
+                            userIngredients={this.state.initialData.ingredients}/>
                         }
 
                         <View style={styles.loadingContainer}>

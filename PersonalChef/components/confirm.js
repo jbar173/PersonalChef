@@ -70,7 +70,7 @@ class ConfirmList extends React.Component {
             cmponent.setState({
               timerStarted: false,
               foundResults: false
-            })
+            }) // If foundResults is false, trigger AlterKeywords
           }else{
             cmponent.setState({
               timerStarted: false,
