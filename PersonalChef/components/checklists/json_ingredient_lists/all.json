@@ -1,0 +1,61 @@
+{
+    "name": "all_ingredients",
+    "children": [
+        {
+            "name": "test",
+            "count": "0"
+        },
+        {
+            "name": "bacon",
+            "count": "2"
+        },
+        {
+            "name": "skittles",
+            "count": "3"
+        },
+        {
+            "name": "eggs",
+            "count": "4"
+        },
+        {
+            "name": "orange",
+            "count": "1"
+        },
+        {
+            "name": "lemon",
+            "count": "1"
+        },
+        {
+            "name": "lime",
+            "count": "1"
+        },
+        {
+            "name": "apple",
+            "count": "1"
+        },
+        {
+            "name": "noodles",
+            "count": "2"
+        },
+        {
+            "name": "chips",
+            "count": "1"
+        },
+        {
+            "name": "steak",
+            "count": "2"
+        },
+        {
+            "name": "salmon",
+            "count": "1"
+        },
+        {
+            "name": "haddock",
+            "count": "1"
+        },
+        {
+            "name": "white chocolate",
+            "count": "1"
+        }
+    ]
+}

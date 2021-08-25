@@ -1,8 +1,9 @@
 import React from 'react';
-// import cleaned_ingredients from get_common_ingredients.py
+import * as data from './checklists/json_ingredient_lists/all.json';
+import { StyleSheet, Text, Pressable, View } from 'react-native';
 
 
-class GetLowestRanked extends React.Component {
+class RankedDict extends React.Component {
     constructor(props){
       super(props);
       this.state = {
@@ -10,52 +11,51 @@ class GetLowestRanked extends React.Component {
           "ingredients": [],
           "ingredientCount": 0,
         },
-      }
-      const Ranks = {
-        '1': 'salt',
-        '2': 'pepper',
-        '3': 'onion',
-        '4': 'stock',
-      }
+        ranked_ingredients: {},
+      },
       this.componentDidMount = this.componentDidMount.bind(this)
-      this.countIngredientOccurences = this.countIngredientOccurences.bind(this)
+      this.sortByCountFunction = this.sortByCountFunction.bind(this)
    };
 
   componentDidMount(){
     console.log("Ranked ingredients mounted")
-    // setstate of ingredients as cleaned_ingredients (from python file)
-    this.countIngredientOccurences()
+    var ingrs_json = data.children
+    var ranked_ingrs =  ingrs_json.sort(this.sortByCountFunction);
+    this.setState({
+      ranked_ingredients:ranked_ingrs,
+    })
+  }
+
+  sortByCountFunction(a,b){
+    if (a.count < b.count) {
+        return 1;
+    }
+    if (a.count > b.count) {
+        return -1;
+    }
+    return 0;
   }
 
 
-  countIngredientOccurences(){
-    var list = this.state.ingredients
-    var already_found = {}
-    var length = list.length
-    var found = false
-    var i
-    for(i=0;i<length;i++){
-      var item = list[i]
-      for([key,value] of Object.entries(already_found)){
-        if(key === item){
-          value++
-          found = true
-          break;
-        }
-      }
-      if(found === true){
-        // pop item from list
-        i--
-      }else{
-        already_found.`${item}` = 1
-        // pop item from list
-        i--
-      }
-    }
-      //
+ render(){
+   var length = this.state.ranked_ingredients.length
 
-    }
+   return(
+           <View>
+                 { length && <View>
+                                 {this.state.ranked_ingredients.map(function(item,index){
+                                     return(
+                                       <View key={item.count}>
+                                         <Text>{item.count}. {item.name}</Text>
+                                       </View>
+                                     )
+                                    }
+                                  )}
+                             </View>
+                  }
+            </View>
+          );
+   }
+};
 
- };
- 
-export { GetLowestRanked };
+export { RankedDict };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Pressable, SafeAreaView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
+import * as data from './json_ingredient_lists/conf.json';
 
 
 class ConfectionaryChecklist extends React.Component {
@@ -23,6 +24,7 @@ class ConfectionaryChecklist extends React.Component {
         "maltesers":false,
         "mini eggs": false,
       },
+      jsonFileList: {},
       updated:false,
       confirmedList:[],
       confirmed: false
@@ -34,9 +36,11 @@ class ConfectionaryChecklist extends React.Component {
 
   itemSelectedHandler(item){
     console.log("item (de)selected")
+    var json_list = data.confect
     var new_item = item
     new_item[1] = !new_item[1]
     this.setState({
+      jsonFileList: json_list,
       initialList: {
         ...this.state.initialList,
         [`${new_item[0]}`] : item[1],
@@ -115,7 +119,7 @@ class ConfectionaryChecklist extends React.Component {
                       }
                 </Pressable>
             </View>
-      </SafeAreaView>
+       </SafeAreaView>
     );
   }
 };

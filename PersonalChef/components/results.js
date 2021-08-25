@@ -299,15 +299,11 @@ class RecipeResults extends React.Component {
                            )
                          }
 
-                        <Pressable onPress={this.getNextRound} style={styles.blueButton}>
-                          <Text>Next page</Text>
-                        </Pressable>
-
                         <Pressable style={styles.blueButton}>
                             <Link accessible={true} accessibilityLabel= "Start again"
                                 accessibilityHint="Click button to go back to homepage"
-                                to="/" accessibilityRole="button" underlayColor="transparent">
-                                    <Text>Start again</Text>
+                                to="/ranked/" accessibilityRole="button" underlayColor="transparent">
+                                    <Text>Ranked Ingredients</Text>
                             </Link>
                         </Pressable>
 

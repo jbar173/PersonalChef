@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, TouchableHighlight, TouchableOpacity, TextInput } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableHighlight, TouchableOpacity, TextInput, Pressable } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
 
 
@@ -189,6 +189,13 @@ class TimeAndType extends React.Component {
             <View style={styles.container}>
 
                 <View>
+                        <Pressable style={styles.blueButton}>
+                            <Link accessible={true} accessibilityLabel= "Start again"
+                                accessibilityHint="Click button to go back to homepage"
+                                to="/ranked/" accessibilityRole="button" underlayColor="transparent">
+                                    <Text>Ranked Ingredients</Text>
+                            </Link>
+                        </Pressable>
 
                         <Text accessible={true} accessibilityLabel="How much time do you have?" accessibilityRole="text"
                           style={{marginBottom:20,marginTop:20}}>How much time do you have?</Text>
