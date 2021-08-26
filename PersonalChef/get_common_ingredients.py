@@ -114,15 +114,18 @@ def collect_ingredients():
         ingredients_list.pop(ind)
         ingredients_list.insert(ind,new_ingredient)
 
-    for word in ingredient:
-        word.lower()
+    for ingredient in ingredients_list:
+        new_ingredient = ingredient.lower()
+        ind = ingredients_list.index(ingredient)
+        ingredients_list.pop(ind)
+        ingredients_list.insert(ind,new_ingredient)
 
-    i=0
-    x=0
-    while i < 80:
-        print(f"{x} initial: '{ingredients_list[x]}'")
-        i += 1
-        x += 1
+    # i=0
+    # x=0
+    # while i < 80:
+    #     print(f"{x} initial: '{ingredients_list[x]}'")
+    #     i += 1
+    #     x += 1
 
     return ingredients_list;
 
@@ -131,7 +134,7 @@ def collect_ingredients():
 
 def clean_ingredients(ingredients):
 
-    if ingredients == 0:
+    if ingredients == [0, undefined, [], ]:
         print("Error - 0 ingredients passed in")
         return 0;
 
@@ -160,14 +163,14 @@ def clean_ingredients(ingredients):
     ' twenty ', ' thirty ', ' forty ', ' fifty ', ' sixty ', ' seventy ', ' eighty ', ' ninety ', ' one hundred ', ]
 
     fractions = [' whole ', ' half ', ' halves ', ' third ', ' thirds ', ' quarter ', ' quarters ', ' fifth ', ' fifths ',
-    ' eighth ', ' eighths ', '1/2', '1/3', '1/4', '1/5', '1/8',]
+    ' eighth ', ' eighths ', '1/2', '1/3', '1/4', '1/5', '1/8', '¼', '½', '¾', ]
 
     expression_one = '\d+[.0g,.0gs,.0grams,.0gram,.0oz,.0ozs,.0lb,.0lbs,.0kg,.0kgs,.0kilos,.0kilograms,.0cup,.0cups,.0tsp,.0tsps,.0teaspoon,.0teaspoons,.0tbsp,.0tbsps,.0tablespoon,.0tablespoons,.0ml,.0mls,.0ounce,.0ounces,.0pt,.0pts,.0qt,.0qts,.0fl,.0c,.0tbs,.0table,.0cm,.0cms,.0l,.0ls,.0inch,.0inches]'
     expression_two = '\d+[.g,.gs,.grams,.gram,.oz,.ozs,.lb,.lbs,.kg,.kgs,.kilos,.kilograms,.cup,.cups,.tsp,.tsps,.teaspoon,.teaspoons,.tbsp,.tbsps,.tablespoon,.tablespoons,.ml,.mls,.ounce,.ounces,.pt,.pts,.qt,.qts,.fl,.c,.tbs,.table,.cm,.cms,.l,.ls,.inch,.inches]'
     expression_three = '\d+[g,gs,grams,gram,oz,ozs,lb,lbs,kg,kgs,kilos,kilograms,cup,cups,tsp,tsps,teaspoon,teaspoons,tbsp,tbsps,tablespoon,tablespoons,ml,mls,ounce,ounces,pt,pts,qt,qts,fl,c,tbs,table,cm,cms,l,ls,inch,inches]'
 
-    other = [' de-stalked ', ' to taste ', ' sliced ', ' cleaned ', ' deshelled ', ' shell on ', ' shell off ',
-    ' shell on or off ', ' to serve ', ' chopped ', ' defrosted ', ' julienne ', ' unripe ', ' unriped ', ' unripened ', ' serve ',
+    other = [' de-stalked ', ' seeds removed ', ' to taste ', ' sliced ', ' cleaned ', ' deshelled ', ' shell on ', ' shell off ',
+    ' shell on or off ', ' grated zest ', ' to serve ', ' chopped ', ' defrosted ', ' julienne ', ' unripe ', ' unriped ', ' unripened ', ' serve ',
     ' premium ', ' quality ', ' optional ', ' finely ', ' roughly ', ' for garnish ', ' crushed ', ' buttered ', ' brushed ',
     ' garnish ', ' brush ', ' brushing ', ' extra ', ' plus ', ' zest ', ' zest and juice ', ' juice of ', ' juiced ', ' squeeze ',
     ' grate ', ' raw ', ' peeled ', ' peel ', ' made up to ', ' made ', ' remove ', ' removed ', ' unshelled ', ' preferably ',
@@ -196,10 +199,16 @@ def clean_ingredients(ingredients):
     ' heads ', ' lightly ', ' shells ', ' central ', " Patak's ", ' original ', ' Balti ', ' Korma ', ' skin ', ' pink skin ',
     ' knife ', ' thawed ', ' thaw ', ' whites ', ' greens ', ' save ', ' goes ', ' well ', ' budget ', ' range ', ' long-stem ', ' bashed ',
     ' bash ', ' smash ', ' smashed ', ' de-frosted ', ' ready-made ', ' ready made ', ' pre-cooked ', ' precooked ', ' skins ', ' bias ',
-    ' good-quality ', ]
+    ' good-quality ', ' tails ', ' note ', ' virgin ', ' white part ', ' green part ', ' green parts ', ' white parts ', ' bulb ',
+    ' scooped ', ]
 
     short = [' of ', ' x ', ' for ', ' each ', ' into ', ' if ', ' we ', ' you ', ' on ', ' but ', ' how ', ' it ', ' yes ', ' no ',
-    ' they ', ' are ', ' at ', ' an ', ' to ', ' off ', ' I ', ' their ', ' with ', ' both ',]
+    ' they ', ' are ', ' at ', ' an ', ' to ', ' off ', ' I ', ' their ', ' with ', ' both ', ' g ', ' kg ', ]
+
+    brands = [ ' ayam ', ' patak ', " patak's ",  ]
+
+    alt_codes = [ '☺', '☻', '♥', '♦', '♣', '♠', '•', '◘', '○', '◙', '♂', '♀', '♪', '♫', '☼', '►', '◄', '↕', '‼', '¶', '§', '▬', '↨',
+    '↑', '↓', '→', '←', '∟', '↔', '▲', '▼', ]
 
     emoji = '^(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])'
     symbols = [ emoji, ]
@@ -207,193 +216,202 @@ def clean_ingredients(ingredients):
     # squeezed if not after freshly, juice if before or after lime, lemon
     # replace eggwhite or egg white or egg yolk with egg
     # knock s off of tins, cans.
-
-    all_matches = []
-
-    for ingr in ingredients_list:
-        match = re.search(expression_one,ingr)
-        # print(f"match: '{match}'")
-
-        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_one,ingr)]
-        if len(match_indexes)>0:
-            # print(f"1 ingr: {ingr}")
-            first_start = match_indexes[0][0]
-            first_end = match_indexes[0][1] + 1
-            # print(f"1 ingr[first_start:first_end]: {ingr[first_start:first_end]}")
-            all_matches.append(match_indexes)
-        else:
-            all_matches.append('pass')
-
-    if len(all_matches) > 0:
-        for element in all_matches:
-            if element != 'pass':
-                x = all_matches.index(element)
-                match_ingredient = ingredients_list[x]
-                start = element[0][0]
-                end = element[0][1] + 1
-                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:]
-                # print(f"1. new_ingredient: '{new_ingredient}' ")
-                ingredients_list.pop(x)
-                ingredients_list.insert(x,new_ingredient)
-
-
-    all_matches = []
-
-    for ingr in ingredients_list:
-        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_two,ingr)]
-        if len(match_indexes)>0:
-            # print(f"2 ingr: {ingr}")
-            first_start = match_indexes[0][0]
-            first_end = match_indexes[0][1] + 1
-            # print(f"2 ingr[first_start:first_end]: {ingr[first_start:first_end]}")
-            all_matches.append(match_indexes)
-        else:
-            all_matches.append('pass')
-
-    if len(all_matches) > 0:
-        for element in all_matches:
-            if element != 'pass':
-                x = all_matches.index(element)
-                match_ingredient = ingredients_list[x]
-                start = element[0][0]
-                end = element[0][1] + 1
-                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:]
-                # print(f"2. new_ingredient: '{new_ingredient}' ")
-                ingredients_list.pop(x)
-                ingredients_list.insert(x,new_ingredient)
-
-
-    # look for above words/regex expressions first, delete them:
-
-    for word in quantities:
-        for ingr in ingredients_list:
-            if word in ingr:
-                length = len(word)
-                first_section = ingr.index(word)  ## index at which word starts in the ingredient
-                end_section = first_section+(length)  ## index at which the word ends +1
-                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
-                i = ingredients_list.index(ingr)
-                ingredients_list.pop(i)
-                ingredients_list.insert(i,ingr_altered)
-
-    for word in number_words:
-        for ingr in ingredients_list:
-            if word in ingr:
-                length = len(word)
-                first_section = ingr.index(word)  ## index at which word starts in the ingredient
-                end_section = first_section+(length)  ## index at which the word ends +1
-                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
-                i = ingredients_list.index(ingr)
-                ingredients_list.pop(i)
-                ingredients_list.insert(i,ingr_altered)
-
-    for word in fractions:
-        for ingr in ingredients_list:
-            if word in ingr:
-                length = len(word)
-                first_section = ingr.index(word)  ## index at which word starts in the ingredient
-                end_section = first_section+(length)  ## index at which the word ends +1
-                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
-                i = ingredients_list.index(ingr)
-                ingredients_list.pop(i)
-                ingredients_list.insert(i,ingr_altered)
-
-    for word in short:
-        for ingr in ingredients_list:
-            # print(f"ingr: '{ingr}'")
-            if word in ingr:
-                length = len(word)
-                first_section = ingr.index(word)  ## index at which word starts in the ingredient
-                end_section = first_section+(length)  ## index at which the word ends +1
-                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
-                i = ingredients_list.index(ingr)
-                ingredients_list.pop(i)
-                ingredients_list.insert(i,ingr_altered)
-
-    for word in other:
-        for ingr in ingredients_list:
-            if word in ingr:
-                length = len(word)
-                first_section = ingr.index(word)  ## index at which word starts in the ingredient
-                end_section = first_section+(length)  ## index at which the word ends +1
-                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
-                i = ingredients_list.index(ingr)
-                ingredients_list.pop(i)
-                ingredients_list.insert(i,ingr_altered)
-
-
-    # for x in ingredients_list:
-    #     print(f"initial x: {x}")
-
     punctuation = [',', '"', '.', '!', '?', '/', ':', ';', '+', '*', '(', ')', ]
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',]
 
-    # # Delete the above characters from ingredients_list:
-    # new = []
-    # for item in ingredients_list:               # Checks each string item in ingredients_list
-    #     # print(f"checking final list ingredient {item}")
-    #     for x in item:
-    #         if x in numbers or x in punctuation:
-    #             continue                     # Doesn't append character if found in 'punctuation' or 'numbers' list
-    #         else:
-    #             new.append(x)                     # Appends all other letters/spaces
-    #     if ingredients_list.index(item) != (len(ingredients_list) -1):
-    #         # print(f"index: {ingredients_list.index(item)}")
-    #         # print(f"item: {item}")
-    #         new.append('|')                       # no '|' separator added at the end of the ingredients_list
-    #     i = ingredients_list.index(item)
-    #     ingredients_list.pop(i)                   # Delete the item from ingredients_list now that all of its characters are valid
-    #     ingredients_list.insert(i,new)            # insert 'new' item in its place
-    #
-    # ingredients_list = ingredients_list[0]        # Flatten the ingredients_list array
-    # ingredients_list = ''.join(ingredients_list)  # Join separated characters back into one string
-    # new_list = ingredients_list.split('|')        # Separates each ingredient back into individual strings
+    new = []
+    for item in ingredients_list:               # Checks each string item in ingredients_list
+        # print(f"checking final list ingredient {item}")
+        for x in item:
+            if x in numbers or x in punctuation:
+                continue                     # Doesn't append character if found in 'punctuation' or 'numbers' list
+            else:
+                new.append(x)                     # Appends all other letters/spaces
+        if ingredients_list.index(item) != (len(ingredients_list) -1):
+            # print(f"index: {ingredients_list.index(item)}")
+            # print(f"item: {item}")
+            new.append('|')                       # no '|' separator added at the end of the ingredients_list
+        i = ingredients_list.index(item)
+        ingredients_list.pop(i)                   # Delete the item from ingredients_list now that all of its characters are valid
+        ingredients_list.insert(i,new)            # insert 'new' item in its place
 
-    # for x in new_list:
-    #     print(f"middle x: {x}")
+    ingredients_list = ingredients_list[0]        # Flatten the ingredients_list array
+    ingredients_list = ''.join(ingredients_list)  # Join separated characters back into one string
+    new_list = ingredients_list.split('|')        # Separates each ingredient back into individual strings
 
-    # for item in new_list:
-    #     length = len(item)
-    #     if item[0] == ' ':
-    #         new_item = item[1:]                   # checks for space at start of string, if so then
-    #         i = new_list.index(item)              #  creates new string without the space, replaces
-    #         new_list.pop(i)                       #  original string in the list with new string.
-    #         new_list.insert(i,new_item)
-    #     # else:
-    #     #     print("ok")
-    #
-    # for item in new_list:
-    #     last_char = len(item)-1
-    #     upto = last_char-1
-    #     if len(item) not in [0,] and item[last_char] == ' ':
-    #         new_item = item[0:upto]                 # checks for space at start of string, if so then
-    #         i = new_list.index(item)              #  creates new string without the space, replaces
-    #         new_list.pop(i)                       #  original string in the list with new string.
-    #         new_list.insert(i,new_item)
+    for x in new_list:
+        print(f"middle x: {x}")
+
+
+
+    # Following functions find any matching regex (from above values, ie. expression_one, expression_two, etc) within each ingredient:
+
+    all_matches = []
+    for ingr in new_list:
+        # Compiles a list of indexes at which each match starts and ends:
+        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_one,ingr)]
+        #
+        if len(match_indexes)>0:
+            first_start = match_indexes[0][0]
+            first_end = match_indexes[0][1] + 1
+            all_matches.append(match_indexes)
+        else:
+            all_matches.append('pass')
+
+    if len(all_matches) > 0:
+        for element in all_matches:
+            if element != 'pass':
+                x = all_matches.index(element)
+                match_ingredient = new_list[x]
+                start = element[0][0]
+                end = element[0][1] + 1
+                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:]
+                new_list.pop(x)
+                new_list.insert(x,new_ingredient)
+
+
+    all_matches = []
+    for ingr in new_list:
+        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_two,ingr)]
+        if len(match_indexes)>0:
+            first_start = match_indexes[0][0]
+            first_end = match_indexes[0][1] + 1
+            all_matches.append(match_indexes)
+        else:
+            all_matches.append('pass')
+
+    if len(all_matches) > 0:
+        for element in all_matches:
+            if element != 'pass':
+                x = all_matches.index(element)
+                match_ingredient = new_list[x]
+                start = element[0][0]
+                end = element[0][1] + 1
+                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:]
+                new_list.pop(x)
+                new_list.insert(x,new_ingredient)
+
+    all_matches = []
+    for ingr in new_list:
+        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_three,ingr)]
+        if len(match_indexes)>0:
+            first_start = match_indexes[0][0]
+            first_end = match_indexes[0][1] + 1
+            all_matches.append(match_indexes)
+        else:
+            all_matches.append('pass')
+
+    if len(all_matches) > 0:
+        for element in all_matches:
+            if element != 'pass':
+                x = all_matches.index(element)
+                match_ingredient = new_list[x]
+                start = element[0][0]
+                end = element[0][1] + 1
+                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:]
+                new_list.pop(x)
+                new_list.insert(x,new_ingredient)
+
+    for x in new_list:
+        print(f"first x: {x}")
+
+
+
+    # Following functions look for any of the words listed in the above lists, deletes them:
+
+    for word in quantities:
+        for ingr in new_list:
+            if word in ingr:
+                length = len(word)
+                ## index at which word/phrase starts in the ingredient:
+                first_section = ingr.index(word)
+                ## index at which the word/phrase ends:
+                end_section = first_section+(length)
+                ## Creates a new string that doesn't include the word/phrase to be cut out:
+                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
+                i = new_list.index(ingr)
+                ## Deletes original ingredient string using its index:
+                new_list.pop(i)
+                ## Inserts new string in its place:
+                new_list.insert(i,ingr_altered)
+
+    for word in number_words:
+        for ingr in new_list:
+            if word in ingr:
+                length = len(word)
+                first_section = ingr.index(word)  ## as above
+                end_section = first_section+(length)  ## as above
+                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
+                i = new_list.index(ingr)
+                new_list.pop(i)
+                new_list.insert(i,ingr_altered)
+
+    for word in fractions:
+        for ingr in new_list:
+            if word in ingr:
+                length = len(word)
+                first_section = ingr.index(word)  ## as above
+                end_section = first_section+(length)  ## as above
+                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
+                i = new_list.index(ingr)
+                new_list.pop(i)
+                new_list.insert(i,ingr_altered)
+
+    for word in short:
+        for ingr in new_list:
+            if word in ingr:
+                length = len(word)
+                first_section = ingr.index(word)  ## as above
+                end_section = first_section+(length)  ## as above
+                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
+                i = new_list.index(ingr)
+                new_list.pop(i)
+                new_list.insert(i,ingr_altered)
+
+    for word in other:
+        for ingr in new_list:
+            if word in ingr:
+                length = len(word)
+                first_section = ingr.index(word)  ## as above
+                end_section = first_section+(length)  ## as above
+                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
+                i = new_list.index(ingr)
+                new_list.pop(i)
+                new_list.insert(i,ingr_altered)
+
+    for word in brands:
+        for ingr in new_list:
+            if word in ingr:
+                length = len(word)
+                first_section = ingr.index(word)  ## as above
+                end_section = first_section+(length)  ## as above
+                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
+                i = new_list.index(ingr)
+                new_list.pop(i)
+                new_list.insert(i,ingr_altered)
+
+    for word in alt_codes:
+        for ingr in new_list:
+            if word in ingr:
+                length = len(word)
+                first_section = ingr.index(word)  ## as above
+                end_section = first_section+(length)  ## as above
+                ingr_altered = ingr[0:first_section] + ' ' + ingr[end_section:]
+                i = new_list.index(ingr)
+                new_list.pop(i)
+                new_list.insert(i,ingr_altered)
 
 
     # if 'or' found, separate into two ingredients
 
-    # i=0
-    # x=20
-    # while i < 60:
-    #     print(f"{x} final: '{new_list[x]}'")
-    #     i += 1
-    #     x += 1
-
     i=0
     x=0
     while i < 80:
-        print(f"{x} final: '{ingredients_list[x]}'")
+        print(f"{x} final: '{new_list[x]}'")
         i += 1
         x += 1
 
-    # for x in new_list:
-    #     print(f"final x: {x}")
-
-    cleaned_ingredients = []
-
-    return cleaned_ingredients;
+    return new_list;
 
 
 if __name__ == "__main__":
