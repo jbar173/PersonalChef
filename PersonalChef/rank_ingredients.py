@@ -1,16 +1,17 @@
 # import get_common_ingredients
+import clean_ingredient_data_test
 import json
 import os
 
 # ingredients = get_common_ingredients.collect_ingredients()
 # cleaned_ingredients = get_common_ingredients.clean_ingredients(ingredients)
 
-cleaned_ingredients = ['eggs', 'eggs', 'eggs', 'eggs', 'bacon', 'orange', 'lemon', 'lime', 'apple', 'noodles', 'noodles', 'chips', 'steak', 'steak', 'salmon', 'haddock', 'white chocolate', 'skittles',]
+# cleaned_ingredients = ['eggs', 'eggs', 'eggs', 'eggs', 'bacon', 'orange', 'lemon', 'lime', 'apple', 'noodles', 'noodles', 'chips', 'steak', 'steak', 'salmon', 'haddock', 'white chocolate', 'skittles',]
+cleaned_ingredients = clean_ingredient_data_test.cleaned_ingredients
 
 def count_ingredient_occurances(cleaned_ingredients):
     list = cleaned_ingredients
-    already_found = {'test': '0', 'bacon': '1', 'skittles': '2', }
-    print(f"type: {type(already_found['bacon'])}")
+    already_found = {}
     length = len(list)
     found = False
 

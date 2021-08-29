@@ -1,6 +1,6 @@
 import React from 'react';
 import * as data from './checklists/json_ingredient_lists/all.json';
-import { StyleSheet, Text, Pressable, View } from 'react-native';
+import { StyleSheet, Text, Pressable, View, SafeAreaView, ScrollView } from 'react-native';
 
 
 class RankedDict extends React.Component {
@@ -41,21 +41,39 @@ class RankedDict extends React.Component {
    var length = this.state.ranked_ingredients.length
 
    return(
-           <View>
-                 { length && <View>
-                                 {this.state.ranked_ingredients.map(function(item,index){
-                                     return(
-                                       <View key={item.count}>
-                                         <Text>{item.count}. {item.name}</Text>
-                                       </View>
-                                     )
-                                    }
-                                  )}
-                             </View>
-                  }
-            </View>
-          );
+           <SafeAreaView style={styles.container}>
+             <ScrollView>
+                 <View>
+                       { length && <View>
+                                       {this.state.ranked_ingredients.map(function(item,index){
+                                           return(
+                                             <View key={item.count}>
+                                               <Text>{item.count}. {item.name}</Text>
+                                             </View>
+                                           )
+                                          }
+                                        )}
+                                   </View>
+                        }
+                  </View>
+              </ScrollView>
+            </SafeAreaView>
+        );
    }
 };
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 20,
+    paddingHorizontal:20,
+  },
+})
+
+
+
 
 export { RankedDict };

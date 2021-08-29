@@ -219,105 +219,166 @@ def clean_ingredients(ingredients):
     punctuation = [',', '"', '.', '!', '?', '/', ':', ';', '+', '*', '(', ')', ]
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',]
 
+
+
+# Following code finds any matching regex (from above values, ie. expression_one, expression_two, etc) within each ingredient:
+
+    all_matches = []
+    for ingr in ingredients_list:
+        # Compiles a list of indexes at which each match in the individual ingredient starts and ends:
+        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_three,ingr)]
+        # If match/matches found in the ingredient, append their indexes to all_matches, else append 'pass':
+        if len(match_indexes)>0:
+            all_matches.append(match_indexes)
+        else:
+            all_matches.append('pass')
+
+    count = -1
+    for element in all_matches:
+        count += 1
+        if element != 'pass':
+            if len(element) == 1:
+                match_ingredient = ingredients_list[count]      ## Finds the corresponding index for the ingredient to be altered (in ingredients_list)
+                start = element[0][0]
+                end = element[0][1] + 1
+                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:] ## creates a new string (with the match cut out (using 'start' and 'end' indexes from 'element'))
+                ingredients_list.pop(count)                     ## Removes original ingredient from list
+                ingredients_list.insert(count,new_ingredient)   ## inserts the new, altered ingredient in its place
+
+            elif len(element) == 2:                             ## if two matches are found within the ingredient:
+                match_ingredient = ingredients_list[count]
+
+                start_one = element[0][0]
+                end_one = element[0][1] + 1
+                start_two = element[1][0]
+                end_two = element[1][1] + 1
+
+                second_element = match_ingredient[start_two:end_two] ## gets the exact string value of the second match
+                element_length = len(second_element)                  ## gets the length of the second match
+                new_ingredient = match_ingredient[0:start_one] + ' ' + match_ingredient[end_one:] ## Reconstructs string without first match element
+
+                second_match = new_ingredient.index(second_element) ## Searches for the second match's index, using its string value (from above)
+                second_match_end = second_match + element_length    ## Gets the second match element's index using its length
+                newest_ingredient = new_ingredient[0:second_match] + ' ' + new_ingredient[second_match_end:] ## Reconstructs the string again, now without second match element
+
+                ingredients_list.pop(count)                         ## Pops old ingredient from list
+                ingredients_list.insert(count,newest_ingredient)    ## inserts new one in its place
+        else:
+            continue
+
+    # As above ... :
+    all_matches = []
+    for ingr in ingredients_list:
+        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_one,ingr)]
+        if len(match_indexes) == 1:
+            all_matches.append(match_indexes)
+        else:
+            all_matches.append('pass')
+
+    count = -1
+    for element in all_matches:
+        count += 1
+        if element != 'pass':
+            if len(element) == 1:
+                match_ingredient = ingredients_list[count]
+                start = element[0][0]
+                end = element[0][1] + 1
+                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:]
+                ingredients_list.pop(count)
+                ingredients_list.insert(count,new_ingredient)
+            elif len(element) == 2:
+                match_ingredient = ingredients_list[count]
+
+                start_one = element[0][0]
+                end_one = element[0][1] + 1
+                start_two = element[1][0]
+                end_two = element[1][1] + 1
+
+                second_element = match_ingredient[start_two:end_two]
+                element_length= len(second_element)
+                new_ingredient = match_ingredient[0:start_one] + ' ' + match_ingredient[end_one:]
+
+                second_match = new_ingredient.index(second_element)
+                second_match_end = second_match + element_length
+                newest_ingredient = new_ingredient[0:second_match] + ' ' + new_ingredient[second_match_end:]
+
+                ingredients_list.pop(count)
+                ingredients_list.insert(count,newest_ingredient)
+        else:
+            continue
+
+    # As above ... :
+    all_matches = []
+    for ingr in ingredients_list:
+        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_two,ingr)]
+        if len(match_indexes)>0:
+            all_matches.append(match_indexes)
+        else:
+            all_matches.append('pass')
+
+    count = -1
+    for element in all_matches:
+        count += 1
+        if element != 'pass':
+            if len(element) == 1:
+                match_ingredient = ingredients_list[count]
+                start = element[0][0]
+                end = element[0][1] + 1
+                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:]
+                ingredients_list.pop(count)
+                ingredients_list.insert(count,new_ingredient)
+            elif len(element) == 2:
+                match_ingredient = ingredients_list[count]
+
+                start_one = element[0][0]
+                end_one = element[0][1] + 1
+                start_two = element[1][0]
+                end_two = element[1][1] + 1
+
+                second_element = match_ingredient[start_two:end_two]
+                element_length= len(second_element)
+                new_ingredient = match_ingredient[0:start_one] + ' ' + match_ingredient[end_one:]
+
+                second_match = new_ingredient.index(second_element)
+                second_match_end = second_match + element_length
+                newest_ingredient = new_ingredient[0:second_match] + ' ' + new_ingredient[second_match_end:]
+
+                ingredients_list.pop(count)
+                ingredients_list.insert(count,newest_ingredient)
+        else:
+            continue
+
+    for x in ingredients_list:
+        print(f"first x: {x}")
+
+
+
+# Following code erases numbers and punctuation from ingredients_list:
+
     new = []
     for item in ingredients_list:               # Checks each string item in ingredients_list
-        # print(f"checking final list ingredient {item}")
         for x in item:
             if x in numbers or x in punctuation:
-                continue                     # Doesn't append character if found in 'punctuation' or 'numbers' list
+                continue                        # Doesn't append character to new list if it's found in either the 'punctuation' or 'numbers' list
             else:
-                new.append(x)                     # Appends all other letters/spaces
+                new.append(x)                   # Appends all other letters/spaces
         if ingredients_list.index(item) != (len(ingredients_list) -1):
-            # print(f"index: {ingredients_list.index(item)}")
-            # print(f"item: {item}")
-            new.append('|')                       # no '|' separator added at the end of the ingredients_list
+            new.append('|')                     # '|' separator added at the end of each ingredient in the new list
         i = ingredients_list.index(item)
-        ingredients_list.pop(i)                   # Delete the item from ingredients_list now that all of its characters are valid
-        ingredients_list.insert(i,new)            # insert 'new' item in its place
+        ingredients_list.pop(i)                 # Deletes the original item from ingredients_list
+        ingredients_list.insert(i,new)          # inserts the altered ingredient characters in its place
 
-    ingredients_list = ingredients_list[0]        # Flatten the ingredients_list array
-    ingredients_list = ''.join(ingredients_list)  # Join separated characters back into one string
-    new_list = ingredients_list.split('|')        # Separates each ingredient back into individual strings
+    ingredients_list = ingredients_list[0]      # Flatten the ingredients_list array
+    ingredients_list = ''.join(ingredients_list)# Join separated characters back into one string
+    new_list = ingredients_list.split('|')      # Separates each ingredient back into individual strings
 
     for x in new_list:
         print(f"middle x: {x}")
 
 
 
-    # Following functions find any matching regex (from above values, ie. expression_one, expression_two, etc) within each ingredient:
 
-    all_matches = []
-    for ingr in new_list:
-        # Compiles a list of indexes at which each match starts and ends:
-        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_one,ingr)]
-        #
-        if len(match_indexes)>0:
-            first_start = match_indexes[0][0]
-            first_end = match_indexes[0][1] + 1
-            all_matches.append(match_indexes)
-        else:
-            all_matches.append('pass')
-
-    if len(all_matches) > 0:
-        for element in all_matches:
-            if element != 'pass':
-                x = all_matches.index(element)
-                match_ingredient = new_list[x]
-                start = element[0][0]
-                end = element[0][1] + 1
-                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:]
-                new_list.pop(x)
-                new_list.insert(x,new_ingredient)
-
-
-    all_matches = []
-    for ingr in new_list:
-        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_two,ingr)]
-        if len(match_indexes)>0:
-            first_start = match_indexes[0][0]
-            first_end = match_indexes[0][1] + 1
-            all_matches.append(match_indexes)
-        else:
-            all_matches.append('pass')
-
-    if len(all_matches) > 0:
-        for element in all_matches:
-            if element != 'pass':
-                x = all_matches.index(element)
-                match_ingredient = new_list[x]
-                start = element[0][0]
-                end = element[0][1] + 1
-                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:]
-                new_list.pop(x)
-                new_list.insert(x,new_ingredient)
-
-    all_matches = []
-    for ingr in new_list:
-        match_indexes = [(match.start(0), match.end(0)) for match in re.finditer(expression_three,ingr)]
-        if len(match_indexes)>0:
-            first_start = match_indexes[0][0]
-            first_end = match_indexes[0][1] + 1
-            all_matches.append(match_indexes)
-        else:
-            all_matches.append('pass')
-
-    if len(all_matches) > 0:
-        for element in all_matches:
-            if element != 'pass':
-                x = all_matches.index(element)
-                match_ingredient = new_list[x]
-                start = element[0][0]
-                end = element[0][1] + 1
-                new_ingredient = match_ingredient[0:start] + ' ' + match_ingredient[end:]
-                new_list.pop(x)
-                new_list.insert(x,new_ingredient)
-
-    for x in new_list:
-        print(f"first x: {x}")
-
-
-
-    # Following functions look for any of the words listed in the above lists, deletes them:
+# Following code looks for any of the words listed in the above lists, deletes them:
 
     for word in quantities:
         for ingr in new_list:
@@ -402,7 +463,7 @@ def clean_ingredients(ingredients):
                 new_list.insert(i,ingr_altered)
 
 
-    # if 'or' found, separate into two ingredients
+###### TO DO:  if 'or' found, separate into two ingredients
 
     i=0
     x=0
