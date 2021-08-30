@@ -8,57 +8,62 @@ class ConfectionaryChecklist extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      initialList: {
-        "milk chocolate": false,
-        "white chocolate": false,
-        "dark chocolate": false,
-        "chocolate buttons": false,
-        "hundreds and thousands": false,
-        "chocolate sprinkles": false,
-        "milk chocolate drops": false,
-        "white chocolate drops": false,
-        "dark chocolate drops": false,
-        "jelly tots": false,
-        "smarties": false,
-        "skittles": false,
-        "maltesers":false,
-        "mini eggs": false,
-      },
-      jsonFileList: {},
-      updated:false,
-      confirmedList:[],
+      initialList: {},
+      jsonFileList: [],
+      first: false,
+      updated: false,
+      confirmedList: [],
       confirmed: false
     }
     this.itemSelectedHandler = this.itemSelectedHandler.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
     this.confirmedHandler = this.confirmedHandler.bind(this)
   };
 
+  componentDidMount(){
+    var json_list = data.ingredients
+    this.setState({
+      jsonFileList: json_list,
+      first: true
+    })
+  }
+
   itemSelectedHandler(item){
     console.log("item (de)selected")
-    var json_list = data.confect
     var new_item = item
     new_item[1] = !new_item[1]
     this.setState({
-      jsonFileList: json_list,
       initialList: {
         ...this.state.initialList,
         [`${new_item[0]}`] : item[1],
       },
-      updated:true,
+      updated: true,
     })
    }
 
   componentDidUpdate(){
     console.log("did update")
+    if(this.state.first === true){
+      var i
+      var length = this.state.jsonFileList.length
+      var new_dict = {}
+      for(i=0;i<length;i++){
+        var name = this.state.jsonFileList[i]['name']
+        var selected = false
+        new_dict[name] = selected
+      }
+      this.setState({
+        initialList: new_dict,
+        first: false,
+      })
+    }
 
     if(this.state.updated === true){
-      console.log("updated = true")
       var initial = this.state.initialList
       var confirmed = []
       for([key,value] of Object.entries(initial)){
          if(value === true){
-             console.log(key + " added to confirmed list")
              confirmed.push(key)
            }
        }
@@ -72,7 +77,7 @@ class ConfectionaryChecklist extends React.Component {
   confirmedHandler(){
     var new_state = !this.state.confirmed
     this.setState({
-      confirmed:new_state,
+      confirmed: new_state,
     })
   }
 

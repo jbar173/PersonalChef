@@ -1,0 +1,45 @@
+{
+    "name": "spices_and_herbs_ingredients",
+    "ingredients": [
+      {
+          "name": "fresh coriander leaves",
+          "count": "1"
+      },
+      {
+          "name": "fresh mint leaves",
+          "count": "1"
+      },
+      {
+          "name": "fresh thai basil leaves",
+          "count": "1"
+      },
+      {
+          "name": "basil leaves",
+          "count": "1"
+      },
+      {
+          "name": "flat-leaf parsley leaves",
+          "count": "2"
+      },
+      {
+          "name": "salt",
+          "count": "3"
+      },
+      {
+          "name": "pepper",
+          "count": "3"
+      },
+      {
+          "name": "cinnamon",
+          "count": "1"
+      },
+      {
+          "name": "nutmeg",
+          "count": "1"
+      },
+      {
+          "name": "turmeric",
+          "count": "1"
+      },
+    ]
+}

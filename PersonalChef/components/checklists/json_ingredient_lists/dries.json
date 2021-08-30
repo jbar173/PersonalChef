@@ -1,0 +1,49 @@
+{
+    "name": "dry_ingredients",
+    "ingredients": [
+        {
+            "name": "brioche burger buns",
+            "count": "1"
+        },
+        {
+            "name": "cornflour",
+            "count": "1"
+        },
+        {
+            "name": "panko breadcrumbs",
+            "count": "1"
+        },
+        {
+            "name": "dried rice vermicelli noodles",
+            "count": "1"
+        },
+        {
+            "name": "brown sugar",
+            "count": "1"
+        },
+        {
+            "name": "flour",
+            "count": "1"
+        },
+        {
+            "name": "sugar",
+            "count": "1"
+        },
+        {
+            "name": "pasta",
+            "count": "1"
+        },
+        {
+            "name": "baking powder",
+            "count": "1"
+        },
+        {
+            "name": "baking soda",
+            "count": "1"
+        },
+        {
+            "name": "pecans",
+            "count": "1"
+        },
+    ]
+}

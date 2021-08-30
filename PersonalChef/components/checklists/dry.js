@@ -1,29 +1,32 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Pressable, SafeAreaView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
-
+import * as data from './json_ingredient_lists/dries.json';
 
 class DryIngredientsChecklist extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      initialList: {
-        "flour": false,
-        "sugar": false,
-        "brown sugar": false,
-        "pasta": false,
-        "baking powder": false,
-        "baking soda": false,
-        "pecans": false,
-      },
+      initialList: {},
+      jsonFileList: {},
+      first: false,
       updated:false,
       confirmedList:[],
       confirmed: false
     }
     this.itemSelectedHandler = this.itemSelectedHandler.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
     this.confirmedHandler = this.confirmedHandler.bind(this)
   };
+
+  componentDidMount(){
+    var json_list = data.ingredients
+    this.setState({
+      jsonFileList: json_list,
+      first: true
+    })
+  }
 
   itemSelectedHandler(item){
     console.log("item (de)selected")
@@ -34,12 +37,26 @@ class DryIngredientsChecklist extends React.Component {
         ...this.state.initialList,
         [`${new_item[0]}`] : item[1],
       },
-      updated:true,
+      updated: true,
     })
    }
 
   componentDidUpdate(){
     console.log("did update")
+    if(this.state.first === true){
+      var i
+      var length = this.state.jsonFileList.length
+      var new_dict = {}
+      for(i=0;i<length;i++){
+        var name = this.state.jsonFileList[i]['name']
+        var selected = false
+        new_dict[name] = selected
+      }
+      this.setState({
+        initialList: new_dict,
+        first: false,
+      })
+    }
 
     if(this.state.updated === true){
       console.log("updated = true")

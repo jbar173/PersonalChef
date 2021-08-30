@@ -1,0 +1,17 @@
+{
+    "name": "meats_ingredients",
+    "ingredients": [
+        {
+            "name": "beef",
+            "count": "1"
+        },
+        {
+            "name": "chicken",
+            "count": "1"
+        },
+        {
+            "name": "pork",
+            "count": "1"
+        },
+    ]
+}
