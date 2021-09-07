@@ -1,9 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Pressable, Linking, SafeAreaView, ScrollView } from 'react-native';
-import { NativeRouter, Route, Link } from "react-router-native";
+import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { RefineResults } from './RefineResults.js';
-import { ApiCalls } from './ApiCalls.js';
 import { SearchingPage, LoadingPage } from "./Animations.js";
+
+
 
 
 class RecipeResults extends React.Component {
@@ -33,15 +34,18 @@ class RecipeResults extends React.Component {
         populateLinksList: false,
         recipeLinksList: [],
         round: 0,
+        noMoreUrls: false,
 
         recipeResponseList: [],
         thisRoundResponseList: [],
         nextRound: false,
 
         refinedRecipeList: [],
+        redirect: false,
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
+      this.componentWillUnmount = this.componentWillUnmount.bind(this)
 
       this.getRecipeApiLinks = this.getRecipeApiLinks.bind(this)
       this.startThirtyStopwatch = this.startThirtyStopwatch.bind(this)
@@ -67,7 +71,7 @@ class RecipeResults extends React.Component {
       both: either,
       firstResponse: first_response,
       populateLinksList: true,
-      thirtyTimerStarted: true,
+      thirtyTimerStarted: true,    // Starts another 30 second timer to ensure 60 seconds between API hits
       displayAnimation: true
     })
   }
@@ -76,34 +80,47 @@ class RecipeResults extends React.Component {
   componentDidUpdate(){
     console.log("results did update")
 
+    // Triggers function that takes each recipe's url from this.state.firstResponse:
     if(this.state.populateLinksList){
         console.log("1")
         this.getRecipeApiLinks()
     }
+    // Triggers function that calls each api url:
     if(this.state.callIndividual && this.state.thirtyTimerStarted === false){
         console.log("2")
         this.fetchIndividualRecipes()
-        var next_round = this.state.round
-        next_round += 9
         this.setState({
-          round: next_round,
           callIndividual: false
         })
-     }
-     if(this.state.nextRound && this.state.sixtyTimerStarted && this.state.displayAnimation){
-       console.log("3")
-       console.log("waiting...")
-     }
-    if(this.state.nextRound && this.state.sixtyTimerStarted && this.state.displayAnimation === false){
-      console.log("4")
-      console.log("waiting...")
-      this.setState({ displayAnimation: true })
     }
+    // Prevents more than 10 API hits/minute, triggers animation:
+    if(this.state.nextRound && this.state.sixtyTimerStarted && this.state.displayAnimation === false){
+       console.log("3")
+       this.setState({ displayAnimation: true })
+    }
+    // Prevents more than 10 API hits/minute (if attempted whilst animation is already running):
+    if(this.state.nextRound && this.state.sixtyTimerStarted && this.state.displayAnimation){
+       console.log("4")
+       console.log("waiting...")
+    }
+    // Triggers next round of API calls once timer has finished, turns animation off:
     if(this.state.nextRound && this.state.sixtyTimerStarted === false){
-      console.log("4")
+      console.log("5")
       this.getNextRound()
       this.setState({ displayAnimation: false })
     }
+    // Redirects to < ConfirmList /> to reduce keywords if no suitable recipes have been returned:
+    if(this.state.noMoreUrls){
+      console.log("No more recipe urls - returning to first api search")
+      this.setState({
+        noMoreUrls: false,
+        redirect: true
+      })
+    }
+  }
+
+  componentWillUnmount(){
+    console.log("results page unmounted")
   }
 
 // Takes each recipe's api call url from firstResponse,
@@ -140,34 +157,43 @@ class RecipeResults extends React.Component {
     var this_round = url_list.slice(first_index,last_index)
     console.log("this_round.length: " + this_round.length)
 
-    for(link in this_round){
-      var url = `${this_round[link]}`
-      console.log("individual url: " + url + "\n")
-      fetch(url)
-      .then(response => response.json())
-      .then(data =>
-          this.setState({
-            thisRoundResponseList: [
-              ...this.state.thisRoundResponseList,
-              data
-            ],
-            recipeResponseList: [
-              ...this.state.recipeResponseList,
-              data
-            ],
-          })
-       )
-      .catch(error => {
-        console.log("individual error: " + error)
+    if(this_round.length == 0){
+      this.setState({
+        noMoreUrls: true  // Stops the function when end of url_list has been reached
       })
-     }
-   this.setState({
-     sixtyTimerStarted: true,
-     round:last_index+1
-   })
-   this.startSixtyStopwatch()
+      return 0;
+
+    }else{
+      for(link in this_round){
+        var url = `${this_round[link]}`
+        console.log("individual url: " + url + "\n")
+        fetch(url)
+        .then(response => response.json())
+        .then(data =>
+            this.setState({
+              thisRoundResponseList: [
+                ...this.state.thisRoundResponseList,
+                data
+              ],
+              recipeResponseList: [
+                ...this.state.recipeResponseList,
+                data
+              ],
+            })
+         )
+        .catch(error => {
+          console.log("individual error: " + error)
+        })
+       }
+     this.setState({
+       sixtyTimerStarted: true,
+       round: last_index + 1,       // Updates starting index of the next set of urls to call
+     })
+     this.startSixtyStopwatch() // Starts timer to regulate rate of API hits
+   }
  }
 
+// 30 second stopwatch (used when app initially loads):
  startThirtyStopwatch(){
    console.log("starting 30 sec stopwatch")
    var cmponent = this
@@ -180,31 +206,20 @@ class RecipeResults extends React.Component {
    }, 30000)
  }
 
+// 60 second stopwatch (used between calling each round of 9 recipes):
  startSixtyStopwatch(){
    console.log("starting 60 sec stopwatch")
-
    var cmponent = this
-   if(this.state.thisRoundResponseList.length === 9){
-       cmponent.setState({
-         startRefine: true
-       })
-   }else{
-     setTimeout(function(){
-       console.log("starting refine")
-       console.log("thisRoundResponseList.length: " + cmponent.state.thisRoundResponseList.length)
-       cmponent.setState({
-         startRefine: true
-       })
-     },5000)
-   }
    setTimeout(function(){
      console.log("60 sec stopwatch finished")
      cmponent.setState({
        sixtyTimerStarted: false,
+       startRefine: true             // Triggers <RefineResults />
      })
    }, 60000)
  }
 
+// Triggers next round of recipe api calls:
  getNextRound(){
    console.log("get next round function")
    this.setState({
@@ -214,22 +229,25 @@ class RecipeResults extends React.Component {
    })
  }
 
+// Takes in recipes that have been returned from < RefineResults />.
+//  If 0 are returned, triggers nextRound, else sets filtered to True
+//  thus displaying the results:
   getFilteredRecipes(response_list){
     console.log("filtered initial")
     console.log("filtered_results.length: " + response_list.length)
     if(response_list.length === 0){
       console.log("No results in this round")
       this.setState({
+        nextRound: true,
         startRefine: false,
         callIndividual: false,
         filtered: false,
-        nextRound: true,
       })
     }else{
       this.setState({
         refinedRecipeList: response_list,
-        callIndividual: false,
         startRefine: false,
+        callIndividual: false,
         filtered: true
       })
     }
@@ -237,11 +255,14 @@ class RecipeResults extends React.Component {
 
 
   render(){
+    var initial = this.state.initialData
     var first_response = this.state.firstResponse
     var refined = this.state.refinedRecipeList
     var filtered = this.state.filtered
     var start_refine = this.state.startRefine
     var display_animation = this.state.displayAnimation
+    var ingreds = this.state.ingredients_rough
+    var either = 'from RecipeResults'
 
 
     return(
@@ -316,8 +337,12 @@ class RecipeResults extends React.Component {
 
               }
 
-            </ScrollView>
-          </SafeAreaView>
+            { this.state.redirect && <Redirect to={{ pathname:'/confirm/',
+              state:{ initial_data: initial, either: either,
+                      ingreds: ingreds, } }} /> }
+
+          </ScrollView>
+        </SafeAreaView>
 
       );
     }

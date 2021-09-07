@@ -3,7 +3,7 @@ import * as data from './checklists/json_ingredient_lists/all.json';
 import { StyleSheet, Text, Pressable, View, SafeAreaView, ScrollView } from 'react-native';
 
 
-class RankedDict extends React.Component {
+class RankedDictionary extends React.Component {
     constructor(props){
       super(props);
       this.state = {
@@ -11,21 +11,40 @@ class RankedDict extends React.Component {
           "ingredients": [],
           "ingredientCount": 0,
         },
-        ranked_ingredients: {},
+        rankedIngredients: {},
+        finished: true,
       },
       this.componentDidMount = this.componentDidMount.bind(this)
+      this.componentDidUpdate = this.componentDidUpdate.bind(this)
+      this.componentWillUnmount = this.componentWillUnmount.bind(this)
       this.sortByCountFunction = this.sortByCountFunction.bind(this)
+      this.sendIngredientsDict = this.sendIngredientsDict.bind(this)
    };
 
+  // Gets json data from imported 'all.json', sorts by count (or rank), highest at the top:
   componentDidMount(){
     console.log("Ranked ingredients mounted")
     var ingrs_json = data.children
     var ranked_ingrs =  ingrs_json.sort(this.sortByCountFunction);
     this.setState({
-      ranked_ingredients:ranked_ingrs,
+      rankedIngredients: ranked_ingrs,
+      finished: false,
     })
   }
 
+  componentDidUpdate(){
+    console.log("ranked updated")
+  // Triggers function that sends ranked dictionary to < AlterKeywords />:
+    if(this.state.finished === false){
+      this.sendIngredientsDict()
+    }
+  }
+
+  componentWillUnmount(){
+    console.log("RankedDict unmounted")
+  }
+
+  // Function used to sort initial data (in componentDidMount):
   sortByCountFunction(a,b){
     if (a.count < b.count) {
         return 1;
@@ -36,31 +55,26 @@ class RankedDict extends React.Component {
     return 0;
   }
 
+  // Function that sends rankedIngredients to < AlterKeywords />:
+  sendIngredientsDict(){
+    var ranked_dictionary = this.state.rankedIngredients
+    console.log("ranked ingredients.length: " + ranked_dictionary.length )
+    this.props.rankedIngs(ranked_dictionary)
+    this.setState({
+      finished: true,
+    })
+  }
 
  render(){
-   var length = this.state.ranked_ingredients.length
 
    return(
-           <SafeAreaView style={styles.container}>
-             <ScrollView>
-                 <View>
-                       { length && <View>
-                                       {this.state.ranked_ingredients.map(function(item,index){
-                                           return(
-                                             <View key={item.count}>
-                                               <Text>{item.count}. {item.name}</Text>
-                                             </View>
-                                           )
-                                          }
-                                        )}
-                                   </View>
-                        }
-                  </View>
-              </ScrollView>
-            </SafeAreaView>
+         <View>
+            <Text></Text>
+         </View>
         );
    }
-};
+
+ };
 
 
 const styles = StyleSheet.create({
@@ -76,4 +90,4 @@ const styles = StyleSheet.create({
 
 
 
-export { RankedDict };
+export { RankedDictionary };

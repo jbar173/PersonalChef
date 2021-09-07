@@ -57,16 +57,20 @@ const RefineResults = props => {
 
   // filter out recipes which contain ingredients other than those that the user has:
     var length = response_list.length
+    console.log("new length: " + length)
     var user_ingredients = props.userIngredients
+    // console.log("user ingredients: " + user_ingredients)
     var excess_ingredients = []
     var j
     for(j=0;j<length;j++){
       try{
           var recipe_ings = response_list[j]['recipe']['ingredients']
+          console.log("recipe: " + response_list[j]['recipe']['label'])
           // apply code from python file to strip measurements/quantities/punctuation from each ingredient
           for(ing in recipe_ings){
-            if( !(user_ingredients.includes(recipe_ings[ing])) ){
-              excess_ingredients.push(recipes_ings[ing])
+            console.log("ingredient text: " + recipe_ings[ing]['text'])
+            if( !(user_ingredients.includes(recipe_ings[ing]['text'])) ){
+              excess_ingredients.push(recipe_ings[ing]['text'])
               break;
             }
           }
@@ -74,9 +78,16 @@ const RefineResults = props => {
           console.log(j + ": ingredient count error: " + error)
           // response_list.splice(j,1)
       }
-      if(excess_ingredients.length > 0)
+      if(excess_ingredients.length > 0){
+        console.log("No ingredient match: " + response_list[j]['recipe']['label'])
         response_list.splice(j,1)
+        j -= 1
+        length -= 1
         console.log("Excess ingredient: " + excess_ingredients[0])
+        excess_ingredients = []
+      }else{
+        console.log("ingredients match for: " + response_list[j]['recipe']['label'])
+      }
     }
 
 
