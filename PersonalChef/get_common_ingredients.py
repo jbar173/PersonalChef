@@ -17,16 +17,19 @@ def collect_ingredients():
     # app_id = id
     # app_key = key
 
-    api = f"https://api.edamam.com/api/recipes/v2?type=public&q={staple}&app_id=2e0223626b3cd85bbeedb8598d9bff50&field=label"
+    api = f"https://api.edamam.com/api/recipes/v2?type=public&q={}&app_id=2e0223626b3cd85bbeedb8598d9bff50&field=label"
     try:
-        results = requests.get(api, verify=False)
+        print(f"api: {api}")
+        # results = requests.get(api, verify=False)
+        results = requests.get(api)
+        print(f"results: {results}")
     except:
         print("error calling api")
         return 0;
     response = results.json()                                     # Returns first page of responses
     responses.append(response)
     one_call = False
-    count = response['count']                                     # Count = how many individual recipes are returned by search
+    count = response["count"]                                     # Count = how many individual recipes are returned by search
     if count > 20:
         list_pages = count/20                                     # How many pages need to be called (20 recipes per page)
         next = response['_links']['next']['href']
@@ -215,7 +218,7 @@ def clean_ingredients(ingredients):
     # add 'and' and 'a' to list?
     # squeezed if not after freshly, juice if before or after lime, lemon
     # replace eggwhite or egg white or egg yolk with egg
-    # knock s off of tins, cans.
+
     punctuation = [',', '"', '.', '!', '?', '/', ':', ';', '+', '*', '(', ')', ]
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9',]
 
@@ -463,7 +466,6 @@ def clean_ingredients(ingredients):
                 new_list.insert(i,ingr_altered)
 
 
-###### TO DO:  if 'or' found, separate into two ingredients
 
     i=0
     x=0
@@ -474,7 +476,11 @@ def clean_ingredients(ingredients):
 
     return new_list;
 
+ingredients = collect_ingredients()
 
-if __name__ == "__main__":
-    ingredients = collect_ingredients()
-    cleaned_ingredients = clean_ingredients(ingredients)
+# cleaned_ingredients = clean_ingredients(ingredients)
+
+
+# if __name__ == "__main__":
+#     ingredients = collect_ingredients()
+#     cleaned_ingredients = clean_ingredients(ingredients)

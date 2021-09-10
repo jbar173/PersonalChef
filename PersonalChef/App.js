@@ -9,7 +9,7 @@ import { HerbsAndSpicesList, TinnedGoodsList, DryIngredientsList,
           WetIngredientsList, FruitAndVegList, } from './components/in_both.js';
 import { ConfirmList } from './components/confirm.js';
 import { RecipeResults } from './components/results.js';
-
+import { RankedDict } from './components/IngredientsRanked.js';
 
 
 class App extends React.Component {
@@ -57,6 +57,7 @@ class App extends React.Component {
 
                 <Route exact path = "/confirm/" component={ConfirmList} />
                 <Route exact path = "/results-initial/" component={RecipeResults} />
+                <Route exact path = "/ranked/" component={RankedDict} />
             </View>
         </NativeRouter>
       );
