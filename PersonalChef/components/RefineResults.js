@@ -13,6 +13,7 @@ const RefineResults = props => {
   console.log("response_list.length: " + response_list.length)
 
  // filter out dishes that take too long to make:
+ 
   var max_time = props.maxTime
   var i
   for(i=0;i<length;i++){
@@ -22,6 +23,7 @@ const RefineResults = props => {
           response_list.splice(i,1);
           length = response_list.length
           i--;
+          console.log("***********recipe_time: " + recipe_time)
           console.log("not enough time")
         }
     }catch(error){

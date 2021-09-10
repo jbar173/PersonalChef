@@ -1,0 +1,17 @@
+{
+    "name": "two",
+    "children": [
+        {
+            "name": "garlic",
+            "count": 2
+        },
+        {
+            "name": "salt",
+            "count": 2
+        },
+        {
+            "name": "pepper",
+            "count": 2
+        }
+    ]
+}

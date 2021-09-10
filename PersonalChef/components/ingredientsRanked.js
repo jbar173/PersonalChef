@@ -1,5 +1,8 @@
 import React from 'react';
-import * as data from './checklists/json_ingredient_lists/all.json';
+
+import ranked_files from './directory.js';
+import * as zero from './checklists/json_ingredient_lists/ranked_lists/zero.json';
+
 import { StyleSheet, Text, Pressable, View, SafeAreaView, ScrollView } from 'react-native';
 
 
@@ -13,21 +16,28 @@ class RankedDictionary extends React.Component {
         },
         rankedIngredients: {},
         finished: true,
+        rankWord: this.props.rankWord,
+        rank: this.props.rank
       },
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
-      this.sortByCountFunction = this.sortByCountFunction.bind(this)
       this.sendIngredientsDict = this.sendIngredientsDict.bind(this)
    };
 
-  // Gets json data from imported 'all.json', sorts by count (or rank), highest at the top:
+  // Gets location for relevant rank list from directory, gets the list from that location,
+  //   assigns to rankedIngredients:
   componentDidMount(){
     console.log("Ranked ingredients mounted")
-    var ingrs_json = data.children
-    var ranked_ingrs =  ingrs_json.sort(this.sortByCountFunction);
+
+    var this_rank = this.state.rankWord
+    console.log("this.state.rank: " + this.state.rank)
+    var ingrs_list = ranked_files[`${this_rank}`]
+    // console.log("ingrs_list: " + ingrs_list)
+    // var ingrs_json = ingrs_list
+    var list = ingrs_list.children
     this.setState({
-      rankedIngredients: ranked_ingrs,
+      rankedIngredients: list,
       finished: false,
     })
   }
@@ -44,22 +54,12 @@ class RankedDictionary extends React.Component {
     console.log("RankedDict unmounted")
   }
 
-  // Function used to sort initial data (in componentDidMount):
-  sortByCountFunction(a,b){
-    if (a.count < b.count) {
-        return 1;
-    }
-    if (a.count > b.count) {
-        return -1;
-    }
-    return 0;
-  }
-
   // Function that sends rankedIngredients to < AlterKeywords />:
   sendIngredientsDict(){
     var ranked_dictionary = this.state.rankedIngredients
+    var rank = this.state.rank
     console.log("ranked ingredients.length: " + ranked_dictionary.length )
-    this.props.rankedIngs(ranked_dictionary)
+    this.props.rankedIngs(ranked_dictionary,rank)
     this.setState({
       finished: true,
     })
@@ -86,7 +86,6 @@ const styles = StyleSheet.create({
     paddingHorizontal:20,
   },
 })
-
 
 
 

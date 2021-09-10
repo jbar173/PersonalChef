@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable, SafeAreaView, ScrollView } from 'react-native';
 import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { RankedDictionary } from "./IngredientsRanked.js";
+import toWords from 'number-to-words';
 
 
 
@@ -15,6 +16,9 @@ class AlterKeywords extends React.Component {
         rankedIngredients: {},
         ingredients: this.props.ingredients,
         altered: [],
+        rank: 0,
+        rankWord: 'zero',
+        notFound: false,
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
@@ -32,12 +36,24 @@ class AlterKeywords extends React.Component {
       console.log("alter keywords updated")
       console.log("this.state.ready: " + this.state.ready)
       console.log("this.state.rankedIngredients.length: " + this.state.rankedIngredients.length)
-
       // Triggers function to alter ingredient list, once rankedIngredients
       //   have been received from < RankedDictionary />:
       if(this.state.ready){
         console.log("Ready triggered")
         this.alterIngredients()
+      }
+      // Triggers function that gets the next ranked list from < RankedDictionary /> if no
+      //  matches found within current rankedIngredients:
+      if(this.state.notFound){
+        var next_rank = this.state.rank
+        var converter = require('number-to-words');
+        var word = converter.toWords(next_rank)
+        console.log("!!!!!!!!! word: " + word)
+        this.setState({
+          rankWord: word,
+          getRanked: true,
+          notFound: false
+        })
       }
       // Triggers function that passes new list of keywords back to < ConfirmList />:
       if(this.state.passBack){
@@ -46,11 +62,12 @@ class AlterKeywords extends React.Component {
     }
 
     // Takes in a dictionary of all ingredients, ranked and sorted, from <RankedDictionary /> :
-    getRankedIngredients(ranked_dictionary){
+    getRankedIngredients(ranked_dictionary,rank){
       console.log("get ranked ingredients triggered")
       console.log("ranked_dictionary.length: " + ranked_dictionary.length)
       this.setState({
         rankedIngredients: ranked_dictionary,
+        rank: rank,
         getRanked: false,
         ready: true
       })
@@ -66,6 +83,7 @@ class AlterKeywords extends React.Component {
       var r_length = this.state.rankedIngredients.length - 1
       var new_ingredients = this.state.ingredients
       var searching = true
+      var not_found = false
 
       while(searching){
 
@@ -93,12 +111,12 @@ class AlterKeywords extends React.Component {
                 console.log("*******found least popular********: " + ranked_ingredient)
                 searching = false
                 inner = false
-                console.log("*****searching: " + searching)
-                console.log("*****inner: " + inner)
+                // console.log("*****searching: " + searching)
+                // console.log("*****inner: " + inner)
                 break;
               }else{
-                console.log("////searching: " + searching)
-                console.log("////inner: " + inner)
+                // console.log("////searching: " + searching)
+                // console.log("////inner: " + inner)
                 console.log("pass for:")
                 console.log("my ingredient: " + my_ingredient)
                 console.log("ranked_ingredient: " + ranked_ingredient)
@@ -110,13 +128,29 @@ class AlterKeywords extends React.Component {
             }
           }
         }
+        if(searching){
+          not_found = true
+        }
+        searching = false
       }
 
-      this.setState({
-        altered: new_ingredients,
-        ready: false,
-        passBack: true
-      })
+      if(not_found){
+        console.log("Get next rank of ingredients")
+        var current = this.state.rank
+        var next_rank = current + 1
+        this.setState({
+          ready: false,
+          notFound: true,
+          rank: next_rank
+        })
+      }else{
+        this.setState({
+          altered: new_ingredients,
+          ready: false,
+          passBack: true,
+          notFound: false,
+        })
+      }
     }
 
     // Sends new ingredients list back to < ConfirmList />:
@@ -131,11 +165,12 @@ class AlterKeywords extends React.Component {
 
 
     render(){
-
         return(
                 <View>
                       {this.state.getRanked &&
                         < RankedDictionary
+                          rank = {this.state.rank}
+                          rankWord = {this.state.rankWord}
                           rankedIngs = {this.getRankedIngredients}
                         />
                       }
