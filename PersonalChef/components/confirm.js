@@ -4,6 +4,7 @@ import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { SearchingPage } from "./Animations.js";
 import { ApiCalls } from './ApiCalls.js';
 import { AlterKeywords } from './AlterKeywords.js';
+import { RefineResults } from 'RefineResults.js';
 
 
 
@@ -76,7 +77,7 @@ class ConfirmList extends React.Component {
   }
 
 // Times the app out for 30 seconds in order to spread out
-// api calls (ensures that hits/minute aren't exceeded):
+//   api calls (ensures that hits/minute aren't exceeded):
   startStopwatch(){
     console.log("starting stopwatch")
     var cmponent = this
@@ -86,18 +87,18 @@ class ConfirmList extends React.Component {
           if(cmponent.state.firstResponse[0] === 'empty'){
             cmponent.setState({
               timerStarted: false,
-              apiError: true,                // Triggers < AlterKeywords />
+              apiError: true,          // Issue with the api, shows error message.
             })
           }else if(cmponent.state.firstResponse[0] === 'no results'){
               console.log("api call successful, 0 results")
               cmponent.setState({
                 timerStarted: false,
-                foundResults: false,         // Triggers < AlterKeywords />
+                foundResults: false,   // No results returned from <ApiCalls />, triggers <AlterKeywords />
               })
           }else{
               cmponent.setState({
                 timerStarted: false,
-                redirect: true,
+                redirect: true,       // Response is populated, redirects to <RecipeResults />
               })
             }
       }else{
@@ -160,10 +161,12 @@ class ConfirmList extends React.Component {
   ingredientsAlteredHandler(altered_list){
     console.log("ingredients altered handler triggered")
     console.log("** confirm.js altered_list.length: " + altered_list.length)
+    var length = altered_list.length
     this.setState({
       initialData: {
         ...this.state.initialData,
-        ingredients: altered_list
+        ingredients: altered_list,
+        ingredientCount: length
       },
       foundResults: true,
       timerStarted: true,
@@ -216,6 +219,8 @@ class ConfirmList extends React.Component {
                                     </View>
 
                                     { call_api === true && <ApiCalls
+                                      time = {this.state.initialData.time}
+                                      ingredientCount = {this.state.initialData.ingredientCount}
                                       keywords={this.state.initialData.ingredients}
                                       passDataBack = {this.apiCallFinished} /> }
 

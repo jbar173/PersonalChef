@@ -8,6 +8,8 @@ class ApiCalls extends React.Component{
     this.state = {
       fResponse: [],
       keywords: this.props.keywords,
+      time: this.props.time,
+      ingredientCount: this.props.ingredientCount,
       next: 'first',
       count: null,
       noMorePages: false,
@@ -71,9 +73,11 @@ class ApiCalls extends React.Component{
   apiCall(){
     console.log("calling APIs")
     var keywords = this.state.keywords
+    var time = this.state.time
+    var ingr = this.state.ingredientCount
     var num = this.state.call
     if(this.state.next === 'first'){
-        var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&app_id=f70ab024&app_key=ac8f093ed1576baa704c95c1df284d3f&field=label`
+        var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=${time}&ingr=1-${ingr}&app_id=f70ab024&app_key=ac8f093ed1576baa704c95c1df284d3f&field=label`
         console.log("test_url: " + url)
     }else{
         try{
