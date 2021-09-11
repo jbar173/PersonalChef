@@ -4,7 +4,7 @@ import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { SearchingPage } from "./Animations.js";
 import { ApiCalls } from './ApiCalls.js';
 import { AlterKeywords } from './AlterKeywords.js';
-import { RefineResults } from 'RefineResults.js';
+import { RefineResults } from './RefineResults.js';
 
 
 

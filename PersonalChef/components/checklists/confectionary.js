@@ -36,9 +36,10 @@ class ConfectionaryChecklist extends React.Component {
     this.setState({
       initialList: {
         ...this.state.initialList,
-        [`${new_item[0]}`] : item[1],
+        [`${new_item[0]}`] : new_item[1],
       },
       updated: true,
+      confirmed: false
     })
    }
 

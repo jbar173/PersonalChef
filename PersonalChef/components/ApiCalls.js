@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable } from 'react-native';
+import { AlterKeywords } from './AlterKeywords.js';
+import { RefineResults } from './RefineResults.js';
 
 
 class ApiCalls extends React.Component{

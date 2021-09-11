@@ -192,8 +192,8 @@ class TimeAndType extends React.Component {
                         <Pressable style={styles.blueButton}>
                             <Link accessible={true} accessibilityLabel= "Start again"
                                 accessibilityHint="Click button to go back to homepage"
-                                to="/ranked/" accessibilityRole="button" underlayColor="transparent">
-                                    <Text>Ranked Ingredients</Text>
+                                to="/pantry/" accessibilityRole="button" underlayColor="transparent">
+                                    <Text>Pantry</Text>
                             </Link>
                         </Pressable>
 

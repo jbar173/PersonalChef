@@ -1,0 +1,41 @@
+{
+    "name": "previous_search_pantry_ingredients",
+    "ingredients": [
+      {
+          "name": "white chocolate",
+          "count": "1"
+      },
+      {
+          "name": "milk chocolate",
+          "count": "1"
+      },
+      {
+          "name": "dark chocolate",
+          "count": "1"
+      },
+      {
+          "name": "brown sugar",
+          "count": "1"
+      },
+      {
+          "name": "flour",
+          "count": "1"
+      },
+      {
+          "name": "baking powder",
+          "count": "1"
+      },
+      {
+          "name": "milk",
+          "count": "1"
+      },
+      {
+          "name": "cream",
+          "count": "1"
+      },
+      {
+          "name": "cream cheese",
+          "count": "1"
+      },
+    ]
+}
