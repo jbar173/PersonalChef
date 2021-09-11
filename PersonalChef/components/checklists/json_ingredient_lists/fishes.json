@@ -1,17 +1,5 @@
 {
     "name": "fish_ingredients",
-    "ingredients": [
-      {
-          "name": "prawns",
-          "count": "4"
-      },
-      {
-          "name": "haddock",
-          "count": "1"
-      },
-      {
-          "name": "seabass",
-          "count": "1"
-      },
+    "ingredients": [ "prawns", "haddock", "seabass",
     ]
 }

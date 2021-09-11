@@ -5,6 +5,7 @@ import { SearchingPage } from "./Animations.js";
 import { ApiCalls } from './ApiCalls.js';
 import { AlterKeywords } from './AlterKeywords.js';
 import { RefineResults } from './RefineResults.js';
+import * as all from './checklists/json_ingredient_lists/all_previous_searches.json';
 
 
 
@@ -23,6 +24,8 @@ class ConfirmList extends React.Component {
       confirmed: false,
       populate: false,
       ingredients_rough: {},
+      pantry: [],
+      favourites: [],
 
       apiCall: false,
       timerStarted: false,
@@ -37,6 +40,7 @@ class ConfirmList extends React.Component {
     this.componentWillUnmount = this.componentWillUnmount.bind(this)
     this.confirmIngredients = this.confirmIngredients.bind(this)
     this.populateInitialData = this.populateInitialData.bind(this)
+    this.updateFavourites = this.updateFavourites.bind(this)
     this.startStopwatch = this.startStopwatch.bind(this)
     this.apiCallFinished = this.apiCallFinished.bind(this)
     this.ingredientsAlteredHandler = this.ingredientsAlteredHandler.bind(this)
@@ -69,6 +73,9 @@ class ConfirmList extends React.Component {
     console.log("confirm list updated")
     if(this.state.populate){
       this.populateInitialData()
+    }
+    if(this.state.apiCall){
+      this.updateFavourites()
     }
   }
 
@@ -131,9 +138,26 @@ class ConfirmList extends React.Component {
         ingredients: final,
         ingredientCount: final.length
       },
+      pantry: final,
       apiCall: true,
       populate: false,
-      timerStarted: true
+    })
+  }
+
+  updateFavourites(){
+    var list = this.state.pantry
+    var faves = all.ingredients
+    var i
+    var length = this.state.list.length
+    var to_add = []
+    for(i=0;i<length;i++){
+      if( !(faves.includes(list[i])) ){
+        to_add.push(list[i])
+      }
+    }
+    // send to_add to './json_ingredient_lists/all_previous_searches.json'
+    this.setState({
+      timerStarted: true,
     })
     this.startStopwatch()
   }

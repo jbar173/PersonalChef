@@ -50,9 +50,8 @@ class ConfectionaryChecklist extends React.Component {
       var length = this.state.jsonFileList.length
       var new_dict = {}
       for(i=0;i<length;i++){
-        var name = this.state.jsonFileList[i]['name']
-        var selected = false
-        new_dict[name] = selected
+        var name = this.state.jsonFileList[i]
+        new_dict[name] = false
       }
       this.setState({
         initialList: new_dict,
@@ -124,7 +123,7 @@ class ConfectionaryChecklist extends React.Component {
                         )
                       }
                 </Pressable>
-            </View>
+             </View>
        </SafeAreaView>
     );
   }

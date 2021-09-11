@@ -10,6 +10,8 @@ class UserPantry extends React.Component {
       this.state = {
         pantry: [],
         favourites: [],
+        ingredients_rough: {},
+        updated: false,
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
@@ -27,7 +29,7 @@ class UserPantry extends React.Component {
       console.log("UserPantry unmounted")
     }
 
-    updateListHandler(list){
+    updateListHandler(current_pantry){
       console.log("function")
     }
 

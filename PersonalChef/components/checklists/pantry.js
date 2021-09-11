@@ -36,7 +36,7 @@ class PantryCheckList extends React.Component {
         jsonFavourites: a,
         start: true
       })
-      console.log("p[0]['name']: " + p[0]['name'])
+      console.log("p[0]: " + p[0])
     }
 
     componentDidUpdate(){
@@ -46,9 +46,8 @@ class PantryCheckList extends React.Component {
         var i
         var length = this.state.jsonPantry.length
         for(i=0;i<length;i++){
-          var name = this.state.jsonPantry[i]['name']
-          var selected = true
-          new_dictionary[name] = selected
+          var name = this.state.jsonPantry[i]
+          new_dictionary[name] = true
         }
         this.setState({
           initialDict: new_dictionary,
@@ -65,12 +64,11 @@ class PantryCheckList extends React.Component {
       var new_item = item
       var list = this.state.initialDict
       new_item[1] = !new_item[1]
-      if(new_item.name){
-        var name = new_item.name
+      if(new_item.length === 2){
         this.setState({
           initialDict: {
             ...this.state.initialDict,
-            [`${name}`]: new_item[1],
+            [`${new_item[0]}`]: new_item[1],
           },
           print: true,
           confirmed: false
@@ -79,7 +77,7 @@ class PantryCheckList extends React.Component {
       this.setState({
         initialDict: {
           ...this.state.initialDict,
-          [`${new_item[0]}`]: new_item[1],
+          [`${new_item}`]: true,
         },
         print: true,
         confirmed: false
@@ -136,7 +134,7 @@ class PantryCheckList extends React.Component {
 
       return(
 
-              <SafeAreaView>
+            <SafeAreaView>
                   <View style={styles.container}>
                     <Text style={styles.title}>In your pantry:</Text>
                     <Text>(click on an ingredient to remove it from your pantry)</Text>
@@ -156,24 +154,23 @@ class PantryCheckList extends React.Component {
                                 </View>
                             )
                           }
-                      )}
+                       )}
                     </View>
 
 
                     <View style={{alignItems:"center",marginTop:40}}>
-                        <Pressable onPress={() =>this.props.updateListHandler(this.state.newPantry)}
-                            onPressIn={this.confirmedHandler}>
-                              { confirmed === false ?
+                        <Pressable onPress={() =>this.props.updateListHandler(this.state.newPantry)} onPressIn={this.confirmedHandler}>
+                            { confirmed === false ?
                                 (
-                                  <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
-                                   accessibilityHint="Click to confirm your ingredients" style={styles.greenButton}>Confirm Pantry ingredients</Text>
+                                    <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
+                                     accessibilityHint="Click to confirm your ingredients" style={styles.greenButton}>Confirm Pantry ingredients</Text>
                                 )
                                 :
                                 (
-                                  <Text accessible={true} accessibilityLabel="Change selection" accessibilityRole="button"
-                                   accessibilityHint="Click to change your ingredients" style={styles.blueButton}>Change Pantry ingredients</Text>
+                                    <Text accessible={true} accessibilityLabel="Change selection" accessibilityRole="button"
+                                     accessibilityHint="Click to change your ingredients" style={styles.blueButton}>Change Pantry ingredients</Text>
                                 )
-                              }
+                            }
                         </Pressable>
                     </View>
 
@@ -182,9 +179,6 @@ class PantryCheckList extends React.Component {
                           <View>
                               <Pressable style={styles.greenButton} onPress={this.displayFavourites}>
                                   <Text>Use previous favourites</Text>
-                              </Pressable>
-                              <Pressable style={styles.greenButton} onPress={this.displayFavourites}>
-                                  <Text>Select new ingredients</Text>
                               </Pressable>
                           </View>
                         }
@@ -201,7 +195,7 @@ class PantryCheckList extends React.Component {
                                                 <View key={index}>
                                                   <Pressable onPress={() =>self.selectOrDeselect(item)}
                                                     style={styles.greenButton} key={index}>
-                                                      <Text>{item.name}</Text>
+                                                      <Text>{item}</Text>
                                                   </Pressable>
                                                 </View>
                                             )
@@ -210,7 +204,7 @@ class PantryCheckList extends React.Component {
                               </View>
                            </View>
                          }
-                    </View>
+                     </View>
               </SafeAreaView>
 
       );

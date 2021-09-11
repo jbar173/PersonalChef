@@ -1,17 +1,5 @@
 {
     "name": "tins_ingredients",
-    "ingredients": [
-        {
-            "name": "plum tomatoes",
-            "count": "1"
-        },
-        {
-            "name": "kidney beans",
-            "count": "1"
-        },
-        {
-            "name": "tinned apricots",
-            "count": "1"
-        },
+    "ingredients": [ "plum tomatoes", "kidney beans", "tinned apricots",
     ]
 }

@@ -49,7 +49,7 @@ class FruitAndVegChecklist extends React.Component {
       var length = this.state.jsonFileList.length
       var new_dict = {}
       for(i=0;i<length;i++){
-        var name = this.state.jsonFileList[i]['name']
+        var name = this.state.jsonFileList[i]
         var selected = false
         new_dict[name] = selected
       }

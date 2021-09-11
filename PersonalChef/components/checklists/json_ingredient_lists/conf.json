@@ -1,61 +1,6 @@
 {
     "name": "confectionary_ingredients",
-    "ingredients": [
-        {
-            "name": "white chocolate",
-            "count": "1"
-        },
-        {
-            "name": "milk chocolate",
-            "count": "1"
-        },
-        {
-            "name": "dark chocolate",
-            "count": "1"
-        },
-        {
-            "name": "chocolate buttons",
-            "count": "1"
-        },
-        {
-            "name": "hundreds and thousands",
-            "count": "1"
-        },
-        {
-            "name": "chocolate sprinkles",
-            "count": "1"
-        },
-        {
-            "name": "milk chocolate drops",
-            "count": "1"
-        },
-        {
-            "name": "white chocolate drops",
-            "count": "1"
-        },
-        {
-            "name": "dark chocolate drops",
-            "count": "1"
-        },
-        {
-            "name": "jelly tots",
-            "count": "1"
-        },
-        {
-            "name": "smarties",
-            "count": "1"
-        },
-        {
-            "name": "skittles",
-            "count": "1"
-        },
-        {
-            "name": "maltesers",
-            "count": "1"
-        },
-        {
-            "name": "mini eggs",
-            "count": "1"
-        },
+    "ingredients": ["white chocolate", "milk chocolate", "dark chocolate", "chocolate buttons", "hundreds and thousands", "chocolate sprinkles", "milk chocolate drops", "dark chocolate drops",
+       "white chocolate drops", "jelly tots", "smarties", "skittles", "maltesers", "mini eggs",
     ]
 }

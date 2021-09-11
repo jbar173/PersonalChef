@@ -1,53 +1,5 @@
 {
     "name": "all_previous_pantry_ingredients",
-    "ingredients": [
-      {
-          "name": "brown sugar",
-          "count": "1"
-      },
-      {
-          "name": "flour",
-          "count": "1"
-      },
-      {
-          "name": "sugar",
-          "count": "1"
-      },
-      {
-          "name": "pasta",
-          "count": "1"
-      },
-      {
-          "name": "baking powder",
-          "count": "1"
-      },
-      {
-          "name": "white chocolate",
-          "count": "1"
-      },
-      {
-          "name": "milk chocolate",
-          "count": "1"
-      },
-      {
-          "name": "dark chocolate",
-          "count": "1"
-      },
-      {
-          "name": "chocolate buttons",
-          "count": "1"
-      },
-      {
-          "name": "prawns",
-          "count": "4"
-      },
-      {
-          "name": "haddock",
-          "count": "1"
-      },
-      {
-          "name": "seabass",
-          "count": "1"
-      },
+    "ingredients": [ "brown sugar","flour","sugar","pasta","baking powder","white chocolate","milk chocolate","dark chocolate","chocolate buttons","prawns","haddock","seabass",
     ]
 }
