@@ -258,7 +258,7 @@ class ConfirmList extends React.Component {
                                 <View style={styles.container}>
 
                                     <Text accessible={true} accessibilityLabel="Confirm your ingredients here, or click go back to edit them."
-                                      accessibilityRole="text" style={styles.mainTitle}>Confirm ingredients</Text>
+                                      accessibilityRole="text" style={styles.mainTitle}>Confirm pantry ingredients</Text>
 
                                       {Object.entries(ingreds).map(function(item){
                                         return(

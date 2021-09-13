@@ -11,44 +11,79 @@ class UserPantry extends React.Component {
         pantry: [],
         favourites: [],
         ingredients_rough: {},
-        updated: false,
+        pantryUpdated: false,
+        final: false,
+        reRender: false
       }
       this.componentDidMount = this.componentDidMount.bind(this)
-      this.componentWillUnmount = this.componentWillUnmount.bind(this)
+      this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.updateListHandler = this.updateListHandler.bind(this)
+      this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
     };
 
     componentDidMount(){
       console.log("UserPantry mounted")
-      // var initial_data = this.props.location.state.initial_data
-      // var either = this.props.location.state.either
-      // var times = this.props.location.state.times
     }
 
-    componentWillUnmount(){
-      console.log("UserPantry unmounted")
+    componentDidUpdate(){
+      console.log("UserPantry updated")
+      if(this.state.pantryUpdated){
+        this.updateIngredientsRoughHandler()
+      }
     }
 
     updateListHandler(current_pantry){
-      console.log("function")
+      console.log("UserPantry list updated")
+      this.setState({
+        pantry: current_pantry,
+        pantryUpdated: true
+      })
     }
 
+    updateIngredientsRoughHandler(){
+      console.log("UserPantry is updating recipe ingredients")
+      var new_key = "pantry"
+      var final_list = this.state.ingredients_rough
+      for([key,value] of Object.entries(final_list)){
+         if(key === new_key){
+             delete final_list[key]
+           }
+      }
+      final_list[new_key] = this.state.pantry
+      this.setState({
+        ingredients_rough: final_list,
+        pantryUpdated: false,
+        final: true
+      })
+    }
 
     render(){
-
+      var ingreds = this.state.ingredients_rough
+      var final = this.state.final
 
       return(
-              <SafeAreaView style={styles.container}>
+              <SafeAreaView>
                 <ScrollView>
-                    <View>
-                        <Text accessible={true} accessibilityLabel="In Your pantry!"
+                    <View style={styles.container}>
+                        <Text accessible={true} accessibilityLabel="My pantry"
                           accessibilityRole="text" style={styles.mainTitle}>My pantry</Text>
 
                         <PantryCheckList updateListHandler={this.updateListHandler} />
+
+                        {final &&
+                            <Pressable style={styles.blueButton}>
+                                 <Link accessible={true} accessibilityLabel= "Continue"
+                                   accessibilityHint="Pantry confirmed - continue to next page"
+                                   to={{ pathname:"/type-time/", state:{ ingreds: ingreds,} }}
+                                   accessibilityRole="button" underlayColor="transparent">
+                                   <Text>Continue</Text>
+                                 </Link>
+                            </Pressable>
+                        }
                     </View>
                 </ScrollView>
               </SafeAreaView>
-      );
+          );
 
     }
 

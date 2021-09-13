@@ -20,7 +20,7 @@ class HomePage extends React.Component {
 
             <TouchableOpacity activeOpacity={1} underlayColor="transparent">
                 <Link accessible={true} accessibilityLabel="Find a recipe for your ingredients"
-                  accessibilityRole="button" to="/type-time/" underlayColor="transparent" >
+                  accessibilityRole="button" to="/pantry/" underlayColor="transparent" >
                    <Text style={styles.greenButton}>Find a recipe for your ingredients</Text>
                 </Link>
             </TouchableOpacity>
@@ -63,9 +63,19 @@ class TimeAndType extends React.Component {
     this.radioButtonPressedHandler = this.radioButtonPressedHandler.bind(this)
     this.onChangeTimeHoursHandler = this.onChangeTimeHoursHandler.bind(this)
     this.onChangeTimeMinsHandler = this.onChangeTimeMinsHandler.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
   };
 
+  componentDidMount(){
+    var ingreds = this.props.location.state.ingreds
+    this.setState({
+      ingredients_rough: ingreds,
+    })
+    for(x in ingreds){
+      console.log("**** ingreds: " + ingreds[x])
+    }
+  }
 
    radioButtonPressedHandler(value){
       if (value === "dessert" || value === "other"){
@@ -181,6 +191,7 @@ class TimeAndType extends React.Component {
       var initial = this.state.initialData
       var either = this.state.both
       var times = this.state.times
+      var ingreds = this.state.ingredients_rough
       var valid = this.state.validTimes
 
 
@@ -189,13 +200,6 @@ class TimeAndType extends React.Component {
             <View style={styles.container}>
 
                 <View>
-                        <Pressable style={styles.blueButton}>
-                            <Link accessible={true} accessibilityLabel= "Start again"
-                                accessibilityHint="Click button to go back to homepage"
-                                to="/pantry/" accessibilityRole="button" underlayColor="transparent">
-                                    <Text>Pantry</Text>
-                            </Link>
-                        </Pressable>
 
                         <Text accessible={true} accessibilityLabel="How much time do you have?" accessibilityRole="text"
                           style={{marginBottom:20,marginTop:20}}>How much time do you have?</Text>
@@ -251,7 +255,7 @@ class TimeAndType extends React.Component {
 
                                     <TouchableOpacity accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                                       underlayColor="white">
-                                          <Link style={{marginTop:90}} to="/" underlayColor="transparent">
+                                          <Link style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
                                             <Text style={styles.blueButton}>Back</Text>
                                           </Link>
                                     </TouchableOpacity>
@@ -291,13 +295,13 @@ class TimeAndType extends React.Component {
 
                                                   (
                                                     <View>
-                                                        <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, times: times } }}
-                                                          underlayColor="transparent">
+                                                        <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either,
+                                                           times: times, ingreds: ingreds } }} underlayColor="transparent">
                                                              <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
                                                               accessibilityRole="button" style={styles.greenButton}>Dessert ingredients</Text>
                                                         </Link>
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/" underlayColor="transparent">
+                                                          style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
                                                              <Text style={styles.blueButton}>Back</Text>
                                                         </Link>
                                                     </View>
@@ -316,7 +320,7 @@ class TimeAndType extends React.Component {
                                                          accessibilityRole="alert" style={styles.red}>Please enter times above</Text>}
 
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/" underlayColor="transparent">
+                                                          style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
                                                              <Text style={styles.blueButton}>Back</Text>
                                                         </Link>
                                                     </View>
@@ -335,13 +339,13 @@ class TimeAndType extends React.Component {
                                                   (
                                                     <View>
                                                         <Link accessible={true} accessibilityLabel="Go to savoury ingredients" accessibilityRole="button"
-                                                          to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, times: times } }}
-                                                          underlayColor="transparent" >
+                                                          to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, times: times,
+                                                            ingreds: ingreds } }} underlayColor="transparent" >
                                                             <Text accessible={true} accessibilityLabel="Go to savoury ingredients"
                                                               style={styles.greenButton}>Savoury ingredients</Text>
                                                         </Link>
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/" underlayColor="transparent">
+                                                          style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
                                                             <Text style={styles.blueButton}>Back</Text>
                                                         </Link>
                                                     </View>
@@ -358,7 +362,7 @@ class TimeAndType extends React.Component {
                                                           accessibilityRole="alert" style={styles.red}>Please enter times above</Text>}
 
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/" underlayColor="transparent">
+                                                          style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
                                                             <Text style={styles.blueButton}>Back</Text>
                                                         </Link>
                                                     </View>

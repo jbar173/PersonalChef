@@ -11,32 +11,37 @@ class PantryCheckList extends React.Component {
       this.state = {
         jsonPantry: [],
         jsonFavourites: [],
+        empty: false,
         start: false,
         initialDict: {},
-        print: false,
-        confirmed: false,
         display: false,
+
+        confirmed: false,
         newPantry: [],
-        newFavourites: []
+        finalConfirm: false
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.selectOrDeselect = this.selectOrDeselect.bind(this)
-      this.printInitialDict = this.printInitialDict.bind(this)
-      this.confirmedHandler = this.confirmedHandler.bind(this)
       this.displayFavourites = this.displayFavourites.bind(this)
+      this.confirmedHandler = this.confirmedHandler.bind(this)
     };
 
     componentDidMount(){
       console.log("PantryChecklist mounted")
       var p = previous.ingredients
       var a = all.ingredients
+      if(p.length==0){
+        this.setState({
+          empty: true
+        })
+        return 1;
+      }
       this.setState({
         jsonPantry: p,
         jsonFavourites: a,
         start: true
       })
-      console.log("p[0]: " + p[0])
     }
 
     componentDidUpdate(){
@@ -51,12 +56,14 @@ class PantryCheckList extends React.Component {
         }
         this.setState({
           initialDict: new_dictionary,
-          print: true,
           start: false
         })
       }
-      if(this.state.print){
-        this.printInitialDict()
+      if(this.state.finalConfirm){
+        this.props.updateListHandler(this.state.newPantry)
+        this.setState({
+          finalConfirm: false
+        })
       }
     }
 
@@ -70,7 +77,6 @@ class PantryCheckList extends React.Component {
             ...this.state.initialDict,
             [`${new_item[0]}`]: new_item[1],
           },
-          print: true,
           confirmed: false
         }); return 1;
       }
@@ -79,24 +85,7 @@ class PantryCheckList extends React.Component {
           ...this.state.initialDict,
           [`${new_item}`]: true,
         },
-        print: true,
         confirmed: false
-      })
-    }
-
-    printInitialDict(){
-      var initial_dict = this.state.initialDict
-      var new_pantry = this.state.newPantry
-      console.log("~~~~~~~~~")
-      for([key,value] of Object.entries(initial_dict)){
-        console.log(key + ":" + value)
-      }
-      console.log("- - - - - ")
-      for(x in new_pantry){
-        console.log("new_pantry[x]: " + new_pantry[x])
-      }
-      this.setState({
-        print: false
       })
     }
 
@@ -112,7 +101,7 @@ class PantryCheckList extends React.Component {
       this.setState({
         confirmed: state,
         newPantry: new_pantry,
-        print: true
+        finalConfirm: true
       })
     }
 
@@ -125,6 +114,7 @@ class PantryCheckList extends React.Component {
     }
 
 
+
     render(){
       var pantry = this.state.initialDict
       var favourites = this.state.jsonFavourites
@@ -134,78 +124,107 @@ class PantryCheckList extends React.Component {
 
       return(
 
-            <SafeAreaView>
-                  <View style={styles.container}>
-                    <Text style={styles.title}>In your pantry:</Text>
-                    <Text>(click on an ingredient to remove it from your pantry)</Text>
-                      {Object.entries(pantry).map(function(item,index){
-                          return(
-                                <View>
-                                    {item[1] == true &&
-                                      <Pressable style={styles.greenButton} onPress={() => self.selectOrDeselect(item)}>
-                                          <Text>{item}</Text>
-                                      </Pressable>
-                                    }
-                                    {item[1] == false &&
-                                      <Pressable style={styles.blueButton} onPress={() => self.selectOrDeselect(item)}>
-                                          <Text>{item}</Text>
-                                      </Pressable>
-                                    }
-                                </View>
-                            )
-                          }
-                       )}
-                    </View>
-
-
-                    <View style={{alignItems:"center",marginTop:40}}>
-                        <Pressable onPress={() =>this.props.updateListHandler(this.state.newPantry)} onPressIn={this.confirmedHandler}>
-                            { confirmed === false ?
-                                (
-                                    <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
-                                     accessibilityHint="Click to confirm your ingredients" style={styles.greenButton}>Confirm Pantry ingredients</Text>
-                                )
-                                :
-                                (
-                                    <Text accessible={true} accessibilityLabel="Change selection" accessibilityRole="button"
-                                     accessibilityHint="Click to change your ingredients" style={styles.blueButton}>Change Pantry ingredients</Text>
-                                )
-                            }
-                        </Pressable>
-                    </View>
-
-                    <View style={{alignItems:"center",marginTop:40}}>
-                        {display === false &&
-                          <View>
-                              <Pressable style={styles.greenButton} onPress={this.displayFavourites}>
-                                  <Text>Use previous favourites</Text>
-                              </Pressable>
+          <SafeAreaView style={styles.container}>
+                <View>
+                    {this.state.empty == false &&
+                      <View>
+                         <View style={styles.container}>
+                            <Text style={styles.title}>In your pantry:</Text>
+                            <Text>(click on an ingredient to remove it from your pantry)</Text>
+                              {Object.entries(pantry).map(function(item,index){
+                                  return(
+                                        <View>
+                                            {item[1] == true &&
+                                              <Pressable style={styles.greenButton} onPress={() => self.selectOrDeselect(item)}>
+                                                  <Text>{item}</Text>
+                                              </Pressable>
+                                            }
+                                            {item[1] == false &&
+                                              <Pressable style={styles.blueButton} onPress={() => self.selectOrDeselect(item)}>
+                                                  <Text>{item}</Text>
+                                              </Pressable>
+                                            }
+                                        </View>
+                                    )
+                                  }
+                               )}
                           </View>
+
+
+                          <View style={{alignItems:"center",marginTop:40}}>
+                                  { confirmed === false &&
+                                    <View>
+                                      <Pressable onPress={this.confirmedHandler}>
+                                          <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
+                                           accessibilityHint="Click to confirm your ingredients" style={styles.greenButton}>Confirm Pantry ingredients</Text>
+                                      </Pressable>
+                                   </View>
+                                  }
+                                  { confirmed &&
+                                    <View>
+                                      <Pressable onPress={this.confirmedHandler}>
+                                          <Text accessible={true} accessibilityLabel="Change selection" accessibilityRole="button"
+                                           accessibilityHint="Click to change your ingredients" style={styles.blueButton}>Change Pantry ingredients</Text>
+                                      </Pressable>
+                                    </View>
+                                   }
+                          </View>
+
+                          <View style={{alignItems:"center",marginTop:40}}>
+                                {display === false &&
+                                  <View>
+                                      <Pressable style={styles.greenButton} onPress={this.displayFavourites}>
+                                          <Text>Use previous favourites</Text>
+                                      </Pressable>
+                                  </View>
+                                }
+
+                                {display &&
+                                  <View style={{alignItems:"center",marginVertical:20}}>
+                                      <Pressable style={styles.greenButton} onPress={this.displayFavourites}>
+                                          <Text>Hide favourites</Text>
+                                      </Pressable>
+                                      <Text>Click item to add to pantry above:</Text>
+                                      <View style={styles.container}>
+                                              {favourites.map(function(item,index){
+                                                  return(
+                                                        <View key={index}>
+                                                          <Pressable onPress={() =>self.selectOrDeselect(item)}
+                                                            style={styles.greenButton} key={index}>
+                                                              <Text>{item}</Text>
+                                                          </Pressable>
+                                                        </View>
+                                                    )
+                                                })
+                                              }
+                                       </View>
+                                   </View>
+                                  }
+                            </View>
+                        </View>
                         }
 
-                        {display &&
-                          <View style={{alignItems:"center",marginTop:10}}>
-                              <Pressable style={styles.greenButton} onPress={this.displayFavourites}>
-                                  <Text>Hide favourites</Text>
-                              </Pressable>
-                              <Text>Click item to add to pantry above:</Text>
-                              <View style={styles.container}>
-                                      {favourites.map(function(item,index){
-                                          return(
-                                                <View key={index}>
-                                                  <Pressable onPress={() =>self.selectOrDeselect(item)}
-                                                    style={styles.greenButton} key={index}>
-                                                      <Text>{item}</Text>
-                                                  </Pressable>
-                                                </View>
-                                            )
-                                        })
-                                      }
-                              </View>
-                           </View>
+                        {this.state.empty &&
+                            <View style={{alignItems:"center",marginTop:40}}>
+                                  <Text style={{marginVertical:40,fontSize:18}}>Your pantry is empty!</Text>
+                                  <Pressable style={styles.blueButton}>
+                                       <Link accessible={true} accessibilityLabel= "Your pantry is empty"
+                                         accessibilityHint="Press here to add items to your pantry"
+                                         to="/type-time/" accessibilityRole="button" underlayColor="transparent">
+                                         <Text>Add items</Text>
+                                       </Link>
+                                  </Pressable>
+                                  <Pressable style={styles.blueButton}>
+                                       <Link accessible={true} accessibilityLabel= "Go back"
+                                         accessibilityHint="Press to go back"
+                                         to="/" accessibilityRole="button" underlayColor="transparent">
+                                         <Text>Back</Text>
+                                       </Link>
+                                  </Pressable>
+                            </View>
                          }
-                     </View>
-              </SafeAreaView>
+                  </View>
+          </SafeAreaView>
 
       );
 

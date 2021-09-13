@@ -38,10 +38,12 @@ class MeatIngredientsList extends React.Component {
       var initial_data = this.props.location.state.initial_data
       var either = this.props.location.state.either
       var times = this.props.location.state.times
+      var ingreds = this.props.location.state.ingreds
       this.setState({
         initialData:initial_data,
         both:either,
-        times:times
+        times:times,
+        ingredients_rough: ingreds
       })
     }
 
