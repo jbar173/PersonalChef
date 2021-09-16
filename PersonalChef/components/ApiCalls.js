@@ -11,6 +11,7 @@ class ApiCalls extends React.Component{
       fResponse: [],
       keywords: this.props.keywords,
       time: this.props.time,
+      type: this.props.type,
       ingredientCount: this.props.ingredientCount,
       next: 'first',
       count: null,
@@ -76,10 +77,15 @@ class ApiCalls extends React.Component{
     console.log("calling APIs")
     var keywords = this.state.keywords
     var time = this.state.time
+    if(this.state.type == 'dessert'){
+      var type = 'dishType=Biscuits%20and%20cookies&dishType=Cereals&dishType=Desserts&dishType=Drinks&dishType=Pancake&dishType=Preserve&dishType=Sweets'
+    }else{
+      var type = 'dishType=Bread&dishType=Condiments%20and%20sauces&dishType=Main%20course&dishType=Pancake&dishType=Preps&dishType=Salad&dishType=Sandwiches&dishType=Side%20dish&dishType=Soup&dishType=Starter'
+    }
     var ingr = this.state.ingredientCount
     var num = this.state.call
     if(this.state.next === 'first'){
-        var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=${time}&ingr=1-${ingr}&app_id=f70ab024&app_key=ac8f093ed1576baa704c95c1df284d3f&field=label`
+        var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=${time}&ingr=1-${ingr}&${type}&app_id=f70ab024&app_key=ac8f093ed1576baa704c95c1df284d3f&field=label`
         console.log("test_url: " + url)
     }else{
         try{

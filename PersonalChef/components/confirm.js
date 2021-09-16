@@ -5,8 +5,8 @@ import { SearchingPage } from "./Animations.js";
 import { ApiCalls } from './ApiCalls.js';
 import { AlterKeywords } from './AlterKeywords.js';
 import { RefineResults } from './RefineResults.js';
-import * as all from './checklists/json_ingredient_lists/all_previous_searches.json';
 
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 class ConfirmList extends React.Component {
@@ -26,6 +26,7 @@ class ConfirmList extends React.Component {
       ingredients_rough: {},
       pantry: [],
       favourites: [],
+      updateFaves: false,
 
       apiCall: false,
       timerStarted: false,
@@ -40,11 +41,52 @@ class ConfirmList extends React.Component {
     this.componentWillUnmount = this.componentWillUnmount.bind(this)
     this.confirmIngredients = this.confirmIngredients.bind(this)
     this.populateInitialData = this.populateInitialData.bind(this)
-    this.updateFavourites = this.updateFavourites.bind(this)
+    this.getFavourites = this.getFavourites.bind(this)
     this.startStopwatch = this.startStopwatch.bind(this)
     this.apiCallFinished = this.apiCallFinished.bind(this)
     this.ingredientsAlteredHandler = this.ingredientsAlteredHandler.bind(this)
+
   };
+
+  saveDeviceData = async ( key, data ) => {
+      try {
+          // var key = "@favourite-ingredients"
+          await AsyncStorage.setItem(key, JSON.stringify(data));
+      } catch (e) {
+        console.log(`Error saving data for key ${key}`, data);
+        throw e;
+      }
+  };
+
+  getData = async (key) => {
+      try {
+        const value = await AsyncStorage.getItem(key)
+        if(value !== null) {
+            console.log("value: " + value)
+            for(x in value){
+              if(value[x] === ']' ){
+                var i = x
+                var first = value.slice(1,i)
+              }
+            }
+            var ingrs = first.split(',')
+            console.log("ingrs: " + ingrs)
+
+            for(x in ingrs){
+              console.log("**ingrs[x]: " + ingrs[x])
+              // console.log("typeof(ingrs[x]): " + typeof(ingrs[x]))
+            }
+
+            if(key === '@favourite-ingredients'){
+              this.setState({
+                favourites: ingrs
+              })
+            }
+          }
+      } catch(e) {
+        console.log("Error reading data for favourites");
+      }
+  }
 
 
   componentDidMount(){
@@ -75,6 +117,9 @@ class ConfirmList extends React.Component {
       this.populateInitialData()
     }
     if(this.state.apiCall){
+      this.getFavourites()
+    }
+    if(this.state.updateFaves){
       this.updateFavourites()
     }
   }
@@ -82,6 +127,7 @@ class ConfirmList extends React.Component {
   componentWillUnmount(){
     console.log("confirm page unmounted")
   }
+
 
 // Times the app out for 30 seconds in order to spread out
 //   api calls (ensures that hits/minute aren't exceeded):
@@ -144,23 +190,55 @@ class ConfirmList extends React.Component {
     })
   }
 
+  getFavourites(){
+    console.log("updating favourites")
+    var favourites_key = '@favourite-ingredients'
+    var faves = this.getData(favourites_key)
+    this.setState({
+       apiCall: false,
+       updateFaves: true
+     })
+  }
+
   updateFavourites(){
+    var faves = this.state.favourites
+    for(x in faves){
+      console.log("1. FAVES[x]: " + faves[x])
+    }
     var list = this.state.pantry
-    var faves = all.ingredients
     var i
-    var length = this.state.list.length
-    var to_add = []
+    var length = list.length
     for(i=0;i<length;i++){
       if( !(faves.includes(list[i])) ){
-        to_add.push(list[i])
+        faves.push(list[i])
       }
     }
-    // send to_add to './json_ingredient_lists/all_previous_searches.json'
+    for(x in faves){
+      console.log("2. FAVES[x]: " + faves[x])
+    }
+    var saveData = async (key,data) => {
+         try {
+             await this.saveDeviceData(key,data);
+             console.log("SAVED")
+         } catch (e) {
+           console.log("Error saving to_add: " + e)
+         }
+     };
+     var favourites_key = '@favourite-ingredients'
+     var pantry_key = '@pantry-ingredients'
+     var favourites_saved = saveData(favourites_key,faves)
+     var pantry_saved = saveData(pantry_key,list)
+
     this.setState({
-      timerStarted: true,
+      favourites: faves,
+      updateFaves: false
     })
-    this.startStopwatch()
+    // this.setState({
+    //   timerStarted: true,
+    // })
+    // this.startStopwatch()
   }
+
 
 // Takes in the response from < ApiCalls /> component:
   apiCallFinished(initial){
@@ -245,6 +323,7 @@ class ConfirmList extends React.Component {
                                     { call_api === true && <ApiCalls
                                       time = {this.state.initialData.time}
                                       ingredientCount = {this.state.initialData.ingredientCount}
+                                      type = {this.state.initialData.type}
                                       keywords={this.state.initialData.ingredients}
                                       passDataBack = {this.apiCallFinished} /> }
 
@@ -313,13 +392,31 @@ class ConfirmList extends React.Component {
                 </View>
              }
 
-
         </ScrollView>
       </SafeAreaView>
-
     );
   }
 };
+
+
+// const newFavourites = props => {
+//     var test = 'hello'
+//     return(
+//       <View>
+//         <Text>{test}</Text>
+//       </View>
+//     )
+// };
+//
+// const newPantry = props => {
+//     var test = 'world'
+//     return(
+//       <View>
+//         <Text>{test}</Text>
+//       </View>
+//     )
+// };
+
 
 
 
@@ -351,7 +448,8 @@ const styles = StyleSheet.create({
   },
   mainTitle: {
     fontSize:28,
-    marginBottom:20
+    marginBottom:20,
+    textAlign:"center",
   },
   greenButton: {
     padding: 10,

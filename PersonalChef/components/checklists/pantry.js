@@ -1,18 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Pressable, SafeAreaView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
-import * as previous from './json_ingredient_lists/previous_search.json';
-import * as all from './json_ingredient_lists/all_previous_searches.json';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 class PantryCheckList extends React.Component {
     constructor(props){
       super(props);
       this.state = {
-        jsonPantry: [],
-        jsonFavourites: [],
+        pantry: [],
+        favourites: [],
         empty: false,
-        start: false,
+        displayEmpty: false,
+
+        started: false,
         initialDict: {},
         display: false,
 
@@ -25,46 +26,108 @@ class PantryCheckList extends React.Component {
       this.selectOrDeselect = this.selectOrDeselect.bind(this)
       this.displayFavourites = this.displayFavourites.bind(this)
       this.confirmedHandler = this.confirmedHandler.bind(this)
+      this.favouritesWasEmpty = this.favouritesWasEmpty.bind(this)
     };
+
+    getData = async (key) => {
+
+      try {
+        const value = await AsyncStorage.getItem(key)
+        if(value !== null) {
+            console.log("value: " + value)
+            for(x in value){
+              if(value[x] === ']' ){
+                var i = x
+                var first = value.slice(1,i)
+              }
+            }
+            var ingrs = first.split(',')
+            console.log("ingrs: " + ingrs)
+
+            for(x in ingrs){
+              console.log("**ingrs[x]: " + ingrs[x])
+              // console.log("typeof(ingrs[x]): " + typeof(ingrs[x]))
+            }
+
+            if(key === '@favourite-ingredients'){
+              console.log("favesssssssssss")
+              this.setState({
+                favourites: ingrs
+              })
+            }else if(key === '@pantry-ingredients')
+            console.log("pantryyyy")
+              this.setState({
+                pantry: ingrs
+              })
+
+          }else{
+            this.setState({
+              empty: true
+            })
+          }
+
+        } catch(e) {
+          console.log("Error reading data for favourites: " + e.message);
+      }
+    }
 
     componentDidMount(){
       console.log("PantryChecklist mounted")
-      var p = previous.ingredients
-      var a = all.ingredients
-      if(p.length==0){
+      var favourites_key = '@favourite-ingredients'
+      var pantry_key = '@pantry-ingredients'
+      var f = this.getData(favourites_key)
+      var p = this.getData(pantry_key)
+      var length = this.state.favourites.length
+      if(length>1){
         this.setState({
-          empty: true
+          start: true
         })
-        return 1;
       }
-      this.setState({
-        jsonPantry: p,
-        jsonFavourites: a,
-        start: true
-      })
     }
 
     componentDidUpdate(){
       console.log("PantryChecklist unmounted")
-      var new_dictionary = {}
-      if(this.state.start){
+
+      if(this.state.empty && this.state.finalConfirm === false){
+        console.log("empty")
+        this.favouritesWasEmpty()
+        return 1
+      }
+
+      var length = this.state.pantry.length
+      if(this.state.started === false && length > 0){
+        console.log("start")
+        var new_dictionary = {}
         var i
-        var length = this.state.jsonPantry.length
+        var length = this.state.pantry.length
         for(i=0;i<length;i++){
-          var name = this.state.jsonPantry[i]
+          var name = this.state.pantry[i]
+          console.log("name: " + name)
           new_dictionary[name] = true
         }
         this.setState({
           initialDict: new_dictionary,
-          start: false
+          started: true
         })
       }
       if(this.state.finalConfirm){
         this.props.updateListHandler(this.state.newPantry)
         this.setState({
-          finalConfirm: false
+          finalConfirm: false,
+          empty: false
         })
       }
+    }
+
+    componentWillUnmount(){
+      console.log("unmounted")
+    }
+
+    favouritesWasEmpty(){
+      this.setState({
+        finalConfirm: true,
+        displayEmpty: true
+      })
     }
 
     selectOrDeselect(item){
@@ -117,7 +180,7 @@ class PantryCheckList extends React.Component {
 
     render(){
       var pantry = this.state.initialDict
-      var favourites = this.state.jsonFavourites
+      var favourites = this.state.favourites
       var self = this
       var confirmed = this.state.confirmed
       var display = this.state.display
@@ -126,7 +189,7 @@ class PantryCheckList extends React.Component {
 
           <SafeAreaView style={styles.container}>
                 <View>
-                    {this.state.empty == false &&
+                    {this.state.displayEmpty == false &&
                       <View>
                          <View style={styles.container}>
                             <Text style={styles.title}>In your pantry:</Text>
@@ -158,7 +221,7 @@ class PantryCheckList extends React.Component {
                                           <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
                                            accessibilityHint="Click to confirm your ingredients" style={styles.greenButton}>Confirm Pantry ingredients</Text>
                                       </Pressable>
-                                   </View>
+                                    </View>
                                   }
                                   { confirmed &&
                                     <View>
@@ -203,26 +266,15 @@ class PantryCheckList extends React.Component {
                             </View>
                         </View>
                         }
+                        {this.state.displayEmpty &&
 
-                        {this.state.empty &&
-                            <View style={{alignItems:"center",marginTop:40}}>
-                                  <Text style={{marginVertical:40,fontSize:18}}>Your pantry is empty!</Text>
-                                  <Pressable style={styles.blueButton}>
-                                       <Link accessible={true} accessibilityLabel= "Your pantry is empty"
-                                         accessibilityHint="Press here to add items to your pantry"
-                                         to="/type-time/" accessibilityRole="button" underlayColor="transparent">
-                                         <Text>Add items</Text>
-                                       </Link>
-                                  </Pressable>
-                                  <Pressable style={styles.blueButton}>
-                                       <Link accessible={true} accessibilityLabel= "Go back"
-                                         accessibilityHint="Press to go back"
-                                         to="/" accessibilityRole="button" underlayColor="transparent">
-                                         <Text>Back</Text>
-                                       </Link>
-                                  </Pressable>
-                            </View>
-                         }
+                          <View style={styles.container}>
+
+                              <Text style={styles.title}>Your pantry is empty!</Text>
+                              <Text style={{marginVertical:20}}>Click continue to add items to your pantry.</Text>
+
+                          </View>
+                        }
                   </View>
           </SafeAreaView>
 

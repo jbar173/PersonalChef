@@ -10,6 +10,8 @@ import { HerbsAndSpicesList, TinnedGoodsList, DryIngredientsList,
 import { ConfirmList } from './components/confirm.js';
 import { RecipeResults } from './components/results.js';
 import { RankedDict } from './components/IngredientsRanked.js';
+import { ApiCalls } from './components/ApiCalls.js';
+import { UserPantry } from './components/UserPantry.js';
 
 
 class App extends React.Component {
@@ -43,6 +45,7 @@ class App extends React.Component {
             <View style={styles.container}>
                 <Route exact path = "/" component={HomePage} />
                 <Route exact path = "/type-time/" component={TimeAndType} />
+                <Route exact path = "/pantry/" component={UserPantry} />
 
                 <Route exact path = "/dessert-confectionary/" component={ConfectionaryIngredientsList} />
 
@@ -56,6 +59,7 @@ class App extends React.Component {
                 <Route exact path = "/both-tinned/" component={TinnedGoodsList} />
 
                 <Route exact path = "/confirm/" component={ConfirmList} />
+                <Route exact path = "/api-calls/" component={ApiCalls} />
                 <Route exact path = "/results-initial/" component={RecipeResults} />
                 <Route exact path = "/ranked/" component={RankedDict} />
             </View>

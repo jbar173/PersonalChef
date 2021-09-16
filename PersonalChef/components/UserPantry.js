@@ -13,6 +13,7 @@ class UserPantry extends React.Component {
         ingredients_rough: {},
         pantryUpdated: false,
         final: false,
+        empty: false,
         reRender: false
       }
       this.componentDidMount = this.componentDidMount.bind(this)
@@ -34,6 +35,7 @@ class UserPantry extends React.Component {
 
     updateListHandler(current_pantry){
       console.log("UserPantry list updated")
+      console.log("**current_pantry.length: " + current_pantry.length)
       this.setState({
         pantry: current_pantry,
         pantryUpdated: true
@@ -42,7 +44,7 @@ class UserPantry extends React.Component {
 
     updateIngredientsRoughHandler(){
       console.log("UserPantry is updating recipe ingredients")
-      var new_key = "pantry"
+      var new_key = "Already in pantry"
       var final_list = this.state.ingredients_rough
       for([key,value] of Object.entries(final_list)){
          if(key === new_key){
@@ -50,16 +52,19 @@ class UserPantry extends React.Component {
            }
       }
       final_list[new_key] = this.state.pantry
+
       this.setState({
         ingredients_rough: final_list,
         pantryUpdated: false,
         final: true
       })
+
     }
 
     render(){
       var ingreds = this.state.ingredients_rough
       var final = this.state.final
+      var empty = this.state.empty
 
       return(
               <SafeAreaView>
@@ -80,6 +85,11 @@ class UserPantry extends React.Component {
                                  </Link>
                             </Pressable>
                         }
+
+                        <Link style={{alignItems:"center"}} to="/" underlayColor="transparent">
+                            <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                            style={styles.blueButton}>Start again</Text>
+                        </Link>
                     </View>
                 </ScrollView>
               </SafeAreaView>
@@ -114,13 +124,11 @@ const styles = StyleSheet.create({
     marginHorizontal: 128,
   },
   blueButton: {
-    padding: 7,
+    padding: 10,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
-    textAlign: "center",
-    marginHorizontal: 128,
   },
 });
 

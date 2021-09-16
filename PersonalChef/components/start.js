@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableHighlight, TouchableOpacity, TextInput, Pressable } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
+import AsyncStorage from '@react-native-async-storage/async-storage';
+// import allFavourites from 'components/checklists/json_ingredient_lists/all_previous_searches.js';
 
 
 class HomePage extends React.Component {
@@ -9,7 +11,27 @@ class HomePage extends React.Component {
       this.state = {
         userId: 12345,
       }
+      this.componentDidMount = this.componentDidMount.bind(this)
   };
+
+  getData = async (key) => {
+    try {
+      const value = await AsyncStorage.getItem(key)
+      if(value !== null) {
+        console.log("value: " + value)
+      }
+    } catch(e) {
+      console.log("Error reading data for favourites");
+    }
+  }
+
+  componentDidMount(){
+    var favourites_key = '@favourite-ingredients'
+    var pantry_key = '@pantry-ingredients'
+    var favourites = this.getData(favourites_key)
+    var pantry = this.getData(pantry_key)
+    console.log("favourites: " + favourites)
+  }
 
   render(){
       return(
@@ -80,20 +102,20 @@ class TimeAndType extends React.Component {
    radioButtonPressedHandler(value){
       if (value === "dessert" || value === "other"){
         this.setState({
-          initialData:{
-            ...this.state.initialData,
-            type: value
-          }
-        })
+            initialData:{
+              ...this.state.initialData,
+              type: value
+            }
+         })
       }else{
         this.setState({
-          initialData:{
-            ...this.state.initialData,
-            type: "other"
-          },
-          both: true
-        })
-      }
+            initialData:{
+              ...this.state.initialData,
+              type: "other"
+            },
+            both: true
+         })
+       }
    }
 
 
@@ -180,7 +202,7 @@ class TimeAndType extends React.Component {
       this.onChangeTimeHoursHandler(this.state.times.hours);
       this.onChangeTimeMinsHandler(this.state.times.mins);
       this.setState({
-        finished:true
+        finished: true
       })
     }
   }
