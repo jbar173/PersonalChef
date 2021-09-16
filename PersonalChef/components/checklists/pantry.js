@@ -13,8 +13,8 @@ class PantryCheckList extends React.Component {
         empty: false,
         displayEmpty: false,
 
-        started: false,
         initialDict: {},
+        populated: false,
         display: false,
 
         confirmed: false,
@@ -22,6 +22,7 @@ class PantryCheckList extends React.Component {
         finalConfirm: false
       }
       this.componentDidMount = this.componentDidMount.bind(this)
+      this.populateInitialDict = this.populateInitialDict.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.selectOrDeselect = this.selectOrDeselect.bind(this)
       this.displayFavourites = this.displayFavourites.bind(this)
@@ -32,33 +33,18 @@ class PantryCheckList extends React.Component {
     getData = async (key) => {
 
       try {
-        const value = await AsyncStorage.getItem(key)
-        if(value !== null) {
-            console.log("value: " + value)
-            for(x in value){
-              if(value[x] === ']' ){
-                var i = x
-                var first = value.slice(1,i)
-              }
-            }
-            var ingrs = first.split(',')
-            console.log("ingrs: " + ingrs)
-
-            for(x in ingrs){
-              console.log("**ingrs[x]: " + ingrs[x])
-              // console.log("typeof(ingrs[x]): " + typeof(ingrs[x]))
-            }
-
+        const data = await AsyncStorage.getItem(key)
+        if(data !== null) {
+            var value = JSON.parse(data)
             if(key === '@favourite-ingredients'){
-              console.log("favesssssssssss")
               this.setState({
-                favourites: ingrs
+                favourites: value
               })
-            }else if(key === '@pantry-ingredients')
-            console.log("pantryyyy")
-              this.setState({
-                pantry: ingrs
-              })
+            }else if(key === '@pantry-ingredients'){
+                this.setState({
+                  pantry: value
+                })
+            }
 
           }else{
             this.setState({
@@ -71,19 +57,32 @@ class PantryCheckList extends React.Component {
       }
     }
 
+
     componentDidMount(){
       console.log("PantryChecklist mounted")
       var favourites_key = '@favourite-ingredients'
       var pantry_key = '@pantry-ingredients'
       var f = this.getData(favourites_key)
       var p = this.getData(pantry_key)
-      var length = this.state.favourites.length
-      if(length>1){
-        this.setState({
-          start: true
-        })
-      }
     }
+
+
+    populateInitialDict(){
+      console.log("start")
+      var new_dictionary = {}
+      var i
+      var length = this.state.pantry.length
+      for(i=0;i<length;i++){
+        var name = this.state.pantry[i]
+        console.log("name: " + name)
+        new_dictionary[name] = true
+      }
+      this.setState({
+        initialDict: new_dictionary,
+        populated: true
+      })
+    }
+
 
     componentDidUpdate(){
       console.log("PantryChecklist unmounted")
@@ -93,22 +92,12 @@ class PantryCheckList extends React.Component {
         this.favouritesWasEmpty()
         return 1
       }
-
-      var length = this.state.pantry.length
-      if(this.state.started === false && length > 0){
-        console.log("start")
-        var new_dictionary = {}
-        var i
-        var length = this.state.pantry.length
-        for(i=0;i<length;i++){
-          var name = this.state.pantry[i]
-          console.log("name: " + name)
-          new_dictionary[name] = true
-        }
-        this.setState({
-          initialDict: new_dictionary,
-          started: true
-        })
+      var f_length = this.state.favourites.length
+      var p_length = this.state.pantry.length
+      if(f_length > 0 && p_length > 0 && this.state.populated === false){
+        console.log("f_length: " + f_length)
+        console.log("p_length: " + p_length)
+        this.populateInitialDict()
       }
       if(this.state.finalConfirm){
         this.props.updateListHandler(this.state.newPantry)
@@ -117,11 +106,13 @@ class PantryCheckList extends React.Component {
           empty: false
         })
       }
+
     }
 
     componentWillUnmount(){
       console.log("unmounted")
     }
+
 
     favouritesWasEmpty(){
       this.setState({
@@ -129,6 +120,7 @@ class PantryCheckList extends React.Component {
         displayEmpty: true
       })
     }
+
 
     selectOrDeselect(item){
       var new_item = item
@@ -152,6 +144,7 @@ class PantryCheckList extends React.Component {
       })
     }
 
+
     confirmedHandler(){
       console.log("confirmed")
       var state = !this.state.confirmed
@@ -167,6 +160,7 @@ class PantryCheckList extends React.Component {
         finalConfirm: true
       })
     }
+
 
     displayFavourites(){
       var new_state = this.state.display

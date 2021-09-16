@@ -50,7 +50,6 @@ class ConfirmList extends React.Component {
 
   saveDeviceData = async ( key, data ) => {
       try {
-          // var key = "@favourite-ingredients"
           await AsyncStorage.setItem(key, JSON.stringify(data));
       } catch (e) {
         console.log(`Error saving data for key ${key}`, data);
@@ -60,31 +59,25 @@ class ConfirmList extends React.Component {
 
   getData = async (key) => {
       try {
-        const value = await AsyncStorage.getItem(key)
-        if(value !== null) {
+        const data = await AsyncStorage.getItem(key)
+        if(data !== null) {
+            var value = JSON.parse(data)
             console.log("value: " + value)
-            for(x in value){
-              if(value[x] === ']' ){
-                var i = x
-                var first = value.slice(1,i)
-              }
-            }
-            var ingrs = first.split(',')
-            console.log("ingrs: " + ingrs)
-
-            for(x in ingrs){
-              console.log("**ingrs[x]: " + ingrs[x])
-              // console.log("typeof(ingrs[x]): " + typeof(ingrs[x]))
-            }
-
             if(key === '@favourite-ingredients'){
               this.setState({
-                favourites: ingrs
+                favourites: value,
+                updateFaves: true
               })
             }
           }
+        else{
+            this.setState({
+              favourites: [],
+              updateFaves: true
+            })
+        }
       } catch(e) {
-        console.log("Error reading data for favourites");
+        console.log("Error reading data for favourites: " + e);
       }
   }
 
@@ -196,7 +189,6 @@ class ConfirmList extends React.Component {
     var faves = this.getData(favourites_key)
     this.setState({
        apiCall: false,
-       updateFaves: true
      })
   }
 
@@ -206,6 +198,9 @@ class ConfirmList extends React.Component {
       console.log("1. FAVES[x]: " + faves[x])
     }
     var list = this.state.pantry
+    for(x in list){
+      console.log("1. PANTRY[x]: " + list[x])
+    }
     var i
     var length = list.length
     for(i=0;i<length;i++){
@@ -230,7 +225,6 @@ class ConfirmList extends React.Component {
      var pantry_saved = saveData(pantry_key,list)
 
     this.setState({
-      favourites: faves,
       updateFaves: false
     })
     // this.setState({
@@ -397,27 +391,6 @@ class ConfirmList extends React.Component {
     );
   }
 };
-
-
-// const newFavourites = props => {
-//     var test = 'hello'
-//     return(
-//       <View>
-//         <Text>{test}</Text>
-//       </View>
-//     )
-// };
-//
-// const newPantry = props => {
-//     var test = 'world'
-//     return(
-//       <View>
-//         <Text>{test}</Text>
-//       </View>
-//     )
-// };
-
-
 
 
 

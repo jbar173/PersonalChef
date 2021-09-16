@@ -14,23 +14,8 @@ class HomePage extends React.Component {
       this.componentDidMount = this.componentDidMount.bind(this)
   };
 
-  getData = async (key) => {
-    try {
-      const value = await AsyncStorage.getItem(key)
-      if(value !== null) {
-        console.log("value: " + value)
-      }
-    } catch(e) {
-      console.log("Error reading data for favourites");
-    }
-  }
-
   componentDidMount(){
-    var favourites_key = '@favourite-ingredients'
-    var pantry_key = '@pantry-ingredients'
-    var favourites = this.getData(favourites_key)
-    var pantry = this.getData(pantry_key)
-    console.log("favourites: " + favourites)
+    console.log("Homepage mounted")
   }
 
   render(){
@@ -278,7 +263,7 @@ class TimeAndType extends React.Component {
                                     <TouchableOpacity accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                                       underlayColor="white">
                                           <Link style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                            <Text style={styles.blueButton}>Back</Text>
+                                            <Text style={styles.blueButton}>Start again</Text>
                                           </Link>
                                     </TouchableOpacity>
 
@@ -324,7 +309,7 @@ class TimeAndType extends React.Component {
                                                         </Link>
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                                                           style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                                             <Text style={styles.blueButton}>Back</Text>
+                                                             <Text style={styles.blueButton}>Start again</Text>
                                                         </Link>
                                                     </View>
                                                   )
@@ -343,7 +328,7 @@ class TimeAndType extends React.Component {
 
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                                                           style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                                             <Text style={styles.blueButton}>Back</Text>
+                                                             <Text style={styles.blueButton}>Start again</Text>
                                                         </Link>
                                                     </View>
                                                   )
@@ -368,7 +353,7 @@ class TimeAndType extends React.Component {
                                                         </Link>
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                                                           style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                                            <Text style={styles.blueButton}>Back</Text>
+                                                            <Text style={styles.blueButton}>Start again</Text>
                                                         </Link>
                                                     </View>
                                                   )
@@ -385,7 +370,7 @@ class TimeAndType extends React.Component {
 
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                                                           style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                                            <Text style={styles.blueButton}>Back</Text>
+                                                            <Text style={styles.blueButton}>Start again</Text>
                                                         </Link>
                                                     </View>
                                                   )
