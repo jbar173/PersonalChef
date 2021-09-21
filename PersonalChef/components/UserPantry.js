@@ -76,15 +76,13 @@ class UserPantry extends React.Component {
                         <PantryCheckList updateListHandler={this.updateListHandler} />
 
                         {final &&
-                            <Pressable style={styles.blueButton}>
-                                 <Link accessible={true} accessibilityLabel= "Continue"
-                                   accessibilityHint="Pantry confirmed - continue to next page"
-                                   to={{ pathname:"/type-time/", state:{ ingreds: ingreds,} }}
-                                   accessibilityRole="button" underlayColor="transparent">
-                                   <Text>Continue</Text>
-                                 </Link>
-                            </Pressable>
-                        }
+                             <Link accessible={true} accessibilityLabel= "Continue"
+                               accessibilityHint="Pantry confirmed - continue to next page"
+                               to={{ pathname:"/type-time/", state:{ ingreds: ingreds,} }}
+                               accessibilityRole="button" underlayColor="transparent">
+                                <Text style={styles.blueButton}>Continue</Text>
+                             </Link>
+                         }
 
                         <Link style={{alignItems:"center"}} to="/" underlayColor="transparent">
                             <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"

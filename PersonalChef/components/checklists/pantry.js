@@ -190,7 +190,7 @@ class PantryCheckList extends React.Component {
                             <Text>(click on an ingredient to remove it from your pantry)</Text>
                               {Object.entries(pantry).map(function(item,index){
                                   return(
-                                        <View>
+                                        <View key={index}>
                                             {item[1] == true &&
                                               <Pressable style={styles.greenButton} onPress={() => self.selectOrDeselect(item)}>
                                                   <Text>{item}</Text>

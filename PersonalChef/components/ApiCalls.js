@@ -1,36 +1,55 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable, Linking, SafeAreaView, ScrollView } from 'react-native';
+import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { AlterKeywords } from './AlterKeywords.js';
 import { RefineResults } from './RefineResults.js';
+import { SearchingPage, LoadingPage } from "./Animations.js";
 
 
 class ApiCalls extends React.Component{
   constructor(props){
     super(props);
     this.state = {
+      userId: 12345,
+      initialData: {
+        "time": '0',
+        "ingredients": [],
+        "ingredientCount": 0,
+        "type": '',
+      },
+      both: false,
+      ingredients_rough: {},
+      apiCall: false,
+      // timerStarted: false,
+      foundResults: true,
+      apiError: false,
       fResponse: [],
-      keywords: this.props.keywords,
-      time: this.props.time,
-      type: this.props.type,
-      ingredientCount: this.props.ingredientCount,
       next: 'first',
       count: null,
+      nextCall: true,
       noMorePages: false,
       call: 0,
-      maxCalls: null,
     },
     this.abortController = new AbortController()
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
     this.componentWillUnmount = this.componentWillUnmount.bind(this)
+    this.triggerNextCall = this.triggerNextCall.bind(this)
     this.apiCall = this.apiCall.bind(this)
+    this.startStopwatch = this.startStopwatch.bind(this)
     this.finishedHandler = this.finishedHandler.bind(this)
   };
 
   componentDidMount(){
     console.log("Api component mounted")
-    console.log("this.state.keywords.length: " + this.state.keywords.length)
-    this.apiCall()
+    var initial_data = this.props.location.state.initial_data
+    var ingreds = this.props.location.state.ingreds
+    var either = this.props.location.state.either
+    this.setState({
+      initialData: initial_data,
+      ingredients_rough: ingreds,
+      both: either,
+    })
   }
 
   componentWillUnmount(){
@@ -39,35 +58,38 @@ class ApiCalls extends React.Component{
   }
 
   componentDidUpdate(){
-    console.log("Api component updated")
+    console.log("API COMPONENT UPDATED")
     console.log("this.state.count: " + this.state.count)
-    console.log("maxCalls: " + this.state.maxCalls)
-
-    if(this.state.maxCalls === null){
-      var maximum = this.state.count/20
-      console.log("maximum: " + maximum)
-      if(maximum >= 10){
-        this.setState({
-          maxCalls:10
-        })
-      }else if(maximum < 0.05){
-          this.setState({
-            fResponse: ['no results',],
-            count: 0,
-            finish: true
-          })
-      }else{
-        this.setState({
-          maxCalls: maximum
-        })
-      }
+    console.log("this.state.next: " + this.state.next)
+    if(this.state.count === undefined){
+      this.setState({
+        apiError: true,
+        nextCall: false
+      })
     }
     // Checks whether api function has finished calling
     //  each page, triggers next function if so:
-    if(this.state.call === this.state.maxCalls || this.state.noMorePages) {
+    if(this.state.noMorePages) {
       this.finishedHandler()
+    }
+    if(this.state.nextCall){
+      this.triggerNextCall()
+    }
+  }
+
+  triggerNextCall(){
+    if(this.state.count === 0){
+      this.setState({
+        nextCall: false,
+        noMorePages: true,
+        foundResults: false
+      })
     }else{
       this.apiCall()
+      this.setState({
+        nextCall: false,
+        foundResults: true
+      })
     }
   }
 
@@ -75,33 +97,58 @@ class ApiCalls extends React.Component{
 //  collects 200 recipe apis (if that many are returned):
   apiCall(){
     console.log("calling APIs")
-    var keywords = this.state.keywords
-    var time = this.state.time
-    if(this.state.type == 'dessert'){
+    var keywords = this.state.initialData.ingredients
+    var time = this.state.initialData.time
+    var ingr = this.state.initialData.ingredientCount
+
+    if(this.state.initialData.type == 'dessert'){
       var type = 'dishType=Biscuits%20and%20cookies&dishType=Cereals&dishType=Desserts&dishType=Drinks&dishType=Pancake&dishType=Preserve&dishType=Sweets'
     }else{
       var type = 'dishType=Bread&dishType=Condiments%20and%20sauces&dishType=Main%20course&dishType=Pancake&dishType=Preps&dishType=Salad&dishType=Sandwiches&dishType=Side%20dish&dishType=Soup&dishType=Starter'
     }
-    var ingr = this.state.ingredientCount
+
     var num = this.state.call
+    console.log("1 NUM: " + num)
+
     if(this.state.next === 'first'){
-        var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=${time}&ingr=1-${ingr}&${type}&app_id=f70ab024&app_key=ac8f093ed1576baa704c95c1df284d3f&field=label`
-        console.log("test_url: " + url)
+
+        // var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=1-${time}&ingr=1-${ingr}&${type}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50`
+        // var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=1-${time}&ingr=1-${ingr}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50`
+        var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=1-${time}&${type}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50`
+        console.log("first_url: " + url)
+
     }else{
+
         try{
           var x = this.state.next
           var url = x['next']['href']
-          console.log("this url: " + url)
+          console.log("next url: " + url)
+
         }catch{
           console.log("No next page")
           this.setState({
-            noMorePages: true
+            noMorePages: true,
+            nextCall: false
           })
+          return 1;
         }
+
     }
-    num += 2
-    console.log("num: " + num)
-    fetch(url, { signal: this.abortController.signal } )
+
+    num += 1
+    console.log("2. num: " + num)
+
+    if(num % 10 === 0){
+      console.log("divides by 10")
+      this.setState({
+        nextCall: false,
+        call: num
+      })
+      this.startStopwatch()
+      return 1
+    }
+
+    fetch(url, { signal: this.abortController.signal })
     .then(response => response.json())
     .then(data => {
         this.setState({
@@ -112,36 +159,218 @@ class ApiCalls extends React.Component{
           count: data['count'],
           next: data['_links'],
           call: num,
+          nextCall: true
         })
     })
     .catch(error => {
-      console.log("API CALL ERROR: " + error)
+      console.log("API CALL ERROR: " + error + ". stack: " + error.stack)
     });
+    console.log("API CALL FUNCTION OVER")
+  }
+
+// Times the app out for 60 seconds in order to spread out
+//   api calls (ensures that 10 hits/minute aren't exceeded):
+  startStopwatch(){
+    console.log("starting stopwatch")
+    var cmponent = this
+    setTimeout(function(){
+        console.log("stopwatch finished")
+        cmponent.setState({
+          nextCall: true
+        })
+      }, 60000)
   }
 
 // Passes back the recipe url list to the
 //  main RecipeResults component:
   finishedHandler(){
     console.log("finished handler")
+    var states = [null, 0]
 
-    if(this.state.count !== null){
-      console.log("this.state.fResponse.count: " + this.state.fResponse.count)
-      var initial = this.state.fResponse
-      this.props.passDataBack(initial)
+    if(states.includes[this.state.count]){
+      console.log("No results, count = 0")
+      // this.props.passDataBack(initial)
     }else{
-      console.log("FIRST CATCH")
-      var initial = ['empty',]
-      this.props.passDataBack(initial)
+      console.log("this.state.fResponse[0]['count']: " + this.state.fResponse[0]['count'])
+      var initial = this.state.fResponse
+      console.log("finished count: " + this.state.count)
+      // console.log("initial[0]['hits'][0]['recipe']['label']: " + initial[0]['hits'][0]['recipe']['label'])
+      // this.props.passDataBack(initial)
     }
   }
 
 
+
+  // Takes new ingredients list in from < AlterKeywords /> component,
+  //  triggers new API call (with reduced/altered ingredient list):
+
+    // ingredientsAlteredHandler(altered_list){
+    //   console.log("ingredients altered handler triggered")
+    //   console.log("** confirm.js altered_list.length: " + altered_list.length)
+    //   var length = altered_list.length
+    //   this.setState({
+    //     initialData: {
+    //       ...this.state.initialData,
+    //       ingredients: altered_list,
+    //       ingredientCount: length
+    //     },
+    //     foundResults: true,
+    //     timerStarted: true,
+    //     ingredientsWereAltered: true,
+    //     apiCall: true
+    //   })
+    //   this.startStopwatch()
+    // }
+
+
+
+/// RENDER() CONFIRM.JS:
+
+// <View style={styles.loadingContainer}>
+//
+//     <View style={{justifyContent:"center"}}>
+//       <SearchingPage />
+//     </View>
+
+    // { call_api === true && <ApiCalls
+    //   time = {this.state.initialData.time}
+    //   ingredientCount = {this.state.initialData.ingredientCount}
+    //   type = {this.state.initialData.type}
+    //   keywords={this.state.initialData.ingredients}
+    //   passDataBack = {this.apiCallFinished} /> }
+  // </View>
+
+  // { alter_ingredients && < AlterKeywords
+  //   ingredients = {this.state.initialData.ingredients}
+  //   alteredIngredients = {this.ingredientsAlteredHandler}
+  //   /> }
+
+
+
   render(){
+    // var initial = this.state.initialData
+    // var either = this.state.both
+    // var ingreds = this.state.ingredients_rough
+    // var response = this.state.firstResponse
+    //
+    // var call_api = this.state.apiCall
+    // var timer_started = this.state.timerStarted
+    // var redirect = this.state.redirect
+    // var alter_ingredients = false
+    var api_error = this.state.apiError
+    var count = this.state.count
+    console.log("count: " + this.state.count)
+    var no_count = [ undefined, null ]
+    var no_results = [0,]
+    var response = this.state.fResponse
+    var searching = false
+    if(no_count.includes(count)){
+      searching = true
+    }
+    var loading = true
+    if(searching === true){
+      loading = false
+    }
+
 
     return(
-            <View>
-              <Text></Text>
-            </View>
+
+            <SafeAreaView style={styles.container}>
+              <ScrollView>
+
+                  { api_error &&
+                      <View>
+                             <Text>Sorry, there was an error!</Text>
+                             <Link accessible={true} accessibilityLabel= "An error occurred"
+                               accessibilityHint="Click button to report the error and try again"
+                               to="/" accessibilityRole="button" underlayColor="transparent">
+                                 <Text style={styles.greenButton}>Report and try again</Text>
+                             </Link>
+                      </View>
+                   }
+                   { searching && !(api_error) &&
+                       <View style={{justifyContent:"center"}}>
+                         <SearchingPage />
+                       </View>
+                   }
+
+                   { no_results.includes(count) &&
+                     <View style={{justifyContent:"center"}}>
+                        <Text>Trigger alter keywords</Text>
+                     </View>
+
+                   }
+
+                   { this.state.foundResults && this.state.noMorePages &&
+                       <View>
+                           {response.map(function(item,index){
+                              return(
+                                <View style={styles.container} key={index}>
+                                    {item['hits'].map(function(hit,ind){
+                                       return(
+                                             <View key={ind} style={{justifyContent:"center",alignItems:"center"}}>
+
+                                                 <Text accessible={true} accessibilityRole="text"
+                                                   accessibilityLabel={hit['recipe']['label'].toString()}
+                                                   style={styles.title}>{hit['recipe']['label']}</Text>
+
+                                                 <Pressable onPress={() => Linking.openURL(`${hit['recipe']['url']}`)}>
+                                                   <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
+                                                     style={styles.greenButton}>Go to recipe website</Text>
+                                                 </Pressable>
+
+                                              </View>
+                                             )
+                                        }
+                                      )}
+                                  </View>
+                                 )
+                              }
+                            )}
+                            <Link accessible={true} accessibilityLabel= "Start again"
+                              accessibilityHint="Click button to go back to homepage"
+                              to="/" accessibilityRole="button" underlayColor="transparent">
+                                <Text style={styles.blueButton}>Start again</Text>
+                            </Link>
+                      </View>
+                     }
+
+                     { this.state.foundResults && !(this.state.noMorePages) && loading &&
+                       <View>
+                               <View>
+                                     {response.map(function(item,index){
+                                        return(
+                                          <View style={styles.container} key={index}>
+                                              {item['hits'].map(function(hit,ind){
+                                                 return(
+                                                       <View key={ind} style={{justifyContent:"center",alignItems:"center"}}>
+
+                                                           <Text accessible={true} accessibilityRole="text"
+                                                             accessibilityLabel={hit['recipe']['label'].toString()}
+                                                             style={styles.title}>{hit['recipe']['label']}</Text>
+
+                                                           <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${hit['recipe']['url']}`)}>
+                                                             <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
+                                                               style={styles.greenButton}>Go to recipe website</Text>
+                                                           </Pressable>
+
+                                                        </View>
+                                                       )
+                                                  }
+                                                )}
+                                            </View>
+                                           )
+                                        }
+                                     )}
+                                 </View>
+                                 <View style={{justifyContent:"center",alignItems:"center"}}>
+                                    <LoadingPage />
+                                 </View>
+                         </View>
+                       }
+
+                  </ScrollView>
+                </SafeAreaView>
           );
 
    }
@@ -152,11 +381,34 @@ export { ApiCalls };
 
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexWrap: 'wrap',
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 20,
+    paddingHorizontal:20,
+  },
   greenButton: {
     padding: 10,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: 'white',
     backgroundColor:'lightgreen',
+    textAlign: 'center',
+    width: 150,
+  },
+  blueButton: {
+    padding: 10,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightblue',
+  },
+  title: {
+    fontSize:18,
+    fontWeight:'bold',
+    textAlign: 'center',
   },
 });

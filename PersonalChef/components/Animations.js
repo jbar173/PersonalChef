@@ -96,7 +96,7 @@ class ThreeDots extends React.Component{
                               inputRange: [0,1],
                               outputRange: [0,1],
                             }),
-                            fontSize: 30,
+                            fontSize: 20,
                           }} >.</Animated.Text>
 
                           <Animated.Text style={{
@@ -104,7 +104,7 @@ class ThreeDots extends React.Component{
                               inputRange: [0,1],
                               outputRange: [0,1],
                             }),
-                            fontSize: 30,
+                            fontSize: 20,
                           }} >.</Animated.Text>
 
                           <Animated.Text style={{
@@ -112,7 +112,7 @@ class ThreeDots extends React.Component{
                               inputRange: [0,1],
                               outputRange: [0,1],
                             }),
-                            fontSize: 30,
+                            fontSize: 20,
                           }} >.</Animated.Text>
 
                     </View>
@@ -145,7 +145,7 @@ class SearchingPage extends React.Component{
               <View style={{display:'flex'}}>
                 <View style={{flexWrap:"wrap", flexDirection:"row"}}>
                     <Text accessibilityLabel="Searching" accessibilityHint="Loading page"
-                     style={{fontSize:30}}>Searching</Text>
+                     style={{fontSize:20}}>Searching</Text>
                     <ThreeDots />
                 </View>
               </View>
@@ -177,7 +177,7 @@ class LoadingPage extends React.Component{
               <View style={{display:'flex'}}>
                 <View style={{flexWrap:"wrap", flexDirection:"row"}}>
                     <Text accessibilityLabel="Loading" accessibilityHint="Loading page"
-                     style={{fontSize:30}}>Loading</Text>
+                     style={{fontSize:20}}>Loading</Text>
                     <ThreeDots />
                 </View>
               </View>
