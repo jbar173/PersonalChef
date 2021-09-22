@@ -2,6 +2,8 @@ import React from 'react';
 
 import ranked_files from './directory.js';
 import * as zero from './checklists/json_ingredient_lists/ranked_lists/zero.json';
+import toWords from 'number-to-words';
+import wordsToNumbers from 'words-to-numbers';
 
 import { StyleSheet, Text, Pressable, View, SafeAreaView, ScrollView } from 'react-native';
 
@@ -22,6 +24,7 @@ class RankedDictionary extends React.Component {
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
+      this.sortByRankFunction = this.sortByRankFunction.bind(this)
       this.sendIngredientsDict = this.sendIngredientsDict.bind(this)
    };
 
@@ -32,14 +35,50 @@ class RankedDictionary extends React.Component {
 
     var this_rank = this.state.rankWord
     console.log("this.state.rank: " + this.state.rank)
-    var ingrs_list = ranked_files[`${this_rank}`]
-    // console.log("ingrs_list: " + ingrs_list)
-    // var ingrs_json = ingrs_list
+    if(this.state.rank === null){
+        var ranks = Object.keys(ranked_files)
+        var numbers = []
+        for(x in ranks){
+          console.log(x + ". rank: " + ranks[x])
+          var num = wordsToNumbers(ranks[x])
+          numbers.push(num)
+        }
+        var sorted = numbers.sort(this.sortByRankFunction)
+        var top_five = []
+        for(x=0;x<5;x++){
+          var num = sorted.pop()
+          top_five.push(num)
+        }
+        for(x in top_five){
+          console.log(x + ". top nums: " + top_five[x])
+        }
+        console.log("top_five[4]: " + top_five[4])
+        var converter = require('number-to-words');
+        var word = converter.toWords(top_five[4])
+        this.setState({
+          rank: top_five[4],
+          rankWord: word
+        })
+        var ingrs_list = ranked_files[`${word}`]
+    }else{
+        var ingrs_list = ranked_files[`${this_rank}`]
+    }
+
     var list = ingrs_list.children
     this.setState({
       rankedIngredients: list,
       finished: false,
     })
+  }
+
+  sortByRankFunction(a,b){
+    if (a < b) {
+        return 1;
+    }
+    if (a > b) {
+        return -1;
+    }
+    return 0;
   }
 
   componentDidUpdate(){
@@ -58,8 +97,9 @@ class RankedDictionary extends React.Component {
   sendIngredientsDict(){
     var ranked_dictionary = this.state.rankedIngredients
     var rank = this.state.rank
+    var rank_word = this.state.rankWord
     console.log("ranked ingredients.length: " + ranked_dictionary.length )
-    this.props.rankedIngs(ranked_dictionary,rank)
+    this.props.rankedIngs(ranked_dictionary,rank,rank_word)
     this.setState({
       finished: true,
     })

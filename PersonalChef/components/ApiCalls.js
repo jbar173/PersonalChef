@@ -18,38 +18,61 @@ class ApiCalls extends React.Component{
         "type": '',
       },
       both: false,
-      ingredients_rough: {},
+      searchKeywords: [],
+      omittedKeywords: [],
+      reduceKeywords: false,
       apiCall: false,
-      // timerStarted: false,
+
       foundResults: true,
       apiError: false,
       fResponse: [],
       next: 'first',
       count: null,
-      nextCall: true,
+
+      nextCall: false,
       noMorePages: false,
       call: 0,
+      startRefine: false,
+      refinedRecipeList: []
     },
     this.abortController = new AbortController()
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
     this.componentWillUnmount = this.componentWillUnmount.bind(this)
+    this.keywordsAlteredHandler = this.keywordsAlteredHandler.bind(this)
     this.triggerNextCall = this.triggerNextCall.bind(this)
     this.apiCall = this.apiCall.bind(this)
     this.startStopwatch = this.startStopwatch.bind(this)
     this.finishedHandler = this.finishedHandler.bind(this)
+    this.getRelevantRecipes = this.getRelevantRecipes.bind(this)
   };
 
   componentDidMount(){
     console.log("Api component mounted")
     var initial_data = this.props.location.state.initial_data
+    var ingredients = this.props.location.state.ingredients
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
+    var reduce = false
+    var start_calling = false
+    console.log("hello")
+    console.log("ingreds.length: " + ingredients.length)
+    if(ingredients.length > 5){
+      console.log("greater than 5")
+      reduce = true
+      start_calling = false
+    }else{
+      console.log("less than 5")
+      start_calling = true
+    }
     this.setState({
       initialData: initial_data,
-      ingredients_rough: ingreds,
+      searchKeywords: ingredients,
+      reduceKeywords: reduce,
+      nextCall: start_calling,
       both: either,
     })
+    console.log("the end")
   }
 
   componentWillUnmount(){
@@ -72,6 +95,9 @@ class ApiCalls extends React.Component{
     if(this.state.noMorePages) {
       this.finishedHandler()
     }
+    // if(this.state.reduceKeywords){
+    //   console.log("did update - reduce keywords")
+    // }
     if(this.state.nextCall){
       this.triggerNextCall()
     }
@@ -99,21 +125,20 @@ class ApiCalls extends React.Component{
     console.log("calling APIs")
     var keywords = this.state.initialData.ingredients
     var time = this.state.initialData.time
-    var ingr = this.state.initialData.ingredientCount
-
-    if(this.state.initialData.type == 'dessert'){
-      var type = 'dishType=Biscuits%20and%20cookies&dishType=Cereals&dishType=Desserts&dishType=Drinks&dishType=Pancake&dishType=Preserve&dishType=Sweets'
+    // var ingr = this.state.initialData.ingredientCount
+    if(this.state.both){
+      var type = 'dishType=Biscuits%20and%20cookies&dishType=Cereals&dishType=Desserts&dishType=Drinks&dishType=Pancake&dishType=Preserve&dishType=Sweets&dishType=Bread&dishType=Condiments%20and%20sauces&dishType=Main%20course&dishType=Pancake&dishType=Preps&dishType=Salad&dishType=Sandwiches&dishType=Side%20dish&dishType=Soup&dishType=Starter'
     }else{
-      var type = 'dishType=Bread&dishType=Condiments%20and%20sauces&dishType=Main%20course&dishType=Pancake&dishType=Preps&dishType=Salad&dishType=Sandwiches&dishType=Side%20dish&dishType=Soup&dishType=Starter'
+        if(this.state.initialData.type == 'dessert'){
+          var type = 'dishType=Biscuits%20and%20cookies&dishType=Cereals&dishType=Desserts&dishType=Drinks&dishType=Pancake&dishType=Preserve&dishType=Sweets'
+        }else{
+          var type = 'dishType=Bread&dishType=Condiments%20and%20sauces&dishType=Main%20course&dishType=Pancake&dishType=Preps&dishType=Salad&dishType=Sandwiches&dishType=Side%20dish&dishType=Soup&dishType=Starter'
+        }
     }
-
     var num = this.state.call
     console.log("1 NUM: " + num)
 
     if(this.state.next === 'first'){
-
-        // var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=1-${time}&ingr=1-${ingr}&${type}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50`
-        // var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=1-${time}&ingr=1-${ingr}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50`
         var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=1-${time}&${type}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50`
         console.log("first_url: " + url)
 
@@ -128,8 +153,10 @@ class ApiCalls extends React.Component{
           console.log("No next page")
           this.setState({
             noMorePages: true,
-            nextCall: false
+            nextCall: false,
+            startRefine: true
           })
+
           return 1;
         }
 
@@ -139,10 +166,10 @@ class ApiCalls extends React.Component{
     console.log("2. num: " + num)
 
     if(num % 10 === 0){
-      console.log("divides by 10")
       this.setState({
         nextCall: false,
-        call: num
+        call: num,
+        startRefine: true
       })
       this.startStopwatch()
       return 1
@@ -165,6 +192,7 @@ class ApiCalls extends React.Component{
     .catch(error => {
       console.log("API CALL ERROR: " + error + ". stack: " + error.stack)
     });
+
     console.log("API CALL FUNCTION OVER")
   }
 
@@ -172,6 +200,9 @@ class ApiCalls extends React.Component{
 //   api calls (ensures that 10 hits/minute aren't exceeded):
   startStopwatch(){
     console.log("starting stopwatch")
+    // this.setState({
+    //   startRefine: true
+    // })
     var cmponent = this
     setTimeout(function(){
         console.log("stopwatch finished")
@@ -204,23 +235,49 @@ class ApiCalls extends React.Component{
   // Takes new ingredients list in from < AlterKeywords /> component,
   //  triggers new API call (with reduced/altered ingredient list):
 
-    // ingredientsAlteredHandler(altered_list){
-    //   console.log("ingredients altered handler triggered")
-    //   console.log("** confirm.js altered_list.length: " + altered_list.length)
-    //   var length = altered_list.length
-    //   this.setState({
-    //     initialData: {
-    //       ...this.state.initialData,
-    //       ingredients: altered_list,
-    //       ingredientCount: length
-    //     },
-    //     foundResults: true,
-    //     timerStarted: true,
-    //     ingredientsWereAltered: true,
-    //     apiCall: true
-    //   })
-    //   this.startStopwatch()
-    // }
+    keywordsAlteredHandler(new_keywords){
+      console.log("ingredients altered handler triggered")
+
+        this.setState({
+          searchKeywords: new_keywords,
+          reduceKeywords: false,
+          nextCall: true
+        })
+      for(x in new_keywords){
+        console.log(new_keywords[x])
+        console.log("***")
+      }
+    }
+
+
+
+    getRelevantRecipes(relevant_recipes){
+      console.log("filtered initial")
+      console.log("relevant_recipes.length: " + relevant_recipes.length)
+      var last_result = []
+      var responses = this.state.fResponse
+      var final = responses.pop
+      last_result.push(final)
+      if(relevant_recipes.length === 0){
+        console.log("No relevant results on these pages")
+        this.setState({
+          startRefine: false,
+          fResponse: last_result,
+          results: false,
+        })
+      }else{
+        console.log("found relevant results")
+        this.setState({
+          refinedRecipeList: [
+            ...this.state.refinedRecipeList,
+            relevant_recipes,
+          ],
+          startRefine: false,
+          fResponse: last_result,
+          results: true
+        })
+      }
+    }
 
 
 
@@ -250,16 +307,16 @@ class ApiCalls extends React.Component{
   render(){
     // var initial = this.state.initialData
     // var either = this.state.both
-    // var ingreds = this.state.ingredients_rough
+    // var ingreds = this.state.initialData.ingredients
     // var response = this.state.firstResponse
     //
     // var call_api = this.state.apiCall
     // var timer_started = this.state.timerStarted
     // var redirect = this.state.redirect
-    // var alter_ingredients = false
+    var alter_keywords = this.state.reduceKeywords
+
     var api_error = this.state.apiError
     var count = this.state.count
-    console.log("count: " + this.state.count)
     var no_count = [ undefined, null ]
     var no_results = [0,]
     var response = this.state.fResponse
@@ -271,12 +328,18 @@ class ApiCalls extends React.Component{
     if(searching === true){
       loading = false
     }
+    var start_refine = this.state.startRefine
 
 
     return(
 
             <SafeAreaView style={styles.container}>
               <ScrollView>
+
+                  { alter_keywords && < AlterKeywords
+                    keywords = {this.state.searchKeywords}
+                    alteredKeywords = {this.keywordsAlteredHandler}
+                    /> }
 
                   { api_error &&
                       <View>
@@ -288,6 +351,7 @@ class ApiCalls extends React.Component{
                              </Link>
                       </View>
                    }
+
                    { searching && !(api_error) &&
                        <View style={{justifyContent:"center"}}>
                          <SearchingPage />
@@ -298,7 +362,13 @@ class ApiCalls extends React.Component{
                      <View style={{justifyContent:"center"}}>
                         <Text>Trigger alter keywords</Text>
                      </View>
+                   }
 
+                   {start_refine === true && <RefineResults
+                       filteredResults={this.getRelevantRecipes}
+                       thisRoundResponseList={this.state.fResponse}
+                       maxIngredients={this.state.initialData.ingredientCount}
+                       userIngredients={this.state.initialData.ingredients}/>
                    }
 
                    { this.state.foundResults && this.state.noMorePages &&

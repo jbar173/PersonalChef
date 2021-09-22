@@ -272,6 +272,7 @@ class ConfirmList extends React.Component {
 
   render(){
     var initial = this.state.initialData
+    var ingredients = this.state.initialData.ingredients
     var either = this.state.both
     var ingreds = this.state.ingredients_rough
     var redirect = this.state.redirect
@@ -311,15 +312,15 @@ class ConfirmList extends React.Component {
                            style={styles.blueButton}>Confirm</Text>
                         </Pressable>
 
-                        <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
-                         underlayColor="transparent">
+                        <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds,} }}
+                          underlayColor="transparent">
                             <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                               style={styles.blueButton}>Back</Text>
                         </Link>
 
                         { redirect === true && <Redirect to={{ pathname:'/api-calls/',
                           state:{ initial_data: initial, either: either,
-                                  ingreds: ingreds } }} /> }
+                                  ingreds: ingreds, ingredients: ingredients, } }} /> }
 
                      </View>
 

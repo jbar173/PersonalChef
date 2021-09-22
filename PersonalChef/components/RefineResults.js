@@ -7,46 +7,66 @@ const RefineResults = props => {
 
   console.log("refining")
 
-  var response_list = props.thisRoundResponseList
-  var length = response_list.length
-  console.log("response_list.length: " + response_list.length)
-
+  var ten_pages = props.thisRoundResponseList
+  console.log("TEN_PAGES.length: " + ten_pages.length)
+  var top_length = ten_pages.length
+  var relevant_recipes = []
+  var max_ingredients = props.maxIngredients
+  var not_enough_ingredients = false
 
   // filter out recipes which contain ingredients other than those that the user has:
   var user_ingredients = props.userIngredients
   var excess_ingredients = []
+  var i
   var j
-  for(j=0;j<length;j++){
-    try{
-        var recipe_ings = response_list[j]['recipe']['ingredients']
-        console.log("recipe: " + response_list[j]['recipe']['label'])
-        // apply code from python file to strip measurements/quantities/punctuation from each ingredient
-        for(ing in recipe_ings){
-          console.log("ingredient text: " + recipe_ings[ing]['text'])
-          if( !(user_ingredients.includes(recipe_ings[ing]['text'])) ){
-            excess_ingredients.push(recipe_ings[ing]['text'])
-            break;
-          }
+
+  for(i=0;i<top_length;i++){
+
+      var page = ten_pages[i]
+      var recipes = page['hits']
+      var length = recipes.length
+      console.log("length: " + length)
+
+      for(j=0;j<length;j++){
+
+       try{
+
+            var recipe_ings = recipes[j]['recipe']['ingredients']
+            console.log("Checking recipe: " + recipes[j]['recipe']['label'])
+
+            var count = 0
+
+            for(ing in recipe_ings){
+                count += 1
+                console.log("ingredient text: " + recipe_ings[ing]['text'])
+
+                if( !(user_ingredients.includes(recipe_ings[ing]['text'])) ){
+                  console.log("user doesn't have ' " + recipe_ings[ing]['text'] + " '." )
+                  // excess_ingredients.push(recipe_ings[ing]['text'])
+                  break;
+                }else if(count > user_ingredients.length){
+                  console.log("user doesn't have enough ingredients")
+                  break;
+                }
+
+                console.log("DIDN'T BREAK OUT OF FOR LOOP")
+                console.log("ingredients match for: " + response_list[j]['recipe']['label'])
+                var entry = []
+                entry.push(recipes[j]['recipe']['label'])
+                entry.push(recipes[j]['recipe']['url'])
+                revelant_recipes.push(entry)
+            }
+
+        }catch(error){
+            console.log(j + ": RefineResults error: " + error)
         }
-    }catch(error){
-        console.log(j + ": ingredient count error: " + error)
-        // response_list.splice(j,1)
-    }
-    if(excess_ingredients.length > 0){
-      console.log("No ingredient match: " + response_list[j]['recipe']['label'])
-      response_list.splice(j,1)
-      j -= 1
-      length -= 1
-      console.log("Excess ingredient: " + excess_ingredients[0])
-      excess_ingredients = []
-    }else{
-      console.log("ingredients match for: " + response_list[j]['recipe']['label'])
-    }
+
+      }
+
   }
 
 
-
-  props.filteredResults(response_list)
+  props.filteredResults(relevant_recipes)
 
   return(
           <View>
