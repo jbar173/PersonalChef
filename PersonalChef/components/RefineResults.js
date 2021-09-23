@@ -48,7 +48,7 @@ const RefineResults = props => {
 
                     var ingreds_length = recipe_ings.length
 
-                    // Breaks loop and skips the recipe if it contains more ingredients than the user has:
+                  // Breaks loop and skips the recipe if it contains more ingredients than the user has:
                     if(ingreds_length > user_ingredients.length){
                       console.log("USER DOESN'T HAVE ENOUGH INGREDIENTS")
                       var enough = false
@@ -58,7 +58,7 @@ const RefineResults = props => {
                       }
                     }
 
-                    // Compares if recipe has less ingredients than user:
+                  // Compares ingredients if the recipe has fewer ingredients than the user does:
                     if(ingreds_length < user_ingredients.length){
                       var count = 0
                       for(x in recipe_ings){
@@ -70,7 +70,7 @@ const RefineResults = props => {
                         }
                       }
                       if(count === ingreds_length){
-                        console.log("RECIPE MATCH! for: " + recipes[j]['recipe']['label'])a
+                        console.log("RECIPE MATCH! for: " + recipes[j]['recipe']['label'])
                         var entry = []
                         entry.push(recipes[j]['recipe']['label'])
                         entry.push(recipes[j]['recipe']['url'])
