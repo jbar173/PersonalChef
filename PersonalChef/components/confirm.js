@@ -26,13 +26,13 @@ class ConfirmList extends React.Component {
       updateFaves: false,
       redirect: false,
 
-      // apiCall: false,
+      // apiCall: false,``
       // timerStarted: false,
       // foundResults: true,
       // apiError: false,
 
       // firstResponse: [],
-
+      mounted: false,
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
@@ -40,43 +40,51 @@ class ConfirmList extends React.Component {
     this.confirmIngredients = this.confirmIngredients.bind(this)
     this.populateInitialData = this.populateInitialData.bind(this)
     this.getFavourites = this.getFavourites.bind(this)
-    // this.startStopwatch = this.startStopwatch.bind(this)
+
+    this.saveDeviceData = this.saveDeviceData.bind(this)
+    this.getData = this.getData.bind(this)
+
     // this.apiCallFinished = this.apiCallFinished.bind(this)
     // this.ingredientsAlteredHandler = this.ingredientsAlteredHandler.bind(this)
-
   };
 
   saveDeviceData = async ( key, data ) => {
-      try {
-          await AsyncStorage.setItem(key, JSON.stringify(data));
-      } catch (e) {
-        console.log(`Error saving data for key ${key}`, data);
-        throw e;
-      }
+    if(this.state.mounted){
+          try {
+              await AsyncStorage.setItem(key, JSON.stringify(data));
+          } catch (e) {
+            console.log(`Error saving data for key ${key}: `, data);
+            throw e;
+          }
+    }
   };
 
   getData = async (key) => {
-      try {
-        const data = await AsyncStorage.getItem(key)
-        if(data !== null) {
-            var value = JSON.parse(data)
-            console.log("value: " + value)
-            if(key === '@favourite-ingredients'){
-              this.setState({
-                favourites: value,
-                updateFaves: true
-              })
-            }
+    if(this.state.mounted){
+          try {
+            var data = await AsyncStorage.getItem(key)
+            if(data !== null) {
+                var value = JSON.parse(data)
+                console.log("value: " + value)
+                console.log("111111111111111")
+                if(key === '@favourite-ingredients'){
+                  this.setState({
+                    favourites: value,
+                    updateFaves: true
+                  })
+                }
+              }
+            else{
+                console.log("0000000000000000")
+                this.setState({
+                  favourites: [],
+                  updateFaves: true
+                })
+             }
+          } catch(e) {
+            console.log("CONFIRM: Error reading data for favourites: " + e);
           }
-        else{
-            this.setState({
-              favourites: [],
-              updateFaves: true
-            })
-        }
-      } catch(e) {
-        console.log("Error reading data for favourites: " + e);
-      }
+     }
   }
 
 
@@ -85,21 +93,13 @@ class ConfirmList extends React.Component {
     var initial_data = this.props.location.state.initial_data
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
-    // if(either === 'from RecipeResults'){  // Triggered when navigating backwards from < RecipeResults />
-    //   this.setState({
-    //     initialData: initial_data,
-    //     ingredients_rough: ingreds,
-    //     both: either,
-    //     // foundResults: false,              // Triggers < AlterKeywords />
-    //   })
+    this.setState({
+      mounted: true,
+      initialData: initial_data,
+      ingredients_rough: ingreds,
+      both: either
+    })
 
-    // }else{                                // Triggered when coming from < TinnedGoodsList />
-      this.setState({
-        initialData: initial_data,
-        ingredients_rough: ingreds,
-        both: either
-      })
-    // }
   }
 
   componentDidUpdate(){
@@ -117,39 +117,12 @@ class ConfirmList extends React.Component {
 
   componentWillUnmount(){
     console.log("confirm page unmounted")
+    this.setState({
+      mounted: false,
+      getFaves: false,
+      updateFaves: false,
+    })
   }
-
-
-// Times the app out for 30 seconds in order to spread out
-//   api calls (ensures that hits/minute aren't exceeded):
-  // startStopwatch(){
-  //   console.log("starting stopwatch")
-  //   var cmponent = this
-  //   setTimeout(function(){
-  //     console.log("stopwatch finished")
-  //     if(cmponent.state.firstResponse != undefined){
-  //         if(cmponent.state.firstResponse[0] === 'empty'){
-  //           cmponent.setState({
-  //             timerStarted: false,
-  //             apiError: true,          // Issue with the api, shows error message.
-  //           })
-  //         }else if(cmponent.state.firstResponse[0] === 'no results'){
-  //             console.log("api call successful, 0 results")
-  //             cmponent.setState({
-  //               timerStarted: false,
-  //               foundResults: false,   // No results returned from <ApiCalls />, triggers <AlterKeywords />
-  //             })
-  //         }else{
-  //             cmponent.setState({
-  //               timerStarted: false,
-                // redirect: true,       // Response is populated, redirects to <RecipeResults />
-  //             })
-  //           }
-  //     }else{
-  //       console.log("error")
-  //     }
-  //   }, 30000)
-  // }
 
 // Triggers when 'confirm' button is clicked (to confirm final ingredients list):
   confirmIngredients(){
@@ -184,10 +157,12 @@ class ConfirmList extends React.Component {
   getFavourites(){
     console.log("updating favourites")
     var favourites_key = '@favourite-ingredients'
-    var faves = this.getData(favourites_key)
-    this.setState({
-       getFaves: false,
-     })
+    if(this.state.mounted){
+      var faves = this.getData(favourites_key)
+      this.setState({
+         getFaves: false,
+       })
+    }
   }
 
   updateFavourites(){
@@ -272,7 +247,7 @@ class ConfirmList extends React.Component {
 
   render(){
     var initial = this.state.initialData
-    var ingredients = this.state.initialData.ingredients
+    // var ingredients_alone = this.state.initialData.ingredients
     var either = this.state.both
     var ingreds = this.state.ingredients_rough
     var redirect = this.state.redirect
@@ -284,7 +259,6 @@ class ConfirmList extends React.Component {
         <ScrollView>
 
               <View>
-
 
                     <View style={styles.container}>
 
@@ -320,13 +294,11 @@ class ConfirmList extends React.Component {
 
                         { redirect === true && <Redirect to={{ pathname:'/api-calls/',
                           state:{ initial_data: initial, either: either,
-                                  ingreds: ingreds, ingredients: ingredients, } }} /> }
+                                  ingreds: ingreds, } }} /> }
 
                      </View>
 
-
                 </View>
-
 
         </ScrollView>
       </SafeAreaView>

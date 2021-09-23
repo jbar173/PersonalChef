@@ -99,14 +99,12 @@ class AlterKeywords extends React.Component {
           }
 
           var ranked_ingredient = this.state.rankedIngredients[j].name
-          // console.log("**ranked_ingredient: " + ranked_ingredient)
 
           while(inner){
 
             for(i=0;i<length;i++){                // Inner loop iterates through user's ingredients, looking for a match with current
                                                   //   ranked ingredient (from above loop).
               var my_ingredient = ingredients[i]
-              // console.log("my ingredient: " + my_ingredient)
 
               if(my_ingredient === ranked_ingredient){
                 ingredients.splice(i,1)
@@ -125,19 +123,10 @@ class AlterKeywords extends React.Component {
                 }
                 console.log("*******found match*********: " + my_ingredient)
                 console.log("*******found most popular********: " + ranked_ingredient)
-
-                // searching = false
-                // inner = false
-
-                // console.log("*****searching: " + searching)
-                // console.log("*****inner: " + inner)
-                // break;
               }else{
-                // console.log("////searching: " + searching)
-                // console.log("////inner: " + inner)
-                console.log("pass for:")
-                console.log("my ingredient: " + my_ingredient)
-                console.log("ranked_ingredient: " + ranked_ingredient)
+                // console.log("pass for:")
+                // console.log("my ingredient: " + my_ingredient)
+                // console.log("ranked_ingredient: " + ranked_ingredient)
                 if(i === length - 1){
                   inner = false
                   break;

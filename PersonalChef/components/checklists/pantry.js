@@ -53,7 +53,7 @@ class PantryCheckList extends React.Component {
           }
 
         } catch(e) {
-          console.log("Error reading data for favourites: " + e.message);
+          console.log(`PANTRY: Error reading data for ${key}: e.message`);
       }
     }
 
