@@ -142,6 +142,8 @@ class ConfirmList extends React.Component {
       final.push(rough[key])
     }
     final = final.flat()
+    // Check whether ingredient is included twice here (in both pantry and a checklist),  ############ BuG FIX
+    //  delete one if so.
     this.setState({
       initialData: {
         ...this.state.initialData,

@@ -163,7 +163,7 @@ const RefineResults = props => {
                                        got_all= true
                                        break;
                                     }else{
-                                       console.log(".")
+                                       // console.log(".")
                                     }
                                 }
                             }

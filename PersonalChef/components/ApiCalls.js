@@ -45,6 +45,7 @@ class ApiCalls extends React.Component{
     this.triggerNextCall = this.triggerNextCall.bind(this)
     this.apiCall = this.apiCall.bind(this)
     this.startStopwatch = this.startStopwatch.bind(this)
+    this.dynamicStopwatch = this.dynamicStopwatch.bind(this)
     this.finishedHandler = this.finishedHandler.bind(this)
     this.getRelevantRecipes = this.getRelevantRecipes.bind(this)
     this.deleteAKeyword = this.deleteAKeyword.bind(this)
@@ -56,10 +57,14 @@ class ApiCalls extends React.Component{
     var initial_data = this.props.location.state.initial_data
     initial_data.ingredients.push('water')
     initial_data.ingredientCount += 1
+    if(initial_data.time > 45){
+      initial_data.ingredients.push('ice')
+      initial_data.ingredientCount += 1
+    }
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
     var ingredients_alone = initial_data.ingredients
-    // var final_ingredients = ingredients_alone.push('water')
+
     var reduce = false
     var start_calling = false
     if(ingredients_alone.length > 5){
@@ -198,12 +203,13 @@ class ApiCalls extends React.Component{
     var num = this.state.call
     // console.log("1 NUM: " + num)
 
+
     if(this.state.next === 'first'){
         var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=1-${time}&${type}&ingr=1-${ingr}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50`
         console.log("first_url: " + url)
 
     }else{
-        console.log("COUNT: " + this.state.count)
+
         try{
           var x = this.state.next
           var url = x['next']['href']
@@ -217,7 +223,8 @@ class ApiCalls extends React.Component{
             startRefine: true,
             stopwatchRunning: true,
           })
-          this.startStopwatch()
+          // Trigger dynamicStopwatch() here (6 seconds per call/page/20)                 // ############ BuG FIX
+          this.dynamicStopwatch()
 
           return 1;
         }
@@ -275,6 +282,22 @@ class ApiCalls extends React.Component{
           // startRefine: false,
         })
       }, 60000)
+  }
+
+  dynamicStopwatch(){
+    var length = this.state.fResponse.length
+    console.log("this.state.fResponse.length: " + length)
+    var this_timeout = length*6000
+    console.log("dynamic stopwatch started for " + this_timeout/1000 + " seconds.")
+    var cmponent = this
+    setTimeout(function(){
+        console.log("dynamic stopwatch finished")
+        cmponent.setState({
+          nextCall: true,
+          stopwatchRunning: false
+          // startRefine: false,
+        })
+      }, this_timeout)
   }
 
 // Passes back the recipe url list to the

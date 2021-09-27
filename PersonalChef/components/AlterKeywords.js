@@ -67,6 +67,9 @@ class AlterKeywords extends React.Component {
     getRankedIngredients(ranked_dictionary,rank,rank_word){
       console.log("get ranked ingredients triggered")
       console.log("ranked_dictionary.length: " + ranked_dictionary.length)
+      // Here, if searchKeywords < 5, don't pop a keyword, just reorder by rank?             ############ BuG FIX
+
+      // Or, if searchKeywords > 5:
       this.setState({
         rankedIngredients: ranked_dictionary,
         rank: rank,
