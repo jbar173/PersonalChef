@@ -305,7 +305,7 @@ class TimeAndType extends React.Component {
                                                         <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either,
                                                            times: times, ingreds: ingreds } }} underlayColor="transparent">
                                                              <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
-                                                              accessibilityRole="button" style={styles.greenButton}>Dessert ingredients</Text>
+                                                              accessibilityRole="button" style={styles.greenButton}>Next page</Text>
                                                         </Link>
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                                                           style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
@@ -320,7 +320,7 @@ class TimeAndType extends React.Component {
                                                     <View>
                                                         <TouchableHighlight underlayColor="none" onPress={() => this.setState({ showInvalid: true })}>
                                                             <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
-                                                              accessibilityRole="button" style={styles.greenButton}>Dessert ingredients</Text>
+                                                              accessibilityRole="button" style={styles.greenButton}>Next page</Text>
                                                         </TouchableHighlight>
 
                                                         {this.state.showInvalid === true && <Text accessible={true} accessibilityLabel="Please enter times above"
@@ -349,7 +349,7 @@ class TimeAndType extends React.Component {
                                                           to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, times: times,
                                                             ingreds: ingreds } }} underlayColor="transparent" >
                                                             <Text accessible={true} accessibilityLabel="Go to savoury ingredients"
-                                                              style={styles.greenButton}>Savoury ingredients</Text>
+                                                              style={styles.greenButton}>Next page</Text>
                                                         </Link>
                                                         <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                                                           style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
@@ -362,7 +362,7 @@ class TimeAndType extends React.Component {
                                                     <View>
                                                         <TouchableHighlight accessible={true} accessibilityLabel="Go to savoury ingredients"
                                                            accessibilityRole="button" underlayColor="white" onPress={ () => this.setState({ showInvalid: true }) }>
-                                                           <Text style={styles.greenButton}>Savoury ingredients</Text>
+                                                           <Text style={styles.greenButton}>Next page</Text>
                                                         </TouchableHighlight>
 
                                                         {this.state.showInvalid === true && <Text accessible={true} accessibilityLabel="Please enter times above"

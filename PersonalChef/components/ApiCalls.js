@@ -22,7 +22,6 @@ class ApiCalls extends React.Component{
       omittedKeywords: [],
       reduceKeywords: false,
       deleteOne: false,
-      // apiCall: false,
 
       foundResults: true,
       apiError: false,
@@ -49,14 +48,18 @@ class ApiCalls extends React.Component{
     this.finishedHandler = this.finishedHandler.bind(this)
     this.getRelevantRecipes = this.getRelevantRecipes.bind(this)
     this.deleteAKeyword = this.deleteAKeyword.bind(this)
+    this.restructureResults = this.restructureResults.bind(this)
   };
 
   componentDidMount(){
     console.log("Api component mounted")
     var initial_data = this.props.location.state.initial_data
+    initial_data.ingredients.push('water')
+    initial_data.ingredientCount += 1
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
     var ingredients_alone = initial_data.ingredients
+    // var final_ingredients = ingredients_alone.push('water')
     var reduce = false
     var start_calling = false
     if(ingredients_alone.length > 5){
@@ -82,6 +85,21 @@ class ApiCalls extends React.Component{
 
   componentDidUpdate(){
     console.log("API COMPONENT UPDATED")
+    if(this.state.finalResults){
+      var final_length = this.state.refinedRecipeList.length
+      console.log("relevant results length: " + final_length)
+      if(final_length > 1){
+        console.log("refinedRecipeList[0]: " + this.state.refinedRecipeList[0])
+        // console.log("refinedRecipeList[1]: " + this.state.refinedRecipeList[1])
+        // console.log("refinedRecipeList: " + this.state.refinedRecipeList)
+        // this.restructureResults()
+      }
+      if(final_length > 10){
+        this.setState({
+          nextCall: false
+        })
+      }
+    }
     // console.log("this.state.count: " + this.state.count)
     if(this.state.count === undefined && this.state.next !== 'first'){
       this.setState({
@@ -100,7 +118,22 @@ class ApiCalls extends React.Component{
     if(this.state.deleteOne){
       this.deleteAKeyword()
     }
+    // if(this.state.noMorePages && this.state.startRefine === false){
+    //   this.restructureResults()
+    // }
   }
+
+    restructureResults(){
+      var results = this.state.refinedRecipeList
+      console.log("results: " + results)
+      console.log("results[1][1]: " + results[1][1])
+      var new_results = results.flat()
+      console.log("results flat: " + new_results)
+      console.log("results flat[1]: " + new_results[1])
+      this.setState({
+        refinedRecipeList: new_results
+      })
+    }
 
 
   // Takes new keywords list in from < AlterKeywords /> component,
@@ -152,7 +185,7 @@ class ApiCalls extends React.Component{
     console.log("calling APIs")
     var keywords = this.state.searchKeywords
     var time = this.state.initialData.time
-    // var ingr = this.state.initialData.ingredientCount
+    var ingr = this.state.initialData.ingredientCount
     if(this.state.both){
       var type = 'dishType=Biscuits%20and%20cookies&dishType=Cereals&dishType=Desserts&dishType=Drinks&dishType=Pancake&dishType=Preserve&dishType=Sweets&dishType=Bread&dishType=Condiments%20and%20sauces&dishType=Main%20course&dishType=Pancake&dishType=Preps&dishType=Salad&dishType=Sandwiches&dishType=Side%20dish&dishType=Soup&dishType=Starter'
     }else{
@@ -166,7 +199,7 @@ class ApiCalls extends React.Component{
     // console.log("1 NUM: " + num)
 
     if(this.state.next === 'first'){
-        var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=1-${time}&${type}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50`
+        var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=1-${time}&${type}&ingr=1-${ingr}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50`
         console.log("first_url: " + url)
 
     }else{
@@ -264,7 +297,7 @@ class ApiCalls extends React.Component{
         console.log("~~~~~~####### COUNT IS NULL! #######~~~~~~~")
       }
       // knock an ingredient off if count === 0 ...... TEST TO SEE WHETHER MAKES A DIFFERENCE
-    }else if(this.state.refinedRecipeList.length === 0){
+    }else if(this.state.refinedRecipeList.length < 50 ){
       console.log("No relevant results found - knocking ingredient off")
       // knock an ingredient off
       if(this.state.searchKeywords.length > 1){
@@ -311,6 +344,7 @@ class ApiCalls extends React.Component{
   getRelevantRecipes(relevant_recipes){
     console.log("filtered initial")
     console.log("relevant_recipes.length: " + relevant_recipes.length)
+    var flat = relevant_recipes.flat()
 
     if(relevant_recipes.length === 0){
       console.log("No relevant results on these pages")
@@ -374,7 +408,10 @@ class ApiCalls extends React.Component{
     // if(no_count.includes(count)){
     //   searching = true
     // }
-    var loading = true
+    var loading = false
+    if(this.state.noMorePages === false && this.state.nextCall === false){
+      loading = true
+    }
     // if(searching === true){
     //   loading = false
     // }
@@ -412,30 +449,27 @@ class ApiCalls extends React.Component{
 
                    { this.state.finalResults && this.state.noMorePages &&
                        <View>
-                           {response.map(function(item,index){
-                              return(
-                                <View style={styles.container} key={index}>
-                                    {item['hits'].map(function(hit,ind){
-                                       return(
-                                             <View key={ind} style={{justifyContent:"center",alignItems:"center"}}>
+                           <View>
+                                 {this.state.refinedRecipeList.map(function(item,index){
+                                    return(
+                                      <View style={styles.container} key={index}>
+                                           <View style={{justifyContent:"center",alignItems:"center"}}>
 
-                                                 <Text accessible={true} accessibilityRole="text"
-                                                   accessibilityLabel={hit['recipe']['label'].toString()}
-                                                   style={styles.title}>{hit['recipe']['label']}</Text>
+                                                       <Text accessible={true} accessibilityRole="text"
+                                                         accessibilityLabel={item[0].toString()}
+                                                         style={styles.title}>{item[0]}</Text>
 
-                                                 <Pressable onPress={() => Linking.openURL(`${hit['recipe']['url']}`)}>
-                                                   <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
-                                                     style={styles.greenButton}>Go to recipe website</Text>
-                                                 </Pressable>
+                                                       <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
+                                                         <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
+                                                           style={styles.greenButton}>Go to recipe website</Text>
+                                                       </Pressable>
 
                                               </View>
-                                             )
-                                        }
-                                      )}
-                                  </View>
-                                 )
-                              }
-                            )}
+                                        </View>
+                                       )
+                                    }
+                                 )}
+                             </View>
                             <Link accessible={true} accessibilityLabel= "Start again"
                               accessibilityHint="Click button to go back to homepage"
                               to="/" accessibilityRole="button" underlayColor="transparent">
@@ -444,29 +478,24 @@ class ApiCalls extends React.Component{
                       </View>
                      }
 
-                     { this.state.finalResults && !(this.state.noMorePages) && loading &&
+                     { this.state.finalResults && loading &&
                        <View>
                                <View>
-                                     {response.map(function(item,index){
+                                     {this.state.refinedRecipeList.map(function(item,index){
                                         return(
                                           <View style={styles.container} key={index}>
-                                              {item['hits'].map(function(hit,ind){
-                                                 return(
-                                                       <View key={ind} style={{justifyContent:"center",alignItems:"center"}}>
+                                               <View style={{justifyContent:"center",alignItems:"center"}}>
 
                                                            <Text accessible={true} accessibilityRole="text"
-                                                             accessibilityLabel={hit['recipe']['label'].toString()}
-                                                             style={styles.title}>{hit['recipe']['label']}</Text>
+                                                             accessibilityLabel={item[0].toString()}
+                                                             style={styles.title}>{item[0]}</Text>
 
-                                                           <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${hit['recipe']['url']}`)}>
+                                                           <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
                                                              <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
                                                                style={styles.greenButton}>Go to recipe website</Text>
                                                            </Pressable>
 
-                                                        </View>
-                                                       )
-                                                  }
-                                                )}
+                                                  </View>
                                             </View>
                                            )
                                         }

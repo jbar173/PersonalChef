@@ -2,12 +2,16 @@
     "name": "three",
     "children": [
         {
-            "name": "prawns",
+            "name": "prawn",
             "count": 3
         },
         {
-            "name": "lemons",
+            "name": "lemon",
             "count": 3
-        }
+        },
+        {
+            "name": "water",
+            "count": 3
+        },
     ]
 }
