@@ -25,13 +25,6 @@ class ConfirmList extends React.Component {
       getFaves: false,
       updateFaves: false,
       redirect: false,
-
-      // apiCall: false,``
-      // timerStarted: false,
-      // foundResults: true,
-      // apiError: false,
-
-      // firstResponse: [],
       mounted: false,
     }
     this.componentDidMount = this.componentDidMount.bind(this)
@@ -43,9 +36,6 @@ class ConfirmList extends React.Component {
 
     this.saveDeviceData = this.saveDeviceData.bind(this)
     this.getData = this.getData.bind(this)
-
-    // this.apiCallFinished = this.apiCallFinished.bind(this)
-    // this.ingredientsAlteredHandler = this.ingredientsAlteredHandler.bind(this)
   };
 
   saveDeviceData = async ( key, data ) => {
@@ -73,8 +63,7 @@ class ConfirmList extends React.Component {
                     updateFaves: true
                   })
                 }
-              }
-            else{
+            }else{
                 console.log("0000000000000000")
                 this.setState({
                   favourites: [],
@@ -138,10 +127,33 @@ class ConfirmList extends React.Component {
     console.log("populating initial data")
     var rough = this.state.ingredients_rough
     var final = []
+    var original_pantry = []
+    var count = -1
+
+    // Makes sure that any ingredients already in pantry at beginning
+    //  that may have been added again by user are only included once
+    //  in final ingredients:
     for([key,value] of Object.entries(rough)){
-      final.push(rough[key])
+        count += 1
+        if(key === 'Already in pantry'){
+          original_pantry.push(rough[key])
+          original_pantry = original_pantry.flat()
+          final.push(rough[key])
+        }else{
+          if(original_pantry.length > 0 ){
+            for(x in rough[key]){
+                  if(original_pantry.includes(rough[key][x])){
+                    var gone = rough[key].splice(x,1)
+                  }else{
+                    console.log(rough[key][x] + " not found in pantry")
+                  }
+            }
+          }
+          final.push(rough[key])
+        }
     }
     final = final.flat()
+
     // Check whether ingredient is included twice here (in both pantry and a checklist),  ############ BuG FIX
     //  delete one if so.
     this.setState({
@@ -225,31 +237,9 @@ class ConfirmList extends React.Component {
   //   }
   // }
 
-// Takes new ingredients list in from < AlterKeywords /> component,
-//  triggers new API call (with reduced/altered ingredient list):
-
-  // ingredientsAlteredHandler(altered_list){
-  //   console.log("ingredients altered handler triggered")
-  //   console.log("** confirm.js altered_list.length: " + altered_list.length)
-  //   var length = altered_list.length
-  //   this.setState({
-  //     initialData: {
-  //       ...this.state.initialData,
-  //       ingredients: altered_list,
-  //       ingredientCount: length
-  //     },
-  //     foundResults: true,
-  //     timerStarted: true,
-  //     ingredientsWereAltered: true,
-  //     apiCall: true
-  //   })
-  //   this.startStopwatch()
-  // }
-
 
   render(){
     var initial = this.state.initialData
-    // var ingredients_alone = this.state.initialData.ingredients
     var either = this.state.both
     var ingreds = this.state.ingredients_rough
     var redirect = this.state.redirect
