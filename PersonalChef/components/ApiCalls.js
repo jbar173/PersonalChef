@@ -25,6 +25,7 @@ class ApiCalls extends React.Component{
 
       foundResults: true,
       apiError: false,
+      keywordsError: false,
       fResponse: [],
       next: 'first',
       count: null,
@@ -41,11 +42,14 @@ class ApiCalls extends React.Component{
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
     this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
     this.keywordsAlteredHandler = this.keywordsAlteredHandler.bind(this)
     this.triggerNextCall = this.triggerNextCall.bind(this)
     this.apiCall = this.apiCall.bind(this)
-    this.startStopwatch = this.startStopwatch.bind(this)
+
+    this.sixtySecondStopwatch = this.sixtySecondStopwatch.bind(this)
     this.dynamicStopwatch = this.dynamicStopwatch.bind(this)
+
     this.finishedHandler = this.finishedHandler.bind(this)
     this.getRelevantRecipes = this.getRelevantRecipes.bind(this)
     this.deleteAKeyword = this.deleteAKeyword.bind(this)
@@ -64,24 +68,14 @@ class ApiCalls extends React.Component{
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
     var ingredients_alone = initial_data.ingredients
-
-    var reduce = false
-    var start_calling = false
-    if(ingredients_alone.length > 5){
-      reduce = true
-      start_calling = false
-    }else{
-      start_calling = true
-    }
     this.setState({
       initialData: initial_data,
       searchKeywords: ingredients_alone,
-      reduceKeywords: reduce,
-      nextCall: start_calling,
+      reduceKeywords: true,
+      nextCall: false,
       both: either,
     })
   }
-
 
   componentWillUnmount(){
     console.log("Api component unmounted")
@@ -144,7 +138,7 @@ class ApiCalls extends React.Component{
   // Takes new keywords list in from < AlterKeywords /> component,
   //  triggers new API call (with reduced keyword list):
 
-   keywordsAlteredHandler(new_keywords){
+   keywordsAlteredHandler(new_keywords,status){
       console.log("ingredients altered handler triggered")
       var original_ingredients = this.state.initialData.ingredients
       for(x in new_keywords){
@@ -154,35 +148,49 @@ class ApiCalls extends React.Component{
         console.log(x + ". " + new_keywords[x])
         console.log("***")
       }
-
-      this.setState({
-        initialData: {
-          ...this.state.initialData,
-          ingredients: original_ingredients,
-        },
-        searchKeywords: new_keywords,
-        reduceKeywords: false,
-        nextCall: true
-      })
-    }
-
-
-
-    triggerNextCall(){
-      if(this.state.count === 0){
+      if(status){
+        console.log("status = true")
         this.setState({
-          nextCall: false,
-          noMorePages: true,
-          foundResults: false
+          initialData: {
+            ...this.state.initialData,
+            ingredients: original_ingredients,
+          },
+          searchKeywords: new_keywords,
+          reduceKeywords: false,
+          nextCall: true
         })
       }else{
-        this.apiCall()
+        console.log("status = false")
         this.setState({
-          nextCall: false,
-          foundResults: true
+          initialData: {
+            ...this.state.initialData,
+            ingredients: original_ingredients,
+          },
+          keywordsError: true,
+          searchKeywords: new_keywords,
+          reduceKeywords: false,
+          nextCall: false
         })
       }
     }
+
+
+
+  triggerNextCall(){
+    if(this.state.count === 0){
+      this.setState({
+        nextCall: false,
+        noMorePages: true,
+        foundResults: false
+      })
+    }else{
+      this.apiCall()
+      this.setState({
+        nextCall: false,
+        foundResults: true
+      })
+    }
+  }
 
 // Calls first api 10 times (allowance is 10 hits per minute),
 //  collects 200 recipe apis (if that many are returned):
@@ -201,8 +209,6 @@ class ApiCalls extends React.Component{
         }
     }
     var num = this.state.call
-    // console.log("1 NUM: " + num)
-
 
     if(this.state.next === 'first'){
         var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${keywords}&time=1-${time}&${type}&ingr=1-${ingr}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50`
@@ -223,9 +229,7 @@ class ApiCalls extends React.Component{
             startRefine: true,
             stopwatchRunning: true,
           })
-          // Trigger dynamicStopwatch() here (6 seconds per call/page/20)                 // ############ BuG FIX
           this.dynamicStopwatch()
-
           return 1;
         }
 
@@ -242,7 +246,7 @@ class ApiCalls extends React.Component{
         startRefine: true,
         stopwatchRunning: true
       })
-      this.startStopwatch()
+      this.sixtySecondStopwatch()
       return 1
     }else{
       console.log("number not divisible by 11")
@@ -266,12 +270,11 @@ class ApiCalls extends React.Component{
       console.log("API CALL ERROR: " + error + ". stack: " + error.stack)
     });
 
-    // console.log("API CALL FUNCTION OVER")
   }
 
 // Times the app out for 60 seconds in order to spread out
 //   api calls (ensures that 10 hits/minute aren't exceeded):
-  startStopwatch(){
+  sixtySecondStopwatch(){
     console.log("starting stopwatch")
     var cmponent = this
     setTimeout(function(){
@@ -279,7 +282,6 @@ class ApiCalls extends React.Component{
         cmponent.setState({
           nextCall: true,
           stopwatchRunning: false
-          // startRefine: false,
         })
       }, 60000)
   }
@@ -295,7 +297,6 @@ class ApiCalls extends React.Component{
         cmponent.setState({
           nextCall: true,
           stopwatchRunning: false
-          // startRefine: false,
         })
       }, this_timeout)
   }
@@ -338,6 +339,8 @@ class ApiCalls extends React.Component{
     }
   }
 
+// Deletes keyword from end of searchKeywords list if no relevant results
+//  have been returned, triggers a new api call:
   deleteAKeyword(){
     var keywords = this.state.searchKeywords
     var omitted = keywords.pop()
@@ -361,7 +364,6 @@ class ApiCalls extends React.Component{
       call: 0,
     })
   }
-
 
 
   getRelevantRecipes(relevant_recipes){
@@ -391,7 +393,6 @@ class ApiCalls extends React.Component{
   }
 
 
-
 /// RENDER() CONFIRM.JS:
 
 // <View style={styles.loadingContainer}>
@@ -399,28 +400,16 @@ class ApiCalls extends React.Component{
 //     <View style={{justifyContent:"center"}}>
 //       <SearchingPage />
 //     </View>
-
-    // { call_api === true && <ApiCalls
-    //   time = {this.state.initialData.time}
-    //   ingredientCount = {this.state.initialData.ingredientCount}
-    //   type = {this.state.initialData.type}
-    //   keywords={this.state.initialData.ingredients}
-    //   passDataBack = {this.apiCallFinished} /> }
-  // </View>
-
-
+// </View>
 
 
   render(){
     // var initial = this.state.initialData
     // var either = this.state.both
     // var ingreds = this.state.initialData.ingredients
-    // var response = this.state.firstResponse
-    //
-    // var call_api = this.state.apiCall
     // var timer_started = this.state.timerStarted
     // var redirect = this.state.redirect
-    var alter_keywords = this.state.reduceKeywords
+    var alter_or_reorder_keywords = this.state.reduceKeywords
 
     var api_error = this.state.apiError
     var count = this.state.count
@@ -447,7 +436,7 @@ class ApiCalls extends React.Component{
             <SafeAreaView style={styles.container}>
               <ScrollView>
 
-                  { alter_keywords && < AlterKeywords
+                  { alter_or_reorder_keywords && < AlterKeywords
                     keywords = {this.state.searchKeywords}
                     alteredKeywords = {this.keywordsAlteredHandler}
                     /> }

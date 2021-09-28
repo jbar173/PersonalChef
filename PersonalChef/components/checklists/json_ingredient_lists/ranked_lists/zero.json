@@ -272,6 +272,10 @@
           {
               "name": "maltesers",
               "count": 0
-          }
+          },
+          {
+              "name": "ice",
+              "count": 0
+          },
       ]
   }

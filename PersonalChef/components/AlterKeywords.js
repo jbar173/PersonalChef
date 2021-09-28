@@ -16,11 +16,13 @@ class AlterKeywords extends React.Component {
         passBack: false,
         rankedIngredients: {},
         ingredients: this.props.keywords,
+        originalLength: null,
         newKeywords: [],
         gotFive: false,
         rank: null,
         rankWord: '',
         notFound: false,
+        error: false,
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
@@ -32,6 +34,10 @@ class AlterKeywords extends React.Component {
     componentDidMount(){
       console.log("Alter Keywords mounted")
       console.log("this.state.ingredients.length: " + this.state.ingredients.length)
+      var length = this.state.ingredients.length
+      this.setState({
+        originalLength: length
+      })
     }
 
     componentDidUpdate(){
@@ -48,14 +54,24 @@ class AlterKeywords extends React.Component {
       //  matches found within current rankedIngredients:
       if(this.state.notFound){
         var next_rank = this.state.rank
-        var converter = require('number-to-words');
-        var word = converter.toWords(next_rank)
-        console.log("!!!!!!!!! word: " + word)
-        this.setState({
-          rankWord: word,
-          getRanked: true,
-          notFound: false
-        })
+        if(next_rank === -1){
+          this.setState({
+            notFound: false,
+            error: true,
+            passBack: true,
+          })
+          console.log("Error - couldn't find one of your ingredients in ranked ingredients lists")
+          return 1;
+        }else{
+          var converter = require('number-to-words');
+          var word = converter.toWords(next_rank)
+          console.log("!!!!!!!!! word: " + word)
+          this.setState({
+            rankWord: word,
+            getRanked: true,
+            notFound: false
+          })
+        }
       }
       // Triggers function that passes new list of keywords back to < ConfirmList />:
       if(this.state.passBack){
@@ -93,87 +109,98 @@ class AlterKeywords extends React.Component {
 
       while(searching){
 
-        for(j=r_length;j>-1;j--){                 // Outer loop iterates through rankedIngredients from bottom (lowest rank) to top.
+          for(j=r_length;j>-1;j--){                 // Outer loop iterates through rankedIngredients from bottom (lowest rank) to top.
 
-          if(searching){
-            var inner = true
-          }else{
-            break;
-          }
+            if(searching){
+              var inner = true
+            }else{
+              break;
+            }
 
-          var ranked_ingredient = this.state.rankedIngredients[j].name
+            var ranked_ingredient = this.state.rankedIngredients[j].name
 
-          while(inner){
+            while(inner){
 
-            for(i=0;i<length;i++){                // Inner loop iterates through user's ingredients, looking for a match with current
-                                                  //   ranked ingredient (from above loop).
-              var my_ingredient = ingredients[i]
+              for(i=0;i<length;i++){                // Inner loop iterates through user's ingredients, looking for a match with current
+                                                    //   ranked ingredient (from above loop).
+                var my_ingredient = ingredients[i]
 
-              if(my_ingredient === ranked_ingredient){
-                ingredients.splice(i,1)
-                var new_keywords = this.state.newKeywords
-                new_keywords.push(my_ingredient)
-                this.setState({
-                  newKeywords: new_keywords
-                })
-                if(new_keywords.length === 5){
+                if(my_ingredient === ranked_ingredient){
+                  ingredients.splice(i,1)
+                  var new_keywords = this.state.newKeywords
+                  new_keywords.push(my_ingredient)
                   this.setState({
-                    gotFive: true
+                    newKeywords: new_keywords
                   })
-                  searching = false
-                  inner = false
-                  break;
-                }
-                console.log("*******found match*********: " + my_ingredient)
-                console.log("*******found most popular********: " + ranked_ingredient)
-              }else{
-                // console.log("pass for:")
-                // console.log("my ingredient: " + my_ingredient)
-                // console.log("ranked_ingredient: " + ranked_ingredient)
-                if(i === length - 1){
-                  inner = false
-                  break;
+                  if(new_keywords.length === 5 || new_keywords.length === this.state.originalLength){
+                    this.setState({
+                      gotFive: true
+                    })
+                    searching = false
+                    inner = false
+                    break;
+                  }
+                  console.log("*******found match*********: " + my_ingredient)
+                  console.log("*******found most popular********: " + ranked_ingredient)
+                }else{
+                  // console.log("pass for:")
+                  // console.log("my ingredient: " + my_ingredient)
+                  // console.log("ranked_ingredient: " + ranked_ingredient)
+                  if(i === length - 1){
+                    inner = false
+                    break;
+                  }
                 }
               }
             }
           }
+          if(searching){
+            not_found = true
+          }
+          searching = false
         }
-        if(searching){
-          not_found = true
-        }
-        searching = false
-      }
 
-      if(not_found){
-        console.log("Get next rank of ingredients")
-        var current = this.state.rank
-        var next_rank = current -1
-        var converter = require('number-to-words');
-        var next_rank_word = converter.toWords(next_rank)
-        this.setState({
-          ready: false,
-          notFound: true,
-          rank: next_rank,
-          rankWord: next_rank_word
-        })
-      }else{
-        this.setState({
-          newKeywords: new_keywords,
-          ready: false,
-          passBack: true,
-          notFound: false,
-        })
-      }
+       if(not_found){
+          console.log("Get next rank of ingredients")
+          var current = this.state.rank
+          var next_rank = current -1
+          var converter = require('number-to-words');
+          var next_rank_word = converter.toWords(next_rank)
+          this.setState({
+            ready: false,
+            notFound: true,
+            rank: next_rank,
+            rankWord: next_rank_word
+          })
+        }else{
+          this.setState({
+            newKeywords: new_keywords,
+            ready: false,
+            passBack: true,
+            notFound: false,
+          })
+        }
     }
 
     // Sends new ingredients list back to < ConfirmList />:
     sendAlteredListBack(){
-      var new_keywords = this.state.newKeywords
-      console.log("new_keywords.length: " + new_keywords.length)
-      this.props.alteredKeywords(new_keywords)
-      this.setState({
-        passBack: false
-      })
+      if(this.state.error){
+        var new_keywords = this.state.newKeywords
+        var status = false
+        console.log("new_keywords.length: " + new_keywords.length)
+        this.props.alteredKeywords(new_keywords,status)
+        this.setState({
+          passBack: false
+        })
+      }else{
+        var new_keywords = this.state.newKeywords
+        var status = true
+        console.log("new_keywords.length: " + new_keywords.length)
+        this.props.alteredKeywords(new_keywords,status)
+        this.setState({
+          passBack: false
+        })
+      }
     }
 
 

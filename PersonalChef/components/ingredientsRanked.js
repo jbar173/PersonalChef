@@ -60,8 +60,10 @@ class RankedDictionary extends React.Component {
           rankWord: word
         })
         var ingrs_list = ranked_files[`${word}`]
+        console.log("1.ingrs_list: " + ingrs_list)
     }else{
         var ingrs_list = ranked_files[`${this_rank}`]
+        console.log("2.ingrs_list: " + ingrs_list)
     }
 
     var list = ingrs_list.children
@@ -105,6 +107,7 @@ class RankedDictionary extends React.Component {
     })
   }
 
+
  render(){
 
    return(
@@ -112,7 +115,8 @@ class RankedDictionary extends React.Component {
             <Text></Text>
          </View>
         );
-   }
+
+    }
 
  };
 
