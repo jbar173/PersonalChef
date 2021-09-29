@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
+import * as data from './keywordExceptions.json';
 
 
 
@@ -15,16 +16,23 @@ const RefineResults = props => {
     console.log(x + ". " + ten_pages[x]["from"])
   }
 
-  // filter out recipes which contain ingredients other than those that the user has:
-
   var user_ingredients = props.userIngredients
   var user_ings_length = props.maxIngredients
+  var exceptions_key = data.key
+  var exceptions = data.ingredients
 
   var relevant_recipes = []
   var i
   var j
   var finished = false
 
+// Regexes for ingredient matching:
+  var no_extra_letters = String.raw`[^a-z]`
+  var ends_with_s = String.raw`[s]`
+  var starts_or_ends_with = String.raw`\b`
+
+
+// filter out recipes which contain ingredients other than those that the user has:
   for(i=0;i<top_length;i++){
 
       console.log("i: " + i)
@@ -32,7 +40,6 @@ const RefineResults = props => {
       var recipes = page['hits']
       var length = recipes.length
       console.log("length: " + length)
-
 
       for(j=0;j<length;j++){
 
@@ -53,7 +60,6 @@ const RefineResults = props => {
 
              var got_all = false
 
-
              if(less){
 
                    try{
@@ -61,7 +67,6 @@ const RefineResults = props => {
                            var count = 0
                            var x
                            var y
-
 
                            for(x in recipe_ings){
                                var index = -1
@@ -74,96 +79,212 @@ const RefineResults = props => {
                                for(y in user_ingredients){
                                    index += 1
                                    var found = false
-
-                                   var no_extra_letters = String.raw`[^a-z]`
-                                   var ends_with_s = String.raw`[s]`
-                                   var starts_or_ends_with = String.raw`\b`
+                                   var extra_check = false
+                                   if(extra_check === false){
+                                     var ingredient = user_ingredients[y]
+                                   }
                                    // matching word is in the middle of the string:
-                                   var regex_one = new RegExp(`${no_extra_letters}${user_ingredients[y]}${no_extra_letters}`)
-                                   var regex_two = new RegExp(`${no_extra_letters}${user_ingredients[y]}${ends_with_s}${no_extra_letters}`)
+                                   var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
+                                   var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
                                    // matching word is at the start of the string:
-                                   var regex_three = new RegExp(`${starts_or_ends_with}${user_ingredients[y]}${no_extra_letters}`)
-                                   var regex_four = new RegExp(`${starts_or_ends_with}${user_ingredients[y]}${ends_with_s}${no_extra_letters}`)
+                                   var regex_three = new RegExp(`${starts_or_ends_with}${ingredient}${no_extra_letters}`)
+                                   var regex_four = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${no_extra_letters}`)
                                    //matching word is at the end of the string:
-                                   var regex_five = new RegExp(`${no_extra_letters}${user_ingredients[y]}${starts_or_ends_with}`)
-                                   var regex_six = new RegExp(`${no_extra_letters}${user_ingredients[y]}${ends_with_s}${starts_or_ends_with}`)
-
-
+                                   var regex_five = new RegExp(`${no_extra_letters}${ingredient}${starts_or_ends_with}`)
+                                   var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
 
                                    if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower)){
-                                     found = true
-                                     // console.log("****")
-                                     // console.log("FOUND either: ")
-                                     // console.log("regex_one: " + regex_one)
-                                     // console.log("or: ")
-                                     // console.log("regex_two: " + regex_two)
-                                     // console.log("inside: ")
-                                     // console.log(ingredient_lower)
-                                     // console.log("within: " +  recipes[j]['recipe']['label'])
-                                     // console.log("at: " + recipes[j]['recipe']['url'])
-                                     // console.log("i: " + i)
-                                     // console.log("~~~~")
+                                       found = true
+                                       console.log("found " + ingredient)
+                                       var words = []
+                                       if(exceptions_key.includes(user_ingredients[y])){
+                                         extra_check = true
+                                       }
+                                       console.log("EXTRA CHECK FOR " + user_ingredients[y] + "?????: " + extra_check)
+                                       if(extra_check){
+                                           console.log("EXTRA CHECK 1")
+                                           for(a in exceptions){
+                                             var name = exceptions[a]['name']
+                                             if(name === user_ingredients[y]){
+                                               var check_for = exceptions[a]['check_for']
+                                               for(b in check_for){
+                                                 var word = check_for[b]['word']
+                                                 words.push(word)
+                                               }
+                                             }
+                                           }
+                                           var words_count = -1
+                                           for(c in words){
+                                               words_count += 1
+                                               ingredient = words[c]
+                                               length_integer = parseInt(words.length)
+                                               last_ind = length_integer-1
+                                               console.log("checking exception ingredient: " + ingredient)
+                                               var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
+                                               var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                               var regex_three = new RegExp(`${starts_or_ends_with}${ingredient}${no_extra_letters}`)
+                                               var regex_four = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                               var regex_five = new RegExp(`${no_extra_letters}${ingredient}${starts_or_ends_with}`)
+                                               var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
+                                               if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower)){
+                                                   found = false
+                                                   console.log("R1 ingredient was " + ingredient + ", not " + user_ingredients[y])
+                                                   console.log("in " + ingredient_lower)
+                                                   extra_check = false
+                                                   break;
+                                               }else if(regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower)){
+                                                   found = false
+                                                   console.log("R3 ingredient was " + ingredient + ", not " + user_ingredients[y])
+                                                   console.log("in " + ingredient_lower)
+                                                   extra_check = false
+                                                   break;
+                                               }else if(regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower)){
+                                                   found = false
+                                                   console.log("R5 ingredient was " + ingredient + ", not " + user_ingredients[y])
+                                                   console.log("in " + ingredient_lower)
+                                                   extra_check = false
+                                                   break;
+                                               }else if(found === true && words_count === words.length){
+                                                   extra_check = false
+                                                   break;
+                                               }else{
+                                                   console.log("match was correct as: " + user_ingredients[y])
+                                                   console.log("in: " + ingredient_lower)
+                                               }
+                                            }
+                                         }
                                    }else if(regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower)){
-                                     found = true
-                                     // console.log("****")
-                                     // console.log("FOUND either: ")
-                                     // console.log("regex_three: " + regex_three)
-                                     // console.log("or: ")
-                                     // console.log("regex_four: " + regex_four)
-                                     // console.log("inside: ")
-                                     // console.log(ingredient_lower)
-                                     // console.log("within: " +  recipes[j]['recipe']['label'])
-                                     // console.log("at: " + recipes[j]['recipe']['url'])
-                                     // console.log("i: " + i)
+                                         found = true
+                                         console.log("found " + ingredient)
+                                         if(exceptions_key.includes(user_ingredients[y])){
+                                           extra_check = true
+                                         }
+                                         console.log("EXTRA CHECK FOR " + user_ingredients[y] + "?????: " + extra_check)
+                                         if(extra_check){
+                                           console.log("EXTRA CHECK 2")
+                                           for(a in exceptions){
+                                               var name = exceptions[a]['name']
+                                               if(name === user_ingredients[y]){
+                                                 var check_for = exceptions[a]['check_for']
+                                                 for(b in check_for){
+                                                   var word = check_for[b]['word']
+                                                   words.push(word)
+                                                 }
+                                               }
+                                           }
+                                           var words_count = -1
+                                           for(c in words){
+                                               words_count += 1
+                                               length_integer = parseInt(words.length)
+                                               last_ind = length_integer-1
+                                               ingredient = words[c]
+                                               console.log("checking exception ingredient: " + ingredient)
+                                               var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
+                                               var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                               var regex_three = new RegExp(`${starts_or_ends_with}${ingredient}${no_extra_letters}`)
+                                               var regex_four = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                               var regex_five = new RegExp(`${no_extra_letters}${ingredient}${starts_or_ends_with}`)
+                                               var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
+                                               if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower)){
+                                                   found = false
+                                                   console.log("ingredient was " + ingredient + ", not " + user_ingredients[y])
+                                                   console.log("in " + ingredient_lower)
+                                               }else if(regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower)){
+                                                   found = false
+                                                   console.log("ingredient was " + ingredient + ", not " + user_ingredients[y])
+                                                   console.log("in " + ingredient_lower)
+                                               }else if(regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower)){
+                                                   found = false
+                                                   console.log("ingredient was " + ingredient + ", not " + user_ingredients[y])
+                                                   console.log("in " + ingredient_lower)
+                                               }else if(found === true && words_count === words.length){
+                                                   extra_check = false
+                                                   break;
+                                               }else{
+                                                   console.log("match was correct as: " + user_ingredients[y])
+                                                   console.log("in: " + ingredient_lower)
+                                               }
+                                             }
+                                           }
                                    }else if(regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower)){
-                                     found = true
-                                     // console.log("****")
-                                     // console.log("FOUND either: ")
-                                     // console.log("regex_five: " + regex_five)
-                                     // console.log("or: ")
-                                     // console.log("regex_six: " + regex_six)
-                                     // console.log("inside: ")
-                                     // console.log(ingredient_lower)
-                                     // console.log("within: " +  recipes[j]['recipe']['label'])
-                                     // console.log("at: " + recipes[j]['recipe']['url'])
-                                     // console.log("i: " + i)
+                                         found = true
+                                         console.log("found " + ingredient)
+                                         if(exceptions_key.includes(user_ingredients[y])){
+                                           extra_check = true
+                                         }
+                                         console.log("EXTRA CHECK FOR " + user_ingredients[y] + "?????: " + extra_check)
+                                         if(extra_check){
+                                           console.log("EXTRA CHECK 3")
+                                           for(a in exceptions){
+                                               var name = exceptions[a]['name']
+                                               if(name === user_ingredients[y]){
+                                                 var check_for = exceptions[a]['check_for']
+                                                 for(b in check_for){
+                                                   var word = check_for[b]['word']
+                                                   words.push(word)
+                                                 }
+                                               }
+                                           }
+                                           var words_count = -1
+                                           for(c in words){
+                                               words_count += 1
+                                               length_integer = parseInt(words.length)
+                                               last_ind = length_integer-1
+                                               ingredient = words[c]
+                                               console.log("checking exception ingredient: " + ingredient)
+                                               var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
+                                               var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                               var regex_three = new RegExp(`${starts_or_ends_with}${ingredient}${no_extra_letters}`)
+                                               var regex_four = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                               var regex_five = new RegExp(`${no_extra_letters}${ingredient}${starts_or_ends_with}`)
+                                               var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
+                                               if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower)){
+                                                   found = false
+                                                   console.log("ingredient was " + ingredient + ", not " + user_ingredients[y])
+                                                   console.log("in " + ingredient_lower)
+                                               }else if(regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower)){
+                                                   found = false
+                                                   console.log("ingredient was " + ingredient + ", not " + user_ingredients[y])
+                                                   console.log("in " + ingredient_lower)
+                                               }else if(regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower)){
+                                                   found = false
+                                                   console.log("ingredient was " + ingredient + ", not " + user_ingredients[y])
+                                                   console.log("in " + ingredient_lower)
+                                               }else if(found === true && words_count === words.length){
+                                                   extra_check = false
+                                                   break;
+                                               }else{
+                                                   console.log("match was correct as: " + user_ingredients[y])
+                                                   console.log("in: " + ingredient_lower)
+                                               }
+                                             }
+                                           }
                                    }else{
-                                     // console.log("****")
-                                     // console.log("no regexes found inside: ")
-                                     // console.log(ingredient_lower)
-                                     // console.log("in: " +  recipes[j]['recipe']['label'])
-                                     // console.log("at: " + recipes[j]['recipe']['url'])
-                                     // console.log("i: " + i)
+                                     console.log(ingredient + " regex not found in " + ingredient_lower)
                                    }
 
                                    if(found){
                                        count += 1
                                        if(count === recipe_ings_length){
-                                          console.log("MATCH FOUND!")
-                                          console.log("for: " + recipes[j]['recipe']['label'])
-                                          console.log("in less = true")
-                                          // console.log("ingredient: " + ingredient_lower)
-                                          var entry = []
-                                          entry.push(recipes[j]['recipe']['label'])
-                                          entry.push(recipes[j]['recipe']['url'])
-                                          relevant_recipes.push(entry)
-                                          got_all= true
-                                          break;
+                                            console.log("MATCH FOUND!")
+                                            console.log("for: " + recipes[j]['recipe']['label'])
+                                            console.log("in less = true")
+                                            // console.log("ingredient: " + ingredient_lower)
+                                            var entry = []
+                                            entry.push(recipes[j]['recipe']['label'])
+                                            entry.push(recipes[j]['recipe']['url'])
+                                            relevant_recipes.push(entry)
+                                            got_all= true
+                                            break;
                                        }else{
-                                         // console.log("count: " + count)
-                                         // console.log("ingredient: " + ingredient_lower)
-                                         // console.log("recipe ingredients length: " + recipe_ings_length)
-                                         break;
+                                          break;
                                        }
                                     }else if( found === false && index === last_index){
-                                       console.log("NO MATCH")
-                                       console.log("with: " + recipes[j]['recipe']['label'])
-                                       console.log("in less = true")
-                                       // console.log("don't have: " + ingredient_lower)
-                                       got_all= true
-                                       break;
-                                    }else{
-                                       // console.log(".")
+                                         console.log("NO MATCH")
+                                         console.log("with: " + recipes[j]['recipe']['label'])
+                                         console.log("in less = true")
+                                         got_all= true
+                                         break;
                                     }
                                 }
                             }
@@ -210,70 +331,208 @@ const RefineResults = props => {
                                             if(count_two === (recipe_ings_length - 1)){
                                               last_index_two = true
                                             }
-                                            var found = false
 
-                                            var no_extra_letters = String.raw`[^a-z]`
-                                            var ends_with_s = String.raw`[s]`
-                                            var starts_or_ends_with = String.raw`\b`
+                                            var extra_check = false
+                                            var found = false
+                                            if(extra_check === false){
+                                              var ingredient = user_ingredients[ing]
+                                            }
                                             // matching word is in the middle of the string:
-                                            var regex_one = new RegExp(`${no_extra_letters}${user_ingredients[ing]}${no_extra_letters}`)
-                                            var regex_two = new RegExp(`${no_extra_letters}${user_ingredients[ing]}${ends_with_s}${no_extra_letters}`)
+                                            var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
+                                            var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
                                             // matching word is at the start of the string:
-                                            var regex_three = new RegExp(`${starts_or_ends_with}${user_ingredients[ing]}${no_extra_letters}`)
-                                            var regex_four = new RegExp(`${starts_or_ends_with}${user_ingredients[ing]}${ends_with_s}${no_extra_letters}`)
+                                            var regex_three = new RegExp(`${starts_or_ends_with}${ingredient}${no_extra_letters}`)
+                                            var regex_four = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${no_extra_letters}`)
                                             //matching word is at the end of the string:
-                                            var regex_five = new RegExp(`${no_extra_letters}${user_ingredients[ing]}${starts_or_ends_with}`)
-                                            var regex_six = new RegExp(`${no_extra_letters}${user_ingredients[ing]}${ends_with_s}${starts_or_ends_with}`)
+                                            var regex_five = new RegExp(`${no_extra_letters}${ingredient}${starts_or_ends_with}`)
+                                            var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
 
                                             if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower)){
-                                                found = true
-                                                // console.log("____________")
-                                                // console.log("FOUND either: ")
-                                                // console.log("regex_one: " + regex_one)
-                                                // console.log("or: ")
-                                                // console.log("regex_two: " + regex_two)
-                                                // console.log("inside: ")
-                                                // console.log(ingredient_lower)
-                                                // console.log("within: " +  recipes[j]['recipe']['label'])
-                                                // console.log("at: " + recipes[j]['recipe']['url'])
-                                                // console.log("i: " + i)
-                                                // console.log("____________")
-                                            }else if(regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower)){
-                                                found = true
-                                                // console.log("____________")
-                                                // console.log("FOUND either: ")
-                                                // console.log("regex_three: " + regex_three)
-                                                // console.log("or: ")
-                                                // console.log("regex_four: " + regex_four)
-                                                // console.log("inside: ")
-                                                // console.log(ingredient_lower)
-                                                // console.log("within: " +  recipes[j]['recipe']['label'])
-                                                // console.log("at: " + recipes[j]['recipe']['url'])
-                                                // console.log("i: " + i)
-                                                // console.log("____________")
-                                            }else if(regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower)){
-                                                found = true
-                                                // console.log("_____________")
-                                                // console.log("FOUND either: ")
-                                                // console.log("regex_five: " + regex_five)
-                                                // console.log("or: ")
-                                                // console.log("regex_six: " + regex_six)
-                                                // console.log("inside: ")
-                                                // console.log(ingredient_lower)
-                                                // console.log("within: " +  recipes[j]['recipe']['label'])
-                                                // console.log("at: " + recipes[j]['recipe']['url'])
-                                                // console.log("i: " + i)
-                                                // console.log("_____________")
-                                             }else{
-                                                // console.log("_____________")
-                                                // console.log("no regexes found inside: ")
-                                                // console.log(ingredient_lower)
-                                                // console.log("in: " +  recipes[j]['recipe']['label'])
-                                                // console.log("at: " + recipes[j]['recipe']['url'])
-                                                // console.log("i: " + i)
-                                                // console.log("_____________")
-                                             }
+                                                    found = true
+                                                    console.log("found " + ingredient)
+                                                    var words = []
+                                                    if(exceptions_key.includes(user_ingredients[ing])){
+                                                      extra_check = true
+                                                    }
+                                                    console.log("EXTRA CHECK FOR " + user_ingredients[ing] + "?????: " + extra_check)
+                                                    if(extra_check){
+                                                        console.log("EXTRA CHECK 2.1")
+                                                        for(a in exceptions){
+                                                            var name = exceptions[a]['name']
+                                                            if(name === user_ingredients[ing]){
+                                                              var check_for = exceptions[a]['check_for']
+                                                              for(b in check_for){
+                                                                var word = check_for[b]['word']
+                                                                words.push(word)
+                                                              }
+                                                            }
+                                                        }
+                                                        var words_count = -1
+                                                        for(c in words){
+                                                            words_count += 1
+                                                            ingredient = words[c]
+                                                            length_integer = parseInt(words.length)
+                                                            last_ind = length_integer-1
+                                                            console.log("checking exception ingredient: " + ingredient)
+                                                            var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
+                                                            var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                                            var regex_three = new RegExp(`${starts_or_ends_with}${ingredient}${no_extra_letters}`)
+                                                            var regex_four = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                                            var regex_five = new RegExp(`${no_extra_letters}${ingredient}${starts_or_ends_with}`)
+                                                            var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
+                                                            if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower)){
+                                                                found = false
+                                                                console.log("R1 ingredient was " + ingredient + ", not " + user_ingredients[ing])
+                                                                console.log("in " + ingredient_lower)
+                                                                extra_check = false
+                                                                break;
+                                                            }else if(regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower)){
+                                                                found = false
+                                                                console.log("R3 ingredient was " + ingredient + ", not " + user_ingredients[ing])
+                                                                console.log("in " + ingredient_lower)
+                                                                extra_check = false
+                                                                break;
+                                                            }else if(regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower)){
+                                                                found = false
+                                                                console.log("R5 ingredient was " + ingredient + ", not " + user_ingredients[ing])
+                                                                console.log("in " + ingredient_lower)
+                                                                extra_check = false
+                                                                break;
+                                                            }else if(found === true && words_count === words.length){
+                                                                extra_check = false
+                                                                break;
+                                                            }else{
+                                                                console.log("match was correct as: " + user_ingredients[ing])
+                                                                console.log("in: " + ingredient_lower)
+                                                            }
+                                                         }
+                                                      }
 
+                                             }else if(regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower)){
+                                                      found = true
+                                                      console.log("found " + ingredient)
+                                                      var words = []
+                                                      if(exceptions_key.includes(user_ingredients[ing])){
+                                                        extra_check = true
+                                                      }
+                                                      console.log("EXTRA CHECK FOR " + user_ingredients[ing] + "?????: " + extra_check)
+                                                      if(extra_check){
+                                                          console.log("EXTRA CHECK 2.2")
+                                                          for(a in exceptions){
+                                                              var name = exceptions[a]['name']
+                                                              if(name === user_ingredients[ing]){
+                                                                var check_for = exceptions[a]['check_for']
+                                                                for(b in check_for){
+                                                                  var word = check_for[b]['word']
+                                                                  words.push(word)
+                                                                }
+                                                              }
+                                                          }
+                                                          var words_count = -1
+                                                          for(c in words){
+                                                              words_count += 1
+                                                              ingredient = words[c]
+                                                              length_integer = parseInt(words.length)
+                                                              last_ind = length_integer-1
+                                                              console.log("checking exception ingredient: " + ingredient)
+                                                              var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
+                                                              var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                                              var regex_three = new RegExp(`${starts_or_ends_with}${ingredient}${no_extra_letters}`)
+                                                              var regex_four = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                                              var regex_five = new RegExp(`${no_extra_letters}${ingredient}${starts_or_ends_with}`)
+                                                              var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
+                                                              if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower)){
+                                                                  found = false
+                                                                  console.log("R1 ingredient was " + ingredient + ", not " + user_ingredients[ing])
+                                                                  console.log("in " + ingredient_lower)
+                                                                  extra_check = false
+                                                                  break;
+                                                              }else if(regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower)){
+                                                                  found = false
+                                                                  console.log("R3 ingredient was " + ingredient + ", not " + user_ingredients[ing])
+                                                                  console.log("in " + ingredient_lower)
+                                                                  extra_check = false
+                                                                  break;
+                                                              }else if(regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower)){
+                                                                  found = false
+                                                                  console.log("R5 ingredient was " + ingredient + ", not " + user_ingredients[ing])
+                                                                  console.log("in " + ingredient_lower)
+                                                                  extra_check = false
+                                                                  break;
+                                                              }else if(found === true && words_count === words.length){
+                                                                  extra_check = false
+                                                                  break;
+                                                              }else{
+                                                                  console.log("match was correct as: " + user_ingredients[ing])
+                                                                  console.log("in: " + ingredient_lower)
+                                                              }
+                                                           }
+                                                        }
+
+                                              }else if(regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower)){
+                                                      found = true
+                                                      console.log("found " + ingredient)
+                                                      var words = []
+                                                      if(exceptions_key.includes(user_ingredients[ing])){
+                                                        extra_check = true
+                                                      }
+                                                      console.log("EXTRA CHECK FOR " + user_ingredients[ing] + "?????: " + extra_check)
+                                                      if(extra_check){
+                                                          console.log("EXTRA CHECK 2.3")
+                                                          for(a in exceptions){
+                                                              var name = exceptions[a]['name']
+                                                              if(name === user_ingredients[ing]){
+                                                                var check_for = exceptions[a]['check_for']
+                                                                for(b in check_for){
+                                                                  var word = check_for[b]['word']
+                                                                  words.push(word)
+                                                                }
+                                                              }
+                                                          }
+                                                          var words_count = -1
+                                                          for(c in words){
+                                                              words_count += 1
+                                                              ingredient = words[c]
+                                                              length_integer = parseInt(words.length)
+                                                              last_ind = length_integer-1
+                                                              console.log("checking exception ingredient: " + ingredient)
+                                                              var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
+                                                              var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                                              var regex_three = new RegExp(`${starts_or_ends_with}${ingredient}${no_extra_letters}`)
+                                                              var regex_four = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${no_extra_letters}`)
+                                                              var regex_five = new RegExp(`${no_extra_letters}${ingredient}${starts_or_ends_with}`)
+                                                              var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
+                                                              if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower)){
+                                                                  found = false
+                                                                  console.log("R1 ingredient was " + ingredient + ", not " + user_ingredients[ing])
+                                                                  console.log("in " + ingredient_lower)
+                                                                  extra_check = false
+                                                                  break;
+                                                              }else if(regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower)){
+                                                                  found = false
+                                                                  console.log("R3 ingredient was " + ingredient + ", not " + user_ingredients[ing])
+                                                                  console.log("in " + ingredient_lower)
+                                                                  extra_check = false
+                                                                  break;
+                                                              }else if(regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower)){
+                                                                  found = false
+                                                                  console.log("R5 ingredient was " + ingredient + ", not " + user_ingredients[ing])
+                                                                  console.log("in " + ingredient_lower)
+                                                                  extra_check = false
+                                                                  break;
+                                                              }else if(found === true && words_count === words.length){
+                                                                  extra_check = false
+                                                                  break;
+                                                              }else{
+                                                                  console.log("match was correct as: " + user_ingredients[ing])
+                                                                  console.log("in: " + ingredient_lower)
+                                                              }
+                                                           }
+                                                        }
+
+                                              else{
+
+                                              }
 
                                             if(found){
                                                   console.log("***USER HAS ' " + ingredient_lower + " '." )
@@ -281,8 +540,6 @@ const RefineResults = props => {
                                                   if(ingredient_count === user_ings_length){
                                                         done = true
                                                         not_finished = false
-                                                        // console.log(" ingredient_count: " + ingredient_count)
-                                                        // console.log(" user ingredients length: " + user_ings_length)
                                                         console.log("INGREDIENTS MATCH for: " + recipes[j]['recipe']['label'])
                                                         console.log("in less = false")
                                                         var entry = []
@@ -297,18 +554,11 @@ const RefineResults = props => {
                                                   console.log("NO MATCH")
                                                   console.log("with: " + recipes[j]['recipe']['label'])
                                                   console.log("in less = false")
-                                                  // console.log("COULDN'T FIND USER INGREDIENT: " + user_ingredients[ing] + " IN RECIPE.")
-                                                  // console.log("WHEN CHECKING FINAL RECIPE_INGRED: " + ingredient_lower)
-                                                  // console.log(" user ingredients length: " + user_ings_length)
-                                                  // console.log("ingredient_count: " + ingredient_count)
                                                   done = true
                                                   break;
-                                             }else{
-                                                  // console.log("still checking for user's ingredient")
                                              }
-
-                                      }
-
+                                        }
+                                    }
                                }
 
                         }catch(error){
@@ -323,145 +573,6 @@ const RefineResults = props => {
 
 
   }
-
-
-
-              // Compares if user has exactly the same number of ingredients as the recipe:
-
-                  // var match = false
-                  // var count = -1
-                  // var ing
-                  // var ingred
-                  // var ingredient_count = 0
-
-//                   for(ing in user_ingredients){
-//                           count += 1
-//                           var last_index = false
-//                           if(count === (user_ings_length - 1)){
-//                             last_index = true
-//                           }
-//
-//                           var count_two = -1
-//
-//                           if(done){
-//                             console.log("Done!")
-//                             break;
-//                           }
-//
-//                           for(ingred in recipe_ings){
-//                                   var ingredient_lower = recipe_ings[ingred]['text'].toLowerCase()
-//                                   count_two += 1
-//                                   var last_index_two = false
-//                                   if(count_two === (recipe_ings_length - 1)){
-//                                     last_index_two = true
-//                                   }
-//
-//                                   if( ingredient_lower.includes(user_ingredients[ing]) ){
-//                                         console.log("***USER HAS ' " + ingredient_lower + " '." )
-//                                         ingredient_count += 1
-//                                         if(ingredient_count === user_ings_length){
-//                                             done = true
-//                                             not_finished = false
-//                                             // break_out = true
-//                                             console.log("!!!!!! INGREDIENTS MATCH for: " + recipes[j]['recipe']['label'])
-//                                             var entry = []
-//                                             entry.push(recipes[j]['recipe']['label'])
-//                                             entry.push(recipes[j]['recipe']['url'])
-//                                             relevant_recipes.push(entry)
-//                                             break;
-//                                         }else{
-//                                           break;
-//                                         }
-//                                   }else if( !(ingredient_lower.includes(user_ingredients[ing])) && last_index_two ) {
-//                                         console.log("NO MATCH")
-//                                         console.log("COULDN'T FIND USER INGREDIENT: " + user_ingredients[ing] + " IN RECIPE.")
-//                                         console.log("WHEN CHECKING FINAL RECIPE_INGRED: " + ingredient_lower)
-//                                         done = true
-//                                         // not_finished = false
-//
-//                                         break;
-//
-//                                    }else{
-//                                         console.log("still checking for user's ingredient")
-//                                    }
-//
-//                             }
-//
-//                     }
-//
-//           // }
-//
-//     // }catch(error){
-//     //     console.log(j + ": RefineResults error: " + error)
-//     // }
-//     not_finished = false
-// }
-
-
-         // var not_finished = true
-
-         // try{
-
-              // if(not_finished){
-
-                    // var enough = true
-                    // var done = false
-                    // var recipe_ings = recipes[j]['recipe']['ingredients']
-                    // console.log("****Checking recipe: " + recipes[j]['recipe']['label'])
-
-                    // var ingreds_length = recipe_ings.length
-
-                  // Compares ingredients if the recipe has fewer ingredients than the user does:
-                    // if(ingreds_length < user_ingredients.length){
-                    //       console.log("number of ingredients in recipe: " + ingreds_length)
-                    //       var count = 0
-                    //       var x
-                    //       var y
-                    //       var got_all = true
-                    //
-                    //       for(x in recipe_ings){
-                    //           var index = -1
-                    //           var ingredient_lower = recipe_ings[x]['text'].toLowerCase()
-                    //           if(got_all === false){
-                    //             break;
-                    //           }
-                    //           if(got_all){
-                    //                 for(y in user_ingredients){
-                    //                   index += 1
-                    //                   if(ingredient_lower.includes(user_ingredients[y])){
-                    //                         console.log("got: ")
-                    //                         console.log(ingredient_lower)
-                    //                         console.log("match is with user ingredient: " + user_ingredients[y])
-                    //                         count += 1
-                    //                         if(count === ingreds_length){
-                    //                             console.log("RECIPE MATCH! for: " + recipes[j]['recipe']['label'])
-                    //                             var entry = []
-                    //                             entry.push(recipes[j]['recipe']['label'])
-                    //                             entry.push(recipes[j]['recipe']['url'])
-                    //                             relevant_recipes.push(entry)
-                    //                             not_finished = false
-                    //                             got_all = false
-                    //                             break;
-                    //                         }
-                    //                         break;
-                    //                   }
-                    //                   else if(index === (user_ingredients.length-1)){
-                    //                         console.log("don't have: " + ingredient_lower)
-                    //                         got_all = false
-                    //                         break;
-                    //                   }else{
-                    //                         console.log(".")
-                    //                   }
-                    //                 }
-                    //            }else{
-                    //                    break;
-                    //            }
-                    //       }
-                    //       console.log("count: " + count)
-                    //
-                    //   }
-
-
 
 
   finished = true

@@ -128,13 +128,11 @@ class ConfirmList extends React.Component {
     var rough = this.state.ingredients_rough
     var final = []
     var original_pantry = []
-    var count = -1
 
     // Makes sure that any ingredients already in pantry at beginning
     //  that may have been added again by user are only included once
     //  in final ingredients:
     for([key,value] of Object.entries(rough)){
-        count += 1
         if(key === 'Already in pantry'){
           original_pantry.push(rough[key])
           original_pantry = original_pantry.flat()

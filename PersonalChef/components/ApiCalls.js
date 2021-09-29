@@ -269,7 +269,7 @@ class ApiCalls extends React.Component{
     .catch(error => {
       console.log("API CALL ERROR: " + error + ". stack: " + error.stack)
     });
-
+    console.log("COUNT: " + this.state.count)
   }
 
 // Times the app out for 60 seconds in order to spread out

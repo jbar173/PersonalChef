@@ -1,0 +1,69 @@
+{
+
+    "key" : ["ice","cream","pepper","lemon"],
+
+    "ingredients": [
+
+        {
+            "name": "ice",
+            "check_for": [
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "ice lolly",
+              },
+            ]
+        },
+        {
+            "name": "lemon",
+            "check_for": [
+              {
+                "word": "lemon curd",
+              },
+            ]
+        },
+        {
+            "name": "cream",
+            "check_for": [
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "sour cream",
+              },
+              {
+                "word": "cream cheese",
+              },
+            ]
+        },
+        {
+            "name": "pepper",
+            "check_for": [
+              {
+                "word": "chilli pepper",
+              },
+              {
+                "word": "yellow pepper",
+              },
+              {
+                "word": "red pepper",
+              },
+              {
+                "word": "green pepper",
+              },
+              {
+                "word": "bell pepper",
+              },
+              {
+                "word": "hot pepper",
+              },
+              {
+                "word": "sweet pepper",
+              },
+            ]
+        }
+
+    ]
+
+}
