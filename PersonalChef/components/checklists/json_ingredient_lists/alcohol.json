@@ -1,0 +1,5 @@
+{
+    "name": "alcohol_ingredients",
+    "ingredients": [ "rum", "gin", "brandy", "whisky", "white wine", "rose wine", "red wine", "cider", "ale",
+    ]
+}

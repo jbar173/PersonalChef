@@ -6,7 +6,7 @@ import { HomePage, TimeAndType } from './components/start.js';
 import { ConfectionaryIngredientsList } from './components/desserts.js';
 import { MeatIngredientsList, FishIngredientsList } from './components/other.js';
 import { HerbsAndSpicesList, TinnedGoodsList, DryIngredientsList,
-          WetIngredientsList, FruitAndVegList, } from './components/in_both.js';
+          WetIngredientsList, FruitAndVegList, AlcoholList, } from './components/in_both.js';
 import { ConfirmList } from './components/confirm.js';
 import { RecipeResults } from './components/results.js';
 import { RankedDict } from './components/IngredientsRanked.js';
@@ -57,6 +57,7 @@ class App extends React.Component {
                 <Route exact path = "/both-fruit/" component={FruitAndVegList} />
                 <Route exact path = "/both-spices/" component={HerbsAndSpicesList} />
                 <Route exact path = "/both-tinned/" component={TinnedGoodsList} />
+                <Route exact path = "/both-alcohol/" component={AlcoholList} />
 
                 <Route exact path = "/confirm/" component={ConfirmList} />
                 <Route exact path = "/api-calls/" component={ApiCalls} />

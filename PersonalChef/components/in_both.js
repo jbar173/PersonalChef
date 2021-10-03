@@ -7,6 +7,7 @@ import { WetIngredientsChecklist } from "./checklists/wet.js";
 import { FruitAndVegChecklist } from "./checklists/fruit_veg.js";
 import { HerbsAndSpicesChecklist } from "./checklists/herbs_spices.js";
 import { TinnedChecklist } from "./checklists/tinned.js";
+import { AlcoholChecklist } from "./checklists/alcohol.js"
 
 
 
@@ -512,12 +513,113 @@ class TinnedGoodsList extends React.Component {
 
                 <TinnedChecklist updateListHandler={this.updateListHandler} />
 
-                <Link style={{marginTop:30}} to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                <Link style={{marginTop:30}} to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
                     <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
                      style={styles.blueButton}>Next</Text>
                 </Link>
                 <Link to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                 underlayColor="transparent">
+                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                     style={styles.blueButton}>Back</Text>
+                </Link>
+          </ScrollView>
+        </SafeAreaView>
+
+      );
+   }
+};
+
+
+class AlcoholList extends React.Component {
+    constructor(props){
+    super(props);
+    this.state = {
+      userId: 12345,
+      initialData: {
+        "time":'0',
+        "ingredients":[],
+        "ingredientCount":0,
+        "type":'',
+      },
+      both:false,
+      ingredients_rough: {},
+      tins: [],
+      tins_updated: false,
+      visit_number:0,
+    }
+    this.componentDidMount = this.componentDidMount.bind(this)
+    this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.updateListHandler = this.updateListHandler.bind(this)
+    this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
+  };
+
+  componentDidMount(){
+    console.log("tinned mounted")
+    var initial_data = this.props.location.state.initial_data
+    var either = this.props.location.state.either
+    var ingreds = this.props.location.state.ingreds
+    this.setState({
+      initialData:initial_data,
+      ingredients_rough:ingreds,
+      both:either
+    })
+  }
+
+  componentDidUpdate(){
+    console.log("tins updated")
+
+    if(this.state.tins_updated === true){
+      console.log("updating ingredients_rough")
+      this.updateIngredientsRoughHandler()
+    }
+  }
+
+  updateListHandler(confirmed_list){
+    console.log("update list handler in_both.js tinned")
+    this.setState({
+      tins: confirmed_list,
+      tins_updated: true
+    })
+  }
+
+  updateIngredientsRoughHandler(){
+    var new_key = "tins"
+    var final_list = this.state.ingredients_rough
+    for([key,value] of Object.entries(final_list)){
+       if(key === new_key){
+           console.log(new_key + " replaced")
+           delete final_list[key]
+         }
+    }
+    final_list[new_key] = this.state.tins
+    this.setState({
+      ingredients_rough: final_list,
+      tins_updated: false
+    })
+  }
+
+
+  render(){
+    var initial = this.state.initialData
+    var either = this.state.both
+    var ingreds = this.state.ingredients_rough
+
+      return(
+
+        <SafeAreaView style={styles.container}>
+          <ScrollView>
+                <Text accessible={true} accessibilityLabel="Alcohol checklist"
+                  accessibilityRole="text" style={styles.mainTitle}>Alcohol checklist</Text>
+
+                <AlcoholChecklist updateListHandler={this.updateListHandler} />
+
+                <Link style={{marginTop:30}} to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                 underlayColor="transparent">
+                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                     style={styles.blueButton}>Next</Text>
+                </Link>
+                <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
                     <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                      style={styles.blueButton}>Back</Text>
@@ -571,4 +673,4 @@ const styles = StyleSheet.create({
 });
 
 
-export { DryIngredientsList, WetIngredientsList, FruitAndVegList, HerbsAndSpicesList, TinnedGoodsList } ;
+export { DryIngredientsList, WetIngredientsList, FruitAndVegList, HerbsAndSpicesList, TinnedGoodsList, AlcoholList } ;

@@ -1,31 +1,526 @@
 {
 
-    "key" : ["ice","cream","pepper","lemon"],
+    "key" : ["ice","lemon","cream","pepper","garlic","raisin","pumpkin","chocolate","oatmeal","fudge","hamburger","hot dog","peanut","butter","corn","kidney","coffee","milk","water","ginger","ale","coffee",
+      "tomato","mushroom","chili","apple","apricot","almond","brazil nut","candlenut","cashew nut","chestnut","potato","vinegar","hazelnut","pecan","macademia","walnut","pine nut","mustard","grape","toffee",
+      "plum","onion","date","lime","grapefruit","fig","pineapple","olives","banana","turnip","lettuce","spinach","beetroot","kale","cabbage","custard","caramel","oats","black tea","sugar","shrimp","rice",
+      "sweet potato","chili pepper",
+
+
+    ],
 
     "ingredients": [
 
         {
+            "name": "chili pepper",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chili",
+              },
+              {
+                "word": "chilli",
+              },
+              {
+                "word": "chillies",
+              },
+              {
+                "word": "chili pepper",
+              },
+              {
+                "word": "chilli pepper",
+              },
+            ],
+        },
+        {
+            "name": "rice",
+            "exclude": [
+              {
+                "word": "rice paper",
+              },
+              {
+                "word": "rice cake",
+              },
+              {
+                "word": "rice pudding",
+              },
+              {
+                "word": "rice wine",
+              },
+              {
+                "word": "rice vinegar",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "shrimp",
+            "exclude": [
+              {
+                "word": "shrimp paste",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "sugar",
+            "exclude": [
+              {
+                "word": "sugar cookie",
+              },
+              {
+                "word": "sugar snap",
+              },
+              {
+                "word": "sugar syrup",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "black tea",
+            "exclude": [
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "oats",
+            "exclude": [
+              {
+                "word": "oat crisps",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "rum",
+            "exclude": [
+              {
+                "word": "rum ball",
+              },
+              {
+                "word": "rum truffle",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "custard",
+            "exclude": [
+              {
+                "word": "custard cream",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "caramel",
+            "exclude": [
+              {
+                "word": "caramel shortbread",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "olives",
+            "exclude": [
+              {
+                "word": "olive fruit",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "banana",
+            "exclude": [
+              {
+                "word": "cooking banana",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "turnip",
+            "exclude": [
+              {
+                "word": "turnip greens",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "lettuce",
+            "exclude": [
+              {
+                "word": "lambs lettuce",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "spinach",
+            "exclude": [
+              {
+                "word": "red spinach",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "beetroot",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "beet",
+              },
+            ],
+        },
+        {
+            "name": "beet",
+            "exclude": [
+              {
+                "word": "beet greens",
+              },
+            ],
+            "include": [
+            ],
+        },
+        {
+            "name": "kale",
+            "exclude": [
+              {
+                "word": "sea kale",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "cabbage",
+            "exclude": [
+              {
+                "word": "sour cabbage",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "pineapple",
+            "exclude": [
+              {
+                "word": "pineapple juice",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "fig",
+            "exclude": [
+              {
+                "word": "fig jam",
+              },
+              {
+                "word": "fig chutney",
+              },
+              {
+                "word": "fig roll",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "grapefruit",
+            "exclude": [
+              {
+                "word": "grapefruit juice",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "lime",
+            "exclude": [
+              {
+                "word": "kaffir lime",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "peach",
+            "exclude": [
+              {
+                "word": "peach juice",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "toffee",
+            "exclude": [
+              {
+                "word": "toffee apple",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "mustard",
+            "exclude": [
+              {
+                "word": "mustard seeds",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "pine nut",
+            "exclude": [
+              {
+                "word": "pine nut oil",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "coconut",
+            "exclude": [
+              {
+                "word": "coconut oil",
+              },
+              {
+                "word": "dessicated coconut",
+              },
+              {
+                "word": "coconut milk",
+              },
+              {
+                "word": "coconut water",
+              },
+              {
+                "word": "coconut macaroon",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "walnut",
+            "exclude": [
+              {
+                "word": "walnut oil",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "date",
+            "exclude": [
+              {
+                "word": "date chutney",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "macademia",
+            "exclude": [
+              {
+                "word": "macademia oil",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "pecan",
+            "exclude": [
+              {
+                "word": "pecan oil",
+              },
+              {
+                "word": "pecan butter",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "hazelnut",
+            "exclude": [
+              {
+                "word": "hazelnut oil",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "vinegar",
+            "exclude": [
+              {
+                "word": "balsamic vinegar",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "potato",
+            "exclude": [
+              {
+                "word": "sweet potato",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "sweet potato",
+            "exclude": [
+              {
+                "word": "potato",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "chestnut",
+            "exclude": [
+              {
+                "word": "water chestnut",
+              },
+              {
+                "word": "chestnut flour",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "brazil nut",
+            "exclude": [
+              {
+                "word": "brazil nut oil",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "cashew nut",
+            "exclude": [
+              {
+                "word": "cashew nut oil",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "candlenut",
+            "exclude": [
+              {
+                "word": "candlenut oil",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
             "name": "ice",
-            "check_for": [
+            "exclude": [
               {
                 "word": "ice cream",
               },
               {
                 "word": "ice lolly",
               },
-            ]
+            ],
+            "include": [
+
+            ],
         },
         {
             "name": "lemon",
-            "check_for": [
+            "exclude": [
               {
                 "word": "lemon curd",
               },
-            ]
+              {
+                "word": "lemon sole",
+              },
+            ],
+            "include": [
+
+            ],
         },
         {
             "name": "cream",
-            "check_for": [
+            "exclude": [
               {
                 "word": "ice cream",
               },
@@ -33,15 +528,36 @@
                 "word": "sour cream",
               },
               {
+                "word": "soured cream",
+              },
+              {
                 "word": "cream cheese",
               },
-            ]
+              {
+                "word": "cream cracker",
+              },
+              {
+                "word": "custard cream",
+              },
+              {
+                "word": "cream cookies",
+              },
+            ],
+            "include": [
+
+            ],
         },
         {
             "name": "pepper",
-            "check_for": [
+            "exclude": [
+              {
+                "word": "chili pepper",
+              },
               {
                 "word": "chilli pepper",
+              },
+              {
+                "word": "ghost pepper",
               },
               {
                 "word": "yellow pepper",
@@ -61,8 +577,494 @@
               {
                 "word": "sweet pepper",
               },
-            ]
-        }
+              {
+                "word": "jalapeno pepper",
+              },
+              {
+                "word": "padron pepper",
+              },
+              {
+                "word": "pickled pepper",
+              },
+              {
+                "word": "habanero pepper",
+              },
+              {
+                "word": "cayenne pepper",
+              },
+              {
+                "word": "pimiento pepper",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "garlic",
+            "exclude": [
+              {
+                "word": "garlic bread",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "raisin",
+            "exclude": [
+              {
+                "word": "raisin bread",
+              },
+              {
+                "word": "oatmeal raisin",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "pumpkin",
+            "exclude": [
+              {
+                "word": "pumpkin seeds",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "chocolate",
+            "exclude": [
+              {
+                "word": "chocolate cookie",
+              },
+              {
+                "word": "chocolate chip cookie",
+              },
+              {
+                "word": "hot chocolate",
+              },
+              {
+                "word": "chocolate milk",
+              },
+              {
+                "word": "chocolate biscuit",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "oatmeal",
+            "exclude": [
+              {
+                "word": "oatmeal cookie",
+              },
+              {
+                "word": "oatmeal raisin",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "fudge",
+            "exclude": [
+              {
+                "word": "fudge brownie",
+              },
+              {
+                "word": "fudge cookie",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "bread",
+            "exclude": [
+              {
+                "word": "bread sauce",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "hamburger",
+            "exclude": [
+              {
+                "word": "hamburger bun",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "hot dog",
+            "exclude": [
+              {
+                "word": "hot dog bun",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "peanut",
+            "exclude": [
+              {
+                "word": "peanut butter",
+              },
+              {
+                "word": "peanut oil",
+              },
+              {
+                "word": "peanut butter cookie",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "butter",
+            "exclude": [
+              {
+                "word": "peanut butter",
+              },
+              {
+                "word": "peanut butter cookie",
+              },
+              {
+                "word": "almond butter",
+              },
+              {
+                "word": "cashew butter",
+              },
+              {
+                "word": "pecan butter",
+              },
+              {
+                "word": "apple butter",
+              },
+              {
+                "word": "butter cream",
+              },
+              {
+                "word": "butter cookie",
+              },
+              {
+                "word": "butter biscuit",
+              },
+              {
+                "word": "butter pecan",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "corn",
+            "exclude": [
+              {
+                "word": "corn bread",
+              },
+              {
+                "word": "corn syrup",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "kidney",
+            "exclude": [
+              {
+                "word": "kidney beans",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "coffee",
+            "exclude": [
+              {
+                "word": "coffee beans",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "milk",
+            "exclude": [
+              {
+                "word": "milk shake",
+              },
+              {
+                "word": "almond milk",
+              },
+              {
+                "word": "coconut milk",
+              },
+              {
+                "word": "cashew milk",
+              },
+              {
+                "word": "chocolate milk",
+              },
+              {
+                "word": "malted milk",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "water",
+            "exclude": [
+              {
+                "word": "soda water",
+              },
+              {
+                "word": "sparkling water",
+              },
+              {
+                "word": "fizzy water",
+              },
+              {
+                "word": "carbonated water",
+              },
+              {
+                "word": "water chestnut",
+              },
+              {
+                "word": "coconut water",
+              },
+              {
+                "word": "rose water",
+              },
+              {
+                "word": "orange blossom water",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "ginger",
+            "exclude": [
+              {
+                "word": "ginger ale",
+              },
+              {
+                "word": "ginger snaps",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "ale",
+            "exclude": [
+              {
+                "word": "ginger ale",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "tomato",
+            "exclude": [
+              {
+                "word": "tomato sauce",
+              },
+              {
+                "word": "tomato juice",
+              },
+              {
+                "word": "tomato chutney",
+              },
+              {
+                "word": "tomato ketchup",
+              },
+              {
+                "word": "tinned tomatoes",
+              },
+              {
+                "word": "canned tomatoes",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "mushroom",
+            "exclude": [
+              {
+                "word": "mushroom sauce",
+              },
+              {
+                "word": "mushroom ketchup",
+              },
+              {
+                "word": "mushroom gravy",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "chili",
+            "exclude": [
+              {
+                "word": "chili sauce",
+              },
+              {
+                "word": "chili chutney",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "apple",
+            "exclude": [
+              {
+                "word": "apple sauce",
+              },
+              {
+                "word": "apple juice",
+              },
+              {
+                "word": "apple butter",
+              },
+              {
+                "word": "toffee apple",
+              },
+              {
+                "word": "apple chutney",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "apricot",
+            "exclude": [
+              {
+                "word": "apricot jam",
+              },
+              {
+                "word": "apricot chutney",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "onion",
+            "exclude": [
+              {
+                "word": "onion jam",
+              },
+              {
+                "word": "onion chutney",
+              },
+              {
+                "word": "caramelised onion",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "grape",
+            "exclude": [
+              {
+                "word": "grape juice",
+              },
+              {
+                "word": "grape jam",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "plum",
+            "exclude": [
+              {
+                "word": "plum juice",
+              },
+              {
+                "word": "plum jam",
+              },
+              {
+                "word": "plum chutney",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "almond",
+            "exclude": [
+              {
+                "word": "almond butter",
+              },
+              {
+                "word": "almond paste",
+              },
+              {
+                "word": "almond flour",
+              },
+              {
+                "word": "almond meal",
+              },
+              {
+                "word": "almond syrup",
+              },
+              {
+                "word": "almond macaroon",
+              },
+              {
+                "word": "almond biscuit",
+              },
+            ],
+            "include": [
+
+            ],
+        },
 
     ]
 
