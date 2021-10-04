@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable, Li
 import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { AlterKeywords } from './AlterKeywords.js';
 import { RefineResults } from './RefineResults.js';
-import { SearchingPage, LoadingPage } from "./Animations.js";
+import { SearchingPage, FilteringAnimation } from "./Animations.js";
 
 
 class ApiCalls extends React.Component{
@@ -22,6 +22,7 @@ class ApiCalls extends React.Component{
       omittedKeywords: [],
       reduceKeywords: false,
       deleteOne: false,
+      noMoreKeywords: false,
 
       foundResults: true,
       apiError: false,
@@ -36,7 +37,8 @@ class ApiCalls extends React.Component{
       call: 0,
       startRefine: false,
       refinedRecipeList: [],
-      finalResults: false
+      finalResults: false,
+      finished: false
     },
     this.abortController = new AbortController()
     this.componentDidMount = this.componentDidMount.bind(this)
@@ -47,13 +49,11 @@ class ApiCalls extends React.Component{
     this.triggerNextCall = this.triggerNextCall.bind(this)
     this.apiCall = this.apiCall.bind(this)
 
-    this.sixtySecondStopwatch = this.sixtySecondStopwatch.bind(this)
-    this.dynamicStopwatch = this.dynamicStopwatch.bind(this)
+    this.sixSecondStopwatch = this.sixSecondStopwatch.bind(this)
 
     this.finishedHandler = this.finishedHandler.bind(this)
     this.getRelevantRecipes = this.getRelevantRecipes.bind(this)
     this.deleteAKeyword = this.deleteAKeyword.bind(this)
-    this.restructureResults = this.restructureResults.bind(this)
   };
 
   componentDidMount(){
@@ -84,18 +84,14 @@ class ApiCalls extends React.Component{
 
   componentDidUpdate(){
     console.log("API COMPONENT UPDATED")
-    if(this.state.finalResults){
+
+    if(this.state.finalResults && this.state.finished === false){
       var final_length = this.state.refinedRecipeList.length
       console.log("relevant results length: " + final_length)
-      if(final_length > 1){
-        console.log("refinedRecipeList[0]: " + this.state.refinedRecipeList[0])
-        // console.log("refinedRecipeList[1]: " + this.state.refinedRecipeList[1])
-        // console.log("refinedRecipeList: " + this.state.refinedRecipeList)
-        // this.restructureResults()
-      }
-      if(final_length > 10){
+      if(final_length > 100){
         this.setState({
-          nextCall: false
+          nextCall: false,
+          finished: true
         })
       }
     }
@@ -117,27 +113,11 @@ class ApiCalls extends React.Component{
     if(this.state.deleteOne){
       this.deleteAKeyword()
     }
-    // if(this.state.noMorePages && this.state.startRefine === false){
-    //   this.restructureResults()
-    // }
   }
-
-    restructureResults(){
-      var results = this.state.refinedRecipeList
-      console.log("results: " + results)
-      console.log("results[1][1]: " + results[1][1])
-      var new_results = results.flat()
-      console.log("results flat: " + new_results)
-      console.log("results flat[1]: " + new_results[1])
-      this.setState({
-        refinedRecipeList: new_results
-      })
-    }
 
 
   // Takes new keywords list in from < AlterKeywords /> component,
   //  triggers new API call (with reduced keyword list):
-
    keywordsAlteredHandler(new_keywords,status){
       console.log("ingredients altered handler triggered")
       var original_ingredients = this.state.initialData.ingredients
@@ -172,9 +152,7 @@ class ApiCalls extends React.Component{
           nextCall: false
         })
       }
-    }
-
-
+  }
 
   triggerNextCall(){
     if(this.state.count === 0){
@@ -220,6 +198,7 @@ class ApiCalls extends React.Component{
           var x = this.state.next
           var url = x['next']['href']
           console.log("next url: " + url)
+          console.log("!!!!!!!!!!!!! NEXT: " + x)
 
         }catch{
           console.log("No next page")
@@ -227,9 +206,7 @@ class ApiCalls extends React.Component{
             noMorePages: true,
             nextCall: false,
             startRefine: true,
-            stopwatchRunning: true,
           })
-          this.dynamicStopwatch()
           return 1;
         }
 
@@ -237,20 +214,6 @@ class ApiCalls extends React.Component{
 
     num += 1
     console.log("2. num: " + num)
-
-    if(num % 11 === 0){
-      console.log("number is divisible by 11")
-      this.setState({
-        nextCall: false,
-        call: num,
-        startRefine: true,
-        stopwatchRunning: true
-      })
-      this.sixtySecondStopwatch()
-      return 1
-    }else{
-      console.log("number not divisible by 11")
-    }
 
     fetch(url, { signal: this.abortController.signal })
     .then(response => response.json())
@@ -263,42 +226,30 @@ class ApiCalls extends React.Component{
           count: data['count'],
           next: data['_links'],
           call: num,
-          nextCall: true
+          startRefine: true,
+          stopwatchRunning: true
         })
     })
     .catch(error => {
       console.log("API CALL ERROR: " + error + ". stack: " + error.stack)
+      console.log("If undefined here don't overwrite 'next'")
     });
     console.log("COUNT: " + this.state.count)
+    this.sixSecondStopwatch()
   }
 
-// Times the app out for 60 seconds in order to spread out
+// Times the app out for 6 seconds in order to spread out
 //   api calls (ensures that 10 hits/minute aren't exceeded):
-  sixtySecondStopwatch(){
-    console.log("starting stopwatch")
+  sixSecondStopwatch(){
+    console.log("starting 6 second stopwatch")
     var cmponent = this
     setTimeout(function(){
-        console.log("stopwatch finished")
+        console.log("6 second stopwatch finished")
         cmponent.setState({
           nextCall: true,
           stopwatchRunning: false
         })
-      }, 60000)
-  }
-
-  dynamicStopwatch(){
-    var length = this.state.fResponse.length
-    console.log("this.state.fResponse.length: " + length)
-    var this_timeout = length*6000
-    console.log("dynamic stopwatch started for " + this_timeout/1000 + " seconds.")
-    var cmponent = this
-    setTimeout(function(){
-        console.log("dynamic stopwatch finished")
-        cmponent.setState({
-          nextCall: true,
-          stopwatchRunning: false
-        })
-      }, this_timeout)
+      }, 6000)
   }
 
 // Passes back the recipe url list to the
@@ -321,15 +272,18 @@ class ApiCalls extends React.Component{
         console.log("~~~~~~####### COUNT IS NULL! #######~~~~~~~")
       }
       // knock an ingredient off if count === 0 ...... TEST TO SEE WHETHER MAKES A DIFFERENCE
-    }else if(this.state.refinedRecipeList.length < 50 ){
+    }else if( this.state.noMoreKeywords === false ){
       console.log("No relevant results found - knocking ingredient off")
       // knock an ingredient off
       if(this.state.searchKeywords.length > 1){
           this.setState({
-            deleteOne: true
+            deleteOne: true,
           })
       }else{
         console.log("2.FINAL KEYWORD NO RESULTS!")
+        this.setState({
+          noMoreKeywords: true
+        })
       }
 
     }else{
@@ -365,11 +319,20 @@ class ApiCalls extends React.Component{
     })
   }
 
-
   getRelevantRecipes(relevant_recipes){
     console.log("filtered initial")
     console.log("relevant_recipes.length: " + relevant_recipes.length)
-    var flat = relevant_recipes.flat()
+    // console.log("relevant recipes: " + relevant_recipes)
+
+    var relevant = this.state.refinedRecipeList
+    for(x in relevant_recipes){
+      // console.log("x in relevant recipes: " + relevant_recipes[x])
+      relevant.push(relevant_recipes[x])
+    }
+    // console.log("this.state.refinedRecipeList: " + this.state.refinedRecipeList)
+    // for(y in this.state.refinedRecipeList){
+    //   console.log("y in refinedRecipeList: " + this.state.refinedRecipeList[y])
+    // }
 
     if(relevant_recipes.length === 0){
       console.log("No relevant results on these pages")
@@ -381,26 +344,14 @@ class ApiCalls extends React.Component{
     }else{
       console.log("found relevant results")
       this.setState({
-        refinedRecipeList: [
-          ...this.state.refinedRecipeList,
-          relevant_recipes,
-        ],
+        refinedRecipeList: relevant,
         fResponse: [],
         startRefine: false,
         finalResults: true
       })
     }
+
   }
-
-
-/// RENDER() CONFIRM.JS:
-
-// <View style={styles.loadingContainer}>
-//
-//     <View style={{justifyContent:"center"}}>
-//       <SearchingPage />
-//     </View>
-// </View>
 
 
   render(){
@@ -420,9 +371,9 @@ class ApiCalls extends React.Component{
     // if(no_count.includes(count)){
     //   searching = true
     // }
-    var loading = false
+    var filtering = false
     if(this.state.noMorePages === false && this.state.nextCall === false){
-      loading = true
+      filtering = true
     }
     // if(searching === true){
     //   loading = false
@@ -459,38 +410,15 @@ class ApiCalls extends React.Component{
                        userIngredients={this.state.initialData.ingredients}/>
                    }
 
-                   { this.state.finalResults && this.state.noMorePages &&
-                       <View>
-                           <View>
-                                 {this.state.refinedRecipeList.map(function(item,index){
-                                    return(
-                                      <View style={styles.container} key={index}>
-                                           <View style={{justifyContent:"center",alignItems:"center"}}>
+                   { this.state.refinedRecipeList.length === 0 &&
+                       <View style={styles.container}>
+                           <View style={{justifyContent:"center"}}>
+                              <SearchingPage />
+                           </View>
+                       </View>
+                    }
 
-                                                       <Text accessible={true} accessibilityRole="text"
-                                                         accessibilityLabel={item[0].toString()}
-                                                         style={styles.title}>{item[0]}</Text>
-
-                                                       <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
-                                                         <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
-                                                           style={styles.greenButton}>Go to recipe website</Text>
-                                                       </Pressable>
-
-                                              </View>
-                                        </View>
-                                       )
-                                    }
-                                 )}
-                             </View>
-                            <Link accessible={true} accessibilityLabel= "Start again"
-                              accessibilityHint="Click button to go back to homepage"
-                              to="/" accessibilityRole="button" underlayColor="transparent">
-                                <Text style={styles.blueButton}>Start again</Text>
-                            </Link>
-                      </View>
-                     }
-
-                     { this.state.finalResults && loading &&
+                    { this.state.refinedRecipeList.length > 0 && this.state.noMorePages &&
                        <View>
                                <View>
                                      {this.state.refinedRecipeList.map(function(item,index){
@@ -503,8 +431,8 @@ class ApiCalls extends React.Component{
                                                              style={styles.title}>{item[0]}</Text>
 
                                                            <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
-                                                             <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
-                                                               style={styles.greenButton}>Go to recipe website</Text>
+                                                             <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
+                                                               style={styles.greenButton}>Go to recipe website :) </Text>
                                                            </Pressable>
 
                                                   </View>
@@ -514,10 +442,40 @@ class ApiCalls extends React.Component{
                                      )}
                                  </View>
                                  <View style={{justifyContent:"center",alignItems:"center"}}>
-                                    <LoadingPage />
+                                    <FilteringAnimation />
                                  </View>
                          </View>
-                       }
+                      }
+
+                      { this.state.refinedRecipeList.length > 0 && filtering &&
+                         <View>
+                                 <View>
+                                       {this.state.refinedRecipeList.map(function(item,index){
+                                          return(
+                                            <View style={styles.container} key={index}>
+                                                 <View style={{justifyContent:"center",alignItems:"center"}}>
+
+                                                             <Text accessible={true} accessibilityRole="text"
+                                                               accessibilityLabel={item[0].toString()}
+                                                               style={styles.title}>{item[0]}</Text>
+
+
+                                                             <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
+                                                               <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
+                                                                 style={styles.greenButton}>Go to recipe website :) :)</Text>
+                                                             </Pressable>
+
+                                                    </View>
+                                              </View>
+                                             )
+                                          }
+                                       )}
+                                   </View>
+                                   <View style={{justifyContent:"center",alignItems:"center"}}>
+                                      <FilteringAnimation />
+                                   </View>
+                           </View>
+                        }
 
                   </ScrollView>
                 </SafeAreaView>

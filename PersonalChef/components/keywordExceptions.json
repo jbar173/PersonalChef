@@ -3,7 +3,7 @@
     "key" : ["ice","lemon","cream","pepper","garlic","raisin","pumpkin","chocolate","oatmeal","fudge","hamburger","hot dog","peanut","butter","corn","kidney","coffee","milk","water","ginger","ale","coffee",
       "tomato","mushroom","chili","apple","apricot","almond","brazil nut","candlenut","cashew nut","chestnut","potato","vinegar","hazelnut","pecan","macademia","walnut","pine nut","mustard","grape","toffee",
       "plum","onion","date","lime","grapefruit","fig","pineapple","olives","banana","turnip","lettuce","spinach","beetroot","kale","cabbage","custard","caramel","oats","black tea","sugar","shrimp","rice",
-      "sweet potato","chili pepper",
+      "sweet potato","chili pepper","milk chocolate","white chocolate","dark chocolate","coconut milk","soy milk","almond milk",
 
 
     ],
@@ -77,6 +77,9 @@
               },
               {
                 "word": "sugar syrup",
+              },
+              {
+                "word": "sugar ice cream cones",
               },
             ],
             "include": [
@@ -654,9 +657,71 @@
               {
                 "word": "chocolate biscuit",
               },
+              {
+                "word": "chocolate cake mix",
+              },
             ],
             "include": [
-
+              {
+                "word": "chocolate chips",
+              },
+            ],
+        },
+        {
+            "name": "milk chocolate",
+            "exclude": [
+              {
+                "word": "milk chocolate cookie",
+              },
+              {
+                "word": "milk chocolate chip cookie",
+              },
+              {
+                "word": "milk chocolate biscuit",
+              },
+            ],
+            "include": [
+              {
+                "word": "chocolate",
+              },
+            ],
+        },
+        {
+            "name": "white chocolate",
+            "exclude": [
+              {
+                "word": "white chocolate cookie",
+              },
+              {
+                "word": "white chocolate chip cookie",
+              },
+              {
+                "word": "white chocolate biscuit",
+              },
+            ],
+            "include": [
+              {
+                "word": "chocolate",
+              },
+            ],
+        },
+        {
+            "name": "dark chocolate",
+            "exclude": [
+              {
+                "word": "dark chocolate cookie",
+              },
+              {
+                "word": "dark chocolate chip cookie",
+              },
+              {
+                "word": "dark chocolate biscuit",
+              },
+            ],
+            "include": [
+              {
+                "word": "chocolate",
+              },
             ],
         },
         {
@@ -770,6 +835,9 @@
               {
                 "word": "butter pecan",
               },
+              {
+                "word": "butter milk",
+              },
             ],
             "include": [
 
@@ -812,11 +880,42 @@
             ],
         },
         {
-            "name": "milk",
+            "name": "coconut milk",
             "exclude": [
+            ],
+            "include": [
               {
-                "word": "milk shake",
+                "word": "soy milk",
               },
+              {
+                "word": "almond milk",
+              },
+              {
+                "word": "milk",
+              },
+            ],
+        },
+        {
+            "name": "almond milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "soy milk",
+              },
+              {
+                "word": "coconut milk",
+              },
+              {
+                "word": "milk",
+              },
+            ],
+        },
+        {
+            "name": "soy milk",
+            "exclude": [
+            ],
+            "include": [
               {
                 "word": "almond milk",
               },
@@ -824,13 +923,33 @@
                 "word": "coconut milk",
               },
               {
-                "word": "cashew milk",
+                "word": "milk",
+              },
+            ],
+        },
+        {
+            "name": "milk",
+            "exclude": [
+              {
+                "word": "milk shake",
               },
               {
                 "word": "chocolate milk",
               },
               {
                 "word": "malted milk",
+              },
+              {
+                "word": "condensed milk",
+              },
+              {
+                "word": "milk ricotta",
+              },
+              {
+                "word": "milk eating chocolate",
+              },
+              {
+                "word": "milk chocolate",
               },
             ],
             "include": [
@@ -866,7 +985,6 @@
               },
             ],
             "include": [
-
             ],
         },
         {

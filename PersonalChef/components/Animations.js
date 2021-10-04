@@ -156,7 +156,7 @@ class SearchingPage extends React.Component{
 };
 
 
-class LoadingPage extends React.Component{
+class FilteringAnimation extends React.Component{
     constructor(props){
       super(props);
       this.componentDidMount = this.componentDidMount.bind(this)
@@ -177,7 +177,7 @@ class LoadingPage extends React.Component{
               <View style={{display:'flex'}}>
                 <View style={{flexWrap:"wrap", flexDirection:"row"}}>
                     <Text accessibilityLabel="Loading" accessibilityHint="Loading page"
-                     style={{fontSize:20}}>Loading</Text>
+                     style={{fontSize:20}}>Filtering</Text>
                     <ThreeDots />
                 </View>
               </View>
@@ -189,4 +189,4 @@ class LoadingPage extends React.Component{
 
 
 
-export { SearchingPage, LoadingPage, ThreeDots };
+export { SearchingPage, FilteringAnimation, ThreeDots };

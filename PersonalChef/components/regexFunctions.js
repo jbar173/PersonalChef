@@ -7,7 +7,8 @@ import * as data from './keywordExceptions.json';
 
 const FindIngredient = (ingredients_to_search_for,ingredient_lower,is_key) => {
 
-    console.log("FindIngredient regex function!!!!")
+    // console.log("FindIngredient regex function!!!!")
+
   // Regexes for ingredient to match:
     var no_extra_letters = String.raw`[^a-z]`
     var ends_with_s = String.raw`[s]`
@@ -20,11 +21,12 @@ const FindIngredient = (ingredients_to_search_for,ingredient_lower,is_key) => {
     var m
     var l
 
-    console.log("INGREDIENTS.LENGTH: " + ingredients.length)
-    console.log("~~~~ Searching for ingredients: ~~~~")
-    for(x in ingredients){
-      console.log(ingredients[x])
-    }
+    // console.log("INGREDIENTS.LENGTH: " + ingredients.length)
+    // console.log("~~~~ Searching for ingredients: ~~~~")
+
+    // for(x in ingredients){
+    //   console.log(ingredients[x])
+    // }
 
     var original_found = false
     var include_words_found = []
@@ -70,8 +72,8 @@ const FindIngredient = (ingredients_to_search_for,ingredient_lower,is_key) => {
               include_words_found.push(ingredient)
             }
         }else{
-            console.log("couldn't find 'ingredient': " + ingredient)
-            console.log("in: " + ingredient_lower)
+            // console.log("couldn't find 'ingredient': " + ingredient)
+            // console.log("in: " + ingredient_lower)
         }
      }
 
@@ -135,27 +137,27 @@ const FindExceptions = (ingredients,ingredient_lower) => {
                     var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
 
                     if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower)){
-                          if(ingredients.length > 1){
+                          // if(ingredients.length > 1){
                               ingredients_with_exceptions.push(ingredient)
-                          }
+                          // }
                           console.log("R1 ingredient was " + ingredient + ", not " + ingredients[l])
                           console.log("in " + ingredient_lower)
                           exception_found = true
                           next_ingredient = true
                           break;
                     }else if(regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower)){
-                          if(ingredients.length > 1){
+                          // if(ingredients.length > 1){
                               ingredients_with_exceptions.push(ingredient)
-                          }
+                          // }
                           console.log("R3 ingredient was " + ingredient + ", not " + ingredients[l])
                           console.log("in " + ingredient_lower)
                           exception_found = true
                           next_ingredient = true
                           break;
                     }else if(regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower)){
-                          if(ingredients.length > 1){
+                          // if(ingredients.length > 1){
                               ingredients_with_exceptions.push(ingredient)
-                          }
+                          // }
                           console.log("R5 ingredient was " + ingredient + ", not " + ingredients[l])
                           console.log("in " + ingredient_lower)
                           exception_found = true
@@ -165,8 +167,8 @@ const FindExceptions = (ingredients,ingredient_lower) => {
                           next_ingredient = true
                           break;
                     }else{
-                          console.log("match was correct as: " + ingredients[l])
-                          console.log("in: " + ingredient_lower)
+                          // console.log("match was correct as: " + ingredients[l])
+                          // console.log("in: " + ingredient_lower)
                     }
 
                 }
