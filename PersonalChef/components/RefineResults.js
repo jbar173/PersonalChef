@@ -99,7 +99,7 @@ const RefineResults = props => {
                                                is_key = true
                                                var include = exceptions[p]['include']
                                                for(q in include){
-                                                   var word = include[p]['word']
+                                                   var word = include[q]['word']
                                                    include_words.push(word)
                                                }
                                            }
@@ -241,7 +241,7 @@ const RefineResults = props => {
                                                     is_key = true
                                                     var include = exceptions[p]['include']
                                                     for(q in include){
-                                                        var word = exclude[q]['word']
+                                                        var word = include[q]['word']
                                                         include_words.push(word)
                                                     }
                                                 }
