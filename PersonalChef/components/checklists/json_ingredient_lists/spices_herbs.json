@@ -1,6 +1,6 @@
 {
     "name": "spices_and_herbs_ingredients",
-    "ingredients": ["fresh coriander leaves", "fresh mint leaves", "fresh thai basil leaves", "basil leaves", "flat-leaf parsley leaves", "salt", "pepper", "cinnamon", "nutmeg",
+    "ingredients": ["fresh coriander", "fresh mint", "fresh thai basil", "dried basil", "flat-leaf parsley", "salt", "pepper", "cinnamon", "nutmeg",
       "turmeric",
     ]
 }

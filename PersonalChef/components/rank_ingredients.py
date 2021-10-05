@@ -1,5 +1,5 @@
 
-# import clean_ingredient_data_test
+import clean_ingredient_data_test
 import json
 import os
 from num2words import num2words
@@ -8,19 +8,21 @@ from num2words import num2words
 # cleaned_ingredients = get_common_ingredients.clean_ingredients(ingredients)
 
 # cleaned_ingredients = ['eggs', 'eggs', 'eggs', 'eggs', 'bacon', 'orange', 'lemon', 'lime', 'apple', 'noodles', 'noodles', 'chips', 'steak', 'steak', 'salmon', 'haddock', 'white chocolate', 'skittles',]
-# cleaned_ingredients = clean_ingredient_data_test.cleaned_ingredients
-cleaned_ingredients = [
-    "brioche burger buns","sunflower oil","vegetable oil", "peanut oil", "olive oil", "olive oil", "prawns", "prawns", "prawns", "prawns",
-     "spring onions","spring onions","egg", "panko breadcrumbs","white cabbage","mayonnaise","mayonnaise","sweet chilli sauce","sriracha chilli sauce",
-     "limes","garlic","garlic","garlic","dried rice vermicelli noodles","green papayas","grape tomatoes","beansprouts","fresh coriander leaves",
-     "fresh mint leaves","fresh thai basil leaves","fish sauce","fish sauce","brown sugar","leeks","eschalots","eschalots","ouzo","tomato paste",
-     "greek feta","basil leaves","red chillies","red chillies","flat-leaf parsley leaves","flat-leaf parsley leaves","kale leaves","lemons","lemons",
-     "lemons","lemons","avocados","buttermilk","milk","cream","cream cheese","vanilla extract","cooking oil","cooking spray","plum tomatoes",
-     "kidney beans","tinned apricots","salt","salt","salt","pepper","pepper","pepper","cinnamon","nutmeg","turmeric","beef","chicken","pork",
-     "white cabbages","apples","peppers","tomatoes","carrots","haddock","seabass","cornflour","flour","sugar","pasta","baking powder","baking soda",
-     "pecans","white chocolate","milk chocolate","dark chocolate","chocolate buttons","hundreds and thousands","chocolate sprinkles","milk chocolate drops",
-     "white chocolate drops","dark chocolate drops","jelly tots","smarties","skittles","maltesers","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs",
-     ]
+
+cleaned_ingredients = clean_ingredient_data_test.cleaned_ingredients
+
+# cleaned_ingredients = [
+#     "brioche burger buns","sunflower oil","vegetable oil", "peanut oil", "olive oil", "olive oil", "prawns", "prawns", "prawns", "prawns",
+#      "spring onions","spring onions","egg", "panko breadcrumbs","white cabbage","mayonnaise","mayonnaise","sweet chilli sauce","sriracha chilli sauce",
+#      "limes","garlic","garlic","garlic","dried rice vermicelli noodles","green papayas","grape tomatoes","beansprouts","fresh coriander leaves",
+#      "fresh mint leaves","fresh thai basil leaves","fish sauce","fish sauce","brown sugar","leeks","eschalots","eschalots","ouzo","tomato paste",
+#      "greek feta","basil leaves","red chillies","red chillies","flat-leaf parsley leaves","flat-leaf parsley leaves","kale leaves","lemons","lemons",
+#      "lemons","lemons","avocados","buttermilk","milk","cream","cream cheese","vanilla extract","cooking oil","cooking spray","plum tomatoes",
+#      "kidney beans","tinned apricots","salt","salt","salt","pepper","pepper","pepper","cinnamon","nutmeg","turmeric","beef","chicken","pork",
+#      "white cabbages","apples","peppers","tomatoes","carrots","haddock","seabass","cornflour","flour","sugar","pasta","baking powder","baking soda",
+#      "pecans","white chocolate","milk chocolate","dark chocolate","chocolate buttons","hundreds and thousands","chocolate sprinkles","milk chocolate drops",
+#      "white chocolate drops","dark chocolate drops","jelly tots","smarties","skittles","maltesers","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs","mini eggs",
+#      ]
 
 
 def count_ingredient_occurances(cleaned_ingredients):

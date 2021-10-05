@@ -3,13 +3,27 @@
     "key" : ["ice","lemon","cream","pepper","garlic","raisin","pumpkin","chocolate","oatmeal","fudge","hamburger","hot dog","peanut","butter","corn","kidney","coffee","milk","water","ginger","ale","coffee",
       "tomato","mushroom","chili","apple","apricot","almond","brazil nut","candlenut","cashew nut","chestnut","potato","vinegar","hazelnut","pecan","macademia","walnut","pine nut","mustard","grape","toffee",
       "plum","onion","date","lime","grapefruit","fig","pineapple","olives","banana","turnip","lettuce","spinach","beetroot","kale","cabbage","custard","caramel","oats","black tea","sugar","shrimp","rice",
-      "sweet potato","chili pepper","milk chocolate","white chocolate","dark chocolate","coconut milk","soy milk","almond milk",
+      "sweet potato","chili pepper","milk chocolate","white chocolate","dark chocolate","coconut milk","soy milk","almond milk","white wine","cider","egg",
 
 
     ],
 
     "ingredients": [
 
+        {
+            "name": "egg",
+            "exclude": [
+              {
+                "word": "whole egg mayonnaise",
+              },
+              {
+                "word": "whole-egg mayonnaise",
+              },
+            ],
+            "include": [
+
+            ],
+        },
         {
             "name": "chili pepper",
             "exclude": [
@@ -49,6 +63,31 @@
               },
               {
                 "word": "rice vinegar",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "chicken",
+            "exclude": [
+              {
+                "word": "chicken broth",
+              },
+              {
+                "word": "chicken stock",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "white wine",
+            "exclude": [
+              {
+                "word": "white wine vinegar",
               },
             ],
             "include": [
@@ -545,6 +584,12 @@
               {
                 "word": "cream cookies",
               },
+              {
+                "word": "cream of mushroom",
+              },
+              {
+                "word": "cream of tomato",
+              },
             ],
             "include": [
 
@@ -951,6 +996,12 @@
               {
                 "word": "milk chocolate",
               },
+              {
+                "word": "whole-milk yoghurt",
+              },
+              {
+                "word": "whole milk yoghurt",
+              },
             ],
             "include": [
 
@@ -982,6 +1033,12 @@
               },
               {
                 "word": "orange blossom water",
+              },
+              {
+                "word": "soaked in water",
+              },
+              {
+                "word": "water still clinging",
               },
             ],
             "include": [
@@ -1070,6 +1127,17 @@
             ],
         },
         {
+            "name": "cider",
+            "exclude": [
+              {
+                "word": "apple cider vinegar",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
             "name": "apple",
             "exclude": [
               {
@@ -1086,6 +1154,9 @@
               },
               {
                 "word": "apple chutney",
+              },
+              {
+                "word": "apple cider vinegar",
               },
             ],
             "include": [

@@ -2,7 +2,15 @@
     "name": "twelve",
     "children": [
         {
-            "name": "mini eggs",
+            "name": "black pepper",
+            "count": 12
+        },
+        {
+            "name": "dill",
+            "count": 12
+        },
+        {
+            "name": "sea salt",
             "count": 12
         }
     ]

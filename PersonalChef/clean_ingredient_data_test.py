@@ -80,19 +80,22 @@ def clean_ingredients(ingredients):
     ' tbsp ', ' tbsps ', ' tablespoon ', ' tablespoons ', ' dessert spoon ', ' dessert spoons ',
     ' ladle ', ' ladles ', ' ml ', ' mls ', ' millilitre ', ' millilitres ', ' milliliters ',
     ' milliliter ', ' litre ', ' litres ', ' liter ', ' liters ', ' pints ', ' pint ', ' spoon ',
-    ' spoons ', ' knob ', ' knobs ', ' slice ', ' slices ', ' jug ', ' jugs ', ' gallon ', ' gallons '
+    ' spoons ', ' knob ', ' knobs ', ' slice ', ' slices ', ' jug ', ' jugs ', ' gallon ', ' gallons ', ' shakes ',
     ' ounce ', ' ounces ', ' pound ', ' pounds ', ' quart ', ' quarts ', ' large ', ' small ', ' medium ',
     ' pt ', ' pts ', ' qt ', ' qts ', ' fl ', ' c ', ' stick ', ' sticks ', ' pinch ', ' pinches ', ' dash ',
     ' dashes ', ' drop ', ' drops ', ' wineglass ', ' pottle ', ' pottles ', ' cubes ', ' cube ', ' pouch ',
     ' pouches ', ' pod ', ' pods ', ' bunch ', ' bunches ', ' handful ', ' tbs ', ' chunk ', ' chunks ', ' heap ',
-    ' heaps ', ' spears ', ' spear ', ' handfuls ', ' cm ', ' cms ', ' thumb ', ' thumbs ', ' thumb-sized ',
-    ' ribbon ', ' ribbons ', ' pack ', ' packet ', ' bag ', ' bags ', ' shake ', ' dollop ',
+    ' heaps ', ' spears ', ' spear ', ' handfuls ', ' cm ', ' cms ', 'cm ', 'cms ', ' thumbs ', ' thumb-sized ',
+    ' thumb ', ' ribbon ', ' ribbons ', ' pack ', ' packet ', ' bag ', ' bags ', ' shake ', ' dollop ', ' thumb-size ',
     ' dollops ', ' good ', ' decent ', ' l ', ' bulb ', ' bulbs ', ' sachet ', ' sachets ', ' few ', ' stalk ',
     ' stalks ', ' lengths ', ' length ', ' clove ', ' cloves ', ' sprig ', ' sprigs ', ' rounded ',
     ' wineglasses ', ' wine glass ', ' wine glasses ', ' glass ', ' glasses ', ' wedge ', ' wedges ', ' floret ',
     ' florets ', ' punnet ', ' punnets ', ' cob ', ' cobs ', ' inch ', ' inches ', ' pieces ', ' piece ', ' table ',
      ' frond ', ' fronds ', ' nest ', ' nests ', ' jar ', ' jars ', ' hearts ', ' heart ', ' moons ', ' moon ',
-     ' splash ', ' splashes ', 'tsp ', 'tbsp ', ]
+     ' splash ', ' splashes ', 'tsp ', 'tbsp ', ' carton ', ' shot ', ' tub ', ' lump ', ' larger ', ' little ',
+     ' in a bowl of water ', ' in a bowl ', ' bowl ', ' shaved ', ' peeler ', ' idaho ', ' kept warm ', ' lardon ',
+     ' lardons ', ' rasher ', ' rashers ', ' segments ', ' segment ', ' heaped ', ' bottle ', ' pack ', ' packs ',
+     ' packed ', ' loaf ', ' loaves ', ' baton ', ' batons ', ' sprinkling ', ' block ', ' blocks ',  ]
 
     number_words = [' one ', ' two ', ' three ', ' four ', ' five ', ' six ', ' seven ', ' eight ', ' nine ', ' ten ',
     ' twenty ', ' thirty ', ' forty ', ' fifty ', ' sixty ', ' seventy ', ' eighty ', ' ninety ', ' one hundred ', ]
@@ -101,13 +104,13 @@ def clean_ingredients(ingredients):
     ' eighth ', ' eighths ', '1/2', '1/3', '1/4', '1/5', '1/8', '¼', '½', '¾', ]
 
     alt_codes = [ '☺', '☻', '♥', '♦', '♣', '♠', '•', '◘', '○', '◙', '♂', '♀', '♪', '♫', '☼', '►', '◄', '↕', '‼', '¶', '§', '▬', '↨',
-    '↑', '↓', '→', '←', '∟', '↔', '▲', '▼', ]
+    '↑', '↓', '→', '←', '∟', '↔', '▲', '▼', '\u00bd\', ]
 
     expression_one = '\d+[.0g,.0gs,.0grams,.0gram,.0oz,.0ozs,.0lb,.0lbs,.0kg,.0kgs,.0kilos,.0kilograms,.0cup,.0cups,.0tsp,.0tsps,.0teaspoon,.0teaspoons,.0tbsp,.0tbsps,.0tablespoon,.0tablespoons,.0ml,.0mls,.0ounce,.0ounces,.0pt,.0pts,.0qt,.0qts,.0fl,.0c,.0tbs,.0table,.0cm,.0cms,.0l,.0ls,.0inch,.0inches]'
     expression_two = '\d+[.g,.gs,.grams,.gram,.oz,.ozs,.lb,.lbs,.kg,.kgs,.kilos,.kilograms,.cup,.cups,.tsp,.tsps,.teaspoon,.teaspoons,.tbsp,.tbsps,.tablespoon,.tablespoons,.ml,.mls,.ounce,.ounces,.pt,.pts,.qt,.qts,.fl,.c,.tbs,.table,.cm,.cms,.l,.ls,.inch,.inches]'
     expression_three = '\d+[g,gs,grams,gram,oz,ozs,lb,lbs,kg,kgs,kilos,kilograms,cup,cups,tsp,tsps,teaspoon,teaspoons,tbsp,tbsps,tablespoon,tablespoons,ml,mls,ounce,ounces,pt,pts,qt,qts,fl,c,tbs,table,cm,cms,l,ls,inch,inches]'
 
-    other = [' de-stalked ', ' seeds removed ', ' to taste ', ' sliced ', ' cleaned ', ' deshelled ', ' shell on ', ' shell off ',
+    other = [' de-stalked ', ' seeds removed ', ' seeds in ', ' to taste ', ' sliced ', ' cleaned ', ' deshelled ', ' shell on ', ' shell off ',
     ' shell on or off ', ' to serve ', ' chopped ', ' defrosted ', ' julienne ', ' unripe ', ' unriped ', ' unripened ', ' serve ',
     ' premium ', ' grated zest ', ' quality ', ' optional ', ' finely ', ' roughly ', ' for garnish ', ' crushed ', ' buttered ', ' brushed ',
     ' garnish ', ' brush ', ' brushing ', ' extra ', ' plus ', ' zest ', ' zest and juice ', ' juice of ', ' juiced ', ' squeeze ',
@@ -129,7 +132,7 @@ def clean_ingredients(ingredients):
     ' around ', ' rustic ', ' broken ', ' crumbled ', ' break ', ' trim ', ' trimmed ', ' lengthwise ', ' coarse ', ' coarsely ', ' intact ',
     ' shallow-frying ', ' shallow frying ', ' grill ', ' head-on ', ' tail-on ', ' free-range ', ' free range ', ' free ', ' low ',
     ' low-salt ', ' such as ', ' such ', ' eg ', ' blanched ', ' blanch ', ' woody ', ' santa barbara ', ' low-sodium ', ' thin-stemmed ',
-    ' stemmed ', ' stem ', ' stems ', ' shapes ', ' half-fat ', ' half fat ', ' North Atlantic ', ' variety ', ' long ', ' day-old ',
+    ' stemmed ', ' stem ', ' stems ', ' shapes ', ' half-fat ', ' half fat ', ' variety ', ' long ', ' day-old ',
     ' skin-on ', ' skin-off ', ' skin off ', ' pulled apart ', ' pulled off ', ' divided ', ' divide ', ' room temperature ',
     ' temperature ', ' split ', ' scrape ', ' scraped ', ' hour ', ' minutes ', ' minute ', ' mins ', ' min ', ' maximum ', ' max ',
     ' minimum ', ' package ', ' packaging ', ' packaged ', ' only ', ' african ', ' boiling ', ' boiled ', ' available ', ' from ',
@@ -138,12 +141,34 @@ def clean_ingredients(ingredients):
     ' knife ', ' thawed ', ' thaw ', ' whites ', ' greens ', ' save ', ' goes ', ' well ', ' budget ', ' range ', ' long-stem ', ' bashed ',
     ' bash ', ' smash ', ' smashed ', ' de-frosted ', ' ready-made ', ' ready made ', ' pre-cooked ', ' precooked ', ' skins ', ' bias ',
     ' good-quality ', ',seeds ', ' tails ', ' note ', ' virgin ', ' white part ', ' green part ', ' green parts ', ' white parts ', ' bulb ',
-    ' scooped ', ]
+    ' scooped ', ' hoods ', ' scored ', ' your favourite ', ' your favorite ', ' brewed ', ' optionally ', ' all purpose ', ' bones ', ' undyed ',
+    ' unfrozen ', ' squeezing ', ' beard ', ' beards ', ' icelandic ', 'cleaned ', ' clean ', ' scrubbed ', ' medium-sized ', ' or a mix ', ' or a mixture',
+    ' as needed ', ' kosher ', ' halal ', ' other white fish ', ' or other white fish ', ' or other firm white fish ', ' other white fish ', ' california ',
+    ' overnight ', ' down the back ', ' back ', ' tentacles ', ' tubes ', ' spreading ', ' reduced-salt ', ' reduced salt ', ' vegetables ', ' cook's ',
+    ' low-fat ', ' low fat ', ' leaving root ', ' pot ', ' hard-boiled ', ' hard boiled ', ' pea-sized ', ' pea sized ', ' best ', ' freshly ', ' prepared ',
+    ' drizzling ', ' without juice ', ' dipping ', ' the other ', ' thickly ', ' adobo ', ' sustainably ', ' fished ', ' credit card ', ' credit-card ',
+    ' rectangle ', ' rectangles ', ' square ', ' squares ', ' chilled ', ' grilling ', ' rge ', ' skinned ', ' tips and techniques ', ' tips ', ' bone-in ',
+    ' atlantic ', ' north ', ' origional ', ' and some ', ' rigs ', ' gluten-free ', ' gluten free ', ' down the ', ' goes with ', ' extra-large ', ' extra large ',
+    ' nonfat ', ' non fat ', ' non-fat ', '-ounce ', ' bruised ', ' matchstick ', ' matchsticks ', ' warmed ', ' greasing ', ' fat-free ', ' fat free ',
+    ' virtually ', ' sheets ', ' sheet ', ' toasted ', 'free-range ', ' glb ', ' peeled and de-veined ', ' de-veined ', ' steamed ', ' serving ', ' source ', ' just ',
+    ' freezing ', " can't be ", ' as the ', ' not standard ', ' standard ', ' the bigger the better ', ' calls ', ' kglb ', ' instructions ', ' crunchy ',
+    ' slitted ', ' slit ', ' as per ', ' store bought ', ' store-bought ', ' bought ', ' granulated ', ' bottled ', ' desired ', ' wedged ', ' apart ', ' tough ',
+    ' simmer ', ' loosely ' , ' tightly ', ' finger bowl ', ' necessary ', ' fingers ', ' servings ', ' romano ', ' uncooked ', ' school ', ' backs open ', ' gr ',
+    ' deep-frying ', ' deep frying ', ' choose either or ', ' choose ', ' either ', ' rinsed ', ' shell-on ', ' heat ', ' heated ', ' fl ', ' grated ', ' oz ',
+    ' stoned ', ' stone ', ' on the vine ', ' can be ', ' works best ', ' count ', ' drizzle ', ' unpeeled ', ' vein ', ' veins ', ' the other half ',
+    ' inner leaves ', ' outer leaves ', ' roots and leaves ', ' separately ', ' is great here ', ' crusty ', ' quick-cook ', ' quick cook ', ' diced ', ' dice ',
+    ' cubed ', ' cubes ', ' crosswise ', ' garnishing ', ' self-rising ', ' self-raising ', ' tender ', ' juicy ', ' wheat-free ', ' wheat free ', ' diagonal ',
+    ' tube ', ' pulp ', ' soaked in water ', ' soaked in a little water ', ' soaked ', ' spanish ', ' italian ', ' headless ', ' follow ', ' follows ', ' firmly ',
+    ' recipe ', ' recipes ', ' directions ', ' easy-cook ', ' easy cook ', ' bottom part ', ' asian ', ' individual ', ' ready-cooked ', ' ready cooked ', ' supremed ',
+    ' cherry or plum ', ' shells-on ', ' shells on ', ' diamond crystal ', ' along spine ', ' rough ', ' \u0091\u0092 ', ' birdseye ', ' squeezed ', ' potato peeler ',
+    ' will work ', ' just fine ', ' and one ', ' instant ', ' kneading ', ' the flat side ', ' half-and-half ', ' oiling the grates ', ' through the root ', ' melted ',
+    ' casing ', ' discarded ', ' segmented ', ' strip ', ' strips ',  ]
 
-    brands = [ ' ayam ', ' patak ', " patak's ",  ]
+    brands = [ ' ayam ', ' patak ', " patak's ", " waitrose ", " blue dragon ", " king edward ", " maris piper ", ' tessa ', ' kallo ', ' granny smith ', ' tilda ', ' maldon ',
+    " sharwood's ", ' sharwoods ', ' old bay ',   ]
 
     short = [' of ', ' x ', ' for ', ' each ', ' into ', ' if ', ' we ', ' you ', ' on ', ' but ', ' how ', ' it ', ' yes ', ' no ',
-    ' they ', ' are ', ' at ', ' an ', ' to ', ' off ', ' I ', ' their ', ' with ', ' both ', ' g ',]
+    ' they ', ' are ', ' at ', ' an ', ' to ', ' off ', ' I ', ' their ', ' with ', ' both ', ' g ', ' any ', ' your ', ]
 
     emoji = '^(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])'
     symbols = [ emoji, ]
@@ -440,7 +465,7 @@ def clean_ingredients(ingredients):
 
     return new_list;
 
-cleaned_ingredients = clean_ingredients(test_ingredients)
+cleaned_ingredients = clean_ingredients(ingredients)
 
 # if __name__ == "__main__":
 #     cleaned_ingredients = clean_ingredients(test_ingredients)

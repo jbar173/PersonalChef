@@ -217,25 +217,6 @@ class ConfirmList extends React.Component {
   }
 
 
-// Takes in the response from < ApiCalls /> component:
-  // apiCallFinished(initial){
-  //   console.log("api call finished function")
-  //   if(initial[0] == 'empty'){
-  //     console.log("api error - bad request")
-  //     this.setState({
-  //       apiCall: false,
-  //       apiError: true,
-  //     })
-  //   }else{
-  //     console.log("FINISHED TRIGGER")
-  //     this.setState({
-  //       apiCall: false,
-  //       firstResponse: initial,
-  //     })
-  //   }
-  // }
-
-
   render(){
     var initial = this.state.initialData
     var either = this.state.both
@@ -256,24 +237,24 @@ class ConfirmList extends React.Component {
                           accessibilityRole="text" style={styles.mainTitle}>Confirm pantry ingredients</Text>
 
                           {Object.entries(ingreds).map(function(item){
-                            return(
-                                <View key={item} style={{ alignItems:"center", marginBottom:10 }}>
-                                  <Text style={{fontSize:20,fontWeight:"bold"}}>{item[0]}:</Text>
-                                      {item[1].map(function(ingredient){
-                                        return(
-                                            <Text accessible={true} accessibilityLabel={ingredient} accessibilityRole="text"
-                                              key={ingredient} >{ingredient}</Text>
-                                          )
-                                        })
-                                      }
-                                </View>
+                              return(
+                                  <View key={item} style={{ alignItems:"center", marginBottom:10 }}>
+                                    <Text style={{fontSize:20,fontWeight:"bold"}}>{item[0]}:</Text>
+                                        {item[1].map(function(ingredient){
+                                          return(
+                                              <Text accessible={true} accessibilityLabel={ingredient} accessibilityRole="text"
+                                                key={ingredient} >{ingredient}</Text>
+                                            )
+                                          })
+                                        }
+                                  </View>
                                )
                              }
                            )}
 
                         <Pressable onPress={this.confirmIngredients}>
-                          <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
-                           style={styles.blueButton}>Confirm</Text>
+                            <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
+                             style={styles.blueButton}>Confirm</Text>
                         </Pressable>
 
                         <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds,} }}
@@ -284,7 +265,8 @@ class ConfirmList extends React.Component {
 
                         { redirect === true && <Redirect to={{ pathname:'/api-calls/',
                           state:{ initial_data: initial, either: either,
-                                  ingreds: ingreds, } }} /> }
+                                  ingreds: ingreds, } }} />
+                        }
 
                      </View>
 

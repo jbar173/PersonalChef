@@ -6,7 +6,7 @@ import { RefineResults } from './RefineResults.js';
 import { SearchingPage, FilteringAnimation } from "./Animations.js";
 
 
-class ApiCalls extends React.Component{
+class ApiCalls extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -390,20 +390,25 @@ class ApiCalls extends React.Component{
                   { alter_or_reorder_keywords && < AlterKeywords
                     keywords = {this.state.searchKeywords}
                     alteredKeywords = {this.keywordsAlteredHandler}
-                    /> }
+                    />
+                  }
 
                   { api_error &&
-                      <View>
-                             <Text>Sorry, there was an error!</Text>
-                             <Link accessible={true} accessibilityLabel= "An error occurred"
-                               accessibilityHint="Click button to report the error and try again"
-                               to="/" accessibilityRole="button" underlayColor="transparent">
-                                 <Text style={styles.greenButton}>Report and try again</Text>
-                             </Link>
-                      </View>
+                    <SafeAreaView style={styles.container}>
+                      <ScrollView>
+                          <View>
+                                 <Text>Sorry, there was an error!</Text>
+                                 <Link accessible={true} accessibilityLabel= "An error occurred"
+                                   accessibilityHint="Click button to report the error and try again"
+                                   to="/" accessibilityRole="button" underlayColor="transparent">
+                                     <Text style={styles.greenButton}>Report and try again</Text>
+                                 </Link>
+                          </View>
+                        </ScrollView>
+                      </SafeAreaView>
                    }
 
-                   {start_refine === true && <RefineResults
+                   { start_refine === true && <RefineResults
                        filteredResults={this.getRelevantRecipes}
                        thisRoundResponseList={this.state.fResponse}
                        maxIngredients={this.state.initialData.ingredientCount}
@@ -411,71 +416,87 @@ class ApiCalls extends React.Component{
                    }
 
                    { this.state.refinedRecipeList.length === 0 &&
-                       <View style={styles.container}>
-                           <View style={{justifyContent:"center"}}>
-                              <SearchingPage />
-                           </View>
-                       </View>
-                    }
-
-                    { this.state.refinedRecipeList.length > 0 && this.state.noMorePages &&
-                       <View>
-                               <View>
-                                     {this.state.refinedRecipeList.map(function(item,index){
-                                        return(
-                                          <View style={styles.container} key={index}>
-                                               <View style={{justifyContent:"center",alignItems:"center"}}>
-
-                                                           <Text accessible={true} accessibilityRole="text"
-                                                             accessibilityLabel={item[0].toString()}
-                                                             style={styles.title}>{item[0]}</Text>
-
-                                                           <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
-                                                             <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
-                                                               style={styles.greenButton}>Go to recipe website :) </Text>
-                                                           </Pressable>
-
-                                                  </View>
-                                            </View>
-                                           )
-                                        }
-                                     )}
-                                 </View>
-                                 <View style={{justifyContent:"center",alignItems:"center"}}>
-                                    <FilteringAnimation />
-                                 </View>
+                     <SafeAreaView style={styles.container}>
+                       <ScrollView>
+                         <View style={styles.container}>
+                             <View style={{justifyContent:"center"}}>
+                                <SearchingPage />
+                             </View>
                          </View>
-                      }
+                       </ScrollView>
+                     </SafeAreaView>
+                   }
 
-                      { this.state.refinedRecipeList.length > 0 && filtering &&
-                         <View>
-                                 <View>
-                                       {this.state.refinedRecipeList.map(function(item,index){
-                                          return(
-                                            <View style={styles.container} key={index}>
-                                                 <View style={{justifyContent:"center",alignItems:"center"}}>
+                   { this.state.refinedRecipeList.length > 0 && this.state.noMorePages &&
+                     <SafeAreaView style={styles.container}>
+                       <ScrollView>
+                           <View>
+                                   <Text style={styles.mainTitle}>Your results</Text>
+                                   <View>
+                                         {this.state.refinedRecipeList.map(function(item,index){
+                                            return(
+                                              <View style={styles.container} key={index}>
+                                                   <View style={{justifyContent:"center",alignItems:"center"}}>
 
-                                                             <Text accessible={true} accessibilityRole="text"
-                                                               accessibilityLabel={item[0].toString()}
-                                                               style={styles.title}>{item[0]}</Text>
+                                                               <Text accessible={true} accessibilityRole="text"
+                                                                 accessibilityLabel={item[0].toString()}
+                                                                 style={{justifyContent:"center",fontSize:18,fontWeight:"bold",
+                                                                 textAlign:"center"}}>{item[0]}</Text>
+
+                                                               <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
+                                                                 <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
+                                                                   style={styles.greenButton}>Go to recipe website</Text>
+                                                               </Pressable>
+
+                                                      </View>
+                                                </View>
+                                               )
+                                             }
+                                          )}
+                                     </View>
+                                     <Link accessible={true} accessibilityLabel= "Start again"
+                                       accessibilityHint="Click button to go back to homepage"
+                                       to="/" accessibilityRole="button" underlayColor="transparent">
+                                         <Text style={styles.blueButton}>Start again</Text>
+                                     </Link>
+                             </View>
+                           </ScrollView>
+                         </SafeAreaView>
+                     }
+
+                     { this.state.refinedRecipeList.length > 0 && filtering &&
+
+                             <View>
+                                    <Text style={styles.mainTitle}>Your results</Text>
+                                     <View>
+                                           {this.state.refinedRecipeList.map(function(item,index){
+                                              return(
+                                                <View style={styles.container} key={index}>
+                                                     <View style={{justifyContent:"center",alignItems:"center"}}>
+
+                                                                 <Text accessible={true} accessibilityRole="text"
+                                                                   accessibilityLabel={item[0].toString()}
+                                                                   style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
+                                                                   textAlign:"center"}}>{item[0]}</Text>
 
 
-                                                             <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
-                                                               <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
-                                                                 style={styles.greenButton}>Go to recipe website :) :)</Text>
-                                                             </Pressable>
+                                                                 <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
+                                                                   <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
+                                                                     style={styles.greenButton}>Go to recipe website</Text>
+                                                                 </Pressable>
 
-                                                    </View>
-                                              </View>
-                                             )
-                                          }
-                                       )}
-                                   </View>
-                                   <View style={{justifyContent:"center",alignItems:"center"}}>
-                                      <FilteringAnimation />
-                                   </View>
-                           </View>
-                        }
+                                                        </View>
+                                                  </View>
+                                                 )
+                                               }
+                                            )}
+                                       </View>
+                                       <View style={{justifyContent:"center",alignItems:"center"}}>
+                                          <FilteringAnimation />
+                                       </View>
+                               </View>
+
+                         }
 
                   </ScrollView>
                 </SafeAreaView>
@@ -491,7 +512,6 @@ export { ApiCalls };
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexWrap: 'wrap',
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
@@ -518,5 +538,10 @@ const styles = StyleSheet.create({
     fontSize:18,
     fontWeight:'bold',
     textAlign: 'center',
+  },
+  mainTitle: {
+    fontSize:28,
+    marginBottom:10,
+    textAlign:"center",
   },
 });

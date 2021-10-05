@@ -1,0 +1,9 @@
+{
+    "name": "fifty",
+    "children": [
+        {
+            "name": "salt",
+            "count": 50
+        }
+    ]
+}
