@@ -10,11 +10,11 @@ import re
 
 def collect_ingredients():
 
-    common_staples_to_search_with = ['prawns','chicken','mince','salmon','pasta','rice','couscous','lentils','bread','lettuce','cheese','milk',
-    'peppers','tomatoes','eggs','potatoes','spinach','cabbage','beansprouts','leaves','salad leaves','chillies']
+## done : 'prawns','chicken','mince','salmon','pasta','rice','couscous','lentils','bread','lettuce','cheese','milk','peppers','tomatoes','eggs','potatoes',
+    common_staples_to_search_with = ['spinach','cabbage','beansprouts','leaves','salad leaves','chillies', 'beef', 'pork', 'quinoa', 'chickpeas', 'flour', 'sugar', ]
 
     # staple = 'prawns'
-    staple = 'prawns'
+    staple = 'cheese'
     responses = []
 
     api = f"https://api.edamam.com/api/recipes/v2?type=public&q={staple}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50"
@@ -58,7 +58,7 @@ def collect_ingredients():
         x +=1
         time.sleep(6)
 
-    ingredients_list = []q
+    ingredients_list = []
     i = 0
 
     for x in responses:

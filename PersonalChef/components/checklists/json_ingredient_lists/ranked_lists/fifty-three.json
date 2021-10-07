@@ -1,9 +1,4 @@
 {
     "name": "fifty-three",
-    "children": [
-        {
-            "name": "onion",
-            "count": 53
-        }
-    ]
+    "children": []
 }

@@ -2,15 +2,15 @@
     "name": "twelve",
     "children": [
         {
-            "name": "black pepper",
+            "name": "pepper",
             "count": 12
         },
         {
-            "name": "dill",
+            "name": "ground pepper",
             "count": 12
         },
         {
-            "name": "sea salt",
+            "name": "gruy\u00e8re cheese",
             "count": 12
         }
     ]

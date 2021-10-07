@@ -2,67 +2,19 @@
     "name": "eight",
     "children": [
         {
-            "name": "flat-leaf parsley",
+            "name": "sourdough bread",
             "count": 8
         },
         {
-            "name": "cilantro",
+            "name": "cottage cheese",
             "count": 8
         },
         {
-            "name": "mint leaves",
+            "name": "dried oregano",
             "count": 8
         },
         {
-            "name": "celery",
-            "count": 8
-        },
-        {
-            "name": "golden caster sugar",
-            "count": 8
-        },
-        {
-            "name": "oyster sauce",
-            "count": 8
-        },
-        {
-            "name": "basil leaves",
-            "count": 8
-        },
-        {
-            "name": "cayenne pepper",
-            "count": 8
-        },
-        {
-            "name": "dijon mustard",
-            "count": 8
-        },
-        {
-            "name": "double cream",
-            "count": 8
-        },
-        {
-            "name": "sweet chilli sauce",
-            "count": 8
-        },
-        {
-            "name": "cumin seeds",
-            "count": 8
-        },
-        {
-            "name": "ground coriander",
-            "count": 8
-        },
-        {
-            "name": "water",
-            "count": 8
-        },
-        {
-            "name": "cucumber",
-            "count": 8
-        },
-        {
-            "name": "can coconut milk",
+            "name": "puff pastry",
             "count": 8
         }
     ]

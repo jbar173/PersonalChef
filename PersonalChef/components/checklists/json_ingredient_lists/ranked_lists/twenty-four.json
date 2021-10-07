@@ -4,6 +4,14 @@
         {
             "name": "mayonnaise",
             "count": 24
+        },
+        {
+            "name": "black pepper",
+            "count": 24
+        },
+        {
+            "name": "monterey jack cheese",
+            "count": 24
         }
     ]
 }

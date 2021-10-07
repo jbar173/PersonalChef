@@ -1,13 +1,4 @@
 {
     "name": "thirty",
-    "children": [
-        {
-            "name": "red chilli",
-            "count": 30
-        },
-        {
-            "name": "fish sauce",
-            "count": 30
-        }
-    ]
+    "children": []
 }

@@ -2,15 +2,11 @@
     "name": "sixteen",
     "children": [
         {
-            "name": "kosher salt",
+            "name": "paprika",
             "count": 16
         },
         {
-            "name": "egg",
-            "count": 16
-        },
-        {
-            "name": "coriander leaves",
+            "name": "onion",
             "count": 16
         }
     ]

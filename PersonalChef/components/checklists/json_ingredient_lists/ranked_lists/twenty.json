@@ -1,4 +1,17 @@
 {
     "name": "twenty",
-    "children": []
+    "children": [
+        {
+            "name": "goat cheese",
+            "count": 20
+        },
+        {
+            "name": "dijon mustard",
+            "count": 20
+        },
+        {
+            "name": "elbow macaroni",
+            "count": 20
+        }
+    ]
 }

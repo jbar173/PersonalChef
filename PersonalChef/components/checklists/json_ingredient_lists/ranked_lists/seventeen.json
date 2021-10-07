@@ -2,23 +2,15 @@
     "name": "seventeen",
     "children": [
         {
-            "name": "cherry tomatoes",
+            "name": "garlic minced",
             "count": 17
         },
         {
-            "name": "tiger prawns",
+            "name": "salt and ground pepper",
             "count": 17
         },
         {
-            "name": "lime juice",
-            "count": 17
-        },
-        {
-            "name": "milk",
-            "count": 17
-        },
-        {
-            "name": "peas",
+            "name": "vanilla extract",
             "count": 17
         }
     ]
