@@ -13,6 +13,7 @@ class ThreeDots extends React.Component{
 
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
+      this.componentWillUnmount = this.componentWillUnmount.bind(this)
 
       Animated.loop(
         Animated.sequence([
@@ -78,14 +79,21 @@ class ThreeDots extends React.Component{
       console.log("ThreeDots mounted")
     }
 
-
   componentDidUpdate(){
       console.log("ThreeDots updated")
     }
 
+  componentWillUnmount(){
+    console.log("ThreeDots unmounted")
+    this.opacity = 0
+    this.opacityOne = 0
+    this.opacityTwo = 0
+    console.log("end of ThreeDots")
+  }
+
 
   render(){
-      console.log("rendered")
+      console.log("ThreeDots rendered")
 
       return(
               <View style={{display:'flex'}}>
@@ -128,6 +136,7 @@ class SearchingPage extends React.Component{
     constructor(props){
       super(props);
       this.componentDidMount = this.componentDidMount.bind(this)
+      this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
     };
 
@@ -135,11 +144,16 @@ class SearchingPage extends React.Component{
       console.log("Searching mounted")
     }
 
+    componentDidUpdate(){
+        console.log("Searching updated")
+    }
+
     componentWillUnmount(){
       console.log("Searching unmounted")
     }
 
     render(){
+      console.log("Searching rendered")
 
       return(
               <View style={{display:'flex'}}>
@@ -160,18 +174,24 @@ class FilteringAnimation extends React.Component{
     constructor(props){
       super(props);
       this.componentDidMount = this.componentDidMount.bind(this)
+      this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
     };
 
     componentDidMount(){
-      console.log("Loading mounted")
+      console.log("Filtering mounted")
+    }
+
+    componentDidUpdate(){
+        console.log("Filtering updated")
     }
 
     componentWillUnmount(){
-      console.log("Loading unmounted")
+      console.log("Filtering unmounted")
     }
 
     render(){
+      console.log("Filtering rendered")
 
       return(
               <View style={{display:'flex'}}>

@@ -7,7 +7,7 @@ import { FindIngredient, FindExceptions } from './regexFunctions.js';
 
 const RefineResults = props => {
 
-  console.log("refining")
+  console.log("Refine Results function starting")
 
   var ten_pages = props.thisRoundResponseList
   console.log("TEN_PAGES.length: " + ten_pages.length)

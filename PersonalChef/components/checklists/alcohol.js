@@ -15,18 +15,25 @@ class AlcoholChecklist extends React.Component {
       confirmedList: [],
       confirmed: false,
     }
-    this.itemSelectedHandler = this.itemSelectedHandler.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
+    this.itemSelectedHandler = this.itemSelectedHandler.bind(this)
     this.confirmedHandler = this.confirmedHandler.bind(this)
   };
 
   componentDidMount(){
+    console.log("AlcoholChecklist mounted")
     var json_list = data.ingredients
     this.setState({
       jsonFileList: json_list,
       first: true
     })
+  }
+
+  componentWillUnmount(){
+    console.log("AlcoholChecklist unmounted")
   }
 
   itemSelectedHandler(item){
@@ -44,7 +51,7 @@ class AlcoholChecklist extends React.Component {
    }
 
   componentDidUpdate(){
-    console.log("did update")
+    console.log("AlcoholChecklist did update")
     if(this.state.first === true){
       var i
       var length = this.state.jsonFileList.length
@@ -59,7 +66,6 @@ class AlcoholChecklist extends React.Component {
         first: false,
       })
     }
-
     if(this.state.updated === true){
       console.log("updated = true")
       var initial = this.state.initialList

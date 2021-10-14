@@ -25,91 +25,144 @@ class ConfirmList extends React.Component {
       getFaves: false,
       updateFaves: false,
       redirect: false,
-      mounted: false,
+      readyToRedirect: false,
+      noIngredientsError: false,
     }
+    this.abortController = new AbortController()
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
     this.componentWillUnmount = this.componentWillUnmount.bind(this)
     this.confirmIngredients = this.confirmIngredients.bind(this)
     this.populateInitialData = this.populateInitialData.bind(this)
-    this.getFavourites = this.getFavourites.bind(this)
+    this.updateFavourites = this.updateFavourites.bind(this)
 
     this.saveDeviceData = this.saveDeviceData.bind(this)
+    this.getDeviceData = this.getDeviceData.bind(this)
     this.getData = this.getData.bind(this)
+    this.saveData = this.saveData.bind(this)
+
+    this.redirectIsReady = this.redirectIsReady.bind(this)
+
   };
 
   saveDeviceData = async ( key, data ) => {
-    if(this.state.mounted){
-          try {
-              await AsyncStorage.setItem(key, JSON.stringify(data));
-          } catch (e) {
-            console.log(`Error saving data for key ${key}: `, data);
+        console.log("confirm d")
+        try {
+            console.log("confirm e")
+            await AsyncStorage.setItem(key, JSON.stringify(data))
+        }
+        catch (e) {
+            console.log(`ConfirmList: Error in saveDeviceData, saving data for key ${key}: `, data);
             throw e;
-          }
-    }
-  };
+        }
+  }
 
-  getData = async (key) => {
-    if(this.state.mounted){
-          try {
+  getDeviceData = async (key) => {
+       console.log("confirm f")
+       try {
+            console.log("confirm g")
             var data = await AsyncStorage.getItem(key)
             if(data !== null) {
                 var value = JSON.parse(data)
                 console.log("value: " + value)
                 console.log("111111111111111")
-                if(key === '@favourite-ingredients'){
-                  this.setState({
-                    favourites: value,
-                    updateFaves: true
-                  })
-                }
             }else{
                 console.log("0000000000000000")
-                this.setState({
-                  favourites: [],
-                  updateFaves: true
-                })
-             }
-          } catch(e) {
-            console.log("CONFIRM: Error reading data for favourites: " + e);
-          }
-     }
+                var value = 'no favourites yet'
+            }
+            return value;
+        }
+        catch(e) {
+            console.log("ConfirmList: Error reading data for favourites in getDeviceData: " + e);
+        }
+  }
+
+  saveData(key,data){
+       try {
+           this.saveDeviceData(key,data);
+           console.log("SAVED")
+       } catch (e) {
+           console.log("ConfirmList: Error saving in saveData: " + e)
+       }
+  }
+
+  getData(key){
+      try {
+          var my_data = this.getDeviceData(key);
+          console.log("RETRIEVED")
+          return my_data
+      } catch (e) {
+          console.log("ConfirmList: Error getting data in getData: " + e)
+          return 0
+      }
   }
 
 
   componentDidMount(){
-    console.log("CONFIRM LIST mounted")
+    console.log("Confirm page mounted")
     var initial_data = this.props.location.state.initial_data
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
-    this.setState({
-      mounted: true,
-      initialData: initial_data,
-      ingredients_rough: ingreds,
-      both: either
-    })
 
+    try{
+        var favourites_key = '@favourite-ingredients'
+        var faves = this.getData(favourites_key)
+        .then(faves => {
+            this.setState({
+               favourites: faves,
+             })
+         })
+        .catch(error => {
+            console.log("getFavourites error: " + error.message)
+        })
+    }catch(error){
+        console.log("Error at CompDidMount 1: " + error.message)
+    }
+
+    try{
+        this.setState({
+          initialData: initial_data,
+          ingredients_rough: ingreds,
+          both: either
+        })
+    }catch(error){
+        console.log("Error at CompDidMount 2: " + error.message)
+    }
+    console.log("COMP DID MOUNT finished")
+  }
+
+
+  componentWillUnmount(){
+    console.log("Confirm page unmounted")
+    this.setState({
+      updateFaves: false,
+      readyToRedirect: false
+    })
+    // cancelablePromise.cancel()
+    this.abortController.abort()
   }
 
   componentDidUpdate(){
-    console.log("confirm list updated")
+    console.log("Confirm page updated")
     if(this.state.populate){
+      console.log("confirm a")
       this.populateInitialData()
     }
-    if(this.state.getFaves){
-      this.getFavourites()
-    }
     if(this.state.updateFaves){
+      console.log("confirm c")
       this.updateFavourites()
+    }
+    if(this.state.redirect){
+      console.log("redirect function triggered")
+      this.redirectIsReady()
     }
   }
 
-  componentWillUnmount(){
-    console.log("confirm page unmounted")
+  redirectIsReady(){
+    console.log("REDIRECTING NOW")
     this.setState({
-      mounted: false,
-      getFaves: false,
-      updateFaves: false,
+       redirect: false,
+       readyToRedirect: true
     })
   }
 
@@ -133,27 +186,48 @@ class ConfirmList extends React.Component {
     //  that may have been added again by user are only included once
     //  in final ingredients:
     for([key,value] of Object.entries(rough)){
+        console.log("key: " + key)
+        var title = key
+        console.log("value: " + value)
         if(key === 'Already in pantry'){
+          console.log("confirm j")
           original_pantry.push(rough[key])
           original_pantry = original_pantry.flat()
           final.push(rough[key])
         }else{
+          console.log("confirm k")
           if(original_pantry.length > 0 ){
-            for(x in rough[key]){
-                  if(original_pantry.includes(rough[key][x])){
-                    var gone = rough[key].splice(x,1)
+            console.log("confirm l")
+            var list = rough[key]
+            console.log("list: " + list)
+            // console.log("list.length: " + list.length)
+            for(x in list){
+                  console.log("confirm m")
+                  if(original_pantry.includes(list[x])){
+                      console.log("confirm n")
+                      var gone = rough[key].splice(x,1)
+                      console.log("gone: " + gone)
                   }else{
-                    console.log(rough[key][x] + " not found in pantry")
+                      console.log(rough[key][x] + " not found in pantry")
                   }
-            }
+             }
           }
+          console.log("confirm o")
           final.push(rough[key])
         }
     }
+
     final = final.flat()
 
-    // Check whether ingredient is included twice here (in both pantry and a checklist),  ############ BuG FIX
-    //  delete one if so.
+    if(final.length === 0){
+      console.log("confirm p")
+      this.setState({
+        noIngredientsError: true,
+        populate: false,
+      })
+      return 0;           // Triggered if no ingredients are entered (thus rendering error screen)
+    }
+    console.log("confirm q")
     this.setState({
       initialData: {
         ...this.state.initialData,
@@ -161,25 +235,24 @@ class ConfirmList extends React.Component {
         ingredientCount: final.length
       },
       pantry: final,
-      getFaves: true,
+      updateFaves: true,
       populate: false,
     })
+    console.log("confirm r")
   }
 
-  getFavourites(){
-    console.log("updating favourites")
-    var favourites_key = '@favourite-ingredients'
-    if(this.state.mounted){
-      var faves = this.getData(favourites_key)
-      this.setState({
-         getFaves: false,
-       })
-    }
-  }
-
+// Updates user's favourites with new confirmed list via
+//  saveDeviceData method, triggers redirect to ApiCalls:
   updateFavourites(){
     var faves = this.state.favourites
-    for(x in faves){
+    console.log("typeof(faves): " + typeof(faves))
+    if(faves === 'no favourites yet'){
+      var favs = []
+    }
+    else{
+      var favs = faves
+    }
+    for(x in favs){
       console.log("1. FAVES[x]: " + faves[x])
     }
     var list = this.state.pantry
@@ -189,40 +262,45 @@ class ConfirmList extends React.Component {
     var i
     var length = list.length
     for(i=0;i<length;i++){
-      if( !(faves.includes(list[i])) ){
-        faves.push(list[i])
+      console.log("confirm t")
+      if( !(favs.includes(list[i])) ){
+        console.log("confirm u")
+        favs.push(list[i])
       }
     }
-    for(x in faves){
-      console.log("2. FAVES[x]: " + faves[x])
+    for(x in favs){
+      console.log("2. FAVS[x]: " + favs[x])
     }
-    var saveData = async (key,data) => {
-         try {
-             await this.saveDeviceData(key,data);
-             console.log("SAVED")
-         } catch (e) {
-           console.log("Error saving to_add: " + e)
-         }
-     };
-     var favourites_key = '@favourite-ingredients'
-     var pantry_key = '@pantry-ingredients'
-     var favourites_saved = saveData(favourites_key,faves)
-     var pantry_saved = saveData(pantry_key,list)
+    console.log("confirm v")
 
+    var favourites_key = '@favourite-ingredients'
+    var pantry_key = '@pantry-ingredients'
+
+    var favourites_saved = this.saveData(favourites_key,favs)
+    var pantry_saved = this.saveData(pantry_key,list)
+
+    console.log("confirm w")
     this.setState({
       updateFaves: false,
-      redirect: true
+      redirect: true,
     })
-
+    console.log("confirm x")
   }
 
 
   render(){
+    console.log("Confirm page rendered")
     var initial = this.state.initialData
     var either = this.state.both
     var ingreds = this.state.ingredients_rough
-    var redirect = this.state.redirect
+    // var alcohol = ingreds['Alcohol']
+    // console.log("alcohol[0]: " + alcohol[0])
+    // var already = ingreds['Already in pantry']
+    // console.log("already[0]: " + already[0])
 
+    // console.log("ingreds['Alcohol'][0]: " + ingreds['Alcohol'][0])
+    // console.log("ingreds['Already in pantry'][0]: " + ingreds['Already in pantry'][0])
+    var redirect = this.state.readyToRedirect
 
     return(
 
@@ -230,45 +308,64 @@ class ConfirmList extends React.Component {
         <ScrollView>
 
               <View>
+                     {this.state.noIngredientsError === false && ingreds !== undefined &&
+                          <View style={styles.container}>
 
-                    <View style={styles.container}>
+                              <Text accessible={true} accessibilityLabel="Confirm your ingredients here, or click go back to edit them."
+                                accessibilityRole="text" style={styles.mainTitle}>Confirm pantry ingredients</Text>
 
-                        <Text accessible={true} accessibilityLabel="Confirm your ingredients here, or click go back to edit them."
-                          accessibilityRole="text" style={styles.mainTitle}>Confirm pantry ingredients</Text>
+                              {Object.entries(ingreds).map(function(item,index){
+                                  return(
+                                      <View key={index} style={{ alignItems:"center", marginBottom:10 }}>
+                                        <Text style={{fontSize:20,fontWeight:"bold"}}>{item[0]}:</Text>
+                                            {item[1].map(function(ingredient){
+                                              return(
+                                                  <Text accessible={true} accessibilityLabel={ingredient} accessibilityRole="text"
+                                                    key={ingredient} >{ingredient}</Text>
+                                                )
+                                              })
+                                            }
+                                      </View>
+                                   )
+                                 }
+                               )}
 
-                          {Object.entries(ingreds).map(function(item){
-                              return(
-                                  <View key={item} style={{ alignItems:"center", marginBottom:10 }}>
-                                    <Text style={{fontSize:20,fontWeight:"bold"}}>{item[0]}:</Text>
-                                        {item[1].map(function(ingredient){
-                                          return(
-                                              <Text accessible={true} accessibilityLabel={ingredient} accessibilityRole="text"
-                                                key={ingredient} >{ingredient}</Text>
-                                            )
-                                          })
-                                        }
-                                  </View>
-                               )
-                             }
-                           )}
+                              <Pressable onPress={this.confirmIngredients}>
+                                  <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
+                                   style={styles.blueButton}>Confirm</Text>
+                              </Pressable>
 
-                        <Pressable onPress={this.confirmIngredients}>
-                            <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
-                             style={styles.blueButton}>Confirm</Text>
-                        </Pressable>
+                              <Link to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds,} }}
+                                underlayColor="transparent">
+                                  <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                    style={styles.blueButton}>Back</Text>
+                              </Link>
 
-                        <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds,} }}
-                          underlayColor="transparent">
-                            <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                              style={styles.blueButton}>Back</Text>
-                        </Link>
+                              { redirect === true && <Redirect to={{ pathname:'/api-calls/',
+                                state:{ initial_data: initial, either: either,
+                                        ingreds: ingreds, } }} />
+                              }
 
-                        { redirect === true && <Redirect to={{ pathname:'/api-calls/',
-                          state:{ initial_data: initial, either: either,
-                                  ingreds: ingreds, } }} />
-                        }
+                           </View>
+                      }
 
-                     </View>
+
+                      {this.state.noIngredientsError &&
+
+                            <View style={styles.container}>
+
+                                <Text accessible={true} accessibilityLabel="Error: No ingredients were selected!"
+                                  accessibilityRole="text" style={styles.mediTitle}> Error: No ingredients were selected! </Text>
+
+                                <Link accessible={true} accessibilityLabel= "Start again"
+                                  accessibilityHint="Click button to go back to homepage"
+                                  to="/" accessibilityRole="button" underlayColor="transparent">
+                                    <Text style={styles.blueButton}> Start again </Text>
+                                </Link>
+
+                            </View>
+
+                       }
 
                 </View>
 
@@ -277,8 +374,6 @@ class ConfirmList extends React.Component {
     );
   }
 };
-
-
 
 const styles = StyleSheet.create({
   container: {

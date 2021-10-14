@@ -18,6 +18,7 @@ class UserPantry extends React.Component {
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
+      this.componentWillUnmount = this.componentWillUnmount.bind(this)
       this.updateListHandler = this.updateListHandler.bind(this)
       this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
     };
@@ -31,6 +32,10 @@ class UserPantry extends React.Component {
       if(this.state.pantryUpdated){
         this.updateIngredientsRoughHandler()
       }
+    }
+
+    componentWillUnmount(){
+      console.log("UserPantry unmounting")
     }
 
     updateListHandler(current_pantry){
@@ -91,9 +96,9 @@ class UserPantry extends React.Component {
                     </View>
                 </ScrollView>
               </SafeAreaView>
-          );
+            );
 
-    }
+     }
 
 };
 

@@ -72,9 +72,11 @@ class TimeAndType extends React.Component {
     this.onChangeTimeMinsHandler = this.onChangeTimeMinsHandler.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
   };
 
   componentDidMount(){
+    console.log("Time and Type did mount")
     var ingreds = this.props.location.state.ingreds
     this.setState({
       ingredients_rough: ingreds,
@@ -84,7 +86,11 @@ class TimeAndType extends React.Component {
     }
   }
 
-   radioButtonPressedHandler(value){
+  componentWillUnmount(){
+    console.log("Time and Type unmounting")
+  }
+
+  radioButtonPressedHandler(value){
       if (value === "dessert" || value === "other"){
         this.setState({
             initialData:{
@@ -182,7 +188,7 @@ class TimeAndType extends React.Component {
 
 
   componentDidUpdate(){
-    console.log("did update")
+    console.log("Time and Type did update")
     if(this.state.finished === false){
       this.onChangeTimeHoursHandler(this.state.times.hours);
       this.onChangeTimeMinsHandler(this.state.times.mins);

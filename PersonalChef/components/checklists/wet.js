@@ -14,13 +14,16 @@ class WetIngredientsChecklist extends React.Component {
       confirmedList: [],
       confirmed: false,
     }
-    this.itemSelectedHandler = this.itemSelectedHandler.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
+    this.itemSelectedHandler = this.itemSelectedHandler.bind(this)
     this.confirmedHandler = this.confirmedHandler.bind(this)
   };
 
   componentDidMount(){
+    console.log("WetIngredientsChecklist unmounted")
     var json_list = data.ingredients
     this.setState({
       jsonFileList: json_list,
@@ -28,8 +31,12 @@ class WetIngredientsChecklist extends React.Component {
     })
   }
 
+  componentWillUnmount(){
+    console.log("WetIngredientsChecklist unmounted")
+  }
+
   itemSelectedHandler(item){
-    console.log("item (de)selected")
+    console.log("WetIngredientsChecklist item (de)selected")
     var new_item = item
     new_item[1] = !new_item[1]
     this.setState({
@@ -43,7 +50,7 @@ class WetIngredientsChecklist extends React.Component {
   }
 
   componentDidUpdate(){
-    console.log("did update")
+    console.log("WetIngredientsChecklist did update")
     if(this.state.first === true){
       var i
       var length = this.state.jsonFileList.length

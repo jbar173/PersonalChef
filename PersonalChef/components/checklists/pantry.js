@@ -22,19 +22,21 @@ class PantryCheckList extends React.Component {
         finalConfirm: false
       }
       this.componentDidMount = this.componentDidMount.bind(this)
-      this.populateInitialDict = this.populateInitialDict.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
+      this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
+      this.populateInitialDict = this.populateInitialDict.bind(this)
       this.selectOrDeselect = this.selectOrDeselect.bind(this)
       this.displayFavourites = this.displayFavourites.bind(this)
       this.confirmedHandler = this.confirmedHandler.bind(this)
       this.favouritesWasEmpty = this.favouritesWasEmpty.bind(this)
     };
 
-    getData = async (key) => {
+   getData = async (key) => {
 
       try {
-        const data = await AsyncStorage.getItem(key)
-        if(data !== null) {
+         const data = await AsyncStorage.getItem(key)
+         if(data !== null) {
             var value = JSON.parse(data)
             if(key === '@favourite-ingredients'){
               this.setState({
@@ -46,16 +48,16 @@ class PantryCheckList extends React.Component {
                 })
             }
 
-          }else{
+         }else{
             this.setState({
               empty: true
             })
-          }
+         }
 
-        } catch(e) {
+      } catch(e) {
           console.log(`PANTRY: Error reading data for ${key}: e.message`);
       }
-    }
+   }
 
 
     componentDidMount(){
@@ -85,7 +87,7 @@ class PantryCheckList extends React.Component {
 
 
     componentDidUpdate(){
-      console.log("PantryChecklist unmounted")
+      console.log("PantryChecklist unpdated")
 
       if(this.state.empty && this.state.finalConfirm === false){
         console.log("empty")
@@ -109,8 +111,9 @@ class PantryCheckList extends React.Component {
 
     }
 
+
     componentWillUnmount(){
-      console.log("unmounted")
+      console.log("PantryChecklist unmounted")
     }
 
 

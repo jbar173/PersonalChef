@@ -97,6 +97,7 @@ class ApiCalls extends React.Component {
     }
     // console.log("this.state.count: " + this.state.count)
     if(this.state.count === undefined && this.state.next !== 'first'){
+      console.log("API a")
       this.setState({
         apiError: true,
         nextCall: false
@@ -105,19 +106,22 @@ class ApiCalls extends React.Component {
     // Checks whether api function has finished calling
     //  each page, triggers next function if so:
     if(this.state.noMorePages) {
+      console.log("API b")
       this.finishedHandler()
     }
     if(this.state.nextCall && this.state.stopwatchRunning === false){
+      console.log("API c")
       this.triggerNextCall()
     }
     if(this.state.deleteOne){
+      console.log("API d")
       this.deleteAKeyword()
     }
   }
 
 
-  // Takes new keywords list in from < AlterKeywords /> component,
-  //  triggers new API call (with reduced keyword list):
+// Takes new keywords list in from < AlterKeywords /> component,
+//  triggers new API call (with reduced keyword list):
    keywordsAlteredHandler(new_keywords,status){
       console.log("ingredients altered handler triggered")
       var original_ingredients = this.state.initialData.ingredients
@@ -139,6 +143,7 @@ class ApiCalls extends React.Component {
           reduceKeywords: false,
           nextCall: true
         })
+        console.log("API e")
       }else{
         console.log("status = false")
         this.setState({
@@ -151,18 +156,24 @@ class ApiCalls extends React.Component {
           reduceKeywords: false,
           nextCall: false
         })
+        console.log("API f")
       }
   }
 
+
   triggerNextCall(){
+    console.log("API g")
     if(this.state.count === 0){
+      console.log("API h")
       this.setState({
         nextCall: false,
         noMorePages: true,
         foundResults: false
       })
     }else{
+      console.log("API i")
       this.apiCall()
+      console.log("API j")
       this.setState({
         nextCall: false,
         foundResults: true
@@ -236,6 +247,7 @@ class ApiCalls extends React.Component {
     });
     console.log("COUNT: " + this.state.count)
     this.sixSecondStopwatch()
+    console.log("API k")
   }
 
 // Times the app out for 6 seconds in order to spread out
@@ -250,6 +262,7 @@ class ApiCalls extends React.Component {
           stopwatchRunning: false
         })
       }, 6000)
+    console.log("API l")
   }
 
 // Passes back the recipe url list to the
@@ -259,23 +272,23 @@ class ApiCalls extends React.Component {
     var states = [null, 0]
 
     if(states.includes[this.state.count]){
-      if(count === 0){
-            console.log("1.No results on main page, count = 0, deleting a keyword")
-            if(this.state.searchKeywords.length > 1){
-                this.setState({
-                  deleteOne: true
-                })
-            }else{
-              console.log("1.FINAL KEYWORD NO RESULTS!")
-            }
-      }else{
-        console.log("~~~~~~####### COUNT IS NULL! #######~~~~~~~")
-      }
-      // knock an ingredient off if count === 0 ...... TEST TO SEE WHETHER MAKES A DIFFERENCE
+        if(count === 0){
+              console.log("1.No results on main page, count = 0, deleting a keyword")
+              if(this.state.searchKeywords.length > 1){
+                  this.setState({
+                    deleteOne: true
+                  })
+              }else{
+                console.log("1.FINAL KEYWORD NO RESULTS!")
+              }
+        }else{
+          console.log("~~~~~~####### COUNT IS NULL! #######~~~~~~~")
+        }
     }else if( this.state.noMoreKeywords === false ){
       console.log("No relevant results found - knocking ingredient off")
       // knock an ingredient off
       if(this.state.searchKeywords.length > 1){
+          console.log("API m")
           this.setState({
             deleteOne: true,
           })
@@ -317,23 +330,20 @@ class ApiCalls extends React.Component {
       noMorePages: false,
       call: 0,
     })
+    console.log("API n")
   }
 
+// Takes in the final list of relevant recipes returned
+//  from RefineResults component, saves to state:
   getRelevantRecipes(relevant_recipes){
     console.log("filtered initial")
     console.log("relevant_recipes.length: " + relevant_recipes.length)
     // console.log("relevant recipes: " + relevant_recipes)
-
     var relevant = this.state.refinedRecipeList
     for(x in relevant_recipes){
       // console.log("x in relevant recipes: " + relevant_recipes[x])
       relevant.push(relevant_recipes[x])
     }
-    // console.log("this.state.refinedRecipeList: " + this.state.refinedRecipeList)
-    // for(y in this.state.refinedRecipeList){
-    //   console.log("y in refinedRecipeList: " + this.state.refinedRecipeList[y])
-    // }
-
     if(relevant_recipes.length === 0){
       console.log("No relevant results on these pages")
       this.setState({
@@ -350,34 +360,21 @@ class ApiCalls extends React.Component {
         finalResults: true
       })
     }
-
   }
 
 
   render(){
-    // var initial = this.state.initialData
-    // var either = this.state.both
-    // var ingreds = this.state.initialData.ingredients
-    // var timer_started = this.state.timerStarted
-    // var redirect = this.state.redirect
+    console.log("Api component rendered")
     var alter_or_reorder_keywords = this.state.reduceKeywords
-
     var api_error = this.state.apiError
     var count = this.state.count
     var no_count = [ undefined, null ]
     var no_results = [0,]
     var response = this.state.fResponse
-    // var searching = false
-    // if(no_count.includes(count)){
-    //   searching = true
-    // }
     var filtering = false
     if(this.state.noMorePages === false && this.state.nextCall === false){
       filtering = true
     }
-    // if(searching === true){
-    //   loading = false
-    // }
     var start_refine = this.state.startRefine
     var final_results = this.state.finalResults
 
@@ -496,7 +493,7 @@ class ApiCalls extends React.Component {
                                        </View>
                                </View>
 
-                         }
+                        }
 
                   </ScrollView>
                 </SafeAreaView>

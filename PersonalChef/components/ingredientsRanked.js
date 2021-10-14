@@ -2,7 +2,6 @@ import React from 'react';
 
 import ranked_files from './directory.js';
 import * as zero from './checklists/json_ingredient_lists/ranked_lists/zero.json';
-import toWords from 'number-to-words';
 import wordsToNumbers from 'words-to-numbers';
 
 import { StyleSheet, Text, Pressable, View, SafeAreaView, ScrollView } from 'react-native';
@@ -16,105 +15,114 @@ class RankedDictionary extends React.Component {
           "ingredients": [],
           "ingredientCount": 0,
         },
+        rank: this.props.rank,
+        backendRanks: this.props.backendRanks,
         rankedIngredients: {},
         finished: true,
-        rankWord: this.props.rankWord,
-        rank: this.props.rank
+        error: false,
+        triggerSendBack: false,
       },
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
-      this.sortByRankFunction = this.sortByRankFunction.bind(this)
       this.sendIngredientsDict = this.sendIngredientsDict.bind(this)
    };
 
-  // Gets location for relevant rank list from directory, gets the list from that location,
-  //   assigns to rankedIngredients:
+// Gets location for relevant rank list from directory, gets the list from that location,
+//   assigns to rankedIngredients:
   componentDidMount(){
-    console.log("Ranked ingredients mounted")
+    console.log("Ranked dictionary mounted")
 
-    var this_rank = this.state.rankWord
-    console.log("this.state.rank: " + this.state.rank)
     if(this.state.rank === null){
-        var ranks = Object.keys(ranked_files)
-        var numbers = []
-        for(x in ranks){
-          console.log(x + ". rank: " + ranks[x])
-          var num = wordsToNumbers(ranks[x])
-          numbers.push(num)
-        }
-        var sorted = numbers.sort(this.sortByRankFunction)
-        var top_five = []
-        for(x=0;x<5;x++){
-          var num = sorted.pop()
-          top_five.push(num)
-        }
-        for(x in top_five){
-          console.log(x + ". top nums: " + top_five[x])
-        }
-        console.log("top_five[4]: " + top_five[4])
-        var converter = require('number-to-words');
-        var word = converter.toWords(top_five[4])
-        this.setState({
-          rank: top_five[4],
-          rankWord: word
-        })
-        var ingrs_list = ranked_files[`${word}`]
-        console.log("1.ingrs_list: " + ingrs_list)
+          var ranks = Object.keys(ranked_files)
+          var word = ranks.pop()
+          console.log("FIRST RANK: " + word)
+
+          var converter = require('words-to-numbers');
+          var number = converter.wordsToNumbers(word)
+          console.log("NUMBER: " + number)
+          this.setState({
+            rank: number,
+            backendRanks: ranks
+          })
+          var ingrs_list = ranked_files[`${word}`]
+          console.log("1.ingrs_list: " + ingrs_list)
+
     }else{
-        var ingrs_list = ranked_files[`${this_rank}`]
-        console.log("2.ingrs_list: " + ingrs_list)
+          try{
+              var ranks = this.state.backendRanks
+              var new_rank = ranks.pop()
+              console.log("NEW RANK: " + new_rank)
+              var ingrs_list = ranked_files[`${new_rank}`]
+              console.log("2.ingrs_list: " + ingrs_list)
+              console.log("this.state.backendRanks.length is 0?: " + this.state.backendRanks.length === 0)
+         }catch(error){
+              console.log("Error getting next rank: " + error.message)
+              console.log("this.state.backendRanks.length is 0?: " + this.state.backendRanks.length === 0)
+              this.setState({
+                finished: false,
+                error: true
+              })
+         }
     }
 
     var list = ingrs_list.children
+    console.log("list.length: " + list.length)
+    console.log("list[0]['name']: " + list[0]['name'])
+    console.log("~~~~~~~~~~~~~~~~~~")
+
+////////////////////////////////////// SET STATE (BELOW) FAILS/NEVER HAPPENS - so CdidUpdate never triggered again *** fix
     this.setState({
       rankedIngredients: list,
       finished: false,
     })
-  }
-
-  sortByRankFunction(a,b){
-    if (a < b) {
-        return 1;
-    }
-    if (a > b) {
-        return -1;
-    }
-    return 0;
+    console.log("END of didMount")
   }
 
   componentDidUpdate(){
-    console.log("ranked updated")
-  // Triggers function that sends ranked dictionary to < AlterKeywords />:
-    if(this.state.finished === false){
+    console.log("Ranked dictionary updated")
+// Triggers function that sends ranked dictionary to < AlterKeywords />:
+    // if(this.state.finished === false && this.state.error === false && this.state.triggerSendBack === false){
+    //   this.setState({
+    //     triggerSendBack: true,
+    //   })
+    // }
+    // if(this.state.triggerSendBack){
+    //   this.sendIngredientsDict()
+    // }
+    if(this.state.finished === false && this.state.error === false){
       this.sendIngredientsDict()
     }
   }
 
   componentWillUnmount(){
-    console.log("RankedDict unmounted")
+    console.log("Ranked dictionary unmounted")
   }
 
-  // Function that sends rankedIngredients to < AlterKeywords />:
+// Function that sends rankedIngredients back to < AlterKeywords />:
   sendIngredientsDict(){
+    console.log("R2")
     var ranked_dictionary = this.state.rankedIngredients
     var rank = this.state.rank
-    var rank_word = this.state.rankWord
+    var backend_ranks = this.state.backendRanks
     console.log("ranked ingredients.length: " + ranked_dictionary.length )
-    this.props.rankedIngs(ranked_dictionary,rank,rank_word)
+    console.log("this.state.rankedIngredients[0].name: " + this.state.rankedIngredients[0].name)
+    this.props.rankedIngs(backend_ranks,ranked_dictionary,rank)
     this.setState({
       finished: true,
+      triggerSendBack: false
     })
+    console.log("R23")
   }
 
 
  render(){
-
+   console.log("Ranked dictionary rendered")
    return(
-         <View>
-            <Text></Text>
-         </View>
-        );
+           <View>
+              <Text></Text>
+           </View>
+         );
 
     }
 

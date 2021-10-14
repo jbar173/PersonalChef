@@ -29,6 +29,8 @@ class MeatIngredientsList extends React.Component {
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
     this.updateListHandler = this.updateListHandler.bind(this)
     this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
   };
@@ -45,6 +47,10 @@ class MeatIngredientsList extends React.Component {
         times:times,
         ingredients_rough: ingreds
       })
+    }
+
+    componentWillUnmount(){
+      console.log("meats unmounted")
     }
 
     componentDidUpdate(){
@@ -148,6 +154,8 @@ class FishIngredientsList extends React.Component {
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
     this.updateListHandler = this.updateListHandler.bind(this)
     this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
   };
@@ -164,9 +172,12 @@ class FishIngredientsList extends React.Component {
     })
    }
 
+   componentWillUnmount(){
+     console.log("fish unmounted")
+   }
+
    componentDidUpdate(){
      console.log("fish updated")
-
      if(this.state.fish_updated === true){
        console.log("updating ingredients_rough")
        this.updateIngredientsRoughHandler()

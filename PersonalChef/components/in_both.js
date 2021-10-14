@@ -26,10 +26,11 @@ class DryIngredientsList extends React.Component {
       ingredients_rough: {},
       dries: [],
       dries_updated: false,
-      visit_number:0,
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
     this.updateListHandler = this.updateListHandler.bind(this)
     this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
   };
@@ -46,9 +47,12 @@ class DryIngredientsList extends React.Component {
     })
    }
 
+   componentWillUnmount(){
+     console.log("dries unmounted")
+   }
+
    componentDidUpdate(){
      console.log("dries updated")
-
      if(this.state.dries_updated === true){
        console.log("updating ingredients_rough")
        this.updateIngredientsRoughHandler()
@@ -144,10 +148,11 @@ class WetIngredientsList extends React.Component {
       ingredients_rough: {},
       wets: [],
       wets_updated: false,
-      visit_number:0,
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
     this.updateListHandler = this.updateListHandler.bind(this)
     this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
   };
@@ -164,9 +169,12 @@ class WetIngredientsList extends React.Component {
     })
   }
 
+  componentWillUnmount(){
+    console.log("wets unmounted")
+  }
+
   componentDidUpdate(){
     console.log("wets updated")
-
     if(this.state.wets_updated === true){
       console.log("updating ingredients_rough")
       this.updateIngredientsRoughHandler()
@@ -243,10 +251,11 @@ class FruitAndVegList extends React.Component {
       ingredients_rough: {},
       fruits: [],
       fruits_updated: false,
-      visit_number:0,
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
     this.updateListHandler = this.updateListHandler.bind(this)
     this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
   };
@@ -263,9 +272,12 @@ class FruitAndVegList extends React.Component {
     })
   }
 
+  componentWillUnmount(){
+    console.log("fruits unmounted")
+  }
+
   componentDidUpdate(){
     console.log("fruits updated")
-
     if(this.state.fruits_updated === true){
       console.log("updating ingredients_rough")
       this.updateIngredientsRoughHandler()
@@ -295,6 +307,8 @@ class FruitAndVegList extends React.Component {
       fruits_updated: false
     })
   }
+
+
 
 
     render(){
@@ -344,10 +358,11 @@ class HerbsAndSpicesList extends React.Component {
       ingredients_rough: {},
       herbs: [],
       herbs_updated: false,
-      visit_number:0,
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
     this.updateListHandler = this.updateListHandler.bind(this)
     this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
     };
@@ -364,9 +379,12 @@ class HerbsAndSpicesList extends React.Component {
       })
     }
 
+    componentWillUnmount(){
+      console.log("herbs unmounted")
+    }
+
     componentDidUpdate(){
       console.log("herbs updated")
-
       if(this.state.herbs_updated === true){
         console.log("updating ingredients_rough")
         this.updateIngredientsRoughHandler()
@@ -445,10 +463,11 @@ class TinnedGoodsList extends React.Component {
       ingredients_rough: {},
       tins: [],
       tins_updated: false,
-      visit_number:0,
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
     this.updateListHandler = this.updateListHandler.bind(this)
     this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
   };
@@ -465,9 +484,12 @@ class TinnedGoodsList extends React.Component {
     })
   }
 
+  componentWillUnmount(){
+    console.log("tins unmounted")
+  }
+
   componentDidUpdate(){
     console.log("tins updated")
-
     if(this.state.tins_updated === true){
       console.log("updating ingredients_rough")
       this.updateIngredientsRoughHandler()
@@ -544,32 +566,37 @@ class AlcoholList extends React.Component {
       },
       both:false,
       ingredients_rough: {},
-      tins: [],
-      tins_updated: false,
-      visit_number:0,
+      alcohol: [],
+      alcohol_updated: false,
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
     this.updateListHandler = this.updateListHandler.bind(this)
     this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
+
   };
 
   componentDidMount(){
-    console.log("tinned mounted")
+    console.log("alcohol mounted")
     var initial_data = this.props.location.state.initial_data
     var either = this.props.location.state.either
     var ingreds = this.props.location.state.ingreds
     this.setState({
       initialData:initial_data,
       ingredients_rough:ingreds,
-      both:either
+      both:either,
     })
   }
 
-  componentDidUpdate(){
-    console.log("tins updated")
+  componentWillUnmount(){
+    console.log("alcohol unmounted")
+  }
 
-    if(this.state.tins_updated === true){
+  componentDidUpdate(){
+    console.log("alcohol updated")
+    if(this.state.alcohol_updated === true){
       console.log("updating ingredients_rough")
       this.updateIngredientsRoughHandler()
     }
@@ -578,13 +605,13 @@ class AlcoholList extends React.Component {
   updateListHandler(confirmed_list){
     console.log("update list handler in_both.js tinned")
     this.setState({
-      tins: confirmed_list,
-      tins_updated: true
+      alcohol: confirmed_list,
+      alcohol_updated: true
     })
   }
 
   updateIngredientsRoughHandler(){
-    var new_key = "tins"
+    var new_key = "Alcohol"
     var final_list = this.state.ingredients_rough
     for([key,value] of Object.entries(final_list)){
        if(key === new_key){
@@ -592,10 +619,10 @@ class AlcoholList extends React.Component {
            delete final_list[key]
          }
     }
-    final_list[new_key] = this.state.tins
+    final_list[new_key] = this.state.alcohol
     this.setState({
       ingredients_rough: final_list,
-      tins_updated: false
+      alcohol_updated: false,
     })
   }
 
@@ -605,27 +632,28 @@ class AlcoholList extends React.Component {
     var either = this.state.both
     var ingreds = this.state.ingredients_rough
 
-      return(
+    return(
 
-        <SafeAreaView style={styles.container}>
-          <ScrollView>
-                <Text accessible={true} accessibilityLabel="Alcohol checklist"
-                  accessibilityRole="text" style={styles.mainTitle}>Alcohol checklist</Text>
+            <SafeAreaView style={styles.container}>
+              <ScrollView>
+                    <Text accessible={true} accessibilityLabel="Alcohol checklist"
+                      accessibilityRole="text" style={styles.mainTitle}>Alcohol checklist</Text>
 
-                <AlcoholChecklist updateListHandler={this.updateListHandler} />
+                    <AlcoholChecklist updateListHandler={this.updateListHandler} />
 
-                <Link style={{marginTop:30}} to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
-                 underlayColor="transparent">
-                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                     style={styles.blueButton}>Next</Text>
-                </Link>
-                <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
-                 underlayColor="transparent">
-                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                     style={styles.blueButton}>Back</Text>
-                </Link>
-          </ScrollView>
-        </SafeAreaView>
+                    <Link style={{marginTop:30}} to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                     underlayColor="transparent">
+                        <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                         style={styles.blueButton}>Next</Text>
+                    </Link>
+
+                    <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                     underlayColor="transparent">
+                        <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                         style={styles.blueButton}>Back</Text>
+                    </Link>
+              </ScrollView>
+            </SafeAreaView>
 
       );
    }

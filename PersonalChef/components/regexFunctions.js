@@ -7,7 +7,7 @@ import * as data from './keywordExceptions.json';
 
 const FindIngredient = (ingredients_to_search_for,ingredient_lower,is_key) => {
 
-    // console.log("FindIngredient regex function!!!!")
+    console.log("FindIngredient regex function starting")
 
   // Regexes for ingredient to match:
     var no_extra_letters = String.raw`[^a-z]`
@@ -90,6 +90,8 @@ const FindIngredient = (ingredients_to_search_for,ingredient_lower,is_key) => {
 
 const FindExceptions = (ingredients,ingredient_lower) => {
 
+
+    console.log("FindExceptions regex function starting")
   // Regexes for ingredient to match:
     var no_extra_letters = String.raw`[^a-z]`
     var ends_with_s = String.raw`[s]`

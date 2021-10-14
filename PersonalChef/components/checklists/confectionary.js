@@ -15,18 +15,25 @@ class ConfectionaryChecklist extends React.Component {
       confirmedList: [],
       confirmed: false
     }
-    this.itemSelectedHandler = this.itemSelectedHandler.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
+    this.itemSelectedHandler = this.itemSelectedHandler.bind(this)
     this.confirmedHandler = this.confirmedHandler.bind(this)
   };
 
   componentDidMount(){
+    console.log("ConfectionaryChecklist mounted")
     var json_list = data.ingredients
     this.setState({
       jsonFileList: json_list,
       first: true
     })
+  }
+
+  componentWillUnmount(){
+    console.log("ConfectionaryChecklist unmounted")
   }
 
   itemSelectedHandler(item){
@@ -44,7 +51,7 @@ class ConfectionaryChecklist extends React.Component {
    }
 
   componentDidUpdate(){
-    console.log("did update")
+    console.log("ConfectionaryChecklist did update")
     if(this.state.first === true){
       var i
       var length = this.state.jsonFileList.length
