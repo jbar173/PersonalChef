@@ -30,6 +30,7 @@ class ApiCalls extends React.Component {
       fResponse: [],
       next: 'first',
       count: null,
+      update: false,
 
       nextCall: false,
       stopwatchRunning: false,
@@ -40,7 +41,7 @@ class ApiCalls extends React.Component {
       finalResults: false,
       finished: false
     },
-    this.abortController = new AbortController()
+    this.apiAbortController = new AbortController()
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
     this.componentWillUnmount = this.componentWillUnmount.bind(this)
@@ -54,10 +55,12 @@ class ApiCalls extends React.Component {
     this.finishedHandler = this.finishedHandler.bind(this)
     this.getRelevantRecipes = this.getRelevantRecipes.bind(this)
     this.deleteAKeyword = this.deleteAKeyword.bind(this)
+
+    this.setStates = this.setStates.bind(this)
   };
 
   componentDidMount(){
-    console.log("Api component mounted")
+    console.log("API COMPONENT MOUNTED")
     var initial_data = this.props.location.state.initial_data
     initial_data.ingredients.push('water')
     initial_data.ingredientCount += 1
@@ -78,30 +81,27 @@ class ApiCalls extends React.Component {
   }
 
   componentWillUnmount(){
-    console.log("Api component unmounted")
-    this.abortController.abort()
+    console.log("API COMPONENT UNMOUNTED")
+    this.apiAbortController.abort()
   }
 
   componentDidUpdate(){
     console.log("API COMPONENT UPDATED")
+    console.log("this.state.stopwatchRunning: " + this.state.stopwatchRunning)
+    console.log("this.state.startRefine: " + this.state.startRefine)
+    console.log("*this.state.next: " + this.state.next)
 
     if(this.state.finalResults && this.state.finished === false){
       var final_length = this.state.refinedRecipeList.length
       console.log("relevant results length: " + final_length)
       if(final_length > 100){
-        this.setState({
-          nextCall: false,
-          finished: true
-        })
+        this.setStates()
       }
     }
     // console.log("this.state.count: " + this.state.count)
     if(this.state.count === undefined && this.state.next !== 'first'){
       console.log("API a")
-      this.setState({
-        apiError: true,
-        nextCall: false
-      })
+      this.setStates('error')
     }
     // Checks whether api function has finished calling
     //  each page, triggers next function if so:
@@ -111,11 +111,33 @@ class ApiCalls extends React.Component {
     }
     if(this.state.nextCall && this.state.stopwatchRunning === false){
       console.log("API c")
+      console.log("**this.state.next: " + this.state.next)
       this.triggerNextCall()
     }
     if(this.state.deleteOne){
       console.log("API d")
       this.deleteAKeyword()
+    }
+    if(this.state.stopwatchRunning){
+      console.log("***this.state.next: " + this.state.next)
+      this.sixSecondStopwatch()
+    }
+  }
+
+  setStates(option=0){
+    if(option === 'error'){
+      console.log("OPTION 1")
+      this.setState({
+        apiError: true,
+        nextCall: false
+      })
+    }
+    else{
+      console.log("OPTION 2")
+      this.setState({
+        nextCall: false,
+        finished: true
+      })
     }
   }
 
@@ -163,6 +185,7 @@ class ApiCalls extends React.Component {
 
   triggerNextCall(){
     console.log("API g")
+    console.log("THIS.STATE.COUNT: " + this.state.count)
     if(this.state.count === 0){
       console.log("API h")
       this.setState({
@@ -173,11 +196,11 @@ class ApiCalls extends React.Component {
     }else{
       console.log("API i")
       this.apiCall()
-      console.log("API j")
-      this.setState({
-        nextCall: false,
-        foundResults: true
-      })
+      // console.log("API j")
+      // this.setState({
+      //   nextCall: false,
+      //   foundResults: true
+      // })
     }
   }
 
@@ -226,7 +249,7 @@ class ApiCalls extends React.Component {
     num += 1
     console.log("2. num: " + num)
 
-    fetch(url, { signal: this.abortController.signal })
+    fetch(url, { signal: this.apiAbortController.signal, } )
     .then(response => response.json())
     .then(data => {
         this.setState({
@@ -238,28 +261,35 @@ class ApiCalls extends React.Component {
           next: data['_links'],
           call: num,
           startRefine: true,
-          stopwatchRunning: true
         })
     })
     .catch(error => {
       console.log("API CALL ERROR: " + error + ". stack: " + error.stack)
-      console.log("If undefined here don't overwrite 'next'")
+      console.log("If undefined here don't overwrite 'next'") /////////////////////  Fix this
     });
     console.log("COUNT: " + this.state.count)
-    this.sixSecondStopwatch()
-    console.log("API k")
+    // this.sixSecondStopwatch()
+    // console.log("API k")
+    this.setState({
+      update: true,
+      nextCall: false,
+      stopwatchRunning: true
+    })
   }
 
 // Times the app out for 6 seconds in order to spread out
 //   api calls (ensures that 10 hits/minute aren't exceeded):
   sixSecondStopwatch(){
     console.log("starting 6 second stopwatch")
+    console.log("****this.state.next: " + this.state.next)
     var cmponent = this
     setTimeout(function(){
         console.log("6 second stopwatch finished")
         cmponent.setState({
           nextCall: true,
-          stopwatchRunning: false
+          stopwatchRunning: false,
+          foundResults: true,
+          update: false
         })
       }, 6000)
     console.log("API l")

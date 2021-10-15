@@ -19,6 +19,7 @@ class AlterKeywords extends React.Component {
         gotFive: false,
         rank: null,
         notFound: false,
+        timerOn: false,
         error: false,
       }
       this.componentDidMount = this.componentDidMount.bind(this)
@@ -27,6 +28,8 @@ class AlterKeywords extends React.Component {
       this.getRankedIngredients = this.getRankedIngredients.bind(this)
       this.alterIngredients = this.alterIngredients.bind(this)
       this.sendAlteredListBack = this.sendAlteredListBack.bind(this)
+      this.setStates = this.setStates.bind(this)
+      this.twoSecondTimeout = this.twoSecondTimeout.bind(this)
     };
 
   componentDidMount(){
@@ -47,34 +50,66 @@ class AlterKeywords extends React.Component {
 
   componentDidUpdate(){
     console.log("AlterKeywords updated")
-    console.log("this.state.ready: " + this.state.ready)
-    console.log("this.state.rankedIngredients.length: " + this.state.rankedIngredients.length)
-    console.log("this.state.passBack: " + this.state.passBack)
-    console.log("this.state.getRanked: " + this.state.getRanked)
-    console.log("this.state.notFound: " + this.state.notFound)
+    // console.log("this.state.ready: " + this.state.ready)
+    // console.log("this.state.rankedIngredients.length: " + this.state.rankedIngredients.length)
+    // console.log("this.state.passBack: " + this.state.passBack)
+    // console.log("this.state.getRanked: " + this.state.getRanked)
+    console.log("### this.state.notFound: " + this.state.notFound)
+
     // Triggers function to alter ingredient list, once rankedIngredients
     //   have been received from < RankedDictionary />:
     if(this.state.ready){
         console.log("Ready triggered")
         this.alterIngredients()
-        console.log("ready triggered 2")
+        // console.log("ready triggered 2")
     }
     // Triggers function that gets the next ranked list from < RankedDictionary /> if no
     //  matches found within current rankedIngredients:
-    if(this.state.notFound){
-        console.log("Match not found")
-        this.setState({
-          getRanked: true,
-          notFound: false
-        })
-        console.log("match not found 2")
+    if(this.state.set){
+      this.setStates()
+    }
+    if(this.state.notFound && this.state.timerOn === false|| this.state.passBack && this.state.timerOn === false){
+        this.twoSecondTimeout()
     }
     // Triggers function that passes new list of keywords back to < ConfirmList />:
-    if(this.state.passBack){
+    if(this.state.pass){
         console.log("Passing back to ApiCalls")
         this.sendAlteredListBack()
-        console.log("passing back 2")
+        // console.log("passing back 2")
     }
+  }
+
+  twoSecondTimeout(){
+    console.log("2 second timeout started")
+    var comp = this
+    this.setState({
+      timerOn: true
+    })
+    setTimeout(function(){
+        console.log("2 second timeout finished")
+        if(comp.state.notFound){
+          comp.setState({
+            set: true,
+            notFound: false,
+            timerOn: false
+          })
+        }
+        else{
+          comp.setState({
+            pass: true,
+            passBack: false,
+            timerOn: false
+          })
+        }
+      }, 2000)
+  }
+
+  setStates(){
+    console.log("*********setStates function")
+    this.setState({
+      getRanked: true,
+      set: false
+    })
   }
 
 // Takes in a dictionary of all ingredients, ranked and sorted, from <RankedDictionary /> :
@@ -95,7 +130,7 @@ class AlterKeywords extends React.Component {
 // Searches for least popular ingredient in user's ingredient list,
 //  splices it from list, then triggers this.state.passBack:
   alterIngredients(){
-    console.log("A1")
+    // console.log("A1")
     // console.log("this.state.rankedIngredients[0].name: " + this.state.rankedIngredients[0].name)
     var i
     var j
@@ -160,20 +195,21 @@ class AlterKeywords extends React.Component {
         }
 
         if(searching){
-            // console.log("A5")
+            console.log("A5")
             not_found = true
         }
-        // console.log("A6")
+        console.log("A6")
         searching = false
      }
 
      if(not_found){
-        console.log("Get next rank of ingredients")
-        this.setState({
+       console.log("Not found")
+       console.log("Get next rank of ingredients")
+       this.setState({
           ready: false,
           notFound: true,
         })
-
+        // console.log("/////////////////////")
       }else{
         console.log("Found a match")
         this.setState({
@@ -182,7 +218,8 @@ class AlterKeywords extends React.Component {
           passBack: true,
           notFound: false,
         })
-      }
+       }
+
   }
 
  // Sends new ingredients list back to < ApiCalls />:
@@ -196,7 +233,7 @@ class AlterKeywords extends React.Component {
     console.log("new_keywords.length: " + new_keywords.length)
     this.props.alteredKeywords(new_keywords,status)
     this.setState({
-      passBack: false
+      pass: false
     })
   }
 

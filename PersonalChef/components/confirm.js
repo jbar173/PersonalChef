@@ -162,6 +162,8 @@ class ConfirmList extends React.Component {
     console.log("REDIRECTING NOW")
     this.setState({
        redirect: false,
+       populate: false,
+       updateFaves: false,
        readyToRedirect: true
     })
   }
@@ -262,7 +264,7 @@ class ConfirmList extends React.Component {
     var i
     var length = list.length
     for(i=0;i<length;i++){
-      console.log("confirm t")
+      // console.log("confirm t")
       if( !(favs.includes(list[i])) ){
         console.log("confirm u")
         favs.push(list[i])

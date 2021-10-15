@@ -15,6 +15,8 @@ class ThreeDots extends React.Component{
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
 
+      this.abortController = new AbortController()
+
       Animated.loop(
         Animated.sequence([
           Animated.timing(this.opacity, {
@@ -22,6 +24,7 @@ class ThreeDots extends React.Component{
             toValue: 1,
             easing: Easing.linear,
             useNativeDriver: false,
+            signal: this.abortController.signal,
           }),
           Animated.delay(2000),
           Animated.timing(this.opacity, {
@@ -29,6 +32,7 @@ class ThreeDots extends React.Component{
             toValue: 0,
             easing: Easing.linear,
             useNativeDriver: false,
+            signal: this.abortController.signal,
           }),
         ]),
       ).start(),
@@ -42,6 +46,7 @@ class ThreeDots extends React.Component{
             toValue: 1,
             easing: Easing.linear,
             useNativeDriver: false,
+            signal: this.abortController.signal,
           }),
           Animated.delay(994),
           Animated.timing(this.opacityOne, {
@@ -49,8 +54,9 @@ class ThreeDots extends React.Component{
             toValue: 0,
             easing: Easing.linear,
             useNativeDriver: false,
+            signal: this.abortController.signal,
           }),
-        ]),
+         ]),
         ).start(),
 
 
@@ -61,17 +67,18 @@ class ThreeDots extends React.Component{
             duration: 1000,
             toValue: 1,
             easing: Easing.linear,
-            useNativeDriver: false
+            useNativeDriver: false,
+            signal: this.abortController.signal,
           }),
           Animated.timing(this.opacityTwo, {
             duration: 0,
             toValue: 0,
             easing: Easing.linear,
             useNativeDriver: false,
+            signal: this.abortController.signal,
           }),
-        ]),
+         ]),
         ).start()
-
     };
 
 
@@ -85,9 +92,10 @@ class ThreeDots extends React.Component{
 
   componentWillUnmount(){
     console.log("ThreeDots unmounted")
-    this.opacity = 0
-    this.opacityOne = 0
-    this.opacityTwo = 0
+    this.abortController.abort()
+    // this.opacity = 0
+    // this.opacityOne = 0
+    // this.opacityTwo = 0
     console.log("end of ThreeDots")
   }
 
