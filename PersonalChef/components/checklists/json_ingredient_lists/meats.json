@@ -1,5 +1,5 @@
 {
     "name": "meats_ingredients",
-    "ingredients": [ "beef", "chicken", "pork",
+    "ingredients": [ "bacon", "beef", "chicken", "ham", "lamb", "pancetta", "pepperoni", "pork", "salami", "sausage", "spam", "turkey",
     ]
 }

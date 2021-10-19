@@ -3,14 +3,857 @@
     "key" : ["ice","lemon","cream","pepper","garlic","raisin","pumpkin","chocolate","oatmeal","fudge","hamburger","hot dog","peanut","butter","corn","kidney","coffee","milk","water","ginger","ale","coffee",
       "tomato","mushroom","chili","apple","apricot","almond","brazil nut","candlenut","cashew nut","chestnut","potato","vinegar","hazelnut","pecan","macademia","walnut","pine nut","mustard","grape","toffee",
       "plum","onion","date","lime","grapefruit","fig","pineapple","olives","banana","turnip","lettuce","spinach","beetroot","kale","cabbage","custard","caramel","oats","black tea","sugar","shrimp","rice",
-      "sweet potato","chili pepper","milk chocolate","white chocolate","dark chocolate","coconut milk","soy milk","almond milk","white wine","cider","egg",
+      "sweet potato","chili pepper","milk chocolate","white chocolate","dark chocolate","coconut milk","soy milk","almond milk","white wine","cider","egg","bell pepper","courgette","coriander","rocket",
+      "filo pastry","tomato ketchup","cashew nuts","whisky","sun-dried tomatoes","spring onion","shallot","beef stock","vegetable stock","lamb stock","chicken stock","fontina","gouda","emmental","gruyere",
+      "provolone","cheddar","cheese slice","icing sugar","parmesan","lemon juice","pasta","muenster","taleggio","brie","camembert","canola oil","grapeseed oil","sunflower oil", "vegetable oil","pecorino",
+      "cornmeal","polenta","lasagne sheets","havarti","jarlsberg","manchego","mozzarella","comte","gorgonzola","blue cheese","ricotta","cottage cheese","avocado","guacamole",
+
 
 
     ],
 
     "ingredients": [
 
-        {
+
+          {
+              "name": "guacamole",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "guacamole",
+                },
+              ],
+          },
+          {
+              "name": "avocado",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "guacamole",
+                },
+              ],
+          },
+          {
+              "name": "ricotta",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cottage cheese",
+                },
+                {
+                  "word": "farmer's cheese"
+                },
+                {
+                  "word": "farmers cheese"
+                },
+                {
+                  "word": "farmer cheese"
+                },
+                {
+                  "word": "mozzarella",
+                },
+              ],
+          },
+          {
+              "name": "cottage cheese",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ricotta",
+                },
+                {
+                  "word": "farmer's cheese"
+                },
+                {
+                  "word": "farmers cheese"
+                },
+                {
+                  "word": "farmer cheese"
+                },
+                {
+                  "word": "mozzarella",
+                },
+              ],
+          },
+          {
+              "name": "gorgonzola",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "blue cheese",
+                },
+                {
+                  "word": "stilton",
+                },
+                {
+                  "word": "blue cheese dressing",
+                },
+              ],
+          },
+          {
+              "name": "blue cheese",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gorgonzola",
+                },
+                {
+                  "word": "stilton",
+                },
+                {
+                  "word": "blue cheese dressing",
+                },
+              ],
+          },
+          {
+              "name": "polenta",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cornmeal",
+                },
+                {
+                  "word": "grits",
+                },
+                {
+                  "word": "stone-ground grits",
+                },
+                {
+                  "word": "stone ground grits",
+                },
+              ],
+          },
+          {
+              "name": "cornmeal",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grits",
+                },
+                {
+                  "word": "stone-ground grits",
+                },
+                {
+                  "word": "stone ground grits",
+                },
+              ],
+          },
+          {
+            "name": "camembert",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "brie",
+              },
+              {
+                "word": "fontina",
+              },
+              {
+                "word": "cheddar",
+              },
+              {
+                "word": "havarti",
+              },
+            ],
+          },
+          {
+            "name": "brie",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "camembert",
+              },
+              {
+                "word": "fontina",
+              },
+              {
+                "word": "cheddar",
+              },
+              {
+                "word": "havarti",
+              },
+            ],
+          },
+          {
+            "name": "taleggio",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "brie",
+              },
+              {
+                "word": "fontina",
+              },
+              {
+                "word": "cheddar",
+              },
+              {
+                "word": "havarti",
+              },
+              {
+                "word": "manchego",
+              },
+            ],
+          },
+          {
+            "name": "pasta",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "macaroni",
+              },
+              {
+                "word": "cavatappi",
+              },
+              {
+                "word": "spaghetti",
+              },
+              {
+                "word": "penne",
+              },
+              {
+                "word": "ziti",
+              },
+              {
+                "word": "lasagne noodles",
+              },
+            ],
+          },
+          {
+            "name": "lasagne sheets",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lasagne noodles",
+              },
+              {
+                "word": "lasagne pasta",
+              },
+            ],
+          },
+          {
+            "name": "muenster",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "monterey jack",
+              },
+              {
+                "word": "colby jack",
+              },
+              {
+                "word": "colby",
+              },
+              {
+                "word": "provolone",
+              },
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "edam",
+              },
+              {
+                "word": "cheddar",
+              },
+              {
+                "word": "havarti",
+              },
+              {
+                "word": "manchego",
+              },
+            ],
+          },
+          {
+            "name": "parmesan",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "asiago",
+              },
+              {
+                "word": "grana padano",
+              },
+              {
+                "word": "parmigiano-reggiano",
+              },
+              {
+                "word": "parmigiano",
+              },
+              {
+                "word": "pecorino",
+              },
+            ],
+          },
+          {
+            "name": "pecorino",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "asiago",
+              },
+              {
+                "word": "grana padano",
+              },
+              {
+                "word": "parmigiano-reggiano",
+              },
+              {
+                "word": "parmigiano",
+              },
+              {
+                "word": "parmesan",
+              },
+            ],
+          },
+          {
+            "name": "icing sugar",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "confectioners sugar",
+              },
+              {
+                "word": "powdered sugar",
+              },
+            ],
+          },
+          {
+            "name": "cheese slice",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "american cheese",
+              },
+            ],
+          },
+          {
+            "name": "jarlsberg",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "swiss cheese",
+              },
+              {
+                "word": "gruyere",
+              },
+            ],
+          },
+          {
+            "name": "havarti",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "edam",
+              },
+              {
+                "word": "gruyere",
+              },
+              {
+                "word": "colby",
+              },
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "cheddar",
+              },
+              {
+                "word": "pepper jack",
+              },
+              {
+                "word": "muenster",
+              },
+              {
+                "word": "monterey jack",
+              },
+            ],
+          },
+          {
+            "name": "monterey jack",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "american cheese",
+              },
+              {
+                "word": "cheese slice",
+              },
+              {
+                "word": "cheddar",
+              },
+              {
+                "word": "pepper jack",
+              },
+              {
+                "word": "muenster",
+              },
+              {
+                "word": "havarti",
+              },
+              {
+                "word": "colby-jack",
+              },
+              {
+                "word": "colby jack",
+              },
+              {
+                "word": "colby",
+              },
+              {
+                "word": "co-jack",
+              },
+              {
+                "word": "cojack",
+              },
+              {
+                "word": "manchego",
+              },
+            ],
+          },
+          {
+            "name": "cheddar",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "american cheese",
+              },
+              {
+                "word": "cheese slice",
+              },
+              {
+                "word": "monterey jack",
+              },
+              {
+                "word": "pepper jack",
+              },
+              {
+                "word": "muenster",
+              },
+              {
+                "word": "havarti",
+              },
+              {
+                "word": "manchego",
+              },
+            ],
+          },
+          {
+            "name": "manchego",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cheddar",
+              },
+              {
+                "word": "monterey jack",
+              },
+              {
+                "word": "pepper jack",
+              },
+              {
+                "word": "muenster",
+              },
+              {
+                "word": "asiago",
+              },
+              {
+                "word": "mozzarella",
+              },
+            ],
+          },
+          {
+            "name": "mozzarella",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "mild cheddar",
+              },
+              {
+                "word": "white cheddar",
+              },
+              {
+                "word": "provolone",
+              },
+              {
+                "word": "ricotta",
+              },
+              {
+                "word": "manchego",
+              },
+              {
+                "word": "havarti",
+              },
+              {
+                "word": "paneer",
+              },
+              {
+                "word": "cottage cheese",
+              },
+            ],
+          },
+          {
+            "name": "provolone",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fontina",
+              },
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "emmentaler",
+              },
+              {
+                "word": "gruyere",
+              },
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "swiss cheese",
+              },
+            ],
+          },
+          {
+            "name": "gruyere",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fontina",
+              },
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "emmentaler",
+              },
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "provolone",
+              },
+              {
+                "word": "swiss cheese",
+              },
+              {
+                "word": "jarlsberg",
+              },
+              {
+                "word": "comte",
+              },
+              {
+                "word": "havarti",
+              },
+            ],
+          },
+          {
+            "name": "comte",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fontina",
+              },
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "emmentaler",
+              },
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "provolone",
+              },
+              {
+                "word": "swiss cheese",
+              },
+              {
+                "word": "jarlsberg",
+              },
+              {
+                "word": "gruyere",
+              },
+            ],
+          },
+          {
+            "name": "emmental",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fontina",
+              },
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "emmentaler",
+              },
+              {
+                "word": "gruyere",
+              },
+              {
+                "word": "provolone",
+              },
+              {
+                "word": "swiss cheese",
+              },
+              {
+                "word": "havarti",
+              },
+              {
+                "word": "jarlsberg",
+              },
+            ],
+          },
+          {
+            "name": "gouda",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fontina",
+              },
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "emmentaler",
+              },
+              {
+                "word": "gruyere",
+              },
+              {
+                "word": "provolone",
+              },
+              {
+                "word": "swiss cheese",
+              },
+              {
+                "word": "havarti",
+              },
+            ],
+          },
+          {
+            "name": "fontina",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "emmentaler",
+              },
+              {
+                "word": "gruyere",
+              },
+              {
+                "word": "provolone",
+              },
+              {
+                "word": "taleggio",
+              },
+              {
+                "word": "camembert",
+              },
+              {
+                "word": "brie",
+              },
+            ],
+          },
+          {
+            "name": "vegetable stock",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "vegetable broth",
+              },
+              {
+                "word": "veg broth",
+              },
+              {
+                "word": "veg stock",
+              },
+            ],
+          },
+          {
+            "name": "lamb stock",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lamb broth",
+              },
+            ],
+          },
+          {
+            "name": "chicken stock",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chicken broth",
+              },
+              {
+                "word": "chicken bone broth",
+              },
+            ],
+          },
+          {
+            "name": "beef stock",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "beef broth",
+              },
+            ],
+          },
+          {
+            "name": "shallot",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "eschalot",
+              },
+              {
+                "word": "onion",
+              },
+            ],
+          },
+          {
+            "name": "spring onion",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "scallion",
+              },
+            ],
+          },
+          {
+            "name": "sun-dried tomatoes",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sun dried tomatoes",
+              },
+              {
+                "word": "sun dried tomato",
+              },
+              {
+                "word": "sun-dried tomato",
+              },
+            ],
+          },
+          {
+            "name": "whisky",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "whiskey",
+              },
+            ],
+          },
+          {
+            "name": "cashew nuts",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cashews",
+              },
+            ],
+          },
+          {
+            "name": "filo pastry",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "phyllo pastry",
+              },
+              {
+                "word": "phyllo",
+              },
+            ],
+          },
+          {
+            "name": "rocket",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "arugula",
+              },
+            ],
+          },
+          {
+            "name": "coriander",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cilantro",
+              },
+            ],
+          },
+          {
+            "name": "courgette",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "zucchini",
+              },
+            ],
+          },
+          {
             "name": "egg",
             "exclude": [
               {
@@ -23,8 +866,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "chili pepper",
             "exclude": [
             ],
@@ -44,9 +887,24 @@
               {
                 "word": "chilli pepper",
               },
+              {
+                "word": "ghost pepper",
+              },
+              {
+                "word": "hot pepper",
+              },
+              {
+                "word": "jalapeno",
+              },
+              {
+                "word": "padron",
+              },
+              {
+                "word": "habanero",
+              },
             ],
-        },
-        {
+          },
+          {
             "name": "rice",
             "exclude": [
               {
@@ -68,8 +926,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "chicken",
             "exclude": [
               {
@@ -82,8 +940,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "white wine",
             "exclude": [
               {
@@ -93,8 +951,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "shrimp",
             "exclude": [
               {
@@ -104,8 +962,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "sugar",
             "exclude": [
               {
@@ -124,16 +982,8 @@
             "include": [
 
             ],
-        },
-        {
-            "name": "black tea",
-            "exclude": [
-            ],
-            "include": [
-
-            ],
-        },
-        {
+          },
+          {
             "name": "oats",
             "exclude": [
               {
@@ -143,8 +993,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "rum",
             "exclude": [
               {
@@ -157,8 +1007,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "custard",
             "exclude": [
               {
@@ -168,8 +1018,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "caramel",
             "exclude": [
               {
@@ -179,8 +1029,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "olives",
             "exclude": [
               {
@@ -190,8 +1040,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "banana",
             "exclude": [
               {
@@ -201,8 +1051,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "turnip",
             "exclude": [
               {
@@ -212,8 +1062,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "lettuce",
             "exclude": [
               {
@@ -223,8 +1073,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "spinach",
             "exclude": [
               {
@@ -234,18 +1084,19 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "beetroot",
             "exclude": [
+
             ],
             "include": [
               {
                 "word": "beet",
               },
             ],
-        },
-        {
+          },
+          {
             "name": "beet",
             "exclude": [
               {
@@ -254,8 +1105,8 @@
             ],
             "include": [
             ],
-        },
-        {
+          },
+          {
             "name": "kale",
             "exclude": [
               {
@@ -265,8 +1116,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "cabbage",
             "exclude": [
               {
@@ -276,8 +1127,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "pineapple",
             "exclude": [
               {
@@ -287,8 +1138,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "fig",
             "exclude": [
               {
@@ -304,8 +1155,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "grapefruit",
             "exclude": [
               {
@@ -315,8 +1166,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "lime",
             "exclude": [
               {
@@ -326,8 +1177,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "peach",
             "exclude": [
               {
@@ -337,8 +1188,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "toffee",
             "exclude": [
               {
@@ -348,8 +1199,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "mustard",
             "exclude": [
               {
@@ -359,8 +1210,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "pine nut",
             "exclude": [
               {
@@ -370,8 +1221,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "coconut",
             "exclude": [
               {
@@ -391,10 +1242,9 @@
               },
             ],
             "include": [
-
             ],
-        },
-        {
+          },
+          {
             "name": "walnut",
             "exclude": [
               {
@@ -404,8 +1254,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "date",
             "exclude": [
               {
@@ -415,8 +1265,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "macademia",
             "exclude": [
               {
@@ -426,8 +1276,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "pecan",
             "exclude": [
               {
@@ -440,8 +1290,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "hazelnut",
             "exclude": [
               {
@@ -451,8 +1301,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "vinegar",
             "exclude": [
               {
@@ -462,8 +1312,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "potato",
             "exclude": [
               {
@@ -473,8 +1323,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "sweet potato",
             "exclude": [
               {
@@ -484,8 +1334,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "chestnut",
             "exclude": [
               {
@@ -498,8 +1348,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "brazil nut",
             "exclude": [
               {
@@ -509,8 +1359,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "cashew nut",
             "exclude": [
               {
@@ -520,8 +1370,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "candlenut",
             "exclude": [
               {
@@ -531,8 +1381,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "ice",
             "exclude": [
               {
@@ -545,8 +1395,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "lemon",
             "exclude": [
               {
@@ -557,10 +1407,23 @@
               },
             ],
             "include": [
+              {
+                "word": "lemon juice",
+              },
+            ],
+          },
+          {
+            "name": "lemon juice",
+            "exclude": [
 
             ],
-        },
-        {
+            "include": [
+              {
+                "word": "lemon",
+              },
+            ],
+          },
+          {
             "name": "cream",
             "exclude": [
               {
@@ -594,8 +1457,39 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
+            "name": "bell pepper",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "capsicum",
+              },
+              {
+                "word": "pimiento",
+              },
+              {
+                "word": "pimento",
+              },
+              {
+                "word": "yellow pepper",
+              },
+              {
+                "word": "red pepper",
+              },
+              {
+                "word": "green pepper",
+              },
+              {
+                "word": "sweet pepper",
+              },
+              {
+                "word": "piquillo",
+              },
+            ],
+          },
+          {
             "name": "pepper",
             "exclude": [
               {
@@ -620,35 +1514,37 @@
                 "word": "bell pepper",
               },
               {
-                "word": "hot pepper",
-              },
-              {
                 "word": "sweet pepper",
               },
               {
-                "word": "jalapeno pepper",
+                "word": "jalapeno",
               },
               {
-                "word": "padron pepper",
+                "word": "padron",
               },
               {
                 "word": "pickled pepper",
               },
               {
-                "word": "habanero pepper",
+                "word": "habanero",
               },
               {
                 "word": "cayenne pepper",
               },
               {
-                "word": "pimiento pepper",
+                "word": "pimiento",
+              },
+              {
+                "word": "pimento",
               },
             ],
             "include": [
-
+              {
+                "word": "peppercorns",
+              },
             ],
-        },
-        {
+          },
+          {
             "name": "garlic",
             "exclude": [
               {
@@ -658,8 +1554,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "raisin",
             "exclude": [
               {
@@ -672,8 +1568,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "pumpkin",
             "exclude": [
               {
@@ -683,8 +1579,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "chocolate",
             "exclude": [
               {
@@ -711,8 +1607,8 @@
                 "word": "chocolate chips",
               },
             ],
-        },
-        {
+          },
+          {
             "name": "milk chocolate",
             "exclude": [
               {
@@ -730,8 +1626,8 @@
                 "word": "chocolate",
               },
             ],
-        },
-        {
+          },
+          {
             "name": "white chocolate",
             "exclude": [
               {
@@ -749,8 +1645,8 @@
                 "word": "chocolate",
               },
             ],
-        },
-        {
+          },
+          {
             "name": "dark chocolate",
             "exclude": [
               {
@@ -768,8 +1664,8 @@
                 "word": "chocolate",
               },
             ],
-        },
-        {
+          },
+          {
             "name": "oatmeal",
             "exclude": [
               {
@@ -782,8 +1678,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "fudge",
             "exclude": [
               {
@@ -796,8 +1692,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "bread",
             "exclude": [
               {
@@ -807,8 +1703,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "hamburger",
             "exclude": [
               {
@@ -818,8 +1714,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "hot dog",
             "exclude": [
               {
@@ -827,10 +1723,12 @@
               },
             ],
             "include": [
-
+              {
+                "word": "sausage",
+              },
             ],
-        },
-        {
+          },
+          {
             "name": "peanut",
             "exclude": [
               {
@@ -846,8 +1744,72 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
+            "name": "canola oil",
+            "exclude": [
+             ],
+            "include": [
+              {
+                "word": "grapeseed oil",
+              },
+              {
+                "word": "vegetable oil",
+              },
+              {
+                "word": "sunflower oil",
+              },
+            ],
+          },
+          {
+            "name": "grapeseed oil",
+            "exclude": [
+             ],
+            "include": [
+              {
+                "word": "canola oil",
+              },
+              {
+                "word": "vegetable oil",
+              },
+              {
+                "word": "sunflower oil",
+              },
+            ],
+          },
+          {
+            "name": "vegetable oil",
+            "exclude": [
+             ],
+            "include": [
+              {
+                "word": "grapeseed oil",
+              },
+              {
+                "word": "canola oil",
+              },
+              {
+                "word": "sunflower oil",
+              },
+            ],
+          },
+          {
+            "name": "sunflower oil",
+            "exclude": [
+             ],
+            "include": [
+              {
+                "word": "grapeseed oil",
+              },
+              {
+                "word": "vegetable oil",
+              },
+              {
+                "word": "canola oil",
+              },
+            ],
+          },
+          {
             "name": "butter",
             "exclude": [
               {
@@ -887,8 +1849,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "corn",
             "exclude": [
               {
@@ -901,8 +1863,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "kidney",
             "exclude": [
               {
@@ -912,8 +1874,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "coffee",
             "exclude": [
               {
@@ -923,8 +1885,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "coconut milk",
             "exclude": [
             ],
@@ -939,8 +1901,8 @@
                 "word": "milk",
               },
             ],
-        },
-        {
+          },
+          {
             "name": "almond milk",
             "exclude": [
             ],
@@ -955,8 +1917,8 @@
                 "word": "milk",
               },
             ],
-        },
-        {
+          },
+          {
             "name": "soy milk",
             "exclude": [
             ],
@@ -971,8 +1933,8 @@
                 "word": "milk",
               },
             ],
-        },
-        {
+          },
+          {
             "name": "milk",
             "exclude": [
               {
@@ -1006,8 +1968,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "water",
             "exclude": [
               {
@@ -1043,8 +2005,8 @@
             ],
             "include": [
             ],
-        },
-        {
+          },
+          {
             "name": "ginger",
             "exclude": [
               {
@@ -1057,8 +2019,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "ale",
             "exclude": [
               {
@@ -1068,8 +2030,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "tomato",
             "exclude": [
               {
@@ -1094,8 +2056,18 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
+            "name": "tomato ketchup",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "tomato sauce",
+              },
+            ],
+          },
+          {
             "name": "mushroom",
             "exclude": [
               {
@@ -1111,8 +2083,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "chili",
             "exclude": [
               {
@@ -1125,8 +2097,22 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
+            "name": "chili powder",
+            "exclude": [
+              {
+                "word": "ground red pepper",
+              },
+              {
+                "word": "cayenne pepper",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
             "name": "cider",
             "exclude": [
               {
@@ -1136,8 +2122,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "apple",
             "exclude": [
               {
@@ -1162,8 +2148,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "apricot",
             "exclude": [
               {
@@ -1176,8 +2162,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "onion",
             "exclude": [
               {
@@ -1191,10 +2177,15 @@
               },
             ],
             "include": [
-
+              {
+                "word": "shallot",
+              },
+              {
+                "word": "eschalot",
+              },
             ],
-        },
-        {
+          },
+          {
             "name": "grape",
             "exclude": [
               {
@@ -1207,8 +2198,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "plum",
             "exclude": [
               {
@@ -1224,8 +2215,8 @@
             "include": [
 
             ],
-        },
-        {
+          },
+          {
             "name": "almond",
             "exclude": [
               {
@@ -1253,7 +2244,7 @@
             "include": [
 
             ],
-        },
+          },
 
     ]
 

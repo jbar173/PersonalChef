@@ -1,6 +1,7 @@
 {
     "name": "confectionary_ingredients",
-    "ingredients": ["white chocolate", "milk chocolate", "dark chocolate", "chocolate buttons", "hundreds and thousands", "chocolate sprinkles", "milk chocolate drops", "dark chocolate drops",
-       "white chocolate drops", "jelly tots", "smarties", "skittles", "maltesers", "mini eggs",
+    "ingredients": [ "chocolate buttons", "chocolate sprinkles",  "dark chocolate", "dark chocolate drops", "fruitcake", "hundreds and thousands", "jelly tots",
+       "maltesers", "milk chocolate", "milk chocolate drops", "mini eggs", "raspberry jam", "skittles", "smarties", "strawberry jam",
+       "white chocolate", "white chocolate drops","marmalade",
     ]
 }

@@ -234,7 +234,7 @@ class PantryCheckList extends React.Component {
                                 {display === false &&
                                   <View>
                                       <Pressable style={styles.greenButton} onPress={this.displayFavourites}>
-                                          <Text>Use previous favourites</Text>
+                                          <Text>Add items from your favourites</Text>
                                       </Pressable>
                                   </View>
                                 }
@@ -244,7 +244,7 @@ class PantryCheckList extends React.Component {
                                       <Pressable style={styles.greenButton} onPress={this.displayFavourites}>
                                           <Text>Hide favourites</Text>
                                       </Pressable>
-                                      <Text>Click item to add to pantry above:</Text>
+                                      <Text>Click on an item to add it to the pantry above:</Text>
                                       <View style={styles.container}>
                                               {favourites.map(function(item,index){
                                                   return(

@@ -146,7 +146,11 @@ const RefineResults = props => {
 
                                         if(result === false){
                                             false_count += 1
+                                            // console.log("false count: " + false_count)
+                                            // console.log("recipe_ings_length: " + recipe_ings_length)
+                                            // console.log("user_ings_length: " + user_ings_length)
                                         }
+
                                         if(result === false && false_count === user_ings_length ){
                                             console.log("user doesn't have: " + ingredient_lower)
                                             console.log("NO MATCH")

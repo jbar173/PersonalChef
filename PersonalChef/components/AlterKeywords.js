@@ -66,7 +66,7 @@ class AlterKeywords extends React.Component {
     // Triggers function that gets the next ranked list from < RankedDictionary /> if no
     //  matches found within current rankedIngredients:
     if(this.state.set){
-      this.setStates()
+        this.setStates()
     }
     if(this.state.notFound && this.state.timerOn === false|| this.state.passBack && this.state.timerOn === false){
         this.twoSecondTimeout()

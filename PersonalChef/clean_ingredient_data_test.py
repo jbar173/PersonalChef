@@ -49,7 +49,8 @@ def clean_ingredients(ingredients):
      ' lardons ', ' rasher ', ' rashers ', ' segments ', ' segment ', ' heaped ', ' bottle ', ' pack ', ' packs ',
      ' packed ', ' loaf ', ' loaves ', ' baton ', ' batons ', ' sprinkling ', ' block ', ' blocks ', ' some ', ' bite-size ',
      ' bite-sized ', ' bite sized ', ' bite ', ' mug ', ' twist ', ' centimeter ', ' centimeters ', ' centimetre ', ' bite size ',
-     ' centimetres ', ' [lb] ', ' dusting ', ' shreds ', ' finger-length ', ' finger length ', ' tbp ', ' finger ', ' sprinkle ', ]
+     ' centimetres ', ' [lb] ', ' dusting ', ' shreds ', ' finger-length ', ' finger length ', ' tbp ', ' finger ', ' sprinkle ',
+     ' log ', ' logs ', ' percent ', ' exactly ', ]
 
     number_words = [' one ', ' two ', ' three ', ' four ', ' five ', ' six ', ' seven ', ' eight ', ' nine ', ' ten ',
     ' twenty ', ' thirty ', ' forty ', ' fifty ', ' sixty ', ' seventy ', ' eighty ', ' ninety ', ' one hundred ', ]
@@ -74,7 +75,7 @@ def clean_ingredients(ingredients):
     ' very ', ' healthy ', ' freeze ', ' de-seeded ', ' into ', ' d iced ', ' dice ', ' generous ', ' portion ', ' vegetarian ', ' thai bird ',
     ' version ', ' cored ', ' core ', ' cores ', ' couple ', ' picked ', ' keep ', ' shred ', ' shredded ', ' thinly ', ' thin ', ' toppings ',
     ' heads ', ' tail ', ' left ', ' deveined ', ' make ', ' substitutes ', ' substitute ', ' depending ', ' same ', ' thing ', ' washed ',
-    ' wash ', ' patted ', ' pat ', ' dry ', ' table ', ' omit ', ' omitted ', ' using ', ' used ', ' use ', ' very ', ' quite ', ' try ',
+    ' wash ', ' patted ', ' pat ', ' dry ', ' table ', ' omit ', ' omitted ', ' using ', ' used ', ' use ', ' very ', ' quite ', ' try ', ' left over ',
     ' find ', ' really ', ' slightly ', ' butterfly ', ' butterflied ', ' see ', ' tip ', ' below ', ' above ', ' left ', ' right ', ' stewed ',
     ' from ', ' angle ', ' sustainable ', ' sources ', ' organic ', ' vegan ', ' cracked ', ' crack ', ' (shrimp) ', ' (prawns) ', ' taco-size ',
     ' soft ', ' podded ', ' light ', ' ripe ', ' ripened ', ' quartered ', ' tops ', ' reserved ', ' leafy ', ' kernels ', ' tastes ',
@@ -117,17 +118,23 @@ def clean_ingredients(ingredients):
     ' food ', ' rolling pin ', ' pin bones ', ' round ', ' soak in water ', ' soak ', ' smell ', ' putting ', ' thick coins ', ' the trimmings ', ' trimmings ',
     ' destoned ', ' semimoist ', ' mandoline ', ' recommended ', ' unseasoned ', ' twists ', ' thicker ', ' need ', ' soaking ', ' coconut scraper ', ' alternative ',
     ' alternatives ', ' chunky ', ' straight ', ' in water ', ' light green parts ', ' light-green parts ', ' grinding ', ' grind ', ' and the rest ', ' stir ',
-    ' stirred ', ' buy ', ' straggly ', ' ends ', ' bigger ', ' per ', ' desire ', ' combine ', ' combination ', ' metric ', ' imperial ', " bird's eye ",
+    ' stirred ', ' buy ', ' straggly ', ' ends ', ' bigger ', ' per ', ' desire ', ' combine ', ' combination ', ' metric ', ' imperial ', " bird's eye ", ' left-over ',
     ' birds eye ', ' birds-eye ', " bird's-eye ", ' dust ', ' grocers ', ' stir-fry ', ' stri fry ', ' mixed with water ', ' ready-rolled ', ' ready-rolled ',
     ' debearded ', ' debeard ', ' put the ', ' all once ', ' all at once ', ' gradually ', ' water the dough ', ' kept warm ', ' kept ', ' wholes ', ' mixed with ',
     ' form a smooth paste ', ' forms a smooth paste ', ' not sure ', ' weighing ', ' weight ', ' weigh ', ' fried ', ' baking ', 'bakes ', ' bake ', ' parchment ',
     ' tray ', ' along ', ' works ', ' brand ', ' ready ', ' goz ', ' sprinkled ', ' put in water ', ' in water ', ' fronds ', ' tops ', ' medium-grain ', ' medium grain ',
     ' dough ', ' cut off ', ' g lb]', ' basmati ', ' pilau ', ' omlette ', ' omlettes ', ' semi-skimmed ', ' all purposewholemeal ', 'all-purpose ', ' no-salt-added ',
-    ' alcohol-free ', ' alcohol free ', ' less-sodium ', ' twenty-four ', ' reduced-sodium ', ' reduced sodium ', ' broiler-fryer ', ' slivered ', ' no salt added ',  ]
+    ' alcohol-free ', ' alcohol free ', ' less-sodium ', ' twenty-four ', ' reduced-sodium ', ' reduced sodium ', ' broiler-fryer ', ' slivered ', ' no salt added ',
+    ' less-fat ', ' no-boil ', ' boil ', ' garnishes ', ' nonstick ', ' non-stick ', ' sifted ', ' sift ', ' best-quality ', ' commercial ', ' homemade ', ' home-made ',
+    ' cooking ', ' lowfat ', ' substituted ', ' indulgent ', ' feeling ', ' eggwash ', ' maybe ', ' rapid ', ' scalded ', ' point ', ' hardboiled ', ' al dente ',
+    ' cancadian ', ' love ', ' minus ', ' tepmperature ', ' room ', ' box grater ', ' grater ', ' horizontally ', ' waffle iron ', ' everything ', ' high smoke point ',
+    ' low smoke point ', ' smoke point ', ' soapy ', ' bouquet ', ' british english ', ' in half ', ' everyday value ', ' value ', ' the top ', ' flour the work surface ',
+    ' flour the surface ', ' flour the table ', ' over the top ', ' buttering ', ' dishes ', ' dish ', ' plates ', ' plate ', ]
 
     brands = [ ' ayam ', ' patak ', " patak's ", " waitrose ", " blue dragon ", " king edward ", " maris piper ", ' tessa ', ' kallo ', ' granny smith ', ' tilda ', ' maldon ',
     " sharwood's ", ' sharwoods ', ' old bay ', ' bonne maman ', ' jack daniels ', " jack daniel's ", ' amoy ', ' thai-food-onlinecouk ', ' amazoncom ', ' maharaja ', ' maharajah ',
-    " lingham's ", ' linghams ', ' dodoni ', ' burford browns ', ' burford brown ', ' campbells ', " campbell's ", ' knudsen ', ' maesri ', ' liptons ', " lipton's ", ' swanson ', ]
+    " lingham's ", ' linghams ', ' dodoni ', ' burford browns ', ' burford brown ', ' campbells ', " campbell's ", ' knudsen ', ' maesri ', ' liptons ', " lipton's ", ' swanson ',
+    " kellogg's ", ' kelloggs ', ' pepperidge farms ', " pepperidge farm's ", " arnold ", " velveeta ", " kite hill ", " shelburne farms ",  ]
 
     short = [' of ', ' x ', ' for ', ' each ', ' into ', ' if ', ' we ', ' you ', ' on ', ' but ', ' how ', ' it ', ' yes ', ' no ',
     ' they ', ' are ', ' at ', ' an ', ' to ', ' off ', ' I ', ' their ', ' with ', ' both ', ' g ', ' any ', ' your ', ' what ', ]

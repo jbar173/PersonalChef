@@ -30,10 +30,10 @@ class ApiCalls extends React.Component {
       fResponse: [],
       next: 'first',
       count: null,
+      update: false,
 
       nextCall: false,
       stopwatchRunning: false,
-      stopwatchTriggered: false,
       noMorePages: false,
       call: 0,
       startRefine: false,
@@ -50,7 +50,6 @@ class ApiCalls extends React.Component {
     this.triggerNextCall = this.triggerNextCall.bind(this)
     this.apiCall = this.apiCall.bind(this)
 
-    this.triggerStopwatch = this.triggerStopwatch.bind(this)
     this.sixSecondStopwatch = this.sixSecondStopwatch.bind(this)
 
     this.finishedHandler = this.finishedHandler.bind(this)
@@ -58,7 +57,6 @@ class ApiCalls extends React.Component {
     this.deleteAKeyword = this.deleteAKeyword.bind(this)
 
     this.setStates = this.setStates.bind(this)
-    this.tryAgain = this.tryAgain.bind(this)
   };
 
   componentDidMount(){
@@ -120,10 +118,8 @@ class ApiCalls extends React.Component {
       console.log("API d")
       this.deleteAKeyword()
     }
-    if(this.state.stopwatchRunning && this.state.stopwatchTriggered === false){
-      this.triggerStopwatch()
-    }
-    if(this.state.stopwatchTriggered){
+    if(this.state.stopwatchRunning){
+      console.log("***this.state.next: " + this.state.next)
       this.sixSecondStopwatch()
     }
   }
@@ -145,32 +141,6 @@ class ApiCalls extends React.Component {
     }
   }
 
-  triggerStopwatch(){
-    this.setState({
-      stopwatchTriggered: true
-    })
-  }
-
-  triggerNextCall(){
-    console.log("API g")
-    console.log("THIS.STATE.COUNT: " + this.state.count)
-    if(this.state.count === 0){
-      console.log("API h")
-      this.setState({
-        nextCall: false,
-        noMorePages: true,
-        foundResults: false
-      })
-    }else{
-      console.log("API i")
-      this.apiCall()
-      console.log("API j")
-      this.setState({
-        nextCall: false,
-        foundResults: true
-      })
-    }
-  }
 
 // Takes new keywords list in from < AlterKeywords /> component,
 //  triggers new API call (with reduced keyword list):
@@ -212,6 +182,28 @@ class ApiCalls extends React.Component {
       }
   }
 
+
+  triggerNextCall(){
+    console.log("API g")
+    console.log("THIS.STATE.COUNT: " + this.state.count)
+    if(this.state.count === 0){
+      console.log("API h")
+      this.setState({
+        nextCall: false,
+        noMorePages: true,
+        foundResults: false
+      })
+    }else{
+      console.log("API i")
+      this.apiCall()
+      // console.log("API j")
+      // this.setState({
+      //   nextCall: false,
+      //   foundResults: true
+      // })
+    }
+  }
+
 // Calls first api 10 times (allowance is 10 hits per minute),
 //  collects 200 recipe apis (if that many are returned):
   apiCall(){
@@ -237,9 +229,10 @@ class ApiCalls extends React.Component {
     }else{
 
         try{
-          var next_call = this.state.next
-          var url = next_call['next']['href']
+          var x = this.state.next
+          var url = x['next']['href']
           console.log("next url: " + url)
+          console.log("!!!!!!!!!!!!! NEXT: " + x)
 
         }catch{
           console.log("No next page")
@@ -257,7 +250,7 @@ class ApiCalls extends React.Component {
     console.log("2. num: " + num)
 
     fetch(url, { signal: this.apiAbortController.signal } )
-    .then(response => response.json())
+    .then(response => response.json())  ////////////////////////// fetching a html response sometimes??
     .then(data => {
         console.log("data['from']: " + data['from'])
         this.setState({
@@ -268,8 +261,7 @@ class ApiCalls extends React.Component {
           count: data['count'],
           next: data['_links'],
           call: num,
-          startRefine: true,
-          stopwatchRunning: true
+          startRefine: true
         })
      })
     .catch(error => {
@@ -277,31 +269,14 @@ class ApiCalls extends React.Component {
       console.log("NUM: " + num)
       // console.log("Response: " + response)
       console.log("If undefined here don't overwrite 'next'") /////////////////////  Fix this
-      this.setState({
-        apiError: true,
-      })
      });
     console.log("COUNT: " + this.state.count)
     // this.sixSecondStopwatch()
-    console.log("API k")
-    // this.setState({
-    //   // update: true,
-    //   // nextCall: false,
-    //   stopwatchRunning: true
-    // })
-  }
-
-  tryAgain(){
-    console.log("TRY AGAIN function")
-    console.log("this.state.foundResults: " + this.state.foundResults)
-    var ings = this.state.initialData.ingredients
+    // console.log("API k")
     this.setState({
-      next: 'first',
-      reduceKeywords: true,
+      update: true,
       nextCall: false,
-      searchKeywords: ings,
-      omittedKeywords: [],
-      apiError: false,
+      stopwatchRunning: true
     })
   }
 
@@ -315,9 +290,9 @@ class ApiCalls extends React.Component {
         console.log("6 second stopwatch finished")
         cmponent.setState({
           nextCall: true,
-          stopwatchTriggered: false,
           stopwatchRunning: false,
-          foundResults: true
+          foundResults: true,
+          update: false
         })
       }, 6000)
     console.log("API l")
@@ -396,21 +371,10 @@ class ApiCalls extends React.Component {
   getRelevantRecipes(relevant_recipes){
     console.log("filtered initial")
     console.log("relevant_recipes.length: " + relevant_recipes.length)
+    // console.log("relevant recipes: " + relevant_recipes)
     var relevant = this.state.refinedRecipeList
-    // Checks that new recipe links aren't already in refinedRecipeList (from previous reponse pages):
-    for(recipe in relevant_recipes){
-        console.log("recipe[1]: " + recipe[1])
-        for(result in relevant){
-            console.log("result[1]: " + result[1])
-            if(recipe[1] === result[1]){
-                console.log("Link already listed")
-                var i = relevant_recipes.indexOf(recipe)
-                relevant_recipes.splice(i,1)
-            }
-        }
-    }
-    // Pushes new relevant recipes to existing refinedRecipeList:
     for(x in relevant_recipes){
+      // console.log("x in relevant recipes: " + relevant_recipes[x])
       relevant.push(relevant_recipes[x])
     }
     if(relevant_recipes.length === 0){
@@ -464,14 +428,10 @@ class ApiCalls extends React.Component {
                       <ScrollView>
                           <View>
                                  <Text>Sorry, there was an error!</Text>
-
-                                 <Pressable style={{justifyContent:"center"}} onPress={this.tryAgain}>
-                                      <Text style={styles.greenButton}>try again</Text>
-                                 </Pressable>
                                  <Link accessible={true} accessibilityLabel= "An error occurred"
                                    accessibilityHint="Click button to report the error and try again"
                                    to="/" accessibilityRole="button" underlayColor="transparent">
-                                     <Text style={styles.greenButton}>Report and start again</Text>
+                                     <Text style={styles.greenButton}>Report and try again</Text>
                                  </Link>
                           </View>
                         </ScrollView>

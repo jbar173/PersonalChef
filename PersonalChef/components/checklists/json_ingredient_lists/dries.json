@@ -1,6 +1,7 @@
 {
     "name": "dry_ingredients",
-    "ingredients": [ "brioche burger buns", "cornflour", "panko breadcrumbs", "dried rice vermicelli noodles", "brown sugar", "flour", "sugar", "pasta", "baking powder", "baking soda",
-      "pecans",
+    "ingredients": [ "almonds", "baking powder", "baking soda", "bread", "bread bun", "breadcrumbs", "brown sugar", "cheese puffs", "cashew nuts", "cornflour", "cornmeal", "cornstarch", "couscous",
+      "crackers", "digestive biscuits", "dried apricots", "dried figs", "dried rice vermicelli noodles", "filo pastry", "flour", "gnocchi", "hazelnuts", "pasta", "peanuts", "pecans", "pine nuts",
+      "pistachios", "pita bread", "polenta", "poppy seeds", "pretzel", "puff pastry", "pumpkin seeds", "raisins", "rice", "tortillas", "semolina", "sesame seeds", "sugar", "waffles", "walnuts", "yeast",
     ]
 }
