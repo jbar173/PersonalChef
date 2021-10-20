@@ -6,7 +6,8 @@
       "sweet potato","chili pepper","milk chocolate","white chocolate","dark chocolate","coconut milk","soy milk","almond milk","white wine","cider","egg","bell pepper","courgette","coriander","rocket",
       "filo pastry","tomato ketchup","cashew nuts","whisky","sun-dried tomatoes","spring onion","shallot","beef stock","vegetable stock","lamb stock","chicken stock","fontina","gouda","emmental","gruyere",
       "provolone","cheddar","cheese slice","icing sugar","parmesan","lemon juice","pasta","muenster","taleggio","brie","camembert","canola oil","grapeseed oil","sunflower oil", "vegetable oil","pecorino",
-      "cornmeal","polenta","lasagne sheets","havarti","jarlsberg","manchego","mozzarella","comte","gorgonzola","blue cheese","ricotta","cottage cheese","avocado","guacamole",
+      "cornmeal","polenta","lasagne sheets","havarti","jarlsberg","manchego","mozzarella","comte","gorgonzola","blue cheese","ricotta","cottage cheese","avocado","guacamole","mascarpone","cream cheese",
+      "raclette", "oka", "port salut", "chipotle marinade", "vanilla pod","mini pie crusts","canned cheese soup","canned pumpkin puree","chicken soup",
 
 
 
@@ -15,6 +16,92 @@
     "ingredients": [
 
 
+          {
+              "name": "chicken soup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "canned chicken soup",
+                },
+                {
+                  "word": "can chicken soup",
+                },
+              ],
+          },
+          {
+              "name": "canned pumpkin puree",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "can pure pumpkin puree",
+                },
+              ],
+          },
+          {
+              "name": "canned cheese soup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "can condensed cheese soup",
+                },
+              ],
+          },
+          {
+              "name": "mini pie crusts",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mini graham cracker pie crusts",
+                },
+              ],
+          },
+          {
+              "name": "vanilla pod",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vanilla bean seeds",
+                },
+                {
+                  "word": "vanilla bean",
+                },
+              ],
+          },
+          {
+              "name": "chipotle marinade",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chipotle pepper marinade",
+                },
+              ],
+          },
+          {
+              "name": "cream cheese",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mascarpone",
+                },
+              ],
+          },
+          {
+              "name": "mascarpone",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cream cheese",
+                },
+              ],
+          },
           {
               "name": "guacamole",
               "exclude": [
@@ -128,8 +215,12 @@
                 {
                   "word": "stone ground grits",
                 },
+                {
+                  "word": "white corn grits",
+                },
               ],
           },
+
           {
               "name": "cornmeal",
               "exclude": [
@@ -143,6 +234,12 @@
                 },
                 {
                   "word": "stone ground grits",
+                },
+                {
+                  "word": "white corn grits",
+                },
+                {
+                  "word": "polenta",
                 },
               ],
           },
@@ -218,6 +315,9 @@
                 "word": "cavatappi",
               },
               {
+                "word": "cellentani",
+              },
+              {
                 "word": "spaghetti",
               },
               {
@@ -227,7 +327,13 @@
                 "word": "ziti",
               },
               {
+                "word": "gemelli",
+              },
+              {
                 "word": "lasagne noodles",
+              },
+              {
+                "word": "rotini",
               },
             ],
           },
@@ -343,6 +449,21 @@
               {
                 "word": "american cheese",
               },
+              {
+                "word": "velveeta",
+              },
+              {
+                "word": "processed cheese",
+              },
+              {
+                "word": "kraft cheddar",
+              },
+              {
+                "word": "kraft cheese",
+              },
+              {
+                "word": "kraft sharp cheddar cheese",
+              },
             ],
           },
           {
@@ -434,6 +555,9 @@
                 "word": "cojack",
               },
               {
+                "word": "jack cheese",
+              },
+              {
                 "word": "manchego",
               },
             ],
@@ -463,6 +587,48 @@
               },
               {
                 "word": "manchego",
+              },
+              {
+                "word": "swiss cheese",
+              },
+              {
+                "word": "raclette",
+              },
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "port salut",
+              },
+              {
+                "word": "gruyere",
+              },
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "edam",
+              },
+              {
+                "word": "oka",
+              },
+              {
+                "word": "fontina",
+              },
+              {
+                "word": "provolone",
+              },
+              {
+                "word": "jarlsberg",
+              },
+              {
+                "word": "comte",
+              },
+              {
+                "word": "pleasant ridge",
+              },
+              {
+                "word": "appenzeller",
               },
             ],
           },
@@ -518,6 +684,9 @@
                 "word": "paneer",
               },
               {
+                "word": "kasseri",
+              },
+              {
                 "word": "cottage cheese",
               },
             ],
@@ -544,6 +713,111 @@
               },
               {
                 "word": "swiss cheese",
+              },
+            ],
+          },
+          {
+            "name": "oka",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "raclette",
+              },
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "port salut",
+              },
+              {
+                "word": "gruyere",
+              },
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "swiss cheese",
+              },
+              {
+                "word": "edam",
+              },
+            ],
+          },
+          {
+            "name": "port salut",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "raclette",
+              },
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "oka",
+              },
+              {
+                "word": "gruyere",
+              },
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "swiss cheese",
+              },
+              {
+                "word": "edam",
+              },
+            ],
+          },
+          {
+            "name": "raclette",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fontina",
+              },
+              {
+                "word": "emmental",
+              },
+              {
+                "word": "emmentaler",
+              },
+              {
+                "word": "gouda",
+              },
+              {
+                "word": "provolone",
+              },
+              {
+                "word": "swiss cheese",
+              },
+              {
+                "word": "jarlsberg",
+              },
+              {
+                "word": "comte",
+              },
+              {
+                "word": "havarti",
+              },
+              {
+                "word": "pleasant ridge",
+              },
+              {
+                "word": "appenzeller",
+              },
+              {
+                "word": "gruyere",
+              },
+              {
+                "word": "oka",
+              },
+              {
+                "word": "port salut",
               },
             ],
           },
@@ -578,6 +852,30 @@
               },
               {
                 "word": "havarti",
+              },
+              {
+                "word": "pleasant ridge",
+              },
+              {
+                "word": "appenzeller",
+              },
+              {
+                "word": "raclette",
+              },
+              {
+                "word": "oka",
+              },
+              {
+                "word": "port salut",
+              },
+              {
+                "word": "l'Étivaz",
+              },
+              {
+                "word": "l'etivaz",
+              },
+              {
+                "word": "etivaz",
               },
             ],
           },
@@ -641,6 +939,12 @@
               {
                 "word": "jarlsberg",
               },
+              {
+                "word": "appenzeller",
+              },
+              {
+                "word": "raclette",
+              },
             ],
           },
           {
@@ -668,6 +972,12 @@
               },
               {
                 "word": "havarti",
+              },
+              {
+                "word": "oka",
+              },
+              {
+                "word": "port salut",
               },
             ],
           },
@@ -699,6 +1009,12 @@
               },
               {
                 "word": "brie",
+              },
+              {
+                "word": "swiss cheese",
+              },
+              {
+                "word": "vacherin",
               },
             ],
           },
@@ -1487,6 +1803,9 @@
               {
                 "word": "piquillo",
               },
+              {
+                "word": "roasted red pepper",
+              },
             ],
           },
           {
@@ -1529,13 +1848,19 @@
                 "word": "habanero",
               },
               {
-                "word": "cayenne pepper",
+                "word": "cayenne",
               },
               {
                 "word": "pimiento",
               },
               {
                 "word": "pimento",
+              },
+              {
+                "word": "piquillo",
+              },
+              {
+                "word": "roasted red pepper",
               },
             ],
             "include": [
