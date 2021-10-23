@@ -7,8 +7,8 @@ import { WetIngredientsChecklist } from "./checklists/wet.js";
 import { FruitAndVegChecklist } from "./checklists/fruit_veg.js";
 import { HerbsAndSpicesChecklist } from "./checklists/herbs_spices.js";
 import { TinnedChecklist } from "./checklists/tinned.js";
-import { AlcoholChecklist } from "./checklists/alcohol.js"
-
+import { AlcoholChecklist } from "./checklists/alcohol.js";
+import { CheeseChecklist } from "./checklists/cheese.js";
 
 
 class DryIngredientsList extends React.Component {
@@ -68,7 +68,7 @@ class DryIngredientsList extends React.Component {
    }
 
    updateIngredientsRoughHandler(){
-     var new_key = "dries"
+     var new_key = "Dry Ingredients"
      var final_list = this.state.ingredients_rough
      for([key,value] of Object.entries(final_list)){
         if(key === new_key){
@@ -190,7 +190,7 @@ class WetIngredientsList extends React.Component {
   }
 
   updateIngredientsRoughHandler(){
-    var new_key = "wets"
+    var new_key = "Wet Ingredients"
     var final_list = this.state.ingredients_rough
     for([key,value] of Object.entries(final_list)){
        if(key === new_key){
@@ -293,7 +293,7 @@ class FruitAndVegList extends React.Component {
   }
 
   updateIngredientsRoughHandler(){
-    var new_key = "fruits"
+    var new_key = "Fruit and Vegetables"
     var final_list = this.state.ingredients_rough
     for([key,value] of Object.entries(final_list)){
        if(key === new_key){
@@ -400,7 +400,7 @@ class HerbsAndSpicesList extends React.Component {
     }
 
     updateIngredientsRoughHandler(){
-      var new_key = "herbs"
+      var new_key = "Herbs and Spices"
       var final_list = this.state.ingredients_rough
       for([key,value] of Object.entries(final_list)){
          if(key === new_key){
@@ -473,7 +473,7 @@ class TinnedGoodsList extends React.Component {
   };
 
   componentDidMount(){
-    console.log("tinned mounted")
+    console.log("tins mounted")
     var initial_data = this.props.location.state.initial_data
     var either = this.props.location.state.either
     var ingreds = this.props.location.state.ingreds
@@ -505,7 +505,7 @@ class TinnedGoodsList extends React.Component {
   }
 
   updateIngredientsRoughHandler(){
-    var new_key = "tins"
+    var new_key = "Tinned Ingredients"
     var final_list = this.state.ingredients_rough
     for([key,value] of Object.entries(final_list)){
        if(key === new_key){
@@ -535,7 +535,7 @@ class TinnedGoodsList extends React.Component {
 
                 <TinnedChecklist updateListHandler={this.updateListHandler} />
 
-                <Link style={{marginTop:30}} to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                <Link style={{marginTop:30}} to={{pathname:"/both-cheese/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
                     <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
                      style={styles.blueButton}>Next</Text>
@@ -551,6 +551,112 @@ class TinnedGoodsList extends React.Component {
       );
    }
 };
+
+
+class CheeseList extends React.Component {
+    constructor(props){
+    super(props);
+    this.state = {
+      userId: 12345,
+      initialData: {
+        "time":'0',
+        "ingredients":[],
+        "ingredientCount":0,
+        "type":'',
+      },
+      both:false,
+      ingredients_rough: {},
+      cheese: [],
+      cheese_updated: false,
+    }
+    this.componentDidMount = this.componentDidMount.bind(this)
+    this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
+    this.updateListHandler = this.updateListHandler.bind(this)
+    this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
+  };
+
+  componentDidMount(){
+    console.log("tinned mounted")
+    var initial_data = this.props.location.state.initial_data
+    var either = this.props.location.state.either
+    var ingreds = this.props.location.state.ingreds
+    this.setState({
+      initialData:initial_data,
+      ingredients_rough:ingreds,
+      both:either
+    })
+  }
+
+  componentWillUnmount(){
+    console.log("cheese unmounted")
+  }
+
+  componentDidUpdate(){
+    console.log("cheese updated")
+    if(this.state.cheese_updated === true){
+      console.log("updating ingredients_rough")
+      this.updateIngredientsRoughHandler()
+    }
+  }
+
+  updateListHandler(confirmed_list){
+    console.log("update list handler in_both.js cheese")
+    this.setState({
+      cheese: confirmed_list,
+      cheese_updated: true
+    })
+  }
+
+  updateIngredientsRoughHandler(){
+    var new_key = "Cheese"
+    var final_list = this.state.ingredients_rough
+    for([key,value] of Object.entries(final_list)){
+       if(key === new_key){
+           console.log(new_key + " replaced")
+           delete final_list[key]
+         }
+    }
+    final_list[new_key] = this.state.cheese
+    this.setState({
+      ingredients_rough: final_list,
+      cheese_updated: false
+    })
+  }
+
+
+  render(){
+    var initial = this.state.initialData
+    var either = this.state.both
+    var ingreds = this.state.ingredients_rough
+
+      return(
+
+        <SafeAreaView style={styles.container}>
+          <ScrollView>
+                <Text accessible={true} accessibilityLabel="Cheese checklist"
+                  accessibilityRole="text" style={styles.mainTitle}>Cheese checklist</Text>
+
+                <CheeseChecklist updateListHandler={this.updateListHandler} />
+
+                <Link style={{marginTop:30}} to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                 underlayColor="transparent">
+                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                     style={styles.blueButton}>Next</Text>
+                </Link>
+                <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                 underlayColor="transparent">
+                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                     style={styles.blueButton}>Back</Text>
+                </Link>
+          </ScrollView>
+        </SafeAreaView>
+
+      );
+   }
+};
+
 
 
 class AlcoholList extends React.Component {
@@ -647,7 +753,7 @@ class AlcoholList extends React.Component {
                          style={styles.blueButton}>Next</Text>
                     </Link>
 
-                    <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                    <Link to={{pathname:"/both-cheese/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                      underlayColor="transparent">
                         <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                          style={styles.blueButton}>Back</Text>
@@ -701,4 +807,4 @@ const styles = StyleSheet.create({
 });
 
 
-export { DryIngredientsList, WetIngredientsList, FruitAndVegList, HerbsAndSpicesList, TinnedGoodsList, AlcoholList } ;
+export { DryIngredientsList, WetIngredientsList, FruitAndVegList, HerbsAndSpicesList, TinnedGoodsList, AlcoholList, CheeseList, } ;

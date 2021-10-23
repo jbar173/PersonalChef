@@ -1,9 +1,15 @@
 {
     "name": "twenty-eight",
     "children": [
+
         {
-            "name": "olive oil",
+            "name": "cheese slice",
+            "count": 28
+        },
+        {
+            "name": "thyme",
             "count": 28
         }
+
     ]
 }

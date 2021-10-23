@@ -4,6 +4,7 @@ import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { AlterKeywords } from './AlterKeywords.js';
 import { RefineResults } from './RefineResults.js';
 import { SearchingPage, FilteringAnimation } from "./Animations.js";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 class ApiCalls extends React.Component {
@@ -11,6 +12,7 @@ class ApiCalls extends React.Component {
     super(props);
     this.state = {
       userId: 12345,
+      savedRecipes: [],
       initialData: {
         "time": '0',
         "ingredients": [],
@@ -42,6 +44,8 @@ class ApiCalls extends React.Component {
       finished: false
     },
     this.apiAbortController = new AbortController()
+    this.getDeviceData = this.getDeviceData.bind(this)
+    this.getData = this.getData.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
     this.componentWillUnmount = this.componentWillUnmount.bind(this)
@@ -59,7 +63,45 @@ class ApiCalls extends React.Component {
 
     this.setStates = this.setStates.bind(this)
     this.tryAgain = this.tryAgain.bind(this)
+
+    this.saveDeviceData = this.saveDeviceData.bind(this)
+    this.saveData = this.saveData.bind(this)
+    this.saveRecipe = this.saveRecipe.bind(this)
   };
+
+  getDeviceData = async (key) => {
+       console.log("Getting savedRecipes")
+       try {
+            console.log("try")
+            var data = await AsyncStorage.getItem(key)
+            if(data !== null) {
+                var value = JSON.parse(data)
+                console.log("value: " + value)
+            }else{
+                var value = 0
+            }
+            return value;
+        }
+        catch(e) {
+            console.log("ApiCalls: Error reading data for savedRecipes in getDeviceData: " + e);
+        }
+  }
+
+  getData(key){
+      try {
+          var saved_recipes = this.getDeviceData(key)
+          .then(saved_recipes => {
+              this.setState({
+                savedRecipes: saved_recipes
+              })
+          })
+          console.log("RETRIEVED")
+          return saved_recipes
+      } catch (e) {
+          console.log("ConfirmList: Error getting data in getData: " + e)
+          return 0
+      }
+  }
 
   componentDidMount(){
     console.log("API COMPONENT MOUNTED")
@@ -73,6 +115,8 @@ class ApiCalls extends React.Component {
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
     var ingredients_alone = initial_data.ingredients
+    var saved_recipes = '@saved-recipes'
+    this.getData(saved_recipes)
     this.setState({
       initialData: initial_data,
       searchKeywords: ingredients_alone,
@@ -126,6 +170,10 @@ class ApiCalls extends React.Component {
     if(this.state.stopwatchTriggered){
       this.sixSecondStopwatch()
     }
+    if(this.state.saved){
+      console.log("Saved is TRUE")
+      this.setStates('saved')
+    }
   }
 
   setStates(option=0){
@@ -134,6 +182,11 @@ class ApiCalls extends React.Component {
       this.setState({
         apiError: true,
         nextCall: false
+      })
+    }
+    else if(option === 'saved'){
+      this.setState({
+        saved: false
       })
     }
     else{
@@ -176,6 +229,11 @@ class ApiCalls extends React.Component {
 //  triggers new API call (with reduced keyword list):
    keywordsAlteredHandler(new_keywords,status){
       console.log("ingredients altered handler triggered")
+      var saved_recipes = this.state.savedRecipes
+      if(saved_recipes === undefined){
+        saved_recipes = []
+      }
+
       var original_ingredients = this.state.initialData.ingredients
       for(x in new_keywords){
         original_ingredients.push(new_keywords[x])
@@ -187,6 +245,7 @@ class ApiCalls extends React.Component {
       if(status){
         console.log("status = true")
         this.setState({
+          savedRecipes: saved_recipes,
           initialData: {
             ...this.state.initialData,
             ingredients: original_ingredients,
@@ -199,6 +258,7 @@ class ApiCalls extends React.Component {
       }else{
         console.log("status = false")
         this.setState({
+          savedRecipes: saved_recipes,
           initialData: {
             ...this.state.initialData,
             ingredients: original_ingredients,
@@ -210,6 +270,52 @@ class ApiCalls extends React.Component {
         })
         console.log("API f")
       }
+  }
+
+
+  saveDeviceData = async ( key, data ) => {
+        console.log("ApiCalls - saving recipe to device")
+        try {
+            console.log("ApiCalls - TRY")
+            await AsyncStorage.setItem(key, JSON.stringify(data))
+        }
+        catch (e) {
+            console.log(`ApiCalls: Error in saveDeviceData, saving data for key ${key}: `, data);
+            throw e;
+        }
+  }
+
+  saveData(key,data){
+       try {
+           var res = this.saveDeviceData(key,data)
+           .then(res => {
+             this.setState({
+               saved: true,
+               savedRecipes: data
+             })
+           })
+           console.log("RECIPE SAVED")
+       } catch (e) {
+           console.log("ApiCalls: Error saving in saveData: " + e)
+       }
+  }
+
+  saveRecipe(recipe){
+    console.log("saveRecipe function")
+    console.log("recipe[0]: " + recipe[0])
+    var saved_list = []
+    var already_saved = this.state.savedRecipes
+    if(already_saved !== undefined){
+      for(item in already_saved){
+        saved_list.push(already_saved[item])
+      }
+    }
+    for(item in recipe){
+      saved_list.push(recipe[item])
+    }
+    // already_saved.push(recipe)
+    var recipe_key = '@saved-recipes'
+    this.saveData(recipe_key, saved_list)
   }
 
 // Calls first api 10 times (allowance is 10 hits per minute),
@@ -397,17 +503,24 @@ class ApiCalls extends React.Component {
     console.log("filtered initial")
     console.log("relevant_recipes.length: " + relevant_recipes.length)
     var relevant = this.state.refinedRecipeList
+    var indexes_to_splice = []
     // Checks that new recipe links aren't already in refinedRecipeList (from previous reponse pages):
     for(recipe in relevant_recipes){
         console.log("recipe[1]: " + recipe[1])
         for(result in relevant){
-            console.log("result[1]: " + result[1])
-            if(recipe[1] === result[1]){
+            console.log("relevant[result][1]: " + relevant[result][1])
+            console.log("relevant_recipes[recipe][1]: " + relevant_recipes[recipe][1])
+            if(relevant_recipes[recipe][1] === relevant[result][1]){
                 console.log("Link already listed")
                 var i = relevant_recipes.indexOf(recipe)
-                relevant_recipes.splice(i,1)
+                indexes_to_splice.push(i)
             }
         }
+    }
+    if(indexes_to_splice.length>0){
+      for(i in indexes_to_splice){
+        relevant_recipes.splice(i,1)
+      }
     }
     // Pushes new relevant recipes to existing refinedRecipeList:
     for(x in relevant_recipes){
@@ -446,6 +559,7 @@ class ApiCalls extends React.Component {
     }
     var start_refine = this.state.startRefine
     var final_results = this.state.finalResults
+    var self = this
 
 
     return(
@@ -518,6 +632,11 @@ class ApiCalls extends React.Component {
                                                                    style={styles.greenButton}>Go to recipe website</Text>
                                                                </Pressable>
 
+                                                               <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item)}>
+                                                                  <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                    accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
+                                                               </Pressable>
+
                                                       </View>
                                                 </View>
                                                )
@@ -553,6 +672,11 @@ class ApiCalls extends React.Component {
                                                                  <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
                                                                    <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
                                                                      style={styles.greenButton}>Go to recipe website</Text>
+                                                                 </Pressable>
+
+                                                                 <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item)}>
+                                                                    <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                      accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
                                                                  </Pressable>
 
                                                         </View>

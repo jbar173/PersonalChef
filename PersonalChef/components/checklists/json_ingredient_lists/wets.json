@@ -1,9 +1,9 @@
 {
     "name": "wets_ingredients",
-    "ingredients": [ "alfredo sauce", "almond milk", "balsamic vinegar", "bavarian smoked cheese", "beef stock", "blue cheese", "butter", "buttermilk", "brie ", "camembert", "cheddar cheese", "chicken stock", "chutney", "cooking oil", "cooking spray",
-      "cottage cheese", "cream", "cream cheese","egg", "emmental cheese", "feta cheese", "fish sauce", "gelatin", "goats cheese", "gorgonzola cheese", "gouda cheese", "grapeseed oil", "greek feta", "gruyere cheese", "guacamole",
-      "halloumi", "honey", "horseradish", "kimchi", "lamb stock", "maple syrup", "margarine", "mascarpone cheese", "mayonnaise", "milk", "mozzarella cheese", "mustard", "nutella", "olive oil", "parmesan", "peanut oil", "pecorino cheese",
-      "pesto", "quince paste", "raclette cheese", "ricotta cheese", "salsa", "soda", "sour cream", "soy sauce", "sriracha chilli sauce", "sweet chilli sauce", "sunflower oil", "tabasco", "tartar sauce", "tomato ketchup",
-      "tomato paste", "truffle oil", "vanilla extract","vegetable oil", "vegetable stock", "worcestershire sauce", "yoghurt",
+    "ingredients": [ "almond milk", "balsamic vinegar", "beef stock", "butter", "buttermilk", "chicken stock", "chutney", "cooking oil", "cooking spray",
+      "cream","egg", "fish sauce", "gelatin", "grapeseed oil", "greek feta", "guacamole", "honey", "horseradish", "kimchi", "lamb stock", "maple syrup",
+      "margarine", "mayonnaise", "milk", "mustard", "nutella", "olive oil", "peanut oil", "pesto", "quince paste", "salsa", "soda", "sour cream", "soy sauce",
+      "sriracha chilli sauce", "sweet chilli sauce", "sunflower oil", "tabasco", "tartar sauce", "tomato ketchup", "tomato paste", "truffle oil", "vanilla extract",
+      "vegetable oil", "vegetable stock", "worcestershire sauce", "yoghurt",
     ]
 }

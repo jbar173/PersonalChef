@@ -1,16 +1,9 @@
 {
     "name": "seventeen",
     "children": [
+
         {
-            "name": "garlic minced",
-            "count": 17
-        },
-        {
-            "name": "salt and ground pepper",
-            "count": 17
-        },
-        {
-            "name": "vanilla extract",
+            "name": "cooking spray",
             "count": 17
         }
     ]

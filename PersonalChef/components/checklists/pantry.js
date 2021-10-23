@@ -27,6 +27,7 @@ class PantryCheckList extends React.Component {
 
       this.populateInitialDict = this.populateInitialDict.bind(this)
       this.selectOrDeselect = this.selectOrDeselect.bind(this)
+      this.getData = this.getData.bind(this)
       this.displayFavourites = this.displayFavourites.bind(this)
       this.confirmedHandler = this.confirmedHandler.bind(this)
       this.favouritesWasEmpty = this.favouritesWasEmpty.bind(this)

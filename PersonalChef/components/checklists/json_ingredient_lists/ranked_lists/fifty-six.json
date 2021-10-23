@@ -1,13 +1,6 @@
 {
     "name": "fifty-six",
     "children": [
-        {
-            "name": "cheddar cheese",
-            "count": 56
-        },
-        {
-            "name": "eggs",
-            "count": 56
-        },
+
     ]
 }

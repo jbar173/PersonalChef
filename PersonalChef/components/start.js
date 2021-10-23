@@ -10,12 +10,45 @@ class HomePage extends React.Component {
       super(props);
       this.state = {
         userId: 12345,
+        savedRecipeList: [],
       }
       this.componentDidMount = this.componentDidMount.bind(this)
+      this.getDeviceData = this.getDeviceData.bind(this)
   };
 
   componentDidMount(){
     console.log("Homepage mounted")
+    var recipes_key = '@saved-recipes'
+    var recipes = this.getDeviceData(recipes_key)
+    .then(recipes => {
+      this.setState({
+        savedRecipeList: recipes,
+      })
+    })
+  }
+
+  componentDidUpdate(){
+    console.log("Homepage updated")
+    console.log("this.state.savedRecipeList: " + this.state.savedRecipeList)
+  }
+
+  getDeviceData = async (key) => {
+       console.log("getting device data")
+       try {
+            console.log("try")
+            var data = await AsyncStorage.getItem(key)
+            if(data !== null) {
+                var value = JSON.parse(data)
+                console.log("value: " + value)
+            }else{
+                var value = "@saved-recipes was null"
+                console.log("value: " + value)
+            }
+            return value;
+        }
+        catch(e) {
+            console.log("SavedRecipesPage: Error reading data for saved recipes in getDeviceData: " + e);
+        }
   }
 
   render(){
@@ -31,6 +64,15 @@ class HomePage extends React.Component {
                    <Text style={styles.greenButton}>Find a recipe for your ingredients</Text>
                 </Link>
             </TouchableOpacity>
+
+            { this.state.savedRecipeList !== "@saved-recipes was null" &&
+              <TouchableOpacity activeOpacity={1} underlayColor="transparent">
+                  <Link accessible={true} accessibilityLabel="Go to your saved recipes"
+                    accessibilityRole="button" to="/saved-recipes/" underlayColor="transparent" >
+                     <Text style={styles.greenButton}>Go to your saved recipes</Text>
+                  </Link>
+              </TouchableOpacity>
+            }
 
         </View>
       );

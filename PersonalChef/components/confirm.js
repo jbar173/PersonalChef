@@ -138,7 +138,6 @@ class ConfirmList extends React.Component {
       updateFaves: false,
       readyToRedirect: false
     })
-    // cancelablePromise.cancel()
     this.abortController.abort()
   }
 

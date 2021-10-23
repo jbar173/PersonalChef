@@ -1,4 +1,9 @@
 {
     "name": "forty",
-    "children": []
+    "children": [
+      {
+          "name": "breadcrumbs",
+          "count": 40
+      }
+    ]
 }

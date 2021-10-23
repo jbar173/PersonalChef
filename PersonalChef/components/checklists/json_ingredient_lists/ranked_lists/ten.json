@@ -2,27 +2,19 @@
     "name": "ten",
     "children": [
         {
-            "name": "confectioners' sugar",
+            "name": "asiago",
             "count": 10
         },
         {
-            "name": "parmesan",
+            "name": "pepper jack",
             "count": 10
         },
         {
-            "name": "parmigiano-reggiano cheese",
+            "name": "chives",
             "count": 10
         },
         {
-            "name": "extra-sharp cheddar cheese",
-            "count": 10
-        },
-        {
-            "name": "garlic powder",
-            "count": 10
-        },
-        {
-            "name": "cooking spray",
+            "name": "cracker",
             "count": 10
         }
     ]

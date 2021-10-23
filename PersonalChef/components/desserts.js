@@ -79,7 +79,7 @@ class ConfectionaryIngredientsList extends React.Component {
   }
 
   updateIngredientsRoughHandler(){
-      var new_key = "sweets"
+      var new_key = "Confectionary and Sweets"
       var final_list = this.state.ingredients_rough
       for([key,value] of Object.entries(final_list)){
          if(key === new_key){

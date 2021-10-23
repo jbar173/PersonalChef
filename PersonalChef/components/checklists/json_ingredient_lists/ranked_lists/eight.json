@@ -2,19 +2,11 @@
     "name": "eight",
     "children": [
         {
-            "name": "sourdough bread",
+            "name": "mushroom",
             "count": 8
         },
         {
-            "name": "cottage cheese",
-            "count": 8
-        },
-        {
-            "name": "dried oregano",
-            "count": 8
-        },
-        {
-            "name": "puff pastry",
+            "name": "honey",
             "count": 8
         }
     ]

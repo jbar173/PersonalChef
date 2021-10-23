@@ -2,39 +2,15 @@
     "name": "six",
     "children": [
         {
-            "name": "asiago cheese",
+            "name": "cauliflower",
             "count": 6
         },
         {
-            "name": "ricotta cheese",
+            "name": "dill",
             "count": 6
         },
         {
-            "name": "parsley",
-            "count": 6
-        },
-        {
-            "name": "vegetable oil",
-            "count": 6
-        },
-        {
-            "name": "bread",
-            "count": 6
-        },
-        {
-            "name": "cheddar",
-            "count": 6
-        },
-        {
-            "name": "ham",
-            "count": 6
-        },
-        {
-            "name": "mustard",
-            "count": 6
-        },
-        {
-            "name": "lemon juice",
+            "name": "mascarpone",
             "count": 6
         }
     ]

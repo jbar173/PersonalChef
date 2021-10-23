@@ -1,12 +1,9 @@
 {
     "name": "nineteen",
     "children": [
+
         {
-            "name": "gruyere cheese",
-            "count": 19
-        },
-        {
-            "name": "salt and ground black pepper",
+            "name": "oregano",
             "count": 19
         }
     ]

@@ -82,7 +82,7 @@ class MeatIngredientsList extends React.Component {
     }
 
     updateIngredientsRoughHandler(){
-      var new_key = "meat"
+      var new_key = "Meat"
       var final_list = this.state.ingredients_rough
       for([key,value] of Object.entries(final_list)){
          if(key === new_key){
@@ -193,7 +193,7 @@ class FishIngredientsList extends React.Component {
    }
 
    updateIngredientsRoughHandler(){
-     var new_key = "fish"
+     var new_key = "Fish"
      var final_list = this.state.ingredients_rough
      for([key,value] of Object.entries(final_list)){
         if(key === new_key){

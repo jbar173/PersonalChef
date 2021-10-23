@@ -1,16 +1,9 @@
 {
     "name": "fourteen",
     "children": [
+
         {
-            "name": "white wine",
-            "count": 14
-        },
-        {
-            "name": "sour cream",
-            "count": 14
-        },
-        {
-            "name": "extra-virgin olive oil",
+            "name": "puff pastry",
             "count": 14
         }
     ]
