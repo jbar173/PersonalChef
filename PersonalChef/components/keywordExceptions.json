@@ -5,8 +5,9 @@
       "plum","onion","date","lime","grapefruit","fig","pineapple","olives","banana","turnip","lettuce","spinach","beetroot","kale","cabbage","custard","caramel","oats","black tea","sugar","shrimp","rice",
       "sweet potato","chili pepper","milk chocolate","white chocolate","dark chocolate","coconut milk","soy milk","almond milk","white wine","cider","egg","bell pepper","courgette","coriander","rocket",
       "filo pastry","tomato ketchup","cashew nuts","whisky","sun-dried tomatoes","spring onion","shallot","beef stock","vegetable stock","lamb stock","chicken stock","fontina","gouda","emmental","gruyere",
-      "provolone","cheddar","cheese slice","icing sugar","parmesan","lemon juice","pasta","muenster","taleggio","brie","camembert","canola oil","grapeseed oil","sunflower oil", "vegetable oil","pecorino",
+      "provolone","cheddar","cheese slice","icing sugar","parmesan","lemon juice","pasta","muenster","taleggio","brie","camembert","canola oil","grapeseed oil","sunflower oil","pecorino",
       "cornmeal","polenta","lasagne sheets","havarti","jarlsberg","manchego","mozzarella","comte","gorgonzola","blue cheese","ricotta","cottage cheese","avocado","guacamole","goat's cheese","monterey jack",
+      "cooking spray","avocado oil","safflower oil","rice bran oil","canola oil","olive oil","peanut oil","vegetable oil","baking powder","baking soda","flour",
 
 
 
@@ -14,6 +15,329 @@
 
     "ingredients": [
 
+          {
+              "name": "flour",
+              "exclude": [
+                {
+                  "word": "flour tortilla",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "baking powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "baking soda",
+                },
+              ],
+          },
+          {
+              "name": "baking soda",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "baking powder",
+                },
+              ],
+          },
+          {
+              "name": "avocado oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "lard",
+                },
+                {
+                  "word": "cooking spray",
+                },
+                {
+                  "word": "safflower oil",
+                },
+                {
+                  "word": "rice bran oil",
+                },
+                {
+                  "word": "canola oil",
+                },
+                {
+                  "word": "olive oil",
+                },
+                {
+                  "word": "peanut oil",
+                },
+                {
+                  "word": "vegetable oil",
+                },
+              ],
+          },
+          {
+              "name": "safflower oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "lard",
+                },
+                {
+                  "word": "cooking spray",
+                },
+                {
+                  "word": "avocado oil",
+                },
+                {
+                  "word": "rice bran oil",
+                },
+                {
+                  "word": "canola oil",
+                },
+                {
+                  "word": "olive oil",
+                },
+                {
+                  "word": "peanut oil",
+                },
+                {
+                  "word": "vegetable oil",
+                },
+              ],
+          },
+          {
+              "name": "rice bran oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "lard",
+                },
+                {
+                  "word": "cooking spray",
+                },
+                {
+                  "word": "avocado oil",
+                },
+                {
+                  "word": "safflower oil",
+                },
+                {
+                  "word": "canola oil",
+                },
+                {
+                  "word": "olive oil",
+                },
+                {
+                  "word": "peanut oil",
+                },
+                {
+                  "word": "vegetable oil",
+                },
+              ],
+          },
+          {
+              "name": "canola oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "lard",
+                },
+                {
+                  "word": "cooking spray",
+                },
+                {
+                  "word": "avocado oil",
+                },
+                {
+                  "word": "safflower oil",
+                },
+                {
+                  "word": "rice bran oil",
+                },
+                {
+                  "word": "olive oil",
+                },
+                {
+                  "word": "peanut oil",
+                },
+                {
+                  "word": "vegetable oil",
+                },
+              ],
+          },
+          {
+              "name": "peanut oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "lard",
+                },
+                {
+                  "word": "cooking spray",
+                },
+                {
+                  "word": "avocado oil",
+                },
+                {
+                  "word": "safflower oil",
+                },
+                {
+                  "word": "rice bran oil",
+                },
+                {
+                  "word": "olive oil",
+                },
+                {
+                  "word": "canola oil",
+                },
+                {
+                  "word": "vegetable oil",
+                },
+              ],
+          },
+          {
+              "name": "vegetable oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "lard",
+                },
+                {
+                  "word": "cooking spray",
+                },
+                {
+                  "word": "avocado oil",
+                },
+                {
+                  "word": "safflower oil",
+                },
+                {
+                  "word": "rice bran oil",
+                },
+                {
+                  "word": "olive oil",
+                },
+                {
+                  "word": "canola oil",
+                },
+                {
+                  "word": "peanut oil",
+                },
+                {
+                  "word": "sunflower oil",
+                },
+                {
+                  "word": "grapeseed oil",
+                },
+              ],
+          },
+          {
+              "name": "extra virgin olive oil",
+              "exclude": [
+
+              ],
+              "include": [
+                {
+                  "word": "butter",
+                },
+              ],
+          },
+          {
+              "name": "olive oil",
+              "exclude": [
+
+              ],
+              "include": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "lard",
+                },
+                {
+                  "word": "cooking spray",
+                },
+                {
+                  "word": "avocado oil",
+                },
+                {
+                  "word": "safflower oil",
+                },
+                {
+                  "word": "rice bran oil",
+                },
+                {
+                  "word": "vegetable oil",
+                },
+                {
+                  "word": "canola oil",
+                },
+                {
+                  "word": "peanut oil",
+                },
+                {
+                  "word": "oil",
+                },
+              ],
+          },
+          {
+              "name": "cooking spray",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "lard",
+                },
+                {
+                  "word": "olive oil",
+                },
+                {
+                  "word": "avocado oil",
+                },
+                {
+                  "word": "safflower oil",
+                },
+                {
+                  "word": "rice bran oil",
+                },
+                {
+                  "word": "vegetable oil",
+                },
+                {
+                  "word": "canola oil",
+                },
+                {
+                  "word": "peanut oil",
+                },
+              ],
+          },
           {
               "name": "goat's cheese",
               "exclude": [
@@ -1793,22 +2117,6 @@
             ],
           },
           {
-            "name": "vegetable oil",
-            "exclude": [
-             ],
-            "include": [
-              {
-                "word": "grapeseed oil",
-              },
-              {
-                "word": "canola oil",
-              },
-              {
-                "word": "sunflower oil",
-              },
-            ],
-          },
-          {
             "name": "sunflower oil",
             "exclude": [
              ],
@@ -1862,7 +2170,9 @@
               },
             ],
             "include": [
-
+              {
+                "word": "margarine",
+              },
             ],
           },
           {
@@ -2069,7 +2379,9 @@
               },
             ],
             "include": [
-
+              {
+                "word": "tomatoes",
+              },
             ],
           },
           {

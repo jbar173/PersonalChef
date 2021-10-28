@@ -508,8 +508,8 @@ class ApiCalls extends React.Component {
     for(recipe in relevant_recipes){
         console.log("recipe[1]: " + recipe[1])
         for(result in relevant){
-            console.log("relevant[result][1]: " + relevant[result][1])
-            console.log("relevant_recipes[recipe][1]: " + relevant_recipes[recipe][1])
+            // console.log("relevant[result][1]: " + relevant[result][1])
+            // console.log("relevant_recipes[recipe][1]: " + relevant_recipes[recipe][1])
             if(relevant_recipes[recipe][1] === relevant[result][1]){
                 console.log("Link already listed")
                 var i = relevant_recipes.indexOf(recipe)

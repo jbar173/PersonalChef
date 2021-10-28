@@ -168,7 +168,7 @@ class AlterKeywords extends React.Component {
                             this.setState({
                               newKeywords: new_keywords
                             })
-                            if(new_keywords.length === 5 || new_keywords.length === this.state.originalLength){
+                            if(new_keywords.length === 4 || new_keywords.length === this.state.originalLength){
                                   console.log("Length is short enough!!!!!")
                                   this.setState({
                                     gotFive: true

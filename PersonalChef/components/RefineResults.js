@@ -26,6 +26,7 @@ const RefineResults = props => {
   var i
   var j
   var finished = false
+  var recipes_on_page = []
 
 
 // filter out recipes which contain ingredients other than those that the user has:
@@ -43,6 +44,8 @@ const RefineResults = props => {
 
              var not_finished = true
              console.log("****Checking recipe: " + recipes[j]['recipe']['label'])
+             var recipe_name = recipes[j]['recipe']['label']
+             recipes_on_page.push(recipe_name)
              var recipe_ings = recipes[j]['recipe']['ingredients']
              var recipe_ings_length = recipe_ings.length
              var length_int = parseInt(recipe_ings_length)
@@ -87,6 +90,7 @@ const RefineResults = props => {
 
                                        index += 1
                                        var match = false
+                                       var found_random = false
                                        var last_index = user_ingredients.length - 1
 
                                        var include_words = [ user_ingredients[y], ]
@@ -110,12 +114,13 @@ const RefineResults = props => {
                                        if(extra_check === false){
                                            var ingredient = user_ingredients[y]
                                        }
+
+                                       // console.log("LOOKING FOR RECIPE ING: " + ingredient_lower + " in USER ING: " + user_ingredients[y])
                                        var find = FindIngredient(include_words,ingredient_lower,is_key)
                                        var result = find[0]
                                        var original_was_found = find[1]
                                        var all_ingredients_found = find[2]
                                        // console.log("############### RESULT: " + result)
-
 
                                        if(result){
                                            console.log("RESULT!! (less)")
@@ -125,10 +130,11 @@ const RefineResults = props => {
                                            }
                                            console.log("Looking for keyword exceptions")
                                            if(is_key){
-                                               var exception_check = FindExceptions(all_ingredients_found,ingredient_lower)
+                                               var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name)
                                                var found = exception_check[0]
                                                console.log("EXCEPTION FOUND? " + found)
                                                var ingredients_with_exceptions = exception_check[1]
+                                               var found_random = exception_check[2]
                                                if(found){
                                                     console.log( "NO MATCH FOR " + ingredient_lower )
                                                     console.log( "keyword exception(s) found for" )
@@ -146,18 +152,17 @@ const RefineResults = props => {
 
                                         if(result === false){
                                             false_count += 1
-                                            // console.log("false count: " + false_count)
-                                            // console.log("recipe_ings_length: " + recipe_ings_length)
-                                            // console.log("user_ings_length: " + user_ings_length)
                                         }
 
-                                        if(result === false && false_count === user_ings_length ){
-                                            console.log("user doesn't have: " + ingredient_lower)
+                                        if(result === false && index === last_index && false_count === user_ings_length || found_random){
+                                            console.log("Found random exception?: " + found_random)
+                                            console.log("else user doesn't have: " + ingredient_lower)
                                             console.log("NO MATCH")
                                             match = false
                                             break_out = true
                                             break;
                                         }
+
 
                                         if(match){
                                                count += 1
@@ -336,10 +341,17 @@ const RefineResults = props => {
 
   if(finished){
       console.log("------finished-----")
+      for(x in recipes_on_page){
+        console.log(x + ". " + recipes_on_page[x])
+      }
       console.log("number of recipes that match: " + relevant_recipes.length)
       for(x in relevant_recipes){
           console.log("relevant_recipes[x]: " + relevant_recipes[x])
           console.log("~~")
+      }
+      for(x in ten_pages){
+        console.log("COUNT!!!: " + ten_pages[x]["count"])
+        console.log("from: " + ten_pages[x]["from"])
       }
       props.filteredResults(relevant_recipes)
   }

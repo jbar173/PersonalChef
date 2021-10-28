@@ -116,20 +116,6 @@ class SavedRecipesPage extends React.Component {
         updated: false,
         separateRecipes: true
       })
-      //
-      // if(this.state.savedRecipeList[0] === '@'){
-      //   console.log("@saved-recipes key returned null")
-      //   this.setState({
-      //     savedRecipeList: [],
-      //     noRecipesSaved: true,
-      //     updated: false
-      //   })
-      //   return 1
-      // }
-      // this.setState({
-      //   updated: false,
-      //   separateRecipes: true
-      // })
     }
 
     sortRecipeData(){
@@ -156,16 +142,6 @@ class SavedRecipesPage extends React.Component {
               if(count % 2 !== 0){
                   console.log("count: " + count)
                   pair.push(data[x])
-                  // if(index == final_index){
-                  //     console.log("INDEX IS: " + index)
-                  //     console.log("final_index: " + final_index)
-                  //     not_finished = false
-                  //     this.setState({
-                  //       savedRecipeList: sorted_data,
-                  //       separateRecipes: false,
-                  //       ready: true
-                  //     })
-                  // }
               }else{
                   console.log("else count: " + count)
                   pair.push(data[x])
