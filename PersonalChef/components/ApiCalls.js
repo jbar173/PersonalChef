@@ -40,6 +40,12 @@ class ApiCalls extends React.Component {
       call: 0,
       startRefine: false,
       refinedRecipeList: [],
+
+      searchPaused: false,
+      pauseAndSave: false,
+      saveStopwatchTriggered: false,
+      recipesToSave: [],
+
       finalResults: false,
       finished: false
     },
@@ -67,6 +73,7 @@ class ApiCalls extends React.Component {
     this.saveDeviceData = this.saveDeviceData.bind(this)
     this.saveData = this.saveData.bind(this)
     this.saveRecipe = this.saveRecipe.bind(this)
+    this.saveStopwatch = this.saveStopwatch.bind(this)
   };
 
   getDeviceData = async (key) => {
@@ -129,51 +136,90 @@ class ApiCalls extends React.Component {
   componentWillUnmount(){
     console.log("API COMPONENT UNMOUNTED")
     this.apiAbortController.abort()
+    ////// Cancel all timeouts /////////////
   }
 
   componentDidUpdate(){
     console.log("API COMPONENT UPDATED")
     // console.log("this.state.stopwatchRunning: " + this.state.stopwatchRunning)
     console.log("this.state.startRefine: " + this.state.startRefine)
-    // console.log("*this.state.next: " + this.state.next)
+    // console.log("*this.state.next: " + this.state.next)-
+    if(this.state.searchPaused){
 
-    if(this.state.finalResults && this.state.finished === false){
-      var final_length = this.state.refinedRecipeList.length
-      console.log("relevant results length: " + final_length)
-      if(final_length > 100){
-        this.setStates()
-      }
+        if(this.state.pauseAndSave){
+          if(this.state.stopwatchRunning && this.state.saveStopwatchTriggered){
+             this.saveStopwatch()
+          }
+          if(this.state.saveStopwatchTriggered === false){
+            var to_save = this.state.recipesToSave
+            var recipe_key = '@saved-recipes'
+            this.saveData(recipe_key, to_save)
+          }
+        }
+        else if(this.state.stopwatchRunning){
+          /// 8 second timeout until searchPaused === false
+          this.eightSecondStopwatch()
+        }
+
+    }else{
+        if(this.state.finalResults && this.state.finished === false){
+          var final_length = this.state.refinedRecipeList.length
+          console.log("relevant results length: " + final_length)
+          if(final_length > 100){
+            this.setStates()
+          }
+        }
+        // console.log("this.state.count: " + this.state.count)
+        if(this.state.count === undefined && this.state.next !== 'first'){
+          console.log("API a")
+          this.setStates('error')
+        }
+        // Checks whether api function has finished calling
+        //  each page, triggers next function if so:
+        if(this.state.noMorePages) {
+          console.log("API b")
+          this.finishedHandler()
+        }
+        if(this.state.nextCall && this.state.stopwatchRunning === false){
+          console.log("API c")
+          console.log("**this.state.next: " + this.state.next)
+          this.triggerNextCall()
+        }
+        if(this.state.deleteOne){
+          console.log("API d")
+          this.deleteAKeyword()
+        }
+        if(this.state.stopwatchRunning && this.state.stopwatchTriggered === false){
+          this.triggerStopwatch()
+        }
+        if(this.state.stopwatchTriggered){
+          this.sixSecondStopwatch()
+        }
+        if(this.state.saved){
+          console.log("Saved is TRUE")
+          this.setStates('saved')
+        }
     }
-    // console.log("this.state.count: " + this.state.count)
-    if(this.state.count === undefined && this.state.next !== 'first'){
-      console.log("API a")
-      this.setStates('error')
-    }
-    // Checks whether api function has finished calling
-    //  each page, triggers next function if so:
-    if(this.state.noMorePages) {
-      console.log("API b")
-      this.finishedHandler()
-    }
-    if(this.state.nextCall && this.state.stopwatchRunning === false){
-      console.log("API c")
-      console.log("**this.state.next: " + this.state.next)
-      this.triggerNextCall()
-    }
-    if(this.state.deleteOne){
-      console.log("API d")
-      this.deleteAKeyword()
-    }
-    if(this.state.stopwatchRunning && this.state.stopwatchTriggered === false){
-      this.triggerStopwatch()
-    }
-    if(this.state.stopwatchTriggered){
-      this.sixSecondStopwatch()
-    }
-    if(this.state.saved){
-      console.log("Saved is TRUE")
-      this.setStates('saved')
-    }
+  }
+
+  saveStopwatch(){
+    console.log("starting 7 second save stopwatch")
+    var cmponent = this
+    setTimeout(function(){
+        console.log("7 second save stopwatch finished")
+        cmponent.setState({
+          saveStopwatchTriggered: false,
+          stopwatchRunning: false,
+        })
+      }, 7000)
+  }
+
+  eightSecondStopwatch(){
+    console.log("starting 8 second save stopwatch")
+    var cmponent = this
+    setTimeout(function(){
+        console.log("8 second save stopwatch finished")
+      }, 8000)
   }
 
   setStates(option=0){
@@ -291,7 +337,9 @@ class ApiCalls extends React.Component {
            .then(res => {
              this.setState({
                saved: true,
-               savedRecipes: data
+               savedRecipes: data,
+               searchPaused: false,
+               pauseAndSave: false
              })
            })
            console.log("RECIPE SAVED")
@@ -305,17 +353,23 @@ class ApiCalls extends React.Component {
     console.log("recipe[0]: " + recipe[0])
     var saved_list = []
     var already_saved = this.state.savedRecipes
+    var item
     if(already_saved !== undefined){
       for(item in already_saved){
         saved_list.push(already_saved[item])
       }
     }
-    for(item in recipe){
-      saved_list.push(recipe[item])
+    var r
+    for(r in recipe){
+      saved_list.push(recipe[r])
     }
-    // already_saved.push(recipe)
-    var recipe_key = '@saved-recipes'
-    this.saveData(recipe_key, saved_list)
+    this.setState({
+      recipesToSave: saved_list,
+      searchPaused: true,
+      pauseAndSave: true,
+      stopwatchRunning: true,
+      saveStopwatchTriggered: true
+    })
   }
 
 // Calls first api 10 times (allowance is 10 hits per minute),
@@ -381,20 +435,12 @@ class ApiCalls extends React.Component {
     .catch(error => {
       console.log("API CALL ERROR: " + error + ". stack: " + error.stack)
       console.log("NUM: " + num)
-      // console.log("Response: " + response)
       console.log("If undefined here don't overwrite 'next'") /////////////////////  Fix this
       this.setState({
         apiError: true,
       })
      });
     console.log("COUNT: " + this.state.count)
-    // this.sixSecondStopwatch()
-    console.log("API k")
-    // this.setState({
-    //   // update: true,
-    //   // nextCall: false,
-    //   stopwatchRunning: true
-    // })
   }
 
   tryAgain(){
@@ -428,6 +474,7 @@ class ApiCalls extends React.Component {
       }, 6000)
     console.log("API l")
   }
+
 
 // Passes back the recipe url list to the
 //  main RecipeResults component:
@@ -502,29 +549,34 @@ class ApiCalls extends React.Component {
   getRelevantRecipes(relevant_recipes){
     console.log("filtered initial")
     console.log("relevant_recipes.length: " + relevant_recipes.length)
-    var relevant = this.state.refinedRecipeList
+    var current_list = this.state.refinedRecipeList
     var indexes_to_splice = []
+    var recipe
     // Checks that new recipe links aren't already in refinedRecipeList (from previous reponse pages):
     for(recipe in relevant_recipes){
-        console.log("recipe[1]: " + recipe[1])
-        for(result in relevant){
+        console.log("relevant_recipes[recipe][1]: " + relevant_recipes[recipe][1])
+        var result
+        for(result in current_list){
             // console.log("relevant[result][1]: " + relevant[result][1])
             // console.log("relevant_recipes[recipe][1]: " + relevant_recipes[recipe][1])
-            if(relevant_recipes[recipe][1] === relevant[result][1]){
+            if(relevant_recipes[recipe][1] === current_list[result][1]){
                 console.log("Link already listed")
-                var i = relevant_recipes.indexOf(recipe)
-                indexes_to_splice.push(i)
+                var this_recipe = relevant_recipes[recipe]
+                var ind = relevant_recipes.indexOf(this_recipe)
+                indexes_to_splice.push(ind)
             }
         }
     }
     if(indexes_to_splice.length>0){
+      var i
       for(i in indexes_to_splice){
         relevant_recipes.splice(i,1)
       }
     }
     // Pushes new relevant recipes to existing refinedRecipeList:
+    var x
     for(x in relevant_recipes){
-      relevant.push(relevant_recipes[x])
+      current_list.push(relevant_recipes[x])
     }
     if(relevant_recipes.length === 0){
       console.log("No relevant results on these pages")
@@ -536,12 +588,19 @@ class ApiCalls extends React.Component {
     }else{
       console.log("found relevant results")
       this.setState({
-        refinedRecipeList: relevant,
+        refinedRecipeList: current_list,
         fResponse: [],
         startRefine: false,
         finalResults: true
       })
     }
+  }
+
+  pauseSearch(){
+    var new_state = !(this.state.searchPaused)
+    this.setState({
+      searchPaused: new_state
+    })
   }
 
 
@@ -560,6 +619,8 @@ class ApiCalls extends React.Component {
     var start_refine = this.state.startRefine
     var final_results = this.state.finalResults
     var self = this
+    var paused = this.state.searchPaused
+    var save_paused = this.state.pauseAndSave
 
 
     return(
@@ -653,7 +714,7 @@ class ApiCalls extends React.Component {
                          </SafeAreaView>
                      }
 
-                     { this.state.refinedRecipeList.length > 0 && filtering &&
+                     { this.state.refinedRecipeList.length > 0 && filtering && paused === false &&
 
                              <View>
                                     <Text style={styles.mainTitle}>Your results</Text>
@@ -688,9 +749,78 @@ class ApiCalls extends React.Component {
                                        <View style={{justifyContent:"center",alignItems:"center"}}>
                                           <FilteringAnimation />
                                        </View>
+
+                                       <View style={{justifyContent:"center",alignItems:"center"}}>
+                                           <Pressable accessible={true} accessibilityLabel="pause search" accessibilityRole="button"
+                                             style={{marginTop:90}} underlayColor="transparent" onPress={() => self.pauseSearch() }>
+                                               <Text style={styles.blueButton}>Pause search</Text>
+                                           </Pressable>
+                                       </View>
+                                       <View style={{justifyContent:"center",alignItems:"center"}}>
+                                           <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                             style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
+                                               <Text style={styles.redButton}>Cancel search and start again</Text>
+                                           </Link>
+                                       </View>
                                </View>
 
                         }
+
+                        { this.state.refinedRecipeList.length > 0 && paused &&
+
+
+                                <View>
+                                        {save_paused &&
+                                           <Text style={styles.title}>Saving recipe...</Text>
+                                        }
+                                        <Text style={styles.mainTitle}>Your results</Text>
+                                        <View>
+                                              {this.state.refinedRecipeList.map(function(item,index){
+                                                 return(
+                                                   <View style={styles.container} key={index}>
+                                                        <View style={{justifyContent:"center",alignItems:"center"}}>
+
+                                                                    <Text accessible={true} accessibilityRole="text"
+                                                                      accessibilityLabel={item[0].toString()}
+                                                                      style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
+                                                                      textAlign:"center"}}>{item[0]}</Text>
+
+
+                                                                    <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
+                                                                      <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
+                                                                        style={styles.greenButton}>Go to recipe website</Text>
+                                                                    </Pressable>
+
+                                                                    <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item)}>
+                                                                       <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                         accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
+                                                                    </Pressable>
+
+                                                           </View>
+                                                     </View>
+                                                    )
+                                                  }
+                                               )}
+                                          </View>
+
+                                          { save_paused === false &&
+                                              <View style={{justifyContent:"center",alignItems:"center"}}>
+                                                  <Pressable accessible={true} accessibilityLabel="pause search" accessibilityRole="button"
+                                                    style={{marginTop:90}} underlayColor="transparent" onPress={() => self.pauseSearch() }>
+                                                      <Text style={styles.blueButton}>Unpause</Text>
+                                                  </Pressable>
+                                              </View>
+                                          }
+
+                                          <View style={{justifyContent:"center",alignItems:"center"}}>
+                                              <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
+                                                  <Text style={styles.redButton}>Cancel search and start again</Text>
+                                              </Link>
+                                          </View>
+                                  </View>
+
+                           }
 
                   </ScrollView>
                 </SafeAreaView>
@@ -727,6 +857,16 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
+  },
+  redButton: {
+    padding: 10,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: 'white',
+    backgroundColor:'pink',
+    textAlign: "center",
+    marginTop: 10,
+
   },
   title: {
     fontSize:18,

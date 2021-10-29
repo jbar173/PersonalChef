@@ -77,7 +77,6 @@ class PantryCheckList extends React.Component {
       var length = this.state.pantry.length
       for(i=0;i<length;i++){
         var name = this.state.pantry[i]
-        console.log("name: " + name)
         new_dictionary[name] = true
       }
       this.setState({

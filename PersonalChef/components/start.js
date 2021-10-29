@@ -29,7 +29,7 @@ class HomePage extends React.Component {
 
   componentDidUpdate(){
     console.log("Homepage updated")
-    console.log("this.state.savedRecipeList: " + this.state.savedRecipeList)
+    // console.log("this.state.savedRecipeList: " + this.state.savedRecipeList)
   }
 
   getDeviceData = async (key) => {
@@ -39,10 +39,10 @@ class HomePage extends React.Component {
             var data = await AsyncStorage.getItem(key)
             if(data !== null) {
                 var value = JSON.parse(data)
-                console.log("value: " + value)
+                // console.log("value: " + value)
             }else{
                 var value = "@saved-recipes was null"
-                console.log("value: " + value)
+                // console.log("value: " + value)
             }
             return value;
         }
