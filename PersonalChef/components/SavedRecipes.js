@@ -18,7 +18,7 @@ class SavedRecipesPage extends React.Component {
         ready: false,
         expanded: false,
         deleteAnItem: false,
-        indexToDelete: null,
+        indexToDelete: '',
         saveNewList: false,
         refreshList: false
       }
@@ -243,6 +243,11 @@ class SavedRecipesPage extends React.Component {
       var no_saved_recipes = this.state.noRecipesSaved
       var expanded = this.state.expanded
       var self = this
+      if(this.state.indexToDelete === undefined){
+        var to_delete = ''
+      }else{
+        var to_delete = this.state.indexToDelete
+      }
 
 
       return(
@@ -258,7 +263,7 @@ class SavedRecipesPage extends React.Component {
                                   return(
                                       <View style={{justifyContent:"center",alignItems:"center"}} key={index}>
 
-                                              <Text>{recipe[1][0]}</Text>
+                                              <Text style={{fontWeight:"bold",marginTop:25,fontSize:18,marginHorizontal:55,textAlign:"center"}}>{recipe[1][0]}</Text>
                                               <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${recipe[1][1]}`)}>
                                                 <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
                                                   style={styles.greenButton}>Go to recipe website</Text>
@@ -267,11 +272,11 @@ class SavedRecipesPage extends React.Component {
                                               {expanded === false &&
                                                     <Pressable style={{justifyContent:"center"}} onPress={() => self.expandHandler(index)}>
                                                       <Text accessible={true} accessibilityLabel="Delete recipe" accessibilityRole="button"
-                                                        style={styles.blueButton}>Delete recipe</Text>
+                                                        style={styles.redButton}>Delete recipe</Text>
                                                     </Pressable>
                                               }
 
-                                              {expanded &&
+                                              {expanded && index === to_delete &&
                                                 <View>
                                                     <Pressable style={{justifyContent:"center"}} onPress={() => self.deleteHandler()}>
                                                       <Text accessible={true} accessibilityLabel="Delete recipe" accessibilityRole="button"
@@ -298,7 +303,7 @@ class SavedRecipesPage extends React.Component {
 
                         <Link style={{alignItems:"center"}} to="/" underlayColor="transparent">
                             <Text accessible={true} accessibilityLabel="Go back to homepage" accessibilityRole="button"
-                            style={styles.greenButton}>Back to homepage</Text>
+                            style={styles.blueButtonMain}>Back to homepage</Text>
                         </Link>
 
                     </View>
@@ -333,8 +338,7 @@ const styles = StyleSheet.create({
     backgroundColor:'pink',
     textAlign: "center",
     marginHorizontal: 128,
-    marginTop: 10,
-
+    marginBottom: 5,
   },
   greenButton: {
     padding: 10,
@@ -343,9 +347,9 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     backgroundColor:'lightgreen',
     textAlign: "center",
-    marginHorizontal: 128,
+    marginHorizontal: 105,
     marginTop: 10,
-    marginBottom: 20
+    marginBottom: 5
   },
   blueButton: {
     padding: 10,
@@ -355,7 +359,17 @@ const styles = StyleSheet.create({
     backgroundColor:'lightblue',
     textAlign: "center",
     marginHorizontal: 128,
-    marginBottom: 20,
+    marginBottom: 10,
+  },
+  blueButtonMain: {
+    padding: 10,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightblue',
+    textAlign: "center",
+    marginHorizontal: 105,
+    marginTop: 40,
   },
 });
 

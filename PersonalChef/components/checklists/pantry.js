@@ -190,7 +190,8 @@ class PantryCheckList extends React.Component {
                       <View>
                          <View style={styles.container}>
                             <Text style={styles.title}>In your pantry:</Text>
-                            <Text>(click on an ingredient to remove it from your pantry)</Text>
+                            <Text style={{alignItems:"center",marginBottom:20,fontWeight:"bold"}}>
+                                (click on an ingredient to remove it from your pantry)</Text>
                               {Object.entries(pantry).map(function(item,index){
                                   return(
                                         <View key={index}>
@@ -210,13 +211,22 @@ class PantryCheckList extends React.Component {
                                )}
                           </View>
 
+                          {display === false &&
+                            <View style={{alignItems:"center",marginTop:40}}>
+                                <Pressable style={styles.blueButton} onPress={this.displayFavourites}>
+                                    <Text>Add items from your favourites</Text>
+                                </Pressable>
+                                <Text style={{alignItems:"center",marginTop:5,fontWeight:"bold"}}>Or...</Text>
+                            </View>
+                          }
 
-                          <View style={{alignItems:"center",marginTop:40}}>
+
+                          <View style={{alignItems:"center",marginTop:10}}>
                                   { confirmed === false &&
                                     <View>
                                       <Pressable onPress={this.confirmedHandler}>
                                           <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
-                                           accessibilityHint="Click to confirm your ingredients" style={styles.greenButton}>Confirm Pantry ingredients</Text>
+                                           accessibilityHint="Click to confirm your ingredients" style={styles.blueButton}>Confirm Pantry ingredients</Text>
                                       </Pressable>
                                     </View>
                                   }
@@ -231,20 +241,14 @@ class PantryCheckList extends React.Component {
                           </View>
 
                           <View style={{alignItems:"center",marginTop:40}}>
-                                {display === false &&
-                                  <View>
-                                      <Pressable style={styles.greenButton} onPress={this.displayFavourites}>
-                                          <Text>Add items from your favourites</Text>
-                                      </Pressable>
-                                  </View>
-                                }
 
                                 {display &&
                                   <View style={{alignItems:"center",marginVertical:20}}>
-                                      <Pressable style={styles.greenButton} onPress={this.displayFavourites}>
+                                      <Pressable style={styles.blueButton} onPress={this.displayFavourites}>
                                           <Text>Hide favourites</Text>
                                       </Pressable>
-                                      <Text>Click on an item to add it to the pantry above:</Text>
+                                      <Text style={{alignItems:"center",marginBottom:10,marginTop:10,fontWeight:"bold"}}>
+                                        (click on an item to add it to the pantry above)</Text>
                                       <View style={styles.container}>
                                               {favourites.map(function(item,index){
                                                   return(

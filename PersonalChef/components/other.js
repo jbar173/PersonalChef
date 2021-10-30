@@ -117,13 +117,13 @@ class MeatIngredientsList extends React.Component {
                   <Link style={{marginTop:30}} to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                    underlayColor="transparent">
                        <Text accessible={true} accessibilityLabel="Next page"
-                        accessibilityRole="button" style={styles.greenButton}>Next
+                        accessibilityRole="button" style={styles.greenNextButton}>Next
                        </Text>
                   </Link>
                   <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                    underlayColor="transparent">
                       <Text accessible={true} accessibilityLabel="Go back"
-                        accessibilityRole="button" style={styles.blueButton}>Back
+                        accessibilityRole="button" style={styles.blueBackButton}>Back
                       </Text>
                   </Link>
 
@@ -231,12 +231,12 @@ class FishIngredientsList extends React.Component {
                             <Link style={{marginTop:30}} to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                              underlayColor="transparent">
                                <Text accessible={true} accessibilityLabel="Next page"
-                                 accessibilityRole="button" style={styles.greenButton}>Next</Text>
+                                 accessibilityRole="button" style={styles.greenNextButton}>Next</Text>
                             </Link>
                             <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                              underlayColor="transparent">
                                 <Text accessible={true} accessibilityLabel="Go back"
-                                  accessibilityRole="button" style={styles.blueButton}>Back</Text>
+                                  accessibilityRole="button" style={styles.blueBackButton}>Back</Text>
                             </Link>
                         </View>
                       )
@@ -246,12 +246,12 @@ class FishIngredientsList extends React.Component {
                             <Link style={{marginTop:30}} to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds} }}
                              underlayColor="transparent">
                                 <Text accessible={true} accessibilityLabel="Next page"
-                                  accessibilityRole="button" style={styles.greenButton}>Next</Text>
+                                  accessibilityRole="button" style={styles.greenNextButton}>Next</Text>
                             </Link>
                             <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                              underlayColor="transparent">
                               <Text accessible={true} accessibilityLabel="Go back"
-                                accessibilityRole="button" style={styles.blueButton}>Back</Text>
+                                accessibilityRole="button" style={styles.blueBackButton}>Back</Text>
                             </Link>
                         </View>
                        )
@@ -287,23 +287,27 @@ const styles = StyleSheet.create({
     fontSize:24,
     marginBottom:20
   },
-  greenButton: {
+  blueBackButton: {
     padding: 10,
-    borderWidth: 1,
-    borderRadius: 6,
-    borderColor: 'white',
-    backgroundColor:'lightgreen',
-    textAlign: "center",
-    marginHorizontal: 90,
-  },
-  blueButton: {
-    padding: 7,
+    marginTop: 5,
+    marginHorizontal: 128,
+    minWidth: 100,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
     textAlign: "center",
-    marginHorizontal: 90,
+  },
+  greenNextButton: {
+    padding: 10,
+    marginTop: 50,
+    marginHorizontal: 128,
+    minWidth: 100,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightgreen',
+    textAlign: "center",
   },
 });
 

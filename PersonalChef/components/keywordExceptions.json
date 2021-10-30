@@ -780,6 +780,9 @@
           {
             "name": "cheddar",
             "exclude": [
+              {
+                "word": "cheez-it grooves",
+              },
             ],
             "include": [
               {

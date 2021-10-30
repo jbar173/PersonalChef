@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableHighlight, TouchableOpacity, TextInput, Pressable } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
 import AsyncStorage from '@react-native-async-storage/async-storage';
-// import allFavourites from 'components/checklists/json_ingredient_lists/all_previous_searches.js';
 
 
 class HomePage extends React.Component {
@@ -102,6 +101,7 @@ class TimeAndType extends React.Component {
       },
 
       ingredients_rough: {},
+      moreNeeded:  false,
       firstResponse: [],
 
       initialRecipeLinkList: [],
@@ -120,8 +120,10 @@ class TimeAndType extends React.Component {
   componentDidMount(){
     console.log("Time and Type did mount")
     var ingreds = this.props.location.state.ingreds
+    var more_needed = this.props.location.state.more_needed
     this.setState({
       ingredients_rough: ingreds,
+      moreNeeded: more_needed
     })
     for(x in ingreds){
       console.log("**** ingreds: " + ingreds[x])
@@ -138,7 +140,8 @@ class TimeAndType extends React.Component {
             initialData:{
               ...this.state.initialData,
               type: value
-            }
+            },
+            both: false
          })
       }else{
         this.setState({
@@ -231,6 +234,7 @@ class TimeAndType extends React.Component {
 
   componentDidUpdate(){
     console.log("Time and Type did update")
+    console.log("more needed: " + this.state.moreNeeded)
     if(this.state.finished === false){
       this.onChangeTimeHoursHandler(this.state.times.hours);
       this.onChangeTimeMinsHandler(this.state.times.mins);
@@ -248,6 +252,7 @@ class TimeAndType extends React.Component {
       var times = this.state.times
       var ingreds = this.state.ingredients_rough
       var valid = this.state.validTimes
+      var more_needed = this.state.moreNeeded
 
 
       return(
@@ -308,13 +313,6 @@ class TimeAndType extends React.Component {
                                       <Text style={styles.blueButton}>Either</Text>
                                     </TouchableOpacity>
 
-                                    <TouchableOpacity accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                      underlayColor="white">
-                                          <Link style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                            <Text style={styles.blueButton}>Start again</Text>
-                                          </Link>
-                                    </TouchableOpacity>
-
                           </View>
                        )
 
@@ -326,39 +324,72 @@ class TimeAndType extends React.Component {
                                  <Text accessible={true} accessibilityLabel="What type of meal are you looking for?" accessibilityRole="text"
                                   style={{marginBottom:30,marginTop:40,textAlign:"center"}}>What type of meal are you looking for?</Text>
 
-                                       <TouchableHighlight accessible={true} accessibilityLabel="Dessert" accessibilityRole="button"
-                                          underlayColor="white" onPress={() => this.radioButtonPressedHandler("dessert")}>
-                                         <Text style={styles.blueButton}>Dessert</Text>
-                                       </TouchableHighlight>
-
+                                      {recipe_type === "dessert" &&
+                                         <TouchableHighlight accessible={true} accessibilityLabel="Dessert" accessibilityRole="button"
+                                            underlayColor="white" onPress={() => this.radioButtonPressedHandler("dessert")}>
+                                           <Text style={styles.greenButton}>Dessert</Text>
+                                         </TouchableHighlight>
+                                      }
+                                      {recipe_type !== "dessert" &&
+                                         <TouchableHighlight accessible={true} accessibilityLabel="Dessert" accessibilityRole="button"
+                                            underlayColor="white" onPress={() => this.radioButtonPressedHandler("dessert")}>
+                                           <Text style={styles.blueButton}>Dessert</Text>
+                                         </TouchableHighlight>
+                                      }
+                                      {recipe_type === "other" && this.state.both === false &&
                                        <TouchableHighlight accessible={true} accessibilityLabel="Starter or Main" accessibilityRole="button"
                                           underlayColor="white" onPress={() => this.radioButtonPressedHandler("other")}>
-                                         <Text style={styles.blueButton}>Starter or Main</Text>
+                                         <Text style={styles.greenButton}>Starter or Main</Text>
                                        </TouchableHighlight>
-
-                                       <TouchableHighlight accessible={true} accessibilityLabel="Either" accessibilityRole="button"
-                                          underlayColor="white" onPress={() => this.radioButtonPressedHandler("both")}>
-                                         <Text style={styles.blueButton}>Either</Text>
-                                       </TouchableHighlight>
+                                       }
+                                       {recipe_type === "other" && this.state.both === true &&
+                                         <TouchableHighlight accessible={true} accessibilityLabel="Starter or Main" accessibilityRole="button"
+                                            underlayColor="white" onPress={() => this.radioButtonPressedHandler("other")}>
+                                           <Text style={styles.blueButton}>Starter or Main</Text>
+                                         </TouchableHighlight>
+                                       }
+                                       {recipe_type !== "other" &&
+                                         <TouchableHighlight accessible={true} accessibilityLabel="Starter or Main" accessibilityRole="button"
+                                            underlayColor="white" onPress={() => this.radioButtonPressedHandler("other")}>
+                                           <Text style={styles.blueButton}>Starter or Main</Text>
+                                         </TouchableHighlight>
+                                       }
+                                       {this.state.both === true &&
+                                         <TouchableHighlight accessible={true} accessibilityLabel="Either" accessibilityRole="button"
+                                            underlayColor="white" onPress={() => this.radioButtonPressedHandler("both")}>
+                                           <Text style={styles.greenButton}>Either</Text>
+                                         </TouchableHighlight>
+                                       }
+                                       {this.state.both === false &&
+                                         <TouchableHighlight accessible={true} accessibilityLabel="Either" accessibilityRole="button"
+                                            underlayColor="white" onPress={() => this.radioButtonPressedHandler("both")}>
+                                           <Text style={styles.blueButton}>Either</Text>
+                                         </TouchableHighlight>
+                                       }
 
                                   { recipe_type === "dessert" ?
 
                                         (
-                                          <View>
+                                          <View style={{textAlign:"center"}}>
 
                                                {valid === true ?
 
                                                   (
                                                     <View>
+                                                      {more_needed &&
                                                         <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either,
                                                            times: times, ingreds: ingreds } }} underlayColor="transparent">
                                                              <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
-                                                              accessibilityRole="button" style={styles.greenButton}>Next page</Text>
+                                                              accessibilityRole="button" style={styles.greenNextButton}>Next page</Text>
                                                         </Link>
-                                                        <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                                             <Text style={styles.blueButton}>Start again</Text>
+                                                      }
+                                                      {more_needed === false &&
+                                                        <Link to={{pathname:"/confirm/", state:{ initial_data: initial, either: either,
+                                                           times: times, ingreds: ingreds } }} underlayColor="transparent">
+                                                             <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
+                                                              accessibilityRole="button" style={styles.greenNextButton}>Next page</Text>
                                                         </Link>
+                                                      }
                                                     </View>
                                                   )
 
@@ -366,18 +397,14 @@ class TimeAndType extends React.Component {
 
                                                   (
                                                     <View>
-                                                        <TouchableHighlight underlayColor="none" onPress={() => this.setState({ showInvalid: true })}>
-                                                            <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
-                                                              accessibilityRole="button" style={styles.greenButton}>Next page</Text>
+                                                        <TouchableHighlight accessible={true} accessibilityLabel="Go to savoury ingredients"
+                                                           accessibilityRole="button" underlayColor="white" onPress={ () => this.setState({ showInvalid: true }) }>
+                                                           <Text style={styles.redButton}>Next page</Text>
                                                         </TouchableHighlight>
 
                                                         {this.state.showInvalid === true && <Text accessible={true} accessibilityLabel="Please enter times above"
                                                          accessibilityRole="alert" style={styles.red}>Please enter times above</Text>}
 
-                                                        <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                                             <Text style={styles.blueButton}>Start again</Text>
-                                                        </Link>
                                                     </View>
                                                   )
 
@@ -393,16 +420,22 @@ class TimeAndType extends React.Component {
                                                 {valid === true ?
                                                   (
                                                     <View>
-                                                        <Link accessible={true} accessibilityLabel="Go to savoury ingredients" accessibilityRole="button"
-                                                          to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, times: times,
-                                                            ingreds: ingreds } }} underlayColor="transparent" >
-                                                            <Text accessible={true} accessibilityLabel="Go to savoury ingredients"
-                                                              style={styles.greenButton}>Next page</Text>
-                                                        </Link>
-                                                        <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                                            <Text style={styles.blueButton}>Start again</Text>
-                                                        </Link>
+                                                        {more_needed &&
+                                                          <Link accessible={true} accessibilityLabel="Go to savoury ingredients" accessibilityRole="button"
+                                                            to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, times: times,
+                                                              ingreds: ingreds } }} underlayColor="transparent" >
+                                                              <Text accessible={true} accessibilityLabel="Go to savoury ingredients"
+                                                                style={styles.greenNextButton}>Next page</Text>
+                                                          </Link>
+                                                         }
+                                                         {more_needed === false &&
+                                                           <Link accessible={true} accessibilityLabel="Go to savoury ingredients" accessibilityRole="button"
+                                                             to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, times: times,
+                                                               ingreds: ingreds } }} underlayColor="transparent" >
+                                                               <Text accessible={true} accessibilityLabel="Go to savoury ingredients"
+                                                                 style={styles.greenNextButton}>Next page</Text>
+                                                           </Link>
+                                                         }
                                                     </View>
                                                   )
                                                   :
@@ -410,16 +443,13 @@ class TimeAndType extends React.Component {
                                                     <View>
                                                         <TouchableHighlight accessible={true} accessibilityLabel="Go to savoury ingredients"
                                                            accessibilityRole="button" underlayColor="white" onPress={ () => this.setState({ showInvalid: true }) }>
-                                                           <Text style={styles.greenButton}>Next page</Text>
+                                                           <Text style={styles.redButton}>Next page</Text>
                                                         </TouchableHighlight>
 
                                                         {this.state.showInvalid === true && <Text accessible={true} accessibilityLabel="Please enter times above"
-                                                          accessibilityRole="alert" style={styles.red}>Please enter times above</Text>}
+                                                          accessibilityRole="alert" style={styles.red}>Please enter times above</Text>
+                                                        }
 
-                                                        <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                          style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                                            <Text style={styles.blueButton}>Start again</Text>
-                                                        </Link>
                                                     </View>
                                                   )
                                                 }
@@ -431,6 +461,11 @@ class TimeAndType extends React.Component {
                             </View>
                          )
                      }
+                     <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                       style={{marginTop:10}} to="/pantry/" underlayColor="transparent">
+                         <Text style={styles.backButton}>Back</Text>
+                     </Link>
+
                 </View>
           </View>
         );
@@ -463,15 +498,57 @@ const styles = StyleSheet.create({
     backgroundColor:'lightgreen',
     textAlign: "center",
   },
-  blueButton: {
+  starterBlueButton: {
     padding: 10,
     marginTop: 3,
-    marginHorizontal: 50,
+    marginHorizontal: 60,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
     textAlign: "center",
+  },
+  blueButton: {
+    padding: 10,
+    marginTop: 3,
+    marginHorizontal: 60,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightblue',
+    textAlign: "center",
+  },
+  backButton: {
+    padding: 10,
+    marginTop: 5,
+    marginHorizontal: 128,
+    minWidth: 100,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightblue',
+    textAlign: "center",
+  },
+  greenNextButton: {
+    padding: 10,
+    marginTop: 50,
+    marginHorizontal: 128,
+    minWidth: 100,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightgreen',
+    textAlign: "center",
+  },
+  redButton: {
+    padding: 10,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: 'white',
+    backgroundColor:'pink',
+    textAlign: "center",
+    marginHorizontal: 128,
+    marginTop: 50,
   },
   input: {
     height: 40,

@@ -111,7 +111,7 @@ class ConfectionaryIngredientsList extends React.Component {
                   <Link style={{marginTop:30}} to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                    underlayColor="transparent">
                       <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                      style={styles.blueButton}>Next</Text>
+                      style={styles.greenNextButton}>Next</Text>
                   </Link>
 
                   {recipe_type === "dessert" ?
@@ -120,7 +120,7 @@ class ConfectionaryIngredientsList extends React.Component {
                         <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                          underlayColor="transparent">
                             <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                            style={styles.blueButton}>Back</Text>
+                            style={styles.blueBackButton}>Back</Text>
                         </Link>
                       )
 
@@ -130,7 +130,7 @@ class ConfectionaryIngredientsList extends React.Component {
                         <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                          underlayColor="transparent">
                             <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                            style={styles.blueButton}>Back</Text>
+                            style={styles.blueBackButton}>Back</Text>
                         </Link>
                       )
 
@@ -159,23 +159,27 @@ const styles = StyleSheet.create({
     marginBottom:20,
     textAlign:'center',
   },
-  greenButton: {
+  blueBackButton: {
     padding: 10,
-    borderWidth: 1,
-    borderRadius: 6,
-    borderColor: 'white',
-    backgroundColor:'lightgreen',
-    textAlign: "center",
+    marginTop: 5,
     marginHorizontal: 128,
-  },
-  blueButton: {
-    padding: 7,
+    minWidth: 100,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
     textAlign: "center",
+  },
+  greenNextButton: {
+    padding: 10,
+    marginTop: 50,
     marginHorizontal: 128,
+    minWidth: 100,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightgreen',
+    textAlign: "center",
   },
 });
 

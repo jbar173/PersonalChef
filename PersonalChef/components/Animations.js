@@ -140,7 +140,7 @@ class ThreeDots extends React.Component{
 };
 
 
-class SearchingPage extends React.Component{
+class SearchingPageAnimation extends React.Component{
     constructor(props){
       super(props);
       this.componentDidMount = this.componentDidMount.bind(this)
@@ -216,5 +216,109 @@ class FilteringAnimation extends React.Component{
 };
 
 
+class SavingRecipeAnimation extends React.Component{
+    constructor(props){
+      super(props);
+      this.state = {
+        fiveSecondsOver: false,
+      }
+      this.componentDidMount = this.componentDidMount.bind(this)
+      this.componentDidUpdate = this.componentDidUpdate.bind(this)
+      this.componentWillUnmount = this.componentWillUnmount.bind(this)
+      this.fiveSecondStopwatch = this.fiveSecondStopwatch.bind(this)
 
-export { SearchingPage, FilteringAnimation, ThreeDots };
+      this.opacity = new Animated.Value(0.01);
+      this.abortController = new AbortController()
+
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(this.opacity, {
+            duration: 1000,
+            toValue: 1,
+            easing: Easing.linear,
+            useNativeDriver: false,
+            signal: this.abortController.signal,
+          }),
+          Animated.delay(1000),
+          Animated.timing(this.opacity, {
+            duration: 1000,
+            toValue: 0,
+            easing: Easing.linear,
+            useNativeDriver: false,
+            signal: this.abortController.signal,
+          }),
+        ]),
+      ).start()
+
+    };
+
+    componentDidMount(){
+      console.log("SavingRecipeAnimation mounted")
+      this.fiveSecondStopwatch()
+    }
+
+    componentDidUpdate(){
+      console.log("SavingRecipeAnimation updated")
+      console.log("Five seconds over?: " + this.state.fiveSecondsOver)
+    }
+
+    componentWillUnmount(){
+      console.log("SavingRecipeAnimation unmounted")
+      this.abortController.abort()
+    }
+
+    fiveSecondStopwatch(){
+      console.log("FIVE SECONDS started")
+      var cmponent = this
+      setTimeout(function(){
+        console.log("FIVE SECONDS finished")
+        cmponent.setState({
+          fiveSecondsOver: true
+        })
+      }, 5000);
+    }
+
+    render(){
+      console.log("SavingRecipeAnimation rendered")
+      var five_seconds_over = this.state.fiveSecondsOver
+
+      return(
+            <View>
+                {five_seconds_over === false &&
+                    <Animated.Text style={{
+                      opacity: this.opacity.interpolate({
+                        inputRange: [0,1],
+                        outputRange: [0,1],
+                      }),
+                      fontSize: 18,
+                      marginTop: 10,
+                      fontWeight:'bold',
+                      textAlign: 'center',
+                      color: 'lightseagreen'
+                    }} > Saving recipe... </Animated.Text>
+                 }
+
+
+                {five_seconds_over &&
+                   <Text style={styles.greenTitle}>Saved!</Text>
+                }
+            </View>
+      );
+
+    }
+
+};
+
+
+const styles = StyleSheet.create({
+  greenTitle: {
+    fontSize:18,
+    marginTop: 10,
+    fontWeight:'bold',
+    textAlign: 'center',
+    color: 'green'
+  },
+});
+
+
+export { SearchingPageAnimation, FilteringAnimation, ThreeDots, SavingRecipeAnimation };

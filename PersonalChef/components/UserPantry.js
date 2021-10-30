@@ -14,7 +14,8 @@ class UserPantry extends React.Component {
         pantryUpdated: false,
         final: false,
         empty: false,
-        reRender: false
+        expanded: false,
+
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
@@ -63,13 +64,21 @@ class UserPantry extends React.Component {
         pantryUpdated: false,
         final: true
       })
+    }
 
+    handleExpand(){
+      var new_state = !(this.state.expanded)
+      this.setState({
+        expanded: new_state
+      })
     }
 
     render(){
       var ingreds = this.state.ingredients_rough
       var final = this.state.final
       var empty = this.state.empty
+      var expanded = this.state.expanded
+      var self = this
 
       return(
               <SafeAreaView>
@@ -81,15 +90,33 @@ class UserPantry extends React.Component {
                         <PantryCheckList updateListHandler={this.updateListHandler} />
 
                         {final &&
-                             <Link accessible={true} accessibilityLabel= "Continue"
-                               accessibilityHint="Pantry confirmed - continue to next page"
-                               to={{ pathname:"/type-time/", state:{ ingreds: ingreds,} }}
-                               accessibilityRole="button" underlayColor="transparent">
-                                <Text style={styles.blueButton}>Continue</Text>
-                             </Link>
+                          <View>
+                             {expanded === false &&
+                               <Pressable style={styles.blueButton} onPress={() => self.handleExpand()}>
+                                  <Text>Continue</Text>
+                               </Pressable>
+                             }
+                             {expanded &&
+                               <View style={{alignItems:"center",textAlign:"center"}}>
+                                   <Link accessible={true} accessibilityLabel= "Continue"
+                                     accessibilityHint="Pantry confirmed - continue to next page"
+                                     to={{ pathname:"/type-time/", state:{ ingreds: ingreds, more_needed: true } }}
+                                     accessibilityRole="button" underlayColor="transparent">
+                                      <Text style={styles.blueButton}>Add other ingredients</Text>
+                                   </Link>
+                                   <Text style={{alignItems:"center",marginVertical:5,fontWeight:"bold"}}>Or...</Text>
+                                   <Link accessible={true} accessibilityLabel= "Continue"
+                                     accessibilityHint="Pantry confirmed - continue to next page"
+                                     to={{ pathname:"/type-time/", state:{ ingreds: ingreds, more_needed: false } }}
+                                     accessibilityRole="button" underlayColor="transparent">
+                                      <Text style={styles.blueButton}>Search with these ingredients</Text>
+                                   </Link>
+                                </View>
+                             }
+                           </View>
                          }
 
-                        <Link style={{alignItems:"center"}} to="/" underlayColor="transparent">
+                        <Link style={{alignItems:"center", marginTop:50}} to="/" underlayColor="transparent">
                             <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                             style={styles.blueButton}>Start again</Text>
                         </Link>

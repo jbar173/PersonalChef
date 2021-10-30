@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable, Li
 import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { AlterKeywords } from './AlterKeywords.js';
 import { RefineResults } from './RefineResults.js';
-import { SearchingPage, FilteringAnimation } from "./Animations.js";
+import { SearchingPageAnimation, FilteringAnimation, SavingRecipeAnimation } from "./Animations.js";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
@@ -44,6 +44,7 @@ class ApiCalls extends React.Component {
       searchPaused: false,
       pauseAndSave: false,
       saveStopwatchTriggered: false,
+      recipeClicked: '',
       recipesToSave: [],
 
       finalResults: false,
@@ -199,6 +200,9 @@ class ApiCalls extends React.Component {
           console.log("Saved is TRUE")
           this.setStates('saved')
         }
+        if(this.state.refinedRecipeList.length === 0 && this.state.noMoreKeywords){
+          console.log("Re-jig search here if only a few results??")
+        }
     }
   }
 
@@ -339,7 +343,8 @@ class ApiCalls extends React.Component {
                saved: true,
                savedRecipes: data,
                searchPaused: false,
-               pauseAndSave: false
+               pauseAndSave: false,
+               recipeClicked: ''
              })
            })
            console.log("RECIPE SAVED")
@@ -348,7 +353,7 @@ class ApiCalls extends React.Component {
        }
   }
 
-  saveRecipe(recipe){
+  saveRecipe(recipe,index){
     console.log("saveRecipe function")
     console.log("recipe[0]: " + recipe[0])
     var saved_list = []
@@ -364,6 +369,7 @@ class ApiCalls extends React.Component {
       saved_list.push(recipe[r])
     }
     this.setState({
+      recipeClicked: index,
       recipesToSave: saved_list,
       searchPaused: true,
       pauseAndSave: true,
@@ -513,7 +519,7 @@ class ApiCalls extends React.Component {
     }else{
       // display results
       console.log("Displaying results")
-      // Button at end of results giving option to extend search (knocks another ingredient off)
+      ////////// Button at end of results giving option to extend search (knocks another ingredient off)
     }
   }
 
@@ -621,6 +627,8 @@ class ApiCalls extends React.Component {
     var self = this
     var paused = this.state.searchPaused
     var save_paused = this.state.pauseAndSave
+    var recipe_clicked = this.state.recipeClicked
+    var no_more_keywords = this.state.noMoreKeywords
 
 
     return(
@@ -660,12 +668,33 @@ class ApiCalls extends React.Component {
                        userIngredients={this.state.initialData.ingredients}/>
                    }
 
-                   { this.state.refinedRecipeList.length === 0 &&
+                   { this.state.refinedRecipeList.length === 0 && no_more_keywords === false &&
                      <SafeAreaView style={styles.container}>
                        <ScrollView>
                          <View style={styles.container}>
                              <View style={{justifyContent:"center"}}>
-                                <SearchingPage />
+                                <SearchingPageAnimation />
+                             </View>
+                         </View>
+                       </ScrollView>
+                       <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                         style={{marginTop:500,alignSelf:"flex-end"}} to="/" underlayColor="transparent">
+                           <Text style={styles.redButton}>Cancel search and start again</Text>
+                       </Link>
+                     </SafeAreaView>
+                   }
+
+                   { this.state.refinedRecipeList.length === 0 && no_more_keywords &&
+                     <SafeAreaView style={styles.container}>
+                       <ScrollView>
+                         <View>
+                             <View style={{textAlign:"center",justifyContent:"center",alignItems:"center"}}>
+                                <Text style={{fontWeight:"bold"}}>No recipe matches found, sorry!</Text>
+                                <Text style={{fontWeight:"bold",marginBottom:20}}>Check 'Almost!' tab for possible alternatives</Text>
+                                <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                  style={styles.blueBackToHomepageButton} to="/" underlayColor="transparent">
+                                    <Text>Back to homepage</Text>
+                                </Link>
                              </View>
                          </View>
                        </ScrollView>
@@ -686,14 +715,14 @@ class ApiCalls extends React.Component {
                                                                <Text accessible={true} accessibilityRole="text"
                                                                  accessibilityLabel={item[0].toString()}
                                                                  style={{justifyContent:"center",fontSize:18,fontWeight:"bold",
-                                                                 textAlign:"center"}}>{item[0]}</Text>
+                                                                 textAlign:"center",marginBottom:10}}>{item[0]}</Text>
 
                                                                <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
                                                                  <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
                                                                    style={styles.greenButton}>Go to recipe website</Text>
                                                                </Pressable>
 
-                                                               <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item)}>
+                                                               <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
                                                                   <Text accessible={true} accessibilityLabel="Save this recipe to your device"
                                                                     accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
                                                                </Pressable>
@@ -714,7 +743,7 @@ class ApiCalls extends React.Component {
                          </SafeAreaView>
                      }
 
-                     { this.state.refinedRecipeList.length > 0 && filtering && paused === false &&
+                     { this.state.refinedRecipeList.length > 0 && paused === false &&
 
                              <View>
                                     <Text style={styles.mainTitle}>Your results</Text>
@@ -727,7 +756,7 @@ class ApiCalls extends React.Component {
                                                                  <Text accessible={true} accessibilityRole="text"
                                                                    accessibilityLabel={item[0].toString()}
                                                                    style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
-                                                                   textAlign:"center"}}>{item[0]}</Text>
+                                                                   textAlign:"center",marginBottom:10}}>{item[0]}</Text>
 
 
                                                                  <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
@@ -735,7 +764,7 @@ class ApiCalls extends React.Component {
                                                                      style={styles.greenButton}>Go to recipe website</Text>
                                                                  </Pressable>
 
-                                                                 <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item)}>
+                                                                 <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
                                                                     <Text accessible={true} accessibilityLabel="Save this recipe to your device"
                                                                       accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
                                                                  </Pressable>
@@ -746,9 +775,16 @@ class ApiCalls extends React.Component {
                                                }
                                             )}
                                        </View>
-                                       <View style={{justifyContent:"center",alignItems:"center"}}>
-                                          <FilteringAnimation />
-                                       </View>
+                                       {filtering &&
+                                         <View style={{justifyContent:"center",alignItems:"center"}}>
+                                            <FilteringAnimation />
+                                         </View>
+                                       }
+                                       {filtering === false &&
+                                         <View style={{justifyContent:"center",alignItems:"center"}}>
+                                            <Text>Search finished.</Text>
+                                         </View>
+                                       }
 
                                        <View style={{justifyContent:"center",alignItems:"center"}}>
                                            <Pressable accessible={true} accessibilityLabel="pause search" accessibilityRole="button"
@@ -783,7 +819,7 @@ class ApiCalls extends React.Component {
                                                                     <Text accessible={true} accessibilityRole="text"
                                                                       accessibilityLabel={item[0].toString()}
                                                                       style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
-                                                                      textAlign:"center"}}>{item[0]}</Text>
+                                                                      textAlign:"center",marginBottom:10}}>{item[0]}</Text>
 
 
                                                                     <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
@@ -791,12 +827,15 @@ class ApiCalls extends React.Component {
                                                                         style={styles.greenButton}>Go to recipe website</Text>
                                                                     </Pressable>
 
-                                                                    <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item)}>
+                                                                    <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
                                                                        <Text accessible={true} accessibilityLabel="Save this recipe to your device"
                                                                          accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
                                                                     </Pressable>
 
                                                            </View>
+                                                           {save_paused && recipe_clicked === index &&
+                                                              <SavingRecipeAnimation />
+                                                           }
                                                      </View>
                                                     )
                                                   }
@@ -814,7 +853,7 @@ class ApiCalls extends React.Component {
 
                                           <View style={{justifyContent:"center",alignItems:"center"}}>
                                               <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
+                                                style={{marginTop:90}} to="/" underlayColor="transparent">
                                                   <Text style={styles.redButton}>Cancel search and start again</Text>
                                               </Link>
                                           </View>
@@ -877,5 +916,15 @@ const styles = StyleSheet.create({
     fontSize:28,
     marginBottom:10,
     textAlign:"center",
+  },
+  blueBackToHomepageButton: {
+    padding: 10,
+    marginTop: 5,
+    minWidth: 100,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightblue',
+    textAlign: "center",
   },
 });

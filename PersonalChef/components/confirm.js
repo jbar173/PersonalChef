@@ -27,6 +27,7 @@ class ConfirmList extends React.Component {
       redirect: false,
       readyToRedirect: false,
       noIngredientsError: false,
+      times: ''
     }
     this.abortController = new AbortController()
     this.componentDidMount = this.componentDidMount.bind(this)
@@ -104,33 +105,33 @@ class ConfirmList extends React.Component {
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
 
-    try{
-        var favourites_key = '@favourite-ingredients'
-        var faves = this.getData(favourites_key)
-        .then(faves => {
-            this.setState({
-               favourites: faves,
-             })
-         })
-        .catch(error => {
-            console.log("getFavourites error: " + error.message)
-        })
-    }catch(error){
-        console.log("Error at CompDidMount 1: " + error.message)
-    }
-
-    try{
+    var favourites_key = '@favourite-ingredients'
+    var faves = this.getData(favourites_key)
+    .then(faves => {
         this.setState({
-          initialData: initial_data,
-          ingredients_rough: ingreds,
-          both: either
-        })
-    }catch(error){
-        console.log("Error at CompDidMount 2: " + error.message)
-    }
-    console.log("COMP DID MOUNT finished")
-  }
+           favourites: faves,
+         })
+     })
+    .catch(error => {
+        console.log("ConfirmList: getfavourites error: " + error.message)
+    })
 
+    if(initial_data.time === '0'){
+      var times_from_start_page = this.props.location.state.times
+      this.setState({
+        initialData: initial_data,
+        ingredients_rough: ingreds,
+        both: either,
+        times: times_from_start_page
+      })
+    }else{
+      this.setState({
+        initialData: initial_data,
+        ingredients_rough: ingreds,
+        both: either
+      })
+    }
+  }
 
   componentWillUnmount(){
     console.log("Confirm page unmounted")
@@ -143,6 +144,19 @@ class ConfirmList extends React.Component {
 
   componentDidUpdate(){
     console.log("Confirm page updated")
+    console.log("this.state.initialData.time: " + this.state.initialData.time)
+    if(this.state.initialData.time === '0'){
+      var hrs = parseInt(this.state.times.hours)
+      var mins = parseInt(this.state.times.mins)
+      var added = hrs + mins
+      var sum = added.toString()
+      this.setState({
+        initialData: {
+          ...this.state.initialData,
+          time:sum
+        }
+      })
+    }
     if(this.state.populate){
       console.log("confirm a")
       this.populateInitialData()
@@ -294,13 +308,6 @@ class ConfirmList extends React.Component {
     var initial = this.state.initialData
     var either = this.state.both
     var ingreds = this.state.ingredients_rough
-    // var alcohol = ingreds['Alcohol']
-    // console.log("alcohol[0]: " + alcohol[0])
-    // var already = ingreds['Already in pantry']
-    // console.log("already[0]: " + already[0])
-
-    // console.log("ingreds['Alcohol'][0]: " + ingreds['Alcohol'][0])
-    // console.log("ingreds['Already in pantry'][0]: " + ingreds['Already in pantry'][0])
     var redirect = this.state.readyToRedirect
 
     return(

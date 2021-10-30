@@ -41,7 +41,7 @@ class DryIngredientsList extends React.Component {
     var either = this.props.location.state.either
     var ingreds = this.props.location.state.ingreds
     this.setState({
-      initialData:initial_data,
+      initialData: initial_data,
       ingredients_rough:ingreds,
       both:either
     })
@@ -102,7 +102,7 @@ class DryIngredientsList extends React.Component {
                   <Link style={{marginTop:30}} to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                    underlayColor="transparent">
                       <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                       style={styles.blueButton}>Next</Text>
+                       style={styles.greenNextButton}>Next</Text>
                   </Link>
 
                   {recipe_type === "dessert" || either === true ?
@@ -111,7 +111,7 @@ class DryIngredientsList extends React.Component {
                       <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                        underlayColor="transparent">
                           <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                            style={styles.blueButton}>Back</Text>
+                            style={styles.blueBackButton}>Back</Text>
                       </Link>
                     )
                     :
@@ -119,7 +119,7 @@ class DryIngredientsList extends React.Component {
                       <Link to={{pathname:"/other-fish/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                        underlayColor="transparent">
                           <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                           style={styles.blueButton}>Back</Text>
+                           style={styles.blueBackButton}>Back</Text>
                       </Link>
                     )
 
@@ -222,11 +222,11 @@ class WetIngredientsList extends React.Component {
 
                 <Link style={{marginTop:30}} to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
-                   <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button" style={styles.blueButton}>Next</Text>
+                   <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button" style={styles.greenNextButton}>Next</Text>
                 </Link>
                 <Link to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
-                   <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button" style={styles.blueButton}>Back</Text>
+                   <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button" style={styles.blueBackButton}>Back</Text>
                 </Link>
           </ScrollView>
         </SafeAreaView>
@@ -328,12 +328,12 @@ class FruitAndVegList extends React.Component {
                   <Link style={{marginTop:30}} to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                    underlayColor="transparent">
                       <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                        style={styles.blueButton}>Next</Text>
+                        style={styles.greenNextButton}>Next</Text>
                   </Link>
                   <Link to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                    underlayColor="transparent">
                       <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                       style={styles.blueButton}>Back</Text>
+                       style={styles.blueBackButton}>Back</Text>
                   </Link>
             </ScrollView>
           </SafeAreaView>
@@ -433,12 +433,12 @@ class HerbsAndSpicesList extends React.Component {
                   <Link style={{marginTop:30}} to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                    underlayColor="transparent">
                       <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                       style={styles.blueButton}>Next</Text>
+                       style={styles.greenNextButton}>Next</Text>
                   </Link>
                   <Link to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                    underlayColor="transparent">
                       <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                       style={styles.blueButton}>Back</Text>
+                       style={styles.blueBackButton}>Back</Text>
                   </Link>
             </ScrollView>
           </SafeAreaView>
@@ -538,12 +538,12 @@ class TinnedGoodsList extends React.Component {
                 <Link style={{marginTop:30}} to={{pathname:"/both-cheese/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
                     <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                     style={styles.blueButton}>Next</Text>
+                     style={styles.greenNextButton}>Next</Text>
                 </Link>
                 <Link to={{pathname:"/both-spices/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
                     <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                     style={styles.blueButton}>Back</Text>
+                     style={styles.blueBackButton}>Back</Text>
                 </Link>
           </ScrollView>
         </SafeAreaView>
@@ -643,12 +643,12 @@ class CheeseList extends React.Component {
                 <Link style={{marginTop:30}} to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
                     <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                     style={styles.blueButton}>Next</Text>
+                     style={styles.greenNextButton}>Next</Text>
                 </Link>
                 <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
                     <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                     style={styles.blueButton}>Back</Text>
+                     style={styles.blueBackButton}>Back</Text>
                 </Link>
           </ScrollView>
         </SafeAreaView>
@@ -750,13 +750,13 @@ class AlcoholList extends React.Component {
                     <Link style={{marginTop:30}} to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                      underlayColor="transparent">
                         <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
-                         style={styles.blueButton}>Next</Text>
+                         style={styles.greenNextButton}>Next</Text>
                     </Link>
 
                     <Link to={{pathname:"/both-cheese/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                      underlayColor="transparent">
                         <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                         style={styles.blueButton}>Back</Text>
+                         style={styles.blueBackButton}>Back</Text>
                     </Link>
               </ScrollView>
             </SafeAreaView>
@@ -786,23 +786,27 @@ const styles = StyleSheet.create({
     fontSize:24,
     marginBottom:20
   },
-  greenButton: {
+  blueBackButton: {
     padding: 10,
-    borderWidth: 1,
-    borderRadius: 6,
-    borderColor: 'white',
-    backgroundColor:'lightgreen',
-    textAlign: "center",
+    marginTop: 5,
     marginHorizontal: 128,
-  },
-  blueButton: {
-    padding: 7,
+    minWidth: 100,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'lightblue',
     textAlign: "center",
+  },
+  greenNextButton: {
+    padding: 10,
+    marginTop: 50,
     marginHorizontal: 128,
+    minWidth: 100,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightgreen',
+    textAlign: "center",
   },
 });
 
