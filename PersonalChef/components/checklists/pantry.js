@@ -272,7 +272,7 @@ class PantryCheckList extends React.Component {
                           <View style={styles.container}>
 
                               <Text style={styles.title}>Your pantry is empty!</Text>
-                              <Text style={{marginVertical:20}}>Click continue to add items to your pantry.</Text>
+                              <Text style={{marginVertical:20,textAlign:"center"}}>Click 'continue' and then 'add other ingredients' to add items to your pantry.</Text>
 
                           </View>
                         }

@@ -6,7 +6,7 @@ import * as exclusions from './checklists/json_ingredient_lists/exclude.json';
 
 // Searches for the user's ingredient within the recipe ingredient string:
 
-const FindIngredient = (ingredients_to_search_for,ingredient_lower,is_key) => {
+const FindIngredient = (ingredients_to_search_for,ingredient_lower) => {
 
   // Regexes for ingredient to match:
     var no_extra_letters = String.raw`[^a-z]`
@@ -66,7 +66,7 @@ const FindIngredient = (ingredients_to_search_for,ingredient_lower,is_key) => {
 
 // Checks whether the matching ingredient is an exception (a word listed under 'exclude' in keywordExceptions):
 
-const FindExceptions = (ingredients,ingredient_lower,recipe_title) => {
+const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
 
   // console.log("FindExceptions regex function starting")
   // Regexes for ingredient to match:
@@ -111,6 +111,7 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title) => {
                 var regex_eight = new RegExp(`${starts_or_ends_with}${exclusion_list[w]}${ends_with_s}${starts_or_ends_with}`)
 
                 var title_lower = recipe_title.toLowerCase()
+
                 if(regex_one.test(title_lower) || regex_two.test(title_lower) ||
                    regex_three.test(title_lower) || regex_four.test(title_lower) ||
                    regex_five.test(title_lower) || regex_six.test(title_lower) ||
@@ -118,11 +119,20 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title) => {
                   ){
                      console.log("FOUND RANDOM EXCLUSION in recipe label: " + title_lower)
                      random_exception_found = true
-                     break;
+                     if(type === 'random'){
+                       return true;
+                     }
+                     else{
+                       break;
+                     }
                  }
              }
-
+             if(type === 'random'){
+               return false;
+             }
         }
+
+      //// If type = 'both' (ie. ingredient is_key (has exclusions listed in keywordExceptions) ):
 
         for(m in exceptions){
 

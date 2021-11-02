@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable, Li
 import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { AlterKeywords } from './AlterKeywords.js';
 import { RefineResults } from './RefineResults.js';
+import { AlmostList } from './AlmostList.js';
 import { SearchingPageAnimation, FilteringAnimation, SavingRecipeAnimation } from "./Animations.js";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -46,9 +47,14 @@ class ApiCalls extends React.Component {
       saveStopwatchTriggered: false,
       recipeClicked: '',
       recipesToSave: [],
+      savedRecipeIndexes: [],
 
-      finalResults: false,
-      finished: false
+      // finalResults: false,
+      finished: false,
+      changeTabs: false,
+      almostClicked: false,
+      showAlmost: false,
+      almostList: []
     },
     this.apiAbortController = new AbortController()
     this.getDeviceData = this.getDeviceData.bind(this)
@@ -66,6 +72,7 @@ class ApiCalls extends React.Component {
 
     this.finishedHandler = this.finishedHandler.bind(this)
     this.getRelevantRecipes = this.getRelevantRecipes.bind(this)
+    this.checkForDuplicates = this.checkForDuplicates.bind(this)
     this.deleteAKeyword = this.deleteAKeyword.bind(this)
 
     this.setStates = this.setStates.bind(this)
@@ -75,6 +82,10 @@ class ApiCalls extends React.Component {
     this.saveData = this.saveData.bind(this)
     this.saveRecipe = this.saveRecipe.bind(this)
     this.saveStopwatch = this.saveStopwatch.bind(this)
+    this.eightSecondStopwatch = this.eightSecondStopwatch.bind(this)
+
+    this.switchAlmost = this.switchAlmost.bind(this)
+    this.saveAlmostRecipe = this.saveAlmostRecipe.bind(this)
   };
 
   getDeviceData = async (key) => {
@@ -148,14 +159,30 @@ class ApiCalls extends React.Component {
     if(this.state.searchPaused){
 
         if(this.state.pauseAndSave){
-          if(this.state.stopwatchRunning && this.state.saveStopwatchTriggered){
-             this.saveStopwatch()
+
+            if(this.state.stopwatchRunning && this.state.saveStopwatchTriggered){
+               this.saveStopwatch()
+            }
+            if(this.state.saveStopwatchTriggered === false){
+              var to_save = this.state.recipesToSave
+              var recipe_key = '@saved-recipes'
+              this.saveData(recipe_key, to_save)
+            }
+
+        }
+        else if(this.state.changeTabs){
+
+            if(this.state.stopwatchRunning && this.state.saveStopwatchTriggered){
+               this.saveStopwatch()
+            }
+            if(this.state.saveStopwatchTriggered === false){
+                var almost_state = this.state.almostClicked
+                this.setStates(almost_state)
+              // var to_save = this.state.recipesToSave
+              // var recipe_key = '@saved-recipes'
+              // this.saveData(recipe_key, to_save)
           }
-          if(this.state.saveStopwatchTriggered === false){
-            var to_save = this.state.recipesToSave
-            var recipe_key = '@saved-recipes'
-            this.saveData(recipe_key, to_save)
-          }
+
         }
         else if(this.state.stopwatchRunning){
           /// 8 second timeout until searchPaused === false
@@ -163,14 +190,14 @@ class ApiCalls extends React.Component {
         }
 
     }else{
-        if(this.state.finalResults && this.state.finished === false){
-          var final_length = this.state.refinedRecipeList.length
-          console.log("relevant results length: " + final_length)
-          if(final_length > 100){
-            this.setStates()
-          }
-        }
-        // console.log("this.state.count: " + this.state.count)
+        // Stops app if more than 100 results:
+        // if(this.state.finalResults && this.state.finished === false){
+        //   var final_length = this.state.refinedRecipeList.length
+        //   console.log("*************relevant results length*************: " + final_length)
+        //   if(final_length > 100){
+        //     this.setStates()
+        //   }
+        // }
         if(this.state.count === undefined && this.state.next !== 'first'){
           console.log("API a")
           this.setStates('error')
@@ -226,7 +253,7 @@ class ApiCalls extends React.Component {
       }, 8000)
   }
 
-  setStates(option=0){
+  setStates(option){
     if(option === 'error'){
       console.log("OPTION 1")
       this.setState({
@@ -240,12 +267,22 @@ class ApiCalls extends React.Component {
       })
     }
     else{
-      console.log("OPTION 2")
       this.setState({
-        nextCall: false,
-        finished: true
+        showAlmost: option,
+        changeTabs: false,
+        searchPaused: false,
+        pauseAndSave: false,
+        almostClicked: false
       })
     }
+    // Stops app if more than 100 results:
+    // else{
+    //   console.log("OPTION 2")
+    //   this.setState({
+    //     nextCall: false,
+    //     finished: true
+    //   })
+    // }
   }
 
   triggerStopwatch(){
@@ -277,7 +314,7 @@ class ApiCalls extends React.Component {
 
 // Takes new keywords list in from < AlterKeywords /> component,
 //  triggers new API call (with reduced keyword list):
-   keywordsAlteredHandler(new_keywords,status){
+  keywordsAlteredHandler(new_keywords,status){
       console.log("ingredients altered handler triggered")
       var saved_recipes = this.state.savedRecipes
       if(saved_recipes === undefined){
@@ -336,6 +373,9 @@ class ApiCalls extends React.Component {
   }
 
   saveData(key,data){
+       var this_index = this.state.recipeClicked
+       var indexes = this.state.savedRecipeIndexes
+       indexes.push(this_index)
        try {
            var res = this.saveDeviceData(key,data)
            .then(res => {
@@ -344,7 +384,8 @@ class ApiCalls extends React.Component {
                savedRecipes: data,
                searchPaused: false,
                pauseAndSave: false,
-               recipeClicked: ''
+               recipeClicked: '',
+               savedRecipeIndexes: indexes
              })
            })
            console.log("RECIPE SAVED")
@@ -550,56 +591,65 @@ class ApiCalls extends React.Component {
     console.log("API n")
   }
 
+ checkForDuplicates(recipes,which){
+   console.log("Duplicate check")
+   if(which === 'rel'){
+      var current = this.state.refinedRecipeList
+   }else{
+     var current = this.state.almostList
+   }
+   var indexes_to_splice = []
+   var recipe
+   // Checks that new recipe links aren't already in refinedRecipeList (from previous reponse pages):
+   for(recipe in recipes){
+       console.log("recipes[recipe][1]: " + recipes[recipe][1])
+       var result
+       for(result in current){
+           if(recipes[recipe][1] === current[result][1]){
+               console.log("Link already listed")
+               var this_recipe = recipes[recipe]
+               var ind = recipes.indexOf(this_recipe)
+               indexes_to_splice.push(ind)
+           }
+       }
+   }
+   if(indexes_to_splice.length>0){
+     var i
+     for(i in indexes_to_splice){
+       recipes.splice(i,1)
+     }
+   }
+   // Pushes new relevant recipes to existing refinedRecipeList:
+   var x
+   for(x in recipes){
+     current.push(recipes[x])
+   }
+   return current
+}
+
 // Takes in the final list of relevant recipes returned
 //  from RefineResults component, saves to state:
-  getRelevantRecipes(relevant_recipes){
+  getRelevantRecipes(relevant_recipes,almost_recipes){
     console.log("filtered initial")
     console.log("relevant_recipes.length: " + relevant_recipes.length)
-    var current_list = this.state.refinedRecipeList
-    var indexes_to_splice = []
-    var recipe
-    // Checks that new recipe links aren't already in refinedRecipeList (from previous reponse pages):
-    for(recipe in relevant_recipes){
-        console.log("relevant_recipes[recipe][1]: " + relevant_recipes[recipe][1])
-        var result
-        for(result in current_list){
-            // console.log("relevant[result][1]: " + relevant[result][1])
-            // console.log("relevant_recipes[recipe][1]: " + relevant_recipes[recipe][1])
-            if(relevant_recipes[recipe][1] === current_list[result][1]){
-                console.log("Link already listed")
-                var this_recipe = relevant_recipes[recipe]
-                var ind = relevant_recipes.indexOf(this_recipe)
-                indexes_to_splice.push(ind)
-            }
-        }
-    }
-    if(indexes_to_splice.length>0){
-      var i
-      for(i in indexes_to_splice){
-        relevant_recipes.splice(i,1)
-      }
-    }
-    // Pushes new relevant recipes to existing refinedRecipeList:
-    var x
-    for(x in relevant_recipes){
-      current_list.push(relevant_recipes[x])
-    }
+    var relevants = this.checkForDuplicates(relevant_recipes,'rel')
+    var almosts = this.checkForDuplicates(almost_recipes,'almost')
+    // var word
+    // for(word in almosts){
+    //   console.log("word: " + almosts[word])
+    // }
     if(relevant_recipes.length === 0){
       console.log("No relevant results on these pages")
-      this.setState({
-        fResponse: [],
-        startRefine: false,
-        finalResults: false,
-      })
     }else{
       console.log("found relevant results")
-      this.setState({
-        refinedRecipeList: current_list,
-        fResponse: [],
-        startRefine: false,
-        finalResults: true
-      })
     }
+    this.setState({
+      fResponse: [],
+      refinedRecipeList: relevants,
+      almostList: almosts,
+      startRefine: false,
+      // finalResults: false,
+    })
   }
 
   pauseSearch(){
@@ -607,6 +657,20 @@ class ApiCalls extends React.Component {
     this.setState({
       searchPaused: new_state
     })
+  }
+
+  switchAlmost(state){
+    this.setState({
+      searchPaused: true,
+      changeTabs: true,
+      almostClicked: state,
+    })
+  }
+
+  saveAlmostRecipe(recipe){
+    var out_of_range = this.state.refinedRecipeList.length
+    var ind = out_of_range
+    this.saveRecipe(recipe,ind)
   }
 
 
@@ -629,6 +693,9 @@ class ApiCalls extends React.Component {
     var save_paused = this.state.pauseAndSave
     var recipe_clicked = this.state.recipeClicked
     var no_more_keywords = this.state.noMoreKeywords
+    var saved_indexes = this.state.savedRecipeIndexes
+
+    var almost_tab = this.state.showAlmost
 
 
     return(
@@ -644,17 +711,17 @@ class ApiCalls extends React.Component {
 
                   { api_error &&
                     <SafeAreaView style={styles.container}>
-                      <ScrollView>
-                          <View>
-                                 <Text>Sorry, there was an error!</Text>
+                      <ScrollView style={{marginBottom:40}}>
+                          <View style={{alignItems:"center"}}>
+                                 <Text style={{fontSize:18,fontWeight:"bold",marginBottom:10}}>Sorry, there was an error!</Text>
 
                                  <Pressable style={{justifyContent:"center"}} onPress={this.tryAgain}>
-                                      <Text style={styles.greenButton}>try again</Text>
+                                      <Text style={styles.greenButton}>Try again</Text>
                                  </Pressable>
                                  <Link accessible={true} accessibilityLabel= "An error occurred"
                                    accessibilityHint="Click button to report the error and try again"
                                    to="/" accessibilityRole="button" underlayColor="transparent">
-                                     <Text style={styles.greenButton}>Report and start again</Text>
+                                     <Text style={styles.greenButton}>Report and go back to homepage</Text>
                                  </Link>
                           </View>
                         </ScrollView>
@@ -668,7 +735,7 @@ class ApiCalls extends React.Component {
                        userIngredients={this.state.initialData.ingredients}/>
                    }
 
-                   { this.state.refinedRecipeList.length === 0 && no_more_keywords === false &&
+                   { this.state.refinedRecipeList.length === 0 && no_more_keywords === false && api_error === false &&
                      <SafeAreaView style={styles.container}>
                        <ScrollView>
                          <View style={styles.container}>
@@ -684,182 +751,249 @@ class ApiCalls extends React.Component {
                      </SafeAreaView>
                    }
 
-                   { this.state.refinedRecipeList.length === 0 && no_more_keywords &&
-                     <SafeAreaView style={styles.container}>
-                       <ScrollView>
-                         <View>
-                             <View style={{textAlign:"center",justifyContent:"center",alignItems:"center"}}>
-                                <Text style={{fontWeight:"bold"}}>No recipe matches found, sorry!</Text>
-                                <Text style={{fontWeight:"bold",marginBottom:20}}>Check 'Almost!' tab for possible alternatives</Text>
-                                <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                  style={styles.blueBackToHomepageButton} to="/" underlayColor="transparent">
-                                    <Text>Back to homepage</Text>
-                                </Link>
+
+                   { almost_tab === false &&
+
+                       <View>
+
+                           { this.state.refinedRecipeList.length === 0 && no_more_keywords &&
+                             <SafeAreaView style={styles.container}>
+                               <ScrollView>
+                                 <View>
+                                     <View style={{textAlign:"center",justifyContent:"center",alignItems:"center"}}>
+                                        <Text style={{fontWeight:"bold"}}>No recipe matches found, sorry!</Text>
+                                        <Text style={{fontWeight:"bold",marginBottom:20}}>Check 'Almost!' tab for possible alternatives</Text>
+                                        <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                          style={styles.blueBackToHomepageButton} to="/" underlayColor="transparent">
+                                            <Text>Back to homepage</Text>
+                                        </Link>
+                                     </View>
+                                 </View>
+                               </ScrollView>
+                             </SafeAreaView>
+                           }
+
+                           { this.state.refinedRecipeList.length > 0 && this.state.noMorePages &&
+                             <SafeAreaView style={styles.container}>
+                               <ScrollView>
+                                   <View style={{display:"flex"}}>
+                                           <View style={{flexDirection:"row",}}>
+                                               <Text style={styles.mainTitleTabLeft}>Your results</Text>
+                                               <Pressable accessible={true} accessibilityLabel="Back to recipe matches" accessibilityRole="button"
+                                                 style={{alignText:"center",marginLeft:30}}
+                                                 underlayColor="transparent" onPress={()=> self.switchAlmost(true)}>
+                                                   <Text style={styles.blueButton}>Almost!</Text>
+                                               </Pressable>
+                                           </View>
+                                           <View>
+                                                 {this.state.refinedRecipeList.map(function(item,index){
+                                                    return(
+                                                      <View style={styles.container} key={index}>
+                                                           <View style={{justifyContent:"center",alignItems:"center"}}>
+
+                                                                       <Text accessible={true} accessibilityRole="text"
+                                                                         accessibilityLabel={item[0].toString()}
+                                                                         style={{justifyContent:"center",fontSize:18,fontWeight:"bold",
+                                                                         textAlign:"center",marginBottom:10}}>{item[0]}</Text>
+
+                                                                       <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
+                                                                         <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
+                                                                           style={styles.greenButton}>Go to recipe website</Text>
+                                                                       </Pressable>
+
+                                                                       { !(saved_indexes.includes(index)) &&
+                                                                         <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
+                                                                            <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                              accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
+                                                                         </Pressable>
+                                                                       }
+                                                                       { saved_indexes.includes(index) &&
+                                                                         <Pressable style={{justifyContent:"center"}}>
+                                                                            <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                              accessibilityRole="button" style={styles.redButton}>Recipe saved</Text>
+                                                                         </Pressable>
+                                                                       }
+                                                              </View>
+                                                        </View>
+                                                       )
+                                                     }
+                                                  )}
+                                             </View>
+                                             <Link accessible={true} accessibilityLabel= "Start again"
+                                               accessibilityHint="Click button to go back to homepage"
+                                               to="/" accessibilityRole="button" underlayColor="transparent">
+                                                 <Text style={styles.blueButton}>Start again</Text>
+                                             </Link>
+                                     </View>
+                                   </ScrollView>
+                                 </SafeAreaView>
+                             }
+
+                             { this.state.refinedRecipeList.length > 0 && paused === false &&
+
+                                     <View style={{display:"flex"}}>
+                                             <View style={{flexDirection:"row",}}>
+                                                 <Text style={styles.mainTitleTabLeft}>Your results</Text>
+                                                 <Pressable accessible={true} accessibilityLabel="Back to recipe matches" accessibilityRole="button"
+                                                   style={{alignText:"center",marginLeft:30}}
+                                                   underlayColor="transparent" onPress={()=> self.switchAlmost(true)}>
+                                                     <Text style={styles.blueButton}>Almost!</Text>
+                                                 </Pressable>
+                                             </View>
+                                             <View>
+                                                   {this.state.refinedRecipeList.map(function(item,index){
+                                                      return(
+                                                        <View style={styles.container} key={index}>
+                                                             <View style={{justifyContent:"center",alignItems:"center"}}>
+
+                                                                         <Text accessible={true} accessibilityRole="text"
+                                                                           accessibilityLabel={item[0].toString()}
+                                                                           style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
+                                                                           textAlign:"center",marginBottom:10}}>{item[0]}</Text>
+
+
+                                                                         <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
+                                                                           <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
+                                                                             style={styles.greenButton}>Go to recipe website</Text>
+                                                                         </Pressable>
+
+                                                                         { !(saved_indexes.includes(index)) &&
+                                                                           <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
+                                                                              <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                                accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
+                                                                           </Pressable>
+                                                                         }
+                                                                         { saved_indexes.includes(index) &&
+                                                                           <Pressable style={{justifyContent:"center"}}>
+                                                                              <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                                accessibilityRole="button" style={styles.redButton}>Recipe saved</Text>
+                                                                           </Pressable>
+                                                                         }
+
+                                                                </View>
+                                                          </View>
+                                                         )
+                                                       }
+                                                    )}
+                                               </View>
+                                               {filtering && api_error === false &&
+                                                 <View style={{justifyContent:"center",alignItems:"center"}}>
+                                                    <FilteringAnimation />
+                                                 </View>
+                                               }
+                                               {filtering === false &&
+                                                 <View style={{justifyContent:"center",alignItems:"center"}}>
+                                                    <Text>Search finished.</Text>
+                                                 </View>
+                                               }
+
+                                               <View style={{justifyContent:"center",alignItems:"center"}}>
+                                                   <Pressable accessible={true} accessibilityLabel="pause search" accessibilityRole="button"
+                                                     style={{marginTop:90}} underlayColor="transparent" onPress={() => self.pauseSearch() }>
+                                                       <Text style={styles.blueButton}>Pause search</Text>
+                                                   </Pressable>
+                                               </View>
+                                               <View style={{justifyContent:"center",alignItems:"center"}}>
+                                                   <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                     style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
+                                                       <Text style={styles.redButton}>Cancel search and start again</Text>
+                                                   </Link>
+                                               </View>
+                                       </View>
+
+                              }
+
+                              { this.state.refinedRecipeList.length > 0 && paused &&
+
+                                        <View style={{display:"flex"}}>
+                                                <View style={{flexDirection:"row",}}>
+                                                    <Text style={styles.mainTitleTabLeft}>Your results</Text>
+                                                    <Pressable accessible={true} accessibilityLabel="Back to recipe matches" accessibilityRole="button"
+                                                      style={{alignText:"center",marginLeft:30}}
+                                                      underlayColor="transparent" onPress={()=> self.switchAlmost(true)}>
+                                                        <Text style={styles.blueButton}>Almost!</Text>
+                                                    </Pressable>
+                                                </View>
+                                                <View>
+                                                      {this.state.refinedRecipeList.map(function(item,index){
+                                                         return(
+                                                           <View style={styles.container} key={index}>
+                                                                <View style={{justifyContent:"center",alignItems:"center"}}>
+
+                                                                            <Text accessible={true} accessibilityRole="text"
+                                                                              accessibilityLabel={item[0].toString()}
+                                                                              style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
+                                                                              textAlign:"center",marginBottom:10}}>{item[0]}</Text>
+
+                                                                            <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
+                                                                              <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
+                                                                                style={styles.greenButton}>Go to recipe website</Text>
+                                                                            </Pressable>
+
+                                                                            { !(saved_indexes.includes(index)) &&
+                                                                              <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
+                                                                                 <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                                   accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
+                                                                              </Pressable>
+                                                                            }
+                                                                            { saved_indexes.includes(index) &&
+                                                                              <Pressable style={{justifyContent:"center"}}>
+                                                                                 <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                                   accessibilityRole="button" style={styles.redButton}>Recipe saved</Text>
+                                                                              </Pressable>
+                                                                            }
+
+                                                                   </View>
+                                                                   {save_paused && recipe_clicked === index &&
+                                                                      <SavingRecipeAnimation />
+                                                                   }
+                                                             </View>
+                                                            )
+                                                          }
+                                                       )}
+                                                  </View>
+
+                                                  { save_paused === false &&
+                                                      <View style={{justifyContent:"center",alignItems:"center"}}>
+                                                          <Pressable accessible={true} accessibilityLabel="pause search" accessibilityRole="button"
+                                                            style={{marginTop:90}} underlayColor="transparent" onPress={() => self.pauseSearch() }>
+                                                              <Text style={styles.blueButton}>Unpause</Text>
+                                                          </Pressable>
+                                                      </View>
+                                                  }
+
+                                                  <View style={{justifyContent:"center",alignItems:"center"}}>
+                                                      <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                        style={{marginTop:90}} to="/" underlayColor="transparent">
+                                                          <Text style={styles.redButton}>Cancel search and start again</Text>
+                                                      </Link>
+                                                  </View>
+                                          </View>
+
+                               }
+                        </View>
+
+                    }
+
+                    { almost_tab &&
+                        <View>
+                            <View style={{display:"flex"}}>
+                                <View style={{flexDirection:"row",}}>
+                                    <Pressable accessible={true} accessibilityLabel="Back to recipe matches" accessibilityRole="button"
+                                      style={{alignText:"center",marginRight:30,marginLeft:10}} underlayColor="transparent" onPress={()=> self.switchAlmost(false)}>
+                                        <Text style={styles.blueButton}>Full matches</Text>
+                                    </Pressable>
+                                    <Text style={styles.mainTitleTabRight}>Almost!</Text>
+                                </View>
+                                <View style={{alignItems:"center"}}>
+                                    <Text style={{alignText:"center",fontWeight:"bold"}}>Only one ingredient away from these recipes!:</Text>
+                                    < AlmostList
+                                      almosts={this.state.almostList}
+                                      newRecipeToSave={this.state.saveAlmostRecipe} />
+                                </View>
                              </View>
                          </View>
-                       </ScrollView>
-                     </SafeAreaView>
-                   }
-
-                   { this.state.refinedRecipeList.length > 0 && this.state.noMorePages &&
-                     <SafeAreaView style={styles.container}>
-                       <ScrollView>
-                           <View>
-                                   <Text style={styles.mainTitle}>Your results</Text>
-                                   <View>
-                                         {this.state.refinedRecipeList.map(function(item,index){
-                                            return(
-                                              <View style={styles.container} key={index}>
-                                                   <View style={{justifyContent:"center",alignItems:"center"}}>
-
-                                                               <Text accessible={true} accessibilityRole="text"
-                                                                 accessibilityLabel={item[0].toString()}
-                                                                 style={{justifyContent:"center",fontSize:18,fontWeight:"bold",
-                                                                 textAlign:"center",marginBottom:10}}>{item[0]}</Text>
-
-                                                               <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
-                                                                 <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
-                                                                   style={styles.greenButton}>Go to recipe website</Text>
-                                                               </Pressable>
-
-                                                               <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
-                                                                  <Text accessible={true} accessibilityLabel="Save this recipe to your device"
-                                                                    accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
-                                                               </Pressable>
-
-                                                      </View>
-                                                </View>
-                                               )
-                                             }
-                                          )}
-                                     </View>
-                                     <Link accessible={true} accessibilityLabel= "Start again"
-                                       accessibilityHint="Click button to go back to homepage"
-                                       to="/" accessibilityRole="button" underlayColor="transparent">
-                                         <Text style={styles.blueButton}>Start again</Text>
-                                     </Link>
-                             </View>
-                           </ScrollView>
-                         </SafeAreaView>
                      }
-
-                     { this.state.refinedRecipeList.length > 0 && paused === false &&
-
-                             <View>
-                                    <Text style={styles.mainTitle}>Your results</Text>
-                                     <View>
-                                           {this.state.refinedRecipeList.map(function(item,index){
-                                              return(
-                                                <View style={styles.container} key={index}>
-                                                     <View style={{justifyContent:"center",alignItems:"center"}}>
-
-                                                                 <Text accessible={true} accessibilityRole="text"
-                                                                   accessibilityLabel={item[0].toString()}
-                                                                   style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
-                                                                   textAlign:"center",marginBottom:10}}>{item[0]}</Text>
-
-
-                                                                 <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
-                                                                   <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
-                                                                     style={styles.greenButton}>Go to recipe website</Text>
-                                                                 </Pressable>
-
-                                                                 <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
-                                                                    <Text accessible={true} accessibilityLabel="Save this recipe to your device"
-                                                                      accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
-                                                                 </Pressable>
-
-                                                        </View>
-                                                  </View>
-                                                 )
-                                               }
-                                            )}
-                                       </View>
-                                       {filtering &&
-                                         <View style={{justifyContent:"center",alignItems:"center"}}>
-                                            <FilteringAnimation />
-                                         </View>
-                                       }
-                                       {filtering === false &&
-                                         <View style={{justifyContent:"center",alignItems:"center"}}>
-                                            <Text>Search finished.</Text>
-                                         </View>
-                                       }
-
-                                       <View style={{justifyContent:"center",alignItems:"center"}}>
-                                           <Pressable accessible={true} accessibilityLabel="pause search" accessibilityRole="button"
-                                             style={{marginTop:90}} underlayColor="transparent" onPress={() => self.pauseSearch() }>
-                                               <Text style={styles.blueButton}>Pause search</Text>
-                                           </Pressable>
-                                       </View>
-                                       <View style={{justifyContent:"center",alignItems:"center"}}>
-                                           <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                             style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
-                                               <Text style={styles.redButton}>Cancel search and start again</Text>
-                                           </Link>
-                                       </View>
-                               </View>
-
-                        }
-
-                        { this.state.refinedRecipeList.length > 0 && paused &&
-
-
-                                <View>
-                                        {save_paused &&
-                                           <Text style={styles.title}>Saving recipe...</Text>
-                                        }
-                                        <Text style={styles.mainTitle}>Your results</Text>
-                                        <View>
-                                              {this.state.refinedRecipeList.map(function(item,index){
-                                                 return(
-                                                   <View style={styles.container} key={index}>
-                                                        <View style={{justifyContent:"center",alignItems:"center"}}>
-
-                                                                    <Text accessible={true} accessibilityRole="text"
-                                                                      accessibilityLabel={item[0].toString()}
-                                                                      style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
-                                                                      textAlign:"center",marginBottom:10}}>{item[0]}</Text>
-
-
-                                                                    <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
-                                                                      <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
-                                                                        style={styles.greenButton}>Go to recipe website</Text>
-                                                                    </Pressable>
-
-                                                                    <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
-                                                                       <Text accessible={true} accessibilityLabel="Save this recipe to your device"
-                                                                         accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
-                                                                    </Pressable>
-
-                                                           </View>
-                                                           {save_paused && recipe_clicked === index &&
-                                                              <SavingRecipeAnimation />
-                                                           }
-                                                     </View>
-                                                    )
-                                                  }
-                                               )}
-                                          </View>
-
-                                          { save_paused === false &&
-                                              <View style={{justifyContent:"center",alignItems:"center"}}>
-                                                  <Pressable accessible={true} accessibilityLabel="pause search" accessibilityRole="button"
-                                                    style={{marginTop:90}} underlayColor="transparent" onPress={() => self.pauseSearch() }>
-                                                      <Text style={styles.blueButton}>Unpause</Text>
-                                                  </Pressable>
-                                              </View>
-                                          }
-
-                                          <View style={{justifyContent:"center",alignItems:"center"}}>
-                                              <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                style={{marginTop:90}} to="/" underlayColor="transparent">
-                                                  <Text style={styles.redButton}>Cancel search and start again</Text>
-                                              </Link>
-                                          </View>
-                                  </View>
-
-                           }
 
                   </ScrollView>
                 </SafeAreaView>
@@ -912,9 +1046,16 @@ const styles = StyleSheet.create({
     fontWeight:'bold',
     textAlign: 'center',
   },
-  mainTitle: {
+  mainTitleTabLeft: {
     fontSize:28,
     marginBottom:10,
+    marginLeft: 50,
+    textAlign:"center",
+  },
+  mainTitleTabRight: {
+    fontSize:28,
+    marginBottom:10,
+    marginRight: 40,
     textAlign:"center",
   },
   blueBackToHomepageButton: {
