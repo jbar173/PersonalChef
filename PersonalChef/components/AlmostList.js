@@ -8,12 +8,13 @@ class AlmostList extends React.Component{
       this.state = {
         almostList: this.props.almosts,
         savedRecipeIndexes: [],
+        urlsSavedInThisSearch: this.props.url_list,
+        savedRecipeInfo: this.props.saved_recipes_info
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
 
-      this.refreshPage = this.refreshPage.bind(this)
       this.sendBackRecipeToSave = this.sendBackRecipeToSave.bind(this)
     };
 
@@ -23,36 +24,68 @@ class AlmostList extends React.Component{
       for(item in this.state.almostList){
         console.log("almost list item: " + this.state.almostList[item])
       }
+      if(this.state.savedRecipeInfo !== undefined){
+          for([key,value] of Object.entries(this.state.savedRecipeInfo)){
+            console.log("**didMount** key: " + key + " value: " + value)
+          }
+      }
+      // var key
+      // for(key in this.state.savedRecipeInfo){
+      //   console.log("Key[0]: " + key[0])
+      //   console.log("key[1]: " + key[1])
+      // }
     }
 
     componentDidUpdate(){
       console.log("Almost list updated")
+      for([key,value] of Object.entries(this.state.savedRecipeInfo)){
+        console.log("key: " + key + " value: " + value)
+      }
     }
 
     componentWillUnmount(){
       console.log("Almost list dismounting")
     }
 
-    refreshPage(){
-      console.log("Refresh component here (get 'almost' recipes sent through from apiCalls again, will include any new ones)")
-    }
-
     sendBackRecipeToSave(recipe,index){
       var recipes_saved = this.state.savedRecipeIndexes
       recipes_saved.push(index)
-      recipe.pop()
-      console.log("ALMOST recipe.length (should be 2): " + recipe.length)
-      this.props.newRecipeToSave(recipe,index)
+      var saved_recipe_info = this.state.savedRecipeInfo
+      var url_list = this.state.urlsSavedInThisSearch
+
+      if(recipe.length === 3){
+        var url = recipe[1]
+        var missing = recipe.pop()
+        console.log("ALMOST recipe.length (should be 2): " + recipe.length)
+        console.log("missing: " + missing)
+        console.log("url: " + url)
+        saved_recipe_info[url] = missing
+        url_list.push(url)
+      }
+
+      console.log("typeof(saved_recipe_info): " + typeof(saved_recipe_info))
+      console.log("typeof(this.state.savedRecipeInfo): " + this.state.savedRecipeInfo)
+      console.log("****saved recipe info length: " + saved_recipe_info.length)
+      console.log("****this.state.savedRecipeInfo.length: " + this.state.savedRecipeInfo.length)
+
+      var ind = ''
+      this.props.newRecipeToSave(recipe,ind,url_list,saved_recipe_info)
       this.setState({
-        savedRecipeIndexes: recipes_saved
+        savedRecipeIndexes: recipes_saved,
+        urlsSavedInThisSearch: url_list,
+        savedRecipeInfo: saved_recipe_info
       })
     }
-
-
 
     render(){
       var recipe_list = this.state.almostList
       var saved_indexes = this.state.savedRecipeIndexes
+      var saved_urls = this.state.urlsSavedInThisSearch
+      var urls_are_saved = false
+      if(saved_urls !== undefined){
+        urls_are_saved = true
+      }
+      var saved_recipe_info = this.state.savedRecipeInfo
       var self = this
 
       return(
@@ -64,30 +97,47 @@ class AlmostList extends React.Component{
                         return(
                             <View key={index}>
                                 <View style={{justifyContent:"center",alignItems:"center"}}>
-                                      <Text style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
+                                     <Text style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
                                         textAlign:"center",marginBottom:10,marginTop:30}}>{item[0]}</Text>
-                                      <Text style={{fontWeight:"bold",marginBottom:5,textAlign:"center"}}>Missing ingredient: {item[2]}</Text>
+
+                                     {item.length === 3 &&
+                                        <Text style={{fontWeight:"bold",marginBottom:5,textAlign:"center"}}>Missing ingredient: {item[2]}</Text>
+                                     }
+                                     {item.length === 2 && urls_are_saved && saved_recipe_info !== undefined &&
+                                        <View>
+                                          {Object.entries(saved_recipe_info).map(function(info,ind) {
+                                              return(
+                                                <View key={ind}>
+                                                  {saved_urls.includes(info[0]) &&
+                                                      <Text style={{fontWeight:"bold",marginBottom:5,textAlign:"center"}}>Missing ingredient: {info[1]}</Text>
+                                                  }
+                                                </View>
+                                              )
+                                            })
+                                          }
+                                        </View>
+                                      }
 
                                       <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
                                         <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
                                           style={styles.greenButton}>Go to recipe website</Text>
                                       </Pressable>
 
-                                      { !(saved_indexes.includes(index)) &&
-                                        <Pressable style={{justifyContent:"center"}} onPress={() => self.sendBackRecipeToSave(item,index)}>
-                                           <Text accessible={true} accessibilityLabel="Save this recipe to your device"
-                                             accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
-                                        </Pressable>
-                                      }
-                                      { saved_indexes.includes(index) &&
+                                      { saved_urls.includes(item[1]) &&
                                         <Pressable style={{justifyContent:"center"}}>
                                            <Text accessible={true} accessibilityLabel="Recipe has been saved"
                                              accessibilityRole="button" style={styles.redButton}>Recipe saved</Text>
                                         </Pressable>
                                       }
+                                      { !(saved_urls.includes(item[1])) &&
+                                        <Pressable style={{justifyContent:"center"}} onPress={() => self.sendBackRecipeToSave(item,index)}>
+                                           <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                             accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
+                                        </Pressable>
+                                      }
 
-                                </View>
-                            </View>
+                                 </View>
+                             </View>
                         )
                       })
 

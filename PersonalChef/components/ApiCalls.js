@@ -54,7 +54,11 @@ class ApiCalls extends React.Component {
       changeTabs: false,
       almostClicked: false,
       showAlmost: false,
-      almostList: []
+      almostList: [],
+      almostsSavedRecipeInfo: {
+        'first url': 'missing ingredient'
+      },
+      almostsUrlList: [],
     },
     this.apiAbortController = new AbortController()
     this.getDeviceData = this.getDeviceData.bind(this)
@@ -85,7 +89,7 @@ class ApiCalls extends React.Component {
     this.eightSecondStopwatch = this.eightSecondStopwatch.bind(this)
 
     this.switchAlmost = this.switchAlmost.bind(this)
-    this.saveAlmostRecipe = this.saveAlmostRecipe.bind(this)
+
   };
 
   getDeviceData = async (key) => {
@@ -398,7 +402,7 @@ class ApiCalls extends React.Component {
        }
   }
 
-  saveRecipe(recipe,index){
+  saveRecipe(recipe,index,url_list,saved_recipes_info){
     console.log("saveRecipe function")
     console.log("recipe[0]: " + recipe[0])
     var saved_list = []
@@ -419,9 +423,16 @@ class ApiCalls extends React.Component {
       searchPaused: true,
       pauseAndSave: true,
       stopwatchRunning: true,
-      saveStopwatchTriggered: true
+      saveStopwatchTriggered: true,
+      almostsSavedRecipeInfo: saved_recipes_info,
+      almostsUrlList: url_list
     })
   }
+
+  // saveAlmostRecipe(recipe){
+  //   var ind = ''
+  //   this.saveRecipe(recipe,ind)
+  // }
 
 // Calls first api 10 times (allowance is 10 hits per minute),
 //  collects 200 recipe apis (if that many are returned):
@@ -657,11 +668,6 @@ class ApiCalls extends React.Component {
     this.setState({
       searchPaused: new_state
     })
-  }
-
-  saveAlmostRecipe(recipe){
-    var ind = ''
-    this.saveRecipe(recipe,ind)
   }
 
 
@@ -1004,7 +1010,9 @@ class ApiCalls extends React.Component {
                                     }
                                     < AlmostList
                                       almosts={this.state.almostList}
-                                      newRecipeToSave={this.saveAlmostRecipe} />
+                                      newRecipeToSave={this.saveRecipe}
+                                      saved_recipes_info={this.state.almostsSavedRecipeInfo}
+                                      url_list={this.state.almostsUrlList} />
                                 </View>
                              </View>
                          </View>
