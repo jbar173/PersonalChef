@@ -9,35 +9,33 @@ class AlmostList extends React.Component{
         almostList: this.props.almosts,
         savedRecipeIndexes: [],
         urlsSavedInThisSearch: this.props.url_list,
-        savedRecipeInfo: this.props.saved_recipes_info
+        savedRecipeInfo: this.props.saved_recipes_info,
+        checked: false
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
 
+      this.checkForDuplicates = this.checkForDuplicates.bind(this)
       this.sendBackRecipeToSave = this.sendBackRecipeToSave.bind(this)
     };
 
     componentDidMount(){
       console.log("Almost list mounted")
-      var item
-      for(item in this.state.almostList){
-        console.log("almost list item: " + this.state.almostList[item])
-      }
+      this.checkForDuplicates()
       if(this.state.savedRecipeInfo !== undefined){
           for([key,value] of Object.entries(this.state.savedRecipeInfo)){
             console.log("**didMount** key: " + key + " value: " + value)
           }
       }
-      // var key
-      // for(key in this.state.savedRecipeInfo){
-      //   console.log("Key[0]: " + key[0])
-      //   console.log("key[1]: " + key[1])
-      // }
     }
 
     componentDidUpdate(){
       console.log("Almost list updated")
+      console.log("CHECKED === " + this.state.checked)
+      if(this.state.checked === false){
+        this.checkForDuplicates()
+      }
       for([key,value] of Object.entries(this.state.savedRecipeInfo)){
         console.log("key: " + key + " value: " + value)
       }
@@ -45,6 +43,45 @@ class AlmostList extends React.Component{
 
     componentWillUnmount(){
       console.log("Almost list dismounting")
+    }
+
+    checkForDuplicates(){
+      var item
+      var almost_list = this.state.almostList
+      var urls = []
+      for(item in almost_list){
+        console.log("almost list item: " + almost_list[item])
+        var element = almost_list[item]
+        urls.push(element[1])
+      }
+      var to_splice = []
+      for(item in almost_list){
+        var count = 0
+        var el = almost_list[item]
+        var link
+        for(link in urls){
+          var u = urls[link]
+          if(el[1] === u){
+            count += 1
+          }
+        }
+        if(count > 1){
+          var i = almost_list.indexOf(item)
+          to_splice.push(i)
+        }
+      }
+      if(to_splice.length !== 0){
+        var ind = to_splice.length-1
+        var it
+        for(it=ind;ind>=0;ind--){
+          var index_to_splice = to_splice[it]
+          almost_list.splice(to_splice,1)
+        }
+      }
+      this.setState({
+        almostList: almost_list,
+        checked: true
+      })
     }
 
     sendBackRecipeToSave(recipe,index){
@@ -62,11 +99,6 @@ class AlmostList extends React.Component{
         saved_recipe_info[url] = missing
         url_list.push(url)
       }
-
-      console.log("typeof(saved_recipe_info): " + typeof(saved_recipe_info))
-      console.log("typeof(this.state.savedRecipeInfo): " + this.state.savedRecipeInfo)
-      console.log("****saved recipe info length: " + saved_recipe_info.length)
-      console.log("****this.state.savedRecipeInfo.length: " + this.state.savedRecipeInfo.length)
 
       var ind = ''
       this.props.newRecipeToSave(recipe,ind,url_list,saved_recipe_info)
