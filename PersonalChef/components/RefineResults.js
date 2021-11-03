@@ -182,6 +182,7 @@ const RefineResults = props => {
                                         if(false_count === user_ings_length){ // Couldn't find this recipe_ingredient in any of the user's ingredients
                                             not_found.push(ingredient_lower) // Recipe ingredient is added to not_found list.
                                             console.log("user doesn't have: " + ingredient_lower)
+                                            console.log("not_found.length (less): " + not_found.length)
                                             // match = false (already false)
                                             // break_out = true
                                             // break;
@@ -201,7 +202,7 @@ const RefineResults = props => {
                                                     break;
                                                }else if(not_found.length === 1 && final_index){ // User has all the recipe's ingredients except 1, recipe added to almosts list.
                                                     // Add to almosts:
-                                                    console.log("LESS: Pushing to almosts 1")
+                                                    console.log("ALMOST MATCH (less)!")
                                                     var entry = []
                                                     entry.push(recipes[j]['recipe']['label'])
                                                     entry.push(recipes[j]['recipe']['url'])
@@ -228,7 +229,7 @@ const RefineResults = props => {
                                                     break;
                                                }else if(final_index && not_found.length === 1){ // If checking last ingredient in recipe, and user is only missing one ingredient
                                                     // add to almosts:
-                                                    console.log("LESS: Pushing to almosts 2")
+                                                    console.log("ALMOST MATCH! (less)")
                                                     var entry = []
                                                     entry.push(recipes[j]['recipe']['label'])
                                                     entry.push(recipes[j]['recipe']['url'])
@@ -370,6 +371,7 @@ const RefineResults = props => {
                                             if(result === false && false_count === user_ings_length ){
                                                   not_found.push(ingredient_lower)
                                                   console.log("user doesn't have: " + ingredient_lower)
+                                                  console.log("not_found.length (same): " + not_found.length)
 
                                             }
 

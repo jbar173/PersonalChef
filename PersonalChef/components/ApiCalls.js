@@ -4,7 +4,7 @@ import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 import { AlterKeywords } from './AlterKeywords.js';
 import { RefineResults } from './RefineResults.js';
 import { AlmostList } from './AlmostList.js';
-import { SearchingPageAnimation, FilteringAnimation, SavingRecipeAnimation } from "./Animations.js";
+import { SearchingPageAnimation, FilteringAnimation, SavingRecipeAnimation, ChangingTabsAnimation } from "./Animations.js";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
@@ -29,6 +29,7 @@ class ApiCalls extends React.Component {
 
       foundResults: true,
       apiError: false,
+      tryAgain: false,
       keywordsError: false,
       fResponse: [],
       next: 'first',
@@ -49,7 +50,6 @@ class ApiCalls extends React.Component {
       recipesToSave: [],
       savedRecipeIndexes: [],
 
-      // finalResults: false,
       finished: false,
       changeTabs: false,
       almostClicked: false,
@@ -81,7 +81,7 @@ class ApiCalls extends React.Component {
     this.saveDeviceData = this.saveDeviceData.bind(this)
     this.saveData = this.saveData.bind(this)
     this.saveRecipe = this.saveRecipe.bind(this)
-    this.saveStopwatch = this.saveStopwatch.bind(this)
+    this.sevenSecondStopwatch = this.sevenSecondStopwatch.bind(this)
     this.eightSecondStopwatch = this.eightSecondStopwatch.bind(this)
 
     this.switchAlmost = this.switchAlmost.bind(this)
@@ -153,51 +153,43 @@ class ApiCalls extends React.Component {
 
   componentDidUpdate(){
     console.log("API COMPONENT UPDATED")
-    // console.log("this.state.stopwatchRunning: " + this.state.stopwatchRunning)
-    console.log("this.state.startRefine: " + this.state.startRefine)
-    // console.log("*this.state.next: " + this.state.next)-
+
     if(this.state.searchPaused){
 
-        if(this.state.pauseAndSave){
+          if(this.state.pauseAndSave){
 
-            if(this.state.stopwatchRunning && this.state.saveStopwatchTriggered){
-               this.saveStopwatch()
-            }
-            if(this.state.saveStopwatchTriggered === false){
-              var to_save = this.state.recipesToSave
-              var recipe_key = '@saved-recipes'
-              this.saveData(recipe_key, to_save)
-            }
+              if(this.state.stopwatchRunning && this.state.saveStopwatchTriggered){
+                 this.sevenSecondStopwatch()
+              }
+              if(this.state.saveStopwatchTriggered === false){
+                var to_save = this.state.recipesToSave
+                var recipe_key = '@saved-recipes'
+                this.saveData(recipe_key, to_save)
+              }
 
-        }
-        else if(this.state.changeTabs){
+          }
+          else if(this.state.changeTabs){
 
-            if(this.state.stopwatchRunning && this.state.saveStopwatchTriggered){
-               this.saveStopwatch()
-            }
-            if(this.state.saveStopwatchTriggered === false){
-                var almost_state = this.state.almostClicked
-                this.setStates(almost_state)
-              // var to_save = this.state.recipesToSave
-              // var recipe_key = '@saved-recipes'
-              // this.saveData(recipe_key, to_save)
+              if(this.state.stopwatchRunning && this.state.saveStopwatchTriggered){
+                 this.sevenSecondStopwatch()
+              }
+              if(this.state.saveStopwatchTriggered === false){
+                 var almost_state = this.state.almostClicked
+                 this.setStates(almost_state)
+              }
+
+          }
+          else if(this.state.stopwatchRunning){
+            /// 8 second timeout until searchPaused === false
+            console.log("~~~~~PAUSED~~~~~~")
+            this.eightSecondStopwatch()
           }
 
-        }
-        else if(this.state.stopwatchRunning){
-          /// 8 second timeout until searchPaused === false
-          this.eightSecondStopwatch()
-        }
-
     }else{
-        // Stops app if more than 100 results:
-        // if(this.state.finalResults && this.state.finished === false){
-        //   var final_length = this.state.refinedRecipeList.length
-        //   console.log("*************relevant results length*************: " + final_length)
-        //   if(final_length > 100){
-        //     this.setStates()
-        //   }
-        // }
+        if(this.state.changeTabs){
+          var almost = this.state.almostClicked
+          this.setStates(almost)
+        }
         if(this.state.count === undefined && this.state.next !== 'first'){
           console.log("API a")
           this.setStates('error')
@@ -233,24 +225,21 @@ class ApiCalls extends React.Component {
     }
   }
 
-  saveStopwatch(){
-    console.log("starting 7 second save stopwatch")
-    var cmponent = this
-    setTimeout(function(){
-        console.log("7 second save stopwatch finished")
-        cmponent.setState({
-          saveStopwatchTriggered: false,
-          stopwatchRunning: false,
-        })
-      }, 7000)
-  }
-
-  eightSecondStopwatch(){
-    console.log("starting 8 second save stopwatch")
-    var cmponent = this
-    setTimeout(function(){
-        console.log("8 second save stopwatch finished")
-      }, 8000)
+  switchAlmost(state){
+    if(this.state.apiError === false){
+      this.setState({
+        searchPaused: true,
+        changeTabs: true,
+        almostClicked: state,
+        saveStopwatchTriggered: true,
+        stopwatchRunnning: true
+      })
+    }else{
+      this.setState({
+        changeTabs: true,
+        almostClicked: state,
+      })
+    }
   }
 
   setStates(option){
@@ -271,18 +260,29 @@ class ApiCalls extends React.Component {
         showAlmost: option,
         changeTabs: false,
         searchPaused: false,
-        pauseAndSave: false,
         almostClicked: false
       })
     }
-    // Stops app if more than 100 results:
-    // else{
-    //   console.log("OPTION 2")
-    //   this.setState({
-    //     nextCall: false,
-    //     finished: true
-    //   })
-    // }
+  }
+
+  sevenSecondStopwatch(){
+    console.log("starting 7 second stopwatch")
+    var cmponent = this
+    setTimeout(function(){
+        console.log("7 second stopwatch finished")
+        cmponent.setState({
+          saveStopwatchTriggered: false,
+          stopwatchRunning: false,
+        })
+      }, 7000)
+  }
+
+  eightSecondStopwatch(){
+    console.log("starting 8 second pause stopwatch")
+    var cmponent = this
+    setTimeout(function(){
+        console.log("8 second pause stopwatch finished")
+      }, 8000)
   }
 
   triggerStopwatch(){
@@ -339,6 +339,7 @@ class ApiCalls extends React.Component {
           },
           searchKeywords: new_keywords,
           reduceKeywords: false,
+          tryAgain: false,
           nextCall: true
         })
         console.log("API e")
@@ -353,6 +354,7 @@ class ApiCalls extends React.Component {
           keywordsError: true,
           searchKeywords: new_keywords,
           reduceKeywords: false,
+          tryAgain: false,
           nextCall: false
         })
         console.log("API f")
@@ -375,7 +377,9 @@ class ApiCalls extends React.Component {
   saveData(key,data){
        var this_index = this.state.recipeClicked
        var indexes = this.state.savedRecipeIndexes
-       indexes.push(this_index)
+       if(this.state.recipeClicked !== ''){
+         indexes.push(this_index)
+       }
        try {
            var res = this.saveDeviceData(key,data)
            .then(res => {
@@ -495,6 +499,7 @@ class ApiCalls extends React.Component {
     console.log("this.state.foundResults: " + this.state.foundResults)
     var ings = this.state.initialData.ingredients
     this.setState({
+      tryAgain: true,
       next: 'first',
       reduceKeywords: true,
       nextCall: false,
@@ -634,10 +639,6 @@ class ApiCalls extends React.Component {
     console.log("relevant_recipes.length: " + relevant_recipes.length)
     var relevants = this.checkForDuplicates(relevant_recipes,'rel')
     var almosts = this.checkForDuplicates(almost_recipes,'almost')
-    // var word
-    // for(word in almosts){
-    //   console.log("word: " + almosts[word])
-    // }
     if(relevant_recipes.length === 0){
       console.log("No relevant results on these pages")
     }else{
@@ -648,7 +649,6 @@ class ApiCalls extends React.Component {
       refinedRecipeList: relevants,
       almostList: almosts,
       startRefine: false,
-      // finalResults: false,
     })
   }
 
@@ -659,28 +659,17 @@ class ApiCalls extends React.Component {
     })
   }
 
-  switchAlmost(state){
-    this.setState({
-      searchPaused: true,
-      changeTabs: true,
-      almostClicked: state,
-    })
-  }
-
   saveAlmostRecipe(recipe){
-    var out_of_range = this.state.refinedRecipeList.length
-    var ind = out_of_range
+    var ind = ''
     this.saveRecipe(recipe,ind)
   }
 
 
   render(){
     console.log("Api component rendered")
+    var self = this
     var alter_or_reorder_keywords = this.state.reduceKeywords
     var api_error = this.state.apiError
-    var count = this.state.count
-    var no_count = [ undefined, null ]
-    var no_results = [0,]
     var response = this.state.fResponse
     var filtering = false
     if(this.state.noMorePages === false && this.state.nextCall === false){
@@ -688,15 +677,21 @@ class ApiCalls extends React.Component {
     }
     var start_refine = this.state.startRefine
     var final_results = this.state.finalResults
-    var self = this
     var paused = this.state.searchPaused
     var save_paused = this.state.pauseAndSave
     var recipe_clicked = this.state.recipeClicked
     var no_more_keywords = this.state.noMoreKeywords
     var saved_indexes = this.state.savedRecipeIndexes
-
     var almost_tab = this.state.showAlmost
-
+    var results = false
+    if(this.state.refinedRecipeList.length > 0 || this.state.almostList.length > 0){
+      results = true
+    }
+    var show_searching = false
+    if(this.state.tryAgain === true || results === false && no_more_keywords === false && api_error === false){
+      show_searching = true
+    }
+    var changing_tabs = this.state.changeTabs
 
     return(
 
@@ -735,7 +730,7 @@ class ApiCalls extends React.Component {
                        userIngredients={this.state.initialData.ingredients}/>
                    }
 
-                   { this.state.refinedRecipeList.length === 0 && no_more_keywords === false && api_error === false &&
+                   { show_searching &&
                      <SafeAreaView style={styles.container}>
                        <ScrollView>
                          <View style={styles.container}>
@@ -752,7 +747,7 @@ class ApiCalls extends React.Component {
                    }
 
 
-                   { almost_tab === false &&
+                   { almost_tab === false && this.state.tryAgain === false &&
 
                        <View>
 
@@ -773,18 +768,23 @@ class ApiCalls extends React.Component {
                              </SafeAreaView>
                            }
 
-                           { this.state.refinedRecipeList.length > 0 && this.state.noMorePages &&
+                           { results && this.state.noMorePages && this.state.tryAgain === false &&
                              <SafeAreaView style={styles.container}>
                                <ScrollView>
                                    <View style={{display:"flex"}}>
                                            <View style={{flexDirection:"row",}}>
                                                <Text style={styles.mainTitleTabLeft}>Your results</Text>
                                                <Pressable accessible={true} accessibilityLabel="Back to recipe matches" accessibilityRole="button"
-                                                 style={{alignText:"center",marginLeft:30}}
+                                                 style={{textAlign:"center",marginLeft:30}}
                                                  underlayColor="transparent" onPress={()=> self.switchAlmost(true)}>
                                                    <Text style={styles.blueButton}>Almost!</Text>
                                                </Pressable>
                                            </View>
+                                           {changing_tabs &&
+                                             <View>
+                                                  <ChangingTabsAnimation />
+                                             </View>
+                                           }
                                            <View>
                                                  {this.state.refinedRecipeList.map(function(item,index){
                                                     return(
@@ -829,17 +829,22 @@ class ApiCalls extends React.Component {
                                  </SafeAreaView>
                              }
 
-                             { this.state.refinedRecipeList.length > 0 && paused === false &&
+                             { results && paused === false && this.state.tryAgain === false &&
 
                                      <View style={{display:"flex"}}>
                                              <View style={{flexDirection:"row",}}>
                                                  <Text style={styles.mainTitleTabLeft}>Your results</Text>
                                                  <Pressable accessible={true} accessibilityLabel="Back to recipe matches" accessibilityRole="button"
-                                                   style={{alignText:"center",marginLeft:30}}
+                                                   style={{textAlign:"center",marginLeft:30}}
                                                    underlayColor="transparent" onPress={()=> self.switchAlmost(true)}>
                                                      <Text style={styles.blueButton}>Almost!</Text>
                                                  </Pressable>
                                              </View>
+                                             {changing_tabs &&
+                                               <View>
+                                                    <ChangingTabsAnimation />
+                                               </View>
+                                             }
                                              <View>
                                                    {this.state.refinedRecipeList.map(function(item,index){
                                                       return(
@@ -903,17 +908,22 @@ class ApiCalls extends React.Component {
 
                               }
 
-                              { this.state.refinedRecipeList.length > 0 && paused &&
+                              { results && paused && this.state.tryAgain === false &&
 
                                         <View style={{display:"flex"}}>
                                                 <View style={{flexDirection:"row",}}>
                                                     <Text style={styles.mainTitleTabLeft}>Your results</Text>
                                                     <Pressable accessible={true} accessibilityLabel="Back to recipe matches" accessibilityRole="button"
-                                                      style={{alignText:"center",marginLeft:30}}
+                                                      style={{textAlign:"center",marginLeft:30}}
                                                       underlayColor="transparent" onPress={()=> self.switchAlmost(true)}>
                                                         <Text style={styles.blueButton}>Almost!</Text>
                                                     </Pressable>
                                                 </View>
+                                                {changing_tabs &&
+                                                  <View>
+                                                       <ChangingTabsAnimation />
+                                                  </View>
+                                                }
                                                 <View>
                                                       {this.state.refinedRecipeList.map(function(item,index){
                                                          return(
@@ -953,7 +963,7 @@ class ApiCalls extends React.Component {
                                                        )}
                                                   </View>
 
-                                                  { save_paused === false &&
+                                                  { save_paused === false && this.state.changeTabs === false &&
                                                       <View style={{justifyContent:"center",alignItems:"center"}}>
                                                           <Pressable accessible={true} accessibilityLabel="pause search" accessibilityRole="button"
                                                             style={{marginTop:90}} underlayColor="transparent" onPress={() => self.pauseSearch() }>
@@ -975,21 +985,26 @@ class ApiCalls extends React.Component {
 
                     }
 
-                    { almost_tab &&
+                    { almost_tab && this.state.tryAgain === false &&
                         <View>
                             <View style={{display:"flex"}}>
                                 <View style={{flexDirection:"row",}}>
                                     <Pressable accessible={true} accessibilityLabel="Back to recipe matches" accessibilityRole="button"
-                                      style={{alignText:"center",marginRight:30,marginLeft:10}} underlayColor="transparent" onPress={()=> self.switchAlmost(false)}>
+                                      style={{textAlign:"center",marginRight:30,marginLeft:10}} underlayColor="transparent" onPress={()=> self.switchAlmost(false)}>
                                         <Text style={styles.blueButton}>Full matches</Text>
                                     </Pressable>
                                     <Text style={styles.mainTitleTabRight}>Almost!</Text>
                                 </View>
                                 <View style={{alignItems:"center"}}>
-                                    <Text style={{alignText:"center",fontWeight:"bold"}}>Only one ingredient away from these recipes!:</Text>
+                                    <Text style={{textAlign:"center",fontWeight:"bold"}}>Only one ingredient away from these recipes!:</Text>
+                                    {changing_tabs &&
+                                      <View>
+                                           <ChangingTabsAnimation />
+                                      </View>
+                                    }
                                     < AlmostList
                                       almosts={this.state.almostList}
-                                      newRecipeToSave={this.state.saveAlmostRecipe} />
+                                      newRecipeToSave={this.saveAlmostRecipe} />
                                 </View>
                              </View>
                          </View>

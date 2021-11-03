@@ -53,6 +53,7 @@ class AlmostList extends React.Component{
     render(){
       var recipe_list = this.state.almostList
       var saved_indexes = this.state.savedRecipeIndexes
+      var self = this
 
       return(
 

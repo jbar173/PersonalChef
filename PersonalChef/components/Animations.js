@@ -310,6 +310,76 @@ class SavingRecipeAnimation extends React.Component{
 };
 
 
+class ChangingTabsAnimation extends React.Component{
+    constructor(props){
+      super(props);
+      this.componentDidMount = this.componentDidMount.bind(this)
+      this.componentDidUpdate = this.componentDidUpdate.bind(this)
+      this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
+      this.opacity = new Animated.Value(0.01);
+      this.abortController = new AbortController()
+
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(this.opacity, {
+            duration: 1000,
+            toValue: 1,
+            easing: Easing.linear,
+            useNativeDriver: false,
+            signal: this.abortController.signal,
+          }),
+          Animated.delay(1000),
+          Animated.timing(this.opacity, {
+            duration: 1000,
+            toValue: 0,
+            easing: Easing.linear,
+            useNativeDriver: false,
+            signal: this.abortController.signal,
+          }),
+        ]),
+      ).start()
+
+    };
+
+    componentDidMount(){
+      console.log("ChangingTabsAnimation mounted")
+    }
+
+    componentDidUpdate(){
+      console.log("ChangingTabsAnimation updated")
+    }
+
+    componentWillUnmount(){
+      console.log("ChangingTabsAnimation unmounted")
+      this.abortController.abort()
+    }
+
+    render(){
+      console.log("ChangingTabsAnimation rendered")
+
+      return(
+            <View>
+                    <Animated.Text style={{
+                      opacity: this.opacity.interpolate({
+                        inputRange: [0,1],
+                        outputRange: [0,1],
+                      }),
+                      fontSize: 18,
+                      marginTop: 10,
+                      fontWeight:'bold',
+                      textAlign: 'center',
+                      color: 'lightseagreen'
+                    }} > One moment please... </Animated.Text>
+
+            </View>
+      );
+
+    }
+
+};
+
+
 const styles = StyleSheet.create({
   greenTitle: {
     fontSize:18,
@@ -321,4 +391,4 @@ const styles = StyleSheet.create({
 });
 
 
-export { SearchingPageAnimation, FilteringAnimation, ThreeDots, SavingRecipeAnimation };
+export { SearchingPageAnimation, FilteringAnimation, ThreeDots, SavingRecipeAnimation, ChangingTabsAnimation };

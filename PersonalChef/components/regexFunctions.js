@@ -154,7 +154,8 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
                     var ingredient = words[c]
                     var length_integer = parseInt(words.length)
                     var last_ind = length_integer-1
-                    console.log("checking exception ingredient: " + ingredient)
+                    // console.log("checking exception ingredient: " + ingredient)
+
                     // matching word is in the middle of the string:
                     var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
                     var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)

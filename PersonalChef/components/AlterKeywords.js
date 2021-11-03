@@ -50,10 +50,6 @@ class AlterKeywords extends React.Component {
 
   componentDidUpdate(){
     console.log("AlterKeywords updated")
-    // console.log("this.state.ready: " + this.state.ready)
-    // console.log("this.state.rankedIngredients.length: " + this.state.rankedIngredients.length)
-    // console.log("this.state.passBack: " + this.state.passBack)
-    // console.log("this.state.getRanked: " + this.state.getRanked)
     console.log("### this.state.notFound: " + this.state.notFound)
 
     // Triggers function to alter ingredient list, once rankedIngredients
@@ -75,7 +71,6 @@ class AlterKeywords extends React.Component {
     if(this.state.pass){
         console.log("Passing back to ApiCalls")
         this.sendAlteredListBack()
-        // console.log("passing back 2")
     }
   }
 
@@ -130,8 +125,6 @@ class AlterKeywords extends React.Component {
 // Searches for least popular ingredient in user's ingredient list,
 //  splices it from list, then triggers this.state.passBack:
   alterIngredients(){
-    // console.log("A1")
-    // console.log("this.state.rankedIngredients[0].name: " + this.state.rankedIngredients[0].name)
     var i
     var j
     var length = this.state.ingredients.length
