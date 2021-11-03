@@ -108,7 +108,7 @@ class AlmostList extends React.Component{
                                           {Object.entries(saved_recipe_info).map(function(info,ind) {
                                               return(
                                                 <View key={ind}>
-                                                  {saved_urls.includes(info[0]) &&
+                                                  {saved_urls.includes(info[0]) && item[1] === info[0] &&
                                                       <Text style={{fontWeight:"bold",marginBottom:5,textAlign:"center"}}>Missing ingredient: {info[1]}</Text>
                                                   }
                                                 </View>
