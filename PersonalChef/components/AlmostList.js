@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable, Linking, SafeAreaView, ScrollView } from 'react-native';
+import { SavingRecipeAnimation } from "./Animations.js";
 
 
 class AlmostList extends React.Component{
@@ -9,20 +10,21 @@ class AlmostList extends React.Component{
         almostList: this.props.almosts,
         savedRecipeIndexes: [],
         urlsSavedInThisSearch: this.props.url_list,
+        prevUrlLength: '',
         savedRecipeInfo: this.props.saved_recipes_info,
-        checked: false
+        showAnimation: false,
+        recipeClicked: ''
       }
       this.componentDidMount = this.componentDidMount.bind(this)
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
 
-      this.checkForDuplicates = this.checkForDuplicates.bind(this)
       this.sendBackRecipeToSave = this.sendBackRecipeToSave.bind(this)
+      this.animationOver = this.animationOver.bind(this)
     };
 
     componentDidMount(){
       console.log("Almost list mounted")
-      this.checkForDuplicates()
       if(this.state.savedRecipeInfo !== undefined){
           for([key,value] of Object.entries(this.state.savedRecipeInfo)){
             console.log("**didMount** key: " + key + " value: " + value)
@@ -32,59 +34,22 @@ class AlmostList extends React.Component{
 
     componentDidUpdate(){
       console.log("Almost list updated")
-      console.log("CHECKED === " + this.state.checked)
-      if(this.state.checked === false){
-        this.checkForDuplicates()
-      }
-      for([key,value] of Object.entries(this.state.savedRecipeInfo)){
-        console.log("key: " + key + " value: " + value)
-      }
+      console.log("UPDATE showAnimation?: " + this.state.showAnimation)
     }
 
     componentWillUnmount(){
       console.log("Almost list dismounting")
     }
 
-    checkForDuplicates(){
-      var item
-      var almost_list = this.state.almostList
-      var urls = []
-      for(item in almost_list){
-        console.log("almost list item: " + almost_list[item])
-        var element = almost_list[item]
-        urls.push(element[1])
-      }
-      var to_splice = []
-      for(item in almost_list){
-        var count = 0
-        var el = almost_list[item]
-        var link
-        for(link in urls){
-          var u = urls[link]
-          if(el[1] === u){
-            count += 1
-          }
-        }
-        if(count > 1){
-          var i = almost_list.indexOf(item)
-          to_splice.push(i)
-        }
-      }
-      if(to_splice.length !== 0){
-        var ind = to_splice.length-1
-        var it
-        for(it=ind;ind>=0;ind--){
-          var index_to_splice = to_splice[it]
-          almost_list.splice(to_splice,1)
-        }
-      }
+    animationOver(state){
+      console.log("animationOver function")
       this.setState({
-        almostList: almost_list,
-        checked: true
+        showAnimation: state
       })
     }
 
     sendBackRecipeToSave(recipe,index){
+      console.log("ALMOST SAVE CLICKED")
       var recipes_saved = this.state.savedRecipeIndexes
       recipes_saved.push(index)
       var saved_recipe_info = this.state.savedRecipeInfo
@@ -93,9 +58,6 @@ class AlmostList extends React.Component{
       if(recipe.length === 3){
         var url = recipe[1]
         var missing = recipe.pop()
-        console.log("ALMOST recipe.length (should be 2): " + recipe.length)
-        console.log("missing: " + missing)
-        console.log("url: " + url)
         saved_recipe_info[url] = missing
         url_list.push(url)
       }
@@ -105,13 +67,14 @@ class AlmostList extends React.Component{
       this.setState({
         savedRecipeIndexes: recipes_saved,
         urlsSavedInThisSearch: url_list,
-        savedRecipeInfo: saved_recipe_info
+        savedRecipeInfo: saved_recipe_info,
+        recipeClicked: index,
+        showAnimation: true
       })
     }
 
     render(){
       var recipe_list = this.state.almostList
-      var saved_indexes = this.state.savedRecipeIndexes
       var saved_urls = this.state.urlsSavedInThisSearch
       var urls_are_saved = false
       if(saved_urls !== undefined){
@@ -119,6 +82,8 @@ class AlmostList extends React.Component{
       }
       var saved_recipe_info = this.state.savedRecipeInfo
       var self = this
+      var show_animation = this.state.showAnimation
+      var recipe_clicked = this.state.recipeClicked
 
       return(
 
@@ -149,24 +114,51 @@ class AlmostList extends React.Component{
                                           }
                                         </View>
                                       }
-
-                                      <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
-                                        <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
-                                          style={styles.greenButton}>Go to recipe website</Text>
-                                      </Pressable>
-
-                                      { saved_urls.includes(item[1]) &&
-                                        <Pressable style={{justifyContent:"center"}}>
-                                           <Text accessible={true} accessibilityLabel="Recipe has been saved"
-                                             accessibilityRole="button" style={styles.redButton}>Recipe saved</Text>
-                                        </Pressable>
+                                      { show_animation === false &&
+                                          <View style={{justifyContent:"center",alignItems:"center"}}>
+                                              <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
+                                                <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
+                                                    style={styles.greenButton}>Go to recipe website</Text>
+                                              </Pressable>
+                                              { saved_urls.includes(item[1]) &&
+                                                <Pressable style={{justifyContent:"center"}}>
+                                                   <Text accessible={true} accessibilityLabel="Recipe has been saved"
+                                                     accessibilityRole="button" style={styles.redButton}>Recipe saved</Text>
+                                                </Pressable>
+                                              }
+                                              { !(saved_urls.includes(item[1])) &&
+                                                <Pressable style={{justifyContent:"center"}} onPress={() => self.sendBackRecipeToSave(item,index)}>
+                                                   <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                     accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
+                                                </Pressable>
+                                              }
+                                          </View>
                                       }
-                                      { !(saved_urls.includes(item[1])) &&
-                                        <Pressable style={{justifyContent:"center"}} onPress={() => self.sendBackRecipeToSave(item,index)}>
-                                           <Text accessible={true} accessibilityLabel="Save this recipe to your device"
-                                             accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
-                                        </Pressable>
-                                      }
+                                      { show_animation &&
+                                          <View style={{justifyContent:"center",alignItems:"center"}}>
+                                              <Pressable style={{justifyContent:"center"}}>
+                                                <Text accessible={true} accessibilityLabel="Go to recipe website" accessibilityRole="link"
+                                                    style={styles.greenButton}>Go to recipe website</Text>
+                                              </Pressable>
+                                              { saved_urls.includes(item[1]) &&
+                                                <Pressable style={{justifyContent:"center"}}>
+                                                   <Text accessible={true} accessibilityLabel="Recipe has been saved"
+                                                     accessibilityRole="button" style={styles.redButton}>Recipe saved</Text>
+                                                </Pressable>
+                                              }
+                                              { !(saved_urls.includes(item[1])) &&
+                                                <Pressable style={{justifyContent:"center"}}>
+                                                   <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                     accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
+                                                </Pressable>
+                                              }
+                                              { recipe_clicked === index &&
+                                                 < SavingRecipeAnimation
+                                                    finishedAnimation={this.animationOver}
+                                                  />
+                                              }
+                                          </View>
+                                       }
 
                                  </View>
                              </View>

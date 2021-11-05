@@ -89,6 +89,7 @@ class ApiCalls extends React.Component {
     this.eightSecondStopwatch = this.eightSecondStopwatch.bind(this)
 
     this.switchAlmost = this.switchAlmost.bind(this)
+    this.animationOver = this.animationOver.bind(this)
 
   };
 
@@ -185,7 +186,7 @@ class ApiCalls extends React.Component {
           }
           else if(this.state.stopwatchRunning){
             /// 8 second timeout until searchPaused === false
-            console.log("~~~~~PAUSED~~~~~~")
+            console.log("~~~~~SEARCH PAUSED~~~~~~")
             this.eightSecondStopwatch()
           }
 
@@ -402,9 +403,15 @@ class ApiCalls extends React.Component {
        }
   }
 
-  saveRecipe(recipe,index,url_list,saved_recipes_info){
+  saveRecipe(recipe,index,url_list=0,saved_recipes_info=0){
     console.log("saveRecipe function")
     console.log("recipe[0]: " + recipe[0])
+    var almosts_urls = this.state.almostsUrlList
+    var almosts_info = this.state.almostsSavedRecipeInfo
+    if(url_list !== 0){
+      almosts_urls = url_list
+      almosts_info = saved_recipes_info
+    }
     var saved_list = []
     var already_saved = this.state.savedRecipes
     var item
@@ -424,15 +431,10 @@ class ApiCalls extends React.Component {
       pauseAndSave: true,
       stopwatchRunning: true,
       saveStopwatchTriggered: true,
-      almostsSavedRecipeInfo: saved_recipes_info,
-      almostsUrlList: url_list
+      almostsSavedRecipeInfo: almosts_info,
+      almostsUrlList: almosts_urls
     })
   }
-
-  // saveAlmostRecipe(recipe){
-  //   var ind = ''
-  //   this.saveRecipe(recipe,ind)
-  // }
 
 // Calls first api 10 times (allowance is 10 hits per minute),
 //  collects 200 recipe apis (if that many are returned):
@@ -616,7 +618,7 @@ class ApiCalls extends React.Component {
    }
    var indexes_to_splice = []
    var recipe
-   // Checks that new recipe links aren't already in refinedRecipeList (from previous reponse pages):
+   // Checks that new recipe links aren't already in almosts/refined (from previous response pages):
    for(recipe in recipes){
        console.log("recipes[recipe][1]: " + recipes[recipe][1])
        var result
@@ -630,12 +632,13 @@ class ApiCalls extends React.Component {
        }
    }
    if(indexes_to_splice.length>0){
-     var i
-     for(i in indexes_to_splice){
-       recipes.splice(i,1)
-     }
+       var ind = indexes_to_splice.length-1
+       var it
+       for(it=ind;it>=0;it--){
+         var to_splice = indexes_to_splice[it]
+         recipes.splice(to_splice,1)
+       }
    }
-   // Pushes new relevant recipes to existing refinedRecipeList:
    var x
    for(x in recipes){
      current.push(recipes[x])
@@ -668,6 +671,10 @@ class ApiCalls extends React.Component {
     this.setState({
       searchPaused: new_state
     })
+  }
+
+  animationOver(state){
+    console.log("animation over")
   }
 
 
@@ -961,7 +968,8 @@ class ApiCalls extends React.Component {
 
                                                                    </View>
                                                                    {save_paused && recipe_clicked === index &&
-                                                                      <SavingRecipeAnimation />
+                                                                      < SavingRecipeAnimation
+                                                                        finishedAnimation={this.animationOver} />
                                                                    }
                                                              </View>
                                                             )

@@ -226,6 +226,7 @@ class SavingRecipeAnimation extends React.Component{
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
       this.fiveSecondStopwatch = this.fiveSecondStopwatch.bind(this)
+      this.finish = this.finish.bind(this)
 
       this.opacity = new Animated.Value(0.01);
       this.abortController = new AbortController()
@@ -273,9 +274,19 @@ class SavingRecipeAnimation extends React.Component{
       setTimeout(function(){
         console.log("FIVE SECONDS finished")
         cmponent.setState({
-          fiveSecondsOver: true
-        })
+          fiveSecondsOver: true,
+        }),
+        cmponent.finish()
       }, 5000);
+    }
+
+    finish(){
+      var state = false
+      try{
+        this.props.finishedAnimation(state)
+      }catch(error){
+        console.log("error: " + error.message)
+      }
     }
 
     render(){
@@ -284,6 +295,7 @@ class SavingRecipeAnimation extends React.Component{
 
       return(
             <View>
+
                 {five_seconds_over === false &&
                     <Animated.Text style={{
                       opacity: this.opacity.interpolate({
@@ -298,10 +310,10 @@ class SavingRecipeAnimation extends React.Component{
                     }} > Saving recipe... </Animated.Text>
                  }
 
-
                 {five_seconds_over &&
-                   <Text style={styles.greenTitle}>Saved!</Text>
+                   <Text style={styles.greenTitle}> Saved! </Text>
                 }
+
             </View>
       );
 

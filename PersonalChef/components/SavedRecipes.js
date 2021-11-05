@@ -277,16 +277,24 @@ class SavedRecipesPage extends React.Component {
                                               }
 
                                               {expanded && index === to_delete &&
-                                                <View>
-                                                    <Pressable style={{justifyContent:"center"}} onPress={() => self.deleteHandler()}>
-                                                      <Text accessible={true} accessibilityLabel="Delete recipe" accessibilityRole="button"
-                                                        style={styles.redButton}>Delete</Text>
-                                                    </Pressable>
-                                                    <Pressable style={{justifyContent:"center"}} onPress={() => self.expandHandler()}>
-                                                      <Text accessible={true} accessibilityLabel="Cancel delete" accessibilityRole="button"
-                                                        style={styles.blueButton}>Cancel</Text>
-                                                    </Pressable>
-                                                </View>
+                                                  <View style={{display:"flex"}}>
+                                                      <View style={{flexDirection:"row",justifyContent:"center"}}>
+                                                        <Pressable style={{justifyContent:"center",alignSelf:"center"}} onPress={() => self.deleteHandler()}>
+                                                          <Text accessible={true} accessibilityLabel="Delete recipe" accessibilityRole="button"
+                                                            style={styles.expandedRedButton}>Delete</Text>
+                                                        </Pressable>
+                                                        <Pressable style={{justifyContent:"center",alignSelf:"center"}} onPress={() => self.expandHandler()}>
+                                                          <Text accessible={true} accessibilityLabel="Cancel delete" accessibilityRole="button"
+                                                            style={styles.expandedBlueButton}>Cancel</Text>
+                                                        </Pressable>
+                                                      </View>
+                                                  </View>
+                                              }
+                                              {expanded && index !== to_delete &&
+                                                  <Pressable style={{justifyContent:"center"}}>
+                                                    <Text accessible={true} accessibilityLabel="Delete recipe" accessibilityRole="button"
+                                                      style={styles.redButton}>Delete recipe</Text>
+                                                  </Pressable>
                                               }
                                       </View>
                                    )
@@ -330,16 +338,35 @@ const styles = StyleSheet.create({
     marginBottom:20,
     textAlign:'center',
   },
-  redButton: {
+  expandedRedButton: {
     padding: 10,
     borderWidth: 1,
     borderRadius: 6,
     borderColor: 'white',
     backgroundColor:'pink',
     textAlign: "center",
-    marginHorizontal: 128,
     marginBottom: 5,
   },
+  expandedBlueButton: {
+    padding: 10,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightblue',
+    textAlign: "center",
+    marginBottom: 5,
+  },
+  blueButtonMain: {
+    padding: 10,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: "white",
+    backgroundColor:'lightblue',
+    textAlign: "center",
+    marginHorizontal: 105,
+    marginTop: 40,
+  },
+
   greenButton: {
     padding: 10,
     borderWidth: 1,
@@ -361,15 +388,15 @@ const styles = StyleSheet.create({
     marginHorizontal: 128,
     marginBottom: 10,
   },
-  blueButtonMain: {
+  redButton: {
     padding: 10,
     borderWidth: 1,
     borderRadius: 6,
-    borderColor: "white",
-    backgroundColor:'lightblue',
+    borderColor: 'white',
+    backgroundColor:'pink',
     textAlign: "center",
-    marginHorizontal: 105,
-    marginTop: 40,
+    marginHorizontal: 128,
+    marginBottom: 5,
   },
 });
 
