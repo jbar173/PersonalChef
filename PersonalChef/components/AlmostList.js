@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable, Linking, SafeAreaView, ScrollView } from 'react-native';
-import { SavingRecipeAnimation } from "./Animations.js";
+import { NativeRouter, Route, Link, Redirect } from "react-router-native";
+import { SavingRecipeAnimationAlmost  } from "./Animations.js";
 
 
 class AlmostList extends React.Component{
@@ -8,6 +9,7 @@ class AlmostList extends React.Component{
       super(props);
       this.state = {
         almostList: this.props.almosts,
+        substitutesDict: this.props.substitutes,
         savedRecipeIndexes: [],
         urlsSavedInThisSearch: this.props.url_list,
         prevUrlLength: '',
@@ -73,6 +75,7 @@ class AlmostList extends React.Component{
       })
     }
 
+
     render(){
       var recipe_list = this.state.almostList
       var saved_urls = this.state.urlsSavedInThisSearch
@@ -84,6 +87,7 @@ class AlmostList extends React.Component{
       var self = this
       var show_animation = this.state.showAnimation
       var recipe_clicked = this.state.recipeClicked
+      var subs = this.state.substitutesDict
 
       return(
 
@@ -113,6 +117,18 @@ class AlmostList extends React.Component{
                                             })
                                           }
                                         </View>
+                                      }
+                                      { Object.entries(subs).map(function(entry,i) {
+                                          return(
+                                                <View key={i}>
+                                                   {entry[0] === item[1] &&
+                                                       <View>
+                                                           <Text style={{textAlign:"center"}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                       </View>
+                                                   }
+                                                </View>
+                                          )
+                                        })
                                       }
                                       { show_animation === false &&
                                           <View style={{justifyContent:"center",alignItems:"center"}}>
@@ -153,9 +169,9 @@ class AlmostList extends React.Component{
                                                 </Pressable>
                                               }
                                               { recipe_clicked === index &&
-                                                 < SavingRecipeAnimation
-                                                    finishedAnimation={this.animationOver}
-                                                  />
+                                                 < SavingRecipeAnimationAlmost
+                                                    animationOver={this.animationOver}
+                                                 />
                                               }
                                           </View>
                                        }

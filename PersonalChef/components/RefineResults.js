@@ -28,6 +28,7 @@ const RefineResults = props => {
   var j
   var finished = false
   var recipes_on_page = []
+  var substitutes_dict = {}
 
 
 // filter out recipes which contain ingredients other than those that the user has:
@@ -46,6 +47,7 @@ const RefineResults = props => {
              var not_finished = true
              console.log("****Checking recipe: " + recipes[j]['recipe']['label'])
              var recipe_name = recipes[j]['recipe']['label']
+             var recipe_url = recipes[j]['recipe']['url']
              recipes_on_page.push(recipe_name)
              var recipe_ings = recipes[j]['recipe']['ingredients']
              var recipe_ings_length = recipe_ings.length
@@ -131,7 +133,10 @@ const RefineResults = props => {
                                        var result = find[0]
                                        var original_was_found = find[1]
                                        var all_ingredients_found = find[2]
-                                       // console.log("############### RESULT: " + result)
+                                       var substitute_made = false
+                                       if(result && original_was_found === false){
+                                          substitute_made = true
+                                       }
 
                                        if(result){      // Found recipe_ingredient in this user_ingredient, check for exceptions:
                                            console.log("RESULT!! (less)")
@@ -152,25 +157,28 @@ const RefineResults = props => {
                                                     for(word in ingredients_with_exceptions){
                                                         console.log(ingredients_with_exceptions[word])
                                                     }
+                                                    substitute_made = false
                                                     result = false // Change result to false, trigger false_count + 1 below
                                                 }else if(found_random){
                                                   // Found exception in recipe title/label - recipe is a no-match
+                                                    substitute_made = false
                                                     match = false
                                                     break_out = true
                                                     break;
                                                 }else{
-                                                   match = true
+                                                    match = true
                                                 }
                                            }else{
                                                var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'random')
                                                var found_random = exception_check
                                                if(found_random){
                                                  // Found exception in recipe title/label - recipe is a no-match
+                                                   substitute_made = false
                                                    match = false
                                                    break_out = true
                                                    break;
                                                }else{
-                                                  match = true
+                                                   match = true
                                                }
                                            }
                                         }
@@ -183,13 +191,14 @@ const RefineResults = props => {
                                             not_found.push(ingredient_lower) // Recipe ingredient is added to not_found list.
                                             console.log("user doesn't have: " + ingredient_lower)
                                             console.log("not_found.length (less): " + not_found.length)
-                                            // match = false (already false)
-                                            // break_out = true
-                                            // break;
                                         }
 
                                         if(match){
                                                match_count += 1
+                                               if(substitute_made){
+                                                 console.log("ADDING " + recipe_url + ", VALUE: recipe ingredient = " + ingredient_lower + ", user ingredient: " + user_ingredients[y] + ", can be used as substitute. Found: "  + all_ingredients_found[0] + " in its include list");
+                                                 substitutes_dict[recipe_url] = [ingredient_lower, user_ingredients[y], all_ingredients_found[0]]
+                                               }
                                                if(match_count === recipe_ings_length){ // Found all of the recipe's ingredients within the user's ingredients, add recipe to relevant list.
                                                     console.log("MATCH FOUND!")
                                                     console.log("for: " + recipes[j]['recipe']['label'])
@@ -320,6 +329,10 @@ const RefineResults = props => {
                                             var result = find[0]
                                             var original_was_found = find[1]
                                             var all_ingredients_found = find[2]
+                                            var substitute_made = false
+                                            if(result && original_was_found === false){
+                                               substitute_made = true
+                                            }
                                             // console.log("############### RESULT: " + result)
 
                                             if(result){
@@ -342,9 +355,11 @@ const RefineResults = props => {
                                                           for(word in ingredients_with_exceptions){
                                                               console.log(ingredients_with_exceptions[word])
                                                           }
+                                                          substitute_made = false
                                                           result = false
                                                       }else if(found_random){
                                                         // Found exception in recipe title/label - recipe is a no-match
+                                                          substitute_made = false
                                                           match = false
                                                           done = true
                                                           break;
@@ -356,6 +371,7 @@ const RefineResults = props => {
                                                    var found_random = exception_check
                                                    if(found_random){
                                                      // Found exception in recipe title/label - recipe is a no-match
+                                                       substitute_made = false
                                                        match = false
                                                        done = true
                                                        break;
@@ -379,6 +395,10 @@ const RefineResults = props => {
                                             if(match){
                                                   console.log("***USER HAS ' " + ingredient_lower + " '." )
                                                   ingredient_count += 1
+                                                  if(substitute_made){
+                                                    console.log("ADDING " + recipe_url + ", VALUE: recipe ingredient = " + ingredient_lower + ", user ingredient: " + user_ingredients[ing] + ", can be used as substitute. Found: "  + all_ingredients_found[0] + " in its include list")
+                                                    substitutes_dict[recipe_url] = [ingredient_lower, user_ingredients[ing], all_ingredients_found[0]]
+                                                  }
                                                   if(ingredient_count === user_ings_length){ // User has all ingredients in the recipe, recipe is added to relevant_recipes
                                                         console.log("INGREDIENTS MATCH for: " + recipes[j]['recipe']['label'])
                                                         console.log("in less = false")
@@ -459,7 +479,7 @@ const RefineResults = props => {
         console.log("COUNT!!!: " + ten_pages[x]["count"])
         console.log("from: " + ten_pages[x]["from"])
       }
-      props.filteredResults(relevant_recipes,almost_list)
+      props.filteredResults(relevant_recipes,almost_list,substitutes_dict)
   }
 
   return(

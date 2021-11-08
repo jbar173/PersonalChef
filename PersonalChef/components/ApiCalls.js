@@ -42,6 +42,7 @@ class ApiCalls extends React.Component {
       call: 0,
       startRefine: false,
       refinedRecipeList: [],
+      substitutesDict: {},
 
       searchPaused: false,
       pauseAndSave: false,
@@ -648,11 +649,24 @@ class ApiCalls extends React.Component {
 
 // Takes in the final list of relevant recipes returned
 //  from RefineResults component, saves to state:
-  getRelevantRecipes(relevant_recipes,almost_recipes){
+  getRelevantRecipes(relevant_recipes,almost_recipes,substitutes_dict){
     console.log("filtered initial")
     console.log("relevant_recipes.length: " + relevant_recipes.length)
     var relevants = this.checkForDuplicates(relevant_recipes,'rel')
     var almosts = this.checkForDuplicates(almost_recipes,'almost')
+    var subs = this.state.substitutesDict
+    console.log("substitutes_dict: " + substitutes_dict)
+    var x
+    for(x in substitutes_dict){
+      console.log("x: " + substitutes_dict[x])
+    }
+    // console.log("initial subs length: " + subs.length)
+    for([key,value] of Object.entries(substitutes_dict)){
+      subs[`${key}`] = value
+      console.log("Key: " + key)
+      console.log("value: " + value)
+    }
+    // console.log("subs length now: " + subs.length)
     if(relevant_recipes.length === 0){
       console.log("No relevant results on these pages")
     }else{
@@ -662,6 +676,7 @@ class ApiCalls extends React.Component {
       fResponse: [],
       refinedRecipeList: relevants,
       almostList: almosts,
+      substitutesDict: subs,
       startRefine: false,
     })
   }
@@ -705,6 +720,7 @@ class ApiCalls extends React.Component {
       show_searching = true
     }
     var changing_tabs = this.state.changeTabs
+    var subs = this.state.substitutesDict
 
     return(
 
@@ -793,56 +809,70 @@ class ApiCalls extends React.Component {
                                                    <Text style={styles.blueButton}>Almost!</Text>
                                                </Pressable>
                                            </View>
-                                           {changing_tabs &&
-                                             <View>
-                                                  <ChangingTabsAnimation />
-                                             </View>
+                                           { changing_tabs &&
+                                               <View>
+                                                    <ChangingTabsAnimation />
+                                               </View>
                                            }
                                            <View>
-                                                 {this.state.refinedRecipeList.map(function(item,index){
+                                                 { this.state.refinedRecipeList.map(function(item,index){
                                                     return(
-                                                      <View style={styles.container} key={index}>
-                                                           <View style={{justifyContent:"center",alignItems:"center"}}>
+                                                         <View style={styles.container} key={index}>
+                                                              <View style={{justifyContent:"center",alignItems:"center"}}>
 
-                                                                       <Text accessible={true} accessibilityRole="text"
-                                                                         accessibilityLabel={item[0].toString()}
-                                                                         style={{justifyContent:"center",fontSize:18,fontWeight:"bold",
-                                                                         textAlign:"center",marginBottom:10}}>{item[0]}</Text>
+                                                                         <Text accessible={true} accessibilityRole="text"
+                                                                           accessibilityLabel={item[0].toString()}
+                                                                           style={{justifyContent:"center",fontSize:18,fontWeight:"bold",
+                                                                           textAlign:"center",marginBottom:10}}>{item[0]}</Text>
 
-                                                                       <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
-                                                                         <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
-                                                                           style={styles.greenButton}>Go to recipe website</Text>
-                                                                       </Pressable>
+                                                                           { Object.entries(subs).map(function(entry,i) {
+                                                                               return(
+                                                                                     <View key={i}>
+                                                                                        {entry[0] === item[1] &&
+                                                                                            <View>
+                                                                                                <Text style={{textAlign:"center"}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                                                            </View>
+                                                                                        }
+                                                                                     </View>
+                                                                               )
+                                                                             })
+                                                                           }
 
-                                                                       { !(saved_indexes.includes(index)) &&
-                                                                         <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
-                                                                            <Text accessible={true} accessibilityLabel="Save this recipe to your device"
-                                                                              accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
+                                                                         <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
+                                                                           <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
+                                                                             style={styles.greenButton}>Go to recipe website</Text>
                                                                          </Pressable>
-                                                                       }
-                                                                       { saved_indexes.includes(index) &&
-                                                                         <Pressable style={{justifyContent:"center"}}>
-                                                                            <Text accessible={true} accessibilityLabel="Save this recipe to your device"
-                                                                              accessibilityRole="button" style={styles.redButton}>Recipe saved</Text>
-                                                                         </Pressable>
-                                                                       }
-                                                              </View>
-                                                        </View>
+
+                                                                         { !(saved_indexes.includes(index)) &&
+                                                                           <Pressable style={{justifyContent:"center"}} onPress={() => self.saveRecipe(item,index)}>
+                                                                              <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                                accessibilityRole="button" style={styles.greenButton}>Save recipe</Text>
+                                                                           </Pressable>
+                                                                         }
+                                                                         { saved_indexes.includes(index) &&
+                                                                           <Pressable style={{justifyContent:"center"}}>
+                                                                              <Text accessible={true} accessibilityLabel="Save this recipe to your device"
+                                                                                accessibilityRole="button" style={styles.redButton}>Recipe saved</Text>
+                                                                           </Pressable>
+                                                                         }
+
+                                                               </View>
+                                                          </View>
                                                        )
                                                      }
-                                                  )}
-                                             </View>
-                                             <Link accessible={true} accessibilityLabel= "Start again"
+                                                 )}
+                                           </View>
+                                           <Link accessible={true} accessibilityLabel= "Start again"
                                                accessibilityHint="Click button to go back to homepage"
                                                to="/" accessibilityRole="button" underlayColor="transparent">
                                                  <Text style={styles.blueButton}>Start again</Text>
-                                             </Link>
+                                           </Link>
                                      </View>
                                    </ScrollView>
                                  </SafeAreaView>
-                             }
+                           }
 
-                             { results && paused === false && this.state.tryAgain === false &&
+                           { results && paused === false && this.state.tryAgain === false &&
 
                                      <View style={{display:"flex"}}>
                                              <View style={{flexDirection:"row",}}>
@@ -853,10 +883,10 @@ class ApiCalls extends React.Component {
                                                      <Text style={styles.blueButton}>Almost!</Text>
                                                  </Pressable>
                                              </View>
-                                             {changing_tabs &&
-                                               <View>
-                                                    <ChangingTabsAnimation />
-                                               </View>
+                                             { changing_tabs &&
+                                                 <View>
+                                                      <ChangingTabsAnimation />
+                                                 </View>
                                              }
                                              <View>
                                                    {this.state.refinedRecipeList.map(function(item,index){
@@ -868,6 +898,19 @@ class ApiCalls extends React.Component {
                                                                            accessibilityLabel={item[0].toString()}
                                                                            style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
                                                                            textAlign:"center",marginBottom:10}}>{item[0]}</Text>
+
+                                                                           { Object.entries(subs).map(function(entry,i) {
+                                                                               return(
+                                                                                     <View key={i}>
+                                                                                        {entry[0] === item[1] &&
+                                                                                            <View>
+                                                                                                <Text style={{textAlign:"center"}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                                                            </View>
+                                                                                        }
+                                                                                     </View>
+                                                                               )
+                                                                             })
+                                                                           }
 
 
                                                                          <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
@@ -894,15 +937,15 @@ class ApiCalls extends React.Component {
                                                        }
                                                     )}
                                                </View>
-                                               {filtering && api_error === false &&
-                                                 <View style={{justifyContent:"center",alignItems:"center"}}>
-                                                    <FilteringAnimation />
-                                                 </View>
+                                               { filtering && api_error === false &&
+                                                   <View style={{justifyContent:"center",alignItems:"center"}}>
+                                                      <FilteringAnimation />
+                                                   </View>
                                                }
-                                               {filtering === false &&
-                                                 <View style={{justifyContent:"center",alignItems:"center"}}>
-                                                    <Text>Search finished.</Text>
-                                                 </View>
+                                               { filtering === false &&
+                                                   <View style={{justifyContent:"center",alignItems:"center"}}>
+                                                      <Text>Search finished.</Text>
+                                                   </View>
                                                }
 
                                                <View style={{justifyContent:"center",alignItems:"center"}}>
@@ -919,9 +962,9 @@ class ApiCalls extends React.Component {
                                                </View>
                                        </View>
 
-                              }
+                            }
 
-                              { results && paused && this.state.tryAgain === false &&
+                            { results && paused && this.state.tryAgain === false &&
 
                                         <View style={{display:"flex"}}>
                                                 <View style={{flexDirection:"row",}}>
@@ -932,10 +975,10 @@ class ApiCalls extends React.Component {
                                                         <Text style={styles.blueButton}>Almost!</Text>
                                                     </Pressable>
                                                 </View>
-                                                {changing_tabs &&
-                                                  <View>
+                                                { changing_tabs &&
+                                                    <View>
                                                        <ChangingTabsAnimation />
-                                                  </View>
+                                                    </View>
                                                 }
                                                 <View>
                                                       {this.state.refinedRecipeList.map(function(item,index){
@@ -947,6 +990,19 @@ class ApiCalls extends React.Component {
                                                                               accessibilityLabel={item[0].toString()}
                                                                               style={{justifyContent:"center",fontSize:18,fontWeight:'bold',
                                                                               textAlign:"center",marginBottom:10}}>{item[0]}</Text>
+
+                                                                              { Object.entries(subs).map(function(entry,i) {
+                                                                                  return(
+                                                                                        <View key={i}>
+                                                                                           {entry[0] === item[1] &&
+                                                                                               <View>
+                                                                                                   <Text style={{textAlign:"center"}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                                                               </View>
+                                                                                           }
+                                                                                        </View>
+                                                                                  )
+                                                                                })
+                                                                              }
 
                                                                             <Pressable style={{justifyContent:"center"}} onPress={() => Linking.openURL(`${item[1]}`)}>
                                                                               <Text accessible={true} accessibilityLabel="!!!!! Go to recipe website" accessibilityRole="link"
@@ -967,10 +1023,11 @@ class ApiCalls extends React.Component {
                                                                             }
 
                                                                    </View>
-                                                                   {save_paused && recipe_clicked === index &&
-                                                                      < SavingRecipeAnimation
-                                                                        finishedAnimation={this.animationOver} />
+
+                                                                   { save_paused && recipe_clicked === index &&
+                                                                       < SavingRecipeAnimation />
                                                                    }
+
                                                              </View>
                                                             )
                                                           }
@@ -994,7 +1051,7 @@ class ApiCalls extends React.Component {
                                                   </View>
                                           </View>
 
-                               }
+                            }
                         </View>
 
                     }
@@ -1011,13 +1068,14 @@ class ApiCalls extends React.Component {
                                 </View>
                                 <View style={{alignItems:"center"}}>
                                     <Text style={{textAlign:"center",fontWeight:"bold"}}>Only one ingredient away from these recipes!:</Text>
-                                    {changing_tabs &&
-                                      <View>
-                                           <ChangingTabsAnimation />
-                                      </View>
+                                    { changing_tabs &&
+                                        <View>
+                                             <ChangingTabsAnimation />
+                                        </View>
                                     }
                                     < AlmostList
                                       almosts={this.state.almostList}
+                                      substitutes={this.state.substitutesDict}
                                       newRecipeToSave={this.saveRecipe}
                                       saved_recipes_info={this.state.almostsSavedRecipeInfo}
                                       url_list={this.state.almostsUrlList} />

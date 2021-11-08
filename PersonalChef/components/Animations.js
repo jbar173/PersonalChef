@@ -226,7 +226,6 @@ class SavingRecipeAnimation extends React.Component{
       this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
       this.fiveSecondStopwatch = this.fiveSecondStopwatch.bind(this)
-      this.finish = this.finish.bind(this)
 
       this.opacity = new Animated.Value(0.01);
       this.abortController = new AbortController()
@@ -275,19 +274,10 @@ class SavingRecipeAnimation extends React.Component{
         console.log("FIVE SECONDS finished")
         cmponent.setState({
           fiveSecondsOver: true,
-        }),
-        cmponent.finish()
+        })
       }, 5000);
     }
 
-    finish(){
-      var state = false
-      try{
-        this.props.finishedAnimation(state)
-      }catch(error){
-        console.log("error: " + error.message)
-      }
-    }
 
     render(){
       console.log("SavingRecipeAnimation rendered")
@@ -316,6 +306,115 @@ class SavingRecipeAnimation extends React.Component{
 
             </View>
       );
+
+    }
+
+};
+
+
+class SavingRecipeAnimationAlmost extends React.Component{
+    constructor(props){
+      super(props);
+      this.state = {
+        fiveSecondsOver: false,
+      }
+      this.componentDidMount = this.componentDidMount.bind(this)
+      this.componentDidUpdate = this.componentDidUpdate.bind(this)
+      this.componentWillUnmount = this.componentWillUnmount.bind(this)
+      this.fiveSecondStopwatch = this.fiveSecondStopwatch.bind(this)
+      this.finish = this.finish.bind(this)
+
+      this.opacity = new Animated.Value(0.01);
+      this.abortController = new AbortController()
+
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(this.opacity, {
+            duration: 1000,
+            toValue: 1,
+            easing: Easing.linear,
+            useNativeDriver: false,
+            signal: this.abortController.signal,
+          }),
+          Animated.delay(1000),
+          Animated.timing(this.opacity, {
+            duration: 1000,
+            toValue: 0,
+            easing: Easing.linear,
+            useNativeDriver: false,
+            signal: this.abortController.signal,
+          }),
+        ]),
+      ).start()
+
+    };
+
+    componentDidMount(){
+      console.log("SavingRecipeAnimationAlmost mounted")
+      this.fiveSecondStopwatch()
+    }
+
+    componentDidUpdate(){
+      console.log("SavingRecipeAnimationAlmost updated")
+      console.log("Five seconds over?: " + this.state.fiveSeAlmostcondsOver)
+    }
+
+    componentWillUnmount(){
+      console.log("SavingRecipeAnimationAlmost unmounted")
+      this.abortController.abort()
+    }
+
+    fiveSecondStopwatch(){
+      console.log("FIVE SECONDS started")
+      var cmponent = this
+      setTimeout(function(){
+        console.log("FIVE SECONDS finished")
+        cmponent.setState({
+          fiveSecondsOver: true,
+        }),
+        cmponent.finish()
+      }, 5000);
+    }
+
+    finish(){
+      var state = false
+      console.log("var state: " + state)
+      try{
+        this.props.animationOver(state)
+      }catch(error){
+        console.log("error: " + error.message)
+      }
+    }
+
+    render(){
+      console.log("SavingRecipeAnimationAlmost rendered")
+      var five_seconds_over = this.state.fiveSecondsOver
+
+      return(
+        
+            <View>
+
+                {five_seconds_over === false &&
+                    <Animated.Text style={{
+                      opacity: this.opacity.interpolate({
+                        inputRange: [0,1],
+                        outputRange: [0,1],
+                      }),
+                      fontSize: 18,
+                      marginTop: 10,
+                      fontWeight:'bold',
+                      textAlign: 'center',
+                      color: 'lightseagreen'
+                    }} > Saving recipe... </Animated.Text>
+                 }
+
+                 {five_seconds_over &&
+                    <Text style={styles.greenTitle}> Saved! </Text>
+                 }
+
+            </View>
+
+       );
 
     }
 
@@ -403,4 +502,4 @@ const styles = StyleSheet.create({
 });
 
 
-export { SearchingPageAnimation, FilteringAnimation, ThreeDots, SavingRecipeAnimation, ChangingTabsAnimation };
+export { SearchingPageAnimation, FilteringAnimation, ThreeDots, SavingRecipeAnimation, ChangingTabsAnimation, SavingRecipeAnimationAlmost, };

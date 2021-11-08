@@ -16,9 +16,7 @@ const FindIngredient = (ingredients_to_search_for,ingredient_lower) => {
     var ingredients = ingredients_to_search_for
     var original = ingredients_to_search_for[0]
     var result = false
-    var exceptions = data.ingredients
-    var m
-    var l
+    var include_found = false
 
     var original_found = false
     var include_words_found = []
@@ -46,10 +44,14 @@ const FindIngredient = (ingredients_to_search_for,ingredient_lower) => {
          ){
             console.log("found " + ingredient)
             console.log("in: " + ingredient_lower)
-            if(x === 0){
+            if(ingredient === original){
+              console.log("FOUND ORIGINAL INGREDIENT ( " + ingredient + " ) for " + ingredient_lower)
+              console.log("ORIGINAL: " + original)
               original_found = true
               include_words_found.push(ingredient)
             }else{
+              console.log("FOUND 'Include' INGREDIENT ( " + ingredient + " ) for " + ingredient_lower)
+              console.log("ORIGINAL: " + original)
               include_words_found.push(ingredient)
             }
          }
@@ -85,7 +87,6 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
 
     var exclusion_list = [ '"dog food"', ]
     for(x in random_exclusions){
-      // console.log("random_exclusions[x]: " + random_exclusions[x])
       exclusion_list.push(random_exclusions[x])
     }
 
