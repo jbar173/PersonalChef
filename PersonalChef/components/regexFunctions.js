@@ -4,6 +4,58 @@ import * as data from './keywordExceptions.json';
 import * as exclusions from './checklists/json_ingredient_lists/exclude.json';
 
 
+// Checks that recipe items are ingredients rather than equipment/utensils:
+
+const CheckRecipeIngredientLength = (recipe_ings) => {
+
+      var ingredient_exclusions = exclusions.items
+      var exception_count = 0
+      var l
+      // Regexes for ingredient to match:
+      var no_extra_letters = String.raw`[^a-z]`
+      var ends_with_s = String.raw`[s]`
+      var starts_or_ends_with = String.raw`\b`
+      var new_ingredients = []
+
+      for(l in recipe_ings){
+          var ingredient_lower = recipe_ings[l]['text'].toLowerCase()
+          var i
+          var found_exception = false
+          for(i in ingredient_exclusions){
+                // matching word is in the middle of the string:
+                var regex_one = new RegExp(`${no_extra_letters}${ingredient_exclusions[i]}${no_extra_letters}`)
+                var regex_two = new RegExp(`${no_extra_letters}${ingredient_exclusions[i]}${ends_with_s}${no_extra_letters}`)
+                // matching word is at the start of the string:
+                var regex_three = new RegExp(`${starts_or_ends_with}${ingredient_exclusions[i]}${no_extra_letters}`)
+                var regex_four = new RegExp(`${starts_or_ends_with}${ingredient_exclusions[i]}${ends_with_s}${no_extra_letters}`)
+                // matching word is at the end of the string:
+                var regex_five = new RegExp(`${no_extra_letters}${ingredient_exclusions[i]}${starts_or_ends_with}`)
+                var regex_six = new RegExp(`${no_extra_letters}${ingredient_exclusions[i]}${ends_with_s}${starts_or_ends_with}`)
+                // matching word is the only word in the string:
+                var regex_seven = new RegExp(`${starts_or_ends_with}${ingredient_exclusions[i]}${starts_or_ends_with}`)
+                var regex_eight = new RegExp(`${starts_or_ends_with}${ingredient_exclusions[i]}${ends_with_s}${starts_or_ends_with}`)
+
+                if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower) ||
+                   regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower) ||
+                   regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower) ||
+                   regex_seven.test(ingredient_lower) || regex_eight.test(ingredient_lower)
+                  ){
+                     console.log("~~~~~~~~~~~FOUND ITEM EXCEPTION: " + ingredient_exclusions[i] + " in ingredient: " + ingredient_lower)
+                     exception_count += 1
+                     found_exception = true
+                     break;
+                   }
+            }
+          if(found_exception === false){
+            new_ingredients.push(ingredient_lower)
+          }
+      }
+
+      return [ exception_count, new_ingredients ];
+
+}
+
+
 // Searches for the user's ingredient within the recipe ingredient string:
 
 const FindIngredient = (ingredients_to_search_for,ingredient_lower) => {
@@ -80,7 +132,6 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
     var exceptions = data.ingredients
 
     var random_exclusions = exclusions.phrases
-    var exception_found = false
     var random_exception_found = false
     var ingredients_with_exceptions = []
     var l, m, n, c
@@ -133,75 +184,77 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
              }
         }
 
+      }
+
+
       //// If type = 'both' (ie. ingredient is_key (has exclusions listed in keywordExceptions) ):
 
-        for(m in exceptions){
+      for(m in exceptions){
 
-            if(next_ingredient){
-                break;
-            }
+          if(next_ingredient){
+              break;
+          }
 
-            if(exceptions[m]["name"] === ingredients[l]){
-                var exclude = exceptions[m]['exclude']
+          if(exceptions[m]["name"] === ingredients[l]){
+              var exclude = exceptions[m]['exclude']
 
-                for(n in exclude){
-                    words.push(exclude[n]['word'])
-                }
-                var words_count = -1
+              for(n in exclude){
+                  words.push(exclude[n]['word'])
+              }
+              var words_count = -1
 
-                for(c in words){
+              for(c in words){
 
-                    words_count += 1
-                    var ingredient = words[c]
-                    var length_integer = parseInt(words.length)
-                    var last_ind = length_integer-1
-                    // console.log("checking exception ingredient: " + ingredient)
+                  words_count += 1
+                  var ingredient = words[c]
+                  var length_integer = parseInt(words.length)
+                  var last_ind = length_integer-1
+                  // console.log("checking exception ingredient: " + ingredient)
 
-                    // matching word is in the middle of the string:
-                    var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
-                    var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
-                    // matching word is at the start of the string:
-                    var regex_three = new RegExp(`${starts_or_ends_with}${ingredient}${no_extra_letters}`)
-                    var regex_four = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${no_extra_letters}`)
-                    // matching word is at the end of the string:
-                    var regex_five = new RegExp(`${no_extra_letters}${ingredient}${starts_or_ends_with}`)
-                    var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
-                    // matching word is the only word in the string:
-                    var regex_seven = new RegExp(`${starts_or_ends_with}${ingredient}${starts_or_ends_with}`)
-                    var regex_eight = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${starts_or_ends_with}`)
+                  // matching word is in the middle of the string:
+                  var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
+                  var regex_two = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
+                  // matching word is at the start of the string:
+                  var regex_three = new RegExp(`${starts_or_ends_with}${ingredient}${no_extra_letters}`)
+                  var regex_four = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${no_extra_letters}`)
+                  // matching word is at the end of the string:
+                  var regex_five = new RegExp(`${no_extra_letters}${ingredient}${starts_or_ends_with}`)
+                  var regex_six = new RegExp(`${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
+                  // matching word is the only word in the string:
+                  var regex_seven = new RegExp(`${starts_or_ends_with}${ingredient}${starts_or_ends_with}`)
+                  var regex_eight = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${starts_or_ends_with}`)
 
-                    if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower) ||
-                       regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower) ||
-                       regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower) ||
-                       regex_seven.test(ingredient_lower) || regex_eight.test(ingredient_lower)
-                      ){
-                          ingredients_with_exceptions.push(ingredient)
-                          console.log("Ingredient was " + ingredient + ", not " + ingredients[l])
-                          console.log("in " + ingredient_lower)
-                          exception_found = true
-                          next_ingredient = true
-                          break;
-                    }else if(exception_found === false && words_count === words.length){
-                          next_ingredient = true
-                          break;
-                    }
+                  if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower) ||
+                     regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower) ||
+                     regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower) ||
+                     regex_seven.test(ingredient_lower) || regex_eight.test(ingredient_lower)
+                    ){
+                        ingredients_with_exceptions.push(ingredient)
+                        console.log("Ingredient was " + ingredient + ", not " + ingredients[l])
+                        console.log("in " + ingredient_lower)
+                        exception_found = true
+                        next_ingredient = true
+                        break;
+                  }else if(exception_found === false && words_count === words.length){
+                        next_ingredient = true
+                        break;
+                  }
 
-                }
+              }
 
-            }
+          }
 
-        }
+      }
 
-    }
 
     if(ingredients.length > ingredients_with_exceptions.length){
         exception_found = false
     }
 
-   return [exception_found,ingredients_with_exceptions,random_exception_found];
+   return [ exception_found, ingredients_with_exceptions, random_exception_found, ];
 
  };
 
 
 
-export { FindIngredient, FindExceptions };
+export { FindIngredient, FindExceptions, CheckRecipeIngredientLength };

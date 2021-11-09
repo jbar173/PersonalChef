@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
 import * as data from './keywordExceptions.json';
-import { FindIngredient, FindExceptions } from './regexFunctions.js';
+import { FindIngredient, FindExceptions, CheckRecipeIngredientLength } from './regexFunctions.js';
 
 
 
@@ -13,6 +13,7 @@ const RefineResults = props => {
   console.log("TEN_PAGES.length: " + ten_pages.length)
   var top_length = ten_pages.length
 
+  var x
   for(x in ten_pages){
     console.log(x + ". " + ten_pages[x]["from"])
   }
@@ -50,25 +51,26 @@ const RefineResults = props => {
              var recipe_url = recipes[j]['recipe']['url']
              recipes_on_page.push(recipe_name)
              var recipe_ings = recipes[j]['recipe']['ingredients']
-             var recipe_ings_length = recipe_ings.length
-             var length_int = parseInt(recipe_ings_length)
-             var last_index = length_int - 1
 
              var less = false
              var same = false
              var one_over = false
-             var more = false
 
-             if(recipe_ings_length < user_ings_length){
+             var exception_count = CheckRecipeIngredientLength(recipe_ings)
+             var checked_ingredients = exception_count[1]
+             var checked_length = checked_ingredients.length
+             var length_int = parseInt(checked_length)
+             var last_index = length_int - 1
+
+             if(checked_length < user_ings_length){
                less = true
-             }else if(recipe_ings_length === user_ings_length){
+             }else if(checked_length === user_ings_length){
                same = true
-             }else if(recipe_ings_length === user_ings_length+1){
+             }else if(checked_length === user_ings_length+1){
                one_over = true
              }else{
-               more = true
                console.log("Recipe has too many ingredients")
-               console.log("Number of recipe ingredients: " + recipe_ings_length)
+               console.log("Number of recipe ingredients: " + checked_length)
                console.log("I have " + user_ings_length + " ingredients")
              }
 
@@ -84,15 +86,15 @@ const RefineResults = props => {
                            var not_found = []
                            var outer_ind = -1
 
-                           for(x in recipe_ings){
+                           for(x in checked_ingredients){
 
                                  outer_ind += 1
                                  var final_index = false
-                                 if(outer_ind === recipe_ings_length - 1){
+                                 if(outer_ind === checked_length - 1){
                                    final_index = true
                                  }
                                  var index = -1
-                                 var ingredient_lower = recipe_ings[x]['text'].toLowerCase()
+                                 var ingredient_lower = checked_ingredients[x]
                                  var false_count = 0
 
                                  if(break_out){
@@ -151,6 +153,7 @@ const RefineResults = props => {
                                                console.log("EXCEPTION FOUND? " + found)
                                                var ingredients_with_exceptions = exception_check[1]
                                                var found_random = exception_check[2]
+
                                                if(found){ // Ingredient found was not the user's ingredient (keyword exception found)
                                                     console.log( "NO MATCH FOR " + ingredient_lower )
                                                     console.log( "keyword exception(s) found for" )
@@ -199,7 +202,7 @@ const RefineResults = props => {
                                                  console.log("ADDING " + recipe_url + ", VALUE: recipe ingredient = " + ingredient_lower + ", user ingredient: " + user_ingredients[y] + ", can be used as substitute. Found: "  + all_ingredients_found[0] + " in its include list");
                                                  substitutes_dict[recipe_url] = [ingredient_lower, user_ingredients[y], all_ingredients_found[0]]
                                                }
-                                               if(match_count === recipe_ings_length){ // Found all of the recipe's ingredients within the user's ingredients, add recipe to relevant list.
+                                               if(match_count === checked_length){ // Found all of the recipe's ingredients within the user's ingredients, add recipe to relevant list.
                                                     console.log("MATCH FOUND!")
                                                     console.log("for: " + recipes[j]['recipe']['label'])
                                                     console.log("in less = true")
@@ -256,8 +259,6 @@ const RefineResults = props => {
                                 }
 
 
-
-
                       }catch(error){
 
                             console.log(recipes[j]['label'] + ":(LESS) RefineResults error: " + error)
@@ -265,7 +266,6 @@ const RefineResults = props => {
                       }
 
                }
-
 
 
               var done = false
@@ -276,20 +276,20 @@ const RefineResults = props => {
 
                             var count = -1
                             var ing
-                            var ingred
+                            var x
                             var ingredient_count = 0
                             var not_found = []
 
-                            for(ingred in recipe_ings){
+                            for(x in checked_ingredients){
 
                                     count += 1
                                     var last_index = false
-                                    if(count === (recipe_ings_length - 1)){
+                                    if(count === (checked_length - 1)){
                                         last_index = true
                                     }
 
                                     var count_two = -1
-                                    var ingredient_lower = recipe_ings[ingred]['text'].toLowerCase()
+                                    var ingredient_lower = checked_ingredients[x]
                                     var false_count = 0
 
                                     if(done){
@@ -376,7 +376,7 @@ const RefineResults = props => {
                                                        done = true
                                                        break;
                                                    }else{
-                                                      match = true
+                                                       match = true
                                                    }
                                                  }
                                             }
