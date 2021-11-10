@@ -573,6 +573,9 @@
           {
             "name": "parmesan",
             "exclude": [
+              {
+                "word": "salted parmesan",
+              },
             ],
             "include": [
               {
@@ -1835,6 +1838,9 @@
               {
                 "word": "pimento",
               },
+              {
+                "word": "pepper bacon",
+              },
             ],
             "include": [
               {
@@ -2286,6 +2292,21 @@
               {
                 "word": "water still clinging",
               },
+              {
+                "word": "in boiling water",
+              },
+              {
+                "word": "in cold water",
+              },
+              {
+                "word": "in water",
+              },
+              {
+                "word": "in hot water",
+              },
+              {
+                "word": "vinegar",
+              },
             ],
             "include": [
             ],
@@ -2335,6 +2356,12 @@
               },
               {
                 "word": "canned tomatoes",
+              },
+              {
+                "word": "tomato-based",
+              },
+              {
+                "word": "tomato based",
               },
             ],
             "include": [

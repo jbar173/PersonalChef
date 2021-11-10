@@ -443,7 +443,7 @@ class ApiCalls extends React.Component {
     console.log("calling APIs")
     var keywords = this.state.searchKeywords
     var time = this.state.initialData.time
-    var ingr = this.state.initialData.ingredientCount
+    var ingr = this.state.initialData.ingredientCount + 1
     if(this.state.both){
       var type = 'dishType=Biscuits%20and%20cookies&dishType=Cereals&dishType=Desserts&dishType=Drinks&dishType=Pancake&dishType=Preserve&dishType=Sweets&dishType=Bread&dishType=Condiments%20and%20sauces&dishType=Main%20course&dishType=Pancake&dishType=Preps&dishType=Salad&dishType=Sandwiches&dishType=Side%20dish&dishType=Soup&dishType=Starter'
     }else{
@@ -830,7 +830,7 @@ class ApiCalls extends React.Component {
                                                                                      <View key={i}>
                                                                                         {entry[0] === item[1] &&
                                                                                             <View>
-                                                                                                <Text style={{textAlign:"center"}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                                                                <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
                                                                                             </View>
                                                                                         }
                                                                                      </View>
@@ -904,7 +904,7 @@ class ApiCalls extends React.Component {
                                                                                      <View key={i}>
                                                                                         {entry[0] === item[1] &&
                                                                                             <View>
-                                                                                                <Text style={{textAlign:"center"}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                                                                <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
                                                                                             </View>
                                                                                         }
                                                                                      </View>
@@ -996,7 +996,7 @@ class ApiCalls extends React.Component {
                                                                                         <View key={i}>
                                                                                            {entry[0] === item[1] &&
                                                                                                <View>
-                                                                                                   <Text style={{textAlign:"center"}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                                                                   <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
                                                                                                </View>
                                                                                            }
                                                                                         </View>

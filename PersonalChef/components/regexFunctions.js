@@ -53,7 +53,7 @@ const CheckRecipeIngredientLength = (recipe_ings) => {
 
       return [ exception_count, new_ingredients ];
 
-}
+};
 
 
 // Searches for the user's ingredient within the recipe ingredient string:
@@ -113,7 +113,7 @@ const FindIngredient = (ingredients_to_search_for,ingredient_lower) => {
        result = true
      }
 
-    return [result,original_found,include_words_found];
+    return [ result, original_found, include_words_found ];
 
 };
 
@@ -130,6 +130,7 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
 
     var result = false
     var exceptions = data.ingredients
+    var exception_found = false
 
     var random_exclusions = exclusions.phrases
     var random_exception_found = false

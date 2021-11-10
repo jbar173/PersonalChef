@@ -123,7 +123,7 @@ class AlmostList extends React.Component{
                                                 <View key={i}>
                                                    {entry[0] === item[1] &&
                                                        <View>
-                                                           <Text style={{textAlign:"center"}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                           <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
                                                        </View>
                                                    }
                                                 </View>
