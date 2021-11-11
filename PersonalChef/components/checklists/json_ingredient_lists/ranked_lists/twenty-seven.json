@@ -1,19 +1,9 @@
 {
     "name": "twenty-seven",
     "children": [
-
         {
-            "name": "water",
-            "count": 27
-        },
-        {
-            "name": "lemon",
-            "count": 27
-        },
-        {
-            "name": "icing sugar",
+            "name": "soy sauce",
             "count": 27
         }
-
     ]
 }

@@ -1,23 +1,4 @@
 {
     "name": "twenty-six",
-    "children": [
-
-      {
-          "name": "fontina",
-          "count": 26
-      },
-      {
-          "name": "nutmeg",
-          "count": 26
-      },
-      {
-          "name": "spinach",
-          "count": 26
-      },
-      {
-          "name": "ricotta",
-          "count": 26
-      }
-
-    ]
+    "children": []
 }

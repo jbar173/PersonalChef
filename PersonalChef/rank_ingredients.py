@@ -17,6 +17,7 @@ def count_ingredient_occurances(cleaned_ingredients):
     already_found = {}
     length = len(list)
     found = False
+    ing_count = 0
 
     for item in list:
         for key in already_found.keys():
@@ -28,15 +29,19 @@ def count_ingredient_occurances(cleaned_ingredients):
             found = False
         else:
             already_found[item] = 0
+            ing_count += 1
 
     for x in already_found:
-        print(f"{x}: {already_found[x]}")
+        if(already_found[x] > 20):
+            print(f"{x}: {already_found[x]}")
+
 
     most_popular_ingredient = max(already_found,key=already_found.get)
     highest_rank = int(already_found[f'{most_popular_ingredient}'])
 
     print(f"most_popular_ingredient: {most_popular_ingredient}")
     print(f"highest rank: {highest_rank}")
+    print(f"total number of ingredients found: {ing_count}")
 
     return (already_found, highest_rank)
 
@@ -63,7 +68,7 @@ def convert_to_json(ingredients_py_dictionaries):
     for dictionary in ingredients_py_dictionaries:
         i += 1
         word = num2words(i)
-        print(f"i: {word}")
+        # print(f"i: {word}")
 
         d = {"name": f"{word}",
              "children": [{"name": key, "count": value} for key,value in dictionary.items()]}

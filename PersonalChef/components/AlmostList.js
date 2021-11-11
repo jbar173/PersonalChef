@@ -120,14 +120,23 @@ class AlmostList extends React.Component{
                                       }
                                       { Object.entries(subs).map(function(entry,i) {
                                           return(
-                                                <View key={i}>
-                                                   {entry[0] === item[1] &&
-                                                       <View>
-                                                           <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
-                                                       </View>
-                                                   }
-                                                </View>
-                                          )
+                                                  <View key={i}>
+
+                                                     {entry[0] === item[1] &&
+                                                         <View>
+                                                             {entry[1].map(function(substitute,it) {
+                                                                 return(
+                                                                    <View key={it}>
+                                                                        <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {substitute[1]} could be used in place of {substitute[0]}</Text>
+                                                                    </View>
+                                                                  )
+                                                               })
+                                                             }
+                                                         </View>
+                                                      }
+
+                                                   </View>
+                                                 )
                                         })
                                       }
                                       { show_animation === false &&

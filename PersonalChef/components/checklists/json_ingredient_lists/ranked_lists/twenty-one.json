@@ -1,9 +1,4 @@
 {
     "name": "twenty-one",
-    "children": [
-        {
-            "name": "cottage cheese",
-            "count": 21
-        }
-    ]
+    "children": []
 }

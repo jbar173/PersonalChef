@@ -2,15 +2,11 @@
     "name": "sixteen",
     "children": [
         {
-            "name": "white wine",
+            "name": "fresh lemon juice",
             "count": 16
         },
         {
-            "name": "feta",
-            "count": 16
-        },
-        {
-            "name": "basil",
+            "name": "minced fresh ginger",
             "count": 16
         }
     ]
