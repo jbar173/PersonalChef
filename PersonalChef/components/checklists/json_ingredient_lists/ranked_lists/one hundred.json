@@ -1,4 +1,9 @@
 {
     "name": "one hundred",
-    "children": []
+    "children": [
+      {
+          "name": "pasta",
+          "count": 100
+      }
+    ]
 }

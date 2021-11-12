@@ -2,7 +2,11 @@
     "name": "twenty-eight",
     "children": [
         {
-            "name": "powder",
+            "name": "cheese slice",
+            "count": 28
+        },
+        {
+            "name": "thyme",
             "count": 28
         }
     ]

@@ -1,4 +1,17 @@
 {
     "name": "twenty-three",
-    "children": []
+    "children": [
+      {
+          "name": "dijon",
+          "count": 23
+      },
+      {
+          "name": "paprika",
+          "count": 23
+      },
+      {
+          "name": "worcestershire sauce",
+          "count": 23
+      }
+    ]
 }

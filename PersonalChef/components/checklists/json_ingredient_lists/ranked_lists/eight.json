@@ -2,15 +2,11 @@
     "name": "eight",
     "children": [
         {
-            "name": "cream cheese",
+            "name": "mushroom",
             "count": 8
         },
         {
-            "name": "",
-            "count": 8
-        },
-        {
-            "name": "heavy cream",
+            "name": "honey",
             "count": 8
         }
     ]

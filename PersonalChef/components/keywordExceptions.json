@@ -7,7 +7,7 @@
       "filo pastry","tomato ketchup","cashew nuts","whisky","sun-dried tomatoes","spring onion","shallot","beef stock","vegetable stock","lamb stock","chicken stock","fontina","gouda","emmental","gruyere",
       "provolone","cheddar","cheese slice","icing sugar","parmesan","lemon juice","pasta","muenster","taleggio","brie","camembert","canola oil","grapeseed oil","sunflower oil","pecorino",
       "cornmeal","polenta","lasagne sheets","havarti","jarlsberg","manchego","mozzarella","comte","gorgonzola","blue cheese","ricotta","cottage cheese","avocado","guacamole","goat's cheese","monterey jack",
-      "cooking spray","avocado oil","safflower oil","rice bran oil","canola oil","olive oil","peanut oil","vegetable oil","baking powder","baking soda","flour","salad leaves","yoghurt",
+      "cooking spray","avocado oil","safflower oil","rice bran oil","canola oil","olive oil","peanut oil","vegetable oil","baking powder","baking soda","flour","salad leaves","yoghurt","ham","prosciutto",
 
 
 
@@ -15,7 +15,28 @@
 
     "ingredients": [
 
+          {
+              "name": "prosciutto",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ham",
+                },
 
+              ],
+          },
+          {
+              "name": "ham",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "prosciutto",
+                },
+
+              ],
+          },
           {
               "name": "yoghurt",
               "exclude": [
@@ -657,6 +678,9 @@
               },
               {
                 "word": "powdered sugar",
+              },
+              {
+                "word": "superfine sugar",
               },
             ],
           },

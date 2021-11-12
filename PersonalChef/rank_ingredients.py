@@ -77,7 +77,7 @@ def convert_to_json(ingredients_py_dictionaries):
 
         try:
             file_name = word
-            f = open(f"{directory}\\components\\checklists\\json_ingredient_lists\\ranked_lists\\{file_name}.json", 'w+')
+            f = open(f"{directory}\\components\\checklists\\json_ingredient_lists\\ranked_lists\\_new\\{file_name}.json", 'w+')
             f.write(j)
             f.close()
         except OSError as e:

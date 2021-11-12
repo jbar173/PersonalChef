@@ -2,23 +2,15 @@
     "name": "six",
     "children": [
         {
-            "name": "bourbon",
+            "name": "cauliflower",
             "count": 6
         },
         {
-            "name": "ginger and",
+            "name": "dill",
             "count": 6
         },
         {
-            "name": "agave nectar",
-            "count": 6
-        },
-        {
-            "name": "lemons",
-            "count": 6
-        },
-        {
-            "name": "whipping cream",
+            "name": "mascarpone",
             "count": 6
         }
     ]

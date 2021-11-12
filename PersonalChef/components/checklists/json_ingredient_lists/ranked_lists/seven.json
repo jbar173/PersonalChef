@@ -2,43 +2,23 @@
     "name": "seven",
     "children": [
         {
-            "name": "ginger root",
+            "name": "walnuts",
             "count": 7
         },
         {
-            "name": "spray",
+            "name": "poppy seeds",
             "count": 7
         },
         {
-            "name": "fresh ginger and",
+            "name": "yeast",
             "count": 7
         },
         {
-            "name": "salt and ground pepper",
+            "name": "gouda",
             "count": 7
         },
         {
-            "name": "carrots",
-            "count": 7
-        },
-        {
-            "name": "salt and pepper",
-            "count": 7
-        },
-        {
-            "name": "cornstarch",
-            "count": 7
-        },
-        {
-            "name": "dark muscovado sugar",
-            "count": 7
-        },
-        {
-            "name": "egg yolks",
-            "count": 7
-        },
-        {
-            "name": "pecans  dried apricots vanilla cinnamon ginger glac\u00e9 cherries and cranberries decorate",
+            "name": "shallot",
             "count": 7
         }
     ]

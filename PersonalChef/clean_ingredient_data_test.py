@@ -50,7 +50,7 @@ def clean_ingredients(ingredients):
      ' packed ', ' loaf ', ' loaves ', ' baton ', ' batons ', ' sprinkling ', ' block ', ' blocks ', ' some ', ' bite-size ',
      ' bite-sized ', ' bite sized ', ' bite ', ' mug ', ' twist ', ' centimeter ', ' centimeters ', ' centimetre ', ' bite size ',
      ' centimetres ', ' [lb] ', ' dusting ', ' shreds ', ' finger-length ', ' finger length ', ' tbp ', ' finger ', ' sprinkle ',
-     ' log ', ' logs ', ' percent ', ' exactly ', ]
+     ' log ', ' logs ', ' percent ', ' exactly ', ' a bit ', ]
 
     number_words = [' one ', ' two ', ' three ', ' four ', ' five ', ' six ', ' seven ', ' eight ', ' nine ', ' ten ',
     ' twenty ', ' thirty ', ' forty ', ' fifty ', ' sixty ', ' seventy ', ' eighty ', ' ninety ', ' one hundred ', ]
@@ -129,12 +129,16 @@ def clean_ingredients(ingredients):
     ' cooking ', ' lowfat ', ' substituted ', ' indulgent ', ' feeling ', ' eggwash ', ' maybe ', ' rapid ', ' scalded ', ' point ', ' hardboiled ', ' al dente ',
     ' cancadian ', ' love ', ' minus ', ' tepmperature ', ' room ', ' box grater ', ' grater ', ' horizontally ', ' waffle iron ', ' everything ', ' high smoke point ',
     ' low smoke point ', ' smoke point ', ' soapy ', ' bouquet ', ' british english ', ' in half ', ' everyday value ', ' value ', ' the top ', ' flour the work surface ',
-    ' flour the surface ', ' flour the table ', ' over the top ', ' buttering ', ' dishes ', ' dish ', ' plates ', ' plate ', ]
+    ' flour the surface ', ' flour the table ', ' over the top ', ' buttering ', ' dishes ', ' dish ', ' plates ', ' plate ', ' other ', ' type ', ' types ', ' rind ',
+    ' chooped ', ' not done ', ' prepackaged ', ' commercially ', ' sharp ', ' extra sharp ', ' extra-sharp ', ' brown or white ', ' game plan ', ' shaped ', ' spiral-shaped ',
+    ' rectangular ', ' rectangle-shaped ', ' square-shaped ', ' circular ', ' old-fashioned ', ' old fashioned ', ' quick ', ' belgian or waffle iron ', ' souffle dish ',
+    ' coat ',  ]
 
     brands = [ ' ayam ', ' patak ', " patak's ", " waitrose ", " blue dragon ", " king edward ", " maris piper ", ' tessa ', ' kallo ', ' granny smith ', ' tilda ', ' maldon ',
     " sharwood's ", ' sharwoods ', ' old bay ', ' bonne maman ', ' jack daniels ', " jack daniel's ", ' amoy ', ' thai-food-onlinecouk ', ' amazoncom ', ' maharaja ', ' maharajah ',
     " lingham's ", ' linghams ', ' dodoni ', ' burford browns ', ' burford brown ', ' campbells ', " campbell's ", ' knudsen ', ' maesri ', ' liptons ', " lipton's ", ' swanson ',
-    " kellogg's ", ' kelloggs ', ' pepperidge farms ', " pepperidge farm's ", " arnold ", " velveeta ", " kite hill ", " shelburne farms ",  ]
+    " kellogg's ", ' kelloggs ', ' pepperidge farms ', " pepperidge farm's ", " arnold ", " velveeta ", " kite hill ", " shelburne farms ", " bradley farms ", " andrew and everett ",
+    " duke's ", " mccormick ", " grill mates ", " contadina ",  ]
 
     short = [' of ', ' x ', ' for ', ' each ', ' into ', ' if ', ' we ', ' you ', ' on ', ' but ', ' how ', ' it ', ' yes ', ' no ',
     ' they ', ' are ', ' at ', ' an ', ' to ', ' off ', ' I ', ' their ', ' with ', ' both ', ' g ', ' any ', ' your ', ' what ', ]
@@ -351,8 +355,8 @@ def clean_ingredients(ingredients):
                 new_list.insert(i,ingr_altered)
 
 
-    for x in new_list:
-        print(f"final x: {x}")
+    # for x in new_list:
+    #     print(f"final x: {x}")
 
 # Gets rid of any spaces at beginning of ingredient:
     count = 0
@@ -395,8 +399,8 @@ def clean_ingredients(ingredients):
             new_list.insert(index, new_ingredient)
             count = 0
 
-    for x in new_list:
-        print(f"final X3 x: '{x}'")
+    # for x in new_list:
+    #     print(f"final X3 x: '{x}'")
 
     return new_list;
 
