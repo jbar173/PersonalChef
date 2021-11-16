@@ -1,5 +1,13 @@
 {
     "name": "twenty-five",
     "children": [
+        {
+            "name": "oregano",
+            "count": 25
+        },
+        {
+            "name": "mushrooms",
+            "count": 25
+        }
     ]
 }

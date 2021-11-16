@@ -2,6 +2,10 @@
     "name": "thirty",
     "children": [
       {
+          "name": "chili pepper",
+          "count": 30
+      },
+      {
           "name": "vanilla extract",
           "count": 30
       }

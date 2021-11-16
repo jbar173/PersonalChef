@@ -2,7 +2,15 @@
     "name": "twenty-one",
     "children": [
         {
-            "name": "cottage cheese",
+            "name": "pine nuts",
+            "count": 21
+        },
+        {
+            "name": "walnuts",
+            "count": 21
+        },
+        {
+            "name": "puff pastry",
             "count": 21
         }
     ]

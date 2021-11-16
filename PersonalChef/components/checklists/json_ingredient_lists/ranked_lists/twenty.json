@@ -1,13 +1,6 @@
 {
     "name": "twenty",
     "children": [
-        {
-            "name": "cream",
-            "count": 20
-        },
-        {
-            "name": "pepper",
-            "count": 20
-        }
+
     ]
 }

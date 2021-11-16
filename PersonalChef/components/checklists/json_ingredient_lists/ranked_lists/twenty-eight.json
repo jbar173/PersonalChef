@@ -2,11 +2,15 @@
     "name": "twenty-eight",
     "children": [
         {
+            "name": "icing sugar",
+            "count": 28
+        },
+        {
             "name": "cheese slice",
             "count": 28
         },
         {
-            "name": "thyme",
+            "name": "bacon",
             "count": 28
         }
     ]

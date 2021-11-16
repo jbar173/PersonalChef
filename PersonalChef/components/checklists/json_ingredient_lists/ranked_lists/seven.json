@@ -2,23 +2,27 @@
     "name": "seven",
     "children": [
         {
-            "name": "walnuts",
+            "name": "ground coriander",
             "count": 7
         },
         {
-            "name": "poppy seeds",
+            "name": "artichoke",
             "count": 7
         },
         {
-            "name": "yeast",
+            "name": "ground beef",
             "count": 7
         },
         {
-            "name": "gouda",
+            "name": "lasagne sheets",
             "count": 7
         },
         {
-            "name": "shallot",
+            "name": "chili powder",
+            "count": 7
+        },
+        {
+            "name": "courgette",
             "count": 7
         }
     ]

@@ -2,19 +2,11 @@
     "name": "twenty-six",
     "children": [
           {
+              "name": "cottage cheese",
+              "count": 26
+          },
+          {
               "name": "fontina",
-              "count": 26
-          },
-          {
-              "name": "nutmeg",
-              "count": 26
-          },
-          {
-              "name": "spinach",
-              "count": 26
-          },
-          {
-              "name": "ricotta",
               "count": 26
           }
     ]

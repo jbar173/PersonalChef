@@ -1,6 +1,13 @@
 {
     "name": "twenty-four",
     "children": [
-
+        {
+            "name": "basil",
+            "count": 24
+        },
+        {
+            "name": "white wine",
+            "count": 24
+        }
     ]
 }
