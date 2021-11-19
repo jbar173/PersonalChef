@@ -132,7 +132,7 @@ def clean_ingredients(ingredients):
     ' flour the surface ', ' flour the table ', ' over the top ', ' buttering ', ' dishes ', ' dish ', ' plates ', ' plate ', ' other ', ' type ', ' types ', ' rind ',
     ' chooped ', ' not done ', ' prepackaged ', ' commercially ', ' sharp ', ' extra sharp ', ' extra-sharp ', ' brown or white ', ' game plan ', ' shaped ', ' spiral-shaped ',
     ' rectangular ', ' rectangle-shaped ', ' square-shaped ', ' circular ', ' old-fashioned ', ' old fashioned ', ' quick ', ' belgian or waffle iron ', ' souffle dish ',
-    ' coat ', " well-drained ", " well drained ", " time ", " vertically ", ]
+    ' coat ', " well-drained ", " well drained ", " time ", " vertically ", " places ", " place ", " placed ", " across ", " the bone ", " the bones ",   ]
 
     brands = [ ' ayam ', ' patak ', " patak's ", " waitrose ", " blue dragon ", " king edward ", " maris piper ", ' tessa ', ' kallo ', ' granny smith ', ' tilda ', ' maldon ',
     " sharwood's ", ' sharwoods ', ' old bay ', ' bonne maman ', ' jack daniels ', " jack daniel's ", ' amoy ', ' thai-food-onlinecouk ', ' amazoncom ', ' maharaja ', ' maharajah ',

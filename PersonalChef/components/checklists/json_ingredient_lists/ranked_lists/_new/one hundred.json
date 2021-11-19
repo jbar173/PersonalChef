@@ -1,0 +1,9 @@
+{
+    "name": "one hundred",
+    "children": [
+        {
+            "name": "powder",
+            "count": 100
+        }
+    ]
+}

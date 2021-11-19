@@ -1,0 +1,17 @@
+{
+    "name": "sixty",
+    "children": [
+        {
+            "name": "sugar",
+            "count": 60
+        },
+        {
+            "name": "soy sauce",
+            "count": 60
+        },
+        {
+            "name": "egg",
+            "count": 60
+        }
+    ]
+}

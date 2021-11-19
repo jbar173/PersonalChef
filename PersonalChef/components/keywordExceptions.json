@@ -7,14 +7,729 @@
       "filo pastry","tomato ketchup","cashew nuts","whisky","sun-dried tomatoes","spring onion","shallot","beef stock","vegetable stock","lamb stock","chicken stock","fontina","gouda","emmental","gruyere",
       "provolone","cheddar","cheese slice","icing sugar","parmesan","lemon juice","pasta","muenster","taleggio","brie","camembert","canola oil","grapeseed oil","sunflower oil","pecorino",
       "cornmeal","polenta","lasagne sheets","havarti","jarlsberg","manchego","mozzarella","comte","gorgonzola","blue cheese","ricotta","cottage cheese","avocado","guacamole","goat's cheese","monterey jack",
-      "cooking spray","avocado oil","safflower oil","rice bran oil","canola oil","olive oil","peanut oil","vegetable oil","baking powder","baking soda","flour","salad leaves","yoghurt","ham","prosciutto",
-
-
-
+      "cooking spray","avocado oil","safflower oil","rice bran oil","olive oil","peanut oil","vegetable oil","baking powder","baking soda","flour","salad leaves","yoghurt","ham","prosciutto",
+      "powdered milk","garlic powder","ground ginger","pomegranate","wonton wrapper","peach","beef","beef stock","beef mince","chipotle powder","dessert wine","applewood smoked cheese","green bean",
+      "mangetout","pate","fruit loaf","beer","champagne","prosecco","sparkling wine","cava","cherry liqueur","lamb","vanilla pod","vanilla extract","za'atar","pumpkin puree","fresh coconut","dried coconut",
+      "beansprouts","orange","orange juice",
     ],
 
     "ingredients": [
 
+
+          {
+              "name": "orange juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tangerine",
+                },
+                {
+                  "word": "satsuma",
+                },
+                {
+                  "word": "clementine",
+                },
+                {
+                  "word": "mandarin",
+                },
+                {
+                  "word": "tangelo",
+                },
+                {
+                  "word": "minneola",
+                },
+                {
+                  "word": "kumquat",
+                },
+                {
+                  "word": "orange",
+                },
+              ],
+          },
+          {
+              "name": "orange",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tangerine",
+                },
+                {
+                  "word": "satsuma",
+                },
+                {
+                  "word": "clementine",
+                },
+                {
+                  "word": "mandarin",
+                },
+                {
+                  "word": "tangelo",
+                },
+                {
+                  "word": "minneola",
+                },
+                {
+                  "word": "kumquat",
+                },
+              ],
+          },
+          {
+              "name": "beansprouts",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peanut shoot",
+                },
+              ],
+          },
+          {
+              "name": "pumpkin puree",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tinned pumpkin",
+                },
+                {
+                  "word": "pure pumpkin",
+                },
+                {
+                  "word": "canned pumpkin",
+                },
+                {
+                  "word": "pack pumpkin",
+                },
+              ],
+          },
+          {
+              "name": "za'atar",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "zatar",
+                },
+              ],
+          },
+          {
+              "name": "vanilla extract",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vanilla bean",
+                },
+                {
+                  "word": "vanilla pod",
+                },
+                {
+                  "word": "vanilla essence",
+                },
+                {
+                  "word": "vanilla bean paste",
+                },
+                {
+                  "word": "vanilla paste",
+                },
+                {
+                  "word": "vanilla powder",
+                },
+              ],
+          },
+          {
+              "name": "vanilla pod",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vanilla bean",
+                },
+                {
+                  "word": "vanilla essence",
+                },
+                {
+                  "word": "vanilla extract",
+                },
+                {
+                  "word": "vanilla bean paste",
+                },
+                {
+                  "word": "vanilla paste",
+                },
+                {
+                  "word": "vanilla powder",
+                },
+              ],
+          },
+          {
+              "name": "lamb",
+              "exclude": [
+                {
+                  "word": "tripe",
+                },
+                {
+                  "word": "lamb stock",
+                },
+                {
+                  "word": "lamb broth",
+                },
+                {
+                  "word": "sausage",
+                },
+                {
+                  "word": "minced",
+                },
+                {
+                  "word": "mince",
+                },
+                {
+                  "word": "ground",
+                },
+              ],
+              "include": [
+                {
+                  "word": "mutton",
+                },
+                {
+                  "word": "mouton",
+                },
+              ],
+          },
+          {
+              "name": "cherry liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kirsch",
+                },
+                {
+                  "word": "heering",
+                },
+                {
+                  "word": "maraschino",
+                },
+              ],
+          },
+          {
+              "name": "prosecco",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sparkling wine",
+                },
+                {
+                  "word": "champagne",
+                },
+                {
+                  "word": "bubbly",
+                },
+                {
+                  "word": "cava",
+                },
+                {
+                  "word": "sparkling italian wine",
+                },
+                {
+                  "word": "sparkling white wine",
+                },
+                {
+                  "word": "spumante",
+                },
+                {
+                  "word": "asti",
+                },
+              ],
+          },
+          {
+              "name": "sparkling wine",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "prosecco",
+                },
+                {
+                  "word": "champagne",
+                },
+                {
+                  "word": "bubbly",
+                },
+                {
+                  "word": "cava",
+                },
+                {
+                  "word": "sparkling italian wine",
+                },
+                {
+                  "word": "sparkling white wine",
+                },
+                {
+                  "word": "spumante",
+                },
+                {
+                  "word": "asti",
+                },
+              ],
+          },
+          {
+              "name": "cava",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "prosecco",
+                },
+                {
+                  "word": "champagne",
+                },
+                {
+                  "word": "bubbly",
+                },
+                {
+                  "word": "sparkling wine",
+                },
+                {
+                  "word": "sparkling italian wine",
+                },
+                {
+                  "word": "sparkling white wine",
+                },
+                {
+                  "word": "spumante",
+                },
+                {
+                  "word": "asti",
+                },
+              ],
+          },
+          {
+              "name": "champagne",
+              "exclude": [
+                {
+                  "word": "vinegar",
+                },
+                {
+                  "word": "mango",
+                },
+                {
+                  "word": "yeast",
+                },
+              ],
+              "include": [
+                {
+                  "word": "prosecco",
+                },
+                {
+                  "word": "cava",
+                },
+                {
+                  "word": "bubbly",
+                },
+                {
+                  "word": "sparkling wine",
+                },
+                {
+                  "word": "sparkling italian wine",
+                },
+                {
+                  "word": "sparkling white wine",
+                },
+                {
+                  "word": "spumante",
+                },
+                {
+                  "word": "asti",
+                },
+              ],
+          },
+          {
+              "name": "fruit loaf",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fruit cake",
+                },
+                {
+                  "word": "fruitcake",
+                },
+                {
+                  "word": "tea loaf",
+                },
+                {
+                  "word": "fruit bread",
+                },
+                {
+                  "word": "panettone",
+                },
+                {
+                  "word": "soreen",
+                },
+              ],
+          },
+          {
+              "name": "beer",
+              "exclude": [
+                {
+                  "word": "ginger beer",
+                },
+                {
+                  "word": "root beer",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "pate",
+              "exclude": [
+                {
+                  "word": "sucree",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "mangetout",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sugar snap",
+                },
+                {
+                  "word": "sugarsnap",
+                },
+                {
+                  "word": "snow pea",
+                },
+                {
+                  "word": "snap pea",
+                },
+                {
+                  "word": "podded pea",
+                },
+                {
+                  "word": "pea pod",
+                },
+              ],
+          },
+          {
+              "name": "green bean",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "snap bean",
+                },
+                {
+                  "word": "haricot vert",
+                },
+                {
+                  "word": "haricots vert",
+                },
+                {
+                  "word": "snake bean",
+                },
+                {
+                  "word": "runner bean",
+                },
+                {
+                  "word": "french bean",
+                },
+                {
+                  "word": "yardlong bean",
+                },
+              ],
+          },
+          {
+              "name": "applewood smoked cheese",
+              "exclude": [
+                {
+                  "word": "bacon",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "dessert wine",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pudding wine",
+                },
+                {
+                  "word": "vin santo",
+                },
+                {
+                  "word": "sweet wine",
+                },
+              ],
+          },
+          {
+              "name": "chipotle powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ground chipotle",
+                },
+              ],
+          },
+          {
+              "name": "beef mince",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ground beef",
+                },
+                {
+                  "word": "minced beef",
+                },
+                {
+                  "word": "beef minced",
+                },
+              ],
+          },
+          {
+              "name": "beef stock",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "beef broth",
+                },
+                {
+                  "word": "beef bouillon",
+                },
+              ],
+          },
+          {
+              "name": "beef",
+              "exclude": [
+                {
+                  "word": "corned beef",
+                },
+                {
+                  "word": "corned brisket beef",
+                },
+                {
+                  "word": "burger",
+                },
+                {
+                  "word": "ground",
+                },
+                {
+                  "word": "minced",
+                },
+                {
+                  "word": "mince",
+                },
+                {
+                  "word": "tripe",
+                },
+                {
+                  "word": "beef stock",
+                },
+                {
+                  "word": "beef broth",
+                },
+                {
+                  "word": "beef bouillon",
+                },
+                {
+                  "word": "beefsteak tomato",
+                },
+                {
+                  "word": "beef steak tomato",
+                },
+              ],
+              "include": [
+                {
+                  "word": "topside joint",
+                },
+                {
+                  "word": "sirloin",
+                },
+                {
+                  "word": "beef top",
+                },
+                {
+                  "word": "beef steak",
+                },
+                {
+                  "word": "beef tenderloin",
+                },
+                {
+                  "word": "tri-tip",
+                },
+                {
+                  "word": "tri tip",
+                },
+                {
+                  "word": "flank",
+                },
+                {
+                  "word": "braising steak",
+                },
+                {
+                  "word": "shin",
+                },
+                {
+                  "word": "beef rib",
+                },
+                {
+                  "word": "ribeye",
+                },
+                {
+                  "word": "beef eye",
+                },
+                {
+                  "word": "top rump",
+                },
+                {
+                  "word": "rump steak",
+                },
+                {
+                  "word": "stew meat",
+                },
+                {
+                  "word": "stewing meat",
+                },
+                {
+                  "word": "brisket",
+                },
+                {
+                  "word": "scotch fillet",
+                },
+                {
+                  "word": "chuck steak",
+                },
+                {
+                  "word": "silverside",
+                },
+                {
+                  "word": "round steak",
+                },
+                {
+                  "word": "filet mignon",
+                },
+                {
+                  "word": "strip steak",
+                },
+                {
+                  "word": "new york strip",
+                },
+                {
+                  "word": "london broil",
+                },
+                {
+                  "word": "t-bone",
+                },
+                {
+                  "word": "t bone",
+                },
+                {
+                  "word": "porterhouse",
+                },
+                {
+                  "word": "tomahawk",
+                },
+                {
+                  "word": "skirt steak",
+                },
+                {
+                  "word": "hanger",
+                },
+                {
+                  "word": "denver cut",
+                },
+                {
+                  "word": "flap steak",
+                },
+                {
+                  "word": "cube steak",
+                },
+                {
+                  "word": "flat iron",
+                },
+              ],
+          },
+          {
+              "name": "wonton wrapper",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dumpling wrapper",
+                },
+              ],
+          },
+          {
+              "name": "wonton wrapper",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dumpling wrapper",
+                },
+              ],
+          },
+          {
+              "name": "pomegranate",
+              "exclude": [
+                {
+                  "word": "pomegranate molasses",
+                },
+                {
+                  "word": "pomegranate tea",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "ground ginger",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "powdered ginger",
+                },
+                {
+                  "word": "ginger powder",
+                },
+              ],
+          },
+          {
+              "name": "garlic powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "powdered garlic",
+                }
+              ],
+          },
+          {
+              "name": "powdered milk",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "milk powder",
+                },
+              ],
+          },
           {
               "name": "prosciutto",
               "exclude": [
@@ -23,7 +738,6 @@
                 {
                   "word": "ham",
                 },
-
               ],
           },
           {
@@ -208,6 +922,12 @@
                 },
                 {
                   "word": "vegetable oil",
+                },
+                {
+                  "word": "grapeseed oil",
+                },
+                {
+                  "word": "sunflower oil",
                 },
               ],
           },
@@ -572,6 +1292,138 @@
               {
                 "word": "lasagne noodles",
               },
+
+
+
+              {
+                "word": "bucatini",
+              },
+              {
+                "word": "pappardelle",
+              },
+              {
+                "word": "gemelli",
+              },
+              {
+                "word": "fusilli",
+              },
+              {
+                "word": "orecchiette",
+              },
+              {
+                "word": "malloreddus",
+              },
+              {
+                "word": "tagliatelle",
+              },
+              {
+                "word": "ditalini",
+              },
+              {
+                "word": "orzo",
+              },
+              {
+                "word": "casarecce",
+              },
+              {
+                "word": "farfalle",
+              },
+              {
+                "word": "rotini",
+              },
+              {
+                "word": "linguine",
+              },
+              {
+                "word": "capellini",
+              },
+              {
+                "word": "fettuccine",
+              },
+              {
+                "word": "mafaldine",
+              },
+              {
+                "word": "pizzoccheri",
+              },
+              {
+                "word": "trofie",
+              },
+              {
+                "word": "mostaccioli",
+              },
+              {
+                "word": "tortiglioni",
+              },
+              {
+                "word": "cannelloni",
+              },
+              {
+                "word": "cavatelli",
+              },
+              {
+                "word": "cappelletti",
+              },
+              {
+                "word": "bigoli",
+              },
+              {
+                "word": "tagliolini",
+              },
+              {
+                "word": "ravioli",
+              },
+              {
+                "word": "tortellini",
+              },
+              {
+                "word": "conchiglie",
+              },
+              {
+                "word": "calamarata",
+              },
+              {
+                "word": "spatzle",
+              },
+              {
+                "word": "maultasche",
+              },
+              {
+                "word": "fregula",
+              },
+              {
+                "word": "agnolotti",
+              },
+              {
+                "word": "paccheri",
+              },
+              {
+                "word": "tortelloni",
+              },
+              {
+                "word": "vermicelli",
+              },
+              {
+                "word": "garganelli",
+              },
+              {
+                "word": "strozzapreti",
+              },
+              {
+                "word": "scialetelli",
+              },
+              {
+                "word": "campanelle",
+              },
+              {
+                "word": "mezzelune",
+              },
+              {
+                "word": "pici",
+              },
+              {
+                "word": "rigatone",
+              }
             ],
           },
           {
@@ -1094,6 +1946,9 @@
               {
                 "word": "chicken bone broth",
               },
+              {
+                "word": "chicken soup base",
+              },
             ],
           },
           {
@@ -1303,11 +2158,34 @@
             "name": "white wine",
             "exclude": [
               {
-                "word": "white wine vinegar",
+                "word": "vinegar",
+              },
+              {
+                "word": "lettuce",
+              },
+              {
+                "word": "onion",
               },
             ],
             "include": [
-
+              {
+                "word": "chardonnay",
+              },
+              {
+                "word": "sauvignon blanc",
+              },
+              {
+                "word": "dry white",
+              },
+              {
+                "word": "crisp white",
+              },
+              {
+                "word": "fruity white",
+              },
+              {
+                "word": "medium white",
+              },
             ],
           },
           {
@@ -1429,7 +2307,6 @@
               },
             ],
             "include": [
-
             ],
           },
           {
@@ -1540,7 +2417,19 @@
             "name": "peach",
             "exclude": [
               {
-                "word": "peach juice",
+                "word": "peach spread",
+              },
+              {
+                "word": "peach jam",
+              },
+              {
+                "word": "peach nectar",
+              },
+              {
+                "word": "peach tea",
+              },
+              {
+                "word": "peach bitters",
               },
             ],
             "include": [
@@ -1581,25 +2470,116 @@
             ],
           },
           {
-            "name": "coconut",
+            "name": "dried coconut",
             "exclude": [
-              {
-                "word": "coconut oil",
-              },
+            ],
+            "include": [
               {
                 "word": "dessicated coconut",
               },
               {
-                "word": "coconut milk",
+                "word": "coconut dessicated",
               },
               {
-                "word": "coconut water",
+                "word": "desicated coconut",
               },
               {
-                "word": "coconut macaroon",
+                "word": "coconut desicated",
+              },
+              {
+                "word": "dehydrated coconut",
+              },
+              {
+                "word": "coconut dehydrated",
+              },
+              {
+                "word": "shredded coconut",
+              },
+              {
+                "word": "coconut shred",
+              },
+              {
+                "word": "coconut dried",
+              },
+              {
+                "word": "coconut shredded",
+              },
+              {
+                "word": "coconut flake",
+              },
+              {
+                "word": "flaked coconut",
+              },
+              {
+                "word": "coconut flaked",
+              },
+            ],
+          },
+          {
+            "name": "fresh coconut",
+            "exclude": [
+              {
+                "word": "oil",
+              },
+              {
+                "word": "dessicated",
+              },
+              {
+                "word": "milk",
+              },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "creamed",
+              },
+              {
+                "word": "macaroon",
+              },
+              {
+                "word": "desicated",
+              },
+              {
+                "word": "shreds",
+              },
+              {
+                "word": "shredded",
+              },
+              {
+                "word": "extract",
+              },
+              {
+                "word": "essence",
+              },
+              {
+                "word": "flour",
+              },
+              {
+                "word": "sugar",
+              },
+              {
+                "word": "yoghurt",
+              },
+              {
+                "word": "dehydrated",
+              },
+              {
+                "word": "flaked",
+              },
+              {
+                "word": "flakes",
+              },
+              {
+                "word": "aminos",
+              },
+              {
+                "word": "dried",
               },
             ],
             "include": [
+              {
+                "word": "coconut",
+              },
             ],
           },
           {
@@ -1690,7 +2670,9 @@
               },
             ],
             "include": [
-
+              {
+                "word": "yam",
+              },
             ],
           },
           {
@@ -1911,6 +2893,15 @@
               {
                 "word": "garlic bread",
               },
+              {
+                "word": "garlic powder",
+              },
+              {
+                "word": "garlic salt",
+              },
+              {
+                "word": "powdered garlic",
+              }
             ],
             "include": [
 
@@ -1934,11 +2925,31 @@
             "name": "pumpkin",
             "exclude": [
               {
-                "word": "pumpkin seeds",
+                "word": "fruit",
+              },
+              {
+                "word": "orange squash",
+              },
+              {
+                "word": "cordial",
+              },
+              {
+                "word": "drink",
+              },
+              {
+                "word": "juice",
+              },
+              {
+                "word": "concentrate",
               },
             ],
             "include": [
-
+              {
+                "word": "butternut squash",
+              },
+              {
+                "word": "squash",
+              },
             ],
           },
           {
@@ -2066,14 +3077,19 @@
             ],
           },
           {
-            "name": "hamburger",
+            "name": "burger",
             "exclude": [
               {
-                "word": "hamburger bun",
+                "word": "burger bun",
               },
             ],
             "include": [
-
+              {
+                "word": "beefburger",
+              },
+              {
+                "word": "hamburger",
+              },
             ],
           },
           {
@@ -2096,30 +3112,20 @@
                 "word": "peanut butter",
               },
               {
-                "word": "peanut oil",
+                "word": "oil",
               },
               {
-                "word": "peanut butter cookie",
+                "word": "peanut shoot",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "brittle",
               },
             ],
             "include": [
 
-            ],
-          },
-          {
-            "name": "canola oil",
-            "exclude": [
-             ],
-            "include": [
-              {
-                "word": "grapeseed oil",
-              },
-              {
-                "word": "vegetable oil",
-              },
-              {
-                "word": "sunflower oil",
-              },
             ],
           },
           {
@@ -2159,9 +3165,6 @@
             "exclude": [
               {
                 "word": "peanut butter",
-              },
-              {
-                "word": "peanut butter cookie",
               },
               {
                 "word": "almond butter",
@@ -2246,6 +3249,15 @@
               },
               {
                 "word": "milk",
+              },
+              {
+                "word": "coconut cream",
+              },
+              {
+                "word": "creamed coconut",
+              },
+              {
+                "word": "coconut yoghurt",
               },
             ],
           },

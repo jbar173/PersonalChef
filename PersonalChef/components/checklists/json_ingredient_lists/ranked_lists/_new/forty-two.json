@@ -1,0 +1,33 @@
+{
+    "name": "forty-two",
+    "children": [
+        {
+            "name": "red wine vinegar",
+            "count": 42
+        },
+        {
+            "name": "sugar",
+            "count": 42
+        },
+        {
+            "name": "ground black pepper",
+            "count": 42
+        },
+        {
+            "name": "milk",
+            "count": 42
+        },
+        {
+            "name": "flour",
+            "count": 42
+        },
+        {
+            "name": "ground cumin",
+            "count": 42
+        },
+        {
+            "name": "butter",
+            "count": 42
+        }
+    ]
+}

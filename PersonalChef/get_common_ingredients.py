@@ -8,15 +8,17 @@ import re
 
 def collect_ingredients():
 
-## done : 'prawns','chicken','mince','salmon','pasta','rice','couscous','lentils','bread','lettuce','cheese','milk','peppers','tomatoes','eggs','potatoes','couscous','spinach',
-##          'cabbage',
+## done : 'prawns','chicken','mince','salmon','pasta','rice','couscous','lentils','bread','lettuce','cheese','milk',
+##          'peppers','tomatoes','eggs','potatoes','couscous','spinach','cabbage',
+##          'beansprouts','salad leaves','chili pepper','beef joint','pork','quinoa','flour','sugar',
+##           'bell pepper','satsuma','tangerine','yoghurt','creme fraiche','onion','fresh ginger',
 
-##       'beansprouts','leaves','salad leaves','chili','chillies','chili pepper','beef','beef joint','pork','quinoa','chickpeas','flour','sugar','bell pepper','satsuma','tangerine',
-##        'yoghurt','creme fraiche','onion','fresh ginger','ginger',
+
+
     common_staples_to_search_with = []
 
     # staple = 'prawns'
-    staple = 'cabbage'
+    staple =
     responses = []
 
     api = f"https://api.edamam.com/api/recipes/v2?type=public&q={staple}&app_id=f70ab024&app_key=2e0223626b3cd85bbeedb8598d9bff50"
