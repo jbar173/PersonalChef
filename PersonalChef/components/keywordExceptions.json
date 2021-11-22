@@ -1,7 +1,7 @@
 {
 
     "key" : ["ice","lemon","cream","pepper","garlic","raisin","pumpkin","chocolate","oatmeal","fudge","hamburger","hot dog","peanut","butter","corn","kidney","coffee","milk","water","ginger","ale","coffee",
-      "tomato","mushroom","chili","apple","apricot","almond","brazil nut","candlenut","cashew nut","chestnut","potato","vinegar","hazelnut","pecan","macademia","walnut","pine nut","mustard","grape","toffee",
+      "tomato","mushroom","chili","apple","apricot","almond","brazil nut","candlenut","cashew nut","chestnut","potato","hazelnut","pecan","macademia","walnut","pine nut","mustard","grape","toffee",
       "plum","onion","date","lime","grapefruit","fig","pineapple","olives","banana","turnip","lettuce","spinach","beetroot","kale","cabbage","custard","caramel","oats","black tea","sugar","shrimp","rice",
       "sweet potato","chili pepper","milk chocolate","white chocolate","dark chocolate","coconut milk","soy milk","almond milk","white wine","cider","egg","bell pepper","courgette","coriander","rocket",
       "filo pastry","tomato ketchup","cashew nuts","whisky","sun-dried tomatoes","spring onion","shallot","beef stock","vegetable stock","lamb stock","chicken stock","fontina","gouda","emmental","gruyere",
@@ -10,12 +10,146 @@
       "cooking spray","avocado oil","safflower oil","rice bran oil","olive oil","peanut oil","vegetable oil","baking powder","baking soda","flour","salad leaves","yoghurt","ham","prosciutto",
       "powdered milk","garlic powder","ground ginger","pomegranate","wonton wrapper","peach","beef","beef stock","beef mince","chipotle powder","dessert wine","applewood smoked cheese","green bean",
       "mangetout","pate","fruit loaf","beer","champagne","prosecco","sparkling wine","cava","cherry liqueur","lamb","vanilla pod","vanilla extract","za'atar","pumpkin puree","fresh coconut","dried coconut",
-      "beansprouts","orange","orange juice",
+      "beansprouts","orange","orange juice","tangerine","mango","dill","edam","sherry","salsa","raspberry","red wine","tarragon",
     ],
 
     "ingredients": [
 
 
+          {
+              "name": "tarragon",
+              "exclude": [
+                {
+                  "word": "vinegar",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "red wine",
+              "exclude": [
+                {
+                  "word": "vinegar",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "raspberry",
+              "exclude": [
+                {
+                  "word": "vinegar",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "salsa",
+              "exclude": [
+                {
+                  "word": "salsa verde",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "sherry",
+              "exclude": [
+                {
+                  "word": "cream sherry",
+                },
+                {
+                  "word": "sherry cream",
+                },
+                {
+                  "word": "vinegar",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "dill",
+              "exclude": [
+                {
+                  "word": "dill pickle",
+                },
+                {
+                  "word": "dill pickled",
+                },
+                {
+                  "word": "pickled dill",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "mango",
+              "exclude": [
+                {
+                  "word": "powder",
+                },
+                {
+                  "word": "yoghurt",
+                },
+                {
+                  "word": "extract",
+                },
+                {
+                  "word": "chutney",
+                },
+                {
+                  "word": "pickled",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "tangerine",
+              "exclude": [
+                {
+                  "word": "sparkling water",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "mixer",
+                },
+                {
+                  "word": "petals",
+                },
+                {
+                  "word": "balsamic",
+                },
+                {
+                  "word": "vinegar",
+                },
+                {
+                  "word": "tomato",
+                },
+                {
+                  "word": "tomatoes",
+                },
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "dried",
+                },
+                {
+                  "word": "hatch",
+                },
+              ],
+              "include": [
+              ],
+          },
           {
               "name": "orange juice",
               "exclude": [
@@ -482,6 +616,9 @@
                 {
                   "word": "ground chipotle",
                 },
+                {
+                  "word": "powdered chipotle",
+                },
               ],
           },
           {
@@ -550,7 +687,13 @@
                   "word": "beefsteak tomato",
                 },
                 {
+                  "word": "beefsteak tomatoes",
+                },
+                {
                   "word": "beef steak tomato",
+                },
+                {
+                  "word": "beef steak tomatoes",
                 },
               ],
               "include": [
@@ -1547,6 +1690,16 @@
             ],
           },
           {
+            "name": "edam",
+            "exclude": [
+              {
+                "word": "edamame",
+              },
+            ],
+            "include": [
+            ],
+          },
+          {
             "name": "jarlsberg",
             "exclude": [
             ],
@@ -1997,6 +2150,9 @@
               },
               {
                 "word": "sun-dried tomato",
+              },
+              {
+                "word": "sun-dried tomatoes",
               },
             ],
           },
@@ -2522,7 +2678,13 @@
                 "word": "oil",
               },
               {
-                "word": "dessicated",
+                "word": "vinegar",
+              },
+              {
+                "word": "aminos",
+              },
+              {
+                "word": "yoghurt",
               },
               {
                 "word": "milk",
@@ -2534,7 +2696,22 @@
                 "word": "creamed",
               },
               {
+                "word": "flour",
+              },
+              {
+                "word": "sugar",
+              },
+              {
+                "word": "extract",
+              },
+              {
+                "word": "essence",
+              },
+              {
                 "word": "macaroon",
+              },
+              {
+                "word": "dessicated",
               },
               {
                 "word": "desicated",
@@ -2546,21 +2723,6 @@
                 "word": "shredded",
               },
               {
-                "word": "extract",
-              },
-              {
-                "word": "essence",
-              },
-              {
-                "word": "flour",
-              },
-              {
-                "word": "sugar",
-              },
-              {
-                "word": "yoghurt",
-              },
-              {
                 "word": "dehydrated",
               },
               {
@@ -2568,9 +2730,6 @@
               },
               {
                 "word": "flakes",
-              },
-              {
-                "word": "aminos",
               },
               {
                 "word": "dried",
@@ -2634,17 +2793,6 @@
             "exclude": [
               {
                 "word": "hazelnut oil",
-              },
-            ],
-            "include": [
-
-            ],
-          },
-          {
-            "name": "vinegar",
-            "exclude": [
-              {
-                "word": "balsamic vinegar",
               },
             ],
             "include": [
@@ -3424,7 +3572,13 @@
                 "word": "tinned tomatoes",
               },
               {
+                "word": "tin tomatoes",
+              },
+              {
                 "word": "canned tomatoes",
+              },
+              {
+                "word": "can tomatoes",
               },
               {
                 "word": "tomato-based",
@@ -3498,7 +3652,7 @@
             "name": "cider",
             "exclude": [
               {
-                "word": "apple cider vinegar",
+                "word": "vinegar",
               },
             ],
             "include": [
@@ -3509,22 +3663,22 @@
             "name": "apple",
             "exclude": [
               {
-                "word": "apple sauce",
+                "word": "sauce",
               },
               {
-                "word": "apple juice",
+                "word": "juice",
               },
               {
-                "word": "apple butter",
+                "word": "butter",
               },
               {
                 "word": "toffee apple",
               },
               {
-                "word": "apple chutney",
+                "word": "chutney",
               },
               {
-                "word": "apple cider vinegar",
+                "word": "vinegar",
               },
             ],
             "include": [
