@@ -6,16 +6,1529 @@
       "sweet potato","chili pepper","milk chocolate","white chocolate","dark chocolate","coconut milk","soy milk","almond milk","white wine","cider","egg","bell pepper","courgette","coriander","rocket",
       "filo pastry","tomato ketchup","cashew nuts","whisky","sun-dried tomatoes","spring onion","shallot","beef stock","vegetable stock","lamb stock","chicken stock","fontina","gouda","emmental","gruyere",
       "provolone","cheddar","cheese slice","icing sugar","parmesan","lemon juice","pasta","muenster","taleggio","brie","camembert","canola oil","grapeseed oil","sunflower oil","pecorino",
-      "cornmeal","polenta","lasagne sheets","havarti","jarlsberg","manchego","mozzarella","comte","gorgonzola","blue cheese","ricotta","cottage cheese","avocado","guacamole","goat's cheese","monterey jack",
+      "polenta","lasagne sheets","havarti","jarlsberg","manchego","mozzarella","comte","blue cheese","ricotta","cottage cheese","avocado","guacamole","goat's cheese","monterey jack",
       "cooking spray","avocado oil","safflower oil","rice bran oil","olive oil","peanut oil","vegetable oil","baking powder","baking soda","flour","salad leaves","yoghurt","ham","prosciutto",
       "powdered milk","garlic powder","ground ginger","pomegranate","wonton wrapper","peach","beef","beef stock","beef mince","chipotle powder","dessert wine","applewood smoked cheese","green bean",
-      "mangetout","pate","fruit loaf","beer","champagne","prosecco","sparkling wine","cava","cherry liqueur","lamb","vanilla pod","vanilla extract","za'atar","pumpkin puree","fresh coconut","dried coconut",
-      "beansprouts","orange","orange juice","tangerine","mango","dill","edam","sherry","salsa","raspberry","red wine","tarragon",
+      "mangetout","pate","fruit loaf","beer","champagne","prosecco","sparkling wine","cava","lamb","vanilla pod","vanilla extract","za'atar","pumpkin puree","fresh coconut","dried coconut",
+      "beansprouts","orange","orange juice","tangerine","mango","dill","edam","sherry","salsa","raspberry","red wine","tarragon","black cardamom", "green cardamom","tomato puree","sparkling water",
+      "onion powder","turkey","turkey stock","turkey mince","vinegar","daikon","halloumi","miso","tapenade","peas","black eyed peas","kidney beans","pork","gammon","pork seasoning","pork stock","pork scratchings",
+      "offal","pulled pork","vine leaves","almond meal","almond flour","marmalade","candied orange","orange oil","dried chili peppers","chili flakes","chili paste","strawberry liqueur","raspberry liqueur",
+      "banana liqueur","coconut liqueur","grape liqueur","apple liqueur","pear liqueur","cherry liqueur","orange liqueur","grapefruit liqueur","peach liqueur","plum liqueur","apricot liqueur","mango liqueur",
+      "passionfruit liqueur","watermelon liqueur","blueberry liqueur","melon liqueur","almond liqueur","lime mojo sauce","lime leaves","mint leaves","cinnamon","chickpeas","cracker","ground cumin","rice cracker",
+      "noodles","rice puffs","margarine","dried coriander","dumpling","potato chips","cornstarch","cornmeal","semolina",
+
     ],
 
     "ingredients": [
 
 
+          {
+              "name": "semolina",
+              "exclude": [
+
+              ],
+              "include": [
+                {
+                  "word": "grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "stone-ground grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "stone ground grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "polenta",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornmeal",
+                  "substitution": true,
+                },
+                {
+                  "word": "corn meal",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "cornmeal",
+              "exclude": [
+
+              ],
+              "include": [
+                {
+                  "word": "grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "stone-ground grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "stone ground grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "polenta",
+                  "substitution": true,
+                },
+                {
+                  "word": "semolina",
+                  "substitution": true,
+                },
+                {
+                  "word": "corn meal",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "cornstarch",
+              "exclude": [
+
+              ],
+              "include": [
+                {
+                  "word": "cornflour",
+                  "substitution": true,
+                },
+                {
+                  "word": "arrowroot",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "potato chips",
+              "exclude": [
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "chipotle",
+                },
+                {
+                  "word": "apple wood chip",
+                },
+                {
+                  "word": "chipolata",
+                },
+                {
+                  "word": "pita chip",
+                },
+                {
+                  "word": "chip and snack aisle",
+                },
+                {
+                  "word": "mini-chip",
+                },
+                {
+                  "word": "vanilla",
+                },
+              ],
+              "include": [
+                {
+                  "word": "chip",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "dumpling",
+              "exclude": [
+                {
+                  "word": "dumpling wrapper",
+                },
+              ],
+              "include": [
+                {
+                  "word": "pierogi",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "rice puffs",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rice cereal",
+                  "substitution": false,
+                },
+                {
+                  "word": "rice crispie",
+                  "substitution": false,
+                },
+                {
+                  "word": "rice puff",
+                  "substitution": false,
+                },
+                {
+                  "word": "puffed rice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "noodles",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vermicelli",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "ground cumin",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cumin",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "rice cracker",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rice cake",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "cracker",
+              "exclude": [
+                {
+                  "word": "rice cracker",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "chickpeas",
+              "exclude": [
+                {
+                  "word": "flour",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "cinnamon",
+              "exclude": [
+                {
+                  "word": "cinnamon-spiced",
+                },
+                {
+                  "word": "elephant ear",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "mint",
+              "exclude": [
+                {
+                  "word": "mint swizzle",
+                },
+                {
+                  "word": "mint sauce",
+                },
+                {
+                  "word": "spearmint",
+                },
+                {
+                  "word": "peppermint",
+                },
+                {
+                  "word": "yoghurt-mint",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "lime leaves",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "lime leaf",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "almond liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "amaretto",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de almond",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de noyaux",
+                  "substitution": false,
+                },
+                {
+                  "word": "disaronno",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "blueberry liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "blueberry flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "blueberry flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "blueberry flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "blueberry flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "blueberry liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "toschi mirtilli",
+                  "substitution": false,
+                },
+                {
+                  "word": "mirtilli liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mirtilli liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de myrtille",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "melon liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "melon flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "midori",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "watermelon liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "watermelon flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon liquor",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "passionfruit liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "passionfruit flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "passoa",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mango liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mangue liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "liqueur de mangue",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "apricot liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apricot flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot brandy",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "plum liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "plum flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum french liqueur",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "peach liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peach flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de peche",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach schnapps",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "grapefruit liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grapefruit flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "grapefruit flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "grapefruit flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "grapefruit flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "grapefruit liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de pamplemousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "liqueur de pamplemousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "pampelle l apero aperitif",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pear liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pear flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "xante liqueur",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "apple liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apple flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple liquor",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "grape liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grape flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape liquor",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "coconut liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "coconut flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "coconut flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "coconut flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "coconut flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "coconut liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "malibu",
+                  "substitution": false,
+                },
+                {
+                  "word": "kalani coconut",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "banana liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "banana flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "banana flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "banana flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "banana flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "banana liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de banane",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "raspberry liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raspberry flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "chambord",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "strawberry liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry liquor",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "orange liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "triple sec",
+                  "substitution": false,
+                },
+                {
+                  "word": "cointreau",
+                  "substitution": false,
+                },
+                {
+                  "word": "grand marnier rouge",
+                  "substitution": false,
+                },
+                {
+                  "word": "grand marnier cordon rouge",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "orange oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange essence",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange extract",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "candied orange",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange candied",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "marmalade",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "tangerine preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "clementine preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "satsuma preserve",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "almond flour",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond meal",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "almond meal",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "vine leaves",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grape leaves",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape leaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "vine leaf",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pulled pork",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "barbequed pork",
+                  "substitution": true,
+                },
+                {
+                  "word": "barbeque pork",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "offal",
+              "exclude": [
+                {
+                  "word": "halibut",
+                },
+              ],
+              "include": [
+                {
+                  "word": "liver",
+                  "substitution": false,
+                },
+                {
+                  "word": "gizzard",
+                  "substitution": false,
+                },
+                {
+                  "word": "heart",
+                  "substitution": false,
+                },
+                {
+                  "word": "lung",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheek",
+                  "substitution": false,
+                },
+                {
+                  "word": "brain",
+                  "substitution": false,
+                },
+                {
+                  "word": "kidney",
+                  "substitution": false,
+                },
+                {
+                  "word": "tongue",
+                  "substitution": false,
+                },
+                {
+                  "word": "blood",
+                  "substitution": false,
+                },
+                {
+                  "word": "tripe",
+                  "substitution": false,
+                },
+                {
+                  "word": "intestine",
+                  "substitution": false,
+                },
+                {
+                  "word": "stomach",
+                  "substitution": false,
+                },
+                {
+                  "word": "omasum",
+                  "substitution": false,
+                },
+                {
+                  "word": "larb",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pork scratchings",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pork scratching",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork crackling",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork scraps",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork chicharron",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork rinds",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pork stock",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pork broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork soup",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pork seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pork rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork mix",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "gammon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "salt pork",
+                  "substitution": false,
+                },
+                {
+                  "word": "salted pork",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pork",
+              "exclude": [
+                {
+                  "word": "sausage",
+                },
+                {
+                  "word": "ground",
+                },
+                {
+                  "word": "mince",
+                },
+                {
+                  "word": "minced",
+                },
+                {
+                  "word": "pulled pork",
+                },
+                {
+                  "word": "stock",
+                },
+                {
+                  "word": "broth",
+                },
+                {
+                  "word": "liver",
+                },
+                {
+                  "word": "heart",
+                },
+                {
+                  "word": "lung",
+                },
+                {
+                  "word": "cheek",
+                },
+                {
+                  "word": "brain",
+                },
+                {
+                  "word": "kidney",
+                },
+                {
+                  "word": "tongue",
+                },
+                {
+                  "word": "blood",
+                },
+                {
+                  "word": "ham",
+                },
+                {
+                  "word": "lard",
+                },
+                {
+                  "word": "pork dripping",
+                },
+                {
+                  "word": "salt pork",
+                },
+                {
+                  "word": "salted pork",
+                },
+                {
+                  "word": "pork gravy",
+                },
+                {
+                  "word": "pork mix",
+                },
+                {
+                  "word": "pork seasoning",
+                },
+                {
+                  "word": "pork rub",
+                },
+                {
+                  "word": "pork rinds",
+                },
+                {
+                  "word": "pork crackling",
+                },
+                {
+                  "word": "pork scratching",
+                },
+                {
+                  "word": "pork scraps",
+                },
+                {
+                  "word": "pork chicharron",
+                },
+                {
+                  "word": "chorizo",
+                },
+                {
+                  "word": "pork soup",
+                },
+                {
+                  "word": "pork intestine",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "pea shoots",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tendrils",
+                  "substitution": false,
+                },
+                {
+                  "word": "pea sprouts",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "kidney beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "red pea",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "black-eyed peas",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "black eyed peas",
+                  "substitution": false,
+                },
+                {
+                  "word": "cowpeas",
+                  "substitution": false,
+                },
+                {
+                  "word": "cow peas",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "peas",
+              "exclude": [
+                {
+                  "word": "chickpeas",
+                },
+                {
+                  "word": "chick peas",
+                },
+                {
+                  "word": "wasabi peas",
+                },
+                {
+                  "word": "black-eyed peas",
+                },
+                {
+                  "word": "black eyed peas",
+                },
+                {
+                  "word": "cow peas",
+                },
+                {
+                  "word": "red peas",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "miso",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shiro-miso",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "halloumi",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "haloumi",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "daikon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mooli",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "vinegar",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinagrette",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "turkey stock",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "turkey broth",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "turkey mince",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "turkey ground",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground turkey",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced turkey",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince turkey",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "turkey",
+              "exclude": [
+                {
+                  "word": "turkey stock",
+                },
+                {
+                  "word": "ground turkey",
+                },
+                {
+                  "word": "minced turkey",
+                },
+                {
+                  "word": "turkey mince",
+                },
+                {
+                  "word": "turkey ground",
+                },
+                {
+                  "word": "sausage",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "onion powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "powdered onion",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sparkling water",
+              "exclude": [
+                {
+                  "word": "bread",
+                },
+                {
+                  "word": "bicarb",
+                },
+                {
+                  "word": "baking",
+                },
+                {
+                  "word": "grape",
+                },
+                {
+                  "word": "orange",
+                },
+                {
+                  "word": "lemon-lime",
+                },
+                {
+                  "word": "lemon lime",
+                },
+                {
+                  "word": "strawberry",
+                },
+                {
+                  "word": "cream",
+                },
+                {
+                  "word": "squirt",
+                },
+                {
+                  "word": "flavoured",
+                },
+                {
+                  "word": "flavored",
+                },
+                {
+                  "word": "tangerine",
+                },
+              ],
+              "include": [
+                {
+                  "word": "soda",
+                  "substitution": true,
+                },
+                {
+                  "word": "fizzy water",
+                  "substitution": false,
+                },
+                {
+                  "word": "seltzer",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tomato puree",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tomato paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pizza sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "green cardamom",
+              "exclude": [
+                {
+                  "word": "black cardamon",
+                },
+                {
+                  "word": "black cardamom",
+                },
+              ],
+              "include": [
+                {
+                  "word": "cardamon",
+                  "substitution": false,
+                },
+                {
+                  "word": "cardamom",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "black cardamom",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "black cardamon",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "tarragon",
               "exclude": [
@@ -120,6 +1633,9 @@
                   "word": "liqueur",
                 },
                 {
+                  "word": "liquor",
+                },
+                {
                   "word": "mixer",
                 },
                 {
@@ -157,27 +1673,35 @@
               "include": [
                 {
                   "word": "tangerine",
+                  "substitution": true,
                 },
                 {
                   "word": "satsuma",
+                  "substitution": true,
                 },
                 {
                   "word": "clementine",
+                  "substitution": true,
                 },
                 {
                   "word": "mandarin",
+                  "substitution": true,
                 },
                 {
                   "word": "tangelo",
+                  "substitution": true,
                 },
                 {
                   "word": "minneola",
+                  "substitution": true,
                 },
                 {
                   "word": "kumquat",
+                  "substitution": true,
                 },
                 {
                   "word": "orange",
+                  "substitution": true,
                 },
               ],
           },
@@ -188,24 +1712,31 @@
               "include": [
                 {
                   "word": "tangerine",
+                  "substitution": true,
                 },
                 {
                   "word": "satsuma",
+                  "substitution": true,
                 },
                 {
                   "word": "clementine",
+                  "substitution": true,
                 },
                 {
                   "word": "mandarin",
+                  "substitution": true,
                 },
                 {
                   "word": "tangelo",
+                  "substitution": true,
                 },
                 {
                   "word": "minneola",
+                  "substitution": true,
                 },
                 {
                   "word": "kumquat",
+                  "substitution": true,
                 },
               ],
           },
@@ -216,6 +1747,7 @@
               "include": [
                 {
                   "word": "peanut shoot",
+                  "substitution": false,
                 },
               ],
           },
@@ -226,15 +1758,19 @@
               "include": [
                 {
                   "word": "tinned pumpkin",
+                  "substitution": false,
                 },
                 {
                   "word": "pure pumpkin",
+                  "substitution": false,
                 },
                 {
                   "word": "canned pumpkin",
+                  "substitution": false,
                 },
                 {
                   "word": "pack pumpkin",
+                  "substitution": false,
                 },
               ],
           },
@@ -245,6 +1781,7 @@
               "include": [
                 {
                   "word": "zatar",
+                  "substitution": false,
                 },
               ],
           },
@@ -255,21 +1792,27 @@
               "include": [
                 {
                   "word": "vanilla bean",
+                  "substitution": true,
                 },
                 {
                   "word": "vanilla pod",
+                  "substitution": true,
                 },
                 {
                   "word": "vanilla essence",
+                  "substitution": false,
                 },
                 {
                   "word": "vanilla bean paste",
+                  "substitution": true,
                 },
                 {
                   "word": "vanilla paste",
+                  "substitution": true,
                 },
                 {
                   "word": "vanilla powder",
+                  "substitution": true,
                 },
               ],
           },
@@ -280,21 +1823,27 @@
               "include": [
                 {
                   "word": "vanilla bean",
+                  "substitution": false,
                 },
                 {
                   "word": "vanilla essence",
+                  "substitution": true,
                 },
                 {
                   "word": "vanilla extract",
+                  "substitution": true,
                 },
                 {
                   "word": "vanilla bean paste",
+                  "substitution": true,
                 },
                 {
                   "word": "vanilla paste",
+                  "substitution": true,
                 },
                 {
                   "word": "vanilla powder",
+                  "substitution": true,
                 },
               ],
           },
@@ -326,25 +1875,60 @@
               "include": [
                 {
                   "word": "mutton",
+                  "substitution": false,
                 },
                 {
                   "word": "mouton",
+                  "substitution": false,
                 },
               ],
           },
           {
               "name": "cherry liqueur",
               "exclude": [
+                {
+                  "word": "cherries",
+                },
+                {
+                  "word": "syrup",
+                },
               ],
               "include": [
                 {
                   "word": "kirsch",
+                  "substitution": false,
                 },
                 {
                   "word": "heering",
+                  "substitution": false,
                 },
                 {
                   "word": "maraschino",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de cassis",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry flavored liqueur",
+                  "substitution": false,
                 },
               ],
           },
@@ -355,27 +1939,35 @@
               "include": [
                 {
                   "word": "sparkling wine",
+                  "substitution": false,
                 },
                 {
                   "word": "champagne",
+                  "substitution": true,
                 },
                 {
                   "word": "bubbly",
+                  "substitution": false,
                 },
                 {
                   "word": "cava",
+                  "substitution": true,
                 },
                 {
                   "word": "sparkling italian wine",
+                  "substitution": false,
                 },
                 {
                   "word": "sparkling white wine",
+                  "substitution": false,
                 },
                 {
                   "word": "spumante",
+                  "substitution": false,
                 },
                 {
                   "word": "asti",
+                  "substitution": true,
                 },
               ],
           },
@@ -386,27 +1978,35 @@
               "include": [
                 {
                   "word": "prosecco",
+                  "substitution": false,
                 },
                 {
                   "word": "champagne",
+                  "substitution": false,
                 },
                 {
                   "word": "bubbly",
+                  "substitution": false,
                 },
                 {
                   "word": "cava",
+                  "substitution": false,
                 },
                 {
                   "word": "sparkling italian wine",
+                  "substitution": false,
                 },
                 {
                   "word": "sparkling white wine",
+                  "substitution": false,
                 },
                 {
                   "word": "spumante",
+                  "substitution": false,
                 },
                 {
                   "word": "asti",
+                  "substitution": false,
                 },
               ],
           },
@@ -417,27 +2017,35 @@
               "include": [
                 {
                   "word": "prosecco",
+                  "substitution": true,
                 },
                 {
                   "word": "champagne",
+                  "substitution": true,
                 },
                 {
                   "word": "bubbly",
+                  "substitution": false,
                 },
                 {
                   "word": "sparkling wine",
+                  "substitution": false,
                 },
                 {
                   "word": "sparkling italian wine",
+                  "substitution": true,
                 },
                 {
                   "word": "sparkling white wine",
+                  "substitution": false,
                 },
                 {
                   "word": "spumante",
+                  "substitution": false,
                 },
                 {
                   "word": "asti",
+                  "substitution": true,
                 },
               ],
           },
@@ -457,27 +2065,35 @@
               "include": [
                 {
                   "word": "prosecco",
+                  "substitution": true,
                 },
                 {
                   "word": "cava",
+                  "substitution": true,
                 },
                 {
                   "word": "bubbly",
+                  "substitution": false,
                 },
                 {
                   "word": "sparkling wine",
+                  "substitution": false,
                 },
                 {
                   "word": "sparkling italian wine",
+                  "substitution": true,
                 },
                 {
                   "word": "sparkling white wine",
+                  "substitution": false,
                 },
                 {
                   "word": "spumante",
+                  "substitution": false,
                 },
                 {
                   "word": "asti",
+                  "substitution": true,
                 },
               ],
           },
@@ -488,21 +2104,27 @@
               "include": [
                 {
                   "word": "fruit cake",
+                  "substitution": false,
                 },
                 {
                   "word": "fruitcake",
+                  "substitution": false,
                 },
                 {
                   "word": "tea loaf",
+                  "substitution": false,
                 },
                 {
                   "word": "fruit bread",
+                  "substitution": false,
                 },
                 {
                   "word": "panettone",
+                  "substitution": false,
                 },
                 {
                   "word": "soreen",
+                  "substitution": false,
                 },
               ],
           },
@@ -536,21 +2158,27 @@
               "include": [
                 {
                   "word": "sugar snap",
+                  "substitution": false,
                 },
                 {
                   "word": "sugarsnap",
+                  "substitution": false,
                 },
                 {
                   "word": "snow pea",
+                  "substitution": false,
                 },
                 {
                   "word": "snap pea",
+                  "substitution": false,
                 },
                 {
                   "word": "podded pea",
+                  "substitution": false,
                 },
                 {
                   "word": "pea pod",
+                  "substitution": false,
                 },
               ],
           },
@@ -561,24 +2189,31 @@
               "include": [
                 {
                   "word": "snap bean",
+                  "substitution": false,
                 },
                 {
                   "word": "haricot vert",
+                  "substitution": false,
                 },
                 {
                   "word": "haricots vert",
+                  "substitution": false,
                 },
                 {
                   "word": "snake bean",
+                  "substitution": false,
                 },
                 {
                   "word": "runner bean",
+                  "substitution": false,
                 },
                 {
                   "word": "french bean",
+                  "substitution": false,
                 },
                 {
                   "word": "yardlong bean",
+                  "substitution": false,
                 },
               ],
           },
@@ -599,12 +2234,15 @@
               "include": [
                 {
                   "word": "pudding wine",
+                  "substitution": false,
                 },
                 {
                   "word": "vin santo",
+                  "substitution": false,
                 },
                 {
                   "word": "sweet wine",
+                  "substitution": false,
                 },
               ],
           },
@@ -615,9 +2253,11 @@
               "include": [
                 {
                   "word": "ground chipotle",
+                  "substitution": false,
                 },
                 {
                   "word": "powdered chipotle",
+                  "substitution": false,
                 },
               ],
           },
@@ -628,12 +2268,15 @@
               "include": [
                 {
                   "word": "ground beef",
+                  "substitution": false,
                 },
                 {
                   "word": "minced beef",
+                  "substitution": false,
                 },
                 {
                   "word": "beef minced",
+                  "substitution": false,
                 },
               ],
           },
@@ -644,9 +2287,11 @@
               "include": [
                 {
                   "word": "beef broth",
+                  "substitution": false,
                 },
                 {
                   "word": "beef bouillon",
+                  "substitution": false,
                 },
               ],
           },
@@ -699,111 +2344,147 @@
               "include": [
                 {
                   "word": "topside joint",
+                  "substitution": false,
                 },
                 {
                   "word": "sirloin",
+                  "substitution": false,
                 },
                 {
                   "word": "beef top",
+                  "substitution": false,
                 },
                 {
                   "word": "beef steak",
+                  "substitution": false,
                 },
                 {
                   "word": "beef tenderloin",
+                  "substitution": false,
                 },
                 {
                   "word": "tri-tip",
+                  "substitution": false,
                 },
                 {
                   "word": "tri tip",
+                  "substitution": false,
                 },
                 {
                   "word": "flank",
+                  "substitution": false,
                 },
                 {
                   "word": "braising steak",
+                  "substitution": false,
                 },
                 {
                   "word": "shin",
+                  "substitution": false,
                 },
                 {
                   "word": "beef rib",
+                  "substitution": false,
                 },
                 {
                   "word": "ribeye",
+                  "substitution": false,
                 },
                 {
                   "word": "beef eye",
+                  "substitution": false,
                 },
                 {
                   "word": "top rump",
+                  "substitution": false,
                 },
                 {
                   "word": "rump steak",
+                  "substitution": false,
                 },
                 {
                   "word": "stew meat",
+                  "substitution": false,
                 },
                 {
                   "word": "stewing meat",
+                  "substitution": false,
                 },
                 {
                   "word": "brisket",
+                  "substitution": false,
                 },
                 {
                   "word": "scotch fillet",
+                  "substitution": false,
                 },
                 {
                   "word": "chuck steak",
+                  "substitution": false,
                 },
                 {
                   "word": "silverside",
+                  "substitution": false,
                 },
                 {
                   "word": "round steak",
+                  "substitution": false,
                 },
                 {
                   "word": "filet mignon",
+                  "substitution": false,
                 },
                 {
                   "word": "strip steak",
+                  "substitution": false,
                 },
                 {
                   "word": "new york strip",
+                  "substitution": false,
                 },
                 {
                   "word": "london broil",
+                  "substitution": false,
                 },
                 {
                   "word": "t-bone",
+                  "substitution": false,
                 },
                 {
                   "word": "t bone",
+                  "substitution": false,
                 },
                 {
                   "word": "porterhouse",
+                  "substitution": false,
                 },
                 {
                   "word": "tomahawk",
+                  "substitution": false,
                 },
                 {
                   "word": "skirt steak",
+                  "substitution": false,
                 },
                 {
                   "word": "hanger",
+                  "substitution": false,
                 },
                 {
                   "word": "denver cut",
+                  "substitution": false,
                 },
                 {
                   "word": "flap steak",
+                  "substitution": false,
                 },
                 {
                   "word": "cube steak",
+                  "substitution": false,
                 },
                 {
                   "word": "flat iron",
+                  "substitution": false,
                 },
               ],
           },
@@ -814,16 +2495,7 @@
               "include": [
                 {
                   "word": "dumpling wrapper",
-                },
-              ],
-          },
-          {
-              "name": "wonton wrapper",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "dumpling wrapper",
+                  "substitution": false,
                 },
               ],
           },
@@ -847,9 +2519,11 @@
               "include": [
                 {
                   "word": "powdered ginger",
+                  "substitution": false,
                 },
                 {
                   "word": "ginger powder",
+                  "substitution": false,
                 },
               ],
           },
@@ -860,6 +2534,11 @@
               "include": [
                 {
                   "word": "powdered garlic",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried garlic",
+                  "substitution": false,
                 }
               ],
           },
@@ -870,6 +2549,7 @@
               "include": [
                 {
                   "word": "milk powder",
+                  "substitution": false,
                 },
               ],
           },
@@ -880,6 +2560,19 @@
               "include": [
                 {
                   "word": "ham",
+                  "substitution": true,
+                },
+                {
+                  "word": "lomo",
+                  "substitution": true,
+                },
+                {
+                  "word": "speck",
+                  "substitution": true,
+                },
+                {
+                  "word": "coppa",
+                  "substitution": true,
                 },
               ],
           },
@@ -890,8 +2583,20 @@
               "include": [
                 {
                   "word": "prosciutto",
+                  "substitution": true,
                 },
-
+                {
+                  "word": "lomo",
+                  "substitution": true,
+                },
+                {
+                  "word": "speck",
+                  "substitution": true,
+                },
+                {
+                  "word": "coppa",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -914,12 +2619,15 @@
               "include": [
                 {
                   "word": "mixed leaves",
+                  "substitution": false,
                 },
                 {
                   "word": "lettuce",
+                  "substitution": false,
                 },
                 {
                   "word": "rocket",
+                  "substitution": false,
                 },
               ],
           },
@@ -943,6 +2651,7 @@
               "include": [
                 {
                   "word": "baking soda",
+                  "substitution": true,
                 },
               ],
           },
@@ -953,6 +2662,7 @@
               "include": [
                 {
                   "word": "baking powder",
+                  "substitution": true,
                 },
               ],
           },
@@ -963,24 +2673,31 @@
               "include": [
                 {
                   "word": "cooking spray",
+                  "substitution": true,
                 },
                 {
                   "word": "safflower oil",
+                  "substitution": true,
                 },
                 {
                   "word": "rice bran oil",
+                  "substitution": true,
                 },
                 {
                   "word": "canola oil",
+                  "substitution": true,
                 },
                 {
                   "word": "olive oil",
+                  "substitution": true,
                 },
                 {
                   "word": "peanut oil",
+                  "substitution": true,
                 },
                 {
                   "word": "vegetable oil",
+                  "substitution": true,
                 },
               ],
           },
@@ -991,24 +2708,31 @@
               "include": [
                 {
                   "word": "cooking spray",
+                  "substitution": true,
                 },
                 {
                   "word": "avocado oil",
+                  "substitution": true,
                 },
                 {
                   "word": "rice bran oil",
+                  "substitution": true,
                 },
                 {
                   "word": "canola oil",
+                  "substitution": true,
                 },
                 {
                   "word": "olive oil",
+                  "substitution": true,
                 },
                 {
                   "word": "peanut oil",
+                  "substitution": true,
                 },
                 {
                   "word": "vegetable oil",
+                  "substitution": true,
                 },
               ],
           },
@@ -1019,24 +2743,31 @@
               "include": [
                 {
                   "word": "cooking spray",
+                  "substitution": true,
                 },
                 {
                   "word": "avocado oil",
+                  "substitution": true,
                 },
                 {
                   "word": "safflower oil",
+                  "substitution": true,
                 },
                 {
                   "word": "canola oil",
+                  "substitution": true,
                 },
                 {
                   "word": "olive oil",
+                  "substitution": true,
                 },
                 {
                   "word": "peanut oil",
+                  "substitution": true,
                 },
                 {
                   "word": "vegetable oil",
+                  "substitution": true,
                 },
               ],
           },
@@ -1047,30 +2778,39 @@
               "include": [
                 {
                   "word": "cooking spray",
+                  "substitution": true,
                 },
                 {
                   "word": "avocado oil",
+                  "substitution": true,
                 },
                 {
                   "word": "safflower oil",
+                  "substitution": true,
                 },
                 {
                   "word": "rice bran oil",
+                  "substitution": true,
                 },
                 {
                   "word": "olive oil",
+                  "substitution": true,
                 },
                 {
                   "word": "peanut oil",
+                  "substitution": true,
                 },
                 {
                   "word": "vegetable oil",
+                  "substitution": true,
                 },
                 {
                   "word": "grapeseed oil",
+                  "substitution": true,
                 },
                 {
                   "word": "sunflower oil",
+                  "substitution": true,
                 },
               ],
           },
@@ -1081,24 +2821,31 @@
               "include": [
                 {
                   "word": "cooking spray",
+                  "substitution": true,
                 },
                 {
                   "word": "avocado oil",
+                  "substitution": true,
                 },
                 {
                   "word": "safflower oil",
+                  "substitution": true,
                 },
                 {
                   "word": "rice bran oil",
+                  "substitution": true,
                 },
                 {
                   "word": "olive oil",
+                  "substitution": true,
                 },
                 {
                   "word": "canola oil",
+                  "substitution": true,
                 },
                 {
                   "word": "vegetable oil",
+                  "substitution": true,
                 },
               ],
           },
@@ -1109,30 +2856,39 @@
               "include": [
                 {
                   "word": "cooking spray",
+                  "substitution": true,
                 },
                 {
                   "word": "avocado oil",
+                  "substitution": true,
                 },
                 {
                   "word": "safflower oil",
+                  "substitution": true,
                 },
                 {
                   "word": "rice bran oil",
+                  "substitution": true,
                 },
                 {
                   "word": "olive oil",
+                  "substitution": true,
                 },
                 {
                   "word": "canola oil",
+                  "substitution": true,
                 },
                 {
                   "word": "peanut oil",
+                  "substitution": true,
                 },
                 {
                   "word": "sunflower oil",
+                  "substitution": true,
                 },
                 {
                   "word": "grapeseed oil",
+                  "substitution": true,
                 },
               ],
           },
@@ -1148,32 +2904,42 @@
           {
               "name": "olive oil",
               "exclude": [
-
+                {
+                  "word": "lime",
+                },
               ],
               "include": [
                 {
                   "word": "cooking spray",
+                  "substitution": true,
                 },
                 {
                   "word": "avocado oil",
+                  "substitution": true,
                 },
                 {
                   "word": "safflower oil",
+                  "substitution": true,
                 },
                 {
                   "word": "rice bran oil",
+                  "substitution": true,
                 },
                 {
                   "word": "vegetable oil",
+                  "substitution": true,
                 },
                 {
                   "word": "canola oil",
+                  "substitution": true,
                 },
                 {
                   "word": "peanut oil",
+                  "substitution": true,
                 },
                 {
                   "word": "oil",
+                  "substitution": true,
                 },
               ],
           },
@@ -1184,24 +2950,31 @@
               "include": [
                 {
                   "word": "olive oil",
+                  "substitution": true,
                 },
                 {
                   "word": "avocado oil",
+                  "substitution": true,
                 },
                 {
                   "word": "safflower oil",
+                  "substitution": true,
                 },
                 {
                   "word": "rice bran oil",
+                  "substitution": true,
                 },
                 {
                   "word": "vegetable oil",
+                  "substitution": true,
                 },
                 {
                   "word": "canola oil",
+                  "substitution": true,
                 },
                 {
                   "word": "peanut oil",
+                  "substitution": true,
                 },
               ],
           },
@@ -1212,12 +2985,15 @@
               "include": [
                 {
                   "word": "goat cheese",
+                  "substitution": false,
                 },
                 {
                   "word": "goats cheese",
+                  "substitution": false,
                 },
                 {
                   "word": "goats' cheese",
+                  "substitution": false,
                 },
               ],
           },
@@ -1226,9 +3002,6 @@
               "exclude": [
               ],
               "include": [
-                {
-                  "word": "guacamole",
-                },
               ],
           },
           {
@@ -1238,6 +3011,7 @@
               "include": [
                 {
                   "word": "guacamole",
+                  "substitution": true,
                 },
               ],
           },
@@ -1248,18 +3022,23 @@
               "include": [
                 {
                   "word": "cottage cheese",
+                  "substitution": true,
                 },
                 {
-                  "word": "farmer's cheese"
+                  "word": "farmer's cheese",
+                  "substitution": true,
                 },
                 {
-                  "word": "farmers cheese"
+                  "word": "farmers cheese",
+                  "substitution": true,
                 },
                 {
-                  "word": "farmer cheese"
+                  "word": "farmer cheese",
+                  "substitution": true,
                 },
                 {
                   "word": "mozzarella",
+                  "substitution": true,
                 },
               ],
           },
@@ -1270,34 +3049,23 @@
               "include": [
                 {
                   "word": "ricotta",
+                  "substitution": true,
                 },
                 {
-                  "word": "farmer's cheese"
+                  "word": "farmer's cheese",
+                  "substitution": true,
                 },
                 {
-                  "word": "farmers cheese"
+                  "word": "farmers cheese",
+                  "substitution": true,
                 },
                 {
-                  "word": "farmer cheese"
+                  "word": "farmer cheese",
+                  "substitution": true,
                 },
                 {
                   "word": "mozzarella",
-                },
-              ],
-          },
-          {
-              "name": "gorgonzola",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "blue cheese",
-                },
-                {
-                  "word": "stilton",
-                },
-                {
-                  "word": "blue cheese dressing",
+                  "substitution": true,
                 },
               ],
           },
@@ -1308,12 +3076,39 @@
               "include": [
                 {
                   "word": "gorgonzola",
+                  "substitution": false,
                 },
                 {
                   "word": "stilton",
+                  "substitution": false,
                 },
                 {
                   "word": "blue cheese dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "cabrales",
+                  "substitution": false,
+                },
+                {
+                  "word": "saint agur",
+                  "substitution": false,
+                },
+                {
+                  "word": "roquefort",
+                  "substitution": false,
+                },
+                {
+                  "word": "blue cheshire",
+                  "substitution": false,
+                },
+                {
+                  "word": "shropshire blue",
+                  "substitution": false,
+                },
+                {
+                  "word": "castello blue",
+                  "substitution": false,
                 },
               ],
           },
@@ -1324,31 +3119,27 @@
               "include": [
                 {
                   "word": "cornmeal",
+                  "substitution": true,
                 },
                 {
                   "word": "grits",
+                  "substitution": true,
                 },
                 {
                   "word": "stone-ground grits",
+                  "substitution": true,
                 },
                 {
                   "word": "stone ground grits",
-                },
-              ],
-          },
-          {
-              "name": "cornmeal",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "grits",
+                  "substitution": true,
                 },
                 {
-                  "word": "stone-ground grits",
+                  "word": "corn meal",
+                  "substitution": true,
                 },
                 {
-                  "word": "stone ground grits",
+                  "word": "semolina",
+                  "substitution": true,
                 },
               ],
           },
@@ -1359,15 +3150,19 @@
             "include": [
               {
                 "word": "brie",
+                "substitution": true,
               },
               {
                 "word": "fontina",
+                "substitution": true,
               },
               {
                 "word": "cheddar",
+                "substitution": true,
               },
               {
                 "word": "havarti",
+                "substitution": true,
               },
             ],
           },
@@ -1378,15 +3173,19 @@
             "include": [
               {
                 "word": "camembert",
+                "substitution": true,
               },
               {
                 "word": "fontina",
+                "substitution": true,
               },
               {
                 "word": "cheddar",
+                "substitution": true,
               },
               {
                 "word": "havarti",
+                "substitution": true,
               },
             ],
           },
@@ -1397,175 +3196,229 @@
             "include": [
               {
                 "word": "brie",
+                "substitution": true,
               },
               {
                 "word": "fontina",
+                "substitution": true,
               },
               {
                 "word": "cheddar",
+                "substitution": true,
               },
               {
                 "word": "havarti",
+                "substitution": true,
               },
               {
                 "word": "manchego",
+                "substitution": true,
               },
             ],
           },
           {
             "name": "pasta",
             "exclude": [
+              {
+                "word": "rice vermicelli",
+              },
             ],
             "include": [
               {
                 "word": "macaroni",
+                "substitution": true,
               },
               {
                 "word": "cavatappi",
+                "substitution": false,
               },
               {
                 "word": "spaghetti",
+                "substitution": false,
               },
               {
                 "word": "penne",
+                "substitution": false,
               },
               {
                 "word": "ziti",
+                "substitution": false,
               },
               {
                 "word": "lasagne noodles",
+                "substitution": true,
               },
-
-
-
               {
                 "word": "bucatini",
+                "substitution": false,
               },
               {
                 "word": "pappardelle",
+                "substitution": false,
               },
               {
                 "word": "gemelli",
+                "substitution": false,
               },
               {
                 "word": "fusilli",
+                "substitution": false,
               },
               {
                 "word": "orecchiette",
+                "substitution": false,
               },
               {
                 "word": "malloreddus",
+                "substitution": false,
               },
               {
                 "word": "tagliatelle",
+                "substitution": false,
               },
               {
                 "word": "ditalini",
+                "substitution": false,
               },
               {
                 "word": "orzo",
+                "substitution": false,
               },
               {
                 "word": "casarecce",
+                "substitution": false,
               },
               {
                 "word": "farfalle",
+                "substitution": false,
               },
               {
                 "word": "rotini",
+                "substitution": false,
               },
               {
                 "word": "linguine",
+                "substitution": false,
               },
               {
                 "word": "capellini",
+                "substitution": false,
               },
               {
                 "word": "fettuccine",
+                "substitution": false,
               },
               {
                 "word": "mafaldine",
+                "substitution": false,
               },
               {
                 "word": "pizzoccheri",
+                "substitution": false,
               },
               {
                 "word": "trofie",
+                "substitution": false,
               },
               {
                 "word": "mostaccioli",
+                "substitution": false,
               },
               {
                 "word": "tortiglioni",
+                "substitution": false,
               },
               {
                 "word": "cannelloni",
+                "substitution": false,
               },
               {
                 "word": "cavatelli",
+                "substitution": false,
               },
               {
                 "word": "cappelletti",
+                "substitution": false,
               },
               {
                 "word": "bigoli",
+                "substitution": false,
               },
               {
                 "word": "tagliolini",
+                "substitution": false,
               },
               {
                 "word": "ravioli",
+                "substitution": true,
               },
               {
                 "word": "tortellini",
+                "substitution": true,
               },
               {
                 "word": "conchiglie",
+                "substitution": false,
               },
               {
                 "word": "calamarata",
+                "substitution": false,
               },
               {
                 "word": "spatzle",
+                "substitution": false,
               },
               {
                 "word": "maultasche",
+                "substitution": false,
               },
               {
                 "word": "fregula",
+                "substitution": false,
               },
               {
                 "word": "agnolotti",
+                "substitution": false,
               },
               {
                 "word": "paccheri",
+                "substitution": false,
               },
               {
                 "word": "tortelloni",
+                "substitution": false,
               },
               {
                 "word": "vermicelli",
+                "substitution": false,
               },
               {
                 "word": "garganelli",
+                "substitution": false,
               },
               {
                 "word": "strozzapreti",
+                "substitution": false,
               },
               {
                 "word": "scialetelli",
+                "substitution": false,
               },
               {
                 "word": "campanelle",
+                "substitution": false,
               },
               {
                 "word": "mezzelune",
+                "substitution": false,
               },
               {
                 "word": "pici",
+                "substitution": false,
               },
               {
                 "word": "rigatone",
+                "substitution": false,
               }
             ],
           },
@@ -1576,9 +3429,15 @@
             "include": [
               {
                 "word": "lasagne noodles",
+                "substitution": false,
               },
               {
                 "word": "lasagne pasta",
+                "substitution": false,
+              },
+              {
+                "word": "lasagne",
+                "substitution": false,
               },
             ],
           },
@@ -1589,30 +3448,39 @@
             "include": [
               {
                 "word": "monterey jack",
+                "substitution": true,
               },
               {
                 "word": "colby jack",
+                "substitution": true,
               },
               {
                 "word": "colby",
+                "substitution": true,
               },
               {
                 "word": "provolone",
+                "substitution": true,
               },
               {
                 "word": "gouda",
+                "substitution": true,
               },
               {
                 "word": "edam",
+                "substitution": true,
               },
               {
                 "word": "cheddar",
+                "substitution": true,
               },
               {
                 "word": "havarti",
+                "substitution": true,
               },
               {
                 "word": "manchego",
+                "substitution": true,
               },
             ],
           },
@@ -1626,18 +3494,23 @@
             "include": [
               {
                 "word": "asiago",
+                "substitution": true,
               },
               {
                 "word": "grana padano",
+                "substitution": true,
               },
               {
                 "word": "parmigiano-reggiano",
+                "substitution": true,
               },
               {
                 "word": "parmigiano",
+                "substitution": true,
               },
               {
                 "word": "pecorino",
+                "substitution": true,
               },
             ],
           },
@@ -1648,18 +3521,23 @@
             "include": [
               {
                 "word": "asiago",
+                "substitution": true,
               },
               {
                 "word": "grana padano",
+                "substitution": true,
               },
               {
                 "word": "parmigiano-reggiano",
+                "substitution": true,
               },
               {
                 "word": "parmigiano",
+                "substitution": true,
               },
               {
                 "word": "parmesan",
+                "substitution": true,
               },
             ],
           },
@@ -1670,12 +3548,51 @@
             "include": [
               {
                 "word": "confectioners sugar",
+                "substitution": false,
+              },
+              {
+                "word": "confectioner sugar",
+                "substitution": false,
+              },
+              {
+                "word": "confectioner's sugar",
+                "substitution": false,
+              },
+              {
+                "word": "confectioners' sugar",
+                "substitution": false,
               },
               {
                 "word": "powdered sugar",
+                "substitution": false,
               },
               {
-                "word": "superfine sugar",
+                "word": "sugar powder",
+                "substitution": false,
+              },
+              {
+                "word": "sanding sugar",
+                "substitution": false,
+              },
+              {
+                "word": "decorators sugar",
+                "substitution": false,
+              },
+              {
+                "word": "decorators' sugar",
+                "substitution": false,
+              },
+              {
+                "word": "decorator's sugar",
+                "substitution": false,
+              },
+              {
+                "word": "decorator sugar",
+                "substitution": false,
+              },
+              {
+                "word": "decorating sugar",
+                "substitution": false,
               },
             ],
           },
@@ -1686,6 +3603,7 @@
             "include": [
               {
                 "word": "american cheese",
+                "substitution": true,
               },
             ],
           },
@@ -1706,12 +3624,15 @@
             "include": [
               {
                 "word": "emmental",
+                "substitution": true,
               },
               {
                 "word": "swiss cheese",
+                "substitution": true,
               },
               {
                 "word": "gruyere",
+                "substitution": true,
               },
             ],
           },
@@ -1722,30 +3643,39 @@
             "include": [
               {
                 "word": "gouda",
+                "substitution": true,
               },
               {
                 "word": "edam",
+                "substitution": true,
               },
               {
                 "word": "gruyere",
+                "substitution": true,
               },
               {
                 "word": "colby",
+                "substitution": true,
               },
               {
                 "word": "emmental",
+                "substitution": true,
               },
               {
                 "word": "cheddar",
+                "substitution": true,
               },
               {
                 "word": "pepper jack",
+                "substitution": true,
               },
               {
                 "word": "muenster",
+                "substitution": true,
               },
               {
                 "word": "monterey jack",
+                "substitution": true,
               },
             ],
           },
@@ -1756,39 +3686,51 @@
             "include": [
               {
                 "word": "american cheese",
+                "substitution": true,
               },
               {
                 "word": "cheese slice",
+                "substitution": true,
               },
               {
                 "word": "cheddar",
+                "substitution": true,
               },
               {
                 "word": "pepper jack",
+                "substitution": true,
               },
               {
                 "word": "muenster",
+                "substitution": true,
               },
               {
                 "word": "havarti",
+                "substitution": true,
               },
               {
                 "word": "colby-jack",
+                "substitution": true,
               },
               {
                 "word": "colby jack",
+                "substitution": true,
               },
               {
                 "word": "colby",
+                "substitution": true,
               },
               {
                 "word": "co-jack",
+                "substitution": true,
               },
               {
                 "word": "cojack",
+                "substitution": true,
               },
               {
                 "word": "manchego",
+                "substitution": true,
               },
             ],
           },
@@ -1805,24 +3747,32 @@
             "include": [
               {
                 "word": "american cheese",
+                "substitution": true,
               },
               {
                 "word": "cheese slice",
+                "substitution": true,
               },
               {
                 "word": "monterey jack",
+                "substitution": true,
               },
               {
                 "word": "pepper jack",
+                "substitution": true,
               },
               {
                 "word": "muenster",
+                "substitution": true,
               },
               {
                 "word": "havarti",
+                "substitution": true,
               },
               {
                 "word": "manchego",
+                "substitution": true,
+
               },
             ],
           },
@@ -1833,21 +3783,27 @@
             "include": [
               {
                 "word": "cheddar",
+                "substitution": true,
               },
               {
                 "word": "monterey jack",
+                "substitution": true,
               },
               {
                 "word": "pepper jack",
+                "substitution": true,
               },
               {
                 "word": "muenster",
+                "substitution": true,
               },
               {
                 "word": "asiago",
+                "substitution": true,
               },
               {
                 "word": "mozzarella",
+                "substitution": true,
               },
             ],
           },
@@ -1858,27 +3814,35 @@
             "include": [
               {
                 "word": "mild cheddar",
+                "substitution": true,
               },
               {
                 "word": "white cheddar",
+                "substitution": true,
               },
               {
                 "word": "provolone",
+                "substitution": true,
               },
               {
                 "word": "ricotta",
+                "substitution": true,
               },
               {
                 "word": "manchego",
+                "substitution": true,
               },
               {
                 "word": "havarti",
+                "substitution": true,
               },
               {
                 "word": "paneer",
+                "substitution": true,
               },
               {
                 "word": "cottage cheese",
+                "substitution": true,
               },
             ],
           },
@@ -1889,21 +3853,27 @@
             "include": [
               {
                 "word": "fontina",
+                "substitution": true,
               },
               {
                 "word": "emmental",
+                "substitution": true,
               },
               {
                 "word": "emmentaler",
+                "substitution": true,
               },
               {
                 "word": "gruyere",
+                "substitution": true,
               },
               {
                 "word": "gouda",
+                "substitution": true,
               },
               {
                 "word": "swiss cheese",
+                "substitution": true,
               },
             ],
           },
@@ -1914,30 +3884,39 @@
             "include": [
               {
                 "word": "fontina",
+                "substitution": true,
               },
               {
                 "word": "emmental",
+                "substitution": true,
               },
               {
                 "word": "emmentaler",
+                "substitution": true,
               },
               {
                 "word": "gouda",
+                "substitution": true,
               },
               {
                 "word": "provolone",
+                "substitution": true,
               },
               {
                 "word": "swiss cheese",
+                "substitution": true,
               },
               {
                 "word": "jarlsberg",
+                "substitution": true,
               },
               {
                 "word": "comte",
+                "substitution": true,
               },
               {
                 "word": "havarti",
+                "substitution": true,
               },
             ],
           },
@@ -1948,27 +3927,35 @@
             "include": [
               {
                 "word": "fontina",
+                "substitution": true,
               },
               {
                 "word": "emmental",
+                "substitution": true,
               },
               {
                 "word": "emmentaler",
+                "substitution": true,
               },
               {
                 "word": "gouda",
+                "substitution": true,
               },
               {
                 "word": "provolone",
+                "substitution": true,
               },
               {
                 "word": "swiss cheese",
+                "substitution": true,
               },
               {
                 "word": "jarlsberg",
+                "substitution": true,
               },
               {
                 "word": "gruyere",
+                "substitution": true,
               },
             ],
           },
@@ -1979,27 +3966,35 @@
             "include": [
               {
                 "word": "fontina",
+                "substitution": true,
               },
               {
                 "word": "gouda",
+                "substitution": true,
               },
               {
                 "word": "emmentaler",
+                "substitution": true,
               },
               {
                 "word": "gruyere",
+                "substitution": true,
               },
               {
                 "word": "provolone",
+                "substitution": true,
               },
               {
                 "word": "swiss cheese",
+                "substitution": true,
               },
               {
                 "word": "havarti",
+                "substitution": true,
               },
               {
                 "word": "jarlsberg",
+                "substitution": true,
               },
             ],
           },
@@ -2010,24 +4005,31 @@
             "include": [
               {
                 "word": "fontina",
+                "substitution": true,
               },
               {
                 "word": "emmental",
+                "substitution": true,
               },
               {
                 "word": "emmentaler",
+                "substitution": true,
               },
               {
                 "word": "gruyere",
+                "substitution": true,
               },
               {
                 "word": "provolone",
+                "substitution": true,
               },
               {
                 "word": "swiss cheese",
+                "substitution": true,
               },
               {
                 "word": "havarti",
+                "substitution": true,
               },
             ],
           },
@@ -2038,27 +4040,35 @@
             "include": [
               {
                 "word": "gouda",
+                "substitution": true,
               },
               {
                 "word": "emmental",
+                "substitution": true,
               },
               {
                 "word": "emmentaler",
+                "substitution": true,
               },
               {
                 "word": "gruyere",
+                "substitution": true,
               },
               {
                 "word": "provolone",
+                "substitution": true,
               },
               {
                 "word": "taleggio",
+                "substitution": true,
               },
               {
                 "word": "camembert",
+                "substitution": true,
               },
               {
                 "word": "brie",
+                "substitution": true,
               },
             ],
           },
@@ -2069,12 +4079,31 @@
             "include": [
               {
                 "word": "vegetable broth",
+                "substitution": false,
               },
               {
                 "word": "veg broth",
+                "substitution": false,
               },
               {
                 "word": "veg stock",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable soup base",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable bouillon",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable oxo",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable cube",
+                "substitution": false,
               },
             ],
           },
@@ -2085,6 +4114,31 @@
             "include": [
               {
                 "word": "lamb broth",
+                "substitution": false,
+              },
+              {
+                "word": "lamb bone broth",
+                "substitution": false,
+              },
+              {
+                "word": "lamb soup base",
+                "substitution": false,
+              },
+              {
+                "word": "lamb bouillon",
+                "substitution": false,
+              },
+              {
+                "word": "lamb oxo",
+                "substitution": false,
+              },
+              {
+                "word": "lamb cube",
+                "substitution": false,
+              },
+              {
+                "word": "lamb base",
+                "substitution": false,
               },
             ],
           },
@@ -2095,22 +4149,69 @@
             "include": [
               {
                 "word": "chicken broth",
+                "substitution": false,
               },
               {
                 "word": "chicken bone broth",
+                "substitution": false,
               },
               {
                 "word": "chicken soup base",
+                "substitution": false,
+              },
+              {
+                "word": "chicken base",
+                "substitution": false,
+              },
+              {
+                "word": "chicken bouillon",
+                "substitution": false,
+              },
+              {
+                "word": "chicken oxo",
+                "substitution": false,
+              },
+              {
+                "word": "chicken cube",
+                "substitution": false,
               },
             ],
           },
           {
             "name": "beef stock",
             "exclude": [
+              {
+                "word": "diced",
+              },
             ],
             "include": [
               {
                 "word": "beef broth",
+                "substitution": false,
+              },
+              {
+                "word": "beef bouillon",
+                "substitution": false,
+              },
+              {
+                "word": "beef oxo",
+                "substitution": false,
+              },
+              {
+                "word": "beef cube",
+                "substitution": false,
+              },
+              {
+                "word": "beef soup base",
+                "substitution": false,
+              },
+              {
+                "word": "beef bone broth",
+                "substitution": false,
+              },
+              {
+                "word": "beef base",
+                "substitution": false,
               },
             ],
           },
@@ -2121,9 +4222,11 @@
             "include": [
               {
                 "word": "eschalot",
+                "substitution": false,
               },
               {
                 "word": "onion",
+                "substitution": true,
               },
             ],
           },
@@ -2134,6 +4237,8 @@
             "include": [
               {
                 "word": "scallion",
+                "substitution": false,
+
               },
             ],
           },
@@ -2144,15 +4249,35 @@
             "include": [
               {
                 "word": "sun dried tomatoes",
+                "substitution": false,
               },
               {
                 "word": "sun dried tomato",
+                "substitution": false,
               },
               {
                 "word": "sun-dried tomato",
+                "substitution": false,
               },
               {
                 "word": "sun-dried tomatoes",
+                "substitution": false,
+              },
+              {
+                "word": "sundried tomatoes",
+                "substitution": false,
+              },
+              {
+                "word": "sundried tomato",
+                "substitution": false,
+              },
+              {
+                "word": "sunblushed tomato",
+                "substitution": true,
+              },
+              {
+                "word": "sunblushed tomatoes",
+                "substitution": true,
               },
             ],
           },
@@ -2163,6 +4288,7 @@
             "include": [
               {
                 "word": "whiskey",
+                "substitution": false,
               },
             ],
           },
@@ -2173,6 +4299,7 @@
             "include": [
               {
                 "word": "cashews",
+                "substitution": false,
               },
             ],
           },
@@ -2183,9 +4310,11 @@
             "include": [
               {
                 "word": "phyllo pastry",
+                "substitution": false,
               },
               {
                 "word": "phyllo",
+                "substitution": false,
               },
             ],
           },
@@ -2196,16 +4325,57 @@
             "include": [
               {
                 "word": "arugula",
+                "substitution": false,
               },
             ],
           },
           {
-            "name": "coriander",
+            "name": "dried coriander",
             "exclude": [
             ],
             "include": [
               {
+                "word": "ground coriander",
+                "substitution": false,
+              },
+              {
+                "word": "coriander seeds",
+                "substitution": false,
+              },
+              {
+                "word": "coriander powder",
+                "substitution": false,
+              },
+              {
+                "word": "powdered coriander",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "fresh coriander",
+            "exclude": [
+              {
+                "word": "ground coriander",
+              },
+              {
+                "word": "coriander seeds",
+              },
+              {
+                "word": "coriander powder",
+              },
+              {
+                "word": "powdered coriander",
+              },
+            ],
+            "include": [
+              {
+                "word": "coriander",
+                "substitution": false,
+              },
+              {
                 "word": "cilantro",
+                "substitution": false,
               },
             ],
           },
@@ -2216,6 +4386,7 @@
             "include": [
               {
                 "word": "zucchini",
+                "substitution": false,
               },
             ],
           },
@@ -2240,36 +4411,240 @@
             "include": [
               {
                 "word": "chili",
+                "substitution": false,
               },
               {
                 "word": "chilli",
+                "substitution": false,
               },
               {
                 "word": "chillies",
+                "substitution": false,
               },
               {
                 "word": "chili peppers",
+                "substitution": false,
               },
               {
                 "word": "chilli pepper",
+                "substitution": false,
               },
               {
                 "word": "chilli peppers",
+                "substitution": false,
               },
               {
                 "word": "ghost pepper",
+                "substitution": false,
               },
               {
                 "word": "hot pepper",
+                "substitution": false,
               },
               {
                 "word": "jalapeno",
+                "substitution": false,
               },
               {
                 "word": "padron",
+                "substitution": false,
               },
               {
                 "word": "habanero",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "chili",
+            "exclude": [
+              {
+                "word": "chili sauce",
+              },
+              {
+                "word": "chili chutney",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "dried",
+              },
+              {
+                "word": "flakes",
+              },
+              {
+                "word": "flaked",
+              },
+              {
+                "word": "crushed",
+              },
+            ],
+            "include": [
+            ],
+          },
+          {
+            "name": "chillies",
+            "exclude": [
+              {
+                "word": "ground",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "dried",
+              },
+              {
+                "word": "flaked",
+              },
+              {
+                "word": "crushed",
+              },
+            ],
+            "include": [
+            ],
+          },
+          {
+            "name": "chilli",
+            "exclude": [
+              {
+                "word": "chilli sauce",
+              },
+              {
+                "word": "chilli chutney",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "dried",
+              },
+              {
+                "word": "flakes",
+              },
+              {
+                "word": "flaked",
+              },
+              {
+                "word": "crushed",
+              },
+            ],
+            "include": [
+            ],
+          },
+          {
+            "name": "chili powder",
+            "exclude": [
+              {
+                "word": "ground chile paste",
+              },
+              {
+                "word": "ground chili paste",
+              },
+            ],
+            "include": [
+              {
+                "word": "chipotle powder",
+                "substitution": true,
+              },
+              {
+                "word": "powdered chipotle",
+                "substitution": true,
+              },
+              {
+                "word": "ground chipotle",
+                "substitution": true,
+              },
+              {
+                "word": "chile powder",
+                "substitution": false,
+              },
+              {
+                "word": "ground chili",
+                "substitution": false,
+              },
+              {
+                "word": "ground chile",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "dried chili peppers",
+            "exclude": [
+              {
+                "word": "chiles secos",
+              },
+              {
+                "word": "dried chillies",
+              },
+              {
+                "word": "dried chili pepper",
+              },
+              {
+                "word": "dried chilli peppers",
+              },
+              {
+                "word": "dried chilli pepper",
+              },
+              {
+                "word": "dried red chili pepper",
+              },
+              {
+                "word": "dried red chilli pepper",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "chili flakes",
+            "exclude": [
+              {
+                "word": "chilli flakes",
+              },
+              {
+                "word": "chilly flakes",
+              },
+              {
+                "word": "crushed chilli",
+              },
+              {
+                "word": "crushed chili",
+              },
+              {
+                "word": "crushed chillies",
+              },
+            ],
+            "include": [
+            ],
+          },
+          {
+            "name": "chili paste",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chilli paste",
+                "substitution": false,
+              },
+              {
+                "word": "chile paste",
+                "substitution": false,
               },
             ],
           },
@@ -2291,9 +4666,41 @@
               {
                 "word": "rice vinegar",
               },
+              {
+                "word": "cracker",
+              },
+              {
+                "word": "rice pasta",
+              },
+              {
+                "word": "rice bran",
+              },
+              {
+                "word": "cauliflower",
+              },
+              {
+                "word": "rice miso",
+              },
+              {
+                "word": "syrup",
+              },
+              {
+                "word": "malt syrup",
+              },
+              {
+                "word": "crispie",
+              },
+              {
+                "word": "cereal",
+              },
+              {
+                "word": "noodle",
+              },
+              {
+                "word": "rice milk",
+              },
             ],
             "include": [
-
             ],
           },
           {
@@ -2304,6 +4711,21 @@
               },
               {
                 "word": "chicken stock",
+              },
+              {
+                "word": "chicken bone broth",
+              },
+              {
+                "word": "chicken soup base",
+              },
+              {
+                "word": "chicken bouillon",
+              },
+              {
+                "word": "chicken oxo",
+              },
+              {
+                "word": "chicken cube",
               },
             ],
             "include": [
@@ -2322,25 +4744,34 @@
               {
                 "word": "onion",
               },
+              {
+                "word": "flour",
+              },
             ],
             "include": [
               {
                 "word": "chardonnay",
+                "substitution": false,
               },
               {
                 "word": "sauvignon blanc",
+                "substitution": false,
               },
               {
                 "word": "dry white",
+                "substitution": false,
               },
               {
                 "word": "crisp white",
+                "substitution": false,
               },
               {
                 "word": "fruity white",
+                "substitution": false,
               },
               {
                 "word": "medium white",
+                "substitution": false,
               },
             ],
           },
@@ -2352,7 +4783,10 @@
               },
             ],
             "include": [
-
+              {
+                "word": "prawn",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -2369,6 +4803,42 @@
               },
               {
                 "word": "sugar ice cream cones",
+              },
+              {
+                "word": "confectioners sugar",
+              },
+              {
+                "word": "confectioner sugar",
+              },
+              {
+                "word": "confectioner's sugar",
+              },
+              {
+                "word": "confectioners' sugar",
+              },
+              {
+                "word": "powdered sugar",
+              },
+              {
+                "word": "sugar powder",
+              },
+              {
+                "word": "sanding sugar",
+              },
+              {
+                "word": "decorators sugar",
+              },
+              {
+                "word": "decorators' sugar",
+              },
+              {
+                "word": "decorator's sugar",
+              },
+              {
+                "word": "decorator sugar",
+              },
+              {
+                "word": "decorating sugar",
               },
             ],
             "include": [
@@ -2423,14 +4893,38 @@
             ],
           },
           {
+            "name": "tapenade",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "olive paste",
+                "substitution": true,
+              },
+            ],
+          },
+          {
             "name": "olives",
             "exclude": [
               {
                 "word": "olive fruit",
               },
+              {
+                "word": "tapenade",
+              },
+              {
+                "word": "paste",
+              },
             ],
             "include": [
-
+              {
+                "word": "green olive",
+                "substitution": false,
+              },
+              {
+                "word": "black olive",
+                "substitution": false,
+              },
             ],
           },
           {
@@ -2439,9 +4933,35 @@
               {
                 "word": "cooking banana",
               },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "liquor",
+              },
+              {
+                "word": "potato",
+              },
+              {
+                "word": "extract",
+              },
+              {
+                "word": "flower",
+              },
+              {
+                "word": "leaves",
+              },
+              {
+                "word": "leaf",
+              },
+              {
+                "word": "pepper",
+              },
             ],
             "include": [
-
             ],
           },
           {
@@ -2484,6 +5004,7 @@
             "include": [
               {
                 "word": "beet",
+                "substitution": false,
               },
             ],
           },
@@ -2553,6 +5074,9 @@
               {
                 "word": "grapefruit juice",
               },
+              {
+                "word": "grapefruit drink",
+              },
             ],
             "include": [
 
@@ -2562,11 +5086,46 @@
             "name": "lime",
             "exclude": [
               {
-                "word": "kaffir lime",
+                "word": "lime leaves",
+              },
+              {
+                "word": "lime leaf",
+              },
+              {
+                "word": "lime sugar",
+              },
+              {
+                "word": "oil",
+              },
+              {
+                "word": "lime mojo",
+              },
+              {
+                "word": "soda",
+              },
+              {
+                "word": "syrup",
+              },
+              {
+                "word": "cordial",
+              },
+              {
+                "word": "squash",
               },
             ],
             "include": [
+            ],
+          },
+          {
+            "name": "lime mojo sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lime mojo",
+                "substitution": false,
 
+              },
             ],
           },
           {
@@ -2632,42 +5191,55 @@
             "include": [
               {
                 "word": "dessicated coconut",
+                "substitution": false,
               },
               {
                 "word": "coconut dessicated",
+                "substitution": false,
               },
               {
                 "word": "desicated coconut",
+                "substitution": false,
               },
               {
                 "word": "coconut desicated",
+                "substitution": false,
               },
               {
                 "word": "dehydrated coconut",
+                "substitution": false,
               },
               {
                 "word": "coconut dehydrated",
+                "substitution": false,
               },
               {
                 "word": "shredded coconut",
+                "substitution": false,
               },
               {
                 "word": "coconut shred",
+                "substitution": false,
               },
               {
                 "word": "coconut dried",
+                "substitution": false,
               },
               {
                 "word": "coconut shredded",
+                "substitution": false,
               },
               {
                 "word": "coconut flake",
+                "substitution": false,
               },
               {
                 "word": "flaked coconut",
+                "substitution": false,
               },
               {
                 "word": "coconut flaked",
+                "substitution": false,
               },
             ],
           },
@@ -2738,6 +5310,7 @@
             "include": [
               {
                 "word": "coconut",
+                "substitution": false,
               },
             ],
           },
@@ -2805,6 +5378,30 @@
               {
                 "word": "sweet potato",
               },
+              {
+                "word": "pierogi",
+              },
+              {
+                "word": "potato chip",
+              },
+              {
+                "word": "potato flour",
+              },
+              {
+                "word": "potato bun",
+              },
+              {
+                "word": "potato water",
+              },
+              {
+                "word": "potato flake",
+              },
+              {
+                "word": "potato gnocchi",
+              },
+              {
+                "word": "potato starch",
+              },
             ],
             "include": [
 
@@ -2813,13 +5410,11 @@
           {
             "name": "sweet potato",
             "exclude": [
-              {
-                "word": "potato",
-              },
             ],
             "include": [
               {
                 "word": "yam",
+                "substitution": true,
               },
             ],
           },
@@ -2893,21 +5488,33 @@
               {
                 "word": "lemon sole",
               },
+              {
+                "word": "candied lemon",
+              },
             ],
             "include": [
-              {
-                "word": "lemon juice",
-              },
             ],
           },
           {
             "name": "lemon juice",
             "exclude": [
-
+              {
+                "word": "lemon zest",
+              },
+              {
+                "word": "lemon curd",
+              },
+              {
+                "word": "lemon sole",
+              },
+              {
+                "word": "candied lemon",
+              },
             ],
             "include": [
               {
                 "word": "lemon",
+                "substitution": false,
               },
             ],
           },
@@ -2953,27 +5560,35 @@
             "include": [
               {
                 "word": "capsicum",
+                "substitution": false,
               },
               {
                 "word": "pimiento",
+                "substitution": false,
               },
               {
                 "word": "pimento",
+                "substitution": false,
               },
               {
                 "word": "yellow pepper",
+                "substitution": false,
               },
               {
                 "word": "red pepper",
+                "substitution": false,
               },
               {
                 "word": "green pepper",
+                "substitution": false,
               },
               {
                 "word": "sweet pepper",
+                "substitution": true,
               },
               {
                 "word": "piquillo",
+                "substitution": false,
               },
             ],
           },
@@ -3032,6 +5647,7 @@
             "include": [
               {
                 "word": "peppercorns",
+                "substitution": true,
               },
             ],
           },
@@ -3049,6 +5665,9 @@
               },
               {
                 "word": "powdered garlic",
+              },
+              {
+                "word": "dried garlic",
               }
             ],
             "include": [
@@ -3056,13 +5675,10 @@
             ],
           },
           {
-            "name": "raisin",
+            "name": "raisins",
             "exclude": [
               {
-                "word": "raisin bread",
-              },
-              {
-                "word": "oatmeal raisin",
+                "word": "bread",
               },
             ],
             "include": [
@@ -3094,9 +5710,11 @@
             "include": [
               {
                 "word": "butternut squash",
+                "substitution": true,
               },
               {
                 "word": "squash",
+                "substitution": true,
               },
             ],
           },
@@ -3125,6 +5743,7 @@
             "include": [
               {
                 "word": "chocolate chips",
+                "substitution": true,
               },
             ],
           },
@@ -3144,6 +5763,7 @@
             "include": [
               {
                 "word": "chocolate",
+                "substitution": false,
               },
             ],
           },
@@ -3163,6 +5783,7 @@
             "include": [
               {
                 "word": "chocolate",
+                "substitution": false,
               },
             ],
           },
@@ -3182,6 +5803,7 @@
             "include": [
               {
                 "word": "chocolate",
+                "substitution": false,
               },
             ],
           },
@@ -3221,7 +5843,10 @@
               },
             ],
             "include": [
-
+              {
+                "word": "challah",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -3234,9 +5859,11 @@
             "include": [
               {
                 "word": "beefburger",
+                "substitution": false,
               },
               {
                 "word": "hamburger",
+                "substitution": false,
               },
             ],
           },
@@ -3246,10 +5873,14 @@
               {
                 "word": "hot dog bun",
               },
+              {
+                "word": "hotdog bun",
+              },
             ],
             "include": [
               {
                 "word": "sausage",
+                "substitution": true,
               },
             ],
           },
@@ -3283,12 +5914,15 @@
             "include": [
               {
                 "word": "canola oil",
+                "substitution": true,
               },
               {
                 "word": "vegetable oil",
+                "substitution": true,
               },
               {
                 "word": "sunflower oil",
+                "substitution": true,
               },
             ],
           },
@@ -3299,12 +5933,15 @@
             "include": [
               {
                 "word": "grapeseed oil",
+                "substitution": true,
               },
               {
                 "word": "vegetable oil",
+                "substitution": true,
               },
               {
                 "word": "canola oil",
+                "substitution": true,
               },
             ],
           },
@@ -3345,6 +5982,22 @@
             "include": [
               {
                 "word": "margarine",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "margarine",
+            "exclude": [
+             ],
+            "include": [
+              {
+                "word": "butter",
+                "substitution": true,
+              },
+              {
+                "word": "margerine",
+                "substitution": false,
               },
             ],
           },
@@ -3391,21 +6044,27 @@
             "include": [
               {
                 "word": "soy milk",
+                "substitution": true,
               },
               {
                 "word": "almond milk",
+                "substitution": true,
               },
               {
                 "word": "milk",
+                "substitution": true,
               },
               {
                 "word": "coconut cream",
+                "substitution": true,
               },
               {
                 "word": "creamed coconut",
+                "substitution": true,
               },
               {
                 "word": "coconut yoghurt",
+                "substitution": true,
               },
             ],
           },
@@ -3416,12 +6075,19 @@
             "include": [
               {
                 "word": "soy milk",
+                "substitution": true,
               },
               {
                 "word": "coconut milk",
+                "substitution": true,
               },
               {
                 "word": "milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond breeze",
+                "substitution": true,
               },
             ],
           },
@@ -3432,12 +6098,15 @@
             "include": [
               {
                 "word": "almond milk",
+                "substitution": true,
               },
               {
                 "word": "coconut milk",
+                "substitution": true,
               },
               {
                 "word": "milk",
+                "substitution": true,
               },
             ],
           },
@@ -3529,17 +6198,114 @@
             ],
           },
           {
-            "name": "ginger",
+            "name": "fresh ginger",
             "exclude": [
               {
-                "word": "ginger ale",
+                "word": "ale",
               },
               {
                 "word": "ginger snaps",
               },
+              {
+                "word": "gingersnaps",
+              },
+              {
+                "word": "candied",
+              },
+              {
+                "word": "ginger juice",
+              },
+              {
+                "word": "syrup",
+              },
+              {
+                "word": "nectar",
+              },
+              {
+                "word": "gingerbread",
+              },
+              {
+                "word": "brandy",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "liquor",
+              },
+              {
+                "word": "paste",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "pickled",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "beer",
+              },
+              {
+                "word": "preserve",
+              },
+              {
+                "word": "preserved",
+              },
+              {
+                "word": "crystallized",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "kombucha",
+              },
+              {
+                "word": "gold",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "extract",
+              },
+              {
+                "word": "galangal paste",
+              },
             ],
             "include": [
-
+              {
+                "word": "ginger",
+                "substitution": false,
+              },
+              {
+                "word": "gingerroot",
+                "substitution": false,
+              },
+              {
+                "word": "gingeroot",
+                "substitution": false,
+              },
+              {
+                "word": "galangal",
+                "substitution": true,
+              },
+              {
+                "word": "galanga",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -3590,6 +6356,7 @@
             "include": [
               {
                 "word": "tomatoes",
+                "substitution": false,
               },
             ],
           },
@@ -3600,6 +6367,7 @@
             "include": [
               {
                 "word": "tomato sauce",
+                "substitution": true,
               },
             ],
           },
@@ -3614,34 +6382,6 @@
               },
               {
                 "word": "mushroom gravy",
-              },
-            ],
-            "include": [
-
-            ],
-          },
-          {
-            "name": "chili",
-            "exclude": [
-              {
-                "word": "chili sauce",
-              },
-              {
-                "word": "chili chutney",
-              },
-            ],
-            "include": [
-
-            ],
-          },
-          {
-            "name": "chili powder",
-            "exclude": [
-              {
-                "word": "ground red pepper",
-              },
-              {
-                "word": "cayenne pepper",
               },
             ],
             "include": [
@@ -3715,9 +6455,11 @@
             "include": [
               {
                 "word": "shallot",
+                "substitution": true,
               },
               {
                 "word": "eschalot",
+                "substitution": true,
               },
             ],
           },
@@ -3730,9 +6472,29 @@
               {
                 "word": "grape jam",
               },
+              {
+                "word": "grape drink",
+              },
+              {
+                "word": "tomatoes",
+              },
+              {
+                "word": "tomato",
+              },
+              {
+                "word": "grape leaves",
+              },
+              {
+                "word": "grape leaf",
+              },
+              {
+                "word": "grape seed",
+              },
+              {
+                "word": "grape oil",
+              },
             ],
             "include": [
-
             ],
           },
           {

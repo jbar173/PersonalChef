@@ -89,24 +89,48 @@ const FindIngredient = (ingredients_to_search_for,ingredient_lower) => {
         var regex_seven = new RegExp(`${starts_or_ends_with}${ingredient}${starts_or_ends_with}`)
         var regex_eight = new RegExp(`${starts_or_ends_with}${ingredient}${ends_with_s}${starts_or_ends_with}`)
 
-        if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower) ||
-           regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower) ||
-           regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower) ||
-           regex_seven.test(ingredient_lower) || regex_eight.test(ingredient_lower)
-         ){
-            console.log("found " + ingredient)
-            console.log("in: " + ingredient_lower)
-            if(ingredient === original){
-              console.log("FOUND ORIGINAL INGREDIENT ( " + ingredient + " ) for " + ingredient_lower)
-              console.log("ORIGINAL: " + original)
-              original_found = true
-              include_words_found.push(ingredient)
-            }else{
-              console.log("FOUND 'Include' INGREDIENT ( " + ingredient + " ) for " + ingredient_lower)
-              console.log("ORIGINAL: " + original)
-              include_words_found.push(ingredient)
-            }
-         }
+        var regex_nine = false
+
+        if(regex_one.test(ingredient_lower)){
+          regex_nine = new RegExp(`not ${no_extra_letters}${ingredient}${no_extra_letters}`)
+        }else if(regex_two.test(ingredient_lower)){
+          regex_nine = new RegExp(`not ${no_extra_letters}${ingredient}${ends_with_s}${no_extra_letters}`)
+        }else if(regex_five.test(ingredient_lower)){
+          regex_nine = new RegExp(`not ${no_extra_letters}${ingredient}${starts_or_ends_with}`)
+        }else if(regex_six.test(ingredient_lower)){
+          regex_nine = new RegExp(`not ${no_extra_letters}${ingredient}${ends_with_s}${starts_or_ends_with}`)
+        }
+
+        var false_positive = false
+
+        if(regex_nine !== false){
+          if(regex_nine.test(ingredient_lower)){
+            console.log("Ingredient '" + ingredient_lower + "' was a false positive")
+            false_positive = true
+          }
+        }
+
+        if(false_positive === false){
+            if(regex_one.test(ingredient_lower) || regex_two.test(ingredient_lower) ||
+               regex_three.test(ingredient_lower) || regex_four.test(ingredient_lower) ||
+               regex_five.test(ingredient_lower) || regex_six.test(ingredient_lower) ||
+               regex_seven.test(ingredient_lower) || regex_eight.test(ingredient_lower)
+             ){
+                console.log("found " + ingredient)
+                console.log("in: " + ingredient_lower)
+                if(ingredient === original){
+                  console.log("FOUND ORIGINAL INGREDIENT ( " + ingredient + " ) for " + ingredient_lower)
+                  console.log("ORIGINAL: " + original)
+                  original_found = true
+                  include_words_found.push(ingredient)
+                }else{
+                  console.log("FOUND 'Include' INGREDIENT ( " + ingredient + " ) for " + ingredient_lower)
+                  console.log("ORIGINAL: " + original)
+                  include_words_found.push(ingredient)
+                }
+             }
+        }
+
       }
 
      if(include_words_found.length > 0){
