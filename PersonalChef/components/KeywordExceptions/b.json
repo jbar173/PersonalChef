@@ -1,0 +1,1152 @@
+{
+
+    "key" : ["butter","brazil nut","banana","beetroot","bell pepper","beef stock","brie","blue cheese","broccoli","baking powder","baking soda","beef","beef stock","beef mince","beer","beansprouts",
+      "black-eyed peas","banana liqueur","blueberry liqueur","bread","breadcrumbs","breadsticks","bread wraps","barbeque sauce","broad bean","borlotti bean","black pudding","butter beans","buttercream",
+      "blackberries","brandy",
+    ],
+
+
+    "ingredients": [
+
+
+      {
+          "name": "brandy",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "armagnac",
+              "substitution": false,
+            },
+            {
+              "word": "cognac",
+              "substitution": false,
+            },
+            {
+              "word": "pisco",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "blackberries",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "marionberries",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "buttercream",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "butter cream",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "black pudding",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "morcilla",
+              "substitution": false,
+            },
+            {
+              "word": "pig's blood",
+              "substitution": false,
+            },
+            {
+              "word": "pigs blood",
+              "substitution": false,
+            },
+            {
+              "word": "pig blood",
+              "substitution": false,
+            },
+            {
+              "word": "pork blood",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "borlotti bean",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "cranberry bean",
+              "substitution": false,
+            },
+            {
+              "word": "pinto bean",
+              "substitution": true,
+            },
+            {
+              "word": "kidney bean",
+              "substitution": true,
+            },
+            {
+              "word": "cannellini bean",
+              "substitution": true,
+            },
+            {
+              "word": "canned white bean",
+              "substitution": true,
+            },
+            {
+              "word": "navy bean",
+              "substitution": true,
+            },
+            {
+              "word": "great northern bean",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "broad bean",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "fava bean",
+              "substitution": false,
+            },
+            {
+              "word": "faba bean",
+              "substitution": false,
+            },
+            {
+              "word": "runner bean",
+              "substitution": true,
+            },
+            {
+              "word": "flat bean",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "barbeque sauce",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "barbecue sauce",
+              "substitution": false,
+            },
+            {
+              "word": "bbq sauce",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "bread wraps",
+          "exclude": [
+            {
+              "word": "tortilla chip",
+            },
+            {
+              "word": "torilla chip",
+            },
+            {
+              "word": "lettuce wrap",
+            },
+            {
+              "word": "wonton wrap",
+            },
+            {
+              "word": "dumpling wrap",
+            },
+            {
+              "word": "paper wrap",
+            },
+            {
+              "word": "egg roll wrap",
+            },
+            {
+              "word": "gyoza wrap",
+            },
+            {
+              "word": "pancetta-wrap",
+            },
+            {
+              "word": "pancetta wrap",
+            },
+            {
+              "word": "plastic-wrap",
+            },
+            {
+              "word": "plastic wrap",
+            },
+          ],
+          "include": [
+            {
+              "word": "tortilla",
+              "substitution": false,
+            },
+            {
+              "word": "torilla",
+              "substitution": false,
+            },
+            {
+              "word": "wrap",
+              "substitution": false,
+            },
+            {
+              "word": "crepe",
+              "substitution": true,
+            },
+            {
+              "word": "flatbread",
+              "substitution": true,
+            },
+            {
+              "word": "roti",
+              "substitution": true,
+            },
+            {
+              "word": "khobez",
+              "substitution": true,
+            },
+            {
+              "word": "khoubz",
+              "substitution": true,
+            },
+            {
+              "word": "khubz",
+              "substitution": true,
+            },
+            {
+              "word": "khubez",
+              "substitution": true,
+            },
+            {
+              "word": "khubooz",
+              "substitution": true,
+            },
+            {
+              "word": "kuboos",
+              "substitution": true,
+            },
+            {
+              "word": "paratha",
+              "substitution": true,
+            },
+            {
+              "word": "chapati",
+              "substitution": true,
+            },
+            {
+              "word": "pita",
+              "substitution": true,
+            },
+            {
+              "word": "matza",
+              "substitution": true,
+            },
+            {
+              "word": "matzo",
+              "substitution": true,
+            },
+            {
+              "word": "matzah",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "breadsticks",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "grissini",
+              "substitution": false,
+            },
+            {
+              "word": "grissino",
+              "substitution": false,
+            },
+            {
+              "word": "dipping sticks",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "breadcrumbs",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "bread crumbs",
+              "substitution": false,
+            },
+            {
+              "word": "panko",
+              "substitution": false,
+            },
+            {
+              "word": "bread drum",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+        "name": "bread",
+        "exclude": [
+          {
+            "word": "bread sauce",
+          },
+          {
+            "word": "starter",
+          },
+          {
+            "word": "raisin",
+          },
+          {
+            "word": "currant",
+          },
+          {
+            "word": "honey",
+          },
+          {
+            "word": "apple",
+          },
+          {
+            "word": "bread notes",
+          },
+          {
+            "word": "bread flour",
+          },
+          {
+            "word": "bread crumbs",
+          },
+          {
+            "word": "sweetbread",
+          },
+          {
+            "word": "bread mix",
+          },
+          {
+            "word": "corn bread muffin",
+          },
+          {
+            "word": "pickle",
+          },
+          {
+            "word": "short bread",
+          },
+          {
+            "word": "biscuit",
+          },
+          {
+            "word": "fruit bread",
+          },
+          {
+            "word": "ginger bread",
+          },
+          {
+            "word": "roll wrappers",
+          },
+          {
+            "word": "roll in",
+          },
+          {
+            "word": "corn",
+          },
+        ],
+        "include": [
+          {
+            "word": "challah",
+            "substitution": false,
+          },
+          {
+            "word": "toast",
+            "substitution": true,
+          },
+          {
+            "word": "sourdough",
+            "substitution": false,
+          },
+          {
+            "word": "baguette",
+            "substitution": false,
+          },
+          {
+            "word": "ciabatta",
+            "substitution": false,
+          },
+          {
+            "word": "rye",
+            "substitution": false,
+          },
+          {
+            "word": "pumpernickel",
+            "substitution": false,
+          },
+          {
+            "word": "brioche",
+            "substitution": false,
+          },
+          {
+            "word": "flatbread",
+            "substitution": false,
+          },
+          {
+            "word": "pancake",
+            "substitution": false,
+          },
+          {
+            "word": "lavash",
+            "substitution": false,
+          },
+          {
+            "word": "pita",
+            "substitution": false,
+          },
+          {
+            "word": "pitta",
+            "substitution": false,
+          },
+          {
+            "word": "naan",
+            "substitution": false,
+          },
+          {
+            "word": "cornbread",
+            "substitution": false,
+          },
+          {
+            "word": "bun",
+            "substitution": false,
+          },
+          {
+            "word": "roll",
+            "substitution": false,
+          },
+          {
+            "word": "bagel",
+            "substitution": false,
+          },
+          {
+            "word": "loaf",
+            "substitution": false,
+          },
+          {
+            "word": "focaccia",
+            "substitution": false,
+          },
+          {
+            "word": "coburg",
+            "substitution": false,
+          },
+          {
+            "word": "cob",
+            "substitution": false,
+          },
+          {
+            "word": "boule",
+            "substitution": false,
+          },
+        ],
+      },
+      {
+          "name": "blueberry liqueur",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blueberry flavoured liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry flavored liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry flavoured liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry flavored liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry liquor",
+              "substitution": false,
+            },
+            {
+              "word": "toschi mirtilli",
+              "substitution": false,
+            },
+            {
+              "word": "mirtilli liquor",
+              "substitution": false,
+            },
+            {
+              "word": "mirtilli liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "creme de myrtille",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "banana liqueur",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "banana flavoured liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "banana flavored liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "banana flavoured liquor",
+              "substitution": false,
+            },
+            {
+              "word": "banana flavored liquor",
+              "substitution": false,
+            },
+            {
+              "word": "banana liquor",
+              "substitution": false,
+            },
+            {
+              "word": "creme de banane",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "black-eyed peas",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "black eyed peas",
+              "substitution": false,
+            },
+            {
+              "word": "cowpeas",
+              "substitution": false,
+            },
+            {
+              "word": "cow peas",
+              "substitution": false,
+            },
+          ],
+      },
+          {
+              "name": "beansprouts",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peanut shoot",
+                  "substitution": false,
+                },
+                {
+                  "word": "soybean sprout",
+                  "substitution": false,
+                },
+                {
+                  "word": "bean shoot",
+                  "substitution": false,
+                },
+                {
+                  "word": "bean sprout",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "beer",
+              "exclude": [
+                {
+                  "word": "ginger beer",
+                },
+                {
+                  "word": "root beer",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "beef mince",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ground beef",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground chuck",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced beef",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince beef",
+                  "substitution": false,
+                },
+                {
+                  "word": "beef minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced meat",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "beef",
+              "exclude": [
+                {
+                  "word": "corned beef",
+                },
+                {
+                  "word": "corned brisket beef",
+                },
+                {
+                  "word": "burger",
+                },
+                {
+                  "word": "ground",
+                },
+                {
+                  "word": "minced",
+                },
+                {
+                  "word": "mince",
+                },
+                {
+                  "word": "tripe",
+                },
+                {
+                  "word": "beef stock",
+                },
+                {
+                  "word": "beef broth",
+                },
+                {
+                  "word": "beef bouillon",
+                },
+                {
+                  "word": "beefsteak tomato",
+                },
+                {
+                  "word": "beefsteak tomatoes",
+                },
+                {
+                  "word": "beef steak tomato",
+                },
+                {
+                  "word": "beef steak tomatoes",
+                },
+              ],
+              "include": [
+                {
+                  "word": "red meat",
+                  "substitution": false,
+                },
+                {
+                  "word": "topside joint",
+                  "substitution": false,
+                },
+                {
+                  "word": "sirloin",
+                  "substitution": false,
+                },
+                {
+                  "word": "beef top",
+                  "substitution": false,
+                },
+                {
+                  "word": "beef steak",
+                  "substitution": false,
+                },
+                {
+                  "word": "beef tenderloin",
+                  "substitution": false,
+                },
+                {
+                  "word": "tri-tip",
+                  "substitution": false,
+                },
+                {
+                  "word": "tri tip",
+                  "substitution": false,
+                },
+                {
+                  "word": "flank",
+                  "substitution": false,
+                },
+                {
+                  "word": "braising steak",
+                  "substitution": false,
+                },
+                {
+                  "word": "shin",
+                  "substitution": false,
+                },
+                {
+                  "word": "rib roast",
+                  "substitution": false,
+                },
+                {
+                  "word": "beef rib",
+                  "substitution": false,
+                },
+                {
+                  "word": "beef short rib",
+                  "substitution": false,
+                },
+                {
+                  "word": "ribeye",
+                  "substitution": false,
+                },
+                {
+                  "word": "beef eye",
+                  "substitution": false,
+                },
+                {
+                  "word": "top rump",
+                  "substitution": false,
+                },
+                {
+                  "word": "rump steak",
+                  "substitution": false,
+                },
+                {
+                  "word": "oxtail",
+                  "substitution": false,
+                },
+                {
+                  "word": "stew meat",
+                  "substitution": false,
+                },
+                {
+                  "word": "stewing meat",
+                  "substitution": false,
+                },
+                {
+                  "word": "brisket",
+                  "substitution": false,
+                },
+                {
+                  "word": "scotch fillet",
+                  "substitution": false,
+                },
+                {
+                  "word": "chuck steak",
+                  "substitution": false,
+                },
+                {
+                  "word": "silverside",
+                  "substitution": false,
+                },
+                {
+                  "word": "round steak",
+                  "substitution": false,
+                },
+                {
+                  "word": "filet mignon",
+                  "substitution": false,
+                },
+                {
+                  "word": "strip steak",
+                  "substitution": false,
+                },
+                {
+                  "word": "new york strip",
+                  "substitution": false,
+                },
+                {
+                  "word": "london broil",
+                  "substitution": false,
+                },
+                {
+                  "word": "t-bone",
+                  "substitution": false,
+                },
+                {
+                  "word": "t bone",
+                  "substitution": false,
+                },
+                {
+                  "word": "porterhouse",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomahawk",
+                  "substitution": false,
+                },
+                {
+                  "word": "skirt steak",
+                  "substitution": false,
+                },
+                {
+                  "word": "hanger",
+                  "substitution": false,
+                },
+                {
+                  "word": "denver cut",
+                  "substitution": false,
+                },
+                {
+                  "word": "flap steak",
+                  "substitution": false,
+                },
+                {
+                  "word": "cube steak",
+                  "substitution": false,
+                },
+                {
+                  "word": "flat iron",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "baking soda",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "baking powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "leaven",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "baking powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "baking soda",
+                  "substitution": true,
+                },
+                {
+                  "word": "leaven",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "broccoli",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "broccolini",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "blue cheese",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gorgonzola",
+                  "substitution": false,
+                },
+                {
+                  "word": "stilton",
+                  "substitution": false,
+                },
+                {
+                  "word": "blue cheese dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "cabrales",
+                  "substitution": false,
+                },
+                {
+                  "word": "saint agur",
+                  "substitution": false,
+                },
+                {
+                  "word": "roquefort",
+                  "substitution": false,
+                },
+                {
+                  "word": "blue cheshire",
+                  "substitution": false,
+                },
+                {
+                  "word": "shropshire blue",
+                  "substitution": false,
+                },
+                {
+                  "word": "castello blue",
+                  "substitution": false,
+                },
+                {
+                  "word": "feta blue",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+            "name": "brie",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "camembert",
+                "substitution": true,
+              },
+              {
+                "word": "fontina",
+                "substitution": true,
+              },
+              {
+                "word": "cheddar",
+                "substitution": true,
+              },
+              {
+                "word": "havarti",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "beef stock",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "beef broth",
+                "substitution": false,
+              },
+              {
+                "word": "beef bouillon",
+                "substitution": false,
+              },
+              {
+                "word": "beef oxo",
+                "substitution": false,
+              },
+              {
+                "word": "beef cube",
+                "substitution": false,
+              },
+              {
+                "word": "beef soup base",
+                "substitution": false,
+              },
+              {
+                "word": "beef bone broth",
+                "substitution": false,
+              },
+              {
+                "word": "beef base",
+                "substitution": false,
+              },
+              {
+                "word": "beef consomme",
+                "substitution": false,
+              },
+              {
+                "word": "beef consume",
+                "substitution": false,
+              },
+              {
+                "word": "demi-glace",
+                "substitution": true,
+              },
+              {
+                "word": "demi glace",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "bell pepper",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "capsicum",
+                "substitution": false,
+              },
+              {
+                "word": "pimiento",
+                "substitution": false,
+              },
+              {
+                "word": "pimento",
+                "substitution": false,
+              },
+              {
+                "word": "yellow pepper",
+                "substitution": false,
+              },
+              {
+                "word": "red pepper",
+                "substitution": false,
+              },
+              {
+                "word": "green pepper",
+                "substitution": false,
+              },
+              {
+                "word": "piquillo",
+                "substitution": false,
+              },
+              {
+                "word": "sweet pepper",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "beetroot",
+            "exclude": [
+
+            ],
+            "include": [
+              {
+                "word": "beet",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "butter",
+            "exclude": [
+              {
+                "word": "peanut butter",
+              },
+              {
+                "word": "almond butter",
+              },
+              {
+                "word": "cashew butter",
+              },
+              {
+                "word": "pecan butter",
+              },
+              {
+                "word": "apple butter",
+              },
+              {
+                "word": "butter cream",
+              },
+              {
+                "word": "butter cookie",
+              },
+              {
+                "word": "butter biscuit",
+              },
+              {
+                "word": "butter pecan",
+              },
+              {
+                "word": "butter milk",
+              },
+            ],
+            "include": [
+              {
+                "word": "margarine",
+                "substitution": true,
+              },
+              {
+                "word": "buttery spread",
+                "substitution": true,
+              },
+              {
+                "word": "ghee",
+                "substitution": true,
+              },
+              {
+                "word": "smen",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "brazil nut",
+            "exclude": [
+              {
+                "word": "oil",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "banana",
+            "exclude": [
+              {
+                "word": "cooking banana",
+              },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "liquor",
+              },
+              {
+                "word": "potato",
+              },
+              {
+                "word": "extract",
+              },
+              {
+                "word": "flower",
+              },
+              {
+                "word": "leaves",
+              },
+              {
+                "word": "leaf",
+              },
+              {
+                "word": "pepper",
+              },
+            ],
+            "include": [
+            ],
+          },
+
+
+    ]
+
+}

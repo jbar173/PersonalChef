@@ -1,0 +1,708 @@
+{
+
+    "key" : ["cream","chocolate","coffee","candlenut","cashew nut","chestnuts","cabbage","chocolate custard","custard","caramel","chili pepper","coconut milk","cider","courgette","coriander","cashew nuts",
+      "chicken stock","cheddar","cheese slice","camembert","comte","cottage cheese","cream cheese","creme fraiche","cachaca","champagne","cava","candied orange","chili flakes","chili paste","coconut liqueur",
+      "cherry liqueur","cinnamon","chickpeas","cracker","cornstarch","cornmeal","cured sausage","chili sauce","chili powder","chinese five spice","chutney","chicory","chayote","cannellini bean","collard greens",
+      "couscous","cocoa powder","cassava flour","chard",
+
+    ],
+
+
+    "ingredients": [
+
+
+      {
+        "name": "cider",
+        "exclude": [
+          {
+            "word": "vinegar",
+          },
+        ],
+        "include": [
+        ],
+      },
+      {
+        "name": "coconut milk",
+        "exclude": [
+          {
+            "word": "drink",
+          },
+          {
+            "word": "water",
+          },
+        ],
+        "include": [
+          {
+            "word": "coconut cream",
+            "substitution": false,
+          },
+          {
+            "word": "cream of coconut",
+            "substitution": false,
+          },
+          {
+            "word": "coco lopez",
+            "substitution": false,
+          },
+          {
+            "word": "coconut uht",
+            "substitution": false,
+          },
+          {
+            "word": "creamed coconut",
+            "substitution": false,
+          },
+          {
+            "word": "soy milk",
+            "substitution": true,
+          },
+          {
+            "word": "soymilk",
+            "substitution": true,
+          },
+          {
+            "word": "almond milk",
+            "substitution": true,
+          },
+          {
+            "word": "oat milk",
+            "substitution": true,
+          },
+          {
+            "word": "rice milk",
+            "substitution": true,
+          },
+          {
+            "word": "milk",
+            "substitution": true,
+          },
+          {
+            "word": "coconut yoghurt",
+            "substitution": true,
+          },
+          {
+            "word": "coconut yogurt",
+            "substitution": true,
+          },
+        ],
+      },
+      {
+        "name": "chili pepper",
+        "exclude": [
+          {
+            "word": "chili chutney",
+          },
+          {
+            "word": "chilli chutney",
+          },
+          {
+            "word": "chile chutney",
+          },
+        ],
+        "include": [
+          {
+            "word": "chili",
+            "substitution": false,
+          },
+          {
+            "word": "chilli",
+            "substitution": false,
+          },
+          {
+            "word": "chillies",
+            "substitution": false,
+          },
+          {
+            "word": "chile",
+            "substitution": false,
+          },
+          {
+            "word": "chilli pepper",
+            "substitution": false,
+          },
+          {
+            "word": "ghost pepper",
+            "substitution": false,
+          },
+          {
+            "word": "hot pepper",
+            "substitution": false,
+          },
+          {
+            "word": "cherry pepper",
+            "substitution": false,
+          },
+          {
+            "word": "piment d'espelette",
+            "substitution": false,
+          },
+          {
+            "word": "jalapeno",
+            "substitution": false,
+          },
+          {
+            "word": "padron",
+            "substitution": false,
+          },
+          {
+            "word": "habanero",
+            "substitution": false,
+          },
+          {
+            "word": "pepperoncini",
+            "substitution": false,
+          },
+          {
+            "word": "peperoncino",
+            "substitution": false,
+          },
+          {
+            "word": "scotch bonnet",
+            "substitution": false,
+          },
+          {
+            "word": "piment d'espelette",
+            "substitution": true,
+          },
+        ],
+      },
+      {
+        "name": "caramel",
+        "exclude": [
+          {
+            "word": "icecream",
+          },
+          {
+            "word": "ice cream",
+          },
+          {
+            "word": "yoghurt",
+          },
+          {
+            "word": "milk",
+          },
+          {
+            "word": "chocolate",
+          },
+          {
+            "word": "shortbread",
+          },
+          {
+            "word": "slice",
+          },
+          {
+            "word": "cookie",
+          },
+          {
+            "word": "biscuit",
+          },
+          {
+            "word": "wafer",
+          },
+          {
+            "word": "cake",
+          },
+          {
+            "word": "cheesecake",
+          },
+          {
+            "word": "bar",
+          },
+          {
+            "word": "creme",
+          },
+          {
+            "word": "cupcake",
+          },
+          {
+            "word": "pudding",
+          },
+          {
+            "word": "tart",
+          },
+          {
+            "word": "flavour",
+          },
+          {
+            "word": "flavor",
+          },
+          {
+            "word": "essence",
+          },
+          {
+            "word": "drop",
+          },
+          {
+            "word": "extract",
+          },
+        ],
+        "include": [
+          {
+            "word": "toffee",
+            "substitution": true,
+          },
+        ],
+      },
+      {
+        "name": "chocolate custard",
+        "exclude": [
+          {
+            "word": "custard cream",
+          },
+          {
+            "word": "biscuit",
+          },
+          {
+            "word": "tart",
+          },
+          {
+            "word": "slice",
+          },
+          {
+            "word": "pie",
+          },
+          {
+            "word": "cookie",
+          },
+        ],
+        "include": [
+
+        ],
+      },
+      {
+        "name": "custard",
+        "exclude": [
+          {
+            "word": "custard cream",
+          },
+          {
+            "word": "biscuit",
+          },
+          {
+            "word": "tart",
+          },
+          {
+            "word": "slice",
+          },
+          {
+            "word": "pie",
+          },
+          {
+            "word": "cookie",
+          },
+        ],
+        "include": [
+
+        ],
+      },
+      {
+          "name": "cabbage",
+          "exclude": [
+            {
+              "word": "sour",
+            },
+            {
+              "word": "kimchi",
+            },
+            {
+              "word": "pickle",
+            },
+          ],
+          "include": [
+            {
+              "word": "bok choy",
+              "substitution": true,
+            },
+            {
+              "word": "pak choy",
+              "substitution": true,
+            },
+            {
+              "word": "pak choi",
+              "substitution": true,
+            },
+          ],
+      },
+          {
+            "name": "chestnuts",
+            "exclude": [
+              {
+                "word": "water chestnut",
+              },
+              {
+                "word": "puree",
+              },
+              {
+                "word": "pureed",
+              },
+              {
+                "word": "meal",
+              },
+              {
+                "word": "flour",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "grit",
+              },
+              {
+                "word": "oil",
+              },
+              {
+                "word": "pickled",
+              },
+              {
+                "word": "butter",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "milk",
+              },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "cheese",
+              },
+              {
+                "word": "yoghurt",
+              },
+              {
+                "word": "paste",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "curry",
+              },
+              {
+                "word": "essence",
+              },
+              {
+                "word": "drop",
+              },
+              {
+                "word": "tincture",
+              },
+              {
+                "word": "chocolate",
+              },
+              {
+                "word": "cocoa",
+              },
+              {
+                "word": "candy",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "sweet",
+              },
+              {
+                "word": "brittle",
+              },
+              {
+                "word": "cookie",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "ball",
+              },
+              {
+                "word": "bake",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "cheesecake",
+              },
+              {
+                "word": "syrup",
+              },
+              {
+                "word": "preserve",
+              },
+            ],
+            "include": [
+              {
+                "word": "roasted chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "peeled chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "rou chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "raw chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "organic chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "sweet chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "turkish chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "chestnut with shell",
+                "substitution": false,
+              },
+              {
+                "word": "hazelnut",
+                "substitution": true,
+              },
+              {
+                "word": "macademia",
+                "substitution": true,
+              },
+              {
+                "word": "pecan",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "cashew nut",
+            "exclude": [
+              {
+                "word": "meal",
+              },
+              {
+                "word": "flour",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "grit",
+              },
+              {
+                "word": "oil",
+              },
+              {
+                "word": "pickled",
+              },
+              {
+                "word": "butter",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "milk",
+              },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "cheese",
+              },
+              {
+                "word": "yoghurt",
+              },
+              {
+                "word": "paste",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "curry",
+              },
+              {
+                "word": "essence",
+              },
+              {
+                "word": "drop",
+              },
+              {
+                "word": "tincture",
+              },
+              {
+                "word": "chocolate",
+              },
+              {
+                "word": "candy",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "sweet",
+              },
+              {
+                "word": "brittle",
+              },
+              {
+                "word": "cookie",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "ball",
+              },
+              {
+                "word": "bake",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "cheesecake",
+              },
+              {
+                "word": "syrup",
+              },
+              {
+                "word": "preserve",
+              },
+            ],
+            "include": [
+              {
+                "word": "cashew",
+                "substitution": false,
+              },
+              {
+                "word": "walnut",
+                "substitution": true,
+              },
+              {
+                "word": "hazelnut",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "candlenut",
+            "exclude": [
+              {
+                "word": "oil",
+              },
+            ],
+            "include": [
+              {
+                "word": "macadamia",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "coffee",
+            "exclude": [
+              {
+                "word": "coffee beans",
+              },
+            ],
+            "include": [
+              {
+                "word": "espresso",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "cream",
+            "exclude": [
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "sour cream",
+              },
+              {
+                "word": "soured cream",
+              },
+              {
+                "word": "cream cheese",
+              },
+              {
+                "word": "cream cracker",
+              },
+              {
+                "word": "custard cream",
+              },
+              {
+                "word": "cream cookies",
+              },
+              {
+                "word": "cream of mushroom",
+              },
+              {
+                "word": "cream of tomato",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "chocolate",
+            "exclude": [
+              {
+                "word": "chocolate cookie",
+              },
+              {
+                "word": "chocolate chip cookie",
+              },
+              {
+                "word": "hot chocolate",
+              },
+              {
+                "word": "chocolate milk",
+              },
+              {
+                "word": "chocolate biscuit",
+              },
+              {
+                "word": "chocolate chip biscuit",
+              },
+              {
+                "word": "chocolate cake mix",
+              },
+            ],
+            "include": [
+            ],
+          },
+
+
+
+    ]
+
+}

@@ -1,0 +1,47 @@
+{
+
+    "key" : ["spinach","sugar","shrimp","sweet potato","soy milk","sun-dried tomatoes","spring onion","shallot","salad leaves","soured cream","sparkling wine","sherry","salsa","sparkling water","strawberry liqueur",
+      "semolina","sausage""smoked sausage","shichimi","soy sauce","spring roll wrapper","seaweed","summer squash","swede","smoked paprika","shortening","sweet rice flour","soya beans","sweetcorn","strawberry custard",
+
+    ],
+
+
+    "ingredients": [
+
+
+          {
+            "name": "strawberry custard",
+            "exclude": [
+              {
+                "word": "custard cream",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "tart",
+              },
+              {
+                "word": "slice",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "pie",
+              },
+              {
+                "word": "cookie",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+
+
+
+
+    ]
+
+}

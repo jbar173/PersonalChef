@@ -1,0 +1,371 @@
+{
+
+    "key" : ["ale","apple","apricot","almond","almond milk","avocado","applewood smoked cheese","almond meal","almond flour","apple liqueur","apricot liqueur","apple sauce","aquafaba","achiote","aniseed liqueur",
+      "asparagus",
+    ],
+
+
+    "ingredients": [
+
+
+          {
+              "name": "aniseed liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ouzo",
+                  "substitution": false,
+                },
+                {
+                  "word": "arak",
+                  "substitution": false,
+                },
+                {
+                  "word": "sambuca",
+                  "substitution": false,
+                },
+                {
+                  "word": "galliano",
+                  "substitution": false,
+                },
+                {
+                  "word": "herbsaint",
+                  "substitution": false,
+                },
+                {
+                  "word": "anisette",
+                  "substitution": false,
+                },
+                {
+                  "word": "anesone",
+                  "substitution": false,
+                },
+                {
+                  "word": "absinthe",
+                  "substitution": false,
+                },
+                {
+                  "word": "absynthe",
+                  "substitution": false,
+                },
+                {
+                  "word": "pastis",
+                  "substitution": false,
+                },
+                {
+                  "word": "pernod",
+                  "substitution": false,
+                },
+                {
+                  "word": "mastika",
+                  "substitution": false,
+                },
+                {
+                  "word": "masticha",
+                  "substitution": false,
+                },
+                {
+                  "word": "neopolitan liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "ricard",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "achiote",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "annatto",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "aquafaba",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chickpea liquid",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "apple sauce",
+              "exclude": [
+
+              ],
+              "include": [
+                {
+                  "word": "applesauce",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "apricot liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apricot flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot brandy",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "apple liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apple flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple liquor",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "almond flour",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond meal",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "almond meal",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "applewood smoked cheese",
+              "exclude": [
+                {
+                  "word": "bacon",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "avocado",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "guacamole",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "ale",
+            "exclude": [
+              {
+                "word": "ginger ale",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "apple",
+            "exclude": [
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "applesauce",
+              },
+              {
+                "word": "juice",
+              },
+              {
+                "word": "butter",
+              },
+              {
+                "word": "toffee apple",
+              },
+              {
+                "word": "chutney",
+              },
+              {
+                "word": "vinegar",
+              },
+              {
+                "word": "cider",
+              },
+              {
+                "word": "pie",
+              },
+              {
+                "word": "apple wood",
+              },
+              {
+                "word": "applewood",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "apricot",
+            "exclude": [
+              {
+                "word": "jam",
+              },
+              {
+                "word": "jelly",
+              },
+              {
+                "word": "chutney",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "sauce",
+              },
+            ],
+            "include": [
+              {
+                "word": "pluot",
+                "substitution": true,
+              },
+              {
+                "word": "apriums",
+                "substitution": true,
+              },
+              {
+                "word": "apriplums",
+                "substitution": true,
+              },
+              {
+                "word": "plumcots",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "almond",
+            "exclude": [
+              {
+                "word": "almond butter",
+              },
+              {
+                "word": "almond paste",
+              },
+              {
+                "word": "almond flour",
+              },
+              {
+                "word": "almond meal",
+              },
+              {
+                "word": "almond syrup",
+              },
+              {
+                "word": "almond macaroon",
+              },
+              {
+                "word": "almond biscuit",
+              },
+              {
+                "word": "sugared",
+              },
+              {
+                "word": "chocolate",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "almond milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "soy milk",
+                "substitution": true,
+              },
+              {
+                "word": "soymilk",
+                "substitution": true,
+              },
+              {
+                "word": "coconut milk",
+                "substitution": true,
+              },
+              {
+                "word": "milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond breeze",
+                "substitution": true,
+              },
+            ],
+          },
+
+
+
+
+    ]
+
+}
