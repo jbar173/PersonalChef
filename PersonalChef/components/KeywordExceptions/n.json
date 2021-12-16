@@ -8,6 +8,100 @@
     "ingredients": [
 
 
+          {
+              "name": "nutmeg",
+              "exclude": [
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "icecream",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "nutella",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chocolate-hazelnut spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "chocolat hazelnut spread",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "navy beans",
+              "exclude": [
+                {
+                  "word": "vert",
+                },
+                {
+                  "word": "vertes",
+                },
+              ],
+              "include": [
+                {
+                  "word": "great northern bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "haricot",
+                  "substitution": false,
+                },
+                {
+                  "word": "boston bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "white pea bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "pea bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "white kidney bean",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "noodles",
+              "exclude": [
+                {
+                  "word": "spaghetti",
+                },
+                {
+                  "word": "lasagne",
+                },
+              ],
+              "include": [
+                {
+                  "word": "vermicelli",
+                  "substitution": false,
+                },
+                {
+                  "word": "soba",
+                  "substitution": false,
+                },
+                {
+                  "word": "somen",
+                  "substitution": false,
+                },
+                {
+                  "word": "sen lek",
+                  "substitution": false,
+                },
+              ],
+          },
 
 
 

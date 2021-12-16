@@ -1,8 +1,8 @@
 {
 
-    "key" : ["milk",
-      "mushroom","macademia","mustard","milk chocolate","muenster","manchego","mozzarella","monterey jack","mango","miso","marmalade","mango liqueur","melon liqueur","mint leaves","mint liqueur","margarine",
-      "melon","marsala wine","mango pickle","mixed berries","mixed fruit","mixed beans","mixed spice","medium curry paste","mild curry paste","massaman curry paste",
+    "key" : ["milk","mushroom","macademia","mustard","milk chocolate","muenster","manchego","mozzarella","monterey jack","mango","miso","marmalade","mango liqueur",
+      "melon liqueur","mint","mint liqueur","margarine","melon","marsala wine","mango pickle","mixed berries","mixed fruit","mixed beans","mixed spice",
+      "medium curry paste","mild curry paste","massaman curry paste","mangetout",
 
     ],
 
@@ -10,6 +10,1421 @@
     "ingredients": [
 
 
+          {
+              "name": "mangetout",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sugar snap",
+                  "substitution": false,
+                },
+                {
+                  "word": "sugarsnap",
+                  "substitution": false,
+                },
+                {
+                  "word": "snow pea",
+                  "substitution": false,
+                },
+                {
+                  "word": "snap pea",
+                  "substitution": false,
+                },
+                {
+                  "word": "podded pea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pea pod",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "massaman curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "massaman thai curry",
+                  "substitution": false,
+                },
+                {
+                  "word": "massaman curry stir-fry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai style curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "green curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "green curry spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai green paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai green curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "green thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "green curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "red curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "red curry spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai red paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai red curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "red thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "red curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai panang curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow curry spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai yellow paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai yellow curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "karee curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow curry stir-fry sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mild curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mild curry spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild indian curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "korma spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "korma curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "korma paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild curry base",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild curry sauce concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild curry sauce (concentrate)",
+                  "substitution": false,
+                },
+                {
+                  "word": "authentic curry base - mild",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild authentic curry base",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild curry spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild indian curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korma spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korma curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korma curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korma cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korma sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korma base",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai base",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda base",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani base",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "medium curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "medium curry spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "medium spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "medium indian curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "balti spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "balti curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "balti paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "dopiaza spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "dopiaza curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "dopiaza paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "rogan josh spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "rogan josh curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "rogan josh paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "dhansak spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "dhansak curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "dhansak paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "biryani spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "biryani curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "biryani paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "bhuna spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "bhuna curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "bhuna paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "medium curry base",
+                  "substitution": false,
+                },
+                {
+                  "word": "medium curry sauce concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "medium curry sauce (concentrate)",
+                  "substitution": false,
+                },
+                {
+                  "word": "authentic curry base - medium",
+                  "substitution": false,
+                },
+                {
+                  "word": "medium authentic curry base",
+                  "substitution": false,
+                },
+                {
+                  "word": "medium curry spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "medium spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "medium indian curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "balti spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "balti curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "balti curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "balti cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "balti sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "balti base",
+                  "substitution": false,
+                },
+                {
+                  "word": "dopiaza spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "dopiaza curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "dopiaza curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "dopiaza cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "dopiaza sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "dopiaza base",
+                  "substitution": false,
+                },
+                {
+                  "word": "rogan josh spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "rogan josh curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "rogan josh curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "rogan josh cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "rogan josh sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "rogan josh base",
+                  "substitution": false,
+                },
+                {
+                  "word": "dhansak spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "dhansak curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "dhansak curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "dhansak cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "dhansak sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "dhansak base",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala base",
+                  "substitution": false,
+                },
+                {
+                  "word": "biryani spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "biryani curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "biryani curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "biryani cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "biryani sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "biryani base",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi base",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai base",
+                  "substitution": false,
+                },
+                {
+                  "word": "bhuna spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "bhuna curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "bhuna curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "bhuna cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "bhuna sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "bhuna base",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mixed spice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pudding spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin pie spice",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin spice",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mixed beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "bean mix",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mixed fruit",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried mixed berries",
+                  "substitution": false,
+                },
+                {
+                  "word": "luxury berry mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried berry mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed glace fruit",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed dried fruit",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed vine fruit",
+                  "substitution": false,
+                },
+                {
+                  "word": "tangy fruit mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "jamaican mix fruit",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mixed berries",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "berries",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mango pickle",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "amba",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "marsala wine",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "marsala",
+                  "substitution": false,
+                },
+                {
+                  "word": "madeira",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "melon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "honeydew",
+                  "substitution": false,
+                },
+                {
+                  "word": "cantaloupe",
+                  "substitution": false,
+                },
+                {
+                  "word": "rockmelon",
+                  "substitution": false,
+                },
+                {
+                  "word": "spanspek",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+            "name": "margarine",
+            "exclude": [
+             ],
+            "include": [
+              {
+                "word": "butter",
+                "substitution": true,
+              },
+              {
+                "word": "margerine",
+                "substitution": false,
+              },
+              {
+                "word": "buttery spread",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+              "name": "mint liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mint flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "liqueur de menthe",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de menthe",
+                  "substitution": false,
+                },
+                {
+                  "word": "minttu liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "kendal mint cake liqueur",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mint",
+              "exclude": [
+                {
+                  "word": "mint swizzle",
+                },
+                {
+                  "word": "mint sauce",
+                },
+                {
+                  "word": "spearmint",
+                },
+                {
+                  "word": "peppermint",
+                },
+                {
+                  "word": "yoghurt-mint",
+                },
+                {
+                  "word": "yogurt-mint",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "melon liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "melon flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "midori",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mango liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mangue liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "liqueur de mangue",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "marmalade",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "tangerine preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "clementine preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "satsuma preserve",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "miso",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shiro-miso",
+                  "substitution": false,
+                },
+                {
+                  "word": "soybean paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy paste",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mango",
+              "exclude": [
+                {
+                  "word": "powder",
+                },
+                {
+                  "word": "yoghurt",
+                },
+                {
+                  "word": "yogurt",
+                },
+                {
+                  "word": "extract",
+                },
+                {
+                  "word": "chutney",
+                },
+                {
+                  "word": "pickled",
+                },
+              ],
+              "include": [
+                {
+                  "word": "mangoes",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+            "name": "monterey jack",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "american cheese",
+                "substitution": true,
+              },
+              {
+                "word": "cheese slice",
+                "substitution": true,
+              },
+              {
+                "word": "cheddar",
+                "substitution": true,
+              },
+              {
+                "word": "pepper jack",
+                "substitution": true,
+              },
+              {
+                "word": "pepper-jack",
+                "substitution": true,
+              },
+              {
+                "word": "muenster",
+                "substitution": true,
+              },
+              {
+                "word": "havarti",
+                "substitution": true,
+              },
+              {
+                "word": "colby-jack",
+                "substitution": true,
+              },
+              {
+                "word": "colby jack",
+                "substitution": true,
+              },
+              {
+                "word": "colby",
+                "substitution": true,
+              },
+              {
+                "word": "co-jack",
+                "substitution": true,
+              },
+              {
+                "word": "cojack",
+                "substitution": true,
+              },
+              {
+                "word": "manchego",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "mozzarella",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "mild cheddar",
+                "substitution": true,
+              },
+              {
+                "word": "white cheddar",
+                "substitution": true,
+              },
+              {
+                "word": "provolone",
+                "substitution": true,
+              },
+              {
+                "word": "ricotta",
+                "substitution": true,
+              },
+              {
+                "word": "manchego",
+                "substitution": true,
+              },
+              {
+                "word": "havarti",
+                "substitution": true,
+              },
+              {
+                "word": "paneer",
+                "substitution": true,
+              },
+              {
+                "word": "cottage cheese",
+                "substitution": true,
+              },
+              {
+                "word": "burrata",
+                "substitution": true,
+              },
+              {
+                "word": "bocconcini",
+                "substitution": true,
+              },
+              {
+                "word": "quark",
+                "substitution": true,
+              },
+              {
+                "word": "fromage blanc",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "manchego",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cheddar",
+                "substitution": true,
+              },
+              {
+                "word": "monterey jack",
+                "substitution": true,
+              },
+              {
+                "word": "pepper jack",
+                "substitution": true,
+              },
+              {
+                "word": "pepper-jack",
+                "substitution": true,
+              },
+              {
+                "word": "muenster",
+                "substitution": true,
+              },
+              {
+                "word": "asiago",
+                "substitution": true,
+              },
+              {
+                "word": "mozzarella",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "muenster",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "monterey jack",
+                "substitution": true,
+              },
+              {
+                "word": "colby jack",
+                "substitution": true,
+              },
+              {
+                "word": "colby",
+                "substitution": true,
+              },
+              {
+                "word": "provolone",
+                "substitution": true,
+              },
+              {
+                "word": "gouda",
+                "substitution": true,
+              },
+              {
+                "word": "edam",
+                "substitution": true,
+              },
+              {
+                "word": "cheddar",
+                "substitution": true,
+              },
+              {
+                "word": "havarti",
+                "substitution": true,
+              },
+              {
+                "word": "manchego",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "milk chocolate",
+            "exclude": [
+              {
+                "word": "chocolate cookie",
+              },
+              {
+                "word": "chocolate chip cookie",
+              },
+              {
+                "word": "chocolate biscuit",
+              },
+            ],
+            "include": [
+              {
+                "word": "chocolate",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "mustard",
+            "exclude": [
+              {
+                "word": "mustard seeds",
+              },
+              {
+                "word": "oil",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "leaves",
+              },
+              {
+                "word": "pickled",
+              },
+              {
+                "word": "dandelion",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "greens",
+              },
+              {
+                "word": "rib",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "macademia",
+            "exclude": [
+              {
+                "word": "oil",
+              },
+            ],
+            "include": [
+            ],
+          },
+          {
+            "name": "mushroom",
+            "exclude": [
+              {
+                "word": "mushroom sauce",
+              },
+              {
+                "word": "mushroom ketchup",
+              },
+              {
+                "word": "mushroom gravy",
+              },
+            ],
+            "include": [
+              {
+                "word": "chanterelles",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "milk",
+            "exclude": [
+              {
+                "word": "milk shake",
+              },
+              {
+                "word": "chocolate milk",
+              },
+              {
+                "word": "malted milk",
+              },
+              {
+                "word": "condensed milk",
+              },
+              {
+                "word": "milk ricotta",
+              },
+              {
+                "word": "milk eating chocolate",
+              },
+              {
+                "word": "milk chocolate",
+              },
+              {
+                "word": "whole-milk yoghurt",
+              },
+              {
+                "word": "whole-milk yogurt",
+              },
+              {
+                "word": "whole milk yoghurt",
+              },
+              {
+                "word": "whole milk yogurt",
+              },
+            ],
+            "include": [
+
+            ],
+          },
 
 
 

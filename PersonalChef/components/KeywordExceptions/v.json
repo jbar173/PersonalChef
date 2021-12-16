@@ -7,6 +7,156 @@
     "ingredients": [
 
 
+          {
+              "name": "veggie dip",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "onion dip",
+                  "substitution": false,
+                },
+                {
+                  "word": "chive dip",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "vine leaves",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grape leaves",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape leaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "vine leaf",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "vinegar",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinagrette",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "vanilla extract",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vanilla bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla pod",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla bean paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla powder",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "vanilla pod",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vanilla bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla essence",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla extract",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla bean paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla powder",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "vegetable stock",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "vegetable broth",
+                "substitution": false,
+              },
+              {
+                "word": "veg broth",
+                "substitution": false,
+              },
+              {
+                "word": "veg stock",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable soup base",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable bouillon",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable oxo",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable cube",
+                "substitution": false,
+              },
+            ],
+          },
 
 
 

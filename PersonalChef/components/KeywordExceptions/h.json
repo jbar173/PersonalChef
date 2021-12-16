@@ -1,12 +1,668 @@
 {
 
-    "key" : ["hamburger","hazelnut","havarti","halloumi","honey","hot dog","harissa","hemp milk","houmous","hot curry paste",
+    "key" : ["hazelnut","havarti","halloumi","honey","hot dog","harissa","hemp milk","houmous","hot curry paste","herbs de provence","ham",
     ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "ham",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "prosciutto",
+                "substitution": true,
+              },
+              {
+                "word": "lomo",
+                "substitution": true,
+              },
+              {
+                "word": "speck",
+                "substitution": true,
+              },
+              {
+                "word": "coppa",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "herbs de provence",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "herbes de provence",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "hot curry paste",
+            "exclude": [
+
+            ],
+            "include": [
+              {
+                "word": "hot curry spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "hot spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "extra hot spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "extra hot curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "hot indian curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "phal spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "phal curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "phal paste",
+                "substitution": false,
+              },
+              {
+                "word": "phall spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "phall curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "phall paste",
+                "substitution": false,
+              },
+              {
+                "word": "madras spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "madras curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "madras paste",
+                "substitution": false,
+              },
+              {
+                "word": "pathia spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "pathia curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "pathia paste",
+                "substitution": false,
+              },
+              {
+                "word": "bhuna spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "bhuna curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "bhuna paste",
+                "substitution": false,
+              },
+              {
+                "word": "saag spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "saag curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "saag paste",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi paste",
+                "substitution": false,
+              },
+              {
+                "word": "vindaloo spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "vindaloo curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "vindaloo paste",
+                "substitution": false,
+              },
+              {
+                "word": "hot goan curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "hot curry base",
+                "substitution": false,
+              },
+              {
+                "word": "hot & spicy curry sauce concentrate",
+                "substitution": false,
+              },
+              {
+                "word": "hot & spicy curry sauce (concentrate)",
+                "substitution": false,
+              },
+              {
+                "word": "authentic curry base - hot",
+                "substitution": false,
+              },
+              {
+                "word": "hot authentic curry base",
+                "substitution": false,
+              },
+              {
+                "word": "hot curry spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "hot spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "extra hot spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "extra hot curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "hot indian curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phal spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phal curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phal curry stir-in sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phal cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phal sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phal base",
+                "substitution": false,
+              },
+              {
+                "word": "phall spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phall curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phall curry stir-in sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phall cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phall sauce",
+                "substitution": false,
+              },
+              {
+                "word": "phall base",
+                "substitution": false,
+              },
+              {
+                "word": "madras spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "madras curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "madras curry stir-in sauce",
+                "substitution": false,
+              },
+              {
+                "word": "madras cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "madras sauce",
+                "substitution": false,
+              },
+              {
+                "word": "madras base",
+                "substitution": false,
+              },
+              {
+                "word": "pathia spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "pathia curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "pathia curry stir-in sauce",
+                "substitution": false,
+              },
+              {
+                "word": "pathia cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "pathia sauce",
+                "substitution": false,
+              },
+              {
+                "word": "pathia base",
+                "substitution": false,
+              },
+              {
+                "word": "bhuna spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "bhuna curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "bhuna curry stir-in sauce",
+                "substitution": false,
+              },
+              {
+                "word": "bhuna cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "bhuna sauce",
+                "substitution": false,
+              },
+              {
+                "word": "bhuna base",
+                "substitution": false,
+              },
+              {
+                "word": "saag spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "saag curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "saag curry stir-in sauce",
+                "substitution": false,
+              },
+              {
+                "word": "saag cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "saag sauce",
+                "substitution": false,
+              },
+              {
+                "word": "saag base",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi curry stir-in sauce",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi sauce",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi base",
+                "substitution": false,
+              },
+              {
+                "word": "vindaloo spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "vindaloo curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "vindaloo curry stir-in sauce",
+                "substitution": false,
+              },
+              {
+                "word": "vindaloo cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "cooking sauce vindaloo",
+                "substitution": false,
+              },
+              {
+                "word": "vindaloo sauce",
+                "substitution": false,
+              },
+              {
+                "word": "vindaloo base",
+                "substitution": false,
+              },
+              {
+                "word": "spicy vindaloo",
+                "substitution": false,
+              },
+              {
+                "word": "fiery vindaloo",
+                "substitution": false,
+              },
+              {
+                "word": "goan curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "goan curry stir-in sauce",
+                "substitution": false,
+              },
+              {
+                "word": "goan spicy curry",
+                "substitution": false,
+              },
+              {
+                "word": "goan style curry cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "hot goan curry base",
+                "substitution": false,
+              },
+              {
+                "word": "goan hot curry",
+                "substitution": false,
+              },
+              {
+                "word": "fiery goan curry",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "houmous",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "hummus",
+                "substitution": false,
+              },
+              {
+                "word": "hummous",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "hemp milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "hemp seed milk",
+                "substitution": false,
+              },
+              {
+                "word": "hempmilk",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "harissa",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chili paste",
+                "substitution": true,
+              },
+              {
+                "word":"chile paste",
+                "substitution": true,
+              },
+              {
+                "word":"chile-garlic paste",
+                "substitution": true,
+              },
+              {
+                "word": "sriracha",
+                "substitution": true,
+              },
+              {
+                "word": "sirarcha",
+                "substitution": true,
+              },
+              {
+                "word": "sambal",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "hot dog",
+            "exclude": [
+              {
+                "word": "hot dog bun",
+              },
+              {
+                "word": "hotdog bun",
+              },
+            ],
+            "include": [
+              {
+                "word": "frankfurter",
+                "substitution": false,
+              },
+              {
+                "word": "bologna",
+                "substitution": false,
+              },
+              {
+                "word": "mortadella",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "honey",
+            "exclude": [
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "mustard",
+              },
+              {
+                "word": "honeycrisp",
+              },
+              {
+                "word": "honeydew",
+              },
+              {
+                "word": "honey dew",
+              },
+              {
+                "word": "honey-flavor",
+              },
+              {
+                "word": "honey flavor",
+              },
+              {
+                "word": "honey-flavour",
+              },
+              {
+                "word": "honey flavour",
+              },
+              {
+                "word": "honeycomb",
+              },
+              {
+                "word": "barbeque",
+              },
+              {
+                "word": "barbecue",
+              },
+              {
+                "word": "mandarin",
+              },
+              {
+                "word": "tangerine",
+              },
+              {
+                "word": "apricot",
+              },
+              {
+                "word": "yoghurt",
+              },
+              {
+                "word": "yogurt",
+              },
+            ],
+            "include": [
+
+            ],
+        },
+        {
+            "name": "halloumi",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "haloumi",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+          "name": "havarti",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "gouda",
+              "substitution": true,
+            },
+            {
+              "word": "edam",
+              "substitution": true,
+            },
+            {
+              "word": "gruyere",
+              "substitution": true,
+            },
+            {
+              "word": "colby",
+              "substitution": true,
+            },
+            {
+              "word": "emmental",
+              "substitution": true,
+            },
+            {
+              "word": "emmentaler",
+              "substitution": true,
+            },
+            {
+              "word": "emmenthaler",
+              "substitution": true,
+            },
+            {
+              "word": "cheddar",
+              "substitution": true,
+            },
+            {
+              "word": "pepper jack",
+              "substitution": true,
+            },
+            {
+              "word": "pepper-jack",
+              "substitution": true,
+            },
+            {
+              "word": "muenster",
+              "substitution": true,
+            },
+            {
+              "word": "monterey jack",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "hazelnut",
+          "exclude": [
+            {
+              "word": "oil",
+            },
+          ],
+          "include": [
+
+          ],
+        },
 
 
 

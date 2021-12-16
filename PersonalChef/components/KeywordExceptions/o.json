@@ -1,12 +1,496 @@
 {
 
-    "key" : ["oatmeal","onion","olives","oats","orange","orange juice","onion powder","orange oil","orange liqueur","oregano",
+    "key" : ["oatmeal","onion","olives","oats","orange","orange juice","onion powder","orange oil","orange liqueur","oregano","oil","offal",
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "offal",
+              "exclude": [
+                {
+                  "word": "halibut",
+                },
+                {
+                  "word": "bean",
+                },
+                {
+                  "word": "lettuce",
+                },
+                {
+                  "word": "orange",
+                },
+              ],
+              "include": [
+                {
+                  "word": "liver",
+                  "substitution": false,
+                },
+                {
+                  "word": "gizzard",
+                  "substitution": false,
+                },
+                {
+                  "word": "heart",
+                  "substitution": false,
+                },
+                {
+                  "word": "lung",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheek",
+                  "substitution": false,
+                },
+                {
+                  "word": "pig's ear",
+                  "substitution": false,
+                },
+                {
+                  "word": "pigs ear",
+                  "substitution": false,
+                },
+                {
+                  "word": "pig ear",
+                  "substitution": false,
+                },
+                {
+                  "word": "brain",
+                  "substitution": false,
+                },
+                {
+                  "word": "kidney",
+                  "substitution": false,
+                },
+                {
+                  "word": "tongue",
+                  "substitution": false,
+                },
+                {
+                  "word": "blood",
+                  "substitution": false,
+                },
+                {
+                  "word": "tripe",
+                  "substitution": false,
+                },
+                {
+                  "word": "intestine",
+                  "substitution": false,
+                },
+                {
+                  "word": "stomach",
+                  "substitution": false,
+                },
+                {
+                  "word": "omasum",
+                  "substitution": false,
+                },
+                {
+                  "word": "larb",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "oil",
+              "exclude": [
+                {
+                  "word": "oil-packed",
+                },
+                {
+                  "word": "oil packed",
+                },
+                {
+                  "word": "oil-cured",
+                },
+                {
+                  "word": "oil cured",
+                },
+                {
+                  "word": "essential oil",
+                },
+                {
+                  "word": "orange oil",
+                },
+                {
+                  "word": "tuna in oil",
+                },
+                {
+                  "word": "tuna in olive oil",
+                },
+                {
+                  "word": "tomato in oil",
+                },
+                {
+                  "word": "tomatoes in oil",
+                },
+                {
+                  "word": "not in oil",
+                },
+                {
+                  "word": "anchovies in oil",
+                },
+                {
+                  "word": "pepper in oil",
+                },
+                {
+                  "word": "fillet in oil",
+                },
+                {
+                  "word": "fillets in olive oil",
+                },
+                {
+                  "word": "fillets olive oil",
+                },
+                {
+                  "word": "fillets sunflower oil",
+                },
+                {
+                  "word": "chunks in oil",
+                },
+                {
+                  "word": "chunks in sunflower oil",
+                },
+                {
+                  "word": "steak in sunflower oil",
+                },
+                {
+                  "word": "steak sunflower oil",
+                },
+                {
+                  "word": "steak in oil",
+                },
+                {
+                  "word": "sardines in oil",
+                },
+                {
+                  "word": "sardines in sunflower oil",
+                },
+                {
+                  "word": "sardines olive oil",
+                },
+                {
+                  "word": "sardines sunflower oil",
+                },
+                {
+                  "word": "sardines in soya oil",
+                },
+                {
+                  "word": "sardines in vegetable oil",
+                },
+                {
+                  "word": "sild in sunflower oil",
+                },
+                {
+                  "word": "olives in olive oil",
+                },
+                {
+                  "word": "wedges in parsley & thyme oil",
+                },
+                {
+                  "word": "mackerel in oil",
+                },
+                {
+                  "word": "mackerel in extra virgin olive oil",
+                },
+                {
+                  "word": "kippers in oil",
+                },
+              ],
+              "include": [
+                {
+                  "word": "cooking spray",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable-oil spray",
+                  "substitution": true,
+                },
+                {
+                  "word": "olive oil flavored spray",
+                  "substitution": true,
+                },
+                {
+                  "word": "oil spray",
+                  "substitution": true,
+                },
+                {
+                  "word": "flourless spray",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "oregano",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rigani",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "orange liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "tangerine liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "tangerine liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "triple sec",
+                  "substitution": false,
+                },
+                {
+                  "word": "cointreau",
+                  "substitution": false,
+                },
+                {
+                  "word": "grand marnier rouge",
+                  "substitution": false,
+                },
+                {
+                  "word": "grand marnier cordon rouge",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "orange oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange essence",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange extract",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange flavoring extract",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "onion powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "powdered onion",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried onion",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "orange juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tangerine",
+                  "substitution": true,
+                },
+                {
+                  "word": "satsuma",
+                  "substitution": true,
+                },
+                {
+                  "word": "clementine",
+                  "substitution": true,
+                },
+                {
+                  "word": "mandarin",
+                  "substitution": true,
+                },
+                {
+                  "word": "tangelo",
+                  "substitution": true,
+                },
+                {
+                  "word": "minneola",
+                  "substitution": true,
+                },
+                {
+                  "word": "kumquat",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "orange",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tangerine",
+                  "substitution": true,
+                },
+                {
+                  "word": "satsuma",
+                  "substitution": true,
+                },
+                {
+                  "word": "clementine",
+                  "substitution": true,
+                },
+                {
+                  "word": "mandarin",
+                  "substitution": true,
+                },
+                {
+                  "word": "tangelo",
+                  "substitution": true,
+                },
+                {
+                  "word": "minneola",
+                  "substitution": true,
+                },
+                {
+                  "word": "kumquat",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "oats",
+            "exclude": [
+              {
+                "word": "oat crisps",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "olives",
+            "exclude": [
+              {
+                "word": "olive fruit",
+              },
+              {
+                "word": "tapenade",
+              },
+              {
+                "word": "paste",
+              },
+            ],
+            "include": [
+              {
+                "word": "green olive",
+                "substitution": false,
+              },
+              {
+                "word": "black olive",
+                "substitution": false,
+              },
+              {
+                "word": "kalamata",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "onion",
+            "exclude": [
+              {
+                "word": "jam",
+              },
+              {
+                "word": "preserve",
+              },
+              {
+                "word": "conserve",
+              },
+              {
+                "word": "chutney",
+              },
+              {
+                "word": "caramelised onion",
+              },
+            ],
+            "include": [
+              {
+                "word": "shallot",
+                "substitution": true,
+              },
+              {
+                "word": "eschalot",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "oatmeal",
+            "exclude": [
+              {
+                "word": "oatmeal cookie",
+              },
+              {
+                "word": "oatmeal raisin",
+              },
+            ],
+            "include": [
+              {
+                "word": "porridge oat",
+                "substitution": false,
+              },
+              {
+                "word": "rolled oat",
+                "substitution": false,
+              },
+              {
+                "word": "quick oat",
+                "substitution": false,
+              },
+              {
+                "word": "quick-cooking oat",
+                "substitution": false,
+              },
+            ],
+          },
 
 
 

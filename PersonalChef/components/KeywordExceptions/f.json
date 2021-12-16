@@ -1,12 +1,1117 @@
 {
 
-    "key" : ["fudge","fig","filo pastry","fontina","flour","fruit yoghurt","fruit loaf","fresh coconut","feta","fish sauce","flageolet bean","fruit cordial","fig jam",
+    "key" : ["fudge","fig","filo pastry","fontina","flour","fresh coriander","fruit yoghurt","fruit loaf","fresh coconut","feta","fish sauce","flageolet bean","fruit cordial","fig jam",
+      "fresh ginger","fresh cranberries","fenugreek",
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "fenugreek",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kasuri methi",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh cranberries",
+              "exclude": [
+                {
+                  "word": "dried cranberries",
+                },
+                {
+                  "word": "dried barberries",
+                },
+              ],
+              "include": [
+                {
+                  "word": "cranberries",
+                  "substitution": false,
+                },
+                {
+                  "word": "barberries",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "fresh ginger",
+            "exclude": [
+              {
+                "word": "ale",
+              },
+              {
+                "word": "ginger snaps",
+              },
+              {
+                "word": "gingersnaps",
+              },
+              {
+                "word": "candied",
+              },
+              {
+                "word": "ginger juice",
+              },
+              {
+                "word": "syrup",
+              },
+              {
+                "word": "nectar",
+              },
+              {
+                "word": "gingerbread",
+              },
+              {
+                "word": "brandy",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "liquor",
+              },
+              {
+                "word": "paste",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "pickled",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "beer",
+              },
+              {
+                "word": "preserve",
+              },
+              {
+                "word": "preserved",
+              },
+              {
+                "word": "crystallized",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "kombucha",
+              },
+              {
+                "word": "gold",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "extract",
+              },
+              {
+                "word": "galangal paste",
+              },
+            ],
+            "include": [
+              {
+                "word": "ginger",
+                "substitution": false,
+              },
+              {
+                "word": "gingerroot",
+                "substitution": false,
+              },
+              {
+                "word": "gingeroot",
+                "substitution": false,
+              },
+              {
+                "word": "galangal",
+                "substitution": true,
+              },
+              {
+                "word": "galanga",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+              "name": "fig jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fig",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fruit cordial",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange-tangerine concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "tangerine-orange juice blend",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "juice concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit squash",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "flageolet bean",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cannellini bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "canned white bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "navy bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "great northern bean",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fish sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "nuoc nam",
+                  "substitution": false,
+                },
+                {
+                  "word": "nam pla",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "feta",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fetta",
+                  "substitution": false,
+                },
+                {
+                  "word": "queso blanco",
+                  "substitution": true,
+                },
+                {
+                  "word": "queso fresco",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "fresh coconut",
+            "exclude": [
+              {
+                "word": "oil",
+              },
+              {
+                "word": "vinegar",
+              },
+              {
+                "word": "aminos",
+              },
+              {
+                "word": "yoghurt",
+              },
+              {
+                "word": "yogurt",
+              },
+              {
+                "word": "milk",
+              },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "creamed",
+              },
+              {
+                "word": "flour",
+              },
+              {
+                "word": "sugar",
+              },
+              {
+                "word": "extract",
+              },
+              {
+                "word": "essence",
+              },
+              {
+                "word": "macaroon",
+              },
+              {
+                "word": "dessicated",
+              },
+              {
+                "word": "desicated",
+              },
+              {
+                "word": "shreds",
+              },
+              {
+                "word": "shredded",
+              },
+              {
+                "word": "dehydrated",
+              },
+              {
+                "word": "flaked",
+              },
+              {
+                "word": "flakes",
+              },
+              {
+                "word": "dried",
+              },
+            ],
+            "include": [
+              {
+                "word": "coconut",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+              "name": "fruit loaf",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fruit cake",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruitcake",
+                  "substitution": false,
+                },
+                {
+                  "word": "tea loaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit bread",
+                  "substitution": false,
+                },
+                {
+                  "word": "panettone",
+                  "substitution": false,
+                },
+                {
+                  "word": "soreen",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fruit yoghurt",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fruit flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruity yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruity yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "papaya yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "papaya yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "papaya flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "papaya flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "lemon yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "lemon yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "lemon flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "lemon flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "lemon flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "lemon flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunshine yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunshine yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "berry yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "berry yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "berry flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "berry flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "berry flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "berry flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackberry yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackberry yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackberry flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackberry flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackberry flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackberry flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blueberry yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blueberry yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blueberry flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blueberry flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blueberry flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blueberry flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cranberry yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cranberry yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cranberry flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cranberry flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cranberry flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cranberry flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raisin yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raisin yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raisin flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raisin flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raisin flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "raisin flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackcurrant yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackcurrant yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackcurrant flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackcurrant flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackcurrant flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackcurrant flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "prune yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "prune yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "prune flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "prune flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "prune flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "prune flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavored yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange-mango yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange-mango yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange-mango flavoured yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange-mango flavoured yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange-mango flavored yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange-mango flavored yogurt",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "flour",
+              "exclude": [
+                {
+                  "word": "flour tortilla",
+                },
+                {
+                  "word": "flour torilla",
+                },
+                {
+                  "word": "flour or corn tortilla",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+            "name": "fontina",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "gouda",
+                "substitution": true,
+              },
+              {
+                "word": "emmental",
+                "substitution": true,
+              },
+              {
+                "word": "emmentaler",
+                "substitution": true,
+              },
+              {
+                "word": "emmenthaler",
+                "substitution": true,
+              },
+              {
+                "word": "gruyere",
+                "substitution": true,
+              },
+              {
+                "word": "provolone",
+                "substitution": true,
+              },
+              {
+                "word": "taleggio",
+                "substitution": true,
+              },
+              {
+                "word": "camembert",
+                "substitution": true,
+              },
+              {
+                "word": "brie",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "filo pastry",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "phyllo pastry",
+                "substitution": false,
+              },
+              {
+                "word": "phyllo",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "fig",
+            "exclude": [
+              {
+                "word": "fig jam",
+              },
+              {
+                "word": "preserve",
+              },
+              {
+                "word": "conserve",
+              },
+              {
+                "word": "fig chutney",
+              },
+              {
+                "word": "fig roll",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "fudge",
+            "exclude": [
+              {
+                "word": "fudge brownie",
+              },
+              {
+                "word": "fudge cookie",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "fresh coriander",
+            "exclude": [
+              {
+                "word": "ground coriander",
+              },
+              {
+                "word": "ground corriander",
+              },
+              {
+                "word": "coriander seeds",
+              },
+              {
+                "word": "corriander seeds",
+              },
+              {
+                "word": "coriander powder",
+              },
+              {
+                "word": "corriander powder",
+              },
+              {
+                "word": "powdered coriander",
+              },
+              {
+                "word": "powdered corriander",
+              },
+            ],
+            "include": [
+              {
+                "word": "coriander",
+                "substitution": false,
+              },
+              {
+                "word": "corriander",
+                "substitution": false,
+              },
+              {
+                "word": "cilantro",
+                "substitution": false,
+              },
+            ],
+          },
 
 
 

@@ -8,6 +8,119 @@
     "ingredients": [
 
 
+          {
+              "name": "endive",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "escarole",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "elderflower liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "elderflower flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "elderflower flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "elderflower flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "elderflower flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "elderflower liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "st germain",
+                  "substitution": false,
+                },
+                {
+                  "word": "st-germain",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+            "name": "edam",
+            "exclude": [
+              {
+                "word": "edamame",
+              },
+            ],
+            "include": [
+            ],
+          },
+          {
+            "name": "egg",
+            "exclude": [
+              {
+                "word": "whole egg mayonnaise",
+              },
+              {
+                "word": "whole-egg mayonnaise",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "emmental",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fontina",
+                "substitution": true,
+              },
+              {
+                "word": "gouda",
+                "substitution": true,
+              },
+              {
+                "word": "emmentaler",
+                "substitution": true,
+              },
+              {
+                "word": "emmenthaler",
+                "substitution": true,
+              },
+              {
+                "word": "gruyere",
+                "substitution": true,
+              },
+              {
+                "word": "provolone",
+                "substitution": true,
+              },
+              {
+                "word": "swiss cheese",
+                "substitution": true,
+              },
+              {
+                "word": "havarti",
+                "substitution": true,
+              },
+              {
+                "word": "jarlsberg",
+                "substitution": true,
+              },
+            ],
+          },
 
 
 

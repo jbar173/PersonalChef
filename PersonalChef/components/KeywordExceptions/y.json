@@ -1,12 +1,271 @@
 {
 
-    "key" : ["yoghurt","yellow curry paste",
+    "key" : ["yellow curry paste","yoghurt",
     ],
 
 
     "ingredients": [
 
-
+          {
+              "name": "yellow curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "yellow curry spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai yellow paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai yellow curry",
+                  "substitution": false,
+                },
+                {
+                  "word": "yellow thai curry",
+                  "substitution": false,
+                },
+                {
+                  "word": "karee curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "yellow curry stir-fry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai style curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai massaman curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "green curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "green curry spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai green paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai green curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "green thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "green curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "red curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "red curry spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai red paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai red curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "red thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "red curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang curry stir-fry sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "yoghurt",
+              "exclude": [
+                {
+                  "word": "flavoured yoghurt",
+                },
+                {
+                  "word": "flavoured yogurt",
+                },
+                {
+                  "word": "flavored yoghurt",
+                },
+                {
+                  "word": "flavored yogurt",
+                },
+                {
+                  "word": "fruit",
+                },
+                {
+                  "word": "fruity",
+                },
+                {
+                  "word": "pear",
+                },
+                {
+                  "word": "peach",
+                },
+                {
+                  "word": "papaya",
+                },
+                {
+                  "word": "apricot",
+                },
+                {
+                  "word": "mango",
+                },
+                {
+                  "word": "apple",
+                },
+                {
+                  "word": "passion",
+                },
+                {
+                  "word": "tropical",
+                },
+                {
+                  "word": "passion fruit",
+                },
+                {
+                  "word": "passionfruit",
+                },
+                {
+                  "word": "lemon",
+                },
+                {
+                  "word": "sunshine",
+                },
+                {
+                  "word": "berry",
+                },
+                {
+                  "word": "cherry",
+                },
+                {
+                  "word": "raspberry",
+                },
+                {
+                  "word": "strawberry",
+                },
+                {
+                  "word": "blackberry",
+                },
+                {
+                  "word": "blueberry",
+                },
+                {
+                  "word": "cranberry",
+                },
+                {
+                  "word": "rhubarb",
+                },
+                {
+                  "word": "raisin",
+                },
+                {
+                  "word": "blackcurrant",
+                },
+                {
+                  "word": "prune",
+                },
+                {
+                  "word": "ginger",
+                },
+                {
+                  "word": "toffee",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "banana",
+                },
+                {
+                  "word": "caramel",
+                },
+                {
+                  "word": "coconut",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "orange-mango",
+                },
+              ],
+              "include": [
+                {
+                  "word": "labneh",
+                  "substitution": true,
+                },
+                {
+                  "word": "curd",
+                  "substitution": true,
+                },
+                {
+                  "word": "yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "quark",
+                  "substitution": true,
+                },
+              ],
+          },
 
 
 

@@ -1,7 +1,7 @@
 {
 
-    "key" : ["toffee","turnip","tomato paste",
-      "tinned tomatoes","tomato pasta sauce","taleggio","tangerine","turkey","turkey stock","turkey mince","tapenade","tandoori spice mix","tofu","turmeric","tacos","taco seasoning",
+    "key" : ["toffee","turnip","tomato paste","tinned tomatoes","tomato pasta sauce","taleggio","tangerine","turkey","turkey stock","turkey mince","tapenade",
+      "tandoori spice mix","tofu","turmeric","tacos","taco seasoning","tomato","tarragon"
 
     ],
 
@@ -9,6 +9,468 @@
     "ingredients": [
 
 
+          {
+              "name": "tarragon",
+              "exclude": [
+                {
+                  "word": "vinegar",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+            "name": "tomato",
+            "exclude": [
+              {
+                "word": "tomato sauce",
+              },
+              {
+                "word": "tomato ketchup",
+              },
+              {
+                "word": "tomato-based",
+              },
+              {
+                "word": "tomato based",
+              },
+              {
+                "word": "tomato-lentil",
+              },
+              {
+                "word": "tomato lentil",
+              },
+              {
+                "word": "chutney",
+              },
+              {
+                "word": "puree",
+              },
+              {
+                "word": "paste",
+              },
+              {
+                "word": "soup",
+              },
+              {
+                "word": "pesto",
+              },
+              {
+                "word": "clam",
+              },
+              {
+                "word": "-clam",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "feta",
+              },
+            ],
+            "include": [
+              {
+                "word": "tomatoes",
+                "substitution": false,
+              },
+              {
+                "word": "tinned tomatoes",
+                "substitution": true,
+              },
+              {
+                "word": "tinned tomato",
+                "substitution": true,
+              },
+              {
+                "word": "tin tomatoes",
+                "substitution": true,
+              },
+              {
+                "word": "tin tomato",
+                "substitution": true,
+              },
+              {
+                "word": "canned tomatoes",
+                "substitution": true,
+              },
+              {
+                "word": "canned tomato",
+                "substitution": true,
+              },
+              {
+                "word": "can tomatoes",
+                "substitution": true,
+              },
+              {
+                "word": "can tomato",
+                "substitution": true,
+              },
+              {
+                "word": "tomato juice",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+              "name": "taco seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "taco mix",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tacos",
+              "exclude": [
+                {
+                  "word": "seasoning",
+                },
+              ],
+              "include": [
+                {
+                  "word": "taco",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "turmeric",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tumeric",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tofu",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "bean curd",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tandoori spice mix",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tandoori spice blend",
+                  "substitution": false,
+                },
+                {
+                  "word": "tandoori masala",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+            "name": "tapenade",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "olive paste",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+              "name": "turkey mince",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "turkey ground",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground turkey",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced turkey",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince turkey",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "turkey stock",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "turkey broth",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "turkey",
+              "exclude": [
+                {
+                  "word": "turkey stock",
+                },
+                {
+                  "word": "ground turkey",
+                },
+                {
+                  "word": "minced turkey",
+                },
+                {
+                  "word": "turkey mince",
+                },
+                {
+                  "word": "turkey ground",
+                },
+                {
+                  "word": "sausage",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "tangerine",
+              "exclude": [
+                {
+                  "word": "sparkling water",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "liquor",
+                },
+                {
+                  "word": "mixer",
+                },
+                {
+                  "word": "petals",
+                },
+                {
+                  "word": "balsamic",
+                },
+                {
+                  "word": "vinegar",
+                },
+                {
+                  "word": "tomato",
+                },
+                {
+                  "word": "tomatoes",
+                },
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "dried",
+                },
+                {
+                  "word": "hatch",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+            "name": "taleggio",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "brie",
+                "substitution": true,
+              },
+              {
+                "word": "fontina",
+                "substitution": true,
+              },
+              {
+                "word": "cheddar",
+                "substitution": true,
+              },
+              {
+                "word": "havarti",
+                "substitution": true,
+              },
+              {
+                "word": "manchego",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+              "name": "tomato pasta sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fire-roasted tomatoes",
+                  "substitution": true,
+                },
+                {
+                  "word": "tomato alfredo marinara",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tomato-based sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato-basil pasta sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato-basil sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "passata",
+                  "substitution": true,
+                },
+                {
+                  "word": "marinara",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tinned tomatoes",
+              "exclude": [
+                {
+                  "word": "soup",
+                },
+              ],
+              "include": [
+                {
+                  "word": "can tomatoes",
+                  "substitution": false,
+                },
+                {
+                  "word": "canned tomatoes",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomatoes can",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomatoes canned",
+                  "substitution": false,
+                },
+                {
+                  "word": "tin tomatoes",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomatoes in juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum tomatoes",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum tomato",
+                  "substitution": false,
+                },
+                {
+                  "word": "canned diced tomatoes",
+                  "substitution": false,
+                },
+                {
+                  "word": "chopped tomatoes",
+                  "substitution": false,
+                },
+                {
+                  "word": "can cherry tomato",
+                  "substitution": false,
+                },
+                {
+                  "word": "can cherry tomatoes",
+                  "substitution": false,
+                },
+                {
+                  "word": "passata",
+                  "substitution": true,
+                },
+                {
+                  "word": "mexican-style tomatoes",
+                  "substitution": true,
+                },
+                {
+                  "word": "mexican style tomatoes",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tomato paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tomato puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato-garlic paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato garlic paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pizza sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "turnip",
+            "exclude": [
+              {
+                "word": "turnip greens",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+            "name": "toffee",
+            "exclude": [
+              {
+                "word": "toffee apple",
+              },
+            ],
+            "include": [
+
+            ],
+          },
 
 
 

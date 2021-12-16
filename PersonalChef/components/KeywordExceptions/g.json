@@ -1,7 +1,7 @@
 {
 
-    "key" : ["garlic","ginger","grape",
-      "grapefruit","gouda","gruyere","guacamole","goat's cheese","garlic powder","ground ginger","green bean","green cardamom","gammon","grape liqueur","grapefruit liqueur","ground cumin","ginger liqueur","gelatin","green curry paste","cabbage",
+    "key" : ["garlic","grape","grapefruit","gouda","gruyere","guacamole","goat's cheese","garlic powder","ground ginger","green bean","green cardamom","gammon","grape liqueur",
+      "grapefruit liqueur","ground cumin","gelatin","ginger liqueur","green curry paste",
 
     ],
 
@@ -9,6 +9,618 @@
     "ingredients": [
 
 
+
+          {
+              "name": "green curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "green curry spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai green paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai green curry",
+                  "substitution": false,
+                },
+                {
+                  "word": "green thai curry",
+                  "substitution": false,
+                },
+                {
+                  "word": "green curry stir-fry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai style curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "red curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "red curry spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai red paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai red curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "red thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "red curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai panang curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai massaman curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow curry spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai yellow paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai yellow curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "karee curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow curry stir-fry sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "gelatin",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gelatine",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "ginger liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ginger flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger brandy",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "ground cumin",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cumin",
+                  "substitution": false,
+                },
+                {
+                  "word": "-cumin",
+                  "substitution": false,
+                },
+                {
+                  "word": "cumin-",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "grapefruit liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grapefruit flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "grapefruit flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "grapefruit flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "grapefruit flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "grapefruit liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de pamplemousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "liqueur de pamplemousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "pampelle l apero aperitif",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "grape liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grape flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape liquor",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "gammon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "salt pork",
+                  "substitution": false,
+                },
+                {
+                  "word": "salted pork",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "green cardamom",
+              "exclude": [
+                {
+                  "word": "black cardamon",
+                },
+                {
+                  "word": "black cardamom",
+                },
+              ],
+              "include": [
+                {
+                  "word": "cardamon",
+                  "substitution": false,
+                },
+                {
+                  "word": "cardamom",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "green bean",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "wax bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "snap bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "haricot vert",
+                  "substitution": false,
+                },
+                {
+                  "word": "haricots vert",
+                  "substitution": false,
+                },
+                {
+                  "word": "snake bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "runner bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "french bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "yardlong bean",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "ground ginger",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "powdered ginger",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger powder",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried ginger",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger granules",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "garlic powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "powdered garlic",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground garlic",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried garlic",
+                  "substitution": false,
+                },
+                {
+                  "word": "garlic granules",
+                  "substitution": false,
+                },
+                {
+                  "word": "garlic",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "goat's cheese",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "goat cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "goats cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "goats' cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "chevre",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomme of goat",
+                  "substitution": false,
+                },
+                {
+                  "word": "goat tomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "goat chese",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomme de chevre",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "guacamole",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "avocado",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "gruyere",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fontina",
+                "substitution": true,
+              },
+              {
+                "word": "emmental",
+                "substitution": true,
+              },
+              {
+                "word": "emmentaler",
+                "substitution": true,
+              },
+              {
+                "word": "emmenthaler",
+                "substitution": true,
+              },
+              {
+                "word": "gouda",
+                "substitution": true,
+              },
+              {
+                "word": "provolone",
+                "substitution": true,
+              },
+              {
+                "word": "swiss cheese",
+                "substitution": true,
+              },
+              {
+                "word": "jarlsberg",
+                "substitution": true,
+              },
+              {
+                "word": "comte",
+                "substitution": true,
+              },
+              {
+                "word": "havarti",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "gouda",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fontina",
+                "substitution": true,
+              },
+              {
+                "word": "emmental",
+                "substitution": true,
+              },
+              {
+                "word": "emmentaler",
+                "substitution": true,
+              },
+              {
+                "word": "emmenthaler",
+                "substitution": true,
+              },
+              {
+                "word": "gruyere",
+                "substitution": true,
+              },
+              {
+                "word": "provolone",
+                "substitution": true,
+              },
+              {
+                "word": "swiss cheese",
+                "substitution": true,
+              },
+              {
+                "word": "havarti",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "grapefruit",
+            "exclude": [
+              {
+                "word": "grapefruit juice",
+              },
+              {
+                "word": "grapefruit drink",
+              },
+            ],
+            "include": [
+              {
+                "word": "pomelo",
+                "substitution": true,
+              },
+              {
+                "word": "pumelo",
+                "substitution": true,
+              },
+              {
+                "word": "pommelo",
+                "substitution": true,
+              },
+              {
+                "word": "shaddock",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "grapes",
+            "exclude": [
+              {
+                "word": "juice",
+              },
+              {
+                "word": "jam",
+              },
+              {
+                "word": "preserve",
+              },
+              {
+                "word": "conserve",
+              },
+              {
+                "word": "drink",
+              },
+              {
+                "word": "tomatoes",
+              },
+              {
+                "word": "tomato",
+              },
+              {
+                "word": "grape leaves",
+              },
+              {
+                "word": "grape leaf",
+              },
+              {
+                "word": "seed",
+              },
+              {
+                "word": "oil",
+              },
+            ],
+            "include": [
+              {
+                "word": "grape",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "garlic",
+            "exclude": [
+              {
+                "word": "garlic bread",
+              },
+              {
+                "word": "garlic powder",
+              },
+              {
+                "word": "garlic salt",
+              },
+              {
+                "word": "powdered garlic",
+              },
+              {
+                "word": "dried garlic",
+              }
+            ],
+            "include": [
+
+            ],
+          },
 
 
 

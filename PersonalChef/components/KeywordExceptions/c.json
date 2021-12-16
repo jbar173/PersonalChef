@@ -1,9 +1,9 @@
 {
 
-    "key" : ["cream","chocolate","coffee","candlenut","cashew nut","chestnuts","cabbage","chocolate custard","custard","caramel","chili pepper","coconut milk","cider","courgette","coriander","cashew nuts",
+    "key" : ["cream","chocolate","coffee","candlenut","cashew nut","chestnuts","cabbage","chocolate custard","custard","caramel","chili pepper","coconut milk","cider","courgette","cashew nuts",
       "chicken stock","cheddar","cheese slice","camembert","comte","cottage cheese","cream cheese","creme fraiche","cachaca","champagne","cava","candied orange","chili flakes","chili paste","coconut liqueur",
       "cherry liqueur","cinnamon","chickpeas","cracker","cornstarch","cornmeal","cured sausage","chili sauce","chili powder","chinese five spice","chutney","chicory","chayote","cannellini bean","collard greens",
-      "couscous","cocoa powder","cassava flour","chard",
+      "couscous","cocoa powder","cassava flour","chard","chicken",
 
     ],
 
@@ -11,318 +11,1757 @@
     "ingredients": [
 
 
-      {
-        "name": "cider",
-        "exclude": [
-          {
-            "word": "vinegar",
-          },
-        ],
-        "include": [
-        ],
-      },
-      {
-        "name": "coconut milk",
-        "exclude": [
-          {
-            "word": "drink",
-          },
-          {
-            "word": "water",
-          },
-        ],
-        "include": [
-          {
-            "word": "coconut cream",
-            "substitution": false,
-          },
-          {
-            "word": "cream of coconut",
-            "substitution": false,
-          },
-          {
-            "word": "coco lopez",
-            "substitution": false,
-          },
-          {
-            "word": "coconut uht",
-            "substitution": false,
-          },
-          {
-            "word": "creamed coconut",
-            "substitution": false,
-          },
-          {
-            "word": "soy milk",
-            "substitution": true,
-          },
-          {
-            "word": "soymilk",
-            "substitution": true,
-          },
-          {
-            "word": "almond milk",
-            "substitution": true,
-          },
-          {
-            "word": "oat milk",
-            "substitution": true,
-          },
-          {
-            "word": "rice milk",
-            "substitution": true,
-          },
-          {
-            "word": "milk",
-            "substitution": true,
-          },
-          {
-            "word": "coconut yoghurt",
-            "substitution": true,
-          },
-          {
-            "word": "coconut yogurt",
-            "substitution": true,
-          },
-        ],
-      },
-      {
-        "name": "chili pepper",
-        "exclude": [
-          {
-            "word": "chili chutney",
-          },
-          {
-            "word": "chilli chutney",
-          },
-          {
-            "word": "chile chutney",
-          },
-        ],
-        "include": [
-          {
-            "word": "chili",
-            "substitution": false,
-          },
-          {
-            "word": "chilli",
-            "substitution": false,
-          },
-          {
-            "word": "chillies",
-            "substitution": false,
-          },
-          {
-            "word": "chile",
-            "substitution": false,
-          },
-          {
-            "word": "chilli pepper",
-            "substitution": false,
-          },
-          {
-            "word": "ghost pepper",
-            "substitution": false,
-          },
-          {
-            "word": "hot pepper",
-            "substitution": false,
-          },
-          {
-            "word": "cherry pepper",
-            "substitution": false,
-          },
-          {
-            "word": "piment d'espelette",
-            "substitution": false,
-          },
-          {
-            "word": "jalapeno",
-            "substitution": false,
-          },
-          {
-            "word": "padron",
-            "substitution": false,
-          },
-          {
-            "word": "habanero",
-            "substitution": false,
-          },
-          {
-            "word": "pepperoncini",
-            "substitution": false,
-          },
-          {
-            "word": "peperoncino",
-            "substitution": false,
-          },
-          {
-            "word": "scotch bonnet",
-            "substitution": false,
-          },
-          {
-            "word": "piment d'espelette",
-            "substitution": true,
-          },
-        ],
-      },
-      {
-        "name": "caramel",
-        "exclude": [
-          {
-            "word": "icecream",
-          },
-          {
-            "word": "ice cream",
-          },
-          {
-            "word": "yoghurt",
-          },
-          {
-            "word": "milk",
-          },
-          {
-            "word": "chocolate",
-          },
-          {
-            "word": "shortbread",
-          },
-          {
-            "word": "slice",
-          },
-          {
-            "word": "cookie",
-          },
-          {
-            "word": "biscuit",
-          },
-          {
-            "word": "wafer",
-          },
-          {
-            "word": "cake",
-          },
-          {
-            "word": "cheesecake",
-          },
-          {
-            "word": "bar",
-          },
-          {
-            "word": "creme",
-          },
-          {
-            "word": "cupcake",
-          },
-          {
-            "word": "pudding",
-          },
-          {
-            "word": "tart",
-          },
-          {
-            "word": "flavour",
-          },
-          {
-            "word": "flavor",
-          },
-          {
-            "word": "essence",
-          },
-          {
-            "word": "drop",
-          },
-          {
-            "word": "extract",
-          },
-        ],
-        "include": [
-          {
-            "word": "toffee",
-            "substitution": true,
-          },
-        ],
-      },
-      {
-        "name": "chocolate custard",
-        "exclude": [
-          {
-            "word": "custard cream",
-          },
-          {
-            "word": "biscuit",
-          },
-          {
-            "word": "tart",
-          },
-          {
-            "word": "slice",
-          },
-          {
-            "word": "pie",
-          },
-          {
-            "word": "cookie",
-          },
-        ],
-        "include": [
-
-        ],
-      },
-      {
-        "name": "custard",
-        "exclude": [
-          {
-            "word": "custard cream",
-          },
-          {
-            "word": "biscuit",
-          },
-          {
-            "word": "tart",
-          },
-          {
-            "word": "slice",
-          },
-          {
-            "word": "pie",
-          },
-          {
-            "word": "cookie",
-          },
-        ],
-        "include": [
-
-        ],
-      },
-      {
-          "name": "cabbage",
+        {
+          "name": "chicken",
           "exclude": [
             {
-              "word": "sour",
+              "word": "chicken broth",
             },
             {
-              "word": "kimchi",
+              "word": "chicken stock",
             },
             {
-              "word": "pickle",
+              "word": "chicken bone broth",
+            },
+            {
+              "word": "chicken soup base",
+            },
+            {
+              "word": "chicken bouillon",
+            },
+            {
+              "word": "chicken oxo",
+            },
+            {
+              "word": "chicken cube",
             },
           ],
           "include": [
             {
-              "word": "bok choy",
-              "substitution": true,
-            },
-            {
-              "word": "pak choy",
-              "substitution": true,
-            },
-            {
-              "word": "pak choi",
+              "word": "poussin",
               "substitution": true,
             },
           ],
-      },
+        },
+        {
+            "name": "chard",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "silverbeet",
+                "substitution": false,
+              },
+              {
+                "word": "seakale beet",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cassava flour",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "arrowroot",
+                "substitution": true,
+              },
+              {
+                "word": "tapioca flour",
+                "substitution": true,
+              },
+              {
+                "word": "almond flour",
+                "substitution": true,
+              },
+              {
+                "word": "coconut flour",
+                "substitution": true,
+              },
+              {
+                "word": "chickpea flour",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cocoa powder",
+            "exclude": [
+              {
+                "word": "cocoa bean",
+              },
+              {
+                "word": "dark chocolate",
+              },
+            ],
+            "include": [
+              {
+                "word": "cocoa",
+                "substitution": false,
+              },
+              {
+                "word": "cacao powder",
+                "substitution": false,
+              },
+              {
+                "word": "carob flour",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "couscous",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cous cous",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "collard greens",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "collard",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cannellini bean",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "flageolet bean",
+                "substitution": true,
+              },
+              {
+                "word": "canned white bean",
+                "substitution": true,
+              },
+              {
+                "word": "white kidney bean",
+                "substitution": true,
+              },
+              {
+                "word": "navy bean",
+                "substitution": true,
+              },
+              {
+                "word": "great northern bean",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chayote",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "mirliton",
+                "substitution": false,
+              },
+              {
+                "word": "pimpinela",
+                "substitution": false,
+              },
+              {
+                "word": "choko",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "chicory",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "radicchio",
+                "substitution": false,
+              },
+              {
+                "word": "trevisano",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "chutney",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sweet chilli jam",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chinese five spice",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chinese 5 spice",
+                "substitution": false,
+              },
+              {
+                "word": "chinese spice",
+                "substitution": false,
+              },
+              {
+                "word": "five spice",
+                "substitution": false,
+              },
+              {
+                "word": "five-spice",
+                "substitution": false,
+              },
+              {
+                "word": "5 spice",
+                "substitution": false,
+              },
+              {
+                "word": "oriental seasoning",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+          "name": "chili powder",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "chile powder",
+              "substitution": false,
+            },
+            {
+              "word": "ground chili",
+              "substitution": false,
+            },
+            {
+              "word": "ground chile",
+              "substitution": false,
+            },
+            {
+              "word": "chili peppers powder",
+              "substitution": false,
+            },
+            {
+              "word": "chili pepper powder",
+              "substitution": false,
+            },
+            {
+              "word": "chile peppers powder",
+              "substitution": false,
+            },
+            {
+              "word": "chile pepper powder",
+              "substitution": false,
+            },
+            {
+              "word": "chipotle powder",
+              "substitution": false,
+            },
+            {
+              "word": "powdered chipotle",
+              "substitution": false,
+            },
+            {
+              "word": "ground chipotle",
+              "substitution": false,
+            },
+            {
+              "word": "chipotle pepper powder",
+              "substitution": false,
+            },
+            {
+              "word": "chipotle peppers powder",
+              "substitution": false,
+            },
+            {
+              "word": "chipotle seasoning",
+              "substitution": true,
+            },
+            {
+              "word": "chipotle flavoured seasoning",
+              "substitution": true,
+            },
+            {
+              "word": "chipotle-flavoured seasoning",
+              "substitution": true,
+            },
+            {
+              "word": "chipotle flavored seasoning",
+              "substitution": true,
+            },
+            {
+              "word": "chipotle-flavored seasoning",
+              "substitution": true,
+            },
+            {
+              "word": "chili paste",
+              "substitution": true,
+            },
+            {
+              "word": "chilli paste",
+              "substitution": true,
+            },
+            {
+              "word": "chile paste",
+              "substitution": true,
+            },
+            {
+              "word": "chili",
+              "substitution": true,
+            },
+            {
+              "word": "chilli",
+              "substitution": true,
+            },
+            {
+              "word": "chillies",
+              "substitution": true,
+            },
+            {
+              "word": "chile",
+              "substitution": true,
+            },
+            {
+              "word": "scotch bonnet",
+              "substitution": true,
+            },
+            {
+              "word": "piment d'espelette",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+            "name": "chili sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chilli sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chile sauce",
+                "substitution": false,
+              },
+              {
+                "word": "sriracha",
+                "substitution": false,
+              },
+              {
+                "word": "hot sauce",
+                "substitution": false,
+              },
+              {
+                "word": "redhot sauce",
+                "substitution": false,
+              },
+              {
+                "word": "texas pete's",
+                "substitution": false,
+              },
+              {
+                "word": "texas pete",
+                "substitution": false,
+              },
+              {
+                "word": "frank's red",
+                "substitution": false,
+              },
+              {
+                "word": "franks red",
+                "substitution": false,
+              },
+              {
+                "word": "chilli jam",
+                "substitution": false,
+              },
+              {
+                "word": "pepper sauce",
+                "substitution": false,
+              },
+              {
+                "word": "sauce valentina",
+                "substitution": false,
+              },
+              {
+                "word": "extra hot sauce",
+                "substitution": false,
+              },
+              {
+                "word": "scotch bonnet sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chili-garlic sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chili garlic sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chile-garlic sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chile garlic sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chilli-garlic sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chilli garlic sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chili jam",
+                "substitution": true,
+              },
+              {
+                "word": "enchilada sauce",
+                "substitution": true,
+              },
+              {
+                "word": "sambal",
+                "substitution": true,
+              },
+              {
+                "word": "sirarcha",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cured sausage",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chorizo",
+                "substitution": false,
+              },
+              {
+                "word": "coppa",
+                "substitution": false,
+              },
+              {
+                "word": "salami",
+                "substitution": false,
+              },
+              {
+                "word": "salumi",
+                "substitution": false,
+              },
+              {
+                "word": "charcuterie",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cornmeal",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "corn meal",
+                "substitution": false,
+              },
+              {
+                "word": "masa harina",
+                "substitution": true,
+              },
+              {
+                "word": "grits",
+                "substitution": true,
+              },
+              {
+                "word": "stone-ground grits",
+                "substitution": true,
+              },
+              {
+                "word": "stone ground grits",
+                "substitution": true,
+              },
+              {
+                "word": "polenta",
+                "substitution": true,
+              },
+              {
+                "word": "semolina",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cornstarch",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cornflour",
+                "substitution": true,
+              },
+              {
+                "word": "arrowroot",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cracker",
+            "exclude": [
+              {
+                "word": "rice cracker",
+              },
+            ],
+            "include": [
+            ],
+        },
+        {
+            "name": "chickpeas",
+            "exclude": [
+              {
+                "word": "flour",
+              },
+            ],
+            "include": [
+              {
+                "word": "garbanzo",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cinnamon",
+            "exclude": [
+              {
+                "word": "cinnamon-spiced",
+              },
+              {
+                "word": "elephant ear",
+              },
+            ],
+            "include": [
+            ],
+        },
+        {
+            "name": "cherry liqueur",
+            "exclude": [
+              {
+                "word": "cherries",
+              },
+              {
+                "word": "syrup",
+              },
+            ],
+            "include": [
+              {
+                "word": "kirsch",
+                "substitution": false,
+              },
+              {
+                "word": "heering",
+                "substitution": false,
+              },
+              {
+                "word": "maraschino",
+                "substitution": false,
+              },
+              {
+                "word": "creme de cassis",
+                "substitution": false,
+              },
+              {
+                "word": "cherry liquor",
+                "substitution": false,
+              },
+              {
+                "word": "cherry brandy",
+                "substitution": false,
+              },
+              {
+                "word": "cherry flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "cherry flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "cherry flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "cherry flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "cherry wine",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "coconut liqueur",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coconut flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "coconut flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "coconut flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "coconut flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "coconut liquor",
+                "substitution": false,
+              },
+              {
+                "word": "malibu",
+                "substitution": false,
+              },
+              {
+                "word": "kalani coconut",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+          "name": "chili paste",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "chilli paste",
+              "substitution": false,
+            },
+            {
+              "word": "chile paste",
+              "substitution": false,
+            },
+            {
+              "word": "chipotle paste",
+              "substitution": false,
+            },
+            {
+              "word": "gochujang",
+              "substitution": false,
+            },
+            {
+              "word": "sambal",
+              "substitution": false,
+            },
+            {
+              "word": "chili-garlic paste",
+              "substitution": false,
+            },
+            {
+              "word": "pepper paste",
+              "substitution": false,
+            },
+            {
+              "word": "harissa",
+              "substitution": false,
+            },
+            {
+              "word": "chipotle puree",
+              "substitution": false,
+            },
+            {
+              "word": "biber salçası",
+              "substitution": false,
+            },
+            {
+              "word": "chipotle marinade",
+              "substitution": true,
+            },
+            {
+              "word": "chipotle sauce",
+              "substitution": true,
+            },
+            {
+              "word": "chipotle hot sauce",
+              "substitution": true,
+            },
+            {
+              "word": "piment d'espelette",
+              "substitution": true,
+            },
+            {
+              "word": "chili",
+              "substitution": true,
+            },
+            {
+              "word": "chilli",
+              "substitution": true,
+            },
+            {
+              "word": "chillies",
+              "substitution": true,
+            },
+            {
+              "word": "chile",
+              "substitution": true,
+            },
+            {
+              "word": "scotch bonnet",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "chili flakes",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "chilli flakes",
+              "substitution": false,
+            },
+            {
+              "word": "chile flakes",
+              "substitution": false,
+            },
+            {
+              "word": "urfa pepper",
+              "substitution": false,
+            },
+            {
+              "word": "urfa biber",
+              "substitution": false,
+            },
+            {
+              "word": "chilly flakes",
+              "substitution": false,
+            },
+            {
+              "word": "crushed chilli",
+              "substitution": false,
+            },
+            {
+              "word": "crushed chili",
+              "substitution": false,
+            },
+            {
+              "word": "crushed chillies",
+              "substitution": false,
+            },
+            {
+              "word": "scotch bonnet",
+              "substitution": true,
+            },
+            {
+              "word": "piment d'espelette",
+              "substitution": true,
+            },
+            {
+              "word": "chili",
+              "substitution": true,
+            },
+            {
+              "word": "chilli",
+              "substitution": true,
+            },
+            {
+              "word": "chillies",
+              "substitution": true,
+            },
+            {
+              "word": "chile",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+            "name": "candied orange",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "orange candied",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cava",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "bubbly",
+                "substitution": false,
+              },
+              {
+                "word": "sparkling wine",
+                "substitution": false,
+              },
+              {
+                "word": "sparkling white wine",
+                "substitution": false,
+              },
+              {
+                "word": "spumante",
+                "substitution": false,
+              },
+              {
+                "word": "asti",
+                "substitution": true,
+              },
+              {
+                "word": "sparkling italian wine",
+                "substitution": true,
+              },
+              {
+                "word": "prosecco",
+                "substitution": true,
+              },
+              {
+                "word": "champagne",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "champagne",
+            "exclude": [
+              {
+                "word": "vinegar",
+              },
+              {
+                "word": "mango",
+              },
+              {
+                "word": "yeast",
+              },
+            ],
+            "include": [
+              {
+                "word": "bubbly",
+                "substitution": false,
+              },
+              {
+                "word": "sparkling wine",
+                "substitution": false,
+              },
+              {
+                "word": "sparkling white wine",
+                "substitution": false,
+              },
+              {
+                "word": "spumante",
+                "substitution": false,
+              },
+              {
+                "word": "sparkling italian wine",
+                "substitution": true,
+              },
+              {
+                "word": "asti",
+                "substitution": true,
+              },
+              {
+                "word": "prosecco",
+                "substitution": true,
+              },
+              {
+                "word": "cava",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cachaca",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caninha",
+                "substitution": false,
+              },
+              {
+                "word": "pinga",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "creme fraiche",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "creme-fraiche",
+                "substitution": true,
+              },
+              {
+                "word": "sour cream",
+                "substitution": true,
+              },
+              {
+                "word": "mexican crema",
+                "substitution": true,
+              },
+              {
+                "word": "soured cream",
+                "substitution": true,
+              },
+              {
+                "word": "yoghurt",
+                "substitution": true,
+              },
+              {
+                "word": "yogurt",
+                "substitution": true,
+              },
+              {
+                "word": "double cream",
+                "substitution": true,
+              },
+              {
+                "word": "heavy cream",
+                "substitution": true,
+              },
+              {
+                "word": "curd",
+                "substitution": true,
+              },
+              {
+                "word": "labneh",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cream cheese",
+            "exclude": [
+              {
+                "word": "cream cheese frosting",
+              },
+            ],
+            "include": [
+              {
+                "word": "fromage frais",
+                "substitution": true,
+              },
+              {
+                "word": "mascarpone",
+                "substitution": true,
+              },
+              {
+                "word": "saint-marcellin",
+                "substitution": true,
+              },
+              {
+                "word": "saint marcellin",
+                "substitution": true,
+              },
+              {
+                "word": "kefir",
+                "substitution": true,
+              },
+              {
+                "word": "cottage cheese",
+                "substitution": true,
+              },
+              {
+                "word": "cheese spread",
+                "substitution": true,
+              },
+              {
+                "word": "philadelphia",
+                "substitution": true,
+              },
+              {
+                "word": "smeerkaas",
+                "substitution": true,
+              },
+              {
+                "word": "ricotta",
+                "substitution": true,
+              },
+              {
+                "word": "neufchatel",
+                "substitution": true,
+              },
+              {
+                "word": "neufchatel-style",
+                "substitution": true,
+              },
+              {
+                "word": "plain yoghurt",
+                "substitution": true,
+              },
+              {
+                "word": "plain yogurt",
+                "substitution": true,
+              },
+              {
+                "word": "greek yoghurt",
+                "substitution": true,
+              },
+              {
+                "word": "greek yogurt",
+                "substitution": true,
+              },
+              {
+                "word": "natural yoghurt",
+                "substitution": true,
+              },
+              {
+                "word": "natural yogurt",
+                "substitution": true,
+              },
+              {
+                "word": "greek-style yoghurt",
+                "substitution": true,
+              },
+              {
+                "word": "quark",
+                "substitution": true,
+              },
+              {
+                "word": "fromage blanc",
+                "substitution": true,
+              },
+              {
+                "word": "labneh",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cottage cheese",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "ricotta",
+                "substitution": true,
+              },
+              {
+                "word": "farmer's cheese",
+                "substitution": true,
+              },
+              {
+                "word": "farmers cheese",
+                "substitution": true,
+              },
+              {
+                "word": "farmer cheese",
+                "substitution": true,
+              },
+              {
+                "word": "mozzarella",
+                "substitution": true,
+              },
+              {
+                "word": "burrata",
+                "substitution": true,
+              },
+              {
+                "word": "bocconcini",
+                "substitution": true,
+              },
+              {
+                "word": "quark",
+                "substitution": true,
+              },
+              {
+                "word": "fromage blanc",
+                "substitution": true,
+              },
+              {
+                "word": "labneh",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+          "name": "comte",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "fontina",
+              "substitution": true,
+            },
+            {
+              "word": "emmental",
+              "substitution": true,
+            },
+            {
+              "word": "emmentaler",
+              "substitution": true,
+            },
+            {
+              "word": "emmenthaler",
+              "substitution": true,
+            },
+            {
+              "word": "gouda",
+              "substitution": true,
+            },
+            {
+              "word": "provolone",
+              "substitution": true,
+            },
+            {
+              "word": "swiss cheese",
+              "substitution": true,
+            },
+            {
+              "word": "jarlsberg",
+              "substitution": true,
+            },
+            {
+              "word": "gruyere",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "camembert",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "brie",
+              "substitution": true,
+            },
+            {
+              "word": "fontina",
+              "substitution": true,
+            },
+            {
+              "word": "cheddar",
+              "substitution": true,
+            },
+            {
+              "word": "havarti",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "cheese slice",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "american cheese",
+              "substitution": false,
+            },
+          ],
+        },
+        {
+          "name": "cheddar",
+          "exclude": [
+            {
+              "word": "cheez-it grooves",
+            },
+            {
+              "word": "chipotle cheddar",
+            },
+          ],
+          "include": [
+            {
+              "word": "american cheese",
+              "substitution": true,
+            },
+            {
+              "word": "cheese slice",
+              "substitution": true,
+            },
+            {
+              "word": "monterey jack",
+              "substitution": true,
+            },
+            {
+              "word": "pepper jack",
+              "substitution": true,
+            },
+            {
+              "word": "pepper-jack",
+              "substitution": true,
+            },
+            {
+              "word": "muenster",
+              "substitution": true,
+            },
+            {
+              "word": "havarti",
+              "substitution": true,
+            },
+            {
+              "word": "manchego",
+              "substitution": true,
+            },
+            {
+              "word": "four-cheese",
+              "substitution": true,
+            },
+            {
+              "word": "four cheese",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "chicken stock",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "chicken broth",
+              "substitution": false,
+            },
+            {
+              "word": "chicken bone broth",
+              "substitution": false,
+            },
+            {
+              "word": "chicken soup base",
+              "substitution": false,
+            },
+            {
+              "word": "chicken base",
+              "substitution": false,
+            },
+            {
+              "word": "chicken bouillon",
+              "substitution": false,
+            },
+            {
+              "word": "chicken oxo",
+              "substitution": false,
+            },
+            {
+              "word": "chicken cube",
+              "substitution": false,
+            },
+          ],
+        },
+        {
+          "name": "cashew nuts",
+          "exclude": [
+            {
+              "word": "puree",
+            },
+            {
+              "word": "pureed",
+            },
+            {
+              "word": "meal",
+            },
+            {
+              "word": "flour",
+            },
+            {
+              "word": "powder",
+            },
+            {
+              "word": "ground",
+            },
+            {
+              "word": "grit",
+            },
+            {
+              "word": "oil",
+            },
+            {
+              "word": "pickled",
+            },
+            {
+              "word": "butter",
+            },
+            {
+              "word": "spread",
+            },
+            {
+              "word": "milk",
+            },
+            {
+              "word": "cream",
+            },
+            {
+              "word": "icecream",
+            },
+            {
+              "word": "ice cream",
+            },
+            {
+              "word": "cheese",
+            },
+            {
+              "word": "yoghurt",
+            },
+            {
+              "word": "paste",
+            },
+            {
+              "word": "sauce",
+            },
+            {
+              "word": "curry",
+            },
+            {
+              "word": "essence",
+            },
+            {
+              "word": "drop",
+            },
+            {
+              "word": "tincture",
+            },
+            {
+              "word": "chocolate",
+            },
+            {
+              "word": "cocoa",
+            },
+            {
+              "word": "candy",
+            },
+            {
+              "word": "bar",
+            },
+            {
+              "word": "sweet",
+            },
+            {
+              "word": "brittle",
+            },
+            {
+              "word": "cookie",
+            },
+            {
+              "word": "biscuit",
+            },
+            {
+              "word": "ball",
+            },
+            {
+              "word": "bake",
+            },
+            {
+              "word": "cake",
+            },
+            {
+              "word": "cheesecake",
+            },
+            {
+              "word": "syrup",
+            },
+            {
+              "word": "preserve",
+            },
+          ],
+          "include": [
+            {
+              "word": "cashew",
+              "substitution": false,
+            },
+            {
+              "word": "walnut",
+              "substitution": true,
+            },
+            {
+              "word": "hazelnut",
+              "substitution": true,
+            },
+            {
+              "word": "pine nut",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "courgette",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "zucchini",
+              "substitution": false,
+            },
+            {
+              "word": "zucchetta",
+              "substitution": false,
+            },
+            {
+              "word": "luffa",
+              "substitution": false,
+            },
+            {
+              "word": "loofah",
+              "substitution": false,
+            },
+            {
+              "word": "cousa",
+              "substitution": false,
+            },
+            {
+              "word": "pattypan",
+              "substitution": true,
+            },
+            {
+              "word": "summer squash",
+              "substitution": true,
+            },
+            {
+              "word": "crookneck",
+              "substitution": true,
+            },
+            {
+              "word": "straightneck",
+              "substitution": true,
+            },
+            {
+              "word": "tromboncino",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "cider",
+          "exclude": [
+            {
+              "word": "vinegar",
+            },
+          ],
+          "include": [
+          ],
+        },
+        {
+          "name": "coconut milk",
+          "exclude": [
+            {
+              "word": "drink",
+            },
+            {
+              "word": "water",
+            },
+          ],
+          "include": [
+            {
+              "word": "coconut cream",
+              "substitution": false,
+            },
+            {
+              "word": "cream of coconut",
+              "substitution": false,
+            },
+            {
+              "word": "coco lopez",
+              "substitution": false,
+            },
+            {
+              "word": "coconut uht",
+              "substitution": false,
+            },
+            {
+              "word": "creamed coconut",
+              "substitution": false,
+            },
+            {
+              "word": "soy milk",
+              "substitution": true,
+            },
+            {
+              "word": "soymilk",
+              "substitution": true,
+            },
+            {
+              "word": "almond milk",
+              "substitution": true,
+            },
+            {
+              "word": "oat milk",
+              "substitution": true,
+            },
+            {
+              "word": "rice milk",
+              "substitution": true,
+            },
+            {
+              "word": "milk",
+              "substitution": true,
+            },
+            {
+              "word": "coconut yoghurt",
+              "substitution": true,
+            },
+            {
+              "word": "coconut yogurt",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "chili pepper",
+          "exclude": [
+            {
+              "word": "chili chutney",
+            },
+            {
+              "word": "chilli chutney",
+            },
+            {
+              "word": "chile chutney",
+            },
+          ],
+          "include": [
+            {
+              "word": "chili",
+              "substitution": false,
+            },
+            {
+              "word": "chilli",
+              "substitution": false,
+            },
+            {
+              "word": "chillies",
+              "substitution": false,
+            },
+            {
+              "word": "chile",
+              "substitution": false,
+            },
+            {
+              "word": "chilli pepper",
+              "substitution": false,
+            },
+            {
+              "word": "ghost pepper",
+              "substitution": false,
+            },
+            {
+              "word": "hot pepper",
+              "substitution": false,
+            },
+            {
+              "word": "cherry pepper",
+              "substitution": false,
+            },
+            {
+              "word": "piment d'espelette",
+              "substitution": false,
+            },
+            {
+              "word": "jalapeno",
+              "substitution": false,
+            },
+            {
+              "word": "padron",
+              "substitution": false,
+            },
+            {
+              "word": "habanero",
+              "substitution": false,
+            },
+            {
+              "word": "pepperoncini",
+              "substitution": false,
+            },
+            {
+              "word": "peperoncino",
+              "substitution": false,
+            },
+            {
+              "word": "scotch bonnet",
+              "substitution": false,
+            },
+            {
+              "word": "piment d'espelette",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "caramel",
+          "exclude": [
+            {
+              "word": "icecream",
+            },
+            {
+              "word": "ice cream",
+            },
+            {
+              "word": "yoghurt",
+            },
+            {
+              "word": "milk",
+            },
+            {
+              "word": "chocolate",
+            },
+            {
+              "word": "shortbread",
+            },
+            {
+              "word": "slice",
+            },
+            {
+              "word": "cookie",
+            },
+            {
+              "word": "biscuit",
+            },
+            {
+              "word": "wafer",
+            },
+            {
+              "word": "cake",
+            },
+            {
+              "word": "cheesecake",
+            },
+            {
+              "word": "bar",
+            },
+            {
+              "word": "creme",
+            },
+            {
+              "word": "cupcake",
+            },
+            {
+              "word": "pudding",
+            },
+            {
+              "word": "tart",
+            },
+            {
+              "word": "flavour",
+            },
+            {
+              "word": "flavor",
+            },
+            {
+              "word": "essence",
+            },
+            {
+              "word": "drop",
+            },
+            {
+              "word": "extract",
+            },
+          ],
+          "include": [
+            {
+              "word": "toffee",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "chocolate custard",
+          "exclude": [
+            {
+              "word": "custard cream",
+            },
+            {
+              "word": "biscuit",
+            },
+            {
+              "word": "tart",
+            },
+            {
+              "word": "slice",
+            },
+            {
+              "word": "pie",
+            },
+            {
+              "word": "cookie",
+            },
+          ],
+          "include": [
+          ],
+        },
+        {
+          "name": "custard",
+          "exclude": [
+            {
+              "word": "custard cream",
+            },
+            {
+              "word": "biscuit",
+            },
+            {
+              "word": "tart",
+            },
+            {
+              "word": "slice",
+            },
+            {
+              "word": "pie",
+            },
+            {
+              "word": "cookie",
+            },
+          ],
+          "include": [
+          ],
+        },
+        {
+            "name": "cabbage",
+            "exclude": [
+              {
+                "word": "sour",
+              },
+              {
+                "word": "kimchi",
+              },
+              {
+                "word": "pickle",
+              },
+            ],
+            "include": [
+              {
+                "word": "bok choy",
+                "substitution": true,
+              },
+              {
+                "word": "pak choy",
+                "substitution": true,
+              },
+              {
+                "word": "pak choi",
+                "substitution": true,
+              },
+            ],
+        },
           {
             "name": "chestnuts",
             "exclude": [

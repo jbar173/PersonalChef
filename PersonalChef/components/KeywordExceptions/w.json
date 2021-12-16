@@ -8,6 +8,289 @@
     "ingredients": [
 
 
+          {
+              "name": "winter squash",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "butternut squash",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin",
+                  "substitution": true,
+                },
+                {
+                  "word": "calabaza",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "water chestnut",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "jicama",
+                  "substitution": true,
+                },
+                {
+                  "word": "jerusalem artichoke",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "watermelon liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "watermelon flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon liquor",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "wonton wrapper",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dumpling wrapper",
+                  "substitution": false,
+                },
+                {
+                  "word": "egg roll wrapper",
+                  "substitution": false,
+                },
+                {
+                  "word": "spring roll wrapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice paper",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "whisky",
+            "exclude": [
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "extract",
+              },
+            ],
+            "include": [
+              {
+                "word": "whiskey",
+                "substitution": false,
+              },
+              {
+                "word": "bourbon",
+                "substitution": false,
+              },
+              {
+                "word": "scotch",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "white wine",
+            "exclude": [
+              {
+                "word": "vinegar",
+              },
+              {
+                "word": "lettuce",
+              },
+              {
+                "word": "onion",
+              },
+              {
+                "word": "flour",
+              },
+            ],
+            "include": [
+              {
+                "word": "chardonnay",
+                "substitution": false,
+              },
+              {
+                "word": "sauvignon blanc",
+                "substitution": false,
+              },
+              {
+                "word": "dry white",
+                "substitution": false,
+              },
+              {
+                "word": "crisp white",
+                "substitution": false,
+              },
+              {
+                "word": "fruity white",
+                "substitution": false,
+              },
+              {
+                "word": "medium white",
+                "substitution": false,
+              },
+              {
+                "word": "pinot gris",
+                "substitution": false,
+              },
+              {
+                "word": "pinot grigio",
+                "substitution": false,
+              },
+              {
+                "word": "grauburgunder",
+                "substitution": false,
+              },
+              {
+                "word": "viognier",
+                "substitution": false,
+              },
+              {
+                "word": "riesling",
+                "substitution": false,
+              },
+              {
+                "word": "gweurztraminer",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "white chocolate",
+            "exclude": [
+              {
+                "word": "chocolate cookie",
+              },
+              {
+                "word": "chocolate chip cookie",
+              },
+              {
+                "word": "chocolate biscuit",
+              },
+            ],
+            "include": [
+              {
+                "word": "chocolate",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "walnuts",
+            "exclude": [
+              {
+                "word": "walnuts aisle",
+              },
+              {
+                "word": "oil",
+              },
+              {
+                "word": "pickled",
+              },
+              {
+                "word": "bread",
+              },
+              {
+                "word": "candied",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "vinairgrette",
+              },
+            ],
+            "include": [
+              {
+                "word": "walnut",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "water",
+            "exclude": [
+              {
+                "word": "soda water",
+              },
+              {
+                "word": "sparkling water",
+              },
+              {
+                "word": "sparkling mineral",
+              },
+              {
+                "word": "fizzy water",
+              },
+              {
+                "word": "carbonated water",
+              },
+              {
+                "word": "water chestnut",
+              },
+              {
+                "word": "coconut water",
+              },
+              {
+                "word": "rose water",
+              },
+              {
+                "word": "orange blossom water",
+              },
+              {
+                "word": "soaked in water",
+              },
+              {
+                "word": "water still clinging",
+              },
+              {
+                "word": "in boiling water",
+              },
+              {
+                "word": "in cold water",
+              },
+              {
+                "word": "in water",
+              },
+              {
+                "word": "in hot water",
+              },
+              {
+                "word": "vinegar",
+              },
+            ],
+            "include": [
+            ],
+          },
 
 
 

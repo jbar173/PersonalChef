@@ -2,13 +2,71 @@
 
     "key" : ["butter","brazil nut","banana","beetroot","bell pepper","beef stock","brie","blue cheese","broccoli","baking powder","baking soda","beef","beef stock","beef mince","beer","beansprouts",
       "black-eyed peas","banana liqueur","blueberry liqueur","bread","breadcrumbs","breadsticks","bread wraps","barbeque sauce","broad bean","borlotti bean","black pudding","butter beans","buttercream",
-      "blackberries","brandy",
+      "blackberries","brandy","butternut squash","black cardamom","burger","beet",
     ],
 
 
     "ingredients": [
 
 
+      {
+        "name": "beet",
+        "exclude": [
+          {
+            "word": "beet greens",
+          },
+        ],
+        "include": [
+        ],
+      },
+      {
+        "name": "burger",
+        "exclude": [
+          {
+            "word": "burger bun",
+          },
+        ],
+        "include": [
+          {
+            "word": "beefburger",
+            "substitution": false,
+          },
+          {
+            "word": "hamburger",
+            "substitution": false,
+          },
+        ],
+      },
+      {
+          "name": "black cardamom",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "black cardamon",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "butternut squash",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "winter squash",
+              "substitution": true,
+            },
+            {
+              "word": "pumpkin",
+              "substitution": true,
+            },
+            {
+              "word": "calabaza",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "brandy",
           "exclude": [

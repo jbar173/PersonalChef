@@ -1,12 +1,60 @@
 {
 
-    "key" : [ "quince",
+    "key" : [ "quince","quince paste",
     ],
 
 
     "ingredients": [
 
-
+          {
+              "name": "fresh quince",
+              "exclude": [
+                {
+                  "word": "jelly",
+                },
+                {
+                  "word": "jam",
+                },
+                {
+                  "word": "conserve",
+                },
+                {
+                  "word": "preserve",
+                },
+                {
+                  "word": "paste",
+                },
+              ],
+              "include": [
+                {
+                  "word": "quince",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "quince paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "quince jelly",
+                  "substitution": false,
+                },
+                {
+                  "word": "quince jam",
+                  "substitution": false,
+                },
+                {
+                  "word": "quince conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "quince preserve",
+                  "substitution": false,
+                },
+              ],
+          },
 
 
 

@@ -8,6 +8,44 @@
     "ingredients": [
 
 
+        {
+            "name": "jerusalem artichoke",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jicama",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+          "name": "jarlsberg",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "emmental",
+              "substitution": true,
+            },
+            {
+              "word": "emmentaler",
+              "substitution": true,
+            },
+            {
+              "word": "emmenthaler",
+              "substitution": true,
+            },
+            {
+              "word": "swiss cheese",
+              "substitution": true,
+            },
+            {
+              "word": "gruyere",
+              "substitution": true,
+            },
+          ],
+        },
 
 
 

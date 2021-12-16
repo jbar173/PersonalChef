@@ -1,6 +1,6 @@
 {
 
-    "key" : ["date","dark chocolate","dessert wine","dried coconut","dill","daikon","dried chili peppers","dried coriander","dumpling","dried cranberries","dried barberries","duck",
+    "key" : ["date","dark chocolate","dessert wine","dried coconut","dill","daikon","dried chili peppers","dried coriander","dumpling","dried cranberries","dried barberries","duck","demi-glace",
 
     ],
 
@@ -8,6 +8,408 @@
     "ingredients": [
 
 
+        {
+            "name": "demi-glace",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "beef stock",
+                "substitution": false,
+              },
+              {
+                "word": "beef broth",
+                "substitution": false,
+              },
+              {
+                "word": "beef bouillon",
+                "substitution": false,
+              },
+              {
+                "word": "beef consomme",
+                "substitution": false,
+              },
+              {
+                "word": "beef consume",
+                "substitution": false,
+              },
+              {
+                "word": "demi glace",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "duck",
+            "exclude": [
+              {
+                "word": "egg",
+              },
+            ],
+            "include": [
+              {
+                "word": "mallard",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried barberries",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dried unsweetened cranberries",
+                "substitution": true,
+              },
+              {
+                "word": "dried sweetened cranberries",
+                "substitution": true,
+              },
+              {
+                "word": "dried cranberries",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried cranberries",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "craisins",
+                "substitution": false,
+              },
+              {
+                "word": "dried unsweetened cranberries",
+                "substitution": false,
+              },
+              {
+                "word": "dried sweetened cranberries",
+                "substitution": false,
+              },
+              {
+                "word": "dried barberries",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dumpling",
+            "exclude": [
+              {
+                "word": "dumpling wrapper",
+              },
+            ],
+            "include": [
+              {
+                "word": "pierogi",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+          "name": "dried coriander",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "ground coriander",
+              "substitution": false,
+            },
+            {
+              "word": "ground corriander",
+              "substitution": false,
+            },
+            {
+              "word": "coriander seeds",
+              "substitution": false,
+            },
+            {
+              "word": "corriander seeds",
+              "substitution": false,
+            },
+            {
+              "word": "coriander powder",
+              "substitution": false,
+            },
+            {
+              "word": "corriander powder",
+              "substitution": false,
+            },
+            {
+              "word": "powdered coriander",
+              "substitution": false,
+            },
+            {
+              "word": "powdered corriander",
+              "substitution": false,
+            },
+            {
+              "word": "dried corriander",
+              "substitution": false,
+            },
+          ],
+        },
+        {
+          "name": "dried chili peppers",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "chiles secos",
+              "substitution": false,
+            },
+            {
+              "word": "dried chillies",
+              "substitution": false,
+            },
+            {
+              "word": "dried chili pepper",
+              "substitution": false,
+            },
+            {
+              "word": "dried chilli peppers",
+              "substitution": false,
+            },
+            {
+              "word": "dried chiles",
+              "substitution": false,
+            },
+            {
+              "word": "dried kashmiri chili",
+              "substitution": false,
+            },
+            {
+              "word": "dried kashmiri chilli",
+              "substitution": false,
+            },
+            {
+              "word": "dried kashmiri chillies",
+              "substitution": false,
+            },
+            {
+              "word": "dried kashmiri red chili",
+              "substitution": false,
+            },
+            {
+              "word": "dried kashmiri red chilli",
+              "substitution": false,
+            },
+            {
+              "word": "dried kashmiri red chillies",
+              "substitution": false,
+            },
+            {
+              "word": "kashmiri lal mirch",
+              "substitution": false,
+            },
+            {
+              "word": "dried chilli pepper",
+              "substitution": false,
+            },
+            {
+              "word": "dried red chili pepper",
+              "substitution": false,
+            },
+            {
+              "word": "dried red chilli pepper",
+              "substitution": false,
+            },
+            {
+              "word": "piment d'espelette",
+              "substitution": true,
+            },
+            {
+              "word": "chili",
+              "substitution": true,
+            },
+            {
+              "word": "chilli",
+              "substitution": true,
+            },
+            {
+              "word": "chillies",
+              "substitution": true,
+            },
+            {
+              "word": "chile",
+              "substitution": true,
+            },
+            {
+              "word": "scotch bonnet",
+              "substitution": false,
+            },
+          ],
+        },
+        {
+            "name": "daikon",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "mooli",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dill",
+            "exclude": [
+              {
+                "word": "dill pickle",
+              },
+              {
+                "word": "dill pickled",
+              },
+              {
+                "word": "pickled dill",
+              },
+              {
+                "word": "dill-flavored",
+              },
+              {
+                "word": "dill flavored",
+              },
+              {
+                "word": "dill-flavoured",
+              },
+              {
+                "word": "dill flavoured",
+              },
+            ],
+            "include": [
+            ],
+        },
+        {
+          "name": "dried coconut",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "dessicated coconut",
+              "substitution": false,
+            },
+            {
+              "word": "coconut dessicated",
+              "substitution": false,
+            },
+            {
+              "word": "desicated coconut",
+              "substitution": false,
+            },
+            {
+              "word": "coconut desicated",
+              "substitution": false,
+            },
+            {
+              "word": "dehydrated coconut",
+              "substitution": false,
+            },
+            {
+              "word": "coconut dehydrated",
+              "substitution": false,
+            },
+            {
+              "word": "shredded coconut",
+              "substitution": false,
+            },
+            {
+              "word": "coconut shred",
+              "substitution": false,
+            },
+            {
+              "word": "coconut dried",
+              "substitution": false,
+            },
+            {
+              "word": "coconut shredded",
+              "substitution": false,
+            },
+            {
+              "word": "coconut flake",
+              "substitution": false,
+            },
+            {
+              "word": "flaked coconut",
+              "substitution": false,
+            },
+            {
+              "word": "coconut flaked",
+              "substitution": false,
+            },
+          ],
+        },
+        {
+            "name": "dessert wine",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "pudding wine",
+                "substitution": false,
+              },
+              {
+                "word": "vin santo",
+                "substitution": false,
+              },
+              {
+                "word": "sweet wine",
+                "substitution": false,
+              },
+              {
+                "word": "vin santo",
+                "substitution": false,
+              },
+              {
+                "word": "moscato",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+          "name": "dark chocolate",
+          "exclude": [
+            {
+              "word": "chocolate cookie",
+            },
+            {
+              "word": "chocolate chip cookie",
+            },
+            {
+              "word": "chocolate biscuit",
+            },
+          ],
+          "include": [
+            {
+              "word": "chocolate",
+              "substitution": true,
+            },
+          ],
+        },
+        {
+          "name": "date",
+          "exclude": [
+            {
+              "word": "date chutney",
+            },
+          ],
+          "include": [
+            {
+              "word": "medjool",
+              "substitution": false,
+            },
+            {
+              "word": "medjoul",
+              "substitution": false,
+            },
+            {
+              "word": "majhool",
+              "substitution": false,
+            },
+          ],
+        },
 
 
 

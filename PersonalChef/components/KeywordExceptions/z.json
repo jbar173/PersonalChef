@@ -7,8 +7,17 @@
 
     "ingredients": [
 
-
-
+          {
+              "name": "za'atar",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "zatar",
+                  "substitution": false,
+                },
+              ],
+          },
 
 
     ]

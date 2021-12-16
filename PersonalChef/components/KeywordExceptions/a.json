@@ -9,6 +9,49 @@
 
 
           {
+              "name": "almond liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "amaretto",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de almond",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme de noyaux",
+                  "substitution": false,
+                },
+                {
+                  "word": "disaronno",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
               "name": "aniseed liqueur",
               "exclude": [
               ],
@@ -267,6 +310,12 @@
             "exclude": [
               {
                 "word": "jam",
+              },
+              {
+                "word": "preserve",
+              },
+              {
+                "word": "conserve",
               },
               {
                 "word": "jelly",

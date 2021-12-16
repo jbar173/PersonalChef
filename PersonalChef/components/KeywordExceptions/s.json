@@ -1,7 +1,8 @@
 {
 
-    "key" : ["spinach","sugar","shrimp","sweet potato","soy milk","sun-dried tomatoes","spring onion","shallot","salad leaves","soured cream","sparkling wine","sherry","salsa","sparkling water","strawberry liqueur",
-      "semolina","sausage""smoked sausage","shichimi","soy sauce","spring roll wrapper","seaweed","summer squash","swede","smoked paprika","shortening","sweet rice flour","soya beans","sweetcorn","strawberry custard",
+    "key" : ["spinach","sugar","shrimp","sweet potato","soy milk","sun-dried tomatoes","spring onion","shallot","salad leaves","soured cream","sparkling wine","sherry","salsa",
+      "sparkling water","strawberry liqueur","semolina","sausage","smoked sausage","shichimi","soy sauce","spring roll wrapper","seaweed","summer squash","swede","smoked paprika",
+      "shortening","sweet rice flour","soya beans","sweetcorn","strawberry custard","salt",
 
     ],
 
@@ -9,6 +10,1061 @@
     "ingredients": [
 
 
+          {
+              "name": "salt",
+              "exclude": [
+                {
+                  "word": "celery salt",
+                },
+                {
+                  "word": "garlic salt",
+                },
+                {
+                  "word": "in salt",
+                },
+                {
+                  "word": "low salt",
+                },
+                {
+                  "word": "reduced salt",
+                },
+                {
+                  "word": "salt reduced",
+                },
+                {
+                  "word": "salt cured",
+                },
+                {
+                  "word": "salt free",
+                },
+                {
+                  "word": "excess salt",
+                },
+                {
+                  "word": "without salt",
+                },
+                {
+                  "word": "salt added",
+                },
+                {
+                  "word": "apricot salt",
+                },
+                {
+                  "word": "salt pork",
+                },
+                {
+                  "word": "vanilla salt",
+                },
+                {
+                  "word": "onion salt",
+                },
+                {
+                  "word": "salt cod",
+                },
+              ],
+              "include": [
+                {
+                  "word": "fleur de sel",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sweetcorn",
+              "exclude": [
+                {
+                  "word": "meal",
+                },
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "meal",
+                },
+                {
+                  "word": "flake",
+                },
+                {
+                  "word": "taco",
+                },
+                {
+                  "word": "syrup",
+                },
+                {
+                  "word": "flour",
+                },
+                {
+                  "word": "bread",
+                },
+                {
+                  "word": "corn-muffin",
+                },
+                {
+                  "word": "muffin",
+                },
+                {
+                  "word": "starch",
+                },
+              ],
+              "include": [
+                {
+                  "word": "corn",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet-corn",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "soya beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "soy bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "soya bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "soybean",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sweet rice flour",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sweet white rice flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "mochiko",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet rice mochi flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "glutinous rice flour",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "shortening",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "lard",
+                  "substitution": true,
+                },
+                {
+                  "word": "goose fat",
+                  "substitution": true,
+                },
+                {
+                  "word": "butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "margarine",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "smoked paprika",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "wood-smoked paprika",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "swede",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rutabaga",
+                  "substitution": false,
+                },
+                {
+                  "word": "swedish turnip",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "summer squash",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "patty pan",
+                  "substitution": false,
+                },
+                {
+                  "word": "pattypan",
+                  "substitution": false,
+                },
+                {
+                  "word": "yellow squash",
+                  "substitution": false,
+                },
+                {
+                  "word": "crookneck squash",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "seaweed",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kelp",
+                  "substitution": false,
+                },
+                {
+                  "word": "ogo",
+                  "substitution": false,
+                },
+                {
+                  "word": "nori",
+                  "substitution": false,
+                },
+                {
+                  "word": "kombu",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "spring roll wrapper",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dumpling wrapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "egg roll wrapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "wonton wrapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice paper",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "soy sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tamari",
+                  "substitution": true,
+                },
+                {
+                  "word": "liquid aminos",
+                  "substitution": true,
+                },
+                {
+                  "word": "soya sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "shoyu",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "shichimi",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "japanese 7 spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "togarashi seven spice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "smoked sausage",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "andouille",
+                  "substitution": false,
+                },
+                {
+                  "word": "kielbasa",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sausage",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "bratwurst",
+                  "substitution": false,
+                },
+                {
+                  "word": "breakfast links",
+                  "substitution": false,
+                },
+                {
+                  "word": "merguez",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "semolina",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "stone-ground grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "stone ground grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "polenta",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornmeal",
+                  "substitution": true,
+                },
+                {
+                  "word": "corn meal",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "strawberry liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry liquor",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sparkling water",
+              "exclude": [
+                {
+                  "word": "bread",
+                },
+                {
+                  "word": "bicarb",
+                },
+                {
+                  "word": "baking",
+                },
+                {
+                  "word": "grape",
+                },
+                {
+                  "word": "orange",
+                },
+                {
+                  "word": "lemon-lime",
+                },
+                {
+                  "word": "lemon lime",
+                },
+                {
+                  "word": "strawberry",
+                },
+                {
+                  "word": "cream",
+                },
+                {
+                  "word": "squirt",
+                },
+                {
+                  "word": "flavoured",
+                },
+                {
+                  "word": "flavored",
+                },
+                {
+                  "word": "tangerine",
+                },
+              ],
+              "include": [
+                {
+                  "word": "soda",
+                  "substitution": true,
+                },
+                {
+                  "word": "seltzer",
+                  "substitution": true,
+                },
+                {
+                  "word": "sparkling mineral water",
+                  "substitution": true,
+                },
+                {
+                  "word": "fizzy water",
+                  "substitution": false,
+                },
+                {
+                  "word": "water sparkling",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "salsa",
+              "exclude": [
+                {
+                  "word": "salsa verde",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "sherry",
+              "exclude": [
+                {
+                  "word": "cream sherry",
+                },
+                {
+                  "word": "sherry cream",
+                },
+                {
+                  "word": "vinegar",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "sparkling wine",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "prosecco",
+                  "substitution": false,
+                },
+                {
+                  "word": "champagne",
+                  "substitution": false,
+                },
+                {
+                  "word": "bubbly",
+                  "substitution": false,
+                },
+                {
+                  "word": "cava",
+                  "substitution": false,
+                },
+                {
+                  "word": "sparkling italian wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "sparkling white wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "spumante",
+                  "substitution": false,
+                },
+                {
+                  "word": "asti",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "soured cream",
+              "exclude": [
+                {
+                  "word": "flavoured yoghurt",
+                },
+                {
+                  "word": "flavoured yogurt",
+                },
+                {
+                  "word": "flavored yoghurt",
+                },
+                {
+                  "word": "flavored yogurt",
+                },
+                {
+                  "word": "fruit",
+                },
+                {
+                  "word": "fruity",
+                },
+                {
+                  "word": "pear",
+                },
+                {
+                  "word": "peach",
+                },
+                {
+                  "word": "papaya",
+                },
+                {
+                  "word": "apricot",
+                },
+                {
+                  "word": "mango",
+                },
+                {
+                  "word": "apple",
+                },
+                {
+                  "word": "passion",
+                },
+                {
+                  "word": "tropical",
+                },
+                {
+                  "word": "passion fruit",
+                },
+                {
+                  "word": "passionfruit",
+                },
+                {
+                  "word": "lemon",
+                },
+                {
+                  "word": "sunshine",
+                },
+                {
+                  "word": "berry",
+                },
+                {
+                  "word": "cherry",
+                },
+                {
+                  "word": "raspberry",
+                },
+                {
+                  "word": "strawberry",
+                },
+                {
+                  "word": "blackberry",
+                },
+                {
+                  "word": "blueberry",
+                },
+                {
+                  "word": "cranberry",
+                },
+                {
+                  "word": "rhubarb",
+                },
+                {
+                  "word": "raisin",
+                },
+                {
+                  "word": "blackcurrant",
+                },
+                {
+                  "word": "prune",
+                },
+                {
+                  "word": "ginger",
+                },
+                {
+                  "word": "toffee",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "banana",
+                },
+                {
+                  "word": "caramel",
+                },
+                {
+                  "word": "coconut",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "bean",
+                },
+                {
+                  "word": "tofu",
+                },
+                {
+                  "word": "tangerine",
+                },
+                {
+                  "word": "lemon",
+                },
+              ],
+              "include": [
+                {
+                  "word": "sour cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "mexican crema",
+                  "substitution": true,
+                },
+                {
+                  "word": "creme fraiche",
+                  "substitution": true,
+                },
+                {
+                  "word": "yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "double cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "heavy cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "curd",
+                  "substitution": true,
+                },
+                {
+                  "word": "dahi",
+                  "substitution": true,
+                },
+                {
+                  "word": "labneh",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "salad leaves",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mixed leaves",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed salad",
+                  "substitution": false,
+                },
+                {
+                  "word": "salad mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "herb mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "spring mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "assorted salad",
+                  "substitution": false,
+                },
+                {
+                  "word": "green salad",
+                  "substitution": false,
+                },
+                {
+                  "word": "greenleaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "green leaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "baby green",
+                  "substitution": false,
+                },
+                {
+                  "word": "baby spring",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed baby",
+                  "substitution": false,
+                },
+                {
+                  "word": "wilted salad",
+                  "substitution": false,
+                },
+                {
+                  "word": "rocket",
+                  "substitution": false,
+                },
+                {
+                  "word": "arugula",
+                  "substitution": false,
+                },
+                {
+                  "word": "mesclun",
+                  "substitution": false,
+                },
+                {
+                  "word": "lettuce",
+                  "substitution": true,
+                },
+                {
+                  "word": "salad",
+                  "substitution": true,
+                },
+                {
+                  "word": "romaine",
+                  "substitution": true,
+                },
+                {
+                  "word": "spinach",
+                  "substitution": true,
+                },
+                {
+                  "word": "silverbeet",
+                  "substitution": true,
+                },
+                {
+                  "word": "seakale beet",
+                  "substitution": true,
+                },
+                {
+                  "word": "snow pea leaves",
+                  "substitution": true,
+                },
+                {
+                  "word": "snow pea tips",
+                  "substitution": true,
+                },
+                {
+                  "word": "chinese pea shoots",
+                  "substitution": true,
+                },
+                {
+                  "word": "carrot greens",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "shallot",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "eschalot",
+                "substitution": false,
+              },
+              {
+                "word": "onion",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "spring onion",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "scallion",
+                "substitution": false,
+              },
+              {
+                "word": "green onion",
+                "substitution": false,
+              },
+              {
+                "word": "chinese chive",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "sun-dried tomatoes",
+            "exclude": [
+              {
+                "word": "pesto",
+              },
+            ],
+            "include": [
+              {
+                "word": "sun dried tomatoes",
+                "substitution": false,
+              },
+              {
+                "word": "sun dried tomato",
+                "substitution": false,
+              },
+              {
+                "word": "sun-dried tomato",
+                "substitution": false,
+              },
+              {
+                "word": "sundried tomatoes",
+                "substitution": false,
+              },
+              {
+                "word": "sundried tomato",
+                "substitution": false,
+              },
+              {
+                "word": "sunblushed tomato",
+                "substitution": true,
+              },
+              {
+                "word": "sunblush tomato",
+                "substitution": true,
+              },
+              {
+                "word": "sunblushed tomatoes",
+                "substitution": true,
+              },
+              {
+                "word": "sunblush tomatoes",
+                "substitution": true,
+              },
+              {
+                "word": "semi-dried tomatoes",
+                "substitution": true,
+              },
+              {
+                "word": "semi-dried tomato",
+                "substitution": true,
+              },
+              {
+                "word": "semi dried tomatoes",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "soy milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "soymilk",
+                "substitution": false,
+              },
+              {
+                "word": "almond milk",
+                "substitution": true,
+              },
+              {
+                "word": "coconut milk",
+                "substitution": true,
+              },
+              {
+                "word": "milk",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "sweet potato",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "yam",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "shrimp",
+            "exclude": [
+              {
+                "word": "shrimp paste",
+              },
+            ],
+            "include": [
+              {
+                "word": "prawn",
+                "substitution": true,
+              },
+              {
+                "word": "saeu-jeot",
+                "substitution": true,
+              },
+              {
+                "word": "saewoo jeot",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "sugar",
+            "exclude": [
+              {
+                "word": "sugar cookie",
+              },
+              {
+                "word": "sugar snap",
+              },
+              {
+                "word": "sugar syrup",
+              },
+              {
+                "word": "sugar ice cream cones",
+              },
+              {
+                "word": "confectioners sugar",
+              },
+              {
+                "word": "confectioner sugar",
+              },
+              {
+                "word": "confectioner's sugar",
+              },
+              {
+                "word": "confectioners' sugar",
+              },
+              {
+                "word": "powdered sugar",
+              },
+              {
+                "word": "sugar powder",
+              },
+              {
+                "word": "sanding sugar",
+              },
+              {
+                "word": "decorators sugar",
+              },
+              {
+                "word": "decorators' sugar",
+              },
+              {
+                "word": "decorator's sugar",
+              },
+              {
+                "word": "decorator sugar",
+              },
+              {
+                "word": "decorating sugar",
+              },
+            ],
+            "include": [
+              {
+                "word": "sucanat",
+                "substitution": false,
+              },
+              {
+                "word": "jaggery",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "spinach",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "beet greens",
+                "substitution": true,
+              },
+              {
+                "word": "beet leaves",
+                "substitution": true,
+              },
+              {
+                "word": "beetroot leaves",
+                "substitution": true,
+              },
+              {
+                "word": "tatsoi",
+                "substitution": true,
+              },
+              {
+                "word": "tat choy",
+                "substitution": true,
+              },
+              {
+                "word": "silverbeet",
+                "substitution": true,
+              },
+              {
+                "word": "seakale beet",
+                "substitution": true,
+              },
+            ],
+          },
           {
             "name": "strawberry custard",
             "exclude": [

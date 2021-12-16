@@ -1,6 +1,6 @@
 {
 
-    "key" : ["raisin","rice","rocket","ricotta","raspberry","red wine","raspberry liqueur","rice cracker","rice puffs","redcurrant jelly","red lentils","rose water","red curry paste",
+    "key" : ["raisins","rice","rocket","ricotta","raspberry","red wine","raspberry liqueur","rice cracker","rice puffs","redcurrant jelly","red lentils","rose water","red curry paste","rum",
 
     ],
 
@@ -8,6 +8,494 @@
     "ingredients": [
 
 
+          {
+            "name": "rum",
+            "exclude": [
+              {
+                "word": "rum ball",
+              },
+              {
+                "word": "rum truffle",
+              },
+            ],
+            "include": [
+
+            ],
+          },
+          {
+              "name": "red curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "red curry spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai red paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai red curry",
+                  "substitution": false,
+                },
+                {
+                  "word": "red thai curry",
+                  "substitution": false,
+                },
+                {
+                  "word": "red curry stir-fry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai style curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai panang curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "panang curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "penang curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai massaman curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow curry spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai yellow paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai yellow curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "karee curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "green curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "green curry spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai green paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "thai green curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "green thai curry",
+                  "substitution": true,
+                },
+                {
+                  "word": "green curry stir-fry sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "rose water",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rosewater",
+                  "substitution": false,
+                },
+                {
+                  "word": "kewda",
+                  "substitution": true,
+                },
+                {
+                  "word": "kewra",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "red lentils",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "masoor dhal",
+                  "substitution": false,
+                },
+                {
+                  "word": "masoor dal",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "redcurrant jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "red currant jelly",
+                  "substitution": false,
+                },
+                {
+                  "word": "red currant sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "redcurrant sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "red-currant jelly",
+                  "substitution": false,
+                },
+                {
+                  "word": "red-currant sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "red-currant sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "cranberry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "cranberry jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "barberry jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "red fruit jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "red fruits jelly",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "rice puffs",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rice cereal",
+                  "substitution": false,
+                },
+                {
+                  "word": "rice crispie",
+                  "substitution": false,
+                },
+                {
+                  "word": "rice puff",
+                  "substitution": false,
+                },
+                {
+                  "word": "puffed rice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "rice cracker",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rice cake",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "raspberry liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raspberry flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "chambord",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "red wine",
+              "exclude": [
+                {
+                  "word": "vinegar",
+                },
+              ],
+              "include": [
+                {
+                  "word": "shiraz",
+                  "substitution": false,
+                },
+                {
+                  "word": "rioja",
+                  "substitution": false,
+                },
+                {
+                  "word": "merlot",
+                  "substitution": false,
+                },
+                {
+                  "word": "pinot noir",
+                  "substitution": false,
+                },
+                {
+                  "word": "beaujolais",
+                  "substitution": false,
+                },
+                {
+                  "word": "claret",
+                  "substitution": false,
+                },
+                {
+                  "word": "burgundy",
+                  "substitution": false,
+                },
+                {
+                  "word": "cabernet sauvignon",
+                  "substitution": false,
+                },
+                {
+                  "word": "zinfandel",
+                  "substitution": false,
+                },
+                {
+                  "word": "sangiovese",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "raspberry",
+              "exclude": [
+                {
+                  "word": "vinegar",
+                },
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "ricotta",
+              "exclude": [
+                {
+                  "word": "tortellini",
+                },
+                {
+                  "word": "tortelini",
+                },
+              ],
+              "include": [
+                {
+                  "word": "cottage cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "farmer's cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "farmers cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "farmer cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "mozzarella",
+                  "substitution": true,
+                },
+                {
+                  "word": "burrata",
+                  "substitution": true,
+                },
+                {
+                  "word": "bocconcini",
+                  "substitution": true,
+                },
+                {
+                  "word": "quark",
+                  "substitution": true,
+                },
+                {
+                  "word": "fromage blanc",
+                  "substitution": true,
+                },
+                {
+                  "word": "labneh",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "rocket",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "arugula",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "rice",
+            "exclude": [
+              {
+                "word": "rice paper",
+              },
+              {
+                "word": "rice cake",
+              },
+              {
+                "word": "rice pudding",
+              },
+              {
+                "word": "rice wine",
+              },
+              {
+                "word": "rice vinegar",
+              },
+              {
+                "word": "cracker",
+              },
+              {
+                "word": "rice pasta",
+              },
+              {
+                "word": "rice bran",
+              },
+              {
+                "word": "cauliflower",
+              },
+              {
+                "word": "rice miso",
+              },
+              {
+                "word": "syrup",
+              },
+              {
+                "word": "malt syrup",
+              },
+              {
+                "word": "crispie",
+              },
+              {
+                "word": "cereal",
+              },
+              {
+                "word": "noodle",
+              },
+              {
+                "word": "rice milk",
+              },
+            ],
+            "include": [
+              {
+                "word": "pilaff",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "raisins",
+            "exclude": [
+              {
+                "word": "bread",
+              },
+            ],
+            "include": [
+              {
+                "word": "raisin",
+                "substitution": false,
+              },
+            ],
+          },
 
 
 

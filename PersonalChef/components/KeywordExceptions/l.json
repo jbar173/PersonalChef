@@ -8,6 +8,288 @@
     "ingredients": [
 
 
+        {
+            "name": "lychee juice",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lychee fruit juice",
+                "substitution": false,
+              },
+              {
+                "word": "lychee drink",
+                "substitution": false,
+              },
+              {
+                "word": "lychee nectar",
+                "substitution": false,
+              },
+              {
+                "word": "taisun lychee",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "lard",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "shortening",
+                "substitution": true,
+              },
+              {
+                "word": "butter",
+                "substitution": true,
+              },
+              {
+                "word": "goose fat",
+                "substitution": true,
+              },
+              {
+                "word": "schmaltz",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lemongrass",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lemon grass",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "lime leaves",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lime leaf",
+                "substitution": false,
+              },
+              {
+                "word": "kaffir leaf",
+                "substitution": false,
+              },
+              {
+                "word": "kaffir leaves",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+          "name": "lime mojo sauce",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "lime mojo",
+              "substitution": false,
+            },
+          ],
+        },
+        {
+            "name": "limoncello",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lemon liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "lemon liquor",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "lamb",
+            "exclude": [
+              {
+                "word": "tripe",
+              },
+              {
+                "word": "lamb stock",
+              },
+              {
+                "word": "lamb broth",
+              },
+              {
+                "word": "sausage",
+              },
+              {
+                "word": "minced",
+              },
+              {
+                "word": "mince",
+              },
+              {
+                "word": "ground",
+              },
+            ],
+            "include": [
+              {
+                "word": "mutton",
+                "substitution": false,
+              },
+              {
+                "word": "mouton",
+                "substitution": false,
+              },
+              {
+                "word": "red meat",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+          "name": "lasagne sheets",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "lasagne noodles",
+              "substitution": false,
+            },
+            {
+              "word": "lasagne pasta",
+              "substitution": false,
+            },
+            {
+              "word": "lasagne",
+              "substitution": false,
+            },
+          ],
+        },
+        {
+          "name": "lemon juice",
+          "exclude": [
+            {
+              "word": "lemon zest",
+            },
+            {
+              "word": "lemon curd",
+            },
+            {
+              "word": "lemon sole",
+            },
+            {
+              "word": "candied lemon",
+            },
+          ],
+          "include": [
+            {
+              "word": "lemon",
+              "substitution": false,
+            },
+          ],
+        },
+        {
+          "name": "lamb stock",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "lamb broth",
+              "substitution": false,
+            },
+            {
+              "word": "lamb bone broth",
+              "substitution": false,
+            },
+            {
+              "word": "lamb soup base",
+              "substitution": false,
+            },
+            {
+              "word": "lamb bouillon",
+              "substitution": false,
+            },
+            {
+              "word": "lamb oxo",
+              "substitution": false,
+            },
+            {
+              "word": "lamb cube",
+              "substitution": false,
+            },
+            {
+              "word": "lamb base",
+              "substitution": false,
+            },
+          ],
+        },
+        {
+          "name": "lettuce",
+          "exclude": [
+            {
+              "word": "lambs lettuce",
+            },
+          ],
+          "include": [
+          ],
+        },
+        {
+          "name": "lime",
+          "exclude": [
+            {
+              "word": "lime leaves",
+            },
+            {
+              "word": "lime leaf",
+            },
+            {
+              "word": "lime sugar",
+            },
+            {
+              "word": "oil",
+            },
+            {
+              "word": "lime mojo",
+            },
+            {
+              "word": "soda",
+            },
+            {
+              "word": "syrup",
+            },
+            {
+              "word": "cordial",
+            },
+            {
+              "word": "concentrate",
+            },
+            {
+              "word": "squash",
+            },
+          ],
+          "include": [
+          ],
+        },
+        {
+          "name": "lemon",
+          "exclude": [
+            {
+              "word": "lemon curd",
+            },
+            {
+              "word": "lemon sole",
+            },
+            {
+              "word": "candied lemon",
+            },
+          ],
+          "include": [
+          ],
+        },
 
 
 

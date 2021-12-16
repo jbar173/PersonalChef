@@ -8,6 +8,80 @@
     "ingredients": [
 
 
+          {
+              "name": "kewra water",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kewda",
+                  "substitution": false,
+                },
+                {
+                  "word": "kewra",
+                  "substitution": false,
+                },
+                {
+                  "word": "rose water",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "kamut flour",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "white spelt flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "amaranth flour",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "kidney beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "red pea",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+            "name": "kale",
+            "exclude": [
+              {
+                "word": "sea kale",
+              },
+            ],
+            "include": [
+              {
+                "word": "cavolo nero",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+              "name": "kiwi fruit",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kiwifruit",
+                  "substitution": false,
+                },
+                {
+                  "word": "kiwi",
+                  "substitution": false,
+                },
+              ],
+          },
 
 
 
