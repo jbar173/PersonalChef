@@ -1,12 +1,43 @@
 {
 
-    "key" : ["hazelnut","havarti","halloumi","honey","hot dog","harissa","hemp milk","houmous","hot curry paste","herbs de provence","ham",
+    "key" : ["hazelnut","havarti","halloumi","honey","hot dog","harissa","hemp milk","houmous","hot curry paste","herbs de provence","ham","hemp milk",
     ],
 
 
     "ingredients": [
 
 
+        {
+          "name": "hemp milk",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "hempmilk",
+              "substitution": false,
+            },
+            {
+              "word": "soymilk",
+              "substitution": true,
+            },
+            {
+              "word": "soyamilk",
+              "substitution": true,
+            },
+            {
+              "word": "oatmilk",
+              "substitution": true,
+            },
+            {
+              "word": "ricemilk",
+              "substitution": true,
+            },
+            {
+              "word": "milk",
+              "substitution": true,
+            },
+          ],
+        },
         {
             "name": "ham",
             "exclude": [

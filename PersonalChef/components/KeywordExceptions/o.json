@@ -1,12 +1,46 @@
 {
 
-    "key" : ["oatmeal","onion","olives","oats","orange","orange juice","onion powder","orange oil","orange liqueur","oregano","oil","offal",
+    "key" : ["oat milk","oatmeal","onion","olives","oats","orange","orange juice","onion powder","orange oil","orange liqueur","oregano","oil","offal",
     ],
 
 
     "ingredients": [
 
-
+          {
+            "name": "oat milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "oatmilk",
+                "substitution": false,
+              },
+              {
+                "word": "soymilk",
+                "substitution": true,
+              },
+              {
+                "word": "soyamilk",
+                "substitution": true,
+              },
+              {
+                "word": "ricemilk",
+                "substitution": true,
+              },
+              {
+                "word": "hempmilk",
+                "substitution": true,
+              },
+              {
+                "word": "milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond breeze",
+                "substitution": true,
+              },
+            ],
+          },
           {
               "name": "offal",
               "exclude": [

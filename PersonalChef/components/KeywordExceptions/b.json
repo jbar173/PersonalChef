@@ -1,8 +1,9 @@
 {
 
-    "key" : ["butter","brazil nut","banana","beetroot","bell pepper","beef stock","brie","blue cheese","broccoli","baking powder","baking soda","beef","beef stock","beef mince","beer","beansprouts",
-      "black-eyed peas","banana liqueur","blueberry liqueur","bread","breadcrumbs","breadsticks","bread wraps","barbeque sauce","broad bean","borlotti bean","black pudding","butter beans","buttercream",
-      "blackberries","brandy","butternut squash","black cardamom","burger","beet",
+    "key" : ["butter","brazil nut","banana","beetroot","beet","beetroot powder","bell pepper","beef stock","brie","blue cheese","broccoli","baking powder",
+      "baking soda","beef","beef stock","beef mince","beer","beansprouts","black-eyed peas","banana liqueur","blueberry liqueur","bread","breadcrumbs",
+      "breadsticks","bread wraps","barbeque sauce","broad bean","borlotti bean","black pudding","butter beans","buttercream","blackberries","brandy",
+      "butternut squash","black cardamom","burger",
     ],
 
 
@@ -15,8 +16,186 @@
           {
             "word": "beet greens",
           },
+          {
+            "word": "juice",
+          },
+          {
+            "word": "tea",
+          },
+          {
+            "word": "tisane",
+          },
+          {
+            "word": "bake",
+          },
+          {
+            "word": "cake",
+          },
+          {
+            "word": "sauce",
+          },
+          {
+            "word": "puree",
+          },
+          {
+            "word": "vinegar",
+          },
+          {
+            "word": "oil",
+          },
+          {
+            "word": "chutney",
+          },
+          {
+            "word": "sauerkraut",
+          },
+          {
+            "word": "kraut",
+          },
+          {
+            "word": "spread",
+          },
+          {
+            "word": "butter",
+          },
+          {
+            "word": "jam",
+          },
+          {
+            "word": "jelly",
+          },
+          {
+            "word": "dried",
+          },
+          {
+            "word": "pasta",
+          },
+          {
+            "word": "powder",
+          },
+          {
+            "word": "candy",
+          },
         ],
         "include": [
+        ],
+      },
+      {
+        "name": "beetroot",
+        "exclude": [
+          {
+            "word": "juice",
+          },
+          {
+            "word": "tea",
+          },
+          {
+            "word": "tisane",
+          },
+          {
+            "word": "bake",
+          },
+          {
+            "word": "cake",
+          },
+          {
+            "word": "sauce",
+          },
+          {
+            "word": "puree",
+          },
+          {
+            "word": "vinegar",
+          },
+          {
+            "word": "oil",
+          },
+          {
+            "word": "chutney",
+          },
+          {
+            "word": "sauerkraut",
+          },
+          {
+            "word": "kraut",
+          },
+          {
+            "word": "spread",
+          },
+          {
+            "word": "butter",
+          },
+          {
+            "word": "jam",
+          },
+          {
+            "word": "jelly",
+          },
+          {
+            "word": "dried",
+          },
+          {
+            "word": "pasta",
+          },
+          {
+            "word": "powder",
+          },
+          {
+            "word": "candy",
+          },
+        ],
+        "include": [
+          {
+            "word": "beet",
+            "substitution": false,
+          },
+        ],
+      },
+      {
+        "name": "beetroot powder",
+        "exclude": [
+        ],
+        "include": [
+          {
+            "word": "beet powder",
+            "substitution": false,
+          },
+          {
+            "word": "beet root powder",
+            "substitution": false,
+          },
+          {
+            "word": "beetroot juice powder",
+            "substitution": false,
+          },
+          {
+            "word": "beet root juice powder",
+            "substitution": false,
+          },
+          {
+            "word": "beetroot dried ground",
+            "substitution": false,
+          },
+          {
+            "word": "beetroot ground",
+            "substitution": false,
+          },
+          {
+            "word": "powdered beetroot",
+            "substitution": false,
+          },
+          {
+            "word": "powdered beet",
+            "substitution": false,
+          },
+          {
+            "word": "ground beet",
+            "substitution": false,
+          },
+          {
+            "word": "ground beetroot",
+            "substitution": false,
+          },
         ],
       },
       {
@@ -35,6 +214,46 @@
             "word": "hamburger",
             "substitution": false,
           },
+          {
+            "word": "quarter pounder",
+            "substitution": false,
+          },
+          {
+            "word": "quarterpounder",
+            "substitution": false,
+          },
+          {
+            "word": "american pattie",
+            "substitution": false,
+          },
+          {
+            "word": "beef pattie",
+            "substitution": false,
+          },
+          {
+            "word": "beef patty",
+            "substitution": false,
+          },
+          {
+            "word": "beanburger",
+            "substitution": true,
+          },
+          {
+            "word": "beef mince",
+            "substitution": true,
+          },
+          {
+            "word": "minced beef",
+            "substitution": true,
+          },
+          {
+            "word": "ground beef",
+            "substitution": true,
+          },
+          {
+            "word": "ground chuck",
+            "substitution": true,
+          },
         ],
       },
       {
@@ -43,11 +262,121 @@
           ],
           "include": [
             {
+              "word": "cardamom black",
+              "substitution": false,
+            },
+            {
+              "word": "cardamoms black",
+              "substitution": false,
+            },
+            {
               "word": "black cardamon",
               "substitution": false,
             },
+            {
+              "word": "hill cardamom",
+              "substitution": false,
+            },
+            {
+              "word": "bengal cardamom",
+              "substitution": false,
+            },
+            {
+              "word": "greater cardamom",
+              "substitution": false,
+            },
+            {
+              "word": "indian cardamom",
+              "substitution": false,
+            },
+            {
+              "word": "nepal cardamom",
+              "substitution": false,
+            },
+            {
+              "word": "winged cardamom",
+              "substitution": false,
+            },
+            {
+              "word": "big cardamom",
+              "substitution": false,
+            },
+            {
+              "word": "brown cardamom",
+              "substitution": false,
+            },
+            {
+              "word": "badi elaichi",
+              "substitution": false,
+            },
+            {
+              "word": "kali elaichi",
+              "substitution": false,
+            },
+            {
+              "word": "amomum tsao-ko",
+              "substitution": false,
+            },
+            {
+              "word": "amomum tsaoko",
+              "substitution": false,
+            },
+            {
+              "word": "lanxangia tsaoko",
+              "substitution": false,
+            },
+            {
+              "word": "cardamom green",
+              "substitution": true,
+            },
+            {
+              "word": "cardamoms green",
+              "substitution": true,
+            },
+            {
+              "word": "green cardamom",
+              "substitution": true,
+            },
+            {
+              "word": "green cardamon",
+              "substitution": true,
+            },
+            {
+              "word": "cardamom yellow",
+              "substitution": true,
+            },
+            {
+              "word": "cardamoms yellow",
+              "substitution": true,
+            },
+            {
+              "word": "yellow cardamom",
+              "substitution": true,
+            },
+            {
+              "word": "yellow cardamon",
+              "substitution": true,
+            },
+            {
+              "word": "cardamom white",
+              "substitution": true,
+            },
+            {
+              "word": "cardamoms white",
+              "substitution": true,
+            },
+            {
+              "word": "white cardamom",
+              "substitution": true,
+            },
+            {
+              "word": "white cardamon",
+              "substitution": true,
+            },
           ],
       },
+
+      ---------------------------------------------------------------------
       {
           "name": "butternut squash",
           "exclude": [
@@ -1087,18 +1416,6 @@
               {
                 "word": "sweet pepper",
                 "substitution": true,
-              },
-            ],
-          },
-          {
-            "name": "beetroot",
-            "exclude": [
-
-            ],
-            "include": [
-              {
-                "word": "beet",
-                "substitution": false,
               },
             ],
           },

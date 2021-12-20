@@ -921,15 +921,27 @@
                 "substitution": false,
               },
               {
-                "word": "almond milk",
+                "word": "soyamilk",
+                "substitution": false,
+              },
+              {
+                "word": "oatmilk",
                 "substitution": true,
               },
               {
-                "word": "coconut milk",
+                "word": "ricemilk",
+                "substitution": true,
+              },
+              {
+                "word": "hempmilk",
                 "substitution": true,
               },
               {
                 "word": "milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond breeze",
                 "substitution": true,
               },
             ],

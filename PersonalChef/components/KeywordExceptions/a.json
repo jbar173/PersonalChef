@@ -1,7 +1,7 @@
 {
 
-    "key" : ["ale","apple","apricot","almond","almond milk","avocado","applewood smoked cheese","almond meal","almond flour","apple liqueur","apricot liqueur","apple sauce","aquafaba","achiote","aniseed liqueur",
-      "asparagus",
+    "key" : ["ale","apple","apricot","almond","almond milk","avocado","applewood smoked cheese","almond meal","almond flour","apple liqueur","apricot liqueur",
+      "apple sauce","aquafaba","achiote","aniseed liqueur","asparagus",
     ],
 
 
@@ -121,11 +121,18 @@
           {
               "name": "achiote",
               "exclude": [
+                {
+                  "word": "smoked",
+                },
               ],
               "include": [
                 {
                   "word": "annatto",
                   "substitution": false,
+                },
+                {
+                  "word": "paprika",
+                  "substitution": true,
                 },
               ],
           },
@@ -138,6 +145,38 @@
                   "word": "chickpea liquid",
                   "substitution": false,
                 },
+                {
+                  "word": "egg replacer",
+                  "substitution": true,
+                },
+                {
+                  "word": "no-egg egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegan easy egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegan egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegg egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "orgran no egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "egg white",
+                  "substitution": true,
+                },
+                {
+                  "word": "replacer mix no egg",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -148,6 +187,66 @@
               "include": [
                 {
                   "word": "applesauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "pureed apple",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple chutney",
+                  "substitution": true,
+                },
+                {
+                  "word": "pureed pear",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "pureed apricot",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "pureed raspberry",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "pureed strawberry",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "pureed berries",
+                  "substitution": false,
+                },
+                {
+                  "word": "berry puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "pureed fruit",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit puree",
                   "substitution": false,
                 },
               ],
@@ -208,6 +307,10 @@
                   "word": "apple liquor",
                   "substitution": false,
                 },
+                {
+                  "word": "apple schnapps",
+                  "substitution": false,
+                },
               ],
           },
           {
@@ -217,6 +320,14 @@
               "include": [
                 {
                   "word": "almond meal",
+                  "substitution": true,
+                },
+                {
+                  "word": "ground almond",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond powder",
                   "substitution": true,
                 },
               ],
@@ -230,6 +341,14 @@
                   "word": "almond flour",
                   "substitution": true,
                 },
+                {
+                  "word": "ground almond",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond powder",
+                  "substitution": false,
+                },
               ],
           },
           {
@@ -240,6 +359,122 @@
                 },
               ],
               "include": [
+                {
+                  "word": "smoked cheddar",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked mature cheddar",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked vintage cheddar",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoke flavoured cheddar",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoke flavored cheddar",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked flavour cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked flavour slices",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheese smoke flavouring",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheese with smoke flavouring",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked applewood",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked bourbon gouda",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheeses smoked",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked german style cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked farmhouse cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked clothbound cheddar",
+                  "substitution": false,
+                },
+                {
+                  "word": "applewood smoky",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked gouda",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky melting vegan cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky cheddar flavour slices",
+                  "substitution": false,
+                },
+                {
+                  "word": "applewood smoked",
+                  "substitution": false,
+                },
+                {
+                  "word": "applewood vegan cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "applewood vegan slices",
+                  "substitution": false,
+                },
+                {
+                  "word": "beechwood smoked cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "beechwood smoked whole",
+                  "substitution": false,
+                },
+                {
+                  "word": "applesmoked",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple-smoked cheese",
+                  "substitution": false,
+                },
+                {
+                  "word": "bavarian smoked",
+                  "substitution": false,
+                },
               ],
           },
           {
@@ -261,53 +496,246 @@
               },
             ],
             "include": [
-
+              {
+                "word": "beer",
+                "substitution": false,
+              },
+              {
+                "word": "stout",
+                "substitution": true,
+              },
+              {
+                "word": "ipa",
+                "substitution": true,
+              },
+              {
+                "word": "lager",
+                "substitution": true,
+              },
             ],
           },
           {
             "name": "apple",
             "exclude": [
               {
+                "word": "pie",
+              },
+              {
+                "word": "bake",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "ball",
+              },
+              {
+                "word": "crispy",
+              },
+              {
+                "word": "crunch",
+              },
+              {
+                "word": "museli",
+              },
+              {
                 "word": "sauce",
               },
               {
-                "word": "applesauce",
+                "word": "puree",
               },
               {
-                "word": "juice",
+                "word": "curd",
               },
               {
-                "word": "butter",
+                "word": "yoghurt",
               },
               {
-                "word": "toffee apple",
+                "word": "muller",
               },
               {
-                "word": "chutney",
+                "word": "custard",
               },
               {
                 "word": "vinegar",
               },
               {
+                "word": "oil",
+              },
+              {
+                "word": "chutney",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "butter",
+              },
+              {
+                "word": "preserve",
+              },
+              {
+                "word": "conserve",
+              },
+              {
+                "word": "jam",
+              },
+              {
+                "word": "jelly",
+              },
+              {
+                "word": "juice",
+              },
+              {
+                "word": "tea",
+              },
+              {
+                "word": "concentrate",
+              },
+              {
+                "word": "cordial",
+              },
+              {
+                "word": "squash",
+              },
+              {
+                "word": "beer",
+              },
+              {
                 "word": "cider",
               },
               {
-                "word": "pie",
+                "word": "wine",
               },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "brandy",
+              },
+              {
+                "word": "sweets",
+              },
+              {
+                "word": "candy",
+              },
+              {
+                "word": "dried",
+              },
+              {
+                "word": "candied",
+              },
+
               {
                 "word": "apple wood",
               },
               {
-                "word": "applewood",
+                "word": "stone",
+              },
+              {
+                "word": "wood",
+              },
+              {
+                "word": "banana",
+              },
+              {
+                "word": "chip",
+              },
+              {
+                "word": "super seeds",
+              },
+              {
+                "word": "cinnamon",
+              },
+              {
+                "word": "toffee apple",
+              },
+              {
+                "word": "wriggles",
               },
             ],
             "include": [
-
+              {
+                "word": "red delicious",
+                "substitution": false,
+              },
+              {
+                "word": "pink lady",
+                "substitution": false,
+              },
+              {
+                "word": "granny smith",
+                "substitution": true,
+              },
+              {
+                "word": "plumcots",
+                "substitution": true,
+              },
             ],
           },
           {
             "name": "apricot",
             "exclude": [
+              {
+                "word": "pie",
+              },
+              {
+                "word": "bake",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "ball",
+              },
+              {
+                "word": "crispy",
+              },
+              {
+                "word": "crunch",
+              },
+              {
+                "word": "museli",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "puree",
+              },
+              {
+                "word": "curd",
+              },
+              {
+                "word": "yoghurt",
+              },
+              {
+                "word": "muller",
+              },
+              {
+                "word": "custard",
+              },
+              {
+                "word": "vinegar",
+              },
+              {
+                "word": "oil",
+              },
+              {
+                "word": "chutney",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "butter",
+              },
               {
                 "word": "jam",
               },
@@ -321,13 +749,53 @@
                 "word": "jelly",
               },
               {
-                "word": "chutney",
+                "word": "juice",
               },
               {
-                "word": "spread",
+                "word": "tea",
               },
               {
-                "word": "sauce",
+                "word": "concentrate",
+              },
+              {
+                "word": "cordial",
+              },
+              {
+                "word": "squash",
+              },
+              {
+                "word": "beer",
+              },
+              {
+                "word": "cider",
+              },
+              {
+                "word": "wine",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "brandy",
+              },
+              {
+                "word": "sweets",
+              },
+              {
+                "word": "candy",
+              },
+              {
+                "word": "dried",
+              },
+              {
+                "word": "candied",
+              },
+
+              {
+                "word": "kernel",
+              },
+              {
+                "word": "seed",
               },
             ],
             "include": [
@@ -353,25 +821,58 @@
             "name": "almond",
             "exclude": [
               {
-                "word": "almond butter",
+                "word": "wine",
               },
               {
-                "word": "almond paste",
+                "word": "liqueur",
               },
               {
-                "word": "almond flour",
+                "word": "brandy",
               },
               {
-                "word": "almond meal",
+                "word": "oil",
               },
               {
-                "word": "almond syrup",
+                "word": "butter",
               },
               {
-                "word": "almond macaroon",
+                "word": "spread",
               },
               {
-                "word": "almond biscuit",
+                "word": "paste",
+              },
+              {
+                "word": "flour",
+              },
+              {
+                "word": "meal",
+              },
+              {
+                "word": "syrup",
+              },
+              {
+                "word": "macaroon",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "cookie",
+              },
+              {
+                "word": "pie",
+              },
+              {
+                "word": "bake",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "ball",
               },
               {
                 "word": "sugared",
@@ -379,9 +880,14 @@
               {
                 "word": "chocolate",
               },
+              {
+                "word": "sweets",
+              },
+              {
+                "word": "candy",
+              },
             ],
             "include": [
-
             ],
           },
           {
@@ -390,29 +896,35 @@
             ],
             "include": [
               {
-                "word": "soy milk",
-                "substitution": true,
+                "word": "almond breeze",
+                "substitution": false,
               },
               {
                 "word": "soymilk",
                 "substitution": true,
               },
               {
-                "word": "coconut milk",
+                "word": "soyamilk",
+                "substitution": true,
+              },
+              {
+                "word": "oatmilk",
+                "substitution": true,
+              },
+              {
+                "word": "ricemilk",
+                "substitution": true,
+              },
+              {
+                "word": "hempmilk",
                 "substitution": true,
               },
               {
                 "word": "milk",
                 "substitution": true,
               },
-              {
-                "word": "almond breeze",
-                "substitution": true,
-              },
             ],
           },
-
-
 
 
     ]

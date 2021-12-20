@@ -1422,11 +1422,32 @@
               },
             ],
             "include": [
-
+              {
+                "word": "soymilk",
+                "substitution": true,
+              },
+              {
+                "word": "soyamilk",
+                "substitution": true,
+              },
+              {
+                "word": "oatmilk",
+                "substitution": true,
+              },
+              {
+                "word": "ricemilk",
+                "substitution": true,
+              },
+              {
+                "word": "hempmilk",
+                "substitution": true,
+              },
+              {
+                "word": "almond breeze",
+                "substitution": true,
+              },
             ],
           },
-
-
 
     ]
 

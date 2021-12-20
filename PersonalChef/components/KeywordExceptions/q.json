@@ -1,11 +1,47 @@
 {
 
-    "key" : [ "quince","quince paste",
+    "key" : [ "quince","quince paste","quinoa milk",
     ],
 
 
     "ingredients": [
 
+
+          {
+            "name": "quinoa milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "almond breeze",
+                "substitution": false,
+              },
+              {
+                "word": "soymilk",
+                "substitution": true,
+              },
+              {
+                "word": "soyamilk",
+                "substitution": true,
+              },
+              {
+                "word": "oatmilk",
+                "substitution": true,
+              },
+              {
+                "word": "ricemilk",
+                "substitution": true,
+              },
+              {
+                "word": "hempmilk",
+                "substitution": true,
+              },
+              {
+                "word": "milk",
+                "substitution": true,
+              },
+            ],
+          },
           {
               "name": "fresh quince",
               "exclude": [

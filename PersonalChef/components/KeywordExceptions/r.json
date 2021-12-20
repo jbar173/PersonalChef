@@ -1,6 +1,7 @@
 {
 
-    "key" : ["raisins","rice","rocket","ricotta","raspberry","red wine","raspberry liqueur","rice cracker","rice puffs","redcurrant jelly","red lentils","rose water","red curry paste","rum",
+    "key" : ["raisins","rice","rice milk","rocket","ricotta","raspberry","red wine","raspberry liqueur","rice cracker","rice puffs","redcurrant jelly","red lentils",
+      "rose water","red curry paste","rum",
 
     ],
 
@@ -8,6 +9,41 @@
     "ingredients": [
 
 
+          {
+            "name": "rice milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "ricemilk",
+                "substitution": false,
+              },
+              {
+                "word": "soymilk",
+                "substitution": true,
+              },
+              {
+                "word": "soyamilk",
+                "substitution": true,
+              },
+              {
+                "word": "oatmilk",
+                "substitution": true,
+              },
+              {
+                "word": "hempmilk",
+                "substitution": true,
+              },
+              {
+                "word": "milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond breeze",
+                "substitution": true,
+              },
+            ],
+          },
           {
             "name": "rum",
             "exclude": [
