@@ -579,6 +579,10 @@
                 "substitution": false,
               },
               {
+                "word": "kirschwasser",
+                "substitution": false,
+              },
+              {
                 "word": "heering",
                 "substitution": false,
               },
@@ -616,6 +620,14 @@
               },
               {
                 "word": "cherry wine",
+                "substitution": true,
+              },
+              {
+                "word": "raspberry liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "plum liqueur",
                 "substitution": true,
               },
             ],

@@ -55,7 +55,6 @@
               },
             ],
             "include": [
-
             ],
           },
           {
@@ -330,8 +329,32 @@
                   "substitution": false,
                 },
                 {
+                  "word": "framboise eau de vie",
+                  "substitution": false,
+                },
+                {
+                  "word": "framboise eau-de-vie",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "framboise liqueur",
+                  "substitution": false,
+                },
+                {
                   "word": "chambord",
                   "substitution": false,
+                },
+                {
+                  "word": "kirschwasser",
+                  "substitution": true,
+                },
+                {
+                  "word": "cherry brandy",
+                  "substitution": true,
                 },
               ],
           },

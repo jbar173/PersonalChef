@@ -262,6 +262,22 @@
                   "word": "grape liquor",
                   "substitution": false,
                 },
+                {
+                  "word": "grappa",
+                  "substitution": false,
+                },
+                {
+                  "word": "pomace brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple brandy",
+                  "substitution": true,
+                },
+                {
+                  "word": "pear brandy",
+                  "substitution": true,
+                },
               ],
           },
           {

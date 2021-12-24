@@ -116,6 +116,10 @@
                   "word": "ricard",
                   "substitution": false,
                 },
+                {
+                  "word": "raki",
+                  "substitution": false,
+                },
               ],
           },
           {
@@ -280,6 +284,26 @@
                   "word": "apricot brandy",
                   "substitution": false,
                 },
+                {
+                  "word": "apricot schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "barack",
+                  "substitution": false,
+                },
+                {
+                  "word": "abricotine",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange liqueur",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -308,7 +332,39 @@
                   "substitution": false,
                 },
                 {
+                  "word": "apple brandy",
+                  "substitution": false,
+                },
+                {
                   "word": "apple schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "calvados",
+                  "substitution": false,
+                },
+                {
+                  "word": "calva",
+                  "substitution": false,
+                },
+                {
+                  "word": "applejack",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple jack",
+                  "substitution": false,
+                },
+                {
+                  "word": "grappa",
+                  "substitution": false,
+                },
+                {
+                  "word": "pomace brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "pisco",
                   "substitution": false,
                 },
               ],

@@ -614,6 +614,18 @@
                   "substitution": false,
                 },
                 {
+                  "word": "pear brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "eau-de-vie de poire",
+                  "substitution": false,
+                },
+                {
+                  "word": "eau de vie de poire",
+                  "substitution": false,
+                },
+                {
                   "word": "pear liquor",
                   "substitution": false,
                 },
@@ -1591,6 +1603,10 @@
                 },
                 {
                   "word": "squash",
+                  "substitution": true,
+                },
+                {
+                  "word": "calabaza",
                   "substitution": true,
                 },
               ],

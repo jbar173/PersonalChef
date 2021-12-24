@@ -375,23 +375,118 @@
             },
           ],
       },
-
-      ---------------------------------------------------------------------
       {
           "name": "butternut squash",
           "exclude": [
+            {
+              "word": "fruit",
+            },
+            {
+              "word": "orange squash",
+            },
+            {
+              "word": "cordial",
+            },
+            {
+              "word": "concentrate",
+            },
+            {
+              "word": "drink",
+            },
+            {
+              "word": "juice",
+            },
+            {
+              "word": "concentrate",
+            },
+            {
+              "word": "seed",
+            },
+            {
+              "word": "spice",
+            },
+            {
+              "word": "puree",
+            },
+            {
+              "word": "canned",
+            },
+            {
+              "word": "packed",
+            },
+            {
+              "word": "can",
+            },
+            {
+              "word": "tin",
+            },
+            {
+              "word": "tinned",
+            },
+            {
+              "word": "vodka",
+            },
+            {
+              "word": "summer",
+            },
+            {
+              "word": "yellow",
+            },
+            {
+              "word": "pattypan",
+            },
+            {
+              "word": "zucchini",
+            },
+            {
+              "word": "zucchetta",
+            },
+            {
+              "word": "tromboncino",
+            },
+            {
+              "word": "crookneck",
+            },
+            {
+              "word": "straightneck",
+            },
+            {
+              "word": "zephyr",
+            },
+            {
+              "word": "mirliton",
+            },
+            {
+              "word": "cousa",
+            },
+            {
+              "word": "luffa",
+            },
+            {
+              "word": "loofah",
+            },
+            {
+              "word": "turai",
+            },
+            {
+              "word": "aehobak",
+            },
           ],
           "include": [
-            {
-              "word": "winter squash",
-              "substitution": true,
-            },
             {
               "word": "pumpkin",
               "substitution": true,
             },
             {
               "word": "calabaza",
+              "substitution": true,
+            },
+            {
+              "word": "squash",
+              "substitution": true,
+            },
+            {
+              "word": "kabocha",
               "substitution": true,
             },
           ],
@@ -413,6 +508,18 @@
               "word": "pisco",
               "substitution": false,
             },
+            {
+              "word": "metaxa",
+              "substitution": false,
+            },
+            {
+              "word": "cachaca",
+              "substitution": false,
+            },
+            {
+              "word": "pinga",
+              "substitution": false,
+            },
           ],
       },
       {
@@ -421,18 +528,108 @@
           ],
           "include": [
             {
+              "word": "mulberries",
+              "substitution": true,
+            },
+            {
               "word": "marionberries",
-              "substitution": false,
+              "substitution": true,
+            },
+            {
+              "word": "marion berries",
+              "substitution": true,
+            },
+            {
+              "word": "loganberries",
+              "substitution": true,
+            },
+            {
+              "word": "logan berries",
+              "substitution": true,
+            },
+            {
+              "word": "boysenberries",
+              "substitution": true,
             },
           ],
       },
       {
           "name": "buttercream",
           "exclude": [
+            {
+              "word": "fondant",
+            },
+            {
+              "word": "gel",
+            },
+            {
+              "word": "colouring",
+            },
+            {
+              "word": "coloring",
+            },
+            {
+              "word": "whitening",
+            },
+            {
+              "word": "flowers",
+            },
           ],
           "include": [
             {
               "word": "butter cream",
+              "substitution": false,
+            },
+            {
+              "word": "buttercreme",
+              "substitution": false,
+            },
+            {
+              "word": "butter creme",
+              "substitution": false,
+            },
+            {
+              "word": "frosting",
+              "substitution": false,
+            },
+            {
+              "word": "cream cheese style icing",
+              "substitution": false,
+            },
+            {
+              "word": "cream cheese icing",
+              "substitution": false,
+            },
+            {
+              "word": "cake cream",
+              "substitution": false,
+            },
+            {
+              "word": "cupcake cream",
+              "substitution": false,
+            },
+            {
+              "word": "cupcake icing",
+              "substitution": false,
+            },
+            {
+              "word": "decorating icing",
+              "substitution": false,
+            },
+            {
+              "word": "decorator icing",
+              "substitution": false,
+            },
+            {
+              "word": "vanilla icing",
+              "substitution": false,
+            },
+            {
+              "word": "vanilla flavour icing",
+              "substitution": false,
+            },
+            {
+              "word": "vanilla flavor icing",
               "substitution": false,
             },
           ],
@@ -461,6 +658,18 @@
             {
               "word": "pork blood",
               "substitution": false,
+            },
+            {
+              "word": "blood sausage",
+              "substitution": false,
+            },
+            {
+              "word": "blutwurst",
+              "substitution": false,
+            },
+            {
+              "word": "white pudding",
+              "substitution": true,
             },
           ],
       },
@@ -534,6 +743,14 @@
             {
               "word": "bbq sauce",
               "substitution": false,
+            },
+            {
+              "word": "brown sauce",
+              "substitution": true,
+            },
+            {
+              "word": "hp sauce",
+              "substitution": true,
             },
           ],
       },
@@ -658,6 +875,18 @@
           ],
           "include": [
             {
+              "word": "breadstick",
+              "substitution": false,
+            },
+            {
+              "word": "bread stick",
+              "substitution": false,
+            },
+            {
+              "word": "bread-stick",
+              "substitution": false,
+            },
+            {
               "word": "grissini",
               "substitution": false,
             },
@@ -666,7 +895,11 @@
               "substitution": false,
             },
             {
-              "word": "dipping sticks",
+              "word": "torinesi",
+              "substitution": false,
+            },
+            {
+              "word": "dipping stick",
               "substitution": false,
             },
           ],
@@ -677,7 +910,11 @@
           ],
           "include": [
             {
-              "word": "bread crumbs",
+              "word": "breadcrumb",
+              "substitution": false,
+            },
+            {
+              "word": "bread crumb",
               "substitution": false,
             },
             {
@@ -871,7 +1108,55 @@
               "substitution": false,
             },
             {
+              "word": "blueberry-flavoured liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry-flavored liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry-flavoured liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry-flavored liquor",
+              "substitution": false,
+            },
+            {
               "word": "blueberry liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry vodka",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry rum",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry brandy",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry gin",
+              "substitution": false,
+            },
+            {
+              "word": "bramble gin liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry muffin gin liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry & juniper liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry & basil gin liqueur",
               "substitution": false,
             },
             {
@@ -914,7 +1199,51 @@
               "substitution": false,
             },
             {
+              "word": "banana-flavoured liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "banana-flavored liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "banana-flavoured liquor",
+              "substitution": false,
+            },
+            {
+              "word": "banana-flavored liquor",
+              "substitution": false,
+            },
+            {
+              "word": "banana rum",
+              "substitution": false,
+            },
+            {
+              "word": "banane du bresil",
+              "substitution": false,
+            },
+            {
+              "word": "banana whisky",
+              "substitution": false,
+            },
+            {
+              "word": "banana whiskey",
+              "substitution": false,
+            },
+            {
+              "word": "banana caribbean rum",
+              "substitution": false,
+            },
+            {
               "word": "banana liquor",
+              "substitution": false,
+            },
+            {
+              "word": "banane liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "liqueur giffard banana",
               "substitution": false,
             },
             {

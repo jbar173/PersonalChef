@@ -366,6 +366,14 @@
                 "word": "moscato",
                 "substitution": false,
               },
+              {
+                "word": "grappa",
+                "substitution": true,
+              },
+              {
+                "word": "pisco",
+                "substitution": true,
+              },
             ],
         },
         {
