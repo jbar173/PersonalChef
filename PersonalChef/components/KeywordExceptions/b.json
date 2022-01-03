@@ -74,6 +74,9 @@
             "word": "powder",
           },
           {
+            "word": "powdered",
+          },
+          {
             "word": "candy",
           },
         ],
@@ -139,6 +142,9 @@
           },
           {
             "word": "powder",
+          },
+          {
+            "word": "powdered",
           },
           {
             "word": "candy",
@@ -1160,6 +1166,22 @@
               "substitution": false,
             },
             {
+              "word": "bramble gin liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry muffin gin liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry & juniper liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry & basil gin liquor",
+              "substitution": false,
+            },
+            {
               "word": "toschi mirtilli",
               "substitution": false,
             },
@@ -1262,6 +1284,10 @@
               "substitution": false,
             },
             {
+              "word": "blackeyed peas",
+              "substitution": false,
+            },
+            {
               "word": "cowpeas",
               "substitution": false,
             },
@@ -1292,6 +1318,18 @@
                   "word": "bean sprout",
                   "substitution": false,
                 },
+                {
+                  "word": "sunflower sprout",
+                  "substitution": true,
+                },
+                {
+                  "word": "mungbean sprout",
+                  "substitution": true,
+                },
+                {
+                  "word": "mung bean sprout",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1305,6 +1343,18 @@
                 },
               ],
               "include": [
+                {
+                  "word": "ale",
+                  "substitution": true,
+                },
+                {
+                  "word": "lager",
+                  "substitution": true,
+                },
+                {
+                  "word": "stout",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1331,6 +1381,10 @@
                 {
                   "word": "beef minced",
                   "substitution": false,
+                },
+                {
+                  "word": "lamb mince",
+                  "substitution": true,
                 },
                 {
                   "word": "minced meat",
@@ -1363,13 +1417,49 @@
                   "word": "tripe",
                 },
                 {
-                  "word": "beef stock",
+                  "word": "stock",
                 },
                 {
-                  "word": "beef broth",
+                  "word": "broth",
                 },
                 {
-                  "word": "beef bouillon",
+                  "word": "gravy",
+                },
+                {
+                  "word": "glace",
+                },
+                {
+                  "word": "jus",
+                },
+                {
+                  "word": "bouillon",
+                },
+                {
+                  "word": "oxo",
+                },
+                {
+                  "word": "beef cube",
+                },
+                {
+                  "word": "soup base",
+                },
+                {
+                  "word": "bone broth",
+                },
+                {
+                  "word": "beef base",
+                },
+                {
+                  "word": "consomme",
+                },
+                {
+                  "word": "consume",
+                },
+                {
+                  "word": "demi-glace",
+                },
+                {
+                  "word": "demi glace",
                 },
                 {
                   "word": "beefsteak tomato",
@@ -1387,7 +1477,7 @@
               "include": [
                 {
                   "word": "red meat",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "topside joint",
@@ -1575,6 +1665,14 @@
                   "word": "leaven",
                   "substitution": true,
                 },
+                {
+                  "word": "baker's ammonia",
+                  "substitution": true,
+                },
+                {
+                  "word": "bakers ammonia",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1585,6 +1683,18 @@
                 {
                   "word": "broccolini",
                   "substitution": false,
+                },
+                {
+                  "word": "cauliflower",
+                  "substitution": true,
+                },
+                {
+                  "word": "green bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "asparagus",
+                  "substitution": true,
                 },
               ],
           },
@@ -1642,6 +1752,14 @@
             "include": [
               {
                 "word": "camembert",
+                "substitution": true,
+              },
+              {
+                "word": "explorateur",
+                "substitution": true,
+              },
+              {
+                "word": "fromage d'affinois",
                 "substitution": true,
               },
               {
@@ -1707,11 +1825,69 @@
                 "word": "demi glace",
                 "substitution": true,
               },
+              {
+                "word": "beef gravy",
+                "substitution": true,
+              },
+              {
+                "word": "beef sauce",
+                "substitution": true,
+              },
+              {
+                "word": "beef jus",
+                "substitution": true,
+              },
+              {
+                "word": "beef glace",
+                "substitution": true,
+              },
             ],
           },
           {
             "name": "bell pepper",
             "exclude": [
+              {
+                "word": "jam",
+              },
+              {
+                "word": "jelly",
+              },
+              {
+                "word": "juice",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "puree",
+              },
+              {
+                "word": "oil",
+              },
+              {
+                "word": "chutney",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "dried",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "granules",
+              },
+              {
+                "word": "granulated",
+              },
             ],
             "include": [
               {
@@ -1744,6 +1920,22 @@
               },
               {
                 "word": "sweet pepper",
+                "substitution": true,
+              },
+              {
+                "word": "sweet pointed pepper",
+                "substitution": true,
+              },
+              {
+                "word": "poblano",
+                "substitution": true,
+              },
+              {
+                "word": "anaheim pepper",
+                "substitution": true,
+              },
+              {
+                "word": "cubanelle",
                 "substitution": true,
               },
             ],
@@ -1807,9 +1999,53 @@
               {
                 "word": "oil",
               },
+              {
+                "word": "butter",
+              },
+              {
+                "word": "meal",
+              },
+              {
+                "word": "flour",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "chocolate",
+              },
+              {
+                "word": "bake",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "ball",
+              },
             ],
             "include": [
-
+              {
+                "word": "hazelnut",
+                "substitution": true,
+              },
+              {
+                "word": "macademia",
+                "substitution": true,
+              },
+              {
+                "word": "almond",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -1819,19 +2055,7 @@
                 "word": "cooking banana",
               },
               {
-                "word": "cream",
-              },
-              {
-                "word": "liqueur",
-              },
-              {
-                "word": "liquor",
-              },
-              {
                 "word": "potato",
-              },
-              {
-                "word": "extract",
               },
               {
                 "word": "flower",
@@ -1845,12 +2069,85 @@
               {
                 "word": "pepper",
               },
+              {
+                "word": "bake",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "ball",
+              },
+              {
+                "word": "crispy",
+              },
+              {
+                "word": "crunch",
+              },
+              {
+                "word": "sweets",
+              },
+              {
+                "word": "candy",
+              },
+              {
+                "word": "dried",
+              },
+              {
+                "word": "chip",
+              },
+              {
+                "word": "candied",
+              },
+              {
+                "word": "yoghurt",
+              },
+              {
+                "word": "muller",
+              },
+              {
+                "word": "custard",
+              },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "liquor",
+              },
+              {
+                "word": "rum",
+              },
+              {
+                "word": "brandy",
+              },
+              {
+                "word": "flavoring",
+              },
+              {
+                "word": "paste",
+              },
+              {
+                "word": "extract",
+              },
+              {
+                "word": "essence",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "puree",
+              },
             ],
             "include": [
             ],
           },
-
-
     ]
 
 }

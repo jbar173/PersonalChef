@@ -453,6 +453,14 @@
                   "substitution": false,
                 },
                 {
+                  "word": "passion fruit-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit-flavored liqueur",
+                  "substitution": false,
+                },
+                {
                   "word": "passion fruit flavoured liquor",
                   "substitution": false,
                 },
@@ -461,23 +469,31 @@
                   "substitution": false,
                 },
                 {
+                  "word": "passion fruit-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit-flavored liquor",
+                  "substitution": false,
+                },
+                {
                   "word": "passion fruit liquor",
                   "substitution": false,
                 },
                 {
-                  "word": "passionfruit flavoured liqueur",
+                  "word": "passionfruit-flavoured liqueur",
                   "substitution": false,
                 },
                 {
-                  "word": "passionfruit flavored liqueur",
+                  "word": "passionfruit-flavored liqueur",
                   "substitution": false,
                 },
                 {
-                  "word": "passionfruit flavoured liquor",
+                  "word": "passionfruit-flavoured liquor",
                   "substitution": false,
                 },
                 {
-                  "word": "passionfruit flavored liquor",
+                  "word": "passionfruit-flavored liquor",
                   "substitution": false,
                 },
                 {
@@ -524,11 +540,27 @@
                   "substitution": false,
                 },
                 {
+                  "word": "plum-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum-flavored liqueur",
+                  "substitution": false,
+                },
+                {
                   "word": "plum flavoured liquor",
                   "substitution": false,
                 },
                 {
                   "word": "plum flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum-flavored liquor",
                   "substitution": false,
                 },
                 {
@@ -555,11 +587,27 @@
                   "substitution": false,
                 },
                 {
+                  "word": "peach-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach-flavored liqueur",
+                  "substitution": false,
+                },
+                {
                   "word": "peach flavoured liquor",
                   "substitution": false,
                 },
                 {
                   "word": "peach flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach-flavored liquor",
                   "substitution": false,
                 },
                 {
@@ -690,6 +738,62 @@
                   "word": "pork soup",
                   "substitution": false,
                 },
+                {
+                  "word": "pork bone broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork soup base",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork bouillon",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork oxo",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork cube",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork base",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork consume",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork demi-glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "pork demi glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "pork gravy",
+                  "substitution": true,
+                },
+                {
+                  "word": "pork sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "pork jus",
+                  "substitution": true,
+                },
+                {
+                  "word": "pork glace",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -732,6 +836,45 @@
                   "word": "broth",
                 },
                 {
+                  "word": "gravy",
+                },
+                {
+                  "word": "glace",
+                },
+                {
+                  "word": "jus",
+                },
+                {
+                  "word": "bouillon",
+                },
+                {
+                  "word": "oxo",
+                },
+                {
+                  "word": "pork cube",
+                },
+                {
+                  "word": "soup base",
+                },
+                {
+                  "word": "bone broth",
+                },
+                {
+                  "word": "pork base",
+                },
+                {
+                  "word": "consomme",
+                },
+                {
+                  "word": "consume",
+                },
+                {
+                  "word": "demi-glace",
+                },
+                {
+                  "word": "demi glace",
+                },
+                {
                   "word": "liver",
                 },
                 {
@@ -771,9 +914,6 @@
                   "word": "salted pork",
                 },
                 {
-                  "word": "pork gravy",
-                },
-                {
                   "word": "pork mix",
                 },
                 {
@@ -808,6 +948,14 @@
                 },
               ],
               "include": [
+                {
+                  "word": "turkey mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken mince",
+                  "substitution": true,
+                },
               ],
           },
           {

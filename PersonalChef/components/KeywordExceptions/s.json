@@ -328,6 +328,18 @@
                   "word": "kielbasa",
                   "substitution": false,
                 },
+                {
+                  "word": "polony",
+                  "substitution": false,
+                },
+                {
+                  "word": "baloney",
+                  "substitution": false,
+                },
+                {
+                  "word": "bologna sausage",
+                  "substitution": false,
+                },
               ],
           },
           {
@@ -399,6 +411,22 @@
                 },
                 {
                   "word": "strawberry flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry-flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry-flavored liquor",
                   "substitution": false,
                 },
                 {

@@ -896,11 +896,27 @@
                   "substitution": false,
                 },
                 {
+                  "word": "mint-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint-flavored liqueur",
+                  "substitution": false,
+                },
+                {
                   "word": "mint flavoured liquor",
                   "substitution": false,
                 },
                 {
                   "word": "mint flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint-flavored liquor",
                   "substitution": false,
                 },
                 {
@@ -916,11 +932,27 @@
                   "substitution": false,
                 },
                 {
+                  "word": "peppermint-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint-flavored liqueur",
+                  "substitution": false,
+                },
+                {
                   "word": "peppermint flavoured liquor",
                   "substitution": false,
                 },
                 {
                   "word": "peppermint flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint-flavored liquor",
                   "substitution": false,
                 },
                 {
@@ -984,11 +1016,27 @@
                   "substitution": false,
                 },
                 {
+                  "word": "melon-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon-flavored liqueur",
+                  "substitution": false,
+                },
+                {
                   "word": "melon flavoured liquor",
                   "substitution": false,
                 },
                 {
                   "word": "melon flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon-flavored liquor",
                   "substitution": false,
                 },
                 {
@@ -1015,11 +1063,27 @@
                   "substitution": false,
                 },
                 {
+                  "word": "mango-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango-flavored liqueur",
+                  "substitution": false,
+                },
+                {
                   "word": "mango flavoured liquor",
                   "substitution": false,
                 },
                 {
                   "word": "mango flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango-flavored liquor",
                   "substitution": false,
                 },
                 {
@@ -1083,6 +1147,9 @@
               "exclude": [
                 {
                   "word": "powder",
+                },
+                {
+                  "word": "powdered",
                 },
                 {
                   "word": "yoghurt",
@@ -1330,6 +1397,9 @@
               },
               {
                 "word": "powder",
+              },
+              {
+                "word": "powdered",
               },
               {
                 "word": "leaves",

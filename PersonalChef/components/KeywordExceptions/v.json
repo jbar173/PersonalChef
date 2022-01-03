@@ -144,6 +144,10 @@
                 "substitution": false,
               },
               {
+                "word": "veg soup base",
+                "substitution": false,
+              },
+              {
                 "word": "vegetable bouillon",
                 "substitution": false,
               },
@@ -155,10 +159,36 @@
                 "word": "vegetable cube",
                 "substitution": false,
               },
+              {
+                "word": "vegetable base",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable consomme",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable consume",
+                "substitution": false,
+              },
+              {
+                "word": "veg consomme",
+                "substitution": false,
+              },
+              {
+                "word": "veg consume",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable gravy",
+                "substitution": true,
+              },
+              {
+                "word": "veg gravy",
+                "substitution": true,
+              },
             ],
           },
-
-
 
     ]
 

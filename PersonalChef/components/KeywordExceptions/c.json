@@ -3,7 +3,7 @@
     "key" : ["cream","chocolate","coffee","candlenut","cashew nut","chestnuts","cabbage","chocolate custard","custard","caramel","chili pepper","coconut milk","cider","courgette","cashew nuts",
       "chicken stock","cheddar","cheese slice","camembert","comte","cottage cheese","cream cheese","creme fraiche","cachaca","champagne","cava","candied orange","chili flakes","chili paste","coconut liqueur",
       "cherry liqueur","cinnamon","chickpeas","cracker","cornstarch","cornmeal","cured sausage","chili sauce","chili powder","chinese five spice","chutney","chicory","chayote","cannellini bean","collard greens",
-      "couscous","cocoa powder","cassava flour","chard","chicken",
+      "couscous","cocoa powder","cassava flour","chard","chicken","chicken mince",
 
     ],
 
@@ -12,33 +12,161 @@
 
 
         {
+            "name": "chicken mince",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chicken ground",
+                "substitution": false,
+              },
+              {
+                "word": "ground chicken",
+                "substitution": false,
+              },
+              {
+                "word": "minced chicken",
+                "substitution": false,
+              },
+              {
+                "word": "chicken minced",
+                "substitution": false,
+              },
+              {
+                "word": "mince chicken",
+                "substitution": false,
+              },
+              {
+                "word": "turkey mince",
+                "substitution": true,
+              },
+            ],
+        },
+        {
           "name": "chicken",
           "exclude": [
             {
-              "word": "chicken broth",
+              "word": "broth",
             },
             {
-              "word": "chicken stock",
+              "word": "stock",
             },
             {
-              "word": "chicken bone broth",
+              "word": "gravy",
             },
             {
-              "word": "chicken soup base",
+              "word": "glace",
             },
             {
-              "word": "chicken bouillon",
+              "word": "jus",
             },
             {
-              "word": "chicken oxo",
+              "word": "bouillon",
+            },
+            {
+              "word": "oxo",
+            },
+            {
+              "word": "lamb cube",
+            },
+            {
+              "word": "soup base",
+            },
+            {
+              "word": "bone broth",
+            },
+            {
+              "word": "chicken base",
+            },
+            {
+              "word": "consomme",
+            },
+            {
+              "word": "consume",
+            },
+            {
+              "word": "demi-glace",
+            },
+            {
+              "word": "demi glace",
+            },
+            {
+              "word": "sausage",
+            },
+            {
+              "word": "minced",
+            },
+            {
+              "word": "mince",
+            },
+            {
+              "word": "ground",
+            },
+            {
+              "word": "chicken seasoning",
+            },
+            {
+              "word": "chicken mix",
+            },
+            {
+              "word": "chicken casserole mix",
+            },
+            {
+              "word": "chicken rub",
+            },
+            {
+              "word": "chicken soup",
+            },
+            {
+              "word": "liver",
+            },
+            {
+              "word": "heart",
+            },
+            {
+              "word": "kidney",
+            },
+            {
+              "word": "sweetbread",
+            },
+            {
+              "word": "tripe",
+            },
+            {
+              "word": "intestine",
+            },
+            {
+              "word": "tongue",
+            },
+            {
+              "word": "lung",
+            },
+            {
+              "word": "cheek",
+            },
+            {
+              "word": "brain",
+            },
+            {
+              "word": "dripping",
             },
             {
               "word": "chicken cube",
+            },
+            {
+              "word": "chicken gravy",
+            },
+            {
+              "word": "sauce",
             },
           ],
           "include": [
             {
               "word": "poussin",
+              "substitution": true,
+            },
+            {
+              "word": "turkey",
               "substitution": true,
             },
           ],
@@ -542,8 +670,24 @@
               {
                 "word": "flour",
               },
+              {
+                "word": "meal",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "dried",
+              },
             ],
             "include": [
+              {
+                "word": "chickpea",
+                "substitution": false,
+              },
               {
                 "word": "garbanzo",
                 "substitution": false,
@@ -607,7 +751,15 @@
                 "substitution": false,
               },
               {
-                "word": "cherry flavored liqueur",
+                "word": "cherry flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "cherry-flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "cherry-flavored liquor",
                 "substitution": false,
               },
               {
@@ -619,6 +771,14 @@
                 "substitution": false,
               },
               {
+                "word": "cherry-flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "cherry-flavored liqueur",
+                "substitution": false,
+              },
+              {
                 "word": "cherry wine",
                 "substitution": true,
               },
@@ -627,7 +787,15 @@
                 "substitution": true,
               },
               {
+                "word": "raspberry liquor",
+                "substitution": true,
+              },
+              {
                 "word": "plum liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "plum liquor",
                 "substitution": true,
               },
             ],
@@ -646,11 +814,27 @@
                 "substitution": false,
               },
               {
+                "word": "coconut-flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "coconut-flavored liqueur",
+                "substitution": false,
+              },
+              {
                 "word": "coconut flavoured liquor",
                 "substitution": false,
               },
               {
                 "word": "coconut flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "coconut-flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "coconut-flavored liquor",
                 "substitution": false,
               },
               {
@@ -1281,6 +1465,14 @@
               "word": "chicken cube",
               "substitution": false,
             },
+            {
+              "word": "chicken gravy",
+              "substitution": false,
+            },
+            {
+              "word": "chicken sauce",
+              "substitution": false,
+            },
           ],
         },
         {
@@ -1300,6 +1492,9 @@
             },
             {
               "word": "powder",
+            },
+            {
+              "word": "powdered",
             },
             {
               "word": "ground",
@@ -1796,6 +1991,9 @@
                 "word": "powder",
               },
               {
+                "word": "powdered",
+              },
+              {
                 "word": "ground",
               },
               {
@@ -1950,6 +2148,9 @@
               },
               {
                 "word": "powder",
+              },
+              {
+                "word": "powdered",
               },
               {
                 "word": "ground",

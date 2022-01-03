@@ -1,6 +1,7 @@
 {
 
-    "key" : ["date","dark chocolate","dessert wine","dried coconut","dill","daikon","dried chili peppers","dried coriander","dumpling","dried cranberries","dried barberries","duck","demi-glace",
+    "key" : ["date","dark chocolate","dessert wine","dried coconut","dill","daikon","dried chili peppers","dried coriander","dumpling","dried cranberries","dried barberries",
+      "duck","demi-glace",
 
     ],
 
@@ -35,6 +36,14 @@
               },
               {
                 "word": "demi glace",
+                "substitution": false,
+              },
+              {
+                "word": "beef gravy",
+                "substitution": false,
+              },
+              {
+                "word": "beef sauce",
                 "substitution": false,
               },
             ],

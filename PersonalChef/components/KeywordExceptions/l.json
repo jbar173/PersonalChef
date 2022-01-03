@@ -1,6 +1,6 @@
 {
 
-    "key" : ["lemon","lime","lettuce","lamb stock","lemon juice","lasagne sheets","lamb","limoncello","lime mojo sauce","lime leaves","lemongrass","lard","lychee juice",
+    "key" : ["lemon","lime","lettuce","lamb stock","lemon juice","lasagne sheets","lamb","limoncello","lime mojo sauce","lime leaves","lemongrass","lard","lychee juice","lamb mince",
 
     ],
 
@@ -8,6 +8,41 @@
     "ingredients": [
 
 
+        {
+            "name": "lamb mince",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lamb ground",
+                "substitution": false,
+              },
+              {
+                "word": "ground lamb",
+                "substitution": false,
+              },
+              {
+                "word": "minced lamb",
+                "substitution": false,
+              },
+              {
+                "word": "lamb minced",
+                "substitution": false,
+              },
+              {
+                "word": "mince lamb",
+                "substitution": false,
+              },
+              {
+                "word": "beef mince",
+                "substitution": true,
+              },
+              {
+                "word": "minced meat",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "lychee juice",
             "exclude": [
@@ -114,13 +149,49 @@
             "name": "lamb",
             "exclude": [
               {
-                "word": "tripe",
+                "word": "stock",
               },
               {
-                "word": "lamb stock",
+                "word": "broth",
               },
               {
-                "word": "lamb broth",
+                "word": "gravy",
+              },
+              {
+                "word": "glace",
+              },
+              {
+                "word": "jus",
+              },
+              {
+                "word": "bouillon",
+              },
+              {
+                "word": "oxo",
+              },
+              {
+                "word": "lamb cube",
+              },
+              {
+                "word": "soup base",
+              },
+              {
+                "word": "bone broth",
+              },
+              {
+                "word": "lamb base",
+              },
+              {
+                "word": "consomme",
+              },
+              {
+                "word": "consume",
+              },
+              {
+                "word": "demi-glace",
+              },
+              {
+                "word": "demi glace",
               },
               {
                 "word": "sausage",
@@ -134,6 +205,54 @@
               {
                 "word": "ground",
               },
+              {
+                "word": "lamb seasoning",
+              },
+              {
+                "word": "lamb mix",
+              },
+              {
+                "word": "lamb casserole mix",
+              },
+              {
+                "word": "lamb rub",
+              },
+              {
+                "word": "lamb soup",
+              },
+              {
+                "word": "liver",
+              },
+              {
+                "word": "heart",
+              },
+              {
+                "word": "kidney",
+              },
+              {
+                "word": "sweetbread",
+              },
+              {
+                "word": "tripe",
+              },
+              {
+                "word": "intestine",
+              },
+              {
+                "word": "tongue",
+              },
+              {
+                "word": "lung",
+              },
+              {
+                "word": "cheek",
+              },
+              {
+                "word": "brain",
+              },
+              {
+                "word": "dripping",
+              },
             ],
             "include": [
               {
@@ -146,7 +265,7 @@
               },
               {
                 "word": "red meat",
-                "substitution": false,
+                "substitution": true,
               },
             ],
         },
@@ -224,6 +343,38 @@
             {
               "word": "lamb base",
               "substitution": false,
+            },
+            {
+              "word": "lamb consomme",
+              "substitution": false,
+            },
+            {
+              "word": "lamb consume",
+              "substitution": false,
+            },
+            {
+              "word": "lamb demi-glace",
+              "substitution": true,
+            },
+            {
+              "word": "lamb demi glace",
+              "substitution": true,
+            },
+            {
+              "word": "lamb gravy",
+              "substitution": true,
+            },
+            {
+              "word": "lamb sauce",
+              "substitution": true,
+            },
+            {
+              "word": "lamb jus",
+              "substitution": true,
+            },
+            {
+              "word": "lamb glace",
+              "substitution": true,
             },
           ],
         },

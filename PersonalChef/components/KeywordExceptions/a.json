@@ -113,6 +113,14 @@
                   "substitution": false,
                 },
                 {
+                  "word": "neopolitan liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "aniseed liquor",
+                  "substitution": false,
+                },
+                {
                   "word": "ricard",
                   "substitution": false,
                 },
@@ -301,7 +309,15 @@
                   "substitution": true,
                 },
                 {
+                  "word": "cherry liquor",
+                  "substitution": true,
+                },
+                {
                   "word": "orange liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange liquor",
                   "substitution": true,
                 },
               ],
@@ -325,6 +341,22 @@
                 },
                 {
                   "word": "apple flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple-flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple-flavored liquor",
                   "substitution": false,
                 },
                 {
@@ -670,6 +702,9 @@
                 "word": "liqueur",
               },
               {
+                "word": "liquor",
+              },
+              {
                 "word": "brandy",
               },
               {
@@ -684,7 +719,6 @@
               {
                 "word": "candied",
               },
-
               {
                 "word": "apple wood",
               },
@@ -832,6 +866,9 @@
                 "word": "liqueur",
               },
               {
+                "word": "liquor",
+              },
+              {
                 "word": "brandy",
               },
               {
@@ -846,7 +883,6 @@
               {
                 "word": "candied",
               },
-
               {
                 "word": "kernel",
               },
@@ -874,13 +910,16 @@
             ],
           },
           {
-            "name": "almond",
+            "name": "almonds",
             "exclude": [
               {
                 "word": "wine",
               },
               {
                 "word": "liqueur",
+              },
+              {
+                "word": "liquor",
               },
               {
                 "word": "brandy",
@@ -902,6 +941,15 @@
               },
               {
                 "word": "meal",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "powdered",
               },
               {
                 "word": "syrup",
@@ -944,6 +992,10 @@
               },
             ],
             "include": [
+              {
+                "word": "almond",
+                "substitution": true,
+              },
             ],
           },
           {

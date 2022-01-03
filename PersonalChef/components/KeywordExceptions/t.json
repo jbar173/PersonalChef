@@ -209,6 +209,10 @@
                   "word": "mince turkey",
                   "substitution": false,
                 },
+                {
+                  "word": "chicken mince",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -220,31 +224,174 @@
                   "word": "turkey broth",
                   "substitution": false,
                 },
+                {
+                  "word": "turkey soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey bone broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey soup base",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey bouillon",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey oxo",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey cube",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey base",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey consume",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey demi-glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey demi glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey gravy",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey jus",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey glace",
+                  "substitution": true,
+                },
               ],
           },
           {
               "name": "turkey",
               "exclude": [
                 {
-                  "word": "turkey stock",
+                  "word": "minced",
                 },
                 {
-                  "word": "ground turkey",
+                  "word": "mince",
                 },
                 {
-                  "word": "minced turkey",
-                },
-                {
-                  "word": "turkey mince",
-                },
-                {
-                  "word": "turkey ground",
+                  "word": "ground",
                 },
                 {
                   "word": "sausage",
                 },
+                {
+                  "word": "stock",
+                },
+                {
+                  "word": "broth",
+                },
+                {
+                  "word": "gravy",
+                },
+                {
+                  "word": "glace",
+                },
+                {
+                  "word": "jus",
+                },
+                {
+                  "word": "bouillon",
+                },
+                {
+                  "word": "oxo",
+                },
+                {
+                  "word": "turkey cube",
+                },
+                {
+                  "word": "soup base",
+                },
+                {
+                  "word": "bone broth",
+                },
+                {
+                  "word": "turkey base",
+                },
+                {
+                  "word": "consomme",
+                },
+                {
+                  "word": "consume",
+                },
+                {
+                  "word": "demi-glace",
+                },
+                {
+                  "word": "demi glace",
+                },
+                {
+                  "word": "liver",
+                },
+                {
+                  "word": "heart",
+                },
+                {
+                  "word": "lung",
+                },
+                {
+                  "word": "cheek",
+                },
+                {
+                  "word": "brain",
+                },
+                {
+                  "word": "kidney",
+                },
+                {
+                  "word": "tongue",
+                },
+                {
+                  "word": "turkey dripping",
+                },
+                {
+                  "word": "turkey mix",
+                },
+                {
+                  "word": "turkey seasoning",
+                },
+                {
+                  "word": "turkey rub",
+                },
+                {
+                  "word": "turkey soup",
+                },
               ],
               "include": [
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "poussin",
+                  "substitution": true,
+                },
               ],
           },
           {
