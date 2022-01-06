@@ -1,12 +1,17 @@
 {
 
-    "key" : ["ale","apple","apricot","almond","almond milk","avocado","applewood smoked cheese","almond meal","almond flour","apple liqueur","apricot liqueur",
-      "apple sauce","aquafaba","achiote","aniseed liqueur","asparagus",
+    "key" : ["ale","apple liqueur","apricot liqueur","aniseed liqueur",
+            "applewood smoked cheese",
+            "almonds","almond meal","almond flour",
+            "apple","apricot","almond milk","avocado",
+            
+      "apple sauce","aquafaba",
+
+      "achiote","asparagus",
     ],
 
 
     "ingredients": [
-
 
           {
               "name": "almond liqueur",
@@ -992,10 +997,6 @@
               },
             ],
             "include": [
-              {
-                "word": "almond",
-                "substitution": true,
-              },
             ],
           },
           {

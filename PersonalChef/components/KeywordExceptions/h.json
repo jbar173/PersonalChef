@@ -1,6 +1,10 @@
 {
 
-    "key" : ["hazelnut","havarti","halloumi","honey","hot dog","harissa","hemp milk","houmous","hot curry paste","herbs de provence","ham","hemp milk",
+    "key" : ["halloumi", "havarti",
+             "hazelnuts",
+             "hot dog","ham",
+             
+      "harissa","hemp milk","houmous","hot curry paste","herbs de provence","hemp milk",
     ],
 
 
@@ -688,7 +692,7 @@
           ],
         },
         {
-          "name": "hazelnut",
+          "name": "hazelnuts",
           "exclude": [
             {
               "word": "oil",

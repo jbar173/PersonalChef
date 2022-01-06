@@ -1,6 +1,6 @@
 {
     "name": "alcohol_ingredients",
-    "ingredients": [ "ale", "baileys", "beer", "brandy", "campari", "chambord", "champagne", "cider", "dark rum", "gin", "guiness", "kirsch", "lager", "light rum", "malibu", "ouzo", "prosecco",
-      "pudding wine", "red wine", "rose wine", "sherry", "vodka", "whisky", "white wine",
+    "ingredients": [ "ale", "baileys", "beer", "brandy", "campari", "chambord", "champagne", "cider", "dark rum", "gin", "guinness", "kirsch", "lager", "light rum", "malibu", "ouzo", "prosecco",
+       "red wine", "rose wine", "sherry", "vodka", "whisky", "white wine",
     ]
 }

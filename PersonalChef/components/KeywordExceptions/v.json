@@ -1,6 +1,8 @@
 {
 
-    "key" : ["vegetable stock","vanilla pod","vanilla extract","vinegar","vine leaves","veggie dip",
+    "key" : [ "vanilla pod","vanilla extract",
+
+      "vegetable stock","vinegar","vine leaves","veggie dip",
     ],
 
 
@@ -185,6 +187,258 @@
               },
               {
                 "word": "veg gravy",
+                "substitution": true,
+              },
+              {
+                "word": "chicken stock",
+                "substitution": false,
+              },
+              {
+                "word": "chicken broth",
+                "substitution": false,
+              },
+              {
+                "word": "chicken bone broth",
+                "substitution": false,
+              },
+              {
+                "word": "chicken soup base",
+                "substitution": false,
+              },
+              {
+                "word": "chicken base",
+                "substitution": false,
+              },
+              {
+                "word": "chicken bouillon",
+                "substitution": false,
+              },
+              {
+                "word": "chicken consomme",
+                "substitution": false,
+              },
+              {
+                "word": "chicken consume",
+                "substitution": false,
+              },
+              {
+                "word": "chicken oxo",
+                "substitution": false,
+              },
+              {
+                "word": "chicken cube",
+                "substitution": false,
+              },
+              {
+                "word": "chicken gravy",
+                "substitution": false,
+              },
+              {
+                "word": "chicken sauce",
+                "substitution": false,
+              },
+              {
+                "word": "turkey stock",
+                "substitution": true,
+              },
+              {
+                "word": "turkey broth",
+                "substitution": true,
+              },
+              {
+                "word": "turkey soup",
+                "substitution": true,
+              },
+              {
+                "word": "turkey bone broth",
+                "substitution": true,
+              },
+              {
+                "word": "turkey soup base",
+                "substitution": true,
+              },
+              {
+                "word": "turkey bouillon",
+                "substitution": true,
+              },
+              {
+                "word": "turkey oxo",
+                "substitution": true,
+              },
+              {
+                "word": "turkey cube",
+                "substitution": true,
+              },
+              {
+                "word": "turkey base",
+                "substitution": true,
+              },
+              {
+                "word": "turkey consomme",
+                "substitution": true,
+              },
+              {
+                "word": "turkey consume",
+                "substitution": true,
+              },
+              {
+                "word": "turkey demi-glace",
+                "substitution": true,
+              },
+              {
+                "word": "turkey demi glace",
+                "substitution": true,
+              },
+              {
+                "word": "turkey gravy",
+                "substitution": true,
+              },
+              {
+                "word": "turkey sauce",
+                "substitution": true,
+              },
+              {
+                "word": "turkey jus",
+                "substitution": true,
+              },
+              {
+                "word": "turkey glace",
+                "substitution": true,
+              },
+              {
+                "word": "pork stock",
+                "substitution": true,
+              },
+              {
+                "word": "pork broth",
+                "substitution": true,
+              },
+              {
+                "word": "pork soup",
+                "substitution": true,
+              },
+              {
+                "word": "pork bone broth",
+                "substitution": true,
+              },
+              {
+                "word": "pork soup base",
+                "substitution": true,
+              },
+              {
+                "word": "pork bouillon",
+                "substitution": true,
+              },
+              {
+                "word": "pork oxo",
+                "substitution": true,
+              },
+              {
+                "word": "pork cube",
+                "substitution": true,
+              },
+              {
+                "word": "pork base",
+                "substitution": true,
+              },
+              {
+                "word": "pork consomme",
+                "substitution": true,
+              },
+              {
+                "word": "pork consume",
+                "substitution": true,
+              },
+              {
+                "word": "pork demi-glace",
+                "substitution": true,
+              },
+              {
+                "word": "pork demi glace",
+                "substitution": true,
+              },
+              {
+                "word": "pork gravy",
+                "substitution": true,
+              },
+              {
+                "word": "pork sauce",
+                "substitution": true,
+              },
+              {
+                "word": "pork jus",
+                "substitution": true,
+              },
+              {
+                "word": "pork glace",
+                "substitution": true,
+              },
+              {
+                "word": "ham stock",
+                "substitution": true,
+              },
+              {
+                "word": "ham broth",
+                "substitution": true,
+              },
+              {
+                "word": "ham soup",
+                "substitution": true,
+              },
+              {
+                "word": "ham bone broth",
+                "substitution": true,
+              },
+              {
+                "word": "ham soup base",
+                "substitution": true,
+              },
+              {
+                "word": "ham bouillon",
+                "substitution": true,
+              },
+              {
+                "word": "ham oxo",
+                "substitution": true,
+              },
+              {
+                "word": "ham cube",
+                "substitution": true,
+              },
+              {
+                "word": "ham base",
+                "substitution": true,
+              },
+              {
+                "word": "ham consomme",
+                "substitution": true,
+              },
+              {
+                "word": "ham consume",
+                "substitution": true,
+              },
+              {
+                "word": "ham demi-glace",
+                "substitution": true,
+              },
+              {
+                "word": "ham demi glace",
+                "substitution": true,
+              },
+              {
+                "word": "ham gravy",
+                "substitution": true,
+              },
+              {
+                "word": "ham sauce",
+                "substitution": true,
+              },
+              {
+                "word": "ham jus",
+                "substitution": true,
+              },
+              {
+                "word": "ham glace",
                 "substitution": true,
               },
             ],

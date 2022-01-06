@@ -1,9 +1,15 @@
 {
 
-    "key" : ["butter","brazil nut","banana","beetroot","beet","beetroot powder","bell pepper","beef stock","brie","blue cheese","broccoli","baking powder",
-      "baking soda","beef","beef stock","beef mince","beer","beansprouts","black-eyed peas","banana liqueur","blueberry liqueur","bread","breadcrumbs",
-      "breadsticks","bread wraps","barbeque sauce","broad bean","borlotti bean","black pudding","butter beans","buttercream","blackberries","brandy",
-      "butternut squash","black cardamom","burger",
+    "key" : ["beer","banana liqueur","blueberry liqueur","brandy",
+             "brie","blue cheese",
+             "buttercream",
+             "baking powder","baking soda","bread","breadcrumbs","breadsticks","bread wraps","brazil nuts",
+             "beef","beef mince","black pudding","burger",
+
+      "butter","banana","beetroot","beet","beetroot powder","bell pepper",
+      "beef stock","broccoli",
+      "beansprouts","barbeque sauce","broad bean","borlotti bean","butter beans","blackberries",
+      "butternut squash","black cardamom",
     ],
 
 
@@ -1274,29 +1280,6 @@
             },
           ],
       },
-      {
-          "name": "black-eyed peas",
-          "exclude": [
-          ],
-          "include": [
-            {
-              "word": "black eyed peas",
-              "substitution": false,
-            },
-            {
-              "word": "blackeyed peas",
-              "substitution": false,
-            },
-            {
-              "word": "cowpeas",
-              "substitution": false,
-            },
-            {
-              "word": "cow peas",
-              "substitution": false,
-            },
-          ],
-      },
           {
               "name": "beansprouts",
               "exclude": [
@@ -1841,6 +1824,70 @@
                 "word": "beef glace",
                 "substitution": true,
               },
+              {
+                "word": "lamb stock",
+                "substitution": true,
+              },
+              {
+                "word": "lamb broth",
+                "substitution": true,
+              },
+              {
+                "word": "lamb bone broth",
+                "substitution": true,
+              },
+              {
+                "word": "lamb soup base",
+                "substitution": true,
+              },
+              {
+                "word": "lamb bouillon",
+                "substitution": true,
+              },
+              {
+                "word": "lamb oxo",
+                "substitution": true,
+              },
+              {
+                "word": "lamb cube",
+                "substitution": true,
+              },
+              {
+                "word": "lamb base",
+                "substitution": true,
+              },
+              {
+                "word": "lamb consomme",
+                "substitution": true,
+              },
+              {
+                "word": "lamb consume",
+                "substitution": true,
+              },
+              {
+                "word": "lamb demi-glace",
+                "substitution": true,
+              },
+              {
+                "word": "lamb demi glace",
+                "substitution": true,
+              },
+              {
+                "word": "lamb gravy",
+                "substitution": true,
+              },
+              {
+                "word": "lamb sauce",
+                "substitution": true,
+              },
+              {
+                "word": "lamb jus",
+                "substitution": true,
+              },
+              {
+                "word": "lamb glace",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -1994,7 +2041,7 @@
             ],
           },
           {
-            "name": "brazil nut",
+            "name": "brazil nuts",
             "exclude": [
               {
                 "word": "oil",

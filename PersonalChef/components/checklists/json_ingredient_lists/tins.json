@@ -1,5 +1,6 @@
 {
     "name": "tins_ingredients",
-    "ingredients": [ "canned chipotles", "chicken soup", "condensed milk", "kidney beans", "tinned tomatoes", "tinned apricots", "tomato soup", "cheddar cheese soup", "cannellini beans",
+    "ingredients": [ "canned chipotles", "chicken soup", "condensed milk", "kidney beans", "tinned tomatoes", "tinned apricots", "tinned black-eyed peas", "tomato soup", "cheddar cheese soup", "cannellini beans",
+      "tinned pinto beans"
     ]
 }

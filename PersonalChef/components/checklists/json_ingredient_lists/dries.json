@@ -1,7 +1,7 @@
 {
     "name": "dry_ingredients",
-    "ingredients": [ "almonds", "baking powder", "baking soda", "bread", "bread bun", "breadcrumbs", "brown sugar", "cheese puffs", "cashew nuts", "cornflour", "cornmeal", "cornstarch", "couscous",
-      "crackers", "digestive biscuits", "dried apricots", "dried figs", "dried rice vermicelli noodles", "filo pastry", "flour", "gnocchi", "hazelnuts", "pasta", "peanuts", "pecans", "pine nuts",
-      "pistachios", "pita bread", "polenta", "poppy seeds", "pretzel", "puff pastry", "pumpkin seeds", "raisins", "rice", "tortillas", "semolina", "sesame seeds", "sugar", "waffles", "walnuts", "yeast",
+    "ingredients": [ "almonds", "baking powder", "baking soda", "bread", "breadcrumbs", "cheese puffs", "cashew nuts", "cornmeal", "cornstarch", "couscous",
+      "crackers", "dumpling mix", "dried pinto beans", "filo pastry", "flour", "hazelnuts", "noodles", "pasta", "peanuts", "pecans", "pine nuts",
+      "pistachios", "polenta", "poppy seeds", "pretzel", "puff pastry", "pumpkin seeds", "rice", "semolina", "sesame seeds", "tortillas", "waffles", "walnuts", "yeast",
     ]
 }

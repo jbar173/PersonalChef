@@ -1,7 +1,11 @@
 {
 
-    "key" : ["fudge","fig","filo pastry","fontina","flour","fresh coriander","fruit yoghurt","fruit loaf","fresh coconut","feta","fish sauce","flageolet bean","fruit cordial","fig jam",
-      "fresh ginger","fresh cranberries","fenugreek",
+    "key" : ["feta","fontina",
+             "fudge","fruit loaf","fig jam","fresh cranberries",
+             "filo pastry","flour",
+             
+      "fig","fresh coriander","fruit yoghurt","fresh coconut","fish sauce","flageolet bean","fruit cordial",
+      "fresh ginger","fenugreek",
     ],
 
 
@@ -338,14 +342,6 @@
               ],
               "include": [
                 {
-                  "word": "fruit cake",
-                  "substitution": false,
-                },
-                {
-                  "word": "fruitcake",
-                  "substitution": false,
-                },
-                {
                   "word": "tea loaf",
                   "substitution": false,
                 },
@@ -360,6 +356,18 @@
                 {
                   "word": "soreen",
                   "substitution": false,
+                },
+                {
+                  "word": "genoa cake",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit cake",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruitcake",
+                  "substitution": true,
                 },
               ],
           },

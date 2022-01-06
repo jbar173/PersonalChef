@@ -1,6 +1,9 @@
 {
 
-    "key" : ["lemon","lime","lettuce","lamb stock","lemon juice","lasagne sheets","lamb","limoncello","lime mojo sauce","lime leaves","lemongrass","lard","lychee juice","lamb mince",
+    "key" : [ "limoncello",
+              "lasagne sheets",
+              "lamb","lamb mince",
+      "lemon","lime","lettuce","lamb stock","lemon juice","lime mojo sauce","lime leaves","lemongrass","lard","lychee juice",
 
     ],
 
@@ -376,6 +379,70 @@
               "word": "lamb glace",
               "substitution": true,
             },
+            {
+              "word": "beef stock",
+              "substitution": true,
+            },
+            {
+              "word": "beef broth",
+              "substitution": true,
+            },
+            {
+              "word": "beef bouillon",
+              "substitution": true,
+            },
+            {
+              "word": "beef oxo",
+              "substitution": true,
+            },
+            {
+              "word": "beef cube",
+              "substitution": true,
+            },
+            {
+              "word": "beef soup base",
+              "substitution": true,
+            },
+            {
+              "word": "beef bone broth",
+              "substitution": true,
+            },
+            {
+              "word": "beef base",
+              "substitution": true,
+            },
+            {
+              "word": "beef consomme",
+              "substitution": true,
+            },
+            {
+              "word": "beef consume",
+              "substitution": true,
+            },
+            {
+              "word": "demi-glace",
+              "substitution": true,
+            },
+            {
+              "word": "demi glace",
+              "substitution": true,
+            },
+            {
+              "word": "beef gravy",
+              "substitution": true,
+            },
+            {
+              "word": "beef sauce",
+              "substitution": true,
+            },
+            {
+              "word": "beef jus",
+              "substitution": true,
+            },
+            {
+              "word": "beef glace",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -441,8 +508,6 @@
           "include": [
           ],
         },
-
-
 
     ]
 

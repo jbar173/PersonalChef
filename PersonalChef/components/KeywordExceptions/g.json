@@ -1,7 +1,10 @@
 {
 
-    "key" : ["garlic","grape","grapefruit","gouda","gruyere","guacamole","goat's cheese","garlic powder","ground ginger","green bean","green cardamom","gammon","grape liqueur",
-      "grapefruit liqueur","ground cumin","gelatin","ginger liqueur","green curry paste",
+    "key" : [ "grape liqueur","grapefruit liqueur","ginger liqueur",
+              "gouda","gruyere","goat's cheese",
+              "gelatine",
+              "gammon",
+      "garlic","grape","grapefruit","guacamole","garlic powder","ground ginger","green bean","green cardamom","ground cumin","green curry paste",
 
     ],
 
@@ -138,12 +141,12 @@
               ],
           },
           {
-              "name": "gelatin",
+              "name": "gelatine",
               "exclude": [
               ],
               "include": [
                 {
-                  "word": "gelatine",
+                  "word": "gelatin",
                   "substitution": false,
                 },
               ],

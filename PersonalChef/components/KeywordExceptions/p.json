@@ -1,26 +1,21 @@
 {
 
-    "key" : ["pepper","pumpkin","peanut","potato","pecan","pine nut","plum","pineapple","provolone","parmesan","pasta","pecorino","polenta","prosciutto","powdered milk","pomegranate","peach",
-      "pumpkin puree","pumpkin seed","peas","pork","pork seasoning","pork stock","pork scratchings","pulled pork","pear liqueur","peach liqueur","plum liqueur","passion fruit liqueur",
-      "potato chips","parsley","pearled barley","pak choi","passion fruit","pickles","pork trotter","pear","passion fruit juice","panang curry paste","pate","passata","pinto beans"
-      "pea shoots"
+    "key" : [ "pear liqueur","peach liqueur","plum liqueur","passion fruit liqueur","prosecco",
+              "provolone","parmesan","pecorino",
+              "powdered milk",
+              "peanuts","pine nuts","pecans","pasta","polenta","pumpkin seeds","pork scratchings","potato chips","pearled barley",
+              "prosciutto","pork","pulled pork","pork trotter","pate",
+              
+      "pepper","pumpkin","potato","plum","pineapple","pomegranate","peach",
+      "pumpkin puree","peas","pork seasoning","pork stock",
+      "parsley","pak choi","passion fruit","pickles","pear","passion fruit juice","panang curry paste","passata",
+      "pea shoots",
     ],
 
 
     "ingredients": [
 
 
-          {
-              "name": "pinto beans",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "navy beans",
-                  "substitution": true,
-                },
-              ],
-          },
           {
               "name": "pea shoots",
               "exclude": [
@@ -794,6 +789,250 @@
                   "word": "pork glace",
                   "substitution": true,
                 },
+                {
+                  "word": "ham stock",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham bone broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham soup base",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham bouillon",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham oxo",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham cube",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham base",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham consume",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham demi-glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "ham demi glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "ham gravy",
+                  "substitution": true,
+                },
+                {
+                  "word": "ham sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "ham jus",
+                  "substitution": true,
+                },
+                {
+                  "word": "ham glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey stock",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey broth",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey soup",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey bone broth",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey soup base",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey bouillon",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey oxo",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey cube",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey base",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey consomme",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey consume",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey demi-glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey demi glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey gravy",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey jus",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken stock",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken broth",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken bone broth",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken soup base",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken base",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken bouillon",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "chicken consume",
+                  "substitution": false,
+                },
+                {
+                  "word": "chicken oxo",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken cube",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken gravy",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable stock",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable broth",
+                  "substitution": true,
+                },
+                {
+                  "word": "veg broth",
+                  "substitution": true,
+                },
+                {
+                  "word": "veg stock",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable bone broth",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable soup base",
+                  "substitution": true,
+                },
+                {
+                  "word": "veg soup base",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable base",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable bouillon",
+                  "substitution": true,
+                },
+                {
+                  "word": "veg consomme",
+                  "substitution": true,
+                },
+                {
+                  "word": "veg consume",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable oxo",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable cube",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable gravy",
+                  "substitution": true,
+                },
+                {
+                  "word": "veg gravy",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1016,7 +1255,7 @@
               ],
           },
           {
-              "name": "pumpkin seed",
+              "name": "pumpkin seeds",
               "exclude": [
               ],
               "include": [
@@ -1562,7 +1801,7 @@
             ],
           },
           {
-            "name": "pine nut",
+            "name": "pine nuts",
             "exclude": [
               {
                 "word": "pine nut oil",
@@ -1573,10 +1812,14 @@
                 "word": "pinenut",
                 "substitution": false,
               },
+              {
+                "word": "pine nut",
+                "substitution": false,
+              },
             ],
           },
           {
-            "name": "pecan",
+            "name": "pecans",
             "exclude": [
               {
                 "word": "pecan oil",
@@ -1586,7 +1829,10 @@
               },
             ],
             "include": [
-
+              {
+                "word": "pecan",
+                "substitution": false,
+              },
             ],
           },
           {
@@ -1625,7 +1871,7 @@
             ],
           },
           {
-            "name": "peanut",
+            "name": "peanuts",
             "exclude": [
               {
                 "word": "peanut butter",
@@ -1644,7 +1890,10 @@
               },
             ],
             "include": [
-
+              {
+                "word": "peanut",
+                "substitution": false,
+              },
             ],
           },
           {

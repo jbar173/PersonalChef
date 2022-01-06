@@ -1,7 +1,11 @@
 {
 
-    "key" : ["milk","mushroom","macademia","mustard","milk chocolate","muenster","manchego","mozzarella","monterey jack","mango","miso","marmalade","mango liqueur",
-      "melon liqueur","mint","mint liqueur","margarine","melon","marsala wine","mango pickle","mixed berries","mixed fruit","mixed beans","mixed spice",
+    "key" : [ "mango liqueur","mint liqueur","melon liqueur",
+              "muenster","manchego","mozzarella","monterey jack",
+              "milk chocolate","marmalade",
+              "macademia",
+      "milk","mushroom","mustard","mango","miso",
+      "mint","margarine","melon","marsala wine","mango pickle","mixed berries","mixed beans","mixed spice",
       "medium curry paste","mild curry paste","massaman curry paste","mangetout",
 
     ],
@@ -760,45 +764,6 @@
               "include": [
                 {
                   "word": "bean mix",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "mixed fruit",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "dried mixed berries",
-                  "substitution": false,
-                },
-                {
-                  "word": "luxury berry mix",
-                  "substitution": false,
-                },
-                {
-                  "word": "dried berry mix",
-                  "substitution": false,
-                },
-                {
-                  "word": "mixed glace fruit",
-                  "substitution": false,
-                },
-                {
-                  "word": "mixed dried fruit",
-                  "substitution": false,
-                },
-                {
-                  "word": "mixed vine fruit",
-                  "substitution": false,
-                },
-                {
-                  "word": "tangy fruit mix",
-                  "substitution": false,
-                },
-                {
-                  "word": "jamaican mix fruit",
                   "substitution": false,
                 },
               ],
