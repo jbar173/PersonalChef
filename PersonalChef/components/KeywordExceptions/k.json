@@ -1,8 +1,8 @@
 {
 
-    "key" : [ "kewra water", 
+    "key" : [ "kewra water",
               "kamut flour",
-      "kale","kiwi fruit","kidney beans",
+              "kale","kiwi fruit",
 
     ],
 
@@ -41,17 +41,6 @@
                 {
                   "word": "amaranth flour",
                   "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "kidney beans",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "red pea",
-                  "substitution": false,
                 },
               ],
           },

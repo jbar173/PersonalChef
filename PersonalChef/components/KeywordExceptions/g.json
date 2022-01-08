@@ -4,7 +4,9 @@
               "gouda","gruyere","goat's cheese",
               "gelatine",
               "gammon",
-      "garlic","grape","grapefruit","guacamole","garlic powder","ground ginger","green bean","green cardamom","ground cumin","green curry paste",
+              "garlic","grapes","grapefruit","green beans",
+              "garlic powder","ground ginger","green cardamom","ground cumin",
+              "guacamole","green curry paste",
 
     ],
 
@@ -368,7 +370,7 @@
               ],
           },
           {
-              "name": "green bean",
+              "name": "green beans",
               "exclude": [
               ],
               "include": [
@@ -402,6 +404,10 @@
                 },
                 {
                   "word": "yardlong bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "green bean",
                   "substitution": false,
                 },
               ],

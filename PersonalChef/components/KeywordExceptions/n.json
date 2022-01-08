@@ -2,9 +2,7 @@
 
     "key" : [ "nutella",
               "noodles",
-              
-      "navy beans","nutmeg",
-
+              "nutmeg",
     ],
 
 
@@ -36,43 +34,6 @@
                 {
                   "word": "chocolat hazelnut spread",
                   "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "navy beans",
-              "exclude": [
-                {
-                  "word": "vert",
-                },
-                {
-                  "word": "vertes",
-                },
-              ],
-              "include": [
-                {
-                  "word": "great northern bean",
-                  "substitution": false,
-                },
-                {
-                  "word": "haricot",
-                  "substitution": false,
-                },
-                {
-                  "word": "boston bean",
-                  "substitution": false,
-                },
-                {
-                  "word": "white pea bean",
-                  "substitution": false,
-                },
-                {
-                  "word": "pea bean",
-                  "substitution": false,
-                },
-                {
-                  "word": "white kidney bean",
-                  "substitution": true,
                 },
               ],
           },

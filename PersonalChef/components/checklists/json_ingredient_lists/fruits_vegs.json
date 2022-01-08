@@ -1,7 +1,7 @@
 {
     "name": "fruit_and_veg_ingredients",
     "ingredients": [ "apple", "artichoke", "asparagus", "avocado", "beansprouts", "bell pepper", "blackberries", "blueberries", "broccoli", "butternut squash", "carrot", "cauliflower", "celery", "chard",
-      "cherries", "chilli", "coconut", "courgette", "cranberries", "cucumber", "dates", "endive", "garlic", "grapes", "green beans", "kale", "leek", "lemon", "lime", "lettuce", "mushroom", "olives", "onion",
-      "orange", "papaya", "pear", "peas", "potato", "radish", "raspberries", "rocket", "shallot", "spinach", "spring onion", "strawberries", "sun-dried tomatoes", "tomato", "white cabbage",
+      "cherries", "chili pepper", "courgette", "cucumber", "endive", "fresh coconut", "fresh cranberries", "fresh sweetcorn", "garlic", "grapes", "green beans", "kale", "leek", "lemon", "lime", "lettuce",
+      "mushrooms", "olives", "onion", "orange", "papaya", "pear", "peas", "potato", "radish", "raspberries", "rocket", "shallot", "spinach", "spring onion", "strawberries", "tomato", "watercress",
     ]
 }

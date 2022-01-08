@@ -5,11 +5,12 @@
              "buttercream",
              "baking powder","baking soda","bread","breadcrumbs","breadsticks","bread wraps","brazil nuts",
              "beef","beef mince","black pudding","burger",
+             "banana","beetroot","beet","bell pepper","broccoli","beansprouts","broad bean","blackberries","butternut squash",
+             "black cardamom","beetroot powder",
+             "butter beans",
+             "beef stock","barbeque sauce",
+             "butter",
 
-      "butter","banana","beetroot","beet","beetroot powder","bell pepper",
-      "beef stock","broccoli",
-      "beansprouts","barbeque sauce","broad bean","borlotti bean","butter beans","blackberries",
-      "butternut squash","black cardamom",
     ],
 
 
@@ -686,42 +687,7 @@
           ],
       },
       {
-          "name": "borlotti bean",
-          "exclude": [
-          ],
-          "include": [
-            {
-              "word": "cranberry bean",
-              "substitution": false,
-            },
-            {
-              "word": "pinto bean",
-              "substitution": true,
-            },
-            {
-              "word": "kidney bean",
-              "substitution": true,
-            },
-            {
-              "word": "cannellini bean",
-              "substitution": true,
-            },
-            {
-              "word": "canned white bean",
-              "substitution": true,
-            },
-            {
-              "word": "navy bean",
-              "substitution": true,
-            },
-            {
-              "word": "great northern bean",
-              "substitution": true,
-            },
-          ],
-      },
-      {
-          "name": "broad bean",
+          "name": "broad beans",
           "exclude": [
           ],
           "include": [
@@ -739,6 +705,10 @@
             },
             {
               "word": "flat bean",
+              "substitution": true,
+            },
+            {
+              "word": "broad bean",
               "substitution": true,
             },
           ],

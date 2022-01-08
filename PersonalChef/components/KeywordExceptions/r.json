@@ -4,9 +4,9 @@
               "ricotta",
               "raisins","rose water","rice puffs",
               "rice","rice cracker","red lentils",
-              
-      "rice milk","rocket","raspberry","redcurrant jelly",
-      "red curry paste",
+              "rocket",
+              "redcurrant jelly","red curry paste",
+              "rice milk",
 
     ],
 
@@ -414,16 +414,6 @@
                   "word": "sangiovese",
                   "substitution": false,
                 },
-              ],
-          },
-          {
-              "name": "raspberry",
-              "exclude": [
-                {
-                  "word": "vinegar",
-                },
-              ],
-              "include": [
               ],
           },
           {

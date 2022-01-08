@@ -4,9 +4,14 @@
               "toffee",
               "tacos",
               "turkey","turkey mince",
-              
-      "turnip","tomato paste","tinned tomatoes","tomato pasta sauce","tangerine","turkey stock","tapenade",
-      "tandoori spice mix","tofu","turmeric","taco seasoning","tomato","tarragon",
+              "turnip","tomato","tangerine",
+              "tandoori spice mix","turmeric","taco seasoning","tarragon",
+
+              "tinned borlotti beans","tinned cannellini beans","tinned chickpeas","tinned mixed beans","tinned black-eyed peas","tinned pinto beans","tinned tomatoes",
+              "tinned flageolet beans","tinned kidney beans","tinned navy beans","tomato pasta sauce","tinned sweetcorn","tinned water chestnuts",
+
+              "tomato paste","turkey stock","tapenade",
+              "tofu",
 
     ],
 
@@ -14,6 +19,479 @@
     "ingredients": [
 
 
+          {
+              "name": "tinned water chestnuts",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "water chestnut",
+                  "substitution": false,
+                },
+                {
+                  "word": "jicama",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tinned pinto beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pinto bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "pinquito bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "borlotti bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "cranberry bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "cannellini bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "white bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "navy bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "great northern bean",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tinned black-eyed peas",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "black eyed peas",
+                  "substitution": false,
+                },
+                {
+                  "word": "black-eyed pea",
+                  "substitution": false,
+                },
+                {
+                  "word": "black eye peas",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackeyed peas",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackeye peas",
+                  "substitution": false,
+                },
+                {
+                  "word": "black eyed beans",
+                  "substitution": false,
+                },
+                {
+                  "word": "black-eyed beans",
+                  "substitution": false,
+                },
+                {
+                  "word": "black eye beans",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackeyed beans",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackeye beans",
+                  "substitution": false,
+                },
+                {
+                  "word": "cowpeas",
+                  "substitution": false,
+                },
+                {
+                  "word": "cow peas",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tinned sweetcorn",
+              "exclude": [
+                {
+                  "word": "meal",
+                },
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "meal",
+                },
+                {
+                  "word": "flake",
+                },
+                {
+                  "word": "taco",
+                },
+                {
+                  "word": "syrup",
+                },
+                {
+                  "word": "flour",
+                },
+                {
+                  "word": "bread",
+                },
+                {
+                  "word": "corn-muffin",
+                },
+                {
+                  "word": "muffin",
+                },
+                {
+                  "word": "starch",
+                },
+              ],
+              "include": [
+                {
+                  "word": "sweetcorn",
+                  "substitution": false,
+                },
+                {
+                  "word": "corn",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet-corn",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tinned navy beans",
+              "exclude": [
+                {
+                  "word": "vert",
+                },
+                {
+                  "word": "vertes",
+                },
+              ],
+              "include": [
+                {
+                  "word": "navy bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "great northern bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "haricot",
+                  "substitution": false,
+                },
+                {
+                  "word": "boston bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "white pea bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "pea bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "white kidney bean",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tinned mixed beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mixed bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "bean mix",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tinned kidney beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kidney bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pea",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tinned flageolet beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "flageolet bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "cannellini bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "canned white bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "navy bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "great northern bean",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tinned chickpeas",
+              "exclude": [
+                {
+                  "word": "flour",
+                },
+                {
+                  "word": "meal",
+                },
+                {
+                  "word": "ground",
+                },
+                {
+                  "word": "powder",
+                },
+                {
+                  "word": "powdered",
+                },
+                {
+                  "word": "sugar",
+                },
+                {
+                  "word": "sweet",
+                },
+                {
+                  "word": "fufu",
+                },
+                {
+                  "word": "poundo",
+                },
+                {
+                  "word": "miso",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "cream",
+                },
+                {
+                  "word": "houmous",
+                },
+                {
+                  "word": "humous",
+                },
+                {
+                  "word": "hummus",
+                },
+                {
+                  "word": "humus",
+                },
+                {
+                  "word": "juice",
+                },
+                {
+                  "word": "aquafaba",
+                },
+                {
+                  "word": "pasta",
+                },
+                {
+                  "word": "fusilli",
+                },
+                {
+                  "word": "penne",
+                },
+                {
+                  "word": "gnocchetti",
+                },
+                {
+                  "word": "rice",
+                },
+                {
+                  "word": "vinegar",
+                },
+                {
+                  "word": "cracker",
+                },
+                {
+                  "word": "crispbread",
+                },
+                {
+                  "word": "roasted",
+                },
+                {
+                  "word": "roast",
+                },
+                {
+                  "word": "crunchy",
+                },
+                {
+                  "word": "crunch",
+                },
+                {
+                  "word": "lime",
+                },
+                {
+                  "word": "spicy",
+                },
+                {
+                  "word": "snack",
+                },
+                {
+                  "word": "cornita",
+                },
+                {
+                  "word": "puff",
+                },
+                {
+                  "word": "twist",
+                },
+                {
+                  "word": "straw",
+                },
+                {
+                  "word": "chocolate",
+                },
+              ],
+              "include": [
+                {
+                  "word": "chickpea",
+                  "substitution": false,
+                },
+                {
+                  "word": "chick pea",
+                  "substitution": false,
+                },
+                {
+                  "word": "garbanzo",
+                  "substitution": false,
+                },
+                {
+                  "word": "channa",
+                  "substitution": false,
+                },
+                {
+                  "word": "chana",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tinned cannellini beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cannellini bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "flageolet bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "canned white bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "white kidney bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "navy bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "great northern bean",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tinned borlotti beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "borlotti beans",
+                  "substitution": false,
+                },
+                {
+                  "word": "cranberry bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "pinto bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "kidney bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "cannellini bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "canned white bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "navy bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "great northern bean",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "tarragon",
               "exclude": [

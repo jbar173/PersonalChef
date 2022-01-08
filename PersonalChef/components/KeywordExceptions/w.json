@@ -3,8 +3,9 @@
     "key" : [ "white wine","whisky","watermelon liqueur",
               "white chocolate",
               "walnuts","wonton wrapper",
-              
-      "water","water chestnut","winter squash",
+              "water chestnut",
+
+      "water",
 
     ],
 
@@ -12,25 +13,6 @@
     "ingredients": [
 
 
-          {
-              "name": "winter squash",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "butternut squash",
-                  "substitution": true,
-                },
-                {
-                  "word": "pumpkin",
-                  "substitution": true,
-                },
-                {
-                  "word": "calabaza",
-                  "substitution": true,
-                },
-              ],
-          },
           {
               "name": "water chestnut",
               "exclude": [

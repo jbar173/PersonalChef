@@ -4,9 +4,11 @@
               "muenster","manchego","mozzarella","monterey jack",
               "milk chocolate","marmalade",
               "macademia",
-      "milk","mushroom","mustard","mango","miso",
-      "mint","margarine","melon","marsala wine","mango pickle","mixed berries","mixed beans","mixed spice",
-      "medium curry paste","mild curry paste","massaman curry paste","mangetout",
+              "mushrooms","mango","melon","mixed berries","mangetout",
+              "mint","mixed spice",
+              "mustard","miso","mango pickle","medium curry paste","mild curry paste","massaman curry paste",
+              "milk","margarine",
+
 
     ],
 
@@ -758,17 +760,6 @@
               ],
           },
           {
-              "name": "mixed beans",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "bean mix",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
               "name": "mixed berries",
               "exclude": [
               ],
@@ -786,21 +777,6 @@
               "include": [
                 {
                   "word": "amba",
-                  "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "marsala wine",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "marsala",
-                  "substitution": false,
-                },
-                {
-                  "word": "madeira",
                   "substitution": true,
                 },
               ],
@@ -1400,7 +1376,7 @@
             ],
           },
           {
-            "name": "mushroom",
+            "name": "mushrooms",
             "exclude": [
               {
                 "word": "mushroom sauce",
@@ -1415,6 +1391,10 @@
             "include": [
               {
                 "word": "chanterelles",
+                "substitution": false,
+              },
+              {
+                "word": "mushroom",
                 "substitution": false,
               },
             ],

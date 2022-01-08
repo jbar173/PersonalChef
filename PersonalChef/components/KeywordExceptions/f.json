@@ -1,11 +1,14 @@
 {
 
     "key" : ["feta","fontina",
-             "fudge","fruit loaf","fig jam","fresh cranberries",
+             "fudge","fruit loaf","fig jam",
              "filo pastry","flour",
-             
-      "fig","fresh coriander","fruit yoghurt","fresh coconut","fish sauce","flageolet bean","fruit cordial",
-      "fresh ginger","fenugreek",
+             "fresh cranberries","fig","fresh ginger","fresh coconut",
+             "fresh coriander","fenugreek leaves",
+             "fish sauce",
+             "fruit yoghurt",
+             "fruit cordial",
+
     ],
 
 
@@ -13,7 +16,7 @@
 
 
           {
-              "name": "fenugreek",
+              "name": "fenugreek leaves",
               "exclude": [
               ],
               "include": [
@@ -190,29 +193,6 @@
                 {
                   "word": "fruit squash",
                   "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "flageolet bean",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "cannellini bean",
-                  "substitution": true,
-                },
-                {
-                  "word": "canned white bean",
-                  "substitution": true,
-                },
-                {
-                  "word": "navy bean",
-                  "substitution": true,
-                },
-                {
-                  "word": "great northern bean",
-                  "substitution": true,
                 },
               ],
           },

@@ -5,10 +5,13 @@
               "semolina","spring roll wrapper","seaweed","sweet rice flour","salt","soya beans",
               "shrimp",
               "sausage","smoked sausage",
-              
-      "spinach","sweet potato","soy milk","sun-dried tomatoes","spring onion","shallot","salad leaves","soured cream","salsa",
-      "sparkling water","shichimi","soy sauce","summer squash","swede","smoked paprika",
-      "shortening","sweetcorn",
+              "spinach","sweet potato","spring onions","shallot","salad leaves","summer squash","swede",
+              "smoked paprika","salt","shichimi",
+              "sun-dried tomatoes",
+              "soy sauce","salsa",
+              "soy milk","soured cream","shortening",
+              "sparkling water",
+
 
     ],
 
@@ -71,54 +74,6 @@
               "include": [
                 {
                   "word": "fleur de sel",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "sweetcorn",
-              "exclude": [
-                {
-                  "word": "meal",
-                },
-                {
-                  "word": "oil",
-                },
-                {
-                  "word": "meal",
-                },
-                {
-                  "word": "flake",
-                },
-                {
-                  "word": "taco",
-                },
-                {
-                  "word": "syrup",
-                },
-                {
-                  "word": "flour",
-                },
-                {
-                  "word": "bread",
-                },
-                {
-                  "word": "corn-muffin",
-                },
-                {
-                  "word": "muffin",
-                },
-                {
-                  "word": "starch",
-                },
-              ],
-              "include": [
-                {
-                  "word": "corn",
-                  "substitution": false,
-                },
-                {
-                  "word": "sweet-corn",
                   "substitution": false,
                 },
               ],
@@ -494,16 +449,8 @@
               ],
               "include": [
                 {
-                  "word": "soda",
-                  "substitution": true,
-                },
-                {
-                  "word": "seltzer",
-                  "substitution": true,
-                },
-                {
                   "word": "sparkling mineral water",
-                  "substitution": true,
+                  "substitution": false,
                 },
                 {
                   "word": "fizzy water",
@@ -511,6 +458,14 @@
                 },
                 {
                   "word": "water sparkling",
+                  "substitution": false,
+                },
+                {
+                  "word": "seltzer",
+                  "substitution": false,
+                },
+                {
+                  "word": "soda",
                   "substitution": false,
                 },
               ],
@@ -877,10 +832,14 @@
             ],
           },
           {
-            "name": "spring onion",
+            "name": "spring onions",
             "exclude": [
             ],
             "include": [
+              {
+                "word": "spring onion",
+                "substitution": false,
+              },
               {
                 "word": "scallion",
                 "substitution": false,

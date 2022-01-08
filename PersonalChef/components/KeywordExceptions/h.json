@@ -3,8 +3,9 @@
     "key" : ["halloumi", "havarti",
              "hazelnuts",
              "hot dog","ham",
-             
-      "harissa","hemp milk","houmous","hot curry paste","herbs de provence","hemp milk",
+             "harissa","herbs de provence",
+             "hummus","hot curry paste",
+             "hemp milk",
     ],
 
 
@@ -16,6 +17,10 @@
           "exclude": [
           ],
           "include": [
+            {
+              "word": "hemp seed milk",
+              "substitution": false,
+            },
             {
               "word": "hempmilk",
               "substitution": false,
@@ -477,31 +482,20 @@
             ],
         },
         {
-            "name": "houmous",
+            "name": "hummus",
             "exclude": [
             ],
             "include": [
               {
-                "word": "hummus",
+                "word": "houmous",
+                "substitution": false,
+              },
+              {
+                "word": "humus",
                 "substitution": false,
               },
               {
                 "word": "hummous",
-                "substitution": false,
-              },
-            ],
-        },
-        {
-            "name": "hemp milk",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "hemp seed milk",
-                "substitution": false,
-              },
-              {
-                "word": "hempmilk",
                 "substitution": false,
               },
             ],

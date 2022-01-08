@@ -5,17 +5,160 @@
               "powdered milk",
               "peanuts","pine nuts","pecans","pasta","polenta","pumpkin seeds","pork scratchings","potato chips","pearled barley",
               "prosciutto","pork","pulled pork","pork trotter","pate",
-              
-      "pepper","pumpkin","potato","plum","pineapple","pomegranate","peach",
-      "pumpkin puree","peas","pork seasoning","pork stock",
-      "parsley","pak choi","passion fruit","pickles","pear","passion fruit juice","panang curry paste","passata",
-      "pea shoots",
+              "pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
+              "pepper","pork seasoning","parsley",
+              "passata","pumpkin puree","pickles",
+              "pork stock","panang curry paste",
+              "plain yoghurt",
+              "passion fruit juice",
+
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "plain yoghurt",
+              "exclude": [
+                {
+                  "word": "flavoured yoghurt",
+                },
+                {
+                  "word": "flavoured yogurt",
+                },
+                {
+                  "word": "flavored yoghurt",
+                },
+                {
+                  "word": "flavored yogurt",
+                },
+                {
+                  "word": "fruit",
+                },
+                {
+                  "word": "fruity",
+                },
+                {
+                  "word": "pear",
+                },
+                {
+                  "word": "peach",
+                },
+                {
+                  "word": "papaya",
+                },
+                {
+                  "word": "apricot",
+                },
+                {
+                  "word": "mango",
+                },
+                {
+                  "word": "apple",
+                },
+                {
+                  "word": "passion",
+                },
+                {
+                  "word": "tropical",
+                },
+                {
+                  "word": "passion fruit",
+                },
+                {
+                  "word": "passionfruit",
+                },
+                {
+                  "word": "lemon",
+                },
+                {
+                  "word": "sunshine",
+                },
+                {
+                  "word": "berry",
+                },
+                {
+                  "word": "cherry",
+                },
+                {
+                  "word": "raspberry",
+                },
+                {
+                  "word": "strawberry",
+                },
+                {
+                  "word": "blackberry",
+                },
+                {
+                  "word": "blueberry",
+                },
+                {
+                  "word": "cranberry",
+                },
+                {
+                  "word": "rhubarb",
+                },
+                {
+                  "word": "raisin",
+                },
+                {
+                  "word": "blackcurrant",
+                },
+                {
+                  "word": "prune",
+                },
+                {
+                  "word": "ginger",
+                },
+                {
+                  "word": "toffee",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "banana",
+                },
+                {
+                  "word": "caramel",
+                },
+                {
+                  "word": "coconut",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "orange-mango",
+                },
+              ],
+              "include": [
+                {
+                  "word": "yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "labneh",
+                  "substitution": true,
+                },
+                {
+                  "word": "curd",
+                  "substitution": true,
+                },
+                {
+                  "word": "quark",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "pea shoots",
               "exclude": [

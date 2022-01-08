@@ -3,11 +3,9 @@
     "key" : ["ale","apple liqueur","apricot liqueur","aniseed liqueur",
             "applewood smoked cheese",
             "almonds","almond meal","almond flour",
-            "apple","apricot","almond milk","avocado",
-            
-      "apple sauce","aquafaba",
-
-      "achiote","asparagus",
+            "apple","apricot","asparagus","avocado",
+            "apple sauce","achiote",
+            "aquafaba","almond milk",
     ],
 
 
@@ -145,7 +143,7 @@
               "include": [
                 {
                   "word": "annatto",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "paprika",

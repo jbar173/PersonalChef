@@ -1,12 +1,13 @@
 {
 
     "key" : ["dessert wine",
-             "dark chocolate","dried coconut","date","dried cranberries","dried barberries","dried mixed fruit",
-             "dried black-eyed peas","dried pinto beans",
+             "dark chocolate","dried coconut","dates","dried cranberries","dried barberries","dried mixed fruit",
+             "dried black-eyed peas","dried pinto beans","dried borlotti beans","dried cannellini beans","dried chickpeas","dried flageolet beans","dried kidney beans","dried mixed beans","dried navy beans",
              "duck",
-
-      "dill","daikon","dried chili peppers","dried coriander","dumplings",
-      "demi-glace",
+             "daikon",
+             "dill","dried coriander","dried chili peppers","dried achiote",
+             "demi-glace",
+             "dumplings",
 
     ],
 
@@ -15,15 +16,543 @@
 
 
         {
-            "name": "dried pinto beans",
+            "name": "dried achiote",
             "exclude": [
+              {
+                "word": "smoked",
+              },
             ],
             "include": [
+              {
+                "word": "achiote",
+                "substitution": false,
+              },
+              {
+                "word": "annatto",
+                "substitution": false,
+              },
+              {
+                "word": "paprika",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried navy beans",
+            "exclude": [
+              {
+                "word": "vert",
+              },
+              {
+                "word": "vertes",
+              },
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "navy bean",
+                "substitution": false,
+              },
+              {
+                "word": "great northern bean",
+                "substitution": false,
+              },
+              {
+                "word": "haricot",
+                "substitution": false,
+              },
+              {
+                "word": "boston bean",
+                "substitution": false,
+              },
+              {
+                "word": "white pea bean",
+                "substitution": false,
+              },
+              {
+                "word": "pea bean",
+                "substitution": false,
+              },
+              {
+                "word": "white kidney bean",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried mixed beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "mixed bean",
+                "substitution": false,
+              },
+              {
+                "word": "bean mix",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried kidney beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "kidney bean",
+                "substitution": false,
+              },
+              {
+                "word": "red pea",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried flageolet beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "flageolet bean",
+                "substitution": false,
+              },
+              {
+                "word": "cannellini bean",
+                "substitution": true,
+              },
+              {
+                "word": "white bean",
+                "substitution": true,
+              },
+              {
+                "word": "navy bean",
+                "substitution": true,
+              },
+              {
+                "word": "great northern bean",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried chickpeas",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+              {
+                "word": "flour",
+              },
+              {
+                "word": "meal",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "sugar",
+              },
+              {
+                "word": "sweet",
+              },
+              {
+                "word": "fufu",
+              },
+              {
+                "word": "poundo",
+              },
+              {
+                "word": "miso",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "butter",
+              },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "houmous",
+              },
+              {
+                "word": "humous",
+              },
+              {
+                "word": "hummus",
+              },
+              {
+                "word": "humus",
+              },
+              {
+                "word": "juice",
+              },
+              {
+                "word": "aquafaba",
+              },
+              {
+                "word": "pasta",
+              },
+              {
+                "word": "fusilli",
+              },
+              {
+                "word": "penne",
+              },
+              {
+                "word": "gnocchetti",
+              },
+              {
+                "word": "rice",
+              },
+              {
+                "word": "vinegar",
+              },
+              {
+                "word": "cracker",
+              },
+              {
+                "word": "crispbread",
+              },
+              {
+                "word": "roasted",
+              },
+              {
+                "word": "roast",
+              },
+              {
+                "word": "crunchy",
+              },
+              {
+                "word": "crunch",
+              },
+              {
+                "word": "lime",
+              },
+              {
+                "word": "spicy",
+              },
+              {
+                "word": "snack",
+              },
+              {
+                "word": "cornita",
+              },
+              {
+                "word": "puff",
+              },
+              {
+                "word": "twist",
+              },
+              {
+                "word": "straw",
+              },
+              {
+                "word": "chocolate",
+              },
+            ],
+            "include": [
+              {
+                "word": "chickpea",
+                "substitution": false,
+              },
+              {
+                "word": "chick pea",
+                "substitution": false,
+              },
+              {
+                "word": "garbanzo",
+                "substitution": false,
+              },
+              {
+                "word": "channa",
+                "substitution": false,
+              },
+              {
+                "word": "chana",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried cannellini beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "cannellini bean",
+                "substitution": false,
+              },
+              {
+                "word": "flageolet bean",
+                "substitution": true,
+              },
+              {
+                "word": "white bean",
+                "substitution": true,
+              },
+              {
+                "word": "white kidney bean",
+                "substitution": true,
+              },
+              {
+                "word": "navy bean",
+                "substitution": true,
+              },
+              {
+                "word": "great northern bean",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried borlotti beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "borlotti bean",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry bean",
+                "substitution": false,
+              },
+              {
+                "word": "pinto bean",
+                "substitution": true,
+              },
+              {
+                "word": "kidney bean",
+                "substitution": true,
+              },
+              {
+                "word": "cannellini bean",
+                "substitution": true,
+              },
+              {
+                "word": "white bean",
+                "substitution": true,
+              },
+              {
+                "word": "navy bean",
+                "substitution": true,
+              },
+              {
+                "word": "great northern bean",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried pinto beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "pinto bean",
+                "substitution": false,
+              },
+              {
+                "word": "pinquito bean",
+                "substitution": true,
+              },
+              {
+                "word": "borlotti bean",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry bean",
+                "substitution": true,
+              },
+              {
+                "word": "cannellini bean",
+                "substitution": true,
+              },
+              {
+                "word": "white bean",
+                "substitution": true,
+              },
+              {
+                "word": "navy bean",
+                "substitution": true,
+              },
+              {
+                "word": "great northern bean",
+                "substitution": true,
+              },
             ],
         },
         {
             "name": "dried black-eyed peas",
             "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
             ],
             "include": [
               {
@@ -467,6 +996,15 @@
         {
             "name": "dessert wine",
             "exclude": [
+              {
+                "word": "cake",
+              },
+              {
+                "word": "loaf",
+              },
+              {
+                "word": "drop",
+              },
             ],
             "include": [
               {
@@ -479,6 +1017,14 @@
               },
               {
                 "word": "sweet wine",
+                "substitution": false,
+              },
+              {
+                "word": "marsala",
+                "substitution": false,
+              },
+              {
+                "word": "madeira",
                 "substitution": false,
               },
               {
@@ -520,7 +1066,7 @@
           ],
         },
         {
-          "name": "date",
+          "name": "dates",
           "exclude": [
             {
               "word": "date chutney",

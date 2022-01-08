@@ -4,13 +4,13 @@
              "cheddar","cheese slice","camembert","comte","cottage cheese","cream cheese",
              "chocolate","chocolate custard","custard","caramel","candied orange","cocoa powder",
              "candlenuts","chestnuts","cashew nuts","crackers","cornstarch","cornmeal","couscous","cassava flour",
-
              "chicken","chicken mince","cured sausage",
+             "cabbage","chili pepper","courgette","chicory","chayote","collard greens","chard",
+             "chili flakes","cinnamon","chili powder","chinese five spice",
+             "chicken stock","chili paste","chili sauce","chutney",
+             "cream","coconut milk","creme fraiche",
+             "coffee",
 
-      "cream","coffee","cabbage","chili pepper","coconut milk","courgette",
-      "chicken stock","creme fraiche","chili flakes","chili paste",
-      "cinnamon","chickpeas","chili sauce","chili powder","chinese five spice","chutney","chicory","chayote","cannellini bean","collard greens",
-      "chard",
 
     ],
 
@@ -327,33 +327,6 @@
               },
               {
                 "word": "black kale",
-                "substitution": true,
-              },
-            ],
-        },
-        {
-            "name": "cannellini bean",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "flageolet bean",
-                "substitution": true,
-              },
-              {
-                "word": "canned white bean",
-                "substitution": true,
-              },
-              {
-                "word": "white kidney bean",
-                "substitution": true,
-              },
-              {
-                "word": "navy bean",
-                "substitution": true,
-              },
-              {
-                "word": "great northern bean",
                 "substitution": true,
               },
             ],
@@ -872,150 +845,6 @@
               {
                 "word": "ryvita",
                 "substitution": true,
-              },
-            ],
-        },
-        {
-            "name": "tinned chickpeas",
-            "exclude": [
-              {
-                "word": "flour",
-              },
-              {
-                "word": "meal",
-              },
-              {
-                "word": "ground",
-              },
-              {
-                "word": "powder",
-              },
-              {
-                "word": "powdered",
-              },
-              {
-                "word": "sugar",
-              },
-              {
-                "word": "sweet",
-              },
-              {
-                "word": "fufu",
-              },
-              {
-                "word": "poundo",
-              },
-              {
-                "word": "miso",
-              },
-              {
-                "word": "spread",
-              },
-              {
-                "word": "butter",
-              },
-              {
-                "word": "cream",
-              },
-              {
-                "word": "houmous",
-              },
-              {
-                "word": "humous",
-              },
-              {
-                "word": "hummus",
-              },
-              {
-                "word": "humus",
-              },
-              {
-                "word": "juice",
-              },
-              {
-                "word": "aquafaba",
-              },
-              {
-                "word": "pasta",
-              },
-              {
-                "word": "fusilli",
-              },
-              {
-                "word": "penne",
-              },
-              {
-                "word": "gnocchetti",
-              },
-              {
-                "word": "rice",
-              },
-              {
-                "word": "vinegar",
-              },
-              {
-                "word": "cracker",
-              },
-              {
-                "word": "crispbread",
-              },
-              {
-                "word": "roasted",
-              },
-              {
-                "word": "roast",
-              },
-              {
-                "word": "crunchy",
-              },
-              {
-                "word": "crunch",
-              },
-              {
-                "word": "lime",
-              },
-              {
-                "word": "spicy",
-              },
-              {
-                "word": "snack",
-              },
-              {
-                "word": "cornita",
-              },
-              {
-                "word": "puff",
-              },
-              {
-                "word": "twist",
-              },
-              {
-                "word": "straw",
-              },
-              {
-                "word": "chocolate",
-              },
-            ],
-            "include": [
-              {
-                "word": "chickpea",
-                "substitution": false,
-              },
-              {
-                "word": "chick pea",
-                "substitution": false,
-              },
-              {
-                "word": "garbanzo",
-                "substitution": false,
-              },
-              {
-                "word": "channa",
-                "substitution": false,
-              },
-              {
-                "word": "chana",
-                "substitution": false,
               },
             ],
         },
