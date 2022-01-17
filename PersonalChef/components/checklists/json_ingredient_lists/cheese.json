@@ -1,7 +1,35 @@
 {
     "name": "cheese_ingredients",
-    "ingredients": [ "appenzeller", "applewood smoked cheese", "asiago", "bavarian smoked cheese", "blue cheese", "brie ", "camembert", "cheddar", "cheese slice", "colby", "comte", "cottage cheese",
-      "cream cheese", "edam", "emmental", "feta", "fontina", "goat's cheese", "gouda", "gruyere", "halloumi", "havarti", "jarlsberg", "manchego", "mascarpone", "monterey jack",
-      "mozzarella", "oka", "parmesan", "pecorino", "pleasant ridge", "port salut", "provolone", "raclette", "ricotta", "taleggio",
+    "ingredients": [ "appenzeller", "applewood smoked cheese", "asiago",
+
+            "bavarian smoked cheese", "blue cheese", "brie ",
+
+            "camembert", "cheddar", "cheese slice", "colby", "comte", "cottage cheese", "cream cheese", "curd cheese",
+
+            "derby cheese", "double gloucester",
+
+            "edam", "emmental", "epoisses",
+
+            "feta", "fontina",
+
+            "goat's cheese", "gouda", "gruyere",
+
+            "haddock", "hake", "halloumi", "havarti",
+
+            "jarlsberg",
+
+            "kipper",
+
+            "manchego", "mascarpone", "monterey jack", "mozzarella", "muenster",
+
+            "oka", "ossau iraty",
+
+            "paneer", "parmesan", "pecorino", "pleasant ridge", "port wine derby", "port salut", "provolone",
+
+            "raclette", "red leicester", "ricotta",
+
+            "taleggio",
+
+            "wensleydale",
     ]
 }

@@ -2,13 +2,13 @@
 
     "key" : [ "taleggio",
               "toffee",
-              "tacos",
+              "taco shells",
               "turkey","turkey mince",
               "turnip","tomato","tangerine",
               "tandoori spice mix","turmeric","taco seasoning","tarragon",
 
               "tinned borlotti beans","tinned cannellini beans","tinned chickpeas","tinned mixed beans","tinned black-eyed peas","tinned pinto beans","tinned tomatoes",
-              "tinned flageolet beans","tinned kidney beans","tinned navy beans","tomato pasta sauce","tinned sweetcorn","tinned water chestnuts",
+              "tinned flageolet beans","tinned kidney beans","tinned navy beans","tomato cooking sauce","tinned sweetcorn","tinned water chestnuts",
 
               "tomato paste","turkey stock","tapenade",
               "tofu",
@@ -606,7 +606,7 @@
               ],
           },
           {
-              "name": "tacos",
+              "name": "taco shells",
               "exclude": [
                 {
                   "word": "seasoning",
@@ -1192,8 +1192,11 @@
             ],
           },
           {
-              "name": "tomato pasta sauce",
+              "name": "tomato cooking sauce",
               "exclude": [
+                {
+                  "word": "ketchup",
+                },
               ],
               "include": [
                 {
@@ -1202,6 +1205,14 @@
                 },
                 {
                   "word": "tomato alfredo marinara",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato paste sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato pizza sauce",
                   "substitution": false,
                 },
                 {

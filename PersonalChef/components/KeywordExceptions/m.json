@@ -1,14 +1,17 @@
 {
 
     "key" : [ "mango liqueur","mint liqueur","melon liqueur",
-              "muenster","manchego","mozzarella","monterey jack",
-              "milk chocolate","marmalade",
+              "manchego","monterey jack","mozzarella","muenster",
+              "mango jelly","mango jam","marmalade","milk chocolate",
               "macademia",
               "mushrooms","mango","melon","mixed berries","mangetout",
               "mint","mixed spice",
-              "mustard","miso","mango pickle","medium curry paste","mild curry paste","massaman curry paste",
+              "miso","mango pickle","medium curry paste","mild curry paste","massaman curry paste","mustard",
               "milk","margarine",
 
+
+
+              "mango puree",
 
     ],
 
@@ -16,6 +19,106 @@
     "ingredients": [
 
 
+          {
+              "name": "mango jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mango jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango butter",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "marmalade",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange jam",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange butter",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mango puree",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango nectar",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "mangetout",
               "exclude": [
@@ -745,6 +848,10 @@
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "mix spice",
+                  "substitution": false,
+                },
                 {
                   "word": "pudding spice",
                   "substitution": false,

@@ -46,7 +46,6 @@ const ranked_files = {
             "thirty-eight": require('./checklists/json_ingredient_lists/ranked_lists/thirty-eight.json'),
             // "thirty-nine": require('./checklists/json_ingredient_lists/ranked_lists/thirty-nine.json'),
 
-
             "forty" : require('./checklists/json_ingredient_lists/ranked_lists/forty.json'),
             // "forty-one" : require('./checklists/json_ingredient_lists/ranked_lists/forty-one.json'),
             "forty-two" : require('./checklists/json_ingredient_lists/ranked_lists/forty-two.json'),

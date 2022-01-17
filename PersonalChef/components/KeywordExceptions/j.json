@@ -3,12 +3,45 @@
     "key" : ["jarlsberg",
              "jerusalem artichoke",
 
+
+
+             "jammy dodgers","jazzies",
     ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "jazzies",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jazzles",
+                "substitution": false,
+              },
+              {
+                "word": "brown gems",
+                "substitution": false,
+              },
+              {
+                "word": "nonpareils",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "jammy dodgers",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jammy wheel",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "jerusalem artichoke",
             "exclude": [

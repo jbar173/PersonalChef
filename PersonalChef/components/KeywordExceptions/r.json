@@ -2,11 +2,12 @@
 
     "key" : [ "raspberry liqueur","red wine",
               "ricotta",
-              "raisins","rose water","rice puffs",
+              "raspberry jam","raspberry jelly","raisins","rhubarb jam","rhubarb jelly","rice puffs","rose water",
               "rice","rice cracker","red lentils",
               "rocket",
               "redcurrant jelly","red curry paste",
               "rice milk",
+
 
     ],
 
@@ -14,6 +15,122 @@
     "ingredients": [
 
 
+          {
+              "name": "rhubarb jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rhubarb conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "rhubarb preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "rhubarb fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "rhubarb spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "rhubarb jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "rhubarb butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "rhubarb jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rhubarb conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb butter",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "raspberry jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raspberry conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "raspberry jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raspberry conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry butter",
+                  "substitution": false,
+                },
+              ],
+          },
           {
             "name": "rice milk",
             "exclude": [

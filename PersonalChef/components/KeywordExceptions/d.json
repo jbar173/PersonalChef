@@ -2,12 +2,18 @@
 
     "key" : ["dessert wine",
              "dark chocolate","dried coconut","dates","dried cranberries","dried barberries","dried mixed fruit",
-             "dried black-eyed peas","dried pinto beans","dried borlotti beans","dried cannellini beans","dried chickpeas","dried flageolet beans","dried kidney beans","dried mixed beans","dried navy beans",
+
+             "dried black-eyed peas","dried pinto beans","dried borlotti beans","dried cannellini beans","dried chickpeas",
+             "dried flageolet beans","dried kidney beans","dried mixed beans","dried navy beans",
+
              "duck",
              "daikon",
-             "dill","dried coriander","dried chili peppers","dried achiote",
+             "dill","dried coriander","dried chilli peppers","dried achiote",
              "demi-glace",
              "dumplings",
+
+             "dried banana",
+             "dried black beans", "dried moong dall", "dried red lentils", "dried split peas",
 
     ],
 
@@ -15,6 +21,198 @@
     "ingredients": [
 
 
+        {
+            "name": "dried split peas",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "yellow split pea",
+                "substitution": false,
+              },
+              {
+                "word": "split pea",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried red lentils",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "red split lentil",
+                "substitution": false,
+              },
+              {
+                "word": "red lentil",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried moong dall",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "mung dal",
+                "substitution": false,
+              },
+              {
+                "word": "moong dall",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried black beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "turtle bean",
+                "substitution": false,
+              },
+              {
+                "word": "black bean",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried banana",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "banana chips",
+                "substitution": false,
+              },
+              {
+                "word": "chewy banana",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried banana",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "banana chips",
+                "substitution": false,
+              },
+              {
+                "word": "chewy banana",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried banana",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "banana chips",
+                "substitution": false,
+              },
+              {
+                "word": "chewy banana",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried banana",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "banana chips",
+                "substitution": false,
+              },
+              {
+                "word": "chewy banana",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "dried achiote",
             "exclude": [
@@ -805,7 +1003,7 @@
           ],
         },
         {
-          "name": "dried chili peppers",
+          "name": "dried chilli peppers",
           "exclude": [
           ],
           "include": [
@@ -818,11 +1016,11 @@
               "substitution": false,
             },
             {
-              "word": "dried chili pepper",
+              "word": "dried chilli pepper",
               "substitution": false,
             },
             {
-              "word": "dried chilli peppers",
+              "word": "dried chili pepper",
               "substitution": false,
             },
             {

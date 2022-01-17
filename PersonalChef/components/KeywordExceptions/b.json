@@ -3,7 +3,7 @@
     "key" : ["beer","banana liqueur","blueberry liqueur","brandy",
              "brie","blue cheese",
              "buttercream",
-             "baking powder","baking soda","bread","breadcrumbs","breadsticks","bread wraps","brazil nuts",
+             "baking powder","baking soda","breadcrumbs","breadsticks","bread loaf","bread wraps","brazil nuts",
              "beef","beef mince","black pudding","burger",
              "banana","beetroot","beet","bell pepper","broccoli","beansprouts","broad bean","blackberries","butternut squash",
              "black cardamom","beetroot powder",
@@ -11,12 +11,216 @@
              "beef stock","barbeque sauce",
              "butter",
 
+
+             "berry conserve","blackcurrant jam","blackcurrant jelly","blueberry jam","blueberry jelly","bramble preserve","bramble jelly",
+
     ],
 
 
     "ingredients": [
 
 
+      {
+          "name": "bramble jam",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "bramble conserve",
+              "substitution": true,
+            },
+            {
+              "word": "bramble preserve",
+              "substitution": false,
+            },
+            {
+              "word": "bramble fruit spread",
+              "substitution": false,
+            },
+            {
+              "word": "bramble spread",
+              "substitution": false,
+            },
+            {
+              "word": "bramble butter",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "bramble jelly",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "bramble conserve",
+              "substitution": true,
+            },
+            {
+              "word": "bramble preserve",
+              "substitution": true,
+            },
+            {
+              "word": "bramble fruit spread",
+              "substitution": true,
+            },
+            {
+              "word": "bramble spread",
+              "substitution": true,
+            },
+            {
+              "word": "bramble jam",
+              "substitution": true,
+            },
+            {
+              "word": "bramble butter",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "blueberry jam",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blueberry conserve",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry preserve",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry fruit spread",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry spread",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry butter",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "blueberry jelly",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blueberry conserve",
+              "substitution": true,
+            },
+            {
+              "word": "blueberry preserve",
+              "substitution": true,
+            },
+            {
+              "word": "blueberry fruit spread",
+              "substitution": true,
+            },
+            {
+              "word": "blueberry spread",
+              "substitution": true,
+            },
+            {
+              "word": "blueberry jam",
+              "substitution": true,
+            },
+            {
+              "word": "blueberry butter",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "blackcurrant jam",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blackcurrant conserve",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant preserve",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant fruit spread",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant spread",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant butter",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "blackcurrant jelly",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blackcurrant conserve",
+              "substitution": true,
+            },
+            {
+              "word": "blackcurrant preserve",
+              "substitution": true,
+            },
+            {
+              "word": "blackcurrant fruit spread",
+              "substitution": true,
+            },
+            {
+              "word": "blackcurrant spread",
+              "substitution": true,
+            },
+            {
+              "word": "blackcurrant jam",
+              "substitution": true,
+            },
+            {
+              "word": "blackcurrant butter",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "berry jam",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "berry conserve",
+              "substitution": false,
+            },
+            {
+              "word": "berry preserve",
+              "substitution": false,
+            },
+            {
+              "word": "berry fruit spread",
+              "substitution": false,
+            },
+            {
+              "word": "berry spread",
+              "substitution": false,
+            },
+            {
+              "word": "berry butter",
+              "substitution": true,
+            },
+          ],
+      },
       {
         "name": "beet",
         "exclude": [
@@ -790,6 +994,10 @@
               "substitution": false,
             },
             {
+              "word": "pancake",
+              "substitution": true,
+            },
+            {
               "word": "crepe",
               "substitution": true,
             },
@@ -831,6 +1039,10 @@
             },
             {
               "word": "chapati",
+              "substitution": true,
+            },
+            {
+              "word": "chapatti",
               "substitution": true,
             },
             {
@@ -884,6 +1096,14 @@
               "word": "dipping stick",
               "substitution": false,
             },
+            {
+              "word": "taralli",
+              "substitution": true,
+            },
+            {
+              "word": "tarallini",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -910,7 +1130,7 @@
           ],
       },
       {
-        "name": "bread",
+        "name": "bread loaf",
         "exclude": [
           {
             "word": "bread sauce",
@@ -975,6 +1195,10 @@
         ],
         "include": [
           {
+            "word": "bread",
+            "substitution": false,
+          },
+          {
             "word": "challah",
             "substitution": false,
           },
@@ -1007,50 +1231,6 @@
             "substitution": false,
           },
           {
-            "word": "flatbread",
-            "substitution": false,
-          },
-          {
-            "word": "pancake",
-            "substitution": false,
-          },
-          {
-            "word": "lavash",
-            "substitution": false,
-          },
-          {
-            "word": "pita",
-            "substitution": false,
-          },
-          {
-            "word": "pitta",
-            "substitution": false,
-          },
-          {
-            "word": "naan",
-            "substitution": false,
-          },
-          {
-            "word": "cornbread",
-            "substitution": false,
-          },
-          {
-            "word": "bun",
-            "substitution": false,
-          },
-          {
-            "word": "roll",
-            "substitution": false,
-          },
-          {
-            "word": "bagel",
-            "substitution": false,
-          },
-          {
-            "word": "loaf",
-            "substitution": false,
-          },
-          {
             "word": "focaccia",
             "substitution": false,
           },
@@ -1065,6 +1245,42 @@
           {
             "word": "boule",
             "substitution": false,
+          },
+          {
+            "word": "flatbread",
+            "substitution": true,
+          },
+          {
+            "word": "lavash",
+            "substitution": true,
+          },
+          {
+            "word": "pita",
+            "substitution": true,
+          },
+          {
+            "word": "pitta",
+            "substitution": true,
+          },
+          {
+            "word": "naan",
+            "substitution": true,
+          },
+          {
+            "word": "cornbread",
+            "substitution": true,
+          },
+          {
+            "word": "bun",
+            "substitution": true,
+          },
+          {
+            "word": "roll",
+            "substitution": true,
+          },
+          {
+            "word": "bagel",
+            "substitution": true,
           },
         ],
       },
@@ -1413,6 +1629,9 @@
                 },
                 {
                   "word": "demi glace",
+                },
+                {
+                  "word": "dripping",
                 },
                 {
                   "word": "beefsteak tomato",
@@ -1780,6 +1999,14 @@
               },
               {
                 "word": "beef gravy",
+                "substitution": true,
+              },
+              {
+                "word": "beef and red onion gravy",
+                "substitution": true,
+              },
+              {
+                "word": "beef and onion gravy",
                 "substitution": true,
               },
               {

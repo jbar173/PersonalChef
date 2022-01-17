@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
-import * as data from './keywordExceptions.json';
+import * as data from '.KeywordExceptions/keywordExceptions.json';
 import { FindIngredient, FindExceptions, CheckRecipeIngredientLength } from './regexFunctions.js';
 
 

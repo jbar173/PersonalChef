@@ -1,16 +1,21 @@
 {
 
     "key" : [ "pear liqueur","peach liqueur","plum liqueur","passion fruit liqueur","prosecco",
-              "provolone","parmesan","pecorino",
-              "powdered milk",
-              "peanuts","pine nuts","pecans","pasta","polenta","pumpkin seeds","pork scratchings","potato chips","pearled barley",
+              "parmesan","pecorino","provolone",
+              "passion fruit jam","passion fruit jelly","peach jam","peach jelly","pineapple jam","pineapple jelly","plum jam","plum jelly",
+              "peanuts","pine nuts","pecans","pasta","polenta","pumpkin seeds","pork scratchings","plain potato chips","pearled barley","pizza dough",
               "prosciutto","pork","pulled pork","pork trotter","pate",
               "pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
               "pepper","pork seasoning","parsley",
               "passata","pumpkin puree","pickles",
               "pork stock","panang curry paste",
-              "plain yoghurt",
+              "plain yoghurt","powdered milk",
               "passion fruit juice",
+
+
+              "port wine derby",
+              "passion fruit puree",
+              "plain flour",
 
     ],
 
@@ -18,6 +23,359 @@
     "ingredients": [
 
 
+          {
+              "name": "plain flour",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "poznan",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "plum jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "plum conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "plum jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "plum conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum butter",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pineapple jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pineapple conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pineapple jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pineapple conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple butter",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "peach jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peach conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "peach jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peach conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach butter",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "passion fruit jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "passion fruit conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "passion fruit jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "passion fruit conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit butter",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "passion fruit puree",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "passionfruit puree",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "plum jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "plum conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum butter jam",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pineapple jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pineapple conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple spread",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "peach jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peach conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach spread",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "port wine derby",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "port derby",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pizza dough",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pizza base",
+                  "substitution": false,
+                },
+                {
+                  "word": "dough",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "plain yoghurt",
               "exclude": [
@@ -165,6 +523,10 @@
               ],
               "include": [
                 {
+                  "word": "peashoot",
+                  "substitution": false,
+                },
+                {
                   "word": "tendrils",
                   "substitution": false,
                 },
@@ -205,6 +567,18 @@
                 },
               ],
               "include": [
+                {
+                  "word": "liver sausage",
+                  "substitution": false,
+                },
+                {
+                  "word": "liverwurst",
+                  "substitution": false,
+                },
+                {
+                  "word": "liver parfait",
+                  "substitution": false,
+                },
               ],
           },
           {
@@ -539,7 +913,7 @@
               ],
           },
           {
-              "name": "potato chips",
+              "name": "plain potato chips",
               "exclude": [
                 {
                   "word": "chocolate",
@@ -846,6 +1220,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "original scratching",
+                  "substitution": false,
+                },
+                {
                   "word": "pork crackling",
                   "substitution": false,
                 },
@@ -942,6 +1320,10 @@
                 },
                 {
                   "word": "ham soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham hock broth",
                   "substitution": false,
                 },
                 {
@@ -1331,12 +1713,8 @@
               ],
               "include": [
                 {
-                  "word": "turkey mince",
-                  "substitution": true,
-                },
-                {
-                  "word": "chicken mince",
-                  "substitution": true,
+                  "word": "boczek",
+                  "substitution": false,
                 },
               ],
           },
@@ -1827,6 +2205,14 @@
                 "word": "mafalda",
                 "substitution": false,
               },
+              {
+                "word": "fresine",
+                "substitution": false,
+              },
+              {
+                "word": "trottole",
+                "substitution": false,
+              },
             ],
           },
           {
@@ -2010,7 +2396,10 @@
               },
             ],
             "include": [
-
+              {
+                "word": "maris piper",
+                "substitution": false,
+              },
             ],
           },
           {

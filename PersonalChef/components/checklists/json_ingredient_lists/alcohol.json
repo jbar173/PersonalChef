@@ -1,6 +1,33 @@
 {
     "name": "alcohol_ingredients",
-    "ingredients": [ "ale", "baileys", "beer", "brandy", "campari", "chambord", "champagne", "cider", "dark rum", "gin", "guinness", "kirsch", "lager", "light rum", "malibu", "ouzo", "prosecco",
-       "red wine", "rose wine", "sherry", "vodka", "whisky", "white wine",
+    "ingredients": [ "ale", "apple liqueur", "apricot liqueur", "aniseed liqueur",
+
+            "baileys", "banana liqueur", "beer", "blueberry liqueur", "brandy",
+
+            "cachaca", "campari", "chambord", "champagne", "cherry liqueur", "cider", "coconut liqueur",
+
+            "dark rum", "dessert wine",
+
+            "elderflower liqueur",
+
+            "gin", "ginger liqueur", "grape liqueur", "grapefruit liqueur", "guinness",
+
+            "kirsch",
+
+            "lager", "light rum", "limoncello",
+
+            "malibu", "mango liqueur", "melon liqueur", "mint liqueur",
+
+            "orange liqueur", "ouzo",
+
+            "passion fruit liqueur", "peach liqueur", "pear liqueur", "plum liqueur", "prosecco",
+
+            "raspberry liqueur", "red wine", "rose wine",
+
+            "sherry", "sparkling wine", "strawberry liqueur",
+
+            "vodka",
+
+            "watermelon liqueur", "whisky", "white wine",
     ]
 }

@@ -1,23 +1,120 @@
 {
 
     "key" : ["champagne","cava","cherry liqueur","cider","coconut liqueur","cachaca",
-             "cheddar","cheese slice","camembert","comte","cottage cheese","cream cheese",
+             "camembert","cheddar","cheese slice","comte","cottage cheese","cream cheese",
              "chocolate","chocolate custard","custard","caramel","candied orange","cocoa powder",
              "candlenuts","chestnuts","cashew nuts","crackers","cornstarch","cornmeal","couscous","cassava flour",
              "chicken","chicken mince","cured sausage",
-             "cabbage","chili pepper","courgette","chicory","chayote","collard greens","chard",
-             "chili flakes","cinnamon","chili powder","chinese five spice",
-             "chicken stock","chili paste","chili sauce","chutney",
+             "cabbage","chilli pepper","courgette","chicory","chayote","collard greens","chard",
+             "chilli flakes","cinnamon","chilli powder","chinese five spice",
+             "chicken stock","chilli paste","chilli sauce","chutney",
              "cream","coconut milk","creme fraiche",
              "coffee",
 
 
+
+             "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","crystallised ginger",
     ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "cherry jelly",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cherry conserve",
+                "substitution": true,
+              },
+              {
+                "word": "cherry preserve",
+                "substitution": true,
+              },
+              {
+                "word": "cherry fruit spread",
+                "substitution": true,
+              },
+              {
+                "word": "cherry spread",
+                "substitution": true,
+              },
+              {
+                "word": "cherry jam",
+                "substitution": true,
+              },
+              {
+                "word": "cherry butter",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cherry jam",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cherry conserve",
+                "substitution": false,
+              },
+              {
+                "word": "cherry preserve",
+                "substitution": false,
+              },
+              {
+                "word": "cherry fruit spread",
+                "substitution": false,
+              },
+              {
+                "word": "cherry spread",
+                "substitution": false,
+              },
+              {
+                "word": "cherry butter",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "crystallised ginger",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "crystallized ginger",
+                "substitution": false,
+              },
+              {
+                "word": "candied ginger",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "chocolate cornflake nests",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate cornflake clusters",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cake mix",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cake kit",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "chicken mince",
             "exclude": [
@@ -219,6 +316,14 @@
             ],
             "include": [
               {
+                "word": "gari flour",
+                "substitution": false,
+              },
+              {
+                "word": "garri",
+                "substitution": false,
+              },
+              {
                 "word": "arrowroot",
                 "substitution": true,
               },
@@ -407,19 +512,31 @@
             ],
             "include": [
               {
+                "word": "pickle relish",
+                "substitution": false,
+              },
+              {
+                "word": "ballymaloe original relish",
+                "substitution": false,
+              },
+              {
+                "word": "ballymaloe country relish",
+                "substitution": false,
+              },
+              {
+                "word": "onion jam",
+                "substitution": false,
+              },
+              {
+                "word": "onion marmalade",
+                "substitution": false,
+              },
+              {
                 "word": "smostarda di-cremona",
                 "substitution": true,
               },
               {
                 "word": "sweet chilli jam",
-                "substitution": true,
-              },
-              {
-                "word": "onion jam",
-                "substitution": true,
-              },
-              {
-                "word": "onion marmalade",
                 "substitution": true,
               },
               {
@@ -436,10 +553,6 @@
               },
               {
                 "word": "piccalilli",
-                "substitution": true,
-              },
-              {
-                "word": "pickle relish",
                 "substitution": true,
               },
             ],
@@ -476,12 +589,16 @@
             ],
         },
         {
-          "name": "chili powder",
+          "name": "chilli powder",
           "exclude": [
           ],
           "include": [
             {
               "word": "chile powder",
+              "substitution": false,
+            },
+            {
+              "word": "chili powder",
               "substitution": false,
             },
             {
@@ -587,12 +704,12 @@
           ],
         },
         {
-            "name": "chili sauce",
+            "name": "chilli sauce",
             "exclude": [
             ],
             "include": [
               {
-                "word": "chilli sauce",
+                "word": "chili sauce",
                 "substitution": false,
               },
               {
@@ -699,6 +816,10 @@
                 "substitution": false,
               },
               {
+                "word": "nduja",
+                "substitution": false,
+              },
+              {
                 "word": "coppa",
                 "substitution": false,
               },
@@ -707,7 +828,15 @@
                 "substitution": false,
               },
               {
-                "word": "salumi",
+                "word": "sopocka",
+                "substitution": false,
+              },
+              {
+                "word": "kassler",
+                "substitution": false,
+              },
+              {
+                "word": "salami",
                 "substitution": false,
               },
               {
@@ -756,6 +885,18 @@
               },
               {
                 "word": "cured dried lamb sausage",
+                "substitution": false,
+              },
+              {
+                "word": "garlic sausage slices",
+                "substitution": false,
+              },
+              {
+                "word": "liver sausage",
+                "substitution": false,
+              },
+              {
+                "word": "liverwurst",
                 "substitution": false,
               },
             ],
@@ -823,7 +964,15 @@
                 "substitution": true,
               },
               {
+                "word": "cornish wafer",
+                "substitution": true,
+              },
+              {
                 "word": "crispbread",
+                "substitution": true,
+              },
+              {
+                "word": "crackerbread",
                 "substitution": true,
               },
               {
@@ -844,6 +993,14 @@
               },
               {
                 "word": "ryvita",
+                "substitution": true,
+              },
+              {
+                "word": "thins",
+                "substitution": true,
+              },
+              {
+                "word": "snackers",
                 "substitution": true,
               },
             ],
@@ -1133,12 +1290,12 @@
             ],
         },
         {
-          "name": "chili paste",
+          "name": "chilli paste",
           "exclude": [
           ],
           "include": [
             {
-              "word": "chilli paste",
+              "word": "chili paste",
               "substitution": false,
             },
             {
@@ -1216,12 +1373,12 @@
           ],
         },
         {
-          "name": "chili flakes",
+          "name": "chilli flakes",
           "exclude": [
           ],
           "include": [
             {
-              "word": "chilli flakes",
+              "word": "chili flakes",
               "substitution": false,
             },
             {
@@ -1500,7 +1657,23 @@
                 "substitution": true,
               },
               {
+                "word": "cheddar spreadable",
+                "substitution": true,
+              },
+              {
+                "word": "spreadable cheddar",
+                "substitution": true,
+              },
+              {
+                "word": "spreadable cheese",
+                "substitution": true,
+              },
+              {
                 "word": "cheese spread",
+                "substitution": true,
+              },
+              {
+                "word": "soft cheese",
                 "substitution": true,
               },
               {
@@ -1685,6 +1858,18 @@
           "include": [
             {
               "word": "american cheese",
+              "substitution": false,
+            },
+            {
+              "word": "cheddar slice",
+              "substitution": false,
+            },
+            {
+              "word": "mild slices",
+              "substitution": false,
+            },
+            {
+              "word": "mature slices",
               "substitution": false,
             },
           ],
@@ -2325,7 +2510,7 @@
           ],
         },
         {
-          "name": "chili pepper",
+          "name": "chilli pepper",
           "exclude": [
             {
               "word": "chili chutney",
@@ -2529,6 +2714,7 @@
             },
           ],
           "include": [
+
           ],
         },
         {
@@ -2791,7 +2977,14 @@
               },
             ],
             "include": [
-
+              {
+                "word": "single soya uht",
+                "substitution": true,
+              },
+              {
+                "word": "soya cream",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -2817,6 +3010,9 @@
               },
               {
                 "word": "chocolate cake mix",
+              },
+              {
+                "word": "chocolate cake kit",
               },
             ],
             "include": [

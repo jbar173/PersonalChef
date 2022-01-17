@@ -1,7 +1,7 @@
 {
 
     "key" : [ "orange liqueur",
-              "orange oil",
+              "orange jam","orange jelly","orange oil",
               "oatmeal","oats",
               "offal",
               "onion","olives","orange",
@@ -9,11 +9,100 @@
               "oil",
               "oat milk",
               "orange juice",
+
+
+              "ossau iraty",
+              "oat biscuits",
     ],
 
 
     "ingredients": [
 
+
+          {
+              "name": "orange jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "orange jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange butter",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "oat biscuits",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "oat biscuit",
+                  "substitution": false,
+                },
+                {
+                  "word": "oat cookie",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "ossau iraty",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ossau-iraty",
+                  "substitution": false,
+                },
+              ],
+          },
           {
             "name": "oat milk",
             "exclude": [
@@ -21,6 +110,10 @@
             "include": [
               {
                 "word": "oatmilk",
+                "substitution": false,
+              },
+              {
+                "word": "oat drink",
                 "substitution": false,
               },
               {

@@ -2,15 +2,102 @@
 
     "key" : ["ale","apple liqueur","apricot liqueur","aniseed liqueur",
             "applewood smoked cheese",
+            "apricot jam", "apricot jelly",
             "almonds","almond meal","almond flour",
             "apple","apricot","asparagus","avocado",
             "apple sauce","achiote",
             "aquafaba","almond milk",
+
+
+
+            "atta flour",
     ],
 
 
     "ingredients": [
 
+
+          {
+              "name": "atta flour",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ata",
+                  "substitution": false,
+                },
+                {
+                  "word": "atta",
+                  "substitution": false,
+                },
+                {
+                  "word": "chapati flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "chapatti flour",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "apricot jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apricot conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "apricot jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apricot conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot butter",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "almond liqueur",
               "exclude": [

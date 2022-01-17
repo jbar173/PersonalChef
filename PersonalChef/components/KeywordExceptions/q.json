@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "quince paste",
+    "key" : [ "quince jelly","quince paste",
               "quince",
               "quinoa milk",
     ],
@@ -71,6 +71,37 @@
               ],
           },
           {
+              "name": "quince jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "quince conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "quince preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "quince fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "quince spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "quince jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "quince butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "quince paste",
               "exclude": [
               ],
@@ -89,6 +120,14 @@
                 },
                 {
                   "word": "quince preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "quince fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "quince spread",
                   "substitution": false,
                 },
               ],

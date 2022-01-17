@@ -9,12 +9,79 @@
               "lard",
               "lychee juice",
 
+
+
+
+              "lemon and lime jelly"
+
     ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "lemon and lime jelly",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lemon & lime jelly",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and lime conserve",
+                "substitution": true,
+              },
+              {
+                "word": "lemon and lime preserve",
+                "substitution": true,
+              },
+              {
+                "word": "lemon and lime fruit spread",
+                "substitution": true,
+              },
+              {
+                "word": "lemon and lime spread",
+                "substitution": true,
+              },
+              {
+                "word": "lemon and lime jam",
+                "substitution": true,
+              },
+              {
+                "word": "lemon and lime butter",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lemon and lime jam",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lemon and lime conserve",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and lime preserve",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and lime fruit spread",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and lime spread",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and lime butter",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "lamb mince",
             "exclude": [
@@ -91,6 +158,10 @@
                 "substitution": true,
               },
               {
+                "word": "dripping",
+                "substitution": true,
+              },
+              {
                 "word": "schmaltz",
                 "substitution": true,
               },
@@ -155,6 +226,9 @@
         {
             "name": "lamb",
             "exclude": [
+              {
+                "word": "lettuce",
+              },
               {
                 "word": "stock",
               },
@@ -457,6 +531,10 @@
             },
           ],
           "include": [
+            {
+              "word": "iceberg",
+              "substitution": false,
+            },
           ],
         },
         {

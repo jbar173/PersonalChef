@@ -1,11 +1,11 @@
 {
 
     "key" : [ "sparkling wine","sherry","strawberry liqueur",
-              "sugar","strawberry custard",
+              "strawberry custard","strawberry jam","strawberry jelly","sugar",
               "semolina","spring roll wrapper","seaweed","sweet rice flour","salt","soya beans",
               "shrimp",
               "sausage","smoked sausage",
-              "spinach","sweet potato","spring onions","shallot","salad leaves","summer squash","swede",
+              "salad leaves","shallot","soffrito mix","spinach","spring onions","summer squash","swede","sweet potato",
               "smoked paprika","salt","shichimi",
               "sun-dried tomatoes",
               "soy sauce","salsa",
@@ -13,12 +13,130 @@
               "sparkling water",
 
 
+
+              "sweetener",
+              "short grain rice",
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "short grain rice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "short grain white rice",
+                  "substitution": false,
+                },
+                {
+                  "word": "short grain brown rice",
+                  "substitution": false,
+                },
+                {
+                  "word": "paella rice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sweetener",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sugar alternative",
+                  "substitution": false,
+                },
+                {
+                  "word": "stevia",
+                  "substitution": false,
+                },
+                {
+                  "word": "canderel",
+                  "substitution": false,
+                },
+                {
+                  "word": "erythritol",
+                  "substitution": false,
+                },
+                {
+                  "word": "nature sweet",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "strawberry jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "strawberry jam",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry butter",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "soffrito mix",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chef's base",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "salt",
               "exclude": [
@@ -306,7 +424,19 @@
                   "substitution": false,
                 },
                 {
+                  "word": "pastrami",
+                  "substitution": false,
+                },
+                {
                   "word": "salsiccia piccante",
+                  "substitution": false,
+                },
+                {
+                  "word": "spianata",
+                  "substitution": false,
+                },
+                {
+                  "word": "silesian",
                   "substitution": false,
                 },
               ],
@@ -322,6 +452,10 @@
                 },
                 {
                   "word": "breakfast links",
+                  "substitution": false,
+                },
+                {
+                  "word": "chipolata",
                   "substitution": false,
                 },
                 {
@@ -883,6 +1017,14 @@
                 "substitution": false,
               },
               {
+                "word": "roasted vine tomato",
+                "substitution": false,
+              },
+              {
+                "word": "roasted vine tomatoes",
+                "substitution": false,
+              },
+              {
                 "word": "sunblushed tomato",
                 "substitution": true,
               },
@@ -904,6 +1046,10 @@
               },
               {
                 "word": "semi-dried tomato",
+                "substitution": true,
+              },
+              {
+                "word": "semi dried cherry tomatoes",
                 "substitution": true,
               },
               {

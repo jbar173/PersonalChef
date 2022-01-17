@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "vanilla pod","vanilla extract",
+    "key" : [ "vanilla extract","vanilla pod",
               "vine leaves",
               "vegetable stock","vinegar",
               "veggie dip",
@@ -22,7 +22,39 @@
                   "substitution": false,
                 },
                 {
+                  "word": "onion & garlic dip",
+                  "substitution": false,
+                },
+                {
+                  "word": "onion and garlic dip",
+                  "substitution": false,
+                },
+                {
                   "word": "chive dip",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheese and chive dip",
+                  "substitution": false
+                },
+                {
+                  "word": "cheese & chive dip",
+                  "substitution": false,
+                },
+                {
+                  "word": "sour cream and chive dip",
+                  "substitution": false,
+                },
+                {
+                  "word": "sour cream & chive dip",
+                  "substitution": false,
+                },
+                {
+                  "word": "cream and chive dip",
+                  "substitution": false,
+                },
+                {
+                  "word": "cream & chive dip",
                   "substitution": false,
                 },
               ],
@@ -146,6 +178,22 @@
               },
               {
                 "word": "vegetable soup base",
+                "substitution": false,
+              },
+              {
+                "word": "vegetable seasoning",
+                "substitution": false,
+              },
+              {
+                "word": "maggi seasoning cube",
+                "substitution": false,
+              },
+              {
+                "word": "maggi seasoning tablette",
+                "substitution": false,
+              },
+              {
+                "word": "kucharek",
                 "substitution": false,
               },
               {

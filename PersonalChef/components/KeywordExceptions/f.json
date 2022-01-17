@@ -1,7 +1,7 @@
 {
 
     "key" : ["feta","fontina",
-             "fudge","fruit loaf","fig jam",
+             "fig jam","fig jelly","fruit cake","fruit loaf","fudge",
              "filo pastry","flour",
              "fresh cranberries","fig","fresh ginger","fresh coconut",
              "fresh coriander","fenugreek leaves",
@@ -9,12 +9,127 @@
              "fruit yoghurt",
              "fruit cordial",
 
+
+
+             "fondant icing"
+             "flatbread",
+
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "flatbread",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pita",
+                  "substitution": false,
+                },
+                {
+                  "word": "pitta",
+                  "substitution": false,
+                },
+                {
+                  "word": "naan",
+                  "substitution": false,
+                },
+                {
+                  "word": "roti",
+                  "substitution": false,
+                },
+                {
+                  "word": "khobez",
+                  "substitution": false,
+                },
+                {
+                  "word": "khoubz",
+                  "substitution": false,
+                },
+                {
+                  "word": "khubz",
+                  "substitution": false,
+                },
+                {
+                  "word": "khubez",
+                  "substitution": false,
+                },
+                {
+                  "word": "khubooz",
+                  "substitution": false,
+                },
+                {
+                  "word": "kuboos",
+                  "substitution": false,
+                },
+                {
+                  "word": "matza",
+                  "substitution": false,
+                },
+                {
+                  "word": "matzo",
+                  "substitution": false,
+                },
+                {
+                  "word": "matzah",
+                  "substitution": false,
+                },
+                {
+                  "word": "paratha",
+                  "substitution": false,
+                },
+                {
+                  "word": "chapati",
+                  "substitution": false,
+                },
+                {
+                  "word": "chapatti",
+                  "substitution": false,
+                },
+                {
+                  "word": "panini",
+                  "substitution": true,
+                },
+                {
+                  "word": "bun",
+                  "substitution": true,
+                },
+                {
+                  "word": "tortilla",
+                  "substitution": true,
+                },
+                {
+                  "word": "torilla",
+                  "substitution": true,
+                },
+                {
+                  "word": "wrap",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fondant icing",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ready to roll",
+                  "substitution": false,
+                },
+                {
+                  "word": "sugarpaste",
+                  "substitution": false,
+                },
+                {
+                  "word": "modelling paste",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "fenugreek leaves",
               "exclude": [
@@ -159,12 +274,59 @@
             ],
           },
           {
+              "name": "fig jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fig conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "fig preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "fig fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "fig spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "fig jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "fig butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "fig jam",
               "exclude": [
               ],
               "include": [
                 {
-                  "word": "fig",
+                  "word": "fig conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "fig preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "fig fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "fig spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "fig butter",
                   "substitution": false,
                 },
               ],
@@ -338,6 +500,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "spiced bun",
+                  "substitution": false,
+                },
+                {
                   "word": "genoa cake",
                   "substitution": true,
                 },
@@ -347,6 +513,41 @@
                 },
                 {
                   "word": "fruitcake",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fruit cake",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fruitcake",
+                  "substitution": false,
+                },
+                {
+                  "word": "soreen",
+                  "substitution": true,
+                },
+                {
+                  "word": "tea loaf",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit bread",
+                  "substitution": true,
+                },
+                {
+                  "word": "panettone",
+                  "substitution": true,
+                },
+                {
+                  "word": "genoa cake",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit loaf",
                   "substitution": true,
                 },
               ],

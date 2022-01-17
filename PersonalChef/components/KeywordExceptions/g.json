@@ -8,6 +8,10 @@
               "garlic powder","ground ginger","green cardamom","ground cumin",
               "guacamole","green curry paste",
 
+
+
+              "gram flour",
+
     ],
 
 
@@ -15,6 +19,17 @@
 
 
 
+          {
+              "name": "gram flour",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chickpea flour",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "green curry paste",
               "exclude": [
@@ -408,6 +423,10 @@
                 },
                 {
                   "word": "green bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "fine bean",
                   "substitution": false,
                 },
               ],

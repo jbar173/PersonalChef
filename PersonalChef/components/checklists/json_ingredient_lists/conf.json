@@ -1,7 +1,67 @@
 {
     "name": "confectionary_ingredients",
-    "ingredients": [ "chocolate buttons", "chocolate sprinkles", "chocolate drops", "dates", "dark chocolate", "digestive biscuits", "dried apricots", "dried figs", "fruit cake",
-      "honey", "hundreds and thousands", "jelly tots","maltesers", "marmalade", "milk chocolate", "mini eggs", "powdered milk", "raisins", "raspberry jam", "skittles", "smarties",
-      "strawberry jam", "sugar", "white chocolate",
+    "ingredients": [ "agave", "almond extract", "apricot compote", "apricot jam", "apricot jelly", "apple pectin",
+
+            "banana custard", "berry jam", "black food colouring", "blackcurrant jam", "blackcurrant jelly", "black treacle", "blueberry jam", "blueberry jelly",
+            "blue food colouring", "biscuit spread", "boiled sweets", "bourbon biscuits", "bounty", "bramble jam", "bramble jelly", "buttercream", "butterscotch mousse",
+
+            "cacao nibs", "cake mix", "candied orange", "caramel", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel wafer",
+            "carrot cake", "cherry compote", "cherry jam", "cherry jelly", "chocolate", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies",
+            "chocolate cookie dough", "chocolate cornflake nests", "chocolate custard", "chocolate decorating icing", "chocolate drops", "chocolate eclairs",
+            "chocolate ganache", "chocolate liqueurs", "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
+            "chocolate sauce", "chocolate sponge", "chocolate sprinkles", "chocolate wafers", "cocoa powder", "coconut bar", "coconut biscuits", "coconut macaroons",
+            "coco pops", "cola laces", "coloured dusting sugar", "condensed milk", "cookie mix", "cream egg", "crunchie bar", "crunchy cream biscuits", "crystallised ginger",
+            "custard", "custard creams", "custard powder",
+
+            "dark chocolate", "dates", "date syrup", "digestive biscuits", "decorating icing", "decorating sprinkles", "dolly mixtures", "dried apple", "dried apricots",
+            "dried banana", "dried barberries", "dried coconut", "dried cranberries", "dried figs", "dried goji berries", "dried mango",
+            "dried mixed fruit", "dried pears", "dried pineapple",
+
+            "fig jam", "fig jelly", "fig roll", "fondant icing", "fruit cake", "fruit jellies", "fruit and nut chocolate", "fruit loaf", "fudge",
+
+            "honey", "hundreds and thousands",
+
+            "garibaldi biscuits", "gelatine", "ginger biscuits", "gingerbread mix", "ginger sponge", "glace cherries", "glycerine", "golden syrup", "gooseberry mousse",
+            "green food colouring", "gummy mix",
+
+            "haribo", "honey", "honeycomb", "hundreds and thousands",
+
+            "iced gems", "icing sugar",
+
+            "jaffa cakes", "jammy dodgers", "jam tart", "jazzies", "jelly beans" "jelly tots",
+
+            "kitkat",
+
+            "lemon and lime jam", "lemon and lime jelly", "lemon biscuits", "lemon curd", "lemon extract", "lemon mousse", "lion bar", "liquid glucose", "liquorice allsorts",
+            "lollipop", "love hearts",
+
+            "macarons", "maltesers", "mango jelly", "mango jam", "mango puree", "maple syrup", "marmalade", "mars", "marshmallows", "marzipan", "meringues",
+            "midget gems", "milk biscuits", "milk chocolate", "milky way", "millionaire’s shortbread", "mini eggs", "minstrels", "mint chocolate", "mint fondants",
+            "mints", "MnMs", "munchies",
+
+            "nerds", "nougat", "nutella", "nutty chocolate",
+
+            "oat biscuits", "orange chocolate", "orange food colouring", "orange jam","orange jelly", "orange oil", "oreos",
+
+            "passion fruit jam", "passion fruit jelly", "passion fruit puree", "peach jam", "peach jelly", "peanut bar", "peanut butter wafers", "peanut cookies", "peanut mnms",
+            "pear drops", "peppermint extract", "pineapple jam", "pineapple jelly", "pink food colouring", "plum jam", "plum jelly", "popping candy", "pralines", "preserved lemons",
+            "prunes", "purple food colouring",
+
+            "quince jelly", "quince paste",
+
+            "rainbow drops", "raisin and biscuit chocolate", "raisins", "raspberry bonbons", "raspberry jam", "raspberry jelly", "raspberry syrup", "red food colouring", "reese’s peanut butter cups",
+            "revels", "rhubarb and ginger preserve", "rhubarb jam", "rhubarb jelly", "rolos",
+
+            "salted caramel chocolate", "salted caramel cookie dough", "sherbert", "shortcake biscuits", "silver ball decorations", "skittles", "smarties", "snickers",
+            "starburst", "stem ginger", "strawberry bonbons", "strawberry custard", "strawberry jam", "strawberry jelly", "strawberry liquorice", "strawberry mousse",
+            "strawberry sauce", "strawberry shoelaces", "sultanas", "sugar", "sweetener", "syrup sponge",
+
+            "toblerone", "toffee", "toffe crisp", "toffees", "toffee sauce", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
+
+            "vanilla bean paste", "vanilla essence", "vanilla extract", "vanilla pod", "vanilla sponge",
+
+            "wafer biscuits", "wafer decorations", "white chocolate", "wine gums", "wispa",
+
+            "yellow food colouring",
     ]
 }
