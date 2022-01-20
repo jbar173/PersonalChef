@@ -5,21 +5,202 @@
              "buttercream",
              "baking powder","baking soda","breadcrumbs","breadsticks","bread loaf","bread wraps","brazil nuts",
              "beef","beef mince","black pudding","burger",
-             "banana","beetroot","beet","bell pepper","broccoli","beansprouts","broad bean","blackberries","butternut squash",
-             "black cardamom","beetroot powder",
-             "butter beans",
+             "banana","beetroot","beet","bell pepper","broccoli","beansprouts","broad beans","blackberries","butternut squash",
+             "beetroot powder","black cardamom",
+             "black-eyed peas","borlotti beans",
              "beef stock","barbeque sauce",
              "butter",
 
 
-             "berry conserve","blackcurrant jam","blackcurrant jelly","blueberry jam","blueberry jelly","bramble preserve","bramble jelly",
+             "~~~ HALF DONE : ~~~"
+             "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
+             "barbeque seasoning",
+             "bombay mix",
+             "balti sauce", "basil puree", "black bean paste",
 
+
+             "~~~ TO DO : ~~~"
+             "baileys",
+             "bavarian smoked cheese",
+
+             "banana custard", "black food colouring", "black treacle", "blue food colouring", "biscuit spread", "boiled sweets",
+             "bourbon biscuits", "bounty", "butterscotch mousse",
+
+             "batter mix", "bran flakes", "bread dough", "buckwheat",
+             "basa", "breaded fish fillets",
+             "blueberries",
+             "biltong", "bresaola",
+             "baharat seasoning", "bay leaf", "bouquet garni",
+             "buttermilk",
+             "bacon potato chips", "barbeque potato chips", "beef potato chips", "bread and butter pudding",
+             "baked beans", "black beans", "black cherries", "butter beans",
+
+             "balsamic vinegar", "baconnaise", "beetroot pesto", "blue cheese dressing", "bhuna sauce", "biryani masala", "bolognaise sauce", "bread sauce",
+             "brown sauce", "burger sauce", "butter chicken cooking sauce",
     ],
 
 
     "ingredients": [
 
 
+
+      {
+          "name": "black bean paste",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "black bean sauce",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "basil puree",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "basil paste",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "balti sauce",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "balti curry paste",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "borlotti beans",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "borlotti beans",
+              "substitution": false,
+            },
+            {
+              "word": "cranberry bean",
+              "substitution": false,
+            },
+            {
+              "word": "pinto bean",
+              "substitution": true,
+            },
+            {
+              "word": "kidney bean",
+              "substitution": true,
+            },
+            {
+              "word": "cannellini bean",
+              "substitution": true,
+            },
+            {
+              "word": "canned white bean",
+              "substitution": true,
+            },
+            {
+              "word": "navy bean",
+              "substitution": true,
+            },
+            {
+              "word": "great northern bean",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "black-eyed peas",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "black eyed peas",
+              "substitution": false,
+            },
+            {
+              "word": "black-eyed pea",
+              "substitution": false,
+            },
+            {
+              "word": "black eye peas",
+              "substitution": false,
+            },
+            {
+              "word": "blackeyed peas",
+              "substitution": false,
+            },
+            {
+              "word": "blackeye peas",
+              "substitution": false,
+            },
+            {
+              "word": "black eyed beans",
+              "substitution": false,
+            },
+            {
+              "word": "black-eyed beans",
+              "substitution": false,
+            },
+            {
+              "word": "black eye beans",
+              "substitution": false,
+            },
+            {
+              "word": "blackeyed beans",
+              "substitution": false,
+            },
+            {
+              "word": "blackeye beans",
+              "substitution": false,
+            },
+            {
+              "word": "cowpeas",
+              "substitution": false,
+            },
+            {
+              "word": "cow peas",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "bombay mix",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "chevda",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "barbeque seasoning",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "bbq seasoning",
+              "substitution": false,
+            },
+            {
+              "word": "bbq rub",
+              "substitution": false,
+            },
+            {
+              "word": "barbeque rub",
+              "substitution": false,
+            },
+          ],
+      },
       {
           "name": "bramble jam",
           "exclude": [
@@ -896,6 +1077,10 @@
           ],
           "include": [
             {
+              "word": "broad bean",
+              "substitution": false,
+            },
+            {
               "word": "fava bean",
               "substitution": false,
             },
@@ -909,10 +1094,6 @@
             },
             {
               "word": "flat bean",
-              "substitution": true,
-            },
-            {
-              "word": "broad bean",
               "substitution": true,
             },
           ],

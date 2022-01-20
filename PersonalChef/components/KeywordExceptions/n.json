@@ -3,12 +3,75 @@
     "key" : [ "nutella",
               "noodles",
               "nutmeg",
+              "navy beans",
+
+
+              "~~~ HALF DONE : ~~~"
+              "nasi goreng paste",
+
+              "~~~ TO DO : ~~~"
+              "nerds", "nougat", "nutty chocolate",
+              "nectarine",
+              "nigella seeds",
+
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "navy beans",
+              "exclude": [
+                {
+                  "word": "vert",
+                },
+                {
+                  "word": "vertes",
+                },
+              ],
+              "include": [
+                {
+                  "word": "navy bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "great northern bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "haricot",
+                  "substitution": false,
+                },
+                {
+                  "word": "boston bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "white pea bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "pea bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "white kidney bean",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "nasi goreng paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "nasi goreng malay paste",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "nutmeg",
               "exclude": [

@@ -3,6 +3,17 @@
     "key" : [ "kewra water",
               "kamut flour",
               "kale","kiwi fruit",
+              "kidney beans",
+
+
+              "~~~ HALF DONE : ~~~"
+
+              "~~~ TO DO : ~~~"
+              "kirsch",
+              "kitkat",
+              "kipper",
+              "karela",
+              "kofta seasoning",
 
     ],
 
@@ -10,6 +21,21 @@
     "ingredients": [
 
 
+          {
+              "name": "kidney beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kidney bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pea",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "kewra water",
               "exclude": [

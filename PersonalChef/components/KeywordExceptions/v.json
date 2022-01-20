@@ -3,15 +3,47 @@
     "key" : [ "vanilla extract","vanilla pod",
               "vine leaves",
               "vegetable stock","vinegar",
-              "veggie dip",
 
 
+              "~~~ HALF DONE : ~~~"
+              "vegetable fat", "veggie dip",
+
+              "~~~ TO DO : ~~~"
+              "vodka",
+              "vanilla bean paste", "vanilla essence", "vanilla sponge",
+              "venison",
+
+              "vegetable chips", "vegetable sushi",
     ],
 
 
     "ingredients": [
 
 
+
+          {
+              "name": "vegetable fat",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shortening",
+                  "substitution": false,
+                },
+                {
+                  "word": "baking spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "veg suet",
+                  "substitution": false,
+                },
+                {
+                  "word": "vegetable suet",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "veggie dip",
               "exclude": [

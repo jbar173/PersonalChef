@@ -1,6 +1,36 @@
 {
     "name": "tins_ingredients",
-    "ingredients": [ "canned chipotles", "cheddar cheese soup", "chicken soup", "sun-dried tomatoes", "tinned tomatoes", "tinned apricots", "tinned black-eyed peas", "tinned pinto beans", "tomato soup", 
+    "ingredients": [  "adzuki beans", "apples", "apricots", "artichoke antipasti",
+
+                      "baked beans", "black beans", "black cherries", "black-eyed peas", "borlotti beans", "broad beans", "butter beans",
+
+                      "caperberries", "capers", "canned chipotles", "cannellini beans", "carrots", "cheddar cheese soup", "chicken soup",
+                      "chickpeas", "chilli bean soup", "chowder",
+
+                      "evaporated milk",
+
+                      "flageolet beans", "fruit cocktail",
+
+                      "haricot beans",
+
+                      "kidney beans",
+
+                      "lentils",
+
+                      "manderins", "mango", "mango pulp", "minestrone soup",  "mixed beans", "mushroom antipasti", "mushroom soup", "mushy peas",
+
+                      "navy beans",
+
+                      "passata", "peaches", "pears", "peas", "pease pudding", "pickled cauliflower", "pickled eggs", "pickled onions", "pickled red cabbage", "pickled walnuts",
+                      "pickles", "pineapple", "pinto beans", "pumpkin puree",
+
+                      "rhubarb", "rice pudding", "roasted red peppers", "rogan josh",
+
+                      "spinach puree", "summer fruit filling", "sun-dried tomatoes", "sweetcorn",
+
+                      "tapioca pudding", "tomato cooking sauce", "tomato juice", "tomato soup", "tinned tomatoes",
+
+                      "water chestnuts",
 
     ]
 }

@@ -1,6 +1,6 @@
 {
 
-    "key" : ["ale","apple liqueur","apricot liqueur","aniseed liqueur",
+    "key" : ["ale","almond liqueur","apple liqueur","apricot liqueur","aniseed liqueur",
             "applewood smoked cheese",
             "apricot jam", "apricot jelly",
             "almonds","almond meal","almond flour",
@@ -9,14 +9,38 @@
             "aquafaba","almond milk",
 
 
-
+            "~~~ HALF DONE : ~~~"
             "atta flour",
+            "all purpose seasoning",
+
+
+            "~~~ TO DO : ~~~"
+            "appenzeller", "asiago",
+            "agave", "almond extract", "apricot compote", "apple pectin",
+            "anchovies",
+            "ackee", "artichoke", "aubergine",
+            "allspice", "asafoetida",
+            "adzuki beans", "apples", "artichoke antipasti",
+            "aioli", "almond butter", "apricot and coriander sauce", "apricot harissa paste",
+            "arrabiata sauce", "aubergine paste", "avocado oil",
+
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "all purpose seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "aromat",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "atta flour",
               "exclude": [
@@ -978,6 +1002,12 @@
               },
               {
                 "word": "seed",
+              },
+              {
+                "word": "dried",
+              },
+              {
+                "word": "soft",
               },
             ],
             "include": [

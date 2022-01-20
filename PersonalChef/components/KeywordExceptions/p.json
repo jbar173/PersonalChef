@@ -7,15 +7,33 @@
               "prosciutto","pork","pulled pork","pork trotter","pate",
               "pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
               "pepper","pork seasoning","parsley",
-              "passata","pumpkin puree","pickles",
+              "passata","pickles","pinto beans","pumpkin puree",
               "pork stock","panang curry paste",
               "plain yoghurt","powdered milk",
               "passion fruit juice",
 
 
+              "~~~ HALF DONE : ~~~"
               "port wine derby",
               "passion fruit puree",
               "plain flour",
+              "pancakes", "poppadoms",
+              "peaches", "pears", "pickled onions",
+
+
+              "~~~ TO DO : ~~~"
+              "paneer", "pleasant ridge", "port salut",
+
+              "peanut bar", "peanut butter wafers", "peanut cookies", "peanut mnms", "pear drops", "peppermint extract", "pink food colouring",
+              "popping candy", "pralines", "preserved lemons", "prunes", "purple food colouring",
+
+              "pancake mix", "pie mix", "pistachios", "pizza bases", "poppy seeds", "pork scratchings", "pretzel snacks", "puff pastry",
+              "pangasius", "pilchards", "plaice", "pollock", "prawns",
+
+              "parsnip", "persimmon", "pomegranate seeds",
+              "pancetta", "pepperoni", "pigs in blankets", "porchetta",
+              "paprika",
+              "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage", "pickled walnuts",
 
     ],
 
@@ -23,6 +41,124 @@
     "ingredients": [
 
 
+
+          {
+              "name": "pears",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pear",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "peaches",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peach",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pinto beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pinto bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "pinquito bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "borlotti bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "cranberry bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "cannellini bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "white bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "navy bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "great northern bean",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pickled onions",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pearl onions",
+                  "substitution": false,
+                },
+                {
+                  "word": "pickled shallots",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "poppadoms",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pappadums",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pancakes",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "blinis",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pretzel snacks",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "beskidzkie",
+                  "substitution": false,
+                },
+                {
+                  "word": "pretzel sticks",
+                  "substitution": false,
+                },
+                {
+                  "word": "pretzels",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "plain flour",
               "exclude": [
@@ -809,6 +945,10 @@
                 },
                 {
                   "word": "pickled cucumber",
+                  "substitution": true,
+                },
+                {
+                  "word": "sour cucumber",
                   "substitution": true,
                 },
               ],

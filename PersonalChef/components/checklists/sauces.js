@@ -1,9 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Pressable, SafeAreaView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
-import * as data from './json_ingredient_lists/wets.json';
+import * as data from './json_ingredient_lists/oils_sauces_condiments.json';
 
-class WetIngredientsChecklist extends React.Component {
+
+class SauceIngredientsChecklist extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -170,4 +171,4 @@ const styles = StyleSheet.create({
 });
 
 
-export {WetIngredientsChecklist};
+export { SauceIngredientsChecklist };

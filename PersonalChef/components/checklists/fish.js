@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Pressable, SafeAreaView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
-import * as data from './json_ingredient_lists/fishes.json';
+import * as data from './json_ingredient_lists/fish.json';
 
 class FishChecklist extends React.Component {
   constructor(props){

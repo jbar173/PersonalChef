@@ -1,10 +1,10 @@
 {
     "name": "alcohol_ingredients",
-    "ingredients": [ "ale", "apple liqueur", "apricot liqueur", "aniseed liqueur",
+    "ingredients": [ "ale", "almond liqueur", "apple liqueur", "apricot liqueur", "aniseed liqueur",
 
             "baileys", "banana liqueur", "beer", "blueberry liqueur", "brandy",
 
-            "cachaca", "campari", "chambord", "champagne", "cherry liqueur", "cider", "coconut liqueur",
+            "cachaca", "campari", "cherry liqueur", "cider", "coconut liqueur",
 
             "dark rum", "dessert wine",
 

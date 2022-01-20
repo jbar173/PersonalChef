@@ -2,11 +2,21 @@
 
     "key" : [ "white wine","whisky","watermelon liqueur",
               "white chocolate",
-              "walnuts","wonton wrapper",
+              "walnuts","wonton wrappers",
               "water chestnut",
+              "water chestnuts",
 
       "water",
 
+              "~~~ HALF DONE : ~~~"
+
+
+              "~~~ TO DO : ~~~"
+              "wensleydale",
+              "wafer biscuits", "wafer decorations", "wine gums", "wispa",
+              "weetabix",
+              "watercress", "watermelon",
+              "waffles", "wedges"
     ],
 
 
@@ -14,8 +24,41 @@
 
 
           {
+              "name": "water chestnuts",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "water chestnut",
+                  "substitution": false,
+                },
+                {
+                  "word": "jicama",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "water chestnut",
               "exclude": [
+                {
+                  "word": "in water",
+                },
+                {
+                  "word": "drained",
+                },
+                {
+                  "word": "can",
+                },
+                {
+                  "word": "canned",
+                },
+                {
+                  "word": "tin",
+                },
+                {
+                  "word": "tinned",
+                },
               ],
               "include": [
                 {
@@ -72,10 +115,14 @@
               ],
           },
           {
-              "name": "wonton wrapper",
+              "name": "wonton wrappers",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "wonton wrapper",
+                  "substitution": true,
+                },
                 {
                   "word": "dumpling wrapper",
                   "substitution": false,

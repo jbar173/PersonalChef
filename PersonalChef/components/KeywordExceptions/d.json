@@ -12,8 +12,26 @@
              "demi-glace",
              "dumplings",
 
+
+             "~~~ HALF DONE : ~~~"
              "dried banana",
              "dried black beans", "dried moong dall", "dried red lentils", "dried split peas",
+             "dripping", "duck fat",
+
+
+             "~~~ TO DO : ~~~"
+             "dark rum",
+             "derby cheese", "double gloucester",
+
+             "date syrup", "digestive biscuits", "decorating icing", "decorating sprinkles", "dolly mixtures", "dried apple", "dried apricots",
+             "dried figs", "dried goji berries", "dried mango", "dried pears", "dried pineapple",
+
+             "dried brown lentils", "dried green lentils", "dried mung beans", "dried mushrooms","dried urid dal", "dumpling mix",
+             "dried basil", "dried chervil", "dried oregano", "dried marjoram", "dried thyme", "dried parsley", "dried rosemary", "dried tarragon",
+
+             "dough balls",
+             "diane sauce", "dijon mustard", "dill and lemon sauce", "dinner salad",
+
 
     ],
 
@@ -21,6 +39,55 @@
     "ingredients": [
 
 
+        {
+            "name": "duck fat",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "suet",
+                "substitution": false,
+              },
+              {
+                "word": "lard",
+                "substitution": false,
+              },
+              {
+                "word": "dripping",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dripping",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "suet",
+                "substitution": false,
+              },
+              {
+                "word": "lard",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried banana",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "banana chips",
+                "substitution": false,
+              },
+              {
+                "word": "chewy banana",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "dried split peas",
             "exclude": [

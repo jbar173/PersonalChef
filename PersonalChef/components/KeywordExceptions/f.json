@@ -3,16 +3,32 @@
     "key" : ["feta","fontina",
              "fig jam","fig jelly","fruit cake","fruit loaf","fudge",
              "filo pastry","flour",
-             "fresh cranberries","fig","fresh ginger","fresh coconut",
+             "fig","fresh coconut","fresh cranberries","fresh ginger",
              "fresh coriander","fenugreek leaves",
+             "flageolet beans",
              "fish sauce",
              "fruit yoghurt",
              "fruit cordial",
 
 
-
+             "~~~ HALF DONE : ~~~"
              "fondant icing"
              "flatbread",
+             "fries",
+
+
+             "~~~ TO DO : ~~~"
+             "fig roll", "fruit jellies", "fruit and nut chocolate",
+             "flax seeds", "fried onion", "frosties",
+             "fish cakes",
+             "fresh corn", "fresh soya beans",
+             "faggot",
+
+             "fajita seasoning", "fish seasoning", "fresh basil", "fresh mint", "fresh oregano", "fresh parsley", "fresh rosemary", "fresh sage",
+             "fennel seeds", "fresh shervil", "fresh tarragon", "fresh thyme",
+
+             "falafel", "flapjack",
+             "fruit cocktail",
 
     ],
 
@@ -20,6 +36,47 @@
     "ingredients": [
 
 
+          {
+              "name": "flageolet beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "flageolet bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "cannellini bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "canned white bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "navy bean",
+                  "substitution": true,
+                },
+                {
+                  "word": "great northern bean",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fries",
+              "exclude": [
+                {
+                  "word": "potato",
+                },
+              ],
+              "include": [
+                {
+                  "word": "chips",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "flatbread",
               "exclude": [

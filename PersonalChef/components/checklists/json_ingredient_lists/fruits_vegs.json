@@ -1,7 +1,44 @@
 {
     "name": "fruit_and_veg_ingredients",
-    "ingredients": [ "apple", "artichoke", "asparagus", "avocado", "beansprouts", "bell pepper", "blackberries", "blueberries", "broccoli", "butternut squash", "carrot", "cauliflower", "celery", "chard",
-      "cherries", "chili pepper", "courgette", "cucumber", "endive", "fresh coconut", "fresh cranberries", "fresh sweetcorn", "garlic", "grapes", "green beans", "kale", "leek", "lemon", "lime", "lettuce",
-      "mushrooms", "olives", "onion", "orange", "papaya", "pear", "peas", "potato", "radish", "raspberries", "rocket", "shallot", "spinach", "spring onion", "strawberries", "tomato", "watercress",
+    "ingredients": [  "ackee", "apple", "apricot", "artichoke", "asparagus", "aubergine", "avocado",
+
+                      "banana", "beansprouts", "beetroot",  "bell pepper", "blackberries", "blueberries", "broad beans", "broccoli", "butternut squash",
+
+                      "cabbage", "carrot", "cauliflower", "cauliflower rice", "celeriac", "celery", "chard", "chayote", "cherries", "chicory", "chilli pepper",
+                      "choi sum", "clementine", "collard greens", "courgette", "cress", "cucumber",
+
+                      "daikon",
+
+                      "edamame beans", "endive",
+
+                      "fennel", "fig", "fresh coconut", "fresh corn", "fresh cranberries", "fresh ginger", "fresh soya beans",
+
+                      "garlic", "grapefruit", "grapes", "green beans",
+
+                      "jerusalem artichoke",
+
+                      "kale", "karela", "kiwi fruit",
+
+                      "lamb's lettuce", "leek", "lemon", "lemongrass", "lettuce", "lime", "lychee",
+
+                      "mangetout", "mango", "melon", "mixed berries", "mixed greens", "mushrooms", "mixed vegetable stir fry",
+
+                      "nectarine",
+
+                      "okra", "olives", "onion", "orange",
+
+                      "pak choi", "papaya", "parsnip", "passion fruit", "peach", "pear", "peas", "pea shoots", "persimmon", "pineapple", "plum", "pomegranate",
+                      "pomegranate seeds", "potato", "pumpkin",
+
+                      "quince",
+
+                      "radish", "raspberries", "ratatouille", "redcurrants", "rhubarb", "rocket",
+
+                      "salad leaves", "satsuma", "shallot", "smoked garlic", "soffrito mix", "spinach", "spring onions", "sprouts", "strawberries",
+                      "swede", "sweet potato",
+
+                      "tangerine", "tomato", "turnip",
+
+                      "watercress", "watermelon", "water chestnut",
     ]
 }

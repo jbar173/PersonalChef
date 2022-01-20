@@ -1,27 +1,144 @@
 {
 
-    "key" : [ "sparkling wine","sherry","strawberry liqueur",
+    "key" : [ "sparkling white wine","sherry","strawberry liqueur",
               "strawberry custard","strawberry jam","strawberry jelly","sugar",
               "semolina","spring roll wrapper","seaweed","sweet rice flour","salt","soya beans",
               "shrimp",
               "sausage","smoked sausage",
               "salad leaves","shallot","soffrito mix","spinach","spring onions","summer squash","swede","sweet potato",
               "smoked paprika","salt","shichimi",
-              "sun-dried tomatoes",
+              "sun-dried tomatoes", "sweetcorn",
               "soy sauce","salsa",
               "soy milk","soured cream","shortening",
               "sparkling water",
 
 
-
+              "~~~ HALF DONE : ~~~"
               "sweetener",
               "short grain rice",
+              "salted popcorn", "spicy chilli potato chips", "sweet popcorn",
+
+
+              "~~~ TO DO : ~~~"
+              "salted caramel chocolate", "salted caramel cookie dough", "sherbert", "shortcake biscuits", "silver ball decorations", "skittles",
+              "smarties", "snickers", "starburst", "stem ginger", "strawberry bonbons", "strawberry liquorice", "strawberry mousse",
+              "strawberry sauce", "strawberry shoelaces", "sultanas", "syrup sponge",
+
+              "scone mix", "scones", "self raising flour", "sesame seeds", "shortcrust pastry", "shreddies", "spelt flour", "sunflower seeds",
+              "salmon", "sardines", "scallops", "seabass", "seafood stick", "sild", "smoked rainbow trout", "smoked salmon", "sole", "sprat", "squid",
+
+              "satsuma", "smoked garlic", "sprouts", "strawberries",
+              "saffron", "seaweed seasoning", "shawarma seasoning", "smokey spice", "spirulina powder", "star anise", "steak seasoning",
+
+              "salmon sushi", "salt and vinegar potato chips", "salted caramel mousse", "sausage roll", "seaweed thins", "sev mamra", "sorbet",
+              "sour cream and onion potato chips", "spicy green peas and peanuts", "spring rolls", "steak potato chips", "stuffing", "sunflower spread",
+              "sweet chilli biscuits", "sweet chilli potato chips", "sweet and salted popcorn", "sweet potato fries",
+              "spinach puree", "summer fruit filling",
     ],
 
 
     "ingredients": [
 
 
+
+          {
+              "name": "sweetcorn",
+              "exclude": [
+                {
+                  "word": "meal",
+                },
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "meal",
+                },
+                {
+                  "word": "flake",
+                },
+                {
+                  "word": "taco",
+                },
+                {
+                  "word": "syrup",
+                },
+                {
+                  "word": "flour",
+                },
+                {
+                  "word": "bread",
+                },
+                {
+                  "word": "corn-muffin",
+                },
+                {
+                  "word": "muffin",
+                },
+                {
+                  "word": "starch",
+                },
+              ],
+              "include": [
+                {
+                  "word": "corn",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet-corn",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sweet popcorn",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sweet popping corn",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "salted popcorn",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "popping corn",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "spicy chilli potato chips",
+              "exclude": [
+                {
+                  "word": "sauce",
+                },
+                {
+                  "word": "seasoning",
+                },
+                {
+                  "word": "paste",
+                },
+              ],
+              "include": [
+                {
+                  "word": "chilli potato chips",
+                  "substitution": false,
+                },
+                {
+                  "word": "flamin hot",
+                  "substitution": false,
+                },
+                {
+                  "word": "hot n spicy",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "short grain rice",
               "exclude": [
@@ -631,7 +748,7 @@
               ],
           },
           {
-              "name": "sparkling wine",
+              "name": "sparkling white wine",
               "exclude": [
               ],
               "include": [
@@ -656,7 +773,7 @@
                   "substitution": false,
                 },
                 {
-                  "word": "sparkling white wine",
+                  "word": "sparkling wine",
                   "substitution": false,
                 },
                 {

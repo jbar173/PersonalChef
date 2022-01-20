@@ -2,24 +2,287 @@
 
     "key" : ["champagne","cava","cherry liqueur","cider","coconut liqueur","cachaca",
              "camembert","cheddar","cheese slice","comte","cottage cheese","cream cheese",
-             "chocolate","chocolate custard","custard","caramel","candied orange","cocoa powder",
+             "caramel","candied orange","chocolate","chocolate custard","cocoa powder","custard",
              "candlenuts","chestnuts","cashew nuts","crackers","cornstarch","cornmeal","couscous","cassava flour",
              "chicken","chicken mince","cured sausage",
-             "cabbage","chilli pepper","courgette","chicory","chayote","collard greens","chard",
-             "chilli flakes","cinnamon","chilli powder","chinese five spice",
+             "cabbage","chard","chayote","chicory","chilli pepper","collard greens","courgette",
+             "chilli flakes","chilli powder","chinese five spice","cinnamon",
+             "cannellini beans","chickpeas",
              "chicken stock","chilli paste","chilli sauce","chutney",
              "cream","coconut milk","creme fraiche",
              "coffee",
 
 
-
+             "~~~ HALF DONE : ~~~"
              "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","crystallised ginger",
+             "corned beef",
+             "chilli chutney relish", "chilli infused oil", "coriander puree",
+
+
+             "~~~ TO DO : ~~~"
+             "campari",
+             "colby","curd cheese",
+
+             "cacao nibs", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel wafer",
+             "carrot cake", "cherry compote", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies",
+             "chocolate cookie dough", "chocolate decorating icing", "chocolate drops", "chocolate eclairs", "chocolate ganache",
+             "chocolate liqueurs", "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
+             "chocolate sauce", "chocolate sponge", "chocolate sprinkles", "chocolate wafers", "cocoa powder", "coconut bar", "coconut biscuits",
+             "coconut macaroons", "coco pops", "cola laces", "coloured dusting sugar", "condensed milk", "cookie mix", "cream egg", "crunchie bar",
+             "crunchy cream biscuits", "custard creams", "custard powder",
+
+             "cheese puffs", "chia seeds", "chocolate cereal", "cornflakes", "croutons", "crumpits",
+             "caviar", "cod", "cockles", "crab", "crayfish",
+             "carrot", "cauliflower", "cauliflower rice", "celeriac", "celery", "cherries", "choi sum", "clementine", "cress", "cucumber",
+
+             "cajun spice", "caraway seeds", "cayenne", "celery salt", "celery seeds", "chana masala", "chicken seasoning", "chives",
+             "cinnamon", "cinnamon sticks", "cloves", "coriander seeds", "cumin seeds", "curry powder",
+
+             "cheese puffs",
+             "caperberries", "capers", "canned chipotles", "cheddar cheese soup", "chicken soup", "chilli bean soup", "chowder",
+
+             "caesar dressing", "cantonese sauce", "carbonara sauce", "cashew butter", "casserole sauce", "char sui sauce", "cheese and onion pasta sauce",
+             "cheese sauce", "chermoula", "chestnut puree", "chicken masala", "chicken paste", "chilli and basil sauce", "chilli and lime sauce",
+             "chilli con carne sauce", "chilli garlic curry paste", "chilli mayonnaise", "chilli pesto", "chilli soy sauce", "chinese stir fry sauce",
+             "chipotle burger sauce", "coconut milk powder", "chow mein sauce", "coconut oil", "cranberry sauce", "curry sauce",
+
     ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "coriander puree",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coriander paste",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "chilli infused oil",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chilli flavoured olive oil",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "chilli chutney relish",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "habanero relish",
+                "substitution": false,
+              },
+              {
+                "word": "ballymaloe pepper relish",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "chickpeas",
+            "exclude": [
+              {
+                "word": "flour",
+              },
+              {
+                "word": "meal",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "sugar",
+              },
+              {
+                "word": "sweet",
+              },
+              {
+                "word": "fufu",
+              },
+              {
+                "word": "poundo",
+              },
+              {
+                "word": "miso",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "butter",
+              },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "houmous",
+              },
+              {
+                "word": "humous",
+              },
+              {
+                "word": "hummus",
+              },
+              {
+                "word": "humus",
+              },
+              {
+                "word": "juice",
+              },
+              {
+                "word": "aquafaba",
+              },
+              {
+                "word": "pasta",
+              },
+              {
+                "word": "fusilli",
+              },
+              {
+                "word": "penne",
+              },
+              {
+                "word": "gnocchetti",
+              },
+              {
+                "word": "rice",
+              },
+              {
+                "word": "vinegar",
+              },
+              {
+                "word": "cracker",
+              },
+              {
+                "word": "crispbread",
+              },
+              {
+                "word": "roasted",
+              },
+              {
+                "word": "roast",
+              },
+              {
+                "word": "crunchy",
+              },
+              {
+                "word": "crunch",
+              },
+              {
+                "word": "lime",
+              },
+              {
+                "word": "spicy",
+              },
+              {
+                "word": "snack",
+              },
+              {
+                "word": "cornita",
+              },
+              {
+                "word": "puff",
+              },
+              {
+                "word": "twist",
+              },
+              {
+                "word": "straw",
+              },
+              {
+                "word": "chocolate",
+              },
+            ],
+            "include": [
+              {
+                "word": "chickpea",
+                "substitution": false,
+              },
+              {
+                "word": "chick pea",
+                "substitution": false,
+              },
+              {
+                "word": "garbanzo",
+                "substitution": false,
+              },
+              {
+                "word": "channa",
+                "substitution": false,
+              },
+              {
+                "word": "chana",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cannellini beans",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cannellini bean",
+                "substitution": false,
+              },
+              {
+                "word": "flageolet bean",
+                "substitution": true,
+              },
+              {
+                "word": "canned white bean",
+                "substitution": true,
+              },
+              {
+                "word": "white kidney bean",
+                "substitution": true,
+              },
+              {
+                "word": "navy bean",
+                "substitution": true,
+              },
+              {
+                "word": "great northern bean",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "corned beef",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "salted beef",
+                "substitution": false,
+              },
+              {
+                "word": "corned brisket beef",
+                "substitution": false,
+              },
+              {
+                "word": "salt beef",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "cherry jelly",
             "exclude": [
@@ -1474,7 +1737,6 @@
               },
             ],
         },
-        ------------------------------------------
         {
             "name": "cava",
             "exclude": [
@@ -1498,19 +1760,19 @@
               },
               {
                 "word": "asti",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "sparkling italian wine",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "prosecco",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "champagne",
-                "substitution": true,
+                "substitution": false,
               },
             ],
         },
@@ -1537,7 +1799,7 @@
                 "substitution": false,
               },
               {
-                "word": "sparkling white wine",
+                "word": "sparkling italian wine",
                 "substitution": false,
               },
               {
@@ -1545,20 +1807,20 @@
                 "substitution": false,
               },
               {
-                "word": "sparkling italian wine",
-                "substitution": true,
+                "word": "sparkling white wine",
+                "substitution": false,
               },
               {
                 "word": "asti",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "prosecco",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "cava",
-                "substitution": true,
+                "substitution": false,
               },
             ],
         },

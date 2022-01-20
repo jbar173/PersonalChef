@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button, SafeAreaView, ScrollView } from 'react-
 import { NativeRouter, Route, Link } from "react-router-native";
 
 import { DryIngredientsChecklist } from "./checklists/dry.js";
-import { WetIngredientsChecklist } from "./checklists/wet.js";
+import { SauceIngredientsChecklist } from "./checklists/sauces.js";
 import { FruitAndVegChecklist } from "./checklists/fruit_veg.js";
 import { HerbsAndSpicesChecklist } from "./checklists/herbs_spices.js";
 import { TinnedChecklist } from "./checklists/tinned.js";
@@ -99,7 +99,7 @@ class DryIngredientsList extends React.Component {
 
                   <DryIngredientsChecklist updateListHandler={this.updateListHandler} />
 
-                  <Link style={{marginTop:30}} to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                  <Link style={{marginTop:30}} to={{pathname:"/both-sauce/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                    underlayColor="transparent">
                       <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
                        style={styles.greenNextButton}>Next</Text>
@@ -133,7 +133,7 @@ class DryIngredientsList extends React.Component {
 };
 
 
-class WetIngredientsList extends React.Component {
+class SauceIngredientsList extends React.Component {
     constructor(props){
     super(props);
     this.state = {
@@ -146,8 +146,8 @@ class WetIngredientsList extends React.Component {
       },
       both: false,
       ingredients_rough: {},
-      wets: [],
-      wets_updated: false,
+      sauces: [],
+      sauces_updated: false,
     }
     this.componentDidMount = this.componentDidMount.bind(this)
     this.componentDidUpdate = this.componentDidUpdate.bind(this)
@@ -158,7 +158,7 @@ class WetIngredientsList extends React.Component {
   };
 
   componentDidMount(){
-    console.log("wet ingredients mounted")
+    console.log("sauce ingredients mounted")
     var initial_data = this.props.location.state.initial_data
     var either = this.props.location.state.either
     var ingreds = this.props.location.state.ingreds
@@ -170,27 +170,27 @@ class WetIngredientsList extends React.Component {
   }
 
   componentWillUnmount(){
-    console.log("wets unmounted")
+    console.log("sauces unmounted")
   }
 
   componentDidUpdate(){
-    console.log("wets updated")
-    if(this.state.wets_updated === true){
+    console.log("sauces updated")
+    if(this.state.sauces_updated === true){
       console.log("updating ingredients_rough")
       this.updateIngredientsRoughHandler()
     }
   }
 
   updateListHandler(confirmed_list){
-    console.log("update list handler in_both.js wet")
+    console.log("update list handler in_both.js sauces")
     this.setState({
-      wets: confirmed_list,
-      wets_updated: true
+      sauces: confirmed_list,
+      sauces_updated: true
     })
   }
 
   updateIngredientsRoughHandler(){
-    var new_key = "Wet Ingredients"
+    var new_key = "Sauce Ingredients"
     var final_list = this.state.ingredients_rough
     for([key,value] of Object.entries(final_list)){
        if(key === new_key){
@@ -198,10 +198,10 @@ class WetIngredientsList extends React.Component {
            delete final_list[key]
          }
     }
-    final_list[new_key] = this.state.wets
+    final_list[new_key] = this.state.sauces
     this.setState({
       ingredients_rough: final_list,
-      wets_updated: false
+      sauces_updated: false
     })
   }
 
@@ -215,10 +215,10 @@ class WetIngredientsList extends React.Component {
 
         <SafeAreaView style={styles.container}>
           <ScrollView>
-                <Text accessible={true} accessibilityLabel="Wet ingredients checklist" accessibilityRole="text"
-                  style={styles.mainTitle}>Wet ingredients checklist</Text>
+                <Text accessible={true} accessibilityLabel="Oils, Sauces and Condiments ingredients checklist" accessibilityRole="text"
+                  style={styles.mainTitle}>Oils, Sauces and Condiments ingredients checklist</Text>
 
-                <WetIngredientsChecklist updateListHandler={this.updateListHandler} />
+                <SauceIngredientsChecklist updateListHandler={this.updateListHandler} />
 
                 <Link style={{marginTop:30}} to={{pathname:"/both-fruit/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
@@ -330,7 +330,7 @@ class FruitAndVegList extends React.Component {
                       <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
                         style={styles.greenNextButton}>Next</Text>
                   </Link>
-                  <Link to={{pathname:"/both-wet/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                  <Link to={{pathname:"/both-sauce/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                    underlayColor="transparent">
                       <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                        style={styles.blueBackButton}>Back</Text>
@@ -811,4 +811,4 @@ const styles = StyleSheet.create({
 });
 
 
-export { DryIngredientsList, WetIngredientsList, FruitAndVegList, HerbsAndSpicesList, TinnedGoodsList, AlcoholList, CheeseList, } ;
+export { DryIngredientsList, SauceIngredientsList, FruitAndVegList, HerbsAndSpicesList, TinnedGoodsList, AlcoholList, CheeseList, } ;

@@ -1,0 +1,29 @@
+{
+    "name": "fish_ingredients",
+    "ingredients": [  "anchovies",
+
+                      "basa", "breaded fish fillets",
+
+                      "caviar", "cod", "cockles", "crab", "crayfish",
+
+                      "fish cakes",
+
+                      "haddock", "hake", "herring",
+
+                      "kipper",
+
+                      "lobster",
+
+                      "mackerel", "mussels",
+
+                      "pangasius", "pilchards", "plaice", "pollock", "prawns",
+
+                      "rainbow trout",
+
+                      "salmon", "sardines", "scallops", "seabass", "seafood stick", "shrimp", "sild", "smoked rainbow trout",
+                      "smoked salmon", "sole", "sprat", "squid",
+
+                      "tempura prawns", "trout", "tuna",
+
+    ]
+}
