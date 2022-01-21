@@ -11,6 +11,7 @@
 
               "~~~ HALF DONE : ~~~"
               "lemon and lime jelly"
+              "lemongrass puree",
 
               "~~~ TO DO : ~~~"
               "lager", "light rum",
@@ -20,6 +21,7 @@
               "lamb's lettuce", "leek", "lychee",
               "lamb seasoning",
               "lentils",
+              "laksa sauce", "lemon and parsley sauce", "lemon butter sauce", "lime juice",
 
     ],
 
@@ -27,6 +29,25 @@
     "ingredients": [
 
 
+        {
+            "name": "lemongrass puree",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lemongrass paste",
+                "substitution": false,
+              },
+              {
+                "word": "lemon grass puree",
+                "substitution": false,
+              },
+              {
+                "word": "lemon grass paste",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "lemon and lime jelly",
             "exclude": [

@@ -9,6 +9,7 @@
 
 
              "~~~ HALF DONE : ~~~"
+             "hoisin sauce", "honey barbeque sauce",
 
              "~~~ TO DO : ~~~"
              "haribo", "honey", "honeycomb", "hundreds and thousands",
@@ -18,12 +19,35 @@
              "hot paprika",
              "hazelnut milk",
              "haricot beans",
+             "hemp seed oil", "hollandaise", "honey mustard sauce", "horseradish",
     ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "hoisin sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "hoi sin sauce",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "honey barbeque sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "honey bbq sauce",
+                "substitution": false,
+              },
+            ],
+        },
         {
           "name": "hemp milk",
           "exclude": [

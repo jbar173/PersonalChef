@@ -7,6 +7,7 @@
 
 
               "~~~ HALF DONE : ~~~"
+              "katsu paste", "korma sauce",
 
               "~~~ TO DO : ~~~"
               "kirsch",
@@ -14,6 +15,9 @@
               "kipper",
               "karela",
               "kofta seasoning",
+              "kimchi",
+              "katsu curry sauce", "katsu paste/sauce", "keralan coconut curry sauce", "keralan curry paste", "kimchi", "kolhapuri sauce",
+              "korean barbeque sauce", "korean sweet chilli sauce", "kung po sauce",
 
     ],
 
@@ -21,6 +25,44 @@
     "ingredients": [
 
 
+          {
+              "name": "katsu cooking paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "katsu curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "katsu paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "katsu sauce",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "korma sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "korma paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "korma curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "kidney beans",
               "exclude": [

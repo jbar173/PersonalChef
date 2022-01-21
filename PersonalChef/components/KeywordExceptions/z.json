@@ -5,7 +5,7 @@
 
 
             "~~~ HALF DONE : ~~~"
-
+            "zhoug paste",
 
             "~~~ TO DO : ~~~"
     ],
@@ -13,6 +13,18 @@
 
     "ingredients": [
 
+
+          {
+              "name": "zhoug paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "zhoug sauce",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "za'atar",
               "exclude": [

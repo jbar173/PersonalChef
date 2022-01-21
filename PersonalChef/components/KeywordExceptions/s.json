@@ -8,7 +8,7 @@
               "salad leaves","shallot","soffrito mix","spinach","spring onions","summer squash","swede","sweet potato",
               "smoked paprika","salt","shichimi",
               "sun-dried tomatoes", "sweetcorn",
-              "soy sauce","salsa",
+              "salsa","soy sauce",
               "soy milk","soured cream","shortening",
               "sparkling water",
 
@@ -17,6 +17,7 @@
               "sweetener",
               "short grain rice",
               "salted popcorn", "spicy chilli potato chips", "sweet popcorn",
+              "spicy brown mustard",  "sweet and sour sauce",  "sweet chilli and garlic", "sweet chilli sauce", "sweet pickle relish",
 
 
               "~~~ TO DO : ~~~"
@@ -34,13 +35,77 @@
               "sour cream and onion potato chips", "spicy green peas and peanuts", "spring rolls", "steak potato chips", "stuffing", "sunflower spread",
               "sweet chilli biscuits", "sweet chilli potato chips", "sweet and salted popcorn", "sweet potato fries",
               "spinach puree", "summer fruit filling",
+
+              "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut", "seafood sauce", "sesame oil", "smoky onion relish",
+              "smoked paprika pesto", "smoky red pepper dressing", "spaghetti hoops", "sunflower oil", "sweet chilli and garlic", "sweet piccalilli",
+              "sweet pickle relish",
+
+
     ],
 
 
     "ingredients": [
 
 
-
+          {
+              "name": "sweet pickle relish",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sandwich pickle",
+                  "substitution": false,
+                },
+                {
+                  "word": "gherkin relish",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sweet chilli and garlic sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sweet chilli & garlic sauce",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sweet and sour sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sweet & sour sauce",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "spicy brown mustard",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sarepska",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sweet chilli sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sweet chilli jelly",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "sweetcorn",
               "exclude": [

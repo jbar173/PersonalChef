@@ -9,13 +9,13 @@
 
               "tomato cooking sauce",
               "tinned tomatoes",
-
-              "tomato paste","turkey stock","tapenade",
+              "tapenade","tomato paste","turkey stock",
               "tofu",
+              "tikka sauce",
 
 
               "~~~ HALF DONE : ~~~"
-
+              "tartare sauce",
 
               "~~~ TO DO : ~~~"
               "toblerone", "toffe crisp", "toffees", "toffee sauce", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
@@ -25,12 +25,49 @@
               "taramasalata", "tiramisu", "toffee popcorn", "toffee sundae", "tomato potato chips", "tortelloni", "trifle", "twiglets", "tzatziki",
               "tomato soup", "tapioca pudding",
 
+              "tabasco", "tagine paste", "tahini", "tahini sesame sauce", "tamarind sauce", "tandoori paste", "teriyaki sauce", "tikka sauce",
+              "thai green curry sauce", "thai red curry sauce", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste",
+              "truffle mayonnaise", "truffle oil", "tuna pasta sauce", "tuna paste",
+
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "tikka sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tikka masala sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka curry paste",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tartare sauce",
+              "exclude": [
+                {
+                  "word": "cream of tartar",
+                },
+              ],
+              "include": [
+                {
+                  "word": "tartar sauce",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "tarragon",
               "exclude": [

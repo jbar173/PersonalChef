@@ -6,18 +6,39 @@
 
              "~~~ HALF DONE : ~~~"
              "jammy dodgers","jazzies",
+             "jalfrezi sauce",
 
 
              "~~~ TO DO : ~~~"
              "jaffa cakes", "jam tart", "jelly beans" "jelly tots",
              "jerk seasoning", "juniper berries",
              "jam sponge", "jerky",
+             "jerk sauce",
     ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "jalfrezi sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jalfrezi paste",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "hot curry paste",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "jazzies",
             "exclude": [

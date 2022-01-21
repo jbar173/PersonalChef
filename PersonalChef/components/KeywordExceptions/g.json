@@ -6,12 +6,13 @@
               "gammon",
               "garlic","grapes","grapefruit","green beans",
               "garlic powder","green cardamom","ground cumin","ground ginger",
-              "guacamole","green curry paste",
+              "green curry paste","guacamole",
 
 
               "~~~ HALF DONE : ~~~"
               "gram flour",
-
+              "garlic and herb dressing", "garlic oil", "garlic mayonnaise", "garlic puree",
+              "ginger puree", "guinness cooking paste",
 
               "~~~ TO DO : ~~~"
               "gin", "guinness",
@@ -22,12 +23,88 @@
               "granola",
               "garam masala", "garlic pepper", "ground mace",
               "gajar halwa", "girasoli", "gnocchi", "goat's milk", "gulabjam", "gyoza",
+              "garlic and chilli oil", "ginger and miso sauce", "goose fat", "grapeseed oil", "gravy granules", "green pesto", "groundnut oil",
+
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "garlic and herb dressing",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "garlic and herb sauce",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "garlic oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "garlic infused oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "garlic flavoured oil",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "garlic mayonnaise",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "garlic sauce",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "garlic puree",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "garlic paste",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "ginger puree",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ginger paste",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "guinness cooking paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "guinness paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "guinness marinade",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "gram flour",
               "exclude": [

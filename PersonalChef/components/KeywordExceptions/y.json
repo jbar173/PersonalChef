@@ -5,7 +5,7 @@
 
 
               "~~~ HALF DONE : ~~~"
-
+              "yeast extract",
 
               "~~~ TO DO : ~~~"
               "yellow food colouring",
@@ -16,6 +16,18 @@
 
     "ingredients": [
 
+
+          {
+              "name": "yeast extract",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "bovril",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "yellow curry paste",
               "exclude": [
