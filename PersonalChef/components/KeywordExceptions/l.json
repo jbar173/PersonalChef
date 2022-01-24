@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "limoncello",
+    "key" : [ "lemon flavoured spirit/liqueur",
               "lasagne sheets",
               "lamb","lamb mince",
               "lemon","lime","lettuce","lemongrass",
@@ -10,11 +10,12 @@
               "lychee juice",
 
               "~~~ HALF DONE : ~~~"
+              "lime flavoured spirit/liqueur",
               "lemon and lime jelly"
               "lemongrass puree",
 
               "~~~ TO DO : ~~~"
-              "lager", "light rum",
+              "lager", "light rum/white rum",
               "lemon and lime jam", "lemon biscuits", "lemon curd", "lemon extract", "lemon mousse", "lion bar", "liquid glucose",
               "liquorice allsorts", "lollipop", "love hearts",
               "lobster",
@@ -29,6 +30,102 @@
     "ingredients": [
 
 
+
+        {
+            "name": "lime flavoured spirit/liqueur",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lime liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "lime flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "lime flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "lime-flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "lime-flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "lime flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "lime flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "lime-flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "lime-flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "lime liquor",
+                "substitution": false,
+              },
+              {
+                "word": "lime schnapps",
+                "substitution": false,
+              },
+              {
+                "word": "limoncino",
+                "substitution": false,
+              },
+              {
+                "word": "lime vodka",
+                "substitution": false,
+              },
+              {
+                "word": "lime rum",
+                "substitution": false,
+              },
+              {
+                "word": "lime brandy",
+                "substitution": false,
+              },
+              {
+                "word": "lime gin",
+                "substitution": false,
+              },
+              {
+                "word": "cactus & lime gin",
+                "substitution": false,
+              },
+              {
+                "word": "cactus and lime gin",
+                "substitution": false,
+              },
+              {
+                "word": "kiwi & lime gin",
+                "substitution": true,
+              },
+              {
+                "word": "kiwi and lime gin",
+                "substitution": true,
+              },
+              {
+                "word": "strawberry & lime gin",
+                "substitution": true,
+              },
+              {
+                "word": "strawberry and lime gin",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "lemongrass puree",
             "exclude": [
@@ -237,16 +334,84 @@
           ],
         },
         {
-            "name": "limoncello",
+            "name": "lemon flavoured spirit/liqueur",
             "exclude": [
             ],
             "include": [
               {
                 "word": "lemon liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "lemon flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "lemon flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "lemon-flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "lemon-flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "lemon flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "lemon flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "lemon-flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "lemon-flavored liquor",
                 "substitution": false,
               },
               {
                 "word": "lemon liquor",
+                "substitution": false,
+              },
+              {
+                "word": "lemon schnapps",
+                "substitution": false,
+              },
+              {
+                "word": "limoncello",
+                "substitution": false,
+              },
+              {
+                "word": "limoncino",
+                "substitution": false,
+              },
+              {
+                "word": "lemon vodka",
+                "substitution": false,
+              },
+              {
+                "word": "lemon rum",
+                "substitution": false,
+              },
+              {
+                "word": "lemon brandy",
+                "substitution": false,
+              },
+              {
+                "word": "lemon gin",
+                "substitution": false,
+              },
+              {
+                "word": "lemon drizzle gin",
+                "substitution": false,
+              },
+              {
+                "word": "lemon wine",
                 "substitution": false,
               },
             ],

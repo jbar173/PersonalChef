@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "sparkling white wine","sherry","strawberry liqueur",
+    "key" : [ "sparkling white wine","sherry","strawberry flavoured spirit/liqueur",
               "strawberry custard","strawberry jam","strawberry jelly","sugar",
               "semolina","spring roll wrapper","seaweed","sweet rice flour","salt","soya beans",
               "shrimp",
@@ -14,6 +14,7 @@
 
 
               "~~~ HALF DONE : ~~~"
+              "stout",
               "sweetener",
               "short grain rice",
               "salted popcorn", "spicy chilli potato chips", "sweet popcorn",
@@ -47,6 +48,17 @@
     "ingredients": [
 
 
+          {
+              "name": "stout",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "guinness",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "sweet pickle relish",
               "exclude": [
@@ -678,10 +690,14 @@
               ],
           },
           {
-              "name": "strawberry liqueur",
+              "name": "strawberry flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "strawberry liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "strawberry flavoured liqueur",
                   "substitution": false,
@@ -717,6 +733,42 @@
                 {
                   "word": "strawberry liquor",
                   "substitution": false,
+                },
+                {
+                  "word": "strawberry schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry & lime gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry and lime gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "mixed fruit flavoured spirit/liqueur",
+                  "substitution": true,
                 },
               ],
           },
@@ -810,6 +862,14 @@
                 },
               ],
               "include": [
+                {
+                  "word": "port",
+                  "substitution": true,
+                },
+                {
+                  "word": "dessert wine",
+                  "substitution": true,
+                },
               ],
           },
           {

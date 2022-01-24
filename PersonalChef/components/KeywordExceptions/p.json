@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "pear liqueur","peach liqueur","plum liqueur","passion fruit liqueur","prosecco",
+    "key" : [ "pear flavoured spirit/liqueur","peach flavoured spirit/liqueur","plum flavoured spirit/liqueur","passion fruit flavoured spirit/liqueur","prosecco",
               "parmesan","pecorino","provolone",
               "passion fruit jam","passion fruit jelly","peach jam","peach jelly","pineapple jam","pineapple jelly","plum jam","plum jelly",
               "peanuts","pine nuts","pecans","pasta","polenta","pumpkin seeds","pork scratchings","plain potato chips","pearled barley","pizza dough",
@@ -14,6 +14,7 @@
 
 
               "~~~ HALF DONE : ~~~"
+              "port",
               "port wine derby",
               "passion fruit puree",
               "plain flour",
@@ -34,7 +35,7 @@
               "pancetta", "pepperoni", "pigs in blankets", "porchetta",
               "paprika",
               "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage", "pickled walnuts",
-              
+
               "parsley sauce", "peanut butter", "peanut oil", "peppercorn sauce", "peri peri mayonnaise", "piccalilli", "pickled ginger", "piri piri sauce",
               "plum and hoisin sauce", "plum sauce", "pumpkin pesto",
 
@@ -44,7 +45,27 @@
     "ingredients": [
 
 
-
+          {
+              "name": "port",
+              "exclude": [
+                {
+                  "word": "salut",
+                },
+                {
+                  "word": "derby",
+                },
+              ],
+              "include": [
+                {
+                  "word": "sherry",
+                  "substitution": true,
+                },
+                {
+                  "word": "dessert wine",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "pears",
               "exclude": [
@@ -1095,10 +1116,14 @@
               ],
           },
           {
-              "name": "passion fruit liqueur",
+              "name": "passion fruit flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "passion fruit liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "passion fruit flavoured liqueur",
                   "substitution": false,
@@ -1136,6 +1161,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "passion fruit schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "passionfruit-flavoured liqueur",
                   "substitution": false,
                 },
@@ -1156,7 +1185,15 @@
                   "substitution": false,
                 },
                 {
+                  "word": "passionfruit schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "passion liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion schnapps",
                   "substitution": false,
                 },
                 {
@@ -1179,13 +1216,69 @@
                   "word": "passoa",
                   "substitution": false,
                 },
+                {
+                  "word": "passion fruit vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit & orange gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit & orange gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit and orange gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit and orange gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit & vanilla blossom gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit & vanilla blossom gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit and vanilla blossom gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit and vanilla blossom gin",
+                  "substitution": true,
+                },
               ],
           },
           {
-              "name": "plum liqueur",
+              "name": "plum flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "plum liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "plum flavoured liqueur",
                   "substitution": false,
@@ -1223,16 +1316,48 @@
                   "substitution": false,
                 },
                 {
+                  "word": "plum schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "plum french liqueur",
                   "substitution": false,
+                },
+                {
+                  "word": "plum vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit flavoured spirit/liqueur",
+                  "substitution": true,
                 },
               ],
           },
           {
-              "name": "peach liqueur",
+              "name": "peach flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "peach liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "peach flavoured liqueur",
                   "substitution": false,
@@ -1277,13 +1402,49 @@
                   "word": "peach schnapps",
                   "substitution": false,
                 },
+                {
+                  "word": "peach vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach & raspberry gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach and raspberry gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "mixed fruit flavoured spirit/liqueur",
+                  "substitution": true,
+                },
               ],
           },
           {
-              "name": "pear liqueur",
+              "name": "pear flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "pear liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "pear flavoured liqueur",
                   "substitution": false,
@@ -1317,6 +1478,14 @@
                   "substitution": false,
                 },
                 {
+                  "word": "pear liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "pear brandy",
                   "substitution": false,
                 },
@@ -1329,11 +1498,27 @@
                   "substitution": false,
                 },
                 {
-                  "word": "pear liquor",
+                  "word": "xante liqueur",
                   "substitution": false,
                 },
                 {
-                  "word": "xante liqueur",
+                  "word": "pear vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear wine",
                   "substitution": false,
                 },
               ],

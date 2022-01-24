@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "mango liqueur","mint liqueur","melon liqueur",
+    "key" : [ "mango flavoured spirit/liqueur","mint flavoured spirit/liqueur","melon flavoured spirit/liqueur",
               "manchego","monterey jack","mozzarella","muenster",
               "mango jelly","mango jam","marmalade","milk chocolate",
               "macademia",
@@ -12,13 +12,14 @@
 
 
               "~~~ HALF DONE : ~~~"
+              "mixed fruit flavoured spirit/liqueur",
               "mango puree",
               "meat free breadcrumbed fillets",
-               "Mole sauce/enchilada sauce", "Mushroom cooking/pasta sauce",
+              "mole sauce", "mushroom cooking sauce",
 
 
               "~~~ TO DO : ~~~"
-              "malibu",
+              "mulled wine",
               "mascarpone",
 
               "macarons", "maltesers", "maple syrup", "marmalade", "mars", "marshmallows", "marzipan", "meringues", "midget gems",
@@ -45,7 +46,147 @@
     "ingredients": [
 
 
-
+          {
+              "name": "mushroom cooking sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mushroom pasta sauce",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mole sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "enchilada sauce",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mixed fruit flavoured spirit/liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mixed fruit liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "mixed fruit flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit-flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit-flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "st germain",
+                  "substitution": false,
+                },
+                {
+                  "word": "st-germain",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "blueberry flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackcurrant flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackberry flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "watermelon flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "mixed beans",
               "exclude": [
@@ -992,10 +1133,18 @@
             ],
           },
           {
-              "name": "mint liqueur",
+              "name": "mint flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "mint liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "mint cream liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "mint flavoured liqueur",
                   "substitution": false,
@@ -1069,6 +1218,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "peppermint schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "liqueur de menthe",
                   "substitution": false,
                 },
@@ -1082,6 +1235,26 @@
                 },
                 {
                   "word": "kendal mint cake liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint wine",
                   "substitution": false,
                 },
               ],
@@ -1112,10 +1285,14 @@
               ],
           },
           {
-              "name": "melon liqueur",
+              "name": "melon flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "melon liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "melon flavoured liqueur",
                   "substitution": false,
@@ -1153,16 +1330,44 @@
                   "substitution": false,
                 },
                 {
+                  "word": "melon schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "midori",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "melon wine",
                   "substitution": false,
                 },
               ],
           },
           {
-              "name": "mango liqueur",
+              "name": "mango flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "mango liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "mango flavoured liqueur",
                   "substitution": false,
@@ -1200,12 +1405,56 @@
                   "substitution": false,
                 },
                 {
+                  "word": "mango schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "mangue liqueur",
                   "substitution": false,
                 },
                 {
                   "word": "liqueur de mangue",
                   "substitution": false,
+                },
+                {
+                  "word": "mango vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange & mango gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange and mango gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango & lime gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango and lime gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "mixed fruit flavoured spirit/liqueur",
+                  "substitution": true,
                 },
               ],
           },

@@ -1,6 +1,6 @@
 {
 
-    "key" : ["beer","banana liqueur","blueberry liqueur","brandy",
+    "key" : ["beer","banana flavoured spirit/liqueur","blueberry flavoured spirit/liqueur","brandy",
              "brie","blue cheese",
              "buttercream",
              "baking powder","baking soda","breadcrumbs","breadsticks","bread loaf","bread wraps","brazil nuts",
@@ -13,6 +13,7 @@
 
 
              "~~~ HALF DONE : ~~~"
+             "blackberry flavoured spirit/liqueur", "blackcurrant flavoured spirit/liqueur", "butterscotch flavoured spirit/liqueur",
              "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
              "barbeque seasoning",
              "bombay mix",
@@ -20,7 +21,6 @@
 
 
              "~~~ TO DO : ~~~"
-             "baileys",
              "bavarian smoked cheese",
 
              "banana custard", "black food colouring", "black treacle", "blue food colouring", "biscuit spread", "boiled sweets",
@@ -44,6 +44,77 @@
 
 
 
+      {
+          "name": "butterscotch flavoured spirit/liqueur",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "butterscotch liqueur",
+              "substitution": true,
+            },
+            {
+              "word": "butterscotch cream liqueur",
+              "substitution": true,
+            },
+            {
+              "word": "butterscotch flavoured liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch flavored liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch-flavoured liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch-flavored liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch flavoured liquor",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch flavored liquor",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch-flavoured liquor",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch-flavored liquor",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch liquor",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch schnapps",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch vodka",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch rum",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch brandy",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch gin",
+              "substitution": false,
+            },
+          ],
+      },
       {
           "name": "black bean paste",
           "exclude": [
@@ -895,10 +966,6 @@
           ],
           "include": [
             {
-              "word": "armagnac",
-              "substitution": false,
-            },
-            {
               "word": "cognac",
               "substitution": false,
             },
@@ -1466,10 +1533,284 @@
         ],
       },
       {
-          "name": "blueberry liqueur",
+          "name": "blackberry flavoured spirit/liqueur",
           "exclude": [
           ],
           "include": [
+            {
+              "word": "blackberry liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry flavoured liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry flavored liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry flavoured liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry flavored liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry-flavoured liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry-flavored liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry-flavoured liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry-flavored liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry schnapps",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry vodka",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry rum",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry brandy",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry wine",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry gin",
+              "substitution": false,
+            },
+            {
+              "word": "bramble, blackberry & raspberry gin",
+              "substitution": true,
+            },
+            {
+              "word": "bramble blackberry & raspberry gin",
+              "substitution": true,
+            },
+            {
+              "word": "bramble, blackberry and raspberry gin",
+              "substitution": true,
+            },
+            {
+              "word": "bramble gin",
+              "substitution": true,
+            },
+            {
+              "word": "bramble schnapps",
+              "substitution": false,
+            },
+            {
+              "word": "bramble gin liqueur",
+              "substitution": true,
+            },
+            {
+              "word": "bramble gin liquor",
+              "substitution": true,
+            },
+            {
+              "word": "mixed fruit flavoured spirit/liqueur",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "blackcurrant flavoured spirit/liqueur",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blackcurrant liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant flavoured liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant flavored liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant flavoured liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant flavored liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant-flavoured liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant-flavored liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant-flavoured liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant-flavored liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant liquor",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant schnapps",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant vodka",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant rum",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant brandy",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant gin",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant wine",
+              "substitution": false,
+            },
+            {
+              "word": "bramble gin liqueur",
+              "substitution": true,
+            },
+            {
+              "word": "bramble gin liquor",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry liqueur",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry flavoured liqueur",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry flavored liqueur",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry flavoured liquor",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry flavored liquor",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry-flavoured liqueur",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry-flavored liqueur",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry-flavoured liquor",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry-flavored liquor",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry liquor",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry vodka",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry rum",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry brandy",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry gin",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry wine",
+              "substitution": true,
+            },
+            {
+              "word": "bramble, blackberry & raspberry gin",
+              "substitution": true,
+            },
+            {
+              "word": "bramble blackberry & raspberry gin",
+              "substitution": true,
+            },
+            {
+              "word": "bramble, blackberry and raspberry gin",
+              "substitution": true,
+            },
+            {
+              "word": "bramble gin",
+              "substitution": true,
+            },
+            {
+              "word": "bramble gin liqueur",
+              "substitution": true,
+            },
+            {
+              "word": "bramble gin liquor",
+              "substitution": true,
+            },
+            {
+              "word": "mixed fruit flavoured spirit/liqueur",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "blueberry flavoured spirit/liqueur",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blueberry liqueur",
+              "substitution": false,
+            },
             {
               "word": "blueberry flavoured liqueur",
               "substitution": false,
@@ -1507,6 +1848,10 @@
               "substitution": false,
             },
             {
+              "word": "blueberry schnapps",
+              "substitution": false,
+            },
+            {
               "word": "blueberry vodka",
               "substitution": false,
             },
@@ -1523,7 +1868,15 @@
               "substitution": false,
             },
             {
+              "word": "bramble gin",
+              "substitution": true,
+            },
+            {
               "word": "bramble gin liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "bramble gin liquor",
               "substitution": false,
             },
             {
@@ -1536,10 +1889,6 @@
             },
             {
               "word": "blueberry & basil gin liqueur",
-              "substitution": false,
-            },
-            {
-              "word": "bramble gin liquor",
               "substitution": false,
             },
             {
@@ -1570,13 +1919,29 @@
               "word": "creme de myrtille",
               "substitution": false,
             },
+            {
+              "word": "blueberry wine",
+              "substitution": false,
+            },
+            {
+              "word": "mixed fruit flavoured spirit/liqueur",
+              "substitution": true,
+            },
           ],
       },
       {
-          "name": "banana liqueur",
+          "name": "banana flavoured spirit/liqueur",
           "exclude": [
           ],
           "include": [
+            {
+              "word": "banana liqueur",
+              "substitution": false,
+            },
+            {
+              "word": "banana cream liqueur",
+              "substitution": true,
+            },
             {
               "word": "banana flavoured liqueur",
               "substitution": false,
@@ -1610,6 +1975,14 @@
               "substitution": false,
             },
             {
+              "word": "banana liquor",
+              "substitution": false,
+            },
+            {
+              "word": "banana schnapps",
+              "substitution": false,
+            },
+            {
               "word": "banana rum",
               "substitution": false,
             },
@@ -1630,10 +2003,6 @@
               "substitution": false,
             },
             {
-              "word": "banana liquor",
-              "substitution": false,
-            },
-            {
               "word": "banane liqueur",
               "substitution": false,
             },
@@ -1643,6 +2012,18 @@
             },
             {
               "word": "creme de banane",
+              "substitution": false,
+            },
+            {
+              "word": "banana vodka",
+              "substitution": false,
+            },
+            {
+              "word": "banana brandy",
+              "substitution": false,
+            },
+            {
+              "word": "banana gin",
               "substitution": false,
             },
           ],

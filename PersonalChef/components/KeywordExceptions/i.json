@@ -16,6 +16,22 @@
     "ingredients": [
 
 
+
+          {
+            "name": "irish cream liqueur",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "irish cream",
+                "substitution": false,
+              },
+              {
+                "word": "baileys",
+                "substitution": false,
+              },
+            ],
+          },
           {
             "name": "icing sugar",
             "exclude": [

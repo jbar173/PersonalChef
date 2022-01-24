@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "raspberry liqueur","red wine",
+    "key" : [ "raspberry flavoured spirit/liqueur","red wine",
               "ricotta",
               "raspberry jam","raspberry jelly","raisins","rhubarb jam","rhubarb jelly","rice puffs","rose water",
               "rice","rice cracker","red lentils",
@@ -10,6 +10,7 @@
 
 
               "~~~ HALF DONE : ~~~"
+              "rhubarb flavoured spirit/liqueur",
 
               "~~~ TO DO : ~~~"
               "rose wine",
@@ -32,6 +33,82 @@
     "ingredients": [
 
 
+
+          {
+              "name": "rhubarb flavoured spirit/liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rhubarb liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "rhubarb flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb-flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb-flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb ginger gin",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "rhubarb jelly",
               "exclude": [
@@ -430,10 +507,14 @@
               ],
           },
           {
-              "name": "raspberry liqueur",
+              "name": "raspberry flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "raspberry liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "raspberry flavoured liqueur",
                   "substitution": false,
@@ -471,6 +552,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "raspberry schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "framboise eau de vie",
                   "substitution": false,
                 },
@@ -491,11 +576,55 @@
                   "substitution": false,
                 },
                 {
+                  "word": "raspberry vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach & raspberry gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach and raspberry gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "bramble, blackberry & raspberry gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "bramble blackberry & raspberry gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "bramble, blackberry and raspberry gin",
+                  "substitution": true,
+                },
+                {
                   "word": "kirschwasser",
                   "substitution": true,
                 },
                 {
                   "word": "cherry brandy",
+                  "substitution": true,
+                },
+                {
+                  "word": "mixed fruit flavoured spirit/liqueur",
                   "substitution": true,
                 },
               ],

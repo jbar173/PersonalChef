@@ -1,6 +1,6 @@
 {
 
-    "key" : ["champagne","cava","cherry liqueur","cider","coconut liqueur","cachaca",
+    "key" : ["champagne","cava","cherry flavoured spirit/liqueur","cider","coconut flavoured spirit/liqueur","cachaca",
              "camembert","cheddar","cheese slice","comte","cottage cheese","cream cheese",
              "caramel","candied orange","chocolate","chocolate custard","cocoa powder","custard",
              "candlenuts","chestnuts","cashew nuts","crackers","cornstarch","cornmeal","couscous","cassava flour",
@@ -14,6 +14,7 @@
 
 
              "~~~ HALF DONE : ~~~"
+             "caramel flavoured spirit/liqueur","cinnamon flavoured spirit/liqueur","coffee flavoured spirit/liqueur",
              "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","crystallised ginger",
              "corned beef",
              "chilli chutney relish", "chilli infused oil", "coriander puree",
@@ -26,7 +27,7 @@
              "cacao nibs", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel wafer",
              "carrot cake", "cherry compote", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies",
              "chocolate cookie dough", "chocolate decorating icing", "chocolate drops", "chocolate eclairs", "chocolate ganache",
-             "chocolate liqueurs", "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
+             "chocolate flavoured spirit/liqueur", "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
              "chocolate sauce", "chocolate sponge", "chocolate sprinkles", "chocolate wafers", "cocoa powder", "coconut bar", "coconut biscuits",
              "coconut macaroons", "coco pops", "cola laces", "coloured dusting sugar", "condensed milk", "cookie mix", "cream egg", "crunchie bar",
              "crunchy cream biscuits", "custard creams", "custard powder",
@@ -52,6 +53,219 @@
     "ingredients": [
 
 
+        {
+            "name": "caramel flavoured spirit/liqueur",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caramel liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "caramel cream liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "caramel flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "caramel-flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "caramel-flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "caramel-flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "caramel-flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "caramel liquor",
+                "substitution": false,
+              },
+              {
+                "word": "caramel schnapps",
+                "substitution": false,
+              },
+              {
+                "word": "caramel vodka",
+                "substitution": false,
+              },
+              {
+                "word": "caramel rum",
+                "substitution": false,
+              },
+              {
+                "word": "caramel brandy",
+                "substitution": false,
+              },
+              {
+                "word": "caramel gin",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cinnamon flavoured spirit/liqueur",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cinnamon liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "cinnamon flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon-flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon-flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon-flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon-flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon liquor",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon schnapps",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon vodka",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon rum",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon brandy",
+                "substitution": false,
+              },
+              {
+                "word": "cinnamon gin",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "coffee flavoured spirit/liqueur",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coffee liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "coffee cream liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "coffee flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "coffee flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "coffee-flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "coffee-flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "coffee flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "coffee flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "coffee-flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "coffee-flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "coffee liquor",
+                "substitution": false,
+              },
+              {
+                "word": "coffee schnapps",
+                "substitution": false,
+              },
+              {
+                "word": "tia maria",
+                "substitution": false,
+              },
+              {
+                "word": "coffee vodka",
+                "substitution": false,
+              },
+              {
+                "word": "coffee rum",
+                "substitution": false,
+              },
+              {
+                "word": "coffee brandy",
+                "substitution": false,
+              },
+              {
+                "word": "coffee gin",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "coriander puree",
             "exclude": [
@@ -1320,7 +1534,7 @@
             ],
         },
         {
-            "name": "cherry liqueur",
+            "name": "cherry flavoured spirit/liqueur",
             "exclude": [
               {
                 "word": "cherries",
@@ -1339,6 +1553,10 @@
               },
             ],
             "include": [
+              {
+                "word": "cherry liqueur",
+                "substitution": false,
+              },
               {
                 "word": "kirsch",
                 "substitution": false,
@@ -1428,7 +1646,15 @@
                 "substitution": false,
               },
               {
+                "word": "cherry schnapps",
+                "substitution": false,
+              },
+              {
                 "word": "cherry wine",
+                "substitution": true,
+              },
+              {
+                "word": "raspberry flavoured spirit/liqueur",
                 "substitution": true,
               },
               {
@@ -1440,6 +1666,10 @@
                 "substitution": true,
               },
               {
+                "word": "plum flavoured spirit/liqueur",
+                "substitution": true,
+              },
+              {
                 "word": "plum liqueur",
                 "substitution": true,
               },
@@ -1447,13 +1677,21 @@
                 "word": "plum liquor",
                 "substitution": true,
               },
+              {
+                "word": "mixed fruit flavoured spirit/liqueur",
+                "substitution": true,
+              },
             ],
         },
         {
-            "name": "coconut liqueur",
+            "name": "coconut flavoured spirit/liqueur",
             "exclude": [
             ],
             "include": [
+              {
+                "word": "coconut liqueur",
+                "substitution": false,
+              },
               {
                 "word": "coconut flavoured liqueur",
                 "substitution": false,

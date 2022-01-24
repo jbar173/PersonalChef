@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "white wine","whisky","watermelon liqueur",
+    "key" : [ "white wine","whisky","watermelon flavoured spirit/liqueur",
               "white chocolate",
               "walnuts","wonton wrappers",
               "water chestnut",
@@ -9,7 +9,7 @@
       "water",
 
               "~~~ HALF DONE : ~~~"
-
+              "wild berry flavoured spirit/liqueur",
 
               "~~~ TO DO : ~~~"
               "wensleydale",
@@ -75,10 +75,14 @@
               ],
           },
           {
-              "name": "watermelon liqueur",
+              "name": "watermelon flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "watermelon liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "watermelon flavoured liqueur",
                   "substitution": false,
@@ -114,6 +118,117 @@
                 {
                   "word": "watermelon liquor",
                   "substitution": false,
+                },
+                {
+                  "word": "watermelon schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "watermelon & kiwi gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "watermelon and kiwi gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "mixed fruit flavoured spirit/liqueur",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "wild berry flavoured spirit/liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "wild berry liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "wild berry flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry-flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry-flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild berry wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed fruit flavoured spirit/liqueur",
+                  "substitution": true,
                 },
               ],
           },

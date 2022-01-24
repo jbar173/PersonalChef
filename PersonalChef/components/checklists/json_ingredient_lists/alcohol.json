@@ -1,33 +1,40 @@
 {
     "name": "alcohol_ingredients",
-    "ingredients": [ "ale", "almond liqueur", "apple liqueur", "apricot liqueur", "aniseed liqueur",
+    "ingredients": [  "advocaat", "alcoholic ginger beer", "ale", "almond flavoured spirit/liqueur", "angostura bitters", "aniseed flavoured spirit/liqueur",
+                      "apple flavoured spirit/liqueur", "apricot flavoured spirit/liqueur", "armagnac",
 
-            "baileys", "banana liqueur", "beer", "blueberry liqueur", "brandy",
+                      "banana flavoured spirit/liqueur", "beer", "blackcurrant flavoured spirit/liqueur", "blackberry flavoured spirit/liqueur", "blueberry flavoured spirit/liqueur", "brandy",
+                      "butterscotch flavoured spirit/liqueur",
 
-            "cachaca", "campari", "cherry liqueur", "cider", "coconut liqueur",
+                      "cachaca", "campari", "caramel flavoured spirit/liqueur", "cherry flavoured spirit/liqueur", "cider", "cinnamon flavoured spirit/liqueur", "coconut flavoured spirit/liqueur",
+                      "coffee flavoured spirit/liqueur",
 
-            "dark rum", "dessert wine",
+                      "dark rum", "dessert wine",
 
-            "elderflower liqueur",
+                      "elderflower flavoured spirit/liqueur",
 
-            "gin", "ginger liqueur", "grape liqueur", "grapefruit liqueur", "guinness",
+                      "gin", "ginger flavoured spirit/liqueur", "gooseberry flavoured spirit/liqueur", "grape flavoured spirit/liqueur", "grapefruit flavoured spirit/liqueur",
 
-            "kirsch",
+                      "irish cream liqueur",
 
-            "lager", "light rum", "limoncello",
+                      "jagermeister",
 
-            "malibu", "mango liqueur", "melon liqueur", "mint liqueur",
+                      "lager", "light rum", "lemon flavoured spirit/liqueur", "lime flavoured spirit/liqueur",
 
-            "orange liqueur", "ouzo",
+                      "mango flavoured spirit/liqueur", "melon flavoured spirit/liqueur", "mint flavoured spirit/liqueur", "mixed fruit flavoured spirit/liqueur", "mulled wine",
 
-            "passion fruit liqueur", "peach liqueur", "pear liqueur", "plum liqueur", "prosecco",
+                      "orange flavoured spirit/liqueur",
 
-            "raspberry liqueur", "red wine", "rose wine",
+                      "passion fruit flavoured spirit/liqueur", "peach flavoured spirit/liqueur", "pear flavoured spirit/liqueur", "plum flavoured spirit/liqueur", "port", "prosecco",
 
-            "sherry", "sparkling wine", "strawberry liqueur",
+                      "raspberry flavoured spirit/liqueur", "red wine", "rhubarb flavoured spirit/liqueur", "rose wine",
 
-            "vodka",
+                      "sherry", "sparkling wine", "stout", "strawberry flavoured spirit/liqueur",
 
-            "watermelon liqueur", "whisky", "white wine",
+                      "tequila",
+
+                      "vodka",
+
+                      "watermelon flavoured spirit/liqueur", "whisky", "white wine", "wild berry flavoured spirit/liqueur",
     ]
 }

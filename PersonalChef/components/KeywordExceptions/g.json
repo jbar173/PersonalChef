@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "grape liqueur","grapefruit liqueur","ginger liqueur",
+    "key" : [ "grape flavoured spirit/liqueur","grapefruit flavoured spirit/liqueur","ginger flavoured spirit/liqueur",
               "gouda","gruyere","goat's cheese",
               "gelatine",
               "gammon",
@@ -10,12 +10,13 @@
 
 
               "~~~ HALF DONE : ~~~"
+              "gooseberry flavoured spirit/liqueur",
               "gram flour",
               "garlic and herb dressing", "garlic oil", "garlic mayonnaise", "garlic puree",
               "ginger puree", "guinness cooking paste",
 
               "~~~ TO DO : ~~~"
-              "gin", "guinness",
+              "gin",
 
               "garibaldi biscuits", "ginger biscuits", "gingerbread mix", "ginger sponge", "glace cherries", "glycerine",
               "golden syrup", "gooseberry mousse", "green food colouring", "gummy mix",
@@ -31,6 +32,78 @@
     "ingredients": [
 
 
+
+          {
+              "name": "gooseberry flavoured spirit/liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gooseberry liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberry flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry-flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry-flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry wine",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "garlic and herb dressing",
               "exclude": [
@@ -255,10 +328,14 @@
               ],
           },
           {
-              "name": "ginger liqueur",
+              "name": "ginger flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "ginger liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "ginger flavoured liqueur",
                   "substitution": false,
@@ -296,8 +373,32 @@
                   "substitution": false,
                 },
                 {
+                  "word": "ginger schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger gin",
+                  "substitution": false,
+                },
+                {
                   "word": "ginger brandy",
                   "substitution": false,
+                },
+                {
+                  "word": "rhubarb ginger gin",
+                  "substitution": true,
                 },
               ],
           },
@@ -321,10 +422,14 @@
               ],
           },
           {
-              "name": "grapefruit liqueur",
+              "name": "grapefruit flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "grapefruit liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "grapefruit flavoured liqueur",
                   "substitution": false,
@@ -362,6 +467,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "grapefruit schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "creme de pamplemousse",
                   "substitution": false,
                 },
@@ -376,10 +485,14 @@
               ],
           },
           {
-              "name": "grape liqueur",
+              "name": "grape flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "grape liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "grape flavoured liqueur",
                   "substitution": false,
@@ -414,6 +527,10 @@
                 },
                 {
                   "word": "grape liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "grape schnapps",
                   "substitution": false,
                 },
                 {

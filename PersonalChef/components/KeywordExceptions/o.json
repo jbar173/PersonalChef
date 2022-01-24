@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "orange liqueur",
+    "key" : [ "orange flavoured spirit/liqueur",
               "orange jam","orange jelly","orange oil",
               "oatmeal","oats",
               "offal",
@@ -19,7 +19,6 @@
 
 
               "~~~ TO DO : ~~~"
-              "ouzo",
               "oka",
               "orange chocolate", "orange food colouring", "oreos",
               "oatcakes", "oat yoghurt", "onion potato chips", "onion rings",
@@ -404,10 +403,18 @@
               ],
           },
           {
-              "name": "orange liqueur",
+              "name": "orange flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "orange liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange cream liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "orange flavoured liqueur",
                   "substitution": false,
@@ -445,6 +452,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "orange schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "tangerine liquor",
                   "substitution": false,
                 },
@@ -467,6 +478,54 @@
                 {
                   "word": "grand marnier cordon rouge",
                   "substitution": false,
+                },
+                {
+                  "word": "orange vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange & mango gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange and mango gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit & orange gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit & orange gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit and orange gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit and orange gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "mixed fruit flavoured spirit/liqueur",
+                  "substitution": true,
                 },
               ],
           },

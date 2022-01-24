@@ -1,13 +1,13 @@
 {
 
-    "key" : ["elderflower liqueur",
+    "key" : ["elderflower flavoured spirit/liqueur",
              "emmental","edam",
              "endive",
              "egg",
 
 
              "~~~ HALF DONE : ~~~"
-             
+
 
              "~~~ TO DO : ~~~"
              "epoisses",
@@ -35,10 +35,14 @@
               ],
           },
           {
-              "name": "elderflower liqueur",
+              "name": "elderflower flavoured spirit/liqueur",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "elderflower liqueur",
+                  "substitution": true,
+                },
                 {
                   "word": "elderflower flavoured liqueur",
                   "substitution": false,
@@ -76,11 +80,35 @@
                   "substitution": false,
                 },
                 {
+                  "word": "elderflower schnapps",
+                  "substitution": false,
+                },
+                {
                   "word": "st germain",
                   "substitution": false,
                 },
                 {
                   "word": "st-germain",
+                  "substitution": false,
+                },
+                {
+                  "word": "elderflower vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "elderflower rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "elderflower brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "elderflower gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "elderflower wine",
                   "substitution": false,
                 },
               ],
