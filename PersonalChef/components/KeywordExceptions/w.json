@@ -11,15 +11,18 @@
               "~~~ HALF DONE : ~~~"
               "wild berry flavoured spirit/liqueur",
 
+
               "~~~ TO DO : ~~~"
               "wensleydale",
               "wafer biscuits", "wafer decorations", "wine gums", "wispa",
               "weetabix",
               "watercress", "watermelon",
-              "waffles", "wedges",
 
               "walnut oil", "wasabi paste", "watercress sauce", "white sauce", "white wine stock",
               "wholegrain mustard", "worcestershire sauce",
+
+              "white chocolate milkshake",
+              "waffles", "wedges",
     ],
 
 
@@ -282,6 +285,18 @@
                 "word": "scotch",
                 "substitution": false,
               },
+              {
+                "word": "southern comfort",
+                "substitution": false,
+              },
+              {
+                "word": "drambuie",
+                "substitution": false,
+              },
+              {
+                "word": "wild turkey",
+                "substitution": false,
+              },
             ],
           },
           {
@@ -348,6 +363,10 @@
               {
                 "word": "gweurztraminer",
                 "substitution": false,
+              },
+              {
+                "word": "vermouth",
+                "substitution": true,
               },
             ],
           },

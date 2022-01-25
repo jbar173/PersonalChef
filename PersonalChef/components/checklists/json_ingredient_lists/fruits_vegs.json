@@ -2,7 +2,7 @@
     "name": "fruit_and_veg_ingredients",
     "ingredients": [  "ackee", "apple", "apricot", "artichoke", "asparagus", "aubergine", "avocado",
 
-                      "banana", "beansprouts", "beetroot",  "bell pepper", "blackberries", "blueberries", "broad beans", "broccoli", "butternut squash",
+                      "banana", "beansprouts", "beetroot",  "bell pepper", "blackberries", "blueberries", "broad beans", "broccoli", "butter bean", "butternut squash",
 
                       "cabbage", "carrot", "cauliflower", "cauliflower rice", "celeriac", "celery", "chard", "chayote", "cherries", "chicory", "chilli pepper",
                       "choi sum", "clementine", "collard greens", "courgette", "cress", "cucumber",
@@ -11,9 +11,9 @@
 
                       "edamame beans", "endive",
 
-                      "fennel", "fig", "fresh coconut", "fresh corn", "fresh cranberries", "fresh ginger", "fresh soya beans",
+                      "fennel", "fiddleheads", "fig", "fresh coconut", "fresh corn", "fresh cranberries", "fresh ginger", "fresh soya beans",
 
-                      "garlic", "grapefruit", "grapes", "green beans",
+                      "galangal", "garlic", "grapefruit", "grapes", "green beans",
 
                       "jerusalem artichoke",
 
@@ -27,18 +27,20 @@
 
                       "okra", "olives", "onion", "orange",
 
-                      "pak choi", "papaya", "parsnip", "passion fruit", "peach", "pear", "peas", "pea shoots", "persimmon", "pineapple", "plum", "pomegranate",
-                      "pomegranate seeds", "potato", "pumpkin",
+                      "pak choi", "papaya", "parsnip", "passion fruit", "peach", "pear", "peas", "pea shoots", "persimmon", "pineapple", "plantain", "plum",
+                      "pomegranate", "pomegranate seeds", "potato", "pumpkin",
 
                       "quince",
 
                       "radish", "raspberries", "ratatouille", "redcurrants", "rhubarb", "rocket",
 
-                      "salad leaves", "satsuma", "shallot", "smoked garlic", "soffrito mix", "spinach", "spring onions", "sprouts", "strawberries",
+                      "salad leaves", "samphire", "satsuma", "shallot", "smoked garlic", "soffrito mix", "spinach", "spring onions", "sprouts", "strawberries",
                       "swede", "sweet potato",
 
                       "tangerine", "tomato", "turnip",
 
                       "watercress", "watermelon", "water chestnut",
+
+                      "yams",
     ]
 }

@@ -10,19 +10,23 @@
               "lychee juice",
 
               "~~~ HALF DONE : ~~~"
+              "light rum",
               "lime flavoured spirit/liqueur",
               "lemon and lime jelly"
               "lemongrass puree",
 
               "~~~ TO DO : ~~~"
-              "lager", "light rum/white rum",
+              "lager",
+
               "lemon and lime jam", "lemon biscuits", "lemon curd", "lemon extract", "lemon mousse", "lion bar", "liquid glucose",
               "liquorice allsorts", "lollipop", "love hearts",
+
               "lobster",
               "lamb's lettuce", "leek", "lychee",
               "lamb seasoning",
               "lentils",
               "laksa sauce", "lemon and parsley sauce", "lemon butter sauce", "lime juice",
+              "lapsang tea", "lemonade", "lemon ice tea", "lemon tea", "lime cordial", "lime cola/pepsi max lime", "lucozade",
 
     ],
 
@@ -31,6 +35,18 @@
 
 
 
+
+        {
+            "name": "light rum",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "white rum",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "lime flavoured spirit/liqueur",
             "exclude": [
@@ -239,29 +255,6 @@
               {
                 "word": "minced meat",
                 "substitution": true,
-              },
-            ],
-        },
-        {
-            "name": "lychee juice",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "lychee fruit juice",
-                "substitution": false,
-              },
-              {
-                "word": "lychee drink",
-                "substitution": false,
-              },
-              {
-                "word": "lychee nectar",
-                "substitution": false,
-              },
-              {
-                "word": "taisun lychee",
-                "substitution": false,
               },
             ],
         },

@@ -11,6 +11,7 @@
 
             "~~~ HALF DONE : ~~~"
             "atta flour",
+            "aubergine",
             "all purpose seasoning",
 
 
@@ -19,11 +20,14 @@
             "appenzeller", "asiago",
             "agave", "almond extract", "apricot compote", "apple pectin",
             "anchovies",
-            "ackee", "artichoke", "aubergine",
+            "ackee", "artichoke",
             "allspice", "asafoetida",
             "adzuki beans", "apples", "artichoke antipasti",
+
             "aioli", "almond butter", "apricot and coriander sauce", "apricot harissa paste",
             "arrabiata sauce", "aubergine paste", "avocado oil",
+
+            "apple tea",
 
     ],
 
@@ -31,6 +35,18 @@
     "ingredients": [
 
 
+
+          {
+              "name": "aubergine",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "eggplant",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "all purpose seasoning",
               "exclude": [

@@ -11,6 +11,7 @@
 
               "~~~ HALF DONE : ~~~"
               "rhubarb flavoured spirit/liqueur",
+              "raspberry cola", "rooisbos tea",
 
               "~~~ TO DO : ~~~"
               "rose wine",
@@ -23,9 +24,10 @@
               "rainbow trout",
               "radish", "raspberries", "ratatouille", "redcurrants", "rhubarb",
               "ras el hanout", "red pepper flakes", "rosemary",
+              "rice pudding", "roasted red peppers",
+              "ramen broth", "rapeseed oil", "red pesto", "red wine stock", "rendang curry paste", "rice bran oil", "rogan josh",
+              "raspberry tea", "ribena", 
               "raita", "rassomalai", "rassogulla", "ravioli",
-              "rice pudding", "roasted red peppers", "rogan josh",
-              "ramen broth", "rapeseed oil", "red pesto", "red wine stock", "rendang curry paste", "rice bran oil",
 
     ],
 
@@ -34,6 +36,36 @@
 
 
 
+          {
+              "name": "rooisbos tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "redbush",
+                  "substitution": false,
+                },
+                {
+                  "word": "rooisbos",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "raspberry cola",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raspberry coke",
+                  "substitution": false,
+                },
+                {
+                  "word": "pepsi max raspberry",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "rhubarb flavoured spirit/liqueur",
               "exclude": [

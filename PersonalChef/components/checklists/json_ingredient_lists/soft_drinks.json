@@ -1,5 +1,45 @@
 {
     "name": "soft_drinks_ingredients",
-    "ingredients": [ "sparkling water",
+    "ingredients": [  "apple juice", "apple tea",
+
+                      "banana milkshake", "beetroot juice", "berry cordial", "berry tea", "black tea", "blackcurrant juice", "blackcurrant tea", "blueberry juice",
+
+                      "camomile", "caramel milkshake", "carrot juice", "chai tea", "cherry cola", "cherry lemonade", "cherry tea",
+                      "chocolate milkshake", "coca cola", "cocoa", "coconut water", "coffee", "cookie dough milkshake",
+                      "cranberry tea", "cream soda",
+
+                      "dandelion and burdock", "dr pepper",
+
+                      "earl grey tea", "energy drink",
+
+                      "faluda drink", "fennel tea", "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cranberry juice", "fresh grapefruit juice",
+                      "fresh grape juice", "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice", "fresh passion fruit juice", "fresh peach juice",
+                      "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice", "fresh strawberry juice", "fresh tropical juice",
+
+                      "ginger ale", "ginger beer", "ginger tea", "green tea", "grenadine syrup",
+
+                      "horlicks", "hot chocolate",
+
+                      "iced coffee", "irn bru",
+
+                      "jasmine tea",
+
+                      "lapsang tea", "lemonade", "lemon ice tea", "lemon tea", "lime cordial", "lime cola", "lucozade",
+
+                      "mango tea", "mint tea",
+
+                      "orange cordial", "orange milkshake",
+
+                      "passionfruit tea", "peach tea", "pear tea", "pepsi cherry", "pineapple tea", "pink lemonade", "prune juice",
+
+                      "raspberry cola", "raspberry tea", "ribena", "rooisbos tea",
+
+                      "sparkling water", "strawberry tea", "strawberry milkshake",
+
+                      "tomato juice",
+
+                      "vanilla milkshake", "vegetable juice", "vimto",
+
+                      "white chocolate milkshake",
     ]
 }

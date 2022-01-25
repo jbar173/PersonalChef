@@ -16,8 +16,9 @@
              "blackberry flavoured spirit/liqueur", "blackcurrant flavoured spirit/liqueur", "butterscotch flavoured spirit/liqueur",
              "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
              "barbeque seasoning",
-             "bombay mix",
              "balti sauce", "basil puree", "black bean paste",
+             "berry cordial", "blackcurrant tea",
+             "bombay mix",
 
 
              "~~~ TO DO : ~~~"
@@ -32,11 +33,12 @@
              "biltong", "bresaola",
              "baharat seasoning", "bay leaf", "bouquet garni",
              "buttermilk",
-             "bacon potato chips", "barbeque potato chips", "beef potato chips", "bread and butter pudding",
-             "baked beans", "black beans", "black cherries", "butter beans",
+             "baked beans", "black beans", "black cherries", "butter beans/lima beans",
 
              "balsamic vinegar", "baconnaise", "beetroot pesto", "blue cheese dressing", "bhuna sauce", "biryani masala", "bolognaise sauce", "bread sauce",
              "brown sauce", "burger sauce", "butter chicken cooking sauce",
+
+             "banana milkshake", "beetroot juice", "berry tea", "black tea", "bacon potato chips", "barbeque potato chips", "beef potato chips", "bread and butter pudding",
     ],
 
 
@@ -44,6 +46,89 @@
 
 
 
+      {
+          "name": "berry cordial",
+          "exclude": [
+            {
+              "word": "fresh",
+            },
+            {
+              "word": "freshly squeezed",
+            },
+            {
+              "word": "not from concentrate",
+            },
+          ],
+          "include": [
+            {
+              "word": "berry fruit concentrate",
+              "substitution": false,
+            },
+            {
+              "word": "berry juice concentrate",
+              "substitution": false,
+            },
+            {
+              "word": "berry squash",
+              "substitution": false,
+            },
+            {
+              "word": "double concentrate berry",
+              "substitution": false,
+            },
+            {
+              "word": "single concentrate berry",
+              "substitution": false,
+            },
+            {
+              "word": "summer fruits concentrate",
+              "substitution": false,
+            },
+            {
+              "word": "summer fruits squash",
+              "substitution": false,
+            },
+            {
+              "word": "summer fruit concentrate",
+              "substitution": false,
+            },
+            {
+              "word": "summer fruit squash",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant and apple juice",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant and apple squash",
+              "substitution": false,
+            },
+            {
+              "word": "apple and blackcurrant juice",
+              "substitution": false,
+            },
+            {
+              "word": "apple and blackcurrant squash",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "blackcurrant tea",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blackcurrant & blueberry tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant and blueberry tea",
+              "substitution": false,
+            },
+          ],
+      },
       {
           "name": "butterscotch flavoured spirit/liqueur",
           "exclude": [
@@ -864,9 +949,6 @@
             },
             {
               "word": "juice",
-            },
-            {
-              "word": "concentrate",
             },
             {
               "word": "seed",

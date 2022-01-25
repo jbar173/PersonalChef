@@ -15,26 +15,30 @@
 
                       "gin", "ginger flavoured spirit/liqueur", "gooseberry flavoured spirit/liqueur", "grape flavoured spirit/liqueur", "grapefruit flavoured spirit/liqueur",
 
+                      "honey flavoured spirit/liqueur",
+
                       "irish cream liqueur",
 
                       "jagermeister",
 
                       "lager", "light rum", "lemon flavoured spirit/liqueur", "lime flavoured spirit/liqueur",
 
-                      "mango flavoured spirit/liqueur", "melon flavoured spirit/liqueur", "mint flavoured spirit/liqueur", "mixed fruit flavoured spirit/liqueur", "mulled wine",
+                      "mango flavoured spirit/liqueur", "mead", "melon flavoured spirit/liqueur", "mint flavoured spirit/liqueur", "mixed fruit flavoured spirit/liqueur", "mulled wine",
 
                       "orange flavoured spirit/liqueur",
 
-                      "passion fruit flavoured spirit/liqueur", "peach flavoured spirit/liqueur", "pear flavoured spirit/liqueur", "plum flavoured spirit/liqueur", "port", "prosecco",
+                      "passion fruit flavoured spirit/liqueur", "peach flavoured spirit/liqueur", "peanut butter flavoured spirit/liqueur", "pear flavoured spirit/liqueur", "plum flavoured spirit/liqueur",
+                      "port", "prosecco",
 
                       "raspberry flavoured spirit/liqueur", "red wine", "rhubarb flavoured spirit/liqueur", "rose wine",
 
-                      "sherry", "sparkling wine", "stout", "strawberry flavoured spirit/liqueur",
+                      "sake", "sherry", "sparkling wine", "stout", "strawberry flavoured spirit/liqueur",
 
                       "tequila",
 
-                      "vodka",
+                      "vodka", "violet flavoured spirit/liqueur",
 
                       "watermelon flavoured spirit/liqueur", "whisky", "white wine", "wild berry flavoured spirit/liqueur",
+
     ]
 }

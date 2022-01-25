@@ -6,22 +6,101 @@
 
 
               "~~~ HALF DONE : ~~~"
-              "vegetable fat", "veggie dip",
+              "vegetable fat", "veggie dip", "violet flavoured spirit/liqueur",
 
               "~~~ TO DO : ~~~"
               "vodka",
-              "vanilla bean paste", "vanilla essence", "vanilla sponge",
+              "vanilla bean paste", "vanilla essence", "vanilla sponge", "vanilla syrup",
               "venison",
 
+              "vegetable oil",
+              "vanilla milkshake", "vegetable juice", "vimto",
               "vegetable chips", "vegetable sushi",
-              "vegetable oil", 
     ],
 
 
     "ingredients": [
 
 
-
+          {
+              "name": "violet flavoured spirit/liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "violet liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "violet flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet-flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet-flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "st germain",
+                  "substitution": false,
+                },
+                {
+                  "word": "st-germain",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "violet wine",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "vegetable fat",
               "exclude": [

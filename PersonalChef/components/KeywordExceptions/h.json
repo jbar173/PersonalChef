@@ -9,7 +9,8 @@
 
 
              "~~~ HALF DONE : ~~~"
-             "hoisin sauce", "honey barbeque sauce",
+             "hoisin sauce", "honey barbeque sauce", "honey flavoured spirit/liqueur",
+             "horlicks", 
 
              "~~~ TO DO : ~~~"
              "haribo", "honey", "honeycomb", "hundreds and thousands",
@@ -17,15 +18,139 @@
              "haddock", "hake", "herring",
              "haggis", "haslet",
              "hot paprika",
-             "hazelnut milk",
              "haricot beans",
              "hemp seed oil", "hollandaise", "honey mustard sauce", "horseradish",
+             "hot chocolate",
+             "hazelnut milk",
     ],
 
 
     "ingredients": [
 
 
+
+        {
+            "name": "horlicks",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "ovaltine",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "honey flavoured spirit/liqueur",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "honey liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "honey flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "honey flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "honey-flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "honey-flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "honey flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "honey flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "honey-flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "honey-flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "honey liquor",
+                "substitution": false,
+              },
+              {
+                "word": "honey schnapps",
+                "substitution": false,
+              },
+              {
+                "word": "drambuie",
+                "substitution": false,
+              },
+              {
+                "word": "grandtully",
+                "substitution": false,
+              },
+              {
+                "word": "lochan ora",
+                "substitution": false,
+              },
+              {
+                "word": "glayva",
+                "substitution": false,
+              },
+              {
+                "word": "roots rakomelo",
+                "substitution": false,
+              },
+              {
+                "word": "honey vodka",
+                "substitution": false,
+              },
+              {
+                "word": "honey rum",
+                "substitution": false,
+              },
+              {
+                "word": "honey brandy",
+                "substitution": false,
+              },
+              {
+                "word": "honey wine",
+                "substitution": false,
+              },
+              {
+                "word": "honey gin",
+                "substitution": false,
+              },
+              {
+                "word": "honey whisky",
+                "substitution": false,
+              },
+              {
+                "word": "honey whiskey",
+                "substitution": false,
+              },
+              {
+                "word": "honey & golden rum liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "whiskey liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "whisky liqueur",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "hoisin sauce",
             "exclude": [

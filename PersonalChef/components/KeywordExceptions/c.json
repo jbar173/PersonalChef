@@ -18,13 +18,14 @@
              "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","crystallised ginger",
              "corned beef",
              "chilli chutney relish", "chilli infused oil", "coriander puree",
+             "camomile tea", "coca cola",
 
 
              "~~~ TO DO : ~~~"
              "campari",
              "colby","curd cheese",
 
-             "cacao nibs", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel wafer",
+             "cacao nibs", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel syrup", "caramel wafer",
              "carrot cake", "cherry compote", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies",
              "chocolate cookie dough", "chocolate decorating icing", "chocolate drops", "chocolate eclairs", "chocolate ganache",
              "chocolate flavoured spirit/liqueur", "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
@@ -39,7 +40,6 @@
              "cajun spice", "caraway seeds", "cayenne", "celery salt", "celery seeds", "chana masala", "chicken seasoning", "chives",
              "cinnamon", "cinnamon sticks", "cloves", "coriander seeds", "cumin seeds", "curry powder",
 
-             "cheese puffs",
              "caperberries", "capers", "canned chipotles", "cheddar cheese soup", "chicken soup", "chilli bean soup", "chowder",
 
              "caesar dressing", "cantonese sauce", "carbonara sauce", "cashew butter", "casserole sauce", "char sui sauce", "cheese and onion pasta sauce",
@@ -47,12 +47,89 @@
              "chilli con carne sauce", "chilli garlic curry paste", "chilli mayonnaise", "chilli pesto", "chilli soy sauce", "chinese stir fry sauce",
              "chipotle burger sauce", "coconut milk powder", "chow mein sauce", "coconut oil", "cranberry sauce", "curry sauce",
 
+             "caramel milkshake", "carrot juice", "chai tea", "cherry cola", "cherry lemonade", "cherry tea","chocolate milkshake", "cocoa", "coconut water", "coffee",
+             "cookie dough milkshake", "cranberry tea", "cream soda",
+
+             "cheese puffs",
+
     ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "cranberry tea",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cranberry & raspberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry and raspberry tea",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cherry cola",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cherry coke",
+                "substitution": false,
+              },
+              {
+                "word": "pepsi max cherry",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "coca cola",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coke",
+                "substitution": false,
+              },
+              {
+                "word": "pepsi",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "camomile tea",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chamomile tea",
+                "substitution": false,
+              },
+              {
+                "word": "camomile & honey tea",
+                "substitution": true,
+              },
+              {
+                "word": "chamomile & honey tea",
+                "substitution": true,
+              },
+              {
+                "word": "camomile and honey tea",
+                "substitution": true,
+              },
+              {
+                "word": "chamomile and honey tea",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "caramel flavoured spirit/liqueur",
             "exclude": [
@@ -122,6 +199,18 @@
                 "word": "caramel gin",
                 "substitution": false,
               },
+              {
+                "word": "caramel whiskey",
+                "substitution": false,
+              },
+              {
+                "word": "caramel whisky",
+                "substitution": false,
+              },
+              {
+                "word": "amaro di angostura",
+                "substitution": false,
+              },
             ],
         },
         {
@@ -188,6 +277,14 @@
               {
                 "word": "cinnamon gin",
                 "substitution": false,
+              },
+              {
+                "word": "whiskey liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "whisky liqueur",
+                "substitution": true,
               },
             ],
         },

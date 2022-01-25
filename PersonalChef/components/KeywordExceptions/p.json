@@ -10,7 +10,6 @@
               "passata","pickles","pinto beans","pumpkin puree",
               "pork stock","panang curry paste",
               "plain yoghurt","powdered milk",
-              "passion fruit juice",
 
 
               "~~~ HALF DONE : ~~~"
@@ -18,8 +17,8 @@
               "port wine derby",
               "passion fruit puree",
               "plain flour",
-              "pancakes", "poppadoms",
               "peaches", "pears", "pickled onions",
+              "pancakes", "poppadoms",
 
 
               "~~~ TO DO : ~~~"
@@ -31,7 +30,7 @@
               "pancake mix", "pie mix", "pistachios", "pizza bases", "poppy seeds", "pork scratchings", "pretzel snacks", "puff pastry",
               "pangasius", "pilchards", "plaice", "pollock", "prawns",
 
-              "parsnip", "persimmon", "pomegranate seeds",
+              "parsnip", "persimmon", "plantain", "pomegranate seeds",
               "pancetta", "pepperoni", "pigs in blankets", "porchetta",
               "paprika",
               "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage", "pickled walnuts",
@@ -39,12 +38,97 @@
               "parsley sauce", "peanut butter", "peanut oil", "peppercorn sauce", "peri peri mayonnaise", "piccalilli", "pickled ginger", "piri piri sauce",
               "plum and hoisin sauce", "plum sauce", "pumpkin pesto",
 
+              "passionfruit tea", "peach tea", "pear tea", "pepsi cherry", "pineapple tea", "pink lemonade", "prune juice",
+
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "peanut butter flavoured spirit/liqueur",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peanut butter liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "peanut butter flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter-flavoured liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter-flavored liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter-flavoured liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter-flavored liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter liquor",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter schnapps",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter vodka",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter rum",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter brandy",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter gin",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter whiskey liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter whisky liqueur",
+                  "substitution": false,
+                },
+                {
+                  "word": "whiskey liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "whisky liqueur",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "port",
               "exclude": [
@@ -865,21 +949,6 @@
               ],
           },
           {
-              "name": "passion fruit juice",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "passionfruit juice",
-                  "substitution": false,
-                },
-                {
-                  "word": "passion-fruit juice",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
               "name": "pear",
               "exclude": [
                 {
@@ -1011,6 +1080,10 @@
                 },
                 {
                   "word": "tatsoi",
+                  "substitution": true,
+                },
+                {
+                  "word": "tat soi",
                   "substitution": true,
                 },
                 {

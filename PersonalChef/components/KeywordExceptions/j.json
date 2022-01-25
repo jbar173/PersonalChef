@@ -13,8 +13,9 @@
              "jagermeister",
              "jaffa cakes", "jam tart", "jelly beans" "jelly tots",
              "jerk seasoning", "juniper berries",
-             "jam sponge", "jerky",
              "jerk sauce",
+             "jasmine tea",
+             "jam sponge", "jerky",
     ],
 
 
@@ -75,6 +76,18 @@
             "exclude": [
             ],
             "include": [
+              {
+                "word": "sunroot",
+                "substitution": false,
+              },
+              {
+                "word": "sunchoke",
+                "substitution": false,
+              },
+              {
+                "word": "earth apple",
+                "substitution": false,
+              },
               {
                 "word": "jicama",
                 "substitution": true,

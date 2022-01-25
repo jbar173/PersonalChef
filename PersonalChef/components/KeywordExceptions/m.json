@@ -14,12 +14,11 @@
               "~~~ HALF DONE : ~~~"
               "mixed fruit flavoured spirit/liqueur",
               "mango puree",
-              "meat free breadcrumbed fillets",
               "mole sauce", "mushroom cooking sauce",
-
+              "meat free breadcrumbed fillets",
 
               "~~~ TO DO : ~~~"
-              "mulled wine",
+              "mead", "mulled wine",
               "mascarpone",
 
               "macarons", "maltesers", "maple syrup", "marmalade", "mars", "marshmallows", "marzipan", "meringues", "midget gems",
@@ -33,12 +32,14 @@
               "maca powder", "mango masala spice blend", "mild chilli powder", "mixed herbs", "moroccan seasoning", "mulled wine spice",
               "mustard powder", "mustard seeds",
 
+              "madras curry sauce", "makhani sauce", "mango and lime sauce", "mango mint sauce", "marmite", "mayonnaise", "mediterranean tomato relish",
+              "mild mustard", "mincemeat", "mint marinade", "mint sauce", "mirin", "miso tahini", "mushroom ketchup", "mushroom stock",
+
+              "mango tea", "mint tea",
+
               "mango and passionfruit mousse", "marmite potato chips", "meat free breadcrumbed fillets", "meat free bacon",
               "meat free mince", "meat free southern fried fillets", "mezzelune", "milk slice", "mini cheddars",
               "manderins", "mango pulp", "minestrone soup", "mushroom antipasti", "mushroom soup", "mushy peas",
-
-              "madras curry sauce", "makhani sauce", "mango and lime sauce", "mango mint sauce", "marmite", "mayonnaise", "mediterranean tomato relish",
-              "mild mustard", "mincemeat", "mint marinade", "mint sauce", "mirin", "miso tahini", "mushroom ketchup", "mushroom stock",
 
     ],
 
@@ -46,6 +47,17 @@
     "ingredients": [
 
 
+          {
+              "name": "mint tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peppermint tea",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "mushroom cooking sauce",
               "exclude": [

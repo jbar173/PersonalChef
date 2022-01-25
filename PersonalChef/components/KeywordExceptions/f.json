@@ -8,12 +8,16 @@
              "flageolet beans",
              "fish sauce",
              "fruit yoghurt",
-             "fruit cordial",
 
 
              "~~~ HALF DONE : ~~~"
              "fondant icing"
              "flatbread",
+
+             "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cranberry juice", "fresh grapefruit juice", "fresh grape juice",
+             "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice", "fresh passion fruit juice", "fresh peach juice",
+             "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice", "fresh strawberry juice", "fresh tropical juice",
+
              "fries",
 
 
@@ -21,15 +25,16 @@
              "fig roll", "fruit jellies", "fruit and nut chocolate",
              "flax seeds", "fried onion", "frosties",
              "fish cakes",
-             "fresh corn", "fresh soya beans",
+             "fiddleheads", "fresh corn", "fresh soya beans",
              "faggot",
 
              "fajita seasoning", "fish seasoning", "fresh basil", "fresh mint", "fresh oregano", "fresh parsley", "fresh rosemary", "fresh sage",
              "fennel seeds", "fresh shervil", "fresh tarragon", "fresh thyme",
 
-             "falafel", "flapjack",
              "fruit cocktail",
              "fish masala", "fish stock", "french dressing", "french mustard",
+             "faluda drink", "fennel tea",
+             "falafel", "flapjack",
 
     ],
 
@@ -37,6 +42,337 @@
     "ingredients": [
 
 
+
+          {
+              "name": "fresh grapefruit juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grapefruit juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh grape juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grape juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh guava juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "guava juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh lychee juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "lychee juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "lychee fruit juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "lychee drink",
+                  "substitution": false,
+                },
+                {
+                  "word": "lychee nectar",
+                  "substitution": false,
+                },
+                {
+                  "word": "taisun lychee",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh mango juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh passion fruit juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "passion fruit juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion-fruit juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh peach juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peach juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh pear juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pear juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh pineapple juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pineapple juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh pomegranate juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pomegranate juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh rhubarb juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rhubarb juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh strawberry juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh tropical juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tropical juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh cranberry juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cranberry juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "cranberry & apple juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "cranberry and apple juice",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fresh blueberry juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "blueberry juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh blackcurrant juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "blackcurrant juice",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh apple juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apple juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple & manjo juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple and manjo juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple & ginger juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple and ginger juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple & rhubarb juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple and rhubarb juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple, lemon & ginger juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple, lemon and ginger juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple & elderflower juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple and elderflower juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple & watermelon juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple and watermelon juice",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fresh orange juice",
+              "exclude": [
+                {
+                  "word": "orange flavoured",
+                },
+                {
+                  "word": "orange flavored",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "peel",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "extract",
+                },
+                {
+                  "word": "essence",
+                },
+              ],
+              "include": [
+                {
+                  "word": "orange",
+                  "substitution": true,
+                },
+                {
+                  "word": "tangerine",
+                  "substitution": true,
+                },
+                {
+                  "word": "satsuma",
+                  "substitution": true,
+                },
+                {
+                  "word": "clementine",
+                  "substitution": true,
+                },
+                {
+                  "word": "mandarin",
+                  "substitution": true,
+                },
+                {
+                  "word": "tangelo",
+                  "substitution": true,
+                },
+                {
+                  "word": "minneola",
+                  "substitution": true,
+                },
+                {
+                  "word": "kumquat",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "flageolet beans",
               "exclude": [
@@ -385,33 +721,6 @@
                 },
                 {
                   "word": "fig butter",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "fruit cordial",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "orange-tangerine concentrate",
-                  "substitution": false,
-                },
-                {
-                  "word": "tangerine-orange juice blend",
-                  "substitution": false,
-                },
-                {
-                  "word": "fruit concentrate",
-                  "substitution": false,
-                },
-                {
-                  "word": "juice concentrate",
-                  "substitution": false,
-                },
-                {
-                  "word": "fruit squash",
                   "substitution": false,
                 },
               ],

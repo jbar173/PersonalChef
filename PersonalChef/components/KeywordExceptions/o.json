@@ -8,7 +8,6 @@
               "onion powder","oregano",
               "oil",
               "oat milk",
-              "orange juice",
 
 
               "~~~ HALF DONE : ~~~"
@@ -16,13 +15,15 @@
               "oat biscuits",
               "okra",
               "olive spread",
+              "orange cordial",
 
 
               "~~~ TO DO : ~~~"
               "oka",
               "orange chocolate", "orange food colouring", "oreos",
-              "oatcakes", "oat yoghurt", "onion potato chips", "onion rings",
               "olive oil", "onion and garlic pasta sauce", "onion gravy", "onion sauce", "oyster sauce",
+              "orange milkshake",
+              "oatcakes", "oat yoghurt", "onion potato chips", "onion rings",
 
     ],
 
@@ -30,6 +31,50 @@
     "ingredients": [
 
 
+          {
+              "name": "orange cordial",
+              "exclude": [
+                {
+                  "word": "fresh",
+                },
+                {
+                  "word": "freshly squeezed",
+                },
+                {
+                  "word": "not from concentrate",
+                },
+              ],
+              "include": [
+                {
+                  "word": "orange-tangerine concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "tangerine-orange juice blend",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange fruit concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange juice concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange squash",
+                  "substitution": false,
+                },
+                {
+                  "word": "double concentrate orange",
+                  "substitution": false,
+                },
+                {
+                  "word": "single concentrate orange",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "olive spread",
               "exclude": [
@@ -560,45 +605,6 @@
                 {
                   "word": "dried onion",
                   "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "orange juice",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "tangerine",
-                  "substitution": true,
-                },
-                {
-                  "word": "satsuma",
-                  "substitution": true,
-                },
-                {
-                  "word": "clementine",
-                  "substitution": true,
-                },
-                {
-                  "word": "mandarin",
-                  "substitution": true,
-                },
-                {
-                  "word": "tangelo",
-                  "substitution": true,
-                },
-                {
-                  "word": "minneola",
-                  "substitution": true,
-                },
-                {
-                  "word": "kumquat",
-                  "substitution": true,
-                },
-                {
-                  "word": "orange",
-                  "substitution": true,
                 },
               ],
           },
