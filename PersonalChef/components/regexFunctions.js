@@ -1,7 +1,39 @@
 import React from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
-import * as data from '.KeywordExceptions/keywordExceptions.json';
+import * as data from './keywordExceptions.json';
 import * as exclusions from './checklists/json_ingredient_lists/exclude.json';
+// import * as alphabetical_kw_files from '.KeywordExceptions/a.json';
+import * as kw_a from './KeywordExceptions/a.json';
+import * as kw_b from './KeywordExceptions/b.json';
+import * as kw_c from './KeywordExceptions/c.json';
+import * as kw_d from './KeywordExceptions/d.json';
+import * as kw_e from './KeywordExceptions/e.json';
+import * as kw_f from './KeywordExceptions/f.json';
+import * as kw_g from './KeywordExceptions/g.json';
+import * as kw_h from './KeywordExceptions/h.json';
+import * as kw_i from './KeywordExceptions/i.json';
+import * as kw_j from './KeywordExceptions/j.json';
+import * as kw_k from './KeywordExceptions/k.json';
+import * as kw_l from './KeywordExceptions/l.json';
+import * as kw_m from './KeywordExceptions/m.json';
+import * as kw_n from './KeywordExceptions/n.json';
+import * as kw_o from './KeywordExceptions/o.json';
+import * as kw_p from './KeywordExceptions/p.json';
+import * as kw_q from './KeywordExceptions/q.json';
+import * as kw_r from './KeywordExceptions/r.json';
+import * as kw_s from './KeywordExceptions/s.json';
+import * as kw_t from './KeywordExceptions/t.json';
+import * as kw_u from './KeywordExceptions/u.json';
+import * as kw_v from './KeywordExceptions/v.json';
+import * as kw_w from './KeywordExceptions/w.json';
+import * as kw_x from './KeywordExceptions/x.json';
+import * as kw_y from './KeywordExceptions/y.json';
+import * as kw_z from './KeywordExceptions/z.json';
+
+const keys = { "a": kw_a.ingredients,"b": kw_b.ingredients,'c': kw_c.ingredients,"d": kw_d.ingredients,"e": kw_e.ingredients,"f": kw_f.ingredients,"g": kw_g.ingredients,
+               "h": kw_h.ingredients,"i": kw_i.ingredients,"j": kw_j.ingredients,"k": kw_k.ingredients,"l": kw_l.ingredients,"m": kw_m.ingredients,"n": kw_n.ingredients,
+               "o": kw_o.ingredients,"p": kw_p.ingredients,"q": kw_q.ingredients,"r": kw_r.ingredients,"s": kw_s.ingredients,"t": kw_t.ingredients,"u": kw_u.ingredients,
+               "v": kw_v.ingredients,"w": kw_w.ingredients,"x": kw_x.ingredients,"y": kw_y.ingredients,"z": kw_z.ingredients, }
 
 
 // Checks that recipe items are ingredients rather than equipment/utensils:
@@ -153,7 +185,7 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
     var starts_or_ends_with = String.raw`\b`
 
     var result = false
-    var exceptions = data.ingredients
+    // var exceptions = data.ingredients
     var exception_found = false
 
     var random_exclusions = exclusions.phrases
@@ -167,6 +199,9 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
     }
 
     for(l in ingredients){
+        console.log("@@@@@@@@@@@@")
+        var first_letter = ingredients[l][0]
+        console.log("~~~~~~~~~~~~FIRST LETTER OF: " + ingredients[l] + " = " + first_letter)
         var next_ingredient = false
         var length = ingredients.length
         var words = []
@@ -214,14 +249,18 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
 
       //// If type = 'both' (ie. ingredient is_key (has exclusions listed in keywordExceptions) ):
 
+      var exceptions = keys[`${first_letter}`]
+
       for(m in exceptions){
 
           if(next_ingredient){
               break;
           }
+          console.log('!!!!!!!!!!!!!!! exceptions[m]["name"]: ' + exceptions[m]["name"])
 
           if(exceptions[m]["name"] === ingredients[l]){
               var exclude = exceptions[m]['exclude']
+              // console.log('####### exceptions[m]["name"]: ' + exceptions[m]["name"])
 
               for(n in exclude){
                   words.push(exclude[n]['word'])
@@ -231,6 +270,8 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
               for(c in words){
 
                   words_count += 1
+                  number = words_count+1
+                  // console.log("exclude word no." + number + " : " + words[c])
                   var ingredient = words[c]
                   var length_integer = parseInt(words.length)
                   var last_ind = length_integer-1
@@ -257,11 +298,13 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
                         ingredients_with_exceptions.push(ingredient)
                         console.log("Ingredient was " + ingredient + ", not " + ingredients[l])
                         console.log("in " + ingredient_lower)
+                        console.log("Next ingredient?: " + next_ingredient)
                         exception_found = true
                         next_ingredient = true
                         break;
-                  }else if(exception_found === false && words_count === words.length){
+                  }else if(exception_found === false && words_count === words.length-1){
                         next_ingredient = true
+                        console.log("***Next ingredient?: " + next_ingredient)
                         break;
                   }
 

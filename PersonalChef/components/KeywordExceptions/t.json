@@ -13,10 +13,11 @@
               "tofu",
 
 
-              "~~~ HALF DONE : ~~~"
+              "~~~ HALF DONE : ~~~",
               "tartare sauce",
 
-              "~~~ TO DO : ~~~"
+
+              "~~~ TO DO : ~~~",
               "tequila",
               "toblerone", "toffe crisp", "toffees", "toffee sauce", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
               "tortillas",
@@ -28,7 +29,7 @@
               "thai green curry sauce", "thai red curry sauce", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste",
               "truffle mayonnaise", "truffle oil", "tuna pasta sauce", "tuna paste",
 
-              "tomato juice", 
+              "tomato juice",
               "taramasalata", "tiramisu", "toffee popcorn", "toffee sundae", "tomato potato chips", "tortelloni", "trifle", "twiglets", "tzatziki",
 
     ],
@@ -916,7 +917,30 @@
               },
             ],
             "include": [
-
+              {
+                "word": "salsify",
+                "substitution": true,
+              },
+              {
+                "word": "parsnip",
+                "substitution": true,
+              },
+              {
+                "word": "lotus root",
+                "substitution": true,
+              },
+              {
+                "word": "celeriac",
+                "substitution": true,
+              },
+              {
+                "word": "rutabaga",
+                "substitution": true,
+              },
+              {
+                "word": "carrot",
+                "substitution": true,
+              },
             ],
           },
           {

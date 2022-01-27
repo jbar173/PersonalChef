@@ -13,7 +13,7 @@
              "coffee",
 
 
-             "~~~ HALF DONE : ~~~"
+             "~~~ HALF DONE : ~~~",
              "caramel flavoured spirit/liqueur","cinnamon flavoured spirit/liqueur","coffee flavoured spirit/liqueur",
              "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","crystallised ginger",
              "corned beef",
@@ -21,14 +21,14 @@
              "camomile tea", "coca cola",
 
 
-             "~~~ TO DO : ~~~"
-             "campari",
+             "~~~ TO DO : ~~~",
+             "campari", "chocolate flavoured spirit/liqueur",
              "colby","curd cheese",
 
              "cacao nibs", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel syrup", "caramel wafer",
              "carrot cake", "cherry compote", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies",
              "chocolate cookie dough", "chocolate decorating icing", "chocolate drops", "chocolate eclairs", "chocolate ganache",
-             "chocolate flavoured spirit/liqueur", "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
+             "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
              "chocolate sauce", "chocolate sponge", "chocolate sprinkles", "chocolate wafers", "cocoa powder", "coconut bar", "coconut biscuits",
              "coconut macaroons", "coco pops", "cola laces", "coloured dusting sugar", "condensed milk", "cookie mix", "cream egg", "crunchie bar",
              "crunchy cream biscuits", "custard creams", "custard powder",
@@ -859,15 +859,23 @@
                 "substitution": false,
               },
               {
-                "word": "seakale beet",
-                "substitution": false,
-              },
-              {
                 "word": "spinach",
                 "substitution": true,
               },
               {
                 "word": "mustard greens",
+                "substitution": true,
+              },
+              {
+                "word": "komatsuna",
+                "substitution": true,
+              },
+              {
+                "word": "mizuna",
+                "substitution": true,
+              },
+              {
+                "word": "bok choy",
                 "substitution": true,
               },
               {
@@ -879,7 +887,15 @@
                 "substitution": true,
               },
               {
-                "word": "black kale",
+                "word": "kale",
+                "substitution": true,
+              },
+              {
+                "word": "seakale",
+                "substitution": true,
+              },
+              {
+                "word": "cavalo nero",
                 "substitution": true,
               },
             ],

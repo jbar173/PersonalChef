@@ -1,8 +1,38 @@
 import React from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
-import * as data from '.KeywordExceptions/keywordExceptions.json';
+// import * as data from './keywordExceptions.json';
 import { FindIngredient, FindExceptions, CheckRecipeIngredientLength } from './regexFunctions.js';
+import * as kw_a from './KeywordExceptions/a.json';
+import * as kw_b from './KeywordExceptions/b.json';
+import * as kw_c from './KeywordExceptions/c.json';
+import * as kw_d from './KeywordExceptions/d.json';
+import * as kw_e from './KeywordExceptions/e.json';
+import * as kw_f from './KeywordExceptions/f.json';
+import * as kw_g from './KeywordExceptions/g.json';
+import * as kw_h from './KeywordExceptions/h.json';
+import * as kw_i from './KeywordExceptions/i.json';
+import * as kw_j from './KeywordExceptions/j.json';
+import * as kw_k from './KeywordExceptions/k.json';
+import * as kw_l from './KeywordExceptions/l.json';
+import * as kw_m from './KeywordExceptions/m.json';
+import * as kw_n from './KeywordExceptions/n.json';
+import * as kw_o from './KeywordExceptions/o.json';
+import * as kw_p from './KeywordExceptions/p.json';
+import * as kw_q from './KeywordExceptions/q.json';
+import * as kw_r from './KeywordExceptions/r.json';
+import * as kw_s from './KeywordExceptions/s.json';
+import * as kw_t from './KeywordExceptions/t.json';
+import * as kw_u from './KeywordExceptions/u.json';
+import * as kw_v from './KeywordExceptions/v.json';
+import * as kw_w from './KeywordExceptions/w.json';
+import * as kw_x from './KeywordExceptions/x.json';
+import * as kw_y from './KeywordExceptions/y.json';
+import * as kw_z from './KeywordExceptions/z.json';
 
+const keys = { "a": kw_a.ingredients,"b": kw_b.ingredients,'c': kw_c.ingredients,"d": kw_d.ingredients,"e": kw_e.ingredients,"f": kw_f.ingredients,"g": kw_g.ingredients,
+               "h": kw_h.ingredients,"i": kw_i.ingredients,"j": kw_j.ingredients,"k": kw_k.ingredients,"l": kw_l.ingredients,"m": kw_m.ingredients,"n": kw_n.ingredients,
+               "o": kw_o.ingredients,"p": kw_p.ingredients,"q": kw_q.ingredients,"r": kw_r.ingredients,"s": kw_s.ingredients,"t": kw_t.ingredients,"u": kw_u.ingredients,
+               "v": kw_v.ingredients,"w": kw_w.ingredients,"x": kw_x.ingredients,"y": kw_y.ingredients,"z": kw_z.ingredients, }
 
 
 const RefineResults = props => {
@@ -17,11 +47,12 @@ const RefineResults = props => {
   for(x in ten_pages){
     console.log(x + ". " + ten_pages[x]["from"])
   }
+  //
+  // var exceptions_key = data.key
+  // var exceptions = data.ingredients
 
   var user_ingredients = props.userIngredients
   var user_ings_length = props.maxIngredients
-  var exceptions_key = data.key
-  var exceptions = data.ingredients
 
   var relevant_recipes = []
   var almost_list = []
@@ -114,8 +145,15 @@ const RefineResults = props => {
                                        var p
                                        var q
 
+                                       var first_letter = user_ingredients[y][0]
+                                       // console.log('^^^^ ingredient: ' + user_ingredients[y])
+                                       // console.log('^^^^ first_letter: ' + first_letter)
+
+                                       var exceptions = keys[`${first_letter}`]
+
                                        for(p in exceptions){
                                            var name = exceptions[p]['name']
+                                           // console.log('++++ exceptions[p]["name"]: ' + exceptions[p]["name"])
                                            if(name === user_ingredients[y]){
                                                is_key = true
                                                var include = exceptions[p]['include']
@@ -339,8 +377,15 @@ const RefineResults = props => {
                                             var p
                                             var q
 
+                                            var first_letter = user_ingredients[ing][0]
+                                            // console.log('^^^^ ingredient: ' + user_ingredients[ing])
+                                            // console.log('^^^^ first_letter: ' + first_letter)
+
+                                            var exceptions = keys[`${first_letter}`]
+
                                             for(p in exceptions){
                                                 var name = exceptions[p]['name']
+                                                // console.log('++++ exceptions[p]["name"]: ' + name)
                                                 if(name === user_ingredients[ing]){
                                                     is_key = true
                                                     var include = exceptions[p]['include']
@@ -537,8 +582,16 @@ const RefineResults = props => {
                                     var is_key = false
                                     var p
                                     var q
+
+                                    var first_letter = user_ingredients[ing][0]
+                                    // console.log('^^^^ ingredient: ' + user_ingredients[y])
+                                    // console.log('^^^^ first_letter: ' + first_letter)
+
+                                    var exceptions = keys[`${first_letter}`]
+
                                     for(p in exceptions){
                                         var name = exceptions[p]['name']
+                                        // console.log('++++ exceptions[p]["name"]: ' + name)
                                         if(name === user_ingredients[ing]){
                                             is_key = true
                                             var include = exceptions[p]['include']

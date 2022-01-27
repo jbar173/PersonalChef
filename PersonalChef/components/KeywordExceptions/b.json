@@ -7,12 +7,12 @@
              "beef","beef mince","black pudding","burger",
              "banana","beetroot","beet","bell pepper","broccoli","beansprouts","broad beans","blackberries","butternut squash",
              "beetroot powder","black cardamom",
-             "black-eyed peas","borlotti beans",
+             "black-eyed peas","borlotti beans","butter beans",
              "beef stock","barbeque sauce",
              "butter",
 
 
-             "~~~ HALF DONE : ~~~"
+             "~~~ HALF DONE : ~~~",
              "blackberry flavoured spirit/liqueur", "blackcurrant flavoured spirit/liqueur", "butterscotch flavoured spirit/liqueur",
              "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
              "barbeque seasoning",
@@ -21,7 +21,7 @@
              "bombay mix",
 
 
-             "~~~ TO DO : ~~~"
+             "~~~ TO DO : ~~~",
              "bavarian smoked cheese",
 
              "banana custard", "black food colouring", "black treacle", "blue food colouring", "biscuit spread", "boiled sweets",
@@ -33,7 +33,7 @@
              "biltong", "bresaola",
              "baharat seasoning", "bay leaf", "bouquet garni",
              "buttermilk",
-             "baked beans", "black beans", "black cherries", "butter beans/lima beans",
+             "baked beans", "black beans", "black cherries",
 
              "balsamic vinegar", "baconnaise", "beetroot pesto", "blue cheese dressing", "bhuna sauce", "biryani masala", "bolognaise sauce", "bread sauce",
              "brown sauce", "burger sauce", "butter chicken cooking sauce",
@@ -46,6 +46,46 @@
 
 
 
+
+      {
+          "name": "butter beans",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "butter bean",
+              "substitution": false,
+            },
+            {
+              "word": "butterbean",
+              "substitution": false,
+            },
+            {
+              "word": "borlotti bean",
+              "substitution": false,
+            },
+            {
+              "word": "lima bean",
+              "substitution": false,
+            },
+            {
+              "word": "cannellini bean",
+              "substitution": true,
+            },
+            {
+              "word": "white bean",
+              "substitution": true,
+            },
+            {
+              "word": "navy bean",
+              "substitution": true,
+            },
+            {
+              "word": "great northern bean",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "berry cordial",
           "exclude": [

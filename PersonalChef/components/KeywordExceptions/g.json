@@ -9,12 +9,13 @@
               "green curry paste","guacamole",
 
 
-              "~~~ HALF DONE : ~~~"
+              "~~~ HALF DONE : ~~~",
               "gooseberry flavoured spirit/liqueur",
               "gram flour",
               "garlic and herb dressing", "garlic oil", "garlic mayonnaise", "garlic puree", "ginger puree", "guinness cooking paste",
+              "ginger tea",
 
-              "~~~ TO DO : ~~~"
+              "~~~ TO DO : ~~~",
               "gin",
 
               "garibaldi biscuits", "ginger biscuits", "gingerbread mix", "ginger sponge", "glace cherries", "glycerine",
@@ -24,7 +25,7 @@
               "galangal",
               "garam masala", "garlic pepper", "ground mace",
               "garlic and chilli oil", "ginger and miso sauce", "goose fat", "grapeseed oil", "gravy granules", "green pesto", "groundnut oil",
-              "ginger ale", "ginger beer", "ginger tea", "green tea", "grenadine syrup",
+              "ginger ale", "ginger beer", "green tea", "grenadine syrup",
               "gajar halwa", "girasoli", "gnocchi", "goat's milk", "gulabjam", "gyoza",
 
 
@@ -35,6 +36,21 @@
 
 
 
+          {
+              "name": "ginger tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "lemon & ginger tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon and ginger tea",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "gooseberry flavoured spirit/liqueur",
               "exclude": [
@@ -633,6 +649,10 @@
                 {
                   "word": "fine bean",
                   "substitution": false,
+                },
+                {
+                  "word": "fiddlehead",
+                  "substitution": true,
                 },
               ],
           },

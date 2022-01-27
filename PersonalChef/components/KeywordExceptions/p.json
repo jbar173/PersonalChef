@@ -5,23 +5,24 @@
               "passion fruit jam","passion fruit jelly","peach jam","peach jelly","pineapple jam","pineapple jelly","plum jam","plum jelly",
               "peanuts","pine nuts","pecans","pasta","polenta","pumpkin seeds","pork scratchings","plain potato chips","pearled barley","pizza dough",
               "prosciutto","pork","pulled pork","pork trotter","pate",
-              "pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
+              "parsnip","pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
               "pepper","pork seasoning","parsley",
               "passata","pickles","pinto beans","pumpkin puree",
               "pork stock","panang curry paste",
               "plain yoghurt","powdered milk",
 
 
-              "~~~ HALF DONE : ~~~"
+              "~~~ HALF DONE : ~~~",
               "port",
               "port wine derby",
               "passion fruit puree",
               "plain flour",
               "peaches", "pears", "pickled onions",
+              "passionfruit tea",
               "pancakes", "poppadoms",
 
 
-              "~~~ TO DO : ~~~"
+              "~~~ TO DO : ~~~",
               "paneer", "pleasant ridge", "port salut",
 
               "peanut bar", "peanut butter wafers", "peanut cookies", "peanut mnms", "pear drops", "peppermint extract", "pink food colouring",
@@ -30,15 +31,15 @@
               "pancake mix", "pie mix", "pistachios", "pizza bases", "poppy seeds", "pork scratchings", "pretzel snacks", "puff pastry",
               "pangasius", "pilchards", "plaice", "pollock", "prawns",
 
-              "parsnip", "persimmon", "plantain", "pomegranate seeds",
               "pancetta", "pepperoni", "pigs in blankets", "porchetta",
+              "persimmon", "plantain", "pomegranate seeds",
               "paprika",
               "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage", "pickled walnuts",
 
               "parsley sauce", "peanut butter", "peanut oil", "peppercorn sauce", "peri peri mayonnaise", "piccalilli", "pickled ginger", "piri piri sauce",
               "plum and hoisin sauce", "plum sauce", "pumpkin pesto",
 
-              "passionfruit tea", "peach tea", "pear tea", "pepsi cherry", "pineapple tea", "pink lemonade", "prune juice",
+              "peach tea", "pear tea", "pepsi cherry", "pineapple tea", "pink lemonade", "prune juice",
 
     ],
 
@@ -46,6 +47,64 @@
     "ingredients": [
 
 
+
+          {
+            "name": "parsnip",
+            "exclude": [
+              {
+                "word": "turnip greens",
+              },
+            ],
+            "include": [
+              {
+                "word": "salsify",
+                "substitution": true,
+              },
+              {
+                "word": "turnip",
+                "substitution": true,
+              },
+              {
+                "word": "lotus root",
+                "substitution": true,
+              },
+              {
+                "word": "celeriac",
+                "substitution": true,
+              },
+              {
+                "word": "rutabaga",
+                "substitution": true,
+              },
+              {
+                "word": "carrot",
+                "substitution": true,
+              },
+              {
+                "word": "sweet potato",
+                "substitution": true,
+              },
+              {
+                "word": "sweet potatoes",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+              "name": "passionfruit tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango & passionfruit tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango and passionfruit tea",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "peanut butter flavoured spirit/liqueur",
               "exclude": [

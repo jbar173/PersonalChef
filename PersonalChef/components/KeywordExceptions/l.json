@@ -9,24 +9,25 @@
               "lard",
               "lychee juice",
 
-              "~~~ HALF DONE : ~~~"
-              "light rum",
-              "lime flavoured spirit/liqueur",
-              "lemon and lime jelly"
+              "~~~ HALF DONE : ~~~",
+              "light rum", "lime flavoured spirit/liqueur",
+              "lemon and lime jelly",
+              "leek",
               "lemongrass puree",
+              "lemonade", "lemon cordial", "lemon tea", "lime cola", "lime cordial",
 
-              "~~~ TO DO : ~~~"
+              "~~~ TO DO : ~~~",
               "lager",
 
               "lemon and lime jam", "lemon biscuits", "lemon curd", "lemon extract", "lemon mousse", "lion bar", "liquid glucose",
               "liquorice allsorts", "lollipop", "love hearts",
 
               "lobster",
-              "lamb's lettuce", "leek", "lychee",
+              "lamb's lettuce", "lychee",
               "lamb seasoning",
               "lentils",
               "laksa sauce", "lemon and parsley sauce", "lemon butter sauce", "lime juice",
-              "lapsang tea", "lemonade", "lemon ice tea", "lemon tea", "lime cordial", "lime cola/pepsi max lime", "lucozade",
+              "lapsang tea", "lemon ice tea", "lucozade",
 
     ],
 
@@ -35,7 +36,124 @@
 
 
 
-
+        {
+            "name": "lime cola",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lime coke",
+                "substitution": false,
+              },
+              {
+                "word": "pepsi max lime",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "leek",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "kurrat",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "lemon tea",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lemon & ginger tea",
+                "substitution": true,
+              },
+              {
+                "word": "lemon and ginger tea",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lime cordial",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lemon cordial",
+                "substitution": true,
+              },
+              {
+                "word": "lemon & lime cordial",
+                "substitution": true,
+              },
+              {
+                "word": "lemon and lime cordial",
+                "substitution": true,
+              },
+              {
+                "word": "lime & mint cordial",
+                "substitution": true,
+              },
+              {
+                "word": "lime and mint cordial",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lemon cordial",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lime cordial",
+                "substitution": true,
+              },
+              {
+                "word": "lemon & lime cordial",
+                "substitution": true,
+              },
+              {
+                "word": "lemon and lime cordial",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lemonade",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "elderflower lemonade",
+                "substitution": true,
+              },
+              {
+                "word": "raspberry lemonade",
+                "substitution": true,
+              },
+              {
+                "word": "watermelon lemonade",
+                "substitution": true,
+              },
+              {
+                "word": "rose lemonade",
+                "substitution": true,
+              },
+              {
+                "word": "raspberry & apple lemonade",
+                "substitution": true,
+              },
+              {
+                "word": "pink lemonade",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "light rum",
             "exclude": [
@@ -718,7 +836,7 @@
           ],
           "include": [
             {
-              "word": "iceberg",
+              "word": "manoa",
               "substitution": false,
             },
           ],

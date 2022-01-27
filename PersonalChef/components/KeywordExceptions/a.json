@@ -4,18 +4,18 @@
             "applewood smoked cheese",
             "apricot jam", "apricot jelly",
             "almonds","almond meal","almond flour",
-            "apple","apricot","asparagus","avocado",
+            "apple","apricot","avocado",
             "apple sauce","achiote",
             "aquafaba","almond milk",
 
 
-            "~~~ HALF DONE : ~~~"
+            "~~~ HALF DONE : ~~~",
             "atta flour",
-            "aubergine",
+            "asparagus","aubergine",
             "all purpose seasoning",
 
 
-            "~~~ TO DO : ~~~"
+            "~~~ TO DO : ~~~",
             "advocaat", "alcoholic ginger beer", "angostura bitters", "armagnac",
             "appenzeller", "asiago",
             "agave", "almond extract", "apricot compote", "apple pectin",
@@ -35,7 +35,17 @@
     "ingredients": [
 
 
-
+          {
+              "name": "asparagus",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fiddlehead",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "aubergine",
               "exclude": [

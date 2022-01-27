@@ -9,11 +9,13 @@
               "rice milk",
 
 
-              "~~~ HALF DONE : ~~~"
+              "~~~ HALF DONE : ~~~",
               "rhubarb flavoured spirit/liqueur",
+              "radish",
               "raspberry cola", "rooisbos tea",
 
-              "~~~ TO DO : ~~~"
+
+              "~~~ TO DO : ~~~",
               "rose wine",
               "raclette", "red leicester",
 
@@ -22,11 +24,11 @@
 
               "rice and peas",
               "rainbow trout",
-              "radish", "raspberries", "ratatouille", "redcurrants", "rhubarb",
+              "raspberries", "ratatouille", "redcurrants", "rhubarb",
               "ras el hanout", "red pepper flakes", "rosemary",
               "rice pudding", "roasted red peppers",
               "ramen broth", "rapeseed oil", "red pesto", "red wine stock", "rendang curry paste", "rice bran oil", "rogan josh",
-              "raspberry tea", "ribena", 
+              "raspberry tea", "ribena",
               "raita", "rassomalai", "rassogulla", "ravioli",
 
     ],
@@ -36,6 +38,17 @@
 
 
 
+          {
+              "name": "radish",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mashua",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "rooisbos tea",
               "exclude": [

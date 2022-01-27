@@ -3,8 +3,8 @@
     "key" : ["dessert wine",
              "dark chocolate","dried coconut","dates","dried cranberries","dried barberries","dried mixed fruit",
 
-             "dried black-eyed peas","dried pinto beans","dried borlotti beans","dried cannellini beans","dried chickpeas",
-             "dried flageolet beans","dried kidney beans","dried mixed beans","dried navy beans",
+             "dried black-eyed peas","dried borlotti beans","dried butter beans","dried cannellini beans","dried chickpeas",
+             "dried flageolet beans","dried kidney beans","dried mixed beans","dried moth beans","dried navy beans","dried pinto beans",
 
              "duck",
              "daikon",
@@ -13,13 +13,13 @@
              "dumplings",
 
 
-             "~~~ HALF DONE : ~~~"
+             "~~~ HALF DONE : ~~~",
              "dried banana",
              "dried black beans", "dried moong dall", "dried red lentils", "dried split peas",
              "dripping", "duck fat",
 
 
-             "~~~ TO DO : ~~~"
+             "~~~ TO DO : ~~~",
              "dark rum",
              "derby cheese", "double gloucester",
 
@@ -40,6 +40,96 @@
     "ingredients": [
 
 
+        {
+            "name": "dried moth beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "moth bean",
+                "substitution": false,
+              },
+              {
+                "word": "lentils",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried butter beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "butter bean",
+                "substitution": false,
+              },
+              {
+                "word": "butterbean",
+                "substitution": false,
+              },
+              {
+                "word": "borlotti bean",
+                "substitution": false,
+              },
+              {
+                "word": "lima bean",
+                "substitution": false,
+              },
+              {
+                "word": "cannellini bean",
+                "substitution": true,
+              },
+              {
+                "word": "white bean",
+                "substitution": true,
+              },
+              {
+                "word": "navy bean",
+                "substitution": true,
+              },
+              {
+                "word": "great northern bean",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "duck fat",
             "exclude": [

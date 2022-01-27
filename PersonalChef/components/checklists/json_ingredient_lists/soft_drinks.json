@@ -10,11 +10,11 @@
 
                       "dandelion and burdock", "dr pepper",
 
-                      "earl grey tea", "energy drink",
+                      "earl grey tea", "elderflower cordial", "energy drink",
 
-                      "faluda drink", "fennel tea", "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cranberry juice", "fresh grapefruit juice",
-                      "fresh grape juice", "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice", "fresh passion fruit juice", "fresh peach juice",
-                      "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice", "fresh strawberry juice", "fresh tropical juice",
+                      "faluda drink", "fennel tea", "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cherry juice", "fresh cranberry juice",
+                      "fresh grapefruit juice", "fresh grape juice", "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice", "fresh passion fruit juice",
+                      "fresh peach juice", "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice", "fresh strawberry juice", "fresh tropical juice",
 
                       "ginger ale", "ginger beer", "ginger tea", "green tea", "grenadine syrup",
 
@@ -24,7 +24,7 @@
 
                       "jasmine tea",
 
-                      "lapsang tea", "lemonade", "lemon ice tea", "lemon tea", "lime cordial", "lime cola", "lucozade",
+                      "lapsang tea", "lemonade", "lemon cordial", "lemon ice tea", "lemon tea", "lime cordial", "lime cola", "lucozade",
 
                       "mango tea", "mint tea",
 
@@ -41,5 +41,6 @@
                       "vanilla milkshake", "vegetable juice", "vimto",
 
                       "white chocolate milkshake",
+                      
     ]
 }

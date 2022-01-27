@@ -6,10 +6,11 @@
              "egg",
 
 
-             "~~~ HALF DONE : ~~~"
+             "~~~ HALF DONE : ~~~",
+             "elderflower cordial",
 
 
-             "~~~ TO DO : ~~~"
+             "~~~ TO DO : ~~~",
              "epoisses",
              "edamame beans",
              "evaporated milk",
@@ -24,6 +25,25 @@
 
 
 
+          {
+              "name": "elderflower cordial",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "elderflower presse",
+                  "substitution": true,
+                },
+                {
+                  "word": "elderflower light presse",
+                  "substitution": true,
+                },
+                {
+                  "word": "elderflower lemonade",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "endive",
               "exclude": [
@@ -132,6 +152,9 @@
               },
               {
                 "word": "whole-egg mayonnaise",
+              },
+              {
+                "word": "egg tagliatelle",
               },
             ],
             "include": [

@@ -10,18 +10,18 @@
              "fruit yoghurt",
 
 
-             "~~~ HALF DONE : ~~~"
-             "fondant icing"
+             "~~~ HALF DONE : ~~~",
+             "fondant icing",
              "flatbread",
 
-             "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cranberry juice", "fresh grapefruit juice", "fresh grape juice",
-             "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice", "fresh passion fruit juice", "fresh peach juice",
+             "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cherry juice", "fresh cranberry juice", "fresh grapefruit juice",
+             "fresh grape juice", "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice", "fresh passion fruit juice", "fresh peach juice",
              "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice", "fresh strawberry juice", "fresh tropical juice",
 
              "fries",
 
 
-             "~~~ TO DO : ~~~"
+             "~~~ TO DO : ~~~",
              "fig roll", "fruit jellies", "fruit and nut chocolate",
              "flax seeds", "fried onion", "frosties",
              "fish cakes",
@@ -43,6 +43,25 @@
 
 
 
+          {
+              "name": "fresh cherry juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cherry juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherry & raspberry juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "cherry and raspberry juice",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "fresh grapefruit juice",
               "exclude": [
@@ -227,6 +246,14 @@
                   "word": "cranberry and apple juice",
                   "substitution": true,
                 },
+                {
+                  "word": "apple & cranberry juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple and cranberry juice",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -258,14 +285,14 @@
               "include": [
                 {
                   "word": "apple juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple & mango juice",
                   "substitution": true,
                 },
                 {
-                  "word": "apple & manjo juice",
-                  "substitution": true,
-                },
-                {
-                  "word": "apple and manjo juice",
+                  "word": "apple and mango juice",
                   "substitution": true,
                 },
                 {

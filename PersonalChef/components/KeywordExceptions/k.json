@@ -2,15 +2,15 @@
 
     "key" : [ "kewra water",
               "kamut flour",
-              "kale","kiwi fruit",
+              "kale","kiwi fruit","kohlrabi",
               "kidney beans",
 
 
-              "~~~ HALF DONE : ~~~"
+              "~~~ HALF DONE : ~~~",
               "katsu cooking paste", "korma sauce",
 
 
-              "~~~ TO DO : ~~~"
+              "~~~ TO DO : ~~~",
               "kitkat",
               "kipper",
               "karela",
@@ -25,6 +25,37 @@
     "ingredients": [
 
 
+          {
+              "name": "kohlrabi",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "collard greens",
+                  "substitution": true,
+                },
+                {
+                  "word": "chard",
+                  "substitution": true,
+                },
+                {
+                  "word": "kale",
+                  "substitution": true,
+                },
+                {
+                  "word": "turnip",
+                  "substitution": true,
+                },
+                {
+                  "word": "celeriac",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "katsu cooking paste",
               "exclude": [
@@ -115,13 +146,54 @@
           {
             "name": "kale",
             "exclude": [
-              {
-                "word": "sea kale",
-              },
             ],
             "include": [
               {
-                "word": "cavolo nero",
+                "word": "seakale",
+                "substitution": false,
+              },
+              {
+                "word": "silverbeet",
+                "substitution": true,
+              },
+              {
+                "word": "spinach",
+                "substitution": true,
+              },
+              {
+                "word": "mustard greens",
+                "substitution": true,
+              },
+              {
+                "word": "komatsuna",
+                "substitution": true,
+              },
+              {
+                "word": "mizuna",
+                "substitution": true,
+              },
+              {
+                "word": "bok choy",
+                "substitution": true,
+              },
+              {
+                "word": "beet greens",
+                "substitution": true,
+              },
+              {
+                "word": "collard greens",
+                "substitution": true,
+              },
+              {
+                "word": "black kale",
+                "substitution": true,
+              },
+              {
+                "word": "cavalo nero",
+                "substitution": true,
+              },
+              {
+                "word": "chard",
                 "substitution": true,
               },
             ],
