@@ -1,40 +1,367 @@
 {
 
-    "key" : ["ale","almond flavoured spirit/liqueur","apple flavoured spirit/liqueur","apricot flavoured spirit/liqueur","aniseed flavoured spirit/liqueur",
-            "applewood smoked cheese",
-            "apricot jam", "apricot jelly",
-            "almonds","almond meal","almond flour",
-            "apple","apricot","avocado",
-            "apple sauce","achiote",
-            "aquafaba","almond milk",
+    "key" : [ "advocaat","ale","almond flavoured spirit/liqueur","apple flavoured spirit/liqueur",
+              "apricot flavoured spirit/liqueur","aniseed flavoured spirit/liqueur","armagnac",
+
+              "aged asiago","appenzeller","applewood smoked cheese",
+              "agave nectar","apricot jam","apricot jelly",
+              "anchovies",
+              "almonds","almond meal","almond flour",
+              "apple","apricot","avocado",
+              "allspice","asafoetida",
+              "achiote","ackee","almond butter","apple sauce",
+              "apple tea",
+              "aquafaba","almond milk",
 
 
-            "~~~ HALF DONE : ~~~",
-            "atta flour",
-            "asparagus","aubergine",
-            "all purpose seasoning",
+              "~~~ HALF DONE : ~~~",
+              "atta flour",
+              "artichoke","asparagus","aubergine",
+              "all purpose seasoning",
+              "adzuki beans","apples","artichoke antipasti",
+              "aioli","apricot harissa paste","aubergine paste",
 
 
-            "~~~ TO DO : ~~~",
-            "advocaat", "alcoholic ginger beer", "angostura bitters", "armagnac",
-            "appenzeller", "asiago",
-            "agave", "almond extract", "apricot compote", "apple pectin",
-            "anchovies",
-            "ackee", "artichoke",
-            "allspice", "asafoetida",
-            "adzuki beans", "apples", "artichoke antipasti",
+              "~~~ TO DO : ~~~",
+              "almond extract", "apricot compote", "apple pectin",
+              "anchovy paste", "avocado oil",
 
-            "aioli", "almond butter", "apricot and coriander sauce", "apricot harissa paste",
-            "arrabiata sauce", "aubergine paste", "avocado oil",
-
-            "apple tea",
-
-    ],
+            ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "agave nectar",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "agave syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "coconut nectar",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "maple syrup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "appenzeller",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "emmenthal",
+                  "substitution": true,
+                },
+                {
+                  "word": "gruyere",
+                  "substitution": true,
+                },
+                {
+                  "word": "raclette",
+                  "substitution": true,
+                },
+                {
+                  "word": "swiss cheese",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "aged asiago",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pecorino",
+                  "substitution": true,
+                },
+                {
+                  "word": "parmesan",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "armagnac",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cognac",
+                  "substitution": true,
+                },
+                {
+                  "word": "brandy",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "advocaat",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "advocatenborrel",
+                  "substitution": false,
+                },
+                {
+                  "word": "egg liqueur",
+                  "substitution": true,
+                },
+                {
+                  "word": "eggnog",
+                  "substitution": true,
+                },
+                {
+                  "word": "rompope",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "anchovies",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "anchovy",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "asafoetida",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "asafetida",
+                  "substitution": false,
+                },
+                {
+                  "word": "hing",
+                  "substitution": false,
+                },
+                {
+                  "word": "garlic powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "onion powder",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "allspice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cloves",
+                  "substitution": true,
+                },
+                {
+                  "word": "nutmeg",
+                  "substitution": true,
+                },
+                {
+                  "word": "cinnamon",
+                  "substitution": true,
+                },
+                {
+                  "word": "mace",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "apples",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apple slices",
+                  "substitution": false,
+                },
+                {
+                  "word": "tinned apple",
+                  "substitution": true,
+                },
+                {
+                  "word": "canned apple",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "adzuki beans",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "adzuki bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "aduki bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "azuki bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "red bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "red mung bean",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "ackee",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ankye",
+                  "substitution": false,
+                },
+                {
+                  "word": "achee",
+                  "substitution": false,
+                },
+                {
+                  "word": "akee",
+                  "substitution": false,
+                },
+                {
+                  "word": "ayee",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "artichoke",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "heart of palm",
+                  "substitution": true,
+                },
+                {
+                  "word": "asparagus",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "artichoke antipasti",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "antipasti",
+                  "substitution": true,
+                },
+                {
+                  "word": "heart of palm",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "almond butter",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peanut butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "aioli",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mayonnaise",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "apple tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cinnamon apple tea",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "apricot harissa paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apricot harissa",
+                  "substitution": false,
+                },
+                {
+                  "word": "harissa",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "aubergine paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "eggplant paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "aubergine mezze",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "asparagus",
               "exclude": [

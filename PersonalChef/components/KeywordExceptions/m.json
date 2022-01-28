@@ -7,14 +7,17 @@
               "mangetout","mango","melon","mixed berries","mangetout","mushrooms",
               "mint","mixed spice",
               "mixed beans",
-              "miso","mango pickle","medium curry paste","mild curry paste","massaman curry paste","mustard",
+
+              "madras curry sauce","makhani sauce","mango pickle","massaman curry paste","medium curry paste","mild curry paste","miso",
+              "mustard",
+
               "mango tea",
               "milk","margarine",
 
 
               "~~~ HALF DONE : ~~~",
               "mixed fruit flavoured spirit/liqueur",
-              "mango puree",
+              "m&ms","mango puree",
               "mole sauce", "mushroom cooking sauce",
               "mint tea",
               "meat free breadcrumbed fillets",
@@ -27,7 +30,7 @@
 
               "macarons", "maltesers", "maple syrup", "marmalade", "mars", "marshmallows", "marzipan", "meringues", "midget gems",
               "milk biscuits", "milky way", "millionaire’s shortbread", "mini eggs", "minstrels", "mint chocolate", "mint fondants",
-              "mints", "MnMs", "munchies",
+              "mints", "munchies",
 
               "malt wheats cereal", "milk powder", "mixed nuts", "monkey nuts", "museli",
               "mackerel", "mussels",
@@ -36,12 +39,13 @@
               "maca powder", "mango masala spice blend", "mild chilli powder", "mixed herbs", "moroccan seasoning", "mulled wine spice",
               "mustard powder", "mustard seeds",
 
-              "madras curry sauce", "makhani sauce", "mango and lime sauce", "mango mint sauce", "marmite", "mayonnaise", "mediterranean tomato relish",
-              "mild mustard", "mincemeat", "mint marinade", "mint sauce", "mirin", "miso tahini", "mushroom ketchup", "mushroom stock",
-
-              "mango and passionfruit mousse", "marmite potato chips", "meat free breadcrumbed fillets", "meat free bacon",
-              "meat free mince", "meat free southern fried fillets", "mezzelune", "milk slice", "mini cheddars",
               "manderins", "mango pulp", "minestrone soup", "mushroom antipasti", "mushroom soup", "mushy peas",
+
+              "mango and lime sauce", "mango mint sauce", "marmite", "mayonnaise", "mild mustard", "mincemeat", "mint marinade", "mint sauce",
+              "mirin", "miso tahini", "mushroom ketchup", "mushroom stock",
+
+              "mango and passionfruit mousse", "meat free breadcrumbed fillets", "meat free bacon",
+              "meat free mince", "meat free southern fried fillets", "mezzelune", "milk slice", "mini cheddars",
 
     ],
 
@@ -50,6 +54,64 @@
 
 
 
+
+          {
+              "name": "madras curry sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "madras curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "madras spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "madras  paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "hot curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "makhani sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "makhani curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "makhani spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "makhani curry spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "m&ms",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "m&m's",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "mango tea",
               "exclude": [

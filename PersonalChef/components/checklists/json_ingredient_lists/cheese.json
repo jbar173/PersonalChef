@@ -1,6 +1,6 @@
 {
     "name": "cheese_ingredients",
-    "ingredients": [ "appenzeller", "applewood smoked cheese", "asiago",
+    "ingredients": [ "appenzeller", "applewood smoked cheese", "aged asiago",
 
             "bavarian smoked cheese", "blue cheese", "brie ",
 
@@ -10,7 +10,7 @@
 
             "edam", "emmental", "epoisses",
 
-            "feta", "fontina",
+            "feta", "fontina", "fresh asiago",
 
             "goat's cheese", "gouda", "gruyere",
 

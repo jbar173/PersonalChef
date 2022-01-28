@@ -1,19 +1,19 @@
 {
     "name": "alcohol_ingredients",
-    "ingredients": [  "advocaat", "alcoholic ginger beer", "ale", "almond flavoured spirit/liqueur", "angostura bitters", "aniseed flavoured spirit/liqueur",
+    "ingredients": [  "advocaat", "ale", "almond flavoured spirit/liqueur", "angostura bitters", "aniseed flavoured spirit/liqueur",
                       "apple flavoured spirit/liqueur", "apricot flavoured spirit/liqueur", "armagnac",
 
                       "banana flavoured spirit/liqueur", "beer", "blackcurrant flavoured spirit/liqueur", "blackberry flavoured spirit/liqueur", "blueberry flavoured spirit/liqueur", "brandy",
                       "butterscotch flavoured spirit/liqueur",
 
                       "cachaca", "campari", "caramel flavoured spirit/liqueur", "cherry flavoured spirit/liqueur", "cider", "cinnamon flavoured spirit/liqueur", "coconut flavoured spirit/liqueur",
-                      "coffee flavoured spirit/liqueur",
+                      "coffee flavoured spirit/liqueur", "cognac",
 
                       "dark rum", "dessert wine",
 
                       "elderflower flavoured spirit/liqueur",
 
-                      "gin", "ginger flavoured spirit/liqueur", "gooseberry flavoured spirit/liqueur", "grape flavoured spirit/liqueur", "grapefruit flavoured spirit/liqueur",
+                      "gin", "ginger beer", "ginger flavoured spirit/liqueur", "gooseberry flavoured spirit/liqueur", "grape flavoured spirit/liqueur", "grapefruit flavoured spirit/liqueur",
 
                       "honey flavoured spirit/liqueur",
 

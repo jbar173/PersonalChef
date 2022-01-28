@@ -3,7 +3,7 @@
     "key" : ["dessert wine",
              "dark chocolate","dried coconut","dates","dried cranberries","dried barberries","dried mixed fruit",
 
-             "dried black-eyed peas","dried borlotti beans","dried butter beans","dried cannellini beans","dried chickpeas",
+             "dried adzuki beans","dried black-eyed peas","dried borlotti beans","dried butter beans","dried cannellini beans","dried chickpeas",
              "dried flageolet beans","dried kidney beans","dried mixed beans","dried moth beans","dried navy beans","dried pinto beans",
 
              "duck",
@@ -26,7 +26,7 @@
              "date syrup", "digestive biscuits", "decorating icing", "decorating sprinkles", "dolly mixtures", "dried apple", "dried apricots",
              "dried figs", "dried goji berries", "dried mango", "dried pears", "dried pineapple",
 
-             "dried brown lentils", "dried green lentils", "dried mung beans", "dried mushrooms","dried urid dal", "dumpling mix",
+             "dried brown lentils", "dried green lentils", "dried mung beans", "dried mushrooms", "dried urid dal", "dumpling mix",
              "dried basil", "dried chervil", "dried oregano", "dried marjoram", "dried thyme", "dried parsley", "dried rosemary", "dried tarragon",
 
              "diane sauce", "dijon mustard", "dill and lemon sauce", "dinner salad",
@@ -40,6 +40,52 @@
     "ingredients": [
 
 
+
+        {
+            "name": "dried adzuki beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "adzuki bean",
+                "substitution": false,
+              },
+              {
+                "word": "aduki bean",
+                "substitution": false,
+              },
+              {
+                "word": "azuki bean",
+                "substitution": false,
+              },
+              {
+                "word": "red bean",
+                "substitution": false,
+              },
+              {
+                "word": "red mung bean",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "dried moth beans",
             "exclude": [
@@ -308,6 +354,26 @@
               {
                 "word": "black bean",
                 "substitution": false,
+              },
+              {
+                "word": "adzuki bean",
+                "substitution": true,
+              },
+              {
+                "word": "aduki bean",
+                "substitution": true,
+              },
+              {
+                "word": "azuki bean",
+                "substitution": true,
+              },
+              {
+                "word": "red bean",
+                "substitution": true,
+              },
+              {
+                "word": "red mung bean",
+                "substitution": true,
               },
             ],
         },

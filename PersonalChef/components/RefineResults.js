@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
-// import * as data from './keywordExceptions.json';
 import { FindIngredient, FindExceptions, CheckRecipeIngredientLength } from './regexFunctions.js';
+
 import * as kw_a from './KeywordExceptions/a.json';
 import * as kw_b from './KeywordExceptions/b.json';
 import * as kw_c from './KeywordExceptions/c.json';
@@ -29,6 +29,10 @@ import * as kw_x from './KeywordExceptions/x.json';
 import * as kw_y from './KeywordExceptions/y.json';
 import * as kw_z from './KeywordExceptions/z.json';
 
+
+
+
+
 const keys = { "a": kw_a.ingredients,"b": kw_b.ingredients,'c': kw_c.ingredients,"d": kw_d.ingredients,"e": kw_e.ingredients,"f": kw_f.ingredients,"g": kw_g.ingredients,
                "h": kw_h.ingredients,"i": kw_i.ingredients,"j": kw_j.ingredients,"k": kw_k.ingredients,"l": kw_l.ingredients,"m": kw_m.ingredients,"n": kw_n.ingredients,
                "o": kw_o.ingredients,"p": kw_p.ingredients,"q": kw_q.ingredients,"r": kw_r.ingredients,"s": kw_s.ingredients,"t": kw_t.ingredients,"u": kw_u.ingredients,
@@ -47,9 +51,6 @@ const RefineResults = props => {
   for(x in ten_pages){
     console.log(x + ". " + ten_pages[x]["from"])
   }
-  //
-  // var exceptions_key = data.key
-  // var exceptions = data.ingredients
 
   var user_ingredients = props.userIngredients
   var user_ings_length = props.maxIngredients
@@ -145,15 +146,12 @@ const RefineResults = props => {
                                        var p
                                        var q
 
+                                   // Finds 'include' words for user's ingredient in keywordExceptions:
                                        var first_letter = user_ingredients[y][0]
-                                       // console.log('^^^^ ingredient: ' + user_ingredients[y])
-                                       // console.log('^^^^ first_letter: ' + first_letter)
-
                                        var exceptions = keys[`${first_letter}`]
 
                                        for(p in exceptions){
                                            var name = exceptions[p]['name']
-                                           // console.log('++++ exceptions[p]["name"]: ' + exceptions[p]["name"])
                                            if(name === user_ingredients[y]){
                                                is_key = true
                                                var include = exceptions[p]['include']
@@ -377,15 +375,12 @@ const RefineResults = props => {
                                             var p
                                             var q
 
+                                        // Finds 'include' words for user's ingredient in keywordExceptions:
                                             var first_letter = user_ingredients[ing][0]
-                                            // console.log('^^^^ ingredient: ' + user_ingredients[ing])
-                                            // console.log('^^^^ first_letter: ' + first_letter)
-
                                             var exceptions = keys[`${first_letter}`]
 
                                             for(p in exceptions){
                                                 var name = exceptions[p]['name']
-                                                // console.log('++++ exceptions[p]["name"]: ' + name)
                                                 if(name === user_ingredients[ing]){
                                                     is_key = true
                                                     var include = exceptions[p]['include']
@@ -583,15 +578,12 @@ const RefineResults = props => {
                                     var p
                                     var q
 
+                                // Finds 'include' words for user's ingredient in keywordExceptions:
                                     var first_letter = user_ingredients[ing][0]
-                                    // console.log('^^^^ ingredient: ' + user_ingredients[y])
-                                    // console.log('^^^^ first_letter: ' + first_letter)
-
                                     var exceptions = keys[`${first_letter}`]
 
                                     for(p in exceptions){
                                         var name = exceptions[p]['name']
-                                        // console.log('++++ exceptions[p]["name"]: ' + name)
                                         if(name === user_ingredients[ing]){
                                             is_key = true
                                             var include = exceptions[p]['include']

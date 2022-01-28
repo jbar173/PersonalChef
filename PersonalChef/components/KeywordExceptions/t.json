@@ -14,7 +14,7 @@
 
 
               "~~~ HALF DONE : ~~~",
-              "tartare sauce",
+              "tartare sauce", "thai green curry sauce", "thai red curry sauce",
 
 
               "~~~ TO DO : ~~~",
@@ -25,12 +25,12 @@
               "thai basil",
               "tomato soup", "tapioca pudding",
 
-              "tabasco", "tagine paste", "tahini", "tahini sesame sauce", "tamarind sauce", "tandoori paste", "teriyaki sauce", "tikka sauce",
-              "thai green curry sauce", "thai red curry sauce", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste",
-              "truffle mayonnaise", "truffle oil", "tuna pasta sauce", "tuna paste",
+              "tabasco", "tagine paste", "tahini", "tahini sesame sauce", "tamarind sauce", "tandoori paste", "teriyaki sauce",
+              "thousand island dressing", "tomato ketchup", "tomato stock",
+              "tom yum paste", "truffle mayonnaise", "truffle oil", "tuna pasta sauce", "tuna paste",
 
               "tomato juice",
-              "taramasalata", "tiramisu", "toffee popcorn", "toffee sundae", "tomato potato chips", "tortelloni", "trifle", "twiglets", "tzatziki",
+              "taramasalata", "tiramisu", "toffee popcorn", "toffee sundae", "tortelloni", "trifle", "twiglets", "tzatziki",
 
     ],
 
@@ -38,6 +38,37 @@
     "ingredients": [
 
 
+
+          {
+              "name": "thai red curry sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "red curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "red curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "thai green curry sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "green curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "green curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "tikka sauce",
               "exclude": [
@@ -49,11 +80,15 @@
                 },
                 {
                   "word": "tikka masala paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "tikka curry paste",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "medium curry paste",
+                  "substitution": true,
                 },
               ],
           },
@@ -813,6 +848,38 @@
                 {
                   "word": "marinara",
                   "substitution": false,
+                },
+                {
+                  "word": "arrabiata sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "bolognaise sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "casserole sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "butter chicken cooking sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "butter chicken sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tomato paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "tomato and chilli paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli and tomato paste",
+                  "substitution": true,
                 },
               ],
           },

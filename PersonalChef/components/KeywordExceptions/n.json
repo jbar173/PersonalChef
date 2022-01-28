@@ -22,6 +22,18 @@
     "ingredients": [
 
 
+
+          {
+              "name": "nasi goreng paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "nasi goreng malay paste",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "navy beans",
               "exclude": [
@@ -60,17 +72,6 @@
                 {
                   "word": "white kidney bean",
                   "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "nasi goreng paste",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "nasi goreng malay paste",
-                  "substitution": false,
                 },
               ],
           },

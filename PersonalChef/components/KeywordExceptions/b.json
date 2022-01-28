@@ -1,6 +1,6 @@
 {
 
-    "key" : ["beer","banana flavoured spirit/liqueur","blueberry flavoured spirit/liqueur","brandy",
+    "key" : ["banana flavoured spirit/liqueur","beer","bitters","blueberry flavoured spirit/liqueur","brandy",
              "brie","blue cheese",
              "buttercream",
              "baking powder","baking soda","breadcrumbs","breadsticks","bread loaf","bread wraps","brazil nuts",
@@ -8,15 +8,16 @@
              "banana","beetroot","beet","bell pepper","broccoli","beansprouts","broad beans","blackberries","butternut squash",
              "beetroot powder","black cardamom",
              "black-eyed peas","borlotti beans","butter beans",
-             "beef stock","barbeque sauce",
+             "balti sauce","barbeque sauce","beef stock","bhuna sauce",
              "butter",
 
 
              "~~~ HALF DONE : ~~~",
              "blackberry flavoured spirit/liqueur", "blackcurrant flavoured spirit/liqueur", "butterscotch flavoured spirit/liqueur",
              "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
+             "breaded fish fillets",
              "barbeque seasoning",
-             "balti sauce", "basil puree", "black bean paste",
+             "basil puree", "black bean paste",
              "berry cordial", "blackcurrant tea",
              "bombay mix",
 
@@ -28,17 +29,17 @@
              "bourbon biscuits", "bounty", "butterscotch mousse",
 
              "batter mix", "bran flakes", "bread dough", "buckwheat",
-             "basa", "breaded fish fillets",
+             "basa",
              "blueberries",
              "biltong", "bresaola",
              "baharat seasoning", "bay leaf", "bouquet garni",
              "buttermilk",
              "baked beans", "black beans", "black cherries",
 
-             "balsamic vinegar", "baconnaise", "beetroot pesto", "blue cheese dressing", "bhuna sauce", "biryani masala", "bolognaise sauce", "bread sauce",
-             "brown sauce", "burger sauce", "butter chicken cooking sauce",
+             "balsamic vinegar", "baconnaise", "beetroot pesto", "blue cheese dressing", "biryani masala", "bread sauce",
+             "brown sauce", "burger sauce",
 
-             "banana milkshake", "beetroot juice", "berry tea", "black tea", "bacon potato chips", "barbeque potato chips", "beef potato chips", "bread and butter pudding",
+             "banana milkshake", "beetroot juice", "berry tea", "black tea",
     ],
 
 
@@ -47,6 +48,82 @@
 
 
 
+      {
+          "name": "bitters",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "amaro",
+              "substitution": true,
+            },
+            {
+              "word": "campari",
+              "substitution": true,
+            },
+            {
+              "word": "fernet",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "balti sauce",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "balti curry paste",
+              "substitution": true,
+            },
+            {
+              "word": "balti paste",
+              "substitution": true,
+            },
+            {
+              "word": "balti spice paste",
+              "substitution": true,
+            },
+            {
+              "word": "medium curry paste",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "bhuna sauce",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "bhuna curry paste",
+              "substitution": true,
+            },
+            {
+              "word": "bhuna paste",
+              "substitution": true,
+            },
+            {
+              "word": "bhuna spice paste",
+              "substitution": true,
+            },
+            {
+              "word": "medium curry paste",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "breaded fish fillets",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "fish fillet",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "butter beans",
           "exclude": [
@@ -258,17 +335,6 @@
           "include": [
             {
               "word": "basil paste",
-              "substitution": false,
-            },
-          ],
-      },
-      {
-          "name": "balti sauce",
-          "exclude": [
-          ],
-          "include": [
-            {
-              "word": "balti curry paste",
               "substitution": false,
             },
           ],
@@ -1306,6 +1372,10 @@
             },
             {
               "word": "hp sauce",
+              "substitution": true,
+            },
+            {
+              "word": "char siu sauce",
               "substitution": true,
             },
           ],

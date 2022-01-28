@@ -1,63 +1,94 @@
 {
 
-    "key" : ["champagne","cava","cherry flavoured spirit/liqueur","cider","coconut flavoured spirit/liqueur","cachaca",
-             "camembert","cheddar","cheese slice","comte","cottage cheese","cream cheese",
-             "caramel","candied orange","chocolate","chocolate custard","cocoa powder","custard",
-             "candlenuts","chestnuts","cashew nuts","crackers","cornstarch","cornmeal","couscous","cassava flour",
-             "chicken","chicken mince","cured sausage",
-             "cabbage","chard","chayote","chicory","chilli pepper","collard greens","courgette",
-             "chilli flakes","chilli powder","chinese five spice","cinnamon",
-             "cannellini beans","chickpeas",
-             "chicken stock","chilli paste","chilli sauce","chutney",
-             "cream","coconut milk","creme fraiche",
-             "coffee",
+    "key" : [ "champagne","cava","cherry flavoured spirit/liqueur","cider","coconut flavoured spirit/liqueur","cachaca",
+              "camembert","cheddar","cheese slice","comte","cottage cheese","cream cheese",
+              "caramel","candied orange","chocolate","chocolate custard","cocoa powder","custard",
+              "candlenuts","chestnuts","cashew nuts","crackers","cornstarch","cornmeal","couscous","cassava flour",
+              "chicken","chicken mince","cured sausage",
+              "cabbage","chard","chayote","chicory","chilli pepper","collard greens","courgette",
+              "chilli flakes","chilli powder","chinese five spice","cinnamon",
+              "cannellini beans","chickpeas",
+              "chicken stock","chilli paste","chilli sauce","chutney",
+              "cream","coconut milk","creme fraiche",
+              "coffee",
 
 
-             "~~~ HALF DONE : ~~~",
-             "caramel flavoured spirit/liqueur","cinnamon flavoured spirit/liqueur","coffee flavoured spirit/liqueur",
-             "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","crystallised ginger",
-             "corned beef",
-             "chilli chutney relish", "chilli infused oil", "coriander puree",
-             "camomile tea", "coca cola",
+              "~~~ HALF DONE : ~~~",
+              "caramel flavoured spirit/liqueur","cinnamon flavoured spirit/liqueur","coffee flavoured spirit/liqueur",
+              "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","chocolate sponge","crystallised ginger",
+              "corned beef",
+              "char siu sauce", "chilli chutney relish", "chilli infused oil", "coriander puree",
+              "camomile tea", "coca cola",
 
 
-             "~~~ TO DO : ~~~",
-             "campari", "chocolate flavoured spirit/liqueur",
-             "colby","curd cheese",
+              "~~~ TO DO : ~~~",
+              "campari", "cognac", "chocolate flavoured spirit/liqueur",
+              "colby","curd cheese",
 
-             "cacao nibs", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel syrup", "caramel wafer",
-             "carrot cake", "cherry compote", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies",
-             "chocolate cookie dough", "chocolate decorating icing", "chocolate drops", "chocolate eclairs", "chocolate ganache",
-             "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
-             "chocolate sauce", "chocolate sponge", "chocolate sprinkles", "chocolate wafers", "cocoa powder", "coconut bar", "coconut biscuits",
-             "coconut macaroons", "coco pops", "cola laces", "coloured dusting sugar", "condensed milk", "cookie mix", "cream egg", "crunchie bar",
-             "crunchy cream biscuits", "custard creams", "custard powder",
+              "cacao nibs", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel syrup", "caramel wafer",
+              "cherry compote", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies",
+              "chocolate cookie dough", "chocolate decorating icing", "chocolate drops", "chocolate ganache",
+              "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
+              "chocolate sauce", "chocolate sprinkles", "chocolate wafers", "cocoa powder", "coconut bar", "coconut biscuits",
+              "coconut macaroons", "coco pops", "cola laces", "coloured dusting sugar", "condensed milk", "cookie mix", "cream egg", "crunchie bar",
+              "crunchy cream biscuits", "custard creams", "custard powder",
 
-             "cheese puffs", "chia seeds", "chocolate cereal", "cornflakes", "croutons", "crumpits",
-             "caviar", "cod", "cockles", "crab", "crayfish",
-             "carrot", "cauliflower", "cauliflower rice", "celeriac", "celery", "cherries", "choi sum", "clementine", "cress", "cucumber",
+              "chia seeds", "chocolate cereal", "cornflakes", "croutons", "crumpits",
+              "caviar", "cod", "cockles", "crab", "crayfish",
+              "carrot", "cauliflower", "cauliflower rice", "celeriac", "celery", "cherries", "choi sum", "clementine", "cress", "cucumber",
 
-             "cajun spice", "caraway seeds", "cayenne", "celery salt", "celery seeds", "chana masala", "chicken seasoning", "chives",
-             "cinnamon", "cinnamon sticks", "cloves", "coriander seeds", "cumin seeds", "curry powder",
+              "cajun spice", "caraway seeds", "cayenne", "celery salt", "celery seeds", "chana masala", "chicken seasoning", "chives",
+              "cinnamon", "cinnamon sticks", "cloves", "coriander seeds", "cumin seeds", "curry powder",
 
-             "caperberries", "capers", "canned chipotles", "cheddar cheese soup", "chicken soup", "chilli bean soup", "chowder",
+              "caperberries", "capers", "canned chipotles", "cheddar cheese soup", "chicken soup", "chowder",
 
-             "caesar dressing", "cantonese sauce", "carbonara sauce", "cashew butter", "casserole sauce", "char sui sauce", "cheese and onion pasta sauce",
-             "cheese sauce", "chermoula", "chestnut puree", "chicken masala", "chicken paste", "chilli and basil sauce", "chilli and lime sauce",
-             "chilli con carne sauce", "chilli garlic curry paste", "chilli mayonnaise", "chilli pesto", "chilli soy sauce", "chinese stir fry sauce",
-             "chipotle burger sauce", "coconut milk powder", "chow mein sauce", "coconut oil", "cranberry sauce", "curry sauce",
+              "caesar dressing", "cantonese sauce", "carbonara sauce", "cashew butter", "cheese and onion pasta sauce",
+              "cheese sauce", "chermoula", "chestnut puree", "chicken paste", "chilli and basil sauce", "chilli and lime sauce",
+              "chilli garlic curry paste", "chilli mayonnaise", "chilli pesto", "chilli soy sauce", "chipotle burger sauce",
+              "coconut milk powder", "chow mein sauce", "coconut oil", "cranberry sauce", "curry sauce",
 
-             "caramel milkshake", "carrot juice", "chai tea", "cherry cola", "cherry lemonade", "cherry tea","chocolate milkshake", "cocoa", "coconut water", "coffee",
-             "cookie dough milkshake", "cranberry tea", "cream soda",
+              "caramel milkshake", "carrot juice", "chai tea", "cherry cola", "cherry lemonade", "cherry tea", "chocolate milkshake", "cocoa", "coconut water",
+              "coffee", "cookie dough milkshake", "cranberry tea", "cream soda",
 
-             "cheese puffs",
+              "cheese puffs",
 
-    ],
+            ],
 
 
     "ingredients": [
 
 
+
+        {
+            "name": "char siu sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "barbeque sauce",
+                "substitution": true,
+              },
+              {
+                "word": "bbq sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate sponge",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate swiss roll",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate cake",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "cranberry tea",
             "exclude": [

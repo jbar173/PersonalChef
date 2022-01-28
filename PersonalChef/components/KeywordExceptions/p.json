@@ -3,7 +3,7 @@
     "key" : [ "pear flavoured spirit/liqueur","peach flavoured spirit/liqueur","plum flavoured spirit/liqueur","passion fruit flavoured spirit/liqueur","prosecco",
               "parmesan","pecorino","provolone",
               "passion fruit jam","passion fruit jelly","peach jam","peach jelly","pineapple jam","pineapple jelly","plum jam","plum jelly",
-              "peanuts","pine nuts","pecans","pasta","polenta","pumpkin seeds","pork scratchings","plain potato chips","pearled barley","pizza dough",
+              "peanuts","pine nuts","pecans","pasta","polenta","pumpkin seeds","pork scratchings","potato chips","pearled barley","pizza dough",
               "prosciutto","pork","pulled pork","pork trotter","pate",
               "parsnip","pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
               "pepper","pork seasoning","parsley",
@@ -1209,7 +1209,7 @@
               ],
           },
           {
-              "name": "plain potato chips",
+              "name": "potato chips",
               "exclude": [
                 {
                   "word": "chocolate",

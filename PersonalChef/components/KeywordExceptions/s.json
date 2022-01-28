@@ -17,9 +17,10 @@
               "stout",
               "sweetener",
               "short grain rice",
+              "sardines",
               "spicy brown mustard",  "sweet and sour sauce",  "sweet chilli and garlic", "sweet chilli sauce", "sweet pickle relish",
               "strawberry milkshake",
-              "salted popcorn", "spicy chilli potato chips", "sweet popcorn",
+              "salted popcorn", "sweet popcorn",
 
 
               "~~~ TO DO : ~~~",
@@ -30,20 +31,20 @@
               "strawberry sauce", "strawberry shoelaces", "sugar syrup", "sultanas", "syrup sponge",
 
               "scone mix", "scones", "self raising flour", "sesame seeds", "shortcrust pastry", "shreddies", "spelt flour", "sunflower seeds",
-              "salmon", "sardines", "scallops", "seabass", "seafood stick", "sild", "smoked rainbow trout", "smoked salmon", "sole", "sprat", "squid",
+              "salmon", "scallops", "seabass", "seafood stick", "sild", "smoked rainbow trout", "smoked salmon", "sole", "sprat", "squid",
 
               "samphire", "satsuma", "smoked garlic", "sprouts", "strawberries",
               "saffron", "seaweed seasoning", "shawarma seasoning", "smokey spice", "sorrel", "spirulina powder", "star anise", "steak seasoning",
 
               "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut", "seafood sauce", "sesame oil", "smoky onion relish",
-              "smoked paprika pesto", "smoky red pepper dressing", "spaghetti hoops", "sunflower oil", "sweet chilli and garlic", "sweet piccalilli",
+              "smoked paprika pesto", "smoky red pepper dressing", "spaghetti hoops", "stir fry sauce", "sunflower oil", "sweet chilli and garlic", "sweet piccalilli",
               "sweet pickle relish",
 
               "strawberry tea", "strawberry milkshake",
 
-              "salmon sushi", "salt and vinegar potato chips", "salted caramel mousse", "sausage roll", "seaweed thins", "sev mamra", "sorbet",
-              "sour cream and onion potato chips", "spicy green peas and peanuts", "spring rolls", "steak potato chips", "stuffing", "sunflower spread",
-              "sweet chilli biscuits", "sweet chilli potato chips", "sweet and salted popcorn", "sweet potato fries",
+              "salmon sushi", "salted caramel mousse", "sausage roll", "seaweed thins", "sev mamra", "sorbet",
+              "spicy green peas and peanuts", "spring rolls", "stuffing", "sunflower spread",
+              "sweet chilli biscuits", "sweet and salted popcorn", "sweet potato fries",
               "spinach puree", "summer fruit filling",
 
 
@@ -53,6 +54,25 @@
     "ingredients": [
 
 
+          {
+              "name": "sardines",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sardine",
+                  "substitution": false,
+                },
+                {
+                  "word": "anchovy",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovies",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "strawberry milkshake",
               "exclude": [
@@ -215,34 +235,6 @@
               "include": [
                 {
                   "word": "popping corn",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "spicy chilli potato chips",
-              "exclude": [
-                {
-                  "word": "sauce",
-                },
-                {
-                  "word": "seasoning",
-                },
-                {
-                  "word": "paste",
-                },
-              ],
-              "include": [
-                {
-                  "word": "chilli potato chips",
-                  "substitution": false,
-                },
-                {
-                  "word": "flamin hot",
-                  "substitution": false,
-                },
-                {
-                  "word": "hot n spicy",
                   "substitution": false,
                 },
               ],

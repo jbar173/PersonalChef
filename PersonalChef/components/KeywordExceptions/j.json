@@ -2,16 +2,16 @@
 
     "key" : ["jarlsberg",
              "jerusalem artichoke",
+             "jalfrezi sauce",
 
 
              "~~~ HALF DONE : ~~~",
-             "jammy dodgers","jazzies",
-             "jalfrezi sauce",
+             "jammy dodgers", "jam tart", "jazzies",
 
 
              "~~~ TO DO : ~~~",
              "jagermeister",
-             "jaffa cakes", "jam tart", "jelly beans", "jelly tots",
+             "jaffa cakes", "jelly beans", "jelly tots",
              "jerk seasoning", "juniper berries",
              "jerk sauce",
              "jasmine tea",
@@ -22,6 +22,33 @@
     "ingredients": [
 
 
+
+        {
+            "name": "jam tart",
+            "exclude": [
+              {
+                "word": "onion",
+              },
+              {
+                "word": "chilli",
+              },
+              {
+                "word": "chili",
+              },
+              {
+                "word": "chorizo",
+              },
+              {
+                "word": "tomato",
+              },
+            ],
+            "include": [
+              {
+                "word": "jam",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "jalfrezi sauce",
             "exclude": [
@@ -29,11 +56,15 @@
             "include": [
               {
                 "word": "jalfrezi paste",
-                "substitution": false,
+                "substitution": true,
               },
               {
                 "word": "jalfrezi curry paste",
-                "substitution": false,
+                "substitution": true,
+              },
+              {
+                "word": "jalfrezi spice paste",
+                "substitution": true,
               },
               {
                 "word": "hot curry paste",

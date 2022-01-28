@@ -4,10 +4,11 @@
               "kamut flour",
               "kale","kiwi fruit","kohlrabi",
               "kidney beans",
+              "katsu cooking paste","keralan curry sauce","keralan curry paste",
 
 
               "~~~ HALF DONE : ~~~",
-              "katsu cooking paste", "korma sauce",
+              "korean barbeque sauce", "korma sauce",
 
 
               "~~~ TO DO : ~~~",
@@ -16,8 +17,8 @@
               "karela",
               "kofta seasoning",
               "kimchi",
-              "katsu curry sauce", "keralan coconut curry sauce", "keralan curry paste", "kimchi", "kolhapuri sauce",
-              "korean barbeque sauce", "korean sweet chilli sauce", "kung po sauce",
+              "katsu curry sauce", "kimchi", "kolhapuri sauce",
+              "korean sweet chilli sauce", "kung po sauce",
 
     ],
 
@@ -25,6 +26,101 @@
     "ingredients": [
 
 
+
+
+          {
+              "name": "katsu cooking paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "katsu curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "katsu paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "katsu spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "katsu sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "katsu curry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "keralan curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "keralan paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "keralan spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "keralan curry sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "keralan curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "keralan spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "korean barbeque sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "barbeque sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "barbecue sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "bbq sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "char siu sauce",
+                  "substitution": true,
+                },
+
+              ],
+          },
           {
               "name": "kohlrabi",
               "exclude": [
@@ -53,25 +149,6 @@
                 {
                   "word": "celeriac",
                   "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "katsu cooking paste",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "katsu curry paste",
-                  "substitution": false,
-                },
-                {
-                  "word": "katsu paste",
-                  "substitution": false,
-                },
-                {
-                  "word": "katsu sauce",
-                  "substitution": false,
                 },
               ],
           },

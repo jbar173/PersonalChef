@@ -1,6 +1,6 @@
 {
 
-    "key" : ["feta","fontina",
+    "key" : ["feta","fontina","fresh asiago",
              "fig jam","fig jelly","fruit cake","fruit loaf","fudge",
              "filo pastry","flour",
              "fig","fresh coconut","fresh cranberries","fresh ginger",
@@ -34,7 +34,7 @@
              "fruit cocktail",
              "fish masala", "fish stock", "french dressing", "french mustard",
              "faluda drink", "fennel tea",
-             "falafel", "flapjack",
+             "falafel",
 
     ],
 
@@ -43,6 +43,29 @@
 
 
 
+          {
+              "name": "fresh asiago",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mild cheddar",
+                  "substitution": true,
+                },
+                {
+                  "word": "white cheddar",
+                  "substitution": true,
+                },
+                {
+                  "word": "swiss cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "gruyere",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "fresh cherry juice",
               "exclude": [

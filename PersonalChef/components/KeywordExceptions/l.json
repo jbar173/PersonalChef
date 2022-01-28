@@ -5,7 +5,7 @@
               "lamb","lamb mince",
               "lemon","lime","lettuce","lemongrass",
               "lime leaves",
-              "lamb stock","lemon juice","lime mojo sauce",
+              "laksa sauce","lamb stock","lemon juice","lime mojo sauce",
               "lard",
               "lychee juice",
 
@@ -26,8 +26,8 @@
               "lamb's lettuce", "lychee",
               "lamb seasoning",
               "lentils",
-              "laksa sauce", "lemon and parsley sauce", "lemon butter sauce", "lime juice",
-              "lapsang tea", "lemon ice tea", "lucozade",
+              "lemon and parsley sauce", "lemon butter sauce", "lime juice",
+              "lapsang tea", "lemon ice tea", 
 
     ],
 
@@ -36,6 +36,29 @@
 
 
 
+        {
+            "name": "laksa sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "laksa curry paste",
+                "substitution": true,
+              },
+              {
+                "word": "laksa paste",
+                "substitution": true,
+              },
+              {
+                "word": "laksa spice paste",
+                "substitution": true,
+              },
+              {
+                "word": "medium curry paste",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "lime cola",
             "exclude": [

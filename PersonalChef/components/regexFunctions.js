@@ -185,7 +185,6 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
     var starts_or_ends_with = String.raw`\b`
 
     var result = false
-    // var exceptions = data.ingredients
     var exception_found = false
 
     var random_exclusions = exclusions.phrases
@@ -199,9 +198,7 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
     }
 
     for(l in ingredients){
-        console.log("@@@@@@@@@@@@")
         var first_letter = ingredients[l][0]
-        console.log("~~~~~~~~~~~~FIRST LETTER OF: " + ingredients[l] + " = " + first_letter)
         var next_ingredient = false
         var length = ingredients.length
         var words = []
@@ -247,7 +244,7 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
       }
 
 
-      //// If type = 'both' (ie. ingredient is_key (has exclusions listed in keywordExceptions) ):
+  //// If type = 'both' (ie. ingredient is_key (has exclusions listed in keywordExceptions) ):
 
       var exceptions = keys[`${first_letter}`]
 
@@ -256,11 +253,9 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
           if(next_ingredient){
               break;
           }
-          console.log('!!!!!!!!!!!!!!! exceptions[m]["name"]: ' + exceptions[m]["name"])
 
           if(exceptions[m]["name"] === ingredients[l]){
               var exclude = exceptions[m]['exclude']
-              // console.log('####### exceptions[m]["name"]: ' + exceptions[m]["name"])
 
               for(n in exclude){
                   words.push(exclude[n]['word'])
@@ -271,11 +266,10 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
 
                   words_count += 1
                   number = words_count+1
-                  // console.log("exclude word no." + number + " : " + words[c])
+
                   var ingredient = words[c]
                   var length_integer = parseInt(words.length)
                   var last_ind = length_integer-1
-                  // console.log("checking exception ingredient: " + ingredient)
 
                   // matching word is in the middle of the string:
                   var regex_one = new RegExp(`${no_extra_letters}${ingredient}${no_extra_letters}`)
@@ -298,13 +292,11 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,type) => {
                         ingredients_with_exceptions.push(ingredient)
                         console.log("Ingredient was " + ingredient + ", not " + ingredients[l])
                         console.log("in " + ingredient_lower)
-                        console.log("Next ingredient?: " + next_ingredient)
                         exception_found = true
                         next_ingredient = true
                         break;
                   }else if(exception_found === false && words_count === words.length-1){
                         next_ingredient = true
-                        console.log("***Next ingredient?: " + next_ingredient)
                         break;
                   }
 

@@ -15,7 +15,7 @@
              "edamame beans",
              "evaporated milk",
              "enchilada sauce", "english mustard", "ezme paste",
-             "earl grey tea", "energy drink",
+             "earl grey tea", 
              "egg alternative", "egg whites",
 
     ],
@@ -154,11 +154,175 @@
                 "word": "whole-egg mayonnaise",
               },
               {
+                "word": "egg pasta",
+              },
+              {
+                "word": "egg noodles",
+              },
+              {
+                "word": "egg macaroni",
+              },
+              {
+                "word": "egg cavatappi",
+              },
+              {
+                "word": "egg spaghetti",
+              },
+              {
+                "word": "egg penne",
+              },
+              {
+                "word": "egg ziti",
+              },
+              {
+                "word": "egg lasagne noodles",
+              },
+              {
+                "word": "egg bucatini",
+              },
+              {
+                "word": "egg pappardelle",
+              },
+              {
+                "word": "egg gemelli",
+              },
+              {
+                "word": "egg fusilli",
+              },
+              {
+                "word": "egg orecchiette",
+              },
+              {
+                "word": "egg malloreddus",
+              },
+              {
                 "word": "egg tagliatelle",
+              },
+              {
+                "word": "egg ditalini",
+              },
+              {
+                "word": "egg orzo",
+              },
+              {
+                "word": "egg casarecce",
+              },
+              {
+                "word": "egg farfalle",
+              },
+              {
+                "word": "egg rotini",
+              },
+              {
+                "word": "egg linguine",
+              },
+              {
+                "word": "egg capellini",
+              },
+              {
+                "word": "egg fettuccine",
+              },
+              {
+                "word": "egg mafaldine",
+              },
+              {
+                "word": "egg pizzoccheri",
+              },
+              {
+                "word": "egg trofie",
+              },
+              {
+                "word": "egg mostaccioli",
+              },
+              {
+                "word": "egg tortiglioni",
+              },
+              {
+                "word": "egg cannelloni",
+              },
+              {
+                "word": "egg cavatelli",
+              },
+              {
+                "word": "egg cappelletti",
+              },
+              {
+                "word": "egg bigoli",
+              },
+              {
+                "word": "egg tagliolini",
+              },
+              {
+                "word": "egg ravioli",
+              },
+              {
+                "word": "egg tortellini",
+              },
+              {
+                "word": "egg conchiglie",
+              },
+              {
+                "word": "egg calamarata",
+              },
+              {
+                "word": "egg spatzle",
+              },
+              {
+                "word": "egg maultasche",
+              },
+              {
+                "word": "egg fregula",
+              },
+              {
+                "word": "egg agnolotti",
+              },
+              {
+                "word": "egg paccheri",
+              },
+              {
+                "word": "egg tortelloni",
+              },
+              {
+                "word": "egg vermicelli",
+              },
+              {
+                "word": "egg garganelli",
+              },
+              {
+                "word": "egg strozzapreti",
+              },
+              {
+                "word": "egg scialetelli",
+              },
+              {
+                "word": "egg campanelle",
+              },
+              {
+                "word": "egg mezzelune",
+              },
+              {
+                "word": "egg pici",
+              },
+              {
+                "word": "egg rigatone",
+              },
+              {
+                "word": "egg reginette",
+              },
+              {
+                "word": "egg mafalde",
+              },
+              {
+                "word": "egg mafalda",
+              },
+              {
+                "word": "egg fresine",
+              },
+              {
+                "word": "egg trottole",
               },
             ],
             "include": [
-
             ],
           },
           {
