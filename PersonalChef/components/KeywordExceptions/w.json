@@ -5,6 +5,7 @@
               "walnuts","wonton wrappers",
               "water chestnut",
               "water chestnuts",
+              "walnut oil",
 
       "water",
 
@@ -18,7 +19,7 @@
               "weetabix",
               "watercress", "watermelon",
 
-              "walnut oil", "wasabi paste", "watercress sauce", "white sauce", "white wine stock",
+              "wasabi paste", "watercress sauce", "white sauce", "white wine stock",
               "wholegrain mustard", "worcestershire sauce",
 
               "white chocolate milkshake",
@@ -29,6 +30,25 @@
     "ingredients": [
 
 
+          {
+              "name": "walnut oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed oil",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "water chestnuts",
               "exclude": [

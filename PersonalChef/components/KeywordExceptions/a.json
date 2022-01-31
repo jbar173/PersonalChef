@@ -7,24 +7,20 @@
               "agave nectar","apricot jam","apricot jelly",
               "anchovies",
               "almonds","almond meal","almond flour",
-              "apple","apricot","avocado",
+              "ackee","apple","apricot","avocado",
               "allspice","asafoetida",
-              "achiote","ackee","almond butter","apple sauce",
+              "achiote","almond butter","apple sauce","avocado oil",
               "apple tea",
               "aquafaba","almond milk",
 
 
               "~~~ HALF DONE : ~~~",
+              "almond extract",
               "atta flour",
               "artichoke","asparagus","aubergine",
               "all purpose seasoning",
               "adzuki beans","apples","artichoke antipasti",
-              "aioli","apricot harissa paste","aubergine paste",
-
-
-              "~~~ TO DO : ~~~",
-              "almond extract", "apricot compote", "apple pectin",
-              "anchovy paste", "avocado oil",
+              "aioli","anchovy paste","apricot harissa paste","aubergine paste",
 
             ],
 
@@ -32,6 +28,73 @@
     "ingredients": [
 
 
+
+
+          {
+              "name": "avocado oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "coconut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia nut oil",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "anchovy paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shrimp paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "almond extract",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond paste",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "agave nectar",
               "exclude": [

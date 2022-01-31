@@ -2,7 +2,7 @@
 
     "key" : [ "vanilla extract","vanilla pod",
               "vine leaves",
-              "vegetable stock","vinegar",
+              "vegetable oil","vegetable stock","vinegar",
 
 
               "~~~ HALF DONE : ~~~",
@@ -15,7 +15,6 @@
               "vanilla bean paste", "vanilla essence", "vanilla sponge", "vanilla syrup",
               "venison",
 
-              "vegetable oil",
               "vanilla milkshake", "vegetable juice", "vimto",
               "vegetable chips", "vegetable sushi",
     ],
@@ -24,6 +23,25 @@
     "ingredients": [
 
 
+          {
+              "name": "vegetable oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "violet flavoured spirit/liqueur",
               "exclude": [

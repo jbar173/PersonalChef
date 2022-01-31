@@ -8,7 +8,7 @@
               "parsnip","pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
               "pepper","pork seasoning","parsley",
               "passata","pickles","pinto beans","pumpkin puree",
-              "pork stock","panang curry paste",
+              "pork stock","panang curry paste","peanut oil",
               "plain yoghurt","powdered milk",
 
 
@@ -36,7 +36,7 @@
               "paprika",
               "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage", "pickled walnuts",
 
-              "parsley sauce", "peanut butter", "peanut oil", "peppercorn sauce", "peri peri mayonnaise", "piccalilli", "pickled ginger", "piri piri sauce",
+              "parsley sauce", "peanut butter", "peppercorn sauce", "peri peri mayonnaise", "piccalilli", "pickled ginger", "piri piri sauce",
               "plum and hoisin sauce", "plum sauce", "pumpkin pesto",
 
               "peach tea", "pear tea", "pepsi cherry", "pineapple tea", "pink lemonade", "prune juice",
@@ -48,6 +48,53 @@
 
 
 
+          {
+              "name": "peanut oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "safflower oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "groundnut oil",
+                  "substitution": true,
+                },
+              ],
+          },
           {
             "name": "parsnip",
             "exclude": [

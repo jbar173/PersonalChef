@@ -8,7 +8,7 @@
               "cabbage","chard","chayote","chicory","chilli pepper","collard greens","courgette",
               "chilli flakes","chilli powder","chinese five spice","cinnamon",
               "cannellini beans","chickpeas",
-              "chicken stock","chilli paste","chilli sauce","chutney",
+              "canola oil","chicken stock","chilli paste","chilli sauce","chutney","coconut oil","corn oil",
               "cream","coconut milk","creme fraiche",
               "coffee",
 
@@ -45,7 +45,7 @@
               "caesar dressing", "cantonese sauce", "carbonara sauce", "cashew butter", "cheese and onion pasta sauce",
               "cheese sauce", "chermoula", "chestnut puree", "chicken paste", "chilli and basil sauce", "chilli and lime sauce",
               "chilli garlic curry paste", "chilli mayonnaise", "chilli pesto", "chilli soy sauce", "chipotle burger sauce",
-              "coconut milk powder", "chow mein sauce", "coconut oil", "cranberry sauce", "curry sauce",
+              "coconut milk powder", "chow mein sauce", "cranberry sauce", "curry sauce",
 
               "caramel milkshake", "carrot juice", "chai tea", "cherry cola", "cherry lemonade", "cherry tea", "chocolate milkshake", "cocoa", "coconut water",
               "coffee", "cookie dough milkshake", "cranberry tea", "cream soda",
@@ -59,6 +59,79 @@
 
 
 
+        {
+            "name": "corn oil",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "peanut oil",
+                "substitution": true,
+              },
+              {
+                "word": "safflower oil",
+                "substitution": true,
+              },
+              {
+                "word": "sunflower oil",
+                "substitution": true,
+              },
+              {
+                "word": "canola oil",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "canola oil",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "grapeseed oil",
+                "substitution": true,
+              },
+              {
+                "word": "rapeseed oil",
+                "substitution": true,
+              },
+              {
+                "word": "vegetable oil",
+                "substitution": true,
+              },
+              {
+                "word": "sunflower oil",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "coconut oil",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "olive oil",
+                "substitution": true,
+              },
+              {
+                "word": "grapeseed oil",
+                "substitution": true,
+              },
+              {
+                "word": "vegetable oil",
+                "substitution": true,
+              },
+              {
+                "word": "canola oil",
+                "substitution": true,
+              },
+              {
+                "word": "sunflower oil",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "char siu sauce",
             "exclude": [
@@ -2264,6 +2337,10 @@
               },
               {
                 "word": "labneh",
+                "substitution": true,
+              },
+              {
+                "word": "buttermilk",
                 "substitution": true,
               },
             ],

@@ -8,8 +8,8 @@
               "mint","mixed spice",
               "mixed beans",
 
-              "madras curry sauce","makhani sauce","mango pickle","massaman curry paste","medium curry paste","mild curry paste","miso",
-              "mustard",
+              "macadamia nut oil","madras curry sauce","makhani sauce","mango pickle","massaman curry paste","medium curry paste",
+              "mild curry paste","miso","mustard",
 
               "mango tea",
               "milk","margarine",
@@ -56,6 +56,29 @@
 
 
           {
+              "name": "macadamia nut oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "macadamia oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "madras curry sauce",
               "exclude": [
               ],
@@ -84,16 +107,8 @@
               ],
               "include": [
                 {
-                  "word": "makhani curry paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "makhani spice paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "makhani curry spice paste",
-                  "substitution": true,
+                  "word": "makhani",
+                  "substitution": false,
                 },
                 {
                   "word": "mild curry paste",

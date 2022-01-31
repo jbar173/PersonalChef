@@ -5,7 +5,7 @@
               "raspberry jam","raspberry jelly","raisins","rhubarb jam","rhubarb jelly","rice puffs","rose water",
               "rice","rice cracker","red lentils",
               "rocket",
-              "redcurrant jelly","red curry paste",
+              "redcurrant jelly","red curry paste","rapeseed oil","rice bran oil",
               "rice milk",
 
 
@@ -27,7 +27,7 @@
               "raspberries", "ratatouille", "redcurrants", "rhubarb",
               "ras el hanout", "red pepper flakes", "rosemary",
               "rice pudding", "roasted red peppers",
-              "ramen broth", "rapeseed oil", "red pesto", "red wine stock", "rendang curry paste", "rice bran oil", "rogan josh",
+              "ramen broth", "red pesto", "red wine stock", "rendang curry paste", "rogan josh",
               "raspberry tea", "ribena",
               "raita", "rassomalai", "rassogulla", "ravioli",
 
@@ -38,6 +38,48 @@
 
 
 
+          {
+              "name": "rice bran oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "peanut oil",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "rapeseed oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "radish",
               "exclude": [

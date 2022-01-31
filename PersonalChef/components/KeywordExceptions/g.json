@@ -6,7 +6,7 @@
               "gammon",
               "garlic","grapes","grapefruit","green beans",
               "garlic powder","green cardamom","ground cumin","ground ginger",
-              "green curry paste","guacamole",
+              "grapeseed oil","green curry paste","groundnut oil","guacamole",
 
 
               "~~~ HALF DONE : ~~~",
@@ -24,7 +24,7 @@
               "granola",
               "galangal",
               "garam masala", "garlic pepper", "ground mace",
-              "garlic and chilli oil", "ginger and miso sauce", "goose fat", "grapeseed oil", "gravy granules", "green pesto", "groundnut oil",
+              "garlic and chilli oil", "ginger and miso sauce", "goose fat", "gravy granules", "green pesto",
               "ginger ale", "ginger beer", "green tea", "grenadine syrup",
               "girasoli", "gnocchi", "goat's milk", "gyoza",
 
@@ -36,6 +36,61 @@
 
 
 
+
+          {
+              "name": "groundnut oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "peanut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower oil",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "grapeseed oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "coconut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "ginger tea",
               "exclude": [

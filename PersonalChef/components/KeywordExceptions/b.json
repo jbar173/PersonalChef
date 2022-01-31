@@ -6,17 +6,21 @@
              "baking powder","baking soda","breadcrumbs","breadsticks","bread loaf","bread wraps","brazil nuts",
              "beef","beef mince","black pudding","burger",
              "banana","beetroot","beet","bell pepper","broccoli","beansprouts","broad beans","blackberries","butternut squash",
-             "beetroot powder","black cardamom",
-             "black-eyed peas","borlotti beans","butter beans",
-             "balti sauce","barbeque sauce","beef stock","bhuna sauce",
-             "butter",
+             "baharat seasoning","beetroot powder","biryani masala","black cardamom","bouquet garni",
+             "baked beans","black beans","black-eyed peas","black cherries","borlotti beans","butter beans",
+
+             "baconnaise","balsamic vinegar","balti sauce","barbeque sauce","beef stock","beetroot pesto","bhuna sauce","blue cheese dressing",
+             "bread sauce","brown sauce","burger sauce","butter chicken cooking sauce",
+
+             "butter","buttermilk",
+             "banana milkshake","beetroot juice","berry tea","black tea",
 
 
              "~~~ HALF DONE : ~~~",
              "blackberry flavoured spirit/liqueur", "blackcurrant flavoured spirit/liqueur", "butterscotch flavoured spirit/liqueur",
              "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
              "breaded fish fillets",
-             "barbeque seasoning",
+             "barbeque seasoning","bay leaf",
              "basil puree", "black bean paste",
              "berry cordial", "blackcurrant tea",
              "bombay mix",
@@ -32,22 +36,392 @@
              "basa",
              "blueberries",
              "biltong", "bresaola",
-             "baharat seasoning", "bay leaf", "bouquet garni",
-             "buttermilk",
-             "baked beans", "black beans", "black cherries",
 
-             "balsamic vinegar", "baconnaise", "beetroot pesto", "blue cheese dressing", "biryani masala", "bread sauce",
-             "brown sauce", "burger sauce",
 
-             "banana milkshake", "beetroot juice", "berry tea", "black tea",
     ],
 
 
     "ingredients": [
 
 
-
-
+      {
+          "name": "baked beans",
+          "exclude": [
+          ],
+          "include": [
+          ],
+      },
+      {
+          "name": "bread sauce",
+          "exclude": [
+          ],
+          "include": [
+          ],
+      },
+      {
+          "name": "bay leaf",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "bay leave",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "bouquet garni",
+          "exclude": [
+          ],
+          "include": [
+          ],
+      },
+      {
+          "name": "baharat seasoning",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "lebanese 7 spice",
+              "substitution": false,
+            },
+            {
+              "word": "lebanese seven spice",
+              "substitution": false,
+            },
+            {
+              "word": "seven spices",
+              "substitution": false,
+            },
+            {
+              "word": "baharat",
+              "substitution": false,
+            },
+            {
+              "word": "garam masala",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "buttermilk",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "butter milk",
+              "substitution": false,
+            },
+            {
+              "word": "plain kefir",
+              "substitution": true,
+            },
+            {
+              "word": "plain yoghurt",
+              "substitution": true,
+            },
+            {
+              "word": "curd",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "black beans",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "turtle bean",
+              "substitution": false,
+            },
+            {
+              "word": "black bean",
+              "substitution": false,
+            },
+            {
+              "word": "adzuki bean",
+              "substitution": true,
+            },
+            {
+              "word": "aduki bean",
+              "substitution": true,
+            },
+            {
+              "word": "azuki bean",
+              "substitution": true,
+            },
+            {
+              "word": "red bean",
+              "substitution": true,
+            },
+            {
+              "word": "red mung bean",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "black cherries",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "cherries",
+              "substitution": false,
+            },
+            {
+              "word": "plum",
+              "substitution": true,
+            },
+            {
+              "word": "cranberries",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "butter chicken cooking sauce",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "butter chicken sauce",
+              "substitution": false,
+            },
+            {
+              "word": "butter chicken curry sauce",
+              "substitution": false,
+            },
+            {
+              "word": "mild curry paste",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "biryani masala",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "biryani spice",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "blue cheese dressing",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blue-cheese dressing",
+              "substitution": false,
+            },
+            {
+              "word": "blue cheese sauce",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "burger sauce",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "burger mayo",
+              "substitution": false,
+            },
+            {
+              "word": "burger mayonnaise",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "brown sauce",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "hp sauce",
+              "substitution": true,
+            },
+            {
+              "word": "a1 steak sauce",
+              "substitution": true,
+            },
+            {
+              "word": "worcestershire sauce",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "beetroot pesto",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "beetroot paste",
+              "substitution": true,
+            },
+            {
+              "word": "beetroot sauce",
+              "substitution": true,
+            },
+            {
+              "word": "beet paste",
+              "substitution": true,
+            },
+            {
+              "word": "beet pesto",
+              "substitution": true,
+            },
+            {
+              "word": "beetroot juice",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "baconnaise",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "mayonnaise",
+              "substitution": true,
+            },
+            {
+              "word": "mayo",
+              "substitution": true,
+            },
+            {
+              "word": "aioli",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "balsamic vinegar",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "vinegar",
+              "substitution": true,
+            },
+            {
+              "word": "vinaigrette",
+              "substitution": true,
+            },
+            {
+              "word": "vinigrette",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "banana milkshake",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "banana milk",
+              "substitution": false,
+            },
+            {
+              "word": "banana smoothie",
+              "substitution": true,
+            },
+            {
+              "word": "banana cream",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "beetroot juice",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "beetroot pesto",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "berry tea",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "raspberry tea",
+              "substitution": false,
+            },
+            {
+              "word": "strawberry tea",
+              "substitution": false,
+            },
+            {
+              "word": "blueberry tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackberry tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant tea",
+              "substitution": false,
+            },
+            {
+              "word": "cranberry tea",
+              "substitution": false,
+            },
+            {
+              "word": "berries tea",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "black tea",
+          "exclude": [
+            {
+              "word": "fruit",
+            },
+            {
+              "word": "fruity",
+            },
+            {
+              "word": "green",
+            },
+            {
+              "word": "herbal",
+            },
+            {
+              "word": "infusion",
+            },
+            {
+              "word": "&",
+            },
+          ],
+          "include": [
+            {
+              "word": "teabag",
+              "substitution": false,
+            },
+            {
+              "word": "tea",
+              "substitution": false,
+            },
+          ],
+      },
       {
           "name": "bitters",
           "exclude": [

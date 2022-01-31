@@ -6,7 +6,7 @@
               "offal",
               "olives","onion","orange",
               "onion powder","oregano",
-              "oil",
+              "oil","olive oil", 
               "oat milk",
 
 
@@ -21,7 +21,7 @@
               "~~~ TO DO : ~~~",
               "oka",
               "orange chocolate", "orange food colouring", "oreos",
-              "olive oil", "onion and garlic pasta sauce", "onion gravy", "onion sauce", "oyster sauce",
+              "onion and garlic pasta sauce", "onion gravy", "onion sauce", "oyster sauce",
               "orange milkshake",
               "oatcakes", "oat yoghurt", "onion rings",
 
@@ -31,6 +31,26 @@
     "ingredients": [
 
 
+
+          {
+              "name": "olive oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower oil",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "orange cordial",
               "exclude": [

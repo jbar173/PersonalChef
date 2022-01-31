@@ -3,6 +3,7 @@
     "key" : ["elderflower flavoured spirit/liqueur",
              "emmental","edam",
              "endive",
+             "extra virgin olive oil",
              "egg",
 
 
@@ -15,7 +16,7 @@
              "edamame beans",
              "evaporated milk",
              "enchilada sauce", "english mustard", "ezme paste",
-             "earl grey tea", 
+             "earl grey tea",
              "egg alternative", "egg whites",
 
     ],
@@ -25,6 +26,17 @@
 
 
 
+          {
+              "name": "extra virgin olive oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "elderflower cordial",
               "exclude": [

@@ -8,7 +8,7 @@
               "salad leaves","shallot","soffrito mix","spinach","spring onions","summer squash","swede","sweet potato",
               "smoked paprika","salt","shichimi",
               "sun-dried tomatoes", "sweetcorn",
-              "salsa","soy sauce",
+              "safflower oil","salsa","sesame oil","soy sauce","sunflower oil",
               "soy milk","soured cream","shortening",
               "sparkling water",
 
@@ -36,8 +36,8 @@
               "samphire", "satsuma", "smoked garlic", "sprouts", "strawberries",
               "saffron", "seaweed seasoning", "shawarma seasoning", "smokey spice", "sorrel", "spirulina powder", "star anise", "steak seasoning",
 
-              "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut", "seafood sauce", "sesame oil", "smoky onion relish",
-              "smoked paprika pesto", "smoky red pepper dressing", "spaghetti hoops", "stir fry sauce", "sunflower oil", "sweet chilli and garlic", "sweet piccalilli",
+              "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut", "seafood sauce", "smoky onion relish",
+              "smoked paprika pesto", "smoky red pepper dressing", "spaghetti hoops", "stir fry sauce", "sweet chilli and garlic", "sweet piccalilli",
               "sweet pickle relish",
 
               "strawberry tea", "strawberry milkshake",
@@ -54,6 +54,63 @@
     "ingredients": [
 
 
+          {
+              "name": "safflower oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "corn oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower oil",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sunflower oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sesame oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "sardines",
               "exclude": [
