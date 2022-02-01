@@ -4,21 +4,26 @@
               "camembert","cheddar","cheese slice","comte","cottage cheese","cream cheese",
               "caramel","candied orange","chocolate","chocolate custard","cocoa powder","custard",
               "candlenuts","chestnuts","cashew nuts","crackers","cornstarch","cornmeal","couscous","cassava flour",
-              "chicken","chicken mince","cured sausage",
+              "chicken","chicken mince","cured sausage/meat",
               "cabbage","chard","chayote","chicory","chilli pepper","collard greens","courgette",
               "chilli flakes","chilli powder","chinese five spice","cinnamon",
               "cannellini beans","chickpeas",
-              "canola oil","chicken stock","chilli paste","chilli sauce","chutney","coconut oil","corn oil",
-              "cream","coconut milk","creme fraiche",
-              "coffee",
+
+              "canola oil","cantonese sauce","carbonara sauce","cashew butter","cashew paste","chicken stock","chilli paste","chilli sauce",
+              "chutney","coconut oil","corn oil","cranberry sauce",
+
+              "cheese puffs","coconut milk","cream","creme fraiche",
+              "caramel milkshake","cherry lemonade","chocolate milkshake","coconut water","cocoa","coffee","cream soda",
 
 
               "~~~ HALF DONE : ~~~",
               "caramel flavoured spirit/liqueur","cinnamon flavoured spirit/liqueur","coffee flavoured spirit/liqueur",
               "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","chocolate sponge","crystallised ginger",
               "corned beef",
-              "char siu sauce", "chilli chutney relish", "chilli infused oil", "coriander puree",
-              "camomile tea", "coca cola",
+              "caesar dressing","char siu sauce","chilli chutney relish","chilli infused oil","coriander puree",
+              "camomile tea","carrot juice","chai tea","cherry tea","coca cola","cookie dough milkshake","cranberry tea",
+
+
 
 
               "~~~ TO DO : ~~~",
@@ -26,12 +31,11 @@
               "colby","curd cheese",
 
               "cacao nibs", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel syrup", "caramel wafer",
-              "cherry compote", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies",
-              "chocolate cookie dough", "chocolate decorating icing", "chocolate drops", "chocolate ganache",
-              "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
-              "chocolate sauce", "chocolate sprinkles", "chocolate wafers", "cocoa powder", "coconut bar", "coconut biscuits",
-              "coconut macaroons", "coco pops", "cola laces", "coloured dusting sugar", "condensed milk", "cookie mix", "cream egg", "crunchie bar",
-              "crunchy cream biscuits", "custard creams", "custard powder",
+              "cherry compote", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies","chocolate cookie dough", "chocolate decorating icing",
+              "chocolate drops", "chocolate ganache", "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts",
+              "chocolate raisins", "chocolate sauce", "chocolate sprinkles", "chocolate wafers", "coconut bar", "coconut biscuits", "coconut macaroons",
+              "coco pops", "cola laces", "coloured dusting sugar", "condensed milk", "cookie mix", "cream egg", "crunchie bar", "crunchy cream biscuits",
+              "custard creams", "custard powder",
 
               "chia seeds", "chocolate cereal", "cornflakes", "croutons", "crumpits",
               "caviar", "cod", "cockles", "crab", "crayfish",
@@ -42,15 +46,10 @@
 
               "caperberries", "capers", "canned chipotles", "cheddar cheese soup", "chicken soup", "chowder",
 
-              "caesar dressing", "cantonese sauce", "carbonara sauce", "cashew butter", "cheese and onion pasta sauce",
-              "cheese sauce", "chermoula", "chestnut puree", "chicken paste", "chilli and basil sauce", "chilli and lime sauce",
-              "chilli garlic curry paste", "chilli mayonnaise", "chilli pesto", "chilli soy sauce", "chipotle burger sauce",
-              "coconut milk powder", "chow mein sauce", "cranberry sauce", "curry sauce",
+              "cheese and onion pasta sauce", "cheese sauce", "chermoula", "chestnut puree", "chicken paste",
+              "chilli and basil sauce", "chilli and lime sauce", "chilli garlic curry paste", "chilli mayonnaise", "chilli pesto", "chilli soy sauce", "chipotle burger sauce",
+              "coconut milk powder", "chow mein sauce", "curry sauce",
 
-              "caramel milkshake", "carrot juice", "chai tea", "cherry cola", "cherry lemonade", "cherry tea", "chocolate milkshake", "cocoa", "coconut water",
-              "coffee", "cookie dough milkshake", "cranberry tea", "cream soda",
-
-              "cheese puffs",
 
             ],
 
@@ -60,16 +59,656 @@
 
 
         {
+            "name": "cashew paste",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cashew butter",
+                "substitution": true,
+              },
+              {
+                "word": "cashew nut butter",
+                "substitution": true,
+              },
+              {
+                "word": "cashewnut butter",
+                "substitution": true,
+              },
+              {
+                "word": "cashew spread",
+                "substitution": true,
+              },
+              {
+                "word": "pine nut paste",
+                "substitution": true,
+              },
+              {
+                "word": "peanut butter",
+                "substitution": true,
+              },
+              {
+                "word": "walnut butter",
+                "substitution": true,
+              },
+              {
+                "word": "walnut paste",
+                "substitution": true,
+              },
+              {
+                "word": "hazelnut paste",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cashew butter",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cashew nut butter",
+                "substitution": false,
+              },
+              {
+                "word": "cashewnut butter",
+                "substitution": false,
+              },
+              {
+                "word": "cashew spread",
+                "substitution": false,
+              },
+              {
+                "word": "cashew paste",
+                "substitution": true,
+              },
+              {
+                "word": "peanut butter",
+                "substitution": true,
+              },
+              {
+                "word": "walnut butter",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "carbonara sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "carbonara pasta sauce",
+                "substitution": false,
+              },
+              {
+                "word": "cheese sauce",
+                "substitution": true,
+              },
+              {
+                "word": "alfredo",
+                "substitution": true,
+              },
+              {
+                "word": "bechamel",
+                "substitution": true,
+              },
+              {
+                "word": "white sauce",
+                "substitution": true,
+              },
+              {
+                "word": "lasagne sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cantonese sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chinese brown sauce",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cranberry sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cranberry jam",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry jelly",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry juice",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry chutney",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry relish",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry ketchup",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry compote",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry preserve",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry conserve",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry & port sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "caesar dressing",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "creamy caesar",
+                "substitution": false,
+              },
+              {
+                "word": "cesar dressing",
+                "substitution": false,
+              },
+              {
+                "word": "cesare dressing",
+                "substitution": false,
+              },
+              {
+                "word": "caesar sauce",
+                "substitution": false,
+              },
+              {
+                "word": "cesar sauce",
+                "substitution": false,
+              },
+              {
+                "word": "cesare sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caesar salad dressing",
+                "substitution": false,
+              },
+              {
+                "word": "coconut drink",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cherry lemonade",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cherryade",
+                "substitution": true,
+              },
+              {
+                "word": "lemonade",
+                "substitution": true,
+              },
+              {
+                "word": "raspberry lemonade",
+                "substitution": true,
+              },
+              {
+                "word": "strawberry lemonade",
+                "substitution": true,
+              },
+              {
+                "word": "berry lemonade",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry lemonade",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "coconut water",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coconut juice",
+                "substitution": false,
+              },
+              {
+                "word": "coconut drink",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cocoa",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cocoa powder",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cherry cola",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cherry coke",
+                "substitution": false,
+              },
+              {
+                "word": "pepsi max cherry",
+                "substitution": false,
+              },
+              {
+                "word": "cola",
+                "substitution": true,
+              },
+              {
+                "word": "coke",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "carrot juice",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "carrot drink",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "chai tea",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chai",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cherry tea",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cherry infusion",
+                "substitution": false,
+              },
+              {
+                "word": "cherry & orange infusion",
+                "substitution": true,
+              },
+              {
+                "word": "cherry & cinnamon tea",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry & raspberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry and raspberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "berry tea",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cookie dough milkshake",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cookie dough milk",
+                "substitution": false,
+              },
+              {
+                "word": "cookie dough smoothie",
+                "substitution": true,
+              },
+              {
+                "word": "cookie dough cream",
+                "substitution": true,
+              },
+              {
+                "word": "cookie dough drink",
+                "substitution": true,
+              },
+              {
+                "word": "caramel milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "caramel milk",
+                "substitution": true,
+              },
+              {
+                "word": "caramel smoothie",
+                "substitution": true,
+              },
+              {
+                "word": "caramel cream",
+                "substitution": true,
+              },
+              {
+                "word": "caramel drink",
+                "substitution": true,
+              },
+              {
+                "word": "condensed milk",
+                "substitution": true,
+              },
+              {
+                "word": "caramelised milk",
+                "substitution": true,
+              },
+              {
+                "word": "dulce de leche",
+                "substitution": true,
+              },
+              {
+                "word": "toffee milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "toffee milk",
+                "substitution": true,
+              },
+              {
+                "word": "toffee smoothie",
+                "substitution": true,
+              },
+              {
+                "word": "toffee cream",
+                "substitution": true,
+              },
+              {
+                "word": "toffee drink",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cream soda",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "creamy soda",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "chocolate milkshake",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate milk",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate smoothie",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate cream",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate drink",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "caramel milkshake",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caramel milk",
+                "substitution": false,
+              },
+              {
+                "word": "caramel smoothie",
+                "substitution": true,
+              },
+              {
+                "word": "caramel cream",
+                "substitution": true,
+              },
+              {
+                "word": "caramel drink",
+                "substitution": true,
+              },
+              {
+                "word": "condensed milk",
+                "substitution": true,
+              },
+              {
+                "word": "caramelised milk",
+                "substitution": true,
+              },
+              {
+                "word": "dulce de leche",
+                "substitution": true,
+              },
+              {
+                "word": "toffee milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "toffee milk",
+                "substitution": true,
+              },
+              {
+                "word": "toffee smoothie",
+                "substitution": true,
+              },
+              {
+                "word": "toffee cream",
+                "substitution": true,
+              },
+              {
+                "word": "toffee drink",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+          "name": "coffee",
+          "exclude": [
+            {
+              "word": "liqueur",
+            },
+            {
+              "word": "beans",
+            },
+            {
+              "word": "icecream",
+            },
+            {
+              "word": "ice cream",
+            },
+            {
+              "word": "biscuit",
+            },
+            {
+              "word": "cookie",
+            },
+            {
+              "word": "cake",
+            },
+            {
+              "word": "chocolate",
+            },
+            {
+              "word": "truffle",
+            },
+          ],
+          "include": [
+            {
+              "word": "espresso",
+              "substitution": false,
+            },
+          ],
+        },
+        {
+            "name": "cheese puffs",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cheese balls",
+                "substitution": false,
+              },
+              {
+                "word": "cheese ball puffs",
+                "substitution": false,
+              },
+              {
+                "word": "wotsits",
+                "substitution": false,
+              },
+              {
+                "word": "corn curls",
+                "substitution": false,
+              },
+              {
+                "word": "cheese curls",
+                "substitution": false,
+              },
+              {
+                "word": "cheese tasters",
+                "substitution": false,
+              },
+              {
+                "word": "cheesy puffs",
+                "substitution": false,
+              },
+            ],
+        },
+        {
             "name": "corn oil",
             "exclude": [
             ],
             "include": [
               {
+                "word": "hemp oil",
+                "substitution": true,
+              },
+              {
+                "word": "hemp seed oil",
+                "substitution": true,
+              },
+              {
+                "word": "flaxseed oil",
+                "substitution": true,
+              },
+              {
+                "word": "pumpkin seed oil",
+                "substitution": true,
+              },
+              {
+                "word": "walnut oil",
+                "substitution": true,
+              },
+              {
+                "word": "sesame oil",
+                "substitution": true,
+              },
+              {
+                "word": "borage seed oil",
+                "substitution": true,
+              },
+              {
+                "word": "coconut oil",
+                "substitution": true,
+              },
+              {
+                "word": "extra virgin olive oil",
+                "substitution": true,
+              },
+              {
+                "word": "avocado oil",
+                "substitution": true,
+              },
+              {
+                "word": "olive oil",
+                "substitution": true,
+              },
+              {
+                "word": "rice bran oil",
+                "substitution": true,
+              },
+              {
+                "word": "soybean oil",
+                "substitution": true,
+              },
+              {
+                "word": "ghee",
+                "substitution": true,
+              },
+              {
                 "word": "peanut oil",
                 "substitution": true,
               },
               {
-                "word": "safflower oil",
+                "word": "palm oil",
+                "substitution": true,
+              },
+              {
+                "word": "vegetable oil",
+                "substitution": true,
+              },
+              {
+                "word": "canola oil",
                 "substitution": true,
               },
               {
@@ -77,7 +716,35 @@
                 "substitution": true,
               },
               {
-                "word": "canola oil",
+                "word": "safflower oil",
+                "substitution": true,
+              },
+              {
+                "word": "grapeseed oil",
+                "substitution": true,
+              },
+              {
+                "word": "almond oil",
+                "substitution": true,
+              },
+              {
+                "word": "walnut oil",
+                "substitution": true,
+              },
+              {
+                "word": "macadamia oil",
+                "substitution": true,
+              },
+              {
+                "word": "macadamia nut oil",
+                "substitution": true,
+              },
+              {
+                "word": "hazelnut oil",
+                "substitution": true,
+              },
+              {
+                "word": "groundnut oil",
                 "substitution": true,
               },
             ],
@@ -111,11 +778,67 @@
             ],
             "include": [
               {
+                "word": "hemp oil",
+                "substitution": true,
+              },
+              {
+                "word": "hemp seed oil",
+                "substitution": true,
+              },
+              {
+                "word": "flaxseed oil",
+                "substitution": true,
+              },
+              {
+                "word": "pumpkin seed oil",
+                "substitution": true,
+              },
+              {
+                "word": "walnut oil",
+                "substitution": true,
+              },
+              {
+                "word": "sesame oil",
+                "substitution": true,
+              },
+              {
+                "word": "borage seed oil",
+                "substitution": true,
+              },
+              {
+                "word": "peanut oil",
+                "substitution": true,
+              },
+              {
+                "word": "extra virgin olive oil",
+                "substitution": true,
+              },
+              {
+                "word": "avocado oil",
+                "substitution": true,
+              },
+              {
                 "word": "olive oil",
                 "substitution": true,
               },
               {
-                "word": "grapeseed oil",
+                "word": "rice bran oil",
+                "substitution": true,
+              },
+              {
+                "word": "soybean oil",
+                "substitution": true,
+              },
+              {
+                "word": "ghee",
+                "substitution": true,
+              },
+              {
+                "word": "corn oil",
+                "substitution": true,
+              },
+              {
+                "word": "palm oil",
                 "substitution": true,
               },
               {
@@ -128,6 +851,38 @@
               },
               {
                 "word": "sunflower oil",
+                "substitution": true,
+              },
+              {
+                "word": "safflower oil",
+                "substitution": true,
+              },
+              {
+                "word": "grapeseed oil",
+                "substitution": true,
+              },
+              {
+                "word": "almond oil",
+                "substitution": true,
+              },
+              {
+                "word": "walnut oil",
+                "substitution": true,
+              },
+              {
+                "word": "macadamia oil",
+                "substitution": true,
+              },
+              {
+                "word": "macadamia nut oil",
+                "substitution": true,
+              },
+              {
+                "word": "hazelnut oil",
+                "substitution": true,
+              },
+              {
+                "word": "groundnut oil",
                 "substitution": true,
               },
             ],
@@ -168,11 +923,23 @@
             ],
             "include": [
               {
+                "word": "cranberry infusion",
+                "substitution": false,
+              },
+              {
                 "word": "cranberry & raspberry tea",
                 "substitution": true,
               },
               {
                 "word": "cranberry and raspberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "berry tea",
+                "substitution": true,
+              },
+              {
+                "word": "cherry tea",
                 "substitution": true,
               },
             ],
@@ -189,6 +956,14 @@
               {
                 "word": "pepsi max cherry",
                 "substitution": false,
+              },
+              {
+                "word": "cola",
+                "substitution": true,
+              },
+              {
+                "word": "coke",
+                "substitution": true,
               },
             ],
         },
@@ -214,6 +989,14 @@
             "include": [
               {
                 "word": "chamomile tea",
+                "substitution": false,
+              },
+              {
+                "word": "camomile infusion",
+                "substitution": false,
+              },
+              {
+                "word": "chamomile infusion",
                 "substitution": false,
               },
               {
@@ -1501,10 +2284,18 @@
             ],
         },
         {
-            "name": "cured sausage",
+            "name": "cured sausage/meat",
             "exclude": [
             ],
             "include": [
+              {
+                "word": "cured sausage",
+                "substitution": false,
+              },
+              {
+                "word": "cured meat",
+                "substitution": false,
+              },
               {
                 "word": "chorizo",
                 "substitution": false,
@@ -1539,6 +2330,14 @@
               },
               {
                 "word": "charcuterie",
+                "substitution": false,
+              },
+              {
+                "word": "bresaola",
+                "substitution": false,
+              },
+              {
+                "word": "biltong",
                 "substitution": false,
               },
               {
@@ -3435,7 +4234,18 @@
             },
           ],
           "include": [
-
+            {
+              "word": "creme anglaise",
+              "substitution": false,
+            },
+            {
+              "word": "vanilla cream",
+              "substitution": false,
+            },
+            {
+              "word": "vanilla sauce",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -3649,20 +4459,6 @@
               {
                 "word": "macadamia",
                 "substitution": true,
-              },
-            ],
-          },
-          {
-            "name": "coffee",
-            "exclude": [
-              {
-                "word": "coffee beans",
-              },
-            ],
-            "include": [
-              {
-                "word": "espresso",
-                "substitution": false,
               },
             ],
           },

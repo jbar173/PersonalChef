@@ -3,12 +3,12 @@
     "key" : [ "pear flavoured spirit/liqueur","peach flavoured spirit/liqueur","plum flavoured spirit/liqueur","passion fruit flavoured spirit/liqueur","prosecco",
               "parmesan","pecorino","provolone",
               "passion fruit jam","passion fruit jelly","peach jam","peach jelly","pineapple jam","pineapple jelly","plum jam","plum jelly",
-              "peanuts","pine nuts","pecans","pasta","polenta","pumpkin seeds","pork scratchings","potato chips","pearled barley","pizza dough",
+              "pancake mix","pasta","peanuts","pearled barley","pecans","pine nuts","pizza dough","polenta","pork scratchings","potato chips","pumpkin seeds",
               "prosciutto","pork","pulled pork","pork trotter","pate",
               "parsnip","pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
               "pepper","pork seasoning","parsley",
               "passata","pickles","pinto beans","pumpkin puree",
-              "pork stock","panang curry paste","peanut oil",
+              "palm oil","panang curry paste","peanut oil","pork stock",
               "plain yoghurt","powdered milk",
 
 
@@ -28,7 +28,7 @@
               "peanut bar", "peanut butter wafers", "peanut cookies", "peanut mnms", "pear drops", "peppermint extract", "pink food colouring",
               "popping candy", "pralines", "preserved lemons", "prunes", "purple food colouring",
 
-              "pancake mix", "pie mix", "pistachios", "pizza bases", "poppy seeds", "pork scratchings", "pretzel snacks", "puff pastry",
+              "pie mix", "pistachios", "pizza bases", "poppy seeds", "pork scratchings", "pretzel snacks", "puff pastry",
               "pangasius", "pilchards", "plaice", "pollock", "prawns",
 
               "pancetta", "pepperoni", "pigs in blankets", "porchetta",
@@ -49,10 +49,89 @@
 
 
           {
-              "name": "peanut oil",
+              "name": "pancake mix",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "batter mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "pancake batter",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "palm oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peanut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "borage seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "avocado oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice bran oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "soybean oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "ghee",
+                  "substitution": true,
+                },
+                {
+                  "word": "corn oil",
+                  "substitution": true,
+                },
                 {
                   "word": "vegetable oil",
                   "substitution": true,
@@ -83,6 +162,125 @@
                 },
                 {
                   "word": "macadamia oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia nut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "groundnut oil",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "peanut oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "hemp oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "borage seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "avocado oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice bran oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "soybean oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "ghee",
+                  "substitution": true,
+                },
+                {
+                  "word": "corn oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "palm oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "safflower oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia nut oil",
                   "substitution": true,
                 },
                 {

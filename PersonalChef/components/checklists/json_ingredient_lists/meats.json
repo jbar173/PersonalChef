@@ -1,8 +1,8 @@
 {
     "name": "meats_ingredients",
-    "ingredients": [  "bacon", "beef", "beef mince", "biltong", "black pudding", "bresaola", "burger",
+    "ingredients": [  "bacon", "beef", "beef mince", "black pudding", "burger",
 
-                      "chicken", "chicken mince", "corned beef", "cured sausage",
+                      "chicken", "chicken mince", "corned beef", "cured sausage/meat",
 
                       "duck",
 
@@ -20,7 +20,7 @@
 
                       "pate", "pancetta", "pepperoni", "pigs in blankets", "porchetta", "pork", "pork trotter", "prosciutto", "pulled pork",
 
-                      "sausage", "smoked sausage", "spam", "steak and kidney",
+                      "sausage", "smoked sausage/meat", "spam", "steak and kidney",
 
                       "turkey", "turkey mince",
 

@@ -6,7 +6,7 @@
               "gammon",
               "garlic","grapes","grapefruit","green beans",
               "garlic powder","green cardamom","ground cumin","ground ginger",
-              "grapeseed oil","green curry paste","groundnut oil","guacamole",
+              "ghee","grapeseed oil","green curry paste","groundnut oil","guacamole",
 
 
               "~~~ HALF DONE : ~~~",
@@ -38,12 +38,60 @@
 
 
           {
-              "name": "groundnut oil",
+              "name": "ghee",
               "exclude": [
               ],
               "include": [
                 {
-                  "word": "rapeseed oil",
+                  "word": "hemp oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "borage seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "avocado oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice bran oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "soybean oil",
                   "substitution": true,
                 },
                 {
@@ -51,11 +99,11 @@
                   "substitution": true,
                 },
                 {
-                  "word": "hazelnut oil",
+                  "word": "corn oil",
                   "substitution": true,
                 },
                 {
-                  "word": "macadamia oil",
+                  "word": "palm oil",
                   "substitution": true,
                 },
                 {
@@ -68,6 +116,153 @@
                 },
                 {
                   "word": "sunflower oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "safflower oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia nut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "groundnut oil",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "groundnut oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "hemp oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "borage seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "avocado oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice bran oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "soybean oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "ghee",
+                  "substitution": true,
+                },
+                {
+                  "word": "corn oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "palm oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "safflower oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia nut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "peanut oil",
                   "substitution": true,
                 },
               ],

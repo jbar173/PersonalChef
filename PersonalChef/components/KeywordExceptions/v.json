@@ -7,7 +7,7 @@
 
               "~~~ HALF DONE : ~~~",
               "vegetable fat", "veggie dip", "violet flavoured spirit/liqueur",
-
+              "vanilla milkshake",
 
 
               "~~~ TO DO : ~~~",
@@ -15,7 +15,7 @@
               "vanilla bean paste", "vanilla essence", "vanilla sponge", "vanilla syrup",
               "venison",
 
-              "vanilla milkshake", "vegetable juice", "vimto",
+              "vegetable juice", "vimto",
               "vegetable chips", "vegetable sushi",
     ],
 
@@ -23,6 +23,38 @@
     "ingredients": [
 
 
+
+          {
+              "name": "vanilla milkshake",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vanilla milk",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla smoothie",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "creme anglaise",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "vegetable oil",
               "exclude": [

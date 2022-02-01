@@ -1,12 +1,16 @@
 {
 
     "key" : ["banana flavoured spirit/liqueur","beer","bitters","blueberry flavoured spirit/liqueur","brandy",
-             "brie","blue cheese",
-             "buttercream",
-             "baking powder","baking soda","breadcrumbs","breadsticks","bread loaf","bread wraps","brazil nuts",
+             "bavarian smoked cheese","blue cheese","brie",
+
+             "banana custard","black food colouring","black treacle","blue food colouring","biscuit spread","boiled sweets","bounty","bourbon biscuits",
+             "buttercream","butterscotch mousse",
+
+             "baking powder","baking soda","batter mix","bran flakes","brazil nuts","breadcrumbs","breadsticks","bread loaf","bread wraps",
+             "basa",
              "beef","beef mince","black pudding","burger",
-             "banana","beetroot","beet","bell pepper","broccoli","beansprouts","broad beans","blackberries","butternut squash",
-             "baharat seasoning","beetroot powder","biryani masala","black cardamom","bouquet garni",
+             "banana","beetroot","beet","bell pepper","beansprouts","broad beans","broccoli","blackberries","blueberries","butternut squash",
+             "baharat seasoning","bay leaf","beetroot powder","biryani masala","black cardamom","bouquet garni",
              "baked beans","black beans","black-eyed peas","black cherries","borlotti beans","butter beans",
 
              "baconnaise","balsamic vinegar","balti sauce","barbeque sauce","beef stock","beetroot pesto","bhuna sauce","blue cheese dressing",
@@ -16,26 +20,22 @@
              "banana milkshake","beetroot juice","berry tea","black tea",
 
 
+
+
              "~~~ HALF DONE : ~~~",
              "blackberry flavoured spirit/liqueur", "blackcurrant flavoured spirit/liqueur", "butterscotch flavoured spirit/liqueur",
              "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
              "breaded fish fillets",
-             "barbeque seasoning","bay leaf",
+             "barbeque seasoning",
              "basil puree", "black bean paste",
              "berry cordial", "blackcurrant tea",
              "bombay mix",
 
 
              "~~~ TO DO : ~~~",
-             "bavarian smoked cheese",
 
-             "banana custard", "black food colouring", "black treacle", "blue food colouring", "biscuit spread", "boiled sweets",
-             "bourbon biscuits", "bounty", "butterscotch mousse",
+             "bread dough", "buckwheat",
 
-             "batter mix", "bran flakes", "bread dough", "buckwheat",
-             "basa",
-             "blueberries",
-             "biltong", "bresaola",
 
 
     ],
@@ -56,6 +56,316 @@
           "exclude": [
           ],
           "include": [
+          ],
+      },
+      {
+          "name": "bavarian smoked cheese",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "smoked cheese",
+              "substitution": false,
+            },
+            {
+              "word": "smoked german cheese",
+              "substitution": false,
+            },
+            {
+              "word": "bavarian smoked",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "butterscotch mousse",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "butterscotch whippy",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch dessert",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch cream",
+              "substitution": true,
+            },
+            {
+              "word": "butterscotch creme",
+              "substitution": true,
+            },
+            {
+              "word": "caramel mousse",
+              "substitution": true,
+            },
+            {
+              "word": "caramel whippy",
+              "substitution": true,
+            },
+            {
+              "word": "caramel dessert",
+              "substitution": true,
+            },
+            {
+              "word": "caramel cream",
+              "substitution": true,
+            },
+            {
+              "word": "caramel creme",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "bounty",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "coconut bar",
+              "substitution": false,
+            },
+            {
+              "word": "coconut candy bar",
+              "substitution": false,
+            },
+            {
+              "word": "chocolate coconut",
+              "substitution": false,
+            },
+            {
+              "word": "almond joy",
+              "substitution": true,
+            },
+            {
+              "word": "mounds",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "bourbon biscuits",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "bourbon biscuit",
+              "substitution": false,
+            },
+            {
+              "word": "bourbon cream biscuit",
+              "substitution": false,
+            },
+            {
+              "word": "chocolate biscuit",
+              "substitution": false,
+            },
+            {
+              "word": "chocolate cookie",
+              "substitution": true,
+            },
+            {
+              "word": "chocolate wafer",
+              "substitution": true,
+            },
+            {
+              "word": "oreos",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "boiled sweets",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "boiled sweet",
+              "substitution": false,
+            },
+            {
+              "word": "hard candy",
+              "substitution": false,
+            },
+            {
+              "word": "fruit drop",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "biscuit spread",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "biscoff spread",
+              "substitution": false,
+            },
+            {
+              "word": "biscoff crunchy spread",
+              "substitution": false,
+            },
+            {
+              "word": "biscoff topping sauce",
+              "substitution": false,
+            },
+            {
+              "word": "cookie spread",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "black treacle",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "molasses",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "blue food colouring",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blue food colour",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "black food colouring",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "black food colour",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "banana custard",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "vanilla custard",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "batter mix",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "pancake mix",
+              "substitution": false,
+            },
+            {
+              "word": "pancake batter",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "bran flakes",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "branflakes",
+              "substitution": false,
+            },
+            {
+              "word": "all-bran",
+              "substitution": false,
+            },
+            {
+              "word": "all bran",
+              "substitution": false,
+            },
+            {
+              "word": "bran sticks",
+              "substitution": false,
+            },
+            {
+              "word": "grape-nuts flake",
+              "substitution": false,
+            },
+            {
+              "word": "grape nuts flake",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "basa",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "bocourti",
+              "substitution": false,
+            },
+            {
+              "word": "swai",
+              "substitution": false,
+            },
+            {
+              "word": "tilapia",
+              "substitution": true,
+            },
+            {
+              "word": "cod",
+              "substitution": true,
+            },
+            {
+              "word": "haddock",
+              "substitution": true,
+            },
+            {
+              "word": "trout",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "blueberries",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "acai",
+              "substitution": true,
+            },
+            {
+              "word": "blackcurrants",
+              "substitution": true,
+            },
+            {
+              "word": "blackberriess",
+              "substitution": true,
+            },
+            {
+              "word": "huckleberries",
+              "substitution": true,
+            },
+            {
+              "word": "raspberries",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -247,7 +557,7 @@
           "include": [
             {
               "word": "hp sauce",
-              "substitution": true,
+              "substitution": false,
             },
             {
               "word": "a1 steak sauce",
@@ -255,6 +565,10 @@
             },
             {
               "word": "worcestershire sauce",
+              "substitution": true,
+            },
+            {
+              "word": "ok sauce",
               "substitution": true,
             },
           ],
@@ -339,6 +653,10 @@
             },
             {
               "word": "banana cream",
+              "substitution": true,
+            },
+            {
+              "word": "banana drink",
               "substitution": true,
             },
           ],
@@ -1555,10 +1873,6 @@
           ],
           "include": [
             {
-              "word": "mulberries",
-              "substitution": true,
-            },
-            {
               "word": "marionberries",
               "substitution": true,
             },
@@ -1576,6 +1890,14 @@
             },
             {
               "word": "boysenberries",
+              "substitution": true,
+            },
+            {
+              "word": "blackcurrants",
+              "substitution": true,
+            },
+            {
+              "word": "dewberries",
               "substitution": true,
             },
           ],

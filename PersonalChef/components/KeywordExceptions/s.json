@@ -4,7 +4,7 @@
               "strawberry custard","strawberry jam","strawberry jelly","sugar",
               "semolina","spring roll wrapper","seaweed","sweet rice flour","salt","soya beans",
               "shrimp",
-              "sausage","smoked sausage",
+              "sausage","smoked sausage/meat",
               "salad leaves","shallot","soffrito mix","spinach","spring onions","summer squash","swede","sweet potato",
               "smoked paprika","salt","shichimi",
               "sun-dried tomatoes", "sweetcorn",
@@ -40,7 +40,7 @@
               "smoked paprika pesto", "smoky red pepper dressing", "spaghetti hoops", "stir fry sauce", "sweet chilli and garlic", "sweet piccalilli",
               "sweet pickle relish",
 
-              "strawberry tea", "strawberry milkshake",
+              "strawberry tea",
 
               "salmon sushi", "salted caramel mousse", "sausage roll", "seaweed thins", "sev mamra", "sorbet",
               "spicy green peas and peanuts", "spring rolls", "stuffing", "sunflower spread",
@@ -54,17 +54,145 @@
     "ingredients": [
 
 
+
+          {
+              "name": "strawberry milkshake",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry milk",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberries & clotted cream milkshake",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry smoothie",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry drink",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "safflower oil",
               "exclude": [
               ],
               "include": [
                 {
+                  "word": "hemp oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "borage seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "avocado oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice bran oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "soybean oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "ghee",
+                  "substitution": true,
+                },
+                {
                   "word": "corn oil",
                   "substitution": true,
                 },
                 {
+                  "word": "palm oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "canola oil",
+                  "substitution": true,
+                },
+                {
                   "word": "sunflower oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "peanut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia nut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "groundnut oil",
                   "substitution": true,
                 },
               ],
@@ -75,6 +203,70 @@
               ],
               "include": [
                 {
+                  "word": "hemp oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "borage seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "avocado oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice bran oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "soybean oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "ghee",
+                  "substitution": true,
+                },
+                {
+                  "word": "corn oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "palm oil",
+                  "substitution": true,
+                },
+                {
                   "word": "vegetable oil",
                   "substitution": true,
                 },
@@ -83,7 +275,39 @@
                   "substitution": true,
                 },
                 {
+                  "word": "peanut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "safflower oil",
+                  "substitution": true,
+                },
+                {
                   "word": "grapeseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "macadamia nut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "groundnut oil",
                   "substitution": true,
                 },
               ],
@@ -127,17 +351,6 @@
                 {
                   "word": "anchovies",
                   "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "strawberry milkshake",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "strawberries & clotted cream milkshake",
-                  "substitution": false,
                 },
               ],
           },
@@ -677,10 +890,18 @@
               ],
           },
           {
-              "name": "smoked sausage",
+              "name": "smoked sausage/meat",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "smoked sausage",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked meat",
+                  "substitution": false,
+                },
                 {
                   "word": "andouille",
                   "substitution": false,
