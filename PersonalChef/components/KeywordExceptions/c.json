@@ -2,18 +2,32 @@
 
     "key" : [ "champagne","cava","cherry flavoured spirit/liqueur","cider","coconut flavoured spirit/liqueur","cachaca",
               "camembert","cheddar","cheese slice","comte","cottage cheese","cream cheese",
-              "caramel","candied orange","chocolate","chocolate custard","cocoa powder","custard",
-              "candlenuts","chestnuts","cashew nuts","crackers","cornstarch","cornmeal","couscous","cassava flour",
-              "chicken","chicken mince","cured sausage/meat",
-              "cabbage","chard","chayote","chicory","chilli pepper","collard greens","courgette",
-              "chilli flakes","chilli powder","chinese five spice","cinnamon",
-              "cannellini beans","chickpeas",
 
-              "canola oil","cantonese sauce","carbonara sauce","cashew butter","cashew paste","chicken stock","chilli paste","chilli sauce",
-              "chutney","coconut oil","corn oil","cranberry sauce",
+              "caramel","candied orange","chocolate","chocolate biscuit","chocolate custard","chocolate ganache","chocolate mousse","chocolate peanuts",
+              "chocolate raisins","chocolate sauce","chocolate sprinkles","cocoa powder","coconut bar","coconut biscuits","coconut macaroons","cola laces","coloured dusting sugar",
+              "condensed milk","cookies","cookie mix","creme egg","crunchie bar","crunchy cream biscuits","custard","custard powder",
+
+              "candlenuts","cashew nuts","cassava flour","chestnuts","chia seeds","chocolate cereal","coconut milk powder","cornflakes","cornstarch","cornmeal","couscous",
+              "crackers","croutons","crumpets",
+
+              "caviar","cod","cockles","crab","crayfish",
+              "chicken","chicken mince","cured sausage/meat",
+
+              "cabbage","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli pepper","clementine",
+              "collard greens","courgette","cucumber",
+
+              "cajun spice","caraway seeds","cayenne","celery salt","celery seeds","chana masala spice blend","chicken seasoning","chilli flakes","chilli powder",
+              "chinese five spice","chives","choi sum","cinnamon","cloves","coriander seeds","cress","cumin seeds",
+
+              "canned chipotles","cannellini beans","cheddar cheese soup","chicken soup","chickpeas",
+
+              "canola oil","cantonese sauce","caperberries","capers","carbonara sauce","cashew butter","cashew paste","cheese sauce","chermoula",
+              "chestnut puree","chicken paste","chicken stock","chilli mayonnaise","chilli paste","chilli sauce","chilli soy sauce","chow mein sauce",
+              "chutney","coconut oil","corn oil","cranberry sauce","curry sauce",
 
               "cheese puffs","coconut milk","cream","creme fraiche",
               "caramel milkshake","cherry lemonade","chocolate milkshake","coconut water","cocoa","coffee","cream soda",
+
 
 
               "~~~ HALF DONE : ~~~",
@@ -25,30 +39,14 @@
 
 
 
-
               "~~~ TO DO : ~~~",
               "campari", "cognac", "chocolate flavoured spirit/liqueur",
               "colby","curd cheese",
 
               "cacao nibs", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel syrup", "caramel wafer",
               "cherry compote", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies","chocolate cookie dough", "chocolate decorating icing",
-              "chocolate drops", "chocolate ganache", "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts",
-              "chocolate raisins", "chocolate sauce", "chocolate sprinkles", "chocolate wafers", "coconut bar", "coconut biscuits", "coconut macaroons",
-              "coco pops", "cola laces", "coloured dusting sugar", "condensed milk", "cookie mix", "cream egg", "crunchie bar", "crunchy cream biscuits",
-              "custard creams", "custard powder",
+              "chocolate drops",
 
-              "chia seeds", "chocolate cereal", "cornflakes", "croutons", "crumpits",
-              "caviar", "cod", "cockles", "crab", "crayfish",
-              "carrot", "cauliflower", "cauliflower rice", "celeriac", "celery", "cherries", "choi sum", "clementine", "cress", "cucumber",
-
-              "cajun spice", "caraway seeds", "cayenne", "celery salt", "celery seeds", "chana masala", "chicken seasoning", "chives",
-              "cinnamon", "cinnamon sticks", "cloves", "coriander seeds", "cumin seeds", "curry powder",
-
-              "caperberries", "capers", "canned chipotles", "cheddar cheese soup", "chicken soup", "chowder",
-
-              "cheese and onion pasta sauce", "cheese sauce", "chermoula", "chestnut puree", "chicken paste",
-              "chilli and basil sauce", "chilli and lime sauce", "chilli garlic curry paste", "chilli mayonnaise", "chilli pesto", "chilli soy sauce", "chipotle burger sauce",
-              "coconut milk powder", "chow mein sauce", "curry sauce",
 
 
             ],
@@ -57,7 +55,1967 @@
     "ingredients": [
 
 
-
+        {
+            "name": "cucumber",
+            "exclude": [
+            ],
+            "include": [
+            ],
+        },
+        {
+            "name": "croutons",
+            "exclude": [
+            ],
+            "include": [
+            ],
+        },
+        {
+            "name": "chocolate ganache",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate mousse",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate mousse",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate whippy",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate dessert",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate ganache",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate cream",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate creme",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate buttercream",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cookies",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "oatmeal cookies",
+                "substitution": true,
+              },
+              {
+                "word": "biscuits",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate cookies",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "oat cookies",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate chip cookies",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate biscuits",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate biscuits",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate biscuit",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate chip biscuit",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate orange biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate cookie",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate wafer",
+                "substitution": true,
+              },
+              {
+                "word": "bourbon biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "oreos",
+                "substitution": true,
+              },
+              {
+                "word": "loacker",
+                "substitution": true,
+              },
+              {
+                "word": "knoppers",
+                "substitution": true,
+              },
+              {
+                "word": "blue ribband",
+                "substitution": true,
+              },
+              {
+                "word": "biscuits",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate peanuts",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate coated peanuts",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate-coated peanuts",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate coated fruits & nuts",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate-coated fruits & nuts",
+                "substitution": false,
+              },
+              {
+                "word": "fruit & nut chocolate",
+                "substitution": true,
+              },
+              {
+                "word": "fruit and nut chocolate",
+                "substitution": true,
+              },
+              {
+                "word": "nutty chocolate",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate nuts",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate coated nuts",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate-coated nuts",
+                "substitution": true,
+              },
+              {
+                "word": "peanuts",
+                "substitution": true,
+              },
+              {
+                "word": "almonds",
+                "substitution": true,
+              },
+              {
+                "word": "pistachios",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate toppings",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate decorations",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate raisins",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate coated raisins",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate-coated raisins",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate coated fruit",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate-coated fruit",
+                "substitution": false,
+              },
+              {
+                "word": "fruit & nut chocolate",
+                "substitution": true,
+              },
+              {
+                "word": "fruit and nut chocolate",
+                "substitution": true,
+              },
+              {
+                "word": "raisins",
+                "substitution": true,
+              },
+              {
+                "word": "currants",
+                "substitution": true,
+              },
+              {
+                "word": "sultanas",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate toppings",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate decorations",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "liquid chocolate",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate syrup",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate drizzle",
+                "substitution": false,
+              },
+              {
+                "word": "mocha sauce",
+                "substitution": true,
+              },
+              {
+                "word": "caramel sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate drink",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate spread",
+                "substitution": true,
+              },
+              {
+                "word": "nutella",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate ganache",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate sprinkles",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate strands",
+                "substitution": false,
+              },
+              {
+                "word": "chocolatey strands",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate sugar strands",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate toppings",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate decorations",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate nibs",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate balls",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate flake",
+                "substitution": true,
+              },
+              {
+                "word": "flake bar",
+                "substitution": true,
+              },
+              {
+                "word": "sprinkles",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "sprinkels",
+                "substitution": true,
+              },
+              {
+                "word": "jazzies",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate wafers",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "wafer",
+                "substitution": true,
+              },
+              {
+                "word": "waffeletten",
+                "substitution": true,
+              },
+              {
+                "word": "loacker",
+                "substitution": true,
+              },
+              {
+                "word": "knoppers",
+                "substitution": true,
+              },
+              {
+                "word": "blue ribband",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "coconut bar",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coconut macaroon",
+                "substitution": true,
+              },
+              {
+                "word": "bounty",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "coconut biscuits",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coconut biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "coconut macaroon",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate macaroon",
+                "substitution": false,
+              },
+              {
+                "word": "macaroon cluster",
+                "substitution": false,
+              },
+              {
+                "word": "almond macaroon",
+                "substitution": true,
+              },
+              {
+                "word": "biscuit",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "coconut macaroons",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coconut macaroon",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate macaroon",
+                "substitution": false,
+              },
+              {
+                "word": "macaroon cluster",
+                "substitution": true,
+              },
+              {
+                "word": "bounty",
+                "substitution": true,
+              },
+              {
+                "word": "almond macaroon",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cola laces",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "strawberry laces",
+                "substitution": true,
+              },
+              {
+                "word": "candy laces",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "coloured dusting sugar",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "icing sugar",
+                "substitution": false,
+              },
+              {
+                "word": "color dust",
+                "substitution": false,
+              },
+              {
+                "word": "colour dust",
+                "substitution": false,
+              },
+              {
+                "word": "edible dust",
+                "substitution": false,
+              },
+              {
+                "word": "icing dust",
+                "substitution": false,
+              },
+              {
+                "word": "icing decoration",
+                "substitution": false,
+              },
+              {
+                "word": "cake decoration",
+                "substitution": false,
+              },
+              {
+                "word": "sprinkles",
+                "substitution": false,
+              },
+              {
+                "word": "decorating dust",
+                "substitution": false,
+              },
+              {
+                "word": "decorating powder",
+                "substitution": false,
+              },
+              {
+                "word": "decorate powder",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "condensed milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caramel",
+                "substitution": true,
+              },
+              {
+                "word": "evaporated milk",
+                "substitution": true,
+              },
+              {
+                "word": "condensed coconut milk",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "condensed milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caramel",
+                "substitution": true,
+              },
+              {
+                "word": "evaporated milk",
+                "substitution": true,
+              },
+              {
+                "word": "condensed coconut milk",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cookie mix",
+            "exclude": [
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "icecream",
+              },
+            ],
+            "include": [
+              {
+                "word": "biscuit mix",
+                "substitution": false,
+              },
+              {
+                "word": "bisquik",
+                "substitution": false,
+              },
+              {
+                "word": "biscuit dough",
+                "substitution": true,
+              },
+              {
+                "word": "cookie dough",
+                "substitution": true,
+              },
+              {
+                "word": "cake mix",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "creme egg",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cream egg",
+                "substitution": false,
+              },
+              {
+                "word": "fry's chocolate cream",
+                "substitution": true,
+              },
+              {
+                "word": "frys chocolate cream",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "crunchie bar",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fairy food candy",
+                "substitution": true,
+              },
+              {
+                "word": "angel food candy",
+                "substitution": true,
+              },
+              {
+                "word": "violet crumble",
+                "substitution": true,
+              },
+              {
+                "word": "honeycomb",
+                "substitution": true,
+              },
+              {
+                "word": "cinder toffee",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "crunchy cream biscuits",
+            "exclude": [
+              {
+                "word": "chocolate",
+              },
+            ],
+            "include": [
+              {
+                "word": "biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "custard cream biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "cookie",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "custard powder",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "custard",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chia seeds",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sesame seeds",
+                "substitution": true,
+              },
+              {
+                "word": "hemp seeds",
+                "substitution": true,
+              },
+              {
+                "word": "flax seeds",
+                "substitution": true,
+              },
+              {
+                "word": "linseeds",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate cereal",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coco pops",
+                "substitution": false,
+              },
+              {
+                "word": "nesquik",
+                "substitution": false,
+              },
+              {
+                "word": "krave",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate cornflakes",
+                "substitution": false,
+              },
+              {
+                "word": "weetabix chocolate",
+                "substitution": false,
+              },
+              {
+                "word": "weetos",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate hooplas",
+                "substitution": false,
+              },
+              {
+                "word": "chocapic",
+                "substitution": false,
+              },
+              {
+                "word": "choco rice pops",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cornflakes",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "corn flakes",
+                "substitution": false,
+              },
+              {
+                "word": "frosties",
+                "substitution": true,
+              },
+              {
+                "word": "crunchy nut",
+                "substitution": true,
+              },
+              {
+                "word": "rice crispies",
+                "substitution": true,
+              },
+              {
+                "word": "rice krispies",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "crumpets",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "crumpet",
+                "substitution": false,
+              },
+              {
+                "word": "english muffin",
+                "substitution": true,
+              },
+              {
+                "word": "muffin bread",
+                "substitution": true,
+              },
+              {
+                "word": "pikelet",
+                "substitution": true,
+              },
+              {
+                "word": "flatbread",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "caviar",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "salt-cured roe",
+                "substitution": false,
+              },
+              {
+                "word": "salt cured roe",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cod",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "haddock",
+                "substitution": true,
+              },
+              {
+                "word": "pollack",
+                "substitution": true,
+              },
+              {
+                "word": "pollock",
+                "substitution": true,
+              },
+              {
+                "word": "hake",
+                "substitution": true,
+              },
+              {
+                "word": "halibut",
+                "substitution": true,
+              },
+              {
+                "word": "orange roughy",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cockles",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "whelks",
+                "substitution": true,
+              },
+              {
+                "word": "welks",
+                "substitution": true,
+              },
+              {
+                "word": "wilks",
+                "substitution": true,
+              },
+              {
+                "word": "winkle",
+                "substitution": true,
+              },
+              {
+                "word": "periwinkle",
+                "substitution": true,
+              },
+              {
+                "word": "clam",
+                "substitution": true,
+              },
+              {
+                "word": "mussel",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "crab",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "crabmeat",
+                "substitution": false,
+              },
+              {
+                "word": "krab",
+                "substitution": true,
+              },
+              {
+                "word": "grouper",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "crayfish",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "crawfish",
+                "substitution": false,
+              },
+              {
+                "word": "crawdad",
+                "substitution": false,
+              },
+              {
+                "word": "lobster",
+                "substitution": true,
+              },
+              {
+                "word": "shrimp",
+                "substitution": true,
+              },
+              {
+                "word": "prawn",
+                "substitution": true,
+              },
+              {
+                "word": "scallop",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "carrot",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "parsnip",
+                "substitution": true,
+              },
+              {
+                "word": "turnip",
+                "substitution": true,
+              },
+              {
+                "word": "celeriac",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cauliflower",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "broccoli",
+                "substitution": true,
+              },
+              {
+                "word": "broccolini",
+                "substitution": true,
+              },
+              {
+                "word": "cauliflower rice",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cauliflower rice",
+            "exclude": [
+              {
+                "word": "sticky",
+              },
+              {
+                "word": "glutinous",
+              },
+              {
+                "word": "risotto",
+              },
+              {
+                "word": "short grain",
+              },
+              {
+                "word": "short-grain",
+              },
+              {
+                "word": "sushi",
+              },
+              {
+                "word": "arborio",
+              },
+              {
+                "word": "bomba",
+              },
+            ],
+            "include": [
+              {
+                "word": "riced cauliflower",
+                "substitution": false,
+              },
+              {
+                "word": "cauli rice",
+                "substitution": false,
+              },
+              {
+                "word": "cauliflower",
+                "substitution": true,
+              },
+              {
+                "word": "rice",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "celeriac",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cucumber",
+                "substitution": true,
+              },
+              {
+                "word": "water chestnut",
+                "substitution": true,
+              },
+              {
+                "word": "parsley root",
+                "substitution": true,
+              },
+              {
+                "word": "turnip",
+                "substitution": true,
+              },
+              {
+                "word": "carrot",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "celery",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cucumber",
+                "substitution": true,
+              },
+              {
+                "word": "water chestnut",
+                "substitution": true,
+              },
+              {
+                "word": "celeriac",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cherries",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "plum",
+                "substitution": true,
+              },
+              {
+                "word": "cranberries",
+                "substitution": true,
+              },
+              {
+                "word": "nectarine",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "choi sum",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "choy sum",
+                "substitution": false,
+              },
+              {
+                "word": "gunsho",
+                "substitution": false,
+              },
+              {
+                "word": "pak choi",
+                "substitution": true,
+              },
+              {
+                "word": "spinach",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "clementine",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "orange",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cress",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "pepperwort",
+                "substitution": false,
+              },
+              {
+                "word": "poor man's pepper",
+                "substitution": false,
+              },
+              {
+                "word": "poor mans pepper",
+                "substitution": false,
+              },
+              {
+                "word": "watercress",
+                "substitution": true,
+              },
+              {
+                "word": "arugula",
+                "substitution": true,
+              },
+              {
+                "word": "rocket",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "curry powder",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "curry paste",
+                "substitution": true,
+              },
+              {
+                "word": "cumin",
+                "substitution": true,
+              },
+              {
+                "word": "sambar powder",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cumin seeds",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "ground cumin",
+                "substitution": true,
+              },
+              {
+                "word": "coriander seeds",
+                "substitution": true,
+              },
+              {
+                "word": "fennel seeds",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "coriander seeds",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dried coriander",
+                "substitution": false,
+              },
+              {
+                "word": "coriander",
+                "substitution": false,
+              },
+              {
+                "word": "fresh coriander",
+                "substitution": true,
+              },
+              {
+                "word": "coriander leaves",
+                "substitution": true,
+              },
+              {
+                "word": "coriander leaf",
+                "substitution": true,
+              },
+              {
+                "word": "coriander stalk",
+                "substitution": true,
+              },
+              {
+                "word": "cumin",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cloves",
+            "exclude": [
+              {
+                "word": "garlic",
+              },
+            ],
+            "include": [
+              {
+                "word": "clove",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cinnamon",
+            "exclude": [
+              {
+                "word": "chocolate"
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "cereal",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "cookie",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "dessert",
+              },
+              {
+                "word": "custard",
+              },
+              {
+                "word": "milk",
+              },
+              {
+                "word": "milkshake",
+              },
+            ],
+            "include": [
+              {
+                "word": "cassia",
+                "substitution": false,
+              },
+              {
+                "word": "nutmeg",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chives",
+            "exclude": [
+              {
+                "word": "chinese",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "cheese n chive",
+              },
+              {
+                "word": "cheese & chive",
+              },
+              {
+                "word": "cheese and chive",
+              },
+            ],
+            "include": [
+              {
+                "word": "scallion",
+                "substitution": true,
+              },
+              {
+                "word": "spring onion",
+                "substitution": true,
+              },
+              {
+                "word": "green onion",
+                "substitution": true,
+              },
+              {
+                "word": "leek",
+                "substitution": true,
+              },
+              {
+                "word": "parsley",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chicken seasoning",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chicken rub",
+                "substitution": false,
+              },
+              {
+                "word": "chicken salt",
+                "substitution": false,
+              },
+              {
+                "word": "poultry seasoning",
+                "substitution": false,
+              },
+              {
+                "word": "seasoning mix chicken",
+                "substitution": false,
+              },
+              {
+                "word": "season-all",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "chana masala spice blend",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chana masala",
+                "substitution": false,
+              },
+              {
+                "word": "garam masala",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "celery seeds",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "celery seed",
+                "substitution": false,
+              },
+              {
+                "word": "celery",
+                "substitution": true,
+              },
+              {
+                "word": "dill seed",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "celery salt",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "celery sea salt",
+                "substitution": false,
+              },
+              {
+                "word": "celery flakes",
+                "substitution": true,
+              },
+              {
+                "word": "onion salt",
+                "substitution": true,
+              },
+              {
+                "word": "salt",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cayenne",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "hot paprika",
+                "substitution": true,
+              },
+              {
+                "word": "chilli powder",
+                "substitution": true,
+              },
+              {
+                "word": "chilli flakes",
+                "substitution": true,
+              },
+              {
+                "word": "gochugaru",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "caraway seeds",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caraway",
+                "substitution": false,
+              },
+              {
+                "word": "fennel seeds",
+                "substitution": true,
+              },
+              {
+                "word": "dill seeds",
+                "substitution": true,
+              },
+              {
+                "word": "anise seeds",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cajun spice",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cajun seasoning",
+                "substitution": false,
+              },
+              {
+                "word": "cajun rub",
+                "substitution": false,
+              },
+              {
+                "word": "cajun mix",
+                "substitution": false,
+              },
+              {
+                "word": "creole spice",
+                "substitution": true,
+              },
+              {
+                "word": "creole seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "creole rub",
+                "substitution": true,
+              },
+              {
+                "word": "creole mix",
+                "substitution": true,
+              },
+              {
+                "word": "blackened spice",
+                "substitution": true,
+              },
+              {
+                "word": "blackened seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "blackened rub",
+                "substitution": true,
+              },
+              {
+                "word": "blackened mix",
+                "substitution": true,
+              },
+              {
+                "word": "blackening spice",
+                "substitution": true,
+              },
+              {
+                "word": "blackening seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "blackening rub",
+                "substitution": true,
+              },
+              {
+                "word": "blackening mix",
+                "substitution": true,
+              },
+              {
+                "word": "fajita spice",
+                "substitution": true,
+              },
+              {
+                "word": "fajita seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "fajita rub",
+                "substitution": true,
+              },
+              {
+                "word": "fajita mix",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "caperberries",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caper berries",
+                "substitution": false,
+              },
+              {
+                "word": "olives",
+                "substitution": true,
+              },
+              {
+                "word": "capers",
+                "substitution": true,
+              },
+              {
+                "word": "pickles",
+                "substitution": true,
+              },
+              {
+                "word": "pickled onions",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "capers",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "olives",
+                "substitution": true,
+              },
+              {
+                "word": "caper berries",
+                "substitution": true,
+              },
+              {
+                "word": "caperberries",
+                "substitution": true,
+              },
+              {
+                "word": "pickles",
+                "substitution": true,
+              },
+              {
+                "word": "pickled onions",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "canned chipotles",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dried chilli peppers",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cheddar cheese soup",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cheese sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chicken soup",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chicken veloute",
+                "substitution": false,
+              },
+              {
+                "word": "chicken cream soup",
+                "substitution": false,
+              },
+              {
+                "word": "chicken cream sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chicken pasta sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chow mein sauce",
+            "exclude": [
+              {
+                "word": "noodle",
+              },
+            ],
+            "include": [
+              {
+                "word": "chow mein stir fry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chow mein cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "sauce chow mein",
+                "substitution": false,
+              },
+              {
+                "word": "chow mein spice paste",
+                "substitution": true,
+              },
+              {
+                "word": "chow mein paste",
+                "substitution": true,
+              },
+              {
+                "word": "chow mein seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "chow mein spice",
+                "substitution": true,
+              },
+              {
+                "word": "chow mein",
+                "substitution": true,
+              },
+              {
+                "word": "oyster sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "curry sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sauce curry",
+                "substitution": false,
+              },
+              {
+                "word": "curry ketchup",
+                "substitution": false,
+              },
+              {
+                "word": "curry & mango sauce",
+                "substitution": true,
+              },
+              {
+                "word": "curry mango sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chilli soy sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "spicy soy sauce",
+                "substitution": false,
+              },
+              {
+                "word": "spicy sweet soy sauce",
+                "substitution": false,
+              },
+              {
+                "word": "soy sauce chilli",
+                "substitution": false,
+              },
+              {
+                "word": "poke sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chilli stir fry sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chilli sauce",
+                "substitution": true,
+              },
+              {
+                "word": "soy sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chilli pesto",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chilli & basil pesto",
+                "substitution": true,
+              },
+              {
+                "word": "chilli and basil pesto",
+                "substitution": true,
+              },
+              {
+                "word": "chilli & garlic pesto",
+                "substitution": true,
+              },
+              {
+                "word": "chilli and garlic pesto",
+                "substitution": true,
+              },
+              {
+                "word": "chilli paste",
+                "substitution": true,
+              },
+              {
+                "word": "chilli sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chilli mayonnaise",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chile mayonnaise",
+                "substitution": false,
+              },
+              {
+                "word": "perinaise",
+                "substitution": false,
+              },
+              {
+                "word": "chilli mayo",
+                "substitution": false,
+              },
+              {
+                "word": "chile mayo",
+                "substitution": false,
+              },
+              {
+                "word": "spicy mayo",
+                "substitution": false,
+              },
+              {
+                "word": "sriracha mayo",
+                "substitution": false,
+              },
+              {
+                "word": "chipotle burger sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chestnut puree",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "puree chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "pureed chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "puree de marron",
+                "substitution": false,
+              },
+              {
+                "word": "chestnut paste",
+                "substitution": false,
+              },
+              {
+                "word": "chestnut cream",
+                "substitution": true,
+              },
+              {
+                "word": "chestnut spread",
+                "substitution": true,
+              },
+              {
+                "word": "chestnut jam",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chermoula",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "charmoula",
+                "substitution": false,
+              },
+              {
+                "word": "zhoug",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chicken paste",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "potted chicken",
+                "substitution": false,
+              },
+              {
+                "word": "chicken bouillon",
+                "substitution": false,
+              },
+              {
+                "word": "chicken stock paste",
+                "substitution": false,
+              },
+              {
+                "word": "chicken and ham paste",
+                "substitution": false,
+              },
+              {
+                "word": "chicken & ham paste",
+                "substitution": false,
+              },
+              {
+                "word": "chicken stock pot",
+                "substitution": true,
+              }
+              {
+                "word": "chicken pate",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cheese sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cheese fondue",
+                "substitution": false,
+              },
+              {
+                "word": "lasagne sauce",
+                "substitution": false,
+              },
+              {
+                "word": "cheese pasta sauce",
+                "substitution": false,
+              },
+              {
+                "word": "cheese pasta bake sauce",
+                "substitution": false,
+              },
+              {
+                "word": "cheese cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "cheese and onion pasta sauce",
+                "substitution": false,
+              },
+              {
+                "word": "alfredo",
+                "substitution": false,
+              },
+              {
+                "word": "bechamel",
+                "substitution": false,
+              },
+              {
+                "word": "white sauce",
+                "substitution": false,
+              },
+              {
+                "word": "carbonara pasta sauce",
+                "substitution": true,
+              },
+              {
+                "word": "cheese soup",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "cashew paste",
             "exclude": [
@@ -2123,6 +4081,14 @@
               "substitution": false,
             },
             {
+              "word": "cayenne",
+              "substitution": true,
+            },
+            {
+              "word": "gochugaru",
+              "substitution": true,
+            },
+            {
               "word": "chipotle seasoning",
               "substitution": true,
             },
@@ -2279,6 +4245,18 @@
               },
               {
                 "word": "sirarcha",
+                "substitution": true,
+              },
+              {
+                "word": "chilli and basil sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chilli and lime sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chilli pesto",
                 "substitution": true,
               },
             ],
@@ -2887,6 +4865,10 @@
               "word": "scotch bonnet",
               "substitution": true,
             },
+            {
+              "word": "chilli garlic curry paste",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -2925,6 +4907,10 @@
             {
               "word": "crushed chillies",
               "substitution": false,
+            },
+            {
+              "word": "cayenne",
+              "substitution": true,
             },
             {
               "word": "scotch bonnet",
@@ -4517,6 +6503,9 @@
                 "word": "hot chocolate",
               },
               {
+                "word": "liqueur",
+              },
+              {
                 "word": "chocolate milk",
               },
               {
@@ -4533,6 +6522,18 @@
               },
             ],
             "include": [
+              {
+                "word": "white chocolate",
+                "substitution": false,
+              },
+              {
+                "word": "dark chocolate",
+                "substitution": false,
+              },
+              {
+                "word": "milk chocolate",
+                "substitution": false,
+              },
             ],
           },
 

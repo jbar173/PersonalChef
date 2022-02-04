@@ -2,7 +2,7 @@
 
     "key" : ["feta","fontina","fresh asiago",
              "fig jam","fig jelly","fruit cake","fruit loaf","fudge",
-             "filo pastry","flour",
+             "filo pastry","flax seeds","flour",
              "fig","fresh coconut","fresh cranberries","fresh ginger",
              "fresh coriander","fenugreek leaves",
              "flageolet beans",
@@ -23,13 +23,13 @@
 
              "~~~ TO DO : ~~~",
              "fig roll", "fruit jellies", "fruit and nut chocolate",
-             "flax seeds", "fried onion", "frosties",
+             "fried onion", "frosties",
              "fish cakes",
              "fiddleheads", "fresh corn", "fresh soya beans",
              "faggot",
 
              "fajita seasoning", "fish seasoning", "fresh basil", "fresh mint", "fresh oregano", "fresh parsley", "fresh rosemary", "fresh sage",
-             "fennel seeds", "fresh shervil", "fresh tarragon", "fresh thyme",
+             "fennel seeds/carraway seeds/anise seeds/cumin seeds(subs)", "fresh shervil", "fresh tarragon", "fresh thyme",
 
              "fruit cocktail",
              "fish masala", "fish stock", "french dressing", "french mustard",
@@ -43,6 +43,29 @@
 
 
 
+          {
+              "name": "flax seeds",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "linseeds",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseeds",
+                  "substitution": false,
+                },
+                {
+                  "word": "chia seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seeds",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "fresh asiago",
               "exclude": [
@@ -551,6 +574,10 @@
                 },
                 {
                   "word": "wrap",
+                  "substitution": true,
+                },
+                {
+                  "word": "crumpet",
                   "substitution": true,
                 },
               ],

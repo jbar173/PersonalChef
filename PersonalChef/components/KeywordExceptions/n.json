@@ -102,7 +102,15 @@
                   "substitution": false,
                 },
                 {
+                  "word": "chocolate spread",
+                  "substitution": false,
+                },
+                {
                   "word": "cocospread",
+                  "substitution": false,
+                },
+                {
+                  "word": "chocolate sauce",
                   "substitution": false,
                 },
               ],

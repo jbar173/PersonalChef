@@ -20,7 +20,8 @@
 
               "~~~ TO DO : ~~~",
               "oka",
-              "orange chocolate", "orange food colouring", "oreos",
+              "oatmeal cookies/oat cookies(sub)", "orange chocolate", "orange food colouring", "oreos",
+              "orange roughy/cod(sub)",
               "onion and garlic pasta sauce", "onion gravy", "onion sauce", "oyster sauce",
               "orange milkshake",
               "oatcakes", "oat yoghurt", "onion rings",
@@ -794,6 +795,10 @@
               {
                 "word": "kalamata",
                 "substitution": false,
+              },
+              {
+                "word": "capers",
+                "substitution": true,
               },
             ],
           },

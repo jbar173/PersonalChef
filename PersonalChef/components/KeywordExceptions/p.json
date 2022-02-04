@@ -26,10 +26,10 @@
               "paneer", "pleasant ridge", "port salut",
 
               "peanut bar", "peanut butter wafers", "peanut cookies", "peanut mnms", "pear drops", "peppermint extract", "pink food colouring",
-              "popping candy", "pralines", "preserved lemons", "prunes", "purple food colouring",
+              "popping candy", "pralines", "preserved lemons", "prunes", "pudding mix/pudding powder/custard powder(sub)", "purple food colouring",
 
               "pie mix", "pistachios", "pizza bases", "poppy seeds", "pork scratchings", "pretzel snacks", "puff pastry",
-              "pangasius", "pilchards", "plaice", "pollock", "prawns",
+              "pangasius", "pilchards", "plaice", "pollock/cod(sub)", "prawns",
 
               "pancetta", "pepperoni", "pigs in blankets", "porchetta",
               "persimmon", "plantain", "pomegranate seeds",
@@ -310,6 +310,10 @@
                 "substitution": true,
               },
               {
+                "word": "carrot",
+                "substitution": true,
+              },
+              {
                 "word": "lotus root",
                 "substitution": true,
               },
@@ -522,6 +526,14 @@
               "include": [
                 {
                   "word": "pearl onions",
+                  "substitution": false,
+                },
+                {
+                  "word": "silverskin onions",
+                  "substitution": false,
+                },
+                {
+                  "word": "cocktail onions",
                   "substitution": false,
                 },
                 {
@@ -1348,6 +1360,18 @@
                   "word": "sour cucumber",
                   "substitution": true,
                 },
+                {
+                  "word": "pickled onions",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled onions",
+                  "substitution": true,
+                },
+                {
+                  "word": "capers",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1375,11 +1399,19 @@
               ],
               "include": [
                 {
-                  "word": "bok choy",
+                  "word": "pak choy",
                   "substitution": false,
                 },
                 {
-                  "word": "pak choy",
+                  "word": "morning glory",
+                  "substitution": false,
+                },
+                {
+                  "word": "ong choy",
+                  "substitution": false,
+                },
+                {
+                  "word": "bok choy",
                   "substitution": false,
                 },
                 {
@@ -1451,6 +1483,10 @@
                 },
               ],
               "include": [
+                {
+                  "word": "chives",
+                  "substitution": true,
+                },
               ],
           },
           {

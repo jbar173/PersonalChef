@@ -118,6 +118,22 @@
               "word": "caramel creme",
               "substitution": true,
             },
+            {
+              "word": "butterscotch buttercream",
+              "substitution": true,
+            },
+            {
+              "word": "caramel buttercream",
+              "substitution": true,
+            },
+            {
+              "word": "butterscotch sauce",
+              "substitution": true,
+            },
+            {
+              "word": "caramel sauce",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -143,6 +159,14 @@
             },
             {
               "word": "mounds",
+              "substitution": true,
+            },
+            {
+              "word": "coconut macaroon",
+              "substitution": true,
+            },
+            {
+              "word": "chocolate macaroon",
               "substitution": true,
             },
           ],

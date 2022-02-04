@@ -23,7 +23,7 @@
 
               "granola",
               "galangal",
-              "garam masala", "garlic pepper", "ground mace",
+              "garam masala/chana masala(sub)", "garlic pepper", "ground mace",
               "garlic and chilli oil", "ginger and miso sauce", "goose fat", "gravy granules", "green pesto",
               "ginger ale", "ginger beer", "green tea", "grenadine syrup",
               "girasoli", "gnocchi", "goat's milk", "gyoza",
@@ -673,6 +673,18 @@
           {
               "name": "ground cumin",
               "exclude": [
+                {
+                  "word": "fresh",
+                },
+                {
+                  "word": "leave",
+                },
+                {
+                  "word": "leaf",
+                },
+                {
+                  "word": "stalk",
+                },
               ],
               "include": [
                 {
@@ -686,6 +698,18 @@
                 {
                   "word": "cumin-",
                   "substitution": false,
+                },
+                {
+                  "word": "curry powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "coriander seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried coriander",
+                  "substitution": true,
                 },
               ],
           },

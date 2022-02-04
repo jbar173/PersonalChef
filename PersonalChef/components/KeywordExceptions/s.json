@@ -2,7 +2,7 @@
 
     "key" : [ "sparkling white wine","sherry","strawberry flavoured spirit/liqueur",
               "strawberry custard","strawberry jam","strawberry jelly","sugar",
-              "semolina","spring roll wrapper","seaweed","sweet rice flour","salt","soya beans",
+              "semolina","spring roll wrapper","seaweed","sweet rice flour","soya beans",
               "shrimp",
               "sausage","smoked sausage/meat",
               "salad leaves","shallot","soffrito mix","spinach","spring onions","summer squash","swede","sweet potato",
@@ -628,12 +628,6 @@
               "name": "salt",
               "exclude": [
                 {
-                  "word": "celery salt",
-                },
-                {
-                  "word": "garlic salt",
-                },
-                {
                   "word": "in salt",
                 },
                 {
@@ -646,10 +640,19 @@
                   "word": "salt reduced",
                 },
                 {
+                  "word": "salt-reduced",
+                },
+                {
                   "word": "salt cured",
                 },
                 {
+                  "word": "salt-cured",
+                },
+                {
                   "word": "salt free",
+                },
+                {
+                  "word": "salt-free",
                 },
                 {
                   "word": "excess salt",
@@ -1669,6 +1672,14 @@
             "include": [
               {
                 "word": "prawn",
+                "substitution": true,
+              },
+              {
+                "word": "crayfish",
+                "substitution": true,
+              },
+              {
+                "word": "lobster",
                 "substitution": true,
               },
               {

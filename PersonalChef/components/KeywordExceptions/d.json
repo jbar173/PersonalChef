@@ -1292,6 +1292,18 @@
               "substitution": false,
             },
             {
+              "word": "scotch bonnet",
+              "substitution": false,
+            },
+            {
+              "word": "canned chipotles",
+              "substitution": false,
+            },
+            {
+              "word": "canned chipotle peppers",
+              "substitution": false,
+            },
+            {
               "word": "piment d'espelette",
               "substitution": true,
             },
@@ -1311,10 +1323,6 @@
               "word": "chile",
               "substitution": true,
             },
-            {
-              "word": "scotch bonnet",
-              "substitution": false,
-            },
           ],
         },
         {
@@ -1325,6 +1333,10 @@
               {
                 "word": "mooli",
                 "substitution": false,
+              },
+              {
+                "word": "carrot",
+                "substitution": true,
               },
             ],
         },
