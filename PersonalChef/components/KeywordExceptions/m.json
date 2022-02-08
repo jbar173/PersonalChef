@@ -1982,7 +1982,10 @@
               },
             ],
             "include": [
-
+              {
+                "word": "dijon",
+                "substitution": false,
+              },
             ],
           },
           {

@@ -26,7 +26,7 @@
               "paneer", "pleasant ridge", "port salut",
 
               "peanut bar", "peanut butter wafers", "peanut cookies", "peanut mnms", "pear drops", "peppermint extract", "pink food colouring",
-              "popping candy", "pralines", "preserved lemons", "prunes", "pudding mix/pudding powder/custard powder(sub)", "purple food colouring",
+              "popping candy", "pralines", "preserved lemons", "prunes/dried figs/raisins(sub)", "pudding mix/pudding powder/custard powder(sub)", "purple food colouring",
 
               "pie mix", "pistachios", "pizza bases", "poppy seeds", "pork scratchings", "pretzel snacks", "puff pastry",
               "pangasius", "pilchards", "plaice", "pollock/cod(sub)", "prawns",
@@ -931,7 +931,7 @@
                   "substitution": false,
                 },
                 {
-                  "word": "dough",
+                  "word": "dough balls",
                   "substitution": false,
                 },
               ],

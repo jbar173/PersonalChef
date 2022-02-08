@@ -1,14 +1,16 @@
 {
 
-    "key" : [ "champagne","cava","cherry flavoured spirit/liqueur","cider","coconut flavoured spirit/liqueur","cachaca",
-              "camembert","cheddar","cheese slice","comte","cottage cheese","cream cheese",
+    "key" : [ "champagne","cherry flavoured spirit/liqueur","chocolate flavoured spirit/liqueur","cider","coconut flavoured spirit/liqueur","cachaca",
+              "camembert","cheddar","cheese slice","cognac","comte","cottage cheese","cream cheese",
 
-              "caramel","candied orange","chocolate","chocolate biscuit","chocolate custard","chocolate ganache","chocolate mousse","chocolate peanuts",
-              "chocolate raisins","chocolate sauce","chocolate sprinkles","cocoa powder","coconut bar","coconut biscuits","coconut macaroons","cola laces","coloured dusting sugar",
-              "condensed milk","cookies","cookie mix","creme egg","crunchie bar","crunchy cream biscuits","custard","custard powder",
+              "cacao nibs","caramel","caramel cookie dough","caramel essence","caramel peanuts","caramel wafer","candied orange","cherry compote",
+              "chocolate","chocolate biscuits","chocolate buttons","chocolate cake","chocolate caramel bar","chocolate cookie dough","chocolate cookies",
+              "chocolate custard","chocolate decorating icing","chocolate drops","chocolate ganache","chocolate mousse","chocolate peanuts","chocolate raisins",
+              "chocolate sauce","chocolate sprinkles","cocoa powder","coconut bar","coconut biscuits","coconut macaroons","cola laces","coloured dusting sugar",
+              "condensed milk","cookies","cookie mix","creme egg","crunchie bar","crunchy cream biscuits","curd cheese","custard","custard powder",
 
-              "candlenuts","cashew nuts","cassava flour","chestnuts","chia seeds","chocolate cereal","coconut milk powder","cornflakes","cornstarch","cornmeal","couscous",
-              "crackers","croutons","crumpets",
+              "candlenuts","cashew nuts","cassava flour","chana dal","chestnuts","chia seeds","chocolate cereal","coconut milk powder","cornflakes","cornstarch",
+              "cornmeal","couscous","crackers","croutons","crumpets",
 
               "caviar","cod","cockles","crab","crayfish",
               "chicken","chicken mince","cured sausage/meat",
@@ -26,7 +28,7 @@
               "chutney","coconut oil","corn oil","cranberry sauce","curry sauce",
 
               "cheese puffs","coconut milk","cream","creme fraiche",
-              "caramel milkshake","cherry lemonade","chocolate milkshake","coconut water","cocoa","coffee","cream soda",
+              "caramel milkshake","cherry cola","cherry lemonade","chocolate milkshake","coconut water","cocoa","coffee","cream soda",
 
 
 
@@ -40,12 +42,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "campari", "cognac", "chocolate flavoured spirit/liqueur",
-              "colby","curd cheese",
-
-              "cacao nibs", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel syrup", "caramel wafer",
-              "cherry compote", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies","chocolate cookie dough", "chocolate decorating icing",
-              "chocolate drops",
 
 
 
@@ -67,6 +63,756 @@
             "exclude": [
             ],
             "include": [
+            ],
+        },
+        {
+            "name": "chana dal",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "in syrup",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "chickpea",
+                "substitution": false,
+              },
+              {
+                "word": "chick pea",
+                "substitution": false,
+              },
+              {
+                "word": "garbanzo",
+                "substitution": false,
+              },
+              {
+                "word": "channa",
+                "substitution": false,
+              },
+              {
+                "word": "chana",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cognac",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "armagnac",
+                "substitution": true,
+              },
+              {
+                "word": "brandy",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "colby",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "monterey jack",
+                "substitution": true,
+              },
+              {
+                "word": "cheddar",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate flavoured spirit/liqueur",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate cream liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate-flavoured liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate-flavored liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate-flavoured liquor",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate-flavored liquor",
+                "substitution": false,
+              },
+              {
+                "word": "cocoa liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate liquor",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate schnapps",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate vodka",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate rum",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate brandy",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate gin",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate whiskey",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate whisky",
+                "substitution": false,
+              },
+              {
+                "word": "baileys",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "curd cheese",
+            "exclude": [
+              {
+                "word": "bean",
+              },
+              {
+                "word": "tofu",
+              },
+              {
+                "word": "tart",
+              },
+              {
+                "word": "lemon",
+              },
+              {
+                "word": "apple",
+              },
+              {
+                "word": "lime",
+              },
+              {
+                "word": "cherry",
+              },
+              {
+                "word": "cassis",
+              },
+              {
+                "word": "banana",
+              },
+              {
+                "word": "raspberry",
+              },
+              {
+                "word": "orange",
+              },
+              {
+                "word": "rhubarb",
+              },
+              {
+                "word": "vanilla",
+              },
+              {
+                "word": "fruit",
+              },
+              {
+                "word": "passionfruit",
+              },
+            ],
+            "include": [
+              {
+                "word": "curd",
+                "substitution": false,
+              },
+              {
+                "word": "cream cheese",
+                "substitution": true,
+              },
+              {
+                "word": "fromage frais",
+                "substitution": true,
+              },
+              {
+                "word": "mascarpone",
+                "substitution": true,
+              },
+              {
+                "word": "saint-marcellin",
+                "substitution": true,
+              },
+              {
+                "word": "saint marcellin",
+                "substitution": true,
+              },
+              {
+                "word": "kefir",
+                "substitution": true,
+              },
+              {
+                "word": "cottage cheese",
+                "substitution": true,
+              },
+              {
+                "word": "cheddar spreadable",
+                "substitution": true,
+              },
+              {
+                "word": "spreadable cheddar",
+                "substitution": true,
+              },
+              {
+                "word": "spreadable cheese",
+                "substitution": true,
+              },
+              {
+                "word": "cheese spread",
+                "substitution": true,
+              },
+              {
+                "word": "soft cheese",
+                "substitution": true,
+              },
+              {
+                "word": "philadelphia",
+                "substitution": true,
+              },
+              {
+                "word": "smeerkaas",
+                "substitution": true,
+              },
+              {
+                "word": "ricotta",
+                "substitution": true,
+              },
+              {
+                "word": "neufchatel",
+                "substitution": true,
+              },
+              {
+                "word": "neufchatel-style",
+                "substitution": true,
+              },
+              {
+                "word": "plain yoghurt",
+                "substitution": true,
+              },
+              {
+                "word": "plain yogurt",
+                "substitution": true,
+              },
+              {
+                "word": "greek yoghurt",
+                "substitution": true,
+              },
+              {
+                "word": "greek yogurt",
+                "substitution": true,
+              },
+              {
+                "word": "natural yoghurt",
+                "substitution": true,
+              },
+              {
+                "word": "natural yogurt",
+                "substitution": true,
+              },
+              {
+                "word": "greek-style yoghurt",
+                "substitution": true,
+              },
+              {
+                "word": "paneer",
+                "substitution": true,
+              },
+              {
+                "word": "quark",
+                "substitution": true,
+              },
+              {
+                "word": "fromage blanc",
+                "substitution": true,
+              },
+              {
+                "word": "labneh",
+                "substitution": true,
+              },
+              {
+                "word": "mozzarella",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cacao nibs",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cocoa nib",
+                "substitution": false,
+              },
+              {
+                "word": "coco nib",
+                "substitution": false,
+              },
+              {
+                "word": "cocoa bean",
+                "substitution": true,
+              },
+              {
+                "word": "plain chocolate nib",
+                "substitution": true,
+              },
+              {
+                "word": "dark chocolate nib",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "caramel cookie dough",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caramel cookie mix",
+                "substitution": false,
+              },
+              {
+                "word": "caramel biscuit mix",
+                "substitution": false,
+              },
+              {
+                "word": "cookie mix",
+                "substitution": true,
+              },
+              {
+                "word": "biscuit mix",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "caramel biscuits",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caramel biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "caramelized biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "caramel crunch biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "toffee biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "toffee crunch biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "butterscotch biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "toffee crisp",
+                "substitution": false,
+              },
+              {
+                "word": "tim tam",
+                "substitution": false,
+              },
+              {
+                "word": "biscuit",
+                "substitution": true,
+              },
+              {
+                "word": "cookie",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "caramel essence",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caramel flavouring",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavoring",
+                "substitution": false,
+              },
+              {
+                "word": "caramel extract",
+                "substitution": false,
+              },
+              {
+                "word": "toffee essence",
+                "substitution": true,
+              },
+              {
+                "word": "toffee flavouring",
+                "substitution": false,
+              },
+              {
+                "word": "toffee flavoring",
+                "substitution": false,
+              },
+              {
+                "word": "toffee extract",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "caramel peanuts",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caramel coated peanuts",
+                "substitution": false,
+              },
+              {
+                "word": "caramel-coated peanuts",
+                "substitution": false,
+              },
+              {
+                "word": "candied peanuts",
+                "substitution": false,
+              },
+              {
+                "word": "peanut brittle",
+                "substitution": false,
+              },
+              {
+                "word": "medici",
+                "substitution": true,
+              },
+              {
+                "word": "florentine",
+                "substitution": true,
+              },
+              {
+                "word": "toffee peanuts",
+                "substitution": false,
+              },
+              {
+                "word": "toffee coated peanuts",
+                "substitution": false,
+              },
+              {
+                "word": "toffee-coated peanuts",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "caramel syrup",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caramel sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel",
+                "substitution": true,
+              },
+              {
+                "word": "toffee",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "caramel wafer",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "tunnocks millk chocolate caramel",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate wafer",
+                "substitution": true,
+              },
+              {
+                "word": "wafer",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cherry compote",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "berry compote",
+                "substitution": true,
+              },
+              {
+                "word": "raspberry compote",
+                "substitution": true,
+              },
+              {
+                "word": "plum compote",
+                "substitution": true,
+              },
+              {
+                "word": "cherry coulis",
+                "substitution": true,
+              },
+              {
+                "word": "berry coulis",
+                "substitution": true,
+              },
+              {
+                "word": "raspberry coulis",
+                "substitution": true,
+              },
+              {
+                "word": "plum coulis",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate buttons",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate sprinkles",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate drops",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate cake",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate sponge",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate fudge cake",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate tray bake",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate gateau",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate torte",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate brownie",
+                "substitution": true,
+              },
+              {
+                "word": "caramel",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate caramel bar",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "caramel chocolate bar",
+                "substitution": false,
+              },
+              {
+                "word": "caramac",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate",
+                "substitution": true,
+              },
+              {
+                "word": "caramel",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate cookie dough",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate cookie mix",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate biscuit mix",
+                "substitution": false,
+              },
+              {
+                "word": "cookie mix",
+                "substitution": true,
+              },
+              {
+                "word": "biscuit mix",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate decorating icing",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate icing",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate fudge icing",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate cupcake icing",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate buttercream",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate buttercreme",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate frosting",
+                "substitution": false,
+              },
+              {
+                "word": "decorating icing",
+                "substitution": true,
+              },
+              {
+                "word": "fondant icing",
+                "substitution": true,
+              },
+              {
+                "word": "nutella",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chocolate drops",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate sprinkles",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate decorations",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -649,6 +1395,21 @@
               {
                 "word": "icecream",
               },
+              {
+                "word": "pudding",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "fudge",
+              },
+              {
+                "word": "truffle",
+              },
+              {
+                "word": "bar",
+              },
             ],
             "include": [
               {
@@ -728,11 +1489,15 @@
             ],
             "include": [
               {
-                "word": "biscuit",
+                "word": "butter biscuit",
                 "substitution": false,
               },
               {
                 "word": "custard cream biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "biscuit",
                 "substitution": true,
               },
               {
@@ -2276,29 +3041,6 @@
             ],
         },
         {
-            "name": "cherry cola",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "cherry coke",
-                "substitution": false,
-              },
-              {
-                "word": "pepsi max cherry",
-                "substitution": false,
-              },
-              {
-                "word": "cola",
-                "substitution": true,
-              },
-              {
-                "word": "coke",
-                "substitution": true,
-              },
-            ],
-        },
-        {
             "name": "carrot juice",
             "exclude": [
             ],
@@ -2916,6 +3658,10 @@
                 "substitution": false,
               },
               {
+                "word": "coca cola",
+                "substitution": true,
+              },
+              {
                 "word": "cola",
                 "substitution": true,
               },
@@ -2982,11 +3728,11 @@
             "include": [
               {
                 "word": "caramel liqueur",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "caramel cream liqueur",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "caramel flavoured liqueur",
@@ -3065,7 +3811,7 @@
             "include": [
               {
                 "word": "cinnamon liqueur",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "cinnamon flavoured liqueur",
@@ -3140,11 +3886,11 @@
             "include": [
               {
                 "word": "coffee liqueur",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "coffee cream liqueur",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "coffee flavoured liqueur",
@@ -3386,6 +4132,22 @@
               {
                 "word": "chana",
                 "substitution": false,
+              },
+              {
+                "word": "dried split peas",
+                "substitution": true,
+              },
+              {
+                "word": "dried green lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried brown lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried black lentils",
+                "substitution": true,
               },
             ],
         },
@@ -4974,45 +5736,6 @@
               {
                 "word": "mixed peel",
                 "substitution": true,
-              },
-            ],
-        },
-        {
-            "name": "cava",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "bubbly",
-                "substitution": false,
-              },
-              {
-                "word": "sparkling wine",
-                "substitution": false,
-              },
-              {
-                "word": "sparkling white wine",
-                "substitution": false,
-              },
-              {
-                "word": "spumante",
-                "substitution": false,
-              },
-              {
-                "word": "asti",
-                "substitution": false,
-              },
-              {
-                "word": "sparkling italian wine",
-                "substitution": false,
-              },
-              {
-                "word": "prosecco",
-                "substitution": false,
-              },
-              {
-                "word": "champagne",
-                "substitution": false,
               },
             ],
         },

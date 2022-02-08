@@ -3,7 +3,7 @@
     "key" : ["halloumi", "havarti",
              "hazelnuts",
              "hot dog","ham",
-             "harissa","herbs de provence",
+             "harissa","herbes de provence",
              "hazelnut oil","hot curry paste","hummus",
              "hemp milk",
 
@@ -346,12 +346,12 @@
             ],
         },
         {
-            "name": "herbs de provence",
+            "name": "herbes de provence",
             "exclude": [
             ],
             "include": [
               {
-                "word": "herbes de provence",
+                "word": "herbs de provence",
                 "substitution": false,
               },
             ],

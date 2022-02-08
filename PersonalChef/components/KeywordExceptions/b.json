@@ -3,7 +3,7 @@
     "key" : ["banana flavoured spirit/liqueur","beer","bitters","blueberry flavoured spirit/liqueur","brandy",
              "bavarian smoked cheese","blue cheese","brie",
 
-             "banana custard","black food colouring","black treacle","blue food colouring","biscuit spread","boiled sweets","bounty","bourbon biscuits",
+             "banana custard","black food colouring","black treacle","blue food colouring","biscuit","biscuit spread","boiled sweets","bounty","bourbon biscuits",
              "buttercream","butterscotch mousse",
 
              "baking powder","baking soda","batter mix","bran flakes","brazil nuts","breadcrumbs","breadsticks","bread loaf","bread wraps",
@@ -54,6 +54,19 @@
       {
           "name": "bread sauce",
           "exclude": [
+          ],
+          "include": [
+          ],
+      },
+      {
+          "name": "biscuit",
+          "exclude": [
+            {
+              "word": "spread",
+            },
+            {
+              "word": "biscoff",
+            },
           ],
           "include": [
           ],
@@ -775,6 +788,10 @@
             },
             {
               "word": "campari",
+              "substitution": true,
+            },
+            {
+              "word": "aperol",
               "substitution": true,
             },
             {

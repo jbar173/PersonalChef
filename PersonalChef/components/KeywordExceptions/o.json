@@ -12,7 +12,7 @@
 
               "~~~ HALF DONE : ~~~",
               "ossau iraty",
-              "oat biscuits",
+              "oatmeal cookies",
               "okra",
               "olive spread",
               "orange cordial",
@@ -20,7 +20,7 @@
 
               "~~~ TO DO : ~~~",
               "oka",
-              "oatmeal cookies/oat cookies(sub)", "orange chocolate", "orange food colouring", "oreos",
+              "orange chocolate", "orange food colouring", "oreos",
               "orange roughy/cod(sub)",
               "onion and garlic pasta sauce", "onion gravy", "onion sauce", "oyster sauce",
               "orange milkshake",
@@ -32,6 +32,21 @@
     "ingredients": [
 
 
+          {
+              "name": "oatmeal cookies",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "oat biscuit",
+                  "substitution": false,
+                },
+                {
+                  "word": "oat cookie",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "olive oil",
               "exclude": [
@@ -267,21 +282,6 @@
                 },
                 {
                   "word": "orange butter",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "oat biscuits",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "oat biscuit",
-                  "substitution": false,
-                },
-                {
-                  "word": "oat cookie",
                   "substitution": false,
                 },
               ],

@@ -28,8 +28,9 @@
              "fiddleheads", "fresh corn", "fresh soya beans",
              "faggot",
 
-             "fajita seasoning", "fish seasoning", "fresh basil", "fresh mint", "fresh oregano", "fresh parsley", "fresh rosemary", "fresh sage",
-             "fennel seeds/carraway seeds/anise seeds/cumin seeds(subs)", "fresh shervil", "fresh tarragon", "fresh thyme",
+             "fajita seasoning", "fish seasoning", "fresh basil/fresh tarragon(sub)",
+              "fresh marjoram/fresh + dried sage(sub)", "fresh mint", "fresh oregano", "fresh parsley/fresh coriander(sub)", "fresh rosemary", "fresh sage",
+             "fennel seeds/carraway seeds/anise seeds/cumin seeds/dried tarragon(subs)", "fresh shervil", "fresh tarragon/fresh basil(sub)", "fresh thyme",
 
              "fruit cocktail",
              "fish masala", "fish stock", "french dressing", "french mustard",
@@ -1754,6 +1755,10 @@
               {
                 "word": "cilantro",
                 "substitution": false,
+              },
+              {
+                "word": "fresh parsley",
+                "substitution": true,
               },
             ],
           },

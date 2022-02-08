@@ -1,21 +1,28 @@
 {
 
     "key" : ["dessert wine",
-             "dark chocolate","dried coconut","dates","dried cranberries","dried barberries","dried mixed fruit",
 
-             "dried adzuki beans","dried black-eyed peas","dried borlotti beans","dried butter beans","dried cannellini beans","dried chickpeas",
-             "dried flageolet beans","dried kidney beans","dried mixed beans","dried moth beans","dried navy beans","dried pinto beans",
+             "dark chocolate","dates","dried apple","dried apricots","dried barberries","dried coconut","dried cranberries","dried figs","dried goji berries",
+             "dried mango","dried mixed fruit","dried papaya","dried pears","dried pineapple","dried tropical fruit",
+
+             "dried adzuki beans","dried black-eyed peas","dried borlotti beans","dried black lentils","dried brown lentils","dried butter beans",
+             "dried cannellini beans","dried chickpeas","dried flageolet beans","dried green lentils","dried kidney beans","dried mixed beans",
+             "dried moth beans","dried mung beans","dried mushrooms","dried navy beans","dried parsley","dried pinto beans","dried urad dal","dumpling mix",
 
              "duck",
              "daikon",
-             "dill","dried coriander","dried chilli peppers","dried achiote",
-             "demi-glace",
-             "dumplings",
+
+             "dill","dried achiote","dried basil","dried chervil","dried chilli peppers","dried coriander","dried marjoram","dried oregano","dried sage",
+             "dried savoury","dried tarragon","dried thyme",
+
+             "demi-glace","diane sauce","dijon mustard","dill and lemon sauce",
+             "dandelion and burdock","dr pepper",
+             "dough balls","dumplings",
 
 
              "~~~ HALF DONE : ~~~",
              "dried banana",
-             "dried black beans", "dried moong dall", "dried red lentils", "dried split peas",
+             "dried black beans", "dried moong dal", "dried red lentils", "dried split peas",
              "dripping", "duck fat",
 
 
@@ -23,15 +30,7 @@
              "dark rum",
              "derby cheese", "double gloucester",
 
-             "date syrup", "digestive biscuits", "decorating icing", "decorating sprinkles", "dolly mixtures", "dried apple", "dried apricots",
-             "dried figs", "dried goji berries", "dried mango", "dried pears", "dried pineapple",
-
-             "dried brown lentils", "dried green lentils", "dried mung beans", "dried mushrooms", "dried urid dal", "dumpling mix",
-             "dried basil", "dried chervil", "dried oregano", "dried marjoram", "dried thyme", "dried parsley", "dried rosemary", "dried tarragon",
-
-             "diane sauce", "dijon mustard", "dill and lemon sauce", "dinner salad",
-             "dandelion and burdock", "dr pepper",
-             "dough balls",
+             "date syrup", "digestive biscuits", "decorating icing", "decorating sprinkles", "dolly mixtures",
 
 
     ],
@@ -42,10 +41,347 @@
 
 
         {
-            "name": "dried adzuki beans",
+            "name": "dried goji berries",
+            "exclude": [
+              {
+                "word": "powder",
+              },
+            ],
+            "include": [
+              {
+                "word": "sun-dried goji berries",
+                "substitution": true,
+              },
+              {
+                "word": "dry goji berries",
+                "substitution": true,
+              },
+              {
+                "word": "dried cranberries",
+                "substitution": true,
+              },
+              {
+                "word": "dried barberries",
+                "substitution": true,
+              },
+              {
+                "word": "dried currants",
+                "substitution": true,
+              },
+              {
+                "word": "dried cherries",
+                "substitution": true,
+              },
+              {
+                "word": "dried berries",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried apple",
+            "exclude": [
+              {
+                "word": "powder",
+              },
+            ],
+            "include": [
+              {
+                "word": "dried pear",
+                "substitution": false,
+              },
+              {
+                "word": "dried quince",
+                "substitution": true,
+              },
+              {
+                "word": "dried figs",
+                "substitution": true,
+              },
+              {
+                "word": "dried tropical fruit",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried figs",
+            "exclude": [
+              {
+                "word": "powder",
+              },
+            ],
+            "include": [
+              {
+                "word": "dried fig",
+                "substitution": false,
+              },
+              {
+                "word": "dried quince",
+                "substitution": true,
+              },
+              {
+                "word": "dried pear",
+                "substitution": true,
+              },
+              {
+                "word": "dried apricots",
+                "substitution": true,
+              },
+              {
+                "word": "prunes",
+                "substitution": true,
+              },
+              {
+                "word": "dates",
+                "substitution": true,
+              },
+              {
+                "word": "raisins",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried pears",
+            "exclude": [
+              {
+                "word": "powder",
+              },
+            ],
+            "include": [
+              {
+                "word": "dried pear",
+                "substitution": false,
+              },
+              {
+                "word": "dried quince",
+                "substitution": true,
+              },
+              {
+                "word": "dried figs",
+                "substitution": true,
+              },
+              {
+                "word": "dried apple",
+                "substitution": true,
+              },
+              {
+                "word": "dried tropical fruit",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried tropical fruit",
+            "exclude": [
+              {
+                "word": "powder",
+              },
+            ],
+            "include": [
+              {
+                "word": "dried papaya",
+                "substitution": true,
+              },
+              {
+                "word": "dried pineapple",
+                "substitution": true,
+              },
+              {
+                "word": "dried apricots",
+                "substitution": true,
+              },
+              {
+                "word": "dried mango",
+                "substitution": true,
+              },
+              {
+                "word": "dried peach",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried papaya",
+            "exclude": [
+              {
+                "word": "powder",
+              },
+            ],
+            "include": [
+              {
+                "word": "crystallised papaya",
+                "substitution": false,
+              },
+              {
+                "word": "crystallized papaya",
+                "substitution": false,
+              },
+              {
+                "word": "dried fruit papaya",
+                "substitution": false,
+              },
+              {
+                "word": "candied papaya",
+                "substitution": false,
+              },
+              {
+                "word": "papaya pieces",
+                "substitution": false,
+              },
+              {
+                "word": "diced papaya",
+                "substitution": false,
+              },
+              {
+                "word": "dried tropical fruit",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried apricots",
+            "exclude": [
+              {
+                "word": "powder",
+              },
+            ],
+            "include": [
+              {
+                "word": "dried apricot",
+                "substitution": false,
+              },
+              {
+                "word": "dried pitted apricot",
+                "substitution": false,
+              },
+              {
+                "word": "dried whole apricot",
+                "substitution": false,
+              },
+              {
+                "word": "dry apricot",
+                "substitution": false,
+              },
+              {
+                "word": "soft apricot",
+                "substitution": false,
+              },
+              {
+                "word": "crystallised apricot",
+                "substitution": false,
+              },
+              {
+                "word": "crystallized apricot",
+                "substitution": false,
+              },
+              {
+                "word": "dried fruit apricot",
+                "substitution": false,
+              },
+              {
+                "word": "candied apricot",
+                "substitution": false,
+              },
+              {
+                "word": "apricot pieces",
+                "substitution": false,
+              },
+              {
+                "word": "diced apricot",
+                "substitution": false,
+              },
+              {
+                "word": "dried tropical fruit",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried mango",
+            "exclude": [
+              {
+                "word": "powder",
+              },
+            ],
+            "include": [
+              {
+                "word": "dried cantaloupe",
+                "substitution": false,
+              },
+              {
+                "word": "crystallised mango",
+                "substitution": false,
+              },
+              {
+                "word": "crystallized mango",
+                "substitution": false,
+              },
+              {
+                "word": "dried fruit mango",
+                "substitution": false,
+              },
+              {
+                "word": "candied mango",
+                "substitution": false,
+              },
+              {
+                "word": "mango pieces",
+                "substitution": false,
+              },
+              {
+                "word": "diced mango",
+                "substitution": false,
+              },
+              {
+                "word": "dried tropical fruit",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried pineapple",
+            "exclude": [
+              {
+                "word": "powder",
+              },
+            ],
+            "include": [
+              {
+                "word": "crystallised pineapple",
+                "substitution": false,
+              },
+              {
+                "word": "crystallized pineapple",
+                "substitution": false,
+              },
+              {
+                "word": "dried fruit pineapple",
+                "substitution": false,
+              },
+              {
+                "word": "candied pineapple",
+                "substitution": false,
+              },
+              {
+                "word": "pineapple pieces",
+                "substitution": false,
+              },
+              {
+                "word": "dried tropical fruit",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried black lentils",
             "exclude": [
               {
                 "word": "in water",
+              },
+              {
+                "word": "in syrup",
               },
               {
                 "word": "drained",
@@ -55,6 +391,1166 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+              {
+                "word": "fusili",
+              },
+              {
+                "word": "bolognaise",
+              },
+              {
+                "word": "split",
+              },
+            ],
+            "include": [
+              {
+                "word": "black lentil",
+                "substitution": false,
+              },
+              {
+                "word": "beluga lentil",
+                "substitution": false,
+              },
+              {
+                "word": "lentils",
+                "substitution": true,
+              },
+              {
+                "word": "chana dal",
+                "substitution": true,
+              },
+              {
+                "word": "dried split peas",
+                "substitution": true,
+              },
+              {
+                "word": "dried red lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried green lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried brown lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried urad dal",
+                "substitution": true,
+              },
+              {
+                "word": "dried black beans",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried brown lentils",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "in syrup",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+              {
+                "word": "fusili",
+              },
+              {
+                "word": "bolognaise",
+              },
+              {
+                "word": "split",
+              },
+            ],
+            "include": [
+              {
+                "word": "brown lentil",
+                "substitution": false,
+              },
+              {
+                "word": "green lentil",
+                "substitution": true
+              },
+              {
+                "word": "lentils vert",
+                "substitution": true
+              },
+              {
+                "word": "puy lentil",
+                "substitution": true
+              },
+              {
+                "word": "puy type lentil",
+                "substitution": true
+              },
+              {
+                "word": "le puy",
+                "substitution": true
+              },
+              {
+                "word": "french lentil",
+                "substitution": true
+              },
+              {
+                "word": "lentils",
+                "substitution": true,
+              },
+              {
+                "word": "chana dal",
+                "substitution": true,
+              },
+              {
+                "word": "dried split peas",
+                "substitution": true,
+              },
+              {
+                "word": "dried green lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried black lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried red lentils",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried green lentils",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "in syrup",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+              {
+                "word": "fusili",
+              },
+              {
+                "word": "bolognaise",
+              },
+              {
+                "word": "split",
+              },
+            ],
+            "include": [
+              {
+                "word": "green lentil",
+                "substitution": false,
+              },
+              {
+                "word": "lentils vert",
+                "substitution": false,
+              },
+              {
+                "word": "puy lentil",
+                "substitution": false,
+              },
+              {
+                "word": "puy type lentil",
+                "substitution": false,
+              },
+              {
+                "word": "le puy",
+                "substitution": false,
+              },
+              {
+                "word": "french lentil",
+                "substitution": false,
+              },
+              {
+                "word": "lentils",
+                "substitution": true,
+              },
+              {
+                "word": "chana dal",
+                "substitution": true,
+              },
+              {
+                "word": "dried split peas",
+                "substitution": true,
+              },
+              {
+                "word": "dried brown lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried black lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried red lentils",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried mung beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "in syrup",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+              {
+                "word": "starch",
+              },
+              {
+                "word": "flour",
+              },
+              {
+                "word": "patties",
+              },
+              {
+                "word": "dal",
+              },
+              {
+                "word": "dall",
+              },
+              {
+                "word": "split",
+              },
+              {
+                "word": "sprout",
+              },
+            ],
+            "include": [
+              {
+                "word": "mung bean",
+                "substitution": false,
+              },
+              {
+                "word": "green gram",
+                "substitution": false,
+              },
+              {
+                "word": "moong bean",
+                "substitution": false,
+              },
+              {
+                "word": "monggo bean",
+                "substitution": false,
+              },
+              {
+                "word": "munggo bean",
+                "substitution": false,
+              },
+              {
+                "word": "dried split peas",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried mushrooms",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dried mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "mushrooms dried",
+                "substitution": false,
+              },
+              {
+                "word": "mushrooms, dried",
+                "substitution": false,
+              },
+              {
+                "word": "dried porcini",
+                "substitution": false,
+              },
+              {
+                "word": "dried morel",
+                "substitution": false,
+              },
+              {
+                "word": "dried maitake",
+                "substitution": false,
+              },
+              {
+                "word": "dried grifola",
+                "substitution": false,
+              },
+              {
+                "word": "dried griflola",
+                "substitution": false,
+              },
+              {
+                "word": "dried shiitake",
+                "substitution": false,
+              },
+              {
+                "word": "dry shiitake",
+                "substitution": false,
+              },
+              {
+                "word": "dried sliced shiitake",
+                "substitution": false,
+              },
+              {
+                "word": "dried matsutake",
+                "substitution": false,
+              },
+              {
+                "word": "dried himimatsutake",
+                "substitution": false,
+              },
+              {
+                "word": "dried enokitake",
+                "substitution": false,
+              },
+              {
+                "word": "dried oyster mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried abalone",
+                "substitution": false,
+              },
+              {
+                "word": "dried wild birch",
+                "substitution": false,
+              },
+              {
+                "word": "dried birch polypore",
+                "substitution": false,
+              },
+              {
+                "word": "dried girolle",
+                "substitution": false,
+              },
+              {
+                "word": "dried chantarelle",
+                "substitution": false,
+              },
+              {
+                "word": "dried trompette",
+                "substitution": false,
+              },
+              {
+                "word": "dried ganoderma",
+                "substitution": false,
+              },
+              {
+                "word": "dried cordyceps",
+                "substitution": false,
+              },
+              {
+                "word": "dried tea tree mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried flower mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried pearl mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried chinese mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried asian style mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried standard mix mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried mixed mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried mixed woodland mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried mixed forest mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried forest mix mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried sliced forest mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried wild mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried gourmet mushroom",
+                "substitution": false,
+              },
+              {
+                "word": "dried gourmet mixed mushroom",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dried urad dal",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "in syrup",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "urad dal",
+                "substitution": false,
+              },
+              {
+                "word": "urid dal",
+                "substitution": false,
+              },
+              {
+                "word": "urid dall",
+                "substitution": false,
+              },
+              {
+                "word": "urad dall",
+                "substitution": false,
+              },
+              {
+                "word": "urid chilka",
+                "substitution": false,
+              },
+              {
+                "word": "ulutham paruppu",
+                "substitution": false,
+              },
+              {
+                "word": "black gram",
+                "substitution": false,
+              },
+              {
+                "word": "dried brown lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried black lentils",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dumpling mix",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dough balls",
+                "substitution": false,
+              },
+              {
+                "word": "dumplings",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried basil",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "basil",
+                "substitution": false,
+              },
+              {
+                "word": "fresh basil",
+                "substitution": true,
+              },
+              {
+                "word": "oregano",
+                "substitution": true,
+              },
+              {
+                "word": "tarragon",
+                "substitution": true,
+              },
+              {
+                "word": "italian seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "dried savoury",
+                "substitution": true,
+              },
+              {
+                "word": "herbes de provence",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried chervil",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chervil",
+                "substitution": false,
+              },
+              {
+                "word": "fresh chervil",
+                "substitution": true,
+              },
+              {
+                "word": "parsley",
+                "substitution": true,
+              },
+              {
+                "word": "tarragon",
+                "substitution": true,
+              },
+              {
+                "word": "dill",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried oregano",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "oregano",
+                "substitution": false,
+              },
+              {
+                "word": "fresh oregano",
+                "substitution": true,
+              },
+              {
+                "word": "marjoram",
+                "substitution": true,
+              },
+              {
+                "word": "tarragon",
+                "substitution": true,
+              },
+              {
+                "word": "sage",
+                "substitution": true,
+              },
+              {
+                "word": "parsley",
+                "substitution": true,
+              },
+              {
+                "word": "thyme",
+                "substitution": true,
+              },
+              {
+                "word": "basil",
+                "substitution": true,
+              },
+              {
+                "word": "italian seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "dried savoury",
+                "substitution": true,
+              },
+              {
+                "word": "herbes de provence",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried marjoram",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "marjoram",
+                "substitution": false,
+              },
+              {
+                "word": "fresh marjoram",
+                "substitution": true,
+              },
+              {
+                "word": "thyme",
+                "substitution": true,
+              },
+              {
+                "word": "sage",
+                "substitution": true,
+              },
+              {
+                "word": "rosemary",
+                "substitution": true,
+              },
+              {
+                "word": "tarragon",
+                "substitution": true,
+              },
+              {
+                "word": "oregano",
+                "substitution": true,
+              },
+              {
+                "word": "dried savoury",
+                "substitution": true,
+              },
+              {
+                "word": "herbes de provence",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried thyme",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "thyme",
+                "substitution": false,
+              },
+              {
+                "word": "fresh thyme",
+                "substitution": true,
+              },
+              {
+                "word": "oregano",
+                "substitution": true,
+              },
+              {
+                "word": "rosemary",
+                "substitution": true,
+              },
+              {
+                "word": "basil",
+                "substitution": true,
+              },
+              {
+                "word": "marjoram",
+                "substitution": true,
+              },
+              {
+                "word": "dried savoury",
+                "substitution": true,
+              },
+              {
+                "word": "herbes de provence",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried parsley",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "parsley",
+                "substitution": false,
+              },
+              {
+                "word": "fresh parsley",
+                "substitution": true,
+              },
+              {
+                "word": "chervil",
+                "substitution": true,
+              },
+              {
+                "word": "thyme",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried sage",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sage",
+                "substitution": false,
+              },
+              {
+                "word": "fresh sage",
+                "substitution": true,
+              },
+              {
+                "word": "rosemary",
+                "substitution": true,
+              },
+              {
+                "word": "oregano",
+                "substitution": true,
+              },
+              {
+                "word": "marjoram",
+                "substitution": true,
+              },
+              {
+                "word": "dried savoury",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried savoury",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "savoury dried",
+                "substitution": false,
+              },
+              {
+                "word": "dried savory",
+                "substitution": false,
+              },
+              {
+                "word": "savory dried",
+                "substitution": false,
+              },
+              {
+                "word": "savoury dried",
+                "substitution": false,
+              },
+              {
+                "word": "savoury leaves",
+                "substitution": false,
+              },
+              {
+                "word": "savory leaves",
+                "substitution": false,
+              },
+              {
+                "word": "herbes de provence",
+                "substitution": false,
+              },
+              {
+                "word": "marzeh",
+                "substitution": false,
+              },
+              {
+                "word": "rosemary",
+                "substitution": true,
+              },
+              {
+                "word": "thyme",
+                "substitution": true,
+              },
+              {
+                "word": "sage",
+                "substitution": true,
+              },
+              {
+                "word": "italian seasoning",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried rosemary",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "rosemary",
+                "substitution": false,
+              },
+              {
+                "word": "fresh rosemary",
+                "substitution": true,
+              },
+              {
+                "word": "thyme",
+                "substitution": true,
+              },
+              {
+                "word": "sage",
+                "substitution": true,
+              },
+              {
+                "word": "dried savoury",
+                "substitution": true,
+              },
+              {
+                "word": "herbes de provence",
+                "substitution": true,
+              },
+              {
+                "word": "italian seasoning",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried tarragon",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "tarragon",
+                "substitution": false,
+              },
+              {
+                "word": "tarragon",
+                "substitution": true,
+              },
+              {
+                "word": "basil",
+                "substitution": true,
+              },
+              {
+                "word": "parsley",
+                "substitution": true,
+              },
+              {
+                "word": "dill",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "diane sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sauce diane",
+                "substitution": false,
+              },
+              {
+                "word": "dijon mustard",
+                "substitution": true,
+              },
+              {
+                "word": "mustard",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dijon mustard",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dijon",
+                "substitution": false,
+              },
+              {
+                "word": "mustard",
+                "substitution": true,
+              },
+              {
+                "word": "horseradish",
+                "substitution": true,
+              },
+              {
+                "word": "worcestershire sauce",
+                "substitution": true,
+              },
+              {
+                "word": "worcester sauce",
+                "substitution": true,
+              },
+              {
+                "word": "wasabi",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dill and lemon sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dill & lemon sauce",
+                "substitution": false,
+              },
+              {
+                "word": "lemon & dill sauce",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and dill sauce",
+                "substitution": false,
+              },
+              {
+                "word": "lemon dill sauce",
+                "substitution": false,
+              },
+              {
+                "word": "lemon-dill sauce",
+                "substitution": false,
+              },
+              {
+                "word": "dill lemon sauce",
+                "substitution": false,
+              },
+              {
+                "word": "dill-lemon sauce",
+                "substitution": false,
+              },
+              {
+                "word": "dill sauce",
+                "substitution": true,
+              },
+              {
+                "word": "seafood sauce",
+                "substitution": true,
+              },
+              {
+                "word": "dill & lemon dressing",
+                "substitution": false,
+              },
+              {
+                "word": "lemon & dill dressing",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and dill dressing",
+                "substitution": false,
+              },
+              {
+                "word": "lemon dill dressing",
+                "substitution": false,
+              },
+              {
+                "word": "lemon-dill dressing",
+                "substitution": false,
+              },
+              {
+                "word": "dill lemon dressing",
+                "substitution": false,
+              },
+              {
+                "word": "dill-lemon dressing",
+                "substitution": false,
+              },
+              {
+                "word": "dill dressing",
+                "substitution": true,
+              },
+              {
+                "word": "seafood dressing",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dandelion & burdock",
+            "exclude": [
+              {
+                "word": "tea",
+              },
+              {
+                "word": "teabags",
+              },
+            ],
+            "include": [
+              {
+                "word": "dandelion and burdock",
+                "substitution": false,
+              },
+              {
+                "word": "sarsaparilla",
+                "substitution": true,
+              },
+              {
+                "word": "dr pepper",
+                "substitution": true,
+              },
+              {
+                "word": "root beer",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dr pepper",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cherry cola",
+                "substitution": true,
+              },
+              {
+                "word": "mr. pibb",
+                "substitution": true,
+              },
+              {
+                "word": "coca cola",
+                "substitution": true,
+              },
+              {
+                "word": "root beer",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dough balls",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "doughballs",
+                "substitution": false,
+              },
+              {
+                "word": "dumplings",
+                "substitution": true,
+              },
+              {
+                "word": "dumpling mix",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried adzuki beans",
+            "exclude": [
+              {
+                "word": "in water",
+              },
+              {
+                "word": "in syrup",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -84,6 +1580,10 @@
                 "word": "red mung bean",
                 "substitution": false,
               },
+              {
+                "word": "dried urad dal",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -91,6 +1591,9 @@
             "exclude": [
               {
                 "word": "in water",
+              },
+              {
+                "word": "in syrup",
               },
               {
                 "word": "drained",
@@ -102,6 +1605,12 @@
                 "word": "canned",
               },
               {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
+              },
+              {
                 "word": "tin",
               },
               {
@@ -111,6 +1620,14 @@
             "include": [
               {
                 "word": "moth bean",
+                "substitution": false,
+              },
+              {
+                "word": "muth bean",
+                "substitution": false,
+              },
+              {
+                "word": "matki",
                 "substitution": false,
               },
               {
@@ -126,6 +1643,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -133,6 +1653,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -232,6 +1758,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -239,6 +1768,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -256,6 +1791,10 @@
                 "word": "split pea",
                 "substitution": false,
               },
+              {
+                "word": "dried mung beans",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -265,6 +1804,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -272,6 +1814,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -289,13 +1837,32 @@
                 "word": "red lentil",
                 "substitution": false,
               },
+              {
+                "word": "masoor dal",
+                "substitution": false,
+              },
+              {
+                "word": "dried brown lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried green lentils",
+                "substitution": true,
+              },
+              {
+                "word": "dried black lentils",
+                "substitution": true,
+              },
             ],
         },
         {
-            "name": "dried moong dall",
+            "name": "dried moong dal",
             "exclude": [
               {
                 "word": "in water",
+              },
+              {
+                "word": "in syrup",
               },
               {
                 "word": "drained",
@@ -305,6 +1872,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -319,8 +1892,20 @@
                 "substitution": false,
               },
               {
+                "word": "moong dal",
+                "substitution": false,
+              },
+              {
                 "word": "moong dall",
                 "substitution": false,
+              },
+              {
+                "word": "dried mung beans",
+                "substitution": true,
+              },
+              {
+                "word": "dried urad dhal",
+                "substitution": true,
               },
             ],
         },
@@ -331,6 +1916,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -338,6 +1926,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -472,6 +2066,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -481,10 +2078,19 @@
                 "word": "canned",
               },
               {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
+              },
+              {
                 "word": "tin",
               },
               {
                 "word": "tinned",
+              },
+              {
+                "word": "powder",
               },
             ],
             "include": [
@@ -525,6 +2131,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -532,6 +2141,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -558,6 +2173,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -565,6 +2183,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -591,6 +2215,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -598,6 +2225,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -636,6 +2269,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -643,6 +2279,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -723,6 +2365,9 @@
                 "word": "rice",
               },
               {
+                "word": "pulao",
+              },
+              {
                 "word": "vinegar",
               },
               {
@@ -767,6 +2412,24 @@
               {
                 "word": "chocolate",
               },
+              {
+                "word": "dal",
+              },
+              {
+                "word": "dall",
+              },
+              {
+                "word": "split",
+              },
+              {
+                "word": "chat",
+              },
+              {
+                "word": "chaat",
+              },
+              {
+                "word": "masala",
+              },
             ],
             "include": [
               {
@@ -798,6 +2461,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -805,6 +2471,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -847,6 +2519,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -854,6 +2529,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -904,6 +2585,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -911,6 +2595,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -961,6 +2651,9 @@
                 "word": "in water",
               },
               {
+                "word": "in syrup",
+              },
+              {
                 "word": "drained",
               },
               {
@@ -968,6 +2661,12 @@
               },
               {
                 "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
               },
               {
                 "word": "tin",
@@ -1181,6 +2880,22 @@
                 "word": "pierogi",
                 "substitution": false,
               },
+              {
+                "word": "matzo ball",
+                "substitution": false,
+              },
+              {
+                "word": "matzo ball",
+                "substitution": false,
+              },
+              {
+                "word": "matzah ball",
+                "substitution": false,
+              },
+              {
+                "word": "dumpling mix",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1366,6 +3081,14 @@
               },
             ],
             "include": [
+              {
+                "word": "dried tarragon",
+                "substitution": true,
+              },
+              {
+                "word": "fresh tarragon",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1518,6 +3241,14 @@
             {
               "word": "majhool",
               "substitution": false,
+            },
+            {
+              "word": "dried figs",
+              "substitution": true,
+            },
+            {
+              "word": "raisins",
+              "substitution": true,
             },
           ],
         },

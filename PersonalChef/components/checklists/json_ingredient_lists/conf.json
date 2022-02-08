@@ -6,16 +6,15 @@
             "blue food colouring", "biscuit spread", "boiled sweets", "bourbon biscuits", "bounty", "bramble jam", "bramble jelly", "buttercream", "butterscotch mousse",
 
             "cacao nibs", "cake mix", "candied orange", "caramel", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel peanuts", "caramel syrup",
-            "caramel wafer", "carrot cake", "cherry compote", "cherry jam", "cherry jelly", "chocolate", "chocolate buttons", "chocolate caramel bar", "chocolate chip cookies",
-            "chocolate cookie dough", "chocolate cornflake nests", "chocolate custard", "chocolate decorating icing", "chocolate drops", "chocolate eclairs",
-            "chocolate ganache", "chocolate liqueurs", "chocolate mousse", "chocolate oat biscuits", "chocolate orange biscuit", "chocolate peanuts", "chocolate raisins",
-            "chocolate sauce", "chocolate sponge", "chocolate sprinkles", "chocolate wafers", "cocoa powder", "coconut bar", "coconut biscuits", "coconut macaroons",
-            "cola laces", "coloured dusting sugar", "condensed milk", "cookie mix", "creme egg", "crunchie bar", "crunchy cream biscuits", "crystallised ginger",
-            "custard", "custard powder",
+            "caramel wafer", "carrot cake", "cherry compote", "cherry jam", "cherry jelly", "chocolate", "chocolate biscuits", "chocolate buttons", "chocolate cake",
+            "chocolate caramel bar", "chocolate cookies", "chocolate cookie dough", "chocolate custard", "chocolate decorating icing", "chocolate drops",
+            "chocolate ganache", "chocolate mousse", "chocolate peanuts", "chocolate raisins", "chocolate sauce", "chocolate sprinkles", "chocolate wafers", "cocoa powder",
+            "coconut bar", "coconut biscuits", "coconut macaroons", "cola laces", "coloured dusting sugar", "condensed milk", "cookies", "cookie mix", "creme egg", "crunchie bar",
+            "crunchy cream biscuits", "crystallised ginger", "custard", "custard powder",
 
             "dark chocolate", "dates", "date syrup", "digestive biscuits", "decorating icing", "decorating sprinkles", "dolly mixtures", "dried apple", "dried apricots",
             "dried banana", "dried barberries", "dried coconut", "dried cranberries", "dried figs", "dried goji berries", "dried mango",
-            "dried mixed fruit", "dried pears", "dried pineapple",
+            "dried mixed fruit", "dried pears", "dried papaya", "dried pineapple","dried tropical fruit",
 
             "fig jam", "fig jelly", "fig roll", "fondant icing", "fruit cake", "fruit jellies", "fruit and nut chocolate", "fruit loaf", "fudge",
 
@@ -39,7 +38,7 @@
 
             "nerds", "nougat", "nutella", "nutty chocolate",
 
-            "oat biscuits", "orange chocolate", "orange food colouring", "orange jam","orange jelly", "orange oil", "oreos",
+            "oatmeal cookies", "orange chocolate", "orange food colouring", "orange jam","orange jelly", "orange oil", "oreos",
 
             "passion fruit jam", "passion fruit jelly", "passion fruit puree", "peach jam", "peach jelly", "peanut bar", "peanut butter wafers", "peanut cookies", "peanut mnms",
             "pear drops", "peppermint extract", "pineapple jam", "pineapple jelly", "pink food colouring", "plum jam", "plum jelly", "popping candy", "pralines", "preserved lemons",
