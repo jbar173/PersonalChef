@@ -4,9 +4,13 @@
              "fig jam","fig jelly","fruit cake","fruit loaf","fudge",
              "filo pastry","flax seeds","flour",
              "fig","fresh coconut","fresh cranberries","fresh ginger",
-             "fresh coriander","fenugreek leaves",
-             "flageolet beans",
-             "fish sauce",
+
+             "fennel seeds","fish masala","fish seasoning","fresh basil","fresh chervil","fresh coriander","fresh marjoram","fresh mint","fresh oregano",
+             "fresh parsley","fresh rosemary","fresh sage","fresh tarragon","fresh thyme","fenugreek leaves",
+
+             "flageolet beans","fruit cocktail",
+             "fish sauce","french dressing","french mustard",
+             "faluda drink","fennel tea",
              "fruit yoghurt",
 
 
@@ -28,14 +32,8 @@
              "fiddleheads", "fresh corn", "fresh soya beans",
              "faggot",
 
-             "fajita seasoning", "fish seasoning", "fresh basil/fresh tarragon(sub)",
-              "fresh marjoram/fresh + dried sage(sub)", "fresh mint", "fresh oregano", "fresh parsley/fresh coriander(sub)", "fresh rosemary", "fresh sage",
-             "fennel seeds/carraway seeds/anise seeds/cumin seeds/dried tarragon(subs)", "fresh shervil", "fresh tarragon/fresh basil(sub)", "fresh thyme",
+             "fajita seasoning", 
 
-             "fruit cocktail",
-             "fish masala", "fish stock", "french dressing", "french mustard",
-             "faluda drink", "fennel tea",
-             "falafel",
 
     ],
 
@@ -44,6 +42,478 @@
 
 
 
+          {
+              "name": "fish seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fish rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish curry masala",
+                  "substitution": true
+                },
+                {
+                  "word": "prawn masala",
+                  "substitution": true
+                },
+                {
+                  "word": "fish masala",
+                  "substitution": true
+                },
+              ],
+          },
+          {
+              "name": "fresh basil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried basil",
+                  "substitution": true,
+                },
+                {
+                  "word": "basil",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh marjoram",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried marjoram",
+                  "substitution": true,
+                },
+                {
+                  "word": "marjoram",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh mint",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried mint",
+                  "substitution": true,
+                },
+                {
+                  "word": "mint",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh oregano",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried oregano",
+                  "substitution": true,
+                },
+                {
+                  "word": "oregano",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh parsley",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried parsley",
+                  "substitution": true,
+                },
+                {
+                  "word": "parsley",
+                  "substitution": false,
+                },
+                {
+                  "word": "fresh coriander",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fresh rosemary",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried rosemary",
+                  "substitution": true,
+                },
+                {
+                  "word": "rosemary",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh sage",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried sage",
+                  "substitution": true,
+                },
+                {
+                  "word": "sage",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fennel seeds",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried fennel",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel",
+                  "substitution": true,
+                },
+                {
+                  "word": "carraway seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "anise seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "cumin seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried tarragon",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fresh chervil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried chervil",
+                  "substitution": true,
+                },
+                {
+                  "word": "chervil",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh tarragon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried tarragon",
+                  "substitution": true,
+                },
+                {
+                  "word": "tarragon",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fresh thyme",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried thyme",
+                  "substitution": true,
+                },
+                {
+                  "word": "thyme",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fruit cocktail",
+              "exclude": [
+                {
+                  "word": "cocktails",
+                },
+              ],
+              "include": [
+                {
+                  "word": "fruit salad",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fish masala",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fish curry masala",
+                  "substitution": false,
+                },
+                {
+                  "word": "prawn masala",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish seasoning",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fish stock",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fish broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish bouillon",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish cube",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish bone broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish base",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish consume",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish stockpot",
+                  "substitution": false,
+                },
+                {
+                  "word": "shellfish broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "shellfish bouillon",
+                  "substitution": false,
+                },
+                {
+                  "word": "shellfish stock",
+                  "substitution": false,
+                },
+                {
+                  "word": "shellfish soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "shellfish bone broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "shellfish base",
+                  "substitution": false,
+                },
+                {
+                  "word": "shellfish consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "shellfish consume",
+                  "substitution": false,
+                },
+                {
+                  "word": "shellfish stockpot",
+                  "substitution": false,
+                },
+                {
+                  "word": "clam broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "clam bouillon",
+                  "substitution": false,
+                },
+                {
+                  "word": "clam stock",
+                  "substitution": false,
+                },
+                {
+                  "word": "clam soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "clam bone broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "clam base",
+                  "substitution": false,
+                },
+                {
+                  "word": "clam consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "clam consume",
+                  "substitution": false,
+                },
+                {
+                  "word": "anchovy paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "french dressing",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "french salad dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "french-style dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "western dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "catalina dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "russian dressing",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "french mustard",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mustard",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "faluda drink",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "falooda",
+                  "substitution": false,
+                },
+                {
+                  "word": "faluda",
+                  "substitution": false,
+                },
+                {
+                  "word": "rose drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "rose lassi",
+                  "substitution": true,
+                },
+                {
+                  "word": "rose flavor lassi",
+                  "substitution": true,
+                },
+                {
+                  "word": "rose flavour lassi",
+                  "substitution": true,
+                },
+                {
+                  "word": "rose and cardamom lassi",
+                  "substitution": true,
+                },
+                {
+                  "word": "rose water lassi",
+                  "substitution": true,
+                },
+                {
+                  "word": "rose yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "rose yoghurt",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fennel tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fennel teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel seed tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel seeds",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "flax seeds",
               "exclude": [
@@ -1745,12 +2215,16 @@
             ],
             "include": [
               {
-                "word": "coriander",
-                "substitution": false,
+                "word": "dried coriander",
+                "substitution": true,
               },
               {
-                "word": "corriander",
-                "substitution": false,
+                "word": "coriander leaves",
+                "substitution": true,
+              },
+              {
+                "word": "coriander leaf",
+                "substitution": true,
               },
               {
                 "word": "cilantro",

@@ -1,9 +1,11 @@
 {
 
-    "key" : ["dessert wine",
+    "key" : ["dark rum","dessert wine",
+             "derby cheese","double gloucester",
 
-             "dark chocolate","dates","dried apple","dried apricots","dried barberries","dried coconut","dried cranberries","dried figs","dried goji berries",
-             "dried mango","dried mixed fruit","dried papaya","dried pears","dried pineapple","dried tropical fruit",
+             "dark chocolate","dates","date syrup","decorating icing","decorating sprinkles","digestive biscuits","dolly mixture","dried apple","dried apricots",
+             "dried barberries","dried coconut","dried cranberries","dried figs","dried goji berries","dried mango","dried mixed fruit","dried papaya",
+             "dried pears","dried pineapple","dried tropical fruit",
 
              "dried adzuki beans","dried black-eyed peas","dried borlotti beans","dried black lentils","dried brown lentils","dried butter beans",
              "dried cannellini beans","dried chickpeas","dried flageolet beans","dried green lentils","dried kidney beans","dried mixed beans",
@@ -27,10 +29,6 @@
 
 
              "~~~ TO DO : ~~~",
-             "dark rum",
-             "derby cheese", "double gloucester",
-
-             "date syrup", "digestive biscuits", "decorating icing", "decorating sprinkles", "dolly mixtures",
 
 
     ],
@@ -39,7 +37,246 @@
     "ingredients": [
 
 
-
+        {
+            "name": "dark rum",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "spiced rum",
+                "substitution": false,
+              },
+              {
+                "word": "dark navy rum",
+                "substitution": false,
+              },
+              {
+                "word": "whisky",
+                "substitution": true,
+              },
+              {
+                "word": "bourbon",
+                "substitution": true,
+              },
+              {
+                "word": "cognac",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "derby cheese",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cheddar",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "double gloucester",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cheddar",
+                "substitution": true,
+              },
+              {
+                "word": "gouda",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "date syrup",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "date nectar",
+                "substitution": false,
+              },
+              {
+                "word": "date honey",
+                "substitution": false,
+              },
+              {
+                "word": "silan",
+                "substitution": false,
+              },
+              {
+                "word": "honey",
+                "substitution": true,
+              },
+              {
+                "word": "agave syrup",
+                "substitution": true,
+              },
+              {
+                "word": "rice syrup",
+                "substitution": true,
+              },
+              {
+                "word": "maple syrup",
+                "substitution": true,
+              },
+              {
+                "word": "coconut nectar",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "digestive biscuits",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "digestives",
+                "substitution": false,
+              },
+              {
+                "word": "digestive biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "hobnobs",
+                "substitution": true,
+              },
+              {
+                "word": "rich tea",
+                "substitution": true,
+              },
+              {
+                "word": "belvita",
+                "substitution": true,
+              },
+              {
+                "word": "oreo",
+                "substitution": true,
+              },
+              {
+                "word": "marie biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "graham cracker",
+                "substitution": true,
+              },
+              {
+                "word": "grahams",
+                "substitution": true,
+              },
+              {
+                "word": "bourbon biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "caramel crunch biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "crunchy cream biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "milk biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "coconut biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "garibaldi biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "ginger biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "lemon biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "shortcake biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "shortbread",
+                "substitution": true,
+              },
+              {
+                "word": "cookies",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "decorating icing",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chocolate decorating icing",
+                "substitution": false,
+              },
+              {
+                "word": "fondant icing",
+                "substitution": false,
+              },
+              {
+                "word": "icing",
+                "substitution": false,
+              },
+              {
+                "word": "icing sugar",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "decorating sprinkles",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sprinkles",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate sprinkles",
+                "substitution": false,
+              },
+              {
+                "word": "coloured dusting sugar",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "dolly mixture",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dolly mixtures",
+                "substitution": false,
+              },
+              {
+                "word": "dolly mix",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "dried goji berries",
             "exclude": [
@@ -1152,6 +1389,14 @@
                 "substitution": true,
               },
               {
+                "word": "summer savoury",
+                "substitution": true,
+              },
+              {
+                "word": "summer savory",
+                "substitution": true,
+              },
+              {
                 "word": "herbes de provence",
                 "substitution": true,
               },
@@ -1353,27 +1598,7 @@
             ],
             "include": [
               {
-                "word": "dijon",
-                "substitution": false,
-              },
-              {
                 "word": "mustard",
-                "substitution": true,
-              },
-              {
-                "word": "horseradish",
-                "substitution": true,
-              },
-              {
-                "word": "worcestershire sauce",
-                "substitution": true,
-              },
-              {
-                "word": "worcester sauce",
-                "substitution": true,
-              },
-              {
-                "word": "wasabi",
                 "substitution": true,
               },
             ],
@@ -2937,6 +3162,14 @@
             },
             {
               "word": "dried corriander",
+              "substitution": false,
+            },
+            {
+              "word": "corriander",
+              "substitution": false,
+            },
+            {
+              "word": "coriander",
               "substitution": false,
             },
           ],

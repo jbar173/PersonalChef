@@ -747,33 +747,51 @@
       {
           "name": "black tea",
           "exclude": [
-            {
-              "word": "fruit",
-            },
-            {
-              "word": "fruity",
-            },
-            {
-              "word": "green",
-            },
-            {
-              "word": "herbal",
-            },
-            {
-              "word": "infusion",
-            },
-            {
-              "word": "&",
-            },
           ],
           "include": [
             {
-              "word": "teabag",
+              "word": "black teabag",
               "substitution": false,
             },
             {
-              "word": "tea",
+              "word": "black tea bag",
               "substitution": false,
+            },
+            {
+              "word": "assam tea",
+              "substitution": false,
+            },
+            {
+              "word": "assam loose",
+              "substitution": false,
+            },
+            {
+              "word": "yorkshire gold",
+              "substitution": false,
+            },
+            {
+              "word": "yorkshire tea",
+              "substitution": false,
+            },
+            {
+              "word": "pg tips",
+              "substitution": false,
+            },
+            {
+              "word": "breakfast tea",
+              "substitution": false,
+            },
+            {
+              "word": "builders tea",
+              "substitution": false,
+            },
+            {
+              "word": "ceylon tea",
+              "substitution": false,
+            },
+            {
+              "word": "earl grey tea",
+              "substitution": true,
             },
           ],
       },
@@ -1906,6 +1924,10 @@
               "word": "pinga",
               "substitution": false,
             },
+            {
+              "word": "dark rum",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -2086,6 +2108,10 @@
             },
             {
               "word": "flat bean",
+              "substitution": true,
+            },
+            {
+              "word": "edamame beans",
               "substitution": true,
             },
           ],

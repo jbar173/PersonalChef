@@ -217,6 +217,10 @@
                   "word": "taco mix",
                   "substitution": false,
                 },
+                {
+                  "word": "taco sauce",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -810,10 +814,6 @@
               ],
               "include": [
                 {
-                  "word": "fire-roasted tomatoes",
-                  "substitution": true,
-                },
-                {
                   "word": "tomato alfredo marinara",
                   "substitution": false,
                 },
@@ -842,10 +842,6 @@
                   "substitution": false,
                 },
                 {
-                  "word": "passata",
-                  "substitution": true,
-                },
-                {
                   "word": "marinara",
                   "substitution": false,
                 },
@@ -860,6 +856,14 @@
                 {
                   "word": "casserole sauce",
                   "substitution": false,
+                },
+                {
+                  "word": "passata",
+                  "substitution": true,
+                },
+                {
+                  "word": "fire-roasted tomatoes",
+                  "substitution": true,
                 },
                 {
                   "word": "butter chicken cooking sauce",
@@ -879,6 +883,10 @@
                 },
                 {
                   "word": "chilli and tomato paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "ezme paste",
                   "substitution": true,
                 },
               ],
@@ -972,6 +980,10 @@
                 },
                 {
                   "word": "pizza sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "ezme paste",
                   "substitution": true,
                 },
               ],

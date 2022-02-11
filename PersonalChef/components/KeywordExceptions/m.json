@@ -32,7 +32,7 @@
               "milk biscuits", "milky way", "millionaire’s shortbread", "mini eggs", "minstrels", "mint chocolate", "mint fondants",
               "mints", "munchies",
 
-              "malt wheats cereal", "milk powder", "mixed nuts", "monkey nuts", "museli",
+              "malt wheats cereal", "milk powder/evaporated milk(sub)", "mixed nuts", "monkey nuts", "museli",
               "mackerel", "mussels",
               "mixed greens", "mixed vegetable stir fry",
 
@@ -1986,6 +1986,22 @@
                 "word": "dijon",
                 "substitution": false,
               },
+              {
+                "word": "horseradish",
+                "substitution": true,
+              },
+              {
+                "word": "worcestershire sauce",
+                "substitution": true,
+              },
+              {
+                "word": "worcester sauce",
+                "substitution": true,
+              },
+              {
+                "word": "wasabi",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -2082,6 +2098,10 @@
               },
               {
                 "word": "almond breeze",
+                "substitution": true,
+              },
+              {
+                "word": "evaporated milk",
                 "substitution": true,
               },
             ],

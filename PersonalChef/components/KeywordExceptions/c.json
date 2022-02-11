@@ -6,8 +6,9 @@
               "cacao nibs","caramel","caramel cookie dough","caramel essence","caramel peanuts","caramel wafer","candied orange","cherry compote",
               "chocolate","chocolate biscuits","chocolate buttons","chocolate cake","chocolate caramel bar","chocolate cookie dough","chocolate cookies",
               "chocolate custard","chocolate decorating icing","chocolate drops","chocolate ganache","chocolate mousse","chocolate peanuts","chocolate raisins",
-              "chocolate sauce","chocolate sprinkles","cocoa powder","coconut bar","coconut biscuits","coconut macaroons","cola laces","coloured dusting sugar",
-              "condensed milk","cookies","cookie mix","creme egg","crunchie bar","crunchy cream biscuits","curd cheese","custard","custard powder",
+              "chocolate sauce","chocolate sprinkles","cocoa powder","coconut bar","coconut biscuits","coconut macaroons","coconut nectar","cola laces",
+              "coloured dusting sugar","condensed milk","cookies","cookie mix","creme egg","crunchie bar","crunchy cream biscuits","curd cheese","custard",
+              "custard powder",
 
               "candlenuts","cashew nuts","cassava flour","chana dal","chestnuts","chia seeds","chocolate cereal","coconut milk powder","cornflakes","cornstarch",
               "cornmeal","couscous","crackers","croutons","crumpets",
@@ -63,6 +64,53 @@
             "exclude": [
             ],
             "include": [
+            ],
+        },
+        {
+            "name": "coconut nectar",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coconut syrup",
+                "substitution": false,
+              },
+              {
+                "word": "coconut blossom syrup",
+                "substitution": false,
+              },
+              {
+                "word": "coconut flower nectar",
+                "substitution": false,
+              },
+              {
+                "word": "coconut sugar flower nectar",
+                "substitution": false,
+              },
+              {
+                "word": "palm sugar",
+                "substitution": true,
+              },
+              {
+                "word": "maple syrup",
+                "substitution": true,
+              },
+              {
+                "word": "date syrup",
+                "substitution": true,
+              },
+              {
+                "word": "rice syrup",
+                "substitution": true,
+              },
+              {
+                "word": "honey",
+                "substitution": true,
+              },
+              {
+                "word": "agave syrup",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -127,6 +175,10 @@
               },
               {
                 "word": "brandy",
+                "substitution": true,
+              },
+              {
+                "word": "dark rum",
                 "substitution": true,
               },
             ],
@@ -1345,25 +1397,6 @@
               {
                 "word": "decorate powder",
                 "substitution": false,
-              },
-            ],
-        },
-        {
-            "name": "condensed milk",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "caramel",
-                "substitution": true,
-              },
-              {
-                "word": "evaporated milk",
-                "substitution": true,
-              },
-              {
-                "word": "condensed coconut milk",
-                "substitution": true,
               },
             ],
         },
@@ -5631,6 +5664,10 @@
               "word": "chilli garlic curry paste",
               "substitution": true,
             },
+            {
+              "word": "ezme paste",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -6736,6 +6773,10 @@
               "word": "coconut yogurt",
               "substitution": true,
             },
+            {
+              "word": "evaporated milk",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -7209,6 +7250,10 @@
               },
               {
                 "word": "soya cream",
+                "substitution": true,
+              },
+              {
+                "word": "evaporated milk",
                 "substitution": true,
               },
             ],

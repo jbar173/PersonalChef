@@ -19,7 +19,7 @@
               "weetabix",
               "watercress/cress(sub)", "watermelon",
 
-              "wasabi paste", "watercress sauce", "white sauce", "white wine stock",
+              "wasabi paste/horseradish/mustard(subs)", "watercress sauce", "white sauce", "white wine stock",
               "wholegrain mustard", "worcestershire sauce",
 
               "white chocolate milkshake",
@@ -316,6 +316,10 @@
               {
                 "word": "wild turkey",
                 "substitution": false,
+              },
+              {
+                "word": "dark rum",
+                "substitution": true,
               },
             ],
           },

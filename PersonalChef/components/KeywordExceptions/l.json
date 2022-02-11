@@ -27,7 +27,7 @@
               "lamb seasoning",
               "lentils",
               "lemon and parsley sauce", "lemon butter sauce", "lime juice",
-              "lapsang tea", "lemon ice tea", 
+              "lapsang tea", "lemon ice tea",
 
     ],
 
@@ -96,6 +96,10 @@
               },
               {
                 "word": "lemon and ginger tea",
+                "substitution": true,
+              },
+              {
+                "word": "earl grey tea",
                 "substitution": true,
               },
             ],

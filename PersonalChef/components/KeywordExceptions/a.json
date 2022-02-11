@@ -19,7 +19,7 @@
               "atta flour",
               "artichoke","asparagus","aubergine",
               "all purpose seasoning",
-              "adzuki beans","apples","artichoke antipasti",
+              "adzuki beans","apples","apricots","artichoke antipasti",
               "aioli","anchovy paste","apricot harissa paste","aubergine paste",
 
             ],
@@ -30,6 +30,29 @@
 
 
 
+          {
+              "name": "apricots",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apricot slices",
+                  "substitution": false,
+                },
+                {
+                  "word": "tinned apricot",
+                  "substitution": true,
+                },
+                {
+                  "word": "canned apricot",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "almond oil",
               "exclude": [
@@ -273,6 +296,10 @@
                   "word": "fish sauce",
                   "substitution": true,
                 },
+                {
+                  "word": "fish stock",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -304,11 +331,19 @@
                   "substitution": true,
                 },
                 {
-                  "word": "coconut syrup",
+                  "word": "maple syrup",
                   "substitution": true,
                 },
                 {
-                  "word": "maple syrup",
+                  "word": "date syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "honey",
                   "substitution": true,
                 },
               ],
@@ -397,6 +432,14 @@
                 {
                   "word": "anchovy",
                   "substitution": false,
+                },
+                {
+                  "word": "fish sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish sauce",
+                  "substitution": true,
                 },
               ],
           },
@@ -972,7 +1015,7 @@
                   "substitution": true,
                 },
                 {
-                  "word": "egg white",
+                  "word": "egg whites",
                   "substitution": true,
                 },
                 {

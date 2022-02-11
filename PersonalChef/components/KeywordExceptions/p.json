@@ -2514,6 +2514,10 @@
                   "word": "petits pois",
                   "substitution": false,
                 },
+                {
+                  "word": "edamame beans",
+                  "substitution": true,
+                },
               ],
           },
           {
