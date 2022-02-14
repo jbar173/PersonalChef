@@ -11,12 +11,12 @@
               "custard powder",
 
               "candlenuts","cashew nuts","cassava flour","chana dal","chestnuts","chia seeds","chocolate cereal","coconut milk powder","cornflakes","cornstarch",
-              "cornmeal","couscous","crackers","croutons","crumpets",
+              "cornmeal","couscous","crackers","crispy onions","croutons","crumpets",
 
               "caviar","cod","cockles","crab","crayfish",
               "chicken","chicken mince","cured sausage/meat",
 
-              "cabbage","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli pepper","clementine",
+              "cabbage","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli paepper","clementine",
               "collard greens","courgette","cucumber",
 
               "cajun spice","caraway seeds","cayenne","celery salt","celery seeds","chana masala spice blend","chicken seasoning","chilli flakes","chilli powder",
@@ -24,9 +24,9 @@
 
               "canned chipotles","cannellini beans","cheddar cheese soup","chicken soup","chickpeas",
 
-              "canola oil","cantonese sauce","caperberries","capers","carbonara sauce","cashew butter","cashew paste","cheese sauce","chermoula",
-              "chestnut puree","chicken paste","chicken stock","chilli mayonnaise","chilli paste","chilli sauce","chilli soy sauce","chow mein sauce",
-              "chutney","coconut oil","corn oil","cranberry sauce","curry sauce",
+              "canola oil","cantonese sauce","caperberries","capers","carbonara sauce","cashew butter","cashew paste","cheese sauce","chermoula","chestnut puree",
+              "chicken paste","chicken stock","chilli mayonnaise","chilli paste","chilli sauce","chilli soy sauce","chow mein sauce","chutney",
+              "coconut oil","corn oil","cranberry sauce","curry sauce",
 
               "cheese puffs","coconut milk","cream","creme fraiche",
               "caramel milkshake","cherry cola","cherry lemonade","chocolate milkshake","coconut water","cocoa","coffee","cream soda",
@@ -37,8 +37,8 @@
               "caramel flavoured spirit/liqueur","cinnamon flavoured spirit/liqueur","coffee flavoured spirit/liqueur",
               "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","chocolate sponge","crystallised ginger",
               "corned beef",
-              "caesar dressing","char siu sauce","chilli chutney relish","chilli infused oil","coriander puree",
-              "camomile tea","carrot juice","chai tea","cherry tea","coca cola","cookie dough milkshake","cranberry tea",
+              "caesar dressing","char siu sauce","chilli chutney relish","chilli infused oil","chimichurri","coriander puree",
+              "camomile tea","carob syrup","carrot juice","chai tea","cherry tea","coca cola","cookie dough milkshake","cranberry tea",
 
 
 
@@ -64,6 +64,70 @@
             "exclude": [
             ],
             "include": [
+            ],
+        },
+        {
+            "name": "chimichurri",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "basil pesto",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "carob syrup",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "carob molasses",
+                "substitution": false,
+              },
+              {
+                "word": "fruit syrup",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "crispy onions",
+            "exclude": [
+              {
+                "word": "cubes",
+              },
+            ],
+            "include": [
+              {
+                "word": "fried onion",
+                "substitution": false,
+              },
+              {
+                "word": "fried red onion",
+                "substitution": false,
+              },
+              {
+                "word": "fried shallots",
+                "substitution": false,
+              },
+              {
+                "word": "crispy shallots",
+                "substitution": false,
+              },
+              {
+                "word": "fried onion flakes",
+                "substitution": false,
+              },
+              {
+                "word": "fried shallot flakes",
+                "substitution": false,
+              },
+              {
+                "word": "bran flakes",
+                "substitution": true,
+              },
             ],
         },
         {

@@ -13,7 +13,7 @@
              "baharat seasoning","bay leaf","beetroot powder","biryani masala","black cardamom","bouquet garni",
              "baked beans","black beans","black-eyed peas","black cherries","borlotti beans","butter beans",
 
-             "baconnaise","balsamic vinegar","balti sauce","barbeque sauce","beef stock","beetroot pesto","bhuna sauce","blue cheese dressing",
+             "baconnaise","balsamic vinegar","balti sauce","barbeque sauce","basil oil","beef stock","beetroot pesto","bhuna sauce","blue cheese dressing",
              "bread sauce","brown sauce","burger sauce","butter chicken cooking sauce",
 
              "butter","buttermilk",
@@ -56,6 +56,17 @@
           "exclude": [
           ],
           "include": [
+          ],
+      },
+      {
+          "name": "basil oil",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "green pesto",
+              "substitution": false,
+            },
           ],
       },
       {

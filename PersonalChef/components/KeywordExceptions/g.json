@@ -2,11 +2,17 @@
 
     "key" : [ "grape flavoured spirit/liqueur","grapefruit flavoured spirit/liqueur","ginger flavoured spirit/liqueur",
               "gouda","gruyere","goat's cheese",
-              "gelatine",
+              "gelatine","granola",
               "gammon",
-              "garlic","grapes","grapefruit","green beans",
-              "garlic powder","green cardamom","ground cumin","ground ginger",
-              "ghee","grapeseed oil","green curry paste","groundnut oil","guacamole",
+              "galangal","garlic","grapes","grapefruit","green beans",
+              "garam masala","garlic pepper","garlic powder","green cardamom","ground cumin","ground ginger",
+
+              "garlic and chilli oil","goose fat","ghee","grapeseed oil","gravy granules","green curry paste","green pesto","ground mace",
+              "groundnut oil","guacamole",
+
+              "ginger ale","ginger beer","grape syrup","green tea","grenadine syrup",
+
+              "gnocchi","goat's milk","gyoza",
 
 
               "~~~ HALF DONE : ~~~",
@@ -21,13 +27,6 @@
               "garibaldi biscuits", "ginger biscuits", "gingerbread mix", "ginger sponge", "glace cherries", "glycerine",
               "golden syrup", "gooseberry mousse", "green food colouring", "gummy mix",
 
-              "granola",
-              "galangal",
-              "garam masala/chana masala(sub)", "garlic pepper", "ground mace",
-              "garlic and chilli oil", "ginger and miso sauce", "goose fat", "gravy granules", "green pesto",
-              "ginger ale", "ginger beer", "green tea", "grenadine syrup",
-              "girasoli", "gnocchi", "goat's milk", "gyoza",
-
 
     ],
 
@@ -35,13 +34,463 @@
     "ingredients": [
 
 
-
-
+          {
+              "name": "granola",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "muesli",
+                  "substitution": true,
+                },
+                {
+                  "word": "crumble mix",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "galangal",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "galanga",
+                  "substitution": false,
+                },
+                {
+                  "word": "fresh ginger",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "garam masala",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chana masala",
+                  "substitution": false,
+                },
+                {
+                  "word": "baharat seasoning",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "garlic pepper",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "garlic & black pepper",
+                  "substitution": false,
+                },
+                {
+                  "word": "garlic and black pepper",
+                  "substitution": false,
+                },
+                {
+                  "word": "garlic & pepper seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "garlic and pepper seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "pepper garlic seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "garlic",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "ground mace",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mace",
+                  "substitution": false,
+                },
+                {
+                  "word": "nutmeg",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "garlic and chilli oil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "garlic & chilli oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "garlic chilli oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli garlic oil",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "ginger and miso dressing",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ginger & miso dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger miso dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "miso ginger dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger sesame miso dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger and miso sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger & miso sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger miso sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "miso ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger sesame miso sauce",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "goose fat",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shortening",
+                  "substitution": true,
+                },
+                {
+                  "word": "butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "lard",
+                  "substitution": true,
+                },
+                {
+                  "word": "duck fat",
+                  "substitution": true,
+                },
+                {
+                  "word": "dripping",
+                  "substitution": true,
+                },
+                {
+                  "word": "schmaltz",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "gravy granules",
+              "exclude": [
+                {
+                  "word": "masala",
+                },
+              ],
+              "include": [
+                {
+                  "word": "gravy",
+                  "substitution": false,
+                },
+                {
+                  "word": "demi-glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "demi glace",
+                  "substitution": true,
+                },
+                {
+                  "word": "jus",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "green pesto",
+              "exclude": [
+                {
+                  "word": "red",
+                },
+              ],
+              "include": [
+                {
+                  "word": "basil pesto",
+                  "substitution": false,
+                },
+                {
+                  "word": "pesto",
+                  "substitution": false,
+                },
+                {
+                  "word": "basil oil",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "ginger ale",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ginger beer",
+                  "substitution": true,
+                },
+                {
+                  "word": "ginger wine",
+                  "substitution": true,
+                },
+                {
+                  "word": "root beer",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "ginger beer",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ginger ale",
+                  "substitution": true,
+                },
+                {
+                  "word": "ginger wine",
+                  "substitution": true,
+                },
+                {
+                  "word": "root beer",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "green tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "green tea tea bag",
+                  "substitution": false,
+                },
+                {
+                  "word": "green tea bag",
+                  "substitution": false,
+                },
+                {
+                  "word": "green teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "green loose leaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "green leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "matcha tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "green matcha",
+                  "substitution": false,
+                },
+                {
+                  "word": "matcha green",
+                  "substitution": false,
+                },
+                {
+                  "word": "sencha tea",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "grape syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grape molasses",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "grenadine syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grenadine",
+                  "substitution": false,
+                },
+                {
+                  "word": "pomegranate syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "pomegranate molasses",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "gnocchi",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "malfatti",
+                  "substitution": false,
+                },
+                {
+                  "word": "gnudi",
+                  "substitution": false,
+                },
+                {
+                  "word": "strangularprievete",
+                  "substitution": false,
+                },
+                {
+                  "word": "malloreddus",
+                  "substitution": false,
+                },
+                {
+                  "word": "kopytka",
+                  "substitution": false,
+                },
+                {
+                  "word": "dumplings",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "goat's milk",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "goats milk",
+                  "substitution": false,
+                },
+                {
+                  "word": "goats' milk",
+                  "substitution": false,
+                },
+                {
+                  "word": "hemp milk",
+                  "substitution": true,
+                },
+                {
+                  "word": "soy milk",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond milk",
+                  "substitution": true,
+                },
+                {
+                  "word": "oat milk",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice milk",
+                  "substitution": true,
+                },
+                {
+                  "word": "goat's milk",
+                  "substitution": true,
+                },
+                {
+                  "word": "milk",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond breeze",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "gyoza",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "wonton",
+                  "substitution": true,
+                },
+                {
+                  "word": "potsticker",
+                  "substitution": true,
+                },
+                {
+                  "word": "momos",
+                  "substitution": true,
+                },
+                {
+                  "word": "jiaozi",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "ghee",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "butter",
+                  "substitution": true,
+                },
                 {
                   "word": "hemp oil",
                   "substitution": true,

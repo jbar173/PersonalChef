@@ -1626,23 +1626,35 @@
                 "substitution": false,
               },
               {
+                "word": "soya milk",
+                "substitution": false,
+              },
+              {
                 "word": "soyamilk",
                 "substitution": false,
               },
               {
-                "word": "oatmilk",
+                "word": "oat milk",
                 "substitution": true,
               },
               {
-                "word": "ricemilk",
+                "word": "rice milk",
                 "substitution": true,
               },
               {
-                "word": "hempmilk",
+                "word": "hemp milk",
+                "substitution": true,
+              },
+              {
+                "word": "goat's milk",
                 "substitution": true,
               },
               {
                 "word": "milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond milk",
                 "substitution": true,
               },
               {

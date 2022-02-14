@@ -26,6 +26,7 @@
              "dried banana",
              "dried black beans", "dried moong dal", "dried red lentils", "dried split peas",
              "dripping", "duck fat",
+             "date syrup",
 
 
              "~~~ TO DO : ~~~",
@@ -37,6 +38,21 @@
     "ingredients": [
 
 
+        {
+            "name": "date syrup",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "date molasses",
+                "substitution": false,
+              },
+              {
+                "word": "fruit syrup",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "dark rum",
             "exclude": [
@@ -1952,6 +1968,10 @@
             ],
             "include": [
               {
+                "word": "beef fat",
+                "substitution": false,
+              },
+              {
                 "word": "suet",
                 "substitution": false,
               },
@@ -3118,8 +3138,12 @@
                 "substitution": false,
               },
               {
-                "word": "dumpling mix",
-                "substitution": true,
+                "word": "gnocchi",
+                "substitution": false,
+              },
+              {
+                "word": "spaetzle",
+                "substitution": false,
               },
             ],
         },

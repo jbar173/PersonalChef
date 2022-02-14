@@ -32,7 +32,7 @@
               "milk biscuits", "milky way", "millionaire’s shortbread", "mini eggs", "minstrels", "mint chocolate", "mint fondants",
               "mints", "munchies",
 
-              "malt wheats cereal", "milk powder/evaporated milk(sub)", "mixed nuts", "monkey nuts", "museli",
+              "malt wheats cereal", "milk powder/evaporated milk(sub)", "mixed nuts", "monkey nuts", "muesli/granola(sub)",
               "mackerel", "mussels",
               "mixed greens", "mixed vegetable stir fry",
 
@@ -54,7 +54,21 @@
 
 
 
-
+          {
+              "name": "mulberry syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mulberry molasses",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "macadamia nut oil",
               "exclude": [
@@ -1945,6 +1959,10 @@
                 "word": "chocolate",
                 "substitution": true,
               },
+              {
+                "word": "fruit & nut chocolate",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -2077,23 +2095,27 @@
             ],
             "include": [
               {
-                "word": "soymilk",
+                "word": "soy milk",
                 "substitution": true,
               },
               {
-                "word": "soyamilk",
+                "word": "oat milk",
                 "substitution": true,
               },
               {
-                "word": "oatmilk",
+                "word": "rice milk",
                 "substitution": true,
               },
               {
-                "word": "ricemilk",
+                "word": "hemp milk",
                 "substitution": true,
               },
               {
-                "word": "hempmilk",
+                "word": "goat's milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond milk",
                 "substitution": true,
               },
               {

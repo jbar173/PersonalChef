@@ -301,23 +301,31 @@
               "substitution": false,
             },
             {
-              "word": "soymilk",
+              "word": "soy milk",
               "substitution": true,
             },
             {
-              "word": "soyamilk",
+              "word": "almond milk",
               "substitution": true,
             },
             {
-              "word": "oatmilk",
+              "word": "oat milk",
               "substitution": true,
             },
             {
-              "word": "ricemilk",
+              "word": "rice milk",
+              "substitution": true,
+            },
+            {
+              "word": "goat's milk",
               "substitution": true,
             },
             {
               "word": "milk",
+              "substitution": true,
+            },
+            {
+              "word": "almond breeze",
               "substitution": true,
             },
           ],

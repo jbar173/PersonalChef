@@ -1,12 +1,13 @@
 {
 
     "key" : ["feta","fontina","fresh asiago",
-             "fig jam","fig jelly","fruit cake","fruit loaf","fudge",
-             "filo pastry","flax seeds","flour",
-             "fig","fresh coconut","fresh cranberries","fresh ginger",
+             "fig jam","fig jelly","fig roll","fruit and nut chocolate","fruit cake","fruit jellies","fruit loaf","fudge",
+             "filo pastry","flax seeds","flour","frosties",
+             "faggot",
+             "fiddleheads","fig","fresh coconut","fresh corn","fresh cranberries","fresh ginger",
 
-             "fennel seeds","fish masala","fish seasoning","fresh basil","fresh chervil","fresh coriander","fresh marjoram","fresh mint","fresh oregano",
-             "fresh parsley","fresh rosemary","fresh sage","fresh tarragon","fresh thyme","fenugreek leaves",
+             "fajita seasoning","fennel seeds","fish masala","fish seasoning","fresh basil","fresh chervil","fresh coriander","fresh marjoram","fresh mint",
+             "fresh oregano","fresh parsley","fresh rosemary","fresh sage","fresh tarragon","fresh thyme","fenugreek leaves",
 
              "flageolet beans","fruit cocktail",
              "fish sauce","french dressing","french mustard",
@@ -18,21 +19,15 @@
              "fondant icing",
              "flatbread",
 
-             "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cherry juice", "fresh cranberry juice", "fresh grapefruit juice",
+             "fig syrup", "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cherry juice", "fresh cranberry juice", "fresh grapefruit juice",
              "fresh grape juice", "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice", "fresh passion fruit juice", "fresh peach juice",
-             "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice", "fresh strawberry juice", "fresh tropical juice",
+             "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice", "fresh strawberry juice", "fresh tropical juice", "fruit syrup",
 
              "fries",
 
 
              "~~~ TO DO : ~~~",
-             "fig roll", "fruit jellies", "fruit and nut chocolate",
-             "fried onion", "frosties",
-             "fish cakes",
-             "fiddleheads", "fresh corn", "fresh soya beans",
-             "faggot",
 
-             "fajita seasoning", 
 
 
     ],
@@ -41,7 +36,284 @@
     "ingredients": [
 
 
-
+          {
+              "name": "fig syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fig molasses",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fruit syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fruit molasses",
+                  "substitution": false,
+                },
+                {
+                  "word": "fig syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "carob syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "date syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "mulberry syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "pomegranate syrup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fig roll",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fig newton",
+                  "substitution": false,
+                },
+                {
+                  "word": "fig paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "fig jam",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fruit jellies",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "jelly tots",
+                  "substitution": false,
+                },
+                {
+                  "word": "jelly fruits",
+                  "substitution": false,
+                },
+                {
+                  "word": "pate de fruits",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit pastilles",
+                  "substitution": false,
+                },
+                {
+                  "word": "jelly beans",
+                  "substitution": false,
+                },
+                {
+                  "word": "candied orange",
+                  "substitution": false,
+                },
+                {
+                  "word": "candied lemon",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "fruit and nut chocolate",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chocolate peanuts",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "frosties",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "frosted flakes",
+                  "substitution": false,
+                },
+                {
+                  "word": "cornflakes",
+                  "substitution": true,
+                },
+                {
+                  "word": "bran flakes",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fish cakes",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fishcakes",
+                  "substitution": false,
+                },
+                {
+                  "word": "breaded fish fillets",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fiddleheads",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fiddlehead",
+                  "substitution": false,
+                },
+                {
+                  "word": "ostrich fern",
+                  "substitution": false,
+                },
+                {
+                  "word": "asparagus",
+                  "substitution": true,
+                },
+                {
+                  "word": "broccoli",
+                  "substitution": true,
+                },
+                {
+                  "word": "green beans",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fresh corn",
+              "exclude": [
+                {
+                  "word": "meal",
+                },
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "meal",
+                },
+                {
+                  "word": "flake",
+                },
+                {
+                  "word": "taco",
+                },
+                {
+                  "word": "syrup",
+                },
+                {
+                  "word": "flour",
+                },
+                {
+                  "word": "bread",
+                },
+                {
+                  "word": "corn-muffin",
+                },
+                {
+                  "word": "muffin",
+                },
+                {
+                  "word": "starch",
+                },
+              ],
+              "include": [
+                {
+                  "word": "sweetcorn",
+                  "substitution": false,
+                },
+                {
+                  "word": "corn",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "faggot",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "meatballs",
+                  "substitution": true,
+                },
+                {
+                  "word": "meat balls",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fajita seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fajita spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "taco seasoning",
+                  "substitution": true
+                },
+                {
+                  "word": "chili seasoning",
+                  "substitution": true
+                },
+                {
+                  "word": "chilli seasoning",
+                  "substitution": true
+                },
+                {
+                  "word": "chili con carne seasoning",
+                  "substitution": true
+                },
+                {
+                  "word": "chilli con carne seasoning",
+                  "substitution": true
+                },
+              ],
+          },
           {
               "name": "fish seasoning",
               "exclude": [

@@ -414,23 +414,27 @@
                 "substitution": false,
               },
               {
-                "word": "soymilk",
+                "word": "soy milk",
                 "substitution": true,
               },
               {
-                "word": "soyamilk",
+                "word": "oat milk",
                 "substitution": true,
               },
               {
-                "word": "oatmilk",
+                "word": "hemp milk",
                 "substitution": true,
               },
               {
-                "word": "hempmilk",
+                "word": "goat's milk",
                 "substitution": true,
               },
               {
                 "word": "milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond milk",
                 "substitution": true,
               },
               {

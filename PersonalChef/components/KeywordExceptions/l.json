@@ -409,6 +409,10 @@
             ],
             "include": [
               {
+                "word": "suet",
+                "substitution": false,
+              },
+              {
                 "word": "shortening",
                 "substitution": true,
               },
@@ -418,6 +422,10 @@
               },
               {
                 "word": "goose fat",
+                "substitution": true,
+              },
+              {
+                "word": "duck fat",
                 "substitution": true,
               },
               {

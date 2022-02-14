@@ -311,23 +311,27 @@
                 "substitution": false,
               },
               {
-                "word": "soymilk",
+                "word": "soy milk",
                 "substitution": true,
               },
               {
-                "word": "soyamilk",
+                "word": "goat's milk",
                 "substitution": true,
               },
               {
-                "word": "ricemilk",
+                "word": "rice milk",
                 "substitution": true,
               },
               {
-                "word": "hempmilk",
+                "word": "hemp milk",
                 "substitution": true,
               },
               {
                 "word": "milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond milk",
                 "substitution": true,
               },
               {
@@ -828,6 +832,10 @@
               },
               {
                 "word": "eschalot",
+                "substitution": true,
+              },
+              {
+                "word": "crispy onions",
                 "substitution": true,
               },
             ],

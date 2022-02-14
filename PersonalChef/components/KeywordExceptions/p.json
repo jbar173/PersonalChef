@@ -18,7 +18,7 @@
               "passion fruit puree",
               "plain flour",
               "peaches", "pears", "pickled onions",
-              "passionfruit tea",
+              "passionfruit tea","pomegranate syrup",
               "pancakes", "poppadoms",
 
 
@@ -48,6 +48,21 @@
 
 
 
+          {
+              "name": "pomegranate syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pomegranate molasses",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "pancake mix",
               "exclude": [
@@ -2956,6 +2971,10 @@
               },
               {
                 "word": "trottole",
+                "substitution": false,
+              },
+              {
+                "word": "gnocchetti",
                 "substitution": false,
               },
             ],

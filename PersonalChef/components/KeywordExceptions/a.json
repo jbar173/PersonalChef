@@ -11,7 +11,7 @@
               "allspice","asafoetida",
               "achiote","almond butter","almond oil","apple sauce","avocado oil",
               "apple tea",
-              "aquafaba","almond milk",
+              "almond milk","aquafaba",
 
 
               "~~~ HALF DONE : ~~~",
@@ -21,6 +21,7 @@
               "all purpose seasoning",
               "adzuki beans","apples","apricots","artichoke antipasti",
               "aioli","anchovy paste","apricot harissa paste","aubergine paste",
+              "apple syrup","apricot syrup",
 
             ],
 
@@ -28,8 +29,75 @@
     "ingredients": [
 
 
-
-
+          {
+              "name": "apricot syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apricot molasses",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "apple syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "apple molasses",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+            "name": "almond milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "almond breeze",
+                "substitution": false,
+              },
+              {
+                "word": "almondmilk",
+                "substitution": false,
+              },
+              {
+                "word": "hemp milk",
+                "substitution": true,
+              },
+              {
+                "word": "soy milk",
+                "substitution": true,
+              },
+              {
+                "word": "oat milk",
+                "substitution": true,
+              },
+              {
+                "word": "rice milk",
+                "substitution": true,
+              },
+              {
+                "word": "goat's milk",
+                "substitution": true,
+              },
+              {
+                "word": "milk",
+                "substitution": true,
+              },
+            ],
+          },
           {
               "name": "apricots",
               "exclude": [
@@ -1901,41 +1969,7 @@
             "include": [
             ],
           },
-          {
-            "name": "almond milk",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "almond breeze",
-                "substitution": false,
-              },
-              {
-                "word": "soymilk",
-                "substitution": true,
-              },
-              {
-                "word": "soyamilk",
-                "substitution": true,
-              },
-              {
-                "word": "oatmilk",
-                "substitution": true,
-              },
-              {
-                "word": "ricemilk",
-                "substitution": true,
-              },
-              {
-                "word": "hempmilk",
-                "substitution": true,
-              },
-              {
-                "word": "milk",
-                "substitution": true,
-              },
-            ],
-          },
+
 
 
     ]
