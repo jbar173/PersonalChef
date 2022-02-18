@@ -14,7 +14,7 @@
              "duck",
              "daikon",
 
-             "dill","dried achiote","dried basil","dried chervil","dried chilli peppers","dried coriander","dried marjoram","dried oregano","dried sage",
+             "dill","dried achiote","dried basil","dried chervil","dried chilli peppers","dried coriander","dried marjoram","dried oregano","dried rosemary","dried sage",
              "dried savoury","dried tarragon","dried thyme",
 
              "demi-glace","diane sauce","dijon mustard","dill and lemon sauce",
@@ -26,7 +26,7 @@
              "dried banana",
              "dried black beans", "dried moong dal", "dried red lentils", "dried split peas",
              "dripping", "duck fat",
-             "date syrup",
+             "date paste", "date syrup",
 
 
              "~~~ TO DO : ~~~",
@@ -38,6 +38,21 @@
     "ingredients": [
 
 
+        {
+            "name": "date paste",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "honey",
+                "substitution": true,
+              },
+              {
+                "word": "date syrup",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "date syrup",
             "exclude": [
@@ -1416,6 +1431,10 @@
                 "word": "herbes de provence",
                 "substitution": true,
               },
+              {
+                "word": "italian seasoning",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1468,6 +1487,10 @@
               },
               {
                 "word": "dried savoury",
+                "substitution": true,
+              },
+              {
+                "word": "italian seasoning",
                 "substitution": true,
               },
             ],
@@ -1558,6 +1581,10 @@
               },
               {
                 "word": "italian seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "juniper berries",
                 "substitution": true,
               },
             ],
@@ -2353,10 +2380,6 @@
               },
               {
                 "word": "boston bean",
-                "substitution": false,
-              },
-              {
-                "word": "white pea bean",
                 "substitution": false,
               },
               {

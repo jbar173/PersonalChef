@@ -13,7 +13,7 @@
              "baharat seasoning","bay leaf","beetroot powder","biryani masala","black cardamom","bouquet garni",
              "baked beans","black beans","black-eyed peas","black cherries","borlotti beans","butter beans",
 
-             "baconnaise","balsamic vinegar","balti sauce","barbeque sauce","basil oil","beef stock","beetroot pesto","bhuna sauce","blue cheese dressing",
+             "baconnaise","balsamic vinegar","balti sauce","barbeque sauce","bearnaise","beef stock","beetroot pesto","bhuna sauce","blue cheese dressing",
              "bread sauce","brown sauce","burger sauce","butter chicken cooking sauce",
 
              "butter","buttermilk",
@@ -25,9 +25,9 @@
              "~~~ HALF DONE : ~~~",
              "blackberry flavoured spirit/liqueur", "blackcurrant flavoured spirit/liqueur", "butterscotch flavoured spirit/liqueur",
              "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
-             "breaded fish fillets",
+             "bass", "breaded fish fillets",
              "barbeque seasoning",
-             "basil puree", "black bean paste",
+             "basil oil", "basil puree", "black bean paste", "borage seed oil",
              "berry cordial", "blackcurrant tea",
              "bombay mix",
 
@@ -45,6 +45,17 @@
 
 
       {
+          "name": "bass",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "halibut",
+              "substitution": true,
+            },
+          ],
+      },
+      {
           "name": "baked beans",
           "exclude": [
           ],
@@ -56,6 +67,60 @@
           "exclude": [
           ],
           "include": [
+          ],
+      },
+      {
+          "name": "borage seed oil",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "borage oil",
+              "substitution": false,
+            },
+            {
+              "word": "flaxseed oil",
+              "substitution": true,
+            },
+            {
+              "word": "pumpkin seed oil",
+              "substitution": true,
+            },
+            {
+              "word": "walnut oil",
+              "substitution": true,
+            },
+            {
+              "word": "hemp oil",
+              "substitution": true,
+            },
+            {
+              "word": "extra virgin olive oil",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "bearnaise",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "dutch sauce",
+              "substitution": true,
+            },
+            {
+              "word": "mayonnaise",
+              "substitution": true,
+            },
+            {
+              "word": "aoli",
+              "substitution": true,
+            },
+            {
+              "word": "hollandaise",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -107,6 +172,10 @@
           ],
           "include": [
             {
+              "word": "butterscotch fool",
+              "substitution": false,
+            },
+            {
               "word": "butterscotch whippy",
               "substitution": false,
             },
@@ -121,6 +190,18 @@
             {
               "word": "butterscotch creme",
               "substitution": true,
+            },
+            {
+              "word": "butterscotch buttercream",
+              "substitution": true,
+            },
+            {
+              "word": "butterscotch sauce",
+              "substitution": true,
+            },
+            {
+              "word": "caramel fool",
+              "substitution": false,
             },
             {
               "word": "caramel mousse",
@@ -143,15 +224,7 @@
               "substitution": true,
             },
             {
-              "word": "butterscotch buttercream",
-              "substitution": true,
-            },
-            {
               "word": "caramel buttercream",
-              "substitution": true,
-            },
-            {
-              "word": "butterscotch sauce",
               "substitution": true,
             },
             {
@@ -275,6 +348,10 @@
           "include": [
             {
               "word": "molasses",
+              "substitution": true,
+            },
+            {
+              "word": "barley malt syrup",
               "substitution": true,
             },
           ],
@@ -425,6 +502,10 @@
               "word": "bay leave",
               "substitution": false,
             },
+            {
+              "word": "juniper berries",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -457,6 +538,10 @@
             },
             {
               "word": "garam masala",
+              "substitution": true,
+            },
+            {
+              "word": "jerk seasoning mix",
               "substitution": true,
             },
           ],
@@ -725,6 +810,30 @@
           "exclude": [
           ],
           "include": [
+            {
+              "word": "berry infusion",
+              "substitution": false,
+            },
+            {
+              "word": "berry tisane",
+              "substitution": false,
+            },
+            {
+              "word": "berry green tea",
+              "substitution": false,
+            },
+            {
+              "word": "berry herbal tea",
+              "substitution": false,
+            },
+            {
+              "word": "berry teabag",
+              "substitution": false,
+            },
+            {
+              "word": "berry tea bag",
+              "substitution": false,
+            },
             {
               "word": "raspberry tea",
               "substitution": false,
@@ -998,6 +1107,30 @@
           "exclude": [
           ],
           "include": [
+            {
+              "word": "blackcurrant infusion",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant tisane",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant green tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant herbal tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant teabag",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant tea bag",
+              "substitution": false,
+            },
             {
               "word": "blackcurrant & blueberry tea",
               "substitution": false,
@@ -2092,6 +2225,10 @@
             },
             {
               "word": "white pudding",
+              "substitution": true,
+            },
+            {
+              "word": "haggis",
               "substitution": true,
             },
           ],

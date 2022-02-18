@@ -1,8 +1,12 @@
 {
 
-    "key" : [ "grape flavoured spirit/liqueur","grapefruit flavoured spirit/liqueur","ginger flavoured spirit/liqueur",
+    "key" : [ "gin","ginger flavoured spirit/liqueur","grape flavoured spirit/liqueur","grapefruit flavoured spirit/liqueur",
               "gouda","gruyere","goat's cheese",
-              "gelatine","granola",
+
+              "garibaldi biscuits","gelatine","ginger biscuits","ginger cake","gingerbread mix","glace cherries","glycerine","golden syrup",
+              "gooseberry mousse","green food colouring","gummy mix",
+
+              "granola",
               "gammon",
               "galangal","garlic","grapes","grapefruit","green beans",
               "garam masala","garlic pepper","garlic powder","green cardamom","ground cumin","ground ginger",
@@ -15,17 +19,17 @@
               "gnocchi","goat's milk","gyoza",
 
 
+
               "~~~ HALF DONE : ~~~",
               "gooseberry flavoured spirit/liqueur",
               "gram flour",
               "garlic and herb dressing", "garlic oil", "garlic mayonnaise", "garlic puree", "ginger puree", "guinness cooking paste",
               "ginger tea",
 
-              "~~~ TO DO : ~~~",
-              "gin",
 
-              "garibaldi biscuits", "ginger biscuits", "gingerbread mix", "ginger sponge", "glace cherries", "glycerine",
-              "golden syrup", "gooseberry mousse", "green food colouring", "gummy mix",
+              "~~~ TO DO : ~~~",
+
+
 
 
     ],
@@ -34,6 +38,397 @@
     "ingredients": [
 
 
+
+          {
+              "name": "gin",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vodka",
+                  "substitution": true,
+                },
+                {
+                  "word": "juniper berries",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "garibaldi biscuits",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "garibaldi",
+                  "substitution": false,
+                },
+                {
+                  "word": "currant biscuit",
+                  "substitution": true,
+                },
+                {
+                  "word": "currant cookie",
+                  "substitution": true,
+                },
+                {
+                  "word": "raisin biscuit",
+                  "substitution": true,
+                },
+                {
+                  "word": "raisin cookie",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit shortcake biscuit",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "ginger biscuits",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ginger biscuit",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger oat biscuit",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger oat cookie",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger cookie",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger all butter cookie",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread biscuit",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger nuts",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingernuts",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger snap",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger thins",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger crunch biscuit",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger crunchy cookies",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger & lemon biscuit",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon & ginger biscuit",
+                  "substitution": true,
+                },
+                {
+                  "word": "ginger & chocolate biscuit",
+                  "substitution": true,
+                },
+                {
+                  "word": "ginger & milk chocolate biscuit",
+                  "substitution": true,
+                },
+                {
+                  "word": "dark chocolate gingers",
+                  "substitution": true,
+                },
+                {
+                  "word": "pecan & ginger biscuit",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "gingerbread mix",
+              "exclude": [
+                {
+                  "word": "spice"
+                },
+              ],
+              "include": [
+                {
+                  "word": "gingerbread baking mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread man mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread biscuit mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread biscuit baking mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread cookie mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread cake & cookie mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread pancake & cookie mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "baking mixture gingerbread",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread dry mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread dough",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "ginger cake",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ginger sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger loaf cake",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "glace cherries",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "candied cherries",
+                  "substitution": false,
+                },
+                {
+                  "word": "candied red cherries",
+                  "substitution": false,
+                },
+                {
+                  "word": "candied green cherries",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherries in syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "cherries glace",
+                  "substitution": false,
+                },
+                {
+                  "word": "glace morello cherries",
+                  "substitution": false,
+                },
+                {
+                  "word": "glace cherry medley",
+                  "substitution": false,
+                },
+                {
+                  "word": "glace apricot",
+                  "substitution": true,
+                },
+                {
+                  "word": "glace fruit",
+                  "substitution": true,
+                },
+                {
+                  "word": "candied fruit",
+                  "substitution": true,
+                },
+                {
+                  "word": "cherries",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "glycerine",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "glycerin",
+                  "substitution": false,
+                },
+                {
+                  "word": "glycerol",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "golden syrup",
+              "exclude": [
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "porridge"
+                },
+              ],
+              "include": [
+                {
+                  "word": "maple syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "corn syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "treacle",
+                  "substitution": true,
+                },
+                {
+                  "word": "honey",
+                  "substitution": true,
+                },
+                {
+                  "word": "black treacle",
+                  "substitution": true,
+                },
+                {
+                  "word": "agave syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "sugar syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "glucose syrup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "gooseberry mousse",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gooseberry fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseberry dessert",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberry cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberry creme",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberry buttercream",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberry sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "green food colouring",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "green food colour",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "gummy mix",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "haribo",
+                  "substitution": false,
+                },
+                {
+                  "word": "gummy bear",
+                  "substitution": false,
+                },
+                {
+                  "word": "gummy sweets",
+                  "substitution": false,
+                },
+                {
+                  "word": "gummy candy",
+                  "substitution": false,
+                },
+                {
+                  "word": "gumdrop",
+                  "substitution": false,
+                },
+                {
+                  "word": "jelly tots",
+                  "substitution": false,
+                },
+                {
+                  "word": "jujubes",
+                  "substitution": true,
+                },
+                {
+                  "word": "jelly beans",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "granola",
               "exclude": [
@@ -75,6 +470,10 @@
                 },
                 {
                   "word": "baharat seasoning",
+                  "substitution": true,
+                },
+                {
+                  "word": "ras el hanout",
                   "substitution": true,
                 },
               ],
@@ -314,6 +713,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "green tea teabag",
+                  "substitution": false,
+                },
+                {
                   "word": "green tea bag",
                   "substitution": false,
                 },
@@ -327,6 +730,10 @@
                 },
                 {
                   "word": "green leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "green herbal tea",
                   "substitution": false,
                 },
                 {
@@ -446,15 +853,19 @@
                   "substitution": true,
                 },
                 {
-                  "word": "goat's milk",
-                  "substitution": true,
-                },
-                {
                   "word": "milk",
                   "substitution": true,
                 },
                 {
                   "word": "almond breeze",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut milk",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut milk",
                   "substitution": true,
                 },
               ],
@@ -740,6 +1151,30 @@
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "ginger infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger tea bag",
+                  "substitution": false,
+                },
                 {
                   "word": "lemon & ginger tea",
                   "substitution": true,
@@ -1325,6 +1760,10 @@
                 {
                   "word": "cardamom",
                   "substitution": false,
+                },
+                {
+                  "word": "juniper berries",
+                  "substitution": true,
                 },
               ],
           },

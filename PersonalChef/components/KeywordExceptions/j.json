@@ -1,8 +1,13 @@
 {
 
-    "key" : ["jarlsberg",
+    "key" : ["jagermeister",
+             "jarlsberg",
+             "jaffa cakes","jam sponge","jelly beans",
              "jerusalem artichoke",
-             "jalfrezi sauce",
+             "jerk seasoning mix","juniper berries",
+             "jalfrezi sauce","jerk sauce",
+             "jasmine tea",
+             "jerky",
 
 
              "~~~ HALF DONE : ~~~",
@@ -10,19 +15,439 @@
 
 
              "~~~ TO DO : ~~~",
-             "jagermeister",
-             "jaffa cakes", "jelly beans", 
-             "jerk seasoning", "juniper berries",
-             "jerk sauce",
-             "jasmine tea",
-             "jam sponge", "jerky",
+
     ],
 
 
     "ingredients": [
 
 
-
+        {
+            "name": "jagermeister",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jägermeister",
+                "substitution": false,
+              },
+              {
+                "word": "root liqueur",
+                "substitution": false,
+              },
+              {
+                "word": "ramazzotti amaro",
+                "substitution": true,
+              },
+              {
+                "word": "fernet branca",
+                "substitution": true,
+              },
+              {
+                "word": "aniseed flavoured spirit/liqueur",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "jaffa cakes",
+            "exclude": [
+              {
+                "word": "rum",
+              },
+              {
+                "word": "vodka",
+              },
+              {
+                "word": "gin",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "coffee",
+              },
+            ],
+            "include": [
+              {
+                "word": "jaffa cake",
+                "substitution": false,
+              },
+              {
+                "word": "jaffa chocolate cake",
+                "substitution": false,
+              },
+              {
+                "word": "jaffa cake jonuts",
+                "substitution": false,
+              },
+              {
+                "word": "pims",
+                "substitution": true,
+              },
+              {
+                "word": "pim's",
+                "substitution": true,
+              },
+              {
+                "word": "delicje orange",
+                "substitution": false,
+              },
+              {
+                "word": "soft cake orange",
+                "substitution": false,
+              },
+              {
+                "word": "delicje",
+                "substitution": true,
+              },
+              {
+                "word": "orange cake",
+                "substitution": true,
+              },
+              {
+                "word": "orange sponge",
+                "substitution": true,
+              },
+              {
+                "word": "orange drizzle loaf",
+                "substitution": true,
+              },
+              {
+                "word": "marmalade sponge",
+                "substitution": true,
+              },
+              {
+                "word": "marmalade cake",
+                "substitution": true,
+              },
+              {
+                "word": "marmalade",
+                "substitution": true,
+              },
+              {
+                "word": "orange jelly",
+                "substitution": true,
+              },
+              {
+                "word": "apricot jelly",
+                "substitution": true,
+              },
+              {
+                "word": "orange syrup",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "jam sponge",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jam and sponge",
+                "substitution": false,
+              },
+              {
+                "word": "jam pudding",
+                "substitution": false,
+              },
+              {
+                "word": "jam roll",
+                "substitution": false,
+              },
+              {
+                "word": "jam roly",
+                "substitution": false,
+              },
+              {
+                "word": "jam swiss roll",
+                "substitution": false,
+              },
+              {
+                "word": "vanilla sponge",
+                "substitution": false,
+              },
+              {
+                "word": "coconut sponge",
+                "substitution": false,
+              },
+              {
+                "word": "plain sponge",
+                "substitution": false,
+              },
+              {
+                "word": "raspberry sponge",
+                "substitution": false,
+              },
+              {
+                "word": "strawberry sponge",
+                "substitution": false,
+              },
+              {
+                "word": "victoria sponge",
+                "substitution": false,
+              },
+              {
+                "word": "victoria sandwich",
+                "substitution": false,
+              },
+              {
+                "word": "victorian cake",
+                "substitution": false,
+              },
+              {
+                "word": "vanilla cake",
+                "substitution": true,
+              },
+              {
+                "word": "coconut cake",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "jelly beans",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jelly bean",
+                "substitution": false,
+              },
+              {
+                "word": "jellybean",
+                "substitution": false,
+              },
+              {
+                "word": "jelly belly",
+                "substitution": false,
+              },
+              {
+                "word": "jelly bird eggs",
+                "substitution": true,
+              },
+              {
+                "word": "jelly babies",
+                "substitution": true,
+              },
+              {
+                "word": "gummy mix",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "juniper berries",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "juniper berry powder",
+                "substitution": true,
+              },
+              {
+                "word": "juniper leave",
+                "substitution": true,
+              },
+              {
+                "word": "juniper leaf",
+                "substitution": true,
+              },
+              {
+                "word": "rosemary",
+                "substitution": true,
+              },
+              {
+                "word": "carraway",
+                "substitution": true,
+              },
+              {
+                "word": "green cardamom",
+                "substitution": true,
+              },
+              {
+                "word": "bay leaf",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "jerk seasoning mix",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jerk seasoning",
+                "substitution": false,
+              },
+              {
+                "word": "jerk spice",
+                "substitution": false,
+              },
+              {
+                "word": "jerk paste",
+                "substitution": true,
+              },
+              {
+                "word": "jerk marinade",
+                "substitution": true,
+              },
+              {
+                "word": "jerk street food seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "jerk bbq",
+                "substitution": true,
+              },
+              {
+                "word": "jerk barbeque",
+                "substitution": true,
+              },
+              {
+                "word": "jerk taco sauce",
+                "substitution": true,
+              },
+              {
+                "word": "jerk hot sauce",
+                "substitution": true,
+              },
+              {
+                "word": "rogan josh spice",
+                "substitution": true,
+              },
+              {
+                "word": "baharat seasoning",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "jerk sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jerk paste",
+                "substitution": true,
+              },
+              {
+                "word": "jerk marinade",
+                "substitution": true,
+              },
+              {
+                "word": "jerk seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "jerk street food seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "jerk bbq",
+                "substitution": true,
+              },
+              {
+                "word": "jerk barbeque",
+                "substitution": true,
+              },
+              {
+                "word": "jerk taco sauce",
+                "substitution": true,
+              },
+              {
+                "word": "jerk hot sauce",
+                "substitution": true,
+              },
+              {
+                "word": "rogan josh spice",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "jasmine tea",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jasmine infusion",
+                "substitution": false,
+              },
+              {
+                "word": "jasmine tisane",
+                "substitution": false,
+              },
+              {
+                "word": "jasmine green tea",
+                "substitution": false,
+              },
+              {
+                "word": "jasmine herbal tea",
+                "substitution": false,
+              },
+              {
+                "word": "jasmine teabag",
+                "substitution": false,
+              },
+              {
+                "word": "jasmine tea bag",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "jerky",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dried meat",
+                "substitution": false,
+              },
+              {
+                "word": "dried red meat",
+                "substitution": false,
+              },
+              {
+                "word": "dehydrated meat",
+                "substitution": false,
+              },
+              {
+                "word": "dehydrated red meat",
+                "substitution": false,
+              },
+              {
+                "word": "dried beef",
+                "substitution": false,
+              },
+              {
+                "word": "dried pork",
+                "substitution": false,
+              },
+              {
+                "word": "dried venison",
+                "substitution": false,
+              },
+              {
+                "word": "dried poultry",
+                "substitution": false,
+              },
+              {
+                "word": "pemmican",
+                "substitution": true,
+              },
+              {
+                "word": "biltong",
+                "substitution": true,
+              },
+              {
+                "word": "beef bar",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "jam tart",
             "exclude": [

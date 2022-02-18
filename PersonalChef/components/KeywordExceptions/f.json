@@ -16,13 +16,14 @@
 
 
              "~~~ HALF DONE : ~~~",
-             "fondant icing",
+
+             "fig syrup", "fondant icing", "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cherry juice", "fresh cranberry juice",
+             "fresh grapefruit juice", "fresh grape juice", "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice", "fresh passion fruit juice",
+             "fresh peach juice", "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice", "fresh strawberry juice",
+             "fresh tropical juice", "fruit syrup",
+
              "flatbread",
-
-             "fig syrup", "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cherry juice", "fresh cranberry juice", "fresh grapefruit juice",
-             "fresh grape juice", "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice", "fresh passion fruit juice", "fresh peach juice",
-             "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice", "fresh strawberry juice", "fresh tropical juice", "fruit syrup",
-
+             "flounder","fluke",
              "fries",
 
 
@@ -36,6 +37,40 @@
     "ingredients": [
 
 
+          {
+              "name": "fluke",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "halibut",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "flounder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "halibut",
+                  "substitution": true,
+                },
+                {
+                  "word": "haddock",
+                  "substitution": true,
+                },
+                {
+                  "word": "hake",
+                  "substitution": true,
+                },
+                {
+                  "word": "sole",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "fig syrup",
               "exclude": [
@@ -131,16 +166,24 @@
                   "substitution": false,
                 },
                 {
-                  "word": "jelly beans",
+                  "word": "gumdrop",
                   "substitution": false,
+                },
+                {
+                  "word": "jelly babies",
+                  "substitution": true,
+                },
+                {
+                  "word": "jelly beans",
+                  "substitution": true,
                 },
                 {
                   "word": "candied orange",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "candied lemon",
-                  "substitution": false,
+                  "substitution": true,
                 },
               ],
           },
@@ -428,6 +471,10 @@
                 {
                   "word": "rosemary",
                   "substitution": false,
+                },
+                {
+                  "word": "juniper berries",
+                  "substitution": true,
                 },
               ],
           },
@@ -769,11 +816,23 @@
                   "substitution": false,
                 },
                 {
+                  "word": "fennel tea bag",
+                  "substitution": false,
+                },
+                {
                   "word": "fennel infusion",
                   "substitution": false,
                 },
                 {
                   "word": "fennel herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel green tea",
                   "substitution": false,
                 },
                 {

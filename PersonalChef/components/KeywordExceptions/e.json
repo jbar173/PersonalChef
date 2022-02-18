@@ -123,6 +123,12 @@
           {
               "name": "earl grey tea",
               "exclude": [
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "cake",
+                },
               ],
               "include": [
                 {

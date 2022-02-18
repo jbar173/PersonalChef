@@ -93,7 +93,15 @@
                 "substitution": true,
               },
               {
+                "word": "coconut milk",
+                "substitution": true,
+              },
+              {
                 "word": "milk",
+                "substitution": true,
+              },
+              {
+                "word": "hazelnut milk",
                 "substitution": true,
               },
             ],
@@ -704,6 +712,30 @@
               ],
               "include": [
                 {
+                  "word": "apple infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple tea bag",
+                  "substitution": false,
+                },
+                {
                   "word": "cinnamon apple tea",
                   "substitution": true,
                 },
@@ -950,6 +982,26 @@
                   "substitution": false,
                 },
                 {
+                  "word": "ramazzotti",
+                  "substitution": false,
+                },
+                {
+                  "word": "gammel dansk",
+                  "substitution": false,
+                },
+                {
+                  "word": "fernet",
+                  "substitution": false,
+                },
+                {
+                  "word": "underberg",
+                  "substitution": false,
+                },
+                {
+                  "word": "unicum",
+                  "substitution": false,
+                },
+                {
                   "word": "galliano",
                   "substitution": false,
                 },
@@ -990,6 +1042,18 @@
                   "substitution": false,
                 },
                 {
+                  "word": "ricard",
+                  "substitution": false,
+                },
+                {
+                  "word": "raki",
+                  "substitution": false,
+                },
+                {
+                  "word": "jagermeister",
+                  "substitution": false,
+                },
+                {
                   "word": "neopolitan liqueur",
                   "substitution": false,
                 },
@@ -999,14 +1063,6 @@
                 },
                 {
                   "word": "aniseed liquor",
-                  "substitution": false,
-                },
-                {
-                  "word": "ricard",
-                  "substitution": false,
-                },
-                {
-                  "word": "raki",
                   "substitution": false,
                 },
                 {

@@ -29,7 +29,7 @@
               "popping candy", "pralines", "preserved lemons", "prunes/dried figs/raisins(sub)", "pudding mix/pudding powder/custard powder(sub)", "purple food colouring",
 
               "pie mix", "pistachios", "pizza bases", "poppy seeds", "pork scratchings", "pretzel snacks", "puff pastry",
-              "pangasius", "pilchards", "plaice", "pollock/cod(sub)", "prawns",
+              "pangasius", "pilchards", "plaice", "pollock/lack/cod/hake/haddock(sub)", "prawns",
 
               "pancetta", "pepperoni", "pigs in blankets", "porchetta",
               "persimmon", "plantain", "pomegranate seeds",
@@ -360,11 +360,71 @@
               ],
               "include": [
                 {
+                  "word": "passionfruit infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit tea bag",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit tea bag",
+                  "substitution": false,
+                },
+                {
                   "word": "mango & passionfruit tea",
                   "substitution": true,
                 },
                 {
                   "word": "mango and passionfruit tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango & passion fruit tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango and passion fruit tea",
                   "substitution": true,
                 },
               ],
@@ -2543,6 +2603,14 @@
                 {
                   "word": "pepita",
                   "substitution": false,
+                },
+                {
+                  "word": "hemp seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "chia seeds",
+                  "substitution": true,
                 },
               ],
           },

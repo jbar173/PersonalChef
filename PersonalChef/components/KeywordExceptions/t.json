@@ -14,6 +14,7 @@
 
 
               "~~~ HALF DONE : ~~~",
+              "turbot",
               "tartare sauce", "thai green curry sauce", "thai red curry sauce",
 
 
@@ -21,7 +22,7 @@
               "tequila",
               "toblerone", "toffee crisp", "toffees", "toffee sauce", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
               "tortillas",
-              "tempura prawns", "trout", "tuna",
+              "tempura prawns", "tilapia/halibut(sub)", "trout", "tuna",
               "thai basil",
               "tomato soup", "tapioca pudding",
 
@@ -39,6 +40,17 @@
 
 
 
+          {
+              "name": "turbot",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "halibut",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "thai red curry sauce",
               "exclude": [

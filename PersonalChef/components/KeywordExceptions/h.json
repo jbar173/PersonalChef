@@ -1,33 +1,601 @@
 {
 
     "key" : ["halloumi", "havarti",
-             "hazelnuts",
-             "hot dog","ham",
-             "harissa","herbes de provence",
-             "hazelnut oil","hot curry paste","hummus",
-             "hemp milk",
+             "haribo","honey","honeycomb","hundreds and thousands",
+             "hazelnuts","hemp seeds",
+             "haddock","hake","halibut","herring",
+             "hot dog","ham","haggis","haslet",
+             "haricot beans",
+             "harissa","herbes de provence","hot paprika",
+             "hazelnut oil","hemp seed oil","hollandaise","horseradish","hot curry paste","hummus",
+             "hot chocolate",
+             "hazelnut milk","hemp milk","haggis",
 
 
              "~~~ HALF DONE : ~~~",
              "hoisin sauce", "honey barbeque sauce", "honey flavoured spirit/liqueur",
              "horlicks",
 
+
              "~~~ TO DO : ~~~",
-             "haribo", "honey", "honeycomb", "hundreds and thousands",
-             "hemp seeds",
-             "haddock/cod(sub)", "hake", "halibut/cod(sub)", "herring",
-             "haggis", "haslet",
-             "hot paprika",
-             "haricot beans",
-             "hemp seed oil", "hollandaise", "honey mustard sauce", "horseradish/mustard/wasabi/worcestershire sauce(subs)",
-             "hot chocolate",
-             "hazelnut milk",
+
+
+
     ],
 
 
     "ingredients": [
 
 
+
+        {
+            "name": "hundreds and thousands",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "hundreds & thousands",
+                "substitution": false,
+              },
+              {
+                "word": "decorating sprinkles",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate sprinkles",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "honeycomb",
+            "exclude": [
+              {
+                "word": "sticky",
+              },
+            ],
+            "include": [
+              {
+                "word": "cinder toffee",
+                "substitution": false,
+              },
+              {
+                "word": "sponge toffee",
+                "substitution": false,
+              },
+              {
+                "word": "seafoam",
+                "substitution": false,
+              },
+              {
+                "word": "hokey pokey",
+                "substitution": false,
+              },
+              {
+                "word": "golden crunchers",
+                "substitution": false,
+              },
+              {
+                "word": "crunchie bar",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "honey",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "maple syrup",
+                "substitution": true,
+              },
+              {
+                "word": "date paste",
+                "substitution": true,
+              },
+              {
+                "word": "date syrup",
+                "substitution": true,
+              },
+              {
+                "word": "coconut nectar",
+                "substitution": true,
+              },
+              {
+                "word": "agave nectar",
+                "substitution": true,
+              },
+              {
+                "word": "black treacle",
+                "substitution": true,
+              },
+              {
+                "word": "barley malt syrup",
+                "substitution": true,
+              },
+              {
+                "word": "rice syrup",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "haribo",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "gummy mix",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "hemp seeds",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "flax seeds",
+                "substitution": true,
+              },
+              {
+                "word": "sesame seeds",
+                "substitution": true,
+              },
+              {
+                "word": "pumpkin seeds",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "haddock",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cod",
+                "substitution": true,
+              },
+              {
+                "word": "hake",
+                "substitution": true,
+              },
+              {
+                "word": "pollock",
+                "substitution": true,
+              },
+              {
+                "word": "halibut",
+                "substitution": true,
+              },
+              {
+                "word": "sole",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "hake",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fiskeboller",
+                "substitution": false,
+              },
+              {
+                "word": "fish balls",
+                "substitution": false,
+              },
+              {
+                "word": "cod",
+                "substitution": true,
+              },
+              {
+                "word": "haddock",
+                "substitution": true,
+              },
+              {
+                "word": "flounder",
+                "substitution": true,
+              },
+              {
+                "word": "pollock",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "halibut",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cod",
+                "substitution": true,
+              },
+              {
+                "word": "bass",
+                "substitution": true,
+              },
+              {
+                "word": "turbot",
+                "substitution": true,
+              },
+              {
+                "word": "fluke",
+                "substitution": true,
+              },
+              {
+                "word": "flounder",
+                "substitution": true,
+              },
+              {
+                "word": "tilapia",
+                "substitution": true,
+              },
+              {
+                "word": "hake",
+                "substitution": true,
+              },
+              {
+                "word": "haddock",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "herring",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sardines",
+                "substitution": true,
+              },
+              {
+                "word": "mackerel",
+                "substitution": true,
+              },
+              {
+                "word": "kipper",
+                "substitution": true,
+              },
+              {
+                "word": "shad",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "haggis",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sausage",
+                "substitution": true,
+              },
+              {
+                "word": "black pudding",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "haslet",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "meatloaf",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "hot paprika",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "paprika hot",
+                "substitution": false,
+              },
+              {
+                "word": "spicy paprika",
+                "substitution": false,
+              },
+              {
+                "word": "hot pepper paprika",
+                "substitution": true,
+              },
+              {
+                "word": "hot smoked paprika",
+                "substitution": true,
+              },
+              {
+                "word": "hot spanish paprika",
+                "substitution": true,
+              },
+              {
+                "word": "chilli paprika",
+                "substitution": true,
+              },
+              {
+                "word": "paprika paste hot",
+                "substitution": true,
+              },
+              {
+                "word": "hot paprika paste",
+                "substitution": true,
+              },
+              {
+                "word": "cayenne",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "haricot beans",
+            "exclude": [
+              {
+                "word": "vert",
+              },
+              {
+                "word": "vertes",
+              },
+            ],
+            "include": [
+              {
+                "word": "navy bean",
+                "substitution": false,
+              },
+              {
+                "word": "great northern bean",
+                "substitution": false,
+              },
+              {
+                "word": "haricot",
+                "substitution": false,
+              },
+              {
+                "word": "boston bean",
+                "substitution": false,
+              },
+              {
+                "word": "pea bean",
+                "substitution": false,
+              },
+              {
+                "word": "white kidney bean",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "hemp oil",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "hemp seed oil",
+                "substitution": false,
+              },
+              {
+                "word": "flaxseed oil",
+                "substitution": true,
+              },
+              {
+                "word": "pumpkin seed oil",
+                "substitution": true,
+              },
+              {
+                "word": "walnut oil",
+                "substitution": true,
+              },
+              {
+                "word": "borage seed oil",
+                "substitution": true,
+              },
+              {
+                "word": "extra virgin olive oil",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "hollandaise",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dutch sauce",
+                "substitution": false,
+              },
+              {
+                "word": "mayonnaise",
+                "substitution": true,
+              },
+              {
+                "word": "aoli",
+                "substitution": true,
+              },
+              {
+                "word": "bearnaise",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "honey mustard dressing",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "honey and mustard dressing",
+                "substitution": false,
+              },
+              {
+                "word": "honey & mustard dressing",
+                "substitution": false,
+              },
+              {
+                "word": "honey-mustard dressing",
+                "substitution": false,
+              },
+              {
+                "word": "honey mustard golden dressing",
+                "substitution": false,
+              },
+              {
+                "word": "honey and mustard salad dressing",
+                "substitution": false,
+              },
+              {
+                "word": "honey & mustard salad dressing",
+                "substitution": false,
+              },
+              {
+                "word": "honey-mustard salad dressing",
+                "substitution": false,
+              },
+              {
+                "word": "honey dijon dressing",
+                "substitution": false,
+              },
+              {
+                "word": "honey mustard sauce",
+                "substitution": false,
+              },
+              {
+                "word": "honey-mustard sauce",
+                "substitution": false,
+              },
+              {
+                "word": "honey and mustard sauce",
+                "substitution": false,
+              },
+              {
+                "word": "honey & mustard sauce",
+                "substitution": false,
+              },
+              {
+                "word": "mustard with honey",
+                "substitution": true,
+              },
+              {
+                "word": "mustard honey",
+                "substitution": true,
+              },
+              {
+                "word": "honey mustard viniagrette",
+                "substitution": true,
+              },
+              {
+                "word": "wholegrain mustard",
+                "substitution": true,
+              },
+              {
+                "word": "mild yellow mustard",
+                "substitution": true,
+              },
+              {
+                "word": "mild mustard",
+                "substitution": true,
+              },
+              {
+                "word": "sweet mustard",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "horseradish",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "mustard",
+                "substitution": true,
+              },
+              {
+                "word": "wasabi",
+                "substitution": true,
+              },
+              {
+                "word": "worcestershire sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "hot chocolate",
+            "exclude": [
+              {
+                "word": "cocoa bean",
+              },
+              {
+                "word": "dark chocolate",
+              },
+            ],
+            "include": [
+              {
+                "word": "drinking chocolate",
+                "substitution": false,
+              },
+              {
+                "word": "cocoa",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "hazelnut milk",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "hemp milk",
+                "substitution": false,
+              },
+              {
+                "word": "soy milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond milk",
+                "substitution": true,
+              },
+              {
+                "word": "oat milk",
+                "substitution": true,
+              },
+              {
+                "word": "rice milk",
+                "substitution": true,
+              },
+              {
+                "word": "goat's milk",
+                "substitution": true,
+              },
+              {
+                "word": "milk",
+                "substitution": true,
+              },
+              {
+                "word": "almond breeze",
+                "substitution": true,
+              },
+              {
+                "word": "coconut milk",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "hazelnut oil",
             "exclude": [
@@ -326,6 +894,14 @@
             },
             {
               "word": "almond breeze",
+              "substitution": true,
+            },
+            {
+              "word": "coconut milk",
+              "substitution": true,
+            },
+            {
+              "word": "hazelnut milk",
               "substitution": true,
             },
           ],

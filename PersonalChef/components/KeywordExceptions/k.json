@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "kewra water",
+    "key" : [ "kewra water","kitkat",
               "kamut flour",
               "kale","kiwi fruit","kohlrabi",
               "kidney beans",
@@ -12,7 +12,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "kitkat",
               "kipper",
               "karela",
               "kofta seasoning",
@@ -27,7 +26,29 @@
 
 
 
-
+          {
+              "name": "kitkat",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kit kat",
+                  "substitution": false,
+                },
+                {
+                  "word": "chocolate wafers",
+                  "substitution": false,
+                },
+                {
+                  "word": "caramel wafers",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate biscuits",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "katsu cooking paste",
               "exclude": [

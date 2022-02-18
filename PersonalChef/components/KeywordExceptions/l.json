@@ -91,6 +91,30 @@
             ],
             "include": [
               {
+                "word": "lemon infusion",
+                "substitution": false,
+              },
+              {
+                "word": "lemon tisane",
+                "substitution": false,
+              },
+              {
+                "word": "lemon green tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon herbal tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon teabag",
+                "substitution": false,
+              },
+              {
+                "word": "lemon tea bag",
+                "substitution": false,
+              },
+              {
                 "word": "lemon & ginger tea",
                 "substitution": true,
               },

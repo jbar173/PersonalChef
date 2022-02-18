@@ -1,24 +1,319 @@
 {
 
-    "key" : [ "icing sugar",
-              "ice",
+    "key" : [ "iced gems","icing sugar",
+              "italian seasoning",
+              "italian dressing",
+              "iced coffee",
+              "ice", "ice cream", "ice lolly",
 
 
               "~~~ HALF DONE : ~~~",
 
               "~~~ TO DO : ~~~",
-              "iced gems",
-              "italian seasoning/dried rosemary(sub)/dried basil",
-              "italian dressing",
-              "iced coffee",
-              "ice cream", "ice lolly",
+
     ],
 
 
     "ingredients": [
 
 
-
+          {
+            "name": "iced gems",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "biscuit gems",
+                "substitution": false,
+              },
+              {
+                "word": "ice gems",
+                "substitution": false,
+              },
+              {
+                "word": "unicorn gems",
+                "substitution": false,
+              },
+            ],
+          },
+          {
+            "name": "italian seasoning",
+            "exclude": [
+              {
+                "word": "spirit",
+              },
+            ],
+            "include": [
+              {
+                "word": "italian herb",
+                "substitution": false,
+              },
+              {
+                "word": "italian-style herb",
+                "substitution": false,
+              },
+              {
+                "word": "italian garlic seasoning",
+                "substitution": true,
+              },
+              {
+                "word": "dried rosemary",
+                "substitution": true,
+              },
+              {
+                "word": "dried basil",
+                "substitution": true,
+              },
+              {
+                "word": "herbes de provence",
+                "substitution": true,
+              },
+              {
+                "word": "dried oregano",
+                "substitution": true,
+              },
+              {
+                "word": "dried thyme",
+                "substitution": true,
+              },
+              {
+                "word": "dried sage",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "italian dressing",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "italian salad dressing",
+                "substitution": false,
+              },
+              {
+                "word": "italian original dressing",
+                "substitution": false,
+              },
+              {
+                "word": "greek salad dressing",
+                "substitution": true,
+              },
+              {
+                "word": "greek dressing",
+                "substitution": true,
+              },
+              {
+                "word": "vinaigrette",
+                "substitution": true,
+              },
+              {
+                "word": "vinigrette",
+                "substitution": true,
+              },
+              {
+                "word": "oil & vinegar",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "iced coffee",
+            "exclude": [
+              {
+                "word": "granules",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "ground",
+              },
+            ],
+            "include": [
+              {
+                "word": "cold brew coffee",
+                "substitution": false,
+              },
+              {
+                "word": "cold coffee",
+                "substitution": false,
+              },
+              {
+                "word": "frozen coffee",
+                "substitution": false,
+              },
+              {
+                "word": "iced latte",
+                "substitution": false,
+              },
+              {
+                "word": "iced americano",
+                "substitution": false,
+              },
+              {
+                "word": "frappe",
+                "substitution": false,
+              },
+              {
+                "word": "frappé",
+                "substitution": false,
+              },
+              {
+                "word": "frappucino",
+                "substitution": false,
+              },
+              {
+                "word": "iced caramel latte",
+                "substitution": false,
+              },
+              {
+                "word": "iced vanilla latte",
+                "substitution": false,
+              },
+              {
+                "word": "iced mocha",
+                "substitution": false,
+              },
+              {
+                "word": "coffee shake",
+                "substitution": true,
+              },
+              {
+                "word": "coffee milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "mocha shake",
+                "substitution": true,
+              },
+              {
+                "word": "mocha milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "baileys",
+                "substitution": true,
+              },
+              {
+                "word": "coffee flavoured spirit/liqueur",
+                "substitution": true,
+              },
+              {
+                "word": "coffee popsicle",
+                "substitution": true,
+              },
+              {
+                "word": "coffee ice lolly",
+                "substitution": true,
+              },
+              {
+                "word": "coffee ice pop",
+                "substitution": true,
+              },
+              {
+                "word": "coffee ice cube",
+                "substitution": true,
+              },
+              {
+                "word": "coffee",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "ice cream",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "iceream",
+                "substitution": false,
+              },
+              {
+                "word": "gelato",
+                "substitution": false,
+              },
+              {
+                "word": "iced dessert",
+                "substitution": false,
+              },
+              {
+                "word": "kulfi",
+                "substitution": true,
+              },
+              {
+                "word": "quilfi",
+                "substitution": true,
+              },
+              {
+                "word": "sxusem",
+                "substitution": true,
+              },
+              {
+                "word": "frozen dairy dessert",
+                "substitution": true,
+              },
+              {
+                "word": "frozen dairy-based dessert",
+                "substitution": true,
+              },
+              {
+                "word": "frozen yoghurt",
+                "substitution": true,
+              },
+            ],
+          },
+          {
+            "name": "ice lolly",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "ice lollies",
+                "substitution": false,
+              },
+              {
+                "word": "ice pop",
+                "substitution": false,
+              },
+              {
+                "word": "popsicle",
+                "substitution": false,
+              },
+              {
+                "word": "paleta",
+                "substitution": false,
+              },
+              {
+                "word": "icy pole",
+                "substitution": false,
+              },
+              {
+                "word": "ice block",
+                "substitution": false,
+              },
+              {
+                "word": "ice drop",
+                "substitution": false,
+              },
+              {
+                "word": "ice gola",
+                "substitution": false,
+              },
+              {
+                "word": "ice candy",
+                "substitution": false,
+              },
+              {
+                "word": "sorbet",
+                "substitution": true,
+              },
+            ],
+          },
           {
             "name": "irish cream liqueur",
             "exclude": [

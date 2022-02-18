@@ -3,7 +3,7 @@
     "key" : [ "champagne","cherry flavoured spirit/liqueur","chocolate flavoured spirit/liqueur","cider","coconut flavoured spirit/liqueur","cachaca",
               "camembert","cheddar","cheese slice","cognac","comte","cottage cheese","cream cheese",
 
-              "cacao nibs","caramel","caramel cookie dough","caramel essence","caramel peanuts","caramel wafer","candied orange","cherry compote",
+              "cacao nibs","caramel","caramel cookie dough","caramel essence","caramel peanuts","caramel wafers","candied orange","cherry compote",
               "chocolate","chocolate biscuits","chocolate buttons","chocolate cake","chocolate caramel bar","chocolate cookie dough","chocolate cookies",
               "chocolate custard","chocolate decorating icing","chocolate drops","chocolate ganache","chocolate mousse","chocolate peanuts","chocolate raisins",
               "chocolate sauce","chocolate sprinkles","cocoa powder","coconut bar","coconut biscuits","coconut macaroons","coconut nectar","cola laces",
@@ -716,16 +716,20 @@
             ],
         },
         {
-            "name": "caramel wafer",
+            "name": "caramel wafers",
             "exclude": [
             ],
             "include": [
+              {
+                "word": "caramel wafer",
+                "substitution": true,
+              },
               {
                 "word": "tunnocks millk chocolate caramel",
                 "substitution": false,
               },
               {
-                "word": "chocolate wafer",
+                "word": "chocolate wafers",
                 "substitution": true,
               },
               {
@@ -952,6 +956,10 @@
             ],
             "include": [
               {
+                "word": "chocolate fool",
+                "substitution": false,
+              },
+              {
                 "word": "chocolate whippy",
                 "substitution": false,
               },
@@ -1037,7 +1045,7 @@
                 "substitution": true,
               },
               {
-                "word": "chocolate wafer",
+                "word": "chocolate wafers",
                 "substitution": true,
               },
               {
@@ -2388,6 +2396,10 @@
                 "word": "anise seeds",
                 "substitution": true,
               },
+              {
+                "word": "juniper berries",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -2820,7 +2832,7 @@
               {
                 "word": "chicken stock pot",
                 "substitution": true,
-              }
+              },
               {
                 "word": "chicken pate",
                 "substitution": true,
@@ -3169,6 +3181,26 @@
                 "substitution": false,
               },
               {
+                "word": "cherry tisane",
+                "substitution": false,
+              },
+              {
+                "word": "cherry green tea",
+                "substitution": false,
+              },
+              {
+                "word": "cherry herbal tea",
+                "substitution": false,
+              },
+              {
+                "word": "cherry teabag",
+                "substitution": false,
+              },
+              {
+                "word": "cherry tea bag",
+                "substitution": false,
+              },
+              {
                 "word": "cherry & orange infusion",
                 "substitution": true,
               },
@@ -3394,6 +3426,10 @@
               "word": "espresso",
               "substitution": false,
             },
+            {
+              "word": "iced coffee",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -3438,10 +3474,6 @@
             "include": [
               {
                 "word": "hemp oil",
-                "substitution": true,
-              },
-              {
-                "word": "hemp seed oil",
                 "substitution": true,
               },
               {
@@ -3525,14 +3557,6 @@
                 "substitution": true,
               },
               {
-                "word": "walnut oil",
-                "substitution": true,
-              },
-              {
-                "word": "macadamia oil",
-                "substitution": true,
-              },
-              {
                 "word": "macadamia nut oil",
                 "substitution": true,
               },
@@ -3576,10 +3600,6 @@
             "include": [
               {
                 "word": "hemp oil",
-                "substitution": true,
-              },
-              {
-                "word": "hemp seed oil",
                 "substitution": true,
               },
               {
@@ -3667,10 +3687,6 @@
                 "substitution": true,
               },
               {
-                "word": "macadamia oil",
-                "substitution": true,
-              },
-              {
                 "word": "macadamia nut oil",
                 "substitution": true,
               },
@@ -3721,6 +3737,26 @@
             "include": [
               {
                 "word": "cranberry infusion",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry tisane",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry green tea",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry herbal tea",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry teabag",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry tea bag",
                 "substitution": false,
               },
               {
@@ -3798,6 +3834,46 @@
               },
               {
                 "word": "chamomile infusion",
+                "substitution": false,
+              },
+              {
+                "word": "camomile tisane",
+                "substitution": false,
+              },
+              {
+                "word": "camomile green tea",
+                "substitution": false,
+              },
+              {
+                "word": "camomolie herbal tea",
+                "substitution": false,
+              },
+              {
+                "word": "camomile teabag",
+                "substitution": false,
+              },
+              {
+                "word": "camomile tea bag",
+                "substitution": false,
+              },
+              {
+                "word": "chamomile tisane",
+                "substitution": false,
+              },
+              {
+                "word": "chamomile green tea",
+                "substitution": false,
+              },
+              {
+                "word": "chamomile herbal tea",
+                "substitution": false,
+              },
+              {
+                "word": "chamomile teabag",
+                "substitution": false,
+              },
+              {
+                "word": "chamomile tea bag",
                 "substitution": false,
               },
               {
@@ -6806,11 +6882,11 @@
               "substitution": false,
             },
             {
-              "word": "soy milk",
+              "word": "hemp milk",
               "substitution": true,
             },
             {
-              "word": "soymilk",
+              "word": "soy milk",
               "substitution": true,
             },
             {
@@ -6827,6 +6903,14 @@
             },
             {
               "word": "milk",
+              "substitution": true,
+            },
+            {
+              "word": "goat's milk",
+              "substitution": true,
+            },
+            {
+              "word": "hazelnut milk",
               "substitution": true,
             },
             {

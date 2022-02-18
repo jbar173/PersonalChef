@@ -20,14 +20,14 @@
               "raclette", "red leicester",
 
               "rainbow drops", "raisin and biscuit chocolate", "raspberry bonbons", "raspberry syrup", "red food colouring", "reese’s peanut butter cups",
-              "revels", "rhubarb and ginger preserve", "rice syrup", "rolos",
+              "revels", "rhubarb and ginger preserve", "rice syrup/rice malt syrup/honey(sub)", "rolos",
 
               "rice and peas",
               "rainbow trout",
               "raspberries", "ratatouille", "redcurrants", "rhubarb",
-              "ras el hanout", "red pepper flakes", "rosemary",
+              "ras el hanout/baharat seasoning/jerk seasoning mix(subs)", "red pepper flakes", "rogan josh spice/jerk sauce/jerk seasoning mix(subs)",
               "rice pudding", "roasted red peppers",
-              "ramen broth", "red pesto", "red wine stock", "rendang curry paste", "rogan josh",
+              "ramen broth", "red pesto", "red wine stock", "rendang curry paste", "rogan josh sauce/jerk sauce(sub)",
               "raspberry tea", "ribena",
               "raita", "rassomalai", "rassogulla", "ravioli",
 
@@ -439,6 +439,14 @@
               },
               {
                 "word": "almond breeze",
+                "substitution": true,
+              },
+              {
+                "word": "coconut milk",
+                "substitution": true,
+              },
+              {
+                "word": "hazelnut milk",
                 "substitution": true,
               },
             ],

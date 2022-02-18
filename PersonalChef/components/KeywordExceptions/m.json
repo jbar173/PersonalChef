@@ -28,7 +28,7 @@
               "mead", "mulled wine",
               "mascarpone",
 
-              "macarons", "maltesers", "maple syrup", "marmalade", "mars", "marshmallows", "marzipan", "meringues", "midget gems",
+              "macarons", "maltesers", "maple syrup/honey(sub)", "marmalade", "mars", "marshmallows", "marzipan", "meringues", "midget gems",
               "milk biscuits", "milky way", "millionaire’s shortbread", "mini eggs", "minstrels", "mint chocolate", "mint fondants",
               "mints", "munchies",
 
@@ -238,6 +238,30 @@
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "mango infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango tea bag",
+                  "substitution": false,
+                },
                 {
                   "word": "mango & passionfruit tea",
                   "substitution": true,

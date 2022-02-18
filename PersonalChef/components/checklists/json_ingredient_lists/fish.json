@@ -2,11 +2,11 @@
     "name": "fish_ingredients",
     "ingredients": [  "anchovies",
 
-                      "basa", "breaded fish fillets",
+                      "basa", "bass", "breaded fish fillets",
 
                       "caviar", "cod", "cockles", "crab", "crayfish",
 
-                      "fish cakes",
+                      "fish cakes", "flounder", "fluke",
 
                       "haddock", "hake", "halibut", "herring",
 
@@ -25,7 +25,7 @@
                       "salmon", "sardines", "scallops", "seabass", "seafood stick", "shrimp", "sild", "smoked rainbow trout",
                       "smoked salmon", "sole", "sprat", "squid",
 
-                      "tempura prawns", "trout", "tuna",
+                      "tempura prawns", "tilapia", "trout", "tuna", "turbot",
 
     ]
 }
