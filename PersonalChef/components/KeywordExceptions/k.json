@@ -2,9 +2,13 @@
 
     "key" : [ "kewra water","kitkat",
               "kamut flour",
+              "kipper",
               "kale","kiwi fruit","kohlrabi",
-              "kidney beans",
-              "katsu cooking paste","keralan curry sauce","keralan curry paste",
+              "kofta seasoning",
+              "kidney beans","kimchi",
+
+              "katsu cooking paste","katsu curry sauce","keralan curry sauce","keralan curry paste","kolhapuri sauce",
+              "kung po sauce",
 
 
               "~~~ HALF DONE : ~~~",
@@ -12,12 +16,7 @@
 
 
               "~~~ TO DO : ~~~",
-              "kipper",
-              "karela",
-              "kofta seasoning",
-              "kimchi",
-              "katsu curry sauce", "kimchi", "kolhapuri sauce",
-              "korean sweet chilli sauce", "kung po sauce",
+
 
     ],
 
@@ -25,7 +24,256 @@
     "ingredients": [
 
 
-
+          {
+              "name": "kolhapuri sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kolhapuri masala",
+                  "substitution": false,
+                },
+                {
+                  "word": "kolhapuri curry",
+                  "substitution": false,
+                },
+                {
+                  "word": "kolhapuri spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "kolhapuri paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "kashmiri masala",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "kung po sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kung pao sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "gong bao sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "kungpao sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli soy sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "poke sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "katsu curry sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "katsu sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "katsu cooking paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "kimchi",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fermented cabbage",
+                  "substitution": false,
+                },
+                {
+                  "word": "fermented vegetables",
+                  "substitution": false,
+                },
+                {
+                  "word": "sauerkraut",
+                  "substitution": true,
+                },
+                {
+                  "word": "pao cai",
+                  "substitution": true,
+                },
+                {
+                  "word": "pao tsai",
+                  "substitution": true,
+                },
+                {
+                  "word": "chinese pickles",
+                  "substitution": true,
+                },
+                {
+                  "word": "achar",
+                  "substitution": true,
+                },
+                {
+                  "word": "achaar",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled cabbage",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "kofta seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "kofte seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "kafta seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "kufta seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "kefta seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "kabob seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "kebab seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "kofta spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "kofte spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "kafta spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "kufta spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "kefta spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "kofta rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "kofte rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "kafta rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "kufta rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "kefta rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "kofta masala",
+                  "substitution": false,
+                },
+                {
+                  "word": "kofte masala",
+                  "substitution": false,
+                },
+                {
+                  "word": "kafta masala",
+                  "substitution": false,
+                },
+                {
+                  "word": "kufta masala",
+                  "substitution": false,
+                },
+                {
+                  "word": "kefta masala",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "kipper",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "smoked herring",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked peppered herring",
+                  "substitution": false,
+                },
+                {
+                  "word": "kipper paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked fish",
+                  "substitution": true,
+                },
+                {
+                  "word": "herring",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked mackerel",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked sardine",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked haddock",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked smelt",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "kitkat",
               "exclude": [

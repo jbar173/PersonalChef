@@ -632,7 +632,15 @@
                   "substitution": false,
                 },
                 {
+                  "word": "fish concentrate",
+                  "substitution": false,
+                },
+                {
                   "word": "fish consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "fish consommé",
                   "substitution": false,
                 },
                 {
@@ -668,7 +676,15 @@
                   "substitution": false,
                 },
                 {
+                  "word": "shellfish concentrate",
+                  "substitution": false,
+                },
+                {
                   "word": "shellfish consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "shellfish consommé",
                   "substitution": false,
                 },
                 {
@@ -704,7 +720,15 @@
                   "substitution": false,
                 },
                 {
+                  "word": "clam concentrate",
+                  "substitution": false,
+                },
+                {
                   "word": "clam consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "clam consommé",
                   "substitution": false,
                 },
                 {
@@ -755,6 +779,26 @@
               "include": [
                 {
                   "word": "mustard",
+                  "substitution": true,
+                },
+                {
+                  "word": "dijon",
+                  "substitution": true,
+                },
+                {
+                  "word": "horseradish",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcestershire sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcester sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi",
                   "substitution": true,
                 },
               ],

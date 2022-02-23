@@ -306,6 +306,10 @@
                 "word": "dolly mix",
                 "substitution": false,
               },
+              {
+                "word": "liquorice allsorts",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -693,7 +697,7 @@
               },
               {
                 "word": "lentils",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "chana dal",
@@ -771,6 +775,10 @@
                 "substitution": false,
               },
               {
+                "word": "lentils",
+                "substitution": false,
+              },
+              {
                 "word": "green lentil",
                 "substitution": true
               },
@@ -793,10 +801,6 @@
               {
                 "word": "french lentil",
                 "substitution": true
-              },
-              {
-                "word": "lentils",
-                "substitution": true,
               },
               {
                 "word": "chana dal",
@@ -887,7 +891,7 @@
               },
               {
                 "word": "lentils",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "chana dal",
@@ -1633,6 +1637,18 @@
                 "word": "mustard",
                 "substitution": true,
               },
+              {
+                "word": "dijon",
+                "substitution": true,
+              },
+              {
+                "word": "worcestershire sauce",
+                "substitution": true,
+              },
+              {
+                "word": "worcester sauce",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1641,7 +1657,27 @@
             ],
             "include": [
               {
+                "word": "dijon",
+                "substitution": false,
+              },
+              {
                 "word": "mustard",
+                "substitution": true,
+              },
+              {
+                "word": "horseradish",
+                "substitution": true,
+              },
+              {
+                "word": "worcestershire sauce",
+                "substitution": true,
+              },
+              {
+                "word": "worcester sauce",
+                "substitution": true,
+              },
+              {
+                "word": "wasabi",
                 "substitution": true,
               },
             ],
@@ -1680,14 +1716,6 @@
                 "substitution": false,
               },
               {
-                "word": "dill sauce",
-                "substitution": true,
-              },
-              {
-                "word": "seafood sauce",
-                "substitution": true,
-              },
-              {
                 "word": "dill & lemon dressing",
                 "substitution": false,
               },
@@ -1714,6 +1742,14 @@
               {
                 "word": "dill-lemon dressing",
                 "substitution": false,
+              },
+              {
+                "word": "dill sauce",
+                "substitution": true,
+              },
+              {
+                "word": "seafood sauce",
+                "substitution": true,
               },
               {
                 "word": "dill dressing",
@@ -2107,6 +2143,10 @@
               },
               {
                 "word": "red lentil",
+                "substitution": false,
+              },
+              {
+                "word": "lentils",
                 "substitution": false,
               },
               {
@@ -3056,6 +3096,10 @@
               },
               {
                 "word": "beef consomme",
+                "substitution": false,
+              },
+              {
+                "word": "beef consommé",
                 "substitution": false,
               },
               {

@@ -29,9 +29,9 @@
               "popping candy", "pralines", "preserved lemons", "prunes/dried figs/raisins(sub)", "pudding mix/pudding powder/custard powder(sub)", "purple food colouring",
 
               "pie mix", "pistachios", "pizza bases", "poppy seeds", "pork scratchings", "pretzel snacks", "puff pastry",
-              "pangasius", "pilchards", "plaice", "pollock/lack/cod/hake/haddock(sub)", "prawns",
+              "pangasius", "pilchards", "plaice", "pollock/lack/cod/hake/haddock(sub)", "prawns/langoustine(sub)",
 
-              "pancetta", "pepperoni", "pigs in blankets", "porchetta",
+              "pancetta", "pepperoni", "pigs in blankets", "porchetta", "pork mince",
               "persimmon", "plantain", "pomegranate seeds",
               "paprika",
               "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage", "pickled walnuts",
@@ -907,7 +907,15 @@
               ],
               "include": [
                 {
+                  "word": "passion fruit purée",
+                  "substitution": false,
+                },
+                {
                   "word": "passionfruit puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit purée",
                   "substitution": false,
                 },
               ],
@@ -2067,6 +2075,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "pork liquid",
+                  "substitution": false,
+                },
+                {
                   "word": "pork soup",
                   "substitution": false,
                 },
@@ -2095,7 +2107,15 @@
                   "substitution": false,
                 },
                 {
+                  "word": "pork concentrate",
+                  "substitution": false,
+                },
+                {
                   "word": "pork consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork consommé",
                   "substitution": false,
                 },
                 {
@@ -2128,6 +2148,10 @@
                 },
                 {
                   "word": "ham stock",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham liquid",
                   "substitution": false,
                 },
                 {
@@ -2167,7 +2191,15 @@
                   "substitution": false,
                 },
                 {
+                  "word": "ham concentrate",
+                  "substitution": false,
+                },
+                {
                   "word": "ham consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "ham consommé",
                   "substitution": false,
                 },
                 {
@@ -2203,175 +2235,11 @@
                   "substitution": true,
                 },
                 {
-                  "word": "turkey broth",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey soup",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey bone broth",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey soup base",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey bouillon",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey oxo",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey cube",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey base",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey consomme",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey consume",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey demi-glace",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey demi glace",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey gravy",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey jus",
-                  "substitution": true,
-                },
-                {
-                  "word": "turkey glace",
-                  "substitution": true,
-                },
-                {
                   "word": "chicken stock",
                   "substitution": true,
                 },
                 {
-                  "word": "chicken broth",
-                  "substitution": true,
-                },
-                {
-                  "word": "chicken bone broth",
-                  "substitution": true,
-                },
-                {
-                  "word": "chicken soup base",
-                  "substitution": true,
-                },
-                {
-                  "word": "chicken base",
-                  "substitution": true,
-                },
-                {
-                  "word": "chicken bouillon",
-                  "substitution": true,
-                },
-                {
-                  "word": "chicken consomme",
-                  "substitution": false,
-                },
-                {
-                  "word": "chicken consume",
-                  "substitution": false,
-                },
-                {
-                  "word": "chicken oxo",
-                  "substitution": true,
-                },
-                {
-                  "word": "chicken cube",
-                  "substitution": true,
-                },
-                {
-                  "word": "chicken gravy",
-                  "substitution": true,
-                },
-                {
-                  "word": "chicken sauce",
-                  "substitution": true,
-                },
-                {
                   "word": "vegetable stock",
-                  "substitution": true,
-                },
-                {
-                  "word": "vegetable broth",
-                  "substitution": true,
-                },
-                {
-                  "word": "veg broth",
-                  "substitution": true,
-                },
-                {
-                  "word": "veg stock",
-                  "substitution": true,
-                },
-                {
-                  "word": "vegetable bone broth",
-                  "substitution": true,
-                },
-                {
-                  "word": "vegetable soup base",
-                  "substitution": true,
-                },
-                {
-                  "word": "veg soup base",
-                  "substitution": true,
-                },
-                {
-                  "word": "vegetable base",
-                  "substitution": true,
-                },
-                {
-                  "word": "vegetable bouillon",
-                  "substitution": true,
-                },
-                {
-                  "word": "veg consomme",
-                  "substitution": true,
-                },
-                {
-                  "word": "veg consume",
-                  "substitution": true,
-                },
-                {
-                  "word": "vegetable oxo",
-                  "substitution": true,
-                },
-                {
-                  "word": "vegetable cube",
-                  "substitution": true,
-                },
-                {
-                  "word": "vegetable gravy",
-                  "substitution": true,
-                },
-                {
-                  "word": "veg gravy",
                   "substitution": true,
                 },
               ],
@@ -2444,6 +2312,9 @@
                 },
                 {
                   "word": "consomme",
+                },
+                {
+                  "word": "consommé",
                 },
                 {
                   "word": "consume",
@@ -2538,37 +2409,28 @@
               "name": "peas",
               "exclude": [
                 {
-                  "word": "chick peas",
+                  "word": "dried",
+                },
+                {
+                  "word": "split",
+                },
+                {
+                  "word": "flour",
                 },
                 {
                   "word": "chick pea",
                 },
                 {
-                  "word": "wasabi peas",
-                },
-                {
                   "word": "wasabi pea",
-                },
-                {
-                  "word": "black-eyed peas",
                 },
                 {
                   "word": "black-eyed pea",
                 },
                 {
-                  "word": "black eyed peas",
-                },
-                {
                   "word": "black eyed pea",
                 },
                 {
-                  "word": "cow peas",
-                },
-                {
                   "word": "cow pea",
-                },
-                {
-                  "word": "red peas",
                 },
                 {
                   "word": "red pea",
@@ -2578,6 +2440,9 @@
                 },
                 {
                   "word": "puree",
+                },
+                {
+                  "word": "purée",
                 },
               ],
               "include": [
@@ -2620,6 +2485,10 @@
               ],
               "include": [
                 {
+                  "word": "pumpkin purée",
+                  "substitution": false,
+                },
+                {
                   "word": "tinned pumpkin",
                   "substitution": false,
                 },
@@ -2629,6 +2498,10 @@
                 },
                 {
                   "word": "pureed pumpkin",
+                  "substitution": false,
+                },
+                {
+                  "word": "puréed pumpkin",
                   "substitution": false,
                 },
                 {
@@ -3292,6 +3165,9 @@
                 },
                 {
                   "word": "puree",
+                },
+                {
+                  "word": "purée",
                 },
                 {
                   "word": "canned",

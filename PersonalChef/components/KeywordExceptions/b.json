@@ -9,7 +9,7 @@
              "baking powder","baking soda","batter mix","bran flakes","brazil nuts","breadcrumbs","breadsticks","bread loaf","bread wraps",
              "basa",
              "beef","beef mince","black pudding","burger",
-             "banana","beetroot","beet","bell pepper","beansprouts","broad beans","broccoli","blackberries","blueberries","butternut squash",
+             "banana","beetroot","beet","bell pepper","beansprouts","bitter melon","broad beans","broccoli","blackberries","blueberries","butternut squash",
              "baharat seasoning","bay leaf","beetroot powder","biryani masala","black cardamom","bouquet garni",
              "baked beans","black beans","black-eyed peas","black cherries","borlotti beans","butter beans",
 
@@ -44,6 +44,24 @@
     "ingredients": [
 
 
+      {
+          "name": "bitter melon",
+          "exclude": [
+            {
+              "word": "juice",
+            },
+          ],
+          "include": [
+            {
+              "word": "bitter gourd",
+              "substitution": false,
+            },
+            {
+              "word": "karela",
+              "substitution": false,
+            },
+          ],
+      },
       {
           "name": "bass",
           "exclude": [
@@ -544,6 +562,14 @@
               "word": "jerk seasoning mix",
               "substitution": true,
             },
+            {
+              "word": "ras el hanout",
+              "substitution": true,
+            },
+            {
+              "word": "moroccan seasoning",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -698,6 +724,10 @@
             },
             {
               "word": "worcestershire sauce",
+              "substitution": true,
+            },
+            {
+              "word": "worcester sauce",
               "substitution": true,
             },
             {
@@ -1232,6 +1262,10 @@
               "word": "basil paste",
               "substitution": false,
             },
+            {
+              "word": "basil purée",
+              "substitution": false,
+            },
           ],
       },
       {
@@ -1587,6 +1621,9 @@
             "word": "puree",
           },
           {
+            "word": "purée",
+          },
+          {
             "word": "vinegar",
           },
           {
@@ -1655,6 +1692,9 @@
           },
           {
             "word": "puree",
+          },
+          {
+            "word": "purée",
           },
           {
             "word": "vinegar",
@@ -1959,6 +1999,9 @@
             },
             {
               "word": "puree",
+            },
+            {
+              "word": "purée",
             },
             {
               "word": "canned",
@@ -3224,6 +3267,10 @@
                   "word": "minced meat",
                   "substitution": true,
                 },
+                {
+                  "word": "meat free mince",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -3285,6 +3332,9 @@
                 },
                 {
                   "word": "consomme",
+                },
+                {
+                  "word": "consommé",
                 },
                 {
                   "word": "consume",
@@ -3623,6 +3673,10 @@
                 "substitution": false,
               },
               {
+                "word": "beef liquid",
+                "substitution": false,
+              },
+              {
                 "word": "beef bouillon",
                 "substitution": false,
               },
@@ -3647,7 +3701,15 @@
                 "substitution": false,
               },
               {
+                "word": "beef concentrate",
+                "substitution": false,
+              },
+              {
                 "word": "beef consomme",
+                "substitution": false,
+              },
+              {
+                "word": "beef consommé",
                 "substitution": false,
               },
               {
@@ -3690,66 +3752,6 @@
                 "word": "lamb stock",
                 "substitution": true,
               },
-              {
-                "word": "lamb broth",
-                "substitution": true,
-              },
-              {
-                "word": "lamb bone broth",
-                "substitution": true,
-              },
-              {
-                "word": "lamb soup base",
-                "substitution": true,
-              },
-              {
-                "word": "lamb bouillon",
-                "substitution": true,
-              },
-              {
-                "word": "lamb oxo",
-                "substitution": true,
-              },
-              {
-                "word": "lamb cube",
-                "substitution": true,
-              },
-              {
-                "word": "lamb base",
-                "substitution": true,
-              },
-              {
-                "word": "lamb consomme",
-                "substitution": true,
-              },
-              {
-                "word": "lamb consume",
-                "substitution": true,
-              },
-              {
-                "word": "lamb demi-glace",
-                "substitution": true,
-              },
-              {
-                "word": "lamb demi glace",
-                "substitution": true,
-              },
-              {
-                "word": "lamb gravy",
-                "substitution": true,
-              },
-              {
-                "word": "lamb sauce",
-                "substitution": true,
-              },
-              {
-                "word": "lamb jus",
-                "substitution": true,
-              },
-              {
-                "word": "lamb glace",
-                "substitution": true,
-              },
             ],
           },
           {
@@ -3769,6 +3771,9 @@
               },
               {
                 "word": "puree",
+              },
+              {
+                "word": "purée",
               },
               {
                 "word": "oil",
@@ -4052,6 +4057,9 @@
               },
               {
                 "word": "puree",
+              },
+              {
+                "word": "purée",
               },
             ],
             "include": [

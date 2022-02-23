@@ -519,7 +519,15 @@
             ],
             "include": [
               {
+                "word": "mustard seeds",
+                "substitution": true,
+              },
+              {
                 "word": "mustard",
+                "substitution": true,
+              },
+              {
+                "word": "dijon",
                 "substitution": true,
               },
               {
@@ -528,6 +536,10 @@
               },
               {
                 "word": "worcestershire sauce",
+                "substitution": true,
+              },
+              {
+                "word": "worcester sauce",
                 "substitution": true,
               },
             ],
@@ -1427,6 +1439,9 @@
               },
               {
                 "word": "mustard",
+              },
+              {
+                "word": "dijon",
               },
               {
                 "word": "honeycrisp",

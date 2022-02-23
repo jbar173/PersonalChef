@@ -736,6 +736,14 @@
                 "word": "wafer",
                 "substitution": true,
               },
+              {
+                "word": "toffee crisp",
+                "substitution": true,
+              },
+              {
+                "word": "lion bar",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -823,6 +831,10 @@
               },
               {
                 "word": "caramel",
+                "substitution": true,
+              },
+              {
+                "word": "milk slice",
                 "substitution": true,
               },
             ],
@@ -1329,6 +1341,18 @@
               },
               {
                 "word": "blue ribband",
+                "substitution": true,
+              },
+              {
+                "word": "kitkat",
+                "substitution": true,
+              },
+              {
+                "word": "toffee crisp",
+                "substitution": true,
+              },
+              {
+                "word": "lion bar",
                 "substitution": true,
               },
             ],
@@ -1840,6 +1864,10 @@
                 "word": "grouper",
                 "substitution": true,
               },
+              {
+                "word": "lobster",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1860,11 +1888,15 @@
                 "substitution": true,
               },
               {
+                "word": "langostino",
+                "substitution": true,
+              },
+              {
                 "word": "shrimp",
                 "substitution": true,
               },
               {
-                "word": "prawn",
+                "word": "prawns",
                 "substitution": true,
               },
               {
@@ -2124,6 +2156,10 @@
                 "word": "fennel seeds",
                 "substitution": true,
               },
+              {
+                "word": "mustard seeds",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -2172,6 +2208,10 @@
               {
                 "word": "clove",
                 "substitution": false,
+              },
+              {
+                "word": "mulled wine spice",
+                "substitution": true,
               },
             ],
         },
@@ -2400,6 +2440,10 @@
                 "word": "juniper berries",
                 "substitution": true,
               },
+              {
+                "word": "mustard seeds",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -2571,6 +2615,10 @@
                 "substitution": false,
               },
               {
+                "word": "chicken velouté",
+                "substitution": false,
+              },
+              {
                 "word": "chicken cream soup",
                 "substitution": false,
               },
@@ -2675,6 +2723,10 @@
                 "substitution": false,
               },
               {
+                "word": "kung po sauce",
+                "substitution": true,
+              },
+              {
                 "word": "chilli stir fry sauce",
                 "substitution": true,
               },
@@ -2760,7 +2812,15 @@
             ],
             "include": [
               {
+                "word": "chestnut purée",
+                "substitution": true,
+              },
+              {
                 "word": "puree chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "purée chestnut",
                 "substitution": false,
               },
               {
@@ -2768,7 +2828,15 @@
                 "substitution": false,
               },
               {
+                "word": "puréed chestnut",
+                "substitution": false,
+              },
+              {
                 "word": "puree de marron",
+                "substitution": false,
+              },
+              {
+                "word": "purée de marron",
                 "substitution": false,
               },
               {
@@ -4133,6 +4201,10 @@
             ],
             "include": [
               {
+                "word": "coriander purée",
+                "substitution": false,
+              },
+              {
                 "word": "coriander paste",
                 "substitution": false,
               },
@@ -4161,6 +4233,10 @@
               {
                 "word": "ballymaloe pepper relish",
                 "substitution": false,
+              },
+              {
+                "word": "mango pickle",
+                "substitution": true,
               },
             ],
         },
@@ -4498,6 +4574,10 @@
                 "word": "turkey mince",
                 "substitution": true,
               },
+              {
+                "word": "meat free mince",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -4538,6 +4618,9 @@
             },
             {
               "word": "consomme",
+            },
+            {
+              "word": "consommé",
             },
             {
               "word": "consume",
@@ -4923,6 +5006,10 @@
               },
               {
                 "word": "piccalilli",
+                "substitution": true,
+              },
+              {
+                "word": "chilli chutney relish",
                 "substitution": true,
               },
             ],
@@ -5475,6 +5562,9 @@
                 "word": "puree",
               },
               {
+                "word": "purée",
+              },
+              {
                 "word": "nectar",
               },
               {
@@ -5758,6 +5848,10 @@
             },
             {
               "word": "chipotle puree",
+              "substitution": false,
+            },
+            {
+              "word": "chipotle purée",
               "substitution": false,
             },
             {
@@ -6343,6 +6437,10 @@
               "substitution": false,
             },
             {
+              "word": "chicken liquid",
+              "substitution": false,
+            },
+            {
               "word": "chicken bone broth",
               "substitution": false,
             },
@@ -6359,7 +6457,15 @@
               "substitution": false,
             },
             {
+              "word": "chicken concentrate",
+              "substitution": false,
+            },
+            {
               "word": "chicken consomme",
+              "substitution": false,
+            },
+            {
+              "word": "chicken consommé",
               "substitution": false,
             },
             {
@@ -6387,271 +6493,11 @@
               "substitution": true,
             },
             {
-              "word": "vegetable broth",
-              "substitution": true,
-            },
-            {
-              "word": "veg broth",
-              "substitution": true,
-            },
-            {
-              "word": "veg stock",
-              "substitution": true,
-            },
-            {
-              "word": "vegetable bone broth",
-              "substitution": true,
-            },
-            {
-              "word": "vegetable soup base",
-              "substitution": true,
-            },
-            {
-              "word": "veg soup base",
-              "substitution": true,
-            },
-            {
-              "word": "vegetable base",
-              "substitution": true,
-            },
-            {
-              "word": "vegetable bouillon",
-              "substitution": true,
-            },
-            {
-              "word": "vegetable consomme",
-              "substitution": true,
-            },
-            {
-              "word": "vegetable consume",
-              "substitution": true,
-            },
-            {
-              "word": "veg consomme",
-              "substitution": true,
-            },
-            {
-              "word": "veg consume",
-              "substitution": true,
-            },
-            {
-              "word": "vegetable oxo",
-              "substitution": true,
-            },
-            {
-              "word": "vegetable cube",
-              "substitution": true,
-            },
-            {
-              "word": "vegetable gravy",
-              "substitution": true,
-            },
-            {
-              "word": "veg gravy",
-              "substitution": true,
-            },
-            {
               "word": "turkey stock",
               "substitution": true,
             },
             {
-              "word": "turkey broth",
-              "substitution": true,
-            },
-            {
-              "word": "turkey soup",
-              "substitution": true,
-            },
-            {
-              "word": "turkey bone broth",
-              "substitution": true,
-            },
-            {
-              "word": "turkey soup base",
-              "substitution": true,
-            },
-            {
-              "word": "turkey bouillon",
-              "substitution": true,
-            },
-            {
-              "word": "turkey oxo",
-              "substitution": true,
-            },
-            {
-              "word": "turkey cube",
-              "substitution": true,
-            },
-            {
-              "word": "turkey base",
-              "substitution": true,
-            },
-            {
-              "word": "turkey consomme",
-              "substitution": true,
-            },
-            {
-              "word": "turkey consume",
-              "substitution": true,
-            },
-            {
-              "word": "turkey demi-glace",
-              "substitution": true,
-            },
-            {
-              "word": "turkey demi glace",
-              "substitution": true,
-            },
-            {
-              "word": "turkey gravy",
-              "substitution": true,
-            },
-            {
-              "word": "turkey sauce",
-              "substitution": true,
-            },
-            {
-              "word": "turkey jus",
-              "substitution": true,
-            },
-            {
-              "word": "turkey glace",
-              "substitution": true,
-            },
-            {
               "word": "pork stock",
-              "substitution": true,
-            },
-            {
-              "word": "pork broth",
-              "substitution": true,
-            },
-            {
-              "word": "pork soup",
-              "substitution": true,
-            },
-            {
-              "word": "pork bone broth",
-              "substitution": true,
-            },
-            {
-              "word": "pork soup base",
-              "substitution": true,
-            },
-            {
-              "word": "pork bouillon",
-              "substitution": true,
-            },
-            {
-              "word": "pork oxo",
-              "substitution": true,
-            },
-            {
-              "word": "pork cube",
-              "substitution": true,
-            },
-            {
-              "word": "pork base",
-              "substitution": true,
-            },
-            {
-              "word": "pork consomme",
-              "substitution": true,
-            },
-            {
-              "word": "pork consume",
-              "substitution": true,
-            },
-            {
-              "word": "pork demi-glace",
-              "substitution": true,
-            },
-            {
-              "word": "pork demi glace",
-              "substitution": true,
-            },
-            {
-              "word": "pork gravy",
-              "substitution": true,
-            },
-            {
-              "word": "pork sauce",
-              "substitution": true,
-            },
-            {
-              "word": "pork jus",
-              "substitution": true,
-            },
-            {
-              "word": "pork glace",
-              "substitution": true,
-            },
-            {
-              "word": "ham stock",
-              "substitution": true,
-            },
-            {
-              "word": "ham broth",
-              "substitution": true,
-            },
-            {
-              "word": "ham soup",
-              "substitution": true,
-            },
-            {
-              "word": "ham bone broth",
-              "substitution": true,
-            },
-            {
-              "word": "ham soup base",
-              "substitution": true,
-            },
-            {
-              "word": "ham bouillon",
-              "substitution": true,
-            },
-            {
-              "word": "ham oxo",
-              "substitution": true,
-            },
-            {
-              "word": "ham cube",
-              "substitution": true,
-            },
-            {
-              "word": "ham base",
-              "substitution": true,
-            },
-            {
-              "word": "ham consomme",
-              "substitution": true,
-            },
-            {
-              "word": "ham consume",
-              "substitution": true,
-            },
-            {
-              "word": "ham demi-glace",
-              "substitution": true,
-            },
-            {
-              "word": "ham demi glace",
-              "substitution": true,
-            },
-            {
-              "word": "ham gravy",
-              "substitution": true,
-            },
-            {
-              "word": "ham sauce",
-              "substitution": true,
-            },
-            {
-              "word": "ham jus",
-              "substitution": true,
-            },
-            {
-              "word": "ham glace",
               "substitution": true,
             },
           ],
@@ -6663,7 +6509,19 @@
               "word": "puree",
             },
             {
+              "word": "purée",
+            },
+            {
+              "word": "purée",
+            },
+            {
               "word": "pureed",
+            },
+            {
+              "word": "puréed",
+            },
+            {
+              "word": "puréed",
             },
             {
               "word": "meal",
@@ -7184,7 +7042,13 @@
                 "word": "puree",
               },
               {
+                "word": "purée",
+              },
+              {
                 "word": "pureed",
+              },
+              {
+                "word": "puréed",
               },
               {
                 "word": "meal",

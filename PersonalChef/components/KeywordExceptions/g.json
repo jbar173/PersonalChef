@@ -476,6 +476,10 @@
                   "word": "ras el hanout",
                   "substitution": true,
                 },
+                {
+                  "word": "moroccan seasoning",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1299,6 +1303,10 @@
               ],
               "include": [
                 {
+                  "word": "garlic purée",
+                  "substitution": false,
+                },
+                {
                   "word": "garlic paste",
                   "substitution": false,
                 },
@@ -1309,6 +1317,10 @@
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "ginger purée",
+                  "substitution": false,
+                },
                 {
                   "word": "ginger paste",
                   "substitution": false,

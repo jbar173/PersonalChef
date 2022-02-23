@@ -99,6 +99,26 @@
                   "word": "mustard",
                   "substitution": true,
                 },
+                {
+                  "word": "dijon",
+                  "substitution": true,
+                },
+                {
+                  "word": "horseradish",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcestershire sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcester sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi",
+                  "substitution": true,
+                },
               ],
           },
           {

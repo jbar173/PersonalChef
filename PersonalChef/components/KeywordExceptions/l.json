@@ -1,13 +1,20 @@
 {
 
-    "key" : [ "lemon flavoured spirit/liqueur",
+    "key" : [ "lager","lemon flavoured spirit/liqueur",
+
+              "lemon and lime jam","lemon curd","lemon biscuits","lemon extract","lemon mousse","lion bar","liquid glucose","liquorice allsorts",
+              "lollipop","love hearts",
+
               "lasagne sheets",
+              "langoustine","lobster",
               "lamb","lamb mince",
-              "lemon","lime","lettuce","lemongrass",
-              "lime leaves",
-              "laksa sauce","lamb stock","lemon juice","lime mojo sauce",
+              "lamb's lettuce","lemon","lemongrass","lettuce","lime","lychee",
+              "lamb seasoning","lime leaves",
+              "lentils",
+              "laksa sauce","lamb stock","lemon and parsley sauce","lemon butter sauce","lemon juice","lime mojo sauce","lime juice",
               "lard",
-              "lychee juice",
+              "lapsang tea", "lemon ice tea", "lychee juice",
+
 
               "~~~ HALF DONE : ~~~",
               "light rum", "lime flavoured spirit/liqueur",
@@ -16,18 +23,10 @@
               "lemongrass puree",
               "lemonade", "lemon cordial", "lemon tea", "lime cola", "lime cordial",
 
+
+
               "~~~ TO DO : ~~~",
-              "lager",
 
-              "lemon and lime jam", "lemon biscuits", "lemon curd", "lemon extract", "lemon mousse", "lion bar", "liquid glucose",
-              "liquorice allsorts", "lollipop", "love hearts",
-
-              "lobster",
-              "lamb's lettuce", "lychee",
-              "lamb seasoning",
-              "lentils",
-              "lemon and parsley sauce", "lemon butter sauce", "lime juice",
-              "lapsang tea", "lemon ice tea",
 
     ],
 
@@ -36,6 +35,695 @@
 
 
 
+        {
+            "name": "lager",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "beer",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lemon and lime jam",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lemon lime jam",
+                "substitution": false,
+              },
+              {
+                "word": "lemon & lime jam",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and lime marmalade",
+                "substitution": false,
+              },
+              {
+                "word": "lemon lime marmalade",
+                "substitution": false,
+              },
+              {
+                "word": "lemon & lime marmalade",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and lime fine cut marmalade",
+                "substitution": false,
+              },
+              {
+                "word": "lemon & lime fine cut marmalade",
+                "substitution": false,
+              },
+              {
+                "word": "lemon jam",
+                "substitution": false,
+              },
+              {
+                "word": "lemon marmalade",
+                "substitution": false,
+              },
+              {
+                "word": "lime jam",
+                "substitution": false,
+              },
+              {
+                "word": "lime marmalade",
+                "substitution": false,
+              },
+              {
+                "word": "lemon curd",
+                "substitution": true,
+              },
+              {
+                "word": "lime curd",
+                "substitution": true,
+              },
+              {
+                "word": "lemon & lime curd",
+                "substitution": true,
+              },
+              {
+                "word": "apricot jam",
+                "substitution": true,
+              },
+              {
+                "word": "marmalade",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lemon biscuits",
+            "exclude": [
+              {
+                "word": "chocolate",
+              },
+            ],
+            "include": [
+              {
+                "word": "biscuit",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate wafers",
+                "substitution": true,
+              },
+              {
+                "word": "caramel wafers",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lemon curd",
+            "exclude": [
+              {
+                "word": "yoghurt",
+              },
+              {
+                "word": "yogurt",
+              },
+              {
+                "word": "fudge",
+              },
+              {
+                "word": "sweets",
+              },
+              {
+                "word": "candy",
+              },
+              {
+                "word": "biscuit",
+              },
+            ],
+            "include": [
+              {
+                "word": "lemon & ginger curd",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and ginger curd",
+                "substitution": false,
+              },
+              {
+                "word": "lemon & lime curd",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and lime curd",
+                "substitution": false,
+              },
+              {
+                "word": "passionfruit curd",
+                "substitution": true,
+              },
+              {
+                "word": "passion fruit curd",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lemon extract",
+            "exclude": [
+              {
+                "word": "olive",
+              },
+              {
+                "word": "infused",
+              },
+              {
+                "word": "cooking oil",
+              },
+            ],
+            "include": [
+              {
+                "word": "lemon natural extract",
+                "substitution": false,
+              },
+              {
+                "word": "lemon essence",
+                "substitution": false,
+              },
+              {
+                "word": "lemon flavouring essence",
+                "substitution": false,
+              },
+              {
+                "word": "lemon flavoring essence",
+                "substitution": false,
+              },
+              {
+                "word": "lemon oil",
+                "substitution": true,
+              },
+              {
+                "word": "lemon paste",
+                "substitution": true,
+              },
+              {
+                "word": "lemon flavour paste",
+                "substitution": true,
+              },
+              {
+                "word": "lemon flavor paste",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lemon mousse",
+            "exclude": [
+              {
+                "word": "butter",
+              },
+              {
+                "word": "dill",
+              },
+            ],
+            "include": [
+              {
+                "word": "lemon fool",
+                "substitution": false,
+              },
+              {
+                "word": "lemon whippy",
+                "substitution": false,
+              },
+              {
+                "word": "lemon dessert",
+                "substitution": true,
+              },
+              {
+                "word": "lemon cream",
+                "substitution": true,
+              },
+              {
+                "word": "lemon creme",
+                "substitution": true,
+              },
+              {
+                "word": "lemon buttercream",
+                "substitution": true,
+              },
+              {
+                "word": "lemon sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lion bar",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "toffee crisp",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate wafers",
+                "substitution": true,
+              },
+              {
+                "word": "caramel wafers",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "liquid glucose",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "glucose syrup",
+                "substitution": false,
+              },
+              {
+                "word": "sugar syrup",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "liquorice allsorts",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "liquorice",
+                "substitution": true,
+              },
+              {
+                "word": "dolly mixture",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lollipop",
+            "exclude": [
+              {
+                "word": "ice",
+              },
+            ],
+            "include": [
+              {
+                "word": "lolly",
+                "substitution": false,
+              },
+              {
+                "word": "boiled sweets",
+                "substitution": true,
+              },
+              {
+                "word": "love hearts",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "love hearts",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fizzers",
+                "substitution": true,
+              },
+              {
+                "word": "candy necklace",
+                "substitution": true,
+              },
+              {
+                "word": "parma violets",
+                "substitution": true,
+              },
+              {
+                "word": "refreshers",
+                "substitution": true,
+              },
+              {
+                "word": "abc alphabet",
+                "substitution": true,
+              },
+              {
+                "word": "abc letters",
+                "substitution": true,
+              },
+              {
+                "word": "candy letters",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "langoustine",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lobster",
+                "substitution": true,
+              },
+              {
+                "word": "crayfish",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "langoustine",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lobster",
+                "substitution": true,
+              },
+              {
+                "word": "langostino",
+                "substitution": true,
+              },
+              {
+                "word": "shrimp",
+                "substitution": true,
+              },
+              {
+                "word": "prawns",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lobster",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "crayfish",
+                "substitution": true,
+              },
+              {
+                "word": "monkfish",
+                "substitution": true,
+              },
+              {
+                "word": "langoustine",
+                "substitution": true,
+              },
+              {
+                "word": "scallops",
+                "substitution": true,
+              },
+              {
+                "word": "surimi",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lamb's lettuce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lambs lettuce",
+                "substitution": false,
+              },
+              {
+                "word": "cornsalad",
+                "substitution": false,
+              },
+              {
+                "word": "cress",
+                "substitution": true,
+              },
+              {
+                "word": "salad leaves",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lychee",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "grapes",
+                "substitution": true,
+              },
+              {
+                "word": "pear",
+                "substitution": true,
+              },
+              {
+                "word": "watermelon",
+                "substitution": true,
+              },
+              {
+                "word": "rambutan",
+                "substitution": true,
+              },
+              {
+                "word": "longan",
+                "substitution": true,
+              },
+              {
+                "word": "mangosteen",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lamb herb seasoning",
+            "exclude": [
+              {
+                "word": "indian",
+              },
+              {
+                "word": "curry",
+              },
+              {
+                "word": "moroccan",
+              },
+              {
+                "word": "tagine",
+              },
+            ],
+            "include": [
+              {
+                "word": "lamb seasoning",
+                "substitution": false,
+              },
+              {
+                "word": "lamb rub",
+                "substitution": false,
+              },
+              {
+                "word": "lamb spice",
+                "substitution": false,
+              },
+              {
+                "word": "lamb steaks spice mix",
+                "substitution": false,
+              },
+              {
+                "word": "lamb casserole seasoning",
+                "substitution": false,
+              },
+              {
+                "word": "lamb casserole mix",
+                "substitution": false,
+              },
+              {
+                "word": "seasoning mix for lamb",
+                "substitution": false,
+              },
+              {
+                "word": "lamb casserole recipe seasoning",
+                "substitution": false,
+              },
+              {
+                "word": "mint marinade",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lentils",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dried red lentils",
+                "substitution": false,
+              },
+              {
+                "word": "dried green lentils",
+                "substitution": false,
+              },
+              {
+                "word": "dried brown lentils",
+                "substitution": false,
+              },
+              {
+                "word": "dried black lentils",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "lemon butter sauce",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "butter sauce",
+                "substitution": false,
+              },
+              {
+                "word": "lemon butter",
+                "substitution": false,
+              },
+              {
+                "word": "butter and lemon sauce",
+                "substitution": false,
+              },
+              {
+                "word": "butter lemon sauce",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and butter dressing",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and garlic butter dressing",
+                "substitution": false,
+              },
+              {
+                "word": "lemon garlic butter dressing",
+                "substitution": false,
+              },
+              {
+                "word": "butter and lemon dressing",
+                "substitution": false,
+              },
+              {
+                "word": "butter lemon dressing",
+                "substitution": false,
+              },
+              {
+                "word": "lemon cream sauce",
+                "substitution": false,
+              },
+              {
+                "word": "lemon cream dressing",
+                "substitution": false,
+              },
+              {
+                "word": "lemon and parsley sauce",
+                "substitution": true,
+              },
+              {
+                "word": "lemon & parsley sauce",
+                "substitution": true,
+              },
+              {
+                "word": "dill and lemon sauce",
+                "substitution": true,
+              },
+              {
+                "word": "hollandaise",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lime juice",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lime",
+                "substitution": true,
+              },
+              {
+                "word": "lemon juice",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lapsang tea",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lapsang",
+                "substitution": false,
+              },
+              {
+                "word": "rasputin",
+                "substitution": true,
+              },
+              {
+                "word": "russian caravan",
+                "substitution": true,
+              },
+              {
+                "word": "smoked ivan chai",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "lemon ice tea",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "lemon iced tea",
+                "substitution": false,
+              },
+              {
+                "word": "ice tea lemon",
+                "substitution": false,
+              },
+              {
+                "word": "ice lemon tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon iced tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon sencha iced tea",
+                "substitution": false,
+              },
+              {
+                "word": "lipton iced tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon & green tea",
+                "substitution": true,
+              },
+              {
+                "word": "lemon tea",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "laksa sauce",
             "exclude": [
@@ -107,6 +795,14 @@
                 "substitution": false,
               },
               {
+                "word": "lemon flavoured tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon flavored tea",
+                "substitution": false,
+              },
+              {
                 "word": "lemon teabag",
                 "substitution": false,
               },
@@ -153,6 +849,10 @@
                 "word": "lime and mint cordial",
                 "substitution": true,
               },
+              {
+                "word": "lime",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -170,6 +870,10 @@
               },
               {
                 "word": "lemon and lime cordial",
+                "substitution": true,
+              },
+              {
+                "word": "lemon",
                 "substitution": true,
               },
             ],
@@ -317,11 +1021,19 @@
             ],
             "include": [
               {
+                "word": "lemongrass purée",
+                "substitution": false,
+              },
+              {
                 "word": "lemongrass paste",
                 "substitution": false,
               },
               {
                 "word": "lemon grass puree",
+                "substitution": false,
+              },
+              {
+                "word": "lemon grass purée",
                 "substitution": false,
               },
               {
@@ -423,6 +1135,10 @@
               },
               {
                 "word": "minced meat",
+                "substitution": true,
+              },
+              {
+                "word": "meat free mince",
                 "substitution": true,
               },
             ],
@@ -629,6 +1345,12 @@
                 "word": "consomme",
               },
               {
+                "word": "consommé",
+              },
+              {
+                "word": "consommé",
+              },
+              {
                 "word": "consume",
               },
               {
@@ -765,6 +1487,10 @@
               "substitution": false,
             },
             {
+              "word": "lamb liquid",
+              "substitution": false,
+            },
+            {
               "word": "lamb bone broth",
               "substitution": false,
             },
@@ -789,7 +1515,15 @@
               "substitution": false,
             },
             {
+              "word": "lamb concentrate",
+              "substitution": false,
+            },
+            {
               "word": "lamb consomme",
+              "substitution": false,
+            },
+            {
+              "word": "lamb consommé",
               "substitution": false,
             },
             {
@@ -822,66 +1556,6 @@
             },
             {
               "word": "beef stock",
-              "substitution": true,
-            },
-            {
-              "word": "beef broth",
-              "substitution": true,
-            },
-            {
-              "word": "beef bouillon",
-              "substitution": true,
-            },
-            {
-              "word": "beef oxo",
-              "substitution": true,
-            },
-            {
-              "word": "beef cube",
-              "substitution": true,
-            },
-            {
-              "word": "beef soup base",
-              "substitution": true,
-            },
-            {
-              "word": "beef bone broth",
-              "substitution": true,
-            },
-            {
-              "word": "beef base",
-              "substitution": true,
-            },
-            {
-              "word": "beef consomme",
-              "substitution": true,
-            },
-            {
-              "word": "beef consume",
-              "substitution": true,
-            },
-            {
-              "word": "demi-glace",
-              "substitution": true,
-            },
-            {
-              "word": "demi glace",
-              "substitution": true,
-            },
-            {
-              "word": "beef gravy",
-              "substitution": true,
-            },
-            {
-              "word": "beef sauce",
-              "substitution": true,
-            },
-            {
-              "word": "beef jus",
-              "substitution": true,
-            },
-            {
-              "word": "beef glace",
               "substitution": true,
             },
           ],
@@ -924,15 +1598,6 @@
             {
               "word": "syrup",
             },
-            {
-              "word": "cordial",
-            },
-            {
-              "word": "concentrate",
-            },
-            {
-              "word": "squash",
-            },
           ],
           "include": [
           ],
@@ -948,6 +1613,24 @@
             },
             {
               "word": "candied lemon",
+            },
+            {
+              "word": "leaves",
+            },
+            {
+              "word": "leaf",
+            },
+            {
+              "word": "lemon sugar",
+            },
+            {
+              "word": "oil",
+            },
+            {
+              "word": "soda",
+            },
+            {
+              "word": "syrup",
             },
           ],
           "include": [

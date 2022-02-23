@@ -2,25 +2,27 @@
 
     "key" : [ "mango flavoured spirit/liqueur","mint flavoured spirit/liqueur","melon flavoured spirit/liqueur",
               "manchego","monterey jack","mozzarella","muenster",
-              "mango jelly","mango jam","marmalade","milk chocolate",
+              "mango jelly","mango jam","mango puree","marmalade","milk chocolate","mincemeat",
               "macademia",
-              "mangetout","mango","melon","mixed berries","mangetout","mushrooms",
-              "mint","mixed spice",
-              "mixed beans",
+              "mangetout","mango","mango pulp","melon","mixed berries","mangetout","mushrooms",
+              "mint","mixed herbs","mixed spice","moroccan seasoning","mulled wine spice","mustard powder","mustard seeds",
+              "mandarins","mixed beans","mushroom antipasti","mushy peas",
 
-              "macadamia nut oil","madras curry sauce","makhani sauce","mango pickle","massaman curry paste","medium curry paste",
-              "mild curry paste","miso","mustard",
+              "macadamia nut oil","madras curry sauce","makhani sauce","mango and lime sauce","mango pickle","massaman curry paste","mayonnaise",
+              "medium curry paste", "mild curry paste", "mild mustard","mint marinade","mint sauce","mirin","miso","miso tahini","mushroom ketchup",
+              "mushroom soup","mushroom stock","mustard",
 
               "mango tea",
-              "milk","margarine",
+
+              "margarine","mango and passionfruit mousse","marmite","meat free bacon","meat free breadcrumbed fillets","meat free mince",
+              "meat free southern fried fillets","milk","mini cheddars",
 
 
               "~~~ HALF DONE : ~~~",
               "mixed fruit flavoured spirit/liqueur",
-              "m&ms","mango puree",
+              "m&ms",
               "mole sauce", "mushroom cooking sauce",
               "mint tea",
-              "meat free breadcrumbed fillets",
 
 
 
@@ -33,19 +35,11 @@
               "mints", "munchies",
 
               "malt wheats cereal", "milk powder/evaporated milk(sub)", "mixed nuts", "monkey nuts", "muesli/granola(sub)",
-              "mackerel", "mussels",
+              "mackerel", "monkfish/lobster/langoustine(sub)", "mussels",
               "mixed greens", "mixed vegetable stir fry",
 
-              "maca powder", "mango masala spice blend", "mild chilli powder", "mixed herbs", "moroccan seasoning", "mulled wine spice",
-              "mustard powder", "mustard seeds",
+              "maca powder", "mango masala spice blend", "mild chilli powder",
 
-              "manderins", "mango pulp", "minestrone soup", "mushroom antipasti", "mushroom soup", "mushy peas",
-
-              "mango and lime sauce", "mango mint sauce", "marmite", "mayonnaise", "mild mustard", "mincemeat", "mint marinade", "mint sauce",
-              "mirin", "miso tahini", "mushroom ketchup", "mushroom stock",
-
-              "mango and passionfruit mousse", "meat free breadcrumbed fillets", "meat free bacon",
-              "meat free mince", "meat free southern fried fillets", "mezzelune", "milk slice", "mini cheddars",
 
     ],
 
@@ -53,7 +47,939 @@
     "ingredients": [
 
 
-
+          {
+              "name": "mixed herbs",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "italian seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "herbes de provence",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "moroccan seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "moroccan spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "tagine seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "ras el hanout",
+                  "substitution": false,
+                },
+                {
+                  "word": "baharat seasoning",
+                  "substitution": true,
+                },
+                {
+                  "word": "garam masala",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mulled wine spice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mulling spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "mulled wine seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "mulled wine sugar",
+                  "substitution": false,
+                },
+                {
+                  "word": "mulled wine sachet",
+                  "substitution": false,
+                },
+                {
+                  "word": "allspice",
+                  "substitution": true,
+                },
+                {
+                  "word": "cloves",
+                  "substitution": true,
+                },
+                {
+                  "word": "cinnamon",
+                  "substitution": true,
+                },
+                {
+                  "word": "cassia bark",
+                  "substitution": true,
+                },
+                {
+                  "word": "star anise",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mustard powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "powdered mustard",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground mustard",
+                  "substitution": false,
+                },
+                {
+                  "word": "dry mustard",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried mustard",
+                  "substitution": false,
+                },
+                {
+                  "word": "horseradish",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi",
+                  "substitution": true,
+                },
+                {
+                  "word": "mustard",
+                  "substitution": true,
+                },
+                {
+                  "word": "dijon",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcestershire sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcester sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mustard seeds",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "horseradish",
+                  "substitution": true,
+                },
+                {
+                  "word": "caraway seeds",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mandarins",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mandarin",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange",
+                  "substitution": true,
+                },
+                {
+                  "word": "tangerine",
+                  "substitution": true,
+                },
+                {
+                  "word": "satsuma",
+                  "substitution": true,
+                },
+                {
+                  "word": "clementine",
+                  "substitution": true,
+                },
+                {
+                  "word": "tangelo",
+                  "substitution": true,
+                },
+                {
+                  "word": "minneola",
+                  "substitution": true,
+                },
+                {
+                  "word": "kumquat",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet lime",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet lemon",
+                  "substitution": true,
+                },
+                {
+                  "word": "mosambi",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mango pulp",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango puree",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango smoothie",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mushroom antipasti",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mushroom antipasto",
+                  "substitution": false,
+                },
+                {
+                  "word": "marinated mushroom",
+                  "substitution": false,
+                },
+                {
+                  "word": "pickled mushroom",
+                  "substitution": false,
+                },
+                {
+                  "word": "cocktail mushroom",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mushroom soup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mushroom veloute",
+                  "substitution": true,
+                },
+                {
+                  "word": "mushroom velouté",
+                  "substitution": true,
+                },
+                {
+                  "word": "mushroom sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "mushroom ketchup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mushy peas",
+              "exclude": [
+                {
+                  "word": "dried",
+                },
+                {
+                  "word": "split",
+                },
+                {
+                  "word": "flour",
+                },
+                {
+                  "word": "chick pea",
+                },
+                {
+                  "word": "wasabi pea",
+                },
+                {
+                  "word": "black-eyed pea",
+                },
+                {
+                  "word": "black eyed pea",
+                },
+                {
+                  "word": "cow pea",
+                },
+                {
+                  "word": "red pea",
+                },
+              ],
+              "include": [
+                {
+                  "word": "marrowfat pea",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mango and lime sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango & lime sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango and lime marinade",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango & lime marinade",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango marinade",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango & tamarind",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango, lime & chilli",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango chutney",
+                  "substitution": true,
+                },
+                {
+                  "word": "lime chutney",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango pickle",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "marmite",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "brewers yeast",
+                  "substitution": true,
+                },
+                {
+                  "word": "nutritional yeast",
+                  "substitution": true,
+                },
+                {
+                  "word": "yeast extract",
+                  "substitution": true,
+                },
+                {
+                  "word": "natex",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegemite",
+                  "substitution": true,
+                },
+                {
+                  "word": "miso",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mayonnaise",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mayo",
+                  "substitution": false,
+                },
+                {
+                  "word": "baconnaise",
+                  "substitution": true,
+                },
+                {
+                  "word": "caesar dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "salad cream",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mild mustard",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mild yellow mustard",
+                  "substitution": false,
+                },
+                {
+                  "word": "mustard",
+                  "substitution": true,
+                },
+                {
+                  "word": "dijon",
+                  "substitution": true,
+                },
+                {
+                  "word": "horseradish",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcestershire sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcester sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mincemeat",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mince pie filling",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince pie",
+                  "substitution": true,
+                },
+                {
+                  "word": "raisins",
+                  "substitution": true,
+                },
+                {
+                  "word": "currants",
+                  "substitution": true,
+                },
+                {
+                  "word": "sultanas",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mirin",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rice wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "rice vinegar",
+                  "substitution": true,
+                },
+                {
+                  "word": "white wine vinegar",
+                  "substitution": true,
+                },
+                {
+                  "word": "dry sherry",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet marsala",
+                  "substitution": true,
+                },
+                {
+                  "word": "sake",
+                  "substitution": true,
+                },
+                {
+                  "word": "shaoxing wine",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mint marinade",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mint meat glaze",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint glaze",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavour sachet",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mint sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mint chutney",
+                  "substitution": true,
+                },
+                {
+                  "word": "mint jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "mint marinade",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "miso tahini",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tahini miso",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame miso",
+                  "substitution": true,
+                },
+                {
+                  "word": "miso sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tahini sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "miso dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "tahini dressing",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mushroom ketchup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mushroom sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom stock",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mushroom stock",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mushroom broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom soup base",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom soup base",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom bouillon",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom cube",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom base",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom consommé",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom consume",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom ketchup",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom liquid",
+                  "substitution": false,
+                },
+                {
+                  "word": "porcini stock",
+                  "substitution": false,
+                },
+                {
+                  "word": "porcini powder",
+                  "substitution": false,
+                },
+                {
+                  "word": "porcini mushroom powder",
+                  "substitution": false,
+                },
+                {
+                  "word": "porcini broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "porcini cube",
+                  "substitution": false,
+                },
+                {
+                  "word": "porcini concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "porcini consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "porcini consommé",
+                  "substitution": false,
+                },
+                {
+                  "word": "porcini consume",
+                  "substitution": false,
+                },
+                {
+                  "word": "porcini base",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom gravy",
+                  "substitution": true,
+                },
+                {
+                  "word": "mushroom paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried mushrooms",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable stock",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mango and passionfruit mousse",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango and passionfruit fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango and passionfruit whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango and passionfruit dessert",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango and passionfruit cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango and passionfruit creme",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango and passionfruit buttercream",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango and passionfruit sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "meat free bacon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "meat-free bacon",
+                  "substitution": false,
+                },
+                {
+                  "word": "fakon",
+                  "substitution": false,
+                },
+                {
+                  "word": "facon",
+                  "substitution": false,
+                },
+                {
+                  "word": "tempeh rasher",
+                  "substitution": false,
+                },
+                {
+                  "word": "yaycon",
+                  "substitution": false,
+                },
+                {
+                  "word": "bacon",
+                  "substitution": true,
+                },
+                {
+                  "word": "gammon",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "meat free mince",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "meat-free mince",
+                  "substitution": false,
+                },
+                {
+                  "word": "quorn mince",
+                  "substitution": false,
+                },
+                {
+                  "word": "beef mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "lamb mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "pork mince",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "meat free breadcrumbed fillets",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word":  "meat free breadcrumbed fillet",
+                  "substitution": false,
+                },
+                {
+                  "word":  "meat-free breadcrumbed fillet",
+                  "substitution": false,
+                },
+                {
+                  "word": "panko crusted fillet",
+                  "substitution": false,
+                },
+                {
+                  "word": "panko breaded fillet",
+                  "substitution": false,
+                },
+                {
+                  "word": "meat free breaded fillet",
+                  "substitution": false,
+                },
+                {
+                  "word": "meat-free breaded fillet",
+                  "substitution": false,
+                },
+                {
+                  "word":  "meat free southern fried fillets",
+                  "substitution": false,
+                },
+                {
+                  "word":  "chicken-free southern fried grills",
+                  "substitution": false,
+                },
+                {
+                  "word": "no chicken southern fried goujons",
+                  "substitution": false,
+                },
+                {
+                  "word": "meat-free fillet",
+                  "substitution": false,
+                },
+                {
+                  "word": "meat free fillet",
+                  "substitution": false,
+                },
+                {
+                  "word": "meat-free southern",
+                  "substitution": false,
+                },
+                {
+                  "word": "meat free southern",
+                  "substitution": false,
+                },
+                {
+                  "word": "chicken-free fillet",
+                  "substitution": false,
+                },
+                {
+                  "word": "chicken free fillet",
+                  "substitution": false,
+                },
+                {
+                  "word": "quorn",
+                  "substitution": false,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "burger",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mini cheddars",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mini cheddar",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheese biscuits",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheese savouries",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheddar cheese bakes",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheddar bites",
+                  "substitution": false,
+                },
+                {
+                  "word": "potato chips",
+                  "substitution": true,
+                },
+                {
+                  "word": "tortilla chips",
+                  "substitution": true,
+                },
+                {
+                  "word": "crackers",
+                  "substitution": true,
+                },
+                {
+                  "word": "biscuits for cheese",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "mulberry syrup",
               "exclude": [
@@ -440,25 +1366,6 @@
               ],
           },
           {
-              "name": "meat free breadcrumbed fillet",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "panko crusted fillet",
-                  "substitution": false,
-                },
-                {
-                  "word": "panko breaded fillet",
-                  "substitution": false,
-                },
-                {
-                  "word": "meat free breaded fillet",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
               "name": "mango jelly",
               "exclude": [
               ],
@@ -553,8 +1460,32 @@
               ],
               "include": [
                 {
+                  "word": "mango purée",
+                  "substitution": false,
+                },
+                {
                   "word": "mango nectar",
                   "substitution": false,
+                },
+                {
+                  "word": "mango pulp",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit puree",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit purée",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango curd",
+                  "substitution": true,
                 },
               ],
           },
@@ -1325,6 +2256,10 @@
                   "word": "amba",
                   "substitution": true,
                 },
+                {
+                  "word": "mango chutney",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1721,6 +2656,12 @@
           {
               "name": "miso",
               "exclude": [
+                {
+                  "word": "sauce",
+                },
+                {
+                  "word": "dressing",
+                },
               ],
               "include": [
                 {
@@ -1734,6 +2675,10 @@
                 {
                   "word": "soy paste",
                   "substitution": false,
+                },
+                {
+                  "word": "tahini",
+                  "substitution": true,
                 },
               ],
           },
@@ -1993,16 +2938,7 @@
             "name": "mustard",
             "exclude": [
               {
-                "word": "mustard seeds",
-              },
-              {
                 "word": "oil",
-              },
-              {
-                "word": "powder",
-              },
-              {
-                "word": "powdered",
               },
               {
                 "word": "leaves",
@@ -2012,9 +2948,6 @@
               },
               {
                 "word": "dandelion",
-              },
-              {
-                "word": "ground",
               },
               {
                 "word": "greens",
@@ -2042,6 +2975,14 @@
               },
               {
                 "word": "wasabi",
+                "substitution": true,
+              },
+              {
+                "word": "mustard seeds",
+                "substitution": true,
+              },
+              {
+                "word": "mustard powder",
                 "substitution": true,
               },
             ],

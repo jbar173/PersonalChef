@@ -24,19 +24,21 @@
 
 
               "~~~ TO DO : ~~~",
-              "sake",
+              "sake/mirin(sub)",
 
               "salted caramel chocolate", "salted caramel cookie dough", "sherbert", "shortcake biscuits", "silver ball decorations", "skittles",
               "smarties", "snickers", "starburst", "stem ginger", "strawberry bonbons", "strawberry liquorice", "strawberry mousse",
               "strawberry sauce", "strawberry shoelaces", "sugar syrup", "sultanas", "syrup sponge",
 
               "scone mix", "scones", "self raising flour", "sesame seeds/hemp seeds(sub)", "shortcrust pastry", "shreddies", "spelt flour", "sunflower seeds",
-              "salmon", "scallops", "seabass", "seafood stick", "sild", "smoked rainbow trout", "smoked salmon", "sole/haddock(sub)", "sprat", "squid",
+
+              "salmon", "scallops/lobster(sub)", "seabass", "seafood stick", "sild", "smoked rainbow trout", "smoked salmon", "sole/haddock(sub)",
+              "sprat", "squid", "surimi/lobster(sub)",
 
               "samphire", "satsuma", "smoked garlic", "sprouts", "strawberries",
-              "saffron", "seaweed seasoning", "shawarma seasoning", "smokey spice", "sorrel", "spirulina powder", "star anise", "steak seasoning",
+              "saffron", "seaweed seasoning", "shawarma seasoning", "smokey spice", "sorrel", "spirulina powder", "star anise/mulled wine spice(sub)", "steak seasoning",
 
-              "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut", "seafood sauce", "smoky onion relish",
+              "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut/kimchi(subs)", "seafood sauce", "smoky onion relish",
               "smoked paprika pesto", "smoky red pepper dressing", "spaghetti hoops", "stir fry sauce", "sweet chilli and garlic", "sweet piccalilli",
               "sweet pickle relish",
 
@@ -45,8 +47,7 @@
               "salmon sushi", "salted caramel mousse", "sausage roll", "seaweed thins", "sev mamra", "sorbet",
               "spicy green peas and peanuts", "spring rolls", "stuffing", "sunflower spread",
               "sweet chilli biscuits", "sweet and salted popcorn", "sweet potato fries",
-              "spinach puree", "summer fruit filling",
-
+              "spinach puree/passionfruit purée",
 
     ],
 
@@ -434,8 +435,20 @@
               ],
               "include": [
                 {
+                  "word": "sweet chilli dipping sauce",
+                  "substitution": false,
+                },
+                {
                   "word": "sweet chilli jelly",
                   "substitution": false,
+                },
+                {
+                  "word": "chilli jam",
+                  "substitution": false,
+                },
+                {
+                  "word": "gochujang",
+                  "substitution": true,
                 },
               ],
           },
@@ -1696,6 +1709,10 @@
             "include": [
               {
                 "word": "prawn",
+                "substitution": true,
+              },
+              {
+                "word": "langoustine",
                 "substitution": true,
               },
               {

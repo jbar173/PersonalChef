@@ -563,6 +563,10 @@
                   "word": "mace",
                   "substitution": true,
                 },
+                {
+                  "word": "mulled wine spice",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1163,8 +1167,16 @@
                   "substitution": false,
                 },
                 {
+                  "word": "puréed apple",
+                  "substitution": true,
+                },
+                {
                   "word": "apple puree",
                   "substitution": false,
+                },
+                {
+                  "word": "apple purée",
+                  "substitution": true,
                 },
                 {
                   "word": "apple chutney",
@@ -1172,51 +1184,99 @@
                 },
                 {
                   "word": "pureed pear",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "puréed pear",
+                  "substitution": true,
                 },
                 {
                   "word": "pear puree",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "pear purée",
+                  "substitution": true,
                 },
                 {
                   "word": "pureed apricot",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "puréed apricot",
+                  "substitution": true,
                 },
                 {
                   "word": "apricot puree",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot purée",
+                  "substitution": true,
                 },
                 {
                   "word": "pureed raspberry",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "puréed raspberry",
+                  "substitution": true,
                 },
                 {
                   "word": "raspberry puree",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry purée",
+                  "substitution": true,
                 },
                 {
                   "word": "pureed strawberry",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "puréed strawberry",
+                  "substitution": true,
                 },
                 {
                   "word": "strawberry puree",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry purée",
+                  "substitution": true,
                 },
                 {
                   "word": "pureed berries",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "puréed berries",
+                  "substitution": true,
                 },
                 {
                   "word": "berry puree",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "berry purée",
+                  "substitution": true,
                 },
                 {
                   "word": "pureed fruit",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "puréed fruit",
+                  "substitution": true,
                 },
                 {
                   "word": "fruit puree",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit purée",
+                  "substitution": true,
                 },
               ],
           },
@@ -1661,6 +1721,9 @@
                 "word": "puree",
               },
               {
+                "word": "purée",
+              },
+              {
                 "word": "curd",
               },
               {
@@ -1823,6 +1886,9 @@
               },
               {
                 "word": "puree",
+              },
+              {
+                "word": "purée",
               },
               {
                 "word": "curd",
