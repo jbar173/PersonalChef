@@ -2,10 +2,14 @@
 
     "key" : [ "mango flavoured spirit/liqueur","mint flavoured spirit/liqueur","melon flavoured spirit/liqueur",
               "manchego","monterey jack","mozzarella","muenster",
-              "mango jelly","mango jam","mango puree","marmalade","milk chocolate","mincemeat",
-              "macademia",
-              "mangetout","mango","mango pulp","melon","mixed berries","mangetout","mushrooms",
-              "mint","mixed herbs","mixed spice","moroccan seasoning","mulled wine spice","mustard powder","mustard seeds",
+              "mango jelly","mango jam","mango puree","marmalade","milk chocolate","mincemeat","mints","mint chocolate","mint fondants","munchies",
+              "macademia","malt wheats cereal","milk powder","mixed nuts","muesli",
+              "mackerel","monkfish","mussels",
+              "mangetout","mango","mango pulp","melon","mixed berries","mixed stir fry vegetables","mixed vegetables","mushrooms",
+
+              "maca powder","mango masala spice blend","mango powder","mint","mixed herbs","mixed spice","moroccan seasoning","mulled wine spice","mustard powder",
+              "mustard seeds",
+
               "mandarins","mixed beans","mushroom antipasti","mushy peas",
 
               "macadamia nut oil","madras curry sauce","makhani sauce","mango and lime sauce","mango pickle","massaman curry paste","mayonnaise",
@@ -31,14 +35,8 @@
               "mascarpone",
 
               "macarons", "maltesers", "maple syrup/honey(sub)", "marmalade", "mars", "marshmallows", "marzipan", "meringues", "midget gems",
-              "milk biscuits", "milky way", "millionaire’s shortbread", "mini eggs", "minstrels", "mint chocolate", "mint fondants",
-              "mints", "munchies",
+              "milk biscuits", "milky way", "millionaire’s shortbread", "mini eggs", "minstrels",
 
-              "malt wheats cereal", "milk powder/evaporated milk(sub)", "mixed nuts", "monkey nuts", "muesli/granola(sub)",
-              "mackerel", "monkfish/lobster/langoustine(sub)", "mussels",
-              "mixed greens", "mixed vegetable stir fry",
-
-              "maca powder", "mango masala spice blend", "mild chilli powder",
 
 
     ],
@@ -47,6 +45,611 @@
     "ingredients": [
 
 
+
+          {
+              "name": "munchies",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tunnocks millk chocolate caramel",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mint chocolate bar",
+              "exclude": [
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "fondant",
+                },
+                {
+                  "word": "mint cake",
+                },
+                {
+                  "word": "creme",
+                },
+                {
+                  "word": "cream",
+                },
+                {
+                  "word": "thins",
+                },
+              ],
+              "include": [
+                {
+                  "word": "mint chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "minty chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavoured chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavored chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavoured chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavored chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint dark chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint milk chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint dark chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint milk chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "dark mint chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "milk mint chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "dark peppermint chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "milk peppermint chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "matchmakers",
+                  "substitution": true,
+                },
+                {
+                  "word": "aero peppermint",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mint fondants",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mint fondant",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint cake",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint fondant",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint cremes",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint cremes",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint creams",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint thins",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint creams",
+                  "substitution": false,
+                },
+                {
+                  "word": "fry's chocolate cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "frys chocolate cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "fry's peppermint cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "after eight",
+                  "substitution": false,
+                },
+                {
+                  "word": "dinner mints",
+                  "substitution": false,
+                },
+                {
+                  "word": "junior mints",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint patties",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mints",
+              "exclude": [
+                {
+                  "word": "dinner",
+                },
+              ],
+              "include": [
+                {
+                  "word": "mint cake",
+                  "substitution": true,
+                },
+                {
+                  "word": "mint imperials",
+                  "substitution": true,
+                },
+                {
+                  "word": "mint crumbles",
+                  "substitution": true,
+                },
+                {
+                  "word": "peppermints",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "munchies",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tunnocks millk chocolate caramel",
+                  "substitution": true,
+                },
+                {
+                  "word": "toffee crisp",
+                  "substitution": true,
+                },
+                {
+                  "word": "lion bar",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate caramel bar",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "malt wheats cereal",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "malt wheats",
+                  "substitution": false,
+                },
+                {
+                  "word": "malted wheats",
+                  "substitution": false,
+                },
+                {
+                  "word": "shredded wheat",
+                  "substitution": false,
+                },
+                {
+                  "word": "shreddies",
+                  "substitution": false,
+                },
+                {
+                  "word": "weetabix",
+                  "substitution": false,
+                },
+                {
+                  "word": "malties cereal",
+                  "substitution": false,
+                },
+                {
+                  "word": "wheat chex",
+                  "substitution": false,
+                },
+                {
+                  "word": "wheat cereal",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "milk powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "powdered milk",
+                  "substitution": false,
+                },
+                {
+                  "word": "dry milk",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried milk",
+                  "substitution": false,
+                },
+                {
+                  "word": "evaporated milk",
+                  "substitution": true,
+                },
+                {
+                  "word": "whey powder",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mixed nuts",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "nuts",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanuts",
+                  "substitution": true,
+                },
+                {
+                  "word": "almonds",
+                  "substitution": true,
+                },
+                {
+                  "word": "pecans",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew nuts",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnuts",
+                  "substitution": true,
+                },
+                {
+                  "word": "brazil nuts",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnuts",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "muesli",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "granola",
+                  "substitution": true,
+                },
+                {
+                  "word": "oats",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried mixed fruit",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mackerel",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "herring",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardines",
+                  "substitution": true,
+                },
+                {
+                  "word": "shad",
+                  "substitution": true,
+                },
+                {
+                  "word": "bluefish",
+                  "substitution": true,
+                },
+                {
+                  "word": "tuna",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "monkfish",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "lobster",
+                  "substitution": true,
+                },
+                {
+                  "word": "langoustine",
+                  "substitution": true,
+                },
+                {
+                  "word": "sea bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "halibut",
+                  "substitution": true,
+                },
+                {
+                  "word": "snapper",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mussels",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cockles",
+                  "substitution": true,
+                },
+                {
+                  "word": "oyster",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mixed vegetables",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mixed vegetable",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed veg",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed green vegetable",
+                  "substitution": false,
+                },
+                {
+                  "word": "vegetable medley",
+                  "substitution": false,
+                },
+                {
+                  "word": "green medley",
+                  "substitution": false,
+                },
+                {
+                  "word": "green vegetables",
+                  "substitution": false,
+                },
+                {
+                  "word": "vegetable selection",
+                  "substitution": false,
+                },
+                {
+                  "word": "selection of vegetables",
+                  "substitution": false,
+                },
+                {
+                  "word": "spring greens",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mixed stir fry vegetables",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mixed vegetable",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed veg",
+                  "substitution": false,
+                },
+                {
+                  "word": "stir fry vegetable",
+                  "substitution": false,
+                },
+                {
+                  "word": "vegetable stir fry",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom stir fry",
+                  "substitution": false,
+                },
+                {
+                  "word": "superbright stir fry",
+                  "substitution": false,
+                },
+                {
+                  "word": "crunchy stir fry",
+                  "substitution": false,
+                },
+                {
+                  "word": "mixed pepper stir fry",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "maca powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "maca root",
+                  "substitution": true,
+                },
+                {
+                  "word": "ground butterscotch",
+                  "substitution": true,
+                },
+                {
+                  "word": "butterscotch ground",
+                  "substitution": true,
+                },
+                {
+                  "word": "butterscotch powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "butterscotch essence",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mango powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "aamchoor",
+                  "substitution": false,
+                },
+                {
+                  "word": "amchoor",
+                  "substitution": false,
+                },
+                {
+                  "word": "amchur",
+                  "substitution": false,
+                },
+                {
+                  "word": "aamchur",
+                  "substitution": false,
+                },
+                {
+                  "word": "powdered mango",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango fruit powder",
+                  "substitution": false,
+                },
+                {
+                  "word": "tamarind",
+                  "substitution": true,
+                },
+                {
+                  "word": "anardana",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried lime",
+                  "substitution": true,
+                },
+                {
+                  "word": "lime",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon",
+                  "substitution": true,
+                },
+                {
+                  "word": "sumac",
+                  "substitution": true,
+                },
+                {
+                  "word": "citric acid powder",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mango masala spice blend",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango masala",
+                  "substitution": false,
+                },
+                {
+                  "word": "chaat masala",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "mixed herbs",
               "exclude": [
@@ -363,6 +966,22 @@
                 },
                 {
                   "word": "mango marinade",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango & lime rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango and lime rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango & lime seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango and lime seasoning",
                   "substitution": false,
                 },
                 {
@@ -3089,6 +3708,10 @@
               },
               {
                 "word": "evaporated milk",
+                "substitution": true,
+              },
+              {
+                "word": "milk powder",
                 "substitution": true,
               },
             ],

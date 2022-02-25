@@ -245,6 +245,10 @@
                 "word": "haddock",
                 "substitution": true,
               },
+              {
+                "word": "monkfish",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1567,7 +1571,10 @@
             },
           ],
           "include": [
-
+            {
+              "word": "mixed nuts",
+              "substitution": true,
+            },
           ],
         },
 

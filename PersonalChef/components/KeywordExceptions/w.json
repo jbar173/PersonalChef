@@ -11,12 +11,13 @@
 
               "~~~ HALF DONE : ~~~",
               "wild berry flavoured spirit/liqueur",
+              "whey powder",
 
 
               "~~~ TO DO : ~~~",
               "wensleydale",
               "wafer biscuits", "wafer decorations", "wine gums", "wispa",
-              "weetabix",
+              "weetabix/malt wheats cereal(sub)",
               "watercress/cress(sub)", "watermelon",
 
               "wasabi paste/horseradish/mustard(subs)", "watercress sauce", "white sauce", "white wine stock",
@@ -30,6 +31,17 @@
     "ingredients": [
 
 
+          {
+              "name": "whey powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "milk powder",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "walnut oil",
               "exclude": [
@@ -443,6 +455,10 @@
               {
                 "word": "walnut",
                 "substitution": false,
+              },
+              {
+                "word": "mixed nuts",
+                "substitution": true,
               },
             ],
           },

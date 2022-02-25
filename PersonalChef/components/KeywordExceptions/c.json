@@ -13,7 +13,7 @@
               "candlenuts","cashew nuts","cassava flour","chana dal","chestnuts","chia seeds","chocolate cereal","coconut milk powder","cornflakes","cornstarch",
               "cornmeal","couscous","crackers","crispy onions","croutons","crumpets",
 
-              "caviar","cod","cockles","crab","crayfish",
+              "caviar","clams","cod","cockles","crab","crayfish",
               "chicken","chicken mince","cured sausage/meat",
 
               "cabbage","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli paepper","clementine",
@@ -64,6 +64,21 @@
             "exclude": [
             ],
             "include": [
+            ],
+        },
+        {
+            "name": "clams",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cockles",
+                "substitution": true,
+              },
+              {
+                "word": "mussels",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -859,6 +874,18 @@
               {
                 "word": "caramel",
                 "substitution": true,
+              },
+              {
+                "word": "toffee crisp",
+                "substitution": true,
+              },
+              {
+                "word": "lion bar",
+                "substitution": true,
+              },
+              {
+                "word": "tunnocks millk chocolate caramel",
+                "substitution": false,
               },
             ],
         },
@@ -1842,7 +1869,7 @@
                 "substitution": true,
               },
               {
-                "word": "mussel",
+                "word": "mussels",
                 "substitution": true,
               },
             ],
@@ -6649,6 +6676,10 @@
               "word": "pine nut",
               "substitution": true,
             },
+            {
+              "word": "mixed nuts",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -7304,15 +7335,15 @@
             "include": [
               {
                 "word": "white chocolate",
-                "substitution": false,
+                "substitution": true,
               },
               {
                 "word": "dark chocolate",
-                "substitution": false,
+                "substitution": true,
               },
               {
                 "word": "milk chocolate",
-                "substitution": false,
+                "substitution": true,
               },
             ],
           },

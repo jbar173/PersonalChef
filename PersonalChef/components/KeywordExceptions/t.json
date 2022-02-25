@@ -22,13 +22,13 @@
               "tequila",
               "toblerone", "toffee crisp", "toffees", "toffee sauce", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
               "tortillas",
-              "tempura prawns", "tilapia/halibut(sub)", "trout", "tuna",
+              "tempura prawns", "tilapia/halibut(sub)", "trout", "tuna/mackerel(sub)",
               "thai basil",
               "tomato soup", "tapioca pudding",
 
-              "tabasco", "tagine paste", "tahini/tahineh/miso(sub)", "tahini sesame sauce", "tamarind sauce", "tandoori paste", "teriyaki sauce",
-              "thousand island dressing", "tomato ketchup", "tomato stock",
-              "tom yum paste", "truffle mayonnaise", "truffle oil", "tuna pasta sauce", "tuna paste",
+              "tabasco", "tagine paste", "tahini/tahineh/miso(sub)", "tahini sesame sauce", "tamarind sauce/tamarind powder/mango powder?(subs)", "tandoori paste",
+              "teriyaki sauce", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste", "truffle mayonnaise", "truffle oil",
+              "tuna pasta sauce", "tuna paste",
 
               "tomato juice",
               "taramasalata", "tiramisu", "toffee popcorn", "toffee sundae", "tortelloni/ravioli/girasoli/tortellini/mezzelune(subs)", "trifle", "twiglets", "tzatziki",
@@ -575,34 +575,38 @@
                 },
               ],
               "include": [
+                {
+                  "word": "orange",
+                  "substitution": true,
+                },
               ],
           },
           {
-            "name": "taleggio",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "brie",
-                "substitution": true,
-              },
-              {
-                "word": "fontina",
-                "substitution": true,
-              },
-              {
-                "word": "cheddar",
-                "substitution": true,
-              },
-              {
-                "word": "havarti",
-                "substitution": true,
-              },
-              {
-                "word": "manchego",
-                "substitution": true,
-              },
-            ],
+              "name": "taleggio",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "brie",
+                  "substitution": true,
+                },
+                {
+                  "word": "fontina",
+                  "substitution": true,
+                },
+                {
+                  "word": "cheddar",
+                  "substitution": true,
+                },
+                {
+                  "word": "havarti",
+                  "substitution": true,
+                },
+                {
+                  "word": "manchego",
+                  "substitution": true,
+                },
+              ],
           },
           {
               "name": "tomato cooking sauce",
@@ -617,7 +621,7 @@
                   "substitution": false,
                 },
                 {
-                  "word": "tomato paste sauce",
+                  "word": "tomato pasta sauce",
                   "substitution": false,
                 },
                 {
@@ -654,7 +658,7 @@
                 },
                 {
                   "word": "casserole sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "passata",

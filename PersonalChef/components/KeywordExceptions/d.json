@@ -23,10 +23,11 @@
 
 
              "~~~ HALF DONE : ~~~",
-             "dried banana",
+             "date paste", "dried banana",
              "dried black beans", "dried moong dal", "dried red lentils", "dried split peas",
+             "dried lime",
              "dripping", "duck fat",
-             "date paste", "date syrup",
+             "date syrup",
 
 
              "~~~ TO DO : ~~~",
@@ -38,6 +39,33 @@
     "ingredients": [
 
 
+        {
+            "name": "dried lime",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "black lime",
+                "substitution": false,
+              },
+              {
+                "word": "loomi",
+                "substitution": false,
+              },
+              {
+                "word": "noomi basra",
+                "substitution": false,
+              },
+              {
+                "word": "limoo amani",
+                "substitution": false,
+              },
+              {
+                "word": "mango powder",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "date paste",
             "exclude": [
@@ -3074,6 +3102,18 @@
               {
                 "word": "jamaican mix fruit",
                 "substitution": false,
+              },
+              {
+                "word": "raisins",
+                "substitution": true,
+              },
+              {
+                "word": "sultanas",
+                "substitution": true,
+              },
+              {
+                "word": "currants",
+                "substitution": true,
               },
             ],
         },

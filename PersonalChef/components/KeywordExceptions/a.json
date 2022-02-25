@@ -4,7 +4,7 @@
               "apricot flavoured spirit/liqueur","aniseed flavoured spirit/liqueur","armagnac",
 
               "aged asiago","appenzeller","applewood smoked cheese",
-              "agave nectar","apricot jam","apricot jelly",
+              "agave nectar","almond extract","apricot jam","apricot jelly",
               "anchovies",
               "almonds","almond meal","almond flour",
               "ackee","apple","apricot","avocado",
@@ -15,7 +15,6 @@
 
 
               "~~~ HALF DONE : ~~~",
-              "almond extract",
               "atta flour",
               "artichoke","asparagus","aubergine",
               "all purpose seasoning",
@@ -385,6 +384,22 @@
               "include": [
                 {
                   "word": "almond essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavouring",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavoring",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavour drop",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavor drop",
                   "substitution": false,
                 },
                 {
@@ -2087,8 +2102,22 @@
               {
                 "word": "candy",
               },
+              {
+                "word": "marzipan",
+              },
+              {
+                "word": "icing",
+              },
             ],
             "include": [
+              {
+                "word": "almond",
+                "substitution": true,
+              },
+              {
+                "word": "mixed nuts",
+                "substitution": true,
+              },
             ],
           },
 

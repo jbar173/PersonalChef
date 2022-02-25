@@ -4,7 +4,7 @@
              "bavarian smoked cheese","blue cheese","brie",
 
              "banana custard","black food colouring","black treacle","blue food colouring","biscuit","biscuit spread","boiled sweets","bounty","bourbon biscuits",
-             "buttercream","butterscotch mousse",
+             "buttercream","butterscotch essence","butterscotch mousse",
 
              "baking powder","baking soda","batter mix","bran flakes","brazil nuts","breadcrumbs","breadsticks","bread loaf","bread wraps",
              "basa",
@@ -25,7 +25,7 @@
              "~~~ HALF DONE : ~~~",
              "blackberry flavoured spirit/liqueur", "blackcurrant flavoured spirit/liqueur", "butterscotch flavoured spirit/liqueur",
              "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
-             "bass", "breaded fish fillets",
+             "bass", "bluefish", "breaded fish fillets",
              "barbeque seasoning",
              "basil oil", "basil puree", "black bean paste", "borage seed oil",
              "berry cordial", "blackcurrant tea",
@@ -44,6 +44,48 @@
     "ingredients": [
 
 
+      {
+          "name": "bluefish",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "mackerel",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "butterscotch essence",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "butterscotch flavouring",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch flavoring",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch flavour drop",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch flavor drop",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch extract",
+              "substitution": false,
+            },
+            {
+              "word": "butterscotch paste",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "bitter melon",
           "exclude": [
@@ -3958,6 +4000,10 @@
               },
               {
                 "word": "almond",
+                "substitution": true,
+              },
+              {
+                "word": "mixed nuts",
                 "substitution": true,
               },
             ],

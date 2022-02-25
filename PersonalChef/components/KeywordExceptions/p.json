@@ -32,7 +32,7 @@
               "pangasius", "pilchards", "plaice", "pollock/lack/cod/hake/haddock(sub)", "prawns/langoustine(sub)",
 
               "pancetta", "pepperoni", "pigs in blankets", "porchetta", "pork mince",
-              "persimmon", "plantain", "pomegranate seeds",
+              "persimmon", "plantain", "pomegranate seeds/anardana(sub)",
               "paprika",
               "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage", "pickled walnuts",
 
@@ -3067,6 +3067,10 @@
                 "word": "pecan",
                 "substitution": false,
               },
+              {
+                "word": "mixed nuts",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -3125,11 +3129,30 @@
               {
                 "word": "brittle",
               },
+              {
+                "word": "chocolate",
+              },
             ],
             "include": [
               {
                 "word": "peanut",
                 "substitution": false,
+              },
+              {
+                "word": "money nut",
+                "substitution": false,
+              },
+              {
+                "word": "groundnut",
+                "substitution": false,
+              },
+              {
+                "word": "pindar",
+                "substitution": false,
+              },
+              {
+                "word": "mixed nuts",
+                "substitution": true,
               },
             ],
           },

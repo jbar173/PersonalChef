@@ -107,6 +107,8 @@ const RefineResults = props => {
              }
 
 
+
+
              var break_out = false
 
              if(less){
@@ -138,10 +140,11 @@ const RefineResults = props => {
 
                                        index += 1
                                        var match = false
-                                       var found_random = false
+                                       // var found_random = false
                                        var last_index = user_ingredients.length - 1
 
                                        var include_words = [ user_ingredients[y], ]
+                                       var original_ingredient = include_words[0]
                                        var is_key = false
                                        var p
                                        var q
@@ -170,7 +173,7 @@ const RefineResults = props => {
                                        // console.log("LOOKING FOR RECIPE ING: " + ingredient_lower + " in USER ING: " + user_ingredients[y])
                                        var find = FindIngredient(include_words,ingredient_lower)
                                        var result = find[0]
-                                       var original_was_found = find[1]
+                                       var original_was_found = find[1]     // true or false
                                        var all_ingredients_found = find[2]
                                        var substitute_made = false
                                        if(result && original_was_found === false){
@@ -180,16 +183,25 @@ const RefineResults = props => {
                                        if(result){                            // Found recipe_ingredient in this user_ingredient, check for exceptions:
                                            console.log("RESULT!! (less)")
                                            console.log("Found: " )
+                                           var word
                                            for(word in all_ingredients_found){
                                                console.log(all_ingredients_found[word])
                                            }
                                            console.log("Looking for keyword exceptions")
-                                           if(is_key){
-                                               var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'both')
+                                           // if(is_key){
+                                               // var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'both')
+                                               var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,original_ingredient)
+                                               var found_random = exception_check[2]
+                                               if(found_random){              // Found exception in recipe title/label - recipe is a no-match
+                                                   // substitute_made = false
+                                                   // match = false
+                                                   result = false
+                                                   break_out = true
+                                                   break;
+                                               }
                                                var found = exception_check[0]
                                                console.log("EXCEPTION FOUND? " + found)
                                                var ingredients_with_exceptions = exception_check[1]
-                                               var found_random = exception_check[2]
 
                                                if(found){                     // Ingredient found was not the user's ingredient (keyword exception found)
                                                     console.log( "NO MATCH FOR " + ingredient_lower )
@@ -208,18 +220,18 @@ const RefineResults = props => {
                                                 }else{
                                                     match = true              // No exception was found for ingredient - ingredient was a match
                                                 }
-                                           }else{
-                                               var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'random')
-                                               var found_random = exception_check
-                                               if(found_random){              // Found exception in recipe title/label - recipe is a no-match
-                                                   substitute_made = false
-                                                   match = false
-                                                   break_out = true
-                                                   break;
-                                               }else{
-                                                   match = true               // No exception found in recipe title/label - ingredient is a match
-                                               }
-                                           }
+                                           // }else{
+                                           //     var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'random')
+                                           //     var found_random = exception_check[2]
+                                           //     if(found_random){              // Found exception in recipe title/label - recipe is a no-match
+                                           //         substitute_made = false
+                                           //         match = false
+                                           //         break_out = true
+                                           //         break;
+                                           //     }else{
+                                           //         match = true               // No exception found in recipe title/label - ingredient is a match
+                                           //     }
+                                           // }
                                         }
 
                                         if(result === false){                 // Didn't find recipe_ingredient in this user_ingredient
@@ -330,6 +342,7 @@ const RefineResults = props => {
                }
 
 
+
               var done = false
 
               if(same){
@@ -368,9 +381,10 @@ const RefineResults = props => {
                                                 last_index_two = true
                                             }
                                             var match = false
-                                            var found_random = false
+                                            // var found_random = false
 
                                             var include_words = [ user_ingredients[ing], ]
+                                            var original_ingredient = include_words[0]
                                             var is_key = false
                                             var p
                                             var q
@@ -407,12 +421,19 @@ const RefineResults = props => {
                                                     console.log(all_ingredients_found[word])
                                                 }
                                                 console.log("Looking for keyword exceptions")
-                                                if(is_key){
-                                                     var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'both')
+                                                // if(is_key){
+                                                     // var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'both')
+                                                     var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,original_ingredient)
+                                                     var found_random = exception_check[2]
+                                                     if(found_random){        // Found exception in recipe title/label - whole recipe is a no-match
+                                                         result = false
+                                                         done = true
+                                                         break;
+                                                     }
                                                      var found = exception_check[0]
                                                      console.log("EXCEPTION FOUND? " + found)
                                                      var ingredients_with_exceptions = exception_check[1]
-                                                     var found_random = exception_check[2]
+                                                     // var found_random = exception_check[2]
 
                                                      if(found){
                                                           console.log( "NO MATCH FOR " + ingredient_lower )
@@ -420,28 +441,27 @@ const RefineResults = props => {
                                                           for(word in ingredients_with_exceptions){
                                                               console.log(ingredients_with_exceptions[word])
                                                           }
-                                                          substitute_made = false
                                                           result = false
-                                                      }else if(found_random){  // Found exception in recipe title/label - recipe is a no-match
-                                                          substitute_made = false
-                                                          match = false
-                                                          done = true
-                                                          break;
+                                                      // }else if(found_random){  // Found exception in recipe title/label - recipe is a no-match
+                                                      //     substitute_made = false
+                                                      //     match = false
+                                                      //     done = true
+                                                      //     break;
                                                       }else{
                                                          match = true
                                                       }
-                                                 }else{
-                                                   var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'random')
-                                                   var found_random = exception_check
-                                                   if(found_random){          // Found exception in recipe title/label - recipe is a no-match
-                                                       substitute_made = false
-                                                       match = false
-                                                       done = true
-                                                       break;
-                                                   }else{
-                                                       match = true
-                                                   }
-                                                 }
+                                                 // }else{
+                                                 //   var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'random')
+                                                 //   var found_random = exception_check
+                                                 //   if(found_random){          // Found exception in recipe title/label - recipe is a no-match
+                                                 //       substitute_made = false
+                                                 //       match = false
+                                                 //       done = true
+                                                 //       break;
+                                                 //   }else{
+                                                 //       match = true
+                                                 //   }
+                                                 // }
                                             }
 
                                             if(result === false){
@@ -544,6 +564,7 @@ const RefineResults = props => {
               }
 
 
+
               var next_recipe = false
 
               if(one_over){
@@ -574,7 +595,8 @@ const RefineResults = props => {
                                     var false_count = 0
 
                                     var include_words = [ user_ingredients[ing], ]
-                                    var is_key = false
+                                    var original_ingredient = include_words[0]   ////////////////////////     NEW
+                                    // var is_key = false
                                     var p
                                     var q
 
@@ -585,14 +607,14 @@ const RefineResults = props => {
                                     for(p in exceptions){
                                         var name = exceptions[p]['name']
                                         if(name === user_ingredients[ing]){
-                                            is_key = true
+                                            // is_key = true
                                             var include = exceptions[p]['include']
                                             for(q in include){
                                                 var word = include[q]['word']
                                                 include_words.push(word)
                                             }
                                         }
-                                    }
+                                    }                           //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)
 
                                     for(x in checked_ingredients){
 
@@ -603,13 +625,14 @@ const RefineResults = props => {
                                                 last_index_two = true
                                             }
                                             var match = false
-                                            var found_random = false
+                                            // var found_random = false
 
                                             var find = FindIngredient(include_words,ingredient_lower)
                                             var result = find[0]
                                             var original_was_found = find[1]
                                             var all_ingredients_found = find[2]
                                             var substitute_made = false
+                                            var only_check_one = false
                                             if(result && original_was_found === false){
                                                substitute_made = true
                                             }
@@ -621,38 +644,45 @@ const RefineResults = props => {
                                                     console.log(all_ingredients_found[word])
                                                 }
                                                 console.log("Looking for keyword exceptions")
-                                                if(is_key){
-                                                     var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'both')
+                                                // if(is_key){
+                                                     // var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'both',original_ingredient)
+                                                     var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,original_ingredient)
+                                                     var found_random = exception_check[2]
+                                                     if(found_random){        // Found exception in recipe title/label - whole recipe is a no-match
+                                                         result = false
+                                                         next_recipe = true
+                                                         break;
+                                                     }
                                                      var found = exception_check[0]
                                                      console.log("EXCEPTION FOUND? " + found)
-                                                     var ingredients_with_exceptions = exception_check[1]
-                                                     var found_random = exception_check[2]
+                                                     // var ingredients_with_exceptions = exception_check[1]
+                                                     // var found_random = exception_check[2]
 
                                                      if(found){
                                                           console.log( "NO MATCH FOR " + ingredient_lower )
                                                           console.log( "keyword exception(s) found for" )
-                                                          for(word in ingredients_with_exceptions){
-                                                              console.log(ingredients_with_exceptions[word])
-                                                          }
+                                                          // for(word in ingredients_with_exceptions){
+                                                          //     console.log(ingredients_with_exceptions[word])
+                                                          // }
                                                           result = false
-                                                      }else if(found_random){
-                                                          result = false        // Found exception in recipe title/label - whole recipe is a no-match
-                                                          next_recipe = true
-                                                          break;
+                                                      // }else if(found_random){
+                                                      //     result = false        // Found exception in recipe title/label - whole recipe is a no-match
+                                                      //     next_recipe = true
+                                                      //     break;
                                                       }else{
                                                           match = true
                                                       }
-                                                 }else{
-                                                       var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'random')
-                                                       var found_random = exception_check
-                                                       if(found_random){        // Found exception in recipe title/label - whole recipe is a no-match
-                                                           result = false
-                                                           next_recipe = true
-                                                           break;
-                                                       }else{
-                                                           match = true
-                                                       }
-                                                 }
+                                                 // }else{
+                                                 //       var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,'random',original_ingredient) ////////// orig is NEW
+                                                 //       var found_random = exception_check
+                                                 //       if(found_random){        // Found exception in recipe title/label - whole recipe is a no-match
+                                                 //           result = false
+                                                 //           next_recipe = true
+                                                 //           break;
+                                                 //       }else{
+                                                 //           match = true
+                                                 //       }
+                                                 // }
                                             }
 
                                             if(result === false){
