@@ -13,7 +13,7 @@
 
 
              "~~~ HALF DONE : ~~~",
-             "hoisin sauce", "honey barbeque sauce", "honey flavoured spirit/liqueur",
+             "hoisin sauce/oyster sauce(sub)", "honey barbeque sauce", "honey flavoured spirit/liqueur",
              "horlicks",
 
 
@@ -173,6 +173,10 @@
               },
               {
                 "word": "sole",
+                "substitution": true,
+              },
+              {
+                "word": "orange roughy",
                 "substitution": true,
               },
             ],

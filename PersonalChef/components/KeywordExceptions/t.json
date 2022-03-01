@@ -22,12 +22,12 @@
               "tequila",
               "toblerone", "toffee crisp", "toffees", "toffee sauce", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
               "tortillas",
-              "tempura prawns", "tilapia/halibut(sub)", "trout", "tuna/mackerel(sub)",
+              "tempura prawns", "tilapia/halibut/orange roughy(sub)", "trout", "tuna/mackerel(sub)",
               "thai basil",
               "tomato soup", "tapioca pudding",
 
               "tabasco", "tagine paste", "tahini/tahineh/miso(sub)", "tahini sesame sauce", "tamarind sauce/tamarind powder/mango powder?(subs)", "tandoori paste",
-              "teriyaki sauce", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste", "truffle mayonnaise", "truffle oil",
+              "teriyaki sauce/oyster sauce(sub)", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste", "truffle mayonnaise", "truffle oil",
               "tuna pasta sauce", "tuna paste",
 
               "tomato juice",
@@ -690,6 +690,10 @@
                 },
                 {
                   "word": "ezme paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "onion & garlic pasta sauce",
                   "substitution": true,
                 },
               ],

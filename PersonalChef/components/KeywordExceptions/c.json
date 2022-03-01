@@ -35,7 +35,7 @@
 
               "~~~ HALF DONE : ~~~",
               "caramel flavoured spirit/liqueur","cinnamon flavoured spirit/liqueur","coffee flavoured spirit/liqueur",
-              "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","chocolate sponge","crystallised ginger",
+              "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","chocolate sponge","clotted cream","crystallised ginger",
               "corned beef",
               "caesar dressing","char siu sauce","chilli chutney relish","chilli infused oil","chimichurri","coriander puree",
               "camomile tea","carob syrup","carrot juice","chai tea","cherry tea","coca cola","cookie dough milkshake","cranberry tea",
@@ -64,6 +64,17 @@
             "exclude": [
             ],
             "include": [
+            ],
+        },
+        {
+            "name": "clotted cream",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "mascarpone",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -2394,6 +2405,10 @@
                 "word": "dill seed",
                 "substitution": true,
               },
+              {
+                "word": "nigella seeds",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -2469,6 +2484,10 @@
               },
               {
                 "word": "mustard seeds",
+                "substitution": true,
+              },
+              {
+                "word": "nigella seeds",
                 "substitution": true,
               },
             ],
@@ -3413,6 +3432,10 @@
             ],
             "include": [
               {
+                "word": "chocolate shake",
+                "substitution": false,
+              },
+              {
                 "word": "chocolate milk",
                 "substitution": false,
               },
@@ -3426,6 +3449,42 @@
               },
               {
                 "word": "chocolate drink",
+                "substitution": true,
+              },
+              {
+                "word": "mint choc milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "mint milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "mint shake",
+                "substitution": true,
+              },
+              {
+                "word": "orange milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "orange shake",
+                "substitution": true,
+              },
+              {
+                "word": "orange flavour milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "orange flavor milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "orange flavoured milkshake",
+                "substitution": true,
+              },
+              {
+                "word": "orange flavored milkshake",
                 "substitution": true,
               },
             ],
@@ -5012,6 +5071,10 @@
                 "substitution": false,
               },
               {
+                "word": "onion confit",
+                "substitution": false,
+              },
+              {
                 "word": "smostarda di-cremona",
                 "substitution": true,
               },
@@ -6107,7 +6170,15 @@
             "include": [
               {
                 "word": "creme-fraiche",
-                "substitution": true,
+                "substitution": false,
+              },
+              {
+                "word": "crème fraîche",
+                "substitution": false,
+              },
+              {
+                "word": "crème fraiche",
+                "substitution": false,
               },
               {
                 "word": "sour cream",
@@ -6147,6 +6218,10 @@
               },
               {
                 "word": "buttermilk",
+                "substitution": true,
+              },
+              {
+                "word": "mascarpone",
                 "substitution": true,
               },
             ],

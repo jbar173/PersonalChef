@@ -1,8 +1,12 @@
 {
 
-    "key" : [ "mango flavoured spirit/liqueur","mint flavoured spirit/liqueur","melon flavoured spirit/liqueur",
-              "manchego","monterey jack","mozzarella","muenster",
-              "mango jelly","mango jam","mango puree","marmalade","milk chocolate","mincemeat","mints","mint chocolate","mint fondants","munchies",
+    "key" : [ "mango flavoured spirit/liqueur","mead","melon flavoured spirit/liqueur","mint flavoured spirit/liqueur","mulled wine",
+              "manchego","monterey jack","mozzarella","muenster","mascarpone",
+
+              "macarons","maltesers","mango jelly","mango jam","mango puree","maple syrup","marmalade","marshmallows","mars bar","marzipan","meringues",
+              "midget gems","milk chocolate","millionaire’s shortbread","milk biscuits","milky way","mincemeat","mini eggs","minstrels","mints",
+              "mint chocolate","mint fondants","munchies",
+
               "macademia","malt wheats cereal","milk powder","mixed nuts","muesli",
               "mackerel","monkfish","mussels",
               "mangetout","mango","mango pulp","melon","mixed berries","mixed stir fry vegetables","mixed vegetables","mushrooms",
@@ -31,12 +35,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "mead", "mulled wine",
-              "mascarpone",
-
-              "macarons", "maltesers", "maple syrup/honey(sub)", "marmalade", "mars", "marshmallows", "marzipan", "meringues", "midget gems",
-              "milk biscuits", "milky way", "millionaire’s shortbread", "mini eggs", "minstrels",
-
 
 
     ],
@@ -45,12 +43,550 @@
     "ingredients": [
 
 
-
+          {
+              "name": "mead",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "honey wine",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mulled wine",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "spiced wine",
+                  "substitution": false,
+                },
+                {
+                  "word": "gluwein",
+                  "substitution": false,
+                },
+                {
+                  "word": "gluhwein",
+                  "substitution": false,
+                },
+                {
+                  "word": "glühwein",
+                  "substitution": false,
+                },
+                {
+                  "word": "mulled elderberry wine",
+                  "substitution": true,
+                },
+                {
+                  "word": "mulled berry wine",
+                  "substitution": true,
+                },
+                {
+                  "word": "mulled berry punch",
+                  "substitution": true,
+                },
+                {
+                  "word": "mulled winter punch",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mascarpone",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cream cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "crème fraîche",
+                  "substitution": true,
+                },
+                {
+                  "word": "creme fraiche",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "macarons",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "french macaroon",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "maltesers",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chocolate malt balls",
+                  "substitution": false,
+                },
+                {
+                  "word": "whoppers",
+                  "substitution": true,
+                },
+                {
+                  "word": "maltybites",
+                  "substitution": true,
+                },
+                {
+                  "word": "malty bites",
+                  "substitution": true,
+                },
+                {
+                  "word": "maltitos",
+                  "substitution": true,
+                },
+                {
+                  "word": "whispers",
+                  "substitution": true,
+                },
+                {
+                  "word": "mylikes",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate biscuits",
+                  "substitution": true,
+                },
+                {
+                  "word": "kitkat",
+                  "substitution": true,
+                },
+                {
+                  "word": "ballers",
+                  "substitution": true,
+                },
+                {
+                  "word": "gnawbles",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "maple syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "honey",
+                  "substitution": true,
+                },
+                {
+                  "word": "agave nectar",
+                  "substitution": true,
+                },
+                {
+                  "word": "corn syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut nectar",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice syrup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "marmalade",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange fruit spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange conserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange jam",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "tangerine preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "clementine preserve",
+                  "substitution": false,
+                },
+                {
+                  "word": "satsuma preserve",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "mars bar",
+              "exclude": [
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "wine",
+                },
+              ],
+              "include": [
+                {
+                  "word": "mars",
+                  "substitution": false,
+                },
+                {
+                  "word": "bar one",
+                  "substitution": false,
+                },
+                {
+                  "word": "moro",
+                  "substitution": false,
+                },
+                {
+                  "word": "milky way",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate caramel bar",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "marshmallows",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chamallows",
+                  "substitution": false,
+                },
+                {
+                  "word": "mallows",
+                  "substitution": false,
+                },
+                {
+                  "word": "marshmallow",
+                  "substitution": false,
+                },
+                {
+                  "word": "flumps",
+                  "substitution": false,
+                },
+                {
+                  "word": "zefir",
+                  "substitution": true,
+                },
+                {
+                  "word": "zephir",
+                  "substitution": true,
+                },
+                {
+                  "word": "zephyr",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "marzipan",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond extract paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond icing",
+                  "substitution": true,
+                },
+                {
+                  "word": "mazapan",
+                  "substitution": true,
+                },
+                {
+                  "word": "persipan",
+                  "substitution": true,
+                },
+                {
+                  "word": "parzipan",
+                  "substitution": true,
+                },
+                {
+                  "word": "fondant icing",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "meringues",
+              "exclude": [
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "fudge",
+                },
+              ],
+              "include": [
+                {
+                  "word": "meringue",
+                  "substitution": false,
+                },
+                {
+                  "word": "meringue powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "meringue mix",
+                  "substitution": true,
+                },
+                {
+                  "word": "pavlova",
+                  "substitution": true,
+                },
+                {
+                  "word": "divinity",
+                  "substitution": true,
+                },
+                {
+                  "word": "royal icing",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "milk biscuits",
+              "exclude": [
+                {
+                  "word": "chocolate",
+                },
+              ],
+              "include": [
+                {
+                  "word": "milk bikis",
+                  "substitution": false,
+                },
+                {
+                  "word": "milk cookies",
+                  "substitution": false,
+                },
+                {
+                  "word": "malt-o-milk",
+                  "substitution": false,
+                },
+                {
+                  "word": "sooper",
+                  "substitution": false,
+                },
+                {
+                  "word": "milk arrowroot biscuit",
+                  "substitution": false,
+                },
+                {
+                  "word": "shortcake",
+                  "substitution": true,
+                },
+                {
+                  "word": "shortbread",
+                  "substitution": true,
+                },
+                {
+                  "word": "digestive",
+                  "substitution": true,
+                },
+                {
+                  "word": "biscuit",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "midget gems",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "midgetgems",
+                  "substitution": false,
+                },
+                {
+                  "word": "mini gems",
+                  "substitution": true,
+                },
+                {
+                  "word": "gummy mix",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "milky way",
+              "exclude": [
+                {
+                  "word": "biscuit",
+                },
+              ],
+              "include": [
+                {
+                  "word": "milkyway",
+                  "substitution": false,
+                },
+                {
+                  "word": "3 musketeers",
+                  "substitution": true,
+                },
+                {
+                  "word": "baby ruth",
+                  "substitution": true,
+                },
+                {
+                  "word": "mars",
+                  "substitution": true,
+                },
+                {
+                  "word": "nougat",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "millionaire’s shortbread",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "millionaire's slice",
+                  "substitution": false,
+                },
+                {
+                  "word": "millionaires shortbread",
+                  "substitution": false,
+                },
+                {
+                  "word": "millionaires slice",
+                  "substitution": false,
+                },
+                {
+                  "word": "caramel shortbread",
+                  "substitution": false,
+                },
+                {
+                  "word": "caramel slice",
+                  "substitution": false,
+                },
+                {
+                  "word": "caramel square",
+                  "substitution": false,
+                },
+                {
+                  "word": "wellington square",
+                  "substitution": false,
+                },
+                {
+                  "word": "chocolate shortbread",
+                  "substitution": true,
+                },
+                {
+                  "word": "shortbread",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramel",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "mini eggs",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chocolate eggs",
+                  "substitution": false,
+                },
+                {
+                  "word": "eggies",
+                  "substitution": false,
+                },
+                {
+                  "word": "minstrels",
+                  "substitution": true,
+                },
+                {
+                  "word": "smarties",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "minstrels",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mini eggs",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "munchies",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "chocolate caramel bar",
+                  "substitution": true,
+                },
                 {
                   "word": "tunnocks millk chocolate caramel",
                   "substitution": true,
@@ -64,7 +600,28 @@
                   "word": "icecream",
                 },
                 {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
+                },
+                {
+                  "word": "milk",
+                },
+                {
                   "word": "fondant",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "cake",
                 },
                 {
                   "word": "mint cake",
@@ -76,7 +633,22 @@
                   "word": "cream",
                 },
                 {
+                  "word": "buttercream",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "truffles",
+                },
+                {
                   "word": "thins",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "crisps",
                 },
               ],
               "include": [
@@ -141,7 +713,7 @@
                   "substitution": false,
                 },
                 {
-                  "word": "matchmakers",
+                  "word": "mint matchmakers",
                   "substitution": true,
                 },
                 {
@@ -226,6 +798,9 @@
               "exclude": [
                 {
                   "word": "dinner",
+                },
+                {
+                  "word": "junior",
                 },
               ],
               "include": [
@@ -2043,37 +2618,6 @@
               ],
           },
           {
-              "name": "marmalade",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "orange spread",
-                  "substitution": false,
-                },
-                {
-                  "word": "orange fruit spread",
-                  "substitution": false,
-                },
-                {
-                  "word": "orange conserve",
-                  "substitution": false,
-                },
-                {
-                  "word": "orange preserve",
-                  "substitution": false,
-                },
-                {
-                  "word": "orange jam",
-                  "substitution": false,
-                },
-                {
-                  "word": "orange butter",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
               "name": "mango puree",
               "exclude": [
               ],
@@ -3246,29 +3790,6 @@
                 {
                   "word": "mixed fruit flavoured spirit/liqueur",
                   "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "marmalade",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "orange preserve",
-                  "substitution": false,
-                },
-                {
-                  "word": "tangerine preserve",
-                  "substitution": false,
-                },
-                {
-                  "word": "clementine preserve",
-                  "substitution": false,
-                },
-                {
-                  "word": "satsuma preserve",
-                  "substitution": false,
                 },
               ],
           },

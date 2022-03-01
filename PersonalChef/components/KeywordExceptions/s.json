@@ -26,14 +26,14 @@
               "~~~ TO DO : ~~~",
               "sake/mirin(sub)",
 
-              "salted caramel chocolate", "salted caramel cookie dough", "sherbert", "shortcake biscuits", "silver ball decorations", "skittles",
+              "salted caramel chocolate", "salted caramel cookie dough", "sherbert", "shortbread/shortcake(sub)", "shortcake biscuits/shortbread(sub)", "silver ball decorations", "skittles",
               "smarties", "snickers", "starburst", "stem ginger", "strawberry bonbons", "strawberry liquorice", "strawberry mousse",
-              "strawberry sauce", "strawberry shoelaces", "sugar syrup", "sultanas", "syrup sponge",
+              "strawberry sauce", "strawberry shoelaces", "sugar syrup/maple syrup(sub)", "sultanas", "syrup sponge",
 
-              "scone mix", "scones", "self raising flour", "sesame seeds/hemp seeds(sub)", "shortcrust pastry", "shreddies", "spelt flour", "sunflower seeds",
+              "scone mix", "scones", "self raising flour", "sesame seeds/hemp seeds/nigella seeds(sub)", "shortcrust pastry", "shreddies", "spelt flour", "sunflower seeds",
 
-              "salmon", "scallops/lobster/monkfish(sub)", "sea bass/seabass/monkfish(sub)", "seafood stick", "sild", "smoked rainbow trout", "smoked salmon",
-              "snapper/monkfish(sub)", "sole/haddock(sub)", "sprat", "squid", "surimi/lobster(sub)",
+              "salmon", "scallops/lobster/monkfish(sub)", "sea bass/seabass/monkfish/striped bass/striper(sub)", "seafood stick", "sild", "smoked rainbow trout", "smoked salmon",
+              "snapper/monkfish(sub)", "sole/haddock/flounder(sub)", "sprat", "squid", "surimi/lobster(sub)",
 
               "samphire", "satsuma", "smoked garlic", "sprouts", "strawberries",
               "saffron", "seaweed seasoning", "shawarma seasoning", "smokey spice", "sorrel", "spirulina powder", "star anise/mulled wine spice(sub)", "steak seasoning",
@@ -1792,6 +1792,18 @@
               {
                 "word": "jaggery",
                 "substitution": false,
+              },
+              {
+                "word": "honey",
+                "substitution": true,
+              },
+              {
+                "word": "maple syrup",
+                "substitution": true,
+              },
+              {
+                "word": "sugar syrup",
+                "substitution": true,
               },
             ],
           },

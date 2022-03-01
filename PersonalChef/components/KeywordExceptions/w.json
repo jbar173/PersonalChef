@@ -11,6 +11,7 @@
 
               "~~~ HALF DONE : ~~~",
               "wild berry flavoured spirit/liqueur",
+              "walleye",
               "whey powder",
 
 
@@ -21,7 +22,7 @@
               "watercress/cress(sub)", "watermelon",
 
               "wasabi paste/horseradish/mustard(subs)", "watercress sauce", "white sauce", "white wine stock",
-              "wholegrain mustard", "worcestershire sauce/worcester sauce(sub)",
+              "wholegrain mustard", "worcestershire sauce/worcester sauce/oyster sauce(sub)",
 
               "white chocolate milkshake",
               "waffles", "wedges",
@@ -31,6 +32,17 @@
     "ingredients": [
 
 
+          {
+              "name": "walleye",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "perch",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "whey powder",
               "exclude": [

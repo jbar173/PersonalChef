@@ -4,13 +4,14 @@
              "derby cheese","double gloucester",
 
              "dark chocolate","dates","date syrup","decorating icing","decorating sprinkles","digestive biscuits","dolly mixture","dried apple","dried apricots",
-             "dried barberries","dried coconut","dried cranberries","dried figs","dried goji berries","dried mango","dried mixed fruit","dried papaya",
+             "dried barberries","dried coconut","dried cranberries","dried fenugreek","dried figs","dried goji berries","dried mango","dried mixed fruit","dried papaya",
              "dried pears","dried pineapple","dried tropical fruit",
 
              "dried adzuki beans","dried black-eyed peas","dried borlotti beans","dried black lentils","dried brown lentils","dried butter beans",
              "dried cannellini beans","dried chickpeas","dried flageolet beans","dried green lentils","dried kidney beans","dried mixed beans",
              "dried moth beans","dried mung beans","dried mushrooms","dried navy beans","dried parsley","dried pinto beans","dried urad dal","dumpling mix",
 
+             "dried shrimp",
              "duck",
              "daikon",
 
@@ -39,6 +40,40 @@
     "ingredients": [
 
 
+        {
+            "name": "dried shrimp",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fish paste",
+                "substitution": true,
+              },
+              {
+                "word": "fish sauce",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried fenugreek",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fenugreek",
+                "substitution": false,
+              },
+              {
+                "word": "methi",
+                "substitution": false,
+              },
+              {
+                "word": "nigella seeds",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "dried lime",
             "exclude": [
@@ -1295,6 +1330,10 @@
                 "word": "herbes de provence",
                 "substitution": true,
               },
+              {
+                "word": "nigella seeds",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1331,6 +1370,10 @@
             "include": [
               {
                 "word": "oregano",
+                "substitution": false,
+              },
+              {
+                "word": "rigani",
                 "substitution": false,
               },
               {
@@ -1371,6 +1414,10 @@
               },
               {
                 "word": "herbes de provence",
+                "substitution": true,
+              },
+              {
+                "word": "nigella seeds",
                 "substitution": true,
               },
             ],

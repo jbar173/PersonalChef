@@ -1,13 +1,15 @@
 {
 
     "key" : [ "orange flavoured spirit/liqueur",
-              "orange jam","orange jelly","orange oil",
-              "oatmeal","oats",
+              "oka",
+              "orange chocolate bar","orange food colouring","orange jam","orange jelly","orange oil","oreos",
+              "oatcakes","oatmeal","oats",
+              "orange roughy",
               "offal",
               "olives","onion","orange",
-              "onion powder","oregano",
-              "oil","olive oil",
-              "oat milk",
+              "onion powder",
+              "oil","olive oil","onion gravy","onion sauce","oyster sauce",
+              "oat milk","oat yoghurt","onion rings",
 
 
               "~~~ HALF DONE : ~~~",
@@ -19,12 +21,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "oka",
-              "orange chocolate", "orange food colouring", "oreos",
-              "orange roughy/cod(sub)",
-              "onion and garlic pasta sauce", "onion gravy", "onion sauce", "oyster sauce",
-              "orange milkshake",
-              "oatcakes", "oat yoghurt", "onion rings",
 
     ],
 
@@ -33,10 +29,662 @@
 
 
           {
+              "name": "oka",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raclette",
+                  "substitution": true,
+                },
+                {
+                  "word": "gruyere",
+                  "substitution": true,
+                },
+                {
+                  "word": "gouda",
+                  "substitution": true,
+                },
+                {
+                  "word": "port salut",
+                  "substitution": true,
+                },
+                {
+                  "word": "edam",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "orange chocolate bar",
+              "exclude": [
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
+                },
+                {
+                  "word": "milk",
+                },
+                {
+                  "word": "fondant",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "creme",
+                },
+                {
+                  "word": "cream",
+                },
+                {
+                  "word": "buttercream",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "truffles",
+                },
+                {
+                  "word": "thins",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "crisps",
+                },
+                {
+                  "word": "coffee",
+                },
+              ],
+              "include": [
+                {
+                  "word": "chocolate orange",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "marmalade chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange milk chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange dark chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange flavoured chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange flavored chocolate",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange matchmakers",
+                  "substitution": true,
+                },
+                {
+                  "word": "aero orange",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon chocolate",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate lemon",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "orange food colouring",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "orange food colour",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "oreos",
+              "exclude": [
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "jello",
+                },
+                {
+                  "word": "jell-o",
+                },
+              ],
+              "include": [
+                {
+                  "word": "oreo",
+                  "substitution": false,
+                },
+                {
+                  "word": "hydrox",
+                  "substitution": false,
+                },
+                {
+                  "word": "neo",
+                  "substitution": false,
+                },
+                {
+                  "word": "cream-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "cream o",
+                  "substitution": false,
+                },
+                {
+                  "word": "newman-o's",
+                  "substitution": false,
+                },
+                {
+                  "word": "newman o's",
+                  "substitution": false,
+                },
+                {
+                  "word": "joe-joe's",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate biscuits",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "orange roughy",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "red roughy",
+                  "substitution": false,
+                },
+                {
+                  "word": "slimehead",
+                  "substitution": false,
+                },
+                {
+                  "word": "perch",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "flounder",
+                  "substitution": true,
+                },
+                {
+                  "word": "haddock",
+                  "substitution": true,
+                },
+                {
+                  "word": "red snapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "tilapia",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "onion gravy",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "onion & ale gravy",
+                  "substitution": false,
+                },
+                {
+                  "word": "gravy granules onion",
+                  "substitution": false,
+                },
+                {
+                  "word": "vegetetable gravy",
+                  "substitution": true,
+                },
+                {
+                  "word": "veggie gravy",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetarian gravy",
+                  "substitution": true,
+                },
+                {
+                  "word": "gravy",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "onion sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "onion blossom sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soubise sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "oyster sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sauce oyster",
+                  "substitution": false,
+                },
+                {
+                  "word": "oyster flavour sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "teriyaki sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "hoisin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet soy sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcestershire sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "oyster sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sauce oyster",
+                  "substitution": false,
+                },
+                {
+                  "word": "oyster flavour sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mushroom sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "teriyaki sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "hoisin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet soy sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcestershire sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "oatcakes",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "oatcake",
+                  "substitution": false,
+                },
+                {
+                  "word": "oat cake",
+                  "substitution": false,
+                },
+                {
+                  "word": "rye oaty",
+                  "substitution": true,
+                },
+                {
+                  "word": "cracker",
+                  "substitution": true,
+                },
+                {
+                  "word": "digestive",
+                  "substitution": true,
+                },
+                {
+                  "word": "granola bar",
+                  "substitution": true,
+                },
+                {
+                  "word": "oatmeal cookies",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "oatcakes",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "oatcake",
+                  "substitution": false,
+                },
+                {
+                  "word": "oat cake",
+                  "substitution": false,
+                },
+                {
+                  "word": "rye oaty",
+                  "substitution": true,
+                },
+                {
+                  "word": "cracker",
+                  "substitution": true,
+                },
+                {
+                  "word": "digestive",
+                  "substitution": true,
+                },
+                {
+                  "word": "granola bar",
+                  "substitution": true,
+                },
+                {
+                  "word": "oatmeal cookies",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "oat yoghurt",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "oatgurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "oat yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "oat milk yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "oat milk yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "oatmilk yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "oatmilk yoghurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "soya & oats yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "soya and oats yogurt",
+                  "substitution": false,
+                },
+                {
+                  "word": "cashewgurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond milk yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond milk yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "almondmilk yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "almondmilk yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "nut milk yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "nut milk yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "nutmilk yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "nutmilk yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut milk yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut milk yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "soya yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "soya yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "soy yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "soy yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "dairy-free yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "dairy-free yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "dairy free yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "dairy free yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "milk-free yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "milk-free yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "milk free yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "milk free yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "nondairy yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "nondairy yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "non-dairy yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "non-dairy yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "non dairy yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "non dairy yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "yoghurt alternative",
+                  "substitution": true,
+                },
+                {
+                  "word": "yogurt alternative",
+                  "substitution": true,
+                },
+                {
+                  "word": "plant-based yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "plant-based yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "plant based yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "plant based yogurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "plain yoghurt",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "onion rings",
+              "exclude": [
+                {
+                  "word": "potato chips",
+                },
+              ],
+              "include": [
+                {
+                  "word": "fried onion",
+                  "substitution": true,
+                },
+                {
+                  "word": "fries",
+                  "substitution": true,
+                },
+                {
+                  "word": "chips",
+                  "substitution": true,
+                },
+                {
+                  "word": "onion bhaji",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "oatmeal cookies",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "oatmeal cookie",
+                  "substitution": false,
+                },
+                {
+                  "word": "oatmeal biscuit",
+                  "substitution": false,
+                },
                 {
                   "word": "oat biscuit",
                   "substitution": false,
@@ -44,6 +692,18 @@
                 {
                   "word": "oat cookie",
                   "substitution": false,
+                },
+                {
+                  "word": "oaties",
+                  "substitution": false,
+                },
+                {
+                  "word": "oat shortbread",
+                  "substitution": false,
+                },
+                {
+                  "word": "granola bar",
+                  "substitution": true,
                 },
               ],
           },
@@ -561,17 +1221,6 @@
                 {
                   "word": "flourless spray",
                   "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "oregano",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "rigani",
-                  "substitution": false,
                 },
               ],
           },

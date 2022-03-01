@@ -40,6 +40,21 @@
 
 
           {
+              "name": "granola bar",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "oatcakes",
+                  "substitution": true,
+                },
+                {
+                  "word": "granola",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "gin",
               "exclude": [
               ],
@@ -434,6 +449,10 @@
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "granola bar",
+                  "substitution": true,
+                },
                 {
                   "word": "muesli",
                   "substitution": true,
@@ -1975,6 +1994,10 @@
                 "word": "havarti",
                 "substitution": true,
               },
+              {
+                "word": "oka",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -2012,6 +2035,10 @@
               },
               {
                 "word": "havarti",
+                "substitution": true,
+              },
+              {
+                "word": "oka",
                 "substitution": true,
               },
             ],

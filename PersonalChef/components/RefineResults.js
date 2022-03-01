@@ -163,7 +163,7 @@ const RefineResults = props => {
                                                    include_words.push(word)
                                                }
                                            }
-                                       }
+                                       }                            //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ///////////////////////////////////
 
                                        var extra_check = false
                                        if(extra_check === false){
@@ -403,7 +403,7 @@ const RefineResults = props => {
                                                         include_words.push(word)
                                                     }
                                                 }
-                                            }
+                                            }                       //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ///////////////////////////////////
 
                                             var find = FindIngredient(include_words,ingredient_lower)
                                             var result = find[0]
@@ -614,7 +614,7 @@ const RefineResults = props => {
                                                 include_words.push(word)
                                             }
                                         }
-                                    }                           //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)
+                                    }                           //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ////////////////////////////////////////
 
                                     for(x in checked_ingredients){
 

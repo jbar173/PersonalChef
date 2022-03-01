@@ -6,6 +6,8 @@
 
                       "caviar", "cod", "cockles", "crab", "crayfish",
 
+                      "dried shrimp",
+
                       "fish cakes", "flounder", "fluke",
 
                       "haddock", "hake", "halibut", "herring",
@@ -18,7 +20,7 @@
 
                       "orange roughy",
 
-                      "pangasius", "pilchards", "plaice", "pollock", "prawns",
+                      "pangasius", "perch", "pilchards", "plaice", "pollock", "prawns",
 
                       "rainbow trout",
 
@@ -26,6 +28,8 @@
                       "smoked salmon", "sole", "sprat", "squid",
 
                       "tempura prawns", "tilapia", "trout", "tuna", "turbot",
+
+                      "walleye",
 
     ]
 }

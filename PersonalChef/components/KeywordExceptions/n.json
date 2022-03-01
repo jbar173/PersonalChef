@@ -1,8 +1,9 @@
 {
 
-    "key" : [ "nutella",
+    "key" : [ "nerds","nougat","nutella","nutty chocolate",
               "noodles",
-              "nutmeg",
+              "nectarine",
+              "nigella seeds","nutmeg",
               "navy beans",
 
 
@@ -12,9 +13,7 @@
 
 
               "~~~ TO DO : ~~~",
-              "nerds", "nougat", "nutty chocolate",
-              "nectarine",
-              "nigella seeds",
+
 
     ],
 
@@ -23,6 +22,128 @@
 
 
 
+          {
+              "name": "nerds",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pop rocks",
+                  "substitution": true,
+                },
+                {
+                  "word": "shock rocks",
+                  "substitution": true,
+                },
+                {
+                  "word": "popping candy",
+                  "substitution": true,
+                },
+                {
+                  "word": "dweebs",
+                  "substitution": true,
+                },
+                {
+                  "word": "sugar sprinkles",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "nougat",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "turron",
+                  "substitution": false,
+                },
+                {
+                  "word": "torrone",
+                  "substitution": false,
+                },
+                {
+                  "word": "nuget",
+                  "substitution": false,
+                },
+                {
+                  "word": "halva",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "nutty chocolate",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dairy milk whole nut",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit & nut chocolate",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit and nut chocolate",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate peanuts",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "nectarine",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peach",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "nigella seeds",
+              "exclude": [
+                {
+                  "word": "oil",
+                },
+              ],
+              "include": [
+                {
+                  "word": "ground nigella",
+                  "substitution": false,
+                },
+                {
+                  "word": "black cumin",
+                  "substitution": false,
+                },
+                {
+                  "word": "kashmiri jeera",
+                  "substitution": false,
+                },
+                {
+                  "word": "caraway seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "celery seeds",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "nasi goreng paste",
               "exclude": [

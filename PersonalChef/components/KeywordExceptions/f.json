@@ -24,6 +24,7 @@
 
              "flatbread",
              "flounder","fluke",
+             "fish paste",
              "fries",
 
 
@@ -37,6 +38,45 @@
     "ingredients": [
 
 
+          {
+              "name": "fish paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shrimp paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "belacan",
+                  "substitution": true,
+                },
+                {
+                  "word": "terasi",
+                  "substitution": true,
+                },
+                {
+                  "word": "kapi",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovy paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "oyster sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp sauce",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "fluke",
               "exclude": [
@@ -67,6 +107,14 @@
                 },
                 {
                   "word": "sole",
+                  "substitution": true,
+                },
+                {
+                  "word": "perch",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange roughy",
                   "substitution": true,
                 },
               ],
@@ -433,6 +481,10 @@
                 {
                   "word": "dried oregano",
                   "substitution": true,
+                },
+                {
+                  "word": "rigani",
+                  "substitution": false,
                 },
                 {
                   "word": "oregano",
@@ -1426,6 +1478,10 @@
                   "word": "crumpet",
                   "substitution": true,
                 },
+                {
+                  "word": "oatcake",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1453,7 +1509,15 @@
               ],
               "include": [
                 {
-                  "word": "kasuri methi",
+                  "word": "fenugreek leave",
+                  "substitution": false,
+                },
+                {
+                  "word": "fenugreek leaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "methi",
                   "substitution": false,
                 },
               ],
@@ -1660,6 +1724,18 @@
                 {
                   "word": "nam pla",
                   "substitution": false,
+                },
+                {
+                  "word": "oyster sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp paste",
+                  "substitution": true,
                 },
               ],
           },

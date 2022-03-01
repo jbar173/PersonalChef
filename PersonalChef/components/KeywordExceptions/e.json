@@ -1,7 +1,7 @@
 {
 
     "key" : ["elderflower flavoured spirit/liqueur",
-             "edam","emmental","epoisses",
+             "emmental","epoisses",
              "edamame beans","endive",
              "evaporated milk",
              "enchilada sauce","english mustard","extra virgin olive oil","ezme paste",
@@ -9,7 +9,7 @@
              "egg","egg replacer","egg whites",
 
              "~~~ HALF DONE : ~~~",
-             "elderflower cordial",
+             "edam","elderflower cordial",
 
 
              "~~~ TO DO : ~~~",
@@ -386,6 +386,10 @@
               },
             ],
             "include": [
+              {
+                "word": "oka",
+                "substitution": true,
+              },
             ],
           },
           {
