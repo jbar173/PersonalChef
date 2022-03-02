@@ -731,6 +731,14 @@
               ],
               "include": [
                 {
+                  "word": "apple loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple loose leaf tea",
+                  "substitution": false,
+                },
+                {
                   "word": "apple infusion",
                   "substitution": false,
                 },
@@ -744,6 +752,18 @@
                 },
                 {
                   "word": "apple herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavored tea",
                   "substitution": false,
                 },
                 {

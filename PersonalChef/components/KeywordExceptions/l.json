@@ -779,6 +779,14 @@
             ],
             "include": [
               {
+                "word": "lemon loose tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon loose leaf tea",
+                "substitution": false,
+              },
+              {
                 "word": "lemon infusion",
                 "substitution": false,
               },
@@ -792,6 +800,10 @@
               },
               {
                 "word": "lemon herbal tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon fruit tea",
                 "substitution": false,
               },
               {

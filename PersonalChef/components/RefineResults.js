@@ -59,7 +59,6 @@ const RefineResults = props => {
   var almost_list = []
   var i
   var j
-  var finished = false
   var recipes_on_page = []
   var substitutes_dict = {}
   var contains_one_over = false
@@ -145,25 +144,43 @@ const RefineResults = props => {
 
                                        var include_words = [ user_ingredients[y], ]
                                        var original_ingredient = include_words[0]
-                                       var is_key = false
+                                       // var is_key = false
                                        var p
                                        var q
+                                       var s
+                                       var t
 
                                    // Finds 'include' words for user's ingredient in keywordExceptions:
                                        var first_letter = user_ingredients[y][0]
                                        var exceptions = keys[`${first_letter}`]
 
-                                       for(p in exceptions){
+                                       for(p in exceptions){    // Finds first set of 'include' words
                                            var name = exceptions[p]['name']
                                            if(name === user_ingredients[y]){
-                                               is_key = true
+                                               // is_key = true
                                                var include = exceptions[p]['include']
                                                for(q in include){
                                                    var word = include[q]['word']
                                                    include_words.push(word)
+///////////////////////////////////////////     T   E   S  T    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                   var f_letter_word = word[0]      // Finds second set of 'include' words: (searches for word that was pushed above),
+                                                   var word_exceptions = keys[`${f_letter_word}`] // if found, adds each of its own 'include' words to include_words,
+                                                   for(s in word_exceptions){                       //  directly underneath original word.
+                                                     var name_two = word_exceptions[s]['name']
+                                                     if(name_two === word){
+                                                       var include_two = word_exceptions[s]['include']
+                                                       for(t in include_two){
+                                                         var word_two = include_two[t]['word']
+                                                         include_words.push(word_two)
+                                                       }
+                                                       break;
+                                                     }
+                                                   }
                                                }
+                                               break;
                                            }
-                                       }                            //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ///////////////////////////////////
+                                       }
+ //////////////////////////////////////////////     end of code to be tested    ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
                                        var extra_check = false
                                        if(extra_check === false){
@@ -385,7 +402,7 @@ const RefineResults = props => {
 
                                             var include_words = [ user_ingredients[ing], ]
                                             var original_ingredient = include_words[0]
-                                            var is_key = false
+                                            // var is_key = false
                                             var p
                                             var q
 
@@ -396,7 +413,7 @@ const RefineResults = props => {
                                             for(p in exceptions){
                                                 var name = exceptions[p]['name']
                                                 if(name === user_ingredients[ing]){
-                                                    is_key = true
+                                                    // is_key = true
                                                     var include = exceptions[p]['include']
                                                     for(q in include){
                                                         var word = include[q]['word']

@@ -7,8 +7,9 @@
               "prosciutto","pork","pulled pork","pork trotter","pate",
               "parsnip","pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
               "pepper","pork seasoning","parsley",
-              "passata","pickles","pinto beans","pumpkin puree",
-              "palm oil","panang curry paste","peanut oil","pork stock",
+              "passata","pickles","pinto beans","piri piri sauce","piri piri seasoning","ponzu sauce","pumpkin puree",
+              "palm oil","panang curry paste","peanut oil","plum sauce","pork stock","pumpkin pesto",
+              "peach tea","pear tea","pineapple tea","pink lemonade","prune juice",
               "plain yoghurt","powdered milk",
 
 
@@ -37,10 +38,7 @@
               "paprika",
               "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage", "pickled walnuts",
 
-              "parsley sauce", "peanut butter", "peppercorn sauce", "peri peri mayonnaise", "piccalilli", "pickled ginger", "piri piri sauce",
-              "plum and hoisin sauce", "plum sauce", "pumpkin pesto",
-
-              "peach tea", "pear tea", "pepsi cherry", "pineapple tea", "pink lemonade", "prune juice",
+              "parsley sauce", "peanut butter", "peppercorn sauce", "peri peri mayonnaise", "piccalilli", "pickled ginger", "ponzu sauce",
 
     ],
 
@@ -48,7 +46,633 @@
     "ingredients": [
 
 
-
+          {
+              "name": "ponzu sauce",
+              "exclude": [
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "piri piri seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "piri-piri seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri peri seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri-peri seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri piri chilli seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri-piri chilli seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri peri chilli seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri-peri chilli seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri piri rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri-piri rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri peri rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri-peri rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri piri blend",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri-piri blend",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri peri blend",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri-peri blend",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri piri spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri-piri spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri peri spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri-peri spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri piri salt",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri-piri salt",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri peri salt",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri-peri salt",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "piri piri sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "piri piri sauce",
+              "exclude": [
+                {
+                  "word": "houmous",
+                },
+                {
+                  "word": "kabanos",
+                },
+              ],
+              "include": [
+                {
+                  "word": "piri piri seasoning",
+                  "substitution": true,
+                },
+                {
+                  "word": "piri piri",
+                  "substitution": false,
+                },
+                {
+                  "word": "piri-piri",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri peri",
+                  "substitution": false,
+                },
+                {
+                  "word": "peri-peri",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "plum sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sauce plum",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum dipping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum & hoisin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum and hoisin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum hoisin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum hoi sin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum & mandarin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum and mandarin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum mandarin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum & mandarin cooking sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum and mandarin cooking sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum mandarin cooking sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum & chilli dipping sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum and chilli dipping sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum & chilli sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum and chilli sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum chilli sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum chipotle sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "duck sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "hoisin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet and sour sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "char siu sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "oyster sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "shacha sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "sha cha sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum chutney",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum jam",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pumpkin pesto",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pumpkin pasta sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin alfredo",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin ketchup",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin curry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "curried pumpkin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "spicy pumpkin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin curry simmer sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin soup",
+                  "substitution": true,
+                },
+                {
+                  "word": "red pesto",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "peach tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peach loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach loose leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach black tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach tea bag",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach passion tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach bellini tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach apricot tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach & orange tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach and orange tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach & mango tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach and mango tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach, raspberry & rose tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach, raspberry and rose tea",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pear tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pear loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear loose leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear tea bag",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear & fig tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pear and fig tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pear, mango & raspberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pear, mango and raspberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pear cinnamon herbal tea",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pineapple tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pineapple loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple loose leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple tea bag",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple & lychee tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple and lychee tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple & grapefruit green tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple and grapefruit green tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple & pear fruit tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple and pear fruit tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple & lemongrass green tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple and lemongrass green tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple & vanilla green tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple and vanilla green tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple & mint tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple and mint tea",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pink lemonade",
+              "exclude": [
+                {
+                  "word": "tea",
+                },
+              ],
+              "include": [
+                {
+                  "word": "rose lemonade",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry lemonade",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry lemonade",
+                  "substitution": true,
+                },
+                {
+                  "word": "cranberry lemonade",
+                  "substitution": true,
+                },
+                {
+                  "word": "pink alcoholic lemonade",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemonade",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "prune juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "plum juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "grape juice",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "perch",
               "exclude": [
@@ -380,6 +1004,14 @@
               ],
               "include": [
                 {
+                  "word": "passionfruit loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit loose leaf tea",
+                  "substitution": false,
+                },
+                {
                   "word": "passionfruit infusion",
                   "substitution": false,
                 },
@@ -396,6 +1028,18 @@
                   "substitution": false,
                 },
                 {
+                  "word": "passionfruit fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavored tea",
+                  "substitution": false,
+                },
+                {
                   "word": "passionfruit teabag",
                   "substitution": false,
                 },
@@ -405,6 +1049,14 @@
                 },
                 {
                   "word": "passion fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit loose leaf tea",
                   "substitution": false,
                 },
                 {
@@ -421,6 +1073,18 @@
                 },
                 {
                   "word": "passion fruit herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit flavored tea",
                   "substitution": false,
                 },
                 {
@@ -2539,6 +3203,10 @@
                 {
                   "word": "pack pumpkin",
                   "substitution": false,
+                },
+                {
+                  "word": "pumpkin pesto",
+                  "substitution": true,
                 },
               ],
           },

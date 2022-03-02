@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "~filler~",
+    "key" : [
 
 
 
@@ -8,11 +8,28 @@
 
 
             "~~~ TO DO : ~~~",
-            "xanthan gum/egg whites(sub)",
+            "xanthan gum/egg whites(sub)", "xo sauce",
     ],
 
 
     "ingredients": [
+
+
+      {
+          "name": "xo sauce",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "sha cha sauce",
+              "substitution": true,
+            },
+            {
+              "word": "shacha sauce",
+              "substitution": true,
+            },
+          ],
+      },
 
 
 

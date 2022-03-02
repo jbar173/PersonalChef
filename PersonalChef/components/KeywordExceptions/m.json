@@ -2359,6 +2359,14 @@
               ],
               "include": [
                 {
+                  "word": "mango loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango loose leaf tea",
+                  "substitution": false,
+                },
+                {
                   "word": "mango infusion",
                   "substitution": false,
                 },
@@ -2372,6 +2380,18 @@
                 },
                 {
                   "word": "mango herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavored tea",
                   "substitution": false,
                 },
                 {
@@ -2398,7 +2418,87 @@
               ],
               "include": [
                 {
+                  "word": "mint loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint loose leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint tea bag",
+                  "substitution": false,
+                },
+                {
                   "word": "peppermint tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint loose leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint tea bag",
                   "substitution": false,
                 },
               ],

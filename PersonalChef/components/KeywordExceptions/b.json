@@ -887,6 +887,14 @@
           ],
           "include": [
             {
+              "word": "berry loose tea",
+              "substitution": false,
+            },
+            {
+              "word": "berry loose leaf tea",
+              "substitution": false,
+            },
+            {
               "word": "berry infusion",
               "substitution": false,
             },
@@ -900,6 +908,18 @@
             },
             {
               "word": "berry herbal tea",
+              "substitution": false,
+            },
+            {
+              "word": "berry fruit tea",
+              "substitution": false,
+            },
+            {
+              "word": "berry flavoured tea",
+              "substitution": false,
+            },
+            {
+              "word": "berry flavored tea",
               "substitution": false,
             },
             {
@@ -945,6 +965,14 @@
           "exclude": [
           ],
           "include": [
+            {
+              "word": "black loose tea",
+              "substitution": false,
+            },
+            {
+              "word": "black loose leaf tea",
+              "substitution": false,
+            },
             {
               "word": "black teabag",
               "substitution": false,
@@ -1184,6 +1212,14 @@
           ],
           "include": [
             {
+              "word": "blackcurrant loose tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant loose leaf tea",
+              "substitution": false,
+            },
+            {
               "word": "blackcurrant infusion",
               "substitution": false,
             },
@@ -1197,6 +1233,18 @@
             },
             {
               "word": "blackcurrant herbal tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant fruit tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant flavoured tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant flavored tea",
               "substitution": false,
             },
             {

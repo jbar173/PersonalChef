@@ -16,7 +16,7 @@
               "caviar","clams","cod","cockles","crab","crayfish",
               "chicken","chicken mince","cured sausage/meat",
 
-              "cabbage","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli paepper","clementine",
+              "cabbage","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli pepper","clementine",
               "collard greens","courgette","cucumber",
 
               "cajun spice","caraway seeds","cayenne","celery salt","celery seeds","chana masala spice blend","chicken seasoning","chilli flakes","chilli powder",
@@ -2815,6 +2815,10 @@
                 "word": "chilli sauce",
                 "substitution": true,
               },
+              {
+                "word": "chilli chutney",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -3291,6 +3295,14 @@
             ],
             "include": [
               {
+                "word": "cherry loose tea",
+                "substitution": false,
+              },
+              {
+                "word": "cherry loose leaf tea",
+                "substitution": false,
+              },
+              {
                 "word": "cherry infusion",
                 "substitution": false,
               },
@@ -3304,6 +3316,18 @@
               },
               {
                 "word": "cherry herbal tea",
+                "substitution": false,
+              },
+              {
+                "word": "cherry fruit tea",
+                "substitution": false,
+              },
+              {
+                "word": "cherry flavoured tea",
+                "substitution": false,
+              },
+              {
+                "word": "cherry flavored tea",
                 "substitution": false,
               },
               {
@@ -3867,6 +3891,10 @@
                 "word": "bbq sauce",
                 "substitution": true,
               },
+              {
+                "word": "plum sauce",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -3890,6 +3918,14 @@
             ],
             "include": [
               {
+                "word": "cranberry loose tea",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry loose leaf tea",
+                "substitution": false,
+              },
+              {
                 "word": "cranberry infusion",
                 "substitution": false,
               },
@@ -3903,6 +3939,18 @@
               },
               {
                 "word": "cranberry herbal tea",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry fruit tea",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry flavoured tea",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry flavored tea",
                 "substitution": false,
               },
               {
@@ -3945,6 +3993,10 @@
                 "substitution": false,
               },
               {
+                "word": "pepsi cherry",
+                "substitution": false,
+              },
+              {
                 "word": "coca cola",
                 "substitution": true,
               },
@@ -3980,6 +4032,22 @@
             "include": [
               {
                 "word": "chamomile tea",
+                "substitution": false,
+              },
+              {
+                "word": "camomile loose tea",
+                "substitution": false,
+              },
+              {
+                "word": "camomile loose leaf tea",
+                "substitution": false,
+              },
+              {
+                "word": "chamomile loose tea",
+                "substitution": false,
+              },
+              {
+                "word": "chamomile loose leaf tea",
                 "substitution": false,
               },
               {
@@ -4313,6 +4381,58 @@
             ],
             "include": [
               {
+                "word": "chilli chutney",
+                "substitution": false,
+              },
+              {
+                "word": "chilli onion chutney",
+                "substitution": false,
+              },
+              {
+                "word": "chilli pickle",
+                "substitution": false,
+              },
+              {
+                "word": "chilli lilli pickle",
+                "substitution": false,
+              },
+              {
+                "word": "chilli jam",
+                "substitution": false,
+              },
+              {
+                "word": "chili jam",
+                "substitution": true,
+              },
+              {
+                "word": "chilli relish",
+                "substitution": false,
+              },
+              {
+                "word": "chilli onion relish",
+                "substitution": false,
+              },
+              {
+                "word": "chilli tomato relish",
+                "substitution": true,
+              },
+              {
+                "word": "chilli & tomato relish",
+                "substitution": true,
+              },
+              {
+                "word": "chilli and tomato relish",
+                "substitution": true,
+              },
+              {
+                "word": "chilli & ginger chutney",
+                "substitution": false,
+              },
+              {
+                "word": "chilli and ginger chutney",
+                "substitution": false,
+              },
+              {
                 "word": "habanero relish",
                 "substitution": false,
               },
@@ -4322,6 +4442,22 @@
               },
               {
                 "word": "mango pickle",
+                "substitution": true,
+              },
+              {
+                "word": "hot mango chutney",
+                "substitution": true,
+              },
+              {
+                "word": "spicy mango chutney",
+                "substitution": true,
+              },
+              {
+                "word": "chilli pesto",
+                "substitution": true,
+              },
+              {
+                "word": "chilli sauce",
                 "substitution": true,
               },
             ],
@@ -5221,7 +5357,7 @@
               "substitution": true,
             },
             {
-              "word": "chili paste",
+              "word": "peri peri seasoning",
               "substitution": true,
             },
             {
@@ -5229,23 +5365,7 @@
               "substitution": true,
             },
             {
-              "word": "chile paste",
-              "substitution": true,
-            },
-            {
-              "word": "chili",
-              "substitution": true,
-            },
-            {
-              "word": "chilli",
-              "substitution": true,
-            },
-            {
               "word": "chillies",
-              "substitution": true,
-            },
-            {
-              "word": "chile",
               "substitution": true,
             },
             {
@@ -5254,6 +5374,18 @@
             },
             {
               "word": "piment d'espelette",
+              "substitution": true,
+            },
+            {
+              "word": "chilli",
+              "substitution": true,
+            },
+            {
+              "word": "chili",
+              "substitution": true,
+            },
+            {
+              "word": "chile",
               "substitution": true,
             },
           ],
@@ -5300,10 +5432,6 @@
                 "substitution": false,
               },
               {
-                "word": "chilli jam",
-                "substitution": false,
-              },
-              {
                 "word": "pepper sauce",
                 "substitution": false,
               },
@@ -5344,10 +5472,6 @@
                 "substitution": true,
               },
               {
-                "word": "chili jam",
-                "substitution": true,
-              },
-              {
                 "word": "enchilada sauce",
                 "substitution": true,
               },
@@ -5368,7 +5492,19 @@
                 "substitution": true,
               },
               {
+                "word": "chilli paste",
+                "substitution": true,
+              },
+              {
                 "word": "chilli pesto",
+                "substitution": true,
+              },
+              {
+                "word": "chilli chutney",
+                "substitution": true,
+              },
+              {
+                "word": "piri piri sauce",
                 "substitution": true,
               },
             ],
@@ -5965,22 +6101,6 @@
               "substitution": true,
             },
             {
-              "word": "chili",
-              "substitution": true,
-            },
-            {
-              "word": "chilli",
-              "substitution": true,
-            },
-            {
-              "word": "chillies",
-              "substitution": true,
-            },
-            {
-              "word": "chile",
-              "substitution": true,
-            },
-            {
               "word": "scotch bonnet",
               "substitution": true,
             },
@@ -5990,6 +6110,26 @@
             },
             {
               "word": "ezme paste",
+              "substitution": true,
+            },
+            {
+              "word": "chilli pesto",
+              "substitution": true,
+            },
+            {
+              "word": "chillies",
+              "substitution": true,
+            },
+            {
+              "word": "chilli",
+              "substitution": true,
+            },
+            {
+              "word": "chili",
+              "substitution": true,
+            },
+            {
+              "word": "chile",
               "substitution": true,
             },
           ],
@@ -6044,7 +6184,7 @@
               "substitution": true,
             },
             {
-              "word": "chili",
+              "word": "chillies",
               "substitution": true,
             },
             {
@@ -6052,7 +6192,7 @@
               "substitution": true,
             },
             {
-              "word": "chillies",
+              "word": "chili",
               "substitution": true,
             },
             {

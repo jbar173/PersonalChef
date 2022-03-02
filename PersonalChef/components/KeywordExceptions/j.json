@@ -372,6 +372,14 @@
             ],
             "include": [
               {
+                "word": "jasmine loose tea",
+                "substitution": false,
+              },
+              {
+                "word": "jasmine loose leaf tea",
+                "substitution": false,
+              },
+              {
                 "word": "jasmine infusion",
                 "substitution": false,
               },

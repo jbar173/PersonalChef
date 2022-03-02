@@ -415,6 +415,14 @@
                   "word": "sweet & sour sauce",
                   "substitution": false,
                 },
+                {
+                  "word": "plum sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "duck sauce",
+                  "substitution": true,
+                },
               ],
           },
           {

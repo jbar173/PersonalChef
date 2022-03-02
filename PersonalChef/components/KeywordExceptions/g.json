@@ -732,6 +732,14 @@
               ],
               "include": [
                 {
+                  "word": "green loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "green loose leaf tea",
+                  "substitution": false,
+                },
+                {
                   "word": "green tea tea bag",
                   "substitution": false,
                 },
@@ -761,6 +769,14 @@
                 },
                 {
                   "word": "matcha tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "matcha loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "matcha loose leaf tea",
                   "substitution": false,
                 },
                 {
@@ -1175,6 +1191,14 @@
               ],
               "include": [
                 {
+                  "word": "ginger loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger loose leaf tea",
+                  "substitution": false,
+                },
+                {
                   "word": "ginger infusion",
                   "substitution": false,
                 },
@@ -1188,6 +1212,14 @@
                 },
                 {
                   "word": "ginger herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavored tea",
                   "substitution": false,
                 },
                 {

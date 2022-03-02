@@ -27,8 +27,8 @@
               "tomato soup", "tapioca pudding",
 
               "tabasco", "tagine paste", "tahini/tahineh/miso(sub)", "tahini sesame sauce", "tamarind sauce/tamarind powder/mango powder?(subs)", "tandoori paste",
-              "teriyaki sauce/oyster sauce(sub)", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste", "truffle mayonnaise", "truffle oil",
-              "tuna pasta sauce", "tuna paste",
+              "teriyaki sauce/marinade/oyster sauce/ponzu sauce(sub)", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste", "truffle mayonnaise",
+              "truffle oil", "tuna pasta sauce", "tuna paste",
 
               "tomato juice",
               "taramasalata", "tiramisu", "toffee popcorn", "toffee sundae", "tortelloni/ravioli/girasoli/tortellini/mezzelune(subs)", "trifle", "twiglets", "tzatziki",
@@ -690,6 +690,10 @@
                 },
                 {
                   "word": "ezme paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "red pesto",
                   "substitution": true,
                 },
                 {

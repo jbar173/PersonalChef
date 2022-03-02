@@ -468,6 +468,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "mint tea",
+                  "substitution": true,
+                },
+                {
                   "word": "mint",
                   "substitution": false,
                 },
@@ -908,6 +912,14 @@
               ],
               "include": [
                 {
+                  "word": "fennel loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel loose leaf tea",
+                  "substitution": false,
+                },
+                {
                   "word": "fennel teabag",
                   "substitution": false,
                 },
@@ -921,6 +933,14 @@
                 },
                 {
                   "word": "fennel herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel flavored tea",
                   "substitution": false,
                 },
                 {
