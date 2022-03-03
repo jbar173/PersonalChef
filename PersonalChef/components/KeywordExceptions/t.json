@@ -15,7 +15,7 @@
 
               "~~~ HALF DONE : ~~~",
               "turbot",
-              "tartare sauce", "thai green curry sauce", "thai red curry sauce",
+              "tahini", "tartare sauce", "thai green curry sauce", "thai red curry sauce",
 
 
               "~~~ TO DO : ~~~",
@@ -26,7 +26,7 @@
               "thai basil",
               "tomato soup", "tapioca pudding",
 
-              "tabasco", "tagine paste", "tahini/tahineh/miso(sub)", "tahini sesame sauce", "tamarind sauce/tamarind powder/mango powder?(subs)", "tandoori paste",
+              "tabasco", "tagine paste", "tahini sesame sauce", "tamarind sauce/tamarind powder/mango powder?(subs)", "tandoori paste",
               "teriyaki sauce/marinade/oyster sauce/ponzu sauce(sub)", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste", "truffle mayonnaise",
               "truffle oil", "tuna pasta sauce", "tuna paste",
 
@@ -39,7 +39,53 @@
     "ingredients": [
 
 
-
+          {
+              "name": "tahini",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tahineh",
+                  "substitution": false,
+                },
+                {
+                  "word": "tahin",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame seed butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame seed spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame seed paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "seed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "miso",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "turbot",
               "exclude": [
@@ -279,6 +325,10 @@
                 {
                   "word": "bean curd",
                   "substitution": false,
+                },
+                {
+                  "word": "paneer",
+                  "substitution": true,
                 },
               ],
           },

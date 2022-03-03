@@ -1724,6 +1724,10 @@
                 "word": "worcester sauce",
                 "substitution": true,
               },
+              {
+                "word": "peppercorn sauce",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1832,6 +1836,10 @@
               },
               {
                 "word": "seafood dressing",
+                "substitution": true,
+              },
+              {
+                "word": "lemon butter sauce",
                 "substitution": true,
               },
             ],

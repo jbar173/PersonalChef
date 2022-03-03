@@ -1,6 +1,6 @@
 {
     "name": "oils_sauces_and_condiments_ingredients",
-    "ingredients": [  "achiote", "aioli", "almond butter", "avocado oil", "anchovy paste", "apple sauce", "apricot and coriander sauce", "apricot harissa paste", "arrabiata sauce",
+    "ingredients": [  "achiote", "aioli", "avocado oil", "anchovy paste", "apple sauce", "apricot and coriander sauce", "apricot harissa paste", "arrabiata sauce",
                       "aubergine paste", "avocado oil",
 
                       "baconnaise", "barbeque sauce", "basil oil", "beef stock", "beetroot pesto", "blue cheese dressing", "bhuna sauce", "bread sauce", "brown sauce", "burger sauce",
@@ -8,8 +8,8 @@
 
                       "chilli paste", "chilli sauce", "chutney", "cooking spray",
 
-                      "caesar dressing", "canola oil", "cantonese sauce", "carbonara sauce", "cashew butter", "cashew paste", "casserole sauce", "char siu sauce", "cheese sauce",
-                      "chermoula", "chestnut puree", "chicken paste", "chicken stock","chilli chutney relish", "chilli con carne sauce", "chilli garlic curry paste", "chilli infused oil",
+                      "caesar dressing", "canola oil", "cantonese sauce", "carbonara sauce", "casserole sauce", "char siu sauce", "cheese sauce", "chermoula",
+                      "chestnut puree", "chicken paste", "chicken stock","chilli chutney relish", "chilli con carne sauce", "chilli garlic curry paste", "chilli infused oil",
                       "chilli mayonnaise", "chilli paste", "chilli pesto", "chilli sauce", "chilli soy sauce", "chimichurri", "chutney", "coconut milk powder", "chow mein sauce",
                       "coconut oil", "cooking spray", "coriander puree", "corn oil", "cranberry sauce", "curry sauce",
 
@@ -41,15 +41,15 @@
 
                       "olive oil", "onion gravy", "onion sauce", "oyster sauce",
 
-                      "panang curry paste", "palm oil", "parsley sauce", "peanut butter", "peanut oil", "peppercorn sauce", "peri peri mayonnaise", "piccalilli", "pickled ginger",
-                      "piri piri sauce", "plum sauce", "ponzu sauce", "pork stock", "pumpkin pesto",
+                      "panang curry paste", "palm oil", "parsley sauce", "peanut oil", "peppercorn sauce", "piccalilli", "pickled ginger", "piri piri sauce", "plum sauce",
+                      "ponzu sauce", "pork stock", "pumpkin pesto",
 
                       "ramen broth", "rapeseed oil", "redcurrant jelly", "red curry paste", "red pesto", "red wine stock", "rendang curry paste", "rice bran oil",
                       "rogan josh sauce",
 
-                      "safflower oil", "salad cream", "salmon paste", "salsa", "sardine and tomato paste", "satay sauce", "sauerkraut", "seafood sauce/marie rose", "sesame oil", "smoky onion relish",
-                      "smoked paprika pesto", "smoky red pepper dressing", "soy sauce", "spaghetti hoops", "spicy brown mustard", "sweet and sour sauce", "sunflower oil", "sweet chilli sauce",
-                      "sweet chilli and garlic", "sweet piccalilli", "sweet pickle relish",
+                      "safflower oil", "salad cream", "salmon paste", "salsa", "sardine and tomato paste", "satay sauce", "sauerkraut", "seafood sauce/marie rose", "sesame oil", "shrimp paste",
+                      "smoky onion relish", "smoked paprika pesto", "smoky red pepper dressing", "soy sauce", "spaghetti hoops", "spicy brown mustard", "sunflower oil",
+                      "sweet and sour sauce", "sweet chilli sauce", "sweet chilli and garlic", "sweet piccalilli", "sweet pickle relish",
 
                       "tabasco", "tagine paste", "tahini", "tahini sesame sauce", "tamarind sauce", "tandoori paste", "tapenade", "tartare sauce", "teriyaki sauce", "tikka sauce",
                       "thai green curry sauce", "thai red curry sauce", "thousand island dressing", "tomato ketchup", "tomato paste", "tomato stock", "tom yum paste", "truffle mayonnaise",

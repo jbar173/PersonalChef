@@ -18,9 +18,9 @@
               "sweetener",
               "short grain rice",
               "sardines",
-              "spicy brown mustard",  "sweet and sour sauce",  "sweet chilli and garlic", "sweet chilli sauce", "sweet pickle relish",
+              "spicy brown mustard","sweet and sour sauce","sweet chilli and garlic","sweet chilli sauce","sweet pickle relish",
               "strawberry milkshake",
-              "salted popcorn", "sweet popcorn",
+              "salted popcorn","seed butter","soy butter","sunflower seed butter","sweet popcorn",
 
 
               "~~~ TO DO : ~~~",
@@ -39,14 +39,14 @@
               "saffron", "seaweed seasoning", "shawarma seasoning", "smokey spice", "sorrel", "spirulina powder", "star anise/mulled wine spice(sub)", "steak seasoning",
               "sumac/mango powder(sub)",
 
-              "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut/kimchi(subs)", "seafood sauce", "smoky onion relish",
+              "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut/kimchi(subs)", "seafood sauce", "shrimp paste/fish paste(sub)", "smoky onion relish",
               "smoked paprika pesto", "smoky red pepper dressing", "spaghetti hoops", "stir fry sauce", "sweet chilli and garlic", "sweet piccalilli",
               "sweet pickle relish",
 
               "strawberry tea",
 
-              "salmon sushi", "salted caramel mousse", "sausage roll", "seaweed thins", "sev mamra", "sorbet", "spicy green peas and peanuts", "spring rolls",
-              "stuffing", "sunflower spread", "sweet chilli biscuits", "sweet and salted popcorn", "sweet potato fries", "spinach puree/passionfruit purée",
+              "salmon sushi", "salted caramel mousse", "sausage roll", "seaweed thins", "sev mamra", "sorbet", "spicy green peas and peanuts", "spring rolls", "stuffing",
+              "sunflower spread", "sweet chilli biscuits", "sweet and salted popcorn", "sweet potato fries", "spinach puree/passionfruit purée",
 
     ],
 
@@ -54,7 +54,259 @@
     "ingredients": [
 
 
-
+          {
+              "name": "soy butter",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "soynut butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy nut butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "wowbutter",
+                  "substitution": false,
+                },
+                {
+                  "word": "nut butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "seed butter",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sunflower seed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower seed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower seed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunbutter",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame seed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame seed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame seed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "tahini",
+                  "substitution": true,
+                },
+                {
+                  "word": "tahineh",
+                  "substitution": true,
+                },
+                {
+                  "word": "tahin",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "hempseed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "hempseed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "hempseed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "flax seed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "flax butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "flax seed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "flax spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "flax seed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "flax paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "lin seed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "linseed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "lin seed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "linseed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "lin seed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "linseed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "chia butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "chia seed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "chia spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "chia seed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "chia paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sunflower seed butter",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sunflower butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower seed spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower seed paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunbutter",
+                  "substitution": false,
+                },
+                {
+                  "word": "seed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "nut butter",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "strawberry milkshake",
               "exclude": [
@@ -894,6 +1146,10 @@
                 {
                   "word": "shoyu",
                   "substitution": false,
+                },
+                {
+                  "word": "ponzu sauce",
+                  "substitution": true,
                 },
               ],
           },

@@ -18,14 +18,14 @@
              "~~~ HALF DONE : ~~~",
 
              "fig syrup", "fondant icing", "fresh apple juice", "fresh blackcurrant juice", "fresh blueberry juice", "fresh cherry juice", "fresh cranberry juice",
-             "fresh grapefruit juice", "fresh grape juice", "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice", "fresh passion fruit juice",
-             "fresh peach juice", "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice", "fresh strawberry juice",
-             "fresh tropical juice", "fruit syrup",
+             "fresh grapefruit juice", "fresh grape juice", "fresh guava juice", "fresh lychee juice", "fresh mango juice", "fresh orange juice",
+             "fresh passion fruit juice", "fresh peach juice", "fresh pear juice", "fresh pineapple juice", "fresh pomegranate juice", "fresh rhubarb juice",
+             "fresh strawberry juice", "fresh tropical juice", "fruit syrup",
 
              "flatbread",
              "flounder","fluke",
              "fish paste",
-             "fries",
+             "flax seed butter", "fries",
 
 
              "~~~ TO DO : ~~~",
@@ -39,10 +39,81 @@
 
 
           {
+              "name": "flax seed butter",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "flaxseed butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "lin seed butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "linseed butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "lin seed spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "linseed spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "lin seed paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "linseed paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "seed butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "fish paste",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "anchovy paste",
+                  "substitution": true,
+                },
                 {
                   "word": "shrimp paste",
                   "substitution": true,
@@ -57,10 +128,6 @@
                 },
                 {
                   "word": "kapi",
-                  "substitution": true,
-                },
-                {
-                  "word": "anchovy paste",
                   "substitution": true,
                 },
                 {
@@ -1612,7 +1679,7 @@
                 "word": "powder",
               },
               {
-                "word": "pickled",
+                "word": "dried",
               },
               {
                 "word": "sauce",
@@ -1646,9 +1713,6 @@
               },
               {
                 "word": "extract",
-              },
-              {
-                "word": "galangal paste",
               },
             ],
             "include": [
@@ -1746,6 +1810,18 @@
                   "substitution": false,
                 },
                 {
+                  "word": "colatura",
+                  "substitution": true,
+                },
+                {
+                  "word": "garum",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovy extract",
+                  "substitution": true,
+                },
+                {
                   "word": "oyster sauce",
                   "substitution": true,
                 },
@@ -1754,7 +1830,7 @@
                   "substitution": true,
                 },
                 {
-                  "word": "shrimp paste",
+                  "word": "fish stock",
                   "substitution": true,
                 },
               ],

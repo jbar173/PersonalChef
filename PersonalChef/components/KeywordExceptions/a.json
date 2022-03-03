@@ -364,7 +364,7 @@
               ],
               "include": [
                 {
-                  "word": "shrimp paste",
+                  "word": "fish paste",
                   "substitution": true,
                 },
                 {
@@ -698,18 +698,10 @@
                 },
                 {
                   "word": "almond paste",
-                  "substitution": true,
+                  "substitution": false,
                 },
                 {
-                  "word": "peanut butter",
-                  "substitution": true,
-                },
-                {
-                  "word": "cashew butter",
-                  "substitution": true,
-                },
-                {
-                  "word": "walnut butter",
+                  "word": "nut butter",
                   "substitution": true,
                 },
               ],

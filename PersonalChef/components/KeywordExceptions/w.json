@@ -13,6 +13,7 @@
               "wild berry flavoured spirit/liqueur",
               "walleye",
               "whey powder",
+              "walnut butter",
 
 
               "~~~ TO DO : ~~~",
@@ -32,6 +33,26 @@
     "ingredients": [
 
 
+
+          {
+              "name": "walnut butter",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "walnut spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "walnut paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "nut butter",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "walleye",
               "exclude": [

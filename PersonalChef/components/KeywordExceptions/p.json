@@ -1,14 +1,17 @@
 {
 
     "key" : [ "pear flavoured spirit/liqueur","peach flavoured spirit/liqueur","plum flavoured spirit/liqueur","passion fruit flavoured spirit/liqueur","prosecco",
-              "parmesan","pecorino","provolone",
+              "paneer","parmesan","pecorino","provolone",
               "passion fruit jam","passion fruit jelly","peach jam","peach jelly","pineapple jam","pineapple jelly","plum jam","plum jelly",
               "pancake mix","pasta","peanuts","pearled barley","pecans","pine nuts","pizza dough","polenta","pork scratchings","potato chips","pumpkin seeds",
               "prosciutto","pork","pulled pork","pork trotter","pate",
               "parsnip","pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
               "pepper","pork seasoning","parsley",
               "passata","pickles","pinto beans","piri piri sauce","piri piri seasoning","ponzu sauce","pumpkin puree",
-              "palm oil","panang curry paste","peanut oil","plum sauce","pork stock","pumpkin pesto",
+
+              "palm oil","panang curry paste","parsley sauce","peanut butter","peanut oil","peppercorn sauce","piccalilli","pickled ginger","plum sauce","ponzu sauce",
+              "pork stock","pumpkin pesto",
+
               "peach tea","pear tea","pineapple tea","pink lemonade","prune juice",
               "plain yoghurt","powdered milk",
 
@@ -19,13 +22,13 @@
               "passion fruit puree",
               "plain flour",
               "perch",
-              "peaches", "pears", "pickled onions",
+              "peaches","pears","pickled onions","pickled walnuts",
               "passionfruit tea","pomegranate syrup",
-              "pancakes", "poppadoms",
+              "pancakes","pine nut butter","poppadoms","pumpkin seed butter",
 
 
               "~~~ TO DO : ~~~",
-              "paneer", "pleasant ridge", "port salut/port-salut/oka(sub)",
+              "pleasant ridge", "port salut/port-salut/oka(sub)",
 
               "peanut bar", "peanut butter wafers", "peanut cookies", "peanut mnms", "pear drops", "peppermint extract", "pink food colouring",
               "popping candy", "pralines", "preserved lemons", "prunes/dried figs/raisins(sub)", "pudding mix/pudding powder/custard powder(sub)", "purple food colouring",
@@ -36,9 +39,8 @@
               "pancetta", "pepperoni", "pigs in blankets", "porchetta", "pork mince",
               "persimmon", "plantain", "pomegranate seeds/anardana(sub)",
               "paprika",
-              "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage", "pickled walnuts",
+              "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage",
 
-              "parsley sauce", "peanut butter", "peppercorn sauce", "peri peri mayonnaise", "piccalilli", "pickled ginger", "ponzu sauce",
 
     ],
 
@@ -46,11 +48,418 @@
     "ingredients": [
 
 
+
+          {
+              "name": "pickled walnuts",
+              "exclude": [
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "paneer",
+              "exclude": [
+                {
+                  "word": "masala",
+                },
+                {
+                  "word": "makhani",
+                },
+                {
+                  "word": "sauce",
+                },
+                {
+                  "word": "mutter",
+                },
+                {
+                  "word": "matar",
+                },
+                {
+                  "word": "palak",
+                },
+                {
+                  "word": "saag",
+                },
+                {
+                  "word": "dodi",
+                },
+                {
+                  "word": "doda",
+                },
+                {
+                  "word": "paratha",
+                },
+              ],
+              "include": [
+                {
+                  "word": "ponir",
+                  "substitution": false,
+                },
+                {
+                  "word": "cottage cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "curd cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "mozzarella",
+                  "substitution": true,
+                },
+                {
+                  "word": "ricotta",
+                  "substitution": true,
+                },
+                {
+                  "word": "tofu",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "parsley sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "parsley & chive sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "white sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon butter sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "dill and lemon sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pumpkin seed butter",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pumpkin seed spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin seed paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "seed butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pine nut butter",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pinenut butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "pine nut spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "pinenut spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "pine nut paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pinenut paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "nut butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "peanut butter",
+              "exclude": [
+                {
+                  "word": "powder",
+                },
+                {
+                  "word": "pretzel",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "pudding",
+                },
+                {
+                  "word": "brownie",
+                },
+                {
+                  "word": "blondie",
+                },
+                {
+                  "word": "square",
+                },
+                {
+                  "word": "pie",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "wafer",
+                },
+                {
+                  "word": "rounds",
+                },
+                {
+                  "word": "crumble",
+                },
+                {
+                  "word": "brittle",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "truffle",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "candy",
+                },
+                {
+                  "word": "cluster",
+                },
+                {
+                  "word": "ball",
+                },
+                {
+                  "word": "m&ms",
+                },
+                {
+                  "word": "cups",
+                },
+                {
+                  "word": "hearts",
+                },
+                {
+                  "word": "snack",
+                },
+                {
+                  "word": "whisky",
+                },
+                {
+                  "word": "whiskey",
+                },
+              ],
+              "include": [
+                {
+                  "word": "peanut spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "sun-pat",
+                  "substitution": false,
+                },
+                {
+                  "word": "sun pat",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunpat",
+                  "substitution": false,
+                },
+                {
+                  "word": "skippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "nut butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "peppercorn sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peppercorn & brandy sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppercorn and brandy sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppercorn cream sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "pepper sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "pepper cream sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "diane sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "piccalilli",
+              "exclude": [
+                {
+                  "word": "burger pickles",
+                },
+                {
+                  "word": "tomato",
+                },
+              ],
+              "include": [
+                {
+                  "word": "mustard pickle",
+                  "substitution": false,
+                },
+                {
+                  "word": "burger pickle",
+                  "substitution": false,
+                },
+                {
+                  "word": "burger relish",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango pickle",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli chutney relish",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet pickle relish",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pickled ginger",
+              "exclude": [
+                {
+                  "word": "flour",
+                },
+                {
+                  "word": "garri",
+                },
+              ],
+              "include": [
+                {
+                  "word": "gari",
+                  "substitution": false,
+                },
+                {
+                  "word": "amazu shoga",
+                  "substitution": false,
+                },
+                {
+                  "word": "sushi ginger",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger for sushi",
+                  "substitution": false,
+                },
+                {
+                  "word": "pink ginger",
+                  "substitution": false,
+                },
+                {
+                  "word": "pickled sliced ginger",
+                  "substitution": false,
+                },
+                {
+                  "word": "shibazuke",
+                  "substitution": true,
+                },
+                {
+                  "word": "kimchi",
+                  "substitution": true,
+                },
+                {
+                  "word": "fresh ginger",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "ponzu sauce",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "ponzu",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "yuzu kosho",
+                  "substitution": true,
+                },
+                {
+                  "word": "yuzu koshō",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcestershire sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "mentsuyu",
+                  "substitution": true,
+                },
+                {
+                  "word": "nam prik pla",
+                  "substitution": true,
+                },
+                {
+                  "word": "shoyu",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1848,6 +2257,14 @@
                 },
                 {
                   "word": "quark",
+                  "substitution": true,
+                },
+                {
+                  "word": "oat yoghurt",
+                  "substitution": true,
+                },
+                {
+                  "word": "creme fraiche",
                   "substitution": true,
                 },
               ],

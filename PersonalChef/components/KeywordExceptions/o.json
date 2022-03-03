@@ -16,7 +16,7 @@
               "ossau iraty",
               "oatmeal cookies",
               "okra",
-              "olive spread",
+              "oat butter","olive spread",
               "orange cordial",
 
 
@@ -28,6 +28,46 @@
     "ingredients": [
 
 
+          {
+              "name": "oat butter",
+              "exclude": [
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "crumble",
+                },
+              ],
+              "include": [
+                {
+                  "word": "oat spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "oat paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "granola butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "granola paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "oatmeal butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "oatmeal paste",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "oka",
               "exclude": [

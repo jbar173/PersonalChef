@@ -24,7 +24,7 @@
 
               "canned chipotles","cannellini beans","cheddar cheese soup","chicken soup","chickpeas",
 
-              "canola oil","cantonese sauce","caperberries","capers","carbonara sauce","cashew butter","cashew paste","cheese sauce","chermoula","chestnut puree",
+              "canola oil","cantonese sauce","caperberries","capers","carbonara sauce","cashew butter","cheese sauce","chermoula","chestnut puree",
               "chicken paste","chicken stock","chilli mayonnaise","chilli paste","chilli sauce","chilli soy sauce","chow mein sauce","chutney",
               "coconut oil","corn oil","cranberry sauce","curry sauce",
 
@@ -39,6 +39,7 @@
               "corned beef",
               "caesar dressing","char siu sauce","chilli chutney relish","chilli infused oil","chimichurri","coriander puree",
               "camomile tea","carob syrup","carrot juice","chai tea","cherry tea","coca cola","cookie dough milkshake","cranberry tea",
+              "chia seed butter","coconut butter",
 
 
 
@@ -52,6 +53,56 @@
     "ingredients": [
 
 
+        {
+            "name": "coconut butter",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "coconut spread",
+                "substitution": false,
+              },
+              {
+                "word": "coconut paste",
+                "substitution": false,
+              },
+              {
+                "word": "nut butter",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chia seed butter",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chia butter",
+                "substitution": false,
+              },
+              {
+                "word": "chia seed spread",
+                "substitution": false,
+              },
+              {
+                "word": "chia spread",
+                "substitution": false,
+              },
+              {
+                "word": "chia seed paste",
+                "substitution": false,
+              },
+              {
+                "word": "chia paste",
+                "substitution": false,
+              },
+              {
+                "word": "seed butter",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "cucumber",
             "exclude": [
@@ -378,12 +429,6 @@
         {
             "name": "curd cheese",
             "exclude": [
-              {
-                "word": "bean",
-              },
-              {
-                "word": "tofu",
-              },
               {
                 "word": "tart",
               },
@@ -2816,7 +2861,11 @@
                 "substitution": true,
               },
               {
-                "word": "chilli chutney",
+                "word": "chilli paste",
+                "substitution": true,
+              },
+              {
+                "word": "chilli chutney relish",
                 "substitution": true,
               },
             ],
@@ -2832,6 +2881,14 @@
               },
               {
                 "word": "perinaise",
+                "substitution": false,
+              },
+              {
+                "word": "peri peri mayonnaise",
+                "substitution": false,
+              },
+              {
+                "word": "peri-peri mayonnaise",
                 "substitution": false,
               },
               {
@@ -3009,49 +3066,6 @@
             ],
         },
         {
-            "name": "cashew paste",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "cashew butter",
-                "substitution": true,
-              },
-              {
-                "word": "cashew nut butter",
-                "substitution": true,
-              },
-              {
-                "word": "cashewnut butter",
-                "substitution": true,
-              },
-              {
-                "word": "cashew spread",
-                "substitution": true,
-              },
-              {
-                "word": "pine nut paste",
-                "substitution": true,
-              },
-              {
-                "word": "peanut butter",
-                "substitution": true,
-              },
-              {
-                "word": "walnut butter",
-                "substitution": true,
-              },
-              {
-                "word": "walnut paste",
-                "substitution": true,
-              },
-              {
-                "word": "hazelnut paste",
-                "substitution": true,
-              },
-            ],
-        },
-        {
             "name": "cashew butter",
             "exclude": [
             ],
@@ -3069,15 +3083,27 @@
                 "substitution": false,
               },
               {
+                "word": "cashew nut spread",
+                "substitution": false,
+              },
+              {
+                "word": "cashewnut spread",
+                "substitution": false,
+              },
+              {
                 "word": "cashew paste",
-                "substitution": true,
+                "substitution": false,
               },
               {
-                "word": "peanut butter",
-                "substitution": true,
+                "word": "cashew nut paste",
+                "substitution": false,
               },
               {
-                "word": "walnut butter",
+                "word": "cashewnut paste",
+                "substitution": false,
+              },
+              {
+                "word": "nut butter",
                 "substitution": true,
               },
             ],
@@ -4397,6 +4423,10 @@
                 "substitution": false,
               },
               {
+                "word": "chillililli",
+                "substitution": false,
+              },
+              {
                 "word": "chilli jam",
                 "substitution": false,
               },
@@ -4442,14 +4472,6 @@
               },
               {
                 "word": "mango pickle",
-                "substitution": true,
-              },
-              {
-                "word": "hot mango chutney",
-                "substitution": true,
-              },
-              {
-                "word": "spicy mango chutney",
                 "substitution": true,
               },
               {
@@ -5215,10 +5237,6 @@
                 "substitution": true,
               },
               {
-                "word": "sweet chilli jam",
-                "substitution": true,
-              },
-              {
                 "word": "fig jam",
                 "substitution": true,
               },
@@ -5227,7 +5245,7 @@
                 "substitution": true,
               },
               {
-                "word": "mango salsa",
+                "word": "mango pickle",
                 "substitution": true,
               },
               {
@@ -5500,7 +5518,7 @@
                 "substitution": true,
               },
               {
-                "word": "chilli chutney",
+                "word": "chilli chutney relish",
                 "substitution": true,
               },
               {
@@ -6321,6 +6339,10 @@
                 "substitution": false,
               },
               {
+                "word": "oat fraiche",
+                "substitution": true,
+              },
+              {
                 "word": "sour cream",
                 "substitution": true,
               },
@@ -6333,11 +6355,7 @@
                 "substitution": true,
               },
               {
-                "word": "yoghurt",
-                "substitution": true,
-              },
-              {
-                "word": "yogurt",
+                "word": "plain yoghurt",
                 "substitution": true,
               },
               {
@@ -6523,6 +6541,10 @@
               },
               {
                 "word": "labneh",
+                "substitution": true,
+              },
+              {
+                "word": "paneer",
                 "substitution": true,
               },
             ],

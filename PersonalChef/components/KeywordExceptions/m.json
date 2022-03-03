@@ -3516,11 +3516,43 @@
               ],
               "include": [
                 {
+                  "word": "mango slice pickle",
+                  "substitution": false,
+                },
+                {
                   "word": "amba",
                   "substitution": true,
                 },
                 {
+                  "word": "mango lime pickle",
+                  "substitution": true,
+                },
+                {
+                  "word": "lime pickle",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon pickle",
+                  "substitution": true,
+                },
+                {
+                  "word": "gunda pickle",
+                  "substitution": true,
+                },
+                {
+                  "word": "kerda pickle",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango salsa",
+                  "substitution": true,
+                },
+                {
                   "word": "mango chutney",
+                  "substitution": true,
+                },
+                {
+                  "word": "piccalilli",
                   "substitution": true,
                 },
               ],

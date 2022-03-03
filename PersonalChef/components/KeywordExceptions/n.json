@@ -8,7 +8,7 @@
 
 
               "~~~ HALF DONE : ~~~",
-              "nasi goreng paste",
+              "nasi goreng paste", "nut butter",
 
 
 
@@ -22,6 +22,197 @@
 
 
 
+          {
+              "name": "nut butter",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peanut butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "peanut spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "peanut paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "sun-pat",
+                  "substitution": true,
+                },
+                {
+                  "word": "sun pat",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunpat",
+                  "substitution": true,
+                },
+                {
+                  "word": "skippy",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew nut butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashewnut butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew nut spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashewnut spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew nut paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashewnut paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "pine nut butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "pinenut butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "pine nut spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "pinenut spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "pine nut paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "pinenut paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower seed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower seed spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower seed paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunbutter",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "soynut butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "peabutter",
+                  "substitution": true,
+                },
+                {
+                  "word": "pea butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "wowbutter",
+                  "substitution": true,
+                },
+                {
+                  "word": "nonut",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "nerds",
               "exclude": [
@@ -91,6 +282,22 @@
                 },
                 {
                   "word": "chocolate peanuts",
+                  "substitution": true,
+                },
+                {
+                  "word": "peanut butter chocolate",
+                  "substitution": true,
+                },
+                {
+                  "word": "peanut chocolate",
+                  "substitution": true,
+                },
+                {
+                  "word": "nut chocolate",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate",
                   "substitution": true,
                 },
               ],

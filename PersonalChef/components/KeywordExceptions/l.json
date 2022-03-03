@@ -11,7 +11,7 @@
               "lamb's lettuce","lemon","lemongrass","lettuce","lime","lychee",
               "lamb seasoning","lime leaves",
               "lentils",
-              "laksa sauce","lamb stock","lemon and parsley sauce","lemon butter sauce","lemon juice","lime mojo sauce","lime juice",
+              "laksa sauce","lamb stock","lemon butter sauce","lemon juice","lime mojo sauce","lime juice",
               "lard",
               "lapsang tea", "lemon ice tea", "lychee juice",
 
@@ -630,7 +630,7 @@
                 "substitution": false,
               },
               {
-                "word": "lemon and parsley sauce",
+                "word": "parsley sauce",
                 "substitution": true,
               },
               {
@@ -1612,6 +1612,18 @@
             },
           ],
           "include": [
+            {
+              "word": "sudachi",
+              "substitution": true,
+            },
+            {
+              "word": "kabosu",
+              "substitution": true,
+            },
+            {
+              "word": "yuzu",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -1646,6 +1658,18 @@
             },
           ],
           "include": [
+            {
+              "word": "sudachi",
+              "substitution": true,
+            },
+            {
+              "word": "kabosu",
+              "substitution": true,
+            },
+            {
+              "word": "yuzu",
+              "substitution": true,
+            },
           ],
         },
 

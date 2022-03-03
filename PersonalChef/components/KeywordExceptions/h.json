@@ -15,6 +15,7 @@
              "~~~ HALF DONE : ~~~",
              "hoisin sauce", "honey barbeque sauce", "honey flavoured spirit/liqueur",
              "horlicks",
+             "hazelnut butter", "hemp seed butter",
 
 
              "~~~ TO DO : ~~~",
@@ -27,7 +28,68 @@
     "ingredients": [
 
 
-
+        {
+            "name": "hemp seed butter",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "hempseed butter",
+                "substitution": false,
+              },
+              {
+                "word": "hemp butter",
+                "substitution": false,
+              },
+              {
+                "word": "hemp seed spread",
+                "substitution": false,
+              },
+              {
+                "word": "hempseed spread",
+                "substitution": false,
+              },
+              {
+                "word": "hemp spread",
+                "substitution": false,
+              },
+              {
+                "word": "hemp seed paste",
+                "substitution": false,
+              },
+              {
+                "word": "hempseed paste",
+                "substitution": false,
+              },
+              {
+                "word": "hemp paste",
+                "substitution": false,
+              },
+              {
+                "word": "seed butter",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "hazelnut butter",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "hazelnut spread",
+                "substitution": false,
+              },
+              {
+                "word": "hazelnut paste",
+                "substitution": false,
+              },
+              {
+                "word": "nut butter",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "hundreds and thousands",
             "exclude": [
@@ -434,6 +496,10 @@
               },
               {
                 "word": "bearnaise",
+                "substitution": true,
+              },
+              {
+                "word": "béarnaise",
                 "substitution": true,
               },
             ],
