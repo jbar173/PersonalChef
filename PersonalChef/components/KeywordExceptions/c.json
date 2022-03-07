@@ -3,7 +3,7 @@
     "key" : [ "champagne","cherry flavoured spirit/liqueur","chocolate flavoured spirit/liqueur","cider","coconut flavoured spirit/liqueur","cachaca",
               "camembert","cheddar","cheese slice","cognac","comte","cottage cheese","cream cheese",
 
-              "cacao nibs","caramel","caramel cookie dough","caramel essence","caramel peanuts","caramel wafers","candied orange","cherry compote",
+              "cacao nibs","caramel","caramel cookie dough","caramel essence","caramel covered peanuts","caramel wafers","candied orange","cherry compote",
               "chocolate","chocolate biscuits","chocolate buttons","chocolate cake","chocolate caramel bar","chocolate cookie dough","chocolate cookies",
               "chocolate custard","chocolate decorating icing","chocolate drops","chocolate ganache","chocolate mousse","chocolate peanuts","chocolate raisins",
               "chocolate sauce","chocolate sprinkles","cocoa powder","coconut bar","coconut biscuits","coconut macaroons","coconut nectar","cola laces",
@@ -14,7 +14,7 @@
               "cornmeal","couscous","crackers","crispy onions","croutons","crumpets",
 
               "caviar","clams","cod","cockles","crab","crayfish",
-              "chicken","chicken mince","cured sausage/meat",
+              "chicken","chicken mince","cured sausage/sliced meat",
 
               "cabbage","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli pepper","clementine",
               "collard greens","courgette","cucumber",
@@ -36,15 +36,14 @@
               "~~~ HALF DONE : ~~~",
               "caramel flavoured spirit/liqueur","cinnamon flavoured spirit/liqueur","coffee flavoured spirit/liqueur",
               "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","chocolate sponge","clotted cream","crystallised ginger",
+              "coley",
               "corned beef",
               "caesar dressing","char siu sauce","chilli chutney relish","chilli infused oil","chimichurri","coriander puree",
               "camomile tea","carob syrup","carrot juice","chai tea","cherry tea","coca cola","cookie dough milkshake","cranberry tea",
               "chia seed butter","coconut butter",
 
 
-
               "~~~ TO DO : ~~~",
-
 
 
             ],
@@ -53,6 +52,25 @@
     "ingredients": [
 
 
+        {
+            "name": "coley",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "pollock",
+                "substitution": false,
+              },
+              {
+                "word": "coconut paste",
+                "substitution": false,
+              },
+              {
+                "word": "nut butter",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "coconut butter",
             "exclude": [
@@ -725,10 +743,14 @@
             ],
         },
         {
-            "name": "caramel peanuts",
+            "name": "caramel covered peanuts",
             "exclude": [
             ],
             "include": [
+              {
+                "word": "caramel peanuts",
+                "substitution": false,
+              },
               {
                 "word": "caramel coated peanuts",
                 "substitution": false,
@@ -742,16 +764,12 @@
                 "substitution": false,
               },
               {
-                "word": "peanut brittle",
+                "word": "peanut bar",
                 "substitution": false,
               },
               {
-                "word": "medici",
-                "substitution": true,
-              },
-              {
-                "word": "florentine",
-                "substitution": true,
+                "word": "peanut brittle",
+                "substitution": false,
               },
               {
                 "word": "toffee peanuts",
@@ -764,6 +782,18 @@
               {
                 "word": "toffee-coated peanuts",
                 "substitution": false,
+              },
+              {
+                "word": "medici",
+                "substitution": true,
+              },
+              {
+                "word": "florentine",
+                "substitution": true,
+              },
+              {
+                "word": "praline",
+                "substitution": true,
               },
             ],
         },
@@ -804,15 +834,19 @@
                 "substitution": true,
               },
               {
-                "word": "wafer",
-                "substitution": true,
-              },
-              {
                 "word": "toffee crisp",
                 "substitution": true,
               },
               {
                 "word": "lion bar",
+                "substitution": true,
+              },
+              {
+                "word": "peanut butter wafers",
+                "substitution": true,
+              },
+              {
+                "word": "wafer",
                 "substitution": true,
               },
             ],
@@ -1183,6 +1217,10 @@
                 "substitution": false,
               },
               {
+                "word": "peanut mnms",
+                "substitution": false,
+              },
+              {
                 "word": "chocolate coated fruits & nuts",
                 "substitution": false,
               },
@@ -1436,6 +1474,18 @@
               },
               {
                 "word": "lion bar",
+                "substitution": true,
+              },
+              {
+                "word": "peanut butter wafers",
+                "substitution": true,
+              },
+              {
+                "word": "caramel wafers",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate biscuits",
                 "substitution": true,
               },
             ],
@@ -1727,6 +1777,10 @@
                 "word": "custard",
                 "substitution": true,
               },
+              {
+                "word": "pudding mix",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1748,6 +1802,10 @@
               },
               {
                 "word": "linseeds",
+                "substitution": true,
+              },
+              {
+                "word": "poppy seeds",
                 "substitution": true,
               },
             ],
@@ -1874,11 +1932,11 @@
                 "substitution": true,
               },
               {
-                "word": "pollack",
+                "word": "pollock",
                 "substitution": true,
               },
               {
-                "word": "pollock",
+                "word": "coley",
                 "substitution": true,
               },
               {
@@ -1891,6 +1949,10 @@
               },
               {
                 "word": "orange roughy",
+                "substitution": true,
+              },
+              {
+                "word": "basa",
                 "substitution": true,
               },
             ],
@@ -3357,6 +3419,18 @@
                 "substitution": false,
               },
               {
+                "word": "cherry leaf tea",
+                "substitution": false,
+              },
+              {
+                "word": "cherry flavour tea",
+                "substitution": false,
+              },
+              {
+                "word": "cherry flavor tea",
+                "substitution": false,
+              },
+              {
                 "word": "cherry teabag",
                 "substitution": false,
               },
@@ -3980,6 +4054,18 @@
                 "substitution": false,
               },
               {
+                "word": "cranberry leaf tea",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry flavour tea",
+                "substitution": false,
+              },
+              {
+                "word": "cranberry flavor tea",
+                "substitution": false,
+              },
+              {
                 "word": "cranberry teabag",
                 "substitution": false,
               },
@@ -4069,7 +4155,15 @@
                 "substitution": false,
               },
               {
+                "word": "camomile leaf tea",
+                "substitution": false,
+              },
+              {
                 "word": "chamomile loose tea",
+                "substitution": false,
+              },
+              {
+                "word": "chamomile leaf tea",
                 "substitution": false,
               },
               {
@@ -5089,11 +5183,11 @@
                 "substitution": true,
               },
               {
-                "word": "short-grain rice",
+                "word": "bulgur",
                 "substitution": true,
               },
               {
-                "word": "short grain rice",
+                "word": "rice",
                 "substitution": true,
               },
               {
@@ -5528,7 +5622,7 @@
             ],
         },
         {
-            "name": "cured sausage/meat",
+            "name": "cured sausage/sliced meat",
             "exclude": [
             ],
             "include": [
@@ -5542,6 +5636,10 @@
               },
               {
                 "word": "chorizo",
+                "substitution": false,
+              },
+              {
+                "word": "pepperoni",
                 "substitution": false,
               },
               {
@@ -6914,6 +7012,10 @@
               "substitution": true,
             },
             {
+              "word": "pistachios",
+              "substitution": true,
+            },
+            {
               "word": "mixed nuts",
               "substitution": true,
             },
@@ -7233,6 +7335,22 @@
             },
           ],
           "include": [
+            {
+              "word": "chocolate flavoured custard",
+              "substitution": false,
+            },
+            {
+              "word": "chocolate flavored custard",
+              "substitution": false,
+            },
+            {
+              "word": "pudding mix",
+              "substitution": true,
+            },
+            {
+              "word": "custard",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -7268,6 +7386,14 @@
             },
             {
               "word": "vanilla sauce",
+              "substitution": true,
+            },
+            {
+              "word": "pudding mix",
+              "substitution": true,
+            },
+            {
+              "word": "chocolate custard",
               "substitution": true,
             },
           ],

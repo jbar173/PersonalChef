@@ -12,16 +12,31 @@
 
              "~~~ HALF DONE : ~~~",
              "jammy dodgers", "jam tart", "jazzies",
-
+             "jackfruit",
 
              "~~~ TO DO : ~~~",
-
+             "jellied eels",
     ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "jackfruit",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jack tree",
+                "substitution": false,
+              },
+              {
+                "word": "plantain",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "jagermeister",
             "exclude": [
@@ -380,6 +395,10 @@
                 "substitution": false,
               },
               {
+                "word": "jasmine leaf tea",
+                "substitution": false,
+              },
+              {
                 "word": "jasmine infusion",
                 "substitution": false,
               },
@@ -568,19 +587,15 @@
               "substitution": true,
             },
             {
-              "word": "emmentaler",
-              "substitution": true,
-            },
-            {
-              "word": "emmenthaler",
-              "substitution": true,
-            },
-            {
               "word": "swiss cheese",
               "substitution": true,
             },
             {
               "word": "gruyere",
+              "substitution": true,
+            },
+            {
+              "word": "pleasant ridge",
               "substitution": true,
             },
           ],

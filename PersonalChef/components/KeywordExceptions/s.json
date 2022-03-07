@@ -4,7 +4,7 @@
               "strawberry custard","strawberry jam","strawberry jelly","sugar",
               "semolina","spring roll wrapper","seaweed","sweet rice flour","soya beans",
               "shrimp",
-              "sausage","smoked sausage/meat",
+              "sausage","smoked sausage/sliced meat",
               "salad leaves","shallot","soffrito mix","spinach","spring onions","summer squash","swede","sweet potato",
               "smoked paprika","salt","shichimi",
               "sun-dried tomatoes", "sweetcorn",
@@ -18,6 +18,7 @@
               "sweetener",
               "short grain rice",
               "sardines",
+              "sliced cooked meat",
               "spicy brown mustard","sweet and sour sauce","sweet chilli and garlic","sweet chilli sauce","sweet pickle relish",
               "strawberry milkshake",
               "salted popcorn","seed butter","soy butter","sunflower seed butter","sweet popcorn",
@@ -28,18 +29,18 @@
 
               "salted caramel chocolate", "salted caramel cookie dough", "sherbert", "shortbread/shortcake(sub)", "shortcake biscuits/shortbread(sub)", "silver ball decorations", "skittles",
               "smarties", "snickers", "starburst", "stem ginger", "strawberry bonbons", "strawberry liquorice", "strawberry mousse",
-              "strawberry sauce", "strawberry shoelaces", "sugar syrup/maple syrup(sub)", "sultanas", "syrup sponge",
+              "strawberry sauce", "strawberry shoelaces", "sugar syrup/maple syrup(sub)", "sultanas/raisins/currants(sub)", "syrup sponge",
 
-              "scone mix", "scones", "self raising flour", "sesame seeds/hemp seeds/nigella seeds(sub)", "shortcrust pastry", "shreddies", "spelt flour", "sunflower seeds",
+              "scone mix", "scones", "self raising flour", "sesame seeds/hemp seeds/nigella seeds/poppy seeds(sub)", "shortcrust pastry", "shreddies", "spelt flour", "sunflower seeds",
 
-              "salmon", "scallops/lobster/monkfish(sub)", "sea bass/seabass/monkfish/striped bass/striper(sub)", "seafood stick", "sild", "smoked rainbow trout", "smoked salmon",
-              "snapper/monkfish(sub)", "sole/haddock/flounder(sub)", "sprat", "squid", "surimi/lobster(sub)",
+              "salmon", "scallops/lobster/monkfish(sub)", "sea bass/seabass/monkfish/striped bass/striper(sub)", "sea bream", "seafood stick", "sild", "smoked rainbow trout", "smoked salmon",
+              "snapper/monkfish(sub)", "sole/megrim/whiff/haddock/flounder/plaice/dab/hake(sub)", "sprat", "squid", "surimi/lobster(sub)",
 
               "samphire", "satsuma", "smoked garlic", "sprouts", "strawberries",
               "saffron", "seaweed seasoning", "shawarma seasoning", "smokey spice", "sorrel", "spirulina powder", "star anise/mulled wine spice(sub)", "steak seasoning",
               "sumac/mango powder(sub)",
 
-              "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut/kimchi(subs)", "seafood sauce", "shrimp paste/fish paste(sub)", "smoky onion relish",
+              "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut/kimchi/pickled red cabbage(subs)", "seafood sauce", "shrimp paste/fish paste(sub)", "smoky onion relish",
               "smoked paprika pesto", "smoky red pepper dressing", "spaghetti hoops", "stir fry sauce", "sweet chilli and garlic", "sweet piccalilli",
               "sweet pickle relish",
 
@@ -54,6 +55,102 @@
     "ingredients": [
 
 
+
+          {
+              "name": "sliced cooked meat",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sliced porchetta",
+                  "substitution": false,
+                },
+                {
+                  "word": "porchetta slice",
+                  "substitution": false,
+                },
+                {
+                  "word": "sliced pork",
+                  "substitution": false,
+                },
+                {
+                  "word": "sliced roast pork",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork slice",
+                  "substitution": false,
+                },
+                {
+                  "word": "sliced beef",
+                  "substitution": false,
+                },
+                {
+                  "word": "sliced roast beef",
+                  "substitution": false,
+                },
+                {
+                  "word": "beef slice",
+                  "substitution": false,
+                },
+                {
+                  "word": "sliced chicken",
+                  "substitution": false,
+                },
+                {
+                  "word": "sliced roast chicken",
+                  "substitution": false,
+                },
+                {
+                  "word": "chicken slice",
+                  "substitution": false,
+                },
+                {
+                  "word": "sliced lamb",
+                  "substitution": false,
+                },
+                {
+                  "word": "sliced roast lamb",
+                  "substitution": false,
+                },
+                {
+                  "word": "lamb slice",
+                  "substitution": false,
+                },
+                {
+                  "word": "sliced turkey",
+                  "substitution": false,
+                },
+                {
+                  "word": "sliced roast turkey",
+                  "substitution": false,
+                },
+                {
+                  "word": "turkey slice",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork",
+                  "substitution": true,
+                },
+                {
+                  "word": "beef",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "lamb",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "soy butter",
               "exclude": [
@@ -597,6 +694,46 @@
                   "substitution": false,
                 },
                 {
+                  "word": "pilchard",
+                  "substitution": true,
+                },
+                {
+                  "word": "brisling",
+                  "substitution": true,
+                },
+                {
+                  "word": "bristling",
+                  "substitution": true,
+                },
+                {
+                  "word": "sprat",
+                  "substitution": true,
+                },
+                {
+                  "word": "garvie",
+                  "substitution": true,
+                },
+                {
+                  "word": "garvock",
+                  "substitution": true,
+                },
+                {
+                  "word": "russlet",
+                  "substitution": true,
+                },
+                {
+                  "word": "skipper",
+                  "substitution": true,
+                },
+                {
+                  "word": "sild",
+                  "substitution": true,
+                },
+                {
+                  "word": "whitebait",
+                  "substitution": true,
+                },
+                {
                   "word": "anchovy",
                   "substitution": true,
                 },
@@ -1032,6 +1169,18 @@
                   "word": "wood-smoked paprika",
                   "substitution": false,
                 },
+                {
+                  "word": "pimenton",
+                  "substitution": true,
+                },
+                {
+                  "word": "pimentón",
+                  "substitution": true,
+                },
+                {
+                  "word": "plain paprika",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1169,7 +1318,7 @@
               ],
           },
           {
-              "name": "smoked sausage/meat",
+              "name": "smoked sausage/sliced meat",
               "exclude": [
               ],
               "include": [
@@ -1246,6 +1395,10 @@
                 },
                 {
                   "word": "haggis",
+                  "substitution": true,
+                },
+                {
+                  "word": "pigs in blankets",
                   "substitution": true,
                 },
               ],
@@ -1957,7 +2110,19 @@
             ],
             "include": [
               {
+                "word": "sweet potatoes",
+                "substitution": false,
+              },
+              {
+                "word": "potato",
+                "substitution": true,
+              },
+              {
                 "word": "yam",
+                "substitution": true,
+              },
+              {
+                "word": "plantain",
                 "substitution": true,
               },
             ],
@@ -1971,7 +2136,11 @@
             ],
             "include": [
               {
-                "word": "prawn",
+                "word": "shrimps",
+                "substitution": false,
+              },
+              {
+                "word": "prawns",
                 "substitution": true,
               },
               {

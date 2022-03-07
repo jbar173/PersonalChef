@@ -1,8 +1,8 @@
 {
     "name": "soft_drinks_ingredients",
-    "ingredients": [  "apple juice", "apple syrup", "apple tea", "apricot syrup",
+    "ingredients": [  "almond syrup", "apple juice", "apple syrup", "apple tea", "apricot syrup",
 
-                      "banana milkshake", "beetroot juice", "berry cordial", "berry tea", "black tea", "blackcurrant juice", "blackcurrant tea", "blueberry juice",
+                      "banana milkshake", "beetroot juice", "berry cordial", "berry tea", "black tea", "blackcurrant syrup", "blackcurrant tea", "blueberry juice",
 
                       "camomile", "caramel milkshake", "carob syrup", "carrot juice", "chai tea", "cherry cola", "cherry lemonade", "cherry tea","chocolate milkshake",
                       "coca cola", "cocoa", "coconut water", "coffee", "cookie dough milkshake", "cranberry tea", "cream soda",
@@ -30,7 +30,7 @@
 
                       "orange cordial",
 
-                      "passionfruit tea", "peach tea", "pear tea", "pineapple tea", "pink lemonade", "pomegranate syrup", "prune juice",
+                      "passionfruit tea", "peach tea", "pear tea", "peppermint syrup", "pineapple tea", "pink lemonade", "pomegranate syrup", "prune juice",
 
                       "raspberry cola", "raspberry syrup", "raspberry tea", "ribena", "rooisbos tea",
 

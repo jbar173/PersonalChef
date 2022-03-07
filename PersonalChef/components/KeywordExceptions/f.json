@@ -4,7 +4,7 @@
              "fig jam","fig jelly","fig roll","fruit and nut chocolate","fruit cake","fruit jellies","fruit loaf","fudge",
              "filo pastry","flax seeds","flour","frosties",
              "faggot",
-             "fiddleheads","fig","fresh coconut","fresh corn","fresh cranberries","fresh ginger",
+             "fiddleheads","fig","fresh coconut","fresh corn","fresh cranberries","fresh ginger","fresh pomegranate seeds",
 
              "fajita seasoning","fennel seeds","fish masala","fish seasoning","fresh basil","fresh chervil","fresh coriander","fresh marjoram","fresh mint",
              "fresh oregano","fresh parsley","fresh rosemary","fresh sage","fresh tarragon","fresh thyme","fenugreek leaves",
@@ -38,6 +38,50 @@
     "ingredients": [
 
 
+          {
+              "name": "fresh pomegranate seeds",
+              "exclude": [
+                {
+                  "word": "dried",
+                },
+                {
+                  "word": "anardana",
+                },
+                {
+                  "word": "oil",
+                },
+              ],
+              "include": [
+                {
+                  "word": "pomegranate arils",
+                  "substitution": false,
+                },
+                {
+                  "word": "pomegranate seeds",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried cranberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried cherries",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried barberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried goji berries",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "flax seed butter",
               "exclude": [
@@ -161,6 +205,18 @@
               ],
               "include": [
                 {
+                  "word": "sole",
+                  "substitution": true,
+                },
+                {
+                  "word": "plaice",
+                  "substitution": true,
+                },
+                {
+                  "word": "dab",
+                  "substitution": true,
+                },
+                {
                   "word": "halibut",
                   "substitution": true,
                 },
@@ -170,10 +226,6 @@
                 },
                 {
                   "word": "hake",
-                  "substitution": true,
-                },
-                {
-                  "word": "sole",
                   "substitution": true,
                 },
                 {
@@ -236,6 +288,10 @@
                 },
                 {
                   "word": "pomegranate syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackcurrant syrup",
                   "substitution": true,
                 },
               ],
@@ -984,6 +1040,10 @@
                 },
                 {
                   "word": "fennel loose leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "fennel leaf tea",
                   "substitution": false,
                 },
                 {

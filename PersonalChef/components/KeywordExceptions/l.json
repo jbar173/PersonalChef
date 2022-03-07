@@ -10,7 +10,6 @@
               "lamb","lamb mince",
               "lamb's lettuce","lemon","lemongrass","lettuce","lime","lychee",
               "lamb seasoning","lime leaves",
-              "lentils",
               "laksa sauce","lamb stock","lemon butter sauce","lemon juice","lime mojo sauce","lime juice",
               "lard",
               "lapsang tea", "lemon ice tea", "lychee juice",
@@ -22,7 +21,6 @@
               "leek",
               "lemongrass puree",
               "lemonade", "lemon cordial", "lemon tea", "lime cola", "lime cordial",
-
 
 
               "~~~ TO DO : ~~~",
@@ -558,29 +556,6 @@
             ],
         },
         {
-            "name": "lentils",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "dried red lentils",
-                "substitution": false,
-              },
-              {
-                "word": "dried green lentils",
-                "substitution": false,
-              },
-              {
-                "word": "dried brown lentils",
-                "substitution": false,
-              },
-              {
-                "word": "dried black lentils",
-                "substitution": false,
-              },
-            ],
-        },
-        {
             "name": "lemon butter sauce",
             "exclude": [
             ],
@@ -812,6 +787,18 @@
               },
               {
                 "word": "lemon flavored tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon leaf tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon flavour tea",
+                "substitution": false,
+              },
+              {
+                "word": "lemon flavor tea",
                 "substitution": false,
               },
               {
@@ -1461,8 +1448,24 @@
               "substitution": false,
             },
             {
+              "word": "pasta sheet",
+              "substitution": false,
+            },
+            {
               "word": "lasagne",
               "substitution": false,
+            },
+            {
+              "word": "tortelloni",
+              "substitution": true,
+            },
+            {
+              "word": "ravioli",
+              "substitution": true,
+            },
+            {
+              "word": "pasta",
+              "substitution": true,
             },
           ],
         },
@@ -1630,13 +1633,16 @@
           "name": "lemon",
           "exclude": [
             {
-              "word": "lemon curd",
+              "word": "curd",
             },
             {
               "word": "lemon sole",
             },
             {
-              "word": "candied lemon",
+              "word": "candied",
+            },
+            {
+              "word": "peel",
             },
             {
               "word": "leaves",
@@ -1668,6 +1674,10 @@
             },
             {
               "word": "yuzu",
+              "substitution": true,
+            },
+            {
+              "word": "preserved lemon",
               "substitution": true,
             },
           ],

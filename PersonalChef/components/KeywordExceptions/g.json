@@ -740,6 +740,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "green leaf tea",
+                  "substitution": false,
+                },
+                {
                   "word": "green tea tea bag",
                   "substitution": false,
                 },
@@ -1220,6 +1224,18 @@
                 },
                 {
                   "word": "ginger flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "ginger flavor tea",
                   "substitution": false,
                 },
                 {
@@ -2024,6 +2040,10 @@
               },
               {
                 "word": "havarti",
+                "substitution": true,
+              },
+              {
+                "word": "pleasant ridge",
                 "substitution": true,
               },
               {

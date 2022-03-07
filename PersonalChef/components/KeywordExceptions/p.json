@@ -1,19 +1,25 @@
 {
 
     "key" : [ "pear flavoured spirit/liqueur","peach flavoured spirit/liqueur","plum flavoured spirit/liqueur","passion fruit flavoured spirit/liqueur","prosecco",
-              "paneer","parmesan","pecorino","provolone",
-              "passion fruit jam","passion fruit jelly","peach jam","peach jelly","pineapple jam","pineapple jelly","plum jam","plum jelly",
-              "pancake mix","pasta","peanuts","pearled barley","pecans","pine nuts","pizza dough","polenta","pork scratchings","potato chips","pumpkin seeds",
-              "prosciutto","pork","pulled pork","pork trotter","pate",
-              "parsnip","pumpkin","potato","plum","pineapple","pomegranate","peach","peas","pak choi","passion fruit","pear","pea shoots",
-              "pepper","pork seasoning","parsley",
-              "passata","pickles","pinto beans","piri piri sauce","piri piri seasoning","ponzu sauce","pumpkin puree",
+              "paneer","parmesan","pecorino","pleasant ridge","port salut","provolone",
 
-              "palm oil","panang curry paste","parsley sauce","peanut butter","peanut oil","peppercorn sauce","piccalilli","pickled ginger","plum sauce","ponzu sauce",
-              "pork stock","pumpkin pesto",
+              "passion fruit jam","passion fruit jelly","peach jam","peach jelly","peanut butter wafers","pear drops","peppermint extract","pineapple jam","pineapple jelly",
+              "pink food colouring","plum jam","plum jelly","popping candy","praline","preserved lemon","prunes","purple food colouring",
+
+              "pancake mix","pasta","peanuts","pearled barley","pecans","pine nuts","pistachios","pizza dough","polenta","poppy seeds","puff pastry","pudding mix",
+              "pumpkin seeds",
+
+              "plaice","pollock","prawns",
+              "pancetta","prosciutto","pork","pork mince","pulled pork","pork trotter","pate",
+              "pak choi","parsnip","passion fruit","pea shoots","peach","pear","peas","persimmon","plantain","plum","pineapple","pomegranate","potato","pumpkin",
+              "plain paprika","pepper","piri piri seasoning","pork seasoning","parsley",
+              "passata","pease pudding","pickles","pickled eggs","pickled red cabbage","pinto beans","pumpkin puree",
+
+              "palm oil","panang curry paste","parsley sauce","peanut butter","peanut oil","peppercorn sauce","piccalilli","pickled ginger","piri piri sauce",
+              "plum sauce","ponzu sauce","pork stock","pumpkin pesto",
 
               "peach tea","pear tea","pineapple tea","pink lemonade","prune juice",
-              "plain yoghurt","powdered milk",
+              "plain yoghurt","pork scratchings","potato chips","powdered milk","pretzel snacks",
 
 
               "~~~ HALF DONE : ~~~",
@@ -22,24 +28,13 @@
               "passion fruit puree",
               "plain flour",
               "perch",
-              "peaches","pears","pickled onions","pickled walnuts",
-              "passionfruit tea","pomegranate syrup",
+              "peaches","pears","pickled onions","pickled vegetables","pickled walnuts",
+              "passionfruit tea","peppermint syrup","pomegranate syrup",
               "pancakes","pine nut butter","poppadoms","pumpkin seed butter",
 
 
               "~~~ TO DO : ~~~",
-              "pleasant ridge", "port salut/port-salut/oka(sub)",
 
-              "peanut bar", "peanut butter wafers", "peanut cookies", "peanut mnms", "pear drops", "peppermint extract", "pink food colouring",
-              "popping candy", "pralines", "preserved lemons", "prunes/dried figs/raisins(sub)", "pudding mix/pudding powder/custard powder(sub)", "purple food colouring",
-
-              "pie mix", "pistachios", "pizza bases", "poppy seeds", "pork scratchings", "pretzel snacks", "puff pastry",
-              "pangasius", "pilchards", "plaice", "pollock/lack/cod/hake/haddock(sub)", "prawns/langoustine(sub)",
-
-              "pancetta", "pepperoni", "pigs in blankets", "porchetta", "pork mince",
-              "persimmon", "plantain", "pomegranate seeds/anardana(sub)",
-              "paprika",
-              "pease pudding", "pickled cauliflower", "pickled eggs", "pickled red cabbage",
 
 
     ],
@@ -47,13 +42,1082 @@
 
     "ingredients": [
 
-
-
           {
               "name": "pickled walnuts",
               "exclude": [
               ],
               "include": [
+              ],
+          },
+          {
+              "name": "pleasant ridge",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raclette",
+                  "substitution": true,
+                },
+                {
+                  "word": "gruyere",
+                  "substitution": true,
+                },
+                {
+                  "word": "emmental",
+                  "substitution": true,
+                },
+                {
+                  "word": "jarlsberg",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "port salut",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "port-salut",
+                  "substitution": false,
+                },
+                {
+                  "word": "oka",
+                  "substitution": true,
+                },
+                {
+                  "word": "muenster",
+                  "substitution": true,
+                },
+                {
+                  "word": "monterey jack",
+                  "substitution": true,
+                },
+                {
+                  "word": "havarti",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "peanut butter wafers",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peanut butter wafer",
+                  "substitution": false,
+                },
+                {
+                  "word": "nutter butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "nutty bar",
+                  "substitution": false,
+                },
+                {
+                  "word": "buddy bar",
+                  "substitution": false,
+                },
+                {
+                  "word": "reese's stick",
+                  "substitution": false,
+                },
+                {
+                  "word": "nut cookies",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramel wafers",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate wafers",
+                  "substitution": true,
+                },
+                {
+                  "word": "cookies",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pear drops",
+              "exclude": [
+                {
+                  "word": "syrup",
+                },
+                {
+                  "word": "gin",
+                },
+              ],
+              "include": [
+                {
+                  "word": "pear drop sweets",
+                  "substitution": false,
+                },
+                {
+                  "word": "jargonelle pears",
+                  "substitution": true,
+                },
+                {
+                  "word": "boiled sweets",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "peppermint syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peppermint flavour syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavor syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavoured syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavored syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint extract",
+                  "substitution": true,
+                },
+                {
+                  "word": "mint flavour syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavor syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavoured syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavored syrup",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pink food colouring",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pink food colour",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "peppermint extract",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peppermint essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint cream essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint liqueur essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavour essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavor essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavoured essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavored essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint natural flavouring",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint natural flavoring",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavouring",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavoring",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint cream essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint liqueur essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavour essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavor essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavoured essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavored essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint natural flavouring",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint natural flavoring",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavouring",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavoring",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "peppermint syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "peppermint powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "mint paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "mint syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "mint powder",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "popping candy",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "poppin candy",
+                  "substitution": false,
+                },
+                {
+                  "word": "pop rocks",
+                  "substitution": true,
+                },
+                {
+                  "word": "shock rocks",
+                  "substitution": true,
+                },
+                {
+                  "word": "nerds",
+                  "substitution": true,
+                },
+                {
+                  "word": "decorating sprinkles",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "praline",
+              "exclude": [
+                {
+                  "word": "paste",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "creme",
+                },
+                {
+                  "word": "dessert",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "truffle",
+                },
+                {
+                  "word": "ganache",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "chocolates",
+                },
+                {
+                  "word": "liqueurs",
+                },
+                {
+                  "word": "belgian",
+                },
+                {
+                  "word": "potatoes",
+                },
+                {
+                  "word": "potato",
+                },
+              ],
+              "include": [
+                {
+                  "word": "candied nuts",
+                  "substitution": false,
+                },
+                {
+                  "word": "candied roasted nuts",
+                  "substitution": false,
+                },
+                {
+                  "word": "caramel covered peanuts",
+                  "substitution": false,
+                },
+                {
+                  "word": "candied pecans",
+                  "substitution": true,
+                },
+                {
+                  "word": "pralin",
+                  "substitution": true,
+                },
+                {
+                  "word": "praliné",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "preserved lemon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "lemon",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "prunes",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dried plum",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried fig",
+                  "substitution": true,
+                },
+                {
+                  "word": "dates",
+                  "substitution": true,
+                },
+                {
+                  "word": "raisins",
+                  "substitution": true,
+                },
+                {
+                  "word": "sultanas",
+                  "substitution": true,
+                },
+                {
+                  "word": "currants",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pudding mix",
+              "exclude": [
+                {
+                  "word": "yorkshire",
+                },
+                {
+                  "word": "white",
+                },
+                {
+                  "word": "black",
+                },
+              ],
+              "include": [
+                {
+                  "word": "pudding powder",
+                  "substitution": false,
+                },
+                {
+                  "word": "pudding dessert mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "pudding & pie dessert mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "pudding and pie dessert mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "instant pudding",
+                  "substitution": false,
+                },
+                {
+                  "word": "custard powder",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "purple food colouring",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "purple food colour",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "pistachios",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pistachio nuts",
+                  "substitution": false,
+                },
+                {
+                  "word": "pistachio kernals",
+                  "substitution": false,
+                },
+                {
+                  "word": "pistachio nut kernals",
+                  "substitution": false,
+                },
+                {
+                  "word": "whole pistachio",
+                  "substitution": false,
+                },
+                {
+                  "word": "almonds",
+                  "substitution": true,
+                },
+                {
+                  "word": "pine nuts",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pretzel snacks",
+              "exclude": [
+                {
+                  "word": "kit",
+                },
+                {
+                  "word": "dough",
+                },
+                {
+                  "word": "soft",
+                },
+                {
+                  "word": "baking",
+                },
+              ],
+              "include": [
+                {
+                  "word": "pretzel",
+                  "substitution": false,
+                },
+                {
+                  "word": "potato chips",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "puff pastry",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pâte feuilletée",
+                  "substitution": false,
+                },
+                {
+                  "word": "pate feuilletee",
+                  "substitution": false,
+                },
+                {
+                  "word": "croissant dough",
+                  "substitution": false,
+                },
+                {
+                  "word": "croissants dough",
+                  "substitution": false,
+                },
+                {
+                  "word": "croissant pastry",
+                  "substitution": false,
+                },
+                {
+                  "word": "croissants pastry",
+                  "substitution": false,
+                },
+                {
+                  "word": "filo pastry",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaky pastry",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "plaice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sole",
+                  "substitution": true,
+                },
+                {
+                  "word": "flounder",
+                  "substitution": true,
+                },
+                {
+                  "word": "dab",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pollock",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "saithe",
+                  "substitution": false,
+                },
+                {
+                  "word": "coley",
+                  "substitution": false,
+                },
+                {
+                  "word": "coalfish",
+                  "substitution": false,
+                },
+                {
+                  "word": "pollack",
+                  "substitution": false,
+                },
+                {
+                  "word": "whiting",
+                  "substitution": true,
+                },
+                {
+                  "word": "cod",
+                  "substitution": true,
+                },
+                {
+                  "word": "hake",
+                  "substitution": true,
+                },
+                {
+                  "word": "haddock",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "prawns",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shrimp",
+                  "substitution": true,
+                },
+                {
+                  "word": "langoustine",
+                  "substitution": true,
+                },
+                {
+                  "word": "crayfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "lobster",
+                  "substitution": true,
+                },
+                {
+                  "word": "saeu-jeot",
+                  "substitution": true,
+                },
+                {
+                  "word": "saewoo jeot",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pancetta",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "guanciale",
+                  "substitution": true,
+                },
+                {
+                  "word": "bacon",
+                  "substitution": true,
+                },
+                {
+                  "word": "pork",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pork mince",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ground pork",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced pork",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince pork",
+                  "substitution": false,
+                },
+                {
+                  "word": "pork minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "lamb mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "beef mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "minced meat",
+                  "substitution": true,
+                },
+                {
+                  "word": "meat free mince",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "persimmon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sharon fruit",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "plantain",
+              "exclude": [
+                {
+                  "word": "flour",
+                },
+              ],
+              "include": [
+                {
+                  "word": "cooking banana",
+                  "substitution": false,
+                },
+                {
+                  "word": "green banana",
+                  "substitution": false,
+                },
+                {
+                  "word": "matoke",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet potato",
+                  "substitution": true,
+                },
+                {
+                  "word": "potato",
+                  "substitution": true,
+                },
+                {
+                  "word": "butternut squash",
+                  "substitution": true,
+                },
+                {
+                  "word": "yuca root",
+                  "substitution": true,
+                },
+                {
+                  "word": "cassava root",
+                  "substitution": true,
+                },
+                {
+                  "word": "breadfruit",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "plain paprika",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "smoked paprika",
+                  "substitution": true,
+                },
+                {
+                  "word": "hot paprika",
+                  "substitution": true,
+                },
+                {
+                  "word": "paprika",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried achiote",
+                  "substitution": true,
+                },
+                {
+                  "word": "achiote",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pease pudding",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pease porridge",
+                  "substitution": false,
+                },
+                {
+                  "word": "pease pottage",
+                  "substitution": false,
+                },
+                {
+                  "word": "pea soup",
+                  "substitution": true,
+                },
+                {
+                  "word": "pottage",
+                  "substitution": true,
+                },
+                {
+                  "word": "potage",
+                  "substitution": true,
+                },
+                {
+                  "word": "hummus",
+                  "substitution": true,
+                },
+                {
+                  "word": "mushy peas",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pickled vegetables",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vegetable pickles",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled cauliflower",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled mushroom",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled onions",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled red cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled eggs",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pickled eggs",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pickled egg",
+                  "substitution": false,
+                },
+                {
+                  "word": "egg pickled",
+                  "substitution": false,
+                },
+                {
+                  "word": "jalapeno egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "jalapeno quail egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled red beet egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled red beet quail egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled beet egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled beet quail egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled mustard egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled mustard quail egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled quail egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "quail egg pickled",
+                  "substitution": true,
+                },
+                {
+                  "word": "boiled egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "boiled quail egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "peeled egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "peeled quail egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "preserved egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "preserved quail egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "marinated egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "marinated quail egg",
+                  "substitution": true,
+                },
+                {
+                  "word": "chao",
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented tofu",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled tofu",
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented bean curd",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled bean curd",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "pickled red cabbage",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pickled cabbage",
+                  "substitution": false,
+                },
+                {
+                  "word": "red cabbage salad",
+                  "substitution": false,
+                },
+                {
+                  "word": "spiced red cabbage",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet red cabbage",
+                  "substitution": false,
+                },
+                {
+                  "word": "red cabbage in vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "pickled white cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled chinese cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled slaw",
+                  "substitution": true,
+                },
+                {
+                  "word": "red slaw",
+                  "substitution": true,
+                },
+                {
+                  "word": "sauerkraut",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled onions",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickles",
+                  "substitution": true,
+                },
+                {
+                  "word": "shibazuke",
+                  "substitution": true,
+                },
+                {
+                  "word": "fukujinzuke",
+                  "substitution": true,
+                },
+                {
+                  "word": "sakurazuke",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled vegetables",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled eggs",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -818,6 +1882,18 @@
                   "substitution": false,
                 },
                 {
+                  "word": "peach leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peach flavor tea",
+                  "substitution": false,
+                },
+                {
                   "word": "peach teabag",
                   "substitution": false,
                 },
@@ -905,6 +1981,18 @@
                   "substitution": false,
                 },
                 {
+                  "word": "pear leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pear flavor tea",
+                  "substitution": false,
+                },
+                {
                   "word": "pear teabag",
                   "substitution": false,
                 },
@@ -973,6 +2061,18 @@
                 },
                 {
                   "word": "pineapple flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "pineapple flavor tea",
                   "substitution": false,
                 },
                 {
@@ -1401,10 +2501,6 @@
                 "word": "sweet potato",
                 "substitution": true,
               },
-              {
-                "word": "sweet potatoes",
-                "substitution": true,
-              },
             ],
           },
           {
@@ -1446,6 +2542,18 @@
                 },
                 {
                   "word": "passionfruit flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavor tea",
                   "substitution": false,
                 },
                 {
@@ -1494,6 +2602,18 @@
                 },
                 {
                   "word": "passion fruit flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "passion fruit flavor tea",
                   "substitution": false,
                 },
                 {
@@ -1696,6 +2816,46 @@
                 {
                   "word": "pickled shallots",
                   "substitution": false,
+                },
+                {
+                  "word": "onion pickles",
+                  "substitution": false,
+                },
+                {
+                  "word": "pickled red onions",
+                  "substitution": false,
+                },
+                {
+                  "word": "pickled sliced red onions",
+                  "substitution": false,
+                },
+                {
+                  "word": "onions pickled",
+                  "substitution": false,
+                },
+                {
+                  "word": "pickled cornichons and onions",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled red cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "caperberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "capers",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled eggs",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled vegetables",
+                  "substitution": true,
                 },
               ],
           },
@@ -2267,6 +3427,14 @@
                   "word": "creme fraiche",
                   "substitution": true,
                 },
+                {
+                  "word": "raita",
+                  "substitution": true,
+                },
+                {
+                  "word": "tzatziki",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -2557,11 +3725,27 @@
                   "substitution": true,
                 },
                 {
-                  "word": "pickled onions",
+                  "word": "caperberries",
                   "substitution": true,
                 },
                 {
                   "word": "capers",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled red cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled walnuts",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled vegetables",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled eggs",
                   "substitution": true,
                 },
               ],
@@ -2582,6 +3766,14 @@
                 {
                   "word": "passion-fruit",
                   "substitution": false,
+                },
+                {
+                  "word": "pomegranate",
+                  "substitution": true,
+                },
+                {
+                  "word": "fresh pomegranate seeds",
+                  "substitution": true,
                 },
               ],
           },
@@ -2639,10 +3831,6 @@
                 },
                 {
                   "word": "bulgur",
-                  "substitution": true,
-                },
-                {
-                  "word": "bulghar",
                   "substitution": true,
                 },
                 {
@@ -2717,6 +3905,18 @@
                 {
                   "word": "crisps",
                   "substitution": false,
+                },
+                {
+                  "word": "tortilla chip",
+                  "substitution": true,
+                },
+                {
+                  "word": "dorito",
+                  "substitution": true,
+                },
+                {
+                  "word": "pretzel snacks",
+                  "substitution": true,
                 },
               ],
           },
@@ -3512,6 +4712,22 @@
                   "word": "boczek",
                   "substitution": false,
                 },
+                {
+                  "word": "porchetta",
+                  "substitution": true,
+                },
+                {
+                  "word": "porketta",
+                  "substitution": true,
+                },
+                {
+                  "word": "pancetta",
+                  "substitution": true,
+                },
+                {
+                  "word": "lechon belly",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -3721,6 +4937,14 @@
                 },
               ],
               "include": [
+                {
+                  "word": "fresh pomegranate seeds",
+                  "substitution": false,
+                },
+                {
+                  "word": "pomegranate arils",
+                  "substitution": false,
+                },
               ],
           },
           {
@@ -4121,7 +5345,10 @@
               },
             ],
             "include": [
-
+              {
+                "word": "physalis",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -4178,6 +5405,10 @@
                 "word": "pine nut",
                 "substitution": false,
               },
+              {
+                "word": "pistachios",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -4205,9 +5436,6 @@
             "name": "potato",
             "exclude": [
               {
-                "word": "sweet potato",
-              },
-              {
                 "word": "pierogi",
               },
               {
@@ -4234,8 +5462,20 @@
             ],
             "include": [
               {
+                "word": "sweet potato",
+                "substitution": true,
+              },
+              {
+                "word": "potatoes",
+                "substitution": false,
+              },
+              {
                 "word": "maris piper",
                 "substitution": false,
+              },
+              {
+                "word": "plantain",
+                "substitution": true,
               },
             ],
           },

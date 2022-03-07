@@ -20,7 +20,7 @@
               "all purpose seasoning",
               "adzuki beans","apples","apricots","artichoke antipasti",
               "aioli","anchovy paste","apricot harissa paste","aubergine paste",
-              "apple syrup","apricot syrup",
+              "almond syrup","apple syrup","apricot syrup",
 
             ],
 
@@ -28,6 +28,33 @@
     "ingredients": [
 
 
+          {
+              "name": "almond syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond flavour syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavor syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavoured syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavored syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond extract",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "apricot syrup",
               "exclude": [
@@ -387,6 +414,30 @@
                   "substitution": false,
                 },
                 {
+                  "word": "almond flavour essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavor essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavoured essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flavored essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond natural flavouring",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond natural flavoring",
+                  "substitution": false,
+                },
+                {
                   "word": "almond flavouring",
                   "substitution": false,
                 },
@@ -404,6 +455,14 @@
                 },
                 {
                   "word": "almond paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond powder",
                   "substitution": true,
                 },
               ],
@@ -756,6 +815,18 @@
                 },
                 {
                   "word": "apple flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "apple flavor tea",
                   "substitution": false,
                 },
                 {
@@ -1131,7 +1202,7 @@
                   "substitution": true,
                 },
                 {
-                  "word": "paprika",
+                  "word": "plain paprika",
                   "substitution": true,
                 },
               ],
@@ -2140,6 +2211,10 @@
               },
               {
                 "word": "mixed nuts",
+                "substitution": true,
+              },
+              {
+                "word": "pistachios",
                 "substitution": true,
               },
             ],

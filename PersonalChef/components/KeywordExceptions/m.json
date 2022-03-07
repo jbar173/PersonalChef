@@ -20,7 +20,7 @@
               "medium curry paste", "mild curry paste", "mild mustard","mint marinade","mint sauce","mirin","miso","miso tahini","mushroom ketchup",
               "mushroom soup","mushroom stock","mustard",
 
-              "mango tea",
+              "mango tea", "mulberry syrup",
 
               "margarine","mango and passionfruit mousse","marmite","meat free bacon","meat free breadcrumbed fillets","meat free mince",
               "meat free southern fried fillets","milk","mini cheddars",
@@ -43,6 +43,29 @@
     "ingredients": [
 
 
+          {
+              "name": "mulberry syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mulberry molasses",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackcurrant syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry syrup",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "mead",
               "exclude": [
@@ -1520,6 +1543,10 @@
                   "word": "marrowfat pea",
                   "substitution": true,
                 },
+                {
+                  "word": "pease pudding",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -2395,6 +2422,18 @@
                   "substitution": false,
                 },
                 {
+                  "word": "mango leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango flavor tea",
+                  "substitution": false,
+                },
+                {
                   "word": "mango teabag",
                   "substitution": false,
                 },
@@ -2450,6 +2489,18 @@
                   "substitution": false,
                 },
                 {
+                  "word": "mint leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "mint flavor tea",
+                  "substitution": false,
+                },
+                {
                   "word": "mint teabag",
                   "substitution": false,
                 },
@@ -2491,6 +2542,18 @@
                 },
                 {
                   "word": "peppermint flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "peppermint flavor tea",
                   "substitution": false,
                 },
                 {
@@ -4004,22 +4067,6 @@
                 "substitution": true,
               },
               {
-                "word": "pepper jack",
-                "substitution": true,
-              },
-              {
-                "word": "pepper-jack",
-                "substitution": true,
-              },
-              {
-                "word": "muenster",
-                "substitution": true,
-              },
-              {
-                "word": "havarti",
-                "substitution": true,
-              },
-              {
                 "word": "colby-jack",
                 "substitution": true,
               },
@@ -4037,6 +4084,26 @@
               },
               {
                 "word": "cojack",
+                "substitution": true,
+              },
+              {
+                "word": "pepper jack",
+                "substitution": true,
+              },
+              {
+                "word": "pepper-jack",
+                "substitution": true,
+              },
+              {
+                "word": "muenster",
+                "substitution": true,
+              },
+              {
+                "word": "havarti",
+                "substitution": true,
+              },
+              {
+                "word": "port salut",
                 "substitution": true,
               },
               {
@@ -4178,6 +4245,10 @@
               },
               {
                 "word": "manchego",
+                "substitution": true,
+              },
+              {
+                "word": "port salut",
                 "substitution": true,
               },
             ],

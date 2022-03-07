@@ -230,6 +230,10 @@
                 "substitution": true,
               },
               {
+                "word": "coley",
+                "substitution": true,
+              },
+              {
                 "word": "halibut",
                 "substitution": true,
               },
@@ -239,6 +243,10 @@
               },
               {
                 "word": "orange roughy",
+                "substitution": true,
+              },
+              {
+                "word": "basa",
                 "substitution": true,
               },
             ],
@@ -257,6 +265,10 @@
                 "substitution": false,
               },
               {
+                "word": "whiting",
+                "substitution": true,
+              },
+              {
                 "word": "cod",
                 "substitution": true,
               },
@@ -269,7 +281,15 @@
                 "substitution": true,
               },
               {
+                "word": "sole",
+                "substitution": true,
+              },
+              {
                 "word": "pollock",
+                "substitution": true,
+              },
+              {
+                "word": "coley",
                 "substitution": true,
               },
             ],
@@ -401,6 +421,10 @@
               },
               {
                 "word": "hot paprika paste",
+                "substitution": true,
+              },
+              {
+                "word": "cajun spice",
                 "substitution": true,
               },
               {
@@ -1639,6 +1663,10 @@
               "word": "monterey jack",
               "substitution": true,
             },
+            {
+              "word": "port salut",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -1651,6 +1679,10 @@
           "include": [
             {
               "word": "mixed nuts",
+              "substitution": true,
+            },
+            {
+              "word": "pistachios",
               "substitution": true,
             },
           ],

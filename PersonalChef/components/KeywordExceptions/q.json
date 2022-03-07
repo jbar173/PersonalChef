@@ -1,6 +1,7 @@
 {
 
     "key" : [ "quince jelly","quince paste",
+              "quinoa",
               "quince",
               "quinoa milk",
 
@@ -9,13 +10,60 @@
 
 
               "~~~ TO DO : ~~~",
-              "quinoa",
+              
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "quinoa",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "millet",
+                  "substitution": true,
+                },
+                {
+                  "word": "riced cauliflower",
+                  "substitution": true,
+                },
+                {
+                  "word": "bulgur",
+                  "substitution": true,
+                },
+                {
+                  "word": "pearled barley",
+                  "substitution": true,
+                },
+                {
+                  "word": "couscous",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried red lentils",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried green lentils",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried brown lentils",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried black lentils",
+                  "substitution": true,
+                },
+              ],
+          },
           {
             "name": "quinoa milk",
             "exclude": [

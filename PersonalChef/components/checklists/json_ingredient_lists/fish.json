@@ -4,13 +4,15 @@
 
                       "basa", "bass", "bluefish", "breaded fish fillets",
 
-                      "caviar", "cod", "cockles", "crab", "crayfish",
+                      "caviar", "cockles", "cod", "coley", "crab", "crayfish",
 
-                      "dried shrimp",
+                      "dab", "dried shrimp",
 
                       "fish cakes", "flounder", "fluke",
 
                       "haddock", "hake", "halibut", "herring",
+
+                      "jellied eels",
 
                       "kipper",
 
@@ -20,16 +22,16 @@
 
                       "orange roughy",
 
-                      "pangasius", "perch", "pilchards", "plaice", "pollock", "prawns",
+                      "pangasius", "perch", "plaice", "pollock", "prawns",
 
                       "rainbow trout",
 
-                      "salmon", "sardines", "scallops", "sea bass", "seafood stick", "shrimp", "sild", "smoked rainbow trout", "snapper",
+                      "salmon", "sardines", "scallops", "sea bass", "sea bream", "seafood stick", "shrimp", "sild", "smoked rainbow trout", "snapper",
                       "smoked salmon", "sole", "sprat", "squid",
 
                       "tempura prawns", "tilapia", "trout", "tuna", "turbot",
 
-                      "walleye",
+                      "walleye", "whiting",
 
     ]
 }

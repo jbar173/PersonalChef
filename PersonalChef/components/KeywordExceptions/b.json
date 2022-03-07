@@ -17,7 +17,7 @@
              "bread sauce","brown sauce","burger sauce","butter chicken cooking sauce",
 
              "butter","buttermilk",
-             "banana milkshake","beetroot juice","berry tea","black tea",
+             "banana milkshake","beetroot juice","berry tea","black tea","blackcurrant syrup",
 
 
 
@@ -25,7 +25,9 @@
              "~~~ HALF DONE : ~~~",
              "blackberry flavoured spirit/liqueur", "blackcurrant flavoured spirit/liqueur", "butterscotch flavoured spirit/liqueur",
              "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
+             "bulgur",
              "bass", "bluefish", "breaded fish fillets",
+             "bacon",
              "barbeque seasoning",
              "basil oil", "basil puree", "black bean paste", "borage seed oil",
              "berry cordial", "blackcurrant tea",
@@ -44,6 +46,80 @@
     "ingredients": [
 
 
+
+      {
+          "name": "blackcurrant syrup",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "blackcurrant molasses",
+              "substitution": false,
+            },
+            {
+              "word": "ribena",
+              "substitution": true,
+            },
+            {
+              "word": "berry cordial",
+              "substitution": true,
+            },
+            {
+              "word": "fruit syrup",
+              "substitution": true,
+            },
+            {
+              "word": "mulberry syrup",
+              "substitution": true,
+            },
+            {
+              "word": "raspberry syrup",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "bulgur",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "bulghar",
+              "substitution": false,
+            },
+            {
+              "word": "quinoa",
+              "substitution": true,
+            },
+            {
+              "word": "couscous",
+              "substitution": true,
+            },
+            {
+              "word": "riced cauliflower",
+              "substitution": true,
+            },
+            {
+              "word": "pearled barley",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "bacon",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "pancetta",
+              "substitution": true,
+            },
+            {
+              "word": "guanciale",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "bluefish",
           "exclude": [
@@ -366,6 +442,14 @@
       {
           "name": "boiled sweets",
           "exclude": [
+            {
+              "word": "ice",
+              "substitution": false,
+            },
+            {
+              "word": "iced",
+              "substitution": false,
+            },
           ],
           "include": [
             {
@@ -377,8 +461,28 @@
               "substitution": false,
             },
             {
+              "word": "hard candies",
+              "substitution": false,
+            },
+            {
               "word": "fruit drop",
               "substitution": false,
+            },
+            {
+              "word": "pear drops",
+              "substitution": false,
+            },
+            {
+              "word": "lollie",
+              "substitution": true,
+            },
+            {
+              "word": "lollipop",
+              "substitution": true,
+            },
+            {
+              "word": "lolly",
+              "substitution": true,
             },
           ],
       },
@@ -510,6 +614,22 @@
             },
             {
               "word": "swai",
+              "substitution": false,
+            },
+            {
+              "word": "pangasius",
+              "substitution": false,
+            },
+            {
+              "word": "panga",
+              "substitution": false,
+            },
+            {
+              "word": "river cobbler",
+              "substitution": false,
+            },
+            {
+              "word": "vietnamese cobbler",
               "substitution": false,
             },
             {
@@ -923,6 +1043,18 @@
               "substitution": false,
             },
             {
+              "word": "berry leaf tea",
+              "substitution": false,
+            },
+            {
+              "word": "berry flavour tea",
+              "substitution": false,
+            },
+            {
+              "word": "berry flavor tea",
+              "substitution": false,
+            },
+            {
               "word": "berry teabag",
               "substitution": false,
             },
@@ -971,6 +1103,10 @@
             },
             {
               "word": "black loose leaf tea",
+              "substitution": false,
+            },
+            {
+              "word": "black leaf tea",
               "substitution": false,
             },
             {
@@ -1204,6 +1340,14 @@
               "word": "apple and blackcurrant squash",
               "substitution": false,
             },
+            {
+              "word": "ribena",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant syrup",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -1245,6 +1389,18 @@
             },
             {
               "word": "blackcurrant flavored tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant leaf tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant flavour tea",
+              "substitution": false,
+            },
+            {
+              "word": "blackcurrant flavor tea",
               "substitution": false,
             },
             {
@@ -2176,6 +2332,14 @@
             },
             {
               "word": "kabocha",
+              "substitution": true,
+            },
+            {
+              "word": "sweet potato",
+              "substitution": true,
+            },
+            {
+              "word": "plantain",
               "substitution": true,
             },
           ],

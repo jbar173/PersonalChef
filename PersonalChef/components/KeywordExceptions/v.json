@@ -267,6 +267,42 @@
               ],
               "include": [
                 {
+                  "word": "vanilla essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavour essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavor essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavoured essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavored essence",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla natural flavouring",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla natural flavoring",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavouring",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavoring",
+                  "substitution": false,
+                },
+                {
                   "word": "vanilla bean",
                   "substitution": true,
                 },
@@ -275,15 +311,15 @@
                   "substitution": true,
                 },
                 {
-                  "word": "vanilla essence",
-                  "substitution": false,
-                },
-                {
                   "word": "vanilla bean paste",
                   "substitution": true,
                 },
                 {
                   "word": "vanilla paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla syrup",
                   "substitution": true,
                 },
                 {

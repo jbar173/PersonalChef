@@ -595,6 +595,14 @@
             ],
             "include": [
               {
+                "word": "emmentaler",
+                "substitution": false,
+              },
+              {
+                "word": "emmenthaler",
+                "substitution": false,
+              },
+              {
                 "word": "fontina",
                 "substitution": true,
               },
@@ -603,15 +611,11 @@
                 "substitution": true,
               },
               {
-                "word": "emmentaler",
-                "substitution": true,
-              },
-              {
-                "word": "emmenthaler",
-                "substitution": true,
-              },
-              {
                 "word": "gruyere",
+                "substitution": true,
+              },
+              {
+                "word": "pleasant ridge",
                 "substitution": true,
               },
               {

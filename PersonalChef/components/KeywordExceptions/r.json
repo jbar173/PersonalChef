@@ -5,8 +5,9 @@
               "raspberry jam","raspberry jelly","raisins","rhubarb jam","rhubarb jelly","rice puffs","rose water",
               "rice","rice cracker","red lentils",
               "rocket",
-              "redcurrant jelly","red curry paste","rapeseed oil","rice bran oil",
-              "rice milk",
+              "rapeseed oil","redcurrant jelly","red curry paste","rendang curry paste","rice bran oil","rogan josh sauce",
+              "raspberry syrup","raspberry tea","ribena",
+              "raita","ravioli","rice milk",
 
 
               "~~~ HALF DONE : ~~~",
@@ -19,7 +20,7 @@
               "rose wine",
               "raclette/oka(sub)", "red leicester",
 
-              "rainbow drops", "raisin and biscuit chocolate", "raspberry bonbons", "raspberry syrup", "red food colouring", "reese’s peanut butter cups",
+              "rainbow drops", "raisin and biscuit chocolate", "raspberry bonbons", "red food colouring", "reese’s peanut butter cups",
               "revels", "rhubarb and ginger preserve", "rice syrup/rice malt syrup/honey/maple syrup(sub)", "rolos",
 
               "rice and peas",
@@ -27,9 +28,8 @@
               "raspberries", "ratatouille", "redcurrants", "rhubarb",
               "ras el hanout/baharat seasoning/jerk seasoning mix(subs)", "red pepper flakes", "rogan josh spice/jerk sauce/jerk seasoning mix(subs)",
               "rice pudding", "roasted red peppers",
-              "ramen broth", "red pesto", "red wine stock", "rendang curry paste", "rogan josh sauce/jerk sauce(sub)",
-              "raspberry tea", "ribena",
-              "raita", "rassomalai", "rassogulla", "ravioli",
+              "ramen broth", "red pesto", "red wine stock",
+
 
     ],
 
@@ -37,7 +37,239 @@
     "ingredients": [
 
 
-
+          {
+              "name": "rendang curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rendang",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "rogan josh sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rogan josh paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "rogan josh",
+                  "substitution": false,
+                },
+                {
+                  "word": "medium curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "jerk sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "raspberry tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raspberry loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry loose leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry leaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry tea bag",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry passion tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry & lemon tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry and lemon tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry & peach tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry and peach tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry & mint tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry and mint tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "berry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "blueberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackcurrant tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "pomegranate tea",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "raspberry syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raspberry molasses",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "mulberry syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackcurrant syrup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "ribena",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "blackcurrant cordial",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackcurrant fruit concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackcurrant juice concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "blackcurrant squash",
+                  "substitution": false,
+                },
+                {
+                  "word": "double concentrate blackcurrant",
+                  "substitution": false,
+                },
+                {
+                  "word": "single concentrate blackcurrant",
+                  "substitution": false,
+                },
+                {
+                  "word": "berry cordial",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackcurrant syrup",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "raita",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tzatziki",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "ravioli",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tortelloni",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "rice bran oil",
               "exclude": [
@@ -1011,6 +1243,14 @@
             "include": [
               {
                 "word": "raisin",
+                "substitution": false,
+              },
+              {
+                "word": "currant",
+                "substitution": false,
+              },
+              {
+                "word": "sultana",
                 "substitution": false,
               },
             ],

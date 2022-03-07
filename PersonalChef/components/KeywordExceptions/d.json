@@ -15,8 +15,8 @@
              "duck",
              "daikon",
 
-             "dill","dried achiote","dried basil","dried chervil","dried chilli peppers","dried coriander","dried marjoram","dried oregano","dried rosemary","dried sage",
-             "dried savoury","dried tarragon","dried thyme",
+             "dill","dried achiote","dried basil","dried chervil","dried chilli peppers","dried coriander","dried marjoram","dried oregano","dried pomegranate seeds",
+             "dried rosemary","dried sage","dried savoury","dried tarragon","dried thyme",
 
              "demi-glace","diane sauce","dijon mustard","dill and lemon sauce",
              "dandelion and burdock","dr pepper",
@@ -26,6 +26,7 @@
              "~~~ HALF DONE : ~~~",
              "date paste", "dried banana",
              "dried black beans", "dried moong dal", "dried red lentils", "dried split peas",
+             "dab",
              "dried lime",
              "dripping", "duck fat",
              "date syrup",
@@ -40,6 +41,47 @@
     "ingredients": [
 
 
+
+        {
+            "name": "dab",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sole",
+                "substitution": true,
+              },
+              {
+                "word": "flounder",
+                "substitution": true,
+              },
+              {
+                "word": "plaice",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried pomegranate seeds",
+            "exclude": [
+              {
+                "word": "oil",
+              },
+              {
+                "word": "fresh",
+              },
+            ],
+            "include": [
+              {
+                "word": "organic pomegranate seeds",
+                "substitution": false,
+              },
+              {
+                "word": "anardana",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "dried shrimp",
             "exclude": [
@@ -354,6 +396,14 @@
                 "word": "coloured dusting sugar",
                 "substitution": false,
               },
+              {
+                "word": "pop rocks",
+                "substitution": true,
+              },
+              {
+                "word": "nerds",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -409,6 +459,10 @@
               },
               {
                 "word": "dried berries",
+                "substitution": true,
+              },
+              {
+                "word": "fresh pomegranate seeds",
                 "substitution": true,
               },
             ],
@@ -759,7 +813,7 @@
                 "substitution": false,
               },
               {
-                "word": "lentils",
+                "word": "dried black beans",
                 "substitution": false,
               },
               {
@@ -787,8 +841,12 @@
                 "substitution": true,
               },
               {
-                "word": "dried black beans",
-                "substitution": false,
+                "word": "quinoa",
+                "substitution": true,
+              },
+              {
+                "word": "lentils",
+                "substitution": true,
               },
             ],
         },
@@ -838,10 +896,6 @@
                 "substitution": false,
               },
               {
-                "word": "lentils",
-                "substitution": false,
-              },
-              {
                 "word": "green lentil",
                 "substitution": true
               },
@@ -883,6 +937,14 @@
               },
               {
                 "word": "dried red lentils",
+                "substitution": true,
+              },
+              {
+                "word": "quinoa",
+                "substitution": true,
+              },
+              {
+                "word": "lentils",
                 "substitution": true,
               },
             ],
@@ -953,10 +1015,6 @@
                 "substitution": false,
               },
               {
-                "word": "lentils",
-                "substitution": false,
-              },
-              {
                 "word": "chana dal",
                 "substitution": true,
               },
@@ -974,6 +1032,14 @@
               },
               {
                 "word": "dried red lentils",
+                "substitution": true,
+              },
+              {
+                "word": "quinoa",
+                "substitution": true,
+              },
+              {
+                "word": "lentils",
                 "substitution": true,
               },
             ],
@@ -2229,10 +2295,6 @@
                 "substitution": false,
               },
               {
-                "word": "lentils",
-                "substitution": false,
-              },
-              {
                 "word": "masoor dal",
                 "substitution": false,
               },
@@ -2246,6 +2308,14 @@
               },
               {
                 "word": "dried black lentils",
+                "substitution": true,
+              },
+              {
+                "word": "quinoa",
+                "substitution": true,
+              },
+              {
+                "word": "lentils",
                 "substitution": true,
               },
             ],
@@ -2443,7 +2513,7 @@
                 "substitution": false,
               },
               {
-                "word": "paprika",
+                "word": "plain paprika",
                 "substitution": true,
               },
             ],
@@ -3246,6 +3316,10 @@
                 "word": "dried cranberries",
                 "substitution": true,
               },
+              {
+                "word": "fresh pomegranate seeds",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -3267,6 +3341,10 @@
               },
               {
                 "word": "dried barberries",
+                "substitution": true,
+              },
+              {
+                "word": "fresh pomegranate seeds",
                 "substitution": true,
               },
             ],

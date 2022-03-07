@@ -8,7 +8,8 @@
 
 
               "~~~ HALF DONE : ~~~",
-              "nasi goreng paste", "nut butter",
+              "nut cookies",
+              "nasi goreng paste","nut butter",
 
 
 
@@ -22,6 +23,29 @@
 
 
 
+          {
+              "name": "nut cookies",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peanut cookies",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter cookies",
+                  "substitution": false,
+                },
+                {
+                  "word": "peanut butter wafers",
+                  "substitution": true,
+                },
+                {
+                  "word": "cookies",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "nut butter",
               "exclude": [
@@ -219,23 +243,15 @@
               ],
               "include": [
                 {
-                  "word": "pop rocks",
-                  "substitution": true,
-                },
-                {
-                  "word": "shock rocks",
-                  "substitution": true,
-                },
-                {
-                  "word": "popping candy",
-                  "substitution": true,
-                },
-                {
                   "word": "dweebs",
                   "substitution": true,
                 },
                 {
                   "word": "sugar sprinkles",
+                  "substitution": true,
+                },
+                {
+                  "word": "popping candy",
                   "substitution": true,
                 },
               ],
@@ -347,6 +363,10 @@
                 },
                 {
                   "word": "celery seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "poppy seeds",
                   "substitution": true,
                 },
               ],
