@@ -6,11 +6,11 @@
               "shrimp",
               "sausage","smoked sausage/sliced meat",
               "salad leaves","shallot","soffrito mix","spinach","spring onions","summer squash","swede","sweet potato",
-              "smoked paprika","salt","shichimi",
-              "sun-dried tomatoes", "sweetcorn",
+              "salt","shichimi","smoked paprika","sweet red pepper flakes",
+              "spinach puree","sun-dried tomatoes","sweetcorn",
               "safflower oil","salsa","sesame oil","soy sauce","sunflower oil",
-              "soy milk","soured cream","shortening",
               "sparkling water",
+              "shortening","sorbet","soured cream","soy milk","spring rolls","stuffing","sweet potato fries",
 
 
               "~~~ HALF DONE : ~~~",
@@ -21,7 +21,7 @@
               "sliced cooked meat",
               "spicy brown mustard","sweet and sour sauce","sweet chilli and garlic","sweet chilli sauce","sweet pickle relish",
               "strawberry milkshake",
-              "salted popcorn","seed butter","soy butter","sunflower seed butter","sweet popcorn",
+              "seed butter","soy butter","sunflower seed butter",
 
 
               "~~~ TO DO : ~~~",
@@ -46,8 +46,7 @@
 
               "strawberry tea",
 
-              "salmon sushi", "salted caramel mousse", "sausage roll", "seaweed thins", "sev mamra", "sorbet", "spicy green peas and peanuts", "spring rolls", "stuffing",
-              "sunflower spread", "sweet chilli biscuits", "sweet and salted popcorn", "sweet potato fries", "spinach puree/passionfruit purée",
+              "salmon sushi", "salted caramel mousse", "sausage roll", "seaweed thins", "sev mamra",
 
     ],
 
@@ -56,6 +55,222 @@
 
 
 
+          {
+              "name": "sorbet",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sorbetto",
+                  "substitution": false,
+                },
+                {
+                  "word": "italian ice",
+                  "substitution": true,
+                },
+                {
+                  "word": "granita",
+                  "substitution": true,
+                },
+                {
+                  "word": "sherbert",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "spring rolls",
+              "exclude": [
+                {
+                  "word": "paper",
+                },
+                {
+                  "word": "wrapper",
+                },
+                {
+                  "word": "pastry",
+                },
+                {
+                  "word": "filling",
+                },
+                {
+                  "word": "kit",
+                },
+              ],
+              "include": [
+                {
+                  "word": "spring roll",
+                  "substitution": false,
+                },
+                {
+                  "word": "egg roll",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable roll",
+                  "substitution": true,
+                },
+                {
+                  "word": "imperial roll",
+                  "substitution": true,
+                },
+                {
+                  "word": "lumpia",
+                  "substitution": true,
+                },
+                {
+                  "word": "lumpiang",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "stuffing",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "croutons",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "stuffing",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "croutons",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sweet potato fries",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "roasted sweet potato",
+                  "substitution": false,
+                },
+                {
+                  "word": "roasted potato",
+                  "substitution": true,
+                },
+                {
+                  "word": "fries",
+                  "substitution": true,
+                },
+                {
+                  "word": "wedges",
+                  "substitution": true,
+                },
+                {
+                  "word": "chips",
+                  "substitution": true,
+                },
+                {
+                  "word": "crisps",
+                  "substitution": true,
+                },
+                {
+                  "word": "sticks",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "spinach puree",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "spinach purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "puréed spinach",
+                  "substitution": false,
+                },
+                {
+                  "word": "pureed spinach",
+                  "substitution": false,
+                },
+                {
+                  "word": "canned spinach",
+                  "substitution": false,
+                },
+                {
+                  "word": "tinned spinach",
+                  "substitution": false,
+                },
+                {
+                  "word": "creamed spinach",
+                  "substitution": true,
+                },
+                {
+                  "word": "spinach with cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "spinach mornay",
+                  "substitution": true,
+                },
+                {
+                  "word": "spinach sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "spinach dip",
+                  "substitution": true,
+                },
+                {
+                  "word": "spinach paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "spinach pesto",
+                  "substitution": true,
+                },
+                {
+                  "word": "kale pesto",
+                  "substitution": true,
+                },
+                {
+                  "word": "pea puree",
+                  "substitution": true,
+                },
+                {
+                  "word": "pea purée",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sweet red pepper flakes",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "bell pepper flakes",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet pepper flakes",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet red pepper flakes",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper sweet flakes",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "sliced cooked meat",
               "exclude": [
@@ -181,6 +396,10 @@
               "include": [
                 {
                   "word": "sunflower seed butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower spread",
                   "substitution": true,
                 },
                 {
@@ -376,6 +595,10 @@
               "include": [
                 {
                   "word": "sunflower butter",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower spread",
                   "substitution": false,
                 },
                 {
@@ -1627,6 +1850,10 @@
               ],
               "include": [
                 {
+                  "word": "sparkling white",
+                  "substitution": false,
+                },
+                {
                   "word": "prosecco",
                   "substitution": false,
                 },
@@ -2243,8 +2470,96 @@
           {
             "name": "spinach",
             "exclude": [
+              {
+                "word": "puree",
+              },
+              {
+                "word": "purée",
+              },
+              {
+                "word": "pureed",
+              },
+              {
+                "word": "puréed",
+              },
+              {
+                "word": "paneer",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "dip",
+              },
+              {
+                "word": "paste",
+              },
+              {
+                "word": "creamed",
+              },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "mornay",
+              },
+              {
+                "word": "soup",
+              },
+              {
+                "word": "noodles",
+              },
+              {
+                "word": "pasta",
+              },
+              {
+                "word": "tagliatelle",
+              },
+              {
+                "word": "tagliolina",
+              },
+              {
+                "word": "fettuccine",
+              },
+              {
+                "word": "spaghetti",
+              },
+              {
+                "word": "trottole",
+              },
+              {
+                "word": "farfalle",
+              },
+              {
+                "word": "tortelloni",
+              },
+              {
+                "word": "tortellini",
+              },
+              {
+                "word": "ravioli",
+              },
+              {
+                "word": "mezzelune",
+              },
+              {
+                "word": "vides",
+              },
+              {
+                "word": "tricolore",
+              },
+              {
+                "word": "gnocchi",
+              },
+              {
+                "word": "powder",
+              },
             ],
             "include": [
+              {
+                "word": "palak",
+                "substitution": false,
+              },
               {
                 "word": "beet greens",
                 "substitution": true,

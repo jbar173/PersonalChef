@@ -4,13 +4,13 @@
              "fig jam","fig jelly","fig roll","fruit and nut chocolate","fruit cake","fruit jellies","fruit loaf","fudge",
              "filo pastry","flax seeds","flour","frosties",
              "faggot",
-             "fiddleheads","fig","fresh coconut","fresh corn","fresh cranberries","fresh ginger","fresh pomegranate seeds",
+             "fiddleheads","fig","fresh coconut","fresh corn","fresh cranberries","fresh ginger","fresh pomegranate seeds","fresh quince",
 
              "fajita seasoning","fennel seeds","fish masala","fish seasoning","fresh basil","fresh chervil","fresh coriander","fresh marjoram","fresh mint",
              "fresh oregano","fresh parsley","fresh rosemary","fresh sage","fresh tarragon","fresh thyme","fenugreek leaves",
 
              "flageolet beans","fruit cocktail",
-             "fish sauce","french dressing","french mustard",
+             "fish sauce","fish stock","french dressing","french mustard",
              "faluda drink","fennel tea",
              "fruit yoghurt",
 
@@ -38,6 +38,61 @@
     "ingredients": [
 
 
+          {
+              "name": "fresh quince",
+              "exclude": [
+                {
+                  "word": "jelly",
+                },
+                {
+                  "word": "jam",
+                },
+                {
+                  "word": "marmalade",
+                },
+                {
+                  "word": "conserve",
+                },
+                {
+                  "word": "preserve",
+                },
+                {
+                  "word": "paste",
+                },
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "syrup",
+                },
+                {
+                  "word": "nectar",
+                },
+                {
+                  "word": "juice",
+                },
+                {
+                  "word": "liqueur",
+                },
+              ],
+              "include": [
+                {
+                  "word": "quince",
+                  "substitution": false,
+                },
+                {
+                  "word": "rhubarb",
+                  "substitution": true,
+                },
+                {
+                  "word": "cooking apple",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "fresh pomegranate seeds",
               "exclude": [
@@ -172,6 +227,10 @@
                 },
                 {
                   "word": "kapi",
+                  "substitution": true,
+                },
+                {
+                  "word": "narutomaki",
                   "substitution": true,
                 },
                 {
@@ -363,6 +422,10 @@
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "fruit & nut chocolate",
+                  "substitution": false,
+                },
                 {
                   "word": "chocolate peanuts",
                   "substitution": true,
@@ -915,6 +978,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "dashi",
+                  "substitution": true,
+                },
+                {
                   "word": "anchovy paste",
                   "substitution": true,
                 },
@@ -1130,6 +1197,10 @@
                 },
                 {
                   "word": "gruyere",
+                  "substitution": true,
+                },
+                {
+                  "word": "raclette",
                   "substitution": true,
                 },
               ],
@@ -1521,14 +1592,15 @@
           {
               "name": "fries",
               "exclude": [
-                {
-                  "word": "potato",
-                },
               ],
               "include": [
                 {
                   "word": "chips",
                   "substitution": false,
+                },
+                {
+                  "word": "sweet potato fries",
+                  "substitution": true,
                 },
               ],
           },
@@ -1673,10 +1745,7 @@
               "name": "fresh cranberries",
               "exclude": [
                 {
-                  "word": "dried cranberries",
-                },
-                {
-                  "word": "dried barberries",
+                  "word": "dried",
                 },
               ],
               "include": [
@@ -1686,6 +1755,22 @@
                 },
                 {
                   "word": "barberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "redcurrants",
+                  "substitution": true,
+                },
+                {
+                  "word": "rhubarb",
+                  "substitution": true,
+                },
+                {
+                  "word": "pomegranate",
+                  "substitution": true,
+                },
+                {
+                  "word": "cherries",
                   "substitution": true,
                 },
               ],
@@ -1887,6 +1972,10 @@
                 },
                 {
                   "word": "fish paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "dashi",
                   "substitution": true,
                 },
                 {
@@ -2711,14 +2800,6 @@
                 "substitution": true,
               },
               {
-                "word": "emmentaler",
-                "substitution": true,
-              },
-              {
-                "word": "emmenthaler",
-                "substitution": true,
-              },
-              {
                 "word": "gruyere",
                 "substitution": true,
               },
@@ -2736,6 +2817,10 @@
               },
               {
                 "word": "brie",
+                "substitution": true,
+              },
+              {
+                "word": "raclette",
                 "substitution": true,
               },
             ],

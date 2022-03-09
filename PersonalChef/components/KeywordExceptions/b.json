@@ -3,7 +3,7 @@
     "key" : ["banana flavoured spirit/liqueur","beer","bitters","blueberry flavoured spirit/liqueur","brandy",
              "bavarian smoked cheese","blue cheese","brie",
 
-             "banana custard","black food colouring","black treacle","blue food colouring","biscuit","biscuit spread","boiled sweets","bounty","bourbon biscuits",
+             "banana custard","black food colouring","black treacle","blue food colouring","biscuit","biscuit spread","boiled sweets","bonbons","bounty","bourbon biscuits",
              "buttercream","butterscotch essence","butterscotch mousse",
 
              "baking powder","baking soda","batter mix","bran flakes","brazil nuts","breadcrumbs","breadsticks","bread loaf","bread wraps",
@@ -46,7 +46,34 @@
     "ingredients": [
 
 
-
+      {
+          "name": "bonbons",
+          "exclude": [
+            {
+              "word": "fudge",
+            },
+            {
+              "word": "chocolate",
+            },
+            {
+              "word": "truffle",
+            },
+          ],
+          "include": [
+            {
+              "word": "bon bons",
+              "substitution": false,
+            },
+            {
+              "word": "toffees",
+              "substitution": false,
+            },
+            {
+              "word": "cake decorations",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "blackcurrant syrup",
           "exclude": [
@@ -519,7 +546,19 @@
               "substitution": true,
             },
             {
-              "word": "barley malt syrup",
+              "word": "malt syrup",
+              "substitution": true,
+            },
+            {
+              "word": "rice syrup",
+              "substitution": true,
+            },
+            {
+              "word": "maple syrup",
+              "substitution": true,
+            },
+            {
+              "word": "date syrup",
               "substitution": true,
             },
           ],
@@ -2401,11 +2440,23 @@
               "substitution": true,
             },
             {
+              "word": "cloudberries",
+              "substitution": true,
+            },
+            {
               "word": "blackcurrants",
               "substitution": true,
             },
             {
               "word": "dewberries",
+              "substitution": true,
+            },
+            {
+              "word": "mulberries",
+              "substitution": true,
+            },
+            {
+              "word": "raspberries",
               "substitution": true,
             },
           ],
@@ -3927,6 +3978,10 @@
             ],
             "include": [
               {
+                "word": "brown stock",
+                "substitution": false,
+              },
+              {
                 "word": "beef broth",
                 "substitution": false,
               },
@@ -4028,10 +4083,40 @@
                 "word": "sauce",
               },
               {
+                "word": "dressing",
+              },
+              {
                 "word": "puree",
               },
               {
                 "word": "purée",
+              },
+              {
+                "word": "houmous",
+              },
+              {
+                "word": "hummus",
+              },
+              {
+                "word": "humus",
+              },
+              {
+                "word": "paste",
+              },
+              {
+                "word": "pesto",
+              },
+              {
+                "word": "meze",
+              },
+              {
+                "word": "dip",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "soup",
               },
               {
                 "word": "oil",
@@ -4044,6 +4129,9 @@
               },
               {
                 "word": "powdered",
+              },
+              {
+                "word": "spice",
               },
               {
                 "word": "dried",
@@ -4059,6 +4147,9 @@
               },
               {
                 "word": "granulated",
+              },
+              {
+                "word": "tortilla",
               },
             ],
             "include": [

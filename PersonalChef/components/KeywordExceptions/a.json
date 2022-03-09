@@ -477,6 +477,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "maguey syrup",
+                  "substitution": false,
+                },
+                {
                   "word": "coconut nectar",
                   "substitution": true,
                 },
@@ -504,7 +508,7 @@
               ],
               "include": [
                 {
-                  "word": "emmenthal",
+                  "word": "emmental",
                   "substitution": true,
                 },
                 {

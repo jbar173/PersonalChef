@@ -670,7 +670,7 @@
               "name": "green pesto",
               "exclude": [
                 {
-                  "word": "red",
+                  "word": "cheese",
                 },
               ],
               "include": [
@@ -679,12 +679,40 @@
                   "substitution": false,
                 },
                 {
-                  "word": "pesto",
+                  "word": "pesto verde",
+                  "substitution": false,
+                },
+                {
+                  "word": "classic pesto",
+                  "substitution": false,
+                },
+                {
+                  "word": "genovese pesto",
+                  "substitution": false,
+                },
+                {
+                  "word": "pesto genovese",
+                  "substitution": false,
+                },
+                {
+                  "word": "pesto alla genovese",
+                  "substitution": false,
+                },
+                {
+                  "word": "pistachio pesto",
                   "substitution": false,
                 },
                 {
                   "word": "basil oil",
                   "substitution": true,
+                },
+                {
+                  "word": "red pesto",
+                  "substitution": true,
+                },
+                {
+                  "word": "pesto",
+                  "substitution": false,
                 },
               ],
           },
@@ -2011,14 +2039,6 @@
                 "substitution": true,
               },
               {
-                "word": "emmentaler",
-                "substitution": true,
-              },
-              {
-                "word": "emmenthaler",
-                "substitution": true,
-              },
-              {
                 "word": "gouda",
                 "substitution": true,
               },
@@ -2050,6 +2070,10 @@
                 "word": "oka",
                 "substitution": true,
               },
+              {
+                "word": "raclette",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -2066,19 +2090,15 @@
                 "substitution": true,
               },
               {
-                "word": "emmentaler",
-                "substitution": true,
-              },
-              {
-                "word": "emmenthaler",
-                "substitution": true,
-              },
-              {
                 "word": "gruyere",
                 "substitution": true,
               },
               {
                 "word": "provolone",
+                "substitution": true,
+              },
+              {
+                "word": "beemster",
                 "substitution": true,
               },
               {
@@ -2091,6 +2111,10 @@
               },
               {
                 "word": "oka",
+                "substitution": true,
+              },
+              {
+                "word": "raclette",
                 "substitution": true,
               },
             ],

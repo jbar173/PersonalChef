@@ -2,7 +2,6 @@
 
     "key" : [ "quince jelly","quince paste",
               "quinoa",
-              "quince",
               "quinoa milk",
 
 
@@ -10,7 +9,7 @@
 
 
               "~~~ TO DO : ~~~",
-              
+
     ],
 
 
@@ -98,32 +97,6 @@
                 "substitution": true,
               },
             ],
-          },
-          {
-              "name": "fresh quince",
-              "exclude": [
-                {
-                  "word": "jelly",
-                },
-                {
-                  "word": "jam",
-                },
-                {
-                  "word": "conserve",
-                },
-                {
-                  "word": "preserve",
-                },
-                {
-                  "word": "paste",
-                },
-              ],
-              "include": [
-                {
-                  "word": "quince",
-                  "substitution": false,
-                },
-              ],
           },
           {
               "name": "quince jelly",

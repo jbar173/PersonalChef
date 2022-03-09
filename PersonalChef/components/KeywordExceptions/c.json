@@ -977,6 +977,10 @@
                 "word": "tunnocks millk chocolate caramel",
                 "substitution": false,
               },
+              {
+                "word": "rolos",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1297,6 +1301,10 @@
               },
               {
                 "word": "chocolate-coated fruit",
+                "substitution": false,
+              },
+              {
+                "word": "raisin chocolate",
                 "substitution": false,
               },
               {
@@ -5838,6 +5846,10 @@
                 "word": "snackers",
                 "substitution": true,
               },
+              {
+                "word": "chilli biscuits",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -6288,6 +6300,14 @@
               "substitution": false,
             },
             {
+              "word": "red pepper flakes",
+              "substitution": false,
+            },
+            {
+              "word": "crushed red pepper",
+              "substitution": false,
+            },
+            {
               "word": "cayenne",
               "substitution": true,
             },
@@ -6661,14 +6681,6 @@
               "substitution": true,
             },
             {
-              "word": "emmentaler",
-              "substitution": true,
-            },
-            {
-              "word": "emmenthaler",
-              "substitution": true,
-            },
-            {
               "word": "gouda",
               "substitution": true,
             },
@@ -6768,6 +6780,14 @@
               "substitution": true,
             },
             {
+              "word": "red leicester",
+              "substitution": true,
+            },
+            {
+              "word": "double gloucester",
+              "substitution": true,
+            },
+            {
               "word": "muenster",
               "substitution": true,
             },
@@ -6785,6 +6805,10 @@
             },
             {
               "word": "four cheese",
+              "substitution": true,
+            },
+            {
+              "word": "raclette",
               "substitution": true,
             },
           ],
@@ -7668,31 +7692,40 @@
             "name": "chocolate",
             "exclude": [
               {
-                "word": "chocolate cookie",
+                "word": "cookie",
               },
               {
-                "word": "chocolate chip cookie",
+                "word": "biscuit",
+              },
+              {
+                "word": "cake",
               },
               {
                 "word": "hot chocolate",
               },
               {
+                "word": "milk",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "milkshake",
+              },
+              {
+                "word": "shake",
+              },
+              {
+                "word": "whiskey",
+              },
+              {
+                "word": "whisky",
+              },
+              {
                 "word": "liqueur",
-              },
-              {
-                "word": "chocolate milk",
-              },
-              {
-                "word": "chocolate biscuit",
-              },
-              {
-                "word": "chocolate chip biscuit",
-              },
-              {
-                "word": "chocolate cake mix",
-              },
-              {
-                "word": "chocolate cake kit",
               },
             ],
             "include": [

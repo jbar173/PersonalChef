@@ -14,6 +14,7 @@
               "walleye", "whiting/white fish/hake/pollock/coley(subs)",
               "whey powder",
               "walnut butter",
+              "wasabi peas",
 
 
               "~~~ TO DO : ~~~",
@@ -34,6 +35,25 @@
 
 
 
+          {
+              "name": "wasabi peas",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "spicy green peas",
+                  "substitution": false,
+                },
+                {
+                  "word": "spicy green peas and peanuts",
+                  "substitution": true,
+                },
+                {
+                  "word": "roasted chickpeas",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "walnut butter",
               "exclude": [
@@ -437,19 +457,54 @@
                 "word": "vermouth",
                 "substitution": true,
               },
+              {
+                "word": "sparkling white wine",
+                "substitution": true,
+              },
+              {
+                "word": "rose wine",
+                "substitution": true,
+              },
             ],
           },
           {
             "name": "white chocolate",
             "exclude": [
               {
-                "word": "chocolate cookie",
+                "word": "biscuit",
               },
               {
-                "word": "chocolate chip cookie",
+                "word": "cookie",
               },
               {
-                "word": "chocolate biscuit",
+                "word": "cake",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "milkshake",
+              },
+              {
+                "word": "shake",
+              },
+              {
+                "word": "milk",
+              },
+              {
+                "word": "whiskey",
+              },
+              {
+                "word": "whisky",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "hot chocolate",
               },
             ],
             "include": [

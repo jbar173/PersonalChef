@@ -29,7 +29,6 @@
              "dab",
              "dried lime",
              "dripping", "duck fat",
-             "date syrup",
 
 
              "~~~ TO DO : ~~~",
@@ -164,11 +163,43 @@
             ],
             "include": [
               {
+                "word": "date nectar",
+                "substitution": false,
+              },
+              {
+                "word": "date honey",
+                "substitution": false,
+              },
+              {
+                "word": "silan",
+                "substitution": false,
+              },
+              {
                 "word": "date molasses",
                 "substitution": false,
               },
               {
                 "word": "fruit syrup",
+                "substitution": true,
+              },
+              {
+                "word": "honey",
+                "substitution": true,
+              },
+              {
+                "word": "agave syrup",
+                "substitution": true,
+              },
+              {
+                "word": "rice syrup",
+                "substitution": true,
+              },
+              {
+                "word": "maple syrup",
+                "substitution": true,
+              },
+              {
+                "word": "coconut nectar",
                 "substitution": true,
               },
             ],
@@ -224,43 +255,8 @@
                 "word": "gouda",
                 "substitution": true,
               },
-            ],
-        },
-        {
-            "name": "date syrup",
-            "exclude": [
-            ],
-            "include": [
               {
-                "word": "date nectar",
-                "substitution": false,
-              },
-              {
-                "word": "date honey",
-                "substitution": false,
-              },
-              {
-                "word": "silan",
-                "substitution": false,
-              },
-              {
-                "word": "honey",
-                "substitution": true,
-              },
-              {
-                "word": "agave syrup",
-                "substitution": true,
-              },
-              {
-                "word": "rice syrup",
-                "substitution": true,
-              },
-              {
-                "word": "maple syrup",
-                "substitution": true,
-              },
-              {
-                "word": "coconut nectar",
+                "word": "raclette",
                 "substitution": true,
               },
             ],
@@ -434,12 +430,8 @@
             ],
             "include": [
               {
-                "word": "sun-dried goji berries",
-                "substitution": true,
-              },
-              {
-                "word": "dry goji berries",
-                "substitution": true,
+                "word": "goji berries",
+                "substitution": false,
               },
               {
                 "word": "dried cranberries",
@@ -2299,6 +2291,10 @@
                 "substitution": false,
               },
               {
+                "word": "masoor dhal",
+                "substitution": false,
+              },
+              {
                 "word": "dried brown lentils",
                 "substitution": true,
               },
@@ -3703,13 +3699,40 @@
           "name": "dark chocolate",
           "exclude": [
             {
-              "word": "chocolate cookie",
+              "word": "biscuit",
             },
             {
-              "word": "chocolate chip cookie",
+              "word": "cookie",
             },
             {
-              "word": "chocolate biscuit",
+              "word": "cake",
+            },
+            {
+              "word": "icecream",
+            },
+            {
+              "word": "ice cream",
+            },
+            {
+              "word": "milkshake",
+            },
+            {
+              "word": "shake",
+            },
+            {
+              "word": "milk",
+            },
+            {
+              "word": "whiskey",
+            },
+            {
+              "word": "whisky",
+            },
+            {
+              "word": "liqueur",
+            },
+            {
+              "word": "hot chocolate",
             },
           ],
           "include": [

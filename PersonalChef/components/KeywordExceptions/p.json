@@ -3,8 +3,8 @@
     "key" : [ "pear flavoured spirit/liqueur","peach flavoured spirit/liqueur","plum flavoured spirit/liqueur","passion fruit flavoured spirit/liqueur","prosecco",
               "paneer","parmesan","pecorino","pleasant ridge","port salut","provolone",
 
-              "passion fruit jam","passion fruit jelly","peach jam","peach jelly","peanut butter wafers","pear drops","peppermint extract","pineapple jam","pineapple jelly",
-              "pink food colouring","plum jam","plum jelly","popping candy","praline","preserved lemon","prunes","purple food colouring",
+              "passion fruit jam","passion fruit jelly","peach jam","peach jelly","peanut butter cups","peanut butter wafers","pear drops","peppermint extract",
+              "pineapple jam","pineapple jelly", "pink food colouring","plum jam","plum jelly","popping candy","praline","preserved lemon","prunes","purple food colouring",
 
               "pancake mix","pasta","peanuts","pearled barley","pecans","pine nuts","pistachios","pizza dough","polenta","poppy seeds","puff pastry","pudding mix",
               "pumpkin seeds",
@@ -19,7 +19,7 @@
               "plum sauce","ponzu sauce","pork stock","pumpkin pesto",
 
               "peach tea","pear tea","pineapple tea","pink lemonade","prune juice",
-              "plain yoghurt","pork scratchings","potato chips","powdered milk","pretzel snacks",
+              "plain yoghurt","popcorn","pork scratchings","potato chips","powdered milk","pretzel snacks",
 
 
               "~~~ HALF DONE : ~~~",
@@ -42,11 +42,111 @@
 
     "ingredients": [
 
+
+
+          {
+              "name": "popcorn",
+              "exclude": [
+                {
+                  "word": "seasoning",
+                },
+                {
+                  "word": "flavouring",
+                },
+                {
+                  "word": "flavoring",
+                },
+                {
+                  "word": "crisps",
+                },
+                {
+                  "word": "chips",
+                },
+              ],
+              "include": [
+                {
+                  "word": "popping corn",
+                  "substitution": false,
+                },
+                {
+                  "word": "puffcorn",
+                  "substitution": false,
+                },
+                {
+                  "word": "kettle corn",
+                  "substitution": false,
+                },
+                {
+                  "word": "cracker jack",
+                  "substitution": true,
+                },
+                {
+                  "word": "roasted chickpeas",
+                  "substitution": true,
+                },
+                {
+                  "word": "popped lotus seeds",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "pickled walnuts",
               "exclude": [
               ],
               "include": [
+              ],
+          },
+          {
+              "name": "peanut butter cups",
+              "exclude": [
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
+                },
+                {
+                  "word": "milk",
+                },
+                {
+                  "word": "whiskey",
+                },
+                {
+                  "word": "whisky",
+                },
+                {
+                  "word": "liqueur",
+                },
+              ],
+              "include": [
+                {
+                  "word": "peanut butter chocolate",
+                  "substitution": true,
+                },
+                {
+                  "word": "rolos",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -4945,6 +5045,22 @@
                   "word": "pomegranate arils",
                   "substitution": false,
                 },
+                {
+                  "word": "fresh cranberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "redcurrants",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberries",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -5270,6 +5386,10 @@
                 "word": "gnocchetti",
                 "substitution": false,
               },
+              {
+                "word": "tagliolina",
+                "substitution": false,
+              },
             ],
           },
           {
@@ -5313,14 +5433,6 @@
               },
               {
                 "word": "emmental",
-                "substitution": true,
-              },
-              {
-                "word": "emmentaler",
-                "substitution": true,
-              },
-              {
-                "word": "emmenthaler",
                 "substitution": true,
               },
               {

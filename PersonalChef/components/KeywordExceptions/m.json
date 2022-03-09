@@ -4257,13 +4257,40 @@
             "name": "milk chocolate",
             "exclude": [
               {
-                "word": "chocolate cookie",
+                "word": "biscuit",
               },
               {
-                "word": "chocolate chip cookie",
+                "word": "cookie",
               },
               {
-                "word": "chocolate biscuit",
+                "word": "cake",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "milkshake",
+              },
+              {
+                "word": "shake",
+              },
+              {
+                "word": "milk",
+              },
+              {
+                "word": "whiskey",
+              },
+              {
+                "word": "whisky",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "hot chocolate",
               },
             ],
             "include": [
@@ -4272,7 +4299,7 @@
                 "substitution": true,
               },
               {
-                "word": "fruit & nut chocolate",
+                "word": "fruit and nut chocolate",
                 "substitution": true,
               },
             ],
