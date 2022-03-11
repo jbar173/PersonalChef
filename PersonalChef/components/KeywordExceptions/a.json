@@ -19,7 +19,7 @@
               "artichoke","asparagus","aubergine",
               "all purpose seasoning",
               "adzuki beans","apples","apricots","artichoke antipasti",
-              "aioli","anchovy paste","apricot harissa paste","aubergine paste",
+              "aioli","apricot harissa paste","aubergine paste",
               "almond syrup","apple syrup","apricot syrup",
 
             ],
@@ -386,25 +386,6 @@
               ],
           },
           {
-              "name": "anchovy paste",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "fish paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "fish sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "fish stock",
-                  "substitution": true,
-                },
-              ],
-          },
-          {
               "name": "almond extract",
               "exclude": [
               ],
@@ -588,7 +569,7 @@
                   "substitution": false,
                 },
                 {
-                  "word": "fish sauce",
+                  "word": "fish paste",
                   "substitution": true,
                 },
                 {
@@ -884,6 +865,10 @@
               "include": [
                 {
                   "word": "fiddlehead",
+                  "substitution": true,
+                },
+                {
+                  "word": "samphire",
                   "substitution": true,
                 },
               ],

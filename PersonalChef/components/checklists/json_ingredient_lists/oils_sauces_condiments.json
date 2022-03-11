@@ -1,16 +1,14 @@
 {
     "name": "oils_sauces_and_condiments_ingredients",
-    "ingredients": [  "achiote", "aioli", "avocado oil", "anchovy paste", "apple sauce", "apricot and coriander sauce", "apricot harissa paste", "arrabiata sauce",
+    "ingredients": [  "achiote", "aioli", "apple sauce", "apricot and coriander sauce", "apricot harissa paste", "arrabiata sauce",
                       "aubergine paste", "avocado oil",
 
-                      "baconnaise", "barbeque sauce", "basil oil", "beef stock", "beetroot pesto", "blue cheese dressing", "bhuna sauce", "bread sauce", "brown sauce", "burger sauce",
-                      "butter chicken cooking sauce",
-
-                      "chilli paste", "chilli sauce", "chutney", "cooking spray",
+                      "baconnaise", "barbeque sauce", "basil oil", "beef stock", "beetroot pesto", "black bean sauce", "blue cheese dressing", "bhuna sauce", "bread sauce", "brown sauce",
+                      "burger sauce", "butter chicken cooking sauce",
 
                       "caesar dressing", "canola oil", "cantonese sauce", "carbonara sauce", "casserole sauce", "char siu sauce", "cheese sauce", "chermoula",
                       "chestnut puree", "chicken paste", "chicken stock","chilli chutney relish", "chilli con carne sauce", "chilli garlic curry paste", "chilli infused oil",
-                      "chilli mayonnaise", "chilli paste", "chilli pesto", "chilli sauce", "chilli soy sauce", "chimichurri", "chutney", "coconut milk powder", "chow mein sauce",
+                      "chilli mayonnaise", "chilli paste", "chilli pesto", "chilli sauce", "chilli soy sauce", "chimichurri", "chutney", "chow mein sauce",
                       "coconut oil", "cooking spray", "coriander puree", "corn oil", "cranberry sauce", "curry sauce",
 
                       "demi-glace", "diane sauce", "dijon mustard", "dill and lemon sauce", "dinner salad", "dripping", "duck fat",
@@ -19,10 +17,10 @@
 
                       "fish masala", "fish paste", "fish sauce", "fish stock", "french dressing", "french mustard",
 
-                      "garlic and chilli oil", "garlic and herb dressing", "garlic oil", "garlic mayonnaise", "garlic puree", "ghee", "ginger and miso dressing", "ginger puree",
-                      "goose fat", "grapeseed oil", "green curry paste", "gravy granules", "green pesto", "groundnut oil", "guacamole", "guinness cooking paste",
+                      "garlic and chilli oil", "garlic and herb dressing", "garlic oil", "garlic mayonnaise", "garlic puree", "general tso sauce", "ghee", "ginger and miso dressing", "ginger puree",
+                      "ginger stir fry sauce", "goose fat", "grapeseed oil", "green curry paste", "gravy granules", "green pesto", "groundnut oil", "guacamole", "guinness cooking paste",
 
-                      "harissa", "hazelnut oil", "hemp seed oil", "herbs de provence", "hoisin sauce", "hollandaise", "honey barbeque sauce", "honey mustard sauce", "horseradish",
+                      "harissa", "hazelnut oil", "hemp seed oil", "hoisin sauce", "hollandaise", "honey barbeque sauce", "honey mustard sauce", "horseradish",
 
                       "italian dressing",
 
@@ -32,7 +30,7 @@
 
                       "laksa sauce", "lamb stock", "lemon butter sauce", "lemon juice", "lemongrass puree", "lime juice", "lime mojo sauce",
 
-                      "mango pickle", "massaman curry paste", "mayonnaise", "medium curry paste", "mild curry paste", "miso",
+                      "mandarin orange stir fry sauce", "mango pickle", "massaman curry paste", "mayonnaise", "medium curry paste", "mild curry paste", "miso",
 
                       "macadamia nut oil", "madras curry sauce", "makhani sauce", "mango and lime sauce", "marmite", "mediterranean tomato relish", "mild mustard", "mint marinade",
                       "mint sauce", "mirin", "miso tahini", "mole sauce", "mushroom cooking", "mushroom ketchup", "mushroom stock",
@@ -47,9 +45,8 @@
                       "ramen broth", "rapeseed oil", "redcurrant jelly", "red curry paste", "red pesto", "red wine stock", "rendang curry paste", "rice bran oil",
                       "rogan josh sauce",
 
-                      "safflower oil", "salad cream", "salmon paste", "salsa", "sardine and tomato paste", "satay sauce", "sauerkraut", "seafood sauce/marie rose", "sesame oil", "shrimp paste",
-                      "smoky onion relish", "smoked paprika pesto", "smoky red pepper dressing", "soy sauce", "spaghetti hoops", "spicy brown mustard", "sunflower oil",
-                      "sweet and sour sauce", "sweet chilli sauce", "sweet chilli and garlic", "sweet piccalilli", "sweet pickle relish",
+                      "safflower oil", "salad cream", "salsa", "satay sauce", "sauerkraut", "seafood sauce/marie rose", "sesame oil", "smoky red pepper dressing", "soy sauce",
+                      "spicy brown mustard", "sunflower oil", "sweet and sour sauce", "sweet chilli sauce", "sweet pickle relish",
 
                       "tabasco", "tagine paste", "tahini", "tahini sesame sauce", "tamarind sauce", "tandoori paste", "tapenade", "tartare sauce", "teriyaki sauce", "tikka sauce",
                       "thai green curry sauce", "thai red curry sauce", "thousand island dressing", "tomato ketchup", "tomato paste", "tomato stock", "tom yum paste", "truffle mayonnaise",
@@ -59,7 +56,7 @@
 
                       "walnut oil", "wasabi paste", "watercress sauce", "white sauce", "white wine stock", "wholegrain mustard", "worcestershire sauce",
 
-                      "yeast extract",
+                      "yeast extract", "yoshida's gourmet sauce",
 
                       "zhoug paste",
 

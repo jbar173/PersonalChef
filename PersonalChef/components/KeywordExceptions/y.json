@@ -5,7 +5,7 @@
 
 
               "~~~ HALF DONE : ~~~",
-              "yeast extract",
+              "yeast extract", "yoshida's gourmet sauce",
 
 
               "~~~ TO DO : ~~~",
@@ -18,6 +18,61 @@
     "ingredients": [
 
 
+          {
+              "name": "yoshida's gourmet sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "yoshidas gourmet sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "yoshida sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "yoshida's sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "yoshidas sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "original gourmet sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "barbeque sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "ginger stir fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "char siu sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "teriyaki sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "hoisin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "black bean sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "cantonese sauce",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "yeast extract",
               "exclude": [

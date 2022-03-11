@@ -16,23 +16,24 @@
               "~~~ HALF DONE : ~~~",
               "turbot",
               "tahini", "tartare sauce", "thai green curry sauce", "thai red curry sauce",
+              "tortilla chips","twiglets",
 
 
               "~~~ TO DO : ~~~",
               "tequila",
               "toblerone", "toffee crisp", "toffees/bonbons(sub)", "toffee sauce", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
               "tortillas",
-              "tempura prawns", "tilapia/halibut/orange roughy(sub)", "trout", "tuna/mackerel(sub)",
+              "tempura prawns", "tilapia/halibut/orange roughy(sub)/snapper", "trout", "tuna/mackerel(sub)",
               "thai basil",
               "tomato soup", "tapioca pudding",
 
               "tabasco", "tagine paste", "tahini sesame sauce", "tamarind sauce/tamarind powder/mango powder?(subs)", "tandoori paste",
-              "teriyaki sauce/marinade/oyster sauce/ponzu sauce(sub)", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste", "truffle mayonnaise",
+              "teriyaki sauce/marinade/oyster sauce/ponzu sauce/barbeque sauce/char siu sauce(sub)", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste", "truffle mayonnaise",
               "truffle oil", "tuna pasta sauce", "tuna paste",
 
               "tomato juice",
 
-              "taramasalata", "tiramisu", "toffee popcorn", "toffee sundae", "tortelloni/ravioli/girasoli/tortellini/mezzelune(subs)", "trifle", "twiglets",
+              "taramasalata", "tiramisu", "toffee popcorn", "toffee sundae", "tortelloni/ravioli/girasoli/tortellini/mezzelune(subs)", "trifle",
               "tzatziki/raita(sub)",
 
     ],
@@ -41,6 +42,89 @@
     "ingredients": [
 
 
+
+          {
+              "name": "twiglets",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sev mamra",
+                  "substitution": false,
+                },
+                {
+                  "word": "potato chips",
+                  "substitution": true,
+                },
+                {
+                  "word": "pretzel snacks",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi peas",
+                  "substitution": true,
+                },
+                {
+                  "word": "bombay mix",
+                  "substitution": true,
+                },
+                {
+                  "word": "roasted chickpeas",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tortilla chips",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dorito",
+                  "substitution": false,
+                },
+                {
+                  "word": "doritoes",
+                  "substitution": false,
+                },
+                {
+                  "word": "potato chips",
+                  "substitution": true,
+                },
+                {
+                  "word": "pretzel snacks",
+                  "substitution": true,
+                },
+                {
+                  "word": "sev mamra",
+                  "substitution": true,
+                },
+                {
+                  "word": "twiglets",
+                  "substitution": true,
+                },
+                {
+                  "word": "mini cheddars",
+                  "substitution": true,
+                },
+                {
+                  "word": "crackers",
+                  "substitution": true,
+                },
+                {
+                  "word": "bombay mix",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi peas",
+                  "substitution": true,
+                },
+                {
+                  "word": "roasted chickpeas",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "tahini",
               "exclude": [
@@ -95,6 +179,10 @@
               "include": [
                 {
                   "word": "halibut",
+                  "substitution": true,
+                },
+                {
+                  "word": "sole",
                   "substitution": true,
                 },
               ],
@@ -315,6 +403,22 @@
                 },
                 {
                   "word": "mustard powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "saffron",
+                  "substitution": true,
+                },
+                {
+                  "word": "madras curry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow mustard seed",
+                  "substitution": true,
+                },
+                {
+                  "word": "annatto",
                   "substitution": true,
                 },
               ],

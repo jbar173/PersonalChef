@@ -4,7 +4,7 @@
              "derby cheese","double gloucester",
 
              "dark chocolate","dates","date syrup","decorating icing","decorating sprinkles","digestive biscuits","dolly mixture","dried apple","dried apricots",
-             "dried barberries","dried coconut","dried cranberries","dried fenugreek","dried figs","dried goji berries","dried mango","dried mixed fruit","dried papaya",
+             "dried barberries","dried coconut","dried cranberries","dried figs","dried goji berries","dried mango","dried mixed fruit","dried papaya",
              "dried pears","dried pineapple","dried tropical fruit",
 
              "dried adzuki beans","dried black-eyed peas","dried borlotti beans","dried black lentils","dried brown lentils","dried butter beans",
@@ -15,8 +15,8 @@
              "duck",
              "daikon",
 
-             "dill","dried achiote","dried basil","dried chervil","dried chilli peppers","dried coriander","dried marjoram","dried oregano","dried pomegranate seeds",
-             "dried rosemary","dried sage","dried savoury","dried tarragon","dried thyme",
+             "dill","dried achiote","dried basil","dried chervil","dried chilli peppers","dried coriander","dried fenugreek","dried marjoram","dried oregano",
+             "dried pomegranate seeds","dried rosemary","dried sage","dried savoury","dried sorrel","dried tarragon","dried thyme",
 
              "demi-glace","diane sauce","dijon mustard","dill and lemon sauce",
              "dandelion and burdock","dr pepper",
@@ -41,6 +41,98 @@
 
 
 
+        {
+            "name": "dried sorrel",
+            "exclude": [
+              {
+                "word": "shandy",
+              },
+              {
+                "word": "drink",
+              },
+              {
+                "word": "juice",
+              },
+              {
+                "word": "ginger",
+              },
+              {
+                "word": "salad",
+              },
+              {
+                "word": "micro",
+              },
+              {
+                "word": "cress",
+              },
+              {
+                "word": "wild",
+              },
+              {
+                "word": "fresh",
+              },
+              {
+                "word": "red vein",
+              },
+              {
+                "word": "red veined",
+              },
+              {
+                "word": "bloody dock",
+              },
+              {
+                "word": "lemon",
+              },
+              {
+                "word": "clover",
+              },
+              {
+                "word": "common",
+              },
+            ],
+            "include": [
+              {
+                "word": "dry sorrel",
+                "substitution": false,
+              },
+              {
+                "word": "ground sorrel",
+                "substitution": false,
+              },
+              {
+                "word": "powdered sorrel",
+                "substitution": false,
+              },
+              {
+                "word": "sorrel powder",
+                "substitution": false,
+              },
+              {
+                "word": "sorrel flower",
+                "substitution": false,
+              },
+              {
+                "word": "roselle",
+                "substitution": true,
+              },
+              {
+                "word": "hibiscus",
+                "substitution": true,
+              },
+              {
+                "word": "sumac",
+                "substitution": true,
+              },
+              {
+                "word": "mango powder",
+                "substitution": true,
+              },
+              {
+                "word": "sorrel",
+                "substitution": false,
+              }
+            ],
+        },
         {
             "name": "dab",
             "exclude": [
@@ -519,6 +611,10 @@
               },
               {
                 "word": "raisins",
+                "substitution": true,
+              },
+              {
+                "word": "fig",
                 "substitution": true,
               },
             ],

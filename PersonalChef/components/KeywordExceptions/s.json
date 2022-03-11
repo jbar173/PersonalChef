@@ -1,30 +1,37 @@
 {
 
     "key" : [ "sparkling white wine","sherry","strawberry flavoured spirit/liqueur",
-              "strawberry custard","strawberry jam","strawberry jelly","sugar",
-              "semolina","spring roll wrapper","seaweed","sweet rice flour","soya beans",
-              "shrimp",
+              "salted caramel mousse","strawberry custard","strawberry jam","strawberry jelly","sugar",
+              "semolina","spring roll wrapper","sweet rice flour","soya beans",
+              "shrimp","smoked trout","smoked salmon","sole","sprat","squid","snapper",
               "sausage","smoked sausage/sliced meat",
-              "salad leaves","shallot","soffrito mix","spinach","spring onions","summer squash","swede","sweet potato",
-              "salt","shichimi","smoked paprika","sweet red pepper flakes",
-              "spinach puree","sun-dried tomatoes","sweetcorn",
-              "safflower oil","salsa","sesame oil","soy sauce","sunflower oil",
-              "sparkling water",
-              "shortening","sorbet","soured cream","soy milk","spring rolls","stuffing","sweet potato fries",
+              "salad leaves","samphire","shallot","soffrito mix","spinach","spring onions","strawberries","summer squash","swede","sweet potato",
+
+              "saffron","salt","shawarma seasoning","shichimi","smoked paprika","smoky barbeque seasoning","smoky red pepper dressing","spirulina powder","star anise",
+              "steak seasoning","sumac","sweet red pepper flakes",
+
+              "spaghetti hoops","spinach puree","sun-dried tomatoes","sweetcorn",
+
+              "safflower oil","salad cream","salsa","satay sauce","sauerkraut","seafood sauce","sesame oil","stir fry sauce","soy sauce",
+              "sunflower oil","sweet pickle relish",
+
+              "sparkling water","strawberry tea",
+              "sev mamra","shortening","sorbet","soured cream","soy milk","spring rolls","stuffing","sushi","sweet potato fries",
 
 
               "~~~ HALF DONE : ~~~",
               "stout",
               "sweetener",
               "short grain rice",
-              "sardines",
+              "sardines","smoked trout",
               "sliced cooked meat",
-              "spicy brown mustard","sweet and sour sauce","sweet chilli and garlic","sweet chilli sauce","sweet pickle relish",
+              "spicy brown mustard","sweet and sour sauce","sweet chilli sauce",
               "strawberry milkshake",
               "seed butter","soy butter","sunflower seed butter",
 
 
               "~~~ TO DO : ~~~",
+
               "sake/mirin(sub)",
 
               "salted caramel chocolate", "salted caramel cookie dough", "sherbert", "shortbread/shortcake(sub)", "shortcake biscuits/shortbread(sub)", "silver ball decorations", "skittles",
@@ -33,20 +40,8 @@
 
               "scone mix", "scones", "self raising flour", "sesame seeds/hemp seeds/nigella seeds/poppy seeds(sub)", "shortcrust pastry", "shreddies", "spelt flour", "sunflower seeds",
 
-              "salmon", "scallops/lobster/monkfish(sub)", "sea bass/seabass/monkfish/striped bass/striper(sub)", "sea bream", "seafood stick", "sild", "smoked rainbow trout", "smoked salmon",
-              "snapper/monkfish(sub)", "sole/megrim/whiff/haddock/flounder/plaice/dab/hake(sub)", "sprat", "squid", "surimi/lobster(sub)",
+              "salmon", "scallops/lobster/monkfish(sub)", "sea bass/seabass/monkfish/striped bass/striper/snapper(sub)", "sea bream", "seafood stick", "sild",
 
-              "samphire", "satsuma", "smoked garlic", "sprouts", "strawberries",
-              "saffron", "seaweed seasoning", "shawarma seasoning", "smokey spice", "sorrel", "spirulina powder", "star anise/mulled wine spice(sub)", "steak seasoning",
-              "sumac/mango powder(sub)",
-
-              "salad cream", "salmon paste", "sardine and tomato paste", "satay sauce", "sauerkraut/kimchi/pickled red cabbage(subs)", "seafood sauce", "shrimp paste/fish paste(sub)", "smoky onion relish",
-              "smoked paprika pesto", "smoky red pepper dressing", "spaghetti hoops", "stir fry sauce", "sweet chilli and garlic", "sweet piccalilli",
-              "sweet pickle relish",
-
-              "strawberry tea",
-
-              "salmon sushi", "salted caramel mousse", "sausage roll", "seaweed thins", "sev mamra",
 
     ],
 
@@ -55,6 +50,1472 @@
 
 
 
+          {
+              "name": "smoked trout",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "smoked rainbow trout",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked salmon",
+                  "substitution": true,
+                },
+                {
+                  "word": "kipper",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked herring",
+                  "substitution": true,
+                },
+                {
+                  "word": "trout",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "smoked salmon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "oak-smoked salmon",
+                  "substitution": false,
+                },
+                {
+                  "word": "kipper",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked herring",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked rainbow trout",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked trout",
+                  "substitution": true,
+                },
+                {
+                  "word": "trout",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "snapper",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "monkfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouper",
+                  "substitution": true,
+                },
+                {
+                  "word": "sea bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "tilapia",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sole",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "megrim",
+                  "substitution": false,
+                },
+                {
+                  "word": "whiff",
+                  "substitution": false,
+                },
+                {
+                  "word": "haddock",
+                  "substitution": true,
+                },
+                {
+                  "word": "flounder",
+                  "substitution": true,
+                },
+                {
+                  "word": "plaice",
+                  "substitution": true,
+                },
+                {
+                  "word": "witch",
+                  "substitution": true,
+                },
+                {
+                  "word": "dab",
+                  "substitution": true,
+                },
+                {
+                  "word": "hake",
+                  "substitution": true,
+                },
+                {
+                  "word": "turbot",
+                  "substitution": true,
+                },
+                {
+                  "word": "halibut",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sprat",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sardines",
+                  "substitution": true,
+                },
+                {
+                  "word": "herring",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "squid",
+              "exclude": [
+                {
+                  "word": "ink",
+                },
+                {
+                  "word": "sauce",
+                },
+              ],
+              "include": [
+                {
+                  "word": "cuttlefish",
+                  "substitution": true,
+                },
+                {
+                  "word": "calamari",
+                  "substitution": true,
+                },
+                {
+                  "word": "octopus",
+                  "substitution": true,
+                },
+                {
+                  "word": "prawns",
+                  "substitution": true,
+                },
+                {
+                  "word": "razor clam",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "samphire",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sea beans",
+                  "substitution": false,
+                },
+                {
+                  "word": "sea asparagus",
+                  "substitution": false,
+                },
+                {
+                  "word": "green beans",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "samphire",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sea beans",
+                  "substitution": false,
+                },
+                {
+                  "word": "sea asparagus",
+                  "substitution": false,
+                },
+                {
+                  "word": "green beans",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "strawberries",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rhubarb",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "fig",
+                  "substitution": true,
+                },
+                {
+                  "word": "kiwi fruit",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "saffron",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "turmeric",
+                  "substitution": true,
+                },
+                {
+                  "word": "annatto",
+                  "substitution": true,
+                },
+                {
+                  "word": "green cardamom",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "shawarma seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shawarma meat seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "shawarma meat spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "shawarma meat rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "shawarma spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "shawarma mediterranean spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "shawarma rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "shawarma bbq rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "shawarma barbeque rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "shawarma paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "kebab seasoning",
+                  "substitution": true,
+                },
+                {
+                  "word": "kebab spice",
+                  "substitution": true,
+                },
+                {
+                  "word": "ras el hanout",
+                  "substitution": true,
+                },
+                {
+                  "word": "garam masala",
+                  "substitution": true,
+                },
+                {
+                  "word": "baharat seasoning",
+                  "substitution": true,
+                },
+                {
+                  "word": "moroccan seasoning",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name":  "smoky barbeque seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "smoky barbeque rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky barbeque spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked barbeque seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked barbeque rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked barbeque spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky bbq seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky bbq rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky bbq spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked bbq seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked bbq rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked bbq spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky bacon flavoured seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky bacon flavored seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky chipotle bbq spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked bacon flavoured seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked bacon flavored seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked chipotle bbq spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky ras el hanout",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey barbeque seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey barbeque rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey barbeque spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey bbq seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey bbq rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey bbq spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey rub",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey bacon flavoured seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey bacon flavored seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey chipotle bbq spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey ras el hanout",
+                  "substitution": false,
+                },
+                {
+                  "word": "smokey mountain spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky mountain spice",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoke dust",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoked paprika",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "spirulina powder",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "spirulina",
+                  "substitution": false,
+                },
+                {
+                  "word": "chlorella",
+                  "substitution": true,
+                },
+                {
+                  "word": "moringa",
+                  "substitution": true,
+                },
+                {
+                  "word": "kelp powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "kelp extract powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "powdered kelp",
+                  "substitution": true,
+                },
+                {
+                  "word": "seaweed powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "seaweed extract powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "powdered seaweed",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "star anise",
+              "exclude": [
+                {
+                  "word": "ball",
+                },
+                {
+                  "word": "sweet",
+                },
+                {
+                  "word": "candy",
+                },
+                {
+                  "word": "bonbon",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "rock",
+                },
+                {
+                  "word": "drop",
+                },
+                {
+                  "word": "lollie",
+                },
+                {
+                  "word": "lolly",
+                },
+                {
+                  "word": "mint",
+                },
+                {
+                  "word": "jelly",
+                },
+                {
+                  "word": "gum",
+                },
+                {
+                  "word": "chew",
+                },
+                {
+                  "word": "imperial",
+                },
+                {
+                  "word": "twist",
+                },
+                {
+                  "word": "lozenge",
+                },
+                {
+                  "word": "licorice",
+                },
+                {
+                  "word": "liqorice",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "liquor",
+                },
+                {
+                  "word": "syrup",
+                },
+                {
+                  "word": "honey",
+                },
+                {
+                  "word": "drink",
+                },
+              ],
+              "include": [
+                {
+                  "word": "staranise",
+                  "substitution": false,
+                },
+                {
+                  "word": "star aniseed",
+                  "substitution": false,
+                },
+                {
+                  "word": "aniseed star",
+                  "substitution": false,
+                },
+                {
+                  "word": "badian",
+                  "substitution": true,
+                },
+                {
+                  "word": "badiyan",
+                  "substitution": true,
+                },
+                {
+                  "word": "anise",
+                  "substitution": true,
+                },
+                {
+                  "word": "aniseed",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "steak seasoning",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "steak gourmet seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "steakhouse seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "steakhouse pepper seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "meat rub",
+                  "substitution": true,
+                },
+                {
+                  "word": "barbeque rub",
+                  "substitution": true,
+                },
+                {
+                  "word": "steak rub",
+                  "substitution": true,
+                },
+                {
+                  "word": "steak spice",
+                  "substitution": true,
+                },
+                {
+                  "word": "brisket rub",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sumac",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sumach",
+                  "substitution": false,
+                },
+                {
+                  "word": "sumak",
+                  "substitution": false,
+                },
+                {
+                  "word": "somaq",
+                  "substitution": false,
+                },
+                {
+                  "word": "mango powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "powdered lemon",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried lemon balm",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon balm powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "powdered lemon balm",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon zest",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon peel",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon pepper",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon crystals",
+                  "substitution": true,
+                },
+                {
+                  "word": "crystallized lemon",
+                  "substitution": true,
+                },
+                {
+                  "word": "roselle",
+                  "substitution": true,
+                },
+                {
+                  "word": "hibiscus",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried sorrel",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "salad cream",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "salatcreme",
+                  "substitution": false,
+                },
+                {
+                  "word": "mayonnaise",
+                  "substitution": true,
+                },
+                {
+                  "word": "miracle whip",
+                  "substitution": true,
+                },
+                {
+                  "word": "caesar dressing",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sauerkraut",
+              "exclude": [
+                {
+                  "word": "wine",
+                },
+              ],
+              "include": [
+                {
+                  "word": "kraut",
+                  "substitution": false,
+                },
+                {
+                  "word": "fermented cabbage",
+                  "substitution": false,
+                },
+                {
+                  "word": "fermented white cabbage",
+                  "substitution": false,
+                },
+                {
+                  "word": "fermented red cabbage",
+                  "substitution": false,
+                },
+                {
+                  "word": "kimchi",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled red cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled white cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented vegetables",
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented beetroot",
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented radish",
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented turnip",
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented carrot",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "seafood sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "marie rose",
+                  "substitution": false,
+                },
+                {
+                  "word": "marie-rose",
+                  "substitution": false,
+                },
+                {
+                  "word": "cocktail sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "seafood dressing",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "smoky red pepper dressing",
+              "exclude": [
+                {
+                  "word": "spicy",
+                },
+                {
+                  "word": "fiery",
+                },
+                {
+                  "word": "chilli",
+                },
+                {
+                  "word": "jalapeno",
+                },
+                {
+                  "word": "hot",
+                }
+                {
+                  "word": "tabasco",
+                }
+                {
+                  "word": "louisiana",
+                }
+                {
+                  "word": "tears",
+                }
+              ],
+              "include": [
+                {
+                  "word": "roasted pepper and smoked paprika dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "roasted pepper & smoked paprika dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "roasted pepper and paprika dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "roasted pepper & paprika dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper italian dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper salad dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper pesto",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper and paprika pesto",
+                  "substitution": false,
+                },
+                {
+                  "word": "red bell pepper dip",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper dip",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper spread",
+                  "substitution": false,
+                },
+                {
+                  "word": "red pepper paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "paprika and red pepper sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "paprika & red pepper sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "grilled pepper stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "grilled pepper stir in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "smoky tomato sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked tomato sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoky tomato dip",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked tomato dip",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoky tomato paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked tomato paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoky tomato spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked tomato spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoky tomato pesto",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked tomato pesto",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoky tomato dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked tomato dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoky tomato vinaigrette",
+                  "substitution": true,
+                },
+                {
+                  "word": "smoked tomato vinaigrette",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "spaghetti hoops",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "spaghetti rings",
+                  "substitution": false,
+                },
+                {
+                  "word": "spaghetti os",
+                  "substitution": false,
+                },
+                {
+                  "word": "spaghetti o's",
+                  "substitution": false,
+                },
+                {
+                  "word": "spaghetti loops",
+                  "substitution": false,
+                },
+                {
+                  "word": "spaghetti shapes",
+                  "substitution": false,
+                },
+                {
+                  "word": "heinz hoops",
+                  "substitution": false,
+                },
+                {
+                  "word": "heinz spaghetti",
+                  "substitution": false,
+                },
+                {
+                  "word": "veg hoops",
+                  "substitution": false,
+                },
+                {
+                  "word": "tinned hoops",
+                  "substitution": false,
+                },
+                {
+                  "word": "spaghetti letters",
+                  "substitution": false,
+                },
+                {
+                  "word": "spaghetti strands",
+                  "substitution": false,
+                },
+                {
+                  "word": "alphabetti",
+                  "substitution": false,
+                },
+                {
+                  "word": "spaghetti in tomato sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "spaghetti tomato",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasta shapes",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "satay sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "peanut sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "bumbu kacang",
+                  "substitution": false,
+                },
+                {
+                  "word": "sambal kacang",
+                  "substitution": false,
+                },
+                {
+                  "word": "pecel",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "sweet and sour sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sweet & sour sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "plum sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "duck sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "mandarin orange stir fry sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sweet pickle relish",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sweet relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet mango relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "gherkin relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "onion relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet mango relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweetcorn relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "carrot and coriander relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "carrot & coriander relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "sandwich relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "sandwich pickle",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet pickle",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet pepper pickle",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweetcorn pickle relish",
+                  "substitution": false,
+                },
+                {
+                  "word": "chutney",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet piccalilli",
+                  "substitution": false,
+                },
+                {
+                  "word": "piccalilli",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango pickle",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli chutney relish",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "strawberry tea",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry loose tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry loose leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry infusion",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry tisane",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry green tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry herbal tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry fruit tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry leaf tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor tea",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry teabag",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry tea bag",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberries and cream infusion",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberries & cream infusion",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberries and cream tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberries & cream tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry lemonade tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry & raspberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry and raspberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry & elderflower tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry and elderflower tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry & watermelon tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry and watermelon tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "berry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "blueberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackcurrant tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "cranberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "cherry tea",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sushi",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "maki",
+                  "substitution": false,
+                },
+                {
+                  "word": "nigiri",
+                  "substitution": false,
+                },
+                {
+                  "word": "temaki",
+                  "substitution": false,
+                },
+                {
+                  "word": "kimbap",
+                  "substitution": true,
+                },
+                {
+                  "word": "gimbap",
+                  "substitution": true,
+                },
+                {
+                  "word": "sherbert",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "salted caramel mousse",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "caramel mousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "caramel fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "caramel whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "caramel dessert",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramel cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramel creme",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramel buttercream",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramel sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sev mamra",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sev mumra",
+                  "substitution": false,
+                },
+                {
+                  "word": "sev murmura",
+                  "substitution": false,
+                },
+                {
+                  "word": "chevda",
+                  "substitution": false,
+                },
+                {
+                  "word": "twiglets",
+                  "substitution": true,
+                },
+                {
+                  "word": "potato chips",
+                  "substitution": true,
+                },
+                {
+                  "word": "pretzel snacks",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi peas",
+                  "substitution": true,
+                },
+                {
+                  "word": "bombay mix",
+                  "substitution": true,
+                },
+                {
+                  "word": "roasted chickpeas",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "sorbet",
               "exclude": [
@@ -917,6 +2378,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "herring",
+                  "substitution": false,
+                },
+                {
                   "word": "pilchard",
                   "substitution": true,
                 },
@@ -993,51 +2458,6 @@
               ],
           },
           {
-              "name": "sweet pickle relish",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "sandwich pickle",
-                  "substitution": false,
-                },
-                {
-                  "word": "gherkin relish",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "sweet chilli and garlic sauce",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "sweet chilli & garlic sauce",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "sweet and sour sauce",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "sweet & sour sauce",
-                  "substitution": false,
-                },
-                {
-                  "word": "plum sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "duck sauce",
-                  "substitution": true,
-                },
-              ],
-          },
-          {
               "name": "spicy brown mustard",
               "exclude": [
               ],
@@ -1066,7 +2486,19 @@
                   "substitution": false,
                 },
                 {
+                  "word": "sweet chilli and garlic",
+                  "substitution": true,
+                },
+                {
                   "word": "gochujang",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli chutney relish",
                   "substitution": true,
                 },
               ],
@@ -1393,6 +2825,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "smokey spice",
+                  "substitution": true,
+                },
+                {
                   "word": "pimenton",
                   "substitution": true,
                 },
@@ -1440,37 +2876,6 @@
                 },
                 {
                   "word": "crookneck squash",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "seaweed",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "kelp",
-                  "substitution": false,
-                },
-                {
-                  "word": "ogo",
-                  "substitution": false,
-                },
-                {
-                  "word": "nori",
-                  "substitution": false,
-                },
-                {
-                  "word": "ogonori",
-                  "substitution": false,
-                },
-                {
-                  "word": "kombu",
-                  "substitution": false,
-                },
-                {
-                  "word": "mozuku",
                   "substitution": false,
                 },
               ],

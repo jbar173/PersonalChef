@@ -7,7 +7,7 @@
              "fiddleheads","fig","fresh coconut","fresh corn","fresh cranberries","fresh ginger","fresh pomegranate seeds","fresh quince",
 
              "fajita seasoning","fennel seeds","fish masala","fish seasoning","fresh basil","fresh chervil","fresh coriander","fresh marjoram","fresh mint",
-             "fresh oregano","fresh parsley","fresh rosemary","fresh sage","fresh tarragon","fresh thyme","fenugreek leaves",
+             "fresh oregano","fresh parsley","fresh rosemary","fresh sage","fresh sorrel","fresh tarragon","fresh thyme","fenugreek leaves",
 
              "flageolet beans","fruit cocktail",
              "fish sauce","fish stock","french dressing","french mustard",
@@ -38,6 +38,91 @@
     "ingredients": [
 
 
+
+          {
+              "name": "fresh sorrel",
+              "exclude": [
+                {
+                  "word": "shandy",
+                },
+                {
+                  "word": "drink",
+                },
+                {
+                  "word": "juice",
+                },
+                {
+                  "word": "ginger",
+                },
+                {
+                  "word": "dried",
+                },
+                {
+                  "word": "dry",
+                },
+                {
+                  "word": "powder",
+                },
+                {
+                  "word": "powdered",
+                },
+                {
+                  "word": "ground",
+                },
+                {
+                  "word": "flower",
+                },
+                {
+                  "word": "spice",
+                },
+              ],
+              "include": [
+                {
+                  "word": "sorrel leaves",
+                  "substitution": false,
+                },
+                {
+                  "word": "sorrel leaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "wild sorrel",
+                  "substitution": false,
+                },
+                {
+                  "word": "micro lemon sorrel",
+                  "substitution": false,
+                },
+                {
+                  "word": "spinach dock",
+                  "substitution": false,
+                },
+                {
+                  "word": "narrow leaved dock",
+                  "substitution": false,
+                },
+                {
+                  "word": "narrow-leaved dock",
+                  "substitution": false,
+                },
+                {
+                  "word": "lemon clover",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon balm",
+                  "substitution": true,
+                },
+                {
+                  "word": "sorrel",
+                  "substitution": false,
+                },
+                {
+                  "word": "salad leaves",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "fresh quince",
               "exclude": [
@@ -214,7 +299,87 @@
                   "substitution": true,
                 },
                 {
+                  "word": "anchovy spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovy mousse",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovy pate",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovy paté",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovy pâté",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovy rillettes",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovy",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovies",
+                  "substitution": true,
+                },
+                {
                   "word": "shrimp paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp mousse",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp pate",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp paté",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp pâté",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp rillettes",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried shrimp",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried baby shrimp",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried medium shrimp",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried large shrimp",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried river shrimp",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried gamarrus shrimp",
                   "substitution": true,
                 },
                 {
@@ -230,7 +395,123 @@
                   "substitution": true,
                 },
                 {
+                  "word": "surimi",
+                  "substitution": true,
+                },
+                {
                   "word": "narutomaki",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardine paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardine spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardine mousse",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardine pate",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardine paté",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardine pâté",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardine rillettes",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardine and tomato paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardine & tomato paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon & haddock paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon and haddock paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon & lobster spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon and lobster spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon mousse",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon pate",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon paté",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon pâté",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon rillettes",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish pate",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish paté",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish pâté",
+                  "substitution": true,
+                },
+                {
+                  "word": "anchovy sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "prawn sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp sauce",
                   "substitution": true,
                 },
                 {
@@ -239,10 +520,6 @@
                 },
                 {
                   "word": "oyster sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "shrimp sauce",
                   "substitution": true,
                 },
               ],
@@ -2858,9 +3135,15 @@
               {
                 "word": "fig roll",
               },
+              {
+                "word": "dried",
+              },
             ],
             "include": [
-
+              {
+                "word": "strawberries",
+                "substitution": true,
+              },
             ],
           },
           {

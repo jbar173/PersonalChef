@@ -435,6 +435,14 @@
                   "word": "blueberries",
                   "substitution": true,
                 },
+                {
+                  "word": "strawberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "kiwi fruit",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -513,6 +521,10 @@
                 },
                 {
                   "word": "garam masala",
+                  "substitution": true,
+                },
+                {
+                  "word": "shawarma seasoning",
                   "substitution": true,
                 },
               ],
@@ -1171,7 +1183,7 @@
                   "substitution": true,
                 },
                 {
-                  "word": "strawberry tea",
+                  "word": "blackcurrant tea",
                   "substitution": true,
                 },
                 {
@@ -1183,7 +1195,15 @@
                   "substitution": true,
                 },
                 {
-                  "word": "blackcurrant tea",
+                  "word": "strawberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "cranberry tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "cherry tea",
                   "substitution": true,
                 },
                 {

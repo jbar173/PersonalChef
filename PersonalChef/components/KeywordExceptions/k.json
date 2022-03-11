@@ -76,6 +76,14 @@
                   "word": "poke sauce",
                   "substitution": true,
                 },
+                {
+                  "word": "general tso sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "cantonese sauce",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -104,11 +112,27 @@
               "include": [
                 {
                   "word": "fermented cabbage",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "fermented vegetables",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented beetroot",
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented radish",
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented turnip",
+                  "substitution": true,
+                },
+                {
+                  "word": "fermented carrot",
+                  "substitution": true,
                 },
                 {
                   "word": "sauerkraut",
@@ -136,6 +160,14 @@
                 },
                 {
                   "word": "pickled cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled red cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "pickled white cabbage",
                   "substitution": true,
                 },
               ],
@@ -419,6 +451,10 @@
                   "word": "celeriac",
                   "substitution": true,
                 },
+                {
+                  "word": "brussel sprouts",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -542,6 +578,10 @@
                 "word": "chard",
                 "substitution": true,
               },
+              {
+                "word": "brussel sprouts",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -556,6 +596,14 @@
                 {
                   "word": "kiwi",
                   "substitution": false,
+                },
+                {
+                  "word": "strawberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberries",
+                  "substitution": true,
                 },
               ],
           },

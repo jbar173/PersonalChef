@@ -36,12 +36,10 @@
               "~~~ TO DO : ~~~",
 
 
-
     ],
 
 
     "ingredients": [
-
 
 
           {
@@ -685,11 +683,43 @@
               ],
               "include": [
                 {
+                  "word": "beskidzkie",
+                  "substitution": false,
+                },
+                {
+                  "word": "pretzel sticks",
+                  "substitution": false,
+                },
+                {
                   "word": "pretzel",
                   "substitution": false,
                 },
                 {
+                  "word": "sev mamra",
+                  "substitution": true,
+                },
+                {
+                  "word": "chevda",
+                  "substitution": false,
+                },
+                {
+                  "word": "bombay mix",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi peas",
+                  "substitution": true,
+                },
+                {
                   "word": "potato chips",
+                  "substitution": true,
+                },
+                {
+                  "word": "twiglets",
+                  "substitution": true,
+                },
+                {
+                  "word": "roasted chickpeas",
                   "substitution": true,
                 },
               ],
@@ -810,6 +840,10 @@
                 },
                 {
                   "word": "lobster",
+                  "substitution": true,
+                },
+                {
+                  "word": "squid",
                   "substitution": true,
                 },
                 {
@@ -968,6 +1002,10 @@
                 },
                 {
                   "word": "achiote",
+                  "substitution": true,
+                },
+                {
+                  "word": "turmeric",
                   "substitution": true,
                 },
               ],
@@ -1860,6 +1898,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "mandarin orange stir fry sauce",
+                  "substitution": true,
+                },
+                {
                   "word": "hoisin sauce",
                   "substitution": true,
                 },
@@ -2740,6 +2782,14 @@
                   "word": "mango and passion fruit tea",
                   "substitution": true,
                 },
+                {
+                  "word": "pomegranate tea",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry tea",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -2994,25 +3044,6 @@
                 {
                   "word": "bread wraps",
                   "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "pretzel snacks",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "beskidzkie",
-                  "substitution": false,
-                },
-                {
-                  "word": "pretzel sticks",
-                  "substitution": false,
-                },
-                {
-                  "word": "pretzels",
-                  "substitution": false,
                 },
               ],
           },
@@ -4007,7 +4038,11 @@
                   "substitution": false,
                 },
                 {
-                  "word": "tortilla chip",
+                  "word": "chevda",
+                  "substitution": true,
+                },
+                {
+                  "word": "tortilla chips",
                   "substitution": true,
                 },
                 {
@@ -4016,6 +4051,34 @@
                 },
                 {
                   "word": "pretzel snacks",
+                  "substitution": true,
+                },
+                {
+                  "word": "sev mamra",
+                  "substitution": true,
+                },
+                {
+                  "word": "bombay mix",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi peas",
+                  "substitution": true,
+                },
+                {
+                  "word": "twiglets",
+                  "substitution": true,
+                },
+                {
+                  "word": "mini cheddars",
+                  "substitution": true,
+                },
+                {
+                  "word": "crackers",
+                  "substitution": true,
+                },
+                {
+                  "word": "roasted chickpeas",
                   "substitution": true,
                 },
               ],

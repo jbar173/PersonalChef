@@ -3,8 +3,8 @@
     "key" : [ "mango flavoured spirit/liqueur","mead","melon flavoured spirit/liqueur","mint flavoured spirit/liqueur","mulled wine",
               "manchego","monterey jack","mozzarella","muenster","mascarpone",
 
-              "macarons","maltesers","mango jelly","mango jam","mango puree","maple syrup","marmalade","marshmallows","mars bar","marzipan","meringues",
-              "midget gems","milk chocolate","millionaire’s shortbread","milk biscuits","milky way","mincemeat","mini eggs","minstrels","mints",
+              "macarons","maltesers","mango and passionfruit mousse","mango jelly","mango jam","mango puree","maple syrup","marmalade","marshmallows","mars bar",
+              "marzipan","meringues","midget gems","milk chocolate","millionaire’s shortbread","milk biscuits","milky way","mincemeat","mini eggs","minstrels","mints",
               "mint chocolate","mint fondants","munchies",
 
               "macademia","malt wheats cereal","milk powder","mixed nuts","muesli",
@@ -22,14 +22,14 @@
 
               "mango tea", "mulberry syrup",
 
-              "margarine","mango and passionfruit mousse","marmite","meat free bacon","meat free breadcrumbed fillets","meat free mince",
+              "margarine","marmite","meat free bacon","meat free breadcrumbed fillets","meat free mince",
               "meat free southern fried fillets","milk","mini cheddars",
 
 
               "~~~ HALF DONE : ~~~",
               "mixed fruit flavoured spirit/liqueur",
               "m&ms",
-              "mole sauce", "mushroom cooking sauce",
+              "mandarin orange stir fry sauce", "mole sauce", "mushroom cooking sauce",
               "mint tea",
 
 
@@ -43,6 +43,77 @@
     "ingredients": [
 
 
+          {
+              "name": "mandarin orange stir fry sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mandarin orange stir-fry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mandarin orange sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mandarin orange chicken sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chinese orange sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chinese style orange sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chinese-style orange sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange stir fry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange stir-fry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mandarin stir fry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mandarin stir-fry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "duck sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "mandarin teriyaki sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum and mandarin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum & mandarin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "plum sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet and sour sauce",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "mulberry syrup",
               "exclude": [
@@ -925,6 +996,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "coconut milk powder",
+                  "substitution": true,
+                },
+                {
                   "word": "evaporated milk",
                   "substitution": true,
                 },
@@ -1224,6 +1299,18 @@
                   "substitution": true,
                 },
                 {
+                  "word": "dried sorrel",
+                  "substitution": true,
+                },
+                {
+                  "word": "roselle",
+                  "substitution": true,
+                },
+                {
+                  "word": "hibiscus",
+                  "substitution": true,
+                },
+                {
                   "word": "citric acid powder",
                   "substitution": true,
                 },
@@ -1277,8 +1364,12 @@
                   "substitution": false,
                 },
                 {
-                  "word": "ras el hanout",
+                  "word": "tagine spice",
                   "substitution": false,
+                },
+                {
+                  "word": "ras el hanout",
+                  "substitution": true,
                 },
                 {
                   "word": "baharat seasoning",
@@ -1286,6 +1377,10 @@
                 },
                 {
                   "word": "garam masala",
+                  "substitution": true,
+                },
+                {
+                  "word": "shawarma seasoning",
                   "substitution": true,
                 },
               ],
@@ -1666,6 +1761,10 @@
                 },
                 {
                   "word": "salad cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "miracle whip",
                   "substitution": true,
                 },
               ],
@@ -2199,6 +2298,34 @@
                   "word": "biscuits for cheese",
                   "substitution": true,
                 },
+                {
+                  "word": "cheese puffs",
+                  "substitution": true,
+                },
+                {
+                  "word": "pretzel snacks",
+                  "substitution": true,
+                },
+                {
+                  "word": "sev mamra",
+                  "substitution": true,
+                },
+                {
+                  "word": "bombay mix",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi peas",
+                  "substitution": true,
+                },
+                {
+                  "word": "twiglets",
+                  "substitution": true,
+                },
+                {
+                  "word": "roasted chickpeas",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -2350,6 +2477,14 @@
                 },
                 {
                   "word": "hot curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "turmeric",
+                  "substitution": true,
+                },
+                {
+                  "word": "garam masala",
                   "substitution": true,
                 },
               ],

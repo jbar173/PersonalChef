@@ -249,6 +249,10 @@
                 "word": "basa",
                 "substitution": true,
               },
+              {
+                "word": "snapper",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -335,6 +339,10 @@
                 "word": "monkfish",
                 "substitution": true,
               },
+              {
+                "word": "sole",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -344,6 +352,10 @@
             "include": [
               {
                 "word": "sardines",
+                "substitution": true,
+              },
+              {
+                "word": "sprat",
                 "substitution": true,
               },
               {
@@ -959,6 +971,18 @@
               {
                 "word": "plum sauce",
                 "substitution": true,
+              },
+              {
+                "word": "yoshida's gourmet sauce",
+                "substitution": true,
+              },
+              {
+                "word": "black bean sauce",
+                "substitution": true,
+              },
+              {
+                "word": "char siu sauce",
+                "substitution": false,
               },
             ],
         },

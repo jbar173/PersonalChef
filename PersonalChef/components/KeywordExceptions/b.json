@@ -9,7 +9,7 @@
              "baking powder","baking soda","batter mix","bran flakes","brazil nuts","breadcrumbs","breadsticks","bread loaf","bread wraps",
              "basa",
              "beef","beef mince","black pudding","burger",
-             "banana","beetroot","beet","bell pepper","beansprouts","bitter melon","broad beans","broccoli","blackberries","blueberries","butternut squash",
+             "banana","beetroot","beet","bell pepper","beansprouts","bitter melon","blackberries","blueberries","broad beans","broccoli","brussel sprouts","butternut squash",
              "baharat seasoning","bay leaf","beetroot powder","biryani masala","black cardamom","bouquet garni",
              "baked beans","black beans","black-eyed peas","black cherries","borlotti beans","butter beans",
 
@@ -21,15 +21,14 @@
 
 
 
-
              "~~~ HALF DONE : ~~~",
              "blackberry flavoured spirit/liqueur", "blackcurrant flavoured spirit/liqueur", "butterscotch flavoured spirit/liqueur",
              "berry jam", "blackcurrant jam", "blackcurrant jelly", "blueberry jam", "blueberry jelly", "bramble preserve", "bramble jelly",
              "bulgur",
              "bass", "bluefish", "breaded fish fillets",
              "bacon",
-             "barbeque seasoning",
-             "basil oil", "basil puree", "black bean paste", "borage seed oil",
+             "barbeque seasoning", "bonito flakes",
+             "basil oil", "basil puree", "black bean sauce", "borage seed oil",
              "berry cordial", "blackcurrant tea",
              "bombay mix",
 
@@ -46,6 +45,136 @@
     "ingredients": [
 
 
+
+      {
+          "name": "brussel sprouts",
+          "exclude": [
+            {
+              "word": "bean",
+            },
+          ],
+          "include": [
+            {
+              "word": "sprouts",
+              "substitution": false,
+            },
+            {
+              "word": "broccoli",
+              "substitution": true,
+            },
+            {
+              "word": "kohlrabi",
+              "substitution": true,
+            },
+            {
+              "word": "cabbage",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "black bean sauce",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "black bean stir fry sauce",
+              "substitution": false,
+            },
+            {
+              "word": "black bean stir-fry sauce",
+              "substitution": false,
+            },
+            {
+              "word": "black bean & garlic sauce",
+              "substitution": false,
+            },
+            {
+              "word": "black bean and garlic sauce",
+              "substitution": false,
+            },
+            {
+              "word": "black bean garlic sauce",
+              "substitution": false,
+            },
+            {
+              "word": "black bean & chilli sauce",
+              "substitution": false,
+            },
+            {
+              "word": "black bean and chilli sauce",
+              "substitution": false,
+            },
+            {
+              "word": "black bean chilli sauce",
+              "substitution": false,
+            },
+            {
+              "word": "black beans in chilli",
+              "substitution": false,
+            },
+            {
+              "word": "black bean rayu",
+              "substitution": false,
+            },
+            {
+              "word": "black bean paste",
+              "substitution": false,
+            },
+            {
+              "word": "yoshida's gourmet sauce",
+              "substitution": true,
+            },
+            {
+              "word": "hoisin sauce",
+              "substitution": true,
+            },
+            {
+              "word": "ginger stir fry sauce",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "bonito flakes",
+          "exclude": [
+            {
+              "word": "powder",
+            },
+            {
+              "word": "powdered",
+            },
+            {
+              "word": "granule",
+            },
+          ],
+          "include": [
+            {
+              "word": "bonito flakes",
+              "substitution": false,
+            },
+            {
+              "word": "bonito fish flakes",
+              "substitution": false,
+            },
+            {
+              "word": "bonito soft flakes",
+              "substitution": false,
+            },
+            {
+              "word": "dried bonito",
+              "substitution": false,
+            },
+            {
+              "word": "tuna flakes",
+              "substitution": false,
+            },
+            {
+              "word": "crispy seaweed",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "bonbons",
           "exclude": [
@@ -775,6 +904,10 @@
               "word": "moroccan seasoning",
               "substitution": true,
             },
+            {
+              "word": "shawarma seasoning",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -1126,6 +1259,10 @@
               "substitution": false,
             },
             {
+              "word": "cherry tea",
+              "substitution": false,
+            },
+            {
               "word": "berries tea",
               "substitution": false,
             },
@@ -1458,6 +1595,34 @@
               "word": "blackcurrant and blueberry tea",
               "substitution": false,
             },
+            {
+              "word": "raspberry tea",
+              "substitution": true,
+            },
+            {
+              "word": "berry tea",
+              "substitution": true,
+            },
+            {
+              "word": "cherry tea",
+              "substitution": true,
+            },
+            {
+              "word": "blueberry tea",
+              "substitution": true,
+            },
+            {
+              "word": "blackberry tea",
+              "substitution": true,
+            },
+            {
+              "word": "strawberry tea",
+              "substitution": true,
+            },
+            {
+              "word": "cranberry tea",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -1527,17 +1692,6 @@
             },
             {
               "word": "butterscotch gin",
-              "substitution": false,
-            },
-          ],
-      },
-      {
-          "name": "black bean paste",
-          "exclude": [
-          ],
-          "include": [
-            {
-              "word": "black bean sauce",
               "substitution": false,
             },
           ],
@@ -1659,6 +1813,26 @@
             {
               "word": "chevda",
               "substitution": false,
+            },
+            {
+              "word": "pretzel snacks",
+              "substitution": true,
+            },
+            {
+              "word": "sev mamra",
+              "substitution": true,
+            },
+            {
+              "word": "twiglets",
+              "substitution": true,
+            },
+            {
+              "word": "wasabi peas",
+              "substitution": true,
+            },
+            {
+              "word": "roasted chickpeas",
+              "substitution": true,
             },
           ],
       },
@@ -2639,6 +2813,14 @@
             },
             {
               "word": "char siu sauce",
+              "substitution": true,
+            },
+            {
+              "word": "teriyaki sauce",
+              "substitution": true,
+            },
+            {
+              "word": "yoshida's gourmet sauce",
               "substitution": true,
             },
           ],
@@ -3890,6 +4072,10 @@
                 },
                 {
                   "word": "asparagus",
+                  "substitution": true,
+                },
+                {
+                  "word": "brussel sprouts",
                   "substitution": true,
                 },
               ],

@@ -23,7 +23,11 @@
               "~~~ HALF DONE : ~~~",
               "gooseberry flavoured spirit/liqueur",
               "gram flour",
-              "garlic and herb dressing", "garlic oil", "garlic mayonnaise", "garlic puree", "ginger puree", "guinness cooking paste",
+              "grouper",
+
+              "garlic and herb dressing", "garlic oil", "garlic mayonnaise", "garlic puree", "general tso sauce", "ginger puree", "ginger stir fry sauce",
+              "guinness cooking paste",
+
               "ginger tea",
 
 
@@ -39,6 +43,155 @@
 
 
 
+          {
+              "name": "grouper",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "snapped",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "general tso sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tso",
+                  "substitution": false,
+                },
+                {
+                  "word": "tso's",
+                  "substitution": false,
+                },
+                {
+                  "word": "kung po sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "cantonese sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "ginger stir fry sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "ginger stir-fry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy & ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy and ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli & ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli and ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy, garlic & ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy, garlic and ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy garlic ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli, garlic & ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli, garlic and ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli garlic ginger sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy, ginger & garlic sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy, ginger and garlic sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy ginger garlic sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli, ginger & garlic sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli, ginger and garlic sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "chilli ginger garlic sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "soy garlic sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli garlic sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "chinese style stir fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "chinese-style stir fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "chinese style stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "chinese-style stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "yoshida's gourmet sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "black bean sauce",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "granola bar",
               "exclude": [
@@ -1872,6 +2025,10 @@
                   "word": "juniper berries",
                   "substitution": true,
                 },
+                {
+                  "word": "saffron",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1921,6 +2078,10 @@
                 },
                 {
                   "word": "fiddlehead",
+                  "substitution": true,
+                },
+                {
+                  "word": "samphire",
                   "substitution": true,
                 },
               ],

@@ -10,7 +10,7 @@
               "coloured dusting sugar","condensed milk","cookies","cookie mix","creme egg","crunchie bar","crunchy cream biscuits","curd cheese","custard",
               "custard powder",
 
-              "candlenuts","cashew nuts","cassava flour","chana dal","chestnuts","chia seeds","chocolate cereal","coconut milk powder","cornflakes","cornstarch",
+              "candlenuts","cashew nuts","cassava flour","chana dal","chestnuts","chia seeds","chocolate cereal","cornflakes","cornstarch",
               "cornmeal","couscous","crackers","crispy onions","croutons","crumpets",
 
               "caviar","clams","cod","cockles","crab","crayfish",
@@ -20,7 +20,7 @@
               "collard greens","courgette","cucumber",
 
               "cajun spice","caraway seeds","cayenne","celery salt","celery seeds","chana masala spice blend","chicken seasoning","chilli flakes","chilli powder",
-              "chinese five spice","chives","choi sum","cinnamon","cloves","coriander seeds","cress","cumin seeds",
+              "chinese five spice","chives","choi sum","cinnamon","cloves","coriander seeds","cress","crispy seaweed","cumin seeds",
 
               "canned chipotles","cannellini beans","cheddar cheese soup","chicken soup","chickpeas",
 
@@ -36,7 +36,7 @@
               "~~~ HALF DONE : ~~~",
               "caramel flavoured spirit/liqueur","cinnamon flavoured spirit/liqueur","coffee flavoured spirit/liqueur",
               "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","chocolate sponge","clotted cream","crystallised ginger",
-              "coley",
+              "catfish","coley","cuttlefish",
               "corned beef",
               "caesar dressing","char siu sauce","chilli chutney relish","chilli infused oil","chimichurri","coriander puree",
               "camomile tea","carob syrup","carrot juice","chai tea","cherry tea","coca cola","cookie dough milkshake","cranberry tea",
@@ -52,6 +52,165 @@
     "ingredients": [
 
 
+
+        {
+            "name": "catfish",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "snapper",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cuttlefish",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "squid",
+                "substitution": true,
+              },
+              {
+                "word": "calamari",
+                "substitution": true,
+              },
+              {
+                "word": "octopus",
+                "substitution": true,
+              },
+              {
+                "word": "razor clam",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "crispy seaweed",
+            "exclude": [
+              {
+                "word": "teifi",
+              },
+              {
+                "word": "cheese",
+              },
+              {
+                "word": "powder",
+              },
+              {
+                "word": "powdered",
+              },
+              {
+                "word": "granule",
+              },
+              {
+                "word": "concentrate",
+              },
+              {
+                "word": "extract",
+              },
+            ],
+            "include": [
+              {
+                "word": "seaweed seasoning",
+                "substitution": false,
+              },
+              {
+                "word": "seaweed",
+                "substitution": false,
+              },
+              {
+                "word": "wakame",
+                "substitution": false,
+              },
+              {
+                "word": "tosaka",
+                "substitution": false,
+              },
+              {
+                "word": "ogo",
+                "substitution": false,
+              },
+              {
+                "word": "nori",
+                "substitution": false,
+              },
+              {
+                "word": "ogonori",
+                "substitution": false,
+              },
+              {
+                "word": "aonori",
+                "substitution": false,
+              },
+              {
+                "word": "laver",
+                "substitution": false,
+              },
+              {
+                "word": "kelp",
+                "substitution": false,
+              },
+              {
+                "word": "kombu",
+                "substitution": false,
+              },
+              {
+                "word": "konbu",
+                "substitution": false,
+              },
+              {
+                "word": "arame",
+                "substitution": false,
+              },
+              {
+                "word": "mozuku",
+                "substitution": false,
+              },
+              {
+                "word": "dulse",
+                "substitution": false,
+              },
+              {
+                "word": "carragreen",
+                "substitution": false,
+              },
+              {
+                "word": "dried irish moss",
+                "substitution": false,
+              },
+              {
+                "word": "gutweed",
+                "substitution": false,
+              },
+              {
+                "word": "dried sea lettuce",
+                "substitution": false,
+              },
+              {
+                "word": "bonito flakes",
+                "substitution": true,
+              },
+              {
+                "word": "bonito fish flakes",
+                "substitution": true,
+              },
+              {
+                "word": "bonito soft flakes",
+                "substitution": true,
+              },
+              {
+                "word": "dried bonito",
+                "substitution": true,
+              },
+              {
+                "word": "tuna flakes",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "coley",
             "exclude": [
@@ -1963,6 +2122,14 @@
                 "word": "basa",
                 "substitution": true,
               },
+              {
+                "word": "sole",
+                "substitution": true,
+              },
+              {
+                "word": "snapper",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -2008,6 +2175,10 @@
               {
                 "word": "crabmeat",
                 "substitution": false,
+              },
+              {
+                "word": "surimi",
+                "substitution": true,
               },
               {
                 "word": "krab",
@@ -2837,6 +3008,10 @@
                 "word": "oyster sauce",
                 "substitution": true,
               },
+              {
+                "word": "cantonese sauce",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -3218,6 +3393,26 @@
                 "word": "chinese brown sauce",
                 "substitution": false,
               },
+              {
+                "word": "yoshida's gourmet sauce",
+                "substitution": true,
+              },
+              {
+                "word": "kung po sauce",
+                "substitution": true,
+              },
+              {
+                "word": "general tso sauce",
+                "substitution": true,
+              },
+              {
+                "word": "oyster sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chow mein sauce",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -3301,7 +3496,15 @@
                 "substitution": false,
               },
               {
-                "word": "coconut drink",
+                "word": "salad cream",
+                "substitution": true,
+              },
+              {
+                "word": "mayonnaise",
+                "substitution": true,
+              },
+              {
+                "word": "miracle whip",
                 "substitution": true,
               },
             ],
@@ -3455,10 +3658,6 @@
                 "substitution": true,
               },
               {
-                "word": "cranberry tea",
-                "substitution": true,
-              },
-              {
                 "word": "cranberry & raspberry tea",
                 "substitution": true,
               },
@@ -3467,7 +3666,31 @@
                 "substitution": true,
               },
               {
+                "word": "raspberry tea",
+                "substitution": true,
+              },
+              {
                 "word": "berry tea",
+                "substitution": true,
+              },
+              {
+                "word": "blackcurrant tea",
+                "substitution": true,
+              },
+              {
+                "word": "blueberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "blackberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "strawberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "cranberry tea",
                 "substitution": true,
               },
             ],
@@ -4003,6 +4226,18 @@
                 "word": "plum sauce",
                 "substitution": true,
               },
+              {
+                "word": "teriyaki sauce",
+                "substitution": true,
+              },
+              {
+                "word": "yoshida's gourmet sauce",
+                "substitution": true,
+              },
+              {
+                "word": "hoisin sauce",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -4090,11 +4325,31 @@
                 "substitution": true,
               },
               {
+                "word": "cherry tea",
+                "substitution": true,
+              },
+              {
+                "word": "raspberry tea",
+                "substitution": true,
+              },
+              {
                 "word": "berry tea",
                 "substitution": true,
               },
               {
-                "word": "cherry tea",
+                "word": "blueberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "blackberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "strawberry tea",
+                "substitution": true,
+              },
+              {
+                "word": "blackcurrant tea",
                 "substitution": true,
               },
             ],
@@ -4563,6 +4818,14 @@
               {
                 "word": "chilli and ginger chutney",
                 "substitution": false,
+              },
+              {
+                "word": "spicy pickle relish",
+                "substitution": false,
+              },
+              {
+                "word": "sweet chilli sauce",
+                "substitution": true,
               },
               {
                 "word": "habanero relish",
@@ -5311,10 +5574,6 @@
             ],
             "include": [
               {
-                "word": "pickle relish",
-                "substitution": false,
-              },
-              {
                 "word": "ballymaloe original relish",
                 "substitution": false,
               },
@@ -5335,8 +5594,24 @@
                 "substitution": false,
               },
               {
-                "word": "smostarda di-cremona",
-                "substitution": true,
+                "word": "onion relish",
+                "substitution": false,
+              },
+              {
+                "word": "tomato jam",
+                "substitution": false,
+              },
+              {
+                "word": "tomato marmalade",
+                "substitution": false,
+              },
+              {
+                "word": "tomato confit",
+                "substitution": false,
+              },
+              {
+                "word": "tomato relish",
+                "substitution": false,
               },
               {
                 "word": "fig jam",
@@ -5347,11 +5622,43 @@
                 "substitution": true,
               },
               {
-                "word": "mango pickle",
+                "word": "fig confit",
+                "substitution": false,
+              },
+              {
+                "word": "fig relish",
+                "substitution": false,
+              },
+              {
+                "word": "apple jam",
+                "substitution": true,
+              },
+              {
+                "word": "apple marmalade",
+                "substitution": true,
+              },
+              {
+                "word": "apple confit",
+                "substitution": false,
+              },
+              {
+                "word": "apple relish",
+                "substitution": false,
+              },
+              {
+                "word": "smostarda di-cremona",
+                "substitution": true,
+              },
+              {
+                "word": "sweet pickle relish",
                 "substitution": true,
               },
               {
                 "word": "piccalilli",
+                "substitution": true,
+              },
+              {
+                "word": "mango pickle",
                 "substitution": true,
               },
               {
@@ -5848,6 +6155,18 @@
               },
               {
                 "word": "chilli biscuits",
+                "substitution": true,
+              },
+              {
+                "word": "mini cheddars",
+                "substitution": true,
+              },
+              {
+                "word": "tortilla chips",
+                "substitution": true,
+              },
+              {
+                "word": "potato chips",
                 "substitution": true,
               },
             ],
@@ -7446,6 +7765,10 @@
               },
               {
                 "word": "pak choi",
+                "substitution": true,
+              },
+              {
+                "word": "brussel sprouts",
                 "substitution": true,
               },
             ],
