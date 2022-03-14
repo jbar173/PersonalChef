@@ -43,6 +43,25 @@
 
 
           {
+              "name": "pouting",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pout",
+                  "substitution": false,
+                },
+                {
+                  "word": "bib",
+                  "substitution": false,
+                },
+                {
+                  "word": "whiting",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "popcorn",
               "exclude": [
                 {
@@ -2339,6 +2358,10 @@
                 },
                 {
                   "word": "walleye",
+                  "substitution": true,
+                },
+                {
+                  "word": "sea bream",
                   "substitution": true,
                 },
               ],
@@ -4965,6 +4988,10 @@
                   "word": "chia seeds",
                   "substitution": true,
                 },
+                {
+                  "word": "sunflower seeds",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -5582,6 +5609,10 @@
               },
               {
                 "word": "pistachios",
+                "substitution": true,
+              },
+              {
+                "word": "sunflower seeds",
                 "substitution": true,
               },
             ],

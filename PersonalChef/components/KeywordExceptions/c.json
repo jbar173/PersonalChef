@@ -13,7 +13,7 @@
               "candlenuts","cashew nuts","cassava flour","chana dal","chestnuts","chia seeds","chocolate cereal","cornflakes","cornstarch",
               "cornmeal","couscous","crackers","crispy onions","croutons","crumpets",
 
-              "caviar","clams","cod","cockles","crab","crayfish",
+              "caviar","clams","cod","cockles","crab","crab stick","crayfish",
               "chicken","chicken mince","cured sausage/sliced meat",
 
               "cabbage","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli pepper","clementine",
@@ -36,7 +36,7 @@
               "~~~ HALF DONE : ~~~",
               "caramel flavoured spirit/liqueur","cinnamon flavoured spirit/liqueur","coffee flavoured spirit/liqueur",
               "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","chocolate sponge","clotted cream","crystallised ginger",
-              "catfish","coley","cuttlefish",
+              "catfish","char","coley","cuttlefish",
               "corned beef",
               "caesar dressing","char siu sauce","chilli chutney relish","chilli infused oil","chimichurri","coriander puree",
               "camomile tea","carob syrup","carrot juice","chai tea","cherry tea","coca cola","cookie dough milkshake","cranberry tea",
@@ -52,7 +52,56 @@
     "ingredients": [
 
 
-
+        {
+            "name": "char",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "salmon",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "crab sticks",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "crab stick",
+                "substitution": false,
+              },
+              {
+                "word": "crabstick",
+                "substitution": false,
+              },
+              {
+                "word": "crab flavoured stick",
+                "substitution": false,
+              },
+              {
+                "word": "crab flavored stick",
+                "substitution": false,
+              },
+              {
+                "word": "seafood stick",
+                "substitution": false,
+              },
+              {
+                "word": "krab stick",
+                "substitution": false,
+              },
+              {
+                "word": "imitation crab",
+                "substitution": false,
+              },
+              {
+                "word": "surimi",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "catfish",
             "exclude": [
@@ -60,6 +109,10 @@
             "include": [
               {
                 "word": "snapper",
+                "substitution": true,
+              },
+              {
+                "word": "sea bream",
                 "substitution": true,
               },
             ],
@@ -221,11 +274,11 @@
                 "substitution": false,
               },
               {
-                "word": "coconut paste",
+                "word": "pollack",
                 "substitution": false,
               },
               {
-                "word": "nut butter",
+                "word": "whiting",
                 "substitution": true,
               },
             ],
@@ -959,6 +1012,45 @@
         {
             "name": "caramel syrup",
             "exclude": [
+              {
+                "word": "cookie",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "shortbread",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "loaf",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "milkshake",
+              },
+              {
+                "word": "shake",
+              },
+              {
+                "word": "whiskey",
+              },
+              {
+                "word": "whisky",
+              },
+              {
+                "word": "liqueur",
+              },
             ],
             "include": [
               {
@@ -1510,7 +1602,79 @@
                 "substitution": false,
               },
               {
+                "word": "chocolate flavour sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavor sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavored sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavored sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate topping sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavour topping sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavor topping sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavoured topping sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavored topping sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate dessert sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavour dessert sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavor dessert sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavoured dessert sauce",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavored dessert sauce",
+                "substitution": false,
+              },
+              {
                 "word": "chocolate syrup",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavour syrup",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavor syrup",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavoured syrup",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavored syrup",
                 "substitution": false,
               },
               {
@@ -1518,15 +1682,47 @@
                 "substitution": false,
               },
               {
+                "word": "chocolate flavour drizzle",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavor drizzle",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavoured drizzle",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate flavored drizzle",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate drink",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate flavour drink",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate flavor drink",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate flavoured drink",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate flavored drink",
+                "substitution": true,
+              },
+              {
                 "word": "mocha sauce",
                 "substitution": true,
               },
               {
                 "word": "caramel sauce",
-                "substitution": true,
-              },
-              {
-                "word": "chocolate drink",
                 "substitution": true,
               },
               {
@@ -2103,6 +2299,10 @@
                 "substitution": true,
               },
               {
+                "word": "pollack",
+                "substitution": true,
+              },
+              {
                 "word": "coley",
                 "substitution": true,
               },
@@ -2128,6 +2328,22 @@
               },
               {
                 "word": "snapper",
+                "substitution": true,
+              },
+              {
+                "word": "gurnard",
+                "substitution": true,
+              },
+              {
+                "word": "ling",
+                "substitution": true,
+              },
+              {
+                "word": "whiting",
+                "substitution": true,
+              },
+              {
+                "word": "barramundi",
                 "substitution": true,
               },
             ],
@@ -2190,6 +2406,10 @@
               },
               {
                 "word": "lobster",
+                "substitution": true,
+              },
+              {
+                "word": "scallops",
                 "substitution": true,
               },
             ],
@@ -8021,7 +8241,13 @@
                 "word": "biscuit",
               },
               {
+                "word": "shortbread",
+              },
+              {
                 "word": "cake",
+              },
+              {
+                "word": "loaf",
               },
               {
                 "word": "hot chocolate",

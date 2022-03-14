@@ -23,7 +23,7 @@
               "tequila",
               "toblerone", "toffee crisp", "toffees/bonbons(sub)", "toffee sauce", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
               "tortillas",
-              "tempura prawns", "tilapia/halibut/orange roughy(sub)/snapper", "trout", "tuna/mackerel(sub)",
+              "tempura prawns", "tilapia/halibut/orange roughy(sub)/snapper/sea bream/sea bass/barramundi", "trout/sea bream/salmon/char(sub)", "tuna/mackerel/salmon/sturgeon(sub)",
               "thai basil",
               "tomato soup", "tapioca pudding",
 
@@ -40,7 +40,6 @@
 
 
     "ingredients": [
-
 
 
           {
@@ -183,6 +182,10 @@
                 },
                 {
                   "word": "sole",
+                  "substitution": true,
+                },
+                {
+                  "word": "brill",
                   "substitution": true,
                 },
               ],

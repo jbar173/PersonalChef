@@ -19,6 +19,7 @@
 
               "~~~ HALF DONE : ~~~",
               "rhubarb flavoured spirit/liqueur",
+              "red mullet",
               "radish",
               "raspberry cola", "rooisbos tea",
 
@@ -32,6 +33,18 @@
     "ingredients": [
 
 
+
+          {
+              "name": "red mullet",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gurnard",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "rose wine",
               "exclude": [
@@ -2285,22 +2298,27 @@
           {
             "name": "raisins",
             "exclude": [
-              {
-                "word": "bread",
-              },
             ],
             "include": [
               {
-                "word": "raisin",
-                "substitution": false,
+                "word": "currants",
+                "substitution": true,
               },
               {
-                "word": "currant",
-                "substitution": false,
+                "word": "sultanas",
+                "substitution": true,
               },
               {
-                "word": "sultana",
-                "substitution": false,
+                "word": "dried cranberries",
+                "substitution": true,
+              },
+              {
+                "word": "dried cherries",
+                "substitution": true,
+              },
+              {
+                "word": "dates",
+                "substitution": true,
               },
             ],
           },

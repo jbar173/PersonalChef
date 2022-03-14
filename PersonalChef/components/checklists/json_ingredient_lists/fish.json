@@ -2,32 +2,34 @@
     "name": "fish_ingredients",
     "ingredients": [  "anchovies",
 
-                      "basa", "bass", "bluefish", "breaded fish fillets",
+                      "barramundi", "basa", "bass", "bluefish", "breaded fish fillets", "brill",
 
-                      "catfish", "caviar", "cockles", "cod", "coley", "crab", "crayfish", "cuttlefish",
+                      "catfish", "caviar", "char", "cockles", "cod", "coley", "crab", "crab stick", "crayfish", "cuttlefish",
 
                       "dab", "dried shrimp",
 
                       "fish cakes", "flounder", "fluke",
 
-                      "grouper",
+                      "goatfish", "grey mullet", "grouper", "gurnard",
 
                       "haddock", "hake", "halibut", "herring",
 
-                      "jellied eels",
+                      "jellied eels", "john dory",
 
                       "kipper",
 
                       "lobster",
 
-                      "mackerel", "monkfish", "mussels",
+                      "mackerel", "mahi mahi", "meagre", "monkfish", "mussels",
 
                       "orange roughy",
 
-                      "pangasius", "perch", "plaice", "pollock", "prawns",
+                      "pangasius", "perch", "plaice", "pollock", "pouting", "prawns",
 
-                      "salmon", "sardines", "scallops", "sea bass", "sea bream", "seafood stick", "shrimp", "sild", "snapper",
-                      "smoked salmon", "smoked trout", "sole", "sprat", "squid",
+                      "red mullet",
+
+                      "salmon", "sardines", "scad", "scallops", "sea bass", "sea bream", "seafood stick", "shrimp", "sild", "snapper",
+                      "smoked salmon", "smoked trout", "sole", "sprat", "squid", "stone bass", "striped bass", "sturgeon",
 
                       "tempura prawns", "tilapia", "trout", "tuna", "turbot",
 

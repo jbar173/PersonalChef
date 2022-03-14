@@ -9,7 +9,8 @@
 
              "dried adzuki beans","dried black-eyed peas","dried borlotti beans","dried black lentils","dried brown lentils","dried butter beans",
              "dried cannellini beans","dried chickpeas","dried flageolet beans","dried green lentils","dried kidney beans","dried mixed beans",
-             "dried moth beans","dried mung beans","dried mushrooms","dried navy beans","dried parsley","dried pinto beans","dried urad dal","dumpling mix",
+             "dried moth beans","dried mung beans","dried mushrooms","dried navy beans","dried parsley","dried pinto beans","dried soya beans",
+             "dried urad dal","dumpling mix",
 
              "dried shrimp",
              "duck",
@@ -40,7 +41,62 @@
     "ingredients": [
 
 
-
+        {
+            "name": "dried soya beans",
+            "exclude": [
+              {
+                "word": "edamame",
+              },
+              {
+                "word": "fresh",
+              },
+              {
+                "word": "in water",
+              },
+              {
+                "word": "in syrup",
+              },
+              {
+                "word": "drained",
+              },
+              {
+                "word": "can",
+              },
+              {
+                "word": "canned",
+              },
+              {
+                "word": "cooked",
+              },
+              {
+                "word": "boiled",
+              },
+              {
+                "word": "tin",
+              },
+              {
+                "word": "tinned",
+              },
+            ],
+            "include": [
+              {
+                "word": "soy beans",
+                "substitution": false,
+              },
+              {
+                "word": "soya beans",
+                "substitution": false,
+              },
+              {
+                "word": "soybeans",
+                "substitution": false,
+              },
+              {
+                "word": "soyabeans",
+                "substitution": false,
+              },
+            ],
+        },
         {
             "name": "dried sorrel",
             "exclude": [
@@ -855,6 +911,9 @@
             "name": "dried black lentils",
             "exclude": [
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -941,6 +1000,9 @@
         {
             "name": "dried brown lentils",
             "exclude": [
+              {
+                "word": "fresh",
+              },
               {
                 "word": "in water",
               },
@@ -1041,6 +1103,9 @@
             "name": "dried green lentils",
             "exclude": [
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -1135,6 +1200,9 @@
         {
             "name": "dried mung beans",
             "exclude": [
+              {
+                "word": "fresh",
+              },
               {
                 "word": "in water",
               },
@@ -1369,6 +1437,9 @@
         {
             "name": "dried urad dal",
             "exclude": [
+              {
+                "word": "fresh",
+              },
               {
                 "word": "in water",
               },
@@ -2073,6 +2144,9 @@
             "name": "dried adzuki beans",
             "exclude": [
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -2131,6 +2205,9 @@
             "name": "dried moth beans",
             "exclude": [
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -2180,6 +2257,9 @@
         {
             "name": "dried butter beans",
             "exclude": [
+              {
+                "word": "fresh",
+              },
               {
                 "word": "in water",
               },
@@ -2300,6 +2380,9 @@
             "name": "dried split peas",
             "exclude": [
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -2345,6 +2428,9 @@
         {
             "name": "dried red lentils",
             "exclude": [
+              {
+                "word": "fresh",
+              },
               {
                 "word": "in water",
               },
@@ -2416,6 +2502,9 @@
             "name": "dried moong dal",
             "exclude": [
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -2469,6 +2558,9 @@
         {
             "name": "dried black beans",
             "exclude": [
+              {
+                "word": "fresh",
+              },
               {
                 "word": "in water",
               },
@@ -2620,6 +2712,9 @@
                 "word": "vertes",
               },
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -2681,6 +2776,9 @@
             "name": "dried mixed beans",
             "exclude": [
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -2723,6 +2821,9 @@
             "name": "dried kidney beans",
             "exclude": [
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -2764,6 +2865,9 @@
         {
             "name": "dried flageolet beans",
             "exclude": [
+              {
+                "word": "fresh",
+              },
               {
                 "word": "in water",
               },
@@ -2818,6 +2922,9 @@
         {
             "name": "dried chickpeas",
             "exclude": [
+              {
+                "word": "fresh",
+              },
               {
                 "word": "in water",
               },
@@ -3011,6 +3118,9 @@
             "name": "dried cannellini beans",
             "exclude": [
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -3068,6 +3178,9 @@
         {
             "name": "dried borlotti beans",
             "exclude": [
+              {
+                "word": "fresh",
+              },
               {
                 "word": "in water",
               },
@@ -3135,6 +3248,9 @@
             "name": "dried pinto beans",
             "exclude": [
               {
+                "word": "fresh",
+              },
+              {
                 "word": "in water",
               },
               {
@@ -3200,6 +3316,9 @@
         {
             "name": "dried black-eyed peas",
             "exclude": [
+              {
+                "word": "fresh",
+              },
               {
                 "word": "in water",
               },
@@ -3412,6 +3531,10 @@
                 "word": "fresh pomegranate seeds",
                 "substitution": true,
               },
+              {
+                "word": "dried cherries",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -3437,6 +3560,22 @@
               },
               {
                 "word": "fresh pomegranate seeds",
+                "substitution": true,
+              },
+              {
+                "word": "dried cherries",
+                "substitution": true,
+              },
+              {
+                "word": "sultanas",
+                "substitution": true,
+              },
+              {
+                "word": "raisins",
+                "substitution": true,
+              },
+              {
+                "word": "currants",
                 "substitution": true,
               },
             ],
@@ -3864,6 +4003,14 @@
             },
             {
               "word": "raisins",
+              "substitution": true,
+            },
+            {
+              "word": "sultanas",
+              "substitution": true,
+            },
+            {
+              "word": "currants",
               "substitution": true,
             },
           ],

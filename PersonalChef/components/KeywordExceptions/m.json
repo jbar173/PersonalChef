@@ -7,7 +7,7 @@
               "marzipan","meringues","midget gems","milk chocolate","millionaire’s shortbread","milk biscuits","milky way","mincemeat","mini eggs","minstrels","mints",
               "mint chocolate","mint fondants","munchies",
 
-              "macademia","malt wheats cereal","milk powder","mixed nuts","muesli",
+              "macademia","shredded wheat cereal","milk powder","mixed nuts","muesli",
               "mackerel","monkfish","mussels",
               "mangetout","mango","mango pulp","melon","mixed berries","mixed stir fry vegetables","mixed vegetables","mushrooms",
 
@@ -29,6 +29,7 @@
               "~~~ HALF DONE : ~~~",
               "mixed fruit flavoured spirit/liqueur",
               "m&ms",
+              "mahi mahi","meagre",
               "mandarin orange stir fry sauce", "mole sauce", "mushroom cooking sauce",
               "mint tea",
 
@@ -43,6 +44,77 @@
     "ingredients": [
 
 
+
+          {
+              "name": "mahi mahi",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dolphinfish",
+                  "substitution": false,
+                },
+                {
+                  "word": "dolphin fish",
+                  "substitution": false,
+                },
+                {
+                  "word": "barramundi",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "meagre",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "croaker",
+                  "substitution": false,
+                },
+                {
+                  "word": "jewfish",
+                  "substitution": false,
+                },
+                {
+                  "word": "shade-fish",
+                  "substitution": false,
+                },
+                {
+                  "word": "sowa",
+                  "substitution": false,
+                },
+                {
+                  "word": "kir",
+                  "substitution": false,
+                },
+                {
+                  "word": "corvina",
+                  "substitution": false,
+                },
+                {
+                  "word": "salmon-bass",
+                  "substitution": false,
+                },
+                {
+                  "word": "salmon bass",
+                  "substitution": false,
+                },
+                {
+                  "word": "sea bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "stone bass",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "mandarin orange stir fry sauce",
               "exclude": [
@@ -291,6 +363,10 @@
                 },
                 {
                   "word": "rice syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "sugar syrup",
                   "substitution": true,
                 },
               ],
@@ -940,7 +1016,7 @@
               ],
           },
           {
-              "name": "malt wheats cereal",
+              "name": "shredded wheat cereal",
               "exclude": [
               ],
               "include": [
@@ -1070,6 +1146,30 @@
           {
               "name": "mackerel",
               "exclude": [
+                {
+                  "word": "rillettes",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "pate",
+                },
+                {
+                  "word": "paté",
+                },
+                {
+                  "word": "pâté",
+                },
+                {
+                  "word": "paste",
+                },
+                {
+                  "word": "mousse",
+                },
+                {
+                  "word": "sauce",
+                },
               ],
               "include": [
                 {
@@ -1117,6 +1217,10 @@
                 },
                 {
                   "word": "snapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "scallops",
                   "substitution": true,
                 },
               ],

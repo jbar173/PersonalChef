@@ -572,6 +572,10 @@
                   "word": "orange roughy",
                   "substitution": true,
                 },
+                {
+                  "word": "sea bream",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1451,6 +1455,10 @@
                 },
                 {
                   "word": "hemp seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame seeds",
                   "substitution": true,
                 },
               ],

@@ -23,7 +23,7 @@
               "~~~ HALF DONE : ~~~",
               "gooseberry flavoured spirit/liqueur",
               "gram flour",
-              "grouper",
+              "goatfish","grey mullet","grouper","gurnard",
 
               "garlic and herb dressing", "garlic oil", "garlic mayonnaise", "garlic puree", "general tso sauce", "ginger puree", "ginger stir fry sauce",
               "guinness cooking paste",
@@ -34,22 +34,56 @@
               "~~~ TO DO : ~~~",
 
 
-
-
     ],
 
 
     "ingredients": [
 
 
-
+          {
+              "name": "goatfish",
+              "exclude": [
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "grey mullet",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sea bream",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "gurnard",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "snapper",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "grouper",
               "exclude": [
               ],
               "include": [
                 {
-                  "word": "snapped",
+                  "word": "snapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "sea bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "barramundi",
                   "substitution": true,
                 },
               ],

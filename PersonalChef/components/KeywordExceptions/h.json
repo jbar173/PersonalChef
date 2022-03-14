@@ -180,6 +180,10 @@
                 "word": "rice syrup",
                 "substitution": true,
               },
+              {
+                "word": "sugar syrup",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -230,6 +234,10 @@
                 "substitution": true,
               },
               {
+                "word": "pollack",
+                "substitution": true,
+              },
+              {
                 "word": "coley",
                 "substitution": true,
               },
@@ -251,6 +259,10 @@
               },
               {
                 "word": "snapper",
+                "substitution": true,
+              },
+              {
+                "word": "gurnard",
                 "substitution": true,
               },
             ],
@@ -316,6 +328,10 @@
                 "substitution": true,
               },
               {
+                "word": "brill",
+                "substitution": true,
+              },
+              {
                 "word": "fluke",
                 "substitution": true,
               },
@@ -341,6 +357,10 @@
               },
               {
                 "word": "sole",
+                "substitution": true,
+              },
+              {
+                "word": "barramundi",
                 "substitution": true,
               },
             ],

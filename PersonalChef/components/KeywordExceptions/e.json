@@ -27,11 +27,11 @@
               ],
               "include": [
                 {
-                  "word": "fresh soya beans",
-                  "substitution": true,
+                  "word": "soya beans",
+                  "substitution": false,
                 },
                 {
-                  "word": "soya beans",
+                  "word": "soyabeans",
                   "substitution": false,
                 },
                 {

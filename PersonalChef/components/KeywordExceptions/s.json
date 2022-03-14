@@ -1,9 +1,12 @@
 {
 
     "key" : [ "sparkling white wine","sherry","strawberry flavoured spirit/liqueur",
-              "salted caramel mousse","strawberry custard","strawberry jam","strawberry jelly","sugar",
-              "semolina","spring roll wrapper","sweet rice flour","soya beans",
-              "shrimp","smoked trout","smoked salmon","sole","sprat","squid","snapper",
+
+              "salted caramel mousse","skittles","starburst","stem ginger","strawberry custard","strawberry jam","strawberry jelly","strawberry liquorice","strawberry mousse",
+              "strawberry sauce","strawberry shoelaces","sugar","sugar syrup","sultanas",
+
+              "scone mix","semolina","sesame seeds","shortcrust pastry","spring roll wrapper","sunflower seeds","sweet rice flour",
+              "salmon","sea bream","scallops","shrimp","smoked trout","smoked salmon","sole","sprat","sturgeon","squid","snapper",
               "sausage","smoked sausage/sliced meat",
               "salad leaves","samphire","shallot","soffrito mix","spinach","spring onions","strawberries","summer squash","swede","sweet potato",
 
@@ -16,14 +19,14 @@
               "sunflower oil","sweet pickle relish",
 
               "sparkling water","strawberry tea",
-              "sev mamra","shortening","sorbet","soured cream","soy milk","spring rolls","stuffing","sushi","sweet potato fries",
+              "scones","sev mamra","shortening","sorbet","soured cream","soy milk","spring rolls","stuffing","sushi","sweet potato fries",
 
 
               "~~~ HALF DONE : ~~~",
               "stout",
               "sweetener",
               "short grain rice",
-              "sardines","smoked trout",
+              "sardines","scad","sea bass","smoked trout","stone bass","striped bass",
               "sliced cooked meat",
               "spicy brown mustard","sweet and sour sauce","sweet chilli sauce",
               "strawberry milkshake",
@@ -34,14 +37,12 @@
 
               "sake/mirin(sub)",
 
-              "salted caramel chocolate", "salted caramel cookie dough", "sherbert", "shortbread/shortcake(sub)", "shortcake biscuits/shortbread(sub)", "silver ball decorations", "skittles",
-              "smarties", "snickers", "starburst", "stem ginger", "strawberry bonbons", "strawberry liquorice", "strawberry mousse",
-              "strawberry sauce", "strawberry shoelaces", "sugar syrup/maple syrup(sub)", "sultanas/raisins/currants(sub)", "syrup sponge",
+              "salted caramel chocolate", "salted caramel cookie dough", "sherbert", "shortbread/shortcake(sub)", "shortcake biscuits/shortbread(sub)",
+              "silver ball decorations",
+              "smarties", "snickers",
+              "syrup sponge",
 
-              "scone mix", "scones", "self raising flour", "sesame seeds/hemp seeds/nigella seeds/poppy seeds(sub)", "shortcrust pastry", "shreddies", "spelt flour", "sunflower seeds",
-
-              "salmon", "scallops/lobster/monkfish(sub)", "sea bass/seabass/monkfish/striped bass/striper/snapper(sub)", "sea bream", "seafood stick", "sild",
-
+              "self raising flour", "spelt flour",
 
     ],
 
@@ -51,8 +52,1224 @@
 
 
           {
+              "name": "skittles",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "taffy",
+                  "substitution": true,
+                },
+                {
+                  "word": "starburst",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "starburst",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chewits",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit chews",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruitella",
+                  "substitution": false,
+                },
+                {
+                  "word": "taffy",
+                  "substitution": true,
+                },
+                {
+                  "word": "skittles",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "stem ginger",
+              "exclude": [
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "shortbread",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "loaf",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "hot chocolate",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "shake",
+                },
+                {
+                  "word": "whiskey",
+                },
+                {
+                  "word": "whisky",
+                },
+                {
+                  "word": "liqueur",
+                },
+              ],
+              "include": [
+                {
+                  "word": "ginger jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet ginger preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet ginger preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "stem ginger preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "stem ginger conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "ginger syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "ginger in syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "crystallized ginger",
+                  "substitution": true,
+                },
+                {
+                  "word": "crystallised ginger",
+                  "substitution": true,
+                },
+                {
+                  "word": "crystallized stem ginger",
+                  "substitution": true,
+                },
+                {
+                  "word": "crystallised stem ginger",
+                  "substitution": true,
+                },
+                {
+                  "word": "candied ginger",
+                  "substitution": true,
+                },
+                {
+                  "word": "sugared ginger",
+                  "substitution": true,
+                },
+                {
+                  "word": "candied stem ginger",
+                  "substitution": true,
+                },
+                {
+                  "word": "sugared stem ginger",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "strawberry liquorice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry licorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour liquorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor liquorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured liquorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored liquorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour red liquorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor red liquorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured red liquorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored red liquorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry & cream liquorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry and cream liquorice",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry pencils",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry lances",
+                  "substitution": false,
+                },
+                {
+                  "word": "flyers strawberry",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flyers",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry twists",
+                  "substitution": true,
+                },
+                {
+                  "word": "licorice sweet",
+                  "substitution": true,
+                },
+                {
+                  "word": "liquorice sweet",
+                  "substitution": true,
+                },
+                {
+                  "word": "licorice candy",
+                  "substitution": true,
+                },
+                {
+                  "word": "liquorice candy",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "strawberry mousse",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry flavour mousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor mousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured mousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored mousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry dessert",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour dessert",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor dessert",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured dessert",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored dessert",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry creme",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour creme",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor creme",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured creme",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored creme",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry buttercream",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour buttercream",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor buttercream",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured buttercream",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored buttercream",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry mousse",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry flavour mousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor mousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured mousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored mousse",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored fool",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored whippy",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry dessert",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour dessert",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor dessert",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured dessert",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored dessert",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored cream",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry creme",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour creme",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor creme",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured creme",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored creme",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry buttercream",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour buttercream",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor buttercream",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured buttercream",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored buttercream",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "strawberry sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry flavour sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry flavour drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry flavor drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry flavoured drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry flavored drink",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "strawberry shoelaces",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "strawberry laces",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry bootlaces",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavour laces",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavor laces",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavoured laces",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry flavored laces",
+                  "substitution": false,
+                },
+                {
+                  "word": "chewits laces strawberry",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry chewits laces",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry liquorice",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sugar syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "maple syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "agave nectar",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sultanas",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raisins",
+                  "substitution": true,
+                },
+                {
+                  "word": "currants",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried cranberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried cherries",
+                  "substitution": true,
+                },
+                {
+                  "word": "dates",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "scone mix",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "scones",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "scones",
+              "exclude": [
+                {
+                  "word": "mix",
+                },
+                {
+                  "word": "dough",
+                },
+                {
+                  "word": "pastry",
+                },
+              ],
+              "include": [
+                {
+                  "word": "scone",
+                  "substitution": false,
+                },
+                {
+                  "word": "rock cake",
+                  "substitution": true,
+                },
+                {
+                  "word": "rock bun",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sesame seeds",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "hemp seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "nigella seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "poppy seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower seeds",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sesame seeds",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "hemp seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "nigella seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "poppy seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunflower seeds",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "shortcrust pastry",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shortcrust",
+                  "substitution": false,
+                },
+                {
+                  "word": "short crust",
+                  "substitution": false,
+                },
+                {
+                  "word": "short pastry",
+                  "substitution": false,
+                },
+                {
+                  "word": "pie crust",
+                  "substitution": true,
+                },
+                {
+                  "word": "piecrust",
+                  "substitution": true,
+                },
+                {
+                  "word": "pie dough",
+                  "substitution": true,
+                },
+                {
+                  "word": "tart dough",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sunflower seeds",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pumpkin seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "sesame seeds",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sturgeon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "salmon",
+                  "substitution": true,
+                },
+                {
+                  "word": "tuna",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "salmon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "trout",
+                  "substitution": true,
+                },
+                {
+                  "word": "char",
+                  "substitution": true,
+                },
+                {
+                  "word": "mackerel",
+                  "substitution": true,
+                },
+                {
+                  "word": "amberjack",
+                  "substitution": true,
+                },
+                {
+                  "word": "mahi mahi",
+                  "substitution": true,
+                },
+                {
+                  "word": "tuna",
+                  "substitution": true,
+                },
+                {
+                  "word": "sturgeon",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "scallops",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "lobster",
+                  "substitution": true,
+                },
+                {
+                  "word": "monkfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "abalone",
+                  "substitution": true,
+                },
+                {
+                  "word": "crab",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "striped bass",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "stripped bass",
+                  "substitution": false,
+                },
+                {
+                  "word": "striper",
+                  "substitution": false,
+                },
+                {
+                  "word": "linesider",
+                  "substitution": false,
+                },
+                {
+                  "word": "rockfish",
+                  "substitution": false,
+                },
+                {
+                  "word": "sea bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "barramundi",
+                  "substitution": true,
+                },
+                {
+                  "word": "halibut",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sea bass",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "seabass",
+                  "substitution": false,
+                },
+                {
+                  "word": "monkfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "striped bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "snapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "sea bream",
+                  "substitution": true,
+                },
+                {
+                  "word": "mahi mahi",
+                  "substitution": true,
+                },
+                {
+                  "word": "striped bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "grey mullet",
+                  "substitution": true,
+                },
+                {
+                  "word": "stone bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "meagre",
+                  "substitution": true,
+                },
+                {
+                  "word": "branzino",
+                  "substitution": true,
+                },
+                {
+                  "word": "tilapia",
+                  "substitution": true,
+                },
+                {
+                  "word": "barramundi",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouper",
+                  "substitution": true,
+                },
+                {
+                  "word": "cod",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "stone bass",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "stone-bass",
+                  "substitution": false,
+                },
+                {
+                  "word": "stonebass",
+                  "substitution": false,
+                },
+                {
+                  "word": "wreckfish",
+                  "substitution": false,
+                },
+                {
+                  "word": "bass groper",
+                  "substitution": false,
+                },
+                {
+                  "word": "sea bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "meagre",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "scad",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "horse mackerel",
+                  "substitution": false,
+                },
+                {
+                  "word": "sardines",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "sea bream",
+              "exclude": [
+                {
+                  "word": "rillettes",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "pate",
+                },
+                {
+                  "word": "paté",
+                },
+                {
+                  "word": "pâté",
+                },
+                {
+                  "word": "paste",
+                },
+                {
+                  "word": "mousse",
+                },
+                {
+                  "word": "sauce",
+                },
+              ],
+              "include": [
+                {
+                  "word": "seabream",
+                  "substitution": false,
+                },
+                {
+                  "word": "bream",
+                  "substitution": false,
+                },
+                {
+                  "word": "sea bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "snapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "tilapia",
+                  "substitution": true,
+                },
+                {
+                  "word": "trout",
+                  "substitution": true,
+                },
+                {
+                  "word": "catfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "perch",
+                  "substitution": true,
+                },
+                {
+                  "word": "grey mullet",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "smoked trout",
               "exclude": [
+                {
+                  "word": "rillettes",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "pate",
+                },
+                {
+                  "word": "paté",
+                },
+                {
+                  "word": "pâté",
+                },
+                {
+                  "word": "paste",
+                },
+                {
+                  "word": "mousse",
+                },
+                {
+                  "word": "sauce",
+                },
               ],
               "include": [
                 {
@@ -84,6 +1301,30 @@
           {
               "name": "smoked salmon",
               "exclude": [
+                {
+                  "word": "rillettes",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "pate",
+                },
+                {
+                  "word": "paté",
+                },
+                {
+                  "word": "pâté",
+                },
+                {
+                  "word": "paste",
+                },
+                {
+                  "word": "mousse",
+                },
+                {
+                  "word": "sauce",
+                },
               ],
               "include": [
                 {
@@ -137,6 +1378,18 @@
                   "word": "tilapia",
                   "substitution": true,
                 },
+                {
+                  "word": "sea bream",
+                  "substitution": true,
+                },
+                {
+                  "word": "red mullet",
+                  "substitution": true,
+                },
+                {
+                  "word": "barramundi",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -182,6 +1435,10 @@
                 },
                 {
                   "word": "halibut",
+                  "substitution": true,
+                },
+                {
+                  "word": "barramundi",
                   "substitution": true,
                 },
               ],
@@ -2394,6 +3651,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "sild",
+                  "substitution": true,
+                },
+                {
                   "word": "sprat",
                   "substitution": true,
                 },
@@ -2427,6 +3688,10 @@
                 },
                 {
                   "word": "anchovies",
+                  "substitution": true,
+                },
+                {
+                  "word": "mackerel",
                   "substitution": true,
                 },
               ],
@@ -2746,25 +4011,6 @@
               "include": [
                 {
                   "word": "fleur de sel",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
-              "name": "soya beans",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "soy bean",
-                  "substitution": false,
-                },
-                {
-                  "word": "soya bean",
-                  "substitution": false,
-                },
-                {
-                  "word": "soybean",
                   "substitution": false,
                 },
               ],
