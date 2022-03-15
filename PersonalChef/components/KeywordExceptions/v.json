@@ -1,6 +1,6 @@
 {
 
-    "key" : [ "vanilla extract","vanilla pod",
+    "key" : [ "vanilla extract","vanilla sponge","vanilla pod",
               "vine leaves",
               "vegetable oil","vegetable stock","vinegar",
 
@@ -12,11 +12,11 @@
 
               "~~~ TO DO : ~~~",
               "vodka",
-              "vanilla bean paste", "vanilla essence", "vanilla sponge", "vanilla syrup",
+              "vanilla bean paste", "vanilla essence", "vanilla syrup",
               "venison",
 
               "vegetable juice", "vimto",
-              "vegetable chips", 
+              "vegetable chips",
     ],
 
 
@@ -24,6 +24,73 @@
 
 
 
+          {
+              "name": "vanilla sponge",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "jam sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "jam and sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "jam pudding",
+                  "substitution": false,
+                },
+                {
+                  "word": "jam roll",
+                  "substitution": false,
+                },
+                {
+                  "word": "jam roly",
+                  "substitution": false,
+                },
+                {
+                  "word": "jam swiss roll",
+                  "substitution": false,
+                },
+                {
+                  "word": "coconut sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "plain sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "strawberry sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "victoria sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "victoria sandwich",
+                  "substitution": false,
+                },
+                {
+                  "word": "victorian cake",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla cake",
+                  "substitution": false,
+                },
+                {
+                  "word": "cake",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "vanilla milkshake",
               "exclude": [

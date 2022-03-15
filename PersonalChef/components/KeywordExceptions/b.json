@@ -3,7 +3,7 @@
     "key" : ["banana flavoured spirit/liqueur","beer","bitters","blueberry flavoured spirit/liqueur","brandy",
              "bavarian smoked cheese","blue cheese","brie",
 
-             "banana custard","black food colouring","black treacle","blue food colouring","biscuit","biscuit spread","boiled sweets","bonbons","bounty","bourbon biscuits",
+             "banana custard","black food colouring","black treacle","blue food colouring","biscuits","biscuit spread","boiled sweets","bonbons","bounty","bourbon biscuits",
              "buttercream","butterscotch essence","butterscotch mousse",
 
              "baking powder","baking soda","batter mix","bran flakes","brazil nuts","breadcrumbs","breadsticks","bread loaf","bread wraps",
@@ -255,6 +255,14 @@
               "word": "cake decorations",
               "substitution": true,
             },
+            {
+              "word": "chocolate sprinkles",
+              "substitution": true,
+            },
+            {
+              "word": "coloured dusting sugar",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -481,7 +489,7 @@
           ],
       },
       {
-          "name": "biscuit",
+          "name": "biscuits",
           "exclude": [
             {
               "word": "spread",
@@ -489,8 +497,24 @@
             {
               "word": "biscoff",
             },
+            {
+              "word": "icecream",
+            },
+            {
+              "word": "ice cream",
+            },
+            {
+              "word": "milkshake",
+            },
+            {
+              "word": "shake",
+            },
           ],
           "include": [
+            {
+              "word": "biscuit",
+              "substitution": false,
+            },
             {
               "word": "cookie",
               "substitution": false,
@@ -621,6 +645,24 @@
       {
           "name": "bourbon biscuits",
           "exclude": [
+            {
+              "word": "spread",
+            },
+            {
+              "word": "biscoff",
+            },
+            {
+              "word": "icecream",
+            },
+            {
+              "word": "ice cream",
+            },
+            {
+              "word": "milkshake",
+            },
+            {
+              "word": "shake",
+            },
           ],
           "include": [
             {
@@ -645,6 +687,10 @@
             },
             {
               "word": "oreos",
+              "substitution": true,
+            },
+            {
+              "word": "biscuits",
               "substitution": true,
             },
           ],
@@ -692,6 +738,18 @@
             },
             {
               "word": "lolly",
+              "substitution": true,
+            },
+            {
+              "word": "cake decorations",
+              "substitution": true,
+            },
+            {
+              "word": "chocolate sprinkles",
+              "substitution": true,
+            },
+            {
+              "word": "coloured dusting sugar",
               "substitution": true,
             },
           ],

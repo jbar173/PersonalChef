@@ -211,6 +211,10 @@
                   "word": "cake decorations",
                   "substitution": true,
                 },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -333,11 +337,15 @@
                   "substitution": true,
                 },
                 {
+                  "word": "rolos",
+                  "substitution": true,
+                },
+                {
                   "word": "cake decorations",
                   "substitution": true,
                 },
                 {
-                  "word": "rolos",
+                  "word": "chocolate sprinkles",
                   "substitution": true,
                 },
               ],
@@ -388,6 +396,10 @@
                 },
                 {
                   "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
                   "substitution": true,
                 },
               ],

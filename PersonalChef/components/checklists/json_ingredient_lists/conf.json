@@ -6,18 +6,18 @@
             "blue food colouring", "biscuit spread", "boiled sweets", "bonbons", "bourbon biscuits", "bounty", "bramble jam", "bramble jelly", "buttercream",
             "butterscotch mousse",
 
-            "cacao nibs", "cake mix", "candied orange", "caramel", "caramel cookie dough", "caramel crunch biscuits", "caramel essence", "caramel covered peanuts", "caramel syrup",
-            "caramel wafers", "carrot cake", "cherry compote", "cherry jam", "cherry jelly", "chocolate", "chocolate biscuits", "chocolate buttons", "chocolate cake",
-            "chocolate caramel bar", "chocolate cookies", "chocolate cookie dough", "chocolate custard", "chocolate decorating icing", "chocolate drops", "chocolate ganache",
+            "cacao nibs", "cake decorations", "cake mix", "candied orange", "caramel", "caramel biscuits", "caramel essence", "caramel covered peanuts",
+            "caramel syrup", "caramel wafers", "carrot cake", "cherry compote", "cherry jam", "cherry jelly", "chocolate", "chocolate biscuits", "chocolate buttons", "chocolate cake",
+            "chocolate caramel bar", "chocolate cookies", "chocolate custard", "chocolate decorating icing", "chocolate drops", "chocolate ganache",
             "chocolate mousse", "chocolate peanuts", "chocolate raisins", "chocolate sauce", "chocolate sprinkles", "chocolate wafers", "clotted cream", "cocoa powder",
-            "coconut bar", "coconut biscuits", "coconut macaroons", "coconut nectar", "cola laces", "coloured dusting sugar", "condensed milk", "cookies", "cookie mix",
+            "coconut bar", "coconut biscuits", "coconut macaroons", "coconut nectar", "cola laces", "coloured dusting sugar", "condensed milk", "cookies", "cookie dough",
             "creme egg", "crunchie bar", "crunchy cream biscuits", "crystallised ginger", "custard", "custard powder",
 
-            "dark chocolate", "dates", "date paste", "digestive biscuits", "decorating icing", "decorating sprinkles", "dolly mixture", "dried apple", "dried apricots",
-            "dried banana", "dried barberries", "dried coconut", "dried cranberries", "dried figs", "dried goji berries", "dried mango", "dried mixed fruit", "dried pears",
-            "dried papaya", "dried pineapple","dried tropical fruit",
+            "dark chocolate", "dates", "date paste", "digestive biscuits", "decorating icing", "dolly mixture", "dried apple", "dried apricots", "dried banana", "dried barberries",
+            "dried coconut", "dried cranberries", "dried figs", "dried goji berries", "dried mango", "dried mixed fruit", "dried pears", "dried papaya", "dried pineapple",
+            "dried tropical fruit",
 
-            "fig jam", "fig jelly", "fig roll", "fondant icing", "fruit cake", "fruit jellies", "fruit and nut chocolate", "fruit loaf", "fudge",
+            "fig jam", "fig jelly", "fig roll", "flapjack", "fondant icing", "fruit cake", "fruit jellies", "fruit and nut chocolate", "fruit loaf", "fudge",
 
             "garibaldi biscuits", "gelatine", "ginger biscuits", "gingerbread mix", "ginger cake", "glace cherries", "glycerine", "golden syrup", "gooseberry mousse",
             "green food colouring", "gummy mix",
@@ -26,7 +26,7 @@
 
             "iced gems", "icing sugar",
 
-            "jaffa cakes", "jammy dodgers", "jam tart", "jazzies", "jelly beans", "jelly tots",
+            "jaffa cakes", "jammy dodgers", "jam tart", "jazzies", "jelly beans",
 
             "kewra water","kitkat",
 
@@ -35,31 +35,32 @@
 
             "macarons", "maltesers", "mango and passionfruit mousse", "mango jelly", "mango jam", "mango puree", "maple syrup", "marmalade", "mars bar", "marshmallows", "marzipan",
             "meringues", "midget gems", "milk biscuits", "milk chocolate", "milky way", "millionaire’s shortbread", "mincemeat", "mini eggs", "minstrels", "mint chocolate",
-            "mint fondants", "mints", "MnMs", "munchies",
+            "mint fondants", "mints", "m&ms", "munchies",
 
             "nerds", "nougat", "nut cookies", "nutella", "nutty chocolate",
 
-            "oatmeal cookies", "orange chocolate bar", "orange food colouring", "orange jam","orange jelly", "orange oil", "oreos",
+            "oatmeal cookies", "orange chocolate bar", "orange food colouring", "orange jam", "orange jelly", "orange oil", "oreos",
 
             "passion fruit jam", "passion fruit jelly", "passion fruit puree", "peach jam", "peach jelly", "peanut butter cups", "peanut butter wafers", "pear drops",
             "peppermint extract", "pineapple jam", "pineapple jelly", "pink food colouring", "plum jam", "plum jelly", "popping candy", "praline", "preserved lemon",
-            "prunes", "purple food colouring", "pudding mix",
+            "profiteroles", "prunes", "purple food colouring", "pudding mix",
 
             "quince jelly", "quince paste",
 
-            "rainbow drops", "raisin and biscuit chocolate", "raisins", "raspberry jam", "raspberry jelly", "red food colouring",
-            "revels", "rhubarb jam", "rhubarb jelly", "rice syrup", "rolos",
+            "rainbow drops", "raisin and biscuit chocolate", "raisins", "raspberry jam", "raspberry jelly", "red food colouring", "revels", "rhubarb jam", "rhubarb jelly",
+            "rice syrup", "rolos",
 
-            "salted caramel chocolate", "salted caramel cookie dough", "salted caramel mousse",  "sherbert", "shortbread","shortcake biscuits", "silver ball decorations", "skittles",
+            "salted caramel mousse", "shortbread", "shortcake biscuits", "skittles",
             "smarties", "snickers", "starburst", "stem ginger", "strawberry custard", "strawberry jam", "strawberry jelly", "strawberry liquorice",
-            "strawberry mousse", "strawberry sauce", "strawberry shoelaces", "sugar", "sugar syrup", "sultanas", "sweetener", "syrup sponge",
+            "strawberry mousse", "strawberry sauce", "strawberry shoelaces", "sugar", "sugar syrup", "sultanas", "sweetener", "syrup cake",
 
-            "toblerone", "toffee", "toffe crisp", "toffees", "toffee sauce", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
+            "toblerone", "tiramisu", "toffee", "toffee crisp", "toffees", "toffee sauce", "toffee sundae", "trifle", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
 
             "vanilla bean paste", "vanilla essence", "vanilla extract", "vanilla pod", "vanilla sponge", "vanilla syrup",
 
             "wafer biscuits", "wafer decorations", "white chocolate", "wine gums", "wispa",
 
             "yellow food colouring",
+
     ]
 }

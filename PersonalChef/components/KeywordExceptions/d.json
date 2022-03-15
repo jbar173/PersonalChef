@@ -3,7 +3,7 @@
     "key" : ["dark rum","dessert wine",
              "derby cheese","double gloucester",
 
-             "dark chocolate","dates","date syrup","decorating icing","decorating sprinkles","digestive biscuits","dolly mixture","dried apple","dried apricots",
+             "dark chocolate","dates","date syrup","decorating icing","digestive biscuits","dolly mixture","dried apple","dried apricots",
              "dried barberries","dried coconut","dried cranberries","dried figs","dried goji berries","dried mango","dried mixed fruit","dried papaya",
              "dried pears","dried pineapple","dried tropical fruit",
 
@@ -39,6 +39,7 @@
 
 
     "ingredients": [
+
 
 
         {
@@ -498,6 +499,10 @@
                 "word": "cookies",
                 "substitution": true,
               },
+              {
+                "word": "biscuits",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -511,42 +516,27 @@
               },
               {
                 "word": "fondant icing",
-                "substitution": false,
-              },
-              {
-                "word": "icing",
-                "substitution": false,
+                "substitution": true,
               },
               {
                 "word": "icing sugar",
                 "substitution": true,
               },
-            ],
-        },
-        {
-            "name": "decorating sprinkles",
-            "exclude": [
-            ],
-            "include": [
               {
-                "word": "sprinkles",
-                "substitution": false,
+                "word": "cake decorations",
+                "substitution": true,
               },
               {
                 "word": "chocolate sprinkles",
-                "substitution": false,
+                "substitution": true,
               },
               {
                 "word": "coloured dusting sugar",
+                "substitution": true,
+              },
+              {
+                "word": "icing",
                 "substitution": false,
-              },
-              {
-                "word": "pop rocks",
-                "substitution": true,
-              },
-              {
-                "word": "nerds",
-                "substitution": true,
               },
             ],
         },
@@ -565,6 +555,14 @@
               },
               {
                 "word": "liquorice allsorts",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
                 "substitution": true,
               },
             ],

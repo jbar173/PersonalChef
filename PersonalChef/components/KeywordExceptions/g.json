@@ -285,11 +285,41 @@
                   "word": "fruit shortcake biscuit",
                   "substitution": true,
                 },
+                {
+                  "word": "shortcake biscuits",
+                  "substitution": true,
+                },
+                {
+                  "word": "milk biscuits",
+                  "substitution": true,
+                },
+                {
+                  "word": "biscuits",
+                  "substitution": true,
+                },
               ],
           },
           {
               "name": "ginger biscuits",
               "exclude": [
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "biscoff",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
+                },
               ],
               "include": [
                 {
@@ -364,6 +394,10 @@
                   "word": "pecan & ginger biscuit",
                   "substitution": true,
                 },
+                {
+                  "word": "biscuits",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -426,8 +460,12 @@
                   "substitution": false,
                 },
                 {
-                  "word": "ginger loaf cake",
+                  "word": "ginger loaf",
                   "substitution": false,
+                },
+                {
+                  "word": "cake",
+                  "substitution": true,
                 },
               ],
           },
@@ -478,6 +516,14 @@
                 },
                 {
                   "word": "cherries",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
                   "substitution": true,
                 },
               ],
@@ -627,6 +673,14 @@
                 },
                 {
                   "word": "jelly beans",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
                   "substitution": true,
                 },
               ],

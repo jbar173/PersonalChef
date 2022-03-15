@@ -2,7 +2,7 @@
 
     "key" : ["jagermeister",
              "jarlsberg",
-             "jaffa cakes","jam sponge","jelly beans",
+             "jaffa cakes","jelly beans",
              "jerusalem artichoke",
              "jerk seasoning mix","juniper berries",
              "jalfrezi sauce","jerk sauce",
@@ -155,73 +155,6 @@
             ],
         },
         {
-            "name": "jam sponge",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "jam and sponge",
-                "substitution": false,
-              },
-              {
-                "word": "jam pudding",
-                "substitution": false,
-              },
-              {
-                "word": "jam roll",
-                "substitution": false,
-              },
-              {
-                "word": "jam roly",
-                "substitution": false,
-              },
-              {
-                "word": "jam swiss roll",
-                "substitution": false,
-              },
-              {
-                "word": "vanilla sponge",
-                "substitution": false,
-              },
-              {
-                "word": "coconut sponge",
-                "substitution": false,
-              },
-              {
-                "word": "plain sponge",
-                "substitution": false,
-              },
-              {
-                "word": "raspberry sponge",
-                "substitution": false,
-              },
-              {
-                "word": "strawberry sponge",
-                "substitution": false,
-              },
-              {
-                "word": "victoria sponge",
-                "substitution": false,
-              },
-              {
-                "word": "victoria sandwich",
-                "substitution": false,
-              },
-              {
-                "word": "victorian cake",
-                "substitution": false,
-              },
-              {
-                "word": "vanilla cake",
-                "substitution": true,
-              },
-              {
-                "word": "coconut cake",
-                "substitution": true,
-              },
-            ],
-        },
-        {
             "name": "jelly beans",
             "exclude": [
             ],
@@ -248,6 +181,14 @@
               },
               {
                 "word": "gummy mix",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
                 "substitution": true,
               },
             ],
@@ -540,6 +481,18 @@
               {
                 "word": "nonpareils",
                 "substitution": false,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sprinkles",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
+                "substitution": true,
               },
             ],
         },

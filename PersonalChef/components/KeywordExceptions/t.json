@@ -14,6 +14,7 @@
 
 
               "~~~ HALF DONE : ~~~",
+              "truffles", "turkish delight", "twirl", "twix",
               "turbot",
               "tahini", "tartare sauce", "thai green curry sauce", "thai red curry sauce",
               "tortilla chips","twiglets",
@@ -21,7 +22,7 @@
 
               "~~~ TO DO : ~~~",
               "tequila",
-              "toblerone", "toffee crisp", "toffees/bonbons(sub)", "toffee sauce", "tropical jelly", "truffles", "turkish delight", "twirl", "twix",
+              "toffee crisp", "toffees/bonbons(sub)", "toffee sauce", "tropical jelly",
               "tortillas",
               "tempura prawns", "tilapia/halibut/orange roughy(sub)/snapper/sea bream/sea bass/barramundi", "trout/sea bream/salmon/char(sub)", "tuna/mackerel/salmon/sturgeon(sub)",
               "thai basil",
@@ -42,6 +43,55 @@
     "ingredients": [
 
 
+
+          {
+              "name": "twix",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "twirl",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "turkish delight",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "truffles",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "twiglets",
               "exclude": [

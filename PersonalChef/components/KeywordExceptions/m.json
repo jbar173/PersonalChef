@@ -287,6 +287,14 @@
                   "word": "french macaroon",
                   "substitution": false,
                 },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": false,
+                },
               ],
           },
           {
@@ -337,6 +345,18 @@
                 {
                   "word": "gnawbles",
                   "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": false,
                 },
               ],
           },
@@ -483,6 +503,14 @@
                   "word": "zephyr",
                   "substitution": true,
                 },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": false,
+                },
               ],
           },
           {
@@ -516,6 +544,10 @@
                 },
                 {
                   "word": "fondant icing",
+                  "substitution": true,
+                },
+                {
+                  "word": "decorating icing",
                   "substitution": true,
                 },
               ],
@@ -564,7 +596,22 @@
               "name": "milk biscuits",
               "exclude": [
                 {
-                  "word": "chocolate",
+                  "word": "spread",
+                },
+                {
+                  "word": "biscoff",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
                 },
               ],
               "include": [
@@ -589,7 +636,7 @@
                   "substitution": false,
                 },
                 {
-                  "word": "shortcake",
+                  "word": "shortcake biscuits",
                   "substitution": true,
                 },
                 {
@@ -597,11 +644,19 @@
                   "substitution": true,
                 },
                 {
-                  "word": "digestive",
+                  "word": "digestive biscuits",
                   "substitution": true,
                 },
                 {
-                  "word": "biscuit",
+                  "word": "garibaldi biscuits",
+                  "substitution": true,
+                },
+                {
+                  "word": "butter biscuit",
+                  "substitution": true,
+                },
+                {
+                  "word": "biscuits",
                   "substitution": true,
                 },
               ],
@@ -622,6 +677,14 @@
                 {
                   "word": "gummy mix",
                   "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": false,
                 },
               ],
           },
@@ -728,6 +791,18 @@
                   "substitution": true,
                 },
                 {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": false,
+                },
+                {
                   "word": "chocolate",
                   "substitution": true,
                 },
@@ -740,6 +815,18 @@
               "include": [
                 {
                   "word": "mini eggs",
+                  "substitution": true,
+                },
+                {
+                  "word": "smarties",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
                   "substitution": true,
                 },
                 {
@@ -759,6 +846,14 @@
                 },
                 {
                   "word": "tunnocks millk chocolate caramel",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
                   "substitution": true,
                 },
               ],
@@ -961,6 +1056,14 @@
                   "word": "mint patties",
                   "substitution": false,
                 },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1011,6 +1114,14 @@
                 },
                 {
                   "word": "chocolate caramel bar",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
                   "substitution": true,
                 },
               ],
@@ -2616,6 +2727,18 @@
                 {
                   "word": "m&m's",
                   "substitution": false,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": true,
                 },
               ],
           },

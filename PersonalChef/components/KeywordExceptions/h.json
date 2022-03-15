@@ -104,7 +104,15 @@
                 "substitution": false,
               },
               {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
                 "word": "chocolate sprinkles",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
                 "substitution": true,
               },
             ],
@@ -139,6 +147,14 @@
               },
               {
                 "word": "crunchie bar",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
                 "substitution": true,
               },
             ],
@@ -194,6 +210,14 @@
               {
                 "word": "gummy mix",
                 "substitution": false,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
+                "substitution": true,
               },
             ],
         },

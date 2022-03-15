@@ -4,7 +4,8 @@
               "paneer","parmesan","pecorino","pleasant ridge","port salut","provolone",
 
               "passion fruit jam","passion fruit jelly","peach jam","peach jelly","peanut butter cups","peanut butter wafers","pear drops","peppermint extract",
-              "pineapple jam","pineapple jelly", "pink food colouring","plum jam","plum jelly","popping candy","praline","preserved lemon","prunes","purple food colouring",
+              "pineapple jam","pineapple jelly", "pink food colouring","plum jam","plum jelly","popping candy","praline","preserved lemon","profiteroles","prunes",
+              "purple food colouring",
 
               "pancake mix","pasta","peanuts","pearled barley","pecans","pine nuts","pistachios","pizza dough","polenta","poppy seeds","puff pastry","pudding mix",
               "pumpkin seeds",
@@ -164,6 +165,10 @@
                   "word": "cake decorations",
                   "substitution": true,
                 },
+                {
+                  "word": "chocolate sprinkles",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -280,6 +285,14 @@
                 },
                 {
                   "word": "boiled sweets",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
                   "substitution": true,
                 },
               ],
@@ -482,6 +495,14 @@
                   "word": "decorating sprinkles",
                   "substitution": true,
                 },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -547,6 +568,14 @@
                   "substitution": false,
                 },
                 {
+                  "word": "peanut bar",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond bar",
+                  "substitution": true,
+                },
+                {
                   "word": "candied pecans",
                   "substitution": true,
                 },
@@ -568,6 +597,14 @@
                 {
                   "word": "lemon",
                   "substitution": false,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": true,
                 },
               ],
           },

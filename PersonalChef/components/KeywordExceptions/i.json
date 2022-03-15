@@ -4,10 +4,11 @@
               "italian seasoning",
               "italian dressing",
               "iced coffee",
-              "ice", "ice cream", "ice lolly",
+              "ice", "ice lolly",
 
 
               "~~~ HALF DONE : ~~~",
+              "ice cream.... + sherbet?",
 
               "~~~ TO DO : ~~~",
 
@@ -33,6 +34,14 @@
               {
                 "word": "unicorn gems",
                 "substitution": false,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
+                "substitution": true,
               },
             ],
           },
@@ -383,8 +392,12 @@
                 "substitution": false,
               },
               {
-                "word": "dusting",
-                "substitution": false,
+                "word": "coloured dusting sugar",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
               },
             ],
           },

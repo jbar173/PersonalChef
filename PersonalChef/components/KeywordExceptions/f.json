@@ -696,6 +696,14 @@
                   "word": "candied lemon",
                   "substitution": true,
                 },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -2005,6 +2013,18 @@
                   "word": "modelling paste",
                   "substitution": true,
                 },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate decorating icing",
+                  "substitution": false,
+                },
+                {
+                  "word": "decorating icing",
+                  "substitution": false,
+                },
               ],
           },
           {
@@ -2444,6 +2464,18 @@
                 },
                 {
                   "word": "fruit loaf",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit sponge",
+                  "substitution": true,
+                },
+                {
+                  "word": "bread and butter pudding",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake",
                   "substitution": true,
                 },
               ],
@@ -3163,9 +3195,15 @@
               {
                 "word": "fudge cookie",
               },
+              {
+                "word": "cake",
+              },
             ],
             "include": [
-
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
             ],
           },
           {

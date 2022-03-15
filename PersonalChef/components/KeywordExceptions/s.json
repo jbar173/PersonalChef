@@ -2,8 +2,9 @@
 
     "key" : [ "sparkling white wine","sherry","strawberry flavoured spirit/liqueur",
 
-              "salted caramel mousse","skittles","starburst","stem ginger","strawberry custard","strawberry jam","strawberry jelly","strawberry liquorice","strawberry mousse",
-              "strawberry sauce","strawberry shoelaces","sugar","sugar syrup","sultanas",
+              "salted caramel mousse","shortbread", "shortcake biscuits","skittles","smarties","snickers","starburst","stem ginger","strawberry custard",
+              "strawberry jam","strawberry jelly","strawberry liquorice", "strawberry mousse", "strawberry sauce","strawberry shoelaces","sugar",
+              "sugar syrup","sultanas","syrup sponge",
 
               "scone mix","semolina","sesame seeds","shortcrust pastry","spring roll wrapper","sunflower seeds","sweet rice flour",
               "salmon","sea bream","scallops","shrimp","smoked trout","smoked salmon","sole","sprat","sturgeon","squid","snapper",
@@ -23,7 +24,7 @@
 
 
               "~~~ HALF DONE : ~~~",
-              "stout",
+              "sake","stout",
               "sweetener",
               "short grain rice",
               "sardines","scad","sea bass","smoked trout","stone bass","striped bass",
@@ -35,13 +36,6 @@
 
               "~~~ TO DO : ~~~",
 
-              "sake/mirin(sub)",
-
-              "salted caramel chocolate", "salted caramel cookie dough", "sherbert", "shortbread/shortcake(sub)", "shortcake biscuits/shortbread(sub)",
-              "silver ball decorations",
-              "smarties", "snickers",
-              "syrup sponge",
-
               "self raising flour", "spelt flour",
 
     ],
@@ -50,7 +44,218 @@
     "ingredients": [
 
 
-
+          {
+              "name": "sake",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mirin",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "shortbread",
+              "exclude": [
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "biscoff",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
+                },
+              ],
+              "include": [
+                {
+                  "word": "shortie",
+                  "substitution": false,
+                },
+                {
+                  "word": "shortcake biscuits",
+                  "substitution": true,
+                },
+                {
+                  "word": "shortcake",
+                  "substitution": true,
+                },
+                {
+                  "word": "butter biscuit",
+                  "substitution": true,
+                },
+                {
+                  "word": "milk biscuits",
+                  "substitution": true,
+                },
+                {
+                  "word": "digestive biscuits",
+                  "substitution": true,
+                },
+                {
+                  "word": "biscuits",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "shortcake biscuits",
+              "exclude": [
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "biscoff",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
+                },
+              ],
+              "include": [
+                {
+                  "word": "shortbread",
+                  "substitution": true,
+                },
+                {
+                  "word": "shortcake",
+                  "substitution": true,
+                },
+                {
+                  "word": "butter biscuit",
+                  "substitution": true,
+                },
+                {
+                  "word": "milk biscuits",
+                  "substitution": true,
+                },
+                {
+                  "word": "garibaldi biscuits",
+                  "substitution": true,
+                },
+                {
+                  "word": "digestive biscuits",
+                  "substitution": true,
+                },
+                {
+                  "word": "biscuits",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "smarties",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mini eggs",
+                  "substitution": true,
+                },
+                {
+                  "word": "minstrels",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": true,
+                },
+                {
+                  "word": "sprinkles",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "snickers",
+              "exclude": [
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+              ],
+              "include": [
+                {
+                  "word": "chocolate peanuts",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate caramel bar",
+                  "substitution": true,
+                },
+                {
+                  "word": "baby ruth",
+                  "substitution": true,
+                },
+                {
+                  "word": "starbar",
+                  "substitution": true,
+                },
+                {
+                  "word": "picnic bar",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "syrup cake",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "syrup sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "treacle sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "treacle cake",
+                  "substitution": false,
+                },
+                {
+                  "word": "treacle loaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "cake",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "skittles",
               "exclude": [
@@ -62,6 +267,14 @@
                 },
                 {
                   "word": "starburst",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
                   "substitution": true,
                 },
               ],
@@ -285,6 +498,14 @@
                 },
                 {
                   "word": "liquorice candy",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
                   "substitution": true,
                 },
               ],
@@ -774,6 +995,14 @@
                 },
                 {
                   "word": "strawberry liquorice",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
                   "substitution": true,
                 },
               ],
@@ -2685,10 +2914,6 @@
                   "word": "gimbap",
                   "substitution": true,
                 },
-                {
-                  "word": "sherbert",
-                  "substitution": true,
-                },
               ],
           },
           {
@@ -2788,6 +3013,10 @@
                 },
                 {
                   "word": "granita",
+                  "substitution": true,
+                },
+                {
+                  "word": "sherbet",
                   "substitution": true,
                 },
                 {

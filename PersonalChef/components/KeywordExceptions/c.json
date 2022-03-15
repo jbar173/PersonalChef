@@ -3,11 +3,11 @@
     "key" : [ "champagne","cherry flavoured spirit/liqueur","chocolate flavoured spirit/liqueur","cider","coconut flavoured spirit/liqueur","cachaca",
               "camembert","cheddar","cheese slice","cognac","comte","cottage cheese","cream cheese",
 
-              "cacao nibs","caramel","caramel cookie dough","caramel essence","caramel covered peanuts","caramel wafers","candied orange","cherry compote",
-              "chocolate","chocolate biscuits","chocolate buttons","chocolate cake","chocolate caramel bar","chocolate cookie dough","chocolate cookies",
+              "cacao nibs","cake decorations","caramel","caramel essence","caramel covered peanuts","caramel wafers","carrot cake","candied orange",
+              "cherry compote","chocolate","chocolate biscuits","chocolate buttons","chocolate cake","chocolate caramel bar","chocolate cookies",
               "chocolate custard","chocolate decorating icing","chocolate drops","chocolate ganache","chocolate mousse","chocolate peanuts","chocolate raisins",
               "chocolate sauce","chocolate sprinkles","cocoa powder","coconut bar","coconut biscuits","coconut macaroons","coconut nectar","cola laces",
-              "coloured dusting sugar","condensed milk","cookies","cookie mix","creme egg","crunchie bar","crunchy cream biscuits","curd cheese","custard",
+              "coloured dusting sugar","condensed milk","cookies","cookie dough","creme egg","crunchie bar","crunchy cream biscuits","curd cheese","custard",
               "custard powder",
 
               "candlenuts","cashew nuts","cassava flour","chana dal","chestnuts","chia seeds","chocolate cereal","cornflakes","cornstarch",
@@ -52,6 +52,540 @@
     "ingredients": [
 
 
+        {
+            "name": "cake decorations",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "decorating sprinkles",
+                "substitution": false,
+              },
+              {
+                "word": "decorative sprinkles",
+                "substitution": false,
+              },
+              {
+                "word": "pop rocks",
+                "substitution": true,
+              },
+              {
+                "word": "nerds",
+                "substitution": true,
+              },
+              {
+                "word": "silver ball",
+                "substitution": true,
+              },
+              {
+                "word": "cake décor",
+                "substitution": false,
+              },
+              {
+                "word": "cake decor",
+                "substitution": false,
+              },
+              {
+                "word": "decorative cake",
+                "substitution": false,
+              },
+              {
+                "word": "coloured dusting sugar",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate sprinkles",
+                "substitution": true,
+              },
+              {
+                "word": "sprinkles",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "coloured dusting sugar",
+            "exclude": [
+              {
+                "word": "sorbet",
+              },
+              {
+                "word": "ice",
+              },
+              {
+                "word": "iced",
+              },
+            ],
+            "include": [
+              {
+                "word": "dusting sugar",
+                "substitution": false,
+              },
+              {
+                "word": "sparkling sugar",
+                "substitution": false,
+              },
+              {
+                "word": "shimmer sugar",
+                "substitution": false,
+              },
+              {
+                "word": "color dust",
+                "substitution": false,
+              },
+              {
+                "word": "colour dust",
+                "substitution": false,
+              },
+              {
+                "word": "rainbow dust",
+                "substitution": false,
+              },
+              {
+                "word": "twinkle dust",
+                "substitution": false,
+              },
+              {
+                "word": "edible dust",
+                "substitution": false,
+              },
+              {
+                "word": "icing dust",
+                "substitution": false,
+              },
+              {
+                "word": "icing decoration",
+                "substitution": false,
+              },
+              {
+                "word": "decorating dust",
+                "substitution": false,
+              },
+              {
+                "word": "decorating powder",
+                "substitution": false,
+              },
+              {
+                "word": "decorate powder",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate sprinkles",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": false,
+              },
+              {
+                "word": "sprinkles",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name":  "carrot cake",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "carrot sponge",
+                "substitution": false,
+              },
+              {
+                "word": "carrot loaf",
+                "substitution": false,
+              },
+              {
+                "word": "cake",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "cake",
+            "exclude": [
+              {
+                "word": "rice",
+              },
+              {
+                "word": "veggie",
+              },
+              {
+                "word": "potato",
+              },
+              {
+                "word": "fish",
+              },
+              {
+                "word": "crab",
+              },
+              {
+                "word": "lentil",
+              },
+              {
+                "word": "oat",
+              },
+              {
+                "word": "popcorn",
+              },
+              {
+                "word": "grain",
+              },
+              {
+                "word": "cereal",
+              },
+              {
+                "word": "corn",
+              },
+              {
+                "word": "johnny",
+              },
+              {
+                "word": "hoe",
+              },
+              {
+                "word": "savory",
+              },
+              {
+                "word": "savoury",
+              },
+              {
+                "word": "décor",
+              },
+              {
+                "word": "decor",
+              },
+              {
+                "word": "decoration",
+              },
+              {
+                "word": "decorative",
+              },
+              {
+                "word": "writing",
+              },
+              {
+                "word": "viennetta",
+              },
+              {
+                "word": "brewdog",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "cheesecake",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "liquor",
+              },
+              {
+                "word": "gin",
+              },
+              {
+                "word": "rum",
+              },
+              {
+                "word": "vodka",
+              },
+              {
+                "word": "brandy",
+              },
+            ],
+            "include": [
+              {
+                "word": "sponge",
+                "substitution": true,
+              },
+              {
+                "word": "madeira loaf",
+                "substitution": true,
+              },
+              {
+                "word": "madeira mega loaf",
+                "substitution": true,
+              },
+              {
+                "word": "date & walnut loaf",
+                "substitution": true,
+              },
+              {
+                "word": "date and walnut loaf",
+                "substitution": true,
+              },
+              {
+                "word": "date loaf",
+                "substitution": true,
+              },
+              {
+                "word": "blueberry loaf",
+                "substitution": true,
+              },
+              {
+                "word": "lemon loaf",
+                "substitution": true,
+              },
+              {
+                "word": "banana bread",
+                "substitution": true,
+              },
+              {
+                "word": "tea loaf",
+                "substitution": true,
+              },
+              {
+                "word": "apple loaf",
+                "substitution": true,
+              },
+              {
+                "word": "fig loaf",
+                "substitution": true,
+              },
+              {
+                "word": "cinnamon loaf",
+                "substitution": true,
+              },
+              {
+                "word": "rum loaf",
+                "substitution": true,
+              },
+              {
+                "word": "coconut loaf",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate & sesame loaf",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate and sesame loaf",
+                "substitution": true,
+              },
+              {
+                "word": "battenberg",
+                "substitution": true,
+              },
+              {
+                "word": "apricot loaf",
+                "substitution": true,
+              },
+              {
+                "word": "banana loaf",
+                "substitution": true,
+              },
+              {
+                "word": "banana & rye loaf",
+                "substitution": true,
+              },
+              {
+                "word": "banana and rye loaf",
+                "substitution": true,
+              },
+              {
+                "word": "banana & walnut loaf",
+                "substitution": true,
+              },
+              {
+                "word": "banana and walnut loaf",
+                "substitution": true,
+              },
+              {
+                "word": "ginger loaf",
+                "substitution": true,
+              },
+              {
+                "word": "gingerbread loaf",
+                "substitution": true,
+              },
+              {
+                "word": "malt loaf",
+                "substitution": true,
+              },
+              {
+                "word": "drizzle loaf",
+                "substitution": true,
+              },
+              {
+                "word": "passion loaf",
+                "substitution": true,
+              },
+              {
+                "word": "passion fruit loaf",
+                "substitution": true,
+              },
+              {
+                "word": "passionfruit loaf",
+                "substitution": true,
+              },
+              {
+                "word": "bara brith",
+                "substitution": true,
+              },
+              {
+                "word": "simnel loaf",
+                "substitution": true,
+              },
+              {
+                "word": "christmas loaf",
+                "substitution": true,
+              },
+              {
+                "word": "forest loaf",
+                "substitution": true,
+              },
+              {
+                "word": "mint loaf",
+                "substitution": true,
+              },
+              {
+                "word": "cherry loaf",
+                "substitution": true,
+              },
+              {
+                "word": "honey loaf",
+                "substitution": true,
+              },
+              {
+                "word": "clementine poppy seed loaf",
+                "substitution": true,
+              },
+              {
+                "word": "lemon & poppy seed loaf",
+                "substitution": true,
+              },
+              {
+                "word": "lemon and poppy seed loaf",
+                "substitution": true,
+              },
+              {
+                "word": "banoffee loaf",
+                "substitution": true,
+              },
+              {
+                "word": "honeyed carrot & thyme loaf",
+                "substitution": true,
+              },
+              {
+                "word": "raspberry loaf",
+                "substitution": true,
+              },
+              {
+                "word": "marble loaf",
+                "substitution": true,
+              },
+              {
+                "word": "fruitcake",
+                "substitution": true,
+              },
+              {
+                "word": "fruit bread",
+                "substitution": true,
+              },
+              {
+                "word": "panettone",
+                "substitution": true,
+              },
+              {
+                "word": "soreen",
+                "substitution": true,
+              },
+              {
+                "word": "spiced bun",
+                "substitution": true,
+              },
+              {
+                "word": "carrot loaf",
+                "substitution": true,
+              },
+              {
+                "word": "jam loaf",
+                "substitution": true,
+              },
+              {
+                "word": "vanilla loaf",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate tray bake",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate gateau",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate torte",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate brownie",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate loaf",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate mega loaf",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate chip fudge cake",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate chip tray bake",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate chip brownie",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate chip loaf",
+                "substitution": true,
+              },
+              {
+                "word": "milk slice",
+                "substitution": true,
+              },
+              {
+                "word": "treacle loaf",
+                "substitution": true,
+              },
+              {
+                "word": "syrup loaf",
+                "substitution": true,
+              },
+              {
+                "word": "jam pudding",
+                "substitution": true,
+              },
+              {
+                "word": "jam roll",
+                "substitution": true,
+              },
+              {
+                "word": "jam roly",
+                "substitution": true,
+              },
+              {
+                "word": "jam swiss roll",
+                "substitution": true,
+              },
+              {
+                "word": "victoria sandwich",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "char",
             "exclude": [
@@ -839,42 +1373,29 @@
                 "word": "cocoa bean",
                 "substitution": true,
               },
-              {
-                "word": "plain chocolate nib",
-                "substitution": true,
-              },
-              {
-                "word": "dark chocolate nib",
-                "substitution": true,
-              },
-            ],
-        },
-        {
-            "name": "caramel cookie dough",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "caramel cookie mix",
-                "substitution": false,
-              },
-              {
-                "word": "caramel biscuit mix",
-                "substitution": false,
-              },
-              {
-                "word": "cookie mix",
-                "substitution": true,
-              },
-              {
-                "word": "biscuit mix",
-                "substitution": true,
-              },
             ],
         },
         {
             "name": "caramel biscuits",
             "exclude": [
+              {
+                "word": "spread",
+              },
+              {
+                "word": "biscoff",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "milkshake",
+              },
+              {
+                "word": "shake",
+              },
             ],
             "include": [
               {
@@ -910,11 +1431,7 @@
                 "substitution": false,
               },
               {
-                "word": "biscuit",
-                "substitution": true,
-              },
-              {
-                "word": "cookie",
+                "word": "biscuits",
                 "substitution": true,
               },
             ],
@@ -1007,6 +1524,14 @@
                 "word": "praline",
                 "substitution": true,
               },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sprinkles",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1093,6 +1618,14 @@
                 "substitution": true,
               },
               {
+                "word": "twix",
+                "substitution": true,
+              },
+              {
+                "word": "boost",
+                "substitution": true,
+              },
+              {
                 "word": "peanut butter wafers",
                 "substitution": true,
               },
@@ -1151,6 +1684,18 @@
                 "substitution": true,
               },
               {
+                "word": "cacao nibs",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sprinkles",
+                "substitution": true,
+              },
+              {
                 "word": "chocolate",
                 "substitution": true,
               },
@@ -1186,11 +1731,39 @@
                 "substitution": true,
               },
               {
-                "word": "caramel",
+                "word": "chocolate loaf",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate mega loaf",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate chip sponge",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate chip fudge cake",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate chip tray bake",
+                "substitution": false,
+              },
+              {
+                "word": "chocolate chip brownie",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate chip loaf",
                 "substitution": true,
               },
               {
                 "word": "milk slice",
+                "substitution": true,
+              },
+              {
+                "word": "cake",
                 "substitution": true,
               },
             ],
@@ -1198,10 +1771,59 @@
         {
             "name": "chocolate caramel bar",
             "exclude": [
+              {
+                "word": "spread",
+              },
+              {
+                "word": "cookie",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "shortbread",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "loaf",
+              },
+              {
+                "word": "hot chocolate",
+              },
+              {
+                "word": "milk",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "milkshake",
+              },
+              {
+                "word": "shake",
+              },
+              {
+                "word": "whiskey",
+              },
+              {
+                "word": "whisky",
+              },
+              {
+                "word": "liqueur",
+              },
             ],
             "include": [
               {
                 "word": "caramel chocolate bar",
+                "substitution": false,
+              },
+              {
+                "word": "caramel chocolate",
                 "substitution": false,
               },
               {
@@ -1225,6 +1847,26 @@
                 "substitution": true,
               },
               {
+                "word": "boost",
+                "substitution": true,
+              },
+              {
+                "word": "twix",
+                "substitution": true,
+              },
+              {
+                "word": "picnic bar",
+                "substitution": true,
+              },
+              {
+                "word": "starbar",
+                "substitution": true,
+              },
+              {
+                "word": "snickers",
+                "substitution": true,
+              },
+              {
                 "word": "tunnocks millk chocolate caramel",
                 "substitution": false,
               },
@@ -1235,24 +1877,59 @@
             ],
         },
         {
-            "name": "chocolate cookie dough",
+            "name": "cookie dough",
             "exclude": [
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "milkshake",
+              },
+              {
+                "word": "shake",
+              },
+              {
+                "word": "pudding",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "fudge",
+              },
+              {
+                "word": "truffle",
+              },
+              {
+                "word": "bar",
+              },
             ],
             "include": [
               {
-                "word": "chocolate cookie mix",
-                "substitution": false,
-              },
-              {
-                "word": "chocolate biscuit mix",
-                "substitution": false,
-              },
-              {
                 "word": "cookie mix",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "biscuit mix",
+                "substitution": false,
+              },
+              {
+                "word": "bisquik",
+                "substitution": false,
+              },
+              {
+                "word": "biscuit dough",
+                "substitution": false,
+              },
+              {
+                "word": "cake mix",
+                "substitution": true,
+              },
+              {
+                "word": "biscuits",
                 "substitution": true,
               },
             ],
@@ -1298,6 +1975,14 @@
                 "word": "nutella",
                 "substitution": true,
               },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sprinkles",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1306,11 +1991,19 @@
             ],
             "include": [
               {
-                "word": "chocolate sprinkles",
+                "word": "chocolate decorations",
                 "substitution": true,
               },
               {
-                "word": "chocolate decorations",
+                "word": "cacao nibs",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sprinkles",
                 "substitution": true,
               },
               {
@@ -1524,7 +2217,23 @@
                 "substitution": true,
               },
               {
+                "word": "picnic bar",
+                "substitution": true,
+              },
+              {
+                "word": "snickers",
+                "substitution": true,
+              },
+              {
+                "word": "starbar",
+                "substitution": true,
+              },
+              {
                 "word": "chocolate decorations",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sprinkles",
                 "substitution": true,
               },
               {
@@ -1584,6 +2293,10 @@
               },
               {
                 "word": "chocolate decorations",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sprinkles",
                 "substitution": true,
               },
               {
@@ -1773,6 +2486,10 @@
                 "substitution": true,
               },
               {
+                "word": "cacao nibs",
+                "substitution": true,
+              },
+              {
                 "word": "chocolate balls",
                 "substitution": true,
               },
@@ -1785,7 +2502,15 @@
                 "substitution": true,
               },
               {
-                "word": "sprinkles",
+                "word": "jazzies",
+                "substitution": true,
+              },
+              {
+                "word": "decorating sprinkles",
+                "substitution": true,
+              },
+              {
+                "word": "decorative sprinkles",
                 "substitution": true,
               },
               {
@@ -1793,11 +2518,11 @@
                 "substitution": true,
               },
               {
-                "word": "sprinkels",
+                "word": "sprinkles",
                 "substitution": true,
               },
               {
-                "word": "jazzies",
+                "word": "sprinkels",
                 "substitution": true,
               },
             ],
@@ -1840,6 +2565,14 @@
                 "substitution": true,
               },
               {
+                "word": "boost",
+                "substitution": true,
+              },
+              {
+                "word": "twix",
+                "substitution": true,
+              },
+              {
                 "word": "peanut butter wafers",
                 "substitution": true,
               },
@@ -1871,6 +2604,24 @@
         {
             "name": "coconut biscuits",
             "exclude": [
+              {
+                "word": "spread",
+              },
+              {
+                "word": "biscoff",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "milkshake",
+              },
+              {
+                "word": "shake",
+              },
             ],
             "include": [
               {
@@ -1894,7 +2645,7 @@
                 "substitution": true,
               },
               {
-                "word": "biscuit",
+                "word": "biscuits",
                 "substitution": true,
               },
             ],
@@ -1939,56 +2690,13 @@
                 "word": "candy laces",
                 "substitution": true,
               },
-            ],
-        },
-        {
-            "name": "coloured dusting sugar",
-            "exclude": [
-            ],
-            "include": [
               {
-                "word": "icing sugar",
-                "substitution": false,
+                "word": "cake decorations",
+                "substitution": true,
               },
               {
-                "word": "color dust",
-                "substitution": false,
-              },
-              {
-                "word": "colour dust",
-                "substitution": false,
-              },
-              {
-                "word": "edible dust",
-                "substitution": false,
-              },
-              {
-                "word": "icing dust",
-                "substitution": false,
-              },
-              {
-                "word": "icing decoration",
-                "substitution": false,
-              },
-              {
-                "word": "cake decoration",
-                "substitution": false,
-              },
-              {
-                "word": "sprinkles",
-                "substitution": false,
-              },
-              {
-                "word": "decorating dust",
-                "substitution": false,
-              },
-              {
-                "word": "decorating powder",
-                "substitution": false,
-              },
-              {
-                "word": "decorate powder",
-                "substitution": false,
+                "word": "coloured dusting sugar",
+                "substitution": true,
               },
             ],
         },
@@ -2007,54 +2715,6 @@
               },
               {
                 "word": "condensed coconut milk",
-                "substitution": true,
-              },
-            ],
-        },
-        {
-            "name": "cookie mix",
-            "exclude": [
-              {
-                "word": "ice cream",
-              },
-              {
-                "word": "icecream",
-              },
-              {
-                "word": "pudding",
-              },
-              {
-                "word": "cake",
-              },
-              {
-                "word": "fudge",
-              },
-              {
-                "word": "truffle",
-              },
-              {
-                "word": "bar",
-              },
-            ],
-            "include": [
-              {
-                "word": "biscuit mix",
-                "substitution": false,
-              },
-              {
-                "word": "bisquik",
-                "substitution": false,
-              },
-              {
-                "word": "biscuit dough",
-                "substitution": true,
-              },
-              {
-                "word": "cookie dough",
-                "substitution": true,
-              },
-              {
-                "word": "cake mix",
                 "substitution": true,
               },
             ],
@@ -2103,13 +2763,40 @@
                 "word": "cinder toffee",
                 "substitution": true,
               },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sprinkles",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
+                "substitution": true,
+              },
             ],
         },
         {
             "name": "crunchy cream biscuits",
             "exclude": [
               {
-                "word": "chocolate",
+                "word": "spread",
+              },
+              {
+                "word": "biscoff",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "milkshake",
+              },
+              {
+                "word": "shake",
               },
             ],
             "include": [
@@ -2122,11 +2809,7 @@
                 "substitution": true,
               },
               {
-                "word": "biscuit",
-                "substitution": true,
-              },
-              {
-                "word": "cookie",
+                "word": "biscuits",
                 "substitution": true,
               },
             ],
@@ -5350,6 +6033,14 @@
                 "word": "candied ginger",
                 "substitution": false,
               },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -6913,6 +7604,14 @@
                 "word": "mixed peel",
                 "substitution": true,
               },
+              {
+                "word": "coloured dusting sugar",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -8275,6 +8974,12 @@
               },
               {
                 "word": "liqueur",
+              },
+              {
+                "word": "pudding",
+              },
+              {
+                "word": "fudge",
               },
             ],
             "include": [

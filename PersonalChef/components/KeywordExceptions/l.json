@@ -118,21 +118,10 @@
         {
             "name": "lemon biscuits",
             "exclude": [
-              {
-                "word": "chocolate",
-              },
             ],
             "include": [
               {
-                "word": "biscuit",
-                "substitution": false,
-              },
-              {
-                "word": "chocolate wafers",
-                "substitution": true,
-              },
-              {
-                "word": "caramel wafers",
+                "word": "biscuits",
                 "substitution": true,
               },
             ],
@@ -325,6 +314,10 @@
                 "word": "dolly mixture",
                 "substitution": true,
               },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -345,6 +338,14 @@
               },
               {
                 "word": "love hearts",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
                 "substitution": true,
               },
             ],
@@ -380,6 +381,14 @@
               },
               {
                 "word": "candy letters",
+                "substitution": true,
+              },
+              {
+                "word": "cake decorations",
+                "substitution": true,
+              },
+              {
+                "word": "coloured dusting sugar",
                 "substitution": true,
               },
             ],

@@ -11,6 +11,7 @@
 
               "~~~ HALF DONE : ~~~",
               "wild berry flavoured spirit/liqueur",
+              "wine gums", "wispa",
               "walleye", "whiting/white fish/hake/pollock/coley/cod/gurnard/haddock(subs)",
               "whey powder",
               "walnut butter",
@@ -19,7 +20,7 @@
 
               "~~~ TO DO : ~~~",
               "wensleydale",
-              "wafer biscuits", "wafer decorations", "wine gums", "wispa",
+              "wafer biscuits", "wafer decorations",
               "weetabix/malt wheats cereal(sub)",
               "watercress/cress(sub)", "watermelon",
 
@@ -35,6 +36,36 @@
 
 
 
+          {
+              "name":  "wispa",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sprinkles",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "wine gums",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "coloured dusting sugar",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "wasabi peas",
               "exclude": [
