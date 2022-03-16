@@ -16,7 +16,7 @@
               "plain paprika","pepper","piri piri seasoning","pork seasoning","parsley",
               "passata","pease pudding","pickles","pickled eggs","pickled red cabbage","pinto beans","pumpkin puree",
 
-              "palm oil","panang curry paste","parsley sauce","peanut butter","peanut oil","peppercorn sauce","piccalilli","pickled ginger","piri piri sauce",
+              "palm oil","panang curry paste","parsley sauce","pasanda paste","peanut butter","peanut oil","peppercorn sauce","piccalilli","pickled ginger","piri piri sauce",
               "plum sauce","ponzu sauce","pork stock","pumpkin pesto",
 
               "peach tea","pear tea","pineapple tea","pink lemonade","prune juice",
@@ -43,6 +43,30 @@
     "ingredients": [
 
 
+
+          {
+              "name": "pasanda paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pasanda spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "pouting",
               "exclude": [
@@ -3650,6 +3674,15 @@
           {
               "name": "passata",
               "exclude": [
+                {
+                  "word": "cube",
+                },
+                {
+                  "word": "raw",
+                },
+                {
+                  "word": "ketchup",
+                },
               ],
               "include": [
                 {
@@ -3666,6 +3699,18 @@
                 },
                 {
                   "word": "tomato-based sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tomato-based sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "crushed tomatoes",
+                  "substitution": true,
+                },
+                {
+                  "word": "chopped tomatoes",
                   "substitution": true,
                 },
               ],

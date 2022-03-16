@@ -16,8 +16,8 @@
 
               "mandarins","mixed beans","mushroom antipasti","mushy peas",
 
-              "macadamia nut oil","madras curry sauce","makhani sauce","mango and lime sauce","mango pickle","massaman curry paste","mayonnaise",
-              "medium curry paste", "mild curry paste", "mild mustard","mint marinade","mint sauce","mirin","miso","miso tahini","mushroom ketchup",
+              "macadamia nut oil","madras curry sauce","makhani paste","mango and lime sauce","mango pickle","massaman curry paste","mayonnaise",
+              "medium curry paste", "mild curry paste", "mild mustard","mint marinade","mint sauce","mirin","miso","miso tahini","mughlai paste","mushroom ketchup",
               "mushroom soup","mushroom stock","mustard",
 
               "mango tea", "mulberry syrup",
@@ -45,6 +45,30 @@
 
 
 
+
+          {
+              "name": "mughlai paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mughlai spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "mahi mahi",
               "exclude": [
@@ -1982,6 +2006,10 @@
                   "word": "miracle whip",
                   "substitution": true,
                 },
+                {
+                  "word": "truffle mayonnaise",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -2705,10 +2733,22 @@
               ],
           },
           {
-              "name": "makhani sauce",
+              "name": "makhani paste",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "makhani spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani sauce",
+                  "substitution": true,
+                },
                 {
                   "word": "makhani",
                   "substitution": false,
@@ -3350,179 +3390,211 @@
                 },
                 {
                   "word": "korma spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korma curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korma paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mughlai spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mughlai curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mughlai paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "pasanda spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "pasanda curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "pasanda paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "makhani spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "makhani curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "makhani paste",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "tandoori curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "tandoori spice paste",
+                  "substitution": true,
                 },
                 {
                   "word": "mild curry base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mild curry sauce concentrate",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mild curry sauce (concentrate)",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "authentic curry base - mild",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mild authentic curry base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mild curry spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mild spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mild indian curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korma spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korma curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korma curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korma cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korma sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korma base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mughlai spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mughlai curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mughlai curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mughlai cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mughlai sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "mughlai base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "pasanda spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "pasanda curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "pasanda curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "pasanda cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "pasanda sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "pasanda base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "makhani spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "makhani curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "makhani curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "makhani cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "makhani sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "makhani base",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "tandoori spice sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tandoori curry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tandoori curry stir-in sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tandoori cooking sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tandoori sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tandoori base",
+                  "substitution": true,
                 },
               ],
           },
@@ -3545,359 +3617,395 @@
                 },
                 {
                   "word": "balti spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "balti curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "balti paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dopiaza spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dopiaza curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dopiaza paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "rogan josh spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "rogan josh curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "rogan josh paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dhansak spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dhansak curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dhansak paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "tikka masala spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "tikka masala curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "tikka masala paste",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "tikka curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "tikka spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "tikka curry paste",
+                  "substitution": true,
                 },
                 {
                   "word": "biryani spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "biryani curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "biryani paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "karahi spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "karahi curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "karahi paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korai spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korai curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korai paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "bhuna spice paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "bhuna curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "bhuna paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "medium curry base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "medium curry sauce concentrate",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "medium curry sauce (concentrate)",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "authentic curry base - medium",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "medium authentic curry base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "medium curry spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "medium spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "medium indian curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "balti spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "balti curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "balti curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "balti cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "balti sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "balti base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dopiaza spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dopiaza curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dopiaza curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dopiaza cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dopiaza sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dopiaza base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "rogan josh spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "rogan josh curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "rogan josh curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "rogan josh cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "rogan josh sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "rogan josh base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dhansak spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dhansak curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dhansak curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dhansak cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dhansak sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "dhansak base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "tikka masala spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "tikka masala curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "tikka masala curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "tikka masala cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "tikka masala sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "tikka masala base",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "tikka spice sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tikka curry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tikka curry stir-in sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tikka cooking sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tikka sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tikka base",
+                  "substitution": true,
                 },
                 {
                   "word": "biryani spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "biryani curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "biryani curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "biryani cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "biryani sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "biryani base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "karahi spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "karahi curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "karahi curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "karahi cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "karahi sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "karahi base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korai spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korai curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korai curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korai cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korai sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "korai base",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "bhuna spice sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "bhuna curry sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "bhuna curry stir-in sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "bhuna cooking sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "bhuna sauce",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "bhuna base",
-                  "substitution": false,
+                  "substitution": true,
                 },
               ],
           },

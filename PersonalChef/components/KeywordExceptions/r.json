@@ -3,15 +3,15 @@
     "key" : [ "raspberry flavoured spirit/liqueur","red wine","rose wine",
               "raclette","red leicester","ricotta",
 
-              "rainbow drops","raisins","raisin and biscuit chocolate","raspberry jam","raspberry jelly","red food colouring","revels","rhubarb jam","rhubarb jelly",
-              "rice syrup","rolos","rose water",
+              "rainbow drops","raisins","raisin and biscuit chocolate","raspberry jam","raspberry jelly","raspberry sauce","red food colouring","revels","rhubarb jam",
+              "rhubarb jelly","rice syrup","rolos","rose water",
 
               "rice","rice and peas","rice cracker","rice puffs",
               "raspberries","redcurrants","rhubarb","rocket",
               "ratatouille","rice pudding","roasted red peppers",
 
               "ramen broth","rapeseed oil","ras el hanout","redcurrant jelly","red curry paste","red pesto","red wine stock","rendang curry paste","rice bran oil",
-              "rogan josh sauce","rogan josh spice",
+              "rogan josh paste","rogan josh spice",
 
               "raspberry syrup","raspberry tea","ribena",
               "raita","ravioli","rice milk",
@@ -33,7 +33,173 @@
     "ingredients": [
 
 
-
+          {
+              "name": "raspberry sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "raspberry flavour sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored puree",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavour purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavor purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavoured purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry flavored purée",
+                  "substitution": false,
+                },
+                {
+                  "word": "raspberry drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry flavour drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry flavor drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry flavoured drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberry flavored drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberry sauce",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "red mullet",
               "exclude": [
@@ -560,7 +726,7 @@
               ],
               "include": [
                 {
-                  "word": "rogan josh sauce",
+                  "word": "rogan josh paste",
                   "substitution": true,
                 },
                 {
@@ -1092,21 +1258,29 @@
               ],
           },
           {
-              "name": "rogan josh sauce",
+              "name": "rogan josh paste",
               "exclude": [
               ],
               "include": [
                 {
-                  "word": "rogan josh paste",
+                  "word": "rogan josh spice paste",
                   "substitution": false,
                 },
                 {
-                  "word": "rogan josh",
+                  "word": "rogan josh curry paste",
                   "substitution": false,
+                },
+                {
+                  "word": "rogan josh sauce",
+                  "substitution": true,
                 },
                 {
                   "word": "medium curry paste",
                   "substitution": true,
+                },
+                {
+                  "word": "rogan josh",
+                  "substitution": false,
                 },
                 {
                   "word": "jerk sauce",
@@ -1865,6 +2039,14 @@
                 },
                 {
                   "word": "green curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "laksa paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "tom yum paste",
                   "substitution": true,
                 },
               ],

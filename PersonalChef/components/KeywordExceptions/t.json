@@ -1,16 +1,18 @@
 {
 
     "key" : [ "taleggio",
-              "toffee",
+              "tiramisu","toffee",
               "taco shells",
               "turkey","turkey mince",
               "tangerine","tomato","turnip",
               "taco seasoning","tandoori spice","tarragon","turmeric",
-
-              "tomato cooking sauce",
               "tinned tomatoes",
-              "tapenade","tikka sauce","tomato paste","turkey stock",
-              "tofu",
+
+              "tandoori paste","tapenade","teriyaki sauce","thousand island dressing","tikka masala paste","tomato cooking sauce","tomato ketchup","tomato paste",
+              "tomato stock","tom yum paste","truffle mayonnaise","truffle oil","tuna pasta sauce","turkey stock",
+
+              "tomato juice",
+              "taramasalata","tofu","tortelloni","tzatziki",
 
 
               "~~~ HALF DONE : ~~~",
@@ -28,14 +30,10 @@
               "thai basil",
               "tomato soup", "tapioca pudding",
 
-              "tabasco", "tagine paste", "tahini sesame sauce", "tamarind sauce/tamarind powder/mango powder?(subs)", "tandoori paste",
-              "teriyaki sauce/marinade/oyster sauce/ponzu sauce/barbeque sauce/char siu sauce(sub)", "thousand island dressing", "tomato ketchup", "tomato stock", "tom yum paste", "truffle mayonnaise",
-              "truffle oil", "tuna pasta sauce", "tuna paste",
+              "tabasco", "tagine paste", "tahini sesame sauce", "tamarind sauce/tamarind powder/mango powder?(subs)",
+              "tonkatsu sauce/dipping sauce/barbeque sauce/char siu sauce/yoshidas/teriyaki(subs)",
 
-              "tomato juice",
 
-              "taramasalata", "tiramisu", "toffee popcorn", "toffee sundae", "tortelloni/ravioli/girasoli/tortellini/mezzelune(subs)", "trifle",
-              "tzatziki/raita(sub)",
 
     ],
 
@@ -44,6 +42,677 @@
 
 
 
+          {
+              "name": "tandoori paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tandoori curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tandoori spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tandoori sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "teriyaki sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "teriyaki marinade",
+                  "substitution": true,
+                },
+                {
+                  "word": "oyster sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "ponzu sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "barbeque sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "char siu sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "hoisin sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "yoshida's gourmet sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "ginger stir fry sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "thousand island dressing",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "american dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "american-dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "rhode island dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "russian dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "special sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "special burger sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "secret sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "secret burger sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "seafood sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tomato ketchup",
+              "exclude": [
+                {
+                  "word": "cooking",
+                },
+                {
+                  "word": "creamy",
+                },
+                {
+                  "word": "pasta",
+                },
+                {
+                  "word": "passata",
+                },
+                {
+                  "word": "in tomato sauce",
+                },
+                {
+                  "word": "basil",
+                },
+                {
+                  "word": "herb",
+                },
+                {
+                  "word": "marinara",
+                },
+                {
+                  "word": "arrabiata",
+                },
+                {
+                  "word": "bolognaise",
+                },
+              ],
+              "include": [
+                {
+                  "word": "tomato sauce",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tomato cooking sauce",
+              "exclude": [
+                {
+                  "word": "ketchup",
+                },
+              ],
+              "include": [
+                {
+                  "word": "tomato alfredo marinara",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato pasta sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato pizza sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tomato-based sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato-basil pasta sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato-basil sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "marinara",
+                  "substitution": false,
+                },
+                {
+                  "word": "arrabiata sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "bolognaise sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "casserole sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "passata",
+                  "substitution": true,
+                },
+                {
+                  "word": "fire-roasted tomatoes",
+                  "substitution": true,
+                },
+                {
+                  "word": "butter chicken cooking sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "butter chicken sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tomato paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "tomato and chilli paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli and tomato paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "ezme paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "red pesto",
+                  "substitution": true,
+                },
+                {
+                  "word": "onion & garlic pasta sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tomato stock",
+              "exclude": [
+                {
+                  "word": "cream",
+                },
+                {
+                  "word": "creamy",
+                },
+                {
+                  "word": "heinz",
+                },
+              ],
+              "include": [
+                {
+                  "word": "tomato vegan stock",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato vegetable stock",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato & herb stock",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato and herb stock",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato vegan broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato vegetable broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato & herb broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato and herb broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato soup base",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato soup mix",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato instant soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "instant tomato soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato cup a soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato & basil instant soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato & basil cup a soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato and basil instant soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato and basil cup a soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato & grain cup a soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato and grain cup a soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato & vegetable cup a soup",
+                  "substitution": false,
+                },
+                {
+                  "word": "tomato and vegetable cup a soup",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "tom yum paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tom yum soup",
+                  "substitution": true,
+                },
+                {
+                  "word": "tom yum broth",
+                  "substitution": true,
+                },
+                {
+                  "word": "tom yum base",
+                  "substitution": true,
+                },
+                {
+                  "word": "tom yum cube",
+                  "substitution": true,
+                },
+                {
+                  "word": "tom yum concentrate",
+                  "substitution": true,
+                },
+                {
+                  "word": "tom yum sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tom yam",
+                  "substitution": true,
+                },
+                {
+                  "word": "laksa paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "red curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "green curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellow curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "truffle mayonnaise",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "truffle aioli",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle mayo",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "mayonnaise",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "truffle oil",
+              "exclude": [
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "praline",
+                },
+                {
+                  "word": "caramel",
+                },
+                {
+                  "word": "toffee",
+                },
+                {
+                  "word": "sweets",
+                },
+                {
+                  "word": "candy",
+                },
+                {
+                  "word": "bonbon",
+                },
+                {
+                  "word": "bon bon",
+                },
+                {
+                  "word": "aioli",
+                },
+              ],
+              "include": [
+                {
+                  "word": "truffle olive oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle extra virgin olive oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle extra virgin oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle white extra virgin olive oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle infused olive oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle infused extra virgin olive oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle flavour olive oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle flavor olive oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle flavoured olive oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle flavored olive oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "truffle rapeseed oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "oil with truffle",
+                  "substitution": true,
+                },
+                {
+                  "word": "oil with white truffle",
+                  "substitution": true,
+                },
+                {
+                  "word": "oil with black truffle",
+                  "substitution": true,
+                },
+                {
+                  "word": "truffle cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "truffle dressing",
+                  "substitution": true,
+                },
+                {
+                  "word": "truffle butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "truffle sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "truffle paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "butter with truffle",
+                  "substitution": true,
+                },
+                {
+                  "word": "truffle mayonnaise",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tomato juice",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "passata",
+                  "substitution": true,
+                },
+                {
+                  "word": "tomato paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "taramasalata",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "taramosalata",
+                  "substitution": false,
+                },
+                {
+                  "word": "mayonnaise",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tiramisu",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "coffee cake",
+                  "substitution": false,
+                },
+                {
+                  "word": "coffee sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "coffee loaf",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate mousse",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tortelloni",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tortellini",
+                  "substitution": false,
+                },
+                {
+                  "word": "tortelli",
+                  "substitution": true,
+                },
+                {
+                  "word": "girasoli",
+                  "substitution": true,
+                },
+                {
+                  "word": "ravioli",
+                  "substitution": true,
+                },
+                {
+                  "word": "mezzelune",
+                  "substitution": true,
+                },
+                {
+                  "word": "pansotti",
+                  "substitution": true,
+                },
+                {
+                  "word": "pansoti",
+                  "substitution": true,
+                },
+                {
+                  "word": "cappelletti",
+                  "substitution": true,
+                },
+                {
+                  "word": "pelmeni",
+                  "substitution": true,
+                },
+                {
+                  "word": "agnolotti",
+                  "substitution": true,
+                },
+                {
+                  "word": "agnolotti",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tzatziki",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tarator",
+                  "substitution": false,
+                },
+                {
+                  "word": "cacik",
+                  "substitution": false,
+                },
+                {
+                  "word": "raita",
+                  "substitution": true,
+                },
+                {
+                  "word": "soured cream",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "twix",
               "exclude": [
@@ -84,6 +753,15 @@
           {
               "name": "truffles",
               "exclude": [
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "black truffle",
+                },
+                {
+                  "word": "black summer truffle",
+                },
               ],
               "include": [
                 {
@@ -271,20 +949,36 @@
               ],
           },
           {
-              "name": "tikka sauce",
+              "name": "tikka masala paste",
               "exclude": [
               ],
               "include": [
                 {
-                  "word": "tikka masala sauce",
+                  "word": "tikka masala spice paste",
                   "substitution": false,
                 },
                 {
-                  "word": "tikka masala paste",
-                  "substitution": true,
+                  "word": "tikka masala curry paste",
+                  "substitution": false,
                 },
                 {
                   "word": "tikka curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "tikka sauce",
                   "substitution": true,
                 },
                 {
@@ -818,104 +1512,16 @@
               ],
           },
           {
-              "name": "tomato cooking sauce",
-              "exclude": [
-                {
-                  "word": "ketchup",
-                },
-              ],
-              "include": [
-                {
-                  "word": "tomato alfredo marinara",
-                  "substitution": false,
-                },
-                {
-                  "word": "tomato pasta sauce",
-                  "substitution": false,
-                },
-                {
-                  "word": "tomato pizza sauce",
-                  "substitution": false,
-                },
-                {
-                  "word": "tomato sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "tomato-based sauce",
-                  "substitution": false,
-                },
-                {
-                  "word": "tomato-basil pasta sauce",
-                  "substitution": false,
-                },
-                {
-                  "word": "tomato-basil sauce",
-                  "substitution": false,
-                },
-                {
-                  "word": "marinara",
-                  "substitution": false,
-                },
-                {
-                  "word": "arrabiata sauce",
-                  "substitution": false,
-                },
-                {
-                  "word": "bolognaise sauce",
-                  "substitution": false,
-                },
-                {
-                  "word": "casserole sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "passata",
-                  "substitution": true,
-                },
-                {
-                  "word": "fire-roasted tomatoes",
-                  "substitution": true,
-                },
-                {
-                  "word": "butter chicken cooking sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "butter chicken sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "tomato paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "tomato and chilli paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "chilli and tomato paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "ezme paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "red pesto",
-                  "substitution": true,
-                },
-                {
-                  "word": "onion & garlic pasta sauce",
-                  "substitution": true,
-                },
-              ],
-          },
-          {
               "name": "tinned tomatoes",
               "exclude": [
                 {
                   "word": "soup",
+                },
+                {
+                  "word": "cube",
+                },
+                {
+                  "word": "raw",
                 },
               ],
               "include": [
@@ -941,6 +1547,14 @@
                 },
                 {
                   "word": "tomatoes in juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "crushed tomatoes",
+                  "substitution": false,
+                },
+                {
+                  "word": "chopped tomatoes",
                   "substitution": false,
                 },
                 {
@@ -979,6 +1593,14 @@
                   "word": "mexican style tomatoes",
                   "substitution": true,
                 },
+                {
+                  "word": "fire-roasted tomatoes",
+                  "substitution": true,
+                },
+                {
+                  "word": "stewed tomatoes",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1008,6 +1630,10 @@
                 },
                 {
                   "word": "ezme paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "tomato juice",
                   "substitution": true,
                 },
               ],

@@ -954,6 +954,10 @@
                   "word": "strawberry flavored drink",
                   "substitution": true,
                 },
+                {
+                  "word": "raspberry sauce",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -2392,6 +2396,10 @@
                 {
                   "word": "seafood dressing",
                   "substitution": false,
+                },
+                {
+                  "word": "thousand islands dressing",
+                  "substitution": true,
                 },
               ],
           },

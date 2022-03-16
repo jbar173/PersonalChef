@@ -5,7 +5,7 @@
              "jaffa cakes","jelly beans",
              "jerusalem artichoke",
              "jerk seasoning mix","juniper berries",
-             "jalfrezi sauce","jerk sauce",
+             "jalfrezi paste","jerk sauce",
              "jasmine tea",
              "jerky",
 
@@ -443,20 +443,20 @@
             ],
         },
         {
-            "name": "jalfrezi sauce",
+            "name": "jalfrezi paste",
             "exclude": [
             ],
             "include": [
               {
-                "word": "jalfrezi paste",
-                "substitution": true,
-              },
-              {
                 "word": "jalfrezi curry paste",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "jalfrezi spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "jalfrezi sauce",
                 "substitution": true,
               },
               {

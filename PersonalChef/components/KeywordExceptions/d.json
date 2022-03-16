@@ -19,7 +19,7 @@
              "dill","dried achiote","dried basil","dried chervil","dried chilli peppers","dried coriander","dried fenugreek","dried marjoram","dried oregano",
              "dried pomegranate seeds","dried rosemary","dried sage","dried savoury","dried sorrel","dried tarragon","dried thyme",
 
-             "demi-glace","diane sauce","dijon mustard","dill and lemon sauce",
+             "demi-glace","dhansak paste","diane sauce","dijon mustard","dill and lemon sauce","dopiaza paste",
              "dandelion and burdock","dr pepper",
              "dough balls","dumplings",
 
@@ -42,6 +42,52 @@
 
 
 
+        {
+            "name": "dopiaza paste",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dopiaza spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "dopiaza curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "dopiaza sauce",
+                "substitution": true,
+              },
+              {
+                "word": "medium curry paste",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dhansak paste",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dhansak spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "dhansak curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "dhansak sauce",
+                "substitution": true,
+              },
+              {
+                "word": "medium curry paste",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "dried soya beans",
             "exclude": [

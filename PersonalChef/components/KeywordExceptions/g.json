@@ -464,6 +464,22 @@
                   "substitution": false,
                 },
                 {
+                  "word": "gingerbread cake",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread sponge",
+                  "substitution": false,
+                },
+                {
+                  "word": "gingerbread loaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "parkin",
+                  "substitution": false,
+                },
+                {
                   "word": "cake",
                   "substitution": true,
                 },
@@ -1812,6 +1828,14 @@
                 },
                 {
                   "word": "yellow curry stir-fry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "laksa paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "tom yum paste",
                   "substitution": true,
                 },
               ],

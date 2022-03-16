@@ -10,10 +10,10 @@
              "basa",
              "beef","beef mince","black pudding","burger",
              "banana","beetroot","beet","bell pepper","beansprouts","bitter melon","blackberries","blueberries","broad beans","broccoli","brussel sprouts","butternut squash",
-             "baharat seasoning","bay leaf","beetroot powder","biryani masala","black cardamom","bouquet garni",
+             "baharat seasoning","bay leaf","beetroot powder","biryani spice blend","black cardamom","bouquet garni",
              "baked beans","black beans","black-eyed peas","black cherries","borlotti beans","butter beans",
 
-             "baconnaise","balsamic vinegar","balti sauce","barbeque sauce","bearnaise","beef stock","beetroot pesto","bhuna sauce","blue cheese dressing",
+             "baconnaise","balsamic vinegar","balti paste","barbeque sauce","bearnaise","beef stock","beetroot pesto","bhuna paste","biryani paste","blue cheese dressing",
              "bread sauce","brown sauce","burger sauce","butter chicken cooking sauce",
 
              "butter","buttermilk",
@@ -1119,13 +1119,44 @@
           ],
       },
       {
-          "name": "biryani masala",
+          "name": "biryani spice blend",
           "exclude": [
           ],
           "include": [
             {
               "word": "biryani spice",
               "substitution": false,
+            },
+            {
+              "word": "biryani curry blend",
+              "substitution": false,
+            },
+            {
+              "word": "biryani masala",
+              "substitution": false,
+            },
+          ],
+      },
+      {
+          "name": "biryani paste",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "biryani spice paste",
+              "substitution": false,
+            },
+            {
+              "word": "biryani curry paste",
+              "substitution": false,
+            },
+            {
+              "word": "biryani sauce",
+              "substitution": true,
+            },
+            {
+              "word": "medium curry paste",
+              "substitution": true,
             },
           ],
       },
@@ -1467,20 +1498,20 @@
           ],
       },
       {
-          "name": "balti sauce",
+          "name": "balti paste",
           "exclude": [
           ],
           "include": [
             {
-              "word": "balti curry paste",
-              "substitution": true,
-            },
-            {
-              "word": "balti paste",
-              "substitution": true,
-            },
-            {
               "word": "balti spice paste",
+              "substitution": false,
+            },
+            {
+              "word": "balti curry paste",
+              "substitution": false,
+            },
+            {
+              "word": "balti sauce",
               "substitution": true,
             },
             {
@@ -1490,20 +1521,20 @@
           ],
       },
       {
-          "name": "bhuna sauce",
+          "name": "bhuna paste",
           "exclude": [
           ],
           "include": [
             {
-              "word": "bhuna curry paste",
-              "substitution": true,
-            },
-            {
-              "word": "bhuna paste",
-              "substitution": true,
-            },
-            {
               "word": "bhuna spice paste",
+              "substitution": false,
+            },
+            {
+              "word": "bhuna curry paste",
+              "substitution": false,
+            },
+            {
+              "word": "bhuna sauce",
               "substitution": true,
             },
             {

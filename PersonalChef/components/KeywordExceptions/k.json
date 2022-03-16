@@ -7,12 +7,12 @@
               "kofta seasoning",
               "kidney beans","kimchi",
 
-              "katsu cooking paste","katsu curry sauce","keralan curry sauce","keralan curry paste","kolhapuri sauce",
+              "karahi paste","katsu curry paste","keralan curry sauce","keralan curry paste","kolhapuri sauce",
               "kung po sauce",
 
 
               "~~~ HALF DONE : ~~~",
-              "korean barbeque sauce", "korma sauce",
+              "korean barbeque sauce", "korma paste",
 
 
               "~~~ TO DO : ~~~",
@@ -24,6 +24,79 @@
     "ingredients": [
 
 
+          {
+              "name": "katsu curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "katsu paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "katsu cooking paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "katsu spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "katsu sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "katsu curry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "chinese-style chip shop curry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "keralan curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "keralan paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "keralan spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "keralan curry sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "keralan curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "keralan spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "kolhapuri sauce",
               "exclude": [
@@ -47,6 +120,45 @@
                 },
                 {
                   "word": "kashmiri masala",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "karahi paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "karahi spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "korai paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "karahi sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "korai sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "medium curry paste",
                   "substitution": true,
                 },
               ],
@@ -82,25 +194,6 @@
                 },
                 {
                   "word": "cantonese sauce",
-                  "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "katsu curry sauce",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "katsu sauce",
-                  "substitution": false,
-                },
-                {
-                  "word": "katsu cooking paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "mild curry paste",
                   "substitution": true,
                 },
               ],
@@ -330,75 +423,6 @@
               ],
           },
           {
-              "name": "katsu cooking paste",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "katsu curry paste",
-                  "substitution": false,
-                },
-                {
-                  "word": "katsu paste",
-                  "substitution": false,
-                },
-                {
-                  "word": "katsu spice paste",
-                  "substitution": false,
-                },
-                {
-                  "word": "katsu sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "katsu curry sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "mild curry paste",
-                  "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "keralan curry paste",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "keralan paste",
-                  "substitution": false,
-                },
-                {
-                  "word": "keralan spice paste",
-                  "substitution": false,
-                },
-                {
-                  "word": "mild curry paste",
-                  "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "keralan curry sauce",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "keralan curry paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "keralan spice paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "mild curry paste",
-                  "substitution": true,
-                },
-              ],
-          },
-          {
               "name": "korean barbeque sauce",
               "exclude": [
               ],
@@ -458,12 +482,12 @@
               ],
           },
           {
-              "name": "korma sauce",
+              "name": "korma paste",
               "exclude": [
               ],
               "include": [
                 {
-                  "word": "korma paste",
+                  "word": "korma spice paste",
                   "substitution": false,
                 },
                 {
@@ -471,8 +495,12 @@
                   "substitution": false,
                 },
                 {
+                  "word": "korma sauce",
+                  "substitution": true,
+                },
+                {
                   "word": "mild curry paste",
-                  "substitution": false,
+                  "substitution": true,
                 },
               ],
           },

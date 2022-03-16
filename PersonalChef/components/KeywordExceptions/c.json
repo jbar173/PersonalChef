@@ -26,7 +26,7 @@
 
               "canola oil","cantonese sauce","caperberries","capers","carbonara sauce","cashew butter","cheese sauce","chermoula","chestnut puree",
               "chicken paste","chicken stock","chilli mayonnaise","chilli paste","chilli sauce","chilli soy sauce","chow mein sauce","chutney",
-              "coconut oil","corn oil","cranberry sauce","curry sauce",
+              "coconut oil","corn oil","cranberry sauce","chinese-style chip shop curry sauce",
 
               "cheese puffs","coconut milk","cream","creme fraiche",
               "caramel milkshake","cherry cola","cherry lemonade","chocolate milkshake","coconut water","cocoa","coffee","cream soda",
@@ -405,6 +405,10 @@
                 "substitution": true,
               },
               {
+                "word": "parkin",
+                "substitution": true,
+              },
+              {
                 "word": "malt loaf",
                 "substitution": true,
               },
@@ -450,6 +454,18 @@
               },
               {
                 "word": "honey loaf",
+                "substitution": true,
+              },
+              {
+                "word": "coffee loaf",
+                "substitution": true,
+              },
+              {
+                "word": "tiramisu",
+                "substitution": true,
+              },
+              {
+                "word": "opera slice",
                 "substitution": true,
               },
               {
@@ -2966,6 +2982,10 @@
                 "word": "salt cured roe",
                 "substitution": false,
               },
+              {
+                "word": "tarama",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -3918,24 +3938,24 @@
             ],
         },
         {
-            "name": "curry sauce",
+            "name": "chinese-style chip shop curry sauce",
             "exclude": [
             ],
             "include": [
               {
-                "word": "sauce curry",
+                "word": "chip shop curry sauce",
                 "substitution": false,
               },
               {
-                "word": "curry ketchup",
+                "word": "chinese-style curry sauce",
                 "substitution": false,
               },
               {
-                "word": "curry & mango sauce",
-                "substitution": true,
+                "word": "chinese style curry sauce",
+                "substitution": false,
               },
               {
-                "word": "curry mango sauce",
+                "word": "katsu curry paste",
                 "substitution": true,
               },
             ],

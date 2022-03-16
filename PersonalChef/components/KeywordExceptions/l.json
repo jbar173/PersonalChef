@@ -10,7 +10,7 @@
               "lamb","lamb mince",
               "lamb's lettuce","lemon","lemongrass","lettuce","lime","lychee",
               "lamb seasoning","lime leaves",
-              "laksa sauce","lamb stock","lemon butter sauce","lemon juice","lime mojo sauce","lime juice",
+              "laksa paste","lamb stock","lemon butter sauce","lemon juice","lime mojo sauce","lime juice",
               "lard",
               "lapsang tea", "lemon ice tea", "lychee juice",
 
@@ -712,24 +712,36 @@
             ],
         },
         {
-            "name": "laksa sauce",
+            "name": "laksa paste",
             "exclude": [
             ],
             "include": [
               {
                 "word": "laksa curry paste",
-                "substitution": true,
-              },
-              {
-                "word": "laksa paste",
-                "substitution": true,
+                "substitution": false,
               },
               {
                 "word": "laksa spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "laksa sauce",
                 "substitution": true,
               },
               {
-                "word": "medium curry paste",
+                "word": "red curry paste",
+                "substitution": true,
+              },
+              {
+                "word": "tom yum paste",
+                "substitution": true,
+              },
+              {
+                "word": "green curry paste",
+                "substitution": true,
+              },
+              {
+                "word": "yellow curry paste",
                 "substitution": true,
               },
             ],

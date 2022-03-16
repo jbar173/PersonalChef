@@ -38,7 +38,6 @@
     "ingredients": [
 
 
-
           {
               "name": "fresh sorrel",
               "exclude": [
@@ -292,6 +291,9 @@
           {
               "name": "fish paste",
               "exclude": [
+                {
+                  "word": "mayonnaise",
+                },
               ],
               "include": [
                 {
@@ -483,7 +485,35 @@
                   "substitution": true,
                 },
                 {
-                  "word": "fish spread",
+                  "word": "taramasalata",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "tuna spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "tuna mousse",
+                  "substitution": true,
+                },
+                {
+                  "word": "tuna pate",
+                  "substitution": true,
+                },
+                {
+                  "word": "tuna paté",
+                  "substitution": true,
+                },
+                {
+                  "word": "tuna pâté",
+                  "substitution": true,
+                },
+                {
+                  "word": "tuna rillettes",
                   "substitution": true,
                 },
                 {
@@ -500,6 +530,14 @@
                 },
                 {
                   "word": "fish pâté",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish rillettes",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish mousse",
                   "substitution": true,
                 },
                 {
