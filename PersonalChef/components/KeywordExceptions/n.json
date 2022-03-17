@@ -392,6 +392,38 @@
                   "word": "nasi goreng malay paste",
                   "substitution": false,
                 },
+                {
+                  "word": "nasi goreng spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "nasi goreng curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "nasi goreng base",
+                  "substitution": false,
+                },
+                {
+                  "word": "nasi goreng sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "nasi goreng spice sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "nasi goreng curry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "nasi goreng curry stir-in sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "nasi goreng cooking sauce",
+                  "substitution": true,
+                },
               ],
           },
           {

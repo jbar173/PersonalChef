@@ -22,7 +22,7 @@
               "cajun spice","caraway seeds","cayenne","celery salt","celery seeds","chana masala spice blend","chicken seasoning","chilli flakes","chilli powder",
               "chinese five spice","chives","choi sum","cinnamon","cloves","coriander seeds","cress","crispy seaweed","cumin seeds",
 
-              "canned chipotles","cannellini beans","cheddar cheese soup","chicken soup","chickpeas",
+              "canned chipotles","cannellini beans","cheddar cheese soup","chicken soup","chickpeas","cream of tomato soup",
 
               "canola oil","cantonese sauce","caperberries","capers","carbonara sauce","cashew butter","cheese sauce","chermoula","chestnut puree",
               "chicken paste","chicken stock","chilli mayonnaise","chilli paste","chilli sauce","chilli soy sauce","chow mein sauce","chutney",
@@ -45,13 +45,45 @@
 
               "~~~ TO DO : ~~~",
 
-
             ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "cream of tomato soup",
+            "exclude": [
+              {
+                "word": "soup base",
+              },
+              {
+                "word": "stock",
+              },
+              {
+                "word": "broth",
+              },
+              {
+                "word": "instant",
+              },
+              {
+                "word": "mix",
+              },
+              {
+                "word": "vegetable",
+              },
+            ],
+            "include": [
+              {
+                "word": "tomato soup",
+                "substitution": false,
+              },
+              {
+                "word": "tomato cooking sauce",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "cake decorations",
             "exclude": [
@@ -663,6 +695,14 @@
               },
               {
                 "word": "sea bream",
+                "substitution": true,
+              },
+              {
+                "word": "flounder",
+                "substitution": true,
+              },
+              {
+                "word": "tilapia",
                 "substitution": true,
               },
             ],
@@ -6723,6 +6763,10 @@
               "substitution": true,
             },
             {
+              "word": "chilli sauce",
+              "substitution": true,
+            },
+            {
               "word": "chillies",
               "substitution": true,
             },
@@ -6863,6 +6907,14 @@
               },
               {
                 "word": "piri piri sauce",
+                "substitution": true,
+              },
+              {
+                "word": "chipotle sauce",
+                "substitution": true,
+              },
+              {
+                "word": "tabasco",
                 "substitution": true,
               },
             ],

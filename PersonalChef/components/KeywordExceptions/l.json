@@ -10,7 +10,7 @@
               "lamb","lamb mince",
               "lamb's lettuce","lemon","lemongrass","lettuce","lime","lychee",
               "lamb seasoning","lime leaves",
-              "laksa paste","lamb stock","lemon butter sauce","lemon juice","lime mojo sauce","lime juice",
+              "laksa paste","lamb stock","lemon butter sauce","lemon juice","lime mojo sauce",
               "lard",
               "lapsang tea", "lemon ice tea", "lychee juice",
 
@@ -630,21 +630,6 @@
               },
               {
                 "word": "hollandaise",
-                "substitution": true,
-              },
-            ],
-        },
-        {
-            "name": "lime juice",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "lime",
-                "substitution": true,
-              },
-              {
-                "word": "lemon juice",
                 "substitution": true,
               },
             ],
@@ -1649,6 +1634,14 @@
             },
             {
               "word": "yuzu",
+              "substitution": true,
+            },
+            {
+              "word": "tamarind concentrate",
+              "substitution": true,
+            },
+            {
+              "word": "lemon juice",
               "substitution": true,
             },
           ],

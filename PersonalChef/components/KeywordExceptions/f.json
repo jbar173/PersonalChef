@@ -614,6 +614,26 @@
                   "word": "sea bream",
                   "substitution": true,
                 },
+                {
+                  "word": "sea bass",
+                  "substitution": true,
+                },
+                {
+                  "word": "trout",
+                  "substitution": true,
+                },
+                {
+                  "word": "branzino",
+                  "substitution": true,
+                },
+                {
+                  "word": "catfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "tilapia",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -951,6 +971,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "thai basil",
+                  "substitution": true,
+                },
+                {
                   "word": "basil",
                   "substitution": false,
                 },
@@ -1111,6 +1135,9 @@
           {
               "name": "fresh tarragon",
               "exclude": [
+                {
+                  "word": "vinegar",
+                },
               ],
               "include": [
                 {
@@ -1120,6 +1147,10 @@
                 {
                   "word": "tarragon",
                   "substitution": false,
+                },
+                {
+                  "word": "thai basil",
+                  "substitution": true,
                 },
               ],
           },
@@ -3274,23 +3305,27 @@
             ],
             "include": [
               {
-                "word": "dried coriander",
-                "substitution": true,
-              },
-              {
-                "word": "coriander leaves",
-                "substitution": true,
-              },
-              {
-                "word": "coriander leaf",
-                "substitution": true,
-              },
-              {
                 "word": "cilantro",
                 "substitution": false,
               },
               {
+                "word": "coriander leaves",
+                "substitution": false,
+              },
+              {
+                "word": "coriander leaf",
+                "substitution": false,
+              },
+              {
+                "word": "dried coriander",
+                "substitution": true,
+              },
+              {
                 "word": "fresh parsley",
+                "substitution": true,
+              },
+              {
+                "word": "thai basil",
                 "substitution": true,
               },
             ],

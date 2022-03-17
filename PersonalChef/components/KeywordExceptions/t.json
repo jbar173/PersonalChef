@@ -1,15 +1,16 @@
 {
 
     "key" : [ "taleggio",
-              "tiramisu","toffee",
-              "taco shells",
+              "tiramisu","toffee","tropical jelly",
+              "taco shells","tortillas",
+              "tempura prawns","tilapia","trout","tuna",
               "turkey","turkey mince",
               "tangerine","tomato","turnip",
-              "taco seasoning","tandoori spice","tarragon","turmeric",
-              "tinned tomatoes",
+              "taco seasoning","tandoori spice","thai basil","turmeric",
+              "tapioca pudding","tinned tomatoes",
 
-              "tandoori paste","tapenade","teriyaki sauce","thousand island dressing","tikka masala paste","tomato cooking sauce","tomato ketchup","tomato paste",
-              "tomato stock","tom yum paste","truffle mayonnaise","truffle oil","tuna pasta sauce","turkey stock",
+              "tabasco","tagine paste","tamarind concentrate","tandoori paste","tapenade","teriyaki sauce","thousand island dressing","tikka masala paste","tomato cooking sauce",
+              "tomato ketchup","tomato paste","tomato stock","tom yum paste","tonkatsu sauce","truffle mayonnaise","truffle oil","tuna pasta sauce","turkey stock",
 
               "tomato juice",
               "taramasalata","tofu","tortelloni","tzatziki",
@@ -24,15 +25,7 @@
 
               "~~~ TO DO : ~~~",
               "tequila",
-              "toffee crisp", "toffees/bonbons(sub)", "toffee sauce", "tropical jelly",
-              "tortillas",
-              "tempura prawns", "tilapia/halibut/orange roughy(sub)/snapper/sea bream/sea bass/barramundi", "trout/sea bream/salmon/char(sub)", "tuna/mackerel/salmon/sturgeon(sub)",
-              "thai basil",
-              "tomato soup", "tapioca pudding",
-
-              "tabasco", "tagine paste", "tahini sesame sauce", "tamarind sauce/tamarind powder/mango powder?(subs)",
-              "tonkatsu sauce/dipping sauce/barbeque sauce/char siu sauce/yoshidas/teriyaki(subs)",
-
+              "toffee crisp", "toffees/bonbons(sub)", "toffee sauce",
 
 
     ],
@@ -42,6 +35,631 @@
 
 
 
+          {
+              "name": "tropical fruit jelly",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tropical fruit jello",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical fruit jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical jelly",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical jello",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical flavour jelly",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical flavor jello",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical flavor jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical flavoured jelly",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical flavored jello",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical flavored jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "tropical spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "tropical jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "tropical fruit jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "tropical butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "papaya conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "papaya preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "papaya fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "papaya spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "papaya jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "papaya butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "papaya jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "papaya flavour jelly",
+                  "substitution": false,
+                },
+                {
+                  "word": "papaya flavor jello",
+                  "substitution": false,
+                },
+                {
+                  "word": "papaya flavor jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "papaya flavoured jelly",
+                  "substitution": false,
+                },
+                {
+                  "word": "papaya flavored jello",
+                  "substitution": false,
+                },
+                {
+                  "word": "papaya flavored jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "apricot jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot butter",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach butter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tortillas",
+              "exclude": [
+                {
+                  "word": "chip",
+                },
+                {
+                  "word": "crisp",
+                },
+                {
+                  "word": "dip",
+                },
+              ],
+              "include": [
+                {
+                  "word": "tortilla",
+                  "substitution": false,
+                },
+                {
+                  "word": "flatbread",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tempura prawns",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "prawn tempura",
+                  "substitution": false,
+                },
+                {
+                  "word": "prawns in tempura",
+                  "substitution": false,
+                },
+                {
+                  "word": "prawns in batter",
+                  "substitution": false,
+                },
+                {
+                  "word": "tempura king prawns",
+                  "substitution": false,
+                },
+                {
+                  "word": "tempura tiger prawns",
+                  "substitution": false,
+                },
+                {
+                  "word": "battered prawns",
+                  "substitution": true,
+                },
+                {
+                  "word": "battered king prawns",
+                  "substitution": false,
+                },
+                {
+                  "word": "battered tiger prawns",
+                  "substitution": false,
+                },
+                {
+                  "word": "breaded prawns",
+                  "substitution": true,
+                },
+                {
+                  "word": "breaded king prawns",
+                  "substitution": true,
+                },
+                {
+                  "word": "breaded tiger prawns",
+                  "substitution": true,
+                },
+                {
+                  "word": "prawns",
+                  "substitution": true,
+                },
+                {
+                  "word": "shrimp",
+                  "substitution": true,
+                },
+                {
+                  "word": "battered fish",
+                  "substitution": true,
+                },
+                {
+                  "word": "battered cod",
+                  "substitution": true,
+                },
+                {
+                  "word": "battered basa",
+                  "substitution": true,
+                },
+                {
+                  "word": "tempura cod",
+                  "substitution": true,
+                },
+                {
+                  "word": "tempura seafood",
+                  "substitution": true,
+                },
+                {
+                  "word": "seafood tempura",
+                  "substitution": true,
+                },
+                {
+                  "word": "tempura fish",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish tempura",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tilapia",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "halibut",
+                  "substitution": true,
+                },
+                {
+                  "word": "orange roughy",
+                  "substitution": true,
+                },
+                {
+                  "word": "snapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "sea bream",
+                  "substitution": true,
+                },
+                {
+                  "word": "barramundi",
+                  "substitution": true,
+                },
+                {
+                  "word": "branzino",
+                  "substitution": true,
+                },
+                {
+                  "word": "catfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "flounder",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "trout",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sea bream",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon",
+                  "substitution": true,
+                },
+                {
+                  "word": "char",
+                  "substitution": true,
+                },
+                {
+                  "word": "charr",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tuna",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "albacore",
+                  "substitution": false,
+                },
+                {
+                  "word": "yellowfin",
+                  "substitution": false,
+                },
+                {
+                  "word": "ahi",
+                  "substitution": false,
+                },
+                {
+                  "word": "mackerel",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon",
+                  "substitution": true,
+                },
+                {
+                  "word": "shark",
+                  "substitution": true,
+                },
+                {
+                  "word": "sturgeon",
+                  "substitution": true,
+                },
+                {
+                  "word": "swordfish",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "thai basil",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "basil",
+                  "substitution": true,
+                },
+                {
+                  "word": "tarragon",
+                  "substitution": true,
+                },
+                {
+                  "word": "star anise",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tapioca pudding",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tapioca porridge",
+                  "substitution": true,
+                },
+                {
+                  "word": "tapioca dessert",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice pudding",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tabasco",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chilli sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "chilli flakes",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tagine paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tagine",
+                  "substitution": false,
+                },
+                {
+                  "word": "tajine",
+                  "substitution": false,
+                },
+                {
+                  "word": "moroccan seasoning",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tamarind concentrate",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tamarind",
+                  "substitution": false,
+                },
+                {
+                  "word": "lime",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango powder",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "tonkatsu sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tonkatsu dipping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "barbeque sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "char siu sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "yoshida's gourmet sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "teriyaki sauce",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "tandoori paste",
               "exclude": [
@@ -53,6 +671,10 @@
                 },
                 {
                   "word": "tandoori spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tandoori base",
                   "substitution": false,
                 },
                 {
@@ -970,7 +1592,15 @@
                   "substitution": false,
                 },
                 {
-                  "word": "tikka curry paste",
+                  "word": "tikka paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka masala base",
+                  "substitution": false,
+                },
+                {
+                  "word": "tikka base",
                   "substitution": false,
                 },
                 {
@@ -999,16 +1629,6 @@
                   "word": "tartar sauce",
                   "substitution": false,
                 },
-              ],
-          },
-          {
-              "name": "tarragon",
-              "exclude": [
-                {
-                  "word": "vinegar",
-                },
-              ],
-              "include": [
               ],
           },
           {
@@ -1192,6 +1812,14 @@
               "include": [
                 {
                   "word": "tandoori masala",
+                  "substitution": false,
+                },
+                {
+                  "word": "tandoori seasoning",
+                  "substitution": false,
+                },
+                {
+                  "word": "tandoori curry blend",
                   "substitution": false,
                 },
               ],
@@ -1636,6 +2264,10 @@
                   "word": "tomato juice",
                   "substitution": true,
                 },
+                {
+                  "word": "tomato ketchup",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1678,9 +2310,77 @@
               {
                 "word": "toffee apple",
               },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "yoghurt",
+              },
+              {
+                "word": "milk",
+              },
+              {
+                "word": "chocolate",
+              },
+              {
+                "word": "shortbread",
+              },
+              {
+                "word": "slice",
+              },
+              {
+                "word": "cookie",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "wafer",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "cheesecake",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "creme",
+              },
+              {
+                "word": "cupcake",
+              },
+              {
+                "word": "pudding",
+              },
+              {
+                "word": "tart",
+              },
+              {
+                "word": "flavour",
+              },
+              {
+                "word": "flavor",
+              },
+              {
+                "word": "essence",
+              },
+              {
+                "word": "drop",
+              },
+              {
+                "word": "extract",
+              },
             ],
             "include": [
-
+              {
+                "word": "caramel",
+              },
             ],
           },
 

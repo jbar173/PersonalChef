@@ -16,8 +16,8 @@
               "plain paprika","pepper","piri piri seasoning","pork seasoning","parsley",
               "passata","pease pudding","pickles","pickled eggs","pickled red cabbage","pinto beans","pumpkin puree",
 
-              "palm oil","panang curry paste","parsley sauce","pasanda paste","peanut butter","peanut oil","peppercorn sauce","piccalilli","pickled ginger","piri piri sauce",
-              "plum sauce","ponzu sauce","pork stock","pumpkin pesto",
+              "palm oil","panang curry paste","parsley sauce","pasanda paste","pathia curry paste","peanut butter","peanut oil","peppercorn sauce","phall curry paste",
+              "piccalilli","pickled ginger","piri piri sauce","plum sauce","ponzu sauce","pork stock","pumpkin pesto",
 
               "peach tea","pear tea","pineapple tea","pink lemonade","prune juice",
               "plain yoghurt","popcorn","pork scratchings","potato chips","powdered milk","pretzel snacks",
@@ -45,6 +45,80 @@
 
 
           {
+              "name": "pathia curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "pathia paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pathia spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pathia base",
+                  "substitution": false,
+                },
+                {
+                  "word": "pathia sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "hot curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "phall curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "phall paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "phall spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "phall base",
+                  "substitution": false,
+                },
+                {
+                  "word": "phal paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "phal spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "phal curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "phal base",
+                  "substitution": false,
+                },
+                {
+                  "word": "phall sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "phal sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "hot curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "pasanda paste",
               "exclude": [
               ],
@@ -55,6 +129,10 @@
                 },
                 {
                   "word": "pasanda curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "pasanda base",
                   "substitution": false,
                 },
                 {
@@ -3206,27 +3284,31 @@
               ],
               "include": [
                 {
-                  "word": "pineapple conserve",
-                  "substitution": true,
+                  "word": "pineapple flavour jelly",
+                  "substitution": false,
                 },
                 {
-                  "word": "pineapple preserve",
-                  "substitution": true,
+                  "word": "pineapple flavor jello",
+                  "substitution": false,
                 },
                 {
-                  "word": "pineapple fruit spread",
-                  "substitution": true,
+                  "word": "pineapple flavor jell-o",
+                  "substitution": false,
                 },
                 {
-                  "word": "pineapple spread",
-                  "substitution": true,
+                  "word": "pineapple flavoured jelly",
+                  "substitution": false,
                 },
                 {
-                  "word": "pineapple jam",
-                  "substitution": true,
+                  "word": "pineapple flavored jello",
+                  "substitution": false,
                 },
                 {
-                  "word": "pineapple butter",
+                  "word": "pineapple flavored jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical fruit jelly",
                   "substitution": true,
                 },
               ],
@@ -3264,27 +3346,31 @@
               ],
               "include": [
                 {
-                  "word": "peach conserve",
-                  "substitution": true,
+                  "word": "peach flavour jelly",
+                  "substitution": false,
                 },
                 {
-                  "word": "peach preserve",
-                  "substitution": true,
+                  "word": "peach flavor jello",
+                  "substitution": false,
                 },
                 {
-                  "word": "peach fruit spread",
-                  "substitution": true,
+                  "word": "peach flavor jell-o",
+                  "substitution": false,
                 },
                 {
-                  "word": "peach spread",
-                  "substitution": true,
+                  "word": "peach flavoured jelly",
+                  "substitution": false,
                 },
                 {
-                  "word": "peach jam",
-                  "substitution": true,
+                  "word": "peach flavored jello",
+                  "substitution": false,
                 },
                 {
-                  "word": "peach butter",
+                  "word": "peach flavored jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical fruit jelly",
                   "substitution": true,
                 },
               ],
@@ -3322,27 +3408,55 @@
               ],
               "include": [
                 {
-                  "word": "passion fruit conserve",
-                  "substitution": true,
+                  "word": "passion fruit flavour jelly",
+                  "substitution": false,
                 },
                 {
-                  "word": "passion fruit preserve",
-                  "substitution": true,
+                  "word": "passion fruit flavor jello",
+                  "substitution": false,
                 },
                 {
-                  "word": "passion fruit fruit spread",
-                  "substitution": true,
+                  "word": "passion fruit flavor jell-o",
+                  "substitution": false,
                 },
                 {
-                  "word": "passion fruit spread",
-                  "substitution": true,
+                  "word": "passion fruit flavoured jelly",
+                  "substitution": false,
                 },
                 {
-                  "word": "passion fruit jam",
-                  "substitution": true,
+                  "word": "passion fruit flavored jello",
+                  "substitution": false,
                 },
                 {
-                  "word": "passion fruit butter",
+                  "word": "passion fruit flavored jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavour jelly",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavor jello",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavor jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavoured jelly",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavored jello",
+                  "substitution": false,
+                },
+                {
+                  "word": "passionfruit flavored jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical fruit jelly",
                   "substitution": true,
                 },
               ],
@@ -3743,6 +3857,14 @@
               ],
               "include": [
                 {
+                  "word": "panang paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "panang base",
+                  "substitution": false,
+                },
+                {
                   "word": "panang thai curry",
                   "substitution": false,
                 },
@@ -3751,11 +3873,35 @@
                   "substitution": false,
                 },
                 {
-                  "word": "thai style curry paste",
-                  "substitution": true,
+                  "word": "panang spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "panang curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "panang curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "panang cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "panang sauce",
+                  "substitution": false,
                 },
                 {
                   "word": "penang curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "penang paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "penang base",
                   "substitution": false,
                 },
                 {
@@ -3765,6 +3911,30 @@
                 {
                   "word": "penang curry stir-fry sauce",
                   "substitution": false,
+                },
+                {
+                  "word": "penang spice sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "penang curry sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "penang curry stir-in sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "penang cooking sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "penang sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai style curry paste",
+                  "substitution": true,
                 },
                 {
                   "word": "thai massaman curry",

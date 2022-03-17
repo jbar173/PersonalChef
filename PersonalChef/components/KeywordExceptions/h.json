@@ -387,6 +387,10 @@
                 "word": "barramundi",
                 "substitution": true,
               },
+              {
+                "word": "branzino",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1225,6 +1229,18 @@
                 "substitution": false,
               },
               {
+                "word": "kolhapuri spice paste",
+                "substitution": false,
+              },
+              {
+                "word": "kolhapuri paste",
+                "substitution": false,
+              },
+              {
+                "word": "kolhapuri curry paste",
+                "substitution": false,
+              },
+              {
                 "word": "jalfrezi spice paste",
                 "substitution": false,
               },
@@ -1434,6 +1450,34 @@
               },
               {
                 "word": "saag base",
+                "substitution": false,
+              },
+              {
+                "word": "kolhapuri spice sauce",
+                "substitution": false,
+              },
+              {
+                "word": "kolhapuri curry sauce",
+                "substitution": false,
+              },
+              {
+                "word": "kolhapuri curry stir-in sauce",
+                "substitution": false,
+              },
+              {
+                "word": "kolhapuri cooking sauce",
+                "substitution": false,
+              },
+              {
+                "word": "kolhapuri sauce",
+                "substitution": false,
+              },
+              {
+                "word": "kolhapuri curry base",
+                "substitution": false,
+              },
+              {
+                "word": "kolhapuri base",
                 "substitution": false,
               },
               {

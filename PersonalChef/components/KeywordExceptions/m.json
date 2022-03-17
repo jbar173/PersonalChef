@@ -16,8 +16,8 @@
 
               "mandarins","mixed beans","mushroom antipasti","mushy peas",
 
-              "macadamia nut oil","madras curry sauce","makhani paste","mango and lime sauce","mango pickle","massaman curry paste","mayonnaise",
-              "medium curry paste", "mild curry paste", "mild mustard","mint marinade","mint sauce","mirin","miso","miso tahini","mughlai paste","mushroom ketchup",
+              "macadamia nut oil","madras curry paste","makhani paste","mango and lime sauce","mango pickle","massaman curry paste","mayonnaise",
+              "medium curry paste", "mild curry paste", "mild mustard","mint marinade","mint sauce","mirin","miso","miso tahini","ai paste","mushroom ketchup",
               "mushroom soup","mushroom stock","mustard",
 
               "mango tea", "mulberry syrup",
@@ -44,8 +44,6 @@
     "ingredients": [
 
 
-
-
           {
               "name": "mughlai paste",
               "exclude": [
@@ -57,6 +55,10 @@
                 },
                 {
                   "word": "mughlai curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "mughlai base",
                   "substitution": false,
                 },
                 {
@@ -83,11 +85,23 @@
                   "substitution": false,
                 },
                 {
+                  "word": "dorado",
+                  "substitution": false,
+                },
+                {
                   "word": "barramundi",
                   "substitution": true,
                 },
                 {
                   "word": "salmon",
+                  "substitution": true,
+                },
+                {
+                  "word": "swordfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "shark",
                   "substitution": true,
                 },
               ],
@@ -1553,6 +1567,10 @@
                   "word": "citric acid powder",
                   "substitution": true,
                 },
+                {
+                  "word": "tamarind concentrate",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -2702,32 +2720,32 @@
               ],
           },
           {
-              "name": "madras curry sauce",
+              "name": "madras curry paste",
               "exclude": [
               ],
               "include": [
                 {
-                  "word": "madras curry paste",
-                  "substitution": true,
-                },
-                {
                   "word": "madras spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "madras paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "madras base",
+                  "substitution": false,
+                },
+                {
+                  "word": "madras curry sauce",
                   "substitution": true,
                 },
                 {
-                  "word": "madras  paste",
+                  "word": "madras sauce",
                   "substitution": true,
                 },
                 {
                   "word": "hot curry paste",
-                  "substitution": true,
-                },
-                {
-                  "word": "turmeric",
-                  "substitution": true,
-                },
-                {
-                  "word": "garam masala",
                   "substitution": true,
                 },
               ],
@@ -2743,6 +2761,10 @@
                 },
                 {
                   "word": "makhani curry paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "makhani base",
                   "substitution": false,
                 },
                 {
@@ -3130,27 +3152,31 @@
               ],
               "include": [
                 {
-                  "word": "mango conserve",
-                  "substitution": true,
+                  "word": "mango flavour jelly",
+                  "substitution": false,
                 },
                 {
-                  "word": "mango preserve",
-                  "substitution": true,
+                  "word": "mango flavor jello",
+                  "substitution": false,
                 },
                 {
-                  "word": "mango fruit spread",
-                  "substitution": true,
+                  "word": "mango flavor jell-o",
+                  "substitution": false,
                 },
                 {
-                  "word": "mango spread",
-                  "substitution": true,
+                  "word": "mango flavoured jelly",
+                  "substitution": false,
                 },
                 {
-                  "word": "mango jam",
-                  "substitution": true,
+                  "word": "mango flavored jello",
+                  "substitution": false,
                 },
                 {
-                  "word": "mango butter",
+                  "word": "mango flavored jell-o",
+                  "substitution": false,
+                },
+                {
+                  "word": "tropical fruit jelly",
                   "substitution": true,
                 },
               ],
@@ -3254,12 +3280,44 @@
               ],
               "include": [
                 {
+                  "word": "massaman paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "massaman spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "massaman base",
+                  "substitution": false,
+                },
+                {
                   "word": "massaman thai curry",
                   "substitution": false,
                 },
                 {
                   "word": "massaman curry stir-fry sauce",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman spice sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman curry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman curry stir-in sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman cooking sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "massaman sauce",
+                  "substitution": true,
                 },
                 {
                   "word": "thai style curry paste",
@@ -3369,6 +3427,10 @@
                   "word": "yellow curry stir-fry sauce",
                   "substitution": true,
                 },
+                {
+                  "word": "mild curry paste",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -3442,6 +3504,18 @@
                 },
                 {
                   "word": "tandoori spice paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "keralan paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "keralan curry paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "keralan spice paste",
                   "substitution": true,
                 },
                 {
@@ -3594,6 +3668,26 @@
                 },
                 {
                   "word": "tandoori base",
+                  "substitution": true,
+                },
+                {
+                  "word": "keralan spice sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "keralan curry sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "keralan curry stir-in sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "keralan cooking sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "keralan sauce",
                   "substitution": true,
                 },
               ],
@@ -4282,6 +4376,10 @@
                 },
               ],
               "include": [
+                {
+                  "word": "thai basil",
+                  "substitution": true,
+                },
               ],
           },
           {

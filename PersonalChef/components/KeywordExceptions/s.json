@@ -16,7 +16,7 @@
 
               "spaghetti hoops","spinach puree","sun-dried tomatoes","sweetcorn",
 
-              "safflower oil","salad cream","salsa","satay sauce","sauerkraut","seafood sauce","sesame oil","stir fry sauce","soy sauce",
+              "saag curry paste","safflower oil","salad cream","salsa","satay sauce","sauerkraut","seafood sauce","sesame oil","stir fry sauce","soy sauce",
               "sunflower oil","sweet pickle relish",
 
               "sparkling water","strawberry tea",
@@ -44,6 +44,34 @@
     "ingredients": [
 
 
+
+          {
+              "name": "saag curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "saag paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "saag spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "saag base",
+                  "substitution": false,
+                },
+                {
+                  "word": "saag sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "hot curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "sake",
               "exclude": [
@@ -1294,6 +1322,14 @@
                   "word": "halibut",
                   "substitution": true,
                 },
+                {
+                  "word": "salmon",
+                  "substitution": true,
+                },
+                {
+                  "word": "branzino",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1621,6 +1657,10 @@
                 },
                 {
                   "word": "barramundi",
+                  "substitution": true,
+                },
+                {
+                  "word": "branzino",
                   "substitution": true,
                 },
               ],
@@ -2175,6 +2215,10 @@
                   "word": "aniseed",
                   "substitution": true,
                 },
+                {
+                  "word": "thai basil",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -2287,6 +2331,10 @@
                 },
                 {
                   "word": "dried sorrel",
+                  "substitution": true,
+                },
+                {
+                  "word": "tamarind concentrate",
                   "substitution": true,
                 },
               ],
@@ -3892,6 +3940,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "smelt",
+                  "substitution": true,
+                },
+                {
                   "word": "sprat",
                   "substitution": true,
                 },
@@ -4126,6 +4178,10 @@
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "strawberry jello",
+                  "substitution": false,
+                },
                 {
                   "word": "strawberry conserve",
                   "substitution": true,

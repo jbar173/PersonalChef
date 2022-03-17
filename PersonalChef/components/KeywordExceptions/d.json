@@ -56,6 +56,10 @@
                 "substitution": false,
               },
               {
+                "word": "dopiaza base",
+                "substitution": false,
+              },
+              {
                 "word": "dopiaza sauce",
                 "substitution": true,
               },
@@ -76,6 +80,10 @@
               },
               {
                 "word": "dhansak curry paste",
+                "substitution": false,
+              },
+              {
+                "word": "dhansak base",
                 "substitution": false,
               },
               {

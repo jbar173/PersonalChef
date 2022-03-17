@@ -928,28 +928,28 @@
               ],
               "include": [
                 {
-                  "word": "apricot conserve",
-                  "substitution": true,
+                  "word": "apricot flavour jelly",
+                  "substitution": false,
                 },
                 {
-                  "word": "apricot preserve",
-                  "substitution": true,
+                  "word": "apricot flavor jello",
+                  "substitution": false,
                 },
                 {
-                  "word": "apricot fruit spread",
-                  "substitution": true,
+                  "word": "apricot flavor jell-o",
+                  "substitution": false,
                 },
                 {
-                  "word": "apricot spread",
-                  "substitution": true,
+                  "word": "apricot flavoured jelly",
+                  "substitution": false,
                 },
                 {
-                  "word": "apricot jam",
-                  "substitution": true,
+                  "word": "apricot flavored jello",
+                  "substitution": false,
                 },
                 {
-                  "word": "apricot butter",
-                  "substitution": true,
+                  "word": "apricot flavored jell-o",
+                  "substitution": false,
                 },
               ],
           },
@@ -977,6 +977,10 @@
                 {
                   "word": "apricot butter",
                   "substitution": false,
+                },
+                {
+                  "word": "tropical fruit jelly",
+                  "substitution": true,
                 },
               ],
           },

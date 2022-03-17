@@ -7,7 +7,7 @@
                       "bread sauce", "brown sauce", "burger sauce", "butter chicken cooking sauce",
 
                       "caesar dressing", "canola oil", "cantonese sauce", "carbonara sauce", "casserole sauce", "char siu sauce", "cheese sauce", "chermoula",
-                      "chestnut puree", "chicken paste", "chicken stock","chilli chutney relish", "chilli con carne sauce", "chilli garlic curry paste", "chilli infused oil",
+                      "chestnut puree", "chicken paste", "chicken stock", "chilli chutney relish", "chilli con carne sauce", "chilli garlic curry paste", "chilli infused oil",
                       "chilli mayonnaise", "chilli paste", "chilli pesto", "chilli sauce", "chilli soy sauce", "chimichurri", "chutney", "chow mein sauce",
                       "coconut oil", "cooking spray", "coriander puree", "corn oil", "cranberry sauce", "chinese-style chip shop curry sauce",
 
@@ -26,33 +26,33 @@
 
                       "jalfrezi paste", "jerk sauce",
 
-                      "karahi paste", "*******katsu curry paste*******", "*******keralan coconut curry sauce*******", "*******keralan curry paste********", "******kolhapuri sauce*******", "korean barbeque sauce", "korma paste",
-                      "kung po sauce",
+                      "karahi paste", "katsu curry paste", "keralan curry paste", "kolhapuri curry paste", "korean barbeque sauce",
+                      "korma paste", "kung po sauce",
 
-                      "laksa paste", "lamb stock", "lemon butter sauce", "lemon juice", "lemongrass puree", "lime juice", "lime mojo sauce",
+                      "laksa paste", "lamb stock", "lemon butter sauce", "lemon juice", "lemongrass puree", "lime mojo sauce",
 
                       "mandarin orange stir fry sauce", "mango pickle", "massaman curry paste", "mayonnaise", "medium curry paste", "mild curry paste", "miso",
 
-                      "macadamia nut oil", "**********madras curry sauce***********", "makhani paste", "mango and lime sauce", "marmite", "mediterranean tomato relish", "mild mustard", "mint marinade",
+                      "macadamia nut oil", "madras curry paste", "makhani paste", "mango and lime sauce", "marmite", "mediterranean tomato relish", "mild mustard", "mint marinade",
                       "mint sauce", "mirin", "miso tahini", "mole sauce", "mughlai paste", "mushroom cooking sauce", "mushroom ketchup", "mushroom stock",
 
                       "nasi goreng paste",
 
                       "olive oil", "onion gravy", "onion sauce", "oyster sauce",
 
-                      "panang curry paste", "palm oil", "parsley sauce", "pasanda paste", "peanut oil", "peppercorn sauce", "piccalilli", "pickled ginger", "piri piri sauce", "plum sauce",
-                      "ponzu sauce", "pork stock", "pumpkin pesto",
+                      "palm oil", "panang curry paste", "parsley sauce", "pasanda paste", "pathia curry paste", "peanut oil", "peppercorn sauce", "phall paste", "piccalilli", "pickled ginger",
+                      "piri piri sauce", "plum sauce", "ponzu sauce", "pork stock", "pumpkin pesto",
 
                       "ramen broth", "rapeseed oil", "redcurrant jelly", "red curry paste", "red pesto", "red wine stock", "rendang curry paste", "rice bran oil", "rogan josh paste",
 
-                      "safflower oil", "salad cream", "salsa", "satay sauce", "sauerkraut", "seafood sauce/marie rose", "sesame oil", "smoky red pepper dressing", "soy sauce",
+                      "saag curry paste", "safflower oil", "salad cream", "salsa", "satay sauce", "sauerkraut", "seafood sauce", "sesame oil", "smoky red pepper dressing", "soy sauce",
                       "spicy brown mustard", "sunflower oil", "sweet and sour sauce", "sweet chilli sauce", "sweet pickle relish",
 
-                      "tabasco", "tagine paste", "tahini", "tahini sesame sauce", "tamarind sauce", "tandoori paste", "tapenade", "tartare sauce", "teriyaki sauce", "tikka masala paste",
+                      "tabasco", "tagine paste", "tahini", "tamarind concentrate", "tandoori paste", "tapenade", "tartare sauce", "teriyaki sauce", "tikka masala paste",
                       "thai green curry sauce", "thai red curry sauce", "thousand island dressing", "tomato cooking sauce", "tomato ketchup", "tomato paste", "tomato stock",
-                      "tom yum paste", "truffle mayonnaise", "truffle oil", "turkey stock",
+                      "tom yum paste", "tonkatsu sauce", "truffle mayonnaise", "truffle oil", "turkey stock",
 
-                      "vegetable oil", "vegetable stock", "vinegar",
+                      "vegetable oil", "vegetable stock", "vindaloo curry paste", "vinegar",
 
                       "walnut oil", "wasabi paste", "watercress sauce", "white sauce", "white wine stock", "wholegrain mustard", "worcestershire sauce",
 
@@ -61,6 +61,5 @@
                       "zhoug paste",
 
 
-                      "********ADD?: phall curry paste, pathia curry paste, saag, vindaloo ********"
     ]
 }

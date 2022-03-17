@@ -7,7 +7,7 @@
              "buttercream","butterscotch essence","butterscotch mousse",
 
              "baking powder","baking soda","batter mix","bran flakes","brazil nuts","breadcrumbs","breadsticks","bread loaf","bread wraps",
-             "basa",
+             "basa","branzino",
              "beef","beef mince","black pudding","burger",
              "banana","beetroot","beet","bell pepper","beansprouts","bitter melon","blackberries","blueberries","broad beans","broccoli","brussel sprouts","butternut squash",
              "baharat seasoning","bay leaf","beetroot powder","biryani spice blend","black cardamom","bouquet garni",
@@ -45,7 +45,37 @@
     "ingredients": [
 
 
-
+      {
+          "name": "branzino",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "sea bass",
+              "substitution": true,
+            },
+            {
+              "word": "striped bass",
+              "substitution": true,
+            },
+            {
+              "word": "flounder",
+              "substitution": true,
+            },
+            {
+              "word": "snapper",
+              "substitution": true,
+            },
+            {
+              "word": "tilapia",
+              "substitution": true,
+            },
+            {
+              "word": "halibut",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "barramundi",
           "exclude": [
@@ -345,6 +375,10 @@
           "include": [
             {
               "word": "mackerel",
+              "substitution": true,
+            },
+            {
+              "word": "salmon",
               "substitution": true,
             },
           ],
@@ -1151,6 +1185,10 @@
               "substitution": false,
             },
             {
+              "word": "biryani base",
+              "substitution": false,
+            },
+            {
               "word": "biryani sauce",
               "substitution": true,
             },
@@ -1511,6 +1549,10 @@
               "substitution": false,
             },
             {
+              "word": "balti base",
+              "substitution": false,
+            },
+            {
               "word": "balti sauce",
               "substitution": true,
             },
@@ -1531,6 +1573,10 @@
             },
             {
               "word": "bhuna curry paste",
+              "substitution": false,
+            },
+            {
+              "word": "bhuna base",
               "substitution": false,
             },
             {

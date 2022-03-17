@@ -2,7 +2,7 @@
 
     "key" : [ "vanilla extract","vanilla sponge","vanilla pod",
               "vine leaves",
-              "vegetable oil","vegetable stock","vinegar",
+              "vegetable oil","vegetable stock","vindaloo curry paste","vinegar",
 
 
               "~~~ HALF DONE : ~~~",
@@ -24,6 +24,33 @@
 
 
 
+          {
+              "name": "vindaloo curry paste",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vindaloo paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "vindaloo spice paste",
+                  "substitution": false,
+                },
+                {
+                  "word": "vindaloo base",
+                  "substitution": false,
+                },
+                {
+                  "word": "vindaloo sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "hot curry paste",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "vanilla sponge",
               "exclude": [
