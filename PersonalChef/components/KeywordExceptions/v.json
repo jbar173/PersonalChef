@@ -1,8 +1,12 @@
 {
 
-    "key" : [ "vanilla extract","vanilla sponge","vanilla pod",
+    "key" : [ "vodka",
+              "vanilla bean paste","vanilla extract","vanilla sponge","vanilla pod","vanilla sauce","vanilla syrup",
+              "venison","venison mince",
               "vine leaves",
               "vegetable oil","vegetable stock","vindaloo curry paste","vinegar",
+              "vegetable chips",
+              "vimto",
 
 
               "~~~ HALF DONE : ~~~",
@@ -11,19 +15,618 @@
 
 
               "~~~ TO DO : ~~~",
-              "vodka",
-              "vanilla bean paste", "vanilla essence", "vanilla syrup",
-              "venison",
 
-              "vegetable juice", "vimto",
-              "vegetable chips",
+
     ],
 
 
     "ingredients": [
 
 
-
+          {
+              "name": "vodka",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "aquavit",
+                  "substitution": true,
+                },
+                {
+                  "word": "gin",
+                  "substitution": true,
+                },
+                {
+                  "word": "light rum",
+                  "substitution": true,
+                },
+                {
+                  "word": "tequila",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "vanilla bean paste",
+              "exclude": [
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
+                },
+                {
+                  "word": "yoghurt",
+                },
+                {
+                  "word": "yogurt",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "shortbread",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "loaf",
+                },
+                {
+                  "word": "pudding",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "bonbon",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "caramel",
+                },
+                {
+                  "word": "toffee",
+                },
+                {
+                  "word": "coffee",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "vodka",
+                },
+              ],
+              "include": [
+                {
+                  "word": "vanilla bean",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla essence",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla extract",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla pod",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla seed",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla powder",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "vanilla sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vanilla flavour sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavor sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavored sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavored sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavour topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavor topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavoured topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavored topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavour dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavor dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavoured dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavored dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavour drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavor drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavoured drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavored drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "crème anglaise",
+                  "substitution": false,
+                },
+                {
+                  "word": "creme anglaise",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "custard",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "vanilla syrup",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "vanilla flavour syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavor syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavoured syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla flavored syrup",
+                  "substitution": false,
+                },
+                {
+                  "word": "vanilla sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "venison mince",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "venison ground",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground venison",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced venison",
+                  "substitution": false,
+                },
+                {
+                  "word": "venison minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince venison",
+                  "substitution": false,
+                },
+                {
+                  "word": "elk mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "elk ground",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground elk",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced elk",
+                  "substitution": false,
+                },
+                {
+                  "word": "elk minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince elk",
+                  "substitution": false,
+                },
+                {
+                  "word": "deer mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "deer ground",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground deer",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced deer",
+                  "substitution": false,
+                },
+                {
+                  "word": "deer minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince deer",
+                  "substitution": false,
+                },
+                {
+                  "word": "bison mince",
+                  "substitution": false,
+                },
+                {
+                  "word": "bison ground",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground bison",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced bison",
+                  "substitution": false,
+                },
+                {
+                  "word": "bison minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince bison",
+                  "substitution": false,
+                },
+                {
+                  "word": "buffalo mince",
+                  "substitution": false,
+                },
+                {
+                  "word": "buffalo ground",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground buffalo",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced buffalo",
+                  "substitution": false,
+                },
+                {
+                  "word": "buffalo minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince buffalo",
+                  "substitution": false,
+                },
+                {
+                  "word": "moose mince",
+                  "substitution": false,
+                },
+                {
+                  "word": "moose ground",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground moose",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced moose",
+                  "substitution": false,
+                },
+                {
+                  "word": "moose minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince moose",
+                  "substitution": false,
+                },
+                {
+                  "word": "caribou mince",
+                  "substitution": false,
+                },
+                {
+                  "word": "caribou ground",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground caribou",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced caribou",
+                  "substitution": false,
+                },
+                {
+                  "word": "caribou minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince caribou",
+                  "substitution": false,
+                },
+                {
+                  "word": "antelope mince",
+                  "substitution": false,
+                },
+                {
+                  "word": "antelope ground",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground antelope",
+                  "substitution": false,
+                },
+                {
+                  "word": "minced antelope",
+                  "substitution": false,
+                },
+                {
+                  "word": "antelope minced",
+                  "substitution": false,
+                },
+                {
+                  "word": "mince antelope",
+                  "substitution": false,
+                },
+                {
+                  "word": "lamb mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "beef mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "minced meat",
+                  "substitution": true,
+                },
+                {
+                  "word": "minced red meat",
+                  "substitution": true,
+                },
+                {
+                  "word": "meat free mince",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "venison",
+              "exclude": [
+                {
+                  "word": "jerky",
+                },
+                {
+                  "word": "dried",
+                },
+              ],
+              "include": [
+                {
+                  "word": "elk",
+                  "substitution": false,
+                },
+                {
+                  "word": "deer",
+                  "substitution": false,
+                },
+                {
+                  "word": "bison",
+                  "substitution": false,
+                },
+                {
+                  "word": "buffalo",
+                  "substitution": false,
+                },
+                {
+                  "word": "moose",
+                  "substitution": false,
+                },
+                {
+                  "word": "caribou",
+                  "substitution": false,
+                },
+                {
+                  "word": "antelope",
+                  "substitution": false,
+                },
+                {
+                  "word": "lamb",
+                  "substitution": true,
+                },
+                {
+                  "word": "beef",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "vimto",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "berry cordial",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "vegetable chips",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "veg chips",
+                  "substitution": false,
+                },
+                {
+                  "word": "veggie chips",
+                  "substitution": false,
+                },
+                {
+                  "word": "vegetable crisps",
+                  "substitution": false,
+                },
+                {
+                  "word": "veggie crisps",
+                  "substitution": false,
+                },
+                {
+                  "word": "vegetable fries",
+                  "substitution": false,
+                },
+                {
+                  "word": "veggie fries",
+                  "substitution": false,
+                },
+                {
+                  "word": "vegetable straws",
+                  "substitution": false,
+                },
+                {
+                  "word": "veggie straws",
+                  "substitution": false,
+                },
+                {
+                  "word": "potato chips",
+                  "substitution": true,
+                },
+                {
+                  "word": "tortilla chips",
+                  "substitution": false,
+                },
+                {
+                  "word": "pretzel snacks",
+                  "substitution": true,
+                },
+                {
+                  "word": "sev mamra",
+                  "substitution": true,
+                },
+                {
+                  "word": "bombay mix",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi peas",
+                  "substitution": true,
+                },
+                {
+                  "word": "twiglets",
+                  "substitution": true,
+                },
+                {
+                  "word": "mini cheddars",
+                  "substitution": true,
+                },
+                {
+                  "word": "crackers",
+                  "substitution": true,
+                },
+                {
+                  "word": "roasted chickpeas",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "vindaloo curry paste",
               "exclude": [
@@ -141,6 +744,10 @@
                 },
                 {
                   "word": "vanilla sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "crème anglaise",
                   "substitution": true,
                 },
                 {
@@ -358,6 +965,69 @@
           {
               "name": "vanilla extract",
               "exclude": [
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
+                },
+                {
+                  "word": "yoghurt",
+                },
+                {
+                  "word": "yogurt",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "shortbread",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "loaf",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "pudding",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "bonbon",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "caramel",
+                },
+                {
+                  "word": "toffee",
+                },
+                {
+                  "word": "coffee",
+                },
               ],
               "include": [
                 {
@@ -413,6 +1083,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "vanilla seed",
+                  "substitution": true,
+                },
+                {
                   "word": "vanilla syrup",
                   "substitution": true,
                 },
@@ -425,6 +1099,72 @@
           {
               "name": "vanilla pod",
               "exclude": [
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
+                },
+                {
+                  "word": "yoghurt",
+                },
+                {
+                  "word": "yogurt",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "shortbread",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "loaf",
+                },
+                {
+                  "word": "pudding",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "bonbon",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "caramel",
+                },
+                {
+                  "word": "toffee",
+                },
+                {
+                  "word": "coffee",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "vodka",
+                },
               ],
               "include": [
                 {
@@ -445,6 +1185,10 @@
                 },
                 {
                   "word": "vanilla paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "vanilla seed",
                   "substitution": true,
                 },
                 {

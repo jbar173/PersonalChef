@@ -3,8 +3,8 @@
     "key" : [ "champagne","cherry flavoured spirit/liqueur","chocolate flavoured spirit/liqueur","cider","coconut flavoured spirit/liqueur","cachaca",
               "camembert","cheddar","cheese slice","cognac","comte","cottage cheese","cream cheese",
 
-              "cacao nibs","cake decorations","caramel","caramel essence","caramel covered peanuts","caramel wafers","carrot cake","candied orange",
-              "cherry compote","chocolate","chocolate biscuits","chocolate buttons","chocolate cake","chocolate caramel bar","chocolate cookies",
+              "cacao nibs","cake decorations","caramel","caramel essence","caramel covered peanuts","caramel sauce","caramel syrup","caramel wafers","carrot cake",
+              "candied orange","cherry compote","chocolate","chocolate biscuits","chocolate buttons","chocolate cake","chocolate caramel bar","chocolate cookies",
               "chocolate custard","chocolate decorating icing","chocolate drops","chocolate ganache","chocolate mousse","chocolate peanuts","chocolate raisins",
               "chocolate sauce","chocolate sprinkles","cocoa powder","coconut bar","coconut biscuits","coconut macaroons","coconut nectar","cola laces",
               "coloured dusting sugar","condensed milk","cookies","cookie dough","creme egg","crunchie bar","crunchy cream biscuits","curd cheese","custard",
@@ -51,6 +51,184 @@
     "ingredients": [
 
 
+
+        {
+            "name": "caramel sauce",
+            "exclude": [
+              {
+                "word": "cookie",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "shortbread",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "loaf",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "gelato",
+              },
+              {
+                "word": "milkshake",
+              },
+              {
+                "word": "shake",
+              },
+              {
+                "word": "whiskey",
+              },
+              {
+                "word": "whisky",
+              },
+              {
+                "word": "liqueur",
+              },
+            ],
+            "include": [
+              {
+                "word": "liquid caramel",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavour sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavor sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavored sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavored sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel topping sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavour topping sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavor topping sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavoured topping sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavored topping sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel dessert sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavour dessert sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavor dessert sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavoured dessert sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavored dessert sauce",
+                "substitution": false,
+              },
+              {
+                "word": "caramel drizzle",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavour drizzle",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavor drizzle",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavoured drizzle",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavored drizzle",
+                "substitution": false,
+              },
+              {
+                "word": "caramel drink",
+                "substitution": true,
+              },
+              {
+                "word": "caramel flavour drink",
+                "substitution": true,
+              },
+              {
+                "word": "caramel flavor drink",
+                "substitution": true,
+              },
+              {
+                "word": "caramel flavoured drink",
+                "substitution": true,
+              },
+              {
+                "word": "caramel flavored drink",
+                "substitution": true,
+              },
+              {
+                "word": "caramel spread",
+                "substitution": true,
+              },
+              {
+                "word": "caramel ganache",
+                "substitution": true,
+              },
+              {
+                "word": "caramel syrup",
+                "substitution": true,
+              },
+              {
+                "word": "toffee sauce",
+                "substitution": true,
+              },
+              {
+                "word": "caramel",
+                "substitution": true,
+              },
+              {
+                "word": "toffee",
+                "substitution": true,
+              },
+              {
+                "word": "chocolate sauce",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "cream of tomato soup",
             "exclude": [
@@ -308,6 +486,9 @@
               },
               {
                 "word": "ice cream",
+              },
+              {
+                "word": "gelato",
               },
               {
                 "word": "cheesecake",
@@ -1447,6 +1628,9 @@
                 "word": "ice cream",
               },
               {
+                "word": "gelato",
+              },
+              {
                 "word": "milkshake",
               },
               {
@@ -1480,11 +1664,15 @@
               },
               {
                 "word": "toffee crisp",
-                "substitution": false,
+                "substitution": true,
+              },
+              {
+                "word": "lion bar",
+                "substitution": true,
               },
               {
                 "word": "tim tam",
-                "substitution": false,
+                "substitution": true,
               },
               {
                 "word": "biscuits",
@@ -1618,6 +1806,9 @@
                 "word": "ice cream",
               },
               {
+                "word": "gelato",
+              },
+              {
                 "word": "milkshake",
               },
               {
@@ -1634,6 +1825,22 @@
               },
             ],
             "include": [
+              {
+                "word": "caramel flavour syrup",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavor syrup",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavoured syrup",
+                "substitution": false,
+              },
+              {
+                "word": "caramel flavored syrup",
+                "substitution": false,
+              },
               {
                 "word": "caramel sauce",
                 "substitution": false,
@@ -1658,7 +1865,7 @@
                 "substitution": true,
               },
               {
-                "word": "tunnocks millk chocolate caramel",
+                "word": "tunnocks milk chocolate caramel",
                 "substitution": false,
               },
               {
@@ -1855,6 +2062,9 @@
                 "word": "icecream",
               },
               {
+                "word": "gelato",
+              },
+              {
                 "word": "ice cream",
               },
               {
@@ -1923,7 +2133,7 @@
                 "substitution": true,
               },
               {
-                "word": "tunnocks millk chocolate caramel",
+                "word": "tunnocks milk chocolate caramel",
                 "substitution": false,
               },
               {
@@ -1940,6 +2150,9 @@
               },
               {
                 "word": "ice cream",
+              },
+              {
+                "word": "gelato",
               },
               {
                 "word": "milkshake",
@@ -2673,6 +2886,9 @@
                 "word": "ice cream",
               },
               {
+                "word": "gelato",
+              },
+              {
                 "word": "milkshake",
               },
               {
@@ -2847,6 +3063,9 @@
               },
               {
                 "word": "ice cream",
+              },
+              {
+                "word": "gelato",
               },
               {
                 "word": "milkshake",
@@ -4876,6 +5095,9 @@
             },
             {
               "word": "ice cream",
+            },
+            {
+              "word": "gelato",
             },
             {
               "word": "biscuit",
@@ -8262,6 +8484,9 @@
               "word": "ice cream",
             },
             {
+              "word": "gelato",
+            },
+            {
               "word": "cheese",
             },
             {
@@ -8579,6 +8804,9 @@
               "word": "ice cream",
             },
             {
+              "word": "gelato",
+            },
+            {
               "word": "yoghurt",
             },
             {
@@ -8715,6 +8943,10 @@
               "substitution": false,
             },
             {
+              "word": "crème anglaise",
+              "substitution": false,
+            },
+            {
               "word": "vanilla cream",
               "substitution": false,
             },
@@ -8823,6 +9055,9 @@
               },
               {
                 "word": "ice cream",
+              },
+              {
+                "word": "gelato",
               },
               {
                 "word": "cheese",
@@ -9031,6 +9266,9 @@
               },
               {
                 "word": "ice cream",
+              },
+              {
+                "word": "gelato",
               },
               {
                 "word": "milkshake",

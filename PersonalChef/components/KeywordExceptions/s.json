@@ -99,6 +99,9 @@
                   "word": "ice cream",
                 },
                 {
+                  "word": "gelato",
+                },
+                {
                   "word": "milkshake",
                 },
                 {
@@ -150,6 +153,9 @@
                 },
                 {
                   "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
                 },
                 {
                   "word": "milkshake",
@@ -232,6 +238,9 @@
                 },
                 {
                   "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
                 },
               ],
               "include": [
@@ -366,6 +375,9 @@
                 },
                 {
                   "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
                 },
                 {
                   "word": "shake",
@@ -4456,6 +4468,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "coconut aminos",
+                  "substitution": true,
+                },
+                {
                   "word": "soya sauce",
                   "substitution": false,
                 },
@@ -4465,6 +4481,10 @@
                 },
                 {
                   "word": "ponzu sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcestershire sauce",
                   "substitution": true,
                 },
               ],

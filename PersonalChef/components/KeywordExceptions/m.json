@@ -482,6 +482,9 @@
                   "word": "ice cream",
                 },
                 {
+                  "word": "gelato",
+                },
+                {
                   "word": "wine",
                 },
               ],
@@ -644,6 +647,9 @@
                 },
                 {
                   "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
                 },
                 {
                   "word": "milkshake",
@@ -904,6 +910,9 @@
                 },
                 {
                   "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
                 },
                 {
                   "word": "milkshake",
@@ -3176,6 +3185,42 @@
                   "substitution": false,
                 },
                 {
+                  "word": "mango jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jam",
+                  "substitution": true,
+                },
+                {
                   "word": "tropical fruit jelly",
                   "substitution": true,
                 },
@@ -4840,6 +4885,9 @@
                 "word": "ice cream",
               },
               {
+                "word": "gelato",
+              },
+              {
                 "word": "milkshake",
               },
               {
@@ -4892,6 +4940,9 @@
               },
               {
                 "word": "rib",
+              },
+              {
+                "word": "cheese",
               },
             ],
             "include": [

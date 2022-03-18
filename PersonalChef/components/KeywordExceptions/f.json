@@ -1954,6 +1954,21 @@
           {
               "name": "fries",
               "exclude": [
+                {
+                  "word": "lemon",
+                },
+                {
+                  "word": "lime",
+                },
+                {
+                  "word": "fruit",
+                },
+                {
+                  "word": "citrus",
+                },
+                {
+                  "word": "potato chips",
+                },
               ],
               "include": [
                 {
@@ -1962,6 +1977,10 @@
                 },
                 {
                   "word": "sweet potato fries",
+                  "substitution": true,
+                },
+                {
+                  "word": "wedges",
                   "substitution": true,
                 },
               ],
@@ -2231,6 +2250,9 @@
                 "word": "ice cream",
               },
               {
+                "word": "gelato",
+              },
+              {
                 "word": "extract",
               },
             ],
@@ -2354,6 +2376,10 @@
                 },
                 {
                   "word": "fish stock",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcestershire sauce",
                   "substitution": true,
                 },
               ],

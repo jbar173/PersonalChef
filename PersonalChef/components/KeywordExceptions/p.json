@@ -236,6 +236,9 @@
                   "word": "ice cream",
                 },
                 {
+                  "word": "gelato",
+                },
+                {
                   "word": "milkshake",
                 },
                 {
@@ -630,6 +633,9 @@
                 },
                 {
                   "word": "icecream",
+                },
+                {
+                  "word": "gelato",
                 },
                 {
                   "word": "truffle",
@@ -3308,6 +3314,42 @@
                   "substitution": false,
                 },
                 {
+                  "word": "pineapple jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jam",
+                  "substitution": true,
+                },
+                {
                   "word": "tropical fruit jelly",
                   "substitution": true,
                 },
@@ -3368,6 +3410,42 @@
                 {
                   "word": "peach flavored jell-o",
                   "substitution": false,
+                },
+                {
+                  "word": "peach jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot jam",
+                  "substitution": true,
                 },
                 {
                   "word": "tropical fruit jelly",
@@ -3456,6 +3534,42 @@
                   "substitution": false,
                 },
                 {
+                  "word": "passion fruit jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jam",
+                  "substitution": true,
+                },
+                {
                   "word": "tropical fruit jelly",
                   "substitution": true,
                 },
@@ -3485,6 +3599,30 @@
                 {
                   "word": "passion fruit butter",
                   "substitution": false,
+                },
+                {
+                  "word": "passionfruit conserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit preserve",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit fruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "passionfruit butter",
+                  "substitution": true,
                 },
               ],
           },
@@ -3554,6 +3692,10 @@
                 {
                   "word": "pineapple spread",
                   "substitution": false,
+                },
+                {
+                  "word": "pineapple butter",
+                  "substitution": true,
                 },
               ],
           },
@@ -4313,15 +4455,11 @@
                   "substitution": false,
                 },
                 {
-                  "word": "chevda",
-                  "substitution": true,
-                },
-                {
                   "word": "tortilla chips",
                   "substitution": true,
                 },
                 {
-                  "word": "dorito",
+                  "word": "vegetable chips",
                   "substitution": true,
                 },
                 {

@@ -1,7 +1,8 @@
 {
 
-    "key" : [ "taleggio",
-              "tiramisu","toffee","tropical jelly",
+    "key" : [ "tequila",
+              "taleggio",
+              "tiramisu","toffee","toffee crisp","toffee sauce","tropical jelly",
               "taco shells","tortillas",
               "tempura prawns","tilapia","trout","tuna",
               "turkey","turkey mince",
@@ -24,8 +25,7 @@
 
 
               "~~~ TO DO : ~~~",
-              "tequila",
-              "toffee crisp", "toffees/bonbons(sub)", "toffee sauce",
+
 
 
     ],
@@ -34,7 +34,265 @@
     "ingredients": [
 
 
-
+          {
+              "name": "tequila",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mezcal",
+                  "substitution": true,
+                },
+                {
+                  "word": "sotol",
+                  "substitution": true,
+                },
+                {
+                  "word": "pisco",
+                  "substitution": true,
+                },
+                {
+                  "word": "raicilla",
+                  "substitution": true,
+                },
+                {
+                  "word": "bacanora",
+                  "substitution": true,
+                },
+                {
+                  "word": "pulque",
+                  "substitution": true,
+                },
+                {
+                  "word": "cocuy",
+                  "substitution": true,
+                },
+                {
+                  "word": "agave spirit",
+                  "substitution": true,
+                },
+                {
+                  "word": "vodka",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "toffee crisp",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chocolate caramel bar",
+                  "substitution": true,
+                },
+                {
+                  "word": "lion bar",
+                  "substitution": true,
+                },
+                {
+                  "word": "munchies",
+                  "substitution": true,
+                },
+                {
+                  "word": "twix",
+                  "substitution": true,
+                },
+                {
+                  "word": "boost",
+                  "substitution": true,
+                },
+                {
+                  "word": "tunnocks milk chocolate caramel",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramac",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "toffee sauce",
+              "exclude": [
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "shortbread",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "loaf",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
+                },
+                {
+                  "word": "milkshake",
+                },
+                {
+                  "word": "shake",
+                },
+                {
+                  "word": "whiskey",
+                },
+                {
+                  "word": "whisky",
+                },
+                {
+                  "word": "liqueur",
+                },
+              ],
+              "include": [
+                {
+                  "word": "liquid toffee",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavour sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavor sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavored sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavored sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavour topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavor topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavoured topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavored topping sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavour dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavor dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavoured dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavored dessert sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavour drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavor drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavoured drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee flavored drizzle",
+                  "substitution": false,
+                },
+                {
+                  "word": "toffee drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "toffee flavour drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "toffee flavor drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "toffee flavoured drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "toffee flavored drink",
+                  "substitution": true,
+                },
+                {
+                  "word": "toffee spread",
+                  "substitution": true,
+                },
+                {
+                  "word": "toffee ganache",
+                  "substitution": true,
+                },
+                {
+                  "word": "toffee syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramel sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramel syrup",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramel",
+                  "substitution": true,
+                },
+                {
+                  "word": "toffee",
+                  "substitution": true,
+                },
+                {
+                  "word": "chocolate sauce",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "tropical fruit jelly",
               "exclude": [
@@ -105,27 +363,7 @@
                   "substitution": true,
                 },
                 {
-                  "word": "mango conserve",
-                  "substitution": true,
-                },
-                {
-                  "word": "mango preserve",
-                  "substitution": true,
-                },
-                {
-                  "word": "mango fruit spread",
-                  "substitution": true,
-                },
-                {
-                  "word": "mango spread",
-                  "substitution": true,
-                },
-                {
                   "word": "mango jam",
-                  "substitution": true,
-                },
-                {
-                  "word": "mango butter",
                   "substitution": true,
                 },
                 {
@@ -133,27 +371,7 @@
                   "substitution": true,
                 },
                 {
-                  "word": "pineapple conserve",
-                  "substitution": true,
-                },
-                {
-                  "word": "pineapple preserve",
-                  "substitution": true,
-                },
-                {
-                  "word": "pineapple fruit spread",
-                  "substitution": true,
-                },
-                {
-                  "word": "pineapple spread",
-                  "substitution": true,
-                },
-                {
                   "word": "pineapple jam",
-                  "substitution": true,
-                },
-                {
-                  "word": "pineapple butter",
                   "substitution": true,
                 },
                 {
@@ -161,51 +379,23 @@
                   "substitution": true,
                 },
                 {
-                  "word": "passion fruit conserve",
-                  "substitution": true,
-                },
-                {
-                  "word": "passion fruit preserve",
-                  "substitution": true,
-                },
-                {
-                  "word": "passion fruit fruit spread",
-                  "substitution": true,
-                },
-                {
-                  "word": "passion fruit spread",
-                  "substitution": true,
-                },
-                {
                   "word": "passion fruit jam",
                   "substitution": true,
                 },
                 {
-                  "word": "passion fruit butter",
+                  "word": "apricot jelly",
                   "substitution": true,
                 },
                 {
-                  "word": "passionfruit conserve",
+                  "word": "apricot jam",
                   "substitution": true,
                 },
                 {
-                  "word": "passionfruit preserve",
+                  "word": "peach jelly",
                   "substitution": true,
                 },
                 {
-                  "word": "passionfruit fruit spread",
-                  "substitution": true,
-                },
-                {
-                  "word": "passionfruit spread",
-                  "substitution": true,
-                },
-                {
-                  "word": "passionfruit jam",
-                  "substitution": true,
-                },
-                {
-                  "word": "passionfruit butter",
+                  "word": "peach jam",
                   "substitution": true,
                 },
                 {
@@ -259,62 +449,6 @@
                 {
                   "word": "papaya flavored jell-o",
                   "substitution": false,
-                },
-                {
-                  "word": "apricot jelly",
-                  "substitution": true,
-                },
-                {
-                  "word": "apricot conserve",
-                  "substitution": true,
-                },
-                {
-                  "word": "apricot preserve",
-                  "substitution": true,
-                },
-                {
-                  "word": "apricot fruit spread",
-                  "substitution": true,
-                },
-                {
-                  "word": "apricot spread",
-                  "substitution": true,
-                },
-                {
-                  "word": "apricot jam",
-                  "substitution": true,
-                },
-                {
-                  "word": "apricot butter",
-                  "substitution": true,
-                },
-                {
-                  "word": "peach jelly",
-                  "substitution": true,
-                },
-                {
-                  "word": "peach conserve",
-                  "substitution": true,
-                },
-                {
-                  "word": "peach preserve",
-                  "substitution": true,
-                },
-                {
-                  "word": "peach fruit spread",
-                  "substitution": true,
-                },
-                {
-                  "word": "peach spread",
-                  "substitution": true,
-                },
-                {
-                  "word": "peach jam",
-                  "substitution": true,
-                },
-                {
-                  "word": "peach butter",
-                  "substitution": true,
                 },
               ],
           },
@@ -2308,6 +2442,15 @@
             "name": "toffee",
             "exclude": [
               {
+                "word": "popcorn",
+              },
+              {
+                "word": "corn",
+              },
+              {
+                "word": "cinder",
+              },
+              {
                 "word": "toffee apple",
               },
               {
@@ -2315,6 +2458,9 @@
               },
               {
                 "word": "ice cream",
+              },
+              {
+                "word": "gelato",
               },
               {
                 "word": "yoghurt",
@@ -2362,12 +2508,6 @@
                 "word": "tart",
               },
               {
-                "word": "flavour",
-              },
-              {
-                "word": "flavor",
-              },
-              {
                 "word": "essence",
               },
               {
@@ -2380,6 +2520,15 @@
             "include": [
               {
                 "word": "caramel",
+                "substitution": true,
+              },
+              {
+                "word": "bonbons",
+                "substitution": true,
+              },
+              {
+                "word": "toffee sauce",
+                "substitution": true,
               },
             ],
           },

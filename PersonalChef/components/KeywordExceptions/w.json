@@ -5,7 +5,9 @@
               "walnuts","wonton wrappers",
               "water chestnut",
               "water chestnuts",
-              "walnut oil",
+              "walnut oil","white sauce","white wine stock","wholegrain mustard","worcestershire sauce",
+              "white chocolate milkshake",
+              "wedges",
 
       "water",
 
@@ -24,11 +26,10 @@
               "weetabix/malt wheats cereal(sub)",
               "watercress/cress(sub)", "watermelon",
 
-              "wasabi paste/horseradish/mustard(subs)", "watercress sauce", "white sauce", "white wine stock",
-              "wholegrain mustard", "worcestershire sauce/worcester sauce/oyster sauce(sub)",
+              "wasabi paste/horseradish/mustard(subs)",
 
-              "white chocolate milkshake",
-              "waffles", "wedges",
+              "watercress sauce",
+
     ],
 
 
@@ -37,7 +38,214 @@
 
 
           {
-              "name":  "wispa",
+              "name": "watercress sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "watercress dressing",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "white sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cheese sauce",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "white wine stock",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "white wine broth",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine reduction",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine cube",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine soup base",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine base",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine concentrate",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine consomme",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine consommé",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine consume",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine gravy",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine and shallot sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine & shallot sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine and shallot reduction",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine & shallot reduction",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine jus",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine glace",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "wholegrain mustard",
+              "exclude": [
+                {
+                  "word": "cheese",
+                },
+              ],
+              "include": [
+                {
+                  "word": "mustard wholegrain",
+                  "substitution": false,
+                },
+                {
+                  "word": "mustard",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "worcestershire sauce",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "worcester sauce",
+                  "substitution": false,
+                },
+                {
+                  "word": "oyster sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "balsamic vinegar",
+                  "substitution": true,
+                },
+                {
+                  "word": "fish sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "soy sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "coconut aminos",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "white chocolate milkshake",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "white chocolate shake",
+                  "substitution": false,
+                },
+                {
+                  "word": "white chocolate milk",
+                  "substitution": false,
+                },
+                {
+                  "word": "white chocolate smoothie",
+                  "substitution": true,
+                },
+                {
+                  "word": "white chocolate cream",
+                  "substitution": true,
+                },
+                {
+                  "word": "white chocolate drink",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "wedges",
+              "exclude": [
+                {
+                  "word": "lemon",
+                },
+                {
+                  "word": "lime",
+                },
+                {
+                  "word": "fruit",
+                },
+                {
+                  "word": "citrus",
+                },
+                {
+                  "word": "potato chip",
+                },
+              ],
+              "include": [
+                {
+                  "word": "sweet potato wedges",
+                  "substitution": true,
+                },
+                {
+                  "word": "fries",
+                  "substitution": true,
+                },
+                {
+                  "word": "chips",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "wispa",
               "exclude": [
               ],
               "include": [
@@ -523,6 +731,9 @@
               },
               {
                 "word": "ice cream",
+              },
+              {
+                "word": "gelato",
               },
               {
                 "word": "milkshake",

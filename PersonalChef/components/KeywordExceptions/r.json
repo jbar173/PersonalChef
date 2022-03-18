@@ -13,7 +13,7 @@
               "ramen broth","rapeseed oil","ras el hanout","redcurrant jelly","red curry paste","red pesto","red wine stock","rendang curry paste","rice bran oil",
               "rogan josh paste","rogan josh spice",
 
-              "raspberry syrup","raspberry tea","ribena",
+              "raspberry syrup","raspberry tea","red vegetable juice","ribena",
               "raita","ravioli","rice milk",
 
 
@@ -33,6 +33,53 @@
     "ingredients": [
 
 
+
+          {
+              "name": "red vegetable juice",
+              "exclude": [
+                {
+                  "word": "broccoli",
+                },
+                {
+                  "word": "kale",
+                },
+                {
+                  "word": "spinach",
+                },
+                {
+                  "word": "parsley",
+                },
+                {
+                  "word": "coriander",
+                },
+                {
+                  "word": "cucumber",
+                },
+                {
+                  "word": "celery",
+                },
+                {
+                  "word": "green",
+                },
+                {
+                  "word": "fruit",
+                },
+              ],
+              "include": [
+                {
+                  "word": "vegetable juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "veg juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "veggie juice",
+                  "substitution": false,
+                },
+              ],
+          },
           {
               "name": "raspberry sauce",
               "exclude": [
@@ -391,6 +438,9 @@
                 },
                 {
                   "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
                 },
                 {
                   "word": "cookie",

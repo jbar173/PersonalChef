@@ -14,7 +14,7 @@
               "garlic and chilli oil","goose fat","ghee","grapeseed oil","gravy granules","green curry paste","green pesto","ground mace",
               "groundnut oil","guacamole",
 
-              "ginger ale","ginger beer","grape syrup","green tea","grenadine syrup",
+              "ginger ale","ginger beer","grape syrup","green tea","green vegetable juice","grenadine syrup",
 
               "gnocchi","goat's milk","gyoza",
 
@@ -40,6 +40,44 @@
     "ingredients": [
 
 
+          {
+              "name": "green vegetable juice",
+              "exclude": [
+                {
+                  "word": "tomato",
+                },
+                {
+                  "word": "beetroot",
+                },
+                {
+                  "word": "carrot",
+                },
+                {
+                  "word": "red",
+                },
+                {
+                  "word": "fruit",
+                },
+              ],
+              "include": [
+                {
+                  "word": "vegetable juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "veg juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "veggie juice",
+                  "substitution": false,
+                },
+                {
+                  "word": "green juice",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "goatfish",
               "exclude": [
@@ -317,6 +355,9 @@
                 },
                 {
                   "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
                 },
                 {
                   "word": "milkshake",

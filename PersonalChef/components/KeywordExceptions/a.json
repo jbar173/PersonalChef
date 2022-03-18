@@ -951,6 +951,46 @@
                   "word": "apricot flavored jell-o",
                   "substitution": false,
                 },
+                {
+                  "word": "apricot jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "pineapple jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "passion fruit jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jelly",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach jam",
+                  "substitution": true,
+                },
+                {
+                  "word": "tropical fruit jelly",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -977,10 +1017,6 @@
                 {
                   "word": "apricot butter",
                   "substitution": false,
-                },
-                {
-                  "word": "tropical fruit jelly",
-                  "substitution": true,
                 },
               ],
           },

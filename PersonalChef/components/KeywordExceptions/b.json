@@ -16,7 +16,7 @@
              "baconnaise","balsamic vinegar","balti paste","barbeque sauce","bearnaise","beef stock","beetroot pesto","bhuna paste","biryani paste","blue cheese dressing",
              "bread sauce","brown sauce","burger sauce","butter chicken cooking sauce",
 
-             "butter","buttermilk",
+             "belgian waffles","butter","buttermilk",
              "banana milkshake","beetroot juice","berry tea","black tea","blackcurrant syrup",
 
 
@@ -45,6 +45,39 @@
     "ingredients": [
 
 
+      {
+          "name": "belgian waffles",
+          "exclude": [
+            {
+              "word": "potato",
+            },
+            {
+              "word": "fries",
+            },
+            {
+              "word": "chips",
+            },
+            {
+              "word": "cheese",
+            },
+            {
+              "word": "savory",
+            },
+            {
+              "word": "savoury",
+            },
+          ],
+          "include": [
+            {
+              "word": "waffle",
+              "substitution": false,
+            },
+            {
+              "word": "scotch pancake",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "branzino",
           "exclude": [
@@ -538,6 +571,9 @@
               "word": "ice cream",
             },
             {
+              "word": "gelato",
+            },
+            {
               "word": "milkshake",
             },
             {
@@ -690,6 +726,9 @@
             },
             {
               "word": "ice cream",
+            },
+            {
+              "word": "gelato",
             },
             {
               "word": "milkshake",
@@ -1318,6 +1357,10 @@
               "word": "vinigrette",
               "substitution": true,
             },
+            {
+              "word": "worcestershire sauce",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -1710,7 +1753,19 @@
               "substitution": false,
             },
             {
+              "word": "vimto",
+              "substitution": true,
+            },
+            {
               "word": "blackcurrant syrup",
+              "substitution": true,
+            },
+            {
+              "word": "raspberry syrup",
+              "substitution": true,
+            },
+            {
+              "word": "grape syrup",
               "substitution": true,
             },
           ],
@@ -3012,6 +3067,10 @@
               "word": "yoshida's gourmet sauce",
               "substitution": true,
             },
+            {
+              "word": "worcestershire sauce",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -3944,7 +4003,15 @@
                   "substitution": true,
                 },
                 {
+                  "word": "venison mince",
+                  "substitution": true,
+                },
+                {
                   "word": "minced meat",
+                  "substitution": true,
+                },
+                {
+                  "word": "minced red meat",
                   "substitution": true,
                 },
                 {
@@ -4196,6 +4263,14 @@
                 },
                 {
                   "word": "cube steak",
+                  "substitution": false,
+                },
+                {
+                  "word": "flat iron",
+                  "substitution": false,
+                },
+                {
+                  "word": "flat iron",
                   "substitution": false,
                 },
                 {
