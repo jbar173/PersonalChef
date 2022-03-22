@@ -1,7 +1,8 @@
 {
 
     "key" : [ "yellow curry paste",
-
+              "yellow food colouring",
+              "yeast","yorkshire pudding mix",
 
 
               "~~~ HALF DONE : ~~~",
@@ -9,15 +10,56 @@
 
 
               "~~~ TO DO : ~~~",
-              "yellow food colouring",
-              "yeast",
-              "yorkshire puddings",
+
+
     ],
 
 
     "ingredients": [
 
 
+
+          {
+              "name": "yellow food colouring",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "yellow food colour",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "yeast",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sourdough starter",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "yorkshire pudding mix",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "yorkshire pudding batter",
+                  "substitution": false,
+                },
+                {
+                  "word": "yorkshire pudding",
+                  "substitution": false,
+                },
+                {
+                  "word": "pancake mix",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "yoshida's gourmet sauce",
               "exclude": [

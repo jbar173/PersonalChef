@@ -1,6 +1,6 @@
 {
     "name": "confectionary_ingredients",
-    "ingredients": [ "agave nectar", "almond extract", "apricot compote", "apricot jam", "apricot jelly", "apple pectin",
+    "ingredients": [ "agave nectar", "almond extract", "apricot compote", "apricot jam", "apricot jelly",
 
                     "banana custard", "berry jam", "black food colouring", "blackcurrant jam", "blackcurrant jelly", "black treacle", "blueberry jam", "blueberry jelly",
                     "blue food colouring", "biscuit spread", "boiled sweets", "bonbons", "bourbon biscuits", "bounty", "bramble jam", "bramble jelly", "buttercream",
@@ -42,7 +42,7 @@
                     "oatmeal cookies", "orange chocolate bar", "orange food colouring", "orange jam", "orange jelly", "orange oil", "oreos",
 
                     "passion fruit jam", "passion fruit jelly", "passion fruit puree", "peach jam", "peach jelly", "peanut butter cups", "peanut butter wafers", "pear drops",
-                    "peppermint extract", "pineapple jam", "pineapple jelly", "pink food colouring", "plum jam", "plum jelly", "popping candy", "praline", "preserved lemon",
+                    "pectin", "peppermint extract", "pineapple jam", "pineapple jelly", "pink food colouring", "plum jam", "plum jelly", "popping candy", "praline", "preserved lemon",
                     "profiteroles", "prunes", "purple food colouring", "pudding mix",
 
                     "quince jelly", "quince paste",

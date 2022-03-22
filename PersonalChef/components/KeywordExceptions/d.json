@@ -1638,6 +1638,10 @@
                 "word": "dill",
                 "substitution": true,
               },
+              {
+                "word": "angelica root",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -1796,6 +1800,9 @@
         {
             "name": "dried parsley",
             "exclude": [
+              {
+                "word": "sauce",
+              },
             ],
             "include": [
               {
@@ -1812,6 +1819,10 @@
               },
               {
                 "word": "thyme",
+                "substitution": true,
+              },
+              {
+                "word": "angelica root",
                 "substitution": true,
               },
             ],
@@ -1970,6 +1981,10 @@
                 "word": "dill",
                 "substitution": true,
               },
+              {
+                "word": "angelica root",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -2033,7 +2048,7 @@
                 "substitution": true,
               },
               {
-                "word": "wasabi",
+                "word": "wasabi paste",
                 "substitution": true,
               },
             ],

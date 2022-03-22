@@ -22,6 +22,9 @@
 
               "~~~ TO DO : ~~~",
 
+              "ostrich",
+              "OCTOPUS","OYSTERS",
+
     ],
 
 
@@ -399,58 +402,15 @@
                   "substitution": true,
                 },
                 {
-                  "word": "plum sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "xo sauce",
-                  "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "oyster sauce",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "sauce oyster",
-                  "substitution": false,
-                },
-                {
-                  "word": "oyster flavour sauce",
-                  "substitution": false,
-                },
-                {
-                  "word": "mushroom sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "teriyaki sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "hoisin sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "sweet soy sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "fish sauce",
-                  "substitution": true,
-                },
-                {
-                  "word": "worcestershire sauce",
-                  "substitution": true,
-                },
-                {
                   "word": "cantonese sauce",
                   "substitution": true,
                 },
                 {
                   "word": "chow mein sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "xo sauce",
                   "substitution": true,
                 },
               ],
@@ -1447,6 +1407,10 @@
                 },
                 {
                   "word": "dried onion",
+                  "substitution": false,
+                },
+                {
+                  "word": "onion granules",
                   "substitution": false,
                 },
               ],

@@ -6,7 +6,7 @@
               "strawberry jam","strawberry jelly","strawberry liquorice", "strawberry mousse", "strawberry sauce","strawberry shoelaces","sugar",
               "sugar syrup","sultanas","syrup sponge",
 
-              "scone mix","semolina","sesame seeds","shortcrust pastry","spring roll wrapper","sunflower seeds","sweet rice flour",
+              "scone mix","semolina","sesame seeds","shortcrust pastry","shredded wheat cereal","spring roll wrapper","sunflower seeds","sweet rice flour",
               "salmon","sea bream","scallops","shrimp","smoked trout","smoked salmon","sole","sprat","sturgeon","squid","snapper",
               "sausage","smoked sausage/sliced meat",
               "salad leaves","samphire","shallot","soffrito mix","spinach","spring onions","strawberries","summer squash","swede","sweet potato",
@@ -27,7 +27,7 @@
               "sake","stout",
               "sweetener",
               "short grain rice",
-              "sardines","scad","sea bass","smoked trout","stone bass","striped bass",
+              "sardines","scad","sea bass","smoked trout","stone bass","striped bass","swordfish",
               "sliced cooked meat",
               "spicy brown mustard","sweet and sour sauce","sweet chilli sauce",
               "strawberry milkshake",
@@ -37,6 +37,8 @@
               "~~~ TO DO : ~~~",
 
               "self raising flour", "spelt flour",
+              "SALSIFY","SKIRRET","STARFRUIT",
+              "SKATE","SNAILS/abalone/perlemoen","SWAI",
 
     ],
 
@@ -44,7 +46,60 @@
     "ingredients": [
 
 
-
+          {
+              "name": "swordfish",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shark",
+                  "substitution": true,
+                },
+                {
+                  "word": "cobia",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "shredded wheat cereal",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "malt wheats",
+                  "substitution": false,
+                },
+                {
+                  "word": "malted wheats",
+                  "substitution": false,
+                },
+                {
+                  "word": "shredded wheat",
+                  "substitution": false,
+                },
+                {
+                  "word": "shreddies",
+                  "substitution": false,
+                },
+                {
+                  "word": "malties cereal",
+                  "substitution": false,
+                },
+                {
+                  "word": "wheat chex",
+                  "substitution": false,
+                },
+                {
+                  "word": "weetabix",
+                  "substitution": false,
+                },
+                {
+                  "word": "wheat cereal",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "saag curry paste",
               "exclude": [
@@ -2225,6 +2280,10 @@
                 },
                 {
                   "word": "aniseed",
+                  "substitution": true,
+                },
+                {
+                  "word": "fennel seeds",
                   "substitution": true,
                 },
                 {
@@ -5084,6 +5143,10 @@
                 },
                 {
                   "word": "arugula",
+                  "substitution": false,
+                },
+                {
+                  "word": "watercress",
                   "substitution": false,
                 },
                 {

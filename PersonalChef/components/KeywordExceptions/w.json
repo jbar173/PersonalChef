@@ -1,11 +1,12 @@
 {
 
     "key" : [ "white wine","whisky","watermelon flavoured spirit/liqueur",
-              "white chocolate",
-              "walnuts","wonton wrappers",
-              "water chestnut",
+              "wensleydale",
+              "wafer biscuits","wafer decorations","white chocolate",
+              "walnuts","weetabix","wonton wrappers",
+              "watercress","water chestnut","watermelon",
               "water chestnuts",
-              "walnut oil","white sauce","white wine stock","wholegrain mustard","worcestershire sauce",
+              "walnut oil","wasabi paste","watercress sauce","white sauce","white wine stock","wholegrain mustard","worcestershire sauce",
               "white chocolate milkshake",
               "wedges",
 
@@ -21,14 +22,8 @@
 
 
               "~~~ TO DO : ~~~",
-              "wensleydale",
-              "wafer biscuits", "wafer decorations",
-              "weetabix/malt wheats cereal(sub)",
-              "watercress/cress(sub)", "watermelon",
-
-              "wasabi paste/horseradish/mustard(subs)",
-
-              "watercress sauce",
+              "WHELKS","WHITEBAIT","WINKLES","WOLF FISH",
+              "WASABI POWDER",
 
     ],
 
@@ -36,7 +31,267 @@
     "ingredients": [
 
 
-
+          {
+              "name": "wensleydale",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "lancashire cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "cheshire cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "caerphilly",
+                  "substitution": true,
+                },
+                {
+                  "word": "feta",
+                  "substitution": true,
+                },
+                {
+                  "word": "cheddar",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "wafer biscuits",
+              "exclude": [
+                {
+                  "word": "paper",
+                },
+                {
+                  "word": "thin",
+                },
+                {
+                  "word": "wheat",
+                },
+              ],
+              "include": [
+                {
+                  "word": "chocolate wafers",
+                  "substitution": true,
+                },
+                {
+                  "word": "caramel wafers",
+                  "substitution": true,
+                },
+                {
+                  "word": "wafer",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "wafer decorations",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "wafer flower",
+                  "substitution": true,
+                },
+                {
+                  "word": "wafer rose",
+                  "substitution": true,
+                },
+                {
+                  "word": "cake decorations",
+                  "substitution": true,
+                },
+                {
+                  "word": "wafer sprinkles",
+                  "substitution": true,
+                },
+                {
+                  "word": "wafer unicorns",
+                  "substitution": true,
+                },
+                {
+                  "word": "wafer dinos",
+                  "substitution": true,
+                },
+                {
+                  "word": "wafer daisies",
+                  "substitution": true,
+                },
+                {
+                  "word": "wafer paper",
+                  "substitution": true,
+                },
+                {
+                  "word": "wafer butterflies",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "weetabix",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "shredded wheat cereal",
+                  "substitution": true,
+                },
+                {
+                  "word": "nutri-brex",
+                  "substitution": true,
+                },
+                {
+                  "word": "nutribrex",
+                  "substitution": true,
+                },
+                {
+                  "word": "oatibix",
+                  "substitution": true,
+                },
+                {
+                  "word": "wheat bisks",
+                  "substitution": false,
+                },
+                {
+                  "word": "weetbix",
+                  "substitution": false,
+                },
+                {
+                  "word": "weet-bix",
+                  "substitution": false,
+                },
+                {
+                  "word": "bixies",
+                  "substitution": false,
+                },
+              ],
+          },
+          {
+              "name": "watercress",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cress",
+                  "substitution": true,
+                },
+                {
+                  "word": "rocket",
+                  "substitution": true,
+                },
+                {
+                  "word": "nasturtium",
+                  "substitution": true,
+                },
+                {
+                  "word": "radish sprouts",
+                  "substitution": true,
+                },
+                {
+                  "word": "radish microgreens",
+                  "substitution": true,
+                },
+                {
+                  "word": "salad leavess",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "watermelon",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "watermelon juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "watermelon seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "lychee",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "wasabi paste",
+              "exclude": [
+                {
+                  "word": "pea",
+                },
+              ],
+              "include": [
+                {
+                  "word": "wasabi powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "powdered wasabi",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried wasabi",
+                  "substitution": true,
+                },
+                {
+                  "word": "dry wasabi",
+                  "substitution": true,
+                },
+                {
+                  "word": "ground wasabi",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi",
+                  "substitution": false,
+                },
+                {
+                  "word": "horseradish",
+                  "substitution": true,
+                },
+                {
+                  "word": "mustard",
+                  "substitution": true,
+                },
+                {
+                  "word": "karashi",
+                  "substitution": true,
+                },
+                {
+                  "word": "hot daikon",
+                  "substitution": true,
+                },
+                {
+                  "word": "spicy daikon",
+                  "substitution": true,
+                },
+                {
+                  "word": "karami daikon",
+                  "substitution": true,
+                },
+                {
+                  "word": "yuzu paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "yuzu pepper",
+                  "substitution": true,
+                },
+                {
+                  "word": "yuzu citrus pepper",
+                  "substitution": true,
+                },
+                {
+                  "word": "yuzu kosho",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "watercress sauce",
               "exclude": [
@@ -44,6 +299,10 @@
               "include": [
                 {
                   "word": "watercress dressing",
+                  "substitution": false,
+                },
+                {
+                  "word": "watercress salad dressing",
                   "substitution": false,
                 },
               ],

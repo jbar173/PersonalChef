@@ -29,6 +29,7 @@
 
 
              "~~~ TO DO : ~~~",
+             "FRESH HORSERADISH",
 
 
 
@@ -1036,6 +1037,9 @@
           {
               "name": "fresh parsley",
               "exclude": [
+                {
+                  "word": "sauce",
+                },
               ],
               "include": [
                 {
@@ -1047,7 +1051,15 @@
                   "substitution": false,
                 },
                 {
+                  "word": "chives",
+                  "substitution": true,
+                },
+                {
                   "word": "fresh coriander",
+                  "substitution": true,
+                },
+                {
+                  "word": "angelica leaves",
                   "substitution": true,
                 },
               ],
@@ -1104,7 +1116,11 @@
                   "substitution": true,
                 },
                 {
-                  "word": "anise seeds",
+                  "word": "star anise",
+                  "substitution": true,
+                },
+                {
+                  "word": "anise",
                   "substitution": true,
                 },
                 {
@@ -1113,6 +1129,10 @@
                 },
                 {
                   "word": "dried tarragon",
+                  "substitution": true,
+                },
+                {
+                  "word": "angelica root",
                   "substitution": true,
                 },
               ],
@@ -1129,6 +1149,18 @@
                 {
                   "word": "chervil",
                   "substitution": false,
+                },
+                {
+                  "word": "angelica leaves",
+                  "substitution": true,
+                },
+                {
+                  "word": "fresh tarragon",
+                  "substitution": true,
+                },
+                {
+                  "word": "fresh parsley",
+                  "substitution": true,
                 },
               ],
           },
@@ -1150,6 +1182,10 @@
                 },
                 {
                   "word": "thai basil",
+                  "substitution": true,
+                },
+                {
+                  "word": "angelica leaves",
                   "substitution": true,
                 },
               ],
@@ -1402,7 +1438,7 @@
                   "substitution": true,
                 },
                 {
-                  "word": "wasabi",
+                  "word": "wasabi paste",
                   "substitution": true,
                 },
               ],
@@ -2205,9 +2241,6 @@
                 "word": "liquor",
               },
               {
-                "word": "paste",
-              },
-              {
                 "word": "ground",
               },
               {
@@ -2275,6 +2308,10 @@
               },
               {
                 "word": "galanga",
+                "substitution": true,
+              },
+              {
+                "word": "wasabi paste",
                 "substitution": true,
               },
             ],
@@ -2363,10 +2400,6 @@
                   "substitution": true,
                 },
                 {
-                  "word": "oyster sauce",
-                  "substitution": true,
-                },
-                {
                   "word": "fish paste",
                   "substitution": true,
                 },
@@ -2379,7 +2412,15 @@
                   "substitution": true,
                 },
                 {
+                  "word": "oyster sauce",
+                  "substitution": true,
+                },
+                {
                   "word": "worcestershire sauce",
+                  "substitution": true,
+                },
+                {
+                  "word": "xo sauce",
                   "substitution": true,
                 },
               ],
@@ -2399,6 +2440,14 @@
                 },
                 {
                   "word": "queso fresco",
+                  "substitution": true,
+                },
+                {
+                  "word": "wensleydale",
+                  "substitution": true,
+                },
+                {
+                  "word": "cheshire cheese",
                   "substitution": true,
                 },
               ],

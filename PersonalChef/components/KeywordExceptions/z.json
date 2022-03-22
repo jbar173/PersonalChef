@@ -18,11 +18,58 @@
           {
               "name": "zhoug paste",
               "exclude": [
+                {
+                  "word": "italian",
+                },
               ],
               "include": [
                 {
+                  "word": "zhug",
+                  "substitution": false,
+                },
+                {
+                  "word": "ma'booj",
+                  "substitution": true,
+                },
+                {
+                  "word": "harif",
+                  "substitution": true,
+                },
+                {
+                  "word": "skhug",
+                  "substitution": true,
+                },
+                {
+                  "word": "bisbas",
+                  "substitution": true,
+                },
+                {
+                  "word": "sahowqa",
+                  "substitution": true,
+                },
+                {
+                  "word": "sahawiq",
+                  "substitution": true,
+                },
+                {
                   "word": "zhoug sauce",
                   "substitution": false,
+                },
+                {
+                  "word": "chimichurri",
+                  "substitution": true,
+                },
+                {
+                  "word": "chermoula",
+                  "substitution": true,
+                },
+                {
+                  "word": "salsa verde",
+                  "substitution": true,
+                },
+                {
+                  "word": "mojo verde",
+                  "substitution": true,
                 },
               ],
           },

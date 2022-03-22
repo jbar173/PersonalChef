@@ -25,7 +25,8 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "RADICCHIO", "RED CABBAGE",
+              "RABBIT",
 
     ],
 
@@ -678,6 +679,10 @@
                 },
                 {
                   "word": "strawberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "acai berries",
                   "substitution": true,
                 },
                 {
@@ -2438,6 +2443,10 @@
               },
               {
                 "word": "fresh parsley",
+                "substitution": true,
+              },
+              {
+                "word": "salad leavess",
                 "substitution": true,
               },
             ],

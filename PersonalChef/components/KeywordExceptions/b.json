@@ -37,6 +37,10 @@
 
              "bread dough", "buckwheat",
 
+             "BILBERRIES", "BOYSENBERRIES", "BREAD FRUIT",
+             "BOMBAY DUCK",
+             "BURNET",
+
 
 
     ],
@@ -1009,7 +1013,7 @@
           ],
           "include": [
             {
-              "word": "acai",
+              "word": "acai berries",
               "substitution": true,
             },
             {
@@ -2877,6 +2881,10 @@
               "word": "raspberries",
               "substitution": true,
             },
+            {
+              "word": "acai berries",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -4313,6 +4321,10 @@
                 },
                 {
                   "word": "bakers ammonia",
+                  "substitution": true,
+                },
+                {
+                  "word": "yeast",
                   "substitution": true,
                 },
               ],

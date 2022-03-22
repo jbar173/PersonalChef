@@ -3,7 +3,7 @@
     "key" : [ "pear flavoured spirit/liqueur","peach flavoured spirit/liqueur","plum flavoured spirit/liqueur","passion fruit flavoured spirit/liqueur","prosecco",
               "paneer","parmesan","pecorino","pleasant ridge","port salut","provolone",
 
-              "passion fruit jam","passion fruit jelly","peach jam","peach jelly","peanut butter cups","peanut butter wafers","pear drops","peppermint extract",
+              "passion fruit jam","passion fruit jelly","peach jam","peach jelly","peanut butter cups","peanut butter wafers","pear drops","pectin","peppermint extract",
               "pineapple jam","pineapple jelly", "pink food colouring","plum jam","plum jelly","popping candy","praline","preserved lemon","profiteroles","prunes",
               "purple food colouring",
 
@@ -35,7 +35,8 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "PIKE",
+              "PHEASANT",
 
     ],
 
@@ -44,6 +45,33 @@
 
 
 
+          {
+              "name": "pectin",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "egg white powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "guar gum",
+                  "substitution": true,
+                },
+                {
+                  "word": "agar agar",
+                  "substitution": true,
+                },
+                {
+                  "word": "xanthan gum",
+                  "substitution": true,
+                },
+                {
+                  "word": "gelatine",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "pathia curry paste",
               "exclude": [
@@ -2539,6 +2567,10 @@
                   "word": "pancake batter",
                   "substitution": false,
                 },
+                {
+                  "word": "yorkshire pudding mix",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -4399,20 +4431,6 @@
                 },
                 {
                   "word": "kamut berries",
-                  "substitution": true,
-                },
-              ],
-          },
-          {
-              "name": "parsley",
-              "exclude": [
-                {
-                  "word": "parsley sauce",
-                },
-              ],
-              "include": [
-                {
-                  "word": "chives",
                   "substitution": true,
                 },
               ],

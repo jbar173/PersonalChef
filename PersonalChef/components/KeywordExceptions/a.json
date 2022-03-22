@@ -5,10 +5,10 @@
 
               "aged asiago","appenzeller","applewood smoked cheese",
               "agave nectar","almond extract","apricot jam","apricot jelly",
-              "anchovies",
+              "amberjack","anchovies",
               "almonds","almond meal","almond flour",
-              "ackee","apple","apricot","avocado",
-              "allspice","asafoetida",
+              "acai berries","ackee","apple","apricot","avocado",
+              "allspice","angelica leaves","angelica root","anise","asafoetida",
               "achiote","almond butter","almond oil","apple sauce","avocado oil",
               "apple tea",
               "almond milk","aquafaba",
@@ -22,12 +22,264 @@
               "aioli","apricot harissa paste","aubergine paste",
               "almond syrup","apple syrup","apricot syrup",
 
+
+              "~~~ TO DO : ~~~",
+
+
             ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "anise",
+              "exclude": [
+                {
+                  "word": "ball",
+                },
+                {
+                  "word": "sweet",
+                },
+                {
+                  "word": "candy",
+                },
+                {
+                  "word": "bonbon",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "rock",
+                },
+                {
+                  "word": "drop",
+                },
+                {
+                  "word": "lollie",
+                },
+                {
+                  "word": "lolly",
+                },
+                {
+                  "word": "mint",
+                },
+                {
+                  "word": "jelly",
+                },
+                {
+                  "word": "gum",
+                },
+                {
+                  "word": "chew",
+                },
+                {
+                  "word": "imperial",
+                },
+                {
+                  "word": "twist",
+                },
+                {
+                  "word": "lozenge",
+                },
+                {
+                  "word": "licorice",
+                },
+                {
+                  "word": "liqorice",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "liquor",
+                },
+                {
+                  "word": "syrup",
+                },
+                {
+                  "word": "honey",
+                },
+                {
+                  "word": "drink",
+                },
+              ],
+              "include": [
+                {
+                  "word": "aniseed",
+                  "substitution": false,
+                },
+                {
+                  "word": "star anise",
+                  "substitution": true,
+                },
+                {
+                  "word": "angelica root",
+                  "substitution": true,
+                },
+                {
+                  "word": "caraway seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "fennel seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "fresh tarragon",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried tarragon",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "acai berries",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "acai berry juice",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "blueberries",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "angelica leaves",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "angelica leaf",
+                  "substitution": false,
+                },
+                {
+                  "word": "dong quai",
+                  "substitution": true,
+                },
+                {
+                  "word": "lovage",
+                  "substitution": true,
+                },
+                {
+                  "word": "wild celery",
+                  "substitution": true,
+                },
+                {
+                  "word": "celery leaves",
+                  "substitution": true,
+                },
+                {
+                  "word": "celery leaf",
+                  "substitution": true,
+                },
+                {
+                  "word": "fresh tarragon",
+                  "substitution": true,
+                },
+                {
+                  "word": "fresh chervil",
+                  "substitution": true,
+                },
+                {
+                  "word": "fresh parsley",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "angelica root",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "dong quai",
+                  "substitution": true,
+                },
+                {
+                  "word": "fennel seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "anise",
+                  "substitution": true,
+                },
+                {
+                  "word": "caraway seeds",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried parsley",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried chervil",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried tarragon",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "amberjack",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "yellowtail",
+                  "substitution": true,
+                },
+                {
+                  "word": "kingfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "almaco jack",
+                  "substitution": true,
+                },
+                {
+                  "word": "banded rudderfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "mahi mahi",
+                  "substitution": true,
+                },
+                {
+                  "word": "tilefish",
+                  "substitution": true,
+                },
+                {
+                  "word": "tuna",
+                  "substitution": true,
+                },
+                {
+                  "word": "shark",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouper",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "almond syrup",
               "exclude": [

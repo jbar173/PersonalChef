@@ -13,6 +13,7 @@
 
 
              "~~~ TO DO : ~~~",
+             "EEL","ELDERBERRIES",
 
     ],
 
@@ -116,7 +117,7 @@
                   "substitution": true,
                 },
                 {
-                  "word": "wasabi",
+                  "word": "wasabi paste",
                   "substitution": true,
                 },
               ],

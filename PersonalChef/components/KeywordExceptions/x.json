@@ -1,20 +1,63 @@
 {
 
-    "key" : [
-
+    "key" : [ "xanthan gum",
+              "xo sauce",
 
 
             "~~~ HALF DONE : ~~~",
 
 
             "~~~ TO DO : ~~~",
-            "xanthan gum/egg whites(sub)", "xo sauce",
+
     ],
 
 
     "ingredients": [
 
 
+      {
+          "name": "xanthan gum",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "egg white powder",
+              "substitution": true,
+            },
+            {
+              "word": "guar gum",
+              "substitution": true,
+            },
+            {
+              "word": "agar agar",
+              "substitution": true,
+            },
+            {
+              "word": "pectin",
+              "substitution": true,
+            },
+            {
+              "word": "gelatine",
+              "substitution": true,
+            },
+            {
+              "word": "psyllium husk",
+              "substitution": true,
+            },
+            {
+              "word": "psyllium powder",
+              "substitution": true,
+            },
+            {
+              "word": "powdered psyllium",
+              "substitution": true,
+            },
+            {
+              "word": "ground psyllium",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "xo sauce",
           "exclude": [
@@ -28,11 +71,24 @@
               "word": "shacha sauce",
               "substitution": true,
             },
+            {
+              "word": "oyster sauce",
+              "substitution": true,
+            },
+            {
+              "word": "fish sauce",
+              "substitution": true,
+            },
+            {
+              "word": "sambal",
+              "substitution": true,
+            },
+            {
+              "word": "bagoong",
+              "substitution": true,
+            },
           ],
       },
-
-
-
 
 
     ]

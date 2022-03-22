@@ -1,39 +1,43 @@
 {
     "name": "fish_ingredients",
-    "ingredients": [  "anchovies",
+    "ingredients": [  "AMBERJACK", "anchovies",
 
-                      "barramundi", "basa", "bass", "bluefish", "branzino", "breaded fish fillets", "brill",
+                      "barramundi", "basa", "bass", "bluefish", "BOMBAY DUCK", "branzino", "breaded fish fillets", "brill",
 
-                      "catfish", "caviar", "char", "cockles", "cod", "coley", "crab", "crab stick", "crayfish", "cuttlefish",
+                      "CARP", "catfish", "caviar", "char", "CLAMS", "cobia", "cockles", "cod", "coley", "crab", "crab stick", "crayfish", "cuttlefish",
 
                       "dab", "dried shrimp",
 
+                      "EEL",
+
                       "fish cakes", "flounder", "fluke",
 
-                      "goatfish", "grey mullet", "grouper", "gurnard",
+                      "goatfish", "grey mullet", "GOOSENECK", "grouper", "gurnard",
 
                       "haddock", "hake", "halibut", "herring",
 
                       "jellied eels", "john dory",
 
-                      "kipper",
+                      "KINGKLIP", "kipper",
 
-                      "lobster",
+                      "LING", "lobster",
 
                       "mackerel", "mahi mahi", "meagre", "monkfish", "mussels",
 
-                      "orange roughy",
+                      "OCTOPUS", "orange roughy", "OYSTERS",
 
-                      "pangasius", "perch", "plaice", "pollock", "pouting", "prawns",
+                      "pangasius", "perch", "PIKE", "plaice", "pollock", "pouting", "prawns",
 
                       "red mullet",
 
-                      "salmon", "sardines", "scad", "scallops", "sea bass", "sea bream", "seafood stick", "shrimp", "sild", "snapper",
-                      "smoked salmon", "smoked trout", "sole", "sprat", "squid", "stone bass", "striped bass", "sturgeon",
+                      "salmon", "sardines", "scad", "scallops", "sea bass", "sea bream", "seafood stick", "shrimp", "sild", "SKATE", "SNAILS", "snapper",
+                      "smoked salmon", "smoked trout", "sole", "sprat", "squid", "stone bass", "striped bass", "sturgeon", "SWAI", "SWORDFISH",
 
-                      "tempura prawns", "tilapia", "trout", "tuna", "turbot",
+                      "tempura prawns", "tilapia", "tilefish", "trout", "tuna", "turbot",
 
-                      "walleye", "whiting",
+                      "walleye", "WHELKS", "WHITEBAIT", "whiting", "WINKLES", "WOLF FISH",
+
+
 
     ]
 }

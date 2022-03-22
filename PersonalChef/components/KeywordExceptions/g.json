@@ -32,6 +32,10 @@
 
 
               "~~~ TO DO : ~~~",
+              "GOOSEBERRIES",
+              "GOOSENECK",
+              "GOAT", "GOOSE", "GUINEAFOWL",
+              "GOCHUGARU", "GRAINS OF PARADISE",
 
 
     ],
@@ -122,6 +126,10 @@
                 },
                 {
                   "word": "barramundi",
+                  "substitution": true,
+                },
+                {
+                  "word": "amberjack",
                   "substitution": true,
                 },
                 {
@@ -1893,6 +1901,18 @@
                 {
                   "word": "gelatin",
                   "substitution": false,
+                },
+                {
+                  "word": "xanthan gum",
+                  "substitution": true,
+                },
+                {
+                  "word": "pectin",
+                  "substitution": true,
+                },
+                {
+                  "word": "agar agar",
+                  "substitution": true,
                 },
               ],
           },

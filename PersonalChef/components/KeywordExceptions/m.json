@@ -7,7 +7,7 @@
               "marzipan","meringues","midget gems","milk chocolate","millionaire’s shortbread","milk biscuits","milky way","mincemeat","mini eggs","minstrels","mints",
               "mint chocolate","mint fondants","munchies",
 
-              "macademia","shredded wheat cereal","milk powder","mixed nuts","muesli",
+              "macademia","milk powder","mixed nuts","muesli",
               "mackerel","monkfish","mussels",
               "mangetout","mango","mango pulp","melon","mixed berries","mixed stir fry vegetables","mixed vegetables","mushrooms",
 
@@ -34,8 +34,10 @@
               "mint tea",
 
 
-
               "~~~ TO DO : ~~~",
+              "MARROW", "MULBERRIES", "MUSTARD GREENS",
+              "MUTTON",
+              "MACE",
 
 
     ],
@@ -89,6 +91,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "amberjack",
+                  "substitution": true,
+                },
+                {
                   "word": "barramundi",
                   "substitution": true,
                 },
@@ -102,6 +108,14 @@
                 },
                 {
                   "word": "shark",
+                  "substitution": true,
+                },
+                {
+                  "word": "cobia",
+                  "substitution": true,
+                },
+                {
+                  "word": "wahoo",
                   "substitution": true,
                 },
               ],
@@ -1174,45 +1188,6 @@
               ],
           },
           {
-              "name": "shredded wheat cereal",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "malt wheats",
-                  "substitution": false,
-                },
-                {
-                  "word": "malted wheats",
-                  "substitution": false,
-                },
-                {
-                  "word": "shredded wheat",
-                  "substitution": false,
-                },
-                {
-                  "word": "shreddies",
-                  "substitution": false,
-                },
-                {
-                  "word": "weetabix",
-                  "substitution": false,
-                },
-                {
-                  "word": "malties cereal",
-                  "substitution": false,
-                },
-                {
-                  "word": "wheat chex",
-                  "substitution": false,
-                },
-                {
-                  "word": "wheat cereal",
-                  "substitution": false,
-                },
-              ],
-          },
-          {
               "name": "milk powder",
               "exclude": [
               ],
@@ -1379,6 +1354,10 @@
                 },
                 {
                   "word": "scallops",
+                  "substitution": true,
+                },
+                {
+                  "word": "cobia",
                   "substitution": true,
                 },
               ],
@@ -1720,7 +1699,23 @@
                   "substitution": true,
                 },
                 {
-                  "word": "wasabi",
+                  "word": "wasabi powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "powdered wasabi",
+                  "substitution": true,
+                },
+                {
+                  "word": "dried wasabi",
+                  "substitution": true,
+                },
+                {
+                  "word": "dry wasabi",
+                  "substitution": true,
+                },
+                {
+                  "word": "ground wasabi",
                   "substitution": true,
                 },
                 {
@@ -2069,7 +2064,11 @@
                   "substitution": true,
                 },
                 {
-                  "word": "wasabi",
+                  "word": "wasabi paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "karashi",
                   "substitution": true,
                 },
               ],
@@ -4963,7 +4962,7 @@
                 "substitution": true,
               },
               {
-                "word": "wasabi",
+                "word": "wasabi paste",
                 "substitution": true,
               },
               {
@@ -4972,6 +4971,10 @@
               },
               {
                 "word": "mustard powder",
+                "substitution": true,
+              },
+              {
+                "word": "karashi",
                 "substitution": true,
               },
             ],
