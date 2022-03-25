@@ -29,6 +29,7 @@
               "passion fruit puree",
               "plain flour",
               "perch",
+              "papaya",
               "peaches","pears","pickled onions","pickled vegetables","pickled walnuts",
               "passionfruit tea","peppermint syrup","pomegranate syrup",
               "pancakes","pine nut butter","poppadoms","pumpkin seed butter",
@@ -36,7 +37,10 @@
 
               "~~~ TO DO : ~~~",
               "PIKE",
-              "PHEASANT",
+
+              "partridge/grouse/cornish hen/cornish game hen/chicken/chukar/chakor",
+              "PHEASANT/guineafowl/goose/grouse/chicken/cornish hen/cornish game hen/turkey/chukar/chakor",
+              "PIGEON/pheasant",
 
     ],
 
@@ -44,7 +48,29 @@
     "ingredients": [
 
 
-
+          {
+              "name": "papaya",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mango",
+                  "substitution": true,
+                },
+                {
+                  "word": "melon",
+                  "substitution": true,
+                },
+                {
+                  "word": "cantaloupe",
+                  "substitution": true,
+                },
+                {
+                  "word": "pepper",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "pectin",
               "exclude": [
@@ -5522,6 +5548,18 @@
                 "word": "plum",
                 "substitution": true,
               },
+              {
+                "word": "mango",
+                "substitution": true,
+              },
+              {
+                "word": "cantaloupe",
+                "substitution": true,
+              },
+              {
+                "word": "melon",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -6311,6 +6349,10 @@
             "include": [
               {
                 "word": "peppercorns",
+                "substitution": true,
+              },
+              {
+                "word": "grains of paradise",
                 "substitution": true,
               },
             ],

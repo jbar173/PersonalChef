@@ -7,9 +7,10 @@
               "gooseberry mousse","green food colouring","gummy mix",
 
               "granola",
-              "gammon",
-              "galangal","garlic","grapes","grapefruit","green beans",
-              "garam masala","garlic pepper","garlic powder","green cardamom","ground cumin","ground ginger",
+              "goose barnacles",
+              "gammon","goat","goose","grouse","guineafowl",
+              "galangal","garlic","gooseberries","grapes","grapefruit","green beans",
+              "garam masala","garlic pepper","garlic powder","grains of paradise","green cardamom","ground cumin","ground ginger",
 
               "garlic and chilli oil","goose fat","ghee","grapeseed oil","gravy granules","green curry paste","green pesto","ground mace",
               "groundnut oil","guacamole",
@@ -17,7 +18,6 @@
               "ginger ale","ginger beer","grape syrup","green tea","green vegetable juice","grenadine syrup",
 
               "gnocchi","goat's milk","gyoza",
-
 
 
               "~~~ HALF DONE : ~~~",
@@ -30,12 +30,7 @@
 
               "ginger tea",
 
-
               "~~~ TO DO : ~~~",
-              "GOOSEBERRIES",
-              "GOOSENECK",
-              "GOAT", "GOOSE", "GUINEAFOWL",
-              "GOCHUGARU", "GRAINS OF PARADISE",
 
 
     ],
@@ -44,6 +39,231 @@
     "ingredients": [
 
 
+          {
+              "name": "gooseberries",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "fresh cranberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "redcurrants",
+                  "substitution": true,
+                },
+                {
+                  "word": "rhubarb",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapes",
+                  "substitution": true,
+                },
+                {
+                  "word": "apple",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "kiwi fruit",
+                  "substitution": true,
+                },
+                {
+                  "word": "elderberries",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "goose barnacles",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "percebes",
+                  "substitution": false,
+                },
+                {
+                  "word": "gooseneck",
+                  "substitution": false,
+                },
+                {
+                  "word": "goose neck barnacles",
+                  "substitution": false,
+                },
+                {
+                  "word": "goose-neck barnacles",
+                  "substitution": false,
+                },
+                {
+                  "word": "stalked barnacles",
+                  "substitution": false,
+                },
+                {
+                  "word": "clam",
+                  "substitution": true,
+                },
+                {
+                  "word": "crab",
+                  "substitution": true,
+                },
+                {
+                  "word": "lobster",
+                  "substitution": true,
+                },
+                {
+                  "word": "scallops",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "goat",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "lamb",
+                  "substitution": true,
+                },
+                {
+                  "word": "beef",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "grouse",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "partridge",
+                  "substitution": true,
+                },
+                {
+                  "word": "guinea fowl",
+                  "substitution": true,
+                },
+                {
+                  "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish game hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "goose",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gander",
+                  "substitution": false,
+                },
+                {
+                  "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "duck",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey",
+                  "substitution": true,
+                },
+                {
+                  "word": "guinea fowl",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "guinea fowl",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "guineafowl",
+                  "substitution": false,
+                },
+                {
+                  "word": "guinea hen",
+                  "substitution": false,
+                },
+                {
+                  "word": "pintade",
+                  "substitution": false,
+                },
+                {
+                  "word": "faraona",
+                  "substitution": false,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouse",
+                  "substitution": true,
+                },
+                {
+                  "word": "quail",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish game hen",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "grains of paradise",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "alligator pepper",
+                  "substitution": false,
+                },
+                {
+                  "word": "lemon pepper",
+                  "substitution": true,
+                },
+                {
+                  "word": "pepper",
+                  "substitution": true,
+                },
+                {
+                  "word": "black cardamom",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "green vegetable juice",
               "exclude": [
@@ -2527,6 +2747,14 @@
               {
                 "word": "grape",
                 "substitution": false,
+              },
+              {
+                "word": "jabuticaba",
+                "substitution": true,
+              },
+              {
+                "word": "gooseberries",
+                "substitution": true,
               },
             ],
           },

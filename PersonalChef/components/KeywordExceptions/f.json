@@ -3,8 +3,9 @@
     "key" : ["feta","fontina","fresh asiago",
              "fig jam","fig jelly","fig roll","fruit and nut chocolate","fruit cake","fruit jellies","fruit loaf","fudge",
              "filo pastry","flax seeds","flour","frosties",
+             "fresh bombay duck",
              "faggot",
-             "fiddleheads","fig","fresh coconut","fresh corn","fresh cranberries","fresh ginger","fresh pomegranate seeds","fresh quince",
+             "fiddleheads","fig","fresh coconut","fresh corn","fresh cranberries","fresh ginger","fresh horseradish","fresh pomegranate seeds","fresh quince",
 
              "fajita seasoning","fennel seeds","fish masala","fish seasoning","fresh basil","fresh chervil","fresh coriander","fresh marjoram","fresh mint",
              "fresh oregano","fresh parsley","fresh rosemary","fresh sage","fresh sorrel","fresh tarragon","fresh thyme","fenugreek leaves",
@@ -29,8 +30,6 @@
 
 
              "~~~ TO DO : ~~~",
-             "FRESH HORSERADISH",
-
 
 
     ],
@@ -39,6 +38,105 @@
     "ingredients": [
 
 
+          {
+              "name": "fresh horseradish",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "horseradish",
+                  "substitution": true,
+                },
+                {
+                  "word": "wasabi root",
+                  "substitution": true,
+                },
+                {
+                  "word": "black radish",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "fresh bombay duck",
+              "exclude": [
+                {
+                  "word": "pickle",
+                },
+                {
+                  "word": "dried",
+                },
+                {
+                  "word": "cured",
+                },
+                {
+                  "word": "salted",
+                },
+                {
+                  "word": "dry",
+                },
+                {
+                  "word": "crispy",
+                },
+                {
+                  "word": "crisp",
+                },
+              ],
+              "include": [
+                {
+                  "word": "bummalo",
+                  "substitution": false,
+                },
+                {
+                  "word": "bombil",
+                  "substitution": false,
+                },
+                {
+                  "word": "boomla",
+                  "substitution": false,
+                },
+                {
+                  "word": "bumla",
+                  "substitution": false,
+                },
+                {
+                  "word": "lutia",
+                  "substitution": false,
+                },
+                {
+                  "word": "loitta",
+                  "substitution": false,
+                },
+                {
+                  "word": "lizardfish",
+                  "substitution": false,
+                },
+                {
+                  "word": "pabda",
+                  "substitution": true,
+                },
+                {
+                  "word": "indian catfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "butter catfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "crappie",
+                  "substitution": true,
+                },
+                {
+                  "word": "sunfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "bluegill",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "fresh sorrel",
               "exclude": [
@@ -2200,6 +2298,22 @@
                 },
                 {
                   "word": "cherries",
+                  "substitution": true,
+                },
+                {
+                  "word": "bilberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "elderberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "lingonberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberries",
                   "substitution": true,
                 },
               ],

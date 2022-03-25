@@ -157,6 +157,10 @@
                   "word": "blueberries",
                   "substitution": true,
                 },
+                {
+                  "word": "boysenberries",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -2235,6 +2239,10 @@
                 "word": "plumcots",
                 "substitution": true,
               },
+              {
+                "word": "gooseberries",
+                "substitution": true,
+              },
             ],
           },
           {
@@ -2397,6 +2405,10 @@
               },
               {
                 "word": "nectarine",
+                "substitution": true,
+              },
+              {
+                "word": "mango",
                 "substitution": true,
               },
             ],

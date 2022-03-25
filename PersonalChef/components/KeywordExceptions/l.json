@@ -428,6 +428,10 @@
                 "word": "prawns",
                 "substitution": true,
               },
+              {
+                "word": "eel",
+                "substitution": true,
+              },
             ],
         },
         {
@@ -453,6 +457,10 @@
               },
               {
                 "word": "surimi",
+                "substitution": true,
+              },
+              {
+                "word": "goose barnacles",
                 "substitution": true,
               },
             ],
@@ -1454,6 +1462,10 @@
               },
               {
                 "word": "red meat",
+                "substitution": true,
+              },
+              {
+                "word": "goat",
                 "substitution": true,
               },
             ],

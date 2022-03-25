@@ -27,7 +27,7 @@
              "~~~ HALF DONE : ~~~",
              "date paste", "dried banana",
              "dried black beans", "dried moong dal", "dried red lentils", "dried split peas",
-             "dab",
+             "dab","dried fish",
              "dried lime",
              "dripping", "duck fat",
 
@@ -41,7 +41,61 @@
     "ingredients": [
 
 
-
+        {
+            "name": "dried fish",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dried bombay duck",
+                "substitution": true,
+              },
+              {
+                "word": "dry bombay duck",
+                "substitution": true,
+              },
+              {
+                "word": "dried shrimp",
+                "substitution": true,
+              },
+              {
+                "word": "dry shrimp",
+                "substitution": true,
+              },
+              {
+                "word": "dried herring",
+                "substitution": true,
+              },
+              {
+                "word": "dry herring",
+                "substitution": true,
+              },
+              {
+                "word": "dried cod",
+                "substitution": true,
+              },
+              {
+                "word": "dry cod",
+                "substitution": true,
+              },
+              {
+                "word": "dried and salted cod",
+                "substitution": true,
+              },
+              {
+                "word": "dried salted cod",
+                "substitution": true,
+              },
+              {
+                "word": "salted and dried cod",
+                "substitution": true,
+              },
+              {
+                "word": "salted dried cod",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "dopiaza paste",
             "exclude": [
@@ -3574,6 +3628,10 @@
               {
                 "word": "mallard",
                 "substitution": false,
+              },
+              {
+                "word": "goose",
+                "substitution": true,
               },
             ],
         },

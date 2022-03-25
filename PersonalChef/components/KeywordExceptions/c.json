@@ -16,11 +16,11 @@
               "caviar","clams","cod","cockles","crab","crab stick","crayfish",
               "chicken","chicken mince","cured sausage/sliced meat",
 
-              "cabbage","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli pepper","clementine",
+              "cabbage","cantaloupe","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli pepper","clementine",
               "collard greens","courgette","cucumber",
 
-              "cajun spice","caraway seeds","cayenne","celery salt","celery seeds","chana masala spice blend","chicken seasoning","chilli flakes","chilli powder",
-              "chinese five spice","chives","choi sum","cinnamon","cloves","coriander seeds","cress","crispy seaweed","cumin seeds",
+              "cajun spice","chamomile flowers","caraway seeds","cayenne","celery salt","celery seeds","chana masala spice blend","chicken seasoning","chilli flakes",
+              "chilli powder","chinese five spice","chives","choi sum","cinnamon","cloves","coriander seeds","cress","crispy seaweed","cumin seeds",
 
               "canned chipotles","cannellini beans","cheddar cheese soup","chicken soup","chickpeas","cream of tomato soup",
 
@@ -38,14 +38,13 @@
               "cake mix","cherry jam","cherry jelly","chocolate cornflake nests","chocolate sponge","clotted cream","crystallised ginger",
               "catfish","char","cobia","coley","cuttlefish",
               "corned beef",
+              "cassava root",
               "caesar dressing","char siu sauce","chilli chutney relish","chilli infused oil","chimichurri","coriander puree",
               "chamomile tea","carob syrup","carrot juice","chai tea","cherry tea","coca cola","cookie dough milkshake","cranberry tea",
               "chia seed butter","coconut butter",
 
 
               "~~~ TO DO : ~~~",
-              "CANTALOUPE", "CHAMOMILE",
-
 
             ],
 
@@ -54,6 +53,206 @@
 
 
 
+        {
+            "name": "cantaloupe",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "rockmelon",
+                "substitution": false,
+              },
+              {
+                "word": "spanspek",
+                "substitution": false,
+              },
+              {
+                "word": "muskmelon",
+                "substitution": true,
+              },
+              {
+                "word": "crenshaw",
+                "substitution": true,
+              },
+              {
+                "word": "melon",
+                "substitution": true,
+              },
+              {
+                "word": "canary",
+                "substitution": true,
+              },
+              {
+                "word": "watermelon",
+                "substitution": true,
+              },
+              {
+                "word": "mango",
+                "substitution": true,
+              },
+              {
+                "word": "papaya",
+                "substitution": true,
+              },
+              {
+                "word": "peach",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "chamomile flowers",
+            "exclude": [
+              {
+                "word": "sparkling",
+              },
+              {
+                "word": "bubbly",
+              },
+              {
+                "word": "fizz",
+              },
+              {
+                "word": "seltzer",
+              },
+              {
+                "word": "soda",
+              },
+              {
+                "word": "tonic",
+              },
+              {
+                "word": "lemonade",
+              },
+              {
+                "word": "gin",
+              },
+              {
+                "word": "vodka",
+              },
+              {
+                "word": "wine",
+              },
+              {
+                "word": "brandy",
+              },
+              {
+                "word": "rum",
+              },
+              {
+                "word": "mead",
+              },
+              {
+                "word": "cider",
+              },
+              {
+                "word": "shandy",
+              },
+              {
+                "word": "beer",
+              },
+              {
+                "word": "lager",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "liquor",
+              },
+              {
+                "word": "honey",
+              },
+              {
+                "word": "honea",
+              },
+              {
+                "word": "curd",
+              },
+              {
+                "word": "jelly",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "pastilles",
+              },
+              {
+                "word": "candy",
+              },
+              {
+                "word": "sweets",
+              },
+              {
+                "word": "vinegar",
+              },
+              {
+                "word": "oil",
+              },
+            ],
+            "include": [
+              {
+                "word": "chamomile tea",
+                "substitution": true,
+              },
+              {
+                "word": "chamomile",
+                "substitution": false,
+              },
+              {
+                "word": "camomile",
+                "substitution": false,
+              },
+              {
+                "word": "borage flowers",
+                "substitution": true,
+              }
+              {
+                "word": "carnation petals",
+                "substitution": true,
+              },
+              {
+                "word": "elderflower",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "cassava root",
+            "exclude": [
+              {
+                "word": "flour",
+              },
+              {
+                "word": "ground",
+              },
+              {
+                "word": "meal",
+              },
+            ],
+            "include": [
+              {
+                "word": "cassava",
+                "substitution": false,
+              },
+              {
+                "word": "yuca",
+                "substitution": false,
+              },
+              {
+                "word": "breadfruit",
+                "substitution": true,
+              },
+              {
+                "word": "plantain",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "cobia",
             "exclude": [
@@ -951,6 +1150,10 @@
             ],
             "include": [
               {
+                "word": "swai",
+                "substitution": true,
+              },
+              {
                 "word": "snapper",
                 "substitution": true,
               },
@@ -964,6 +1167,10 @@
               },
               {
                 "word": "tilapia",
+                "substitution": true,
+              },
+              {
+                "word": "eel",
                 "substitution": true,
               },
             ],
@@ -1220,6 +1427,10 @@
               },
               {
                 "word": "mussels",
+                "substitution": true,
+              },
+              {
+                "word": "goose barnacles",
                 "substitution": true,
               },
             ],
@@ -3464,6 +3675,10 @@
               },
               {
                 "word": "scallops",
+                "substitution": true,
+              },
+              {
+                "word": "goose barnacles",
                 "substitution": true,
               },
             ],
@@ -6632,6 +6847,38 @@
               "word": "turkey",
               "substitution": true,
             },
+            {
+              "word": "guinea fowl",
+              "substitution": true,
+            },
+            {
+              "word": "grouse",
+              "substitution": true,
+            },
+            {
+              "word": "pheasant",
+              "substitution": true,
+            },
+            {
+              "word": "quail",
+              "substitution": true,
+            },
+            {
+              "word": "cornish hen",
+              "substitution": true,
+            },
+            {
+              "word": "cornish game hen",
+              "substitution": true,
+            },
+            {
+              "word": "rabbit",
+              "substitution": true,
+            },
+            {
+              "word": "partridge",
+              "substitution": true,
+            },
           ],
         },
         {
@@ -9289,6 +9536,18 @@
               },
               {
                 "word": "pecan",
+                "substitution": true,
+              },
+              {
+                "word": "breadnut",
+                "substitution": true,
+              },
+              {
+                "word": "maya nut",
+                "substitution": true,
+              },
+              {
+                "word": "breadfruit",
                 "substitution": true,
               },
             ],

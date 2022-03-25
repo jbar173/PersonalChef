@@ -677,6 +677,14 @@
             ],
             "include": [
               {
+                "word": "fresh horseradish",
+                "substitution": true,
+              },
+              {
+                "word": "wasabi root",
+                "substitution": true,
+              },
+              {
                 "word": "mustard seeds",
                 "substitution": true,
               },
@@ -690,6 +698,10 @@
               },
               {
                 "word": "wasabi paste",
+                "substitution": true,
+              },
+              {
+                "word": "chrain",
                 "substitution": true,
               },
               {

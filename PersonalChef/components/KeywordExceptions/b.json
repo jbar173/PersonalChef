@@ -9,8 +9,11 @@
              "baking powder","baking soda","batter mix","bran flakes","brazil nuts","breadcrumbs","breadsticks","bread loaf","bread wraps",
              "basa","branzino",
              "beef","beef mince","black pudding","burger",
-             "banana","beetroot","beet","bell pepper","beansprouts","bitter melon","blackberries","blueberries","broad beans","broccoli","brussel sprouts","butternut squash",
-             "baharat seasoning","bay leaf","beetroot powder","biryani spice blend","black cardamom","bouquet garni",
+
+             "banana","beetroot","beet","bell pepper","beansprouts","bilberries","bitter melon","blackberries","blueberries","boysenberries","breadfruit","broad beans",
+             "broccoli","brussel sprouts","butternut squash",
+
+             "baharat seasoning","bay leaf","beetroot powder","biryani spice blend","black cardamom","borage flowers","borage leaves","bouquet garni","burnet",
              "baked beans","black beans","black-eyed peas","black cherries","borlotti beans","butter beans",
 
              "baconnaise","balsamic vinegar","balti paste","barbeque sauce","bearnaise","beef stock","beetroot pesto","bhuna paste","biryani paste","blue cheese dressing",
@@ -27,6 +30,7 @@
              "bulgur",
              "barramundi", "bass", "bluefish", "breaded fish fillets", "brill",
              "bacon",
+             "blackcurrants",
              "barbeque seasoning", "bonito flakes",
              "basil oil", "basil puree", "black bean sauce", "borage seed oil",
              "berry cordial", "blackcurrant tea",
@@ -37,11 +41,6 @@
 
              "bread dough", "buckwheat",
 
-             "BILBERRIES", "BOYSENBERRIES", "BREAD FRUIT",
-             "BOMBAY DUCK",
-             "BURNET",
-
-
 
     ],
 
@@ -49,6 +48,276 @@
     "ingredients": [
 
 
+      {
+          "name": "blackcurrants",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "elderberries",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "bilberries",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "whortleberries",
+              "substitution": true,
+            },
+            {
+              "word": "whinberries",
+              "substitution": true,
+            },
+            {
+              "word": "windberries",
+              "substitution": true,
+            },
+            {
+              "word": "blaeberries",
+              "substitution": true,
+            },
+            {
+              "word": "juneberries",
+              "substitution": true,
+            },
+            {
+              "word": "huckleberries",
+              "substitution": true,
+            },
+            {
+              "word": "fresh cranberries",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "boysenberries",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "boysen berries",
+              "substitution": false,
+            },
+            {
+              "word": "blackberries",
+              "substitution": true,
+            },
+            {
+              "word": "raspberries",
+              "substitution": true,
+            },
+            {
+              "word": "dewberries",
+              "substitution": true,
+            },
+            {
+              "word": "loganberries",
+              "substitution": true,
+            },
+            {
+              "word": "logan berries",
+              "substitution": true,
+            },
+            {
+              "word": "mulberries",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "breadfruit",
+          "exclude": [
+            {
+              "word": "flour",
+            },
+          ],
+          "include": [
+            {
+              "word": "bread fruit",
+              "substitution": false,
+            },
+            {
+              "word": "artichoke",
+              "substitution": true,
+            },
+            {
+              "word": "chestnut",
+              "substitution": true,
+            },
+            {
+              "word": "plantain",
+              "substitution": true,
+            },
+            {
+              "word": "potato",
+              "substitution": true,
+            },
+            {
+              "word": "sweet potato",
+              "substitution": true,
+            },
+            {
+              "word": "cassava root",
+              "substitution": true,
+            },
+            {
+              "word": "yuca root",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "borage flowers",
+          "exclude": [
+            {
+              "word": "sparkling",
+            },
+            {
+              "word": "bubbly",
+            },
+            {
+              "word": "fizz",
+            },
+            {
+              "word": "seltzer",
+            },
+            {
+              "word": "soda",
+            },
+            {
+              "word": "tonic",
+            },
+            {
+              "word": "lemonade",
+            },
+            {
+              "word": "gin",
+            },
+            {
+              "word": "vodka",
+            },
+            {
+              "word": "wine",
+            },
+            {
+              "word": "brandy",
+            },
+            {
+              "word": "rum",
+            },
+            {
+              "word": "mead",
+            },
+            {
+              "word": "cider",
+            },
+            {
+              "word": "shandy",
+            },
+            {
+              "word": "beer",
+            },
+            {
+              "word": "lager",
+            },
+            {
+              "word": "liqueur",
+            },
+            {
+              "word": "liquor",
+            },
+            {
+              "word": "honey",
+            },
+            {
+              "word": "honea",
+            },
+            {
+              "word": "curd",
+            },
+            {
+              "word": "jelly",
+            },
+            {
+              "word": "cake",
+            },
+            {
+              "word": "bar",
+            },
+            {
+              "word": "pastilles",
+            },
+            {
+              "word": "candy",
+            },
+            {
+              "word": "sweets",
+            },
+            {
+              "word": "vinegar",
+            },
+            {
+              "word": "oil",
+            },
+          ],
+          "include": [
+            {
+              "word": "borage flower",
+              "substitution": false,
+            },
+            {
+              "word": "starflower",
+              "substitution": false,
+            },
+            {
+              "word": "chamomile flowers",
+              "substitution": true,
+            },
+            {
+              "word": "carnation petals",
+              "substitution": true,
+            },
+            {
+              "word": "elderflower",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "borage leaves",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "borage leaf",
+              "substitution": false,
+            },
+            {
+              "word": "maidenhair fern",
+              "substitution": true,
+            },
+            {
+              "word": "burnet",
+              "substitution": true,
+            },
+          ],
+      },
+      {
+          "name": "burnet",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "borage leaves",
+              "substitution": true,
+            },
+          ],
+      },
       {
           "name": "belgian waffles",
           "exclude": [
@@ -2679,6 +2948,10 @@
               "word": "white cardamon",
               "substitution": true,
             },
+            {
+              "word": "grains of paradise",
+              "substitution": true,
+            },
           ],
       },
       {
@@ -2883,6 +3156,14 @@
             },
             {
               "word": "acai berries",
+              "substitution": true,
+            },
+            {
+              "word": "elderberries",
+              "substitution": true,
+            },
+            {
+              "word": "lingonberries",
               "substitution": true,
             },
           ],
@@ -4284,6 +4565,22 @@
                 {
                   "word": "flat iron",
                   "substitution": false,
+                },
+                {
+                  "word": "goat",
+                  "substitution": true,
+                },
+                {
+                  "word": "rhea",
+                  "substitution": true,
+                },
+                {
+                  "word": "emu",
+                  "substitution": true,
+                },
+                {
+                  "word": "ostrich",
+                  "substitution": true,
                 },
               ],
           },

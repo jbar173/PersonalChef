@@ -3,7 +3,8 @@
     "key" : ["jagermeister",
              "jarlsberg",
              "jaffa cakes","jelly beans",
-             "jerusalem artichoke",
+             "john dory",
+             "jerusalem artichoke","jicama",
              "jerk seasoning mix","juniper berries",
              "jalfrezi paste","jerk sauce",
              "jasmine tea",
@@ -15,14 +16,144 @@
              "jackfruit",
 
              "~~~ TO DO : ~~~",
-             "jellied eels", "john dory",
-             "JICAMA",
+             "jellied eels",
+
     ],
 
 
     "ingredients": [
 
 
+        {
+            "name": "john dory",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "st pierre fish",
+                "substitution": false,
+              },
+              {
+                "word": "st. pierre fish",
+                "substitution": false,
+              },
+              {
+                "word": "st pierre filet",
+                "substitution": false,
+              },
+              {
+                "word": "st. pierre filet",
+                "substitution": false,
+              },
+              {
+                "word": "st pierre fillet",
+                "substitution": false,
+              },
+              {
+                "word": "st. pierre fillet",
+                "substitution": false,
+              },
+              {
+                "word": "fish st pierre",
+                "substitution": false,
+              },
+              {
+                "word": "fish st. pierre",
+                "substitution": false,
+              },
+              {
+                "word": "fillets st pierre",
+                "substitution": false,
+              },
+              {
+                "word": "fillets st. pierre",
+                "substitution": false,
+              },
+              {
+                "word": "filets st pierre",
+                "substitution": false,
+              },
+              {
+                "word": "filets st. pierre",
+                "substitution": false,
+              },
+              {
+                "word": "fillet st pierre",
+                "substitution": false,
+              },
+              {
+                "word": "fillet st. pierre",
+                "substitution": false,
+              },
+              {
+                "word": "filet st pierre",
+                "substitution": false,
+              },
+              {
+                "word": "filet st. pierre",
+                "substitution": false,
+              },
+              {
+                "word": "fish sanpjer",
+                "substitution": false,
+              },
+              {
+                "word": "peter's fish",
+                "substitution": false,
+              },
+              {
+                "word": "peters fish",
+                "substitution": false,
+              },
+            ],
+        },
+        {
+            "name": "jicama",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "chinese turnip",
+                "substitution": false,
+              },
+              {
+                "word": "mexican water chestnut",
+                "substitution": false,
+              },
+              {
+                "word": "mexican potato",
+                "substitution": false,
+              },
+              {
+                "word": "chinese potato",
+                "substitution": false,
+              },
+              {
+                "word": "yam bean",
+                "substitution": false,
+              },
+              {
+                "word": "water chestnuts",
+                "substitution": true,
+              },
+              {
+                "word": "water chestnut",
+                "substitution": true,
+              },
+              {
+                "word": "jerusalem artichoke",
+                "substitution": true,
+              },
+              {
+                "word": "potato",
+                "substitution": true,
+              },
+              {
+                "word": "turnip",
+                "substitution": true,
+              },
+            ],
+        },
         {
             "name": "jackfruit",
             "exclude": [

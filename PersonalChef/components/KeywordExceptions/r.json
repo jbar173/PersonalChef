@@ -26,7 +26,7 @@
 
               "~~~ TO DO : ~~~",
               "RADICCHIO", "RED CABBAGE",
-              "RABBIT",
+              "RABBIT/chicken/poussin",
 
     ],
 
@@ -727,6 +727,14 @@
                   "word": "raspberries",
                   "substitution": true,
                 },
+                {
+                  "word": "lingonberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberries",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -740,6 +748,10 @@
                 },
                 {
                   "word": "cooking apple",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberries",
                   "substitution": true,
                 },
               ],

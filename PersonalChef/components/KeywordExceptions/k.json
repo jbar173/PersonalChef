@@ -663,6 +663,14 @@
                   "word": "raspberries",
                   "substitution": true,
                 },
+                {
+                  "word": "mango",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberries",
+                  "substitution": true,
+                },
               ],
           },
 

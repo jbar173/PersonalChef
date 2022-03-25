@@ -11,8 +11,8 @@
               "mackerel","monkfish","mussels",
               "mangetout","mango","mango pulp","melon","mixed berries","mixed stir fry vegetables","mixed vegetables","mushrooms",
 
-              "maca powder","mango masala spice blend","mango powder","mint","mixed herbs","mixed spice","moroccan seasoning","mulled wine spice","mustard powder",
-              "mustard seeds",
+              "maca powder","mango masala spice blend","mango powder","mint","mixed herbs","mixed spice","moroccan seasoning","mulled wine spice",
+              "mustard powder","mustard seeds",
 
               "mandarins","mixed beans","mushroom antipasti","mushy peas",
 
@@ -30,6 +30,7 @@
               "mixed fruit flavoured spirit/liqueur",
               "m&ms",
               "mahi mahi","meagre",
+              "marigold flowers",
               "mandarin orange stir fry sauce", "mole sauce", "mushroom cooking sauce",
               "mint tea",
 
@@ -46,6 +47,21 @@
     "ingredients": [
 
 
+          {
+              "name": "marigold flowers",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "marigold",
+                  "substitution": false,
+                },
+                {
+                  "word": "saffron",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "mughlai paste",
               "exclude": [
@@ -1741,6 +1757,10 @@
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "fresh horseradish",
+                  "substitution": true,
+                },
                 {
                   "word": "horseradish",
                   "substitution": true,
@@ -4234,20 +4254,48 @@
               ],
               "include": [
                 {
-                  "word": "honeydew",
-                  "substitution": false,
+                  "word": "honeymelon",
+                  "substitution": true,
                 },
                 {
                   "word": "cantaloupe",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "rockmelon",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "spanspek",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "muskmelon",
+                  "substitution": true,
+                },
+                {
+                  "word": "crenshaw",
+                  "substitution": true,
+                },
+                {
+                  "word": "canary",
+                  "substitution": true,
+                },
+                {
+                  "word": "watermelon",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango",
+                  "substitution": true,
+                },
+                {
+                  "word": "papaya",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach",
+                  "substitution": true,
                 },
               ],
           },
@@ -4658,6 +4706,34 @@
                 {
                   "word": "mangoes",
                   "substitution": false,
+                },
+                {
+                  "word": "melon",
+                  "substitution": true,
+                },
+                {
+                  "word": "cantaloupe",
+                  "substitution": true,
+                },
+                {
+                  "word": "peach",
+                  "substitution": true,
+                },
+                {
+                  "word": "nectarine",
+                  "substitution": true,
+                },
+                {
+                  "word": "apricot",
+                  "substitution": true,
+                },
+                {
+                  "word": "papaya",
+                  "substitution": true,
+                },
+                {
+                  "word": "kiwi fruit",
+                  "substitution": true,
                 },
               ],
           },

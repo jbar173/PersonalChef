@@ -22,8 +22,8 @@
 
               "~~~ TO DO : ~~~",
 
-              "ostrich",
-              "OCTOPUS","OYSTERS",
+              "ostrich/turkey/emu/rhea/beef",
+              "OCTOPUS/eel(sub)","OYSTERS",
 
     ],
 
@@ -1117,6 +1117,10 @@
                 },
                 {
                   "word": "larb",
+                  "substitution": false,
+                },
+                {
+                  "word": "giblets",
                   "substitution": false,
                 },
               ],

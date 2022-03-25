@@ -26,6 +26,7 @@
 
               "~~~ TO DO : ~~~",
               "TARO ROOT",
+              "tonic",
 
 
     ],
@@ -2210,6 +2211,26 @@
                 },
                 {
                   "word": "poussin",
+                  "substitution": true,
+                },
+                {
+                  "word": "goose",
+                  "substitution": true,
+                },
+                {
+                  "word": "guinea fowl",
+                  "substitution": true,
+                },
+                {
+                  "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "unturkey",
+                  "substitution": true,
+                },
+                {
+                  "word": "tofurkey",
                   "substitution": true,
                 },
               ],

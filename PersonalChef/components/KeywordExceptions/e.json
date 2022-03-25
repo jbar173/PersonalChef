@@ -2,7 +2,8 @@
 
     "key" : ["elderflower flavoured spirit/liqueur",
              "emmental","epoisses",
-             "edamame beans","endive",
+             "eel",
+             "edamame beans","elderberries","endive",
              "evaporated milk",
              "enchilada sauce","english mustard","extra virgin olive oil","ezme paste",
              "earl grey tea",
@@ -13,7 +14,6 @@
 
 
              "~~~ TO DO : ~~~",
-             "EEL","ELDERBERRIES",
 
     ],
 
@@ -21,7 +21,70 @@
     "ingredients": [
 
 
-
+          {
+              "name": "elderberries",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "blackcurrants",
+                  "substitution": true,
+                },
+                {
+                  "word": "fresh cranberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "lingonberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "blackberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberries",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
+              "name": "eel",
+              "exclude": [
+                {
+                  "word": "sauce",
+                },
+                {
+                  "word": "smoked",
+                },
+              ],
+              "include": [
+                {
+                  "word": "unagi",
+                  "substitution": true,
+                },
+                {
+                  "word": "anago",
+                  "substitution": true,
+                },
+                {
+                  "word": "catfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "octopus",
+                  "substitution": true,
+                },
+                {
+                  "word": "lobster",
+                  "substitution": true,
+                },
+                {
+                  "word": "salmon",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "edamame beans",
               "exclude": [

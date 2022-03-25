@@ -39,6 +39,7 @@
               "self raising flour", "spelt flour",
               "SALSIFY","SKIRRET","STARFRUIT",
               "SKATE","SNAILS/abalone/perlemoen","SWAI",
+              "SQUAB/cornish game hen/cornish hen/poussin",
 
     ],
 
@@ -1331,6 +1332,10 @@
                   "word": "sturgeon",
                   "substitution": true,
                 },
+                {
+                  "word": "eel",
+                  "substitution": true,
+                },
               ],
           },
           {
@@ -1352,6 +1357,10 @@
                 },
                 {
                   "word": "crab",
+                  "substitution": true,
+                },
+                {
+                  "word": "goose barnacles",
                   "substitution": true,
                 },
               ],
@@ -1888,6 +1897,10 @@
                 },
                 {
                   "word": "kiwi fruit",
+                  "substitution": true,
+                },
+                {
+                  "word": "gooseberries",
                   "substitution": true,
                 },
               ],
@@ -5653,6 +5666,10 @@
               },
               {
                 "word": "orache",
+                "substitution": true,
+              },
+              {
+                "word": "borage",
                 "substitution": true,
               },
             ],
