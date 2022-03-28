@@ -18,6 +18,7 @@
 
           {
               "name": "quinoa",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -65,6 +66,7 @@
           },
           {
             "name": "quinoa milk",
+            "type": "", 
             "exclude": [
             ],
             "include": [
@@ -100,6 +102,7 @@
           },
           {
               "name": "quince jelly",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -131,6 +134,7 @@
           },
           {
               "name": "quince paste",
+              "type": "", 
               "exclude": [
               ],
               "include": [

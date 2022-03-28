@@ -10,7 +10,8 @@
              "egg","egg replacer","egg whites",
 
              "~~~ HALF DONE : ~~~",
-             "edam","elderflower cordial",
+             "edam",
+             "elderflower cordial",
 
 
              "~~~ TO DO : ~~~",
@@ -23,6 +24,7 @@
 
           {
               "name": "elderberries",
+              "type": "fruit",
               "exclude": [
               ],
               "include": [
@@ -50,6 +52,7 @@
           },
           {
               "name": "eel",
+              "type": "",
               "exclude": [
                 {
                   "word": "sauce",
@@ -65,6 +68,10 @@
                 },
                 {
                   "word": "anago",
+                  "substitution": true,
+                },
+                {
+                  "word": "kingklip",
                   "substitution": true,
                 },
                 {
@@ -87,6 +94,7 @@
           },
           {
               "name": "edamame beans",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -118,6 +126,7 @@
           },
           {
               "name": "evaporated milk",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -137,6 +146,7 @@
           },
           {
               "name": "enchilada sauce",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -156,6 +166,7 @@
           },
           {
               "name": "english mustard",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -187,6 +198,7 @@
           },
           {
               "name": "ezme paste",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -206,6 +218,7 @@
           },
           {
               "name": "earl grey tea",
+              "type": "",
               "exclude": [
                 {
                   "word": "biscuit",
@@ -263,6 +276,7 @@
           },
           {
               "name": "egg replacer",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -302,6 +316,7 @@
           },
           {
               "name": "egg whites",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -329,6 +344,7 @@
           },
           {
               "name": "epoisses",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -340,6 +356,7 @@
           },
           {
               "name": "extra virgin olive oil",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -351,6 +368,7 @@
           },
           {
               "name": "elderflower cordial",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -370,6 +388,7 @@
           },
           {
               "name": "endive",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -381,6 +400,7 @@
           },
           {
               "name": "elderflower flavoured spirit/liqueur",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -460,6 +480,7 @@
           },
           {
             "name": "edam",
+            "type": "",
             "exclude": [
               {
                 "word": "edamame",
@@ -474,6 +495,7 @@
           },
           {
             "name": "egg",
+            "type": "",
             "exclude": [
               {
                 "word": "whole egg mayonnaise",
@@ -655,6 +677,7 @@
           },
           {
             "name": "emmental",
+            "type": "",
             "exclude": [
             ],
             "include": [

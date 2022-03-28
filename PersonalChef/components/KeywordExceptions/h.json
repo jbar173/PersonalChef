@@ -20,8 +20,6 @@
 
              "~~~ TO DO : ~~~",
 
-
-
     ],
 
 
@@ -30,6 +28,7 @@
 
         {
             "name": "hemp seed butter",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -73,6 +72,7 @@
         },
         {
             "name": "hazelnut butter",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -92,6 +92,7 @@
         },
         {
             "name": "hundreds and thousands",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -119,6 +120,7 @@
         },
         {
             "name": "honeycomb",
+            "type": "",
             "exclude": [
               {
                 "word": "sticky",
@@ -161,6 +163,7 @@
         },
         {
             "name": "honey",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -204,6 +207,7 @@
         },
         {
             "name": "haribo",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -223,6 +227,7 @@
         },
         {
             "name": "hemp seeds",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -242,6 +247,7 @@
         },
         {
             "name": "haddock",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -293,6 +299,7 @@
         },
         {
             "name": "hake",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -336,6 +343,7 @@
         },
         {
             "name": "halibut",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -391,10 +399,15 @@
                 "word": "branzino",
                 "substitution": true,
               },
+              {
+                "word": "john dory",
+                "substitution": true,
+              },
             ],
         },
         {
             "name": "herring",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -422,6 +435,7 @@
         },
         {
             "name": "haggis",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -437,6 +451,7 @@
         },
         {
             "name": "haslet",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -448,6 +463,7 @@
         },
         {
             "name": "hot paprika",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -495,6 +511,7 @@
         },
         {
             "name": "haricot beans",
+            "type": "",
             "exclude": [
               {
                 "word": "vert",
@@ -532,6 +549,7 @@
         },
         {
             "name": "hemp oil",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -563,6 +581,7 @@
         },
         {
             "name": "hollandaise",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -590,6 +609,7 @@
         },
         {
             "name": "honey mustard dressing",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -673,6 +693,7 @@
         },
         {
             "name": "horseradish",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -716,6 +737,7 @@
         },
         {
             "name": "hot chocolate",
+            "type": "",
             "exclude": [
               {
                 "word": "cocoa bean",
@@ -737,6 +759,7 @@
         },
         {
             "name": "hazelnut milk",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -780,6 +803,7 @@
         },
         {
             "name": "hazelnut oil",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -895,6 +919,7 @@
         },
         {
             "name": "horlicks",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -906,6 +931,7 @@
         },
         {
             "name": "honey flavoured spirit/liqueur",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1017,6 +1043,7 @@
         },
         {
             "name": "hoisin sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1048,6 +1075,7 @@
         },
         {
             "name": "honey barbeque sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1059,6 +1087,7 @@
         },
         {
           "name": "hemp milk",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1110,6 +1139,7 @@
         },
         {
             "name": "ham",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1133,6 +1163,7 @@
         },
         {
             "name": "herbes de provence",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1144,6 +1175,7 @@
         },
         {
             "name": "hot curry paste",
+            "type": "",
             "exclude": [
 
             ],
@@ -1584,6 +1616,7 @@
         },
         {
             "name": "hummus",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1603,6 +1636,7 @@
         },
         {
             "name": "harissa",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1634,6 +1668,7 @@
         },
         {
             "name": "hot dog",
+            "type": "",
             "exclude": [
               {
                 "word": "hot dog bun",
@@ -1663,7 +1698,209 @@
         },
         {
             "name": "honey",
+            "type": "",
             "exclude": [
+              {
+                "word": "pie",
+              },
+              {
+                "word": "bake",
+              },
+              {
+                "word": "cake",
+              },
+              {
+                "word": "sponge",
+              },
+              {
+                "word": "tart",
+              },
+              {
+                "word": "bar",
+              },
+              {
+                "word": "ball",
+              },
+              {
+                "word": "crispy",
+              },
+              {
+                "word": "crunch",
+              },
+              {
+                "word": "museli",
+              },
+              {
+                "word": "sauce",
+              },
+              {
+                "word": "vinegar",
+              },
+              {
+                "word": "oil",
+              },
+              {
+                "word": "chutney",
+              },
+              {
+                "word": "spread",
+              },
+              {
+                "word": "butter",
+              },
+              {
+                "word": "jam",
+              },
+              {
+                "word": "preserve",
+              },
+              {
+                "word": "conserve",
+              },
+              {
+                "word": "jelly",
+              },
+              {
+                "word": "tea",
+              },
+              {
+                "word": "sparkling",
+              },
+              {
+                "word": "bubbly",
+              },
+              {
+                "word": "fizz",
+              },
+              {
+                "word": "seltzer",
+              },
+              {
+                "word": "soda",
+              },
+              {
+                "word": "tonic",
+              },
+              {
+                "word": "lemonade",
+              },
+              {
+                "word": "gin",
+              },
+              {
+                "word": "vodka",
+              },
+              {
+                "word": "wine",
+              },
+              {
+                "word": "brandy",
+              },
+              {
+                "word": "rum",
+              },
+              {
+                "word": "mead",
+              },
+              {
+                "word": "cider",
+              },
+              {
+                "word": "shandy",
+              },
+              {
+                "word": "beer",
+              },
+              {
+                "word": "ale",
+              },
+              {
+                "word": "lager",
+              },
+              {
+                "word": "liqueur",
+              },
+              {
+                "word": "liquor",
+              },
+              {
+                "word": "spirit",
+              },
+              {
+                "word": "dried",
+              },
+              {
+                "word": "chip",
+              },
+              {
+                "word": "dessert",
+              },
+              {
+                "word": "cookie",
+              },
+              {
+                "word": "biscuit",
+              },
+              {
+                "word": "shortbread",
+              },
+              {
+                "word": "cheesecake",
+              },
+              {
+                "word": "loaf",
+              },
+              {
+                "word": "pudding",
+              },
+              {
+                "word": "chocolate",
+              },
+              {
+                "word": "cocoa",
+              },
+              {
+                "word": "bonbon",
+              },
+              {
+                "word": "sweets",
+              },
+              {
+                "word": "candied",
+              },
+              {
+                "word": "candy",
+              },
+              {
+                "word": "fudge",
+              },
+              {
+                "word": "cream",
+              },
+              {
+                "word": "icecream",
+              },
+              {
+                "word": "ice cream",
+              },
+              {
+                "word": "gelato",
+              },
+              {
+                "word": "curd",
+              },
+              {
+                "word": "yoghurt",
+              },
+              {
+                "word": "yogurt",
+              },
+              {
+                "word": "muller",
+              },
+              {
+                "word": "custard",
+              },
               {
                 "word": "sauce",
               },
@@ -1712,12 +1949,6 @@
               {
                 "word": "apricot",
               },
-              {
-                "word": "yoghurt",
-              },
-              {
-                "word": "yogurt",
-              },
             ],
             "include": [
 
@@ -1725,6 +1956,7 @@
         },
         {
             "name": "halloumi",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1736,6 +1968,7 @@
         },
         {
           "name": "havarti",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1795,6 +2028,7 @@
         },
         {
           "name": "hazelnuts",
+          "type": "",
           "exclude": [
             {
               "word": "oil",

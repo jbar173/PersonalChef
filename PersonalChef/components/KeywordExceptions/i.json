@@ -20,6 +20,7 @@
 
           {
             "name": "iced gems",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -47,6 +48,7 @@
           },
           {
             "name": "italian seasoning",
+            "type": "",
             "exclude": [
               {
                 "word": "spirit",
@@ -93,6 +95,7 @@
           },
           {
             "name": "italian dressing",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -128,6 +131,7 @@
           },
           {
             "name": "iced coffee",
+            "type": "",
             "exclude": [
               {
                 "word": "granules",
@@ -235,6 +239,7 @@
           },
           {
             "name": "ice cream",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -282,6 +287,7 @@
           },
           {
             "name": "ice lolly",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -329,6 +335,7 @@
           },
           {
             "name": "irish cream liqueur",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -344,6 +351,7 @@
           },
           {
             "name": "icing sugar",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -407,6 +415,7 @@
           },
           {
             "name": "ice",
+            "type": "",
             "exclude": [
               {
                 "word": "ice cream",

@@ -17,6 +17,7 @@
 
       {
           "name": "xanthan gum",
+          "type": "", 
           "exclude": [
           ],
           "include": [
@@ -60,6 +61,7 @@
       },
       {
           "name": "xo sauce",
+          "type": "", 
           "exclude": [
           ],
           "include": [

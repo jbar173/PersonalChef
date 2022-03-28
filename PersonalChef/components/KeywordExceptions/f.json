@@ -40,6 +40,7 @@
 
           {
               "name": "fresh horseradish",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -59,6 +60,7 @@
           },
           {
               "name": "fresh bombay duck",
+              "type": "",
               "exclude": [
                 {
                   "word": "pickle",
@@ -139,6 +141,7 @@
           },
           {
               "name": "fresh sorrel",
+              "type": "",
               "exclude": [
                 {
                   "word": "shandy",
@@ -223,42 +226,19 @@
           },
           {
               "name": "fresh quince",
+              "type": "fruit",
               "exclude": [
-                {
-                  "word": "jelly",
-                },
-                {
-                  "word": "jam",
-                },
                 {
                   "word": "marmalade",
                 },
                 {
-                  "word": "conserve",
-                },
-                {
-                  "word": "preserve",
-                },
-                {
                   "word": "paste",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "spread",
                 },
                 {
                   "word": "syrup",
                 },
                 {
                   "word": "nectar",
-                },
-                {
-                  "word": "juice",
-                },
-                {
-                  "word": "liqueur",
                 },
               ],
               "include": [
@@ -278,15 +258,10 @@
           },
           {
               "name": "fresh pomegranate seeds",
+              "type": "fruit",
               "exclude": [
                 {
-                  "word": "dried",
-                },
-                {
                   "word": "anardana",
-                },
-                {
-                  "word": "oil",
                 },
               ],
               "include": [
@@ -322,6 +297,7 @@
           },
           {
               "name": "flax seed butter",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -389,6 +365,7 @@
           },
           {
               "name": "fish paste",
+              "type": "",
               "exclude": [
                 {
                   "word": "mayonnaise",
@@ -663,6 +640,7 @@
           },
           {
               "name": "fluke",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -674,6 +652,7 @@
           },
           {
               "name": "flounder",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -737,6 +716,7 @@
           },
           {
               "name": "fig syrup",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -752,6 +732,7 @@
           },
           {
               "name": "fruit syrup",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -795,6 +776,7 @@
           },
           {
               "name": "fig roll",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -814,6 +796,7 @@
           },
           {
               "name": "fruit jellies",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -865,6 +848,7 @@
           },
           {
               "name": "fruit and nut chocolate",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -884,6 +868,7 @@
           },
           {
               "name": "frosties",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -903,6 +888,7 @@
           },
           {
               "name": "fish cakes",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -918,6 +904,7 @@
           },
           {
               "name": "fiddleheads",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -945,6 +932,7 @@
           },
           {
               "name": "fresh corn",
+              "type": "",
               "exclude": [
                 {
                   "word": "meal",
@@ -993,6 +981,7 @@
           },
           {
               "name": "faggot",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1008,6 +997,7 @@
           },
           {
               "name": "fajita seasoning",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1039,6 +1029,7 @@
           },
           {
               "name": "fish seasoning",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1062,6 +1053,7 @@
           },
           {
               "name": "fresh basil",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1081,6 +1073,7 @@
           },
           {
               "name": "fresh marjoram",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1096,6 +1089,7 @@
           },
           {
               "name": "fresh mint",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1115,6 +1109,7 @@
           },
           {
               "name": "fresh oregano",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1134,6 +1129,7 @@
           },
           {
               "name": "fresh parsley",
+              "type": "",
               "exclude": [
                 {
                   "word": "sauce",
@@ -1164,6 +1160,7 @@
           },
           {
               "name": "fresh rosemary",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1183,6 +1180,7 @@
           },
           {
               "name": "fresh sage",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1198,6 +1196,7 @@
           },
           {
               "name": "fennel seeds",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1237,6 +1236,7 @@
           },
           {
               "name": "fresh chervil",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1264,6 +1264,7 @@
           },
           {
               "name": "fresh tarragon",
+              "type": "",
               "exclude": [
                 {
                   "word": "vinegar",
@@ -1290,6 +1291,7 @@
           },
           {
               "name": "fresh thyme",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1305,6 +1307,7 @@
           },
           {
               "name": "fruit cocktail",
+              "type": "fruit",
               "exclude": [
                 {
                   "word": "cocktails",
@@ -1319,6 +1322,7 @@
           },
           {
               "name": "fish masala",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1338,6 +1342,7 @@
           },
           {
               "name": "fish stock",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1485,6 +1490,7 @@
           },
           {
               "name": "french dressing",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1512,6 +1518,7 @@
           },
           {
               "name": "french mustard",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1543,6 +1550,7 @@
           },
           {
               "name": "faluda drink",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1590,6 +1598,7 @@
           },
           {
               "name": "fennel tea",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1649,6 +1658,7 @@
           },
           {
               "name": "flax seeds",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1676,6 +1686,7 @@
           },
           {
               "name": "fresh asiago",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1703,6 +1714,7 @@
           },
           {
               "name": "fresh cherry juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1722,6 +1734,7 @@
           },
           {
               "name": "fresh grapefruit juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1733,6 +1746,7 @@
           },
           {
               "name": "fresh grape juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1744,6 +1758,7 @@
           },
           {
               "name": "fresh guava juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1755,6 +1770,7 @@
           },
           {
               "name": "fresh lychee juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1782,6 +1798,7 @@
           },
           {
               "name": "fresh mango juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1793,6 +1810,7 @@
           },
           {
               "name": "fresh passion fruit juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1812,6 +1830,7 @@
           },
           {
               "name": "fresh peach juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1823,6 +1842,7 @@
           },
           {
               "name": "fresh pear juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1834,6 +1854,7 @@
           },
           {
               "name": "fresh pineapple juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1845,6 +1866,7 @@
           },
           {
               "name": "fresh pomegranate juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1856,6 +1878,7 @@
           },
           {
               "name": "fresh rhubarb juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1867,6 +1890,7 @@
           },
           {
               "name": "fresh strawberry juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1878,6 +1902,7 @@
           },
           {
               "name": "fresh tropical juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1889,6 +1914,7 @@
           },
           {
               "name": "fresh cranberry juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1916,6 +1942,7 @@
           },
           {
               "name": "fresh blueberry juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1927,6 +1954,7 @@
           },
           {
               "name": "fresh blackcurrant juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1938,6 +1966,7 @@
           },
           {
               "name": "fresh apple juice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1997,6 +2026,7 @@
           },
           {
               "name": "fresh orange juice",
+              "type": "",
               "exclude": [
                 {
                   "word": "orange flavoured",
@@ -2060,6 +2090,7 @@
           },
           {
               "name": "flageolet beans",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2087,6 +2118,7 @@
           },
           {
               "name": "fries",
+              "type": "",
               "exclude": [
                 {
                   "word": "lemon",
@@ -2121,6 +2153,7 @@
           },
           {
               "name": "flatbread",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2220,6 +2253,7 @@
           },
           {
               "name": "fondant icing",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2251,6 +2285,7 @@
           },
           {
               "name": "fenugreek leaves",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2270,10 +2305,8 @@
           },
           {
               "name": "fresh cranberries",
+              "type": "fruit",
               "exclude": [
-                {
-                  "word": "dried",
-                },
               ],
               "include": [
                 {
@@ -2320,18 +2353,13 @@
           },
           {
             "name": "fresh ginger",
+            "type": "fruit",
             "exclude": [
-              {
-                "word": "ale",
-              },
               {
                 "word": "ginger snaps",
               },
               {
                 "word": "gingersnaps",
-              },
-              {
-                "word": "candied",
               },
               {
                 "word": "ginger juice",
@@ -2346,15 +2374,6 @@
                 "word": "gingerbread",
               },
               {
-                "word": "brandy",
-              },
-              {
-                "word": "liqueur",
-              },
-              {
-                "word": "liquor",
-              },
-              {
                 "word": "ground",
               },
               {
@@ -2364,40 +2383,16 @@
                 "word": "powder",
               },
               {
-                "word": "dried",
-              },
-              {
-                "word": "sauce",
-              },
-              {
-                "word": "beer",
-              },
-              {
-                "word": "preserve",
-              },
-              {
                 "word": "preserved",
               },
               {
                 "word": "crystallized",
               },
               {
-                "word": "biscuit",
-              },
-              {
                 "word": "kombucha",
               },
               {
                 "word": "gold",
-              },
-              {
-                "word": "icecream",
-              },
-              {
-                "word": "ice cream",
-              },
-              {
-                "word": "gelato",
               },
               {
                 "word": "extract",
@@ -2432,6 +2427,7 @@
           },
           {
               "name": "fig jelly",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2463,6 +2459,7 @@
           },
           {
               "name": "fig jam",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2490,6 +2487,7 @@
           },
           {
               "name": "fish sauce",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2541,6 +2539,7 @@
           },
           {
               "name": "feta",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2568,27 +2567,13 @@
           },
           {
             "name": "fresh coconut",
+            "type": "fruit",
             "exclude": [
-              {
-                "word": "oil",
-              },
-              {
-                "word": "vinegar",
-              },
               {
                 "word": "aminos",
               },
               {
-                "word": "yoghurt",
-              },
-              {
-                "word": "yogurt",
-              },
-              {
                 "word": "milk",
-              },
-              {
-                "word": "cream",
               },
               {
                 "word": "creamed",
@@ -2641,9 +2626,6 @@
               {
                 "word": "flakes",
               },
-              {
-                "word": "dried",
-              },
             ],
             "include": [
               {
@@ -2654,6 +2636,7 @@
           },
           {
               "name": "fruit loaf",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2693,6 +2676,7 @@
           },
           {
               "name": "fruit cake",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2740,6 +2724,7 @@
           },
           {
               "name": "fruit yoghurt",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3347,6 +3332,7 @@
           },
           {
               "name": "flour",
+              "type": "",
               "exclude": [
                 {
                   "word": "flour tortilla",
@@ -3363,6 +3349,7 @@
           },
           {
             "name": "fontina",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3402,6 +3389,7 @@
           },
           {
             "name": "filo pastry",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3417,24 +3405,10 @@
           },
           {
             "name": "fig",
+            "type": "fruit",
             "exclude": [
               {
-                "word": "fig jam",
-              },
-              {
-                "word": "preserve",
-              },
-              {
-                "word": "conserve",
-              },
-              {
-                "word": "fig chutney",
-              },
-              {
                 "word": "fig roll",
-              },
-              {
-                "word": "dried",
               },
             ],
             "include": [
@@ -3446,6 +3420,7 @@
           },
           {
             "name": "fudge",
+            "type": "",
             "exclude": [
               {
                 "word": "fudge brownie",
@@ -3466,6 +3441,7 @@
           },
           {
             "name": "fresh coriander",
+            "type": "",
             "exclude": [
               {
                 "word": "ground coriander",

@@ -17,6 +17,7 @@
 
           {
               "name": "zhoug paste",
+              "type": "", 
               "exclude": [
                 {
                   "word": "italian",
@@ -75,6 +76,7 @@
           },
           {
               "name": "za'atar",
+              "type": "", 
               "exclude": [
               ],
               "include": [

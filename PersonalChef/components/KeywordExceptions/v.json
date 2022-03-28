@@ -15,7 +15,7 @@
 
 
               "~~~ TO DO : ~~~",
-              "VEAL", 
+              "VEAL",
 
 
     ],
@@ -26,6 +26,7 @@
 
           {
               "name": "vodka",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -49,6 +50,7 @@
           },
           {
               "name": "vanilla bean paste",
+              "type": "", 
               "exclude": [
                 {
                   "word": "icecream",
@@ -150,6 +152,7 @@
           },
           {
               "name": "vanilla sauce",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -249,6 +252,7 @@
           },
           {
               "name": "vanilla syrup",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -276,6 +280,7 @@
           },
           {
               "name": "venison mince",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -491,6 +496,7 @@
           },
           {
               "name": "venison",
+              "type": "", 
               "exclude": [
                 {
                   "word": "jerky",
@@ -540,6 +546,7 @@
           },
           {
               "name": "vimto",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -551,6 +558,7 @@
           },
           {
               "name": "vegetable chips",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -630,6 +638,7 @@
           },
           {
               "name": "vindaloo curry paste",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -657,6 +666,7 @@
           },
           {
               "name": "vanilla sponge",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -724,6 +734,7 @@
           },
           {
               "name": "vanilla milkshake",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -759,6 +770,7 @@
           },
           {
               "name": "vegetable oil",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -778,6 +790,7 @@
           },
           {
               "name": "violet flavoured spirit/liqueur",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -857,6 +870,7 @@
           },
           {
               "name": "vegetable fat",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -880,6 +894,7 @@
           },
           {
               "name": "veggie dip",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -927,6 +942,7 @@
           },
           {
               "name": "vine leaves",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -946,15 +962,20 @@
           },
           {
               "name": "vinegar",
+              "type": "", 
               "exclude": [
               ],
               "include": [
                 {
-                  "word": "vinigrette",
+                  "word": "vinaigrette",
                   "substitution": false,
                 },
                 {
-                  "word": "vinaigrette",
+                  "word": "viniagrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinigrette",
                   "substitution": false,
                 },
                 {
@@ -965,6 +986,7 @@
           },
           {
               "name": "vanilla extract",
+              "type": "", 
               "exclude": [
                 {
                   "word": "icecream",
@@ -1099,6 +1121,7 @@
           },
           {
               "name": "vanilla pod",
+              "type": "", 
               "exclude": [
                 {
                   "word": "icecream",
@@ -1200,6 +1223,7 @@
           },
           {
             "name": "vegetable stock",
+            "type": "", 
             "exclude": [
             ],
             "include": [

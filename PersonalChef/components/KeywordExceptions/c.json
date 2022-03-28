@@ -20,7 +20,7 @@
               "collard greens","courgette","cucumber",
 
               "cajun spice","chamomile flowers","caraway seeds","cayenne","celery salt","celery seeds","chana masala spice blend","chicken seasoning","chilli flakes",
-              "chilli powder","chinese five spice","chives","choi sum","cinnamon","cloves","coriander seeds","cress","crispy seaweed","cumin seeds",
+              "chilli powder","chinese five spice","chives","choi sum","cinnamon","cloves","coriander seeds","cress","cumin seeds",
 
               "canned chipotles","cannellini beans","cheddar cheese soup","chicken soup","chickpeas","cream of tomato soup",
 
@@ -28,7 +28,7 @@
               "chicken paste","chicken stock","chilli mayonnaise","chilli paste","chilli sauce","chilli soy sauce","chow mein sauce","chutney",
               "coconut oil","corn oil","cranberry sauce","chinese-style chip shop curry sauce",
 
-              "cheese puffs","coconut milk","cream","creme fraiche",
+              "cheese puffs","coconut milk","cream","creme fraiche","crispy seaweed",
               "caramel milkshake","cherry cola","cherry lemonade","chocolate milkshake","coconut water","cocoa","coffee","cream soda",
 
 
@@ -55,6 +55,7 @@
 
         {
             "name": "cantaloupe",
+            "type": "fruit",
             "exclude": [
             ],
             "include": [
@@ -102,96 +103,16 @@
         },
         {
             "name": "chamomile flowers",
+            "type": "fruit",
             "exclude": [
               {
-                "word": "sparkling",
-              },
-              {
-                "word": "bubbly",
-              },
-              {
-                "word": "fizz",
-              },
-              {
-                "word": "seltzer",
-              },
-              {
-                "word": "soda",
-              },
-              {
-                "word": "tonic",
-              },
-              {
-                "word": "lemonade",
-              },
-              {
-                "word": "gin",
-              },
-              {
-                "word": "vodka",
-              },
-              {
-                "word": "wine",
-              },
-              {
-                "word": "brandy",
-              },
-              {
-                "word": "rum",
-              },
-              {
-                "word": "mead",
-              },
-              {
-                "word": "cider",
-              },
-              {
-                "word": "shandy",
-              },
-              {
-                "word": "beer",
-              },
-              {
-                "word": "lager",
-              },
-              {
-                "word": "liqueur",
-              },
-              {
-                "word": "liquor",
+                "word": "pastilles",
               },
               {
                 "word": "honey",
               },
               {
                 "word": "honea",
-              },
-              {
-                "word": "curd",
-              },
-              {
-                "word": "jelly",
-              },
-              {
-                "word": "cake",
-              },
-              {
-                "word": "bar",
-              },
-              {
-                "word": "pastilles",
-              },
-              {
-                "word": "candy",
-              },
-              {
-                "word": "sweets",
-              },
-              {
-                "word": "vinegar",
-              },
-              {
-                "word": "oil",
               },
             ],
             "include": [
@@ -223,6 +144,7 @@
         },
         {
             "name": "cassava root",
+            "type": "",
             "exclude": [
               {
                 "word": "flour",
@@ -255,6 +177,7 @@
         },
         {
             "name": "cobia",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -298,6 +221,7 @@
         },
         {
             "name": "cheshire cheese",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -325,6 +249,7 @@
         },
         {
             "name": "caramel sauce",
+            "type": "",
             "exclude": [
               {
                 "word": "cookie",
@@ -502,6 +427,7 @@
         },
         {
             "name": "cream of tomato soup",
+            "type": "",
             "exclude": [
               {
                 "word": "soup base",
@@ -535,6 +461,7 @@
         },
         {
             "name": "cake decorations",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -594,6 +521,7 @@
         },
         {
             "name": "coloured dusting sugar",
+            "type": "",
             "exclude": [
               {
                 "word": "sorbet",
@@ -674,6 +602,7 @@
         },
         {
             "name":  "carrot cake",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -693,6 +622,7 @@
         },
         {
             "name": "cake",
+            "type": "",
             "exclude": [
               {
                 "word": "rice",
@@ -773,22 +703,43 @@
                 "word": "cheesecake",
               },
               {
+                "word": "gin",
+              },
+              {
+                "word": "vodka",
+              },
+              {
+                "word": "wine",
+              },
+              {
+                "word": "brandy",
+              },
+              {
+                "word": "rum",
+              },
+              {
+                "word": "mead",
+              },
+              {
+                "word": "cider",
+              },
+              {
+                "word": "shandy",
+              },
+              {
+                "word": "beer",
+              },
+              {
+                "word": "lager",
+              },
+              {
                 "word": "liqueur",
               },
               {
                 "word": "liquor",
               },
               {
-                "word": "gin",
-              },
-              {
-                "word": "rum",
-              },
-              {
-                "word": "vodka",
-              },
-              {
-                "word": "brandy",
+                "word": "spirit",
               },
             ],
             "include": [
@@ -1096,6 +1047,7 @@
         },
         {
             "name": "char",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1107,6 +1059,7 @@
         },
         {
             "name": "crab sticks",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1146,6 +1099,7 @@
         },
         {
             "name": "catfish",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1177,6 +1131,7 @@
         },
         {
             "name": "cuttlefish",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1200,6 +1155,7 @@
         },
         {
             "name": "crispy seaweed",
+            "type": "",
             "exclude": [
               {
                 "word": "teifi",
@@ -1324,6 +1280,7 @@
         },
         {
             "name": "coley",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1343,6 +1300,7 @@
         },
         {
             "name": "coconut butter",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1362,6 +1320,7 @@
         },
         {
             "name": "chia seed butter",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1393,6 +1352,7 @@
         },
         {
             "name": "cucumber",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1400,6 +1360,7 @@
         },
         {
             "name": "croutons",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1407,6 +1368,7 @@
         },
         {
             "name": "clotted cream",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1418,6 +1380,7 @@
         },
         {
             "name": "clams",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1437,6 +1400,7 @@
         },
         {
             "name": "chimichurri",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1460,6 +1424,7 @@
         },
         {
             "name": "carob syrup",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1475,6 +1440,7 @@
         },
         {
             "name": "crispy onions",
+            "type": "",
             "exclude": [
               {
                 "word": "cubes",
@@ -1513,6 +1479,7 @@
         },
         {
             "name": "coconut nectar",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1560,6 +1527,7 @@
         },
         {
             "name": "chana dal",
+            "type": "",
             "exclude": [
               {
                 "word": "in water",
@@ -1611,6 +1579,7 @@
         },
         {
             "name": "cognac",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1630,6 +1599,7 @@
         },
         {
             "name": "colby",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1645,6 +1615,7 @@
         },
         {
             "name": "chocolate flavoured spirit/liqueur",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1732,6 +1703,7 @@
         },
         {
             "name": "curd cheese",
+            "type": "",
             "exclude": [
               {
                 "word": "tart",
@@ -1898,6 +1870,7 @@
         },
         {
             "name": "cacao nibs",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1917,6 +1890,7 @@
         },
         {
             "name": "caramel biscuits",
+            "type": "",
             "exclude": [
               {
                 "word": "spread",
@@ -1985,6 +1959,7 @@
         },
         {
             "name": "caramel essence",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2020,6 +1995,7 @@
         },
         {
             "name": "caramel covered peanuts",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2083,6 +2059,7 @@
         },
         {
             "name": "caramel syrup",
+            "type": "",
             "exclude": [
               {
                 "word": "cookie",
@@ -2160,6 +2137,7 @@
         },
         {
             "name": "caramel wafers",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2203,6 +2181,7 @@
         },
         {
             "name": "cherry compote",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2238,6 +2217,7 @@
         },
         {
             "name": "chocolate buttons",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2269,6 +2249,7 @@
         },
         {
             "name": "chocolate cake",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2336,6 +2317,7 @@
         },
         {
             "name": "chocolate caramel bar",
+            "type": "",
             "exclude": [
               {
                 "word": "spread",
@@ -2447,6 +2429,7 @@
         },
         {
             "name": "cookie dough",
+            "type": "",
             "exclude": [
               {
                 "word": "icecream",
@@ -2508,6 +2491,7 @@
         },
         {
             "name": "chocolate decorating icing",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2559,6 +2543,7 @@
         },
         {
             "name": "chocolate drops",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2586,6 +2571,7 @@
         },
         {
             "name": "chocolate ganache",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2601,6 +2587,7 @@
         },
         {
             "name": "chocolate mousse",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2640,6 +2627,7 @@
         },
         {
             "name": "cookies",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2655,6 +2643,7 @@
         },
         {
             "name": "chocolate cookies",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2674,6 +2663,7 @@
         },
         {
             "name": "chocolate biscuits",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2725,6 +2715,7 @@
         },
         {
             "name": "chocolate peanuts",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2816,6 +2807,7 @@
         },
         {
             "name": "chocolate raisins",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2879,6 +2871,7 @@
         },
         {
             "name": "chocolate sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3030,6 +3023,7 @@
         },
         {
             "name": "chocolate sprinkles",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3101,6 +3095,7 @@
         },
         {
             "name": "chocolate wafers",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3160,6 +3155,7 @@
         },
         {
             "name": "coconut bar",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3175,6 +3171,7 @@
         },
         {
             "name": "coconut biscuits",
+            "type": "",
             "exclude": [
               {
                 "word": "spread",
@@ -3227,6 +3224,7 @@
         },
         {
             "name": "coconut macaroons",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3254,6 +3252,7 @@
         },
         {
             "name": "cola laces",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3277,6 +3276,7 @@
         },
         {
             "name": "condensed milk",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3296,6 +3296,7 @@
         },
         {
             "name": "creme egg",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3315,6 +3316,7 @@
         },
         {
             "name": "crunchie bar",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3354,6 +3356,7 @@
         },
         {
             "name": "crunchy cream biscuits",
+            "type": "",
             "exclude": [
               {
                 "word": "spread",
@@ -3394,6 +3397,7 @@
         },
         {
             "name": "custard powder",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3409,6 +3413,7 @@
         },
         {
             "name": "chia seeds",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3436,6 +3441,7 @@
         },
         {
             "name": "chocolate cereal",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3479,6 +3485,7 @@
         },
         {
             "name": "cornflakes",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3506,6 +3513,7 @@
         },
         {
             "name": "crumpets",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3533,6 +3541,7 @@
         },
         {
             "name": "caviar",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3552,6 +3561,7 @@
         },
         {
             "name": "cod",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3615,6 +3625,7 @@
         },
         {
             "name": "cockles",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3650,6 +3661,7 @@
         },
         {
             "name": "crab",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3685,6 +3697,7 @@
         },
         {
             "name": "crayfish",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3720,6 +3733,7 @@
         },
         {
             "name": "carrot",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3739,6 +3753,7 @@
         },
         {
             "name": "cauliflower",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3758,6 +3773,7 @@
         },
         {
             "name": "cauliflower rice",
+            "type": "",
             "exclude": [
               {
                 "word": "sticky",
@@ -3805,6 +3821,7 @@
         },
         {
             "name": "celeriac",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3832,6 +3849,7 @@
         },
         {
             "name": "celery",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3851,6 +3869,7 @@
         },
         {
             "name": "cherries",
+            "type": "fruit",
             "exclude": [
             ],
             "include": [
@@ -3870,6 +3889,7 @@
         },
         {
             "name": "choi sum",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3893,6 +3913,7 @@
         },
         {
             "name": "clementine",
+            "type": "fruit",
             "exclude": [
             ],
             "include": [
@@ -3904,6 +3925,7 @@
         },
         {
             "name": "cress",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3935,6 +3957,7 @@
         },
         {
             "name": "curry powder",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3954,6 +3977,7 @@
         },
         {
             "name": "cumin seeds",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -3977,6 +4001,7 @@
         },
         {
             "name": "coriander seeds",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4012,6 +4037,7 @@
         },
         {
             "name": "cloves",
+            "type": "",
             "exclude": [
               {
                 "word": "garlic",
@@ -4030,6 +4056,7 @@
         },
         {
             "name": "cinnamon",
+            "type": "",
             "exclude": [
               {
                 "word": "chocolate"
@@ -4081,6 +4108,7 @@
         },
         {
             "name": "chives",
+            "type": "",
             "exclude": [
               {
                 "word": "chinese",
@@ -4123,6 +4151,7 @@
         },
         {
             "name": "chicken seasoning",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4150,6 +4179,7 @@
         },
         {
             "name": "chana masala spice blend",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4165,6 +4195,7 @@
         },
         {
             "name": "celery seeds",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4188,6 +4219,7 @@
         },
         {
             "name": "celery salt",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4211,6 +4243,7 @@
         },
         {
             "name": "cayenne",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4234,6 +4267,7 @@
         },
         {
             "name": "caraway seeds",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4277,6 +4311,7 @@
         },
         {
             "name": "cajun spice",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4360,6 +4395,7 @@
         },
         {
             "name": "caperberries",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4387,6 +4423,7 @@
         },
         {
             "name": "capers",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4414,6 +4451,7 @@
         },
         {
             "name": "canned chipotles",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4425,6 +4463,7 @@
         },
         {
             "name": "cheddar cheese soup",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4436,6 +4475,7 @@
         },
         {
             "name": "chicken soup",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4463,6 +4503,7 @@
         },
         {
             "name": "chow mein sauce",
+            "type": "",
             "exclude": [
               {
                 "word": "noodle",
@@ -4513,6 +4554,7 @@
         },
         {
             "name": "chinese-style chip shop curry sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4536,6 +4578,7 @@
         },
         {
             "name": "chilli soy sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4575,6 +4618,7 @@
         },
         {
             "name": "chilli pesto",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4614,6 +4658,7 @@
         },
         {
             "name": "chilli mayonnaise",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4657,6 +4702,7 @@
         },
         {
             "name": "chestnut puree",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4708,6 +4754,7 @@
         },
         {
             "name": "chermoula",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4727,6 +4774,7 @@
         },
         {
             "name": "chicken paste",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4762,6 +4810,7 @@
         },
         {
             "name": "cheese sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4813,6 +4862,7 @@
         },
         {
             "name": "cashew butter",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4856,6 +4906,7 @@
         },
         {
             "name": "carbonara sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4887,6 +4938,7 @@
         },
         {
             "name": "cantonese sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4918,6 +4970,7 @@
         },
         {
             "name": "cranberry sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4965,6 +5018,7 @@
         },
         {
             "name": "caesar dressing",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5012,6 +5066,7 @@
         },
         {
             "name": "cherry lemonade",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5043,6 +5098,7 @@
         },
         {
             "name": "coconut water",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5058,6 +5114,7 @@
         },
         {
             "name": "cocoa",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5069,6 +5126,7 @@
         },
         {
             "name": "carrot juice",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5080,6 +5138,7 @@
         },
         {
             "name": "chai tea",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5091,6 +5150,7 @@
         },
         {
             "name": "cherry tea",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5198,6 +5258,7 @@
         },
         {
             "name": "cookie dough milkshake",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5273,6 +5334,7 @@
         },
         {
             "name": "cream soda",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5284,6 +5346,7 @@
         },
         {
             "name": "chocolate milkshake",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5347,6 +5410,7 @@
         },
         {
             "name": "caramel milkshake",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5402,6 +5466,7 @@
         },
         {
           "name": "coffee",
+          "type": "",
           "exclude": [
             {
               "word": "liqueur",
@@ -5447,6 +5512,7 @@
         },
         {
             "name": "cheese puffs",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5482,6 +5548,7 @@
         },
         {
             "name": "corn oil",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5585,6 +5652,7 @@
         },
         {
             "name": "canola oil",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5608,6 +5676,7 @@
         },
         {
             "name": "coconut oil",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5715,6 +5784,7 @@
         },
         {
             "name": "char siu sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5746,6 +5816,7 @@
         },
         {
             "name": "chocolate sponge",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5761,6 +5832,7 @@
         },
         {
             "name": "cranberry tea",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5860,6 +5932,7 @@
         },
         {
             "name": "cherry cola",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5891,6 +5964,7 @@
         },
         {
             "name": "coca cola",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5906,6 +5980,7 @@
         },
         {
             "name": "chamomile tea",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6021,6 +6096,7 @@
         },
         {
             "name": "caramel flavoured spirit/liqueur",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6104,6 +6180,7 @@
         },
         {
             "name": "cinnamon flavoured spirit/liqueur",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6179,6 +6256,7 @@
         },
         {
             "name": "coffee flavoured spirit/liqueur",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6254,6 +6332,7 @@
         },
         {
             "name": "coriander puree",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6269,6 +6348,7 @@
         },
         {
             "name": "chilli infused oil",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6280,6 +6360,7 @@
         },
         {
             "name": "chilli chutney relish",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6371,6 +6452,7 @@
         },
         {
             "name": "chickpeas",
+            "type": "",
             "exclude": [
               {
                 "word": "flour",
@@ -6531,6 +6613,7 @@
         },
         {
             "name": "cannellini beans",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6562,6 +6645,7 @@
         },
         {
             "name": "corned beef",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6581,6 +6665,7 @@
         },
         {
             "name": "cherry jelly",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6612,6 +6697,7 @@
         },
         {
             "name": "cherry jam",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6639,6 +6725,7 @@
         },
         {
             "name": "crystallised ginger",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6662,6 +6749,7 @@
         },
         {
             "name": "chocolate cornflake nests",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6673,6 +6761,7 @@
         },
         {
             "name": "cake mix",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6684,6 +6773,7 @@
         },
         {
             "name": "chicken mince",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6719,6 +6809,7 @@
         },
         {
           "name": "chicken",
+          "type": "",
           "exclude": [
             {
               "word": "broth",
@@ -6883,6 +6974,7 @@
         },
         {
             "name": "chard",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6934,6 +7026,7 @@
         },
         {
             "name": "cassava flour",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6969,6 +7062,7 @@
         },
         {
             "name": "cocoa powder",
+            "type": "",
             "exclude": [
               {
                 "word": "cocoa bean",
@@ -7002,6 +7096,7 @@
         },
         {
             "name": "couscous",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -7029,6 +7124,7 @@
         },
         {
             "name": "collard greens",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -7060,6 +7156,7 @@
         },
         {
             "name": "chayote",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -7111,6 +7208,7 @@
         },
         {
             "name": "chicory",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -7130,6 +7228,7 @@
         },
         {
             "name": "chutney",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -7229,6 +7328,7 @@
         },
         {
             "name": "chinese five spice",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -7260,6 +7360,7 @@
         },
         {
           "name": "chilli powder",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -7383,6 +7484,7 @@
         },
         {
             "name": "chilli sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -7510,6 +7612,7 @@
         },
         {
             "name": "cured sausage/sliced meat",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -7625,6 +7728,7 @@
         },
         {
             "name": "cornmeal",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -7660,6 +7764,7 @@
         },
         {
             "name": "cornstarch",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -7675,6 +7780,7 @@
         },
         {
             "name": "crackers",
+            "type": "",
             "exclude": [
               {
                 "word": "rice cracker",
@@ -7745,6 +7851,7 @@
         },
         {
             "name": "cinnamon",
+            "type": "",
             "exclude": [
               {
                 "word": "cinnamon-spiced",
@@ -7796,6 +7903,7 @@
         },
         {
             "name": "cherry flavoured spirit/liqueur",
+            "type": "",
             "exclude": [
               {
                 "word": "cherries",
@@ -7949,6 +8057,7 @@
         },
         {
             "name": "coconut flavoured spirit/liqueur",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -8056,6 +8165,7 @@
         },
         {
           "name": "chilli paste",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -8155,6 +8265,7 @@
         },
         {
           "name": "chilli flakes",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -8230,6 +8341,7 @@
         },
         {
             "name": "candied orange",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -8277,6 +8389,7 @@
         },
         {
             "name": "champagne",
+            "type": "",
             "exclude": [
               {
                 "word": "vinegar",
@@ -8325,6 +8438,7 @@
         },
         {
             "name": "cachaca",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -8340,6 +8454,7 @@
         },
         {
             "name": "creme fraiche",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -8403,6 +8518,7 @@
         },
         {
             "name": "cream cheese",
+            "type": "",
             "exclude": [
               {
                 "word": "cream cheese frosting",
@@ -8517,6 +8633,7 @@
         },
         {
             "name": "cottage cheese",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -8568,6 +8685,7 @@
         },
         {
           "name": "comte",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -8603,6 +8721,7 @@
         },
         {
           "name": "camembert",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -8626,6 +8745,7 @@
         },
         {
           "name": "cheese slice",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -8649,6 +8769,7 @@
         },
         {
           "name": "cheddar",
+          "type": "",
           "exclude": [
             {
               "word": "cheez-it grooves",
@@ -8714,6 +8835,7 @@
         },
         {
           "name": "chicken stock",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -8789,6 +8911,7 @@
         },
         {
           "name": "cashew nuts",
+          "type": "",
           "exclude": [
             {
               "word": "puree",
@@ -8858,6 +8981,9 @@
             },
             {
               "word": "yoghurt",
+            },
+            {
+              "word": "yogurt",
             },
             {
               "word": "paste",
@@ -8949,6 +9075,7 @@
         },
         {
           "name": "courgette",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -8996,6 +9123,7 @@
         },
         {
           "name": "cider",
+          "type": "",
           "exclude": [
             {
               "word": "vinegar",
@@ -9006,6 +9134,7 @@
         },
         {
           "name": "coconut milk",
+          "type": "",
           "exclude": [
             {
               "word": "drink",
@@ -9083,6 +9212,7 @@
         },
         {
           "name": "chilli pepper",
+          "type": "",
           "exclude": [
             {
               "word": "chili chutney",
@@ -9163,6 +9293,7 @@
         },
         {
           "name": "caramel",
+          "type": "",
           "exclude": [
             {
               "word": "icecream",
@@ -9175,6 +9306,9 @@
             },
             {
               "word": "yoghurt",
+            },
+            {
+              "word": "yogurt",
             },
             {
               "word": "milk",
@@ -9243,6 +9377,7 @@
         },
         {
           "name": "chocolate custard",
+          "type": "",
           "exclude": [
             {
               "word": "custard cream",
@@ -9258,6 +9393,9 @@
             },
             {
               "word": "pie",
+            },
+            {
+              "word": "sponge",
             },
             {
               "word": "cookie",
@@ -9284,6 +9422,7 @@
         },
         {
           "name": "custard",
+          "type": "",
           "exclude": [
             {
               "word": "custard cream",
@@ -9299,6 +9438,9 @@
             },
             {
               "word": "pie",
+            },
+            {
+              "word": "sponge",
             },
             {
               "word": "cookie",
@@ -9333,6 +9475,7 @@
         },
         {
             "name": "cabbage",
+            "type": "",
             "exclude": [
               {
                 "word": "sour",
@@ -9365,6 +9508,7 @@
         },
           {
             "name": "chestnuts",
+            "type": "",
             "exclude": [
               {
                 "word": "water chestnut",
@@ -9431,6 +9575,9 @@
               },
               {
                 "word": "yoghurt",
+              },
+              {
+                "word": "yogurt",
               },
               {
                 "word": "paste",
@@ -9554,6 +9701,7 @@
           },
           {
             "name": "candlenuts",
+            "type": "",
             "exclude": [
               {
                 "word": "oil",
@@ -9572,6 +9720,7 @@
           },
           {
             "name": "cream",
+            "type": "",
             "exclude": [
               {
                 "word": "ice cream",
@@ -9618,6 +9767,7 @@
           },
           {
             "name": "chocolate",
+            "type": "",
             "exclude": [
               {
                 "word": "cookie",

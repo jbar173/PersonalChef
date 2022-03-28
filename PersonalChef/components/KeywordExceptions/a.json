@@ -34,6 +34,7 @@
 
           {
               "name": "anise",
+              "type": "",
               "exclude": [
                 {
                   "word": "ball",
@@ -138,6 +139,7 @@
           },
           {
               "name": "acai berries",
+              "type": "fruit",
               "exclude": [
               ],
               "include": [
@@ -165,6 +167,7 @@
           },
           {
               "name": "angelica leaves",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -208,6 +211,7 @@
           },
           {
               "name": "angelica root",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -243,6 +247,7 @@
           },
           {
               "name": "amberjack",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -286,6 +291,7 @@
           },
           {
               "name": "almond syrup",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -313,6 +319,7 @@
           },
           {
               "name": "apricot syrup",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -328,6 +335,7 @@
           },
           {
               "name": "apple syrup",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -343,6 +351,7 @@
           },
           {
             "name": "almond milk",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -390,6 +399,7 @@
           },
           {
               "name": "apricots",
+              "type": "fruit",
               "exclude": [
               ],
               "include": [
@@ -413,6 +423,7 @@
           },
           {
               "name": "almond oil",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -528,6 +539,7 @@
           },
           {
               "name": "avocado oil",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -643,6 +655,7 @@
           },
           {
               "name": "almond extract",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -706,6 +719,7 @@
           },
           {
               "name": "agave nectar",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -745,6 +759,7 @@
           },
           {
               "name": "appenzeller",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -768,6 +783,7 @@
           },
           {
               "name": "aged asiago",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -783,6 +799,7 @@
           },
           {
               "name": "armagnac",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -798,6 +815,7 @@
           },
           {
               "name": "advocaat",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -821,6 +839,7 @@
           },
           {
               "name": "anchovies",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -840,6 +859,7 @@
           },
           {
               "name": "asafoetida",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -863,6 +883,7 @@
           },
           {
               "name": "allspice",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -890,6 +911,7 @@
           },
           {
               "name": "apples",
+              "type": "fruit",
               "exclude": [
               ],
               "include": [
@@ -913,6 +935,7 @@
           },
           {
               "name": "adzuki beans",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -940,6 +963,7 @@
           },
           {
               "name": "ackee",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -963,6 +987,7 @@
           },
           {
               "name": "artichoke",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -978,6 +1003,7 @@
           },
           {
               "name": "artichoke antipasti",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -993,6 +1019,7 @@
           },
           {
               "name": "almond butter",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1012,6 +1039,7 @@
           },
           {
               "name": "aioli",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1023,6 +1051,7 @@
           },
           {
               "name": "apple tea",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1090,6 +1119,7 @@
           },
           {
               "name": "apricot harissa paste",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1105,6 +1135,7 @@
           },
           {
               "name": "aubergine paste",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1120,6 +1151,7 @@
           },
           {
               "name": "asparagus",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1135,6 +1167,7 @@
           },
           {
               "name": "aubergine",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1146,6 +1179,7 @@
           },
           {
               "name": "all purpose seasoning",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1157,6 +1191,7 @@
           },
           {
               "name": "atta flour",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1180,6 +1215,7 @@
           },
           {
               "name": "apricot jelly",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1251,6 +1287,7 @@
           },
           {
               "name": "apricot jam",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1278,6 +1315,7 @@
           },
           {
               "name": "almond flavoured spirit/liqueur",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1353,6 +1391,7 @@
           },
           {
               "name": "aniseed flavoured spirit/liqueur",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1480,6 +1519,7 @@
           },
           {
               "name": "achiote",
+              "type": "",
               "exclude": [
                 {
                   "word": "smoked",
@@ -1498,6 +1538,7 @@
           },
           {
               "name": "aquafaba",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1541,6 +1582,7 @@
           },
           {
               "name": "apple sauce",
+              "type": "",
               "exclude": [
 
               ],
@@ -1669,6 +1711,7 @@
           },
           {
               "name": "apricot flavoured spirit/liqueur",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1760,6 +1803,7 @@
           },
           {
               "name": "apple flavoured spirit/liqueur",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1875,6 +1919,7 @@
           },
           {
               "name": "almond flour",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1894,6 +1939,7 @@
           },
           {
               "name": "almond meal",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1913,6 +1959,7 @@
           },
           {
               "name": "applewood smoked cheese",
+              "type": "",
               "exclude": [
                 {
                   "word": "bacon",
@@ -2039,6 +2086,7 @@
           },
           {
               "name": "avocado",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2050,6 +2098,7 @@
           },
           {
             "name": "ale",
+            "type": "",
             "exclude": [
               {
                 "word": "ginger ale",
@@ -2076,145 +2125,8 @@
           },
           {
             "name": "apple",
+            "type": "fruit",
             "exclude": [
-              {
-                "word": "pie",
-              },
-              {
-                "word": "bake",
-              },
-              {
-                "word": "cake",
-              },
-              {
-                "word": "bar",
-              },
-              {
-                "word": "ball",
-              },
-              {
-                "word": "crispy",
-              },
-              {
-                "word": "crunch",
-              },
-              {
-                "word": "museli",
-              },
-              {
-                "word": "sauce",
-              },
-              {
-                "word": "puree",
-              },
-              {
-                "word": "purée",
-              },
-              {
-                "word": "curd",
-              },
-              {
-                "word": "yoghurt",
-              },
-              {
-                "word": "muller",
-              },
-              {
-                "word": "custard",
-              },
-              {
-                "word": "vinegar",
-              },
-              {
-                "word": "oil",
-              },
-              {
-                "word": "chutney",
-              },
-              {
-                "word": "spread",
-              },
-              {
-                "word": "butter",
-              },
-              {
-                "word": "preserve",
-              },
-              {
-                "word": "conserve",
-              },
-              {
-                "word": "jam",
-              },
-              {
-                "word": "jelly",
-              },
-              {
-                "word": "juice",
-              },
-              {
-                "word": "tea",
-              },
-              {
-                "word": "concentrate",
-              },
-              {
-                "word": "cordial",
-              },
-              {
-                "word": "squash",
-              },
-              {
-                "word": "beer",
-              },
-              {
-                "word": "cider",
-              },
-              {
-                "word": "wine",
-              },
-              {
-                "word": "liqueur",
-              },
-              {
-                "word": "liquor",
-              },
-              {
-                "word": "brandy",
-              },
-              {
-                "word": "sweets",
-              },
-              {
-                "word": "candy",
-              },
-              {
-                "word": "dried",
-              },
-              {
-                "word": "candied",
-              },
-              {
-                "word": "apple wood",
-              },
-              {
-                "word": "stone",
-              },
-              {
-                "word": "wood",
-              },
-              {
-                "word": "banana",
-              },
-              {
-                "word": "chip",
-              },
-              {
-                "word": "super seeds",
-              },
-              {
-                "word": "cinnamon",
-              },
               {
                 "word": "toffee apple",
               },
@@ -2247,133 +2159,8 @@
           },
           {
             "name": "apricot",
+            "type": "fruit",
             "exclude": [
-              {
-                "word": "pie",
-              },
-              {
-                "word": "bake",
-              },
-              {
-                "word": "cake",
-              },
-              {
-                "word": "bar",
-              },
-              {
-                "word": "ball",
-              },
-              {
-                "word": "crispy",
-              },
-              {
-                "word": "crunch",
-              },
-              {
-                "word": "museli",
-              },
-              {
-                "word": "sauce",
-              },
-              {
-                "word": "puree",
-              },
-              {
-                "word": "purée",
-              },
-              {
-                "word": "curd",
-              },
-              {
-                "word": "yoghurt",
-              },
-              {
-                "word": "muller",
-              },
-              {
-                "word": "custard",
-              },
-              {
-                "word": "vinegar",
-              },
-              {
-                "word": "oil",
-              },
-              {
-                "word": "chutney",
-              },
-              {
-                "word": "spread",
-              },
-              {
-                "word": "butter",
-              },
-              {
-                "word": "jam",
-              },
-              {
-                "word": "preserve",
-              },
-              {
-                "word": "conserve",
-              },
-              {
-                "word": "jelly",
-              },
-              {
-                "word": "juice",
-              },
-              {
-                "word": "tea",
-              },
-              {
-                "word": "concentrate",
-              },
-              {
-                "word": "cordial",
-              },
-              {
-                "word": "squash",
-              },
-              {
-                "word": "beer",
-              },
-              {
-                "word": "cider",
-              },
-              {
-                "word": "wine",
-              },
-              {
-                "word": "liqueur",
-              },
-              {
-                "word": "liquor",
-              },
-              {
-                "word": "brandy",
-              },
-              {
-                "word": "sweets",
-              },
-              {
-                "word": "candy",
-              },
-              {
-                "word": "dried",
-              },
-              {
-                "word": "candied",
-              },
-              {
-                "word": "kernel",
-              },
-              {
-                "word": "seed",
-              },
-              {
-                "word": "dried",
-              },
               {
                 "word": "soft",
               },
@@ -2415,6 +2202,7 @@
           },
           {
             "name": "almonds",
+            "type": "",
             "exclude": [
               {
                 "word": "wine",

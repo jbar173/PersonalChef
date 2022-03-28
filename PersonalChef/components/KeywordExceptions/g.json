@@ -41,6 +41,7 @@
 
           {
               "name": "gooseberries",
+              "type": "fruit",
               "exclude": [
               ],
               "include": [
@@ -80,6 +81,7 @@
           },
           {
               "name": "goose barnacles",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -123,6 +125,7 @@
           },
           {
               "name": "goat",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -138,6 +141,7 @@
           },
           {
               "name": "grouse",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -169,6 +173,7 @@
           },
           {
               "name": "goose",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -196,6 +201,7 @@
           },
           {
               "name": "guinea fowl",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -243,6 +249,7 @@
           },
           {
               "name": "grains of paradise",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -266,6 +273,7 @@
           },
           {
               "name": "green vegetable juice",
+              "type": "",
               "exclude": [
                 {
                   "word": "tomato",
@@ -304,6 +312,7 @@
           },
           {
               "name": "goatfish",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -311,6 +320,7 @@
           },
           {
               "name": "grey mullet",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -322,6 +332,7 @@
           },
           {
               "name": "gurnard",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -333,6 +344,7 @@
           },
           {
               "name": "grouper",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -356,10 +368,15 @@
                   "word": "trout",
                   "substitution": true,
                 },
+                {
+                  "word": "john dory",
+                  "substitution": true,
+                },
               ],
           },
           {
               "name": "general tso sauce",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -383,6 +400,7 @@
           },
           {
               "name": "ginger stir fry sauce",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -498,6 +516,7 @@
           },
           {
               "name": "granola bar",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -513,6 +532,7 @@
           },
           {
               "name": "gin",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -528,6 +548,7 @@
           },
           {
               "name": "garibaldi biscuits",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -571,6 +592,7 @@
           },
           {
               "name": "ginger biscuits",
+              "type": "",
               "exclude": [
                 {
                   "word": "spread",
@@ -675,6 +697,7 @@
           },
           {
               "name": "gingerbread mix",
+              "type": "",
               "exclude": [
                 {
                   "word": "spice"
@@ -725,6 +748,7 @@
           },
           {
               "name": "ginger cake",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -760,6 +784,7 @@
           },
           {
               "name": "glace cherries",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -819,6 +844,7 @@
           },
           {
               "name": "glycerine",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -834,6 +860,7 @@
           },
           {
               "name": "golden syrup",
+              "type": "",
               "exclude": [
                 {
                   "word": "cake",
@@ -883,6 +910,7 @@
           },
           {
               "name": "gooseberry mousse",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -918,6 +946,7 @@
           },
           {
               "name": "green food colouring",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -929,6 +958,7 @@
           },
           {
               "name": "gummy mix",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -976,6 +1006,7 @@
           },
           {
               "name": "granola",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -995,6 +1026,7 @@
           },
           {
               "name": "galangal",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1010,6 +1042,7 @@
           },
           {
               "name": "garam masala",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1033,6 +1066,7 @@
           },
           {
               "name": "garlic pepper",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1064,6 +1098,7 @@
           },
           {
               "name": "ground mace",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1079,6 +1114,7 @@
           },
           {
               "name": "garlic and chilli oil",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1098,6 +1134,7 @@
           },
           {
               "name": "ginger and miso dressing",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1141,6 +1178,7 @@
           },
           {
               "name": "goose fat",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1172,6 +1210,7 @@
           },
           {
               "name": "gravy granules",
+              "type": "",
               "exclude": [
                 {
                   "word": "masala",
@@ -1198,6 +1237,7 @@
           },
           {
               "name": "green pesto",
+              "type": "",
               "exclude": [
                 {
                   "word": "cheese",
@@ -1248,6 +1288,7 @@
           },
           {
               "name": "ginger ale",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1267,6 +1308,7 @@
           },
           {
               "name": "ginger beer",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1286,6 +1328,7 @@
           },
           {
               "name": "green tea",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1357,6 +1400,7 @@
           },
           {
               "name": "grape syrup",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1372,6 +1416,7 @@
           },
           {
               "name": "grenadine syrup",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1391,6 +1436,7 @@
           },
           {
               "name": "gnocchi",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1422,6 +1468,7 @@
           },
           {
               "name": "goat's milk",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1473,6 +1520,7 @@
           },
           {
               "name": "gyoza",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1496,6 +1544,7 @@
           },
           {
               "name": "ghee",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1615,6 +1664,7 @@
           },
           {
               "name": "groundnut oil",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1730,6 +1780,7 @@
           },
           {
               "name": "grapeseed oil",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1749,6 +1800,7 @@
           },
           {
               "name": "ginger tea",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1816,6 +1868,7 @@
           },
           {
               "name": "gooseberry flavoured spirit/liqueur",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1887,6 +1940,7 @@
           },
           {
               "name": "garlic and herb dressing",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1898,6 +1952,7 @@
           },
           {
               "name": "garlic oil",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1913,6 +1968,7 @@
           },
           {
               "name": "garlic mayonnaise",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1924,6 +1980,7 @@
           },
           {
               "name": "garlic puree",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1939,6 +1996,7 @@
           },
           {
               "name": "ginger puree",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1954,6 +2012,7 @@
           },
           {
               "name": "guinness cooking paste",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1969,6 +2028,7 @@
           },
           {
               "name": "gram flour",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1980,6 +2040,7 @@
           },
           {
               "name": "green curry paste",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2115,6 +2176,7 @@
           },
           {
               "name": "gelatine",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2138,6 +2200,7 @@
           },
           {
               "name": "ginger flavoured spirit/liqueur",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2213,6 +2276,7 @@
           },
           {
               "name": "ground cumin",
+              "type": "",
               "exclude": [
                 {
                   "word": "fresh",
@@ -2256,6 +2320,7 @@
           },
           {
               "name": "grapefruit flavoured spirit/liqueur",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2319,6 +2384,7 @@
           },
           {
               "name": "grape flavoured spirit/liqueur",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2386,6 +2452,7 @@
           },
           {
               "name": "gammon",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2401,6 +2468,7 @@
           },
           {
               "name": "green cardamom",
+              "type": "",
               "exclude": [
                 {
                   "word": "black cardamon",
@@ -2430,6 +2498,7 @@
           },
           {
               "name": "green beans",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2485,6 +2554,7 @@
           },
           {
               "name": "ground ginger",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2508,6 +2578,7 @@
           },
           {
               "name": "garlic powder",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2535,6 +2606,7 @@
           },
           {
               "name": "goat's cheese",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2574,6 +2646,7 @@
           },
           {
               "name": "guacamole",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2585,6 +2658,7 @@
           },
           {
             "name": "gruyere",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2636,6 +2710,7 @@
           },
           {
             "name": "gouda",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -2679,13 +2754,8 @@
           },
           {
             "name": "grapefruit",
+            "type": "fruit",
             "exclude": [
-              {
-                "word": "grapefruit juice",
-              },
-              {
-                "word": "grapefruit drink",
-              },
             ],
             "include": [
               {
@@ -2704,26 +2774,61 @@
                 "word": "shaddock",
                 "substitution": true,
               },
+              {
+                "word": "orangelo",
+                "substitution": true,
+              },
+              {
+                "word": "oroblanco",
+                "substitution": true,
+              },
+              {
+                "word": "oro blanco",
+                "substitution": true,
+              },
+              {
+                "word": "pomelit",
+                "substitution": true,
+              },
+              {
+                "word": "amanatsu",
+                "substitution": true,
+              },
+              {
+                "word": "natsumikan",
+                "substitution": true,
+              },
+              {
+                "word": "shangjuan",
+                "substitution": true,
+              },
+              {
+                "word": "limetta",
+                "substitution": true,
+              },
+              {
+                "word": "mousami",
+                "substitution": true,
+              },
+              {
+                "word": "musami",
+                "substitution": true,
+              },
+              {
+                "word": "lime",
+                "substitution": true,
+              },
+              {
+                "word": "lemon",
+                "substitution": true,
+              },
             ],
           },
           {
             "name": "grapes",
+            "type": "fruit",
             "exclude": [
-              {
-                "word": "juice",
-              },
-              {
-                "word": "jam",
-              },
-              {
-                "word": "preserve",
-              },
-              {
-                "word": "conserve",
-              },
-              {
-                "word": "drink",
-              },
+
               {
                 "word": "tomatoes",
               },
@@ -2738,9 +2843,6 @@
               },
               {
                 "word": "seed",
-              },
-              {
-                "word": "oil",
               },
             ],
             "include": [
@@ -2760,6 +2862,7 @@
           },
           {
             "name": "garlic",
+            "type": "",
             "exclude": [
               {
                 "word": "garlic bread",

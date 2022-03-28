@@ -37,6 +37,7 @@
 
           {
               "name": "red vegetable juice",
+              "type": "", 
               "exclude": [
                 {
                   "word": "broccoli",
@@ -83,6 +84,7 @@
           },
           {
               "name": "raspberry sauce",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -250,6 +252,7 @@
           },
           {
               "name": "red mullet",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -261,6 +264,7 @@
           },
           {
               "name": "rose wine",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -316,6 +320,7 @@
           },
           {
               "name": "raclette",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -351,6 +356,7 @@
           },
           {
               "name": "red leicester",
+              "type": "", 
               "exclude": [
                 {
                   "word": "mini cheddars",
@@ -390,6 +396,7 @@
           },
           {
               "name": "rainbow drops",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -433,6 +440,7 @@
           },
           {
               "name": "raisin and biscuit chocolate",
+              "type": "", 
               "exclude": [
                 {
                   "word": "icecream",
@@ -519,6 +527,7 @@
           },
           {
               "name": "red food colouring",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -530,6 +539,7 @@
           },
           {
               "name": "revels",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -569,6 +579,7 @@
           },
           {
               "name": "rice syrup",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -604,6 +615,7 @@
           },
           {
               "name": "rolos",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -623,6 +635,7 @@
           },
           {
               "name": "rice and peas",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -654,7 +667,164 @@
           },
           {
               "name": "raspberries",
+              "type": "", 
               "exclude": [
+                {
+                  "word": "pie",
+                },
+                {
+                  "word": "bake",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "sponge",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "ball",
+                },
+                {
+                  "word": "crispy",
+                },
+                {
+                  "word": "crunch",
+                },
+                {
+                  "word": "museli",
+                },
+                {
+                  "word": "sauce",
+                },
+                {
+                  "word": "vinegar",
+                },
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "chutney",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "jam",
+                },
+                {
+                  "word": "preserve",
+                },
+                {
+                  "word": "conserve",
+                },
+                {
+                  "word": "jelly",
+                },
+                {
+                  "word": "tea",
+                },
+                {
+                  "word": "beer",
+                },
+                {
+                  "word": "cider",
+                },
+                {
+                  "word": "wine",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "liquor",
+                },
+                {
+                  "word": "spirit",
+                },
+                {
+                  "word": "brandy",
+                },
+                {
+                  "word": "dried",
+                },
+                {
+                  "word": "chip",
+                },
+                {
+                  "word": "dessert",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "shortbread",
+                },
+                {
+                  "word": "cheesecake",
+                },
+                {
+                  "word": "loaf",
+                },
+                {
+                  "word": "pudding",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "cocoa",
+                },
+                {
+                  "word": "bonbon",
+                },
+                {
+                  "word": "sweets",
+                },
+                {
+                  "word": "candied",
+                },
+                {
+                  "word": "candy",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "cream",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
+                },
+                {
+                  "word": "curd",
+                },
+                {
+                  "word": "yoghurt",
+                },
+                {
+                  "word": "yogurt",
+                },
+                {
+                  "word": "muller",
+                },
+                {
+                  "word": "custard",
+                },
               ],
               "include": [
                 {
@@ -693,6 +863,7 @@
           },
           {
               "name": "ratatouille",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -704,7 +875,164 @@
           },
           {
               "name": "redcurrants",
+              "type": "", 
               "exclude": [
+                {
+                  "word": "pie",
+                },
+                {
+                  "word": "bake",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "sponge",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "ball",
+                },
+                {
+                  "word": "crispy",
+                },
+                {
+                  "word": "crunch",
+                },
+                {
+                  "word": "museli",
+                },
+                {
+                  "word": "sauce",
+                },
+                {
+                  "word": "vinegar",
+                },
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "chutney",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "jam",
+                },
+                {
+                  "word": "preserve",
+                },
+                {
+                  "word": "conserve",
+                },
+                {
+                  "word": "jelly",
+                },
+                {
+                  "word": "tea",
+                },
+                {
+                  "word": "beer",
+                },
+                {
+                  "word": "cider",
+                },
+                {
+                  "word": "wine",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "liquor",
+                },
+                {
+                  "word": "spirit",
+                },
+                {
+                  "word": "brandy",
+                },
+                {
+                  "word": "dried",
+                },
+                {
+                  "word": "chip",
+                },
+                {
+                  "word": "dessert",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "shortbread",
+                },
+                {
+                  "word": "cheesecake",
+                },
+                {
+                  "word": "loaf",
+                },
+                {
+                  "word": "pudding",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "cocoa",
+                },
+                {
+                  "word": "bonbon",
+                },
+                {
+                  "word": "sweets",
+                },
+                {
+                  "word": "candied",
+                },
+                {
+                  "word": "candy",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "cream",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
+                },
+                {
+                  "word": "curd",
+                },
+                {
+                  "word": "yoghurt",
+                },
+                {
+                  "word": "yogurt",
+                },
+                {
+                  "word": "muller",
+                },
+                {
+                  "word": "custard",
+                },
               ],
               "include": [
                 {
@@ -739,7 +1067,164 @@
           },
           {
               "name": "rhubarb",
+              "type": "", 
               "exclude": [
+                {
+                  "word": "pie",
+                },
+                {
+                  "word": "bake",
+                },
+                {
+                  "word": "cake",
+                },
+                {
+                  "word": "sponge",
+                },
+                {
+                  "word": "bar",
+                },
+                {
+                  "word": "ball",
+                },
+                {
+                  "word": "crispy",
+                },
+                {
+                  "word": "crunch",
+                },
+                {
+                  "word": "museli",
+                },
+                {
+                  "word": "sauce",
+                },
+                {
+                  "word": "vinegar",
+                },
+                {
+                  "word": "oil",
+                },
+                {
+                  "word": "chutney",
+                },
+                {
+                  "word": "spread",
+                },
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "jam",
+                },
+                {
+                  "word": "preserve",
+                },
+                {
+                  "word": "conserve",
+                },
+                {
+                  "word": "jelly",
+                },
+                {
+                  "word": "tea",
+                },
+                {
+                  "word": "beer",
+                },
+                {
+                  "word": "cider",
+                },
+                {
+                  "word": "wine",
+                },
+                {
+                  "word": "liqueur",
+                },
+                {
+                  "word": "liquor",
+                },
+                {
+                  "word": "spirit",
+                },
+                {
+                  "word": "brandy",
+                },
+                {
+                  "word": "dried",
+                },
+                {
+                  "word": "chip",
+                },
+                {
+                  "word": "dessert",
+                },
+                {
+                  "word": "cookie",
+                },
+                {
+                  "word": "biscuit",
+                },
+                {
+                  "word": "shortbread",
+                },
+                {
+                  "word": "cheesecake",
+                },
+                {
+                  "word": "loaf",
+                },
+                {
+                  "word": "pudding",
+                },
+                {
+                  "word": "chocolate",
+                },
+                {
+                  "word": "cocoa",
+                },
+                {
+                  "word": "bonbon",
+                },
+                {
+                  "word": "sweets",
+                },
+                {
+                  "word": "candied",
+                },
+                {
+                  "word": "candy",
+                },
+                {
+                  "word": "fudge",
+                },
+                {
+                  "word": "cream",
+                },
+                {
+                  "word": "icecream",
+                },
+                {
+                  "word": "ice cream",
+                },
+                {
+                  "word": "gelato",
+                },
+                {
+                  "word": "curd",
+                },
+                {
+                  "word": "yoghurt",
+                },
+                {
+                  "word": "yogurt",
+                },
+                {
+                  "word": "muller",
+                },
+                {
+                  "word": "custard",
+                },
               ],
               "include": [
                 {
@@ -758,6 +1243,7 @@
           },
           {
               "name": "ras el hanout",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -789,6 +1275,7 @@
           },
           {
               "name": "rogan josh spice",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -816,6 +1303,7 @@
           },
           {
               "name": "rice pudding",
+              "type": "", 
               "exclude": [
                 {
                   "word": "flour",
@@ -862,6 +1350,7 @@
           },
           {
               "name": "roasted red peppers",
+              "type": "", 
               "exclude": [
                 {
                   "word": "jam",
@@ -1054,6 +1543,7 @@
           },
           {
               "name": "ramen broth",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1129,6 +1619,7 @@
           },
           {
               "name": "red pesto",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1212,6 +1703,7 @@
           },
           {
               "name": "red wine stock",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1299,6 +1791,7 @@
           },
           {
               "name": "rendang curry paste",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1318,6 +1811,7 @@
           },
           {
               "name": "rogan josh paste",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1349,6 +1843,7 @@
           },
           {
               "name": "raspberry tea",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1472,6 +1967,7 @@
           },
           {
               "name": "raspberry syrup",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1495,6 +1991,7 @@
           },
           {
               "name": "ribena",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1534,6 +2031,7 @@
           },
           {
               "name": "raita",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1545,6 +2043,7 @@
           },
           {
               "name": "ravioli",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1556,6 +2055,7 @@
           },
           {
               "name": "rice bran oil",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1671,6 +2171,7 @@
           },
           {
               "name": "rapeseed oil",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1690,6 +2191,7 @@
           },
           {
               "name": "radish",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1701,6 +2203,7 @@
           },
           {
               "name": "rooisbos tea",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1716,6 +2219,7 @@
           },
           {
               "name": "raspberry cola",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1731,6 +2235,7 @@
           },
           {
               "name": "rhubarb flavoured spirit/liqueur",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1806,6 +2311,7 @@
           },
           {
               "name": "rhubarb jelly",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1837,6 +2343,7 @@
           },
           {
               "name": "rhubarb jam",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1872,6 +2379,7 @@
           },
           {
               "name": "raspberry jelly",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1903,6 +2411,7 @@
           },
           {
               "name": "raspberry jam",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -1930,6 +2439,7 @@
           },
           {
             "name": "rice milk",
+            "type": "", 
             "exclude": [
             ],
             "include": [
@@ -1977,6 +2487,7 @@
           },
           {
               "name": "red curry paste",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -2112,6 +2623,7 @@
           },
           {
               "name": "rose water",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -2131,6 +2643,7 @@
           },
           {
               "name": "redcurrant jelly",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -2182,6 +2695,7 @@
           },
           {
               "name": "rice puffs",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -2205,6 +2719,7 @@
           },
           {
               "name": "rice cracker",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -2216,6 +2731,7 @@
           },
           {
               "name": "raspberry flavoured spirit/liqueur",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -2339,6 +2855,7 @@
           },
           {
               "name": "red wine",
+              "type": "", 
               "exclude": [
                 {
                   "word": "vinegar",
@@ -2389,6 +2906,7 @@
           },
           {
               "name": "ricotta",
+              "type": "", 
               "exclude": [
                 {
                   "word": "tortellini",
@@ -2446,6 +2964,7 @@
           },
           {
             "name": "rocket",
+            "type": "", 
             "exclude": [
             ],
             "include": [
@@ -2465,6 +2984,7 @@
           },
           {
             "name": "rice",
+            "type": "", 
             "exclude": [
               {
                 "word": "paper",
@@ -2554,6 +3074,7 @@
           },
           {
             "name": "raisins",
+            "type": "", 
             "exclude": [
             ],
             "include": [

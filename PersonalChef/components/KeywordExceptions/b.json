@@ -50,6 +50,7 @@
 
       {
           "name": "blackcurrants",
+          "type": "fruit",
           "exclude": [
           ],
           "include": [
@@ -61,6 +62,7 @@
       },
       {
           "name": "bilberries",
+          "type": "fruit",
           "exclude": [
           ],
           "include": [
@@ -96,6 +98,7 @@
       },
       {
           "name": "boysenberries",
+          "type": "fruit",
           "exclude": [
           ],
           "include": [
@@ -131,6 +134,7 @@
       },
       {
           "name": "breadfruit",
+          "type": "",
           "exclude": [
             {
               "word": "flour",
@@ -173,6 +177,7 @@
       },
       {
           "name": "borage flowers",
+          "type": "",
           "exclude": [
             {
               "word": "sparkling",
@@ -230,6 +235,9 @@
             },
             {
               "word": "liquor",
+            },
+            {
+              "word": "spirit",
             },
             {
               "word": "honey",
@@ -290,6 +298,7 @@
       },
       {
           "name": "borage leaves",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -309,6 +318,7 @@
       },
       {
           "name": "burnet",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -320,6 +330,7 @@
       },
       {
           "name": "belgian waffles",
+          "type": "",
           "exclude": [
             {
               "word": "potato",
@@ -353,6 +364,7 @@
       },
       {
           "name": "branzino",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -384,6 +396,7 @@
       },
       {
           "name": "barramundi",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -415,6 +428,7 @@
       },
       {
           "name": "brill",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -438,6 +452,7 @@
       },
       {
           "name": "brussel sprouts",
+          "type": "",
           "exclude": [
             {
               "word": "bean",
@@ -464,6 +479,7 @@
       },
       {
           "name": "black bean sauce",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -527,6 +543,7 @@
       },
       {
           "name": "bonito flakes",
+          "type": "",
           "exclude": [
             {
               "word": "powder",
@@ -567,6 +584,7 @@
       },
       {
           "name": "bonbons",
+          "type": "",
           "exclude": [
             {
               "word": "fudge",
@@ -603,6 +621,7 @@
       },
       {
           "name": "blackcurrant syrup",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -634,6 +653,7 @@
       },
       {
           "name": "bulgur",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -661,6 +681,7 @@
       },
       {
           "name": "bacon",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -676,6 +697,7 @@
       },
       {
           "name": "bluefish",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -691,6 +713,7 @@
       },
       {
           "name": "butterscotch essence",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -722,10 +745,8 @@
       },
       {
           "name": "bitter melon",
+          "type": "fruit",
           "exclude": [
-            {
-              "word": "juice",
-            },
           ],
           "include": [
             {
@@ -740,6 +761,7 @@
       },
       {
           "name": "bass",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -751,6 +773,7 @@
       },
       {
           "name": "baked beans",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -758,6 +781,7 @@
       },
       {
           "name": "bread sauce",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -765,6 +789,7 @@
       },
       {
           "name": "borage seed oil",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -796,6 +821,7 @@
       },
       {
           "name": "bearnaise",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -819,6 +845,7 @@
       },
       {
           "name": "basil oil",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -830,6 +857,7 @@
       },
       {
           "name": "biscuits",
+          "type": "",
           "exclude": [
             {
               "word": "spread",
@@ -866,6 +894,7 @@
       },
       {
           "name": "bavarian smoked cheese",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -885,6 +914,7 @@
       },
       {
           "name": "butterscotch mousse",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -952,6 +982,7 @@
       },
       {
           "name": "bounty",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -987,6 +1018,7 @@
       },
       {
           "name": "bourbon biscuits",
+          "type": "",
           "exclude": [
             {
               "word": "spread",
@@ -1043,6 +1075,7 @@
       },
       {
           "name": "boiled sweets",
+          "type": "",
           "exclude": [
             {
               "word": "ice",
@@ -1102,6 +1135,7 @@
       },
       {
           "name": "biscuit spread",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1125,6 +1159,7 @@
       },
       {
           "name": "black treacle",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1152,6 +1187,7 @@
       },
       {
           "name": "blue food colouring",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1163,6 +1199,7 @@
       },
       {
           "name": "black food colouring",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1174,6 +1211,7 @@
       },
       {
           "name": "banana custard",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1185,6 +1223,7 @@
       },
       {
           "name": "batter mix",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1200,6 +1239,7 @@
       },
       {
           "name": "bran flakes",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1231,6 +1271,7 @@
       },
       {
           "name": "basa",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1278,6 +1319,7 @@
       },
       {
           "name": "blueberries",
+          "type": "fruit",
           "exclude": [
           ],
           "include": [
@@ -1305,6 +1347,7 @@
       },
       {
           "name": "bay leaf",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1320,6 +1363,7 @@
       },
       {
           "name": "bouquet garni",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1327,6 +1371,7 @@
       },
       {
           "name": "baharat seasoning",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1370,6 +1415,7 @@
       },
       {
           "name": "buttermilk",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1393,6 +1439,7 @@
       },
       {
           "name": "black beans",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1428,6 +1475,7 @@
       },
       {
           "name": "black cherries",
+          "type": "fruit",
           "exclude": [
           ],
           "include": [
@@ -1447,6 +1495,7 @@
       },
       {
           "name": "butter chicken cooking sauce",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1466,6 +1515,7 @@
       },
       {
           "name": "biryani spice blend",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1485,6 +1535,7 @@
       },
       {
           "name": "biryani paste",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1512,6 +1563,7 @@
       },
       {
           "name": "blue cheese dressing",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1527,6 +1579,7 @@
       },
       {
           "name": "burger sauce",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1542,6 +1595,7 @@
       },
       {
           "name": "brown sauce",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1569,6 +1623,7 @@
       },
       {
           "name": "beetroot pesto",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1596,6 +1651,7 @@
       },
       {
           "name": "baconnaise",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1615,6 +1671,7 @@
       },
       {
           "name": "balsamic vinegar",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1638,6 +1695,7 @@
       },
       {
           "name": "banana milkshake",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1661,6 +1719,7 @@
       },
       {
           "name": "beetroot juice",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1672,6 +1731,7 @@
       },
       {
           "name": "berry tea",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1767,6 +1827,7 @@
       },
       {
           "name": "black tea",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1830,6 +1891,7 @@
       },
       {
           "name": "bitters",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1853,6 +1915,7 @@
       },
       {
           "name": "balti paste",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1880,6 +1943,7 @@
       },
       {
           "name": "bhuna paste",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1907,6 +1971,7 @@
       },
       {
           "name": "breaded fish fillets",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1918,6 +1983,7 @@
       },
       {
           "name": "butter beans",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1957,6 +2023,7 @@
       },
       {
           "name": "berry cordial",
+          "type": "",
           "exclude": [
             {
               "word": "fresh",
@@ -2045,6 +2112,7 @@
       },
       {
           "name": "blackcurrant tea",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2144,6 +2212,7 @@
       },
       {
           "name": "butterscotch flavoured spirit/liqueur",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2215,6 +2284,7 @@
       },
       {
           "name": "basil puree",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2230,6 +2300,7 @@
       },
       {
           "name": "borlotti beans",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2269,6 +2340,7 @@
       },
       {
           "name": "black-eyed peas",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2324,6 +2396,7 @@
       },
       {
           "name": "bombay mix",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2355,6 +2428,7 @@
       },
       {
           "name": "barbeque seasoning",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2374,6 +2448,7 @@
       },
       {
           "name": "bramble jam",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2401,6 +2476,7 @@
       },
       {
           "name": "bramble jelly",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2432,6 +2508,7 @@
       },
       {
           "name": "blueberry jam",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2459,6 +2536,7 @@
       },
       {
           "name": "blueberry jelly",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2490,6 +2568,7 @@
       },
       {
           "name": "blackcurrant jam",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2517,6 +2596,7 @@
       },
       {
           "name": "blackcurrant jelly",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2548,6 +2628,7 @@
       },
       {
           "name": "berry jam",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2575,6 +2656,7 @@
       },
       {
         "name": "beet",
+        "type": "",
         "exclude": [
           {
             "word": "beet greens",
@@ -2651,6 +2733,7 @@
       },
       {
         "name": "beetroot",
+        "type": "",
         "exclude": [
           {
             "word": "juice",
@@ -2728,6 +2811,7 @@
       },
       {
         "name": "beetroot powder",
+        "type": "",
         "exclude": [
         ],
         "include": [
@@ -2775,6 +2859,7 @@
       },
       {
         "name": "burger",
+        "type": "",
         "exclude": [
           {
             "word": "burger bun",
@@ -2833,6 +2918,7 @@
       },
       {
           "name": "black cardamom",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -2956,6 +3042,7 @@
       },
       {
           "name": "butternut squash",
+          "type": "",
           "exclude": [
             {
               "word": "fruit",
@@ -3080,6 +3167,7 @@
       },
       {
           "name": "brandy",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -3111,6 +3199,7 @@
       },
       {
           "name": "blackberries",
+          "type": "fruit",
           "exclude": [
           ],
           "include": [
@@ -3170,6 +3259,7 @@
       },
       {
           "name": "buttercream",
+          "type": "",
           "exclude": [
             {
               "word": "fondant",
@@ -3251,6 +3341,7 @@
       },
       {
           "name": "black pudding",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -3294,6 +3385,7 @@
       },
       {
           "name": "broad beans",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -3325,6 +3417,7 @@
       },
       {
           "name": "barbeque sauce",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -3364,6 +3457,7 @@
       },
       {
           "name": "bread wraps",
+          "type": "",
           "exclude": [
             {
               "word": "tortilla chip",
@@ -3487,6 +3581,7 @@
       },
       {
           "name": "breadsticks",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -3530,6 +3625,7 @@
       },
       {
           "name": "breadcrumbs",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -3553,6 +3649,7 @@
       },
       {
         "name": "bread loaf",
+        "type": "",
         "exclude": [
           {
             "word": "bread sauce",
@@ -3708,6 +3805,7 @@
       },
       {
           "name": "blackberry flavoured spirit/liqueur",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -3811,6 +3909,7 @@
       },
       {
           "name": "blackcurrant flavoured spirit/liqueur",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -3978,6 +4077,7 @@
       },
       {
           "name": "blueberry flavoured spirit/liqueur",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -4105,6 +4205,7 @@
       },
       {
           "name": "banana flavoured spirit/liqueur",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -4204,6 +4305,7 @@
       },
           {
               "name": "beansprouts",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4239,6 +4341,7 @@
           },
           {
               "name": "beer",
+              "type": "",
               "exclude": [
                 {
                   "word": "ginger beer",
@@ -4264,6 +4367,7 @@
           },
           {
               "name": "beef mince",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4311,6 +4415,7 @@
           },
           {
               "name": "beef",
+              "type": "",
               "exclude": [
                 {
                   "word": "corned beef",
@@ -4586,6 +4691,7 @@
           },
           {
               "name": "baking soda",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4601,6 +4707,7 @@
           },
           {
               "name": "baking powder",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4628,6 +4735,7 @@
           },
           {
               "name": "broccoli",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4655,6 +4763,7 @@
           },
           {
               "name": "blue cheese",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4702,6 +4811,7 @@
           },
           {
             "name": "brie",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4733,6 +4843,7 @@
           },
           {
             "name": "beef stock",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -4828,6 +4939,7 @@
           },
           {
             "name": "bell pepper",
+            "type": "",
             "exclude": [
               {
                 "word": "jam",
@@ -4964,6 +5076,7 @@
           },
           {
             "name": "butter",
+            "type": "",
             "exclude": [
               {
                 "word": "peanut butter",
@@ -5017,6 +5130,7 @@
           },
           {
             "name": "brazil nuts",
+            "type": "",
             "exclude": [
               {
                 "word": "oil",
@@ -5076,6 +5190,7 @@
           },
           {
             "name": "banana",
+            "type": "fruit",
             "exclude": [
               {
                 "word": "cooking banana",
@@ -5096,63 +5211,6 @@
                 "word": "pepper",
               },
               {
-                "word": "bake",
-              },
-              {
-                "word": "cake",
-              },
-              {
-                "word": "bar",
-              },
-              {
-                "word": "ball",
-              },
-              {
-                "word": "crispy",
-              },
-              {
-                "word": "crunch",
-              },
-              {
-                "word": "sweets",
-              },
-              {
-                "word": "candy",
-              },
-              {
-                "word": "dried",
-              },
-              {
-                "word": "chip",
-              },
-              {
-                "word": "candied",
-              },
-              {
-                "word": "yoghurt",
-              },
-              {
-                "word": "muller",
-              },
-              {
-                "word": "custard",
-              },
-              {
-                "word": "cream",
-              },
-              {
-                "word": "liqueur",
-              },
-              {
-                "word": "liquor",
-              },
-              {
-                "word": "rum",
-              },
-              {
-                "word": "brandy",
-              },
-              {
                 "word": "flavoring",
               },
               {
@@ -5166,12 +5224,6 @@
               },
               {
                 "word": "sauce",
-              },
-              {
-                "word": "puree",
-              },
-              {
-                "word": "purée",
               },
             ],
             "include": [

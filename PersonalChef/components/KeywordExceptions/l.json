@@ -34,6 +34,7 @@
 
         {
             "name": "lager",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -45,6 +46,7 @@
         },
         {
             "name": "lemon and lime jam",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -116,6 +118,7 @@
         },
         {
             "name": "lemon biscuits",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -127,6 +130,7 @@
         },
         {
             "name": "lemon curd",
+            "type": "",
             "exclude": [
               {
                 "word": "yoghurt",
@@ -176,6 +180,7 @@
         },
         {
             "name": "lemon extract",
+            "type": "",
             "exclude": [
               {
                 "word": "olive",
@@ -224,6 +229,7 @@
         },
         {
             "name": "lemon mousse",
+            "type": "",
             "exclude": [
               {
                 "word": "butter",
@@ -268,6 +274,7 @@
         },
         {
             "name": "lion bar",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -287,6 +294,7 @@
         },
         {
             "name": "liquid glucose",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -302,6 +310,7 @@
         },
         {
             "name": "liquorice allsorts",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -321,6 +330,7 @@
         },
         {
             "name": "lollipop",
+            "type": "",
             "exclude": [
               {
                 "word": "ice",
@@ -351,6 +361,7 @@
         },
         {
             "name": "love hearts",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -394,6 +405,7 @@
         },
         {
             "name": "langoustine",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -409,6 +421,7 @@
         },
         {
             "name": "langoustine",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -436,6 +449,7 @@
         },
         {
             "name": "lobster",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -467,6 +481,7 @@
         },
         {
             "name": "lamb's lettuce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -490,6 +505,7 @@
         },
         {
             "name": "lychee",
+            "type": "fruit",
             "exclude": [
             ],
             "include": [
@@ -521,6 +537,7 @@
         },
         {
             "name": "lamb herb seasoning",
+            "type": "",
             "exclude": [
               {
                 "word": "indian",
@@ -576,6 +593,7 @@
         },
         {
             "name": "lemon butter sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -643,6 +661,7 @@
         },
         {
             "name": "lapsang tea",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -666,6 +685,7 @@
         },
         {
             "name": "lemon ice tea",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -705,6 +725,7 @@
         },
         {
             "name": "laksa paste",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -740,6 +761,7 @@
         },
         {
             "name": "lime cola",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -755,6 +777,7 @@
         },
         {
             "name": "leek",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -766,6 +789,7 @@
         },
         {
             "name": "lemon tea",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -841,6 +865,7 @@
         },
         {
             "name": "lime cordial",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -872,6 +897,7 @@
         },
         {
             "name": "lemon cordial",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -895,6 +921,7 @@
         },
         {
             "name": "lemonade",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -926,6 +953,7 @@
         },
         {
             "name": "light rum",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -941,6 +969,7 @@
         },
         {
             "name": "lime flavoured spirit/liqueur",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1036,6 +1065,7 @@
         },
         {
             "name": "lemongrass puree",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1063,6 +1093,7 @@
         },
         {
             "name": "lemon and lime jelly",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1098,6 +1129,7 @@
         },
         {
             "name": "lemon and lime jam",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1125,6 +1157,7 @@
         },
         {
             "name": "lamb mince",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1172,6 +1205,7 @@
         },
         {
             "name": "lard",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1207,6 +1241,7 @@
         },
         {
             "name": "lemongrass",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1218,6 +1253,7 @@
         },
         {
             "name": "lime leaves",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1237,6 +1273,7 @@
         },
         {
           "name": "lime mojo sauce",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1248,6 +1285,7 @@
         },
         {
             "name": "lemon flavoured spirit/liqueur",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1331,6 +1369,7 @@
         },
         {
             "name": "lamb",
+            "type": "",
             "exclude": [
               {
                 "word": "lettuce",
@@ -1472,6 +1511,7 @@
         },
         {
           "name": "lasagne sheets",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1507,6 +1547,7 @@
         },
         {
           "name": "lemon juice",
+          "type": "",
           "exclude": [
             {
               "word": "lemon zest",
@@ -1530,6 +1571,7 @@
         },
         {
           "name": "lamb stock",
+          "type": "",
           "exclude": [
           ],
           "include": [
@@ -1613,6 +1655,7 @@
         },
         {
           "name": "lettuce",
+          "type": "",
           "exclude": [
             {
               "word": "lambs lettuce",
@@ -1627,6 +1670,7 @@
         },
         {
           "name": "lime",
+          "type": "fruit",
           "exclude": [
             {
               "word": "lime leaves",
@@ -1638,13 +1682,7 @@
               "word": "lime sugar",
             },
             {
-              "word": "oil",
-            },
-            {
               "word": "lime mojo",
-            },
-            {
-              "word": "soda",
             },
             {
               "word": "syrup",
@@ -1660,30 +1698,69 @@
               "substitution": true,
             },
             {
+              "word": "rangpur",
+              "substitution": true,
+            },
+            {
+              "word": "lemandarin",
+              "substitution": true,
+            },
+            {
               "word": "yuzu",
               "substitution": true,
             },
             {
-              "word": "tamarind concentrate",
+              "word": "grapefruit",
+              "substitution": true,
+            },
+            {
+              "word": "citron",
               "substitution": true,
             },
             {
               "word": "lemon juice",
               "substitution": true,
             },
+            {
+              "word": "shangjuan",
+              "substitution": true,
+            },
+            {
+              "word": "limetta",
+              "substitution": true,
+            },
+            {
+              "word": "mousami",
+              "substitution": true,
+            },
+            {
+              "word": "musami",
+              "substitution": true,
+            },
+            {
+              "word": "taiwan tangerine",
+              "substitution": true,
+            },
+            {
+              "word": "shiikuwasha",
+              "substitution": true,
+            },
+            {
+              "word": "shequasar",
+              "substitution": true,
+            },
+            {
+              "word": "tamarind concentrate",
+              "substitution": true,
+            },
           ],
         },
         {
           "name": "lemon",
+          "type": "fruit",
           "exclude": [
             {
-              "word": "curd",
-            },
-            {
-              "word": "lemon sole",
-            },
-            {
-              "word": "candied",
+              "word": "sole",
             },
             {
               "word": "peel",
@@ -1698,9 +1775,6 @@
               "word": "lemon sugar",
             },
             {
-              "word": "oil",
-            },
-            {
               "word": "soda",
             },
             {
@@ -1717,11 +1791,47 @@
               "substitution": true,
             },
             {
+              "word": "lime",
+              "substitution": true,
+            },
+            {
               "word": "yuzu",
               "substitution": true,
             },
             {
               "word": "preserved lemon",
+              "substitution": true,
+            },
+            {
+              "word": "lumia",
+              "substitution": true,
+            },
+            {
+              "word": "pompia",
+              "substitution": true,
+            },
+            {
+              "word": "spompia",
+              "substitution": true,
+            },
+            {
+              "word": "pumpia",
+              "substitution": true,
+            },
+            {
+              "word": "shangjuan",
+              "substitution": true,
+            },
+            {
+              "word": "taiwan tangerine",
+              "substitution": true,
+            },
+            {
+              "word": "shiikuwasha",
+              "substitution": true,
+            },
+            {
+              "word": "shequasar",
               "substitution": true,
             },
           ],

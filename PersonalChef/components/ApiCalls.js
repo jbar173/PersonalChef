@@ -830,7 +830,7 @@ class ApiCalls extends React.Component {
                                                                                      <View key={i}>
                                                                                         {entry[0] === item[1] &&
                                                                                             <View>
-                                                                                                  <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                                                                  <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could possibly be used in place of {entry[1][0]}*</Text>
                                                                                             </View>
                                                                                         }
                                                                                      </View>
@@ -904,7 +904,7 @@ class ApiCalls extends React.Component {
                                                                                      <View key={i}>
                                                                                         {entry[0] === item[1] &&
                                                                                             <View>
-                                                                                                <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                                                                <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could possibly be used in place of {entry[1][0]}*</Text>
                                                                                             </View>
                                                                                         }
                                                                                      </View>
@@ -996,7 +996,7 @@ class ApiCalls extends React.Component {
                                                                                         <View key={i}>
                                                                                            {entry[0] === item[1] &&
                                                                                                <View>
-                                                                                                   <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could be used in place of {entry[1][0]}</Text>
+                                                                                                   <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could possibly be used in place of {entry[1][0]}*</Text>
                                                                                                </View>
                                                                                            }
                                                                                         </View>
@@ -1052,6 +1052,10 @@ class ApiCalls extends React.Component {
                                           </View>
 
                             }
+                            <View>
+                                <Text style={{textAlign:"center",marginBottom:5}}>* Some suggested substitutions may not be appropriate - please research whether required
+                                        quantities/cooking methods/times will differ for replacement ingredients. </Text>
+                            </View>
                         </View>
 
                     }

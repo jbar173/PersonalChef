@@ -3,7 +3,7 @@
     "key" : ["jagermeister",
              "jarlsberg",
              "jaffa cakes","jelly beans",
-             "john dory",
+             "jellied eels","john dory",
              "jerusalem artichoke","jicama",
              "jerk seasoning mix","juniper berries",
              "jalfrezi paste","jerk sauce",
@@ -16,7 +16,7 @@
              "jackfruit",
 
              "~~~ TO DO : ~~~",
-             "jellied eels",
+
 
     ],
 
@@ -25,7 +25,28 @@
 
 
         {
+            "name": "jellied eels",
+            "type": "",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "jelly eel",
+                "substitution": false,
+              },
+              {
+                "word": "jellied eel",
+                "substitution": false,
+              },
+              {
+                "word": "pickled herring",
+                "substitution": true,
+              },
+            ],
+        },
+        {
             "name": "john dory",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -105,10 +126,39 @@
                 "word": "peters fish",
                 "substitution": false,
               },
+              {
+                "word": "dory",
+                "substitution": false,
+              },
+              {
+                "word": "pangasius",
+                "substitution": false,
+              },
+              {
+                "word": "sole",
+                "substitution": true,
+              },
+              {
+                "word": "sea bass",
+                "substitution": true,
+              },
+              {
+                "word": "grouper",
+                "substitution": true,
+              },
+              {
+                "word": "snapper",
+                "substitution": true,
+              },
+              {
+                "word": "halibut",
+                "substitution": true,
+              },
             ],
         },
         {
             "name": "jicama",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -156,6 +206,7 @@
         },
         {
             "name": "jackfruit",
+            "type": "fruit",
             "exclude": [
             ],
             "include": [
@@ -171,6 +222,7 @@
         },
         {
             "name": "jagermeister",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -198,6 +250,7 @@
         },
         {
             "name": "jaffa cakes",
+            "type": "",
             "exclude": [
               {
                 "word": "rum",
@@ -288,6 +341,7 @@
         },
         {
             "name": "jelly beans",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -327,6 +381,7 @@
         },
         {
             "name": "juniper berries",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -362,6 +417,7 @@
         },
         {
             "name": "jerk seasoning mix",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -413,6 +469,7 @@
         },
         {
             "name": "jerk sauce",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -456,6 +513,7 @@
         },
         {
             "name": "jasmine tea",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -499,6 +557,7 @@
         },
         {
             "name": "jerky",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -550,6 +609,7 @@
         },
         {
             "name": "jam tart",
+            "type": "",
             "exclude": [
               {
                 "word": "onion",
@@ -576,6 +636,7 @@
         },
         {
             "name": "jalfrezi paste",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -603,6 +664,7 @@
         },
         {
             "name": "jazzies",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -634,6 +696,7 @@
         },
         {
             "name": "jammy dodgers",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -645,6 +708,7 @@
         },
         {
             "name": "jerusalem artichoke",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -668,6 +732,7 @@
         },
         {
           "name": "jarlsberg",
+          "type": "",
           "exclude": [
           ],
           "include": [

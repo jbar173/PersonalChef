@@ -6,6 +6,7 @@
 
 
               "~~~ HALF DONE : ~~~",
+              "yuzu",
               "yeast extract", "yoshida's gourmet sauce",
 
 
@@ -20,7 +21,36 @@
 
 
           {
+              "name": "yuzu",
+              "type": "", 
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grapefruit",
+                  "substitution": true,
+                },
+                {
+                  "word": "jabara",
+                  "substitution": true,
+                },
+                {
+                  "word": "iyokan",
+                  "substitution": true,
+                },
+                {
+                  "word": "first lady",
+                  "substitution": true,
+                },
+                {
+                  "word": "anadomikan",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "yellow food colouring",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -32,6 +62,7 @@
           },
           {
               "name": "yeast",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -43,6 +74,7 @@
           },
           {
               "name": "yorkshire pudding mix",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -62,6 +94,7 @@
           },
           {
               "name": "yoshida's gourmet sauce",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -117,6 +150,7 @@
           },
           {
               "name": "yeast extract",
+              "type": "", 
               "exclude": [
               ],
               "include": [
@@ -128,6 +162,7 @@
           },
           {
               "name": "yellow curry paste",
+              "type": "", 
               "exclude": [
               ],
               "include": [

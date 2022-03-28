@@ -3,7 +3,7 @@
     "key" : [ "kewra water","kitkat",
               "kamut flour",
               "kipper",
-              "kale","kiwi fruit","kohlrabi",
+              "kale","kiwi fruit","kohlrabi","kumquat",
               "kofta seasoning",
               "kidney beans","kimchi",
 
@@ -16,8 +16,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "KUMQUAT",
-              "KINGKLIP",
 
     ],
 
@@ -26,7 +24,24 @@
 
 
           {
+              "name": "kumquat",
+              "type": "fruit",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cumquat",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange",
+                  "substitution": true,
+                },
+              ],
+          },
+          {
               "name": "katsu curry paste",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -74,6 +89,7 @@
           },
           {
               "name": "keralan curry paste",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -101,6 +117,7 @@
           },
           {
               "name": "kolhapuri curry paste",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -144,6 +161,7 @@
           },
           {
               "name": "karahi paste",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -191,6 +209,7 @@
           },
           {
               "name": "kung po sauce",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -226,6 +245,7 @@
           },
           {
               "name": "kimchi",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -293,6 +313,7 @@
           },
           {
               "name": "kofta seasoning",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -384,6 +405,7 @@
           },
           {
               "name": "kipper",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -427,6 +449,7 @@
           },
           {
               "name": "kitkat",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -450,6 +473,7 @@
           },
           {
               "name": "korean barbeque sauce",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -474,6 +498,7 @@
           },
           {
               "name": "kohlrabi",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -509,6 +534,7 @@
           },
           {
               "name": "korma paste",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -536,6 +562,7 @@
           },
           {
               "name": "kidney beans",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -551,6 +578,7 @@
           },
           {
               "name": "kewra water",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -570,6 +598,7 @@
           },
           {
               "name": "kamut flour",
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -585,6 +614,7 @@
           },
           {
             "name": "kale",
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -644,6 +674,7 @@
           },
           {
               "name": "kiwi fruit",
+              "type": "fruit",
               "exclude": [
               ],
               "include": [
