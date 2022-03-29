@@ -49,7 +49,7 @@
 
           {
               "name": "swordfish",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -60,12 +60,12 @@
                 {
                   "word": "cobia",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "shredded wheat cereal",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -100,12 +100,12 @@
                 {
                   "word": "wheat cereal",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "saag curry paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -128,24 +128,24 @@
                 {
                   "word": "hot curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sake",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "mirin",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "shortbread",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "spread",
@@ -167,7 +167,7 @@
                 },
                 {
                   "word": "shake",
-                },
+                }
               ],
               "include": [
                 {
@@ -197,12 +197,12 @@
                 {
                   "word": "biscuits",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "shortcake biscuits",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "spread",
@@ -224,7 +224,7 @@
                 },
                 {
                   "word": "shake",
-                },
+                }
               ],
               "include": [
                 {
@@ -254,12 +254,12 @@
                 {
                   "word": "biscuits",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "smarties",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -290,12 +290,12 @@
                 {
                   "word": "chocolate",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "snickers",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "icecream",
@@ -305,7 +305,7 @@
                 },
                 {
                   "word": "gelato",
-                },
+                }
               ],
               "include": [
                 {
@@ -327,12 +327,12 @@
                 {
                   "word": "picnic bar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "syrup cake",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -355,12 +355,12 @@
                 {
                   "word": "cake",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "skittles",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -379,12 +379,12 @@
                 {
                   "word": "cake decorations",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "starburst",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -407,12 +407,12 @@
                 {
                   "word": "skittles",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "stem ginger",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "cookie",
@@ -458,7 +458,7 @@
                 },
                 {
                   "word": "liqueur",
-                },
+                }
               ],
               "include": [
                 {
@@ -520,12 +520,12 @@
                 {
                   "word": "sugared stem ginger",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "strawberry liquorice",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -616,12 +616,12 @@
                 {
                   "word": "cake decorations",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "strawberry mousse",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -900,12 +900,12 @@
                 {
                   "word": "raspberry flavored buttercream",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "strawberry sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1068,12 +1068,12 @@
                 {
                   "word": "raspberry sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "strawberry shoelaces",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1120,12 +1120,12 @@
                 {
                   "word": "cake decorations",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sugar syrup",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1136,12 +1136,12 @@
                 {
                   "word": "agave nectar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sultanas",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1164,24 +1164,24 @@
                 {
                   "word": "dates",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "scone mix",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "scones",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "scones",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "mix",
@@ -1191,7 +1191,7 @@
                 },
                 {
                   "word": "pastry",
-                },
+                }
               ],
               "include": [
                 {
@@ -1205,12 +1205,12 @@
                 {
                   "word": "rock bun",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sesame seeds",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1229,12 +1229,12 @@
                 {
                   "word": "sunflower seeds",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sesame seeds",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1253,12 +1253,12 @@
                 {
                   "word": "sunflower seeds",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "shortcrust pastry",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1289,12 +1289,12 @@
                 {
                   "word": "tart dough",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sunflower seeds",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1305,12 +1305,12 @@
                 {
                   "word": "sesame seeds",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sturgeon",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1321,12 +1321,12 @@
                 {
                   "word": "tuna",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "salmon",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1361,12 +1361,12 @@
                 {
                   "word": "eel",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "scallops",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1389,12 +1389,12 @@
                 {
                   "word": "goose barnacles",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "striped bass",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1433,12 +1433,12 @@
                 {
                   "word": "branzino",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sea bass",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1521,12 +1521,12 @@
                 {
                   "word": "john dory",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "stone bass",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1553,12 +1553,12 @@
                 {
                   "word": "meagre",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "scad",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1569,12 +1569,12 @@
                 {
                   "word": "sardines",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sea bream",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "rillettes",
@@ -1599,7 +1599,7 @@
                 },
                 {
                   "word": "sauce",
-                },
+                }
               ],
               "include": [
                 {
@@ -1637,12 +1637,12 @@
                 {
                   "word": "grey mullet",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "smoked trout",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "rillettes",
@@ -1667,7 +1667,7 @@
                 },
                 {
                   "word": "sauce",
-                },
+                }
               ],
               "include": [
                 {
@@ -1693,12 +1693,12 @@
                 {
                   "word": "salmon",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "smoked salmon",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "rillettes",
@@ -1723,7 +1723,7 @@
                 },
                 {
                   "word": "sauce",
-                },
+                }
               ],
               "include": [
                 {
@@ -1753,12 +1753,12 @@
                 {
                   "word": "salmon",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "snapper",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1797,12 +1797,12 @@
                 {
                   "word": "john dory",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sole",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1853,12 +1853,12 @@
                 {
                   "word": "john dory",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sprat",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1869,19 +1869,19 @@
                 {
                   "word": "herring",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "squid",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "ink",
                 },
                 {
                   "word": "sauce",
-                },
+                }
               ],
               "include": [
                 {
@@ -1903,12 +1903,12 @@
                 {
                   "word": "razor clam",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "samphire",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1923,12 +1923,12 @@
                 {
                   "word": "green beans",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "samphire",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1943,169 +1943,13 @@
                 {
                   "word": "green beans",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "strawberries",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
-                {
-                  "word": "pie",
-                },
-                {
-                  "word": "bake",
-                },
-                {
-                  "word": "cake",
-                },
-                {
-                  "word": "sponge",
-                },
-                {
-                  "word": "bar",
-                },
-                {
-                  "word": "ball",
-                },
-                {
-                  "word": "crispy",
-                },
-                {
-                  "word": "crunch",
-                },
-                {
-                  "word": "museli",
-                },
-                {
-                  "word": "sauce",
-                },
-                {
-                  "word": "vinegar",
-                },
-                {
-                  "word": "oil",
-                },
-                {
-                  "word": "chutney",
-                },
-                {
-                  "word": "spread",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "jam",
-                },
-                {
-                  "word": "preserve",
-                },
-                {
-                  "word": "conserve",
-                },
-                {
-                  "word": "jelly",
-                },
-                {
-                  "word": "tea",
-                },
-                {
-                  "word": "beer",
-                },
-                {
-                  "word": "cider",
-                },
-                {
-                  "word": "wine",
-                },
-                {
-                  "word": "liqueur",
-                },
-                {
-                  "word": "liquor",
-                },
-                {
-                  "word": "spirit",
-                },
-                {
-                  "word": "brandy",
-                },
-                {
-                  "word": "dried",
-                },
-                {
-                  "word": "chip",
-                },
-                {
-                  "word": "dessert",
-                },
-                {
-                  "word": "cookie",
-                },
-                {
-                  "word": "biscuit",
-                },
-                {
-                  "word": "shortbread",
-                },
-                {
-                  "word": "cheesecake",
-                },
-                {
-                  "word": "loaf",
-                },
-                {
-                  "word": "pudding",
-                },
-                {
-                  "word": "chocolate",
-                },
-                {
-                  "word": "cocoa",
-                },
-                {
-                  "word": "bonbon",
-                },
-                {
-                  "word": "sweets",
-                },
-                {
-                  "word": "candied",
-                },
-                {
-                  "word": "candy",
-                },
-                {
-                  "word": "fudge",
-                },
-                {
-                  "word": "cream",
-                },
-                {
-                  "word": "icecream",
-                },
-                {
-                  "word": "ice cream",
-                },
-                {
-                  "word": "gelato",
-                },
-                {
-                  "word": "curd",
-                },
-                {
-                  "word": "yoghurt",
-                },
-                {
-                  "word": "yogurt",
-                },
-                {
-                  "word": "muller",
-                },
-                {
-                  "word": "custard",
-                },
               ],
               "include": [
                 {
@@ -2127,12 +1971,12 @@
                 {
                   "word": "gooseberries",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "saffron",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2147,12 +1991,12 @@
                 {
                   "word": "green cardamom",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "shawarma seasoning",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2215,12 +2059,12 @@
                 {
                   "word": "moroccan seasoning",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name":  "smoky barbeque seasoning",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2375,12 +2219,12 @@
                 {
                   "word": "smoked paprika",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "spirulina powder",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2419,12 +2263,12 @@
                 {
                   "word": "powdered seaweed",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "star anise",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "ball",
@@ -2494,7 +2338,7 @@
                 },
                 {
                   "word": "drink",
-                },
+                }
               ],
               "include": [
                 {
@@ -2532,12 +2376,12 @@
                 {
                   "word": "thai basil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "steak seasoning",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2572,12 +2416,12 @@
                 {
                   "word": "brisket rub",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sumac",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2652,12 +2496,12 @@
                 {
                   "word": "tamarind concentrate",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "salad cream",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2676,16 +2520,16 @@
                 {
                   "word": "caesar dressing",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sauerkraut",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "wine",
-                },
+                }
               ],
               "include": [
                 {
@@ -2739,12 +2583,12 @@
                 {
                   "word": "fermented carrot",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "seafood sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2767,12 +2611,12 @@
                 {
                   "word": "thousand islands dressing",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "smoky red pepper dressing",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "spicy",
@@ -2788,13 +2632,13 @@
                 },
                 {
                   "word": "hot",
-                }
+                },
                 {
                   "word": "tabasco",
-                }
+                },
                 {
                   "word": "louisiana",
-                }
+                },
                 {
                   "word": "tears",
                 }
@@ -2931,12 +2775,12 @@
                 {
                   "word": "smoked tomato vinaigrette",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "spaghetti hoops",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2999,12 +2843,12 @@
                 {
                   "word": "pasta shapes",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "satay sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3023,12 +2867,12 @@
                 {
                   "word": "pecel",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "sweet and sour sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3047,12 +2891,12 @@
                 {
                   "word": "mandarin orange stir fry sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sweet pickle relish",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3131,12 +2975,12 @@
                 {
                   "word": "chilli chutney relish",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "strawberry tea",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3267,12 +3111,12 @@
                 {
                   "word": "cherry tea",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sushi",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3295,12 +3139,12 @@
                 {
                   "word": "gimbap",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "salted caramel mousse",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3335,12 +3179,12 @@
                 {
                   "word": "caramel sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sev mamra",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3379,12 +3223,12 @@
                 {
                   "word": "roasted chickpeas",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sorbet",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3407,12 +3251,12 @@
                 {
                   "word": "sherbert",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "spring rolls",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "paper",
@@ -3428,7 +3272,7 @@
                 },
                 {
                   "word": "kit",
-                },
+                }
               ],
               "include": [
                 {
@@ -3454,36 +3298,36 @@
                 {
                   "word": "lumpiang",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "stuffing",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "croutons",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "stuffing",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "croutons",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sweet potato fries",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3514,12 +3358,12 @@
                 {
                   "word": "sticks",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "spinach puree",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3582,12 +3426,12 @@
                 {
                   "word": "pea purée",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sweet red pepper flakes",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3606,12 +3450,12 @@
                 {
                   "word": "red pepper sweet flakes",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "sliced cooked meat",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3702,12 +3546,12 @@
                 {
                   "word": "turkey",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "soy butter",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3726,12 +3570,12 @@
                 {
                   "word": "nut butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "seed butter",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3926,12 +3770,12 @@
                 {
                   "word": "chia paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sunflower seed butter",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3966,12 +3810,12 @@
                 {
                   "word": "nut butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "strawberry milkshake",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3994,12 +3838,12 @@
                 {
                   "word": "strawberry drink",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "safflower oil",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4110,12 +3954,12 @@
                 {
                   "word": "groundnut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sunflower oil",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4226,12 +4070,12 @@
                 {
                   "word": "groundnut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sesame oil",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4250,12 +4094,12 @@
                 {
                   "word": "walnut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sardines",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4326,12 +4170,12 @@
                 {
                   "word": "mackerel",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sake",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4342,36 +4186,36 @@
                 {
                   "word": "sherry",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "stout",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "guinness",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "spicy brown mustard",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "sarepska",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "sweet chilli sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4402,12 +4246,12 @@
                 {
                   "word": "chilli chutney relish",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sweetcorn",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "meal",
@@ -4441,7 +4285,7 @@
                 },
                 {
                   "word": "starch",
-                },
+                }
               ],
               "include": [
                 {
@@ -4451,36 +4295,36 @@
                 {
                   "word": "sweet-corn",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "sweet popcorn",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "sweet popping corn",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "salted popcorn",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "popping corn",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "short grain rice",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4495,12 +4339,12 @@
                 {
                   "word": "paella rice",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "sweetener",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4523,12 +4367,12 @@
                 {
                   "word": "nature sweet",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "strawberry jelly",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4559,12 +4403,12 @@
                 {
                   "word": "strawberry butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "strawberry jam",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4587,24 +4431,24 @@
                 {
                   "word": "strawberry butter",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "soffrito mix",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "chef's base",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "salt",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "in salt",
@@ -4656,18 +4500,18 @@
                 },
                 {
                   "word": "salt cod",
-                },
+                }
               ],
               "include": [
                 {
                   "word": "fleur de sel",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "sweet rice flour",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4686,12 +4530,12 @@
                 {
                   "word": "glutinous rice flour",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "shortening",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4710,12 +4554,12 @@
                 {
                   "word": "margarine",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "smoked paprika",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4738,12 +4582,12 @@
                 {
                   "word": "plain paprika",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "swede",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4754,12 +4598,12 @@
                 {
                   "word": "swedish turnip",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "summer squash",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4778,12 +4622,12 @@
                 {
                   "word": "crookneck squash",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "spring roll wrapper",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4802,12 +4646,12 @@
                 {
                   "word": "rice paper",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "soy sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4838,12 +4682,12 @@
                 {
                   "word": "worcestershire sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "shichimi",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4854,12 +4698,12 @@
                 {
                   "word": "togarashi seven spice",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "smoked sausage/sliced meat",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4910,12 +4754,12 @@
                 {
                   "word": "silesian",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "sausage",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4942,12 +4786,12 @@
                 {
                   "word": "pigs in blankets",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "semolina",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4974,12 +4818,12 @@
                 {
                   "word": "corn meal",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "strawberry flavoured spirit/liqueur",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5058,12 +4902,12 @@
                 {
                   "word": "mixed fruit flavoured spirit/liqueur",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sparkling water",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "bread",
@@ -5103,7 +4947,7 @@
                 },
                 {
                   "word": "tangerine",
-                },
+                }
               ],
               "include": [
                 {
@@ -5125,23 +4969,23 @@
                 {
                   "word": "soda",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "salsa",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "salsa verde",
-                },
+                }
               ],
               "include": [
               ],
           },
           {
               "name": "sherry",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "cream sherry",
@@ -5151,7 +4995,7 @@
                 },
                 {
                   "word": "vinegar",
-                },
+                }
               ],
               "include": [
                 {
@@ -5165,12 +5009,12 @@
                 {
                   "word": "dessert wine",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "sparkling white wine",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5209,12 +5053,12 @@
                 {
                   "word": "asti",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "soured cream",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "flavoured yoghurt",
@@ -5338,7 +5182,7 @@
                 },
                 {
                   "word": "lemon",
-                },
+                }
               ],
               "include": [
                 {
@@ -5380,12 +5224,12 @@
                 {
                   "word": "labneh",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "salad leaves",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5496,12 +5340,12 @@
                 {
                   "word": "carrot greens",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
             "name": "shallot",
-            "type": "", 
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5512,12 +5356,12 @@
               {
                 "word": "onion",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "spring onions",
-            "type": "", 
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5536,16 +5380,16 @@
               {
                 "word": "chinese chive",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "sun-dried tomatoes",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "pesto",
-              },
+              }
             ],
             "include": [
               {
@@ -5607,12 +5451,12 @@
               {
                 "word": "semi dried tomatoes",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "soy milk",
-            "type": "", 
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5663,12 +5507,12 @@
               {
                 "word": "hazelnut milk",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "sweet potato",
-            "type": "", 
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -5687,16 +5531,16 @@
               {
                 "word": "plantain",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "shrimp",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "shrimp paste",
-              },
+              }
             ],
             "include": [
               {
@@ -5726,12 +5570,12 @@
               {
                 "word": "saewoo jeot",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "sugar",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "sugar cookie",
@@ -5780,7 +5624,7 @@
               },
               {
                 "word": "decorating sugar",
-              },
+              }
             ],
             "include": [
               {
@@ -5802,12 +5646,12 @@
               {
                 "word": "sugar syrup",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "spinach",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "puree",
@@ -5892,7 +5736,7 @@
               },
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -5970,12 +5814,12 @@
               {
                 "word": "borage",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "strawberry custard",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "custard cream",
@@ -5997,15 +5841,12 @@
               },
               {
                 "word": "cookie",
-              },
+              }
             ],
             "include": [
 
             ],
-          },
-
-
-
+          }
 
     ]
 

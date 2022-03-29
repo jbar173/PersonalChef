@@ -21,7 +21,7 @@
               "truffles", "turkish delight", "twirl", "twix",
               "tilefish", "turbot",
               "tahini", "tartare sauce", "thai green curry sauce", "thai red curry sauce",
-              "tortilla chips","twiglets",
+              "tortilla chips", "twiglets",
 
 
               "~~~ TO DO : ~~~",
@@ -37,19 +37,19 @@
 
           {
               "name": "tilefish",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "amberjack",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tequila",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -88,12 +88,12 @@
                 {
                   "word": "vodka",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "toffee crisp",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -124,12 +124,12 @@
                 {
                   "word": "caramac",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "toffee sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "cookie",
@@ -172,7 +172,7 @@
                 },
                 {
                   "word": "liqueur",
-                },
+                }
               ],
               "include": [
                 {
@@ -306,12 +306,12 @@
                 {
                   "word": "chocolate sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tropical fruit jelly",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -466,12 +466,12 @@
                 {
                   "word": "papaya flavored jell-o",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "tortillas",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "chip",
@@ -481,7 +481,7 @@
                 },
                 {
                   "word": "dip",
-                },
+                }
               ],
               "include": [
                 {
@@ -491,12 +491,12 @@
                 {
                   "word": "flatbread",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tempura prawns",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -583,12 +583,12 @@
                 {
                   "word": "fish tempura",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tilapia",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -623,12 +623,12 @@
                 {
                   "word": "flounder",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "trout",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -647,12 +647,12 @@
                 {
                   "word": "charr",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tuna",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -687,12 +687,12 @@
                 {
                   "word": "swordfish",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "thai basil",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -707,12 +707,12 @@
                 {
                   "word": "star anise",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tapioca pudding",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -727,12 +727,12 @@
                 {
                   "word": "rice pudding",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tabasco",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -751,12 +751,12 @@
                 {
                   "word": "chilli flakes",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tagine paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -771,12 +771,12 @@
                 {
                   "word": "moroccan seasoning",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tamarind concentrate",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -791,12 +791,12 @@
                 {
                   "word": "mango powder",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tonkatsu sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -819,12 +819,12 @@
                 {
                   "word": "teriyaki sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tandoori paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -847,12 +847,12 @@
                 {
                   "word": "mild curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "teriyaki sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -891,12 +891,12 @@
                 {
                   "word": "xo sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "thousand island dressing",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -935,12 +935,12 @@
                 {
                   "word": "seafood sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tomato ketchup",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "cooking",
@@ -971,22 +971,22 @@
                 },
                 {
                   "word": "bolognaise",
-                },
+                }
               ],
               "include": [
                 {
                   "word": "tomato sauce",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "tomato cooking sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "ketchup",
-                },
+                }
               ],
               "include": [
                 {
@@ -1072,12 +1072,12 @@
                 {
                   "word": "onion & garlic pasta sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tomato stock",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "cream",
@@ -1087,7 +1087,7 @@
                 },
                 {
                   "word": "heinz",
-                },
+                }
               ],
               "include": [
                 {
@@ -1177,12 +1177,12 @@
                 {
                   "word": "tomato and vegetable cup a soup",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "tom yum paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1229,12 +1229,12 @@
                 {
                   "word": "yellow curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "truffle mayonnaise",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1253,12 +1253,12 @@
                 {
                   "word": "mayonnaise",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "truffle oil",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "chocolate",
@@ -1286,7 +1286,7 @@
                 },
                 {
                   "word": "aioli",
-                },
+                }
               ],
               "include": [
                 {
@@ -1372,12 +1372,12 @@
                 {
                   "word": "truffle mayonnaise",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tomato juice",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1388,12 +1388,12 @@
                 {
                   "word": "tomato paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "taramasalata",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1408,12 +1408,12 @@
                 {
                   "word": "fish paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tiramisu",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1436,12 +1436,12 @@
                 {
                   "word": "chocolate mousse",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tortelloni",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1488,12 +1488,12 @@
                 {
                   "word": "agnolotti",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tzatziki",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1512,24 +1512,24 @@
                 {
                   "word": "soured cream",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "twix",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "cake decorations",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "twirl",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1540,24 +1540,24 @@
                 {
                   "word": "chocolate sprinkles",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "turkish delight",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "cake decorations",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "truffles",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "oil",
@@ -1567,18 +1567,18 @@
                 },
                 {
                   "word": "black summer truffle",
-                },
+                }
               ],
               "include": [
                 {
                   "word": "cake decorations",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "twiglets",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1605,12 +1605,12 @@
                 {
                   "word": "roasted chickpeas",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tortilla chips",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1657,12 +1657,12 @@
                 {
                   "word": "roasted chickpeas",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tahini",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1705,12 +1705,12 @@
                 {
                   "word": "miso",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "turbot",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1725,12 +1725,12 @@
                 {
                   "word": "brill",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "thai red curry sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1741,12 +1741,12 @@
                 {
                   "word": "red curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "thai green curry sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1757,12 +1757,12 @@
                 {
                   "word": "green curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tikka masala paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1805,27 +1805,27 @@
                 {
                   "word": "medium curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tartare sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "cream of tartar",
-                },
+                }
               ],
               "include": [
                 {
                   "word": "tartar sauce",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
             "name": "tomato",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "tomato sauce",
@@ -1874,7 +1874,7 @@
               },
               {
                 "word": "feta",
-              },
+              }
             ],
             "include": [
               {
@@ -1916,12 +1916,12 @@
               {
                 "word": "tomato juice",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
               "name": "taco seasoning",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1932,27 +1932,27 @@
                 {
                   "word": "taco sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "taco shells",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "seasoning",
-                },
+                }
               ],
               "include": [
                 {
                   "word": "taco",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "turmeric",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1983,12 +1983,12 @@
                 {
                   "word": "annatto",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tofu",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1999,12 +1999,12 @@
                 {
                   "word": "paneer",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tandoori spice",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2019,24 +2019,24 @@
                 {
                   "word": "tandoori curry blend",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
             "name": "tapenade",
-            "type": "", 
+            "type": "",
             "exclude": [
             ],
             "include": [
               {
                 "word": "olive paste",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
               "name": "turkey mince",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2067,12 +2067,12 @@
                 {
                   "word": "meat free mince",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "turkey stock",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2155,12 +2155,12 @@
                 {
                   "word": "vegetable stock",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "turkey",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "minced",
@@ -2254,7 +2254,7 @@
                 },
                 {
                   "word": "turkey soup",
-                },
+                }
               ],
               "include": [
                 {
@@ -2284,172 +2284,13 @@
                 {
                   "word": "tofurkey",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tangerine",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
-                {
-                  "word": "pie",
-                },
-                {
-                  "word": "bake",
-                },
-                {
-                  "word": "cake",
-                },
-                {
-                  "word": "sponge",
-                },
-                {
-                  "word": "bar",
-                },
-                {
-                  "word": "ball",
-                },
-                {
-                  "word": "crispy",
-                },
-                {
-                  "word": "crunch",
-                },
-                {
-                  "word": "museli",
-                },
-                {
-                  "word": "sauce",
-                },
-                {
-                  "word": "vinegar",
-                },
-                {
-                  "word": "oil",
-                },
-                {
-                  "word": "chutney",
-                },
-                {
-                  "word": "spread",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "jam",
-                },
-                {
-                  "word": "preserve",
-                },
-                {
-                  "word": "conserve",
-                },
-                {
-                  "word": "jelly",
-                },
-                {
-                  "word": "tea",
-                },
-                {
-                  "word": "beer",
-                },
-                {
-                  "word": "cider",
-                },
-                {
-                  "word": "wine",
-                },
-                {
-                  "word": "liqueur",
-                },
-                {
-                  "word": "liquor",
-                },
-                {
-                  "word": "spirit",
-                },
-                {
-                  "word": "brandy",
-                },
-                {
-                  "word": "dried",
-                },
-                {
-                  "word": "chip",
-                },
-                {
-                  "word": "dessert",
-                },
-                {
-                  "word": "cookie",
-                },
-                {
-                  "word": "biscuit",
-                },
-                {
-                  "word": "shortbread",
-                },
-                {
-                  "word": "cheesecake",
-                },
-                {
-                  "word": "loaf",
-                },
-                {
-                  "word": "pudding",
-                },
-                {
-                  "word": "chocolate",
-                },
-                {
-                  "word": "cocoa",
-                },
-                {
-                  "word": "bonbon",
-                },
-                {
-                  "word": "sweets",
-                },
-                {
-                  "word": "candied",
-                },
-                {
-                  "word": "candy",
-                },
-                {
-                  "word": "fudge",
-                },
-                {
-                  "word": "cream",
-                },
-                {
-                  "word": "icecream",
-                },
-                {
-                  "word": "ice cream",
-                },
-                {
-                  "word": "gelato",
-                },
-                {
-                  "word": "curd",
-                },
-                {
-                  "word": "yoghurt",
-                },
-                {
-                  "word": "yogurt",
-                },
-                {
-                  "word": "muller",
-                },
-                {
-                  "word": "custard",
-                },
-                {
-                  "word": "sparkling water",
-                },
                 {
                   "word": "mixer",
                 },
@@ -2467,18 +2308,18 @@
                 },
                 {
                   "word": "hatch",
-                },
+                }
               ],
               "include": [
                 {
                   "word": "orange",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "taleggio",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2501,12 +2342,12 @@
                 {
                   "word": "manchego",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tinned tomatoes",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "soup",
@@ -2516,7 +2357,7 @@
                 },
                 {
                   "word": "raw",
-                },
+                }
               ],
               "include": [
                 {
@@ -2594,12 +2435,12 @@
                 {
                   "word": "stewed tomatoes",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "tomato paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2634,16 +2475,16 @@
                 {
                   "word": "tomato ketchup",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
             "name": "turnip",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "turnip greens",
-              },
+              }
             ],
             "include": [
               {
@@ -2669,12 +2510,12 @@
               {
                 "word": "carrot",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "toffee",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "popcorn",
@@ -2750,7 +2591,7 @@
               },
               {
                 "word": "extract",
-              },
+              }
             ],
             "include": [
               {
@@ -2764,11 +2605,9 @@
               {
                 "word": "toffee sauce",
                 "substitution": true,
-              },
+              }
             ],
-          },
-
-
+          }
 
     ]
 

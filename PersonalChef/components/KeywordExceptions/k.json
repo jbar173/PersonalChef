@@ -36,7 +36,7 @@
                 {
                   "word": "orange",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -84,7 +84,7 @@
                 {
                   "word": "chinese-style chip shop curry sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -112,7 +112,7 @@
                 {
                   "word": "mild curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -156,7 +156,7 @@
                 {
                   "word": "hot curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -204,7 +204,7 @@
                 {
                   "word": "medium curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -240,7 +240,7 @@
                 {
                   "word": "cantonese sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -308,7 +308,7 @@
                 {
                   "word": "pickled white cabbage",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -400,7 +400,7 @@
                 {
                   "word": "kefta masala",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -444,7 +444,7 @@
                 {
                   "word": "smoked smelt",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -468,7 +468,7 @@
                 {
                   "word": "chocolate biscuits",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -492,8 +492,7 @@
                 {
                   "word": "char siu sauce",
                   "substitution": true,
-                },
-
+                }
               ],
           },
           {
@@ -529,7 +528,7 @@
                 {
                   "word": "brussel sprouts",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -557,7 +556,7 @@
                 {
                   "word": "mild curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -573,7 +572,7 @@
                 {
                   "word": "red pea",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -593,7 +592,7 @@
                 {
                   "word": "rose water",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -609,7 +608,7 @@
                 {
                   "word": "amaranth flour",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -669,7 +668,7 @@
               {
                 "word": "brussel sprouts",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -701,11 +700,9 @@
                 {
                   "word": "gooseberries",
                   "substitution": true,
-                },
+                }
               ],
-          },
-
-
+          }
 
     ]
 

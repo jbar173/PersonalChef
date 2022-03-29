@@ -34,7 +34,7 @@
 
           {
               "name": "oat butter",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "cookie",
@@ -44,7 +44,7 @@
                 },
                 {
                   "word": "crumble",
-                },
+                }
               ],
               "include": [
                 {
@@ -70,12 +70,12 @@
                 {
                   "word": "oatmeal paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "oka",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -98,12 +98,12 @@
                 {
                   "word": "edam",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "orange chocolate bar",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "icecream",
@@ -161,7 +161,7 @@
                 },
                 {
                   "word": "coffee",
-                },
+                }
               ],
               "include": [
                 {
@@ -211,24 +211,24 @@
                 {
                   "word": "chocolate",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "orange food colouring",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "orange food colour",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "oreos",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "icecream",
@@ -244,7 +244,7 @@
                 },
                 {
                   "word": "jell-o",
-                },
+                }
               ],
               "include": [
                 {
@@ -282,12 +282,12 @@
                 {
                   "word": "chocolate biscuits",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "orange roughy",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -322,12 +322,12 @@
                 {
                   "word": "tilapia",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "onion gravy",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -354,12 +354,12 @@
                 {
                   "word": "gravy",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "onion sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -370,12 +370,12 @@
                 {
                   "word": "soubise sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "oyster sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -422,12 +422,12 @@
                 {
                   "word": "xo sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "oatcakes",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -458,12 +458,12 @@
                 {
                   "word": "oatmeal cookies",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "oatcakes",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -494,12 +494,12 @@
                 {
                   "word": "oatmeal cookies",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "oat yoghurt",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -678,16 +678,16 @@
                 {
                   "word": "plain yoghurt",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "onion rings",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "potato chips",
-                },
+                }
               ],
               "include": [
                 {
@@ -705,12 +705,12 @@
                 {
                   "word": "onion bhaji",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "oatmeal cookies",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -745,12 +745,12 @@
                 {
                   "word": "biscuits",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "olive oil",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -861,12 +861,12 @@
                 {
                   "word": "groundnut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "orange cordial",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "fresh",
@@ -876,7 +876,7 @@
                 },
                 {
                   "word": "not from concentrate",
-                },
+                }
               ],
               "include": [
                 {
@@ -906,36 +906,36 @@
                 {
                   "word": "single concentrate orange",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "olive spread",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "olive butter",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "okra",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "bhindi",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "orange jelly",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -962,12 +962,12 @@
                 {
                   "word": "orange butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "orange jam",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -990,24 +990,24 @@
                 {
                   "word": "orange butter",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "ossau iraty",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "ossau-iraty",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
             "name": "oat milk",
-            "type": "", 
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1054,12 +1054,12 @@
               {
                 "word": "hazelnut milk",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
               "name": "offal",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "halibut",
@@ -1072,7 +1072,7 @@
                 },
                 {
                   "word": "orange",
-                },
+                }
               ],
               "include": [
                 {
@@ -1146,12 +1146,12 @@
                 {
                   "word": "giblets",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "oil",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "oil-packed",
@@ -1254,7 +1254,7 @@
                 },
                 {
                   "word": "kippers in oil",
-                },
+                }
               ],
               "include": [
                 {
@@ -1276,12 +1276,12 @@
                 {
                   "word": "flourless spray",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "orange flavoured spirit/liqueur",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1404,12 +1404,12 @@
                 {
                   "word": "mixed fruit flavoured spirit/liqueur",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "orange oil",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1424,12 +1424,12 @@
                 {
                   "word": "orange flavoring extract",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "onion powder",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1444,181 +1444,16 @@
                 {
                   "word": "onion granules",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "orange",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
                 {
-                  "word": "pie",
-                },
-                {
-                  "word": "bake",
-                },
-                {
-                  "word": "cake",
-                },
-                {
-                  "word": "sponge",
-                },
-                {
-                  "word": "bar",
-                },
-                {
-                  "word": "ball",
-                },
-                {
-                  "word": "crispy",
-                },
-                {
-                  "word": "crunch",
-                },
-                {
-                  "word": "museli",
-                },
-                {
-                  "word": "sauce",
-                },
-                {
-                  "word": "vinegar",
-                },
-                {
-                  "word": "oil",
-                },
-                {
-                  "word": "chutney",
-                },
-                {
-                  "word": "spread",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "jam",
-                },
-                {
-                  "word": "preserve",
-                },
-                {
-                  "word": "conserve",
-                },
-                {
-                  "word": "jelly",
-                },
-                {
-                  "word": "tea",
-                },
-                {
-                  "word": "beer",
-                },
-                {
-                  "word": "cider",
-                },
-                {
-                  "word": "wine",
-                },
-                {
-                  "word": "liqueur",
-                },
-                {
-                  "word": "liquor",
-                },
-                {
-                  "word": "spirit",
-                },
-                {
-                  "word": "brandy",
-                },
-                {
-                  "word": "rum",
-                },
-                {
-                  "word": "vodka",
-                },
-                {
-                  "word": "gin",
-                },
-                {
-                  "word": "dried",
-                },
-                {
-                  "word": "chip",
-                },
-                {
-                  "word": "dessert",
-                },
-                {
-                  "word": "cookie",
-                },
-                {
-                  "word": "biscuit",
-                },
-                {
-                  "word": "shortbread",
-                },
-                {
-                  "word": "cheesecake",
-                },
-                {
-                  "word": "loaf",
-                },
-                {
-                  "word": "pudding",
-                },
-                {
-                  "word": "chocolate",
-                },
-                {
-                  "word": "cocoa",
-                },
-                {
-                  "word": "bonbon",
-                },
-                {
-                  "word": "sweets",
-                },
-                {
-                  "word": "candied",
-                },
-                {
-                  "word": "candy",
-                },
-                {
-                  "word": "fudge",
-                },
-                {
-                  "word": "cream",
-                },
-                {
-                  "word": "icecream",
-                },
-                {
-                  "word": "ice cream",
-                },
-                {
-                  "word": "gelato",
-                },
-                {
-                  "word": "curd",
-                },
-                {
-                  "word": "yoghurt",
-                },
-                {
-                  "word": "yogurt",
-                },
-                {
-                  "word": "muller",
-                },
-                {
-                  "word": "custard",
-                },
-                {
                   "word": "taiwan tangerine",
-                },
+                }
               ],
               "include": [
                 {
@@ -1667,6 +1502,10 @@
                 },
                 {
                   "word": "tangelo",
+                  "substitution": true,
+                },
+                {
+                  "word": "tangor",
                   "substitution": true,
                 },
                 {
@@ -1756,16 +1595,16 @@
                 {
                   "word": "orangelo",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
             "name": "oats",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "oat crisps",
-              },
+              }
             ],
             "include": [
 
@@ -1773,7 +1612,7 @@
           },
           {
             "name": "olives",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "olive fruit",
@@ -1783,7 +1622,7 @@
               },
               {
                 "word": "paste",
-              },
+              }
             ],
             "include": [
               {
@@ -1801,12 +1640,12 @@
               {
                 "word": "capers",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "onion",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "jam",
@@ -1822,7 +1661,7 @@
               },
               {
                 "word": "caramelised onion",
-              },
+              }
             ],
             "include": [
               {
@@ -1836,19 +1675,19 @@
               {
                 "word": "crispy onions",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "oatmeal",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "oatmeal cookie",
               },
               {
                 "word": "oatmeal raisin",
-              },
+              }
             ],
             "include": [
               {
@@ -1866,11 +1705,9 @@
               {
                 "word": "quick-cooking oat",
                 "substitution": false,
-              },
+              }
             ],
-          },
-
-
+          }
 
     ]
 

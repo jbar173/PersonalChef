@@ -76,7 +76,7 @@
                 {
                   "word": "elderberries",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -120,7 +120,7 @@
                 {
                   "word": "scallops",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -136,7 +136,7 @@
                 {
                   "word": "beef",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -168,7 +168,7 @@
                 {
                   "word": "chicken",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -196,7 +196,7 @@
                 {
                   "word": "guinea fowl",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -244,7 +244,7 @@
                 {
                   "word": "cornish game hen",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -268,7 +268,7 @@
                 {
                   "word": "black cardamom",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -289,7 +289,7 @@
                 },
                 {
                   "word": "fruit",
-                },
+                }
               ],
               "include": [
                 {
@@ -307,7 +307,7 @@
                 {
                   "word": "green juice",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -327,7 +327,7 @@
                 {
                   "word": "sea bream",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -339,7 +339,7 @@
                 {
                   "word": "snapper",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -371,7 +371,7 @@
                 {
                   "word": "john dory",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -395,7 +395,7 @@
                 {
                   "word": "cantonese sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -511,7 +511,7 @@
                 {
                   "word": "black bean sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -527,7 +527,7 @@
                 {
                   "word": "granola",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -543,7 +543,7 @@
                 {
                   "word": "juniper berries",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -587,7 +587,7 @@
                 {
                   "word": "biscuits",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -614,7 +614,7 @@
                 },
                 {
                   "word": "shake",
-                },
+                }
               ],
               "include": [
                 {
@@ -692,7 +692,7 @@
                 {
                   "word": "biscuits",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -701,7 +701,7 @@
               "exclude": [
                 {
                   "word": "spice"
-                },
+                }
               ],
               "include": [
                 {
@@ -743,7 +743,7 @@
                 {
                   "word": "gingerbread dough",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -779,7 +779,7 @@
                 {
                   "word": "cake",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -839,7 +839,7 @@
                 {
                   "word": "coloured dusting sugar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -855,7 +855,7 @@
                 {
                   "word": "glycerol",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -867,7 +867,7 @@
                 },
                 {
                   "word": "porridge"
-                },
+                }
               ],
               "include": [
                 {
@@ -905,7 +905,7 @@
                 {
                   "word": "glucose syrup",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -941,7 +941,7 @@
                 {
                   "word": "gooseberry sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -953,7 +953,7 @@
                 {
                   "word": "green food colour",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1001,7 +1001,7 @@
                 {
                   "word": "coloured dusting sugar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1021,7 +1021,7 @@
                 {
                   "word": "crumble mix",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1037,7 +1037,7 @@
                 {
                   "word": "fresh ginger",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1061,7 +1061,7 @@
                 {
                   "word": "moroccan seasoning",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1093,7 +1093,7 @@
                 {
                   "word": "garlic",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1109,7 +1109,7 @@
                 {
                   "word": "nutmeg",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1129,7 +1129,7 @@
                 {
                   "word": "chilli garlic oil",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1173,7 +1173,7 @@
                 {
                   "word": "ginger sesame miso sauce",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1205,7 +1205,7 @@
                 {
                   "word": "schmaltz",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1214,7 +1214,7 @@
               "exclude": [
                 {
                   "word": "masala",
-                },
+                }
               ],
               "include": [
                 {
@@ -1232,7 +1232,7 @@
                 {
                   "word": "jus",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1241,7 +1241,7 @@
               "exclude": [
                 {
                   "word": "cheese",
-                },
+                }
               ],
               "include": [
                 {
@@ -1283,7 +1283,7 @@
                 {
                   "word": "pesto",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1303,7 +1303,7 @@
                 {
                   "word": "root beer",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1323,7 +1323,7 @@
                 {
                   "word": "root beer",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1395,7 +1395,7 @@
                 {
                   "word": "sencha tea",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1411,7 +1411,7 @@
                 {
                   "word": "fruit syrup",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1431,7 +1431,7 @@
                 {
                   "word": "pomegranate molasses",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1463,7 +1463,7 @@
                 {
                   "word": "dumplings",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1515,7 +1515,7 @@
                 {
                   "word": "hazelnut milk",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1539,7 +1539,7 @@
                 {
                   "word": "jiaozi",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1659,7 +1659,7 @@
                 {
                   "word": "groundnut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1775,7 +1775,7 @@
                 {
                   "word": "peanut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1795,7 +1795,7 @@
                 {
                   "word": "canola oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1863,7 +1863,7 @@
                 {
                   "word": "lemon and ginger tea",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1935,7 +1935,7 @@
                 {
                   "word": "gooseberry wine",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1947,7 +1947,7 @@
                 {
                   "word": "garlic and herb sauce",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1963,7 +1963,7 @@
                 {
                   "word": "garlic flavoured oil",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1975,7 +1975,7 @@
                 {
                   "word": "garlic sauce",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1991,7 +1991,7 @@
                 {
                   "word": "garlic paste",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -2007,7 +2007,7 @@
                 {
                   "word": "ginger paste",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -2023,7 +2023,7 @@
                 {
                   "word": "guinness marinade",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -2035,7 +2035,7 @@
                 {
                   "word": "chickpea flour",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -2171,7 +2171,7 @@
                 {
                   "word": "tom yum paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -2195,7 +2195,7 @@
                 {
                   "word": "agar agar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -2271,7 +2271,7 @@
                 {
                   "word": "rhubarb ginger gin",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -2289,7 +2289,7 @@
                 },
                 {
                   "word": "stalk",
-                },
+                }
               ],
               "include": [
                 {
@@ -2315,7 +2315,7 @@
                 {
                   "word": "dried coriander",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -2379,7 +2379,7 @@
                 {
                   "word": "pampelle l apero aperitif",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -2447,7 +2447,7 @@
                 {
                   "word": "pear brandy",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -2463,7 +2463,7 @@
                 {
                   "word": "salted pork",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -2475,7 +2475,7 @@
                 },
                 {
                   "word": "black cardamom",
-                },
+                }
               ],
               "include": [
                 {
@@ -2493,7 +2493,7 @@
                 {
                   "word": "saffron",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -2549,7 +2549,7 @@
                 {
                   "word": "samphire",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -2573,7 +2573,7 @@
                 {
                   "word": "ginger granules",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -2601,7 +2601,7 @@
                 {
                   "word": "garlic",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -2641,7 +2641,7 @@
                 {
                   "word": "tomme de chevre",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -2653,7 +2653,7 @@
                 {
                   "word": "avocado",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -2705,7 +2705,7 @@
               {
                 "word": "raclette",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -2749,7 +2749,7 @@
               {
                 "word": "raclette",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -2821,14 +2821,13 @@
               {
                 "word": "lemon",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "grapes",
             "type": "fruit",
             "exclude": [
-
               {
                 "word": "tomatoes",
               },
@@ -2843,7 +2842,7 @@
               },
               {
                 "word": "seed",
-              },
+              }
             ],
             "include": [
               {
@@ -2857,7 +2856,7 @@
               {
                 "word": "gooseberries",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -2881,11 +2880,8 @@
               }
             ],
             "include": [
-
             ],
-          },
-
-
+          }
 
     ]
 

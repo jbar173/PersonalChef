@@ -68,7 +68,7 @@ class RankedDictionary extends React.Component {
 
     var list = ingrs_list.children
     console.log("list.length: " + list.length)
-    console.log("list[0]['name']: " + list[0]['name'])
+    // console.log("list[0]['name']: " + list[0]['name'])
     console.log("~~~~~~~~~~~~~~~~~~")
 
 ////////////////////////////////////// SET STATE (BELOW) FAILS/NEVER HAPPENS - so CdidUpdate never triggered again *** fix
@@ -106,7 +106,7 @@ class RankedDictionary extends React.Component {
     var rank = this.state.rank
     var backend_ranks = this.state.backendRanks
     console.log("ranked ingredients.length: " + ranked_dictionary.length )
-    console.log("this.state.rankedIngredients[0].name: " + this.state.rankedIngredients[0].name)
+    // console.log("this.state.rankedIngredients[0].name: " + this.state.rankedIngredients[0].name)
     this.props.rankedIngs(backend_ranks,ranked_dictionary,rank)
     this.setState({
       finished: true,

@@ -98,7 +98,7 @@
               {
                 "word": "peach",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -113,7 +113,7 @@
               },
               {
                 "word": "honea",
-              },
+              }
             ],
             "include": [
               {
@@ -131,7 +131,7 @@
               {
                 "word": "borage flowers",
                 "substitution": true,
-              }
+              },
               {
                 "word": "carnation petals",
                 "substitution": true,
@@ -139,7 +139,7 @@
               {
                 "word": "elderflower",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -154,7 +154,7 @@
               },
               {
                 "word": "meal",
-              },
+              }
             ],
             "include": [
               {
@@ -172,7 +172,7 @@
               {
                 "word": "plantain",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -216,7 +216,7 @@
               {
                 "word": "shark",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -244,7 +244,7 @@
               {
                 "word": "cheddar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -292,7 +292,7 @@
               },
               {
                 "word": "liqueur",
-              },
+              }
             ],
             "include": [
               {
@@ -422,7 +422,7 @@
               {
                 "word": "chocolate sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -446,7 +446,7 @@
               },
               {
                 "word": "vegetable",
-              },
+              }
             ],
             "include": [
               {
@@ -456,7 +456,7 @@
               {
                 "word": "tomato cooking sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -516,7 +516,7 @@
               {
                 "word": "sprinkles",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -531,7 +531,7 @@
               },
               {
                 "word": "iced",
-              },
+              }
             ],
             "include": [
               {
@@ -597,7 +597,7 @@
               {
                 "word": "sprinkles",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -617,7 +617,7 @@
               {
                 "word": "cake",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -740,7 +740,7 @@
               },
               {
                 "word": "spirit",
-              },
+              }
             ],
             "include": [
               {
@@ -1042,7 +1042,7 @@
               {
                 "word": "victoria sandwich",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1054,7 +1054,7 @@
               {
                 "word": "salmon",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1094,7 +1094,7 @@
               {
                 "word": "surimi",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -1126,7 +1126,7 @@
               {
                 "word": "eel",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1150,7 +1150,7 @@
               {
                 "word": "razor clam",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1177,7 +1177,7 @@
               },
               {
                 "word": "extract",
-              },
+              }
             ],
             "include": [
               {
@@ -1275,7 +1275,7 @@
               {
                 "word": "tuna flakes",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1295,7 +1295,7 @@
               {
                 "word": "whiting",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1315,7 +1315,7 @@
               {
                 "word": "nut butter",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1347,7 +1347,7 @@
               {
                 "word": "seed butter",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1375,7 +1375,7 @@
               {
                 "word": "mascarpone",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1395,7 +1395,7 @@
               {
                 "word": "goose barnacles",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1419,7 +1419,7 @@
               {
                 "word": "mojo verde",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1435,7 +1435,7 @@
               {
                 "word": "fruit syrup",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1444,7 +1444,7 @@
             "exclude": [
               {
                 "word": "cubes",
-              },
+              }
             ],
             "include": [
               {
@@ -1474,7 +1474,7 @@
               {
                 "word": "bran flakes",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1522,7 +1522,7 @@
               {
                 "word": "agave syrup",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1552,7 +1552,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -1574,7 +1574,7 @@
               {
                 "word": "chana",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -1594,7 +1594,7 @@
               {
                 "word": "dark rum",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1610,7 +1610,7 @@
               {
                 "word": "cheddar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1698,7 +1698,7 @@
               {
                 "word": "baileys",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -1743,7 +1743,7 @@
               },
               {
                 "word": "passionfruit",
-              },
+              }
             ],
             "include": [
               {
@@ -1865,7 +1865,7 @@
               {
                 "word": "mozzarella",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1885,7 +1885,7 @@
               {
                 "word": "cocoa bean",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1912,7 +1912,7 @@
               },
               {
                 "word": "shake",
-              },
+              }
             ],
             "include": [
               {
@@ -1954,7 +1954,7 @@
               {
                 "word": "biscuits",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1990,7 +1990,7 @@
               {
                 "word": "toffee extract",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -2054,7 +2054,7 @@
               {
                 "word": "chocolate sprinkles",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2102,7 +2102,7 @@
               },
               {
                 "word": "liqueur",
-              },
+              }
             ],
             "include": [
               {
@@ -2132,7 +2132,7 @@
               {
                 "word": "toffee",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2176,7 +2176,7 @@
               {
                 "word": "wafer",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2212,7 +2212,7 @@
               {
                 "word": "plum coulis",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2244,7 +2244,7 @@
               {
                 "word": "chocolate",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2312,7 +2312,7 @@
               {
                 "word": "cake",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2366,7 +2366,7 @@
               },
               {
                 "word": "liqueur",
-              },
+              }
             ],
             "include": [
               {
@@ -2424,7 +2424,7 @@
               {
                 "word": "rolos",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2460,7 +2460,7 @@
               },
               {
                 "word": "bar",
-              },
+              }
             ],
             "include": [
               {
@@ -2486,7 +2486,7 @@
               {
                 "word": "biscuits",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2538,7 +2538,7 @@
               {
                 "word": "chocolate sprinkles",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2566,7 +2566,7 @@
               {
                 "word": "chocolate",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2582,7 +2582,7 @@
               {
                 "word": "chocolate sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2622,7 +2622,7 @@
               {
                 "word": "chocolate sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2638,7 +2638,7 @@
               {
                 "word": "biscuits",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2658,7 +2658,7 @@
               {
                 "word": "chocolate biscuits",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2710,7 +2710,7 @@
               {
                 "word": "biscuits",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2802,7 +2802,7 @@
               {
                 "word": "cake decorations",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2866,7 +2866,7 @@
               {
                 "word": "cake decorations",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3018,7 +3018,7 @@
               {
                 "word": "chocolate",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3090,7 +3090,7 @@
               {
                 "word": "sprinkels",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3150,7 +3150,7 @@
               {
                 "word": "chocolate biscuits",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3166,7 +3166,7 @@
               {
                 "word": "bounty",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3193,7 +3193,7 @@
               },
               {
                 "word": "shake",
-              },
+              }
             ],
             "include": [
               {
@@ -3219,7 +3219,7 @@
               {
                 "word": "biscuits",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3247,7 +3247,7 @@
               {
                 "word": "almond macaroon",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3271,7 +3271,7 @@
               {
                 "word": "coloured dusting sugar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3291,7 +3291,7 @@
               {
                 "word": "condensed coconut milk",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3311,7 +3311,7 @@
               {
                 "word": "frys chocolate cream",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3351,7 +3351,7 @@
               {
                 "word": "coloured dusting sugar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3378,7 +3378,7 @@
               },
               {
                 "word": "shake",
-              },
+              }
             ],
             "include": [
               {
@@ -3392,7 +3392,7 @@
               {
                 "word": "biscuits",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3408,7 +3408,7 @@
               {
                 "word": "pudding mix",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3436,7 +3436,7 @@
               {
                 "word": "poppy seeds",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3480,7 +3480,7 @@
               {
                 "word": "choco rice pops",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -3508,7 +3508,7 @@
               {
                 "word": "rice krispies",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3536,7 +3536,7 @@
               {
                 "word": "flatbread",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3556,7 +3556,7 @@
               {
                 "word": "tarama",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3620,7 +3620,7 @@
               {
                 "word": "barramundi",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3656,7 +3656,7 @@
               {
                 "word": "mussels",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3692,7 +3692,7 @@
               {
                 "word": "goose barnacles",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3728,7 +3728,7 @@
               {
                 "word": "scallop",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3748,7 +3748,7 @@
               {
                 "word": "celeriac",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3768,7 +3768,7 @@
               {
                 "word": "cauliflower rice",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3798,7 +3798,7 @@
               },
               {
                 "word": "bomba",
-              },
+              }
             ],
             "include": [
               {
@@ -3816,7 +3816,7 @@
               {
                 "word": "rice",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3844,7 +3844,7 @@
               {
                 "word": "carrot",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3864,7 +3864,7 @@
               {
                 "word": "celeriac",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3884,7 +3884,7 @@
               {
                 "word": "nectarine",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3908,7 +3908,7 @@
               {
                 "word": "spinach",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3920,7 +3920,7 @@
               {
                 "word": "orange",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3952,7 +3952,7 @@
               {
                 "word": "rocket",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3972,7 +3972,7 @@
               {
                 "word": "sambar powder",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3996,7 +3996,7 @@
               {
                 "word": "mustard seeds",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4032,7 +4032,7 @@
               {
                 "word": "cumin",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4041,7 +4041,7 @@
             "exclude": [
               {
                 "word": "garlic",
-              },
+              }
             ],
             "include": [
               {
@@ -4051,7 +4051,7 @@
               {
                 "word": "mulled wine spice",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4093,7 +4093,7 @@
               },
               {
                 "word": "milkshake",
-              },
+              }
             ],
             "include": [
               {
@@ -4103,7 +4103,7 @@
               {
                 "word": "nutmeg",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4124,7 +4124,7 @@
               },
               {
                 "word": "cheese and chive",
-              },
+              }
             ],
             "include": [
               {
@@ -4146,7 +4146,7 @@
               {
                 "word": "parsley",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4174,7 +4174,7 @@
               {
                 "word": "season-all",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -4190,7 +4190,7 @@
               {
                 "word": "garam masala",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4214,7 +4214,7 @@
               {
                 "word": "nigella seeds",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4238,7 +4238,7 @@
               {
                 "word": "salt",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4262,7 +4262,7 @@
               {
                 "word": "gochugaru",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4306,7 +4306,7 @@
               {
                 "word": "angelica root",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4390,7 +4390,7 @@
               {
                 "word": "fajita mix",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4418,7 +4418,7 @@
               {
                 "word": "pickled onions",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4446,7 +4446,7 @@
               {
                 "word": "pickled onions",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4458,7 +4458,7 @@
               {
                 "word": "dried chilli peppers",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4470,7 +4470,7 @@
               {
                 "word": "cheese sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4498,7 +4498,7 @@
               {
                 "word": "chicken pasta sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4507,7 +4507,7 @@
             "exclude": [
               {
                 "word": "noodle",
-              },
+              }
             ],
             "include": [
               {
@@ -4549,7 +4549,7 @@
               {
                 "word": "cantonese sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4573,7 +4573,7 @@
               {
                 "word": "katsu curry paste",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4613,7 +4613,7 @@
               {
                 "word": "soy sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4653,7 +4653,7 @@
               {
                 "word": "chilli chutney relish",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4697,7 +4697,7 @@
               {
                 "word": "chipotle burger sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4749,7 +4749,7 @@
               {
                 "word": "chestnut jam",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4769,7 +4769,7 @@
               {
                 "word": "chimichurri",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4805,7 +4805,7 @@
               {
                 "word": "chicken pate",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4857,7 +4857,7 @@
               {
                 "word": "cheese soup",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4901,7 +4901,7 @@
               {
                 "word": "nut butter",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4933,7 +4933,7 @@
               {
                 "word": "lasagne sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4965,7 +4965,7 @@
               {
                 "word": "chow mein sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5013,7 +5013,7 @@
               {
                 "word": "cranberry & port sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5061,7 +5061,7 @@
               {
                 "word": "miracle whip",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5093,7 +5093,7 @@
               {
                 "word": "cranberry lemonade",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5109,7 +5109,7 @@
               {
                 "word": "coconut drink",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5121,7 +5121,7 @@
               {
                 "word": "cocoa powder",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -5133,7 +5133,7 @@
               {
                 "word": "carrot drink",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -5145,7 +5145,7 @@
               {
                 "word": "chai",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -5253,7 +5253,7 @@
               {
                 "word": "cranberry tea",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5329,7 +5329,7 @@
               {
                 "word": "toffee drink",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5341,7 +5341,7 @@
               {
                 "word": "creamy soda",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -5405,7 +5405,7 @@
               {
                 "word": "orange flavored milkshake",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5461,7 +5461,7 @@
               {
                 "word": "toffee drink",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5497,7 +5497,7 @@
             },
             {
               "word": "truffle",
-            },
+            }
           ],
           "include": [
             {
@@ -5507,7 +5507,7 @@
             {
               "word": "iced coffee",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -5543,7 +5543,7 @@
               {
                 "word": "cheesy puffs",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -5647,7 +5647,7 @@
               {
                 "word": "groundnut oil",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5671,7 +5671,7 @@
               {
                 "word": "sunflower oil",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5779,7 +5779,7 @@
               {
                 "word": "groundnut oil",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5811,7 +5811,7 @@
               {
                 "word": "hoisin sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5827,7 +5827,7 @@
               {
                 "word": "chocolate cake",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5927,7 +5927,7 @@
               {
                 "word": "blackcurrant tea",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5959,7 +5959,7 @@
               {
                 "word": "coke",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -5975,7 +5975,7 @@
               {
                 "word": "pepsi",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -6091,7 +6091,7 @@
               {
                 "word": "chamomile and honey tea",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -6175,7 +6175,7 @@
               {
                 "word": "amaro di angostura",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -6251,7 +6251,7 @@
               {
                 "word": "whisky liqueur",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -6327,7 +6327,7 @@
               {
                 "word": "coffee gin",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -6343,7 +6343,7 @@
               {
                 "word": "coriander paste",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -6355,7 +6355,7 @@
               {
                 "word": "chilli flavoured olive oil",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -6447,7 +6447,7 @@
               {
                 "word": "chilli sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -6570,7 +6570,7 @@
               },
               {
                 "word": "chocolate",
-              },
+              }
             ],
             "include": [
               {
@@ -6608,7 +6608,7 @@
               {
                 "word": "dried black lentils",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -6640,7 +6640,7 @@
               {
                 "word": "great northern bean",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -6660,7 +6660,7 @@
               {
                 "word": "salt beef",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -6692,7 +6692,7 @@
               {
                 "word": "cherry butter",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -6720,7 +6720,7 @@
               {
                 "word": "cherry butter",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -6744,7 +6744,7 @@
               {
                 "word": "coloured dusting sugar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -6756,7 +6756,7 @@
               {
                 "word": "chocolate cornflake clusters",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -6768,7 +6768,7 @@
               {
                 "word": "cake kit",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -6804,7 +6804,7 @@
               {
                 "word": "meat free mince",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -6927,7 +6927,7 @@
             },
             {
               "word": "sauce",
-            },
+            }
           ],
           "include": [
             {
@@ -6969,7 +6969,7 @@
             {
               "word": "partridge",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -7021,7 +7021,7 @@
               {
                 "word": "cavalo nero",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7057,7 +7057,7 @@
               {
                 "word": "chickpea flour",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7069,7 +7069,7 @@
               },
               {
                 "word": "dark chocolate",
-              },
+              }
             ],
             "include": [
               {
@@ -7091,7 +7091,7 @@
               {
                 "word": "drinking chocolate",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7119,7 +7119,7 @@
               {
                 "word": "riced cauliflower",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7151,7 +7151,7 @@
               {
                 "word": "black kale",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7203,7 +7203,7 @@
               {
                 "word": "patty pan",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7223,7 +7223,7 @@
               {
                 "word": "endive",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7323,7 +7323,7 @@
               {
                 "word": "chilli chutney relish",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7355,7 +7355,7 @@
               {
                 "word": "oriental seasoning",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -7479,7 +7479,7 @@
             {
               "word": "chile",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -7607,7 +7607,7 @@
               {
                 "word": "tabasco",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7723,7 +7723,7 @@
               {
                 "word": "liverwurst",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -7759,7 +7759,7 @@
               {
                 "word": "semolina",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7775,7 +7775,7 @@
               {
                 "word": "arrowroot",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7784,7 +7784,7 @@
             "exclude": [
               {
                 "word": "rice cracker",
-              },
+              }
             ],
             "include": [
               {
@@ -7846,7 +7846,7 @@
               {
                 "word": "potato chips",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7876,7 +7876,7 @@
               },
               {
                 "word": "leave",
-              },
+              }
             ],
             "include": [
               {
@@ -7898,7 +7898,7 @@
               {
                 "word": "nutmeg",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -7922,7 +7922,7 @@
               },
               {
                 "word": "cordial",
-              },
+              }
             ],
             "include": [
               {
@@ -8052,7 +8052,7 @@
               {
                 "word": "mixed fruit flavoured spirit/liqueur",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -8160,7 +8160,7 @@
               {
                 "word": "batida de coconut",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -8260,7 +8260,7 @@
             {
               "word": "chile",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -8336,7 +8336,7 @@
             {
               "word": "chile",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -8384,7 +8384,7 @@
               {
                 "word": "cake decorations",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -8399,7 +8399,7 @@
               },
               {
                 "word": "yeast",
-              },
+              }
             ],
             "include": [
               {
@@ -8433,7 +8433,7 @@
               {
                 "word": "cava",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -8449,7 +8449,7 @@
               {
                 "word": "pinga",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -8513,7 +8513,7 @@
               {
                 "word": "mascarpone",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -8522,7 +8522,7 @@
             "exclude": [
               {
                 "word": "cream cheese frosting",
-              },
+              }
             ],
             "include": [
               {
@@ -8628,7 +8628,7 @@
               {
                 "word": "labneh",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -8680,7 +8680,7 @@
               {
                 "word": "paneer",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -8716,7 +8716,7 @@
             {
               "word": "gruyere",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -8740,7 +8740,7 @@
             {
               "word": "havarti",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -8764,7 +8764,7 @@
             {
               "word": "mature slices",
               "substitution": false,
-            },
+            }
           ],
         },
         {
@@ -8776,7 +8776,7 @@
             },
             {
               "word": "chipotle cheddar",
-            },
+            }
           ],
           "include": [
             {
@@ -8830,7 +8830,7 @@
             {
               "word": "raclette",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -8906,7 +8906,7 @@
             {
               "word": "pork stock",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -9044,7 +9044,7 @@
             },
             {
               "word": "preserve",
-            },
+            }
           ],
           "include": [
             {
@@ -9070,7 +9070,7 @@
             {
               "word": "mixed nuts",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -9118,7 +9118,7 @@
             {
               "word": "tromboncino",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -9127,7 +9127,7 @@
           "exclude": [
             {
               "word": "vinegar",
-            },
+            }
           ],
           "include": [
           ],
@@ -9141,7 +9141,7 @@
             },
             {
               "word": "water",
-            },
+            }
           ],
           "include": [
             {
@@ -9207,7 +9207,7 @@
             {
               "word": "evaporated milk",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -9222,7 +9222,7 @@
             },
             {
               "word": "chile chutney",
-            },
+            }
           ],
           "include": [
             {
@@ -9288,7 +9288,7 @@
             {
               "word": "piment d'espelette",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -9366,13 +9366,13 @@
             },
             {
               "word": "extract",
-            },
+            }
           ],
           "include": [
             {
               "word": "toffee",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -9399,7 +9399,7 @@
             },
             {
               "word": "cookie",
-            },
+            }
           ],
           "include": [
             {
@@ -9417,7 +9417,7 @@
             {
               "word": "custard",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -9444,7 +9444,7 @@
             },
             {
               "word": "cookie",
-            },
+            }
           ],
           "include": [
             {
@@ -9470,7 +9470,7 @@
             {
               "word": "chocolate custard",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -9485,7 +9485,7 @@
               },
               {
                 "word": "pickle",
-              },
+              }
             ],
             "include": [
               {
@@ -9503,7 +9503,7 @@
               {
                 "word": "brussel sprouts",
                 "substitution": true,
-              },
+              }
             ],
         },
           {
@@ -9638,7 +9638,7 @@
               },
               {
                 "word": "preserve",
-              },
+              }
             ],
             "include": [
               {
@@ -9696,7 +9696,7 @@
               {
                 "word": "breadfruit",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -9705,7 +9705,7 @@
             "exclude": [
               {
                 "word": "oil",
-              },
+              }
             ],
             "include": [
               {
@@ -9715,7 +9715,7 @@
               {
                 "word": "macadamia",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -9748,7 +9748,7 @@
               },
               {
                 "word": "cream of tomato",
-              },
+              }
             ],
             "include": [
               {
@@ -9762,7 +9762,7 @@
               {
                 "word": "evaporated milk",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -9819,7 +9819,7 @@
               },
               {
                 "word": "fudge",
-              },
+              }
             ],
             "include": [
               {
@@ -9833,11 +9833,9 @@
               {
                 "word": "milk chocolate",
                 "substitution": true,
-              },
+              }
             ],
-          },
-
-
+          }
 
     ]
 

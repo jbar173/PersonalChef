@@ -31,7 +31,6 @@
 
     "ingredients": [
 
-
           {
               "name": "anise",
               "type": "",
@@ -104,7 +103,7 @@
                 },
                 {
                   "word": "drink",
-                },
+                }
               ],
               "include": [
                 {
@@ -134,7 +133,7 @@
                 {
                   "word": "dried tarragon",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -162,7 +161,7 @@
                 {
                   "word": "boysenberries",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -206,7 +205,7 @@
                 {
                   "word": "fresh parsley",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -242,7 +241,7 @@
                 {
                   "word": "dried tarragon",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -286,7 +285,7 @@
                 {
                   "word": "grouper",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -314,7 +313,7 @@
                 {
                   "word": "almond extract",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -330,7 +329,7 @@
                 {
                   "word": "fruit syrup",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -346,7 +345,7 @@
                 {
                   "word": "fruit syrup",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -394,7 +393,7 @@
               {
                 "word": "hazelnut milk",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -418,7 +417,7 @@
                 {
                   "word": "apricot",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -534,7 +533,7 @@
                 {
                   "word": "groundnut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -650,7 +649,7 @@
                 {
                   "word": "groundnut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -714,7 +713,7 @@
                 {
                   "word": "almond powder",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -754,7 +753,7 @@
                 {
                   "word": "sugar syrup",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -778,7 +777,7 @@
                 {
                   "word": "swiss cheese",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -794,7 +793,7 @@
                 {
                   "word": "parmesan",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -810,7 +809,7 @@
                 {
                   "word": "brandy",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -834,7 +833,7 @@
                 {
                   "word": "rompope",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -854,7 +853,7 @@
                 {
                   "word": "fish sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -878,7 +877,7 @@
                 {
                   "word": "onion powder",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -906,7 +905,7 @@
                 {
                   "word": "mulled wine spice",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -930,7 +929,7 @@
                 {
                   "word": "apple",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -958,7 +957,7 @@
                 {
                   "word": "red mung bean",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -982,7 +981,7 @@
                 {
                   "word": "ayee",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -998,7 +997,7 @@
                 {
                   "word": "asparagus",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1014,7 +1013,7 @@
                 {
                   "word": "heart of palm",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1034,7 +1033,7 @@
                 {
                   "word": "nut butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1046,7 +1045,7 @@
                 {
                   "word": "mayonnaise",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1114,7 +1113,7 @@
                 {
                   "word": "cinnamon apple tea",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1130,7 +1129,7 @@
                 {
                   "word": "harissa",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1146,7 +1145,7 @@
                 {
                   "word": "aubergine mezze",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1162,7 +1161,7 @@
                 {
                   "word": "samphire",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1174,7 +1173,7 @@
                 {
                   "word": "eggplant",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1186,7 +1185,7 @@
                 {
                   "word": "aromat",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1210,7 +1209,7 @@
                 {
                   "word": "chapatti flour",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1282,7 +1281,7 @@
                 {
                   "word": "tropical fruit jelly",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1310,7 +1309,7 @@
                 {
                   "word": "apricot butter",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1386,7 +1385,7 @@
                 {
                   "word": "almond wine",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1514,7 +1513,7 @@
                 {
                   "word": "aniseed wine",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1523,7 +1522,7 @@
               "exclude": [
                 {
                   "word": "smoked",
-                },
+                }
               ],
               "include": [
                 {
@@ -1533,7 +1532,7 @@
                 {
                   "word": "plain paprika",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1577,14 +1576,13 @@
                 {
                   "word": "replacer mix no egg",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "apple sauce",
               "type": "",
               "exclude": [
-
               ],
               "include": [
                 {
@@ -1706,7 +1704,7 @@
                 {
                   "word": "fruit purée",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1798,7 +1796,7 @@
                 {
                   "word": "orange liquor",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1914,7 +1912,7 @@
                 {
                   "word": "apple wine",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1934,7 +1932,7 @@
                 {
                   "word": "almond powder",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -1954,7 +1952,7 @@
                 {
                   "word": "almond powder",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -1963,7 +1961,7 @@
               "exclude": [
                 {
                   "word": "bacon",
-                },
+                }
               ],
               "include": [
                 {
@@ -2081,7 +2079,7 @@
                 {
                   "word": "bavarian smoked",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -2093,7 +2091,7 @@
                 {
                   "word": "guacamole",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -2102,7 +2100,7 @@
             "exclude": [
               {
                 "word": "ginger ale",
-              },
+              }
             ],
             "include": [
               {
@@ -2120,7 +2118,7 @@
               {
                 "word": "lager",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -2132,7 +2130,7 @@
               },
               {
                 "word": "wriggles",
-              },
+              }
             ],
             "include": [
               {
@@ -2154,7 +2152,7 @@
               {
                 "word": "gooseberries",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -2163,7 +2161,7 @@
             "exclude": [
               {
                 "word": "soft",
-              },
+              }
             ],
             "include": [
               {
@@ -2197,7 +2195,7 @@
               {
                 "word": "mango",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -2287,7 +2285,7 @@
               },
               {
                 "word": "icing",
-              },
+              }
             ],
             "include": [
               {
@@ -2301,11 +2299,9 @@
               {
                 "word": "pistachios",
                 "substitution": true,
-              },
+              }
             ],
-          },
-
-
+          }
 
     ]
 

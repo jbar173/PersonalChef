@@ -52,7 +52,7 @@
 
           {
               "name": "papaya",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
               ],
               "include": [
@@ -71,12 +71,12 @@
                 {
                   "word": "pepper",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pectin",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -99,12 +99,12 @@
                 {
                   "word": "gelatine",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pathia curry paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -127,12 +127,12 @@
                 {
                   "word": "hot curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "phall curry paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -175,12 +175,12 @@
                 {
                   "word": "hot curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pasanda paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -203,12 +203,12 @@
                 {
                   "word": "mild curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pouting",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -223,12 +223,12 @@
                 {
                   "word": "whiting",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "popcorn",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "seasoning",
@@ -244,7 +244,7 @@
                 },
                 {
                   "word": "chips",
-                },
+                }
               ],
               "include": [
                 {
@@ -270,12 +270,12 @@
                 {
                   "word": "popped lotus seeds",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pickled walnuts",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -283,7 +283,7 @@
           },
           {
               "name": "peanut butter cups",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "biscuit",
@@ -320,7 +320,7 @@
                 },
                 {
                   "word": "liqueur",
-                },
+                }
               ],
               "include": [
                 {
@@ -338,12 +338,12 @@
                 {
                   "word": "chocolate sprinkles",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pleasant ridge",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -362,12 +362,12 @@
                 {
                   "word": "jarlsberg",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "port salut",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -390,12 +390,12 @@
                 {
                   "word": "havarti",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peanut butter wafers",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -434,19 +434,19 @@
                 {
                   "word": "cookies",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pear drops",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "syrup",
                 },
                 {
                   "word": "gin",
-                },
+                }
               ],
               "include": [
                 {
@@ -468,12 +468,12 @@
                 {
                   "word": "coloured dusting sugar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peppermint syrup",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -512,24 +512,24 @@
                 {
                   "word": "mint flavored syrup",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pink food colouring",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "pink food colour",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "peppermint extract",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -644,12 +644,12 @@
                 {
                   "word": "mint powder",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "popping candy",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -680,12 +680,12 @@
                 {
                   "word": "coloured dusting sugar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "praline",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "paste",
@@ -734,7 +734,7 @@
                 },
                 {
                   "word": "potato",
-                },
+                }
               ],
               "include": [
                 {
@@ -768,12 +768,12 @@
                 {
                   "word": "praliné",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "preserved lemon",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -788,12 +788,12 @@
                 {
                   "word": "coloured dusting sugar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "prunes",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -820,12 +820,12 @@
                 {
                   "word": "currants",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pudding mix",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "yorkshire",
@@ -835,7 +835,7 @@
                 },
                 {
                   "word": "black",
-                },
+                }
               ],
               "include": [
                 {
@@ -861,24 +861,24 @@
                 {
                   "word": "custard powder",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "purple food colouring",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "purple food colour",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pistachios",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -905,12 +905,12 @@
                 {
                   "word": "pine nuts",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pretzel snacks",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "kit",
@@ -923,7 +923,7 @@
                 },
                 {
                   "word": "baking",
-                },
+                }
               ],
               "include": [
                 {
@@ -965,12 +965,12 @@
                 {
                   "word": "roasted chickpeas",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "puff pastry",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1005,12 +1005,12 @@
                 {
                   "word": "flaky pastry",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "plaice",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1025,12 +1025,12 @@
                 {
                   "word": "dab",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pollock",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1065,12 +1065,12 @@
                 {
                   "word": "haddock",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "prawns",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1101,12 +1101,12 @@
                 {
                   "word": "saewoo jeot",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pancetta",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1121,12 +1121,12 @@
                 {
                   "word": "pork",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pork mince",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1169,184 +1169,28 @@
                 {
                   "word": "meat free mince",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "persimmon",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
-                {
-                  "word": "pie",
-                },
-                {
-                  "word": "bake",
-                },
-                {
-                  "word": "cake",
-                },
-                {
-                  "word": "sponge",
-                },
-                {
-                  "word": "bar",
-                },
-                {
-                  "word": "ball",
-                },
-                {
-                  "word": "crispy",
-                },
-                {
-                  "word": "crunch",
-                },
-                {
-                  "word": "museli",
-                },
-                {
-                  "word": "sauce",
-                },
-                {
-                  "word": "vinegar",
-                },
-                {
-                  "word": "oil",
-                },
-                {
-                  "word": "chutney",
-                },
-                {
-                  "word": "spread",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "jam",
-                },
-                {
-                  "word": "preserve",
-                },
-                {
-                  "word": "conserve",
-                },
-                {
-                  "word": "jelly",
-                },
-                {
-                  "word": "tea",
-                },
-                {
-                  "word": "beer",
-                },
-                {
-                  "word": "cider",
-                },
-                {
-                  "word": "wine",
-                },
-                {
-                  "word": "liqueur",
-                },
-                {
-                  "word": "liquor",
-                },
-                {
-                  "word": "spirit",
-                },
-                {
-                  "word": "brandy",
-                },
-                {
-                  "word": "dried",
-                },
-                {
-                  "word": "chip",
-                },
-                {
-                  "word": "dessert",
-                },
-                {
-                  "word": "cookie",
-                },
-                {
-                  "word": "biscuit",
-                },
-                {
-                  "word": "shortbread",
-                },
-                {
-                  "word": "cheesecake",
-                },
-                {
-                  "word": "loaf",
-                },
-                {
-                  "word": "pudding",
-                },
-                {
-                  "word": "chocolate",
-                },
-                {
-                  "word": "cocoa",
-                },
-                {
-                  "word": "bonbon",
-                },
-                {
-                  "word": "sweets",
-                },
-                {
-                  "word": "candied",
-                },
-                {
-                  "word": "candy",
-                },
-                {
-                  "word": "fudge",
-                },
-                {
-                  "word": "cream",
-                },
-                {
-                  "word": "icecream",
-                },
-                {
-                  "word": "ice cream",
-                },
-                {
-                  "word": "gelato",
-                },
-                {
-                  "word": "curd",
-                },
-                {
-                  "word": "yoghurt",
-                },
-                {
-                  "word": "yogurt",
-                },
-                {
-                  "word": "muller",
-                },
-                {
-                  "word": "custard",
-                },
               ],
               "include": [
                 {
                   "word": "sharon fruit",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "plantain",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "flour",
-                },
+                }
               ],
               "include": [
                 {
@@ -1384,12 +1228,12 @@
                 {
                   "word": "breadfruit",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "plain paprika",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1416,12 +1260,12 @@
                 {
                   "word": "turmeric",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pease pudding",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1452,12 +1296,12 @@
                 {
                   "word": "mushy peas",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pickled vegetables",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1484,12 +1328,12 @@
                 {
                   "word": "pickled eggs",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pickled eggs",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1592,12 +1436,12 @@
                 {
                   "word": "pickled bean curd",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pickled red cabbage",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1668,12 +1512,12 @@
                 {
                   "word": "pickled eggs",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "paneer",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "masala",
@@ -1704,7 +1548,7 @@
                 },
                 {
                   "word": "paratha",
-                },
+                }
               ],
               "include": [
                 {
@@ -1730,12 +1574,12 @@
                 {
                   "word": "tofu",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "parsley sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1754,12 +1598,12 @@
                 {
                   "word": "dill and lemon sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pumpkin seed butter",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1774,12 +1618,12 @@
                 {
                   "word": "seed butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pine nut butter",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1806,12 +1650,12 @@
                 {
                   "word": "nut butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peanut butter",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "powder",
@@ -1893,7 +1737,7 @@
                 },
                 {
                   "word": "whiskey",
-                },
+                }
               ],
               "include": [
                 {
@@ -1923,12 +1767,12 @@
                 {
                   "word": "nut butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peppercorn sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1955,19 +1799,19 @@
                 {
                   "word": "diane sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "piccalilli",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "burger pickles",
                 },
                 {
                   "word": "tomato",
-                },
+                }
               ],
               "include": [
                 {
@@ -1993,19 +1837,19 @@
                 {
                   "word": "sweet pickle relish",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pickled ginger",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "flour",
                 },
                 {
                   "word": "garri",
-                },
+                }
               ],
               "include": [
                 {
@@ -2043,12 +1887,12 @@
                 {
                   "word": "fresh ginger",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "ponzu sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2083,12 +1927,12 @@
                 {
                   "word": "shoyu",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "piri piri seasoning",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2195,19 +2039,19 @@
                 {
                   "word": "chilli sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "piri piri sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "houmous",
                 },
                 {
                   "word": "kabanos",
-                },
+                }
               ],
               "include": [
                 {
@@ -2233,12 +2077,12 @@
                 {
                   "word": "chilli sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "plum sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2357,12 +2201,12 @@
                 {
                   "word": "plum jam",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pumpkin pesto",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2401,12 +2245,12 @@
                 {
                   "word": "red pesto",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peach tea",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2505,12 +2349,12 @@
                 {
                   "word": "peach, raspberry and rose tea",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pear tea",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2589,12 +2433,12 @@
                 {
                   "word": "pear cinnamon herbal tea",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pineapple tea",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2701,16 +2545,16 @@
                 {
                   "word": "pineapple and mint tea",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pink lemonade",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "tea",
-                },
+                }
               ],
               "include": [
                 {
@@ -2736,12 +2580,12 @@
                 {
                   "word": "lemonade",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "prune juice",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2752,12 +2596,12 @@
                 {
                   "word": "grape juice",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "perch",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2776,12 +2620,12 @@
                 {
                   "word": "sea bream",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pomegranate syrup",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2792,12 +2636,12 @@
                 {
                   "word": "fruit syrup",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pancake mix",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2812,12 +2656,12 @@
                 {
                   "word": "yorkshire pudding mix",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "palm oil",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -2928,12 +2772,12 @@
                 {
                   "word": "groundnut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peanut oil",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3044,16 +2888,16 @@
                 {
                   "word": "groundnut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
             "name": "parsnip",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "turnip greens",
-              },
+              }
             ],
             "include": [
               {
@@ -3087,12 +2931,12 @@
               {
                 "word": "sweet potato",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
               "name": "passionfruit tea",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3235,12 +3079,12 @@
                 {
                   "word": "raspberry tea",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peanut butter flavoured spirit/liqueur",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3319,19 +3163,19 @@
                 {
                   "word": "whisky liqueur",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "port",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "salut",
                 },
                 {
                   "word": "derby",
-                },
+                }
               ],
               "include": [
                 {
@@ -3341,24 +3185,24 @@
                 {
                   "word": "dessert wine",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pears",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "pear",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pinto beans",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3393,12 +3237,12 @@
                 {
                   "word": "great northern bean",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pickled onions",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3457,24 +3301,24 @@
                 {
                   "word": "pickled vegetables",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "poppadoms",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "pappadums",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pancakes",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3497,24 +3341,24 @@
                 {
                   "word": "bread wraps",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "plain flour",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "poznan",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "plum jelly",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3541,12 +3385,12 @@
                 {
                   "word": "plum butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "plum jam",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3569,12 +3413,12 @@
                 {
                   "word": "plum butter",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pineapple jelly",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3641,12 +3485,12 @@
                 {
                   "word": "tropical fruit jelly",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pineapple jam",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3669,12 +3513,12 @@
                 {
                   "word": "pineapple butter",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "peach jelly",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3741,12 +3585,12 @@
                 {
                   "word": "tropical fruit jelly",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peach jam",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3769,12 +3613,12 @@
                 {
                   "word": "peach butter",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "passion fruit jelly",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3865,12 +3709,12 @@
                 {
                   "word": "tropical fruit jelly",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "passion fruit jam",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3917,12 +3761,12 @@
                 {
                   "word": "passionfruit butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "passion fruit puree",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3937,12 +3781,12 @@
                 {
                   "word": "passionfruit purée",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "plum jam",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3965,12 +3809,12 @@
                 {
                   "word": "plum butter jam",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pineapple jam",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -3993,12 +3837,12 @@
                 {
                   "word": "pineapple butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peach jam",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4017,24 +3861,24 @@
                 {
                   "word": "peach spread",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "port wine derby",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "port derby",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pizza dough",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4045,12 +3889,12 @@
                 {
                   "word": "dough balls",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "plain yoghurt",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "flavoured yoghurt",
@@ -4168,7 +4012,7 @@
                 },
                 {
                   "word": "orange-mango",
-                },
+                }
               ],
               "include": [
                 {
@@ -4206,12 +4050,12 @@
                 {
                   "word": "tzatziki",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pea shoots",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4226,12 +4070,12 @@
                 {
                   "word": "pea sprouts",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "passata",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "cube",
@@ -4241,7 +4085,7 @@
                 },
                 {
                   "word": "ketchup",
-                },
+                }
               ],
               "include": [
                 {
@@ -4271,16 +4115,16 @@
                 {
                   "word": "chopped tomatoes",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pate",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "sucree",
-                },
+                }
               ],
               "include": [
                 {
@@ -4294,12 +4138,12 @@
                 {
                   "word": "liver parfait",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "panang curry paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4474,12 +4318,12 @@
                 {
                   "word": "red curry stir-fry sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pear",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "pie",
@@ -4636,14 +4480,14 @@
                 },
                 {
                   "word": "custard",
-                },
+                }
               ],
               "include": [
               ],
           },
           {
               "name": "pork trotter",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4666,12 +4510,12 @@
                 {
                   "word": "pig foot",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pickles",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4726,166 +4570,13 @@
                 {
                   "word": "pickled eggs",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "passion fruit",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
-                {
-                  "word": "pie",
-                },
-                {
-                  "word": "bake",
-                },
-                {
-                  "word": "cake",
-                },
-                {
-                  "word": "bar",
-                },
-                {
-                  "word": "ball",
-                },
-                {
-                  "word": "crispy",
-                },
-                {
-                  "word": "crunch",
-                },
-                {
-                  "word": "museli",
-                },
-                {
-                  "word": "sauce",
-                },
-                {
-                  "word": "vinegar",
-                },
-                {
-                  "word": "oil",
-                },
-                {
-                  "word": "chutney",
-                },
-                {
-                  "word": "spread",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "jam",
-                },
-                {
-                  "word": "preserve",
-                },
-                {
-                  "word": "conserve",
-                },
-                {
-                  "word": "jelly",
-                },
-                {
-                  "word": "tea",
-                },
-                {
-                  "word": "beer",
-                },
-                {
-                  "word": "cider",
-                },
-                {
-                  "word": "wine",
-                },
-                {
-                  "word": "liqueur",
-                },
-                {
-                  "word": "liquor",
-                },
-                {
-                  "word": "spirit",
-                },
-                {
-                  "word": "brandy",
-                },
-                {
-                  "word": "dried",
-                },
-                {
-                  "word": "chip",
-                },
-                {
-                  "word": "dessert",
-                },
-                {
-                  "word": "cookie",
-                },
-                {
-                  "word": "biscuit",
-                },
-                {
-                  "word": "shortbread",
-                },
-                {
-                  "word": "cheesecake",
-                },
-                {
-                  "word": "loaf",
-                },
-                {
-                  "word": "pudding",
-                },
-                {
-                  "word": "chocolate",
-                },
-                {
-                  "word": "cocoa",
-                },
-                {
-                  "word": "bonbon",
-                },
-                {
-                  "word": "sweets",
-                },
-                {
-                  "word": "candied",
-                },
-                {
-                  "word": "candy",
-                },
-                {
-                  "word": "fudge",
-                },
-                {
-                  "word": "cream",
-                },
-                {
-                  "word": "icecream",
-                },
-                {
-                  "word": "ice cream",
-                },
-                {
-                  "word": "gelato",
-                },
-                {
-                  "word": "curd",
-                },
-                {
-                  "word": "yoghurt",
-                },
-                {
-                  "word": "yogurt",
-                },
-                {
-                  "word": "muller",
-                },
-                {
-                  "word": "custard",
-                },
               ],
               "include": [
                 {
@@ -4907,12 +4598,12 @@
                 {
                   "word": "fresh pomegranate seeds",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pak choi",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4943,12 +4634,12 @@
                 {
                   "word": "tat choy",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pearled barley",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -4987,12 +4678,12 @@
                 {
                   "word": "kamut berries",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "potato chips",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "chocolate",
@@ -5017,7 +4708,7 @@
                 },
                 {
                   "word": "vanilla",
-                },
+                }
               ],
               "include": [
                 {
@@ -5067,12 +4758,12 @@
                 {
                   "word": "roasted chickpeas",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "passion fruit flavoured spirit/liqueur",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5223,12 +4914,12 @@
                 {
                   "word": "passionfruit and vanilla blossom gin",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "plum flavoured spirit/liqueur",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5303,12 +4994,12 @@
                 {
                   "word": "mixed fruit flavoured spirit/liqueur",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peach flavoured spirit/liqueur",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5391,12 +5082,12 @@
                 {
                   "word": "mixed fruit flavoured spirit/liqueur",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pear flavoured spirit/liqueur",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5479,12 +5170,12 @@
                 {
                   "word": "pear wine",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pulled pork",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5495,12 +5186,12 @@
                 {
                   "word": "barbeque pork",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pork scratchings",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5527,12 +5218,12 @@
                 {
                   "word": "pork rinds",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pork stock",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5707,12 +5398,12 @@
                 {
                   "word": "vegetable stock",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pork seasoning",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5723,12 +5414,12 @@
                 {
                   "word": "pork mix",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "pork",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "sausage",
@@ -5864,7 +5555,7 @@
                 },
                 {
                   "word": "pork intestine",
-                },
+                }
               ],
               "include": [
                 {
@@ -5886,12 +5577,12 @@
                 {
                   "word": "lechon belly",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "peas",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "dried",
@@ -5928,7 +5619,7 @@
                 },
                 {
                   "word": "purée",
-                },
+                }
               ],
               "include": [
                 {
@@ -5942,12 +5633,12 @@
                 {
                   "word": "edamame beans",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pumpkin seeds",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -5966,12 +5657,12 @@
                 {
                   "word": "sunflower seeds",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "pumpkin puree",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -6006,12 +5697,12 @@
                 {
                   "word": "pumpkin pesto",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "prosecco",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -6046,169 +5737,16 @@
                 {
                   "word": "asti",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
             "name": "peach",
-            "type": "", 
+            "type": "fruit",
             "exclude": [
               {
-                "word": "pie",
-              },
-              {
-                "word": "bake",
-              },
-              {
-                "word": "cake",
-              },
-              {
-                "word": "bar",
-              },
-              {
-                "word": "ball",
-              },
-              {
-                "word": "crispy",
-              },
-              {
-                "word": "crunch",
-              },
-              {
-                "word": "museli",
-              },
-              {
-                "word": "sauce",
-              },
-              {
-                "word": "vinegar",
-              },
-              {
-                "word": "oil",
-              },
-              {
-                "word": "chutney",
-              },
-              {
-                "word": "spread",
-              },
-              {
-                "word": "butter",
-              },
-              {
-                "word": "jam",
-              },
-              {
-                "word": "preserve",
-              },
-              {
-                "word": "conserve",
-              },
-              {
-                "word": "jelly",
-              },
-              {
-                "word": "tea",
-              },
-              {
-                "word": "beer",
-              },
-              {
-                "word": "cider",
-              },
-              {
-                "word": "wine",
-              },
-              {
-                "word": "liqueur",
-              },
-              {
-                "word": "liquor",
-              },
-              {
-                "word": "spirit",
-              },
-              {
-                "word": "brandy",
-              },
-              {
-                "word": "dried",
-              },
-              {
-                "word": "chip",
-              },
-              {
-                "word": "dessert",
-              },
-              {
-                "word": "cookie",
-              },
-              {
-                "word": "biscuit",
-              },
-              {
-                "word": "shortbread",
-              },
-              {
-                "word": "cheesecake",
-              },
-              {
-                "word": "loaf",
-              },
-              {
-                "word": "pudding",
-              },
-              {
-                "word": "chocolate",
-              },
-              {
-                "word": "cocoa",
-              },
-              {
-                "word": "bonbon",
-              },
-              {
-                "word": "sweets",
-              },
-              {
-                "word": "candied",
-              },
-              {
-                "word": "candy",
-              },
-              {
-                "word": "fudge",
-              },
-              {
-                "word": "cream",
-              },
-              {
-                "word": "icecream",
-              },
-              {
-                "word": "ice cream",
-              },
-              {
-                "word": "gelato",
-              },
-              {
-                "word": "curd",
-              },
-              {
-                "word": "yoghurt",
-              },
-              {
-                "word": "yogurt",
-              },
-              {
-                "word": "muller",
-              },
-              {
-                "word": "custard",
-              },
-              {
                 "word": "bitters",
-              },
+              }
             ],
             "include": [
               {
@@ -6238,175 +5776,55 @@
               {
                 "word": "melon",
                 "substitution": true,
+              }
+            ],
+          },
+          {
+            "name": "peaches",
+            "type": "fruit",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "peach",
+                "substitution": false,
               },
+              {
+                "word": "nectarine",
+                "substitution": true,
+              },
+              {
+                "word": "apricot",
+                "substitution": true,
+              },
+              {
+                "word": "plum",
+                "substitution": true,
+              },
+              {
+                "word": "mango",
+                "substitution": true,
+              },
+              {
+                "word": "cantaloupe",
+                "substitution": true,
+              },
+              {
+                "word": "melon",
+                "substitution": true,
+              }
             ],
           },
           {
               "name": "pomegranate",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
-                {
-                  "word": "pie",
-                },
-                {
-                  "word": "bake",
-                },
-                {
-                  "word": "cake",
-                },
-                {
-                  "word": "sponge",
-                },
-                {
-                  "word": "bar",
-                },
-                {
-                  "word": "ball",
-                },
-                {
-                  "word": "crispy",
-                },
-                {
-                  "word": "crunch",
-                },
-                {
-                  "word": "museli",
-                },
-                {
-                  "word": "sauce",
-                },
-                {
-                  "word": "vinegar",
-                },
-                {
-                  "word": "oil",
-                },
-                {
-                  "word": "chutney",
-                },
-                {
-                  "word": "spread",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "jam",
-                },
-                {
-                  "word": "preserve",
-                },
-                {
-                  "word": "conserve",
-                },
-                {
-                  "word": "jelly",
-                },
-                {
-                  "word": "tea",
-                },
-                {
-                  "word": "beer",
-                },
-                {
-                  "word": "cider",
-                },
-                {
-                  "word": "wine",
-                },
-                {
-                  "word": "liqueur",
-                },
-                {
-                  "word": "liquor",
-                },
-                {
-                  "word": "spirit",
-                },
-                {
-                  "word": "brandy",
-                },
-                {
-                  "word": "dried",
-                },
-                {
-                  "word": "chip",
-                },
-                {
-                  "word": "dessert",
-                },
-                {
-                  "word": "cookie",
-                },
-                {
-                  "word": "biscuit",
-                },
-                {
-                  "word": "shortbread",
-                },
-                {
-                  "word": "cheesecake",
-                },
-                {
-                  "word": "loaf",
-                },
-                {
-                  "word": "pudding",
-                },
-                {
-                  "word": "chocolate",
-                },
-                {
-                  "word": "cocoa",
-                },
-                {
-                  "word": "bonbon",
-                },
-                {
-                  "word": "sweets",
-                },
-                {
-                  "word": "candied",
-                },
-                {
-                  "word": "candy",
-                },
-                {
-                  "word": "fudge",
-                },
-                {
-                  "word": "cream",
-                },
-                {
-                  "word": "icecream",
-                },
-                {
-                  "word": "ice cream",
-                },
-                {
-                  "word": "gelato",
-                },
-                {
-                  "word": "curd",
-                },
-                {
-                  "word": "yoghurt",
-                },
-                {
-                  "word": "yogurt",
-                },
-                {
-                  "word": "muller",
-                },
-                {
-                  "word": "custard",
-                },
                 {
                   "word": "juice",
                 },
                 {
                   "word": "pomegranate molasses",
-                },
+                }
               ],
               "include": [
                 {
@@ -6432,24 +5850,24 @@
                 {
                   "word": "raspberries",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "powdered milk",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "milk powder",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "prosciutto",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -6468,12 +5886,12 @@
                 {
                   "word": "coppa",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "polenta",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -6500,12 +5918,12 @@
                 {
                   "word": "semolina",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
             "name": "pecorino",
-            "type": "", 
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6528,19 +5946,19 @@
               {
                 "word": "parmesan",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "pasta",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "rice vermicelli",
               },
               {
                 "word": "sauce",
-              },
+              }
             ],
             "include": [
               {
@@ -6766,16 +6184,16 @@
               {
                 "word": "tagliolina",
                 "substitution": false,
-              },
+              }
             ],
           },
           {
             "name": "parmesan",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "salted parmesan",
-              },
+              }
             ],
             "include": [
               {
@@ -6797,12 +6215,12 @@
               {
                 "word": "pecorino",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "provolone",
-            "type": "", 
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -6825,340 +6243,28 @@
               {
                 "word": "swiss cheese",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "pineapple",
-            "type": "", 
+            "type": "fruit",
             "exclude": [
               {
-                "word": "pie",
-              },
-              {
-                "word": "bake",
-              },
-              {
-                "word": "cake",
-              },
-              {
-                "word": "sponge",
-              },
-              {
-                "word": "bar",
-              },
-              {
-                "word": "ball",
-              },
-              {
-                "word": "crispy",
-              },
-              {
-                "word": "crunch",
-              },
-              {
-                "word": "museli",
-              },
-              {
-                "word": "sauce",
-              },
-              {
-                "word": "vinegar",
-              },
-              {
-                "word": "oil",
-              },
-              {
-                "word": "chutney",
-              },
-              {
-                "word": "spread",
-              },
-              {
-                "word": "butter",
-              },
-              {
-                "word": "jam",
-              },
-              {
-                "word": "preserve",
-              },
-              {
-                "word": "conserve",
-              },
-              {
-                "word": "jelly",
-              },
-              {
-                "word": "tea",
-              },
-              {
-                "word": "beer",
-              },
-              {
-                "word": "cider",
-              },
-              {
-                "word": "wine",
-              },
-              {
-                "word": "liqueur",
-              },
-              {
-                "word": "liquor",
-              },
-              {
-                "word": "spirit",
-              },
-              {
-                "word": "brandy",
-              },
-              {
-                "word": "dried",
-              },
-              {
-                "word": "chip",
-              },
-              {
-                "word": "dessert",
-              },
-              {
-                "word": "cookie",
-              },
-              {
-                "word": "biscuit",
-              },
-              {
-                "word": "shortbread",
-              },
-              {
-                "word": "cheesecake",
-              },
-              {
-                "word": "loaf",
-              },
-              {
-                "word": "pudding",
-              },
-              {
-                "word": "chocolate",
-              },
-              {
-                "word": "cocoa",
-              },
-              {
-                "word": "bonbon",
-              },
-              {
-                "word": "sweets",
-              },
-              {
-                "word": "candied",
-              },
-              {
-                "word": "candy",
-              },
-              {
-                "word": "fudge",
-              },
-              {
-                "word": "cream",
-              },
-              {
-                "word": "icecream",
-              },
-              {
-                "word": "ice cream",
-              },
-              {
-                "word": "gelato",
-              },
-              {
-                "word": "curd",
-              },
-              {
-                "word": "yoghurt",
-              },
-              {
-                "word": "yogurt",
-              },
-              {
-                "word": "muller",
-              },
-              {
-                "word": "custard",
-              },
-              {
-                "word": "pineapple juice",
-              },
+                "word": "juice",
+              }
             ],
             "include": [
               {
                 "word": "physalis",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "plum",
-            "type": "", 
+            "type": "fruit",
             "exclude": [
-              {
-                "word": "pie",
-              },
-              {
-                "word": "bake",
-              },
-              {
-                "word": "cake",
-              },
-              {
-                "word": "sponge",
-              },
-              {
-                "word": "bar",
-              },
-              {
-                "word": "ball",
-              },
-              {
-                "word": "crispy",
-              },
-              {
-                "word": "crunch",
-              },
-              {
-                "word": "museli",
-              },
-              {
-                "word": "sauce",
-              },
-              {
-                "word": "vinegar",
-              },
-              {
-                "word": "oil",
-              },
-              {
-                "word": "chutney",
-              },
-              {
-                "word": "spread",
-              },
-              {
-                "word": "butter",
-              },
-              {
-                "word": "jam",
-              },
-              {
-                "word": "preserve",
-              },
-              {
-                "word": "conserve",
-              },
-              {
-                "word": "jelly",
-              },
-              {
-                "word": "tea",
-              },
-              {
-                "word": "beer",
-              },
-              {
-                "word": "cider",
-              },
-              {
-                "word": "wine",
-              },
-              {
-                "word": "liqueur",
-              },
-              {
-                "word": "liquor",
-              },
-              {
-                "word": "spirit",
-              },
-              {
-                "word": "brandy",
-              },
-              {
-                "word": "dried",
-              },
-              {
-                "word": "chip",
-              },
-              {
-                "word": "dessert",
-              },
-              {
-                "word": "cookie",
-              },
-              {
-                "word": "biscuit",
-              },
-              {
-                "word": "shortbread",
-              },
-              {
-                "word": "cheesecake",
-              },
-              {
-                "word": "loaf",
-              },
-              {
-                "word": "pudding",
-              },
-              {
-                "word": "chocolate",
-              },
-              {
-                "word": "cocoa",
-              },
-              {
-                "word": "bonbon",
-              },
-              {
-                "word": "sweets",
-              },
-              {
-                "word": "candied",
-              },
-              {
-                "word": "candy",
-              },
-              {
-                "word": "fudge",
-              },
-              {
-                "word": "cream",
-              },
-              {
-                "word": "icecream",
-              },
-              {
-                "word": "ice cream",
-              },
-              {
-                "word": "gelato",
-              },
-              {
-                "word": "curd",
-              },
-              {
-                "word": "yoghurt",
-              },
-              {
-                "word": "yogurt",
-              },
-              {
-                "word": "muller",
-              },
-              {
-                "word": "custard",
-              },
             ],
             "include": [
               {
@@ -7176,16 +6282,16 @@
               {
                 "word": "plumcots",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "pine nuts",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "pine nut oil",
-              },
+              }
             ],
             "include": [
               {
@@ -7203,19 +6309,19 @@
               {
                 "word": "sunflower seeds",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "pecans",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "pecan oil",
               },
               {
                 "word": "pecan butter",
-              },
+              }
             ],
             "include": [
               {
@@ -7225,12 +6331,12 @@
               {
                 "word": "mixed nuts",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "potato",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "pierogi",
@@ -7255,7 +6361,7 @@
               },
               {
                 "word": "potato starch",
-              },
+              }
             ],
             "include": [
               {
@@ -7273,12 +6379,12 @@
               {
                 "word": "plantain",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "peanuts",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "peanut butter",
@@ -7297,7 +6403,7 @@
               },
               {
                 "word": "chocolate",
-              },
+              }
             ],
             "include": [
               {
@@ -7319,12 +6425,12 @@
               {
                 "word": "mixed nuts",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
               "name": "pumpkin",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "fruit",
@@ -7421,7 +6527,7 @@
                 },
                 {
                   "word": "aehobak",
-                },
+                }
               ],
               "include": [
                 {
@@ -7435,12 +6541,12 @@
                 {
                   "word": "calabaza",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
             "name": "pepper",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "chili pepper",
@@ -7492,7 +6598,7 @@
               },
               {
                 "word": "urfa",
-              },
+              }
             ],
             "include": [
               {
@@ -7502,9 +6608,9 @@
               {
                 "word": "grains of paradise",
                 "substitution": true,
-              },
+              }
             ],
-          },
+          }
 
     ]
 

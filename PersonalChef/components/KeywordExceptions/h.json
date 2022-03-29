@@ -67,7 +67,7 @@
               {
                 "word": "seed butter",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -87,7 +87,7 @@
               {
                 "word": "nut butter",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -115,7 +115,7 @@
               {
                 "word": "coloured dusting sugar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -124,7 +124,7 @@
             "exclude": [
               {
                 "word": "sticky",
-              },
+              }
             ],
             "include": [
               {
@@ -158,7 +158,7 @@
               {
                 "word": "coloured dusting sugar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -202,7 +202,7 @@
               {
                 "word": "sugar syrup",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -222,7 +222,7 @@
               {
                 "word": "coloured dusting sugar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -242,7 +242,7 @@
               {
                 "word": "pumpkin seeds",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -294,7 +294,7 @@
               {
                 "word": "gurnard",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -338,7 +338,7 @@
               {
                 "word": "coley",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -402,7 +402,7 @@
               {
                 "word": "john dory",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -430,7 +430,7 @@
               {
                 "word": "shad",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -446,7 +446,7 @@
               {
                 "word": "black pudding",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -458,7 +458,7 @@
               {
                 "word": "meatloaf",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -506,7 +506,7 @@
               {
                 "word": "cayenne",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -518,7 +518,7 @@
               },
               {
                 "word": "vertes",
-              },
+              }
             ],
             "include": [
               {
@@ -544,7 +544,7 @@
               {
                 "word": "white kidney bean",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -576,7 +576,7 @@
               {
                 "word": "extra virgin olive oil",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -604,7 +604,7 @@
               {
                 "word": "béarnaise",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -688,7 +688,7 @@
               {
                 "word": "sweet mustard",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -732,7 +732,7 @@
               {
                 "word": "worcester sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -744,7 +744,7 @@
               },
               {
                 "word": "dark chocolate",
-              },
+              }
             ],
             "include": [
               {
@@ -754,7 +754,7 @@
               {
                 "word": "cocoa",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -798,7 +798,7 @@
               {
                 "word": "coconut milk",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -914,7 +914,7 @@
               {
                 "word": "groundnut oil",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -926,7 +926,7 @@
               {
                 "word": "ovaltine",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -1038,7 +1038,7 @@
               {
                 "word": "whisky liqueur",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1070,7 +1070,7 @@
               {
                 "word": "char siu sauce",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -1082,7 +1082,7 @@
               {
                 "word": "honey bbq sauce",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -1134,7 +1134,7 @@
             {
               "word": "hazelnut milk",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -1158,7 +1158,7 @@
               {
                 "word": "coppa",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1170,14 +1170,13 @@
               {
                 "word": "herbs de provence",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
             "name": "hot curry paste",
             "type": "",
             "exclude": [
-
             ],
             "include": [
               {
@@ -1611,7 +1610,7 @@
               {
                 "word": "fiery goan curry",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -1631,7 +1630,7 @@
               {
                 "word": "hummous",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -1663,7 +1662,7 @@
               {
                 "word": "sambal",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1675,7 +1674,7 @@
               },
               {
                 "word": "hotdog bun",
-              },
+              }
             ],
             "include": [
               {
@@ -1693,7 +1692,7 @@
               {
                 "word": "polony",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -1948,10 +1947,9 @@
               },
               {
                 "word": "apricot",
-              },
+              }
             ],
             "include": [
-
             ],
         },
         {
@@ -1963,7 +1961,7 @@
               {
                 "word": "haloumi",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -2023,7 +2021,7 @@
             {
               "word": "port salut",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -2032,7 +2030,7 @@
           "exclude": [
             {
               "word": "oil",
-            },
+            }
           ],
           "include": [
             {
@@ -2042,11 +2040,9 @@
             {
               "word": "pistachios",
               "substitution": true,
-            },
+            }
           ],
-        },
-
-
+        }
 
     ]
 

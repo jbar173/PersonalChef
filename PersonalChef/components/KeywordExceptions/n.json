@@ -24,7 +24,7 @@
 
           {
               "name": "nut cookies",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -43,12 +43,12 @@
                 {
                   "word": "cookies",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "nut butter",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -235,12 +235,12 @@
                 {
                   "word": "nonut",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "nerds",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -263,12 +263,12 @@
                 {
                   "word": "coloured dusting sugar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "nougat",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -287,12 +287,12 @@
                 {
                   "word": "halva",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "nutty chocolate",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -331,169 +331,13 @@
                 {
                   "word": "chocolate",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "nectarine",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
-                {
-                  "word": "pie",
-                },
-                {
-                  "word": "bake",
-                },
-                {
-                  "word": "cake",
-                },
-                {
-                  "word": "sponge",
-                },
-                {
-                  "word": "bar",
-                },
-                {
-                  "word": "ball",
-                },
-                {
-                  "word": "crispy",
-                },
-                {
-                  "word": "crunch",
-                },
-                {
-                  "word": "museli",
-                },
-                {
-                  "word": "sauce",
-                },
-                {
-                  "word": "vinegar",
-                },
-                {
-                  "word": "oil",
-                },
-                {
-                  "word": "chutney",
-                },
-                {
-                  "word": "spread",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "jam",
-                },
-                {
-                  "word": "preserve",
-                },
-                {
-                  "word": "conserve",
-                },
-                {
-                  "word": "jelly",
-                },
-                {
-                  "word": "tea",
-                },
-                {
-                  "word": "beer",
-                },
-                {
-                  "word": "cider",
-                },
-                {
-                  "word": "wine",
-                },
-                {
-                  "word": "liqueur",
-                },
-                {
-                  "word": "liquor",
-                },
-                {
-                  "word": "spirit",
-                },
-                {
-                  "word": "brandy",
-                },
-                {
-                  "word": "dried",
-                },
-                {
-                  "word": "chip",
-                },
-                {
-                  "word": "dessert",
-                },
-                {
-                  "word": "cookie",
-                },
-                {
-                  "word": "biscuit",
-                },
-                {
-                  "word": "shortbread",
-                },
-                {
-                  "word": "cheesecake",
-                },
-                {
-                  "word": "loaf",
-                },
-                {
-                  "word": "pudding",
-                },
-                {
-                  "word": "chocolate",
-                },
-                {
-                  "word": "cocoa",
-                },
-                {
-                  "word": "bonbon",
-                },
-                {
-                  "word": "sweets",
-                },
-                {
-                  "word": "candied",
-                },
-                {
-                  "word": "candy",
-                },
-                {
-                  "word": "fudge",
-                },
-                {
-                  "word": "cream",
-                },
-                {
-                  "word": "icecream",
-                },
-                {
-                  "word": "ice cream",
-                },
-                {
-                  "word": "gelato",
-                },
-                {
-                  "word": "curd",
-                },
-                {
-                  "word": "yoghurt",
-                },
-                {
-                  "word": "yogurt",
-                },
-                {
-                  "word": "muller",
-                },
-                {
-                  "word": "custard",
-                },
               ],
               "include": [
                 {
@@ -511,16 +355,16 @@
                 {
                   "word": "mango",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "nigella seeds",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "oil",
-                },
+                }
               ],
               "include": [
                 {
@@ -546,12 +390,12 @@
                 {
                   "word": "poppy seeds",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "nasi goreng paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -590,19 +434,19 @@
                 {
                   "word": "nasi goreng cooking sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "navy beans",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "vert",
                 },
                 {
                   "word": "vertes",
-                },
+                }
               ],
               "include": [
                 {
@@ -632,12 +476,12 @@
                 {
                   "word": "white kidney bean",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "nutmeg",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "ice cream",
@@ -647,18 +491,18 @@
                 },
                 {
                   "word": "gelato",
-                },
+                }
               ],
               "include": [
                 {
                   "word": "mace",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "nutella",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -681,19 +525,19 @@
                 {
                   "word": "chocolate sauce",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "noodles",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "spaghetti",
                 },
                 {
                   "word": "lasagne",
-                },
+                }
               ],
               "include": [
                 {
@@ -711,11 +555,9 @@
                 {
                   "word": "sen lek",
                   "substitution": false,
-                },
+                }
               ],
-          },
-
-
+          }
 
     ]
 

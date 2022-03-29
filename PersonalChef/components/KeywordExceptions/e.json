@@ -47,7 +47,7 @@
                 {
                   "word": "gooseberries",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -59,7 +59,7 @@
                 },
                 {
                   "word": "smoked",
-                },
+                }
               ],
               "include": [
                 {
@@ -89,7 +89,7 @@
                 {
                   "word": "salmon",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -121,7 +121,7 @@
                 {
                   "word": "broad beans",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -141,7 +141,7 @@
                 {
                   "word": "coconut milk",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -161,7 +161,7 @@
                 {
                   "word": "taco sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -193,7 +193,7 @@
                 {
                   "word": "wasabi paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -213,7 +213,7 @@
                 {
                   "word": "tomato cooking paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -225,7 +225,7 @@
                 },
                 {
                   "word": "cake",
-                },
+                }
               ],
               "include": [
                 {
@@ -271,7 +271,7 @@
                 {
                   "word": "lemon tea",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -311,7 +311,7 @@
                 {
                   "word": "egg",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -339,7 +339,7 @@
                 {
                   "word": "xanthan gum",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -351,7 +351,7 @@
                 {
                   "word": "epoisse",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -363,7 +363,7 @@
                 {
                   "word": "walnut oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -383,7 +383,7 @@
                 {
                   "word": "elderflower lemonade",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
@@ -395,7 +395,7 @@
                 {
                   "word": "escarole",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -475,7 +475,7 @@
                 {
                   "word": "elderflower wine",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
@@ -484,13 +484,13 @@
             "exclude": [
               {
                 "word": "edamame",
-              },
+              }
             ],
             "include": [
               {
                 "word": "oka",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
@@ -670,7 +670,7 @@
               },
               {
                 "word": "egg trottole",
-              },
+              }
             ],
             "include": [
             ],
@@ -724,11 +724,9 @@
               {
                 "word": "jarlsberg",
                 "substitution": true,
-              },
+              }
             ],
-          },
-
-
+          }
 
     ]
 

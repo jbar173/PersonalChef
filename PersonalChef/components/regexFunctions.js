@@ -33,14 +33,14 @@ import * as kw_z from './KeywordExceptions/z.json';
 const keys = { "a": kw_a.ingredients,"b": kw_b.ingredients,'c': kw_c.ingredients,"d": kw_d.ingredients,"e": kw_e.ingredients,"f": kw_f.ingredients,"g": kw_g.ingredients,
                "h": kw_h.ingredients,"i": kw_i.ingredients,"j": kw_j.ingredients,"k": kw_k.ingredients,"l": kw_l.ingredients,"m": kw_m.ingredients,"n": kw_n.ingredients,
                "o": kw_o.ingredients,"p": kw_p.ingredients,"q": kw_q.ingredients,"r": kw_r.ingredients,"s": kw_s.ingredients,"t": kw_t.ingredients,"u": kw_u.ingredients,
-               "v": kw_v.ingredients,"w": kw_w.ingredients,"x": kw_x.ingredients,"y": kw_y.ingredients,"z": kw_z.ingredients, }
+               "v": kw_v.ingredients,"w": kw_w.ingredients,"x": kw_x.ingredients,"y": kw_y.ingredients,"z": kw_z.ingredients, };
 
 const fruit_exceptions = [ "sparkling", "bubbly", "fizz", "seltzer", "soda", "tonic", "lemonade", "gin", "vodka", "wine", "brandy", "rum", "mead", "cider", "shandy",
                            "beer", "ale", "lager", "liqueur", "liquor", "spirit", "chip", "dessert", "cookie", "biscuit", "shortbread", "cheesecake", "loaf",
                            "pudding", "chocolate", "cocoa", "bonbon", "sweets", "candied", "candy", "fudge", "cream", "icecream", "ice cream", "gelato", "curd",
-                           "yoghurt", "muller", "custard", "pie", "bake", "cake", "sponge", "bar", "ball", "crispy", "crunch", "muesli", "sauce", "vinegar", "oil",
+                           "yoghurt", "muller", "custard", "bake", "cake", "sponge", "bar", "ball", "crispy", "crunch", "muesli", "sauce", "vinegar", "oil",
                            "chutney", "spread", "butter", "jam", "preserve", "conserve", "jelly", "tea",
-                         ]
+                         ];
 
 // Checks that recipe items are ingredients rather than equipment/utensils:
 
@@ -273,6 +273,7 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
                 var words = []
                 if(exceptions[m]["type"] === "fruit"){
                   words = fruit_exceptions
+                  console.log("********** IS FRUIT ***************")
                 }
                 var no_error = true
 

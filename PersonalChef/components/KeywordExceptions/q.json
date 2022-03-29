@@ -18,7 +18,7 @@
 
           {
               "name": "quinoa",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -61,12 +61,12 @@
                 {
                   "word": "dried black lentils",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
             "name": "quinoa milk",
-            "type": "", 
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -97,12 +97,12 @@
               {
                 "word": "milk",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
               "name": "quince jelly",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -129,12 +129,12 @@
                 {
                   "word": "quince butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "quince paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -161,11 +161,9 @@
                 {
                   "word": "quince spread",
                   "substitution": false,
-                },
+                }
               ],
-          },
-
-
+          }
 
     ]
 

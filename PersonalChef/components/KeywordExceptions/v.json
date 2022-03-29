@@ -26,7 +26,7 @@
 
           {
               "name": "vodka",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -45,12 +45,12 @@
                 {
                   "word": "tequila",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "vanilla bean paste",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "icecream",
@@ -117,7 +117,7 @@
                 },
                 {
                   "word": "vodka",
-                },
+                }
               ],
               "include": [
                 {
@@ -147,12 +147,12 @@
                 {
                   "word": "vanilla powder",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "vanilla sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -247,12 +247,12 @@
                 {
                   "word": "custard",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "vanilla syrup",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -275,12 +275,12 @@
                 {
                   "word": "vanilla sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "venison mince",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -491,19 +491,19 @@
                 {
                   "word": "meat free mince",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "venison",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "jerky",
                 },
                 {
                   "word": "dried",
-                },
+                }
               ],
               "include": [
                 {
@@ -541,24 +541,24 @@
                 {
                   "word": "beef",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "vimto",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "berry cordial",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "vegetable chips",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -633,12 +633,12 @@
                 {
                   "word": "roasted chickpeas",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "vindaloo curry paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -661,12 +661,12 @@
                 {
                   "word": "hot curry paste",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "vanilla sponge",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -729,12 +729,12 @@
                 {
                   "word": "cake",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "vanilla milkshake",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -765,12 +765,12 @@
                 {
                   "word": "creme anglaise",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "vegetable oil",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -785,12 +785,12 @@
                 {
                   "word": "grapeseed oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "violet flavoured spirit/liqueur",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -865,12 +865,12 @@
                 {
                   "word": "violet wine",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "vegetable fat",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -889,12 +889,12 @@
                 {
                   "word": "vegetable suet",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "veggie dip",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -937,12 +937,12 @@
                 {
                   "word": "cream & chive dip",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "vine leaves",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -957,12 +957,12 @@
                 {
                   "word": "vine leaf",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "vinegar",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -981,12 +981,12 @@
                 {
                   "word": "vinagrette",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "vanilla extract",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "icecream",
@@ -1050,7 +1050,7 @@
                 },
                 {
                   "word": "coffee",
-                },
+                }
               ],
               "include": [
                 {
@@ -1116,12 +1116,12 @@
                 {
                   "word": "vanilla powder",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "vanilla pod",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "icecream",
@@ -1188,7 +1188,7 @@
                 },
                 {
                   "word": "vodka",
-                },
+                }
               ],
               "include": [
                 {
@@ -1218,12 +1218,12 @@
                 {
                   "word": "vanilla powder",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
             "name": "vegetable stock",
-            "type": "", 
+            "type": "",
             "exclude": [
             ],
             "include": [
@@ -1322,9 +1322,9 @@
               {
                 "word": "pork stock",
                 "substitution": true,
-              },
+              }
             ],
-          },
+          }
 
     ]
 

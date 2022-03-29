@@ -17,11 +17,11 @@
 
           {
               "name": "zhoug paste",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "italian",
-                },
+                }
               ],
               "include": [
                 {
@@ -71,22 +71,21 @@
                 {
                   "word": "mojo verde",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "za'atar",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "zatar",
                   "substitution": false,
-                },
+                }
               ],
-          },
-
+          }
 
     ]
 

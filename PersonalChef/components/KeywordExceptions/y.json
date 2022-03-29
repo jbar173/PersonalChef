@@ -22,7 +22,7 @@
 
           {
               "name": "yuzu",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
               ],
               "include": [
@@ -45,36 +45,36 @@
                 {
                   "word": "anadomikan",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "yellow food colouring",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "yellow food colour",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "yeast",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "sourdough starter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "yorkshire pudding mix",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -89,12 +89,12 @@
                 {
                   "word": "pancake mix",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "yoshida's gourmet sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -145,24 +145,24 @@
                 {
                   "word": "cantonese sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "yeast extract",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "bovril",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "yellow curry paste",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -289,11 +289,9 @@
                 {
                   "word": "tom yum paste",
                   "substitution": true,
-                },
+                }
               ],
-          },
-
-
+          }
 
     ]
 

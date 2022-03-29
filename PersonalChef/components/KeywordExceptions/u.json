@@ -6,18 +6,25 @@
 
 
             "~~~ HALF DONE : ~~~",
-
+            "UGLI FRUIT",
 
 
             "~~~ TO DO : ~~~",
-            "UGLI FRUIT",
+
 
     ],
 
 
     "ingredients": [
 
-
+          {
+              "name": "ugli fruit",
+              "type": "fruit",
+              "exclude": [
+              ],
+              "include": [
+              ],
+          }
 
     ]
 

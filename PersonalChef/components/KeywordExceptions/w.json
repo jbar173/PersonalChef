@@ -33,7 +33,7 @@
 
           {
               "name": "wensleydale",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -56,12 +56,12 @@
                 {
                   "word": "cheddar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "wafer biscuits",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "paper",
@@ -71,7 +71,7 @@
                 },
                 {
                   "word": "wheat",
-                },
+                }
               ],
               "include": [
                 {
@@ -85,12 +85,12 @@
                 {
                   "word": "wafer",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "wafer decorations",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -129,12 +129,12 @@
                 {
                   "word": "wafer butterflies",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "weetabix",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -169,12 +169,12 @@
                 {
                   "word": "bixies",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "watercress",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -201,169 +201,13 @@
                 {
                   "word": "salad leavess",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "watermelon",
-              "type": "", 
+              "type": "fruit",
               "exclude": [
-                {
-                  "word": "pie",
-                },
-                {
-                  "word": "bake",
-                },
-                {
-                  "word": "cake",
-                },
-                {
-                  "word": "sponge",
-                },
-                {
-                  "word": "bar",
-                },
-                {
-                  "word": "ball",
-                },
-                {
-                  "word": "crispy",
-                },
-                {
-                  "word": "crunch",
-                },
-                {
-                  "word": "museli",
-                },
-                {
-                  "word": "sauce",
-                },
-                {
-                  "word": "vinegar",
-                },
-                {
-                  "word": "oil",
-                },
-                {
-                  "word": "chutney",
-                },
-                {
-                  "word": "spread",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "jam",
-                },
-                {
-                  "word": "preserve",
-                },
-                {
-                  "word": "conserve",
-                },
-                {
-                  "word": "jelly",
-                },
-                {
-                  "word": "tea",
-                },
-                {
-                  "word": "beer",
-                },
-                {
-                  "word": "cider",
-                },
-                {
-                  "word": "wine",
-                },
-                {
-                  "word": "liqueur",
-                },
-                {
-                  "word": "liquor",
-                },
-                {
-                  "word": "spirit",
-                },
-                {
-                  "word": "brandy",
-                },
-                {
-                  "word": "dried",
-                },
-                {
-                  "word": "chip",
-                },
-                {
-                  "word": "dessert",
-                },
-                {
-                  "word": "cookie",
-                },
-                {
-                  "word": "biscuit",
-                },
-                {
-                  "word": "shortbread",
-                },
-                {
-                  "word": "cheesecake",
-                },
-                {
-                  "word": "loaf",
-                },
-                {
-                  "word": "pudding",
-                },
-                {
-                  "word": "chocolate",
-                },
-                {
-                  "word": "cocoa",
-                },
-                {
-                  "word": "bonbon",
-                },
-                {
-                  "word": "sweets",
-                },
-                {
-                  "word": "candied",
-                },
-                {
-                  "word": "candy",
-                },
-                {
-                  "word": "fudge",
-                },
-                {
-                  "word": "cream",
-                },
-                {
-                  "word": "icecream",
-                },
-                {
-                  "word": "ice cream",
-                },
-                {
-                  "word": "gelato",
-                },
-                {
-                  "word": "curd",
-                },
-                {
-                  "word": "yoghurt",
-                },
-                {
-                  "word": "yogurt",
-                },
-                {
-                  "word": "muller",
-                },
-                {
-                  "word": "custard",
-                },
               ],
               "include": [
                 {
@@ -385,16 +229,16 @@
                 {
                   "word": "melon",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "wasabi paste",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "pea",
-                },
+                }
               ],
               "include": [
                 {
@@ -460,12 +304,12 @@
                 {
                   "word": "yuzu kosho",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "watercress sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -476,24 +320,24 @@
                 {
                   "word": "watercress salad dressing",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "white sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "cheese sauce",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "white wine stock",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -564,16 +408,16 @@
                 {
                   "word": "white wine glace",
                   "substitution": false,
-                },
+                }
               ],
           },
           {
               "name": "wholegrain mustard",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "cheese",
-                },
+                }
               ],
               "include": [
                 {
@@ -583,12 +427,12 @@
                 {
                   "word": "mustard",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "worcestershire sauce",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -615,12 +459,12 @@
                 {
                   "word": "coconut aminos",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "white chocolate milkshake",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -643,12 +487,12 @@
                 {
                   "word": "white chocolate drink",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "wedges",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "lemon",
@@ -664,7 +508,7 @@
                 },
                 {
                   "word": "potato chip",
-                },
+                }
               ],
               "include": [
                 {
@@ -678,12 +522,12 @@
                 {
                   "word": "chips",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "wispa",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -694,12 +538,12 @@
                 {
                   "word": "chocolate sprinkles",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "wine gums",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -710,12 +554,12 @@
                 {
                   "word": "coloured dusting sugar",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "wasabi peas",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -738,12 +582,12 @@
                 {
                   "word": "sev mamra",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "walnut butter",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -758,36 +602,36 @@
                 {
                   "word": "nut butter",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "walleye",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "perch",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "whey powder",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
                 {
                   "word": "milk powder",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "walnut oil",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -802,12 +646,12 @@
                 {
                   "word": "pumpkin seed oil",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "water chestnuts",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -818,12 +662,12 @@
                 {
                   "word": "jicama",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "water chestnut",
-              "type": "", 
+              "type": "",
               "exclude": [
                 {
                   "word": "in water",
@@ -842,7 +686,7 @@
                 },
                 {
                   "word": "tinned",
-                },
+                }
               ],
               "include": [
                 {
@@ -852,12 +696,12 @@
                 {
                   "word": "jerusalem artichoke",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "watermelon flavoured spirit/liqueur",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -936,12 +780,12 @@
                 {
                   "word": "mixed fruit flavoured spirit/liqueur",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "wild berry flavoured spirit/liqueur",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1012,12 +856,12 @@
                 {
                   "word": "mixed fruit flavoured spirit/liqueur",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
               "name": "wonton wrappers",
-              "type": "", 
+              "type": "",
               "exclude": [
               ],
               "include": [
@@ -1040,19 +884,19 @@
                 {
                   "word": "rice paper",
                   "substitution": true,
-                },
+                }
               ],
           },
           {
             "name": "whisky",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "biscuit",
               },
               {
                 "word": "extract",
-              },
+              }
             ],
             "include": [
               {
@@ -1082,12 +926,12 @@
               {
                 "word": "dark rum",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "white wine",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "vinegar",
@@ -1100,7 +944,7 @@
               },
               {
                 "word": "flour",
-              },
+              }
             ],
             "include": [
               {
@@ -1162,12 +1006,12 @@
               {
                 "word": "rose wine",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "white chocolate",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "biscuit",
@@ -1207,18 +1051,18 @@
               },
               {
                 "word": "hot chocolate",
-              },
+              }
             ],
             "include": [
               {
                 "word": "chocolate",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "walnuts",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "walnuts aisle",
@@ -1240,7 +1084,7 @@
               },
               {
                 "word": "vinairgrette",
-              },
+              }
             ],
             "include": [
               {
@@ -1250,12 +1094,12 @@
               {
                 "word": "mixed nuts",
                 "substitution": true,
-              },
+              }
             ],
           },
           {
             "name": "water",
-            "type": "", 
+            "type": "",
             "exclude": [
               {
                 "word": "soda water",
@@ -1304,13 +1148,11 @@
               },
               {
                 "word": "vinegar",
-              },
+              }
             ],
             "include": [
             ],
-          },
-
-
+          }
 
     ]
 

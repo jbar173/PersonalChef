@@ -94,7 +94,7 @@
               {
                 "word": "salted dried cod",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -122,7 +122,7 @@
               {
                 "word": "medium curry paste",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -150,7 +150,7 @@
               {
                 "word": "medium curry paste",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -189,7 +189,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -207,7 +207,7 @@
               {
                 "word": "soyabeans",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -258,7 +258,7 @@
               },
               {
                 "word": "common",
-              },
+              }
             ],
             "include": [
               {
@@ -320,7 +320,7 @@
               {
                 "word": "plaice",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -332,7 +332,7 @@
               },
               {
                 "word": "fresh",
-              },
+              }
             ],
             "include": [
               {
@@ -342,7 +342,7 @@
               {
                 "word": "anardana",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -358,7 +358,7 @@
               {
                 "word": "fish sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -378,7 +378,7 @@
               {
                 "word": "nigella seeds",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -406,7 +406,7 @@
               {
                 "word": "mango powder",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -422,7 +422,7 @@
               {
                 "word": "date syrup",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -470,7 +470,7 @@
               {
                 "word": "coconut nectar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -498,7 +498,7 @@
               {
                 "word": "cognac",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -510,7 +510,7 @@
               {
                 "word": "cheddar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -530,7 +530,7 @@
               {
                 "word": "raclette",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -626,7 +626,7 @@
               {
                 "word": "biscuits",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -662,7 +662,7 @@
               {
                 "word": "icing",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -690,7 +690,7 @@
               {
                 "word": "coloured dusting sugar",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -699,7 +699,7 @@
             "exclude": [
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -729,7 +729,7 @@
               {
                 "word": "fresh pomegranate seeds",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -738,7 +738,7 @@
             "exclude": [
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -756,7 +756,7 @@
               {
                 "word": "dried tropical fruit",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -765,7 +765,7 @@
             "exclude": [
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -799,7 +799,7 @@
               {
                 "word": "fig",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -808,7 +808,7 @@
             "exclude": [
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -830,7 +830,7 @@
               {
                 "word": "dried tropical fruit",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -839,7 +839,7 @@
             "exclude": [
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -861,7 +861,7 @@
               {
                 "word": "dried peach",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -870,7 +870,7 @@
             "exclude": [
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -900,7 +900,7 @@
               {
                 "word": "dried tropical fruit",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -909,7 +909,7 @@
             "exclude": [
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -959,7 +959,7 @@
               {
                 "word": "dried tropical fruit",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -968,7 +968,7 @@
             "exclude": [
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -1002,7 +1002,7 @@
               {
                 "word": "dried tropical fruit",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1011,7 +1011,7 @@
             "exclude": [
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -1037,7 +1037,7 @@
               {
                 "word": "dried tropical fruit",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1082,7 +1082,7 @@
               },
               {
                 "word": "split",
-              },
+              }
             ],
             "include": [
               {
@@ -1128,7 +1128,7 @@
               {
                 "word": "lentils",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1173,7 +1173,7 @@
               },
               {
                 "word": "split",
-              },
+              }
             ],
             "include": [
               {
@@ -1231,7 +1231,7 @@
               {
                 "word": "lentils",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1276,7 +1276,7 @@
               },
               {
                 "word": "split",
-              },
+              }
             ],
             "include": [
               {
@@ -1330,7 +1330,7 @@
               {
                 "word": "lentils",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1387,7 +1387,7 @@
               },
               {
                 "word": "sprout",
-              },
+              }
             ],
             "include": [
               {
@@ -1413,7 +1413,7 @@
               {
                 "word": "dried split peas",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1569,7 +1569,7 @@
               {
                 "word": "dried gourmet mixed mushroom",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -1605,7 +1605,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -1643,7 +1643,7 @@
               {
                 "word": "dried black lentils",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1659,7 +1659,7 @@
               {
                 "word": "dumplings",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1699,7 +1699,7 @@
               {
                 "word": "nigella seeds",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1731,7 +1731,7 @@
               {
                 "word": "angelica root",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1791,7 +1791,7 @@
               {
                 "word": "nigella seeds",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1835,7 +1835,7 @@
               {
                 "word": "herbes de provence",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1887,7 +1887,7 @@
               {
                 "word": "italian seasoning",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1896,7 +1896,7 @@
             "exclude": [
               {
                 "word": "sauce",
-              },
+              }
             ],
             "include": [
               {
@@ -1918,7 +1918,7 @@
               {
                 "word": "angelica root",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -1954,7 +1954,7 @@
               {
                 "word": "italian seasoning",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2010,7 +2010,7 @@
               {
                 "word": "italian seasoning",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2050,7 +2050,7 @@
               {
                 "word": "juniper berries",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2082,7 +2082,7 @@
               {
                 "word": "angelica root",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2118,7 +2118,7 @@
               {
                 "word": "peppercorn sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2150,7 +2150,7 @@
               {
                 "word": "wasabi paste",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2234,7 +2234,7 @@
               {
                 "word": "lemon butter sauce",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2246,7 +2246,7 @@
               },
               {
                 "word": "teabags",
-              },
+              }
             ],
             "include": [
               {
@@ -2264,7 +2264,7 @@
               {
                 "word": "root beer",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2288,7 +2288,7 @@
               {
                 "word": "root beer",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2308,7 +2308,7 @@
               {
                 "word": "dumpling mix",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2344,7 +2344,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -2370,7 +2370,7 @@
               {
                 "word": "dried urad dal",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2406,7 +2406,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -2424,7 +2424,7 @@
               {
                 "word": "lentils",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2460,7 +2460,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -2494,7 +2494,7 @@
               {
                 "word": "great northern bean",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2514,7 +2514,7 @@
               {
                 "word": "dripping",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -2534,7 +2534,7 @@
               {
                 "word": "lard",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -2550,7 +2550,7 @@
               {
                 "word": "chewy banana",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -2586,7 +2586,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -2600,7 +2600,7 @@
               {
                 "word": "dried mung beans",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2636,7 +2636,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -2674,7 +2674,7 @@
               {
                 "word": "lentils",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2710,7 +2710,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -2732,7 +2732,7 @@
               {
                 "word": "dried urad dhal",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2768,7 +2768,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -2798,7 +2798,7 @@
               {
                 "word": "red mung bean",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2814,7 +2814,7 @@
               {
                 "word": "chewy banana",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -2830,7 +2830,7 @@
               {
                 "word": "chewy banana",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -2846,7 +2846,7 @@
               {
                 "word": "chewy banana",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -2862,7 +2862,7 @@
               {
                 "word": "chewy banana",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -2871,7 +2871,7 @@
             "exclude": [
               {
                 "word": "smoked",
-              },
+              }
             ],
             "include": [
               {
@@ -2885,7 +2885,7 @@
               {
                 "word": "plain paprika",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2930,7 +2930,7 @@
               },
               {
                 "word": "powder",
-              },
+              }
             ],
             "include": [
               {
@@ -2956,7 +2956,7 @@
               {
                 "word": "white kidney bean",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -2992,7 +2992,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -3002,7 +3002,7 @@
               {
                 "word": "bean mix",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -3038,7 +3038,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -3048,7 +3048,7 @@
               {
                 "word": "red pea",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -3084,7 +3084,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -3106,7 +3106,7 @@
               {
                 "word": "great northern bean",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3280,7 +3280,7 @@
               },
               {
                 "word": "masala",
-              },
+              }
             ],
             "include": [
               {
@@ -3302,7 +3302,7 @@
               {
                 "word": "chana",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -3338,7 +3338,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -3364,7 +3364,7 @@
               {
                 "word": "great northern bean",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3400,7 +3400,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -3434,7 +3434,7 @@
               {
                 "word": "great northern bean",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3470,7 +3470,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -3504,7 +3504,7 @@
               {
                 "word": "great northern bean",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3540,7 +3540,7 @@
               },
               {
                 "word": "tinned",
-              },
+              }
             ],
             "include": [
               {
@@ -3590,7 +3590,7 @@
               {
                 "word": "cow peas",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -3646,7 +3646,7 @@
               {
                 "word": "currants",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3690,7 +3690,7 @@
               {
                 "word": "beef sauce",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -3699,7 +3699,7 @@
             "exclude": [
               {
                 "word": "egg",
-              },
+              }
             ],
             "include": [
               {
@@ -3709,7 +3709,7 @@
               {
                 "word": "goose",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3737,7 +3737,7 @@
               {
                 "word": "dried cherries",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3781,7 +3781,7 @@
               {
                 "word": "currants",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -3790,7 +3790,7 @@
             "exclude": [
               {
                 "word": "dumpling wrapper",
-              },
+              }
             ],
             "include": [
               {
@@ -3820,7 +3820,7 @@
               {
                 "word": "spaetzle",
                 "substitution": false,
-              },
+              }
             ],
         },
         {
@@ -3872,7 +3872,7 @@
             {
               "word": "coriander",
               "substitution": false,
-            },
+            }
           ],
         },
         {
@@ -3972,7 +3972,7 @@
             {
               "word": "chile",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -3988,7 +3988,7 @@
               {
                 "word": "carrot",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4015,7 +4015,7 @@
               },
               {
                 "word": "dill flavoured",
-              },
+              }
             ],
             "include": [
               {
@@ -4025,7 +4025,7 @@
               {
                 "word": "fresh tarragon",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4085,7 +4085,7 @@
             {
               "word": "coconut flaked",
               "substitution": false,
-            },
+            }
           ],
         },
         {
@@ -4100,7 +4100,7 @@
               },
               {
                 "word": "drop",
-              },
+              }
             ],
             "include": [
               {
@@ -4138,7 +4138,7 @@
               {
                 "word": "pisco",
                 "substitution": true,
-              },
+              }
             ],
         },
         {
@@ -4183,13 +4183,13 @@
             },
             {
               "word": "hot chocolate",
-            },
+            }
           ],
           "include": [
             {
               "word": "chocolate",
               "substitution": true,
-            },
+            }
           ],
         },
         {
@@ -4198,7 +4198,7 @@
           "exclude": [
             {
               "word": "date chutney",
-            },
+            }
           ],
           "include": [
             {
@@ -4228,11 +4228,9 @@
             {
               "word": "currants",
               "substitution": true,
-            },
+            }
           ],
-        },
-
-
+        }
 
     ]
 
