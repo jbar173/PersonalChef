@@ -4,6 +4,7 @@
              "emmental","epoisses",
              "eel",
              "edamame beans","elderberries","endive",
+             "elderflower",
              "evaporated milk",
              "enchilada sauce","english mustard","extra virgin olive oil","ezme paste",
              "earl grey tea",
@@ -22,6 +23,18 @@
     "ingredients": [
 
 
+          {
+              "name": "elderflower",
+              "type": "herb",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "borage flowers",
+                  "substitution": true,
+                },
+              ],
+          },
           {
               "name": "elderberries",
               "type": "fruit",

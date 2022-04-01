@@ -10,17 +10,17 @@
               "pancake mix","pasta","peanuts","pearled barley","pecans","pine nuts","pistachios","pizza dough","polenta","poppy seeds","puff pastry","pudding mix",
               "pumpkin seeds",
 
-              "plaice","pollock","prawns",
-              "pancetta","prosciutto","pork","pork mince","pulled pork","pork trotter","pate",
+              "pike","plaice","pollock","prawns",
+              "pancetta","partridge","pheasant","pigeon","pork","pork mince","prosciutto","pulled pork","pork trotter","pate",
               "pak choi","parsnip","passion fruit","pea shoots","peach","pear","peas","persimmon","plantain","plum","pineapple","pomegranate","potato","pumpkin",
-              "plain paprika","pepper","piri piri seasoning","pork seasoning","parsley",
+              "plain paprika","pepper","piri piri seasoning","pork seasoning",
               "passata","pease pudding","pickles","pickled eggs","pickled red cabbage","pinto beans","pumpkin puree",
 
               "palm oil","panang curry paste","parsley sauce","pasanda paste","pathia curry paste","peanut butter","peanut oil","peppercorn sauce","phall curry paste",
               "piccalilli","pickled ginger","piri piri sauce","plum sauce","ponzu sauce","pork stock","pumpkin pesto",
 
               "peach tea","pear tea","pineapple tea","pink lemonade","prune juice",
-              "plain yoghurt","popcorn","pork scratchings","potato chips","powdered milk","pretzel snacks",
+              "plain yoghurt","popcorn","pork scratchings","potato chips","powdered milk","prawn crackers","pretzel snacks",
 
 
               "~~~ HALF DONE : ~~~",
@@ -36,13 +36,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "PIKE",
-
-              "partridge/grouse/cornish hen/cornish game hen/chicken/chukar/chakor",
-              "PHEASANT/guineafowl/goose/grouse/chicken/cornish hen/cornish game hen/turkey/chukar/chakor",
-              "PIGEON/pheasant",
-
-              "prawn crackers",
 
     ],
 
@@ -50,6 +43,282 @@
     "ingredients": [
 
 
+          {
+              "name": "pike",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grouper",
+                  "substitution": true,
+                },
+                {
+                  "word": "snapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "pompano",
+                  "substitution": true,
+                },
+                {
+                  "word": "pollock",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "partridge",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chukar",
+                  "substitution": false,
+                },
+                {
+                  "word": "chakor",
+                  "substitution": false,
+                },
+                {
+                  "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "guinea fowl",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish game hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "pigeon",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouse",
+                  "substitution": true,
+                },
+                {
+                  "word": "goose",
+                  "substitution": true,
+                },
+                {
+                  "word": "ptarmigan",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "poussin",
+                  "substitution": true,
+                },
+                {
+                  "word": "quail",
+                  "substitution": true,
+                },
+                {
+                  "word": "squab",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "pheasant",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "partridge",
+                  "substitution": true,
+                },
+                {
+                  "word": "guinea fowl",
+                  "substitution": true,
+                },
+                {
+                  "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish game hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "pigeon",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouse",
+                  "substitution": true,
+                },
+                {
+                  "word": "goose",
+                  "substitution": true,
+                },
+                {
+                  "word": "ptarmigan",
+                  "substitution": true,
+                },
+                {
+                  "word": "duck",
+                  "substitution": true,
+                },
+                {
+                  "word": "dove",
+                  "substitution": true,
+                },
+                {
+                  "word": "woodcock",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "poussin",
+                  "substitution": true,
+                },
+                {
+                  "word": "quail",
+                  "substitution": true,
+                },
+                {
+                  "word": "squab",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "pigeon",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "partridge",
+                  "substitution": true,
+                },
+                {
+                  "word": "guinea fowl",
+                  "substitution": true,
+                },
+                {
+                  "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish game hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouse",
+                  "substitution": true,
+                },
+                {
+                  "word": "goose",
+                  "substitution": true,
+                },
+                {
+                  "word": "ptarmigan",
+                  "substitution": true,
+                },
+                {
+                  "word": "duck",
+                  "substitution": true,
+                },
+                {
+                  "word": "dove",
+                  "substitution": true,
+                },
+                {
+                  "word": "woodcock",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "poussin",
+                  "substitution": true,
+                },
+                {
+                  "word": "quail",
+                  "substitution": true,
+                },
+                {
+                  "word": "squab",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "prawn crackers",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "prawn cracker",
+                  "substitution": false,
+                },
+                {
+                  "word": "prawn flavoured cracker",
+                  "substitution": false,
+                },
+                {
+                  "word": "prawn flavored cracker",
+                  "substitution": false,
+                },
+                {
+                  "word": "thai cracker",
+                  "substitution": false,
+                },
+                {
+                  "word": "shrimp cracker",
+                  "substitution": false,
+                },
+                {
+                  "word": "shrimp flavoured cracker",
+                  "substitution": false,
+                },
+                {
+                  "word": "shrimp flavored cracker",
+                  "substitution": false,
+                }
+              ],
+          },
           {
               "name": "papaya",
               "type": "fruit",
@@ -1051,6 +1320,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "pike",
+                  "substitution": true,
+                },
+                {
                   "word": "whiting",
                   "substitution": true,
                 },
@@ -1116,10 +1389,6 @@
                 },
                 {
                   "word": "bacon",
-                  "substitution": true,
-                },
-                {
-                  "word": "pork",
                   "substitution": true,
                 }
               ],
@@ -1233,7 +1502,7 @@
           },
           {
               "name": "plain paprika",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1932,7 +2201,7 @@
           },
           {
               "name": "piri piri seasoning",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -5403,7 +5672,7 @@
           },
           {
               "name": "pork seasoning",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -6365,10 +6634,6 @@
             ],
             "include": [
               {
-                "word": "sweet potato",
-                "substitution": true,
-              },
-              {
                 "word": "potatoes",
                 "substitution": false,
               },
@@ -6378,6 +6643,10 @@
               },
               {
                 "word": "plantain",
+                "substitution": true,
+              },
+              {
+                "word": "sweet potato",
                 "substitution": true,
               }
             ],
@@ -6546,7 +6815,7 @@
           },
           {
             "name": "pepper",
-            "type": "",
+            "type": "herb",
             "exclude": [
               {
                 "word": "chili pepper",

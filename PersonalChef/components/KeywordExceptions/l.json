@@ -6,10 +6,10 @@
               "lollipop","love hearts",
 
               "lasagne sheets",
-              "langoustine","lobster",
+              "langoustine","ling","lobster",
               "lamb","lamb mince",
-              "lamb's lettuce","lemon","lemongrass","lettuce","lime","lychee",
-              "lamb seasoning","lime leaves","lovage",
+              "lamb's lettuce","lemon","lemon thyme","lemon verbena","lemongrass","lettuce","lime","lychee",
+              "lamb herb seasoning","lime leaves","lovage",
               "laksa paste","lamb stock","lemon butter sauce","lemon juice","lime mojo sauce",
               "lard",
               "lapsang tea", "lemon ice tea", "lychee juice",
@@ -24,8 +24,7 @@
 
 
               "~~~ TO DO : ~~~",
-              "LING",
-              "LEMON VERBENA",
+
 
     ],
 
@@ -34,13 +33,157 @@
 
 
         {
-            "name": "lovage",
+            "name": "ling",
             "type": "",
             "exclude": [
             ],
             "include": [
               {
-                "word": "beer",
+                "word": "burbot",
+                "substitution": true,
+              },
+              {
+                "word": "bubbot",
+                "substitution": true,
+              },
+              {
+                "word": "cusk",
+                "substitution": true,
+              },
+              {
+                "word": "tusk",
+                "substitution": true,
+              },
+              {
+                "word": "freshwater cod",
+                "substitution": true,
+              },
+              {
+                "word": "coney-fish",
+                "substitution": true,
+              },
+              {
+                "word": "lingcod",
+                "substitution": true,
+              },
+              {
+                "word": "eelpout",
+                "substitution": true,
+              },
+              {
+                "word": "whiting",
+                "substitution": true,
+              },
+              {
+                "word": "luderick",
+                "substitution": true,
+              },
+              {
+                "word": "parore",
+                "substitution": true,
+              },
+              {
+                "word": "black bream",
+                "substitution": true,
+              },
+              {
+                "word": "blackfish",
+                "substitution": true,
+              },
+              {
+                "word": "barramundi",
+                "substitution": true,
+              },
+              {
+                "word": "cod",
+                "substitution": true,
+              },
+              {
+                "word": "haddock",
+                "substitution": true,
+              }
+            ],
+        },
+        {
+            "name": "lemon thyme",
+            "type": "herb",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "citrus thyme",
+                "substitution": false,
+              },
+              {
+                "word": "lemon balm",
+                "substitution": true,
+              },
+              {
+                "word": "lemon basil",
+                "substitution": true,
+              },
+              {
+                "word": "lemon verbena",
+                "substitution": true,
+              },
+              {
+                "word": "thyme",
+                "substitution": true,
+              },
+              {
+                "word": "lemongrass",
+                "substitution": true,
+              }
+            ],
+        },
+        {
+            "name": "lemon verbena",
+            "type": "herb",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "verbena",
+                "substitution": false,
+              },
+              {
+                "word": "lemon beebrush",
+                "substitution": false,
+              },
+              {
+                "word": "lemon balm",
+                "substitution": true,
+              },
+              {
+                "word": "lemon basil",
+                "substitution": true,
+              },
+              {
+                "word": "lemon thyme",
+                "substitution": true,
+              },
+              {
+                "word": "lemongrass",
+                "substitution": true,
+              }
+            ],
+        },
+        {
+            "name": "lovage",
+            "type": "herb",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "celery leaves",
+                "substitution": true,
+              },
+              {
+                "word": "celeriac leaves",
+                "substitution": true,
+              },
+              {
+                "word": "fresh parsley",
                 "substitution": true,
               }
             ],
@@ -550,7 +693,7 @@
         },
         {
             "name": "lamb herb seasoning",
-            "type": "",
+            "type": "herb",
             "exclude": [
               {
                 "word": "indian",
@@ -1195,6 +1338,30 @@
                 "substitution": false,
               },
               {
+                "word": "mutton mince",
+                "substitution": false,
+              },
+              {
+                "word": "mutton ground",
+                "substitution": false,
+              },
+              {
+                "word": "ground mutton",
+                "substitution": false,
+              },
+              {
+                "word": "minced mutton",
+                "substitution": false,
+              },
+              {
+                "word": "mutton minced",
+                "substitution": false,
+              },
+              {
+                "word": "mince mutton",
+                "substitution": false,
+              },
+              {
                 "word": "beef mince",
                 "substitution": true,
               },
@@ -1266,7 +1433,7 @@
         },
         {
             "name": "lime leaves",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [

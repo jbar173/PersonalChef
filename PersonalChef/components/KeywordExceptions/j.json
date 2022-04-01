@@ -381,7 +381,7 @@
         },
         {
             "name": "juniper berries",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -417,7 +417,7 @@
         },
         {
             "name": "jerk seasoning mix",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [

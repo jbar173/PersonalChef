@@ -16,11 +16,11 @@
               "caviar","clams","cod","cockles","crab","crab stick","crayfish",
               "chicken","chicken mince","cured sausage/sliced meat",
 
-              "cabbage","cantaloupe","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli pepper","clementine",
-              "collard greens","courgette","cucumber",
+              "cabbage","cantaloupe","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli pepper","choi sum",
+              "clementine","collard greens","courgette","cucumber",
 
               "cajun spice","chamomile flowers","caraway seeds","cayenne","celery salt","celery seeds","chana masala spice blend","chicken seasoning","chilli flakes",
-              "chilli powder","chinese five spice","chives","choi sum","cinnamon","cloves","coriander seeds","cress","cumin seeds",
+              "chilli powder","chinese five spice","chives","cinnamon","cloves","coriander seeds","cress","cumin seeds",
 
               "canned chipotles","cannellini beans","cheddar cheese soup","chicken soup","chickpeas","cream of tomato soup",
 
@@ -30,7 +30,6 @@
 
               "cheese puffs","coconut milk","cream","creme fraiche","crispy seaweed",
               "caramel milkshake","cherry cola","cherry lemonade","chocolate milkshake","coconut water","cocoa","coffee","cream soda",
-
 
 
               "~~~ HALF DONE : ~~~",
@@ -46,11 +45,11 @@
 
               "~~~ TO DO : ~~~",
 
+
             ],
 
 
     "ingredients": [
-
 
 
         {
@@ -103,7 +102,7 @@
         },
         {
             "name": "chamomile flowers",
-            "type": "fruit",
+            "type": "herb",
             "exclude": [
               {
                 "word": "pastilles",
@@ -1136,6 +1135,10 @@
             ],
             "include": [
               {
+                "word": "cuttles",
+                "substitution": false,
+              },
+              {
                 "word": "squid",
                 "substitution": true,
               },
@@ -1385,11 +1388,31 @@
             ],
             "include": [
               {
+                "word": "pipi",
+                "substitution": false,
+              },
+              {
+                "word": "piddock",
+                "substitution": false,
+              },
+              {
+                "word": "vongole",
+                "substitution": false,
+              },
+              {
+                "word": "quahog",
+                "substitution": false,
+              },
+              {
                 "word": "cockles",
                 "substitution": true,
               },
               {
                 "word": "mussels",
+                "substitution": true,
+              },
+              {
+                "word": "oysters",
                 "substitution": true,
               },
               {
@@ -3826,10 +3849,6 @@
             ],
             "include": [
               {
-                "word": "cucumber",
-                "substitution": true,
-              },
-              {
                 "word": "water chestnut",
                 "substitution": true,
               },
@@ -3925,7 +3944,7 @@
         },
         {
             "name": "cress",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -3977,7 +3996,7 @@
         },
         {
             "name": "cumin seeds",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -4001,7 +4020,7 @@
         },
         {
             "name": "coriander seeds",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -4037,7 +4056,7 @@
         },
         {
             "name": "cloves",
-            "type": "",
+            "type": "herb",
             "exclude": [
               {
                 "word": "garlic",
@@ -4056,49 +4075,55 @@
         },
         {
             "name": "cinnamon",
-            "type": "",
+            "type": "herb",
             "exclude": [
               {
-                "word": "chocolate"
+                "word": "cinnamon-spiced",
               },
               {
-                "word": "sauce",
+                "word": "elephant ear",
               },
               {
-                "word": "liqueur",
+                "word": "tincture",
               },
               {
-                "word": "cereal",
+                "word": "almond",
               },
               {
-                "word": "bar",
+                "word": "flavoured",
               },
               {
-                "word": "biscuit",
-              },
-              {
-                "word": "cookie",
-              },
-              {
-                "word": "spread",
-              },
-              {
-                "word": "dessert",
-              },
-              {
-                "word": "custard",
-              },
-              {
-                "word": "milk",
-              },
-              {
-                "word": "milkshake",
+                "word": "flavored",
               }
             ],
             "include": [
               {
                 "word": "cassia",
                 "substitution": false,
+              },
+              {
+                "word": "allspice",
+                "substitution": true,
+              },
+              {
+                "word": "cardamom",
+                "substitution": true,
+              },
+              {
+                "word": "cardamon",
+                "substitution": true,
+              },
+              {
+                "word": "mace",
+                "substitution": true,
+              },
+              {
+                "word": "mixed spice",
+                "substitution": true,
+              },
+              {
+                "word": "ground ginger",
+                "substitution": true,
               },
               {
                 "word": "nutmeg",
@@ -4108,7 +4133,7 @@
         },
         {
             "name": "chives",
-            "type": "",
+            "type": "herb",
             "exclude": [
               {
                 "word": "chinese",
@@ -4151,7 +4176,7 @@
         },
         {
             "name": "chicken seasoning",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -4179,7 +4204,7 @@
         },
         {
             "name": "chana masala spice blend",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -4195,7 +4220,7 @@
         },
         {
             "name": "celery seeds",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -4219,7 +4244,7 @@
         },
         {
             "name": "celery salt",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -4243,7 +4268,7 @@
         },
         {
             "name": "cayenne",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -4267,7 +4292,7 @@
         },
         {
             "name": "caraway seeds",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -4311,7 +4336,7 @@
         },
         {
             "name": "cajun spice",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -6935,6 +6960,22 @@
               "substitution": true,
             },
             {
+              "word": "quail",
+              "substitution": true,
+            },
+            {
+              "word": "ptarmigan",
+              "substitution": true,
+            },
+            {
+              "word": "merganser",
+              "substitution": true,
+            },
+            {
+              "word": "yellowlegs",
+              "substitution": true,
+            },
+            {
               "word": "turkey",
               "substitution": true,
             },
@@ -6943,15 +6984,15 @@
               "substitution": true,
             },
             {
-              "word": "grouse",
+              "word": "squab",
+              "substitution": true,
+            },
+            {
+              "word": "spruce grouse",
               "substitution": true,
             },
             {
               "word": "pheasant",
-              "substitution": true,
-            },
-            {
-              "word": "quail",
               "substitution": true,
             },
             {
@@ -7328,7 +7369,7 @@
         },
         {
             "name": "chinese five spice",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -7360,7 +7401,7 @@
         },
         {
           "name": "chilli powder",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -7850,58 +7891,6 @@
             ],
         },
         {
-            "name": "cinnamon",
-            "type": "",
-            "exclude": [
-              {
-                "word": "cinnamon-spiced",
-              },
-              {
-                "word": "elephant ear",
-              },
-              {
-                "word": "tincture",
-              },
-              {
-                "word": "almond",
-              },
-              {
-                "word": "milk",
-              },
-              {
-                "word": "tea",
-              },
-              {
-                "word": "tisane",
-              },
-              {
-                "word": "leave",
-              }
-            ],
-            "include": [
-              {
-                "word": "cassia",
-                "substitution": false,
-              },
-              {
-                "word": "allspice",
-                "substitution": true,
-              },
-              {
-                "word": "cardamom",
-                "substitution": true,
-              },
-              {
-                "word": "cardamon",
-                "substitution": true,
-              },
-              {
-                "word": "nutmeg",
-                "substitution": true,
-              }
-            ],
-        },
-        {
             "name": "cherry flavoured spirit/liqueur",
             "type": "",
             "exclude": [
@@ -8265,7 +8254,7 @@
         },
         {
           "name": "chilli flakes",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -9097,6 +9086,10 @@
             },
             {
               "word": "cousa",
+              "substitution": false,
+            },
+            {
+              "word": "marrow",
               "substitution": false,
             },
             {

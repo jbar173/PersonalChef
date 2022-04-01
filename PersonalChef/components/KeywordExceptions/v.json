@@ -942,7 +942,7 @@
           },
           {
               "name": "vine leaves",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [

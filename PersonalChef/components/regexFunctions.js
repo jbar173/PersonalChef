@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, Pressable, View } from 'react-native';
 import * as data from './keywordExceptions.json';
-import * as exclusions from './checklists/json_ingredient_lists/exclude.json';
+import * as exclusions from './generalIngredientExclusions.json';
 // import * as alphabetical_kw_files from '.KeywordExceptions/a.json';
 import * as kw_a from './KeywordExceptions/a.json';
 import * as kw_b from './KeywordExceptions/b.json';
@@ -35,18 +35,16 @@ const keys = { "a": kw_a.ingredients,"b": kw_b.ingredients,'c': kw_c.ingredients
                "o": kw_o.ingredients,"p": kw_p.ingredients,"q": kw_q.ingredients,"r": kw_r.ingredients,"s": kw_s.ingredients,"t": kw_t.ingredients,"u": kw_u.ingredients,
                "v": kw_v.ingredients,"w": kw_w.ingredients,"x": kw_x.ingredients,"y": kw_y.ingredients,"z": kw_z.ingredients, };
 
-const fruit_exceptions = [ "sparkling", "bubbly", "fizz", "seltzer", "soda", "tonic", "lemonade", "gin", "vodka", "wine", "brandy", "rum", "mead", "cider", "shandy",
-                           "beer", "ale", "lager", "liqueur", "liquor", "spirit", "chip", "dessert", "cookie", "biscuit", "shortbread", "cheesecake", "loaf",
-                           "pudding", "chocolate", "cocoa", "bonbon", "sweets", "candied", "candy", "fudge", "cream", "icecream", "ice cream", "gelato", "curd",
-                           "yoghurt", "muller", "custard", "bake", "cake", "sponge", "bar", "ball", "crispy", "crunch", "muesli", "sauce", "vinegar", "oil",
-                           "chutney", "spread", "butter", "jam", "preserve", "conserve", "jelly", "tea",
-                         ];
+const random_exclusions = exclusions.phrases
+const ingredient_exclusions = exclusions.items
+const fruit = exclusions.fruit
+const herb = exclusions.herb
+
 
 // Checks that recipe items are ingredients rather than equipment/utensils:
 
 const CheckRecipeIngredientLength = (recipe_ings) => {
 
-      var ingredient_exclusions = exclusions.items
       var exception_count = 0
       var l
       // Regexes for ingredient to match:
@@ -201,7 +199,6 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
       ingredients.push(original_ingredient)
     }
 
-    var random_exclusions = exclusions.phrases
     var random_exception_found = false
     var ingredients_with_exceptions = []
     var l, m, n, c, w, x
@@ -271,9 +268,14 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
 
                 var exclude = exceptions[m]['exclude']
                 var words = []
-                if(exceptions[m]["type"] === "fruit"){
-                  words = fruit_exceptions
-                  console.log("********** IS FRUIT ***************")
+                var types = [ "fruit", "herb", ]
+                var exc_list = [ fruit, herb, ]
+                var type
+                for(type in types){
+                  if(exceptions[m]["type"] === types[type]){
+                    words = exc_list[type]
+                    console.log("********** IS " + types[type] + " ***************")
+                  }
                 }
                 var no_error = true
 

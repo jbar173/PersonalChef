@@ -4,8 +4,8 @@
               "oka",
               "orange chocolate bar","orange food colouring","orange jam","orange jelly","orange oil","oreos",
               "oatcakes","oatmeal","oats",
-              "orange roughy",
-              "offal",
+              "octopus","orange roughy","oysters",
+              "offal","ostrich",
               "onion","orange",
               "onion powder",
               "olives",
@@ -16,6 +16,7 @@
               "~~~ HALF DONE : ~~~",
               "ossau iraty",
               "oatmeal cookies",
+              "octopus",
               "okra",
               "oat butter","olive spread",
               "orange cordial",
@@ -23,8 +24,6 @@
 
               "~~~ TO DO : ~~~",
 
-              "ostrich/turkey/emu/rhea/beef",
-              "OCTOPUS/eel(sub)","OYSTERS",
 
     ],
 
@@ -32,6 +31,50 @@
     "ingredients": [
 
 
+          {
+              "name": "ostrich",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rhea",
+                  "substitution": true,
+                },
+                {
+                  "word": "beef",
+                  "substitution": true,
+                },
+                {
+                  "word": "emu",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "octopus",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "oysters",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "mussels",
+                  "substitution": true,
+                },
+                {
+                  "word": "clams",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "oat butter",
               "type": "",
@@ -1429,7 +1472,7 @@
           },
           {
               "name": "onion powder",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [

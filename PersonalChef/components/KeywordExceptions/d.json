@@ -4,8 +4,8 @@
              "derby cheese","double gloucester",
 
              "dark chocolate","dates","date syrup","decorating icing","digestive biscuits","dolly mixture","dried apple","dried apricots",
-             "dried barberries","dried coconut","dried cranberries","dried figs","dried goji berries","dried mango","dried mixed fruit","dried papaya",
-             "dried pears","dried pineapple","dried tropical fruit",
+             "dried barberries","dried cherries","dried coconut","dried cranberries","dried figs","dried goji berries","dried mango","dried mixed fruit",
+             "dried mulberries","dried papaya","dried pears","dried pineapple","dried tropical fruit",
 
              "dried adzuki beans","dried black-eyed peas","dried borlotti beans","dried black lentils","dried brown lentils","dried butter beans",
              "dried cannellini beans","dried chickpeas","dried flageolet beans","dried green lentils","dried kidney beans","dried mixed beans",
@@ -33,7 +33,7 @@
 
 
              "~~~ TO DO : ~~~",
-
+             "dried mint",
 
     ],
 
@@ -41,6 +41,63 @@
     "ingredients": [
 
 
+
+        {
+            "name": "dried cherries",
+            "type": "fruit",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "dried sweet cherries",
+                "substitution": false,
+              },
+              {
+                "word": "dried mulberries",
+                "substitution": true,
+              },
+              {
+                "word": "cherries",
+                "substitution": true,
+              },
+              {
+                "word": "boysenberries",
+                "substitution": true,
+              }
+            ],
+        },
+        {
+            "name": "dried mint",
+            "type": "herb",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "fresh mint",
+                "substitution": true,
+              },
+            ],
+        },
+        {
+            "name": "dried mulberries",
+            "type": "fruit",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "mulberries",
+                "substitution": false,
+              },
+              {
+                "word": "dried cherries",
+                "substitution": true,
+              },
+              {
+                "word": "boysenberries",
+                "substitution": true,
+              }
+            ],
+        },
         {
             "name": "dried fish",
             "type": "",
@@ -212,7 +269,7 @@
         },
         {
             "name": "dried sorrel",
-            "type": "",
+            "type": "herb",
             "exclude": [
               {
                 "word": "shandy",
@@ -325,7 +382,7 @@
         },
         {
             "name": "dried pomegranate seeds",
-            "type": "",
+            "type": "herb",
             "exclude": [
               {
                 "word": "oil",
@@ -363,7 +420,7 @@
         },
         {
             "name": "dried fenugreek",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -383,7 +440,7 @@
         },
         {
             "name": "dried lime",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -1664,7 +1721,7 @@
         },
         {
             "name": "dried basil",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -1704,7 +1761,7 @@
         },
         {
             "name": "dried chervil",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -1736,7 +1793,7 @@
         },
         {
             "name": "dried oregano",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -1796,7 +1853,7 @@
         },
         {
             "name": "dried marjoram",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -1840,7 +1897,7 @@
         },
         {
             "name": "dried thyme",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -1892,7 +1949,7 @@
         },
         {
             "name": "dried parsley",
-            "type": "",
+            "type": "herb",
             "exclude": [
               {
                 "word": "sauce",
@@ -1923,7 +1980,7 @@
         },
         {
             "name": "dried sage",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -1959,7 +2016,7 @@
         },
         {
             "name": "dried savoury",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -2015,7 +2072,7 @@
         },
         {
             "name": "dried rosemary",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -2055,7 +2112,7 @@
         },
         {
             "name": "dried tarragon",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -2867,7 +2924,7 @@
         },
         {
             "name": "dried achiote",
-            "type": "",
+            "type": "herb",
             "exclude": [
               {
                 "word": "smoked",
@@ -3707,6 +3764,34 @@
                 "substitution": false,
               },
               {
+                "word": "teal",
+                "substitution": false,
+              },
+              {
+                "word": "widgeon",
+                "substitution": false,
+              },
+              {
+                "word": "pheasant",
+                "substitution": true,
+              },
+              {
+                "word": "pigeon",
+                "substitution": true,
+              },
+              {
+                "word": "dove",
+                "substitution": true,
+              },
+              {
+                "word": "woodcock",
+                "substitution": true,
+              },
+              {
+                "word": "grouse",
+                "substitution": true,
+              },
+              {
                 "word": "goose",
                 "substitution": true,
               }
@@ -3825,7 +3910,7 @@
         },
         {
           "name": "dried coriander",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -3877,7 +3962,7 @@
         },
         {
           "name": "dried chilli peppers",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -3993,7 +4078,7 @@
         },
         {
             "name": "dill",
-            "type": "",
+            "type": "herb",
             "exclude": [
               {
                 "word": "dill pickle",

@@ -127,6 +127,12 @@
               "name": "goat",
               "type": "",
               "exclude": [
+                {
+                  "word": "cheese",
+                },
+                {
+                  "word": "milk",
+                }
               ],
               "include": [
                 {
@@ -166,7 +172,35 @@
                   "substitution": true,
                 },
                 {
-                  "word": "chicken",
+                  "word": "pigeon",
+                  "substitution": true,
+                },
+                {
+                  "word": "goose",
+                  "substitution": true,
+                },
+                {
+                  "word": "ptarmigan",
+                  "substitution": true,
+                },
+                {
+                  "word": "duck",
+                  "substitution": true,
+                },
+                {
+                  "word": "dove",
+                  "substitution": true,
+                },
+                {
+                  "word": "woodcock",
+                  "substitution": true,
+                },
+                {
+                  "word": "quail",
+                  "substitution": true,
+                },
+                {
+                  "word": "squab",
                   "substitution": true,
                 }
               ],
@@ -182,7 +216,35 @@
                   "substitution": false,
                 },
                 {
+                  "word": "partridge",
+                  "substitution": true,
+                },
+                {
+                  "word": "guinea fowl",
+                  "substitution": true,
+                },
+                {
                   "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish game hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouse",
+                  "substitution": true,
+                },
+                {
+                  "word": "pigeon",
+                  "substitution": true,
+                },
+                {
+                  "word": "ptarmigan",
                   "substitution": true,
                 },
                 {
@@ -190,11 +252,31 @@
                   "substitution": true,
                 },
                 {
+                  "word": "dove",
+                  "substitution": true,
+                },
+                {
+                  "word": "woodcock",
+                  "substitution": true,
+                },
+                {
                   "word": "turkey",
                   "substitution": true,
                 },
                 {
-                  "word": "guinea fowl",
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "poussin",
+                  "substitution": true,
+                },
+                {
+                  "word": "quail",
+                  "substitution": true,
+                },
+                {
+                  "word": "squab",
                   "substitution": true,
                 }
               ],
@@ -222,19 +304,19 @@
                   "substitution": false,
                 },
                 {
-                  "word": "chicken",
+                  "word": "pearl hen",
+                  "substitution": false,
+                },
+                {
+                  "word": "gleany",
+                  "substitution": false,
+                },
+                {
+                  "word": "partridge",
                   "substitution": true,
                 },
                 {
                   "word": "pheasant",
-                  "substitution": true,
-                },
-                {
-                  "word": "grouse",
-                  "substitution": true,
-                },
-                {
-                  "word": "quail",
                   "substitution": true,
                 },
                 {
@@ -244,12 +326,48 @@
                 {
                   "word": "cornish game hen",
                   "substitution": true,
+                },
+                {
+                  "word": "pigeon",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouse",
+                  "substitution": true,
+                },
+                {
+                  "word": "goose",
+                  "substitution": true,
+                },
+                {
+                  "word": "ptarmigan",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "poussin",
+                  "substitution": true,
+                },
+                {
+                  "word": "quail",
+                  "substitution": true,
+                },
+                {
+                  "word": "squab",
+                  "substitution": true,
                 }
               ],
           },
           {
               "name": "grains of paradise",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -350,6 +468,10 @@
               "include": [
                 {
                   "word": "snapper",
+                  "substitution": true,
+                },
+                {
+                  "word": "pike",
                   "substitution": true,
                 },
                 {
@@ -1042,7 +1164,7 @@
           },
           {
               "name": "garam masala",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1066,7 +1188,7 @@
           },
           {
               "name": "garlic pepper",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -2276,7 +2398,7 @@
           },
           {
               "name": "ground cumin",
-              "type": "",
+              "type": "herb",
               "exclude": [
                 {
                   "word": "fresh",
@@ -2468,7 +2590,7 @@
           },
           {
               "name": "green cardamom",
-              "type": "",
+              "type": "herb",
               "exclude": [
                 {
                   "word": "black cardamon",
@@ -2554,7 +2676,7 @@
           },
           {
               "name": "ground ginger",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -2573,12 +2695,24 @@
                 {
                   "word": "ginger granules",
                   "substitution": false,
+                },
+                {
+                  "word": "mace",
+                  "substitution": true,
+                },
+                {
+                  "word": "nutmeg",
+                  "substitution": true,
+                },
+                {
+                  "word": "cinnamon",
+                  "substitution": true,
                 }
               ],
           },
           {
               "name": "garlic powder",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [

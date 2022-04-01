@@ -692,7 +692,7 @@
           },
           {
               "name": "thai basil",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1921,7 +1921,7 @@
           },
           {
               "name": "taco seasoning",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1952,7 +1952,7 @@
           },
           {
               "name": "turmeric",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -2004,7 +2004,7 @@
           },
           {
               "name": "tandoori spice",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -2258,6 +2258,10 @@
               ],
               "include": [
                 {
+                  "word": "goose",
+                  "substitution": true,
+                },
+                {
                   "word": "chicken",
                   "substitution": true,
                 },
@@ -2266,7 +2270,19 @@
                   "substitution": true,
                 },
                 {
-                  "word": "goose",
+                  "word": "quail",
+                  "substitution": true,
+                },
+                {
+                  "word": "ptarmigan",
+                  "substitution": true,
+                },
+                {
+                  "word": "merganser",
+                  "substitution": true,
+                },
+                {
+                  "word": "yellowlegs",
                   "substitution": true,
                 },
                 {
@@ -2274,7 +2290,31 @@
                   "substitution": true,
                 },
                 {
+                  "word": "squab",
+                  "substitution": true,
+                },
+                {
+                  "word": "spruce grouse",
+                  "substitution": true,
+                },
+                {
                   "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish game hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "rabbit",
+                  "substitution": true,
+                },
+                {
+                  "word": "partridge",
                   "substitution": true,
                 },
                 {

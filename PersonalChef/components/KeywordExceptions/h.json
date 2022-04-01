@@ -292,6 +292,10 @@
                 "substitution": true,
               },
               {
+                "word": "ling",
+                "substitution": true,
+              },
+              {
                 "word": "gurnard",
                 "substitution": true,
               }
@@ -463,7 +467,7 @@
         },
         {
             "name": "hot paprika",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -1163,7 +1167,7 @@
         },
         {
             "name": "herbes de provence",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [
@@ -1635,7 +1639,7 @@
         },
         {
             "name": "harissa",
-            "type": "",
+            "type": "herb",
             "exclude": [
             ],
             "include": [

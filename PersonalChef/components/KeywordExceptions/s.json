@@ -12,7 +12,7 @@
               "salad leaves","samphire","shallot","soffrito mix","spinach","spring onions","strawberries","summer squash","swede","sweet potato",
 
               "saffron","salt","shawarma seasoning","shichimi","smoked paprika","smoky barbeque seasoning","smoky red pepper dressing","spirulina powder","star anise",
-              "steak seasoning","sumac","sweet red pepper flakes",
+              "squab","steak seasoning","sumac","sweet red pepper flakes",
 
               "spaghetti hoops","spinach puree","sun-dried tomatoes","sweetcorn",
 
@@ -39,7 +39,6 @@
               "self raising flour", "spelt flour",
               "SALSIFY","SKIRRET","STARFRUIT",
               "SKATE","SNAILS/abalone/perlemoen","SWAI",
-              "SQUAB/cornish game hen/cornish hen/poussin",
 
     ],
 
@@ -47,6 +46,75 @@
     "ingredients": [
 
 
+
+          {
+              "name": "squab",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chukar",
+                  "substitution": false,
+                },
+                {
+                  "word": "chakor",
+                  "substitution": false,
+                },
+                {
+                  "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "guinea fowl",
+                  "substitution": true,
+                },
+                {
+                  "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish game hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "pigeon",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouse",
+                  "substitution": true,
+                },
+                {
+                  "word": "goose",
+                  "substitution": true,
+                },
+                {
+                  "word": "ptarmigan",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "poussin",
+                  "substitution": true,
+                },
+                {
+                  "word": "partridge",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "swordfish",
               "type": "",
@@ -1763,6 +1831,10 @@
               ],
               "include": [
                 {
+                  "word": "hussar",
+                  "substitution": true,
+                },
+                {
                   "word": "monkfish",
                   "substitution": true,
                 },
@@ -1792,6 +1864,10 @@
                 },
                 {
                   "word": "branzino",
+                  "substitution": true,
+                },
+                {
+                  "word": "pike",
                   "substitution": true,
                 },
                 {
@@ -1976,7 +2052,7 @@
           },
           {
               "name": "saffron",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1996,7 +2072,7 @@
           },
           {
               "name": "shawarma seasoning",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -2063,8 +2139,8 @@
               ],
           },
           {
-              "name":  "smoky barbeque seasoning",
-              "type": "",
+              "name": "smoky barbeque seasoning",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -2224,7 +2300,7 @@
           },
           {
               "name": "spirulina powder",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -2268,7 +2344,7 @@
           },
           {
               "name": "star anise",
-              "type": "",
+              "type": "herb",
               "exclude": [
                 {
                   "word": "ball",
@@ -2381,7 +2457,7 @@
           },
           {
               "name": "steak seasoning",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -2421,7 +2497,7 @@
           },
           {
               "name": "sumac",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -2616,7 +2692,7 @@
           },
           {
               "name": "smoky red pepper dressing",
-              "type": "",
+              "type": "herb",
               "exclude": [
                 {
                   "word": "spicy",
@@ -3037,10 +3113,6 @@
                   "substitution": false,
                 },
                 {
-                  "word": "strawberry tea bag",
-                  "substitution": false,
-                },
-                {
                   "word": "strawberries and cream infusion",
                   "substitution": true,
                 },
@@ -3431,7 +3503,7 @@
           },
           {
               "name": "sweet red pepper flakes",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -4448,7 +4520,7 @@
           },
           {
               "name": "salt",
-              "type": "",
+              "type": "herb",
               "exclude": [
                 {
                   "word": "in salt",
@@ -4559,7 +4631,7 @@
           },
           {
               "name": "smoked paprika",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -4687,7 +4759,7 @@
           },
           {
               "name": "shichimi",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -5812,7 +5884,11 @@
                 "substitution": true,
               },
               {
-                "word": "borage",
+                "word": "nettle leaves",
+                "substitution": true,
+              },
+              {
+                "word": "borage leaves",
                 "substitution": true,
               }
             ],

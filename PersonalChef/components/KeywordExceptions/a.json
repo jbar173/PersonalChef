@@ -33,7 +33,7 @@
 
           {
               "name": "anise",
-              "type": "",
+              "type": "herb",
               "exclude": [
                 {
                   "word": "ball",
@@ -166,7 +166,7 @@
           },
           {
               "name": "angelica leaves",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -210,7 +210,7 @@
           },
           {
               "name": "angelica root",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -858,7 +858,7 @@
           },
           {
               "name": "asafoetida",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -882,10 +882,14 @@
           },
           {
               "name": "allspice",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "mixed spice",
+                  "substitution": true,
+                },
                 {
                   "word": "cloves",
                   "substitution": true,
@@ -900,6 +904,10 @@
                 },
                 {
                   "word": "mace",
+                  "substitution": true,
+                },
+                {
+                  "word": "ground ginger",
                   "substitution": true,
                 },
                 {
@@ -1178,7 +1186,7 @@
           },
           {
               "name": "all purpose seasoning",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [

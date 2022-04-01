@@ -7,11 +7,13 @@
               "rhubarb jelly","rice syrup","rolos","rose water",
 
               "rice","rice and peas","rice cracker","rice puffs",
-              "raspberries","redcurrants","rhubarb","rocket",
+              "rabbit",
+              "raddichio","raspberries","redcurrants","red cabbage","rhubarb","rocket",
+              "ras el hanout","rogan josh spice",
               "ratatouille","rice pudding","roasted red peppers",
 
-              "ramen broth","rapeseed oil","ras el hanout","redcurrant jelly","red curry paste","red pesto","red wine stock","rendang curry paste","rice bran oil",
-              "rogan josh paste","rogan josh spice",
+              "ramen broth","rapeseed oil","redcurrant jelly","red curry paste","red pesto","red wine stock","rendang curry paste","rice bran oil",
+              "rogan josh paste",
 
               "raspberry syrup","raspberry tea","red vegetable juice","ribena",
               "raita","ravioli","rice milk",
@@ -25,8 +27,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "RADICCHIO", "RED CABBAGE",
-              "RABBIT/chicken/poussin",
 
     ],
 
@@ -34,7 +34,66 @@
     "ingredients": [
 
 
-
+          {
+              "name": "raddichio",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "blaukraut",
+                  "substitution": true,
+                },
+                {
+                  "word": "cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "kale",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "red cabbage",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "blaukraut",
+                  "substitution": true,
+                },
+                {
+                  "word": "cabbage",
+                  "substitution": true,
+                },
+                {
+                  "word": "kale",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "rabbit",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "poussin",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "red vegetable juice",
               "type": "",
@@ -775,7 +834,7 @@
           },
           {
               "name": "ras el hanout",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -807,7 +866,7 @@
           },
           {
               "name": "rogan josh spice",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -2506,6 +2565,14 @@
               },
               {
                 "word": "fresh parsley",
+                "substitution": true,
+              },
+              {
+                "word": "spinach",
+                "substitution": true,
+              },
+              {
+                "word": "mustard greens",
                 "substitution": true,
               },
               {

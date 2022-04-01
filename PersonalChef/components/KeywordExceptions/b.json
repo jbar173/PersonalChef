@@ -13,7 +13,7 @@
              "banana","beetroot","beet","bell pepper","beansprouts","bilberries","bitter melon","blackberries","blueberries","boysenberries","breadfruit","broad beans",
              "broccoli","brussel sprouts","butternut squash",
 
-             "baharat seasoning","bay leaf","beetroot powder","biryani spice blend","black cardamom","borage flowers","borage leaves","bouquet garni","burnet",
+             "baharat seasoning","bay leaf","beetroot powder","biryani spice blend","black cardamom","borage flowers","borage leaves","burnet",
              "baked beans","black beans","black-eyed peas","black cherries","borlotti beans","butter beans",
 
              "baconnaise","balsamic vinegar","balti paste","barbeque sauce","bearnaise","beef stock","beetroot pesto","bhuna paste","biryani paste","blue cheese dressing",
@@ -31,7 +31,7 @@
              "barramundi", "bass", "bluefish", "breaded fish fillets", "brill",
              "bacon",
              "blackcurrants",
-             "barbeque seasoning", "bonito flakes",
+             "barbeque seasoning", "bonito flakes", "bouquet garni",
              "basil oil", "basil puree", "black bean sauce", "borage seed oil",
              "berry cordial", "blackcurrant tea",
              "bombay mix",
@@ -178,100 +178,16 @@
       },
       {
           "name": "borage flowers",
-          "type": "",
+          "type": "herb",
           "exclude": [
             {
-              "word": "sparkling",
-            },
-            {
-              "word": "bubbly",
-            },
-            {
-              "word": "fizz",
-            },
-            {
-              "word": "seltzer",
-            },
-            {
-              "word": "soda",
-            },
-            {
-              "word": "tonic",
-            },
-            {
-              "word": "lemonade",
-            },
-            {
-              "word": "gin",
-            },
-            {
-              "word": "vodka",
-            },
-            {
-              "word": "wine",
-            },
-            {
-              "word": "brandy",
-            },
-            {
-              "word": "rum",
-            },
-            {
-              "word": "mead",
-            },
-            {
-              "word": "cider",
-            },
-            {
-              "word": "shandy",
-            },
-            {
-              "word": "beer",
-            },
-            {
-              "word": "lager",
-            },
-            {
-              "word": "liqueur",
-            },
-            {
-              "word": "liquor",
-            },
-            {
-              "word": "spirit",
+              "word": "pastilles",
             },
             {
               "word": "honey",
             },
             {
               "word": "honea",
-            },
-            {
-              "word": "curd",
-            },
-            {
-              "word": "jelly",
-            },
-            {
-              "word": "cake",
-            },
-            {
-              "word": "bar",
-            },
-            {
-              "word": "pastilles",
-            },
-            {
-              "word": "candy",
-            },
-            {
-              "word": "sweets",
-            },
-            {
-              "word": "vinegar",
-            },
-            {
-              "word": "oil",
             }
           ],
           "include": [
@@ -299,7 +215,7 @@
       },
       {
           "name": "borage leaves",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -319,7 +235,7 @@
       },
       {
           "name": "burnet",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -544,7 +460,7 @@
       },
       {
           "name": "bonito flakes",
-          "type": "",
+          "type": "herb",
           "exclude": [
             {
               "word": "powder",
@@ -1348,7 +1264,7 @@
       },
       {
           "name": "bay leaf",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -1364,7 +1280,7 @@
       },
       {
           "name": "bouquet garni",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -1372,7 +1288,7 @@
       },
       {
           "name": "baharat seasoning",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -1516,7 +1432,7 @@
       },
       {
           "name": "biryani spice blend",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -2429,7 +2345,7 @@
       },
       {
           "name": "barbeque seasoning",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -2812,7 +2728,7 @@
       },
       {
         "name": "beetroot powder",
-        "type": "",
+        "type": "herb",
         "exclude": [
         ],
         "include": [
@@ -2863,7 +2779,7 @@
         "type": "",
         "exclude": [
           {
-            "word": "burger bun",
+            "word": "bun",
           }
         ],
         "include": [
@@ -2900,6 +2816,10 @@
             "substitution": true,
           },
           {
+            "word": "meatball",
+            "substitution": true,
+          },
+          {
             "word": "beef mince",
             "substitution": true,
           },
@@ -2919,7 +2839,7 @@
       },
       {
           "name": "black cardamom",
-          "type": "",
+          "type": "herb",
           "exclude": [
           ],
           "include": [
@@ -3254,6 +3174,10 @@
             },
             {
               "word": "lingonberries",
+              "substitution": true,
+            },
+            {
+              "word": "raspberries",
               "substitution": true,
             }
           ],

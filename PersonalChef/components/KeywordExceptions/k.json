@@ -313,7 +313,7 @@
           },
           {
               "name": "kofta seasoning",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -663,6 +663,10 @@
               },
               {
                 "word": "chard",
+                "substitution": true,
+              },
+              {
+                "word": "red cabbage",
                 "substitution": true,
               },
               {

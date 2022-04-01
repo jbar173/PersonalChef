@@ -2,6 +2,7 @@
 
     "key" : [ "quince jelly","quince paste",
               "quinoa",
+              "quail",
               "quinoa milk",
 
 
@@ -9,13 +10,92 @@
 
 
               "~~~ TO DO : ~~~",
-              "quail/grouse/cornish hen/cornish game hen/poussin/chukar/chakor",
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "quail",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "guineafowl",
+                  "substitution": false,
+                },
+                {
+                  "word": "guinea hen",
+                  "substitution": false,
+                },
+                {
+                  "word": "pintade",
+                  "substitution": false,
+                },
+                {
+                  "word": "faraona",
+                  "substitution": false,
+                },
+                {
+                  "word": "pearl hen",
+                  "substitution": false,
+                },
+                {
+                  "word": "gleany",
+                  "substitution": false,
+                },
+                {
+                  "word": "partridge",
+                  "substitution": true,
+                },
+                {
+                  "word": "pheasant",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornish game hen",
+                  "substitution": true,
+                },
+                {
+                  "word": "pigeon",
+                  "substitution": true,
+                },
+                {
+                  "word": "grouse",
+                  "substitution": true,
+                },
+                {
+                  "word": "goose",
+                  "substitution": true,
+                },
+                {
+                  "word": "ptarmigan",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken",
+                  "substitution": true,
+                },
+                {
+                  "word": "poussin",
+                  "substitution": true,
+                },
+                {
+                  "word": "squab",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "quinoa",
               "type": "",

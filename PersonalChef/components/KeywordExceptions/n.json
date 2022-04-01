@@ -3,7 +3,7 @@
     "key" : [ "nerds","nougat","nutella","nutty chocolate",
               "noodles",
               "nectarine",
-              "nigella seeds","nutmeg",
+              "nettle leaves","nigella seeds","nutmeg",
               "navy beans",
 
 
@@ -13,7 +13,7 @@
 
 
               "~~~ TO DO : ~~~",
-              "NETTLES",
+
 
     ],
 
@@ -21,7 +21,18 @@
     "ingredients": [
 
 
-
+          {
+              "name": "nettle leaves",
+              "type": "herb",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "nettle",
+                  "substitution": false,
+                }
+              ],
+          },
           {
               "name": "nut cookies",
               "type": "",
@@ -360,7 +371,7 @@
           },
           {
               "name": "nigella seeds",
-              "type": "",
+              "type": "herb",
               "exclude": [
                 {
                   "word": "oil",
@@ -368,7 +379,7 @@
               ],
               "include": [
                 {
-                  "word": "ground nigella",
+                  "word": "nigella",
                   "substitution": false,
                 },
                 {
@@ -481,19 +492,22 @@
           },
           {
               "name": "nutmeg",
-              "type": "",
+              "type": "herb",
               "exclude": [
-                {
-                  "word": "ice cream",
-                },
-                {
-                  "word": "icecream",
-                },
-                {
-                  "word": "gelato",
-                }
               ],
               "include": [
+                {
+                  "word": "ground ginger",
+                  "substitution": true,
+                },
+                {
+                  "word": "allspice",
+                  "substitution": true,
+                },
+                {
+                  "word": "cinnamon",
+                  "substitution": true,
+                },
                 {
                   "word": "mace",
                   "substitution": true,

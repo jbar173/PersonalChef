@@ -9,9 +9,10 @@
 
               "macademia","milk powder","mixed nuts","muesli",
               "mackerel","monkfish","mussels",
-              "mangetout","mango","melon","mixed berries","mixed stir fry vegetables","mixed vegetables","mushrooms",
+              "meatballs",
+              "mangetout","mango","marrow","melon","mixed berries","mixed stir fry vegetables","mixed vegetables","mushrooms","mustard greens",
 
-              "maca powder","mango masala spice blend","mango powder","mint","mixed herbs","mixed spice","moroccan seasoning","mulled wine spice",
+              "maca powder","mace","mango masala spice blend","mango powder","mixed herbs","mixed spice","moroccan seasoning","mulled wine spice",
               "mustard powder","mustard seeds",
 
               "mandarins","mango pulp","mixed beans","mushroom antipasti","mushy peas",
@@ -36,9 +37,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "MARROW", "MULBERRIES", "MUSTARD GREENS",
-              "MUTTON",
-              "MACE",
 
 
     ],
@@ -48,8 +46,132 @@
 
 
           {
-              "name": "marigold flowers",
+              "name": "marrow",
               "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "courgette",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "mustard greens",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "rapini",
+                  "substitution": true,
+                },
+                {
+                  "word": "broccoli rabe",
+                  "substitution": true,
+                },
+                {
+                  "word": "collard greens",
+                  "substitution": true,
+                },
+                {
+                  "word": "rocket",
+                  "substitution": true,
+                },
+                {
+                  "word": "spinach",
+                  "substitution": true,
+                },
+                {
+                  "word": "kale",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "meatballs",
+              "type": "",
+              "exclude": [
+                {
+                  "word": "in gravy",
+                },
+                {
+                  "word": "in tomato sauce",
+                },
+                {
+                  "word": "arrabiata",
+                },
+                {
+                  "word": "in sauce",
+                }
+              ],
+              "include": [
+                {
+                  "word": "meatball",
+                  "substitution": false,
+                },
+                {
+                  "word": "beef mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "lamb mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "turkey mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "pork mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "chicken mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "venison mince",
+                  "substitution": true,
+                },
+                {
+                  "word": "burger",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "mace",
+              "type": "herb",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "nutmeg",
+                  "substitution": true,
+                },
+                {
+                  "word": "allspice",
+                  "substitution": true,
+                },
+                {
+                  "word": "mixed spice",
+                  "substitution": true,
+                },
+                {
+                  "word": "ground ginger",
+                  "substitution": true,
+                },
+                {
+                  "word": "cinnamon",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "marigold flowers",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1513,7 +1635,7 @@
           },
           {
               "name": "maca powder",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1541,7 +1663,7 @@
           },
           {
               "name": "mango powder",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1617,7 +1739,7 @@
           },
           {
               "name": "mango masala spice blend",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1637,7 +1759,7 @@
           },
           {
               "name": "mixed herbs",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1653,7 +1775,7 @@
           },
           {
               "name": "moroccan seasoning",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1689,7 +1811,7 @@
           },
           {
               "name": "mulled wine spice",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1733,7 +1855,7 @@
           },
           {
               "name": "mustard powder",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1797,7 +1919,7 @@
           },
           {
               "name": "mustard seeds",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -4252,7 +4374,7 @@
           },
           {
               "name": "mixed spice",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -4266,6 +4388,18 @@
                 },
                 {
                   "word": "pumpkin pie spice",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin spice",
+                  "substitution": true,
+                },
+                {
+                  "word": "allspice",
+                  "substitution": true,
+                },
+                {
+                  "word": "cinnamon",
                   "substitution": true,
                 },
                 {
@@ -4531,36 +4665,6 @@
                 {
                   "word": "mint wine",
                   "substitution": false,
-                }
-              ],
-          },
-          {
-              "name": "mint",
-              "type": "",
-              "exclude": [
-                {
-                  "word": "mint swizzle",
-                },
-                {
-                  "word": "mint sauce",
-                },
-                {
-                  "word": "spearmint",
-                },
-                {
-                  "word": "peppermint",
-                },
-                {
-                  "word": "yoghurt-mint",
-                },
-                {
-                  "word": "yogurt-mint",
-                }
-              ],
-              "include": [
-                {
-                  "word": "thai basil",
-                  "substitution": true,
                 }
               ],
           },

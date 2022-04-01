@@ -7,11 +7,11 @@
              "faggot",
              "fiddleheads","fig","fresh coconut","fresh corn","fresh cranberries","fresh ginger","fresh horseradish","fresh pomegranate seeds","fresh quince",
 
-             "fajita seasoning","fennel seeds","fish masala","fish seasoning","fresh basil","fresh chervil","fresh coriander","fresh marjoram","fresh mint",
+             "fajita seasoning","fennel seeds","fish seasoning","fresh basil","fresh chervil","fresh coriander","fresh marjoram","fresh mint",
              "fresh oregano","fresh parsley","fresh rosemary","fresh sage","fresh sorrel","fresh tarragon","fresh thyme","fenugreek leaves",
 
              "flageolet beans","fruit cocktail",
-             "fish sauce","fish stock","french dressing","french mustard",
+             "fish masala","fish sauce","fish stock","french dressing","french mustard",
              "faluda drink","fennel tea",
              "fruit yoghurt",
 
@@ -141,11 +141,8 @@
           },
           {
               "name": "fresh sorrel",
-              "type": "",
+              "type": "herb",
               "exclude": [
-                {
-                  "word": "shandy",
-                },
                 {
                   "word": "drink",
                 },
@@ -997,7 +994,7 @@
           },
           {
               "name": "fajita seasoning",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1029,7 +1026,7 @@
           },
           {
               "name": "fish seasoning",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1053,7 +1050,7 @@
           },
           {
               "name": "fresh basil",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1073,7 +1070,7 @@
           },
           {
               "name": "fresh marjoram",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1089,8 +1086,26 @@
           },
           {
               "name": "fresh mint",
-              "type": "",
+              "type": "herb",
               "exclude": [
+                {
+                  "word": "mint swizzle",
+                },
+                {
+                  "word": "mint sauce",
+                },
+                {
+                  "word": "spearmint",
+                },
+                {
+                  "word": "peppermint",
+                },
+                {
+                  "word": "yoghurt-mint",
+                },
+                {
+                  "word": "yogurt-mint",
+                }
               ],
               "include": [
                 {
@@ -1104,12 +1119,16 @@
                 {
                   "word": "mint",
                   "substitution": false,
+                },
+                {
+                  "word": "thai basil",
+                  "substitution": true,
                 }
               ],
           },
           {
               "name": "fresh oregano",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1129,7 +1148,7 @@
           },
           {
               "name": "fresh parsley",
-              "type": "",
+              "type": "herb",
               "exclude": [
                 {
                   "word": "sauce",
@@ -1155,12 +1174,24 @@
                 {
                   "word": "angelica leaves",
                   "substitution": true,
+                },
+                {
+                  "word": "celeriac leaves",
+                  "substitution": true,
+                },
+                {
+                  "word": "lovage",
+                  "substitution": true,
+                },
+                {
+                  "word": "celery leaves",
+                  "substitution": true,
                 }
               ],
           },
           {
               "name": "fresh rosemary",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1180,7 +1211,7 @@
           },
           {
               "name": "fresh sage",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1196,7 +1227,7 @@
           },
           {
               "name": "fennel seeds",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1236,7 +1267,7 @@
           },
           {
               "name": "fresh chervil",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
@@ -1264,7 +1295,7 @@
           },
           {
               "name": "fresh tarragon",
-              "type": "",
+              "type": "herb",
               "exclude": [
                 {
                   "word": "vinegar",
@@ -1291,12 +1322,19 @@
           },
           {
               "name": "fresh thyme",
-              "type": "",
+              "type": "herb",
               "exclude": [
+                {
+                  "word": "lemongrass",
+                }
               ],
               "include": [
                 {
                   "word": "dried thyme",
+                  "substitution": true,
+                },
+                {
+                  "word": "lemon thyme",
                   "substitution": true,
                 },
                 {
@@ -2285,7 +2323,7 @@
           },
           {
               "name": "fenugreek leaves",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [

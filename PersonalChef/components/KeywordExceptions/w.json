@@ -199,6 +199,14 @@
                   "substitution": true,
                 },
                 {
+                  "word": "spinach",
+                  "substitution": true,
+                },
+                {
+                  "word": "nettle leaves",
+                  "substitution": true,
+                },
+                {
                   "word": "salad leavess",
                   "substitution": true,
                 }
@@ -619,7 +627,7 @@
           },
           {
               "name": "whey powder",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [

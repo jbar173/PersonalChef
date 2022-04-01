@@ -1054,7 +1054,7 @@ class ApiCalls extends React.Component {
                             }
                             <View>
                                 <Text style={{textAlign:"center",marginBottom:5}}>* Some suggested substitutions may not be appropriate - please research whether required
-                                        quantities/cooking methods/times will differ for replacement ingredients. </Text>
+                                        quantities/cooking methods/times will differ for any suggested replacement ingredients. </Text>
                             </View>
                         </View>
 

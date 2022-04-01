@@ -76,7 +76,7 @@
           },
           {
               "name": "za'atar",
-              "type": "",
+              "type": "herb",
               "exclude": [
               ],
               "include": [
