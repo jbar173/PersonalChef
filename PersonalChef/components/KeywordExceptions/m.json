@@ -2824,6 +2824,12 @@
               "name": "macadamia nut oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -4927,6 +4933,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "star fruit",
+                  "substitution": true,
+                },
+                {
                   "word": "kiwi fruit",
                   "substitution": true,
                 }
@@ -5289,6 +5299,10 @@
               {
                 "word": "mushroom",
                 "substitution": false,
+              },
+              {
+                "word": "snails",
+                "substitution": true,
               }
             ],
           },

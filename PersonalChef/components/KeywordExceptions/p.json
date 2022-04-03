@@ -2932,6 +2932,12 @@
               "name": "palm oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -3048,6 +3054,12 @@
               "name": "peanut oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -6643,6 +6655,10 @@
               },
               {
                 "word": "plantain",
+                "substitution": true,
+              },
+              {
+                "word": "skirret",
                 "substitution": true,
               },
               {

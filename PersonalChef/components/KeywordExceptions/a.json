@@ -424,6 +424,12 @@
               "name": "almond oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -540,6 +546,12 @@
               "name": "avocado oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -1003,7 +1015,7 @@
                   "substitution": true,
                 },
                 {
-                  "word": "asparagus",
+                  "word": "salsify",
                   "substitution": true,
                 }
               ],
@@ -1164,6 +1176,14 @@
               "include": [
                 {
                   "word": "fiddlehead",
+                  "substitution": true,
+                },
+                {
+                  "word": "artichoke",
+                  "substitution": true,
+                },
+                {
+                  "word": "salsify",
                   "substitution": true,
                 },
                 {

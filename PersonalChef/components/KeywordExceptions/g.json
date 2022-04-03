@@ -1238,6 +1238,12 @@
               "name": "garlic and chilli oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -1788,6 +1794,12 @@
               "name": "groundnut oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -1904,6 +1916,12 @@
               "name": "grapeseed oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -2076,6 +2094,12 @@
               "name": "garlic oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -2982,6 +3006,10 @@
               {
                 "word": "grape",
                 "substitution": false,
+              },
+              {
+                "word": "star fruit",
+                "substitution": true,
               },
               {
                 "word": "jabuticaba",

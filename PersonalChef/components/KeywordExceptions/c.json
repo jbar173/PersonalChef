@@ -1416,6 +1416,10 @@
                 "substitution": true,
               },
               {
+                "word": "snails",
+                "substitution": true,
+              },
+              {
                 "word": "goose barnacles",
                 "substitution": true,
               }
@@ -3769,6 +3773,10 @@
                 "substitution": true,
               },
               {
+                "word": "skirret",
+                "substitution": true,
+              },
+              {
                 "word": "celeriac",
                 "substitution": true,
               }
@@ -5575,6 +5583,12 @@
             "name": "corn oil",
             "type": "",
             "exclude": [
+              {
+                "word": "butter",
+              },
+              {
+                "word": "margarine",
+              }
             ],
             "include": [
               {
@@ -5679,6 +5693,12 @@
             "name": "canola oil",
             "type": "",
             "exclude": [
+              {
+                "word": "butter",
+              },
+              {
+                "word": "margarine",
+              }
             ],
             "include": [
               {
@@ -5703,6 +5723,12 @@
             "name": "coconut oil",
             "type": "",
             "exclude": [
+              {
+                "word": "butter",
+              },
+              {
+                "word": "margarine",
+              }
             ],
             "include": [
               {
@@ -6375,10 +6401,40 @@
             "name": "chilli infused oil",
             "type": "",
             "exclude": [
+              {
+                "word": "butter",
+              },
+              {
+                "word": "margarine",
+              }
             ],
             "include": [
               {
+                "word": "chili infused oil",
+                "substitution": false,
+              },
+              {
+                "word": "chilli infused olive oil",
+                "substitution": false,
+              },
+              {
+                "word": "chili infused olive oil",
+                "substitution": false,
+              },
+              {
+                "word": "chilli flavored olive oil",
+                "substitution": false,
+              },
+              {
                 "word": "chilli flavoured olive oil",
+                "substitution": false,
+              },
+              {
+                "word": "chili flavored olive oil",
+                "substitution": false,
+              },
+              {
+                "word": "chili flavoured olive oil",
                 "substitution": false,
               }
             ],
@@ -9741,6 +9797,12 @@
               },
               {
                 "word": "cream of tomato",
+              },
+              {
+                "word": "of tartar",
+              },
+              {
+                "word": "of tartare",
               }
             ],
             "include": [

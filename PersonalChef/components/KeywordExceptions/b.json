@@ -708,6 +708,12 @@
           "name": "borage seed oil",
           "type": "",
           "exclude": [
+            {
+              "word": "butter",
+            },
+            {
+              "word": "margarine",
+            }
           ],
           "include": [
             {
@@ -764,6 +770,12 @@
           "name": "basil oil",
           "type": "",
           "exclude": [
+            {
+              "word": "butter",
+            },
+            {
+              "word": "margarine",
+            }
           ],
           "include": [
             {
@@ -5032,6 +5044,9 @@
               },
               {
                 "word": "butter milk",
+              },
+              {
+                "word": "oil",
               }
             ],
             "include": [

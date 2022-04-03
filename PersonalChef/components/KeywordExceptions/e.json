@@ -141,6 +141,12 @@
               "name": "evaporated milk",
               "type": "",
               "exclude": [
+                {
+                  "word": "of tartar",
+                },
+                {
+                  "word": "of tartare",
+                }
               ],
               "include": [
                 {
@@ -371,6 +377,12 @@
               "name": "extra virgin olive oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -408,6 +420,18 @@
                 {
                   "word": "escarole",
                   "substitution": false,
+                },
+                {
+                  "word": "frisée",
+                  "substitution": false,
+                },
+                {
+                  "word": "frisee",
+                  "substitution": false,
+                },
+                {
+                  "word": "chicory",
+                  "substitution": true,
                 }
               ],
           },

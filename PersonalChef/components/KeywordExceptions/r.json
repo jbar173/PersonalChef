@@ -8,7 +8,7 @@
 
               "rice","rice and peas","rice cracker","rice puffs",
               "rabbit",
-              "raddichio","raspberries","redcurrants","red cabbage","rhubarb","rocket",
+              "radicchio","raspberries","redcurrants","red cabbage","rhubarb","rocket",
               "ras el hanout","rogan josh spice",
               "ratatouille","rice pudding","roasted red peppers",
 
@@ -35,17 +35,21 @@
 
 
           {
-              "name": "raddichio",
+              "name": "radicchio",
               "type": "",
               "exclude": [
               ],
               "include": [
                 {
-                  "word": "blaukraut",
+                  "word": "chicory",
                   "substitution": true,
                 },
                 {
-                  "word": "cabbage",
+                  "word": "endive",
+                  "substitution": true,
+                },
+                {
+                  "word": "treviso",
                   "substitution": true,
                 },
                 {
@@ -1648,6 +1652,12 @@
               "name": "rice bran oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -1764,6 +1774,12 @@
               "name": "rapeseed oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -2572,11 +2588,19 @@
                 "substitution": true,
               },
               {
+                "word": "radicchio",
+                "substitution": true,
+              },
+              {
+                "word": "endive",
+                "substitution": true,
+              },
+              {
                 "word": "mustard greens",
                 "substitution": true,
               },
               {
-                "word": "salad leavess",
+                "word": "salad leaves",
                 "substitution": true,
               }
             ],

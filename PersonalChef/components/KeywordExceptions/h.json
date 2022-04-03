@@ -555,6 +555,12 @@
             "name": "hemp oil",
             "type": "",
             "exclude": [
+              {
+                "word": "butter",
+              },
+              {
+                "word": "margarine",
+              }
             ],
             "include": [
               {
@@ -809,6 +815,12 @@
             "name": "hazelnut oil",
             "type": "",
             "exclude": [
+              {
+                "word": "butter",
+              },
+              {
+                "word": "margarine",
+              }
             ],
             "include": [
               {

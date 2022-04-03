@@ -127,7 +127,7 @@ class AlmostList extends React.Component{
                                                              {entry[1].map(function(substitute,it) {
                                                                  return(
                                                                     <View key={it}>
-                                                                        <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {substitute[1]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                        <Text style={{textAlign:"center",marginBottom:5}}>Substitute made? {substitute[3]}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
                                                                     </View>
                                                                   )
                                                                })

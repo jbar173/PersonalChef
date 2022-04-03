@@ -766,12 +766,14 @@ class ApiCalls extends React.Component {
                              <View style={{justifyContent:"center"}}>
                                 <SearchingPageAnimation />
                              </View>
+                             <View style={{justifyContent:"center",alignItems:"center"}}>
+                                 <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                   style={{marginTop:500,alignSelf:"flex-end"}} to="/" underlayColor="transparent">
+                                     <Text style={styles.redButton}>Cancel search and start again</Text>
+                                 </Link>
+                             </View>
                          </View>
                        </ScrollView>
-                       <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                         style={{marginTop:500,alignSelf:"flex-end"}} to="/" underlayColor="transparent">
-                           <Text style={styles.redButton}>Cancel search and start again</Text>
-                       </Link>
                      </SafeAreaView>
                    }
 
@@ -829,9 +831,16 @@ class ApiCalls extends React.Component {
                                                                                return(
                                                                                      <View key={i}>
                                                                                         {entry[0] === item[1] &&
-                                                                                            <View>
-                                                                                                  <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could possibly be used in place of {entry[1][0]}*</Text>
-                                                                                            </View>
+                                                                                          <View>
+                                                                                              {entry[1].map(function(substitute,it) {
+                                                                                                  return(
+                                                                                                     <View key={it}>
+                                                                                                         <Text style={{textAlign:"center",marginBottom:5}}>Substitute made? {substitute[3]}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                                                     </View>
+                                                                                                   )
+                                                                                                })
+                                                                                              }
+                                                                                          </View>
                                                                                         }
                                                                                      </View>
                                                                                )
@@ -862,18 +871,20 @@ class ApiCalls extends React.Component {
                                                      }
                                                  )}
                                            </View>
-                                           <Link accessible={true} accessibilityLabel= "Start again"
-                                               accessibilityHint="Click button to go back to homepage"
-                                               to="/" accessibilityRole="button" underlayColor="transparent">
-                                                 <Text style={styles.blueButton}>Start again</Text>
-                                           </Link>
+                                           <View style={{justifyContent:"center",alignItems:"center"}}>
+                                               <Link accessible={true} accessibilityLabel= "Start again"
+                                                   accessibilityHint="Click button to go back to homepage"
+                                                   style={{marginTop:90,marginBottom:40}}
+                                                   to="/" accessibilityRole="button" underlayColor="transparent">
+                                                     <Text style={styles.blueButton}>Start again</Text>
+                                               </Link>
+                                           </View>
                                      </View>
                                    </ScrollView>
                                  </SafeAreaView>
                            }
 
                            { results && paused === false && this.state.tryAgain === false &&
-
                                      <View style={{display:"flex"}}>
                                              <View style={{flexDirection:"row",}}>
                                                  <Text style={styles.mainTitleTabLeft}>Your results</Text>
@@ -903,9 +914,16 @@ class ApiCalls extends React.Component {
                                                                                return(
                                                                                      <View key={i}>
                                                                                         {entry[0] === item[1] &&
-                                                                                            <View>
-                                                                                                <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could possibly be used in place of {entry[1][0]}*</Text>
-                                                                                            </View>
+                                                                                          <View>
+                                                                                              {entry[1].map(function(substitute,it) {
+                                                                                                  return(
+                                                                                                     <View key={it}>
+                                                                                                         <Text style={{textAlign:"center",marginBottom:5}}>Substitute made? {substitute[3]}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                                                     </View>
+                                                                                                   )
+                                                                                                })
+                                                                                              }
+                                                                                          </View>
                                                                                         }
                                                                                      </View>
                                                                                )
@@ -956,7 +974,7 @@ class ApiCalls extends React.Component {
                                                </View>
                                                <View style={{justifyContent:"center",alignItems:"center"}}>
                                                    <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                     style={{marginTop:90}} to="/pantry/" underlayColor="transparent">
+                                                     style={{marginTop:90,marginBottom:40}} to="/pantry/" underlayColor="transparent">
                                                        <Text style={styles.redButton}>Cancel search and start again</Text>
                                                    </Link>
                                                </View>
@@ -995,9 +1013,16 @@ class ApiCalls extends React.Component {
                                                                                   return(
                                                                                         <View key={i}>
                                                                                            {entry[0] === item[1] &&
-                                                                                               <View>
-                                                                                                   <Text style={{textAlign:"center",marginBottom:5}}>Substitute made: Your ingredient {entry[1][1]} could possibly be used in place of {entry[1][0]}*</Text>
-                                                                                               </View>
+                                                                                             <View>
+                                                                                                 {entry[1].map(function(substitute,it) {
+                                                                                                     return(
+                                                                                                        <View key={it}>
+                                                                                                            <Text style={{textAlign:"center",marginBottom:5}}>Substitute made? {substitute[3]}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                                                        </View>
+                                                                                                      )
+                                                                                                   })
+                                                                                                 }
+                                                                                             </View>
                                                                                            }
                                                                                         </View>
                                                                                   )
@@ -1045,7 +1070,7 @@ class ApiCalls extends React.Component {
 
                                                   <View style={{justifyContent:"center",alignItems:"center"}}>
                                                       <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                                        style={{marginTop:90}} to="/" underlayColor="transparent">
+                                                        style={{marginTop:90,marginBottom:40}} to="/" underlayColor="transparent">
                                                           <Text style={styles.redButton}>Cancel search and start again</Text>
                                                       </Link>
                                                   </View>

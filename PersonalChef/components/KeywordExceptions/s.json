@@ -7,12 +7,12 @@
               "sugar syrup","sultanas","syrup sponge",
 
               "scone mix","semolina","sesame seeds","shortcrust pastry","shredded wheat cereal","spring roll wrapper","sunflower seeds","sweet rice flour",
-              "salmon","sea bream","scallops","shrimp","smoked trout","smoked salmon","sole","sprat","sturgeon","squid","snapper",
-              "sausage","smoked sausage/sliced meat",
-              "salad leaves","samphire","shallot","soffrito mix","spinach","spring onions","strawberries","summer squash","swede","sweet potato",
+              "salmon","scallops","sea bream","shrimp","skate","smoked trout","smoked salmon","snails","snapper","sole","sprat","squid","sturgeon","swai",
+              "sausage","smoked sausage/sliced meat","squab",
+              "salad leaves","salsify","samphire","shallot","skirret","soffrito mix","spinach","spring onions","star fruit","strawberries","summer squash","swede","sweet potato",
 
               "saffron","salt","shawarma seasoning","shichimi","smoked paprika","smoky barbeque seasoning","smoky red pepper dressing","spirulina powder","star anise",
-              "squab","steak seasoning","sumac","sweet red pepper flakes",
+              "steak seasoning","sumac","sweet red pepper flakes",
 
               "spaghetti hoops","spinach puree","sun-dried tomatoes","sweetcorn",
 
@@ -37,8 +37,6 @@
               "~~~ TO DO : ~~~",
 
               "self raising flour", "spelt flour",
-              "SALSIFY","SKIRRET","STARFRUIT",
-              "SKATE","SNAILS/abalone/perlemoen","SWAI",
 
     ],
 
@@ -46,7 +44,150 @@
     "ingredients": [
 
 
-
+          {
+              "name": "skate",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "basa",
+                  "substitution": false,
+                }
+              ],
+          },
+          {
+              "name": "snails",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "snail",
+                  "substitution": false,
+                },
+                {
+                  "word": "escargot",
+                  "substitution": false,
+                },
+                {
+                  "word": "whelk",
+                  "substitution": false,
+                },
+                {
+                  "word": "abalone",
+                  "substitution": false,
+                },
+                {
+                  "word": "perlemoen",
+                  "substitution": false,
+                },
+                {
+                  "word": "chiton",
+                  "substitution": true,
+                },
+                {
+                  "word": "pacro",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "swai",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "basa",
+                  "substitution": false,
+                }
+              ],
+          },
+          {
+              "name": "skirret",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "potato",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet potato",
+                  "substitution": true,
+                },
+                {
+                  "word": "parsnip",
+                  "substitution": true,
+                },
+                {
+                  "word": "turnip",
+                  "substitution": true,
+                },
+                {
+                  "word": "carrot",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "star fruit",
+              "type": "fruit",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "starfruit",
+                  "substitution": false,
+                },
+                {
+                  "word": "kiwi fruit",
+                  "substitution": true,
+                },
+                {
+                  "word": "mango",
+                  "substitution": true,
+                },
+                {
+                  "word": "grape",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "salsify",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "oyster plant",
+                  "substitution": false,
+                },
+                {
+                  "word": "vegetable oyster",
+                  "substitution": false,
+                },
+                {
+                  "word": "artichoke heart",
+                  "substitution": true,
+                },
+                {
+                  "word": "heart of palm",
+                  "substitution": true,
+                },
+                {
+                  "word": "parsnip",
+                  "substitution": true,
+                },
+                {
+                  "word": "turnip",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "squab",
               "type": "",
@@ -3917,6 +4058,12 @@
               "name": "safflower oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -4033,6 +4180,12 @@
               "name": "sunflower oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -4149,6 +4302,12 @@
               "name": "sesame oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
               ],
               "include": [
                 {
@@ -5598,6 +5757,10 @@
               },
               {
                 "word": "yam",
+                "substitution": true,
+              },
+              {
+                "word": "skirret",
                 "substitution": true,
               },
               {
