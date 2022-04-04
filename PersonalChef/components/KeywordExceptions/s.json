@@ -9,7 +9,9 @@
               "scone mix","semolina","sesame seeds","shortcrust pastry","shredded wheat cereal","spring roll wrapper","sunflower seeds","sweet rice flour",
               "salmon","scallops","sea bream","shrimp","skate","smoked trout","smoked salmon","snails","snapper","sole","sprat","squid","sturgeon","swai",
               "sausage","smoked sausage/sliced meat","squab",
-              "salad leaves","salsify","samphire","shallot","skirret","soffrito mix","spinach","spring onions","star fruit","strawberries","summer squash","swede","sweet potato",
+
+              "salad leaves","salsify","samphire","shallot","skirret","soffrito mix","spinach","spring onions","star fruit","strawberries","summer squash","swede",
+              "sweet potato",
 
               "saffron","salt","shawarma seasoning","shichimi","smoked paprika","smoky barbeque seasoning","smoky red pepper dressing","spirulina powder","star anise",
               "steak seasoning","sumac","sweet red pepper flakes",
@@ -51,7 +53,35 @@
               ],
               "include": [
                 {
-                  "word": "basa",
+                  "word": "ray wing",
+                  "substitution": false,
+                },
+                {
+                  "word": "ray fish",
+                  "substitution": false,
+                },
+                {
+                  "word": "sea ray",
+                  "substitution": false,
+                },
+                {
+                  "word": "manta",
+                  "substitution": true,
+                },
+                {
+                  "word": "stingray",
+                  "substitution": true,
+                },
+                {
+                  "word": "crab",
+                  "substitution": true,
+                },
+                {
+                  "word": "wolf fish",
+                  "substitution": true,
+                },
+                {
+                  "word": "scallops",
                   "substitution": false,
                 }
               ],
@@ -71,16 +101,20 @@
                   "substitution": false,
                 },
                 {
-                  "word": "whelk",
-                  "substitution": false,
+                  "word": "whelks",
+                  "substitution": true,
                 },
                 {
                   "word": "abalone",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "perlemoen",
-                  "substitution": false,
+                  "substitution": true,
+                },
+                {
+                  "word": "cockles",
+                  "substitution": true,
                 },
                 {
                   "word": "chiton",
@@ -1588,7 +1622,19 @@
                   "substitution": true,
                 },
                 {
+                  "word": "skate",
+                  "substitution": true,
+                },
+                {
+                  "word": "stingray",
+                  "substitution": true,
+                },
+                {
                   "word": "abalone",
+                  "substitution": true,
+                },
+                {
+                  "word": "perlemoen",
                   "substitution": true,
                 },
                 {
@@ -2079,6 +2125,10 @@
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "whitebait",
+                  "substitution": true,
+                },
                 {
                   "word": "sardines",
                   "substitution": true,
@@ -4181,6 +4231,9 @@
               "type": "",
               "exclude": [
                 {
+                  "word": "in sunflower oil",
+                },
+                {
                   "word": "butter",
                 },
                 {
@@ -5138,47 +5191,8 @@
           },
           {
               "name": "sparkling water",
-              "type": "",
+              "type": "soda",
               "exclude": [
-                {
-                  "word": "bread",
-                },
-                {
-                  "word": "bicarb",
-                },
-                {
-                  "word": "baking",
-                },
-                {
-                  "word": "grape",
-                },
-                {
-                  "word": "orange",
-                },
-                {
-                  "word": "lemon-lime",
-                },
-                {
-                  "word": "lemon lime",
-                },
-                {
-                  "word": "strawberry",
-                },
-                {
-                  "word": "cream",
-                },
-                {
-                  "word": "squirt",
-                },
-                {
-                  "word": "flavoured",
-                },
-                {
-                  "word": "flavored",
-                },
-                {
-                  "word": "tangerine",
-                }
               ],
               "include": [
                 {
@@ -5194,12 +5208,20 @@
                   "substitution": false,
                 },
                 {
+                  "word": "tonic",
+                  "substitution": false,
+                },
+                {
                   "word": "seltzer",
                   "substitution": false,
                 },
                 {
-                  "word": "soda",
+                  "word": "soda water",
                   "substitution": false,
+                },
+                {
+                  "word": "soda",
+                  "substitution": true,
                 }
               ],
           },

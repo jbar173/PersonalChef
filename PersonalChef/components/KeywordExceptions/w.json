@@ -4,9 +4,10 @@
               "wensleydale",
               "wafer biscuits","wafer decorations","white chocolate",
               "walnuts","weetabix","wonton wrappers",
+              "whelks","whitebait","winkles","wolf fish",
               "watercress","water chestnut","watermelon",
               "water chestnuts",
-              "walnut oil","wasabi paste","watercress sauce","white sauce","white wine stock","wholegrain mustard","worcestershire sauce",
+              "walnut oil","wasabi paste","wasabi powder","watercress sauce","white sauce","white wine stock","wholegrain mustard","worcestershire sauce",
               "white chocolate milkshake",
               "wedges",
 
@@ -22,8 +23,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "WHELKS","WHITEBAIT","WINKLES","WOLF FISH",
-              "WASABI POWDER",
 
     ],
 
@@ -31,6 +30,230 @@
     "ingredients": [
 
 
+          {
+              "name": "whelks",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "whelk",
+                  "substitution": false,
+                },
+                {
+                  "word": "scungilli",
+                  "substitution": false,
+                },
+                {
+                  "word": "welk",
+                  "substitution": false,
+                },
+                {
+                  "word": "wilk",
+                  "substitution": false,
+                },
+                {
+                  "word": "winkles",
+                  "substitution": true,
+                },
+                {
+                  "word": "cockles",
+                  "substitution": true,
+                },
+                {
+                  "word": "clams",
+                  "substitution": true,
+                },
+                {
+                  "word": "mussels",
+                  "substitution": true,
+                },
+                {
+                  "word": "snails",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "whitebait",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sprat",
+                  "substitution": true,
+                },
+                {
+                  "word": "herring",
+                  "substitution": true,
+                },
+                {
+                  "word": "sardines",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "winkles",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "periwinkle",
+                  "substitution": false,
+                },
+                {
+                  "word": "cockles",
+                  "substitution": true,
+                },
+                {
+                  "word": "whelks",
+                  "substitution": true,
+                },
+                {
+                  "word": "clams",
+                  "substitution": true,
+                },
+                {
+                  "word": "mussels",
+                  "substitution": true,
+                }
+                {
+                  "word": "snails",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "wolf fish",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "wolffish",
+                  "substitution": false,
+                },
+                {
+                  "word": "seawolf",
+                  "substitution": false,
+                },
+                {
+                  "word": "atlantic catfish",
+                  "substitution": false,
+                },
+                {
+                  "word": "ocean catfish",
+                  "substitution": false,
+                },
+                {
+                  "word": "ocean whitefish",
+                  "substitution": false,
+                },
+                {
+                  "word": "devil fish",
+                  "substitution": false,
+                },
+                {
+                  "word": "wolf eel",
+                  "substitution": false,
+                },
+                {
+                  "word": "woof",
+                  "substitution": false,
+                },
+                {
+                  "word": "sea cat",
+                  "substitution": false,
+                },
+                {
+                  "word": "seacat",
+                  "substitution": false,
+                },
+                {
+                  "word": "rock salmon",
+                  "substitution": false,
+                },
+                {
+                  "word": "lobo",
+                  "substitution": false,
+                },
+                {
+                  "word": "skate",
+                  "substitution": true,
+                },
+                {
+                  "word": "catfish",
+                  "substitution": true,
+                },
+                {
+                  "word": "buffalo fish",
+                  "substitution": true,
+                },
+                {
+                  "word": "buffalofish",
+                  "substitution": true,
+                },
+                {
+                  "word": "bigmouth buffalo",
+                  "substitution": true,
+                },
+                {
+                  "word": "cod",
+                  "substitution": true,
+                },
+                {
+                  "word": "turbot",
+                  "substitution": true,
+                },
+                {
+                  "word": "haddock",
+                  "substitution": true,
+                },
+                {
+                  "word": "perch",
+                  "substitution": true,
+                },
+                {
+                  "word": "tilefish",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "wasabi powder",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "powdered wasabi",
+                  "substitution": false,
+                },
+                {
+                  "word": "dried wasabi",
+                  "substitution": false,
+                },
+                {
+                  "word": "dry wasabi",
+                  "substitution": false,
+                },
+                {
+                  "word": "ground wasabi",
+                  "substitution": false,
+                },
+                {
+                  "word": "wasabi paste",
+                  "substitution": true,
+                },
+                {
+                  "word": "mustard powder",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "wensleydale",
               "type": "",
@@ -251,22 +474,6 @@
               "include": [
                 {
                   "word": "wasabi powder",
-                  "substitution": true,
-                },
-                {
-                  "word": "powdered wasabi",
-                  "substitution": true,
-                },
-                {
-                  "word": "dried wasabi",
-                  "substitution": true,
-                },
-                {
-                  "word": "dry wasabi",
-                  "substitution": true,
-                },
-                {
-                  "word": "ground wasabi",
                   "substitution": true,
                 },
                 {

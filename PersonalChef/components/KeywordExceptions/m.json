@@ -1884,22 +1884,6 @@
                   "substitution": true,
                 },
                 {
-                  "word": "powdered wasabi",
-                  "substitution": true,
-                },
-                {
-                  "word": "dried wasabi",
-                  "substitution": true,
-                },
-                {
-                  "word": "dry wasabi",
-                  "substitution": true,
-                },
-                {
-                  "word": "ground wasabi",
-                  "substitution": true,
-                },
-                {
                   "word": "mustard",
                   "substitution": true,
                 },
@@ -5250,6 +5234,10 @@
               },
               {
                 "word": "wasabi paste",
+                "substitution": true,
+              },
+              {
+                "word": "wasabi powder",
                 "substitution": true,
               },
               {

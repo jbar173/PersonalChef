@@ -296,6 +296,10 @@
                 "substitution": true,
               },
               {
+                "word": "wolf fish",
+                "substitution": true,
+              },
+              {
                 "word": "gurnard",
                 "substitution": true,
               }
@@ -432,6 +436,10 @@
                 "substitution": true,
               },
               {
+                "word": "whitebait",
+                "substitution": true,
+              },
+              {
                 "word": "shad",
                 "substitution": true,
               }
@@ -552,7 +560,7 @@
             ],
         },
         {
-            "name": "hemp oil",
+            "name": "hemp seed oil",
             "type": "",
             "exclude": [
               {
@@ -564,7 +572,7 @@
             ],
             "include": [
               {
-                "word": "hemp seed oil",
+                "word": "hemp oil",
                 "substitution": false,
               },
               {

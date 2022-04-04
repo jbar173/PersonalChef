@@ -11,7 +11,7 @@
              "fresh oregano","fresh parsley","fresh rosemary","fresh sage","fresh sorrel","fresh tarragon","fresh thyme","fenugreek leaves",
 
              "flageolet beans","fruit cocktail",
-             "fish masala","fish sauce","fish stock","french dressing","french mustard",
+             "fish masala","fish sauce","fish stock","flaxseed oil","french dressing","french mustard",
              "faluda drink","fennel tea",
              "fruit yoghurt",
 
@@ -38,6 +38,45 @@
     "ingredients": [
 
 
+
+          {
+              "name": "flaxseed oil",
+              "type": "",
+              "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
+              ],
+              "include": [
+                {
+                  "word": "flax seed oil",
+                  "substitution": false,
+                },
+                {
+                  "word": "hemp seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "borage seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "fresh horseradish",
               "type": "",

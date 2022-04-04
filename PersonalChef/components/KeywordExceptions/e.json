@@ -378,6 +378,9 @@
               "type": "",
               "exclude": [
                 {
+                  "word": "in extra virgin olive oil",
+                },
+                {
                   "word": "butter",
                 },
                 {
@@ -386,7 +389,23 @@
               ],
               "include": [
                 {
+                  "word": "olive oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "hemp seed oil",
+                  "substitution": true,
+                },
+                {
                   "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "pumpkin seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed oil",
                   "substitution": true,
                 }
               ],

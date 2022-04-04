@@ -1,14 +1,14 @@
 {
     "name": "fish_ingredients",
-    "ingredients": [  "AMBERJACK", "anchovies",
+    "ingredients": [  "amberjack", "anchovies",
 
                       "barramundi", "basa", "bass", "bluefish", "branzino", "breaded fish fillets", "brill",
 
-                      "CARP", "catfish", "caviar", "char", "CLAMS", "cobia", "cockles", "cod", "coley", "crab", "crab stick", "crayfish", "cuttlefish",
+                      "CARP", "catfish", "caviar", "char", "clams", "cobia", "cockles", "cod", "coley", "crab", "crab stick", "crayfish", "cuttlefish",
 
                       "dab", "dried fish", "dried shrimp",
 
-                      "EEL",
+                      "eel",
 
                       "fish cakes", "flounder", "fluke", "fresh bombay duck",
 
@@ -20,22 +20,22 @@
 
                       "kipper",
 
-                      "LING", "lobster",
+                      "ling", "lobster",
 
                       "mackerel", "mahi mahi", "meagre", "monkfish", "mussels",
 
-                      "OCTOPUS", "orange roughy", "OYSTERS",
+                      "octopus", "orange roughy", "oysters",
 
-                      "perch", "PIKE", "plaice", "pollock", "pouting", "prawns",
+                      "perch", "pike", "plaice", "pollock", "pouting", "prawns",
 
                       "red mullet",
 
-                      "salmon", "sardines", "scad", "scallops", "sea bass", "sea bream", "seafood stick", "shrimp", "sild", "SKATE", "SNAILS", "snapper",
-                      "smoked salmon", "smoked trout", "sole", "sprat", "squid", "stone bass", "striped bass", "sturgeon", "SWAI", "SWORDFISH",
+                      "salmon", "sardines", "scad", "scallops", "sea bass", "sea bream", "seafood stick", "shrimp", "sild", "skate", "snails", "snapper",
+                      "smoked salmon", "smoked trout", "sole", "sprat", "squid", "stone bass", "striped bass", "sturgeon", "swai", "swordfish",
 
                       "tempura prawns", "tilapia", "tilefish", "trout", "tuna", "turbot",
 
-                      "walleye", "WHELKS", "WHITEBAIT", "whiting", "WINKLES", "WOLF FISH",
+                      "walleye", "whelks", "whitebait", "whiting", "winkles", "wolf fish",
 
 
 

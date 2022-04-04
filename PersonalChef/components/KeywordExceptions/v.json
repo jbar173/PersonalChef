@@ -2,7 +2,7 @@
 
     "key" : [ "vodka",
               "vanilla bean paste","vanilla extract","vanilla sponge","vanilla pod","vanilla sauce","vanilla syrup",
-              "venison","venison mince",
+              "veal","venison","venison mince",
               "vine leaves",
               "vegetable oil","vegetable stock","vindaloo curry paste","vinegar",
               "vegetable chips",
@@ -15,7 +15,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "VEAL",
 
 
     ],
@@ -24,6 +23,43 @@
     "ingredients": [
 
 
+          {
+              "name": "veal",
+              "type": "meat",
+              "exclude": [
+                {
+                  "word": "veal seasoning",
+                },
+                {
+                  "word": "veal mix",
+                },
+                {
+                  "word": "veal casserole mix",
+                },
+                {
+                  "word": "veal rub",
+                },
+                {
+                  "word": "veal cube",
+                },
+                {
+                  "word": "veal base",
+                },
+                {
+                  "word": "veal soup",
+                }
+              ],
+              "include": [
+                {
+                  "word": "beef",
+                  "substitution": true,
+                },
+                {
+                  "word": "pork",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "vodka",
               "type": "",
@@ -496,13 +532,28 @@
           },
           {
               "name": "venison",
-              "type": "",
+              "type": "meat",
               "exclude": [
                 {
-                  "word": "jerky",
+                  "word": "venison seasoning",
                 },
                 {
-                  "word": "dried",
+                  "word": "venison mix",
+                },
+                {
+                  "word": "venison casserole mix",
+                },
+                {
+                  "word": "venison rub",
+                },
+                {
+                  "word": "venison cube",
+                },
+                {
+                  "word": "venison base",
+                },
+                {
+                  "word": "venison soup",
                 }
               ],
               "include": [
@@ -772,6 +823,9 @@
               "name": "vegetable oil",
               "type": "",
               "exclude": [
+                {
+                  "word": "in vegetable oil",
+                },
                 {
                   "word": "butter",
                 },

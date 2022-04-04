@@ -3683,10 +3683,6 @@
             "substitution": false,
           },
           {
-            "word": "brioche",
-            "substitution": false,
-          },
-          {
             "word": "focaccia",
             "substitution": false,
           },
@@ -3701,6 +3697,10 @@
           {
             "word": "boule",
             "substitution": false,
+          },
+          {
+            "word": "brioche",
+            "substitution": true,
           },
           {
             "word": "flatbread",
@@ -4352,79 +4352,13 @@
           },
           {
               "name": "beef",
-              "type": "",
+              "type": "meat",
               "exclude": [
                 {
                   "word": "corned beef",
                 },
                 {
                   "word": "corned brisket beef",
-                },
-                {
-                  "word": "burger",
-                },
-                {
-                  "word": "ground",
-                },
-                {
-                  "word": "minced",
-                },
-                {
-                  "word": "mince",
-                },
-                {
-                  "word": "tripe",
-                },
-                {
-                  "word": "stock",
-                },
-                {
-                  "word": "broth",
-                },
-                {
-                  "word": "gravy",
-                },
-                {
-                  "word": "glace",
-                },
-                {
-                  "word": "jus",
-                },
-                {
-                  "word": "bouillon",
-                },
-                {
-                  "word": "oxo",
-                },
-                {
-                  "word": "beef cube",
-                },
-                {
-                  "word": "soup base",
-                },
-                {
-                  "word": "bone broth",
-                },
-                {
-                  "word": "beef base",
-                },
-                {
-                  "word": "consomme",
-                },
-                {
-                  "word": "consommé",
-                },
-                {
-                  "word": "consume",
-                },
-                {
-                  "word": "demi-glace",
-                },
-                {
-                  "word": "demi glace",
-                },
-                {
-                  "word": "dripping",
                 },
                 {
                   "word": "beefsteak tomato",
@@ -4437,6 +4371,27 @@
                 },
                 {
                   "word": "beef steak tomatoes",
+                },
+                {
+                  "word": "beef mix",
+                },
+                {
+                  "word": "beef casserole mix",
+                },
+                {
+                  "word": "beef seasoning",
+                },
+                {
+                  "word": "beef rub",
+                },
+                {
+                  "word": "beef cube",
+                },
+                {
+                  "word": "beef base",
+                },
+                {
+                  "word": "beef soup",
                 }
               ],
               "include": [

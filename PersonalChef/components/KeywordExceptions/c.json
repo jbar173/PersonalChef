@@ -165,6 +165,10 @@
                 "substitution": false,
               },
               {
+                "word": "taro root",
+                "substitution": true,
+              },
+              {
                 "word": "breadfruit",
                 "substitution": true,
               },
@@ -1120,6 +1124,10 @@
               },
               {
                 "word": "tilapia",
+                "substitution": true,
+              },
+              {
+                "word": "wolf fish",
                 "substitution": true,
               },
               {
@@ -3645,6 +3653,10 @@
                 "substitution": true,
               },
               {
+                "word": "wolf fish",
+                "substitution": true,
+              },
+              {
                 "word": "barramundi",
                 "substitution": true,
               }
@@ -3661,23 +3673,11 @@
                 "substitution": true,
               },
               {
-                "word": "welks",
+                "word": "winkles",
                 "substitution": true,
               },
               {
-                "word": "wilks",
-                "substitution": true,
-              },
-              {
-                "word": "winkle",
-                "substitution": true,
-              },
-              {
-                "word": "periwinkle",
-                "substitution": true,
-              },
-              {
-                "word": "clam",
+                "word": "clams",
                 "substitution": true,
               },
               {
@@ -3706,6 +3706,14 @@
               },
               {
                 "word": "grouper",
+                "substitution": true,
+              },
+              {
+                "word": "skate",
+                "substitution": true,
+              },
+              {
+                "word": "stingray",
                 "substitution": true,
               },
               {
@@ -3762,6 +3770,9 @@
             "name": "carrot",
             "type": "",
             "exclude": [
+              {
+                "word": "potato",
+              }
             ],
             "include": [
               {
@@ -6890,68 +6901,8 @@
         },
         {
           "name": "chicken",
-          "type": "",
+          "type": "meat",
           "exclude": [
-            {
-              "word": "broth",
-            },
-            {
-              "word": "stock",
-            },
-            {
-              "word": "gravy",
-            },
-            {
-              "word": "glace",
-            },
-            {
-              "word": "jus",
-            },
-            {
-              "word": "bouillon",
-            },
-            {
-              "word": "oxo",
-            },
-            {
-              "word": "lamb cube",
-            },
-            {
-              "word": "soup base",
-            },
-            {
-              "word": "bone broth",
-            },
-            {
-              "word": "chicken base",
-            },
-            {
-              "word": "consomme",
-            },
-            {
-              "word": "consommé",
-            },
-            {
-              "word": "consume",
-            },
-            {
-              "word": "demi-glace",
-            },
-            {
-              "word": "demi glace",
-            },
-            {
-              "word": "sausage",
-            },
-            {
-              "word": "minced",
-            },
-            {
-              "word": "mince",
-            },
-            {
-              "word": "ground",
-            },
             {
               "word": "chicken seasoning",
             },
@@ -6965,49 +6916,13 @@
               "word": "chicken rub",
             },
             {
-              "word": "chicken soup",
-            },
-            {
-              "word": "liver",
-            },
-            {
-              "word": "heart",
-            },
-            {
-              "word": "kidney",
-            },
-            {
-              "word": "sweetbread",
-            },
-            {
-              "word": "tripe",
-            },
-            {
-              "word": "intestine",
-            },
-            {
-              "word": "tongue",
-            },
-            {
-              "word": "lung",
-            },
-            {
-              "word": "cheek",
-            },
-            {
-              "word": "brain",
-            },
-            {
-              "word": "dripping",
-            },
-            {
               "word": "chicken cube",
             },
             {
-              "word": "chicken gravy",
+              "word": "chicken base",
             },
             {
-              "word": "sauce",
+              "word": "chicken soup",
             }
           ],
           "include": [
@@ -9275,23 +9190,11 @@
           ],
           "include": [
             {
-              "word": "chili",
-              "substitution": false,
-            },
-            {
-              "word": "chilli",
+              "word": "chili pepper",
               "substitution": false,
             },
             {
               "word": "chillies",
-              "substitution": false,
-            },
-            {
-              "word": "chile",
-              "substitution": false,
-            },
-            {
-              "word": "chilli pepper",
               "substitution": false,
             },
             {
@@ -9337,7 +9240,27 @@
             {
               "word": "piment d'espelette",
               "substitution": true,
-            }
+            },
+            {
+              "word": "chilli powder",
+              "substitution": true,
+            },
+            {
+              "word": "chilli flakes",
+              "substitution": true,
+            },
+            {
+              "word": "chili",
+              "substitution": true,
+            },
+            {
+              "word": "chilli",
+              "substitution": true,
+            },
+            {
+              "word": "chile",
+              "substitution": true,
+            },
           ],
         },
         {

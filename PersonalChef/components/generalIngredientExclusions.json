@@ -25,4 +25,14 @@
                                "curd", "yoghurt", "muller", "custard", "bake", "cake", "sponge", "bar", "ball", "crispy", "crunch", "muesli", "vinegar", "oil",
                                "chutney", "spread", "butter", "jam", "preserve", "conserve", "jelly", "milkshake", "shake", "milk", "coffee",
     ],
+    "soda":  [ "bread", "bicarb", "bicarbonate", "baking", "ginger", "ale", "beer", "campari", "dr pepper", "coke", "cola", "-cola", "lilt", "grass", "red", "pink",
+                               "fruit", "fruity", "tropical", "pineapple", "grape", "orange", "tangerine", "lemon-lime", "lemon lime", "lemon", "lime", "berry",
+                               "blueberry", "strawberry", "raspberry", "rhubarb", "blackcurrant", "blackberry", "cherry", "cherryade", "apple", "maple", "mango",
+                               "grapefruit", "custard", "cream", "creaming", "squirt", "chubby", "flavour", "flavor", "flavoured", "flavored", "syrup",
+    ],
+    "meat":  [ "burger", "ground", "minced", "mince", "stock", "broth", "gravy", "sauce", "glace", "jus", "bouillon", "oxo", "soup base", "bone broth", "consomme", "consommé",
+                               "consume", "demi-glace", "demi glace", "dripping", "liver", "heart", "lung", "cheek", "brain", "kidney", "tongue", "blood", "tripe",
+                               "intestine", "sweetbread", "jerky", "dried",
+    ],
+
 }

@@ -1,16 +1,12 @@
 {
 
-    "key" : [ "~filler~",
+    "key" : [ "ugli fruit",
 
 
+              "~~~ HALF DONE : ~~~",
 
 
-            "~~~ HALF DONE : ~~~",
-            "UGLI FRUIT",
-
-
-            "~~~ TO DO : ~~~",
-
+              "~~~ TO DO : ~~~",
 
     ],
 
@@ -23,6 +19,18 @@
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "tangelo",
+                  "substitution": false,
+                },
+                {
+                  "word": "orange",
+                  "substitution": true,
+                },
+                {
+                  "word": "grapefruit",
+                  "substitution": true,
+                }
               ],
           }
 

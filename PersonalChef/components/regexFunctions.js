@@ -234,17 +234,9 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
               ){
                  console.log("FOUND RANDOM EXCLUSION in recipe label: " + title_lower)
                  random_exception_found = true
-                 // if(type === 'random'){
                  return [ true, ingredients_with_exceptions, true ];
-                 // }
-                 // else{
-                 //   break;
-                 // }
              }
          }
-         // if(type === 'random'){
-         //   return false;
-         // }
     }
 
 
@@ -342,9 +334,6 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
 
     }
 
-    // if(ingredients.length > ingredients_with_exceptions.length){
-    //     exception_found = false
-    // }
 
    return [ exception_found, ingredients_with_exceptions, random_exception_found, ];
 

@@ -9,7 +9,7 @@
               "onion","orange",
               "onion powder",
               "olives",
-              "oil","olive oil","onion gravy","onion sauce","oyster sauce",
+              "olive oil","onion gravy","onion sauce","oyster sauce",
               "oat milk","oat yoghurt","onion rings",
 
 
@@ -796,6 +796,9 @@
               "type": "",
               "exclude": [
                 {
+                  "word": "in olive oil",
+                },
+                {
                   "word": "butter",
                 },
                 {
@@ -803,6 +806,26 @@
                 }
               ],
               "include": [
+                {
+                  "word": "cooking spray",
+                  "substitution": true,
+                },
+                {
+                  "word": "vegetable-oil spray",
+                  "substitution": true,
+                },
+                {
+                  "word": "olive oil flavored spray",
+                  "substitution": true,
+                },
+                {
+                  "word": "oil spray",
+                  "substitution": true,
+                },
+                {
+                  "word": "flourless spray",
+                  "substitution": true,
+                },
                 {
                   "word": "hemp oil",
                   "substitution": true,
@@ -1195,136 +1218,6 @@
                 {
                   "word": "giblets",
                   "substitution": false,
-                }
-              ],
-          },
-          {
-              "name": "oil",
-              "type": "",
-              "exclude": [
-                {
-                  "word": "oil-packed",
-                },
-                {
-                  "word": "oil packed",
-                },
-                {
-                  "word": "oil-cured",
-                },
-                {
-                  "word": "oil cured",
-                },
-                {
-                  "word": "essential oil",
-                },
-                {
-                  "word": "orange oil",
-                },
-                {
-                  "word": "tuna in oil",
-                },
-                {
-                  "word": "tuna in olive oil",
-                },
-                {
-                  "word": "tomato in oil",
-                },
-                {
-                  "word": "tomatoes in oil",
-                },
-                {
-                  "word": "not in oil",
-                },
-                {
-                  "word": "anchovies in oil",
-                },
-                {
-                  "word": "pepper in oil",
-                },
-                {
-                  "word": "fillet in oil",
-                },
-                {
-                  "word": "fillets in olive oil",
-                },
-                {
-                  "word": "fillets olive oil",
-                },
-                {
-                  "word": "fillets sunflower oil",
-                },
-                {
-                  "word": "chunks in oil",
-                },
-                {
-                  "word": "chunks in sunflower oil",
-                },
-                {
-                  "word": "steak in sunflower oil",
-                },
-                {
-                  "word": "steak sunflower oil",
-                },
-                {
-                  "word": "steak in oil",
-                },
-                {
-                  "word": "sardines in oil",
-                },
-                {
-                  "word": "sardines in sunflower oil",
-                },
-                {
-                  "word": "sardines olive oil",
-                },
-                {
-                  "word": "sardines sunflower oil",
-                },
-                {
-                  "word": "sardines in soya oil",
-                },
-                {
-                  "word": "sardines in vegetable oil",
-                },
-                {
-                  "word": "sild in sunflower oil",
-                },
-                {
-                  "word": "olives in olive oil",
-                },
-                {
-                  "word": "wedges in parsley & thyme oil",
-                },
-                {
-                  "word": "mackerel in oil",
-                },
-                {
-                  "word": "mackerel in extra virgin olive oil",
-                },
-                {
-                  "word": "kippers in oil",
-                }
-              ],
-              "include": [
-                {
-                  "word": "cooking spray",
-                  "substitution": true,
-                },
-                {
-                  "word": "vegetable-oil spray",
-                  "substitution": true,
-                },
-                {
-                  "word": "olive oil flavored spray",
-                  "substitution": true,
-                },
-                {
-                  "word": "oil spray",
-                  "substitution": true,
-                },
-                {
-                  "word": "flourless spray",
-                  "substitution": true,
                 }
               ],
           },

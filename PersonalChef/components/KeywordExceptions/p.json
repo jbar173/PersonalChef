@@ -17,7 +17,7 @@
               "passata","pease pudding","pickles","pickled eggs","pickled red cabbage","pinto beans","pumpkin puree",
 
               "palm oil","panang curry paste","parsley sauce","pasanda paste","pathia curry paste","peanut butter","peanut oil","peppercorn sauce","phall curry paste",
-              "piccalilli","pickled ginger","piri piri sauce","plum sauce","ponzu sauce","pork stock","pumpkin pesto",
+              "piccalilli","pickled ginger","piri piri sauce","plum sauce","ponzu sauce","pork stock","pumpkin pesto", "pumpkin seed oil",
 
               "peach tea","pear tea","pineapple tea","pink lemonade","prune juice",
               "plain yoghurt","popcorn","pork scratchings","potato chips","powdered milk","prawn crackers","pretzel snacks",
@@ -43,6 +43,40 @@
     "ingredients": [
 
 
+          {
+              "name": "pumpkin seed oil",
+              "type": "",
+              "exclude": [
+                {
+                  "word": "butter",
+                },
+                {
+                  "word": "margarine",
+                }
+              ],
+              "include": [
+                {
+                  "word": "hemp seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "flaxseed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "walnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "borage seed oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "extra virgin olive oil",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "pike",
               "type": "",
@@ -1487,11 +1521,11 @@
                   "substitution": true,
                 },
                 {
-                  "word": "yuca root",
+                  "word": "cassava root",
                   "substitution": true,
                 },
                 {
-                  "word": "cassava root",
+                  "word": "taro root",
                   "substitution": true,
                 },
                 {
@@ -2887,6 +2921,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "wolf fish",
+                  "substitution": true,
+                },
+                {
                   "word": "sea bream",
                   "substitution": true,
                 }
@@ -3187,10 +3225,6 @@
               },
               {
                 "word": "turnip",
-                "substitution": true,
-              },
-              {
-                "word": "carrot",
                 "substitution": true,
               },
               {
@@ -5700,103 +5734,10 @@
           },
           {
               "name": "pork",
-              "type": "",
+              "type": "meat",
               "exclude": [
                 {
-                  "word": "sausage",
-                },
-                {
-                  "word": "ground",
-                },
-                {
-                  "word": "mince",
-                },
-                {
-                  "word": "minced",
-                },
-                {
                   "word": "pulled pork",
-                },
-                {
-                  "word": "stock",
-                },
-                {
-                  "word": "broth",
-                },
-                {
-                  "word": "gravy",
-                },
-                {
-                  "word": "glace",
-                },
-                {
-                  "word": "jus",
-                },
-                {
-                  "word": "bouillon",
-                },
-                {
-                  "word": "oxo",
-                },
-                {
-                  "word": "pork cube",
-                },
-                {
-                  "word": "soup base",
-                },
-                {
-                  "word": "bone broth",
-                },
-                {
-                  "word": "pork base",
-                },
-                {
-                  "word": "consomme",
-                },
-                {
-                  "word": "consommé",
-                },
-                {
-                  "word": "consume",
-                },
-                {
-                  "word": "demi-glace",
-                },
-                {
-                  "word": "demi glace",
-                },
-                {
-                  "word": "liver",
-                },
-                {
-                  "word": "heart",
-                },
-                {
-                  "word": "lung",
-                },
-                {
-                  "word": "cheek",
-                },
-                {
-                  "word": "brain",
-                },
-                {
-                  "word": "kidney",
-                },
-                {
-                  "word": "tongue",
-                },
-                {
-                  "word": "blood",
-                },
-                {
-                  "word": "ham",
-                },
-                {
-                  "word": "lard",
-                },
-                {
-                  "word": "pork dripping",
                 },
                 {
                   "word": "salt pork",
@@ -5805,13 +5746,10 @@
                   "word": "salted pork",
                 },
                 {
-                  "word": "pork mix",
+                  "word": "pork chicharron",
                 },
                 {
-                  "word": "pork seasoning",
-                },
-                {
-                  "word": "pork rub",
+                  "word": "chorizo",
                 },
                 {
                   "word": "pork rinds",
@@ -5826,16 +5764,25 @@
                   "word": "pork scraps",
                 },
                 {
-                  "word": "pork chicharron",
+                  "word": "pork mix",
                 },
                 {
-                  "word": "chorizo",
+                  "word": "pork casserole mix",
+                },
+                {
+                  "word": "pork seasoning",
+                },
+                {
+                  "word": "pork rub",
+                },
+                {
+                  "word": "pork base",
+                },
+                {
+                  "word": "pork cube",
                 },
                 {
                   "word": "pork soup",
-                },
-                {
-                  "word": "pork intestine",
                 }
               ],
               "include": [
@@ -6642,6 +6589,9 @@
               },
               {
                 "word": "potato starch",
+              },
+              {
+                "word": "carrot",
               }
             ],
             "include": [
@@ -6655,6 +6605,10 @@
               },
               {
                 "word": "plantain",
+                "substitution": true,
+              },
+              {
+                "word": "taro root",
                 "substitution": true,
               },
               {

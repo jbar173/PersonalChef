@@ -1677,6 +1677,10 @@
               ],
               "include": [
                 {
+                  "word": "clarified butter",
+                  "substitution": false,
+                },
+                {
                   "word": "butter",
                   "substitution": true,
                 },

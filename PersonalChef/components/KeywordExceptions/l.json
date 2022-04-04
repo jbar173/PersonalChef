@@ -1549,74 +1549,8 @@
         },
         {
             "name": "lamb",
-            "type": "",
+            "type": "meat",
             "exclude": [
-              {
-                "word": "lettuce",
-              },
-              {
-                "word": "stock",
-              },
-              {
-                "word": "broth",
-              },
-              {
-                "word": "gravy",
-              },
-              {
-                "word": "glace",
-              },
-              {
-                "word": "jus",
-              },
-              {
-                "word": "bouillon",
-              },
-              {
-                "word": "oxo",
-              },
-              {
-                "word": "lamb cube",
-              },
-              {
-                "word": "soup base",
-              },
-              {
-                "word": "bone broth",
-              },
-              {
-                "word": "lamb base",
-              },
-              {
-                "word": "consomme",
-              },
-              {
-                "word": "consommé",
-              },
-              {
-                "word": "consommé",
-              },
-              {
-                "word": "consume",
-              },
-              {
-                "word": "demi-glace",
-              },
-              {
-                "word": "demi glace",
-              },
-              {
-                "word": "sausage",
-              },
-              {
-                "word": "minced",
-              },
-              {
-                "word": "mince",
-              },
-              {
-                "word": "ground",
-              },
               {
                 "word": "lamb seasoning",
               },
@@ -1630,40 +1564,16 @@
                 "word": "lamb rub",
               },
               {
+                "word": "lamb cube",
+              },
+              {
+                "word": "lamb base",
+              },
+              {
                 "word": "lamb soup",
               },
               {
-                "word": "liver",
-              },
-              {
-                "word": "heart",
-              },
-              {
-                "word": "kidney",
-              },
-              {
-                "word": "sweetbread",
-              },
-              {
-                "word": "tripe",
-              },
-              {
-                "word": "intestine",
-              },
-              {
-                "word": "tongue",
-              },
-              {
-                "word": "lung",
-              },
-              {
-                "word": "cheek",
-              },
-              {
-                "word": "brain",
-              },
-              {
-                "word": "dripping",
+                "word": "lettuce",
               }
             ],
             "include": [

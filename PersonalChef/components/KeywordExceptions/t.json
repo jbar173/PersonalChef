@@ -6,14 +6,14 @@
               "taco shells","tortillas",
               "tempura prawns","tilapia","trout","tuna",
               "turkey","turkey mince",
-              "tangerine","tomato","turnip",
+              "tangerine","taro root","tomato","turnip",
               "taco seasoning","tandoori spice","thai basil","turmeric",
               "tapioca pudding","tinned tomatoes",
 
               "tabasco","tagine paste","tamarind concentrate","tandoori paste","tapenade","teriyaki sauce","thousand island dressing","tikka masala paste","tomato cooking sauce",
               "tomato ketchup","tomato paste","tomato stock","tom yum paste","tonkatsu sauce","truffle mayonnaise","truffle oil","tuna pasta sauce","turkey stock",
 
-              "tomato juice",
+              "tomato juice","tonic",
               "taramasalata","tofu","tortelloni","tzatziki",
 
 
@@ -25,8 +25,6 @@
 
 
               "~~~ TO DO : ~~~",
-              "TARO ROOT",
-              "tonic",
 
 
     ],
@@ -36,11 +34,59 @@
 
 
           {
+              "name": "taro root",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "plantain",
+                  "substitution": true,
+                },
+                {
+                  "word": "cassava root",
+                  "substitution": true,
+                },
+                {
+                  "word": "potato",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "tonic",
+              "type": "soda",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sparkling water",
+                  "substitution": false,
+                },
+                {
+                  "word": "seltzer",
+                  "substitution": false,
+                },
+                {
+                  "word": "soda water",
+                  "substitution": false,
+                },
+                {
+                  "word": "soda",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
               "name": "tilefish",
               "type": "",
               "exclude": [
               ],
               "include": [
+                {
+                  "word": "wolf fish",
+                  "substitution": true,
+                },
                 {
                   "word": "amberjack",
                   "substitution": true,
@@ -1723,6 +1769,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "wolf fish",
+                  "substitution": true,
+                },
+                {
                   "word": "brill",
                   "substitution": true,
                 }
@@ -2160,97 +2210,25 @@
           },
           {
               "name": "turkey",
-              "type": "",
+              "type": "meat",
               "exclude": [
                 {
-                  "word": "minced",
-                },
-                {
-                  "word": "mince",
-                },
-                {
-                  "word": "ground",
-                },
-                {
-                  "word": "sausage",
-                },
-                {
-                  "word": "stock",
-                },
-                {
-                  "word": "broth",
-                },
-                {
-                  "word": "gravy",
-                },
-                {
-                  "word": "glace",
-                },
-                {
-                  "word": "jus",
-                },
-                {
-                  "word": "bouillon",
-                },
-                {
-                  "word": "oxo",
-                },
-                {
-                  "word": "turkey cube",
-                },
-                {
-                  "word": "soup base",
-                },
-                {
-                  "word": "bone broth",
-                },
-                {
-                  "word": "turkey base",
-                },
-                {
-                  "word": "consomme",
-                },
-                {
-                  "word": "consume",
-                },
-                {
-                  "word": "demi-glace",
-                },
-                {
-                  "word": "demi glace",
-                },
-                {
-                  "word": "liver",
-                },
-                {
-                  "word": "heart",
-                },
-                {
-                  "word": "lung",
-                },
-                {
-                  "word": "cheek",
-                },
-                {
-                  "word": "brain",
-                },
-                {
-                  "word": "kidney",
-                },
-                {
-                  "word": "tongue",
-                },
-                {
-                  "word": "turkey dripping",
-                },
-                {
                   "word": "turkey mix",
+                },
+                {
+                  "word": "turkey casserole mix",
                 },
                 {
                   "word": "turkey seasoning",
                 },
                 {
                   "word": "turkey rub",
+                },
+                {
+                  "word": "turkey cube",
+                },
+                {
+                  "word": "turkey base",
                 },
                 {
                   "word": "turkey soup",

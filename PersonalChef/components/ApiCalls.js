@@ -664,7 +664,7 @@ class ApiCalls extends React.Component {
     for([key,value] of Object.entries(substitutes_dict)){
       subs[`${key}`] = value
       console.log("Key: " + key)
-      console.log("value: " + value)
+      console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~value: " + value)
     }
     // console.log("subs length now: " + subs.length)
     if(relevant_recipes.length === 0){
@@ -835,7 +835,7 @@ class ApiCalls extends React.Component {
                                                                                               {entry[1].map(function(substitute,it) {
                                                                                                   return(
                                                                                                      <View key={it}>
-                                                                                                         <Text style={{textAlign:"center",marginBottom:5}}>Substitute made? {substitute[3]}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                                                         <Text style={{textAlign:"center",marginBottom:5}}>Substitution made? {substitute[3].toString()}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
                                                                                                      </View>
                                                                                                    )
                                                                                                 })
@@ -918,7 +918,7 @@ class ApiCalls extends React.Component {
                                                                                               {entry[1].map(function(substitute,it) {
                                                                                                   return(
                                                                                                      <View key={it}>
-                                                                                                         <Text style={{textAlign:"center",marginBottom:5}}>Substitute made? {substitute[3]}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                                                         <Text style={{textAlign:"center",marginBottom:5}}>Substitution made? {substitute[3].toString()}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
                                                                                                      </View>
                                                                                                    )
                                                                                                 })
@@ -1017,7 +1017,7 @@ class ApiCalls extends React.Component {
                                                                                                  {entry[1].map(function(substitute,it) {
                                                                                                      return(
                                                                                                         <View key={it}>
-                                                                                                            <Text style={{textAlign:"center",marginBottom:5}}>Substitute made? {substitute[3]}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                                                            <Text style={{textAlign:"center",marginBottom:5}}>Substitution made? {substitute[3].toString()}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
                                                                                                         </View>
                                                                                                       )
                                                                                                    })
