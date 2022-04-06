@@ -7,7 +7,10 @@
               "whelks","whitebait","winkles","wolf fish",
               "watercress","water chestnut","watermelon",
               "water chestnuts",
-              "walnut oil","wasabi paste","wasabi powder","watercress sauce","white sauce","white wine stock","wholegrain mustard","worcestershire sauce",
+
+              "walnut oil","wasabi paste","wasabi powder","watercress sauce","white sauce","white vinegar","white wine stock","white wine vinegar",
+              "wholegrain mustard","worcestershire sauce",
+
               "white chocolate milkshake",
               "wedges",
 
@@ -30,6 +33,55 @@
     "ingredients": [
 
 
+
+          {
+              "name": "white wine vinegar",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "chardonnay vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "white wine vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "chardonnay vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "chardonnay vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinegar",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "white vinegar",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "spirit vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinegar",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "whelks",
               "type": "",
@@ -119,7 +171,7 @@
                 {
                   "word": "mussels",
                   "substitution": true,
-                }
+                },
                 {
                   "word": "snails",
                   "substitution": true,
@@ -846,14 +898,8 @@
           },
           {
               "name": "walnut oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {

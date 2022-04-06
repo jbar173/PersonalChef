@@ -19,7 +19,7 @@
               "artichoke","asparagus","aubergine",
               "all purpose seasoning",
               "adzuki beans","apples","apricots","artichoke antipasti",
-              "aioli","apricot harissa paste","aubergine paste",
+              "aioli","apple cider vinegar","apricot harissa paste","aubergine paste",
               "almond syrup","apple syrup","apricot syrup",
 
 
@@ -31,6 +31,31 @@
 
     "ingredients": [
 
+
+          {
+              "name": "apple cider vinegar",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cider vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "cider vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "cider vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinegar",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "anise",
               "type": "herb",
@@ -422,14 +447,8 @@
           },
           {
               "name": "almond oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {
@@ -544,14 +563,8 @@
           },
           {
               "name": "avocado oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {

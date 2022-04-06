@@ -16,8 +16,8 @@
              "baharat seasoning","bay leaf","beetroot powder","biryani spice blend","black cardamom","borage flowers","borage leaves","burnet",
              "baked beans","black beans","black-eyed peas","black cherries","borlotti beans","butter beans",
 
-             "baconnaise","balsamic vinegar","balti paste","barbeque sauce","bearnaise","beef stock","beetroot pesto","bhuna paste","biryani paste","blue cheese dressing",
-             "bread sauce","brown sauce","burger sauce","butter chicken cooking sauce",
+             "baconnaise","balsamic vinegar","balti paste","barbeque sauce","bearnaise","beef stock","beer vinegar","beetroot pesto","bhuna paste","biryani paste","black vinegar",
+             "blue cheese dressing","bread sauce","brown sauce","burger sauce","butter chicken cooking sauce",
 
              "belgian waffles","butter","buttermilk",
              "banana milkshake","beetroot juice","berry tea","black tea","blackcurrant syrup",
@@ -48,6 +48,47 @@
     "ingredients": [
 
 
+      {
+          "name": "beer vinegar",
+          "type": "",
+          "exclude": [
+
+          ],
+          "include": [
+            {
+              "word": "beer vinaigrette",
+              "substitution": false,
+            },
+            {
+              "word": "beer vinigrette",
+              "substitution": false,
+            },
+            {
+              "word": "vinegar",
+              "substitution": true,
+            }
+          ],
+      },
+      {
+          "name": "black vinegar",
+          "type": "",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "black vinaigrette",
+              "substitution": false,
+            },
+            {
+              "word": "black vinigrette",
+              "substitution": false,
+            },
+            {
+              "word": "vinegar",
+              "substitution": true,
+            }
+          ],
+      },
       {
           "name": "blackcurrants",
           "type": "fruit",
@@ -706,14 +747,8 @@
       },
       {
           "name": "borage seed oil",
-          "type": "",
+          "type": "oil",
           "exclude": [
-            {
-              "word": "butter",
-            },
-            {
-              "word": "margarine",
-            }
           ],
           "include": [
             {
@@ -1605,15 +1640,11 @@
           ],
           "include": [
             {
+              "word": "balsamic",
+              "substitution": false,
+            },
+            {
               "word": "vinegar",
-              "substitution": true,
-            },
-            {
-              "word": "vinaigrette",
-              "substitution": true,
-            },
-            {
-              "word": "vinigrette",
               "substitution": true,
             },
             {
@@ -3418,6 +3449,9 @@
               "word": "egg roll wrap",
             },
             {
+              "word": "spring roll wrap",
+            },
+            {
               "word": "gyoza wrap",
             },
             {
@@ -3646,13 +3680,20 @@
             "word": "roll in",
           },
           {
+            "word": "panko",
+          },
+          {
             "word": "corn",
           }
         ],
         "include": [
           {
-            "word": "bread",
-            "substitution": false,
+            "word": "breadcrumbs",
+            "substitution": true,
+          },
+          {
+            "word": "bread crumbs",
+            "substitution": true,
           },
           {
             "word": "challah",
@@ -3737,6 +3778,10 @@
           {
             "word": "bagel",
             "substitution": true,
+          },
+          {
+            "word": "bread",
+            "substitution": false,
           }
         ],
       },
@@ -4910,6 +4955,9 @@
               },
               {
                 "word": "granulated",
+              },
+              {
+                "word": "flake",
               },
               {
                 "word": "tortilla",

@@ -144,7 +144,7 @@ const RefineResults = props => {
                                        var include_words = [ user_ingredients[y], ]
                                        var original_ingredient = include_words[0]
                                        var substitution_by_index = ['original',]
-                                       // var is_key = false
+
                                        var p
                                        var q
                                        var s
@@ -154,50 +154,45 @@ const RefineResults = props => {
                                        var first_letter = user_ingredients[y][0]
                                        var exceptions = keys[`${first_letter}`]
 
-                                       for(p in exceptions){    // Finds first set of 'include' words
-                                           var name = exceptions[p]['name']
-                                           if(name === user_ingredients[y]){
-                                               // is_key = true
-                                               var include = exceptions[p]['include']
-                                               for(q in include){
-                                                   var word = include[q]['word']
-                                                   var sub = include[q]['substitution']
-                                                   include_words.push(word)
-                                                   substitution_by_index.push(sub)
+                                       loopOne:
+                                         for(p in exceptions){    // Finds first set of 'include' words
+                                             var name = exceptions[p]['name']
+                                             if(name === user_ingredients[y]){
+                                                 var include = exceptions[p]['include']
+                                                 for(q in include){
+                                                     var word = include[q]['word']
+                                                     var sub = include[q]['substitution']
+                                                     include_words.push(word)
+                                                     substitution_by_index.push(sub)
 
-///////////////////////////////////////////     T   E   S  T    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-                                                   // console.log("####~~~#####~~~### START OF TEST ###~~~#####~~~~####")
-                                                   // console.log("Original ingredient is: " + name)
-                                                   // console.log("Testing word: " + word)
-                                                   // console.log("Is substitution?: " + sub)
-                                                   var f_letter_word = word[0]      // Finds second set of 'include' words: (searches for word that was pushed above),
-                                                   var word_exceptions = keys[`${f_letter_word}`] // if found, adds each of its own 'include' words to include_words,
-                                                   for(s in word_exceptions){                       //  directly underneath original word.
-                                                     var name_two = word_exceptions[s]['name']
-                                                     if(name_two === word){
-                                                       // console.log("Found:" + name_two + " in kw-exceptions")
-                                                       var include_two = word_exceptions[s]['include']
-                                                       for(t in include_two){
-                                                         var word_two = include_two[t]['word']
-                                                         if(sub){
-                                                           var sub_two = true
-                                                         }else{
-                                                           var sub_two = include_two[t]['substitution']
+                                                     var f_letter_word = word[0]      // Finds second set of 'include' words: (searches for word that was pushed above),
+                                                     var word_exceptions = keys[`${f_letter_word}`] // if found, adds each of its own 'include' words to include_words,
+                                                     loopTwo:                      //  directly underneath original word.
+                                                       for(s in word_exceptions){
+                                                         var name_two = word_exceptions[s]['name']
+                                                         if(name_two === word){
+                                                           // console.log("Found:" + name_two + " in kw-exceptions")
+                                                           var include_two = word_exceptions[s]['include']
+                                                           for(t in include_two){
+                                                             var word_two = include_two[t]['word']
+                                                             if(sub){
+                                                               var sub_two = true
+                                                             }else{
+                                                               var sub_two = include_two[t]['substitution']
+                                                             }
+                                                             // console.log("New include_word: " + word_two)
+                                                             // console.log("Substitution?: " + sub_two)
+                                                             include_words.push(word_two)
+                                                             substitution_by_index.push(sub_two)
+                                                           }
+                                                           break loopTwo;
                                                          }
-                                                         // console.log("New include_word: " + word_two)
-                                                         // console.log("Substitution?: " + sub_two)
-                                                         include_words.push(word_two)
-                                                         substitution_by_index.push(sub_two)
                                                        }
-                                                       break;
-                                                     }
-                                                   }
-                                               }
-                                               break;
-                                           }
-                                       }
- //////////////////////////////////////////////     end of code to be tested    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                 }
+                                                 break loopOne;
+                                             }
+                                         }
 
                                        var extra_check = false
                                        if(extra_check === false){
@@ -415,6 +410,7 @@ const RefineResults = props => {
 
                                             var include_words = [ user_ingredients[ing], ]
                                             var original_ingredient = include_words[0]
+                                            var substitution_by_index = ['original',]
                                             // var is_key = false
                                             var p
                                             var q
@@ -423,17 +419,49 @@ const RefineResults = props => {
                                             var first_letter = user_ingredients[ing][0]
                                             var exceptions = keys[`${first_letter}`]
 
-                                            for(p in exceptions){
-                                                var name = exceptions[p]['name']
-                                                if(name === user_ingredients[ing]){
-                                                    // is_key = true
-                                                    var include = exceptions[p]['include']
-                                                    for(q in include){
-                                                        var word = include[q]['word']
-                                                        include_words.push(word)
-                                                    }
-                                                }
-                                            }                       //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ///////////////////////////////////
+                                            loopThree:
+                                              for(p in exceptions){
+                                                  var name = exceptions[p]['name']
+                                                  if(name === user_ingredients[ing]){
+                                                      // is_key = true
+                                                      var include = exceptions[p]['include']
+                                                      for(q in include){
+                                                          var word = include[q]['word']
+                                                          var sub = include[q]['substitution']
+                                                          include_words.push(word)
+                                                          substitution_by_index.push(sub)
+
+                                                          // console.log("####~~~#####~~~### START OF TEST ###~~~#####~~~~####")
+                                                          // console.log("Original ingredient is: " + name)
+                                                          // console.log("Testing word: " + word)
+                                                          // console.log("Is substitution?: " + sub)
+                                                          var f_letter_word = word[0]      // Finds second set of 'include' words: (searches for word that was pushed above),
+                                                          var word_exceptions = keys[`${f_letter_word}`] // if found, adds each of its own 'include' words to include_words,
+                                                          loopFour:                     //  directly underneath original word.
+                                                            for(s in word_exceptions){
+                                                              var name_two = word_exceptions[s]['name']
+                                                              if(name_two === word){
+                                                                // console.log("Found:" + name_two + " in kw-exceptions")
+                                                                var include_two = word_exceptions[s]['include']
+                                                                for(t in include_two){
+                                                                  var word_two = include_two[t]['word']
+                                                                  if(sub){
+                                                                    var sub_two = true
+                                                                  }else{
+                                                                    var sub_two = include_two[t]['substitution']
+                                                                  }
+                                                                  // console.log("New include_word: " + word_two)
+                                                                  // console.log("Substitution?: " + sub_two)
+                                                                  include_words.push(word_two)
+                                                                  substitution_by_index.push(sub_two)
+                                                                }
+                                                                break loopFour;
+                                                              }
+                                                            }
+                                                      }
+                                                    break loopThree;
+                                                  }
+                                              }                       //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ///////////////////////////////////
 
                                             var find = FindIngredient(include_words,ingredient_lower)
                                             var result = find[0]
@@ -608,8 +636,9 @@ const RefineResults = props => {
                                     var false_count = 0
 
                                     var include_words = [ user_ingredients[ing], ]
-                                    var original_ingredient = include_words[0]   ////////////////////////     NEW
-                                    // var is_key = false
+                                    var original_ingredient = include_words[0]
+                                    var substitution_by_index = ['original',]
+
                                     var p
                                     var q
 
@@ -617,17 +646,44 @@ const RefineResults = props => {
                                     var first_letter = user_ingredients[ing][0]
                                     var exceptions = keys[`${first_letter}`]
 
-                                    for(p in exceptions){
-                                        var name = exceptions[p]['name']
-                                        if(name === user_ingredients[ing]){
-                                            // is_key = true
-                                            var include = exceptions[p]['include']
-                                            for(q in include){
-                                                var word = include[q]['word']
-                                                include_words.push(word)
-                                            }
-                                        }
-                                    }                           //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ////////////////////////////////////////
+                                    loopFive:
+                                      for(p in exceptions){
+                                          var name = exceptions[p]['name']
+                                          if(name === user_ingredients[ing]){
+                                              var include = exceptions[p]['include']
+                                              for(q in include){
+                                                  var word = include[q]['word']
+                                                  var sub = include[q]['substitution']
+                                                  include_words.push(word)
+                                                  substitution_by_index.push(sub)
+
+                                                  var f_letter_word = word[0]      // Finds second set of 'include' words: (searches for word that was pushed above),
+                                                  var word_exceptions = keys[`${f_letter_word}`] // if found, adds each of its own 'include' words to include_words,
+                                                  loopSix:                       //  directly underneath original word.
+                                                    for(s in word_exceptions){
+                                                      var name_two = word_exceptions[s]['name']
+                                                      if(name_two === word){
+                                                        // console.log("Found:" + name_two + " in kw-exceptions")
+                                                        var include_two = word_exceptions[s]['include']
+                                                        for(t in include_two){
+                                                          var word_two = include_two[t]['word']
+                                                          if(sub){
+                                                            var sub_two = true
+                                                          }else{
+                                                            var sub_two = include_two[t]['substitution']
+                                                          }
+                                                          // console.log("New include_word: " + word_two)
+                                                          // console.log("Substitution?: " + sub_two)
+                                                          include_words.push(word_two)
+                                                          substitution_by_index.push(sub_two)
+                                                        }
+                                                        break loopSix;
+                                                      }
+                                                    }
+                                              }
+                                              break loopFive;
+                                          }
+                                      }                           //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ////////////////////////////////////////
 
                                     for(x in checked_ingredients){
 

@@ -12,8 +12,8 @@
               "ras el hanout","rogan josh spice",
               "ratatouille","rice pudding","roasted red peppers",
 
-              "ramen broth","rapeseed oil","redcurrant jelly","red curry paste","red pesto","red wine stock","rendang curry paste","rice bran oil",
-              "rogan josh paste",
+              "raisin vinegar","ramen broth","rapeseed oil","redcurrant jelly","red curry paste","red pesto","red rice vinegar","red wine stock","red wine vinegar",
+              "rendang curry paste","rice bran oil","rice vinegar","rogan josh paste",
 
               "raspberry syrup","raspberry tea","red vegetable juice","ribena",
               "raita","ravioli","rice milk",
@@ -28,12 +28,164 @@
 
               "~~~ TO DO : ~~~",
 
+
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "raisin vinegar",
+              "type": "",
+              "exclude": [
+
+              ],
+              "include": [
+                {
+                  "word": "raisin vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "raisin vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinegar",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "red rice vinegar",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "red vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "red vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "red vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "red rice vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "red rice vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinegar",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "rice vinegar",
+              "type": "",
+              "exclude": [
+
+              ],
+              "include": [
+                {
+                  "word": "rice vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "rice vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinegar",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "red wine vinegar",
+              "type": "",
+              "exclude": [
+                {
+                  "word": "in red wine vinegar",
+                },
+                {
+                  "word": "pickle",
+                },
+                {
+                  "word": "pickled",
+                }
+              ],
+              "include": [
+                {
+                  "word": "redwine vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "redwine vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "redwine vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "red wine vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "red wine vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "red lacryma christi del vesuvio wine vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "cabernet sauvignon vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "cabernet sauvignon vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "cabernet sauvignon vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "cabernet sauvignon wine vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "cabernet sauvignon wine vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "cabernet sauvignon wine vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "red wine raspberry vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "red wine liqueur vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinegar",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "radicchio",
               "type": "",
@@ -1650,14 +1802,8 @@
           },
           {
               "name": "rice bran oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {
@@ -1772,14 +1918,8 @@
           },
           {
               "name": "rapeseed oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {

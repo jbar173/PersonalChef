@@ -375,16 +375,10 @@
           },
           {
               "name": "extra virgin olive oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
                 {
                   "word": "in extra virgin olive oil",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
                 }
               ],
               "include": [

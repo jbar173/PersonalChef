@@ -793,37 +793,18 @@
           },
           {
               "name": "olive oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
                 {
                   "word": "in olive oil",
                 },
                 {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
+                  "word": "in oil",
                 }
               ],
               "include": [
                 {
                   "word": "cooking spray",
-                  "substitution": true,
-                },
-                {
-                  "word": "vegetable-oil spray",
-                  "substitution": true,
-                },
-                {
-                  "word": "olive oil flavored spray",
-                  "substitution": true,
-                },
-                {
-                  "word": "oil spray",
-                  "substitution": true,
-                },
-                {
-                  "word": "flourless spray",
                   "substitution": true,
                 },
                 {
@@ -932,6 +913,10 @@
                 },
                 {
                   "word": "groundnut oil",
+                  "substitution": true,
+                },
+                {
+                  "word": "oil",
                   "substitution": true,
                 }
               ],

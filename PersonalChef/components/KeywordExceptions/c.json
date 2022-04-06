@@ -26,7 +26,7 @@
 
               "canola oil","cantonese sauce","caperberries","capers","carbonara sauce","cashew butter","cheese sauce","chermoula","chestnut puree",
               "chicken paste","chicken stock","chilli mayonnaise","chilli paste","chilli sauce","chilli soy sauce","chow mein sauce","chutney",
-              "coconut oil","corn oil","cranberry sauce","chinese-style chip shop curry sauce",
+              "coconut oil","cooking spray","corn oil","cranberry sauce","chinese-style chip shop curry sauce",
 
               "cheese puffs","coconut milk","cream","creme fraiche","crispy seaweed",
               "caramel milkshake","cherry cola","cherry lemonade","chocolate milkshake","coconut water","cocoa","coffee","cream soda",
@@ -38,7 +38,7 @@
               "catfish","char","cobia","coley","cuttlefish",
               "corned beef",
               "cassava root",
-              "caesar dressing","char siu sauce","chilli chutney relish","chilli infused oil","chimichurri","coriander puree",
+              "caesar dressing","champagne vinegar","char siu sauce","chilli chutney relish","chilli infused oil","chimichurri","coriander puree",
               "chamomile tea","carob syrup","carrot juice","chai tea","cherry tea","coca cola","cookie dough milkshake","cranberry tea",
               "chia seed butter","coconut butter",
 
@@ -52,6 +52,88 @@
     "ingredients": [
 
 
+
+        {
+            "name": "champagne vinegar",
+            "type": "",
+            "exclude": [
+
+            ],
+            "include": [
+              {
+                "word": "vinegar champagne",
+                "substitution": false,
+              },
+              {
+                "word": "champagne vinaigrette",
+                "substitution": false,
+              },
+              {
+                "word": "champagne vinigrette",
+                "substitution": false,
+              },
+              {
+                "word": "champagne ardenne vinegar",
+                "substitution": false,
+              },
+              {
+                "word": "champagne ardenne vinaigrette",
+                "substitution": false,
+              },
+              {
+                "word": "champagne ardenne vinigrette",
+                "substitution": false,
+              },
+              {
+                "word": "champagne balsam vinegar",
+                "substitution": false,
+              },
+              {
+                "word": "champagne balsam vinaigrette",
+                "substitution": false,
+              },
+              {
+                "word": "champagne balsam vinigrette",
+                "substitution": false,
+              },
+              {
+                "word": "vinegar",
+                "substitution": true,
+              }
+            ],
+        },
+        {
+            "name": "cooking spray",
+            "type": "oil",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "vegetable-oil spray",
+                "substitution": true,
+              },
+              {
+                "word": "olive-oil spray",
+                "substitution": true,
+              },
+              {
+                "word": "oil flavored spray",
+                "substitution": true,
+              },
+              {
+                "word": "oil flavoured spray",
+                "substitution": true,
+              },
+              {
+                "word": "olive oil",
+                "substitution": true,
+              },
+              {
+                "word": "flourless spray",
+                "substitution": true,
+              }
+            ],
+        },
         {
             "name": "cantaloupe",
             "type": "fruit",
@@ -5592,14 +5674,8 @@
         },
         {
             "name": "corn oil",
-            "type": "",
+            "type": "oil",
             "exclude": [
-              {
-                "word": "butter",
-              },
-              {
-                "word": "margarine",
-              }
             ],
             "include": [
               {
@@ -5702,14 +5778,8 @@
         },
         {
             "name": "canola oil",
-            "type": "",
+            "type": "oil",
             "exclude": [
-              {
-                "word": "butter",
-              },
-              {
-                "word": "margarine",
-              }
             ],
             "include": [
               {
@@ -5732,14 +5802,8 @@
         },
         {
             "name": "coconut oil",
-            "type": "",
+            "type": "oil",
             "exclude": [
-              {
-                "word": "butter",
-              },
-              {
-                "word": "margarine",
-              }
             ],
             "include": [
               {
@@ -6410,14 +6474,8 @@
         },
         {
             "name": "chilli infused oil",
-            "type": "",
+            "type": "oil",
             "exclude": [
-              {
-                "word": "butter",
-              },
-              {
-                "word": "margarine",
-              }
             ],
             "include": [
               {
@@ -7461,6 +7519,10 @@
               "substitution": true,
             },
             {
+              "word": "chilli flakes",
+              "substitution": true,
+            },
+            {
               "word": "chilli paste",
               "substitution": true,
             },
@@ -8266,8 +8328,16 @@
               "substitution": false,
             },
             {
-              "word": "crushed red pepper",
+              "word": "red pepper flakes",
               "substitution": false,
+            },
+            {
+              "word": "aleppo pepper flakes",
+              "substitution": false,
+            },
+            {
+              "word": "chilli powder",
+              "substitution": true,
             },
             {
               "word": "cayenne",
@@ -8427,7 +8497,7 @@
                 "substitution": false,
               },
               {
-                "word": "crème fraiche",
+                "word": "crème fraîche",
                 "substitution": false,
               },
               {

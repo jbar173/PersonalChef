@@ -1685,6 +1685,10 @@
                   "substitution": true,
                 },
                 {
+                  "word": "margarine",
+                  "substitution": true,
+                },
+                {
                   "word": "hemp oil",
                   "substitution": true,
                 },
@@ -1796,14 +1800,8 @@
           },
           {
               "name": "groundnut oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {
@@ -1918,14 +1916,8 @@
           },
           {
               "name": "grapeseed oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {
@@ -2098,12 +2090,6 @@
               "name": "garlic oil",
               "type": "",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {

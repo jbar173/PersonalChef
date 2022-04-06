@@ -2044,7 +2044,7 @@
               "include": [
                 {
                   "word": "bean curd",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "paneer",

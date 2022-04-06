@@ -17,7 +17,7 @@
 
               "mandarins","mango pulp","mixed beans","mushroom antipasti","mushy peas",
 
-              "macadamia nut oil","madras curry paste","makhani paste","mango and lime sauce","mango pickle","massaman curry paste","mayonnaise",
+              "macadamia nut oil","madras curry paste","makhani paste","malt vinegar","mango and lime sauce","mango pickle","massaman curry paste","mayonnaise",
               "medium curry paste", "mild curry paste", "mild mustard","mint marinade","mint sauce","mirin","miso","miso tahini","ai paste","mushroom ketchup",
               "mushroom soup","mushroom stock","mustard",
 
@@ -45,6 +45,30 @@
     "ingredients": [
 
 
+          {
+              "name": "malt vinegar",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "malt vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "malt vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinegar",
+                  "substitution": true,
+                },
+                {
+                  "word": "worcestershire sauce",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "marrow",
               "type": "",
@@ -1765,7 +1789,7 @@
               "include": [
                 {
                   "word": "italian seasoning",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "herbes de provence",
@@ -2806,14 +2830,8 @@
           },
           {
               "name": "macadamia nut oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {

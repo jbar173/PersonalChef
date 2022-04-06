@@ -561,14 +561,8 @@
         },
         {
             "name": "hemp seed oil",
-            "type": "",
+            "type": "oil",
             "exclude": [
-              {
-                "word": "butter",
-              },
-              {
-                "word": "margarine",
-              }
             ],
             "include": [
               {
@@ -821,14 +815,8 @@
         },
         {
             "name": "hazelnut oil",
-            "type": "",
+            "type": "oil",
             "exclude": [
-              {
-                "word": "butter",
-              },
-              {
-                "word": "margarine",
-              }
             ],
             "include": [
               {
@@ -1192,8 +1180,24 @@
             ],
             "include": [
               {
+                "word": "provencal herb",
+                "substitution": false,
+              },
+              {
+                "word": "provencal-style herb",
+                "substitution": false,
+              },
+              {
+                "word": "provence herbs",
+                "substitution": false,
+              },
+              {
                 "word": "herbs de provence",
                 "substitution": false,
+              },
+              {
+                "word": "mixed herbs",
+                "substitution": true,
               }
             ],
         },

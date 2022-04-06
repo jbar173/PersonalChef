@@ -39,6 +39,12 @@ const random_exclusions = exclusions.phrases
 const ingredient_exclusions = exclusions.items
 const fruit = exclusions.fruit
 const herb = exclusions.herb
+const soda = exclusions.soda
+const meat = exclusions.meat
+const oil = exclusions.oil
+
+const types = [ "fruit", "herb", "soda", "meat", "oil", ]
+const exc_list = [ fruit, herb, soda, meat, oil  ]
 
 
 // Checks that recipe items are ingredients rather than equipment/utensils:
@@ -260,24 +266,33 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
 
                 var exclude = exceptions[m]['exclude']
                 var words = []
-                var types = [ "fruit", "herb", ]
-                var exc_list = [ fruit, herb, ]
                 var type
                 for(type in types){
                   if(exceptions[m]["type"] === types[type]){
-                    words = exc_list[type]
+                    var excl = exc_list[type]
+                    var ex
+                    for(ex in excl){
+                      words.push(excl[ex])
+                    }
+                    // words = exc_list[type]
                     console.log("********** IS " + types[type] + " ***************")
+                    console.log(types[type] + " length: " + types[type].length)
+                    console.log(exceptions[m]["type"] + " length: " + exc_list[type].length)
+                    for(word in words){
+                      console.log("Added '" + types[type] + "' word: " + words[word])
+                    }
                   }
                 }
                 var no_error = true
 
-                try{
-                    for(n in exclude){
-                        words.push(exclude[n]['word'])
+                for(n in exclude){
+                    try{
+                      words.push(exclude[n]['word'])
+                      console.log("Added exclude word: " + exclude[n]['word'])
+                    }catch(error){
+                      console.log(exceptions[m]["name"] + ":(FindExceptions) regexFunctions error: " + error)
+                      no_error = false
                     }
-                }catch(error){
-                  console.log(exceptions[m]["name"] + ":(FindExceptions) regexFunctions error: " + error)
-                  no_error = false
                 }
 
                 var words_count = -1
@@ -316,13 +331,10 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
                               console.log("in " + ingredient_lower)
                               exception_found = true
                               return [ exception_found, ingredients_with_exceptions, random_exception_found, ];
-                              // next_ingredient = true
-                              // break;
                         }else if(exception_found === false && words_count === words.length-1){
                               next_ingredient = true
                               break;
                         }
-
                     }
                 }else{
                     next_ingredient = true

@@ -18,7 +18,7 @@
 
               "spaghetti hoops","spinach puree","sun-dried tomatoes","sweetcorn",
 
-              "saag curry paste","safflower oil","salad cream","salsa","satay sauce","sauerkraut","seafood sauce","sesame oil","stir fry sauce","soy sauce",
+              "saag curry paste","safflower oil","salad cream","salsa","satay sauce","sauerkraut","seafood sauce","sesame oil","sherry vinegar","soy sauce","stir fry sauce",
               "sunflower oil","sweet pickle relish",
 
               "sparkling water","strawberry tea",
@@ -47,6 +47,27 @@
 
 
           {
+              "name": "sherry vinegar",
+              "type": "",
+              "exclude": [
+
+              ],
+              "include": [
+                {
+                  "word": "sherry vinaigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "sherry vinigrette",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinegar",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
               "name": "skate",
               "type": "",
               "exclude": [
@@ -63,6 +84,10 @@
                 {
                   "word": "sea ray",
                   "substitution": false,
+                },
+                {
+                  "word": "guitarfish",
+                  "substitution": true,
                 },
                 {
                   "word": "manta",
@@ -4106,14 +4131,8 @@
           },
           {
               "name": "safflower oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {
@@ -4228,16 +4247,10 @@
           },
           {
               "name": "sunflower oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
                 {
                   "word": "in sunflower oil",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
                 }
               ],
               "include": [
@@ -4353,14 +4366,8 @@
           },
           {
               "name": "sesame oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {
@@ -5723,6 +5730,10 @@
               },
               {
                 "word": "soyamilk",
+                "substitution": false,
+              },
+              {
+                "word": "silk unsweetened soy",
                 "substitution": false,
               },
               {

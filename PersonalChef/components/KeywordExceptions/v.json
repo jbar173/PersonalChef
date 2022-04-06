@@ -821,16 +821,10 @@
           },
           {
               "name": "vegetable oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
                 {
                   "word": "in vegetable oil",
-                },
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
                 }
               ],
               "include": [
@@ -1028,19 +1022,19 @@
               "include": [
                 {
                   "word": "vinaigrette",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "viniagrette",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "vinigrette",
-                  "substitution": false,
+                  "substitution": true,
                 },
                 {
                   "word": "vinagrette",
-                  "substitution": false,
+                  "substitution": true,
                 }
               ],
           },

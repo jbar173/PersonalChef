@@ -13,7 +13,7 @@
               "pike","plaice","pollock","prawns",
               "pancetta","partridge","pheasant","pigeon","pork","pork mince","prosciutto","pulled pork","pork trotter","pate",
               "pak choi","parsnip","passion fruit","pea shoots","peach","pear","peas","persimmon","plantain","plum","pineapple","pomegranate","potato","pumpkin",
-              "plain paprika","pepper","piri piri seasoning","pork seasoning",
+              "paris seasoning","plain paprika","pepper","piri piri seasoning","pork seasoning",
               "passata","pease pudding","pickles","pickled eggs","pickled red cabbage","pinto beans","pumpkin puree",
 
               "palm oil","panang curry paste","parsley sauce","pasanda paste","pathia curry paste","peanut butter","peanut oil","peppercorn sauce","phall curry paste",
@@ -44,15 +44,29 @@
 
 
           {
-              "name": "pumpkin seed oil",
-              "type": "",
+              "name": "paris seasoning",
+              "type": "herb",
               "exclude": [
+              ],
+              "include": [
                 {
-                  "word": "butter",
+                  "word": "paris herbs",
+                  "substitution": false,
                 },
                 {
-                  "word": "margarine",
+                  "word": "herbes paris",
+                  "substitution": false,
+                },
+                {
+                  "word": "paris herbes",
+                  "substitution": false,
                 }
+              ],
+          },
+          {
+              "name": "pumpkin seed oil",
+              "type": "oil",
+              "exclude": [
               ],
               "include": [
                 {
@@ -2968,14 +2982,8 @@
           },
           {
               "name": "palm oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {
@@ -3090,14 +3098,8 @@
           },
           {
               "name": "peanut oil",
-              "type": "",
+              "type": "oil",
               "exclude": [
-                {
-                  "word": "butter",
-                },
-                {
-                  "word": "margarine",
-                }
               ],
               "include": [
                 {
