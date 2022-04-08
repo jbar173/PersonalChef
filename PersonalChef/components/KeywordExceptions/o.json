@@ -23,7 +23,7 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "oat flour",
 
     ],
 
@@ -31,6 +31,22 @@
     "ingredients": [
 
 
+          {
+              "name": "oat flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "ostrich",
               "type": "",

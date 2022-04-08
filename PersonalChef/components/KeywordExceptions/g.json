@@ -22,7 +22,6 @@
 
               "~~~ HALF DONE : ~~~",
               "gooseberry flavoured spirit/liqueur",
-              "gram flour",
               "goatfish","grey mullet","grouper","gurnard",
 
               "garlic and herb dressing", "garlic oil", "garlic mayonnaise", "garlic puree", "general tso sauce", "ginger puree", "ginger stir fry sauce",
@@ -31,7 +30,7 @@
               "ginger tea",
 
               "~~~ TO DO : ~~~",
-
+              "gluten-free flour", "graham flour", "gram flour",
 
     ],
 
@@ -39,6 +38,62 @@
     "ingredients": [
 
 
+          {
+              "name": "gram flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "besan",
+                  "substitution": true,
+                },
+                {
+                  "word": "chickpea flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "garbanzo flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "graham flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gluten free flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "gluten-free flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gluten free flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "gooseberries",
               "type": "fruit",
@@ -2158,18 +2213,6 @@
                 },
                 {
                   "word": "guinness marinade",
-                  "substitution": false,
-                }
-              ],
-          },
-          {
-              "name": "gram flour",
-              "type": "",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "chickpea flour",
                   "substitution": false,
                 }
               ],

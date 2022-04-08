@@ -25,7 +25,7 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "tapioca flour", "teff flour",
 
     ],
 
@@ -33,6 +33,46 @@
     "ingredients": [
 
 
+          {
+              "name": "teff flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "cornflour",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheddar",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "tapioca flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "tapioca starch",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet rice flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "potato starch",
+                  "substitution": true,
+                },
+                {
+                  "word": "cheddar",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "taro root",
               "type": "",

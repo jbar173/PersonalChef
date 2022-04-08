@@ -27,7 +27,7 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "rice flour", "rye flour",
 
     ],
 
@@ -35,6 +35,30 @@
     "ingredients": [
 
 
+          {
+              "name": "rye flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+              ],
+          },
+          {
+              "name": "rice flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "all purpose flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "raisin vinegar",
               "type": "",

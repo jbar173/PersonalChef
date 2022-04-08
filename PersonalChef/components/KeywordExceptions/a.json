@@ -6,7 +6,7 @@
               "aged asiago","appenzeller","applewood smoked cheese",
               "agave nectar","almond extract","apricot jam","apricot jelly",
               "amberjack","anchovies",
-              "almonds","almond meal","almond flour",
+              "almonds","almond meal",
               "acai berries","ackee","apple","apricot","avocado",
               "allspice","angelica leaves","angelica root","anise","asafoetida",
               "achiote","almond butter","almond oil","apple sauce","avocado oil",
@@ -15,7 +15,6 @@
 
 
               "~~~ HALF DONE : ~~~",
-              "atta flour",
               "artichoke","asparagus","aubergine",
               "all purpose seasoning",
               "adzuki beans","apples","apricots","artichoke antipasti",
@@ -24,7 +23,7 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "almond flour", "amaranth flour", "arrowroot powder",
 
             ],
 
@@ -32,6 +31,92 @@
     "ingredients": [
 
 
+
+          {
+              "name": "amaranth flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "amaranth seed flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "amaranth organic flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "seed flour",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "arrowroot powder",
+              "type": "",
+              "exclude": [
+                {
+                  "word": "sticks",
+                },
+                {
+                  "word": "pieces",
+                },
+                {
+                  "word": "soup",
+                }
+              ],
+              "include": [
+                {
+                  "word": "arrowroot",
+                  "substitution": false,
+                },
+                {
+                  "word": "potato starch",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "almond flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond meal",
+                  "substitution": true,
+                },
+                {
+                  "word": "ground almond",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond powder",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "macademia flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "pecan flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet rice flour",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "apple cider vinegar",
               "type": "",
@@ -1230,30 +1315,6 @@
               ],
           },
           {
-              "name": "atta flour",
-              "type": "",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "ata",
-                  "substitution": false,
-                },
-                {
-                  "word": "atta",
-                  "substitution": false,
-                },
-                {
-                  "word": "chapati flour",
-                  "substitution": false,
-                },
-                {
-                  "word": "chapatti flour",
-                  "substitution": false,
-                }
-              ],
-          },
-          {
               "name": "apricot jelly",
               "type": "",
               "exclude": [
@@ -1953,26 +2014,6 @@
                 {
                   "word": "apple wine",
                   "substitution": false,
-                }
-              ],
-          },
-          {
-              "name": "almond flour",
-              "type": "",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "almond meal",
-                  "substitution": true,
-                },
-                {
-                  "word": "ground almond",
-                  "substitution": true,
-                },
-                {
-                  "word": "almond powder",
-                  "substitution": true,
                 }
               ],
           },

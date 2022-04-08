@@ -19,6 +19,7 @@
 
 
              "~~~ TO DO : ~~~",
+             "hazelnut flour",
 
     ],
 
@@ -26,6 +27,30 @@
     "ingredients": [
 
 
+        {
+            "name": "hazelnut flour",
+            "type": "",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "almond flour",
+                "substitution": true,
+              },
+              {
+                "word": "cashew flour",
+                "substitution": true,
+              },
+              {
+                "word": "pecan flour",
+                "substitution": true,
+              },
+              {
+                "word": "macademia flour",
+                "substitution": true,
+              }
+            ],
+        },
         {
             "name": "hemp seed butter",
             "type": "",

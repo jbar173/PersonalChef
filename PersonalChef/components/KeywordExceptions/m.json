@@ -37,7 +37,7 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "macademia flour","millet flour",
 
     ],
 
@@ -45,6 +45,58 @@
     "ingredients": [
 
 
+          {
+              "name": "millet flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "bajra flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "bajri flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "bairi flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "raqi flour",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "macademia flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "macademia nut flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "hazelnut flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "pecan flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "malt vinegar",
               "type": "",

@@ -15,7 +15,7 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "vital wheat gluten",
 
     ],
 
@@ -23,6 +23,38 @@
     "ingredients": [
 
 
+          {
+              "name": "vital wheat gluten",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gluten flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "seitan",
+                  "substitution": false,
+                },
+                {
+                  "word": "milgogi",
+                  "substitution": false,
+                },
+                {
+                  "word": "wheat meat",
+                  "substitution": false,
+                },
+                {
+                  "word": "gluten wheat",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheddar",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "veal",
               "type": "meat",

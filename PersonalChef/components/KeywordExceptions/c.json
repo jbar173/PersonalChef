@@ -10,7 +10,7 @@
               "coloured dusting sugar","condensed milk","cookies","cookie dough","creme egg","crunchie bar","crunchy cream biscuits","curd cheese","custard",
               "custard powder",
 
-              "candlenuts","cashew nuts","cassava flour","chana dal","chestnuts","chia seeds","chocolate cereal","cornflakes","cornstarch",
+              "candlenuts","cashew nuts","chana dal","chestnuts","chia seeds","chocolate cereal","cornflakes","cornstarch",
               "cornmeal","couscous","crackers","crispy onions","croutons","crumpets",
 
               "caviar","clams","cod","cockles","crab","crab stick","crayfish",
@@ -44,7 +44,7 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "cake flour", "cashew flour", "cassava flour", "coconut flour", "corn flour",
 
             ],
 
@@ -52,7 +52,126 @@
     "ingredients": [
 
 
-
+        {
+            "name": "cashew flour",
+            "type": "",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cashew nut flour",
+                "substitution": false,
+              },
+              {
+                "word": "hazelnut flour",
+                "substitution": true,
+              },
+              {
+                "word": "macademia flour",
+                "substitution": true,
+              },
+              {
+                "word": "pecan flour",
+                "substitution": true,
+              },
+              {
+                "word": "almond flour",
+                "substitution": true,
+              }
+            ],
+        },
+        {
+            "name": "corn flour",
+            "type": "",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "cornflour",
+                "substitution": false,
+              },
+              {
+                "word": "cheddar",
+                "substitution": true,
+              }
+            ],
+        },
+        {
+            "name": "coconut flour",
+            "type": "",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sweet rice flour",
+                "substitution": true,
+              },
+              {
+                "word": "almond flour",
+                "substitution": true,
+              },
+              {
+                "word": "cheddar",
+                "substitution": true,
+              }
+            ],
+        },
+        {
+            "name": "cassava flour",
+            "type": "",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "gari flour",
+                "substitution": false,
+              },
+              {
+                "word": "garri",
+                "substitution": false,
+              },
+              {
+                "word": "arrowroot powder",
+                "substitution": true,
+              },
+              {
+                "word": "tapioca flour",
+                "substitution": true,
+              },
+              {
+                "word": "almond flour",
+                "substitution": true,
+              },
+              {
+                "word": "coconut flour",
+                "substitution": true,
+              },
+              {
+                "word": "chickpea flour",
+                "substitution": true,
+              }
+            ],
+        },
+        {
+            "name": "cake flour",
+            "type": "",
+            "exclude": [
+            ],
+            "include": [
+              {
+                "word": "sponge flour",
+                "substitution": false,
+              },
+              {
+                "word": "maida",
+                "substitution": true,
+              },
+              {
+                "word": "maitha",
+                "substitution": true,
+              }
+            ],
+        },
         {
             "name": "champagne vinegar",
             "type": "",
@@ -7095,42 +7214,6 @@
             ],
         },
         {
-            "name": "cassava flour",
-            "type": "",
-            "exclude": [
-            ],
-            "include": [
-              {
-                "word": "gari flour",
-                "substitution": false,
-              },
-              {
-                "word": "garri",
-                "substitution": false,
-              },
-              {
-                "word": "arrowroot",
-                "substitution": true,
-              },
-              {
-                "word": "tapioca flour",
-                "substitution": true,
-              },
-              {
-                "word": "almond flour",
-                "substitution": true,
-              },
-              {
-                "word": "coconut flour",
-                "substitution": true,
-              },
-              {
-                "word": "chickpea flour",
-                "substitution": true,
-              }
-            ],
-        },
-        {
             "name": "cocoa powder",
             "type": "",
             "exclude": [
@@ -7804,6 +7887,12 @@
             "name": "cornmeal",
             "type": "",
             "exclude": [
+              {
+                "word": "cornstarch",
+              },
+              {
+                "word": "corn starch",
+              }
             ],
             "include": [
               {
@@ -7847,7 +7936,15 @@
                 "substitution": true,
               },
               {
-                "word": "arrowroot",
+                "word": "potato starch",
+                "substitution": true,
+              },
+              {
+                "word": "sweet rice flour",
+                "substitution": true,
+              },
+              {
+                "word": "arrowroot powder",
                 "substitution": true,
               }
             ],

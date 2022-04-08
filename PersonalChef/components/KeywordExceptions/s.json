@@ -6,7 +6,7 @@
               "strawberry jam","strawberry jelly","strawberry liquorice", "strawberry mousse", "strawberry sauce","strawberry shoelaces","sugar",
               "sugar syrup","sultanas","syrup sponge",
 
-              "scone mix","semolina","sesame seeds","shortcrust pastry","shredded wheat cereal","spring roll wrapper","sunflower seeds","sweet rice flour",
+              "scone mix","seed flour","sesame seeds","shortcrust pastry","shredded wheat cereal","spring roll wrapper","sunflower seeds",
               "salmon","scallops","sea bream","shrimp","skate","smoked trout","smoked salmon","snails","snapper","sole","sprat","squid","sturgeon","swai",
               "sausage","smoked sausage/sliced meat","squab",
 
@@ -38,7 +38,8 @@
 
               "~~~ TO DO : ~~~",
 
-              "self raising flour", "spelt flour",
+              "self raising flour", "semolina", "sesame seed flour", "sorghum flour", "soy flour", "spelt flour", "sprouted flour",
+              "sunflower seed flour", "sweet rice flour",
 
     ],
 
@@ -46,6 +47,355 @@
     "ingredients": [
 
 
+
+          {
+              "name": "seed flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "seeded flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "seeded bread flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "seeded white flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "seeded brown flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "seeded white bread flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "seeded brown bread flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "seeded malted bread flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "seed bread flour",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "sesame seed flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "milled sesame seed",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame seed baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame seed bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame seed brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame seed white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame seed blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame seed speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sesame speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "seed flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "sunflower seed flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "milled sunflower seed",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower seed baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower seed bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower seed brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower seed white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower seed blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower seed speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower seed brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower seed white flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "sunflower white flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "seed flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "sweet rice flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sweet white rice flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "mochiko",
+                  "substitution": false,
+                },
+                {
+                  "word": "sweet rice mochi flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "glutinous rice flour",
+                  "substitution": false,
+                }
+              ],
+          },
+          {
+              "name": "soy flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "gluten free flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "sorghum flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "juwar flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "gluten free flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "sweet rice flour",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "semolina",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "stone-ground grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "stone ground grits",
+                  "substitution": true,
+                },
+                {
+                  "word": "polenta",
+                  "substitution": true,
+                },
+                {
+                  "word": "cornmeal",
+                  "substitution": true,
+                },
+                {
+                  "word": "corn meal",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "sprouted flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "all purpose flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "spelt flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "lancashire cheese",
+                  "substitution": true,
+                },
+                {
+                  "word": "cheddar",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "self raising flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "self-raising flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "self rising flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "self-rising flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "cheddar",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "sherry vinegar",
               "type": "",
@@ -4801,30 +5151,6 @@
               ],
           },
           {
-              "name": "sweet rice flour",
-              "type": "",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "sweet white rice flour",
-                  "substitution": false,
-                },
-                {
-                  "word": "mochiko",
-                  "substitution": false,
-                },
-                {
-                  "word": "sweet rice mochi flour",
-                  "substitution": false,
-                },
-                {
-                  "word": "glutinous rice flour",
-                  "substitution": false,
-                }
-              ],
-          },
-          {
               "name": "shortening",
               "type": "",
               "exclude": [
@@ -5076,38 +5402,6 @@
                 },
                 {
                   "word": "pigs in blankets",
-                  "substitution": true,
-                }
-              ],
-          },
-          {
-              "name": "semolina",
-              "type": "",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "grits",
-                  "substitution": true,
-                },
-                {
-                  "word": "stone-ground grits",
-                  "substitution": true,
-                },
-                {
-                  "word": "stone ground grits",
-                  "substitution": true,
-                },
-                {
-                  "word": "polenta",
-                  "substitution": true,
-                },
-                {
-                  "word": "cornmeal",
-                  "substitution": true,
-                },
-                {
-                  "word": "corn meal",
                   "substitution": true,
                 }
               ],

@@ -39,7 +39,7 @@
 
              "~~~ TO DO : ~~~",
 
-             "bread dough", "buckwheat",
+             "bread dough", "bread flour", "buckwheat", "buckwheat flour",
 
 
     ],
@@ -48,6 +48,46 @@
     "ingredients": [
 
 
+      {
+          "name": "buckwheat flour",
+          "type": "",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "lancashire cheese",
+              "substitution": true,
+            },
+            {
+              "word": "cheddar",
+              "substitution": true,
+            }
+          ],
+      },
+      {
+          "name": "bread flour",
+          "type": "",
+          "exclude": [
+          ],
+          "include": [
+            {
+              "word": "bakers flour",
+              "substitution": false,
+            },
+            {
+              "word": "baker's flour",
+              "substitution": false,
+            },
+            {
+              "word": "strong flour",
+              "substitution": false,
+            },
+            {
+              "word": "strong white flour",
+              "substitution": false,
+            }
+          ],
+      },
       {
           "name": "beer vinegar",
           "type": "",

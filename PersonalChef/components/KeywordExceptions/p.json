@@ -36,13 +36,301 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "pastry flour", "pecan flour", "plain flour", "poppy seed flour", "potato flour", "potato starch", "pumpkin seed flour",
     ],
 
 
     "ingredients": [
 
 
+          {
+              "name": "plain flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "all purpose flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "all-purpose flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "general purpose flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "general-purpose flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "bread flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "rice flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "poznan",
+                  "substitution": false,
+                }
+              ],
+          },
+          {
+              "name": "pecan flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "hazelnut flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "cashew flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "macademia flour",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "potato starch",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "sweet rice flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "potato flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "all purpose flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "pastry flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "all purpose flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "poppy seed flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "milled poppy seed",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy seed baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy seed bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy seed brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy seed white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy seed blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy seed speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy seed brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy seed white flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "poppy white flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "seed flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "pumpkin seed flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "milled pumpkin seed",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin seed baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin seed bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin seed brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin seed white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin seed blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin seed speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin seed brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin seed white flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "pumpkin white flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "seed flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "paris seasoning",
               "type": "herb",
@@ -3658,18 +3946,6 @@
                 {
                   "word": "bread wraps",
                   "substitution": true,
-                }
-              ],
-          },
-          {
-              "name": "plain flour",
-              "type": "",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "poznan",
-                  "substitution": false,
                 }
               ],
           },

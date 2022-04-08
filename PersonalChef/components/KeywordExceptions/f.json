@@ -30,7 +30,7 @@
 
 
              "~~~ TO DO : ~~~",
-
+             "flaxseed flour",
 
     ],
 
@@ -39,6 +39,162 @@
 
 
 
+          {
+              "name": "flaxseed flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "milled flaxseed",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed white flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flaxseed brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "milled flax seed",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed white flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed baking flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed brown bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed white bread flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed speciality blend flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "flax seed white flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "seed flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "flaxseed oil",
               "type": "oil",

@@ -1,45 +1,50 @@
 {
     "name": "dry_ingredients",
-    "ingredients": [ "almonds", "almond meal", "almond flour", "atta flour",
+    "ingredients": [ "almonds", "almond meal", "almond flour", "amaranth flour", "arrowroot powder",
 
-              "baking powder", "baking soda", "batter mix", "bran flakes", "breadcrumbs", "breadsticks", "bread dough", "bread loaf", "bread wraps", "brazil nuts", "buckwheat", "bulgur",
+              "baking powder", "baking soda", "batter mix", "bran flakes", "breadcrumbs", "breadsticks", "bread dough", "bread flour", "bread loaf", "bread wraps", "brazil nuts", "buckwheat",
+              "buckwheat flour", "bulgur",
 
-              "candlenuts", "cashew nuts", "cassava flour", "chana dal", "cheerios", "chestnuts", "chia seeds", "chocolate cereal", "cornflakes", "cornmeal", "cornstarch",
-              "couscous", "crackers", "crispy onions", "croutons", "crumpets",
+              "cake flour", "candlenuts", "cashew flour", "cashew nuts", "cassava flour", "chana dal", "cheerios", "chestnuts", "chia seeds", "chocolate cereal", "coconut flour",
+              "cornflakes", "cornmeal", "cornstarch", "corn flour", "couscous", "crackers", "crispy onions", "croutons", "crumpets",
 
               "dried adzuki beans", "dried black beans", "dried black-eyed peas", "dried black lentils", "dried borlotti beans", "dried brown lentils", "dried cannellini beans",
               "dried chickpeas", "dried flageolet beans", "dried green lentils", "dried kidney beans", "dried mixed beans", "dried moong dall", "dried mung beans", "dried mushrooms",
               "dried navy beans", "dried pinto beans", "dried red lentils", "dried split peas", "dried soya beans", "dried urid dal", "dumpling mix",
 
-              "filo pastry", "flatbread", "flax seeds", "frosties",
+              "einkhorn flour",
 
-              "gram flour", "granola",
+              "filo pastry", "flatbread", "flaxseed flour", "flax seeds", "frosties",
 
-              "hazelnuts", "hemp seeds",
+              "gluten-free flour", "graham flour", "gram flour", "granola",
+
+              "hazelnuts",  "hazzelnut flour", "hemp seeds",
 
               "kamut flour",
 
               "lasagne sheets",
 
-              "macademia", "shredded wheat cereal", "milk powder", "mixed nuts", "monkey nuts", "muesli",
+              "macademia", "macademia flour", "milk powder", "millet flour", "mixed nuts", "monkey nuts", "muesli",
 
               "noodles",
 
-              "oatcakes", "oatmeal", "oats",
+              "oatcakes", "oatmeal", "oats", "oat flour",
 
-              "pancake mix", "pasta", "peanuts", "pearled barley", "pecans", "pine nuts", "pistachios", "pizza dough", "plain flour", "polenta", "poppy seeds", "pork scratchings",
-              "pretzel", "puff pastry", "pumpkin seeds",
+              "pancake mix", "pasta", "pastry flour", "peanuts", "pearled barley", "pecans", "pecan flour", "pine nuts", "pistachios", "pizza dough", "plain flour", "polenta", "poppy seeds",
+              "poppy seed flour", "pork scratchings", "potato flour", "potato starch", "pretzel", "puff pastry", "pumpkin seeds", "pumpkin seed flour",
 
               "quinoa",
 
-              "rice", "rice and peas", "rice cracker", "rice puffs",
+              "rice", "rice and peas", "rice cracker", "rice flour", "rice puffs", "rye flour",
 
-              "scone mix", "scones", "self raising flour", "semolina", "sesame seeds", "shortcrust pastry", "short grain rice", "spelt flour",
-              "spring roll wrapper", "sunflower seeds", "sweet rice flour",
+              "scone mix", "scones", "self raising flour", "semolina", "sesame seeds", "sesame seed flour", "shortcrust pastry", "short grain rice", "shredded wheat cereal", "sorghum flour",
+              "soy flour", "spelt flour", "spring roll wrapper", "sprouted flour", "sunflower seed flour", "sunflower seeds", "sweet rice flour",
 
-              "taco shells", "tortillas",
+              "taco shells", "tapioca flour", "teff flour", "tortillas",
 
-              "walnuts", "weetabix", "whey powder", "wonton wrappers",
+              "vital wheat gluten",
+
+              "walnuts", "weetabix", "whey powder", "white whole-wheat flour", "whole-wheat flour", "whole-wheat pastry flour", "wonton wrappers",
 
               "xanthan gum",
 

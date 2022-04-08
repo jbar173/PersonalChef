@@ -16,6 +16,7 @@
 
 
              "~~~ TO DO : ~~~",
+             "einkhorn flour",
 
     ],
 
@@ -23,6 +24,22 @@
     "ingredients": [
 
 
+          {
+              "name": "einkhorn flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "all purpose flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "fruit syrup",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "elderflower",
               "type": "herb",

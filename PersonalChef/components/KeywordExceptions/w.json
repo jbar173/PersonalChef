@@ -26,14 +26,115 @@
 
 
               "~~~ TO DO : ~~~",
-
+              "white whole-wheat flour", "whole-wheat flour", "whole-wheat pastry flour",
     ],
 
 
     "ingredients": [
 
 
-
+          {
+              "name": "whole-wheat pastry flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "spirit vinegar",
+                  "substitution": false,
+                },
+                {
+                  "word": "vinegar",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "white whole-wheat flour",
+              "type": "",
+              "exclude": [
+              ],
+              "include": [
+                {
+                  "word": "all purpose flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "white chapati flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "white chapatti flour",
+                  "substitution": true,
+                }
+              ],
+          },
+          {
+              "name": "whole-wheat flour",
+              "type": "",
+              "exclude": [
+                {
+                  "word": "elephant",
+                },
+                {
+                  "word": "white",
+                }
+              ],
+              "include": [
+                {
+                  "word": "whole wheat flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "wholemeal flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "whole meal flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "wholegrain flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "whole grain flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "brown flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "granary flour",
+                  "substitution": false,
+                },
+                {
+                  "word": "almond flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "ata",
+                  "substitution": true,
+                },
+                {
+                  "word": "atta",
+                  "substitution": true,
+                },
+                {
+                  "word": "chapati flour",
+                  "substitution": true,
+                },
+                {
+                  "word": "chapatti flour",
+                  "substitution": true,
+                }
+              ],
+          },
           {
               "name": "white wine vinegar",
               "type": "",
