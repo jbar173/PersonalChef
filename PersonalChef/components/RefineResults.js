@@ -106,7 +106,6 @@ const RefineResults = props => {
 
 
 
-
              var break_out = false
 
              if(less){
@@ -119,6 +118,7 @@ const RefineResults = props => {
                            var not_found = []
                            var outer_ind = -1
 
+                           // Looks up and collects all ingredients to check against recipe ingredient, including 'include' words for each 'include' in user's original ingredient:
                            for(x in checked_ingredients){
 
                                  outer_ind += 1
@@ -133,17 +133,34 @@ const RefineResults = props => {
                                  if(break_out){
                                     break;
                                  }
+                                 var top_layer_count = 0
 
                                  for(y in user_ingredients){
 
                                        index += 1
                                        var match = false
+                                       top_layer_count += 1
                                        // var found_random = false
                                        var last_index = user_ingredients.length - 1
 
-                                       var include_words = [ user_ingredients[y], ]
-                                       var original_ingredient = include_words[0]
-                                       var substitution_by_index = ['original',]
+                                       var include_words = []
+                                       var substitution_by_index = []
+                                       var i
+                                       for(i=0;i<user_ingredients.length;i++){
+                                         substitution_by_index.push(false)
+                                       }
+
+                                       if(top_layer_count === 1){
+                                         var orig
+                                         for(orig in user_ingredients){
+                                           include_words.push(user_ingredients[orig])
+                                         }
+                                       }
+                                       var original_ingredient = user_ingredients[y]
+
+                                       // var include_words = [ user_ingredients[y], ]
+                                       // var original_ingredient = include_words[0]
+                                       // var substitution_by_index = [false,]
 
                                        var p
                                        var q
@@ -162,9 +179,13 @@ const RefineResults = props => {
                                                  for(q in include){
                                                      var word = include[q]['word']
                                                      var sub = include[q]['substitution']
-                                                     include_words.push(word)
-                                                     substitution_by_index.push(sub)
-
+                                                     if(sub === false){
+                                                       include_words.splice(0,0,word)
+                                                       substitution_by_index.splice(0,0,sub)
+                                                     }else{
+                                                       include_words.push(word)
+                                                       substitution_by_index.push(sub)
+                                                     }
 
                                                      var f_letter_word = word[0]      // Finds second set of 'include' words: (searches for word that was pushed above),
                                                      var word_exceptions = keys[`${f_letter_word}`] // if found, adds each of its own 'include' words to include_words,
@@ -200,10 +221,13 @@ const RefineResults = props => {
                                        }
 
                                        // console.log("LOOKING FOR RECIPE ING: " + ingredient_lower + " in USER ING: " + user_ingredients[y])
+                                       console.log("~~~~~~~~~~~~~~~~~~ INCLUDE words length: " + include_words.length)
+                                       console.log("ingredient_lower: " + ingredient_lower)
                                        var find = FindIngredient(include_words,ingredient_lower)
                                        var result = find[0]
                                        var original_was_found = find[1]     // true or false
                                        var all_ingredients_found = find[2]
+                                       console.log("~~~~~~~~~~~all_ingredients_found.length: " + all_ingredients_found.length)
                                        var substitute_made = false
                                        var is_sub = 2
                                        if(result && original_was_found === false){
@@ -224,12 +248,11 @@ const RefineResults = props => {
                                                console.log(all_ingredients_found[word])
                                            }
                                            console.log("Looking for keyword exceptions")
+                                           console.log("##########~~~~~~~ original_ingredient: " + original_ingredient)
 
                                            var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,original_ingredient)
                                            var found_random = exception_check[2]
                                            if(found_random){              // Found exception in recipe title/label - recipe is a no-match
-                                               // substitute_made = false
-                                               // match = false
                                                result = false
                                                break_out = true
                                                break;
@@ -396,11 +419,12 @@ const RefineResults = props => {
                                         console.log("Done!")
                                         break;
                                     }
-
+                                    var top_layer_count = 0
 
                                     for(ing in user_ingredients){
 
                                             count_two += 1
+                                            top_layer_count += 1
                                             var last_index_two = false
                                             if(count_two === (user_ings_length - 1)){
                                                 last_index_two = true
@@ -408,9 +432,24 @@ const RefineResults = props => {
                                             var match = false
                                             // var found_random = false
 
-                                            var include_words = [ user_ingredients[ing], ]
-                                            var original_ingredient = include_words[0]
-                                            var substitution_by_index = ['original',]
+                                            var include_words = []
+                                            var substitution_by_index = []
+                                            var i
+                                            for(i=0;i<user_ingredients.length;i++){
+                                              substitution_by_index.push(false)
+                                            }
+
+                                            if(top_layer_count === 1){
+                                              var orig
+                                              for(orig in user_ingredients){
+                                                include_words.push(user_ingredients[orig])
+                                              }
+                                            }
+                                            var original_ingredient = user_ingredients[ing]
+
+                                            // var include_words = [ user_ingredients[ing], ]
+                                            // var original_ingredient = include_words[0]
+                                            // var substitution_by_index = [false,]
                                             // var is_key = false
                                             var p
                                             var q
@@ -428,8 +467,13 @@ const RefineResults = props => {
                                                       for(q in include){
                                                           var word = include[q]['word']
                                                           var sub = include[q]['substitution']
-                                                          include_words.push(word)
-                                                          substitution_by_index.push(sub)
+                                                          if(sub === false){
+                                                            include_words.splice(0,0,word)
+                                                            substitution_by_index.splice(0,0,sub)
+                                                          }else{
+                                                            include_words.push(word)
+                                                            substitution_by_index.push(sub)
+                                                          }
 
                                                           // console.log("####~~~#####~~~### START OF TEST ###~~~#####~~~~####")
                                                           // console.log("Original ingredient is: " + name)
@@ -618,10 +662,12 @@ const RefineResults = props => {
                             var ing
                             var x
                             var ingredient_count = 0
+                            var top_layer_count = 0
 
                             for(ing in user_ingredients){
 
                                     count += 1
+                                    top_layer_count += 1
                                     var last_index = false
                                     if(count === (user_ings_length-1)){
                                         last_index = true
@@ -635,9 +681,23 @@ const RefineResults = props => {
                                     }
                                     var false_count = 0
 
-                                    var include_words = [ user_ingredients[ing], ]
-                                    var original_ingredient = include_words[0]
-                                    var substitution_by_index = ['original',]
+                                    // var include_words = [ user_ingredients[ing], ]
+                                    // var original_ingredient = include_words[0]
+                                    // var substitution_by_index = [ false,]
+                                    var include_words = []
+                                    var substitution_by_index = []
+                                    var i
+                                    for(i=0;i<user_ingredients.length;i++){
+                                      substitution_by_index.push(false)
+                                    }
+
+                                    if(top_layer_count === 1){
+                                      var orig
+                                      for(orig in user_ingredients){
+                                        include_words.push(user_ingredients[orig])
+                                      }
+                                    }
+                                    var original_ingredient = user_ingredients[ing]
 
                                     var p
                                     var q
@@ -654,8 +714,13 @@ const RefineResults = props => {
                                               for(q in include){
                                                   var word = include[q]['word']
                                                   var sub = include[q]['substitution']
-                                                  include_words.push(word)
-                                                  substitution_by_index.push(sub)
+                                                  if(sub === false){
+                                                    include_words.splice(0,0,word)
+                                                    substitution_by_index.splice(0,0,sub)
+                                                  }else{
+                                                    include_words.push(word)
+                                                    substitution_by_index.push(sub)
+                                                  }
 
                                                   var f_letter_word = word[0]      // Finds second set of 'include' words: (searches for word that was pushed above),
                                                   var word_exceptions = keys[`${f_letter_word}`] // if found, adds each of its own 'include' words to include_words,

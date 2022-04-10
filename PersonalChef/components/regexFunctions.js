@@ -191,8 +191,6 @@ const FindIngredient = (ingredients_to_search_for,ingredient_lower) => {
 
 // Checks whether the matching ingredient is an exception (a word listed under 'exclude' in keywordExceptions):
 
-// const FindExceptions = (ingredients,ingredient_lower,recipe_title,type,original_ingredient) => {
-
 const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingredient) => {
 
   // console.log("FindExceptions regex function starting")
@@ -200,9 +198,15 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
     var no_extra_letters = String.raw`[^a-z]`
     var ends_with_s = String.raw`[s]`
     var starts_or_ends_with = String.raw`\b`
+    console.log("@@@@@~~~~~~~~~~~ original_ingredient: " + original_ingredient)
 
     if(ingredients[0] !== original_ingredient){
       ingredients.push(original_ingredient)
+    }
+
+    var inc
+    for(inc in ingredients){
+      console.log(inc + ".Inc: " + ingredients[inc])
     }
 
     var random_exception_found = false
@@ -215,7 +219,8 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
       exclusion_list.push(random_exclusions[x])
     }
 
-    if(ingredients[0] === '0'){     // checks the recipe title to ensure recipe title is valid (not for pets etc) before checking for exclusions
+    // 'RANDOM' CHECK FIRST:
+    if(ingredients[0] === '0'){     // checks the RECIPE TITLE to ensure it's valid (not for pets etc) before checking for exclusions
 
         for(w in exclusion_list){
             // matching word is in the middle of the string:
@@ -245,11 +250,10 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
          }
     }
 
-
+    // Looks up and checks 'EXCLUDE' section (in KeywordExceptions) for original ingredient and all of its 'includes' (listed in 'ingredients' parameter):
     var exception_found = false
 
     for(l in ingredients){
-        var original_first_letter = ingredients[0][0]
         var first_letter = ingredients[l][0]
         var exceptions = keys[`${first_letter}`]
         var next_ingredient = false
