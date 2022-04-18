@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Pressable, SafeAreaView } from 'react-native';
 import { NativeRouter, Route, Link } from "react-router-native";
-import * as data from './json_ingredient_lists/oils_sauces_condiments.json';
+import * as data from './json_ingredient_lists/the_rest.json';
 
 
-class SauceIngredientsChecklist extends React.Component {
+class TheRestIngredientsChecklist extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -24,7 +24,7 @@ class SauceIngredientsChecklist extends React.Component {
   };
 
   componentDidMount(){
-    console.log("SauceIngredientsChecklist unmounted")
+    console.log("TheRestIngredientsChecklist unmounted")
     var json_list = data.ingredients
     this.setState({
       jsonFileList: json_list,
@@ -33,11 +33,11 @@ class SauceIngredientsChecklist extends React.Component {
   }
 
   componentWillUnmount(){
-    console.log("SauceIngredientsChecklist unmounted")
+    console.log("TheRestIngredientsChecklist unmounted")
   }
 
   itemSelectedHandler(item){
-    console.log("SauceIngredientsChecklist item (de)selected")
+    console.log("TheRestIngredientsChecklist item (de)selected")
     var new_item = item
     new_item[1] = !new_item[1]
     this.setState({
@@ -51,7 +51,7 @@ class SauceIngredientsChecklist extends React.Component {
   }
 
   componentDidUpdate(){
-    console.log("SauceIngredientsChecklist did update")
+    console.log("TheRestIngredientsChecklist did update")
     if(this.state.first === true){
       var i
       var length = this.state.jsonFileList.length
@@ -171,4 +171,4 @@ const styles = StyleSheet.create({
 });
 
 
-export { SauceIngredientsChecklist };
+export { TheRestIngredientsChecklist };

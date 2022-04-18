@@ -44,7 +44,7 @@ const meat = exclusions.meat
 const oil = exclusions.oil
 
 const types = [ "fruit", "herb", "soda", "meat", "oil", ]
-const exc_list = [ fruit, herb, soda, meat, oil  ]
+const exc_list = [ fruit, herb, soda, meat, oil,  ]
 
 
 // Checks that recipe items are ingredients rather than equipment/utensils:
@@ -198,15 +198,9 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
     var no_extra_letters = String.raw`[^a-z]`
     var ends_with_s = String.raw`[s]`
     var starts_or_ends_with = String.raw`\b`
-    console.log("@@@@@~~~~~~~~~~~ original_ingredient: " + original_ingredient)
 
     if(ingredients[0] !== original_ingredient){
       ingredients.push(original_ingredient)
-    }
-
-    var inc
-    for(inc in ingredients){
-      console.log(inc + ".Inc: " + ingredients[inc])
     }
 
     var random_exception_found = false
@@ -282,9 +276,9 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
                     console.log("********** IS " + types[type] + " ***************")
                     console.log(types[type] + " length: " + types[type].length)
                     console.log(exceptions[m]["type"] + " length: " + exc_list[type].length)
-                    for(word in words){
-                      console.log("Added '" + types[type] + "' word: " + words[word])
-                    }
+                    // for(word in words){
+                    //   console.log("Added '" + types[type] + "' word: " + words[word])
+                    // }
                   }
                 }
                 var no_error = true
@@ -292,7 +286,7 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
                 for(n in exclude){
                     try{
                       words.push(exclude[n]['word'])
-                      console.log("Added exclude word: " + exclude[n]['word'])
+                      // console.log("Added exclude word: " + exclude[n]['word'])
                     }catch(error){
                       console.log(exceptions[m]["name"] + ":(FindExceptions) regexFunctions error: " + error)
                       no_error = false

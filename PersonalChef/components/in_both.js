@@ -4,6 +4,7 @@ import { NativeRouter, Route, Link } from "react-router-native";
 
 import { DryIngredientsChecklist } from "./checklists/dry.js";
 import { SauceIngredientsChecklist } from "./checklists/sauces.js";
+import { TheRestIngredientsChecklist } from "./checklists/the_rest.js";
 import { FruitAndVegChecklist } from "./checklists/fruit_veg.js";
 import { HerbsAndSpicesChecklist } from "./checklists/herbs_spices.js";
 import { TinnedChecklist } from "./checklists/tinned.js";
@@ -640,12 +641,117 @@ class CheeseList extends React.Component {
 
                 <CheeseChecklist updateListHandler={this.updateListHandler} />
 
-                <Link style={{marginTop:30}} to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                <Link style={{marginTop:30}} to={{pathname:"/both-the-rest/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
                     <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
                      style={styles.greenNextButton}>Next</Text>
                 </Link>
                 <Link to={{pathname:"/both-tinned/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                 underlayColor="transparent">
+                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                     style={styles.blueBackButton}>Back</Text>
+                </Link>
+          </ScrollView>
+        </SafeAreaView>
+
+      );
+   }
+};
+
+
+class TheRestList extends React.Component {
+    constructor(props){
+    super(props);
+    this.state = {
+      userId: 12345,
+      initialData: {
+        "time":'0',
+        "ingredients":[],
+        "ingredientCount":0,
+        "type":'',
+      },
+      both:false,
+      ingredients_rough: {},
+      the_rest: [],
+      the_rest_updated: false,
+    }
+    this.componentDidMount = this.componentDidMount.bind(this)
+    this.componentDidUpdate = this.componentDidUpdate.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+
+    this.updateListHandler = this.updateListHandler.bind(this)
+    this.updateIngredientsRoughHandler = this.updateIngredientsRoughHandler.bind(this)
+  };
+
+  componentDidMount(){
+    console.log("the rest mounted")
+    var initial_data = this.props.location.state.initial_data
+    var either = this.props.location.state.either
+    var ingreds = this.props.location.state.ingreds
+    this.setState({
+      initialData:initial_data,
+      ingredients_rough:ingreds,
+      both:either
+    })
+  }
+
+  componentWillUnmount(){
+    console.log("the rest unmounted")
+  }
+
+  componentDidUpdate(){
+    console.log("the rest updated")
+    if(this.state.the_rest_updated === true){
+      console.log("updating ingredients_rough")
+      this.updateIngredientsRoughHandler()
+    }
+  }
+
+  updateListHandler(confirmed_list){
+    console.log("update list handler in_both.js The Rest")
+    this.setState({
+      the_rest: confirmed_list,
+      the_rest_updated: true
+    })
+  }
+
+  updateIngredientsRoughHandler(){
+    var new_key = "The Rest"
+    var final_list = this.state.ingredients_rough
+    for([key,value] of Object.entries(final_list)){
+       if(key === new_key){
+           console.log(new_key + " replaced")
+           delete final_list[key]
+         }
+    }
+    final_list[new_key] = this.state.the_rest
+    this.setState({
+      ingredients_rough: final_list,
+      the_rest_updated: false
+    })
+  }
+
+
+  render(){
+    var initial = this.state.initialData
+    var either = this.state.both
+    var ingreds = this.state.ingredients_rough
+
+      return(
+
+        <SafeAreaView style={styles.container}>
+          <ScrollView>
+                <Text accessible={true} accessibilityLabel="The Rest checklist"
+                  accessibilityRole="text" style={styles.mainTitle}>The Rest checklist</Text>
+
+                <TheRestIngredientsChecklist updateListHandler={this.updateListHandler} />
+
+                <Link style={{marginTop:30}} to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                 underlayColor="transparent">
+                    <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
+                     style={styles.greenNextButton}>Next</Text>
+                </Link>
+                <Link to={{pathname:"/both-cheese/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                  underlayColor="transparent">
                     <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                      style={styles.blueBackButton}>Back</Text>
@@ -753,7 +859,7 @@ class AlcoholList extends React.Component {
                          style={styles.greenNextButton}>Next</Text>
                     </Link>
 
-                    <Link to={{pathname:"/both-cheese/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                    <Link to={{pathname:"/both-the-rest/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                      underlayColor="transparent">
                         <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
                          style={styles.blueBackButton}>Back</Text>
@@ -811,4 +917,4 @@ const styles = StyleSheet.create({
 });
 
 
-export { DryIngredientsList, SauceIngredientsList, FruitAndVegList, HerbsAndSpicesList, TinnedGoodsList, AlcoholList, CheeseList, } ;
+export { DryIngredientsList, SauceIngredientsList, FruitAndVegList, HerbsAndSpicesList, TinnedGoodsList, AlcoholList, CheeseList, TheRestList } ;

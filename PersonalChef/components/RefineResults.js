@@ -118,7 +118,7 @@ const RefineResults = props => {
                            var not_found = []
                            var outer_ind = -1
 
-                           // Looks up and collects all ingredients to check against recipe ingredient, including 'include' words for each 'include' in user's original ingredient:
+                  // Looks up and collects all ingredients to check against recipe ingredient, including 'include' words for each 'include' in user's original ingredient:
                            for(x in checked_ingredients){
 
                                  outer_ind += 1
@@ -140,7 +140,6 @@ const RefineResults = props => {
                                        index += 1
                                        var match = false
                                        top_layer_count += 1
-                                       // var found_random = false
                                        var last_index = user_ingredients.length - 1
 
                                        var include_words = []
@@ -221,13 +220,20 @@ const RefineResults = props => {
                                        }
 
                                        // console.log("LOOKING FOR RECIPE ING: " + ingredient_lower + " in USER ING: " + user_ingredients[y])
-                                       console.log("~~~~~~~~~~~~~~~~~~ INCLUDE words length: " + include_words.length)
-                                       console.log("ingredient_lower: " + ingredient_lower)
+
                                        var find = FindIngredient(include_words,ingredient_lower)
                                        var result = find[0]
                                        var original_was_found = find[1]     // true or false
+                                       // console.log("~~~### LESS LOOP")
+                                       // console.log("~~~~~~~~~~~~~user_ingredients[y]: " + user_ingredients[y])
+                                       // console.log("~~~~~~~~~~~~~Original found?: " + find[1])
                                        var all_ingredients_found = find[2]
-                                       console.log("~~~~~~~~~~~all_ingredients_found.length: " + all_ingredients_found.length)
+                                       var i
+                                       for(i in all_ingredients_found){
+                                         console.log("~~~~~~~~ingredient found: " + all_ingredients_found[i])
+                                         console.log("include_words index: " + include_words.indexOf(all_ingredients_found[i]))
+                                         console.log("include_words index of original: " + include_words.indexOf(user_ingredients[y]))
+                                       }
                                        var substitute_made = false
                                        var is_sub = 2
                                        if(result && original_was_found === false){
@@ -248,7 +254,6 @@ const RefineResults = props => {
                                                console.log(all_ingredients_found[word])
                                            }
                                            console.log("Looking for keyword exceptions")
-                                           console.log("##########~~~~~~~ original_ingredient: " + original_ingredient)
 
                                            var exception_check = FindExceptions(all_ingredients_found,ingredient_lower,recipe_name,original_ingredient)
                                            var found_random = exception_check[2]
@@ -508,6 +513,7 @@ const RefineResults = props => {
                                               }                       //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ///////////////////////////////////
 
                                             var find = FindIngredient(include_words,ingredient_lower)
+                                            // console.log("~~~### SAME LOOP")
                                             var result = find[0]
                                             var original_was_found = find[1]
                                             var all_ingredients_found = find[2]
@@ -762,6 +768,7 @@ const RefineResults = props => {
                                             // var found_random = false
 
                                             var find = FindIngredient(include_words,ingredient_lower)
+                                            // console.log("~~~### ONE-OVER LOOP")
                                             var result = find[0]
                                             var original_was_found = find[1]
                                             var all_ingredients_found = find[2]

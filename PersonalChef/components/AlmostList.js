@@ -127,7 +127,9 @@ class AlmostList extends React.Component{
                                                              {entry[1].map(function(substitute,it) {
                                                                  return(
                                                                     <View key={it}>
+                                                                    { substitute[3] &&
                                                                         <Text style={{textAlign:"center",marginBottom:5}}>Substitution made? {substitute[3].toString()}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                    }
                                                                     </View>
                                                                   )
                                                                })
@@ -191,7 +193,12 @@ class AlmostList extends React.Component{
                       })
 
                     }
-
+                    <View style={{justifyContent:"center",alignItems:"center"}}>
+                        <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                          style={{marginTop:90,marginBottom:40}} to="/pantry/" underlayColor="transparent">
+                            <Text style={styles.redButton}>Cancel search and start again</Text>
+                        </Link>
+                    </View>
                     <View>
                         <Text style={{textAlign:"center",marginBottom:5}}>* Some suggested substitutions may not be appropriate - please research whether required
                                 quantities/cooking methods/times will differ for any suggested replacement ingredient. </Text>

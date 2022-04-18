@@ -835,7 +835,9 @@ class ApiCalls extends React.Component {
                                                                                               {entry[1].map(function(substitute,it) {
                                                                                                   return(
                                                                                                      <View key={it}>
+                                                                                                     { substitute[3] &&
                                                                                                          <Text style={{textAlign:"center",marginBottom:5}}>Substitution made? {substitute[3].toString()}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                                                     }
                                                                                                      </View>
                                                                                                    )
                                                                                                 })
@@ -918,7 +920,9 @@ class ApiCalls extends React.Component {
                                                                                               {entry[1].map(function(substitute,it) {
                                                                                                   return(
                                                                                                      <View key={it}>
+                                                                                                      { substitute[3] &&
                                                                                                          <Text style={{textAlign:"center",marginBottom:5}}>Substitution made? {substitute[3].toString()}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                                                      }
                                                                                                      </View>
                                                                                                    )
                                                                                                 })
@@ -1017,7 +1021,9 @@ class ApiCalls extends React.Component {
                                                                                                  {entry[1].map(function(substitute,it) {
                                                                                                      return(
                                                                                                         <View key={it}>
+                                                                                                          { substitute[3] &&
                                                                                                             <Text style={{textAlign:"center",marginBottom:5}}>Substitution made? {substitute[3].toString()}: Your ingredient {substitute[2]} could possibly be used in place of {substitute[0]}*</Text>
+                                                                                                          }
                                                                                                         </View>
                                                                                                       )
                                                                                                    })
