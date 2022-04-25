@@ -19,8 +19,10 @@ class ApiCalls extends React.Component {
         "ingredients": [],
         "ingredientCount": 0,
         "type": '',
+        "searchMethod": ''
       },
       both: false,
+      ingredients_rough: {},
       searchKeywords: [],
       omittedKeywords: [],
       reduceKeywords: false,
@@ -144,6 +146,7 @@ class ApiCalls extends React.Component {
     this.getData(saved_recipes)
     this.setState({
       initialData: initial_data,
+      ingredients_rough: ingreds,
       searchKeywords: ingredients_alone,
       reduceKeywords: true,
       nextCall: false,
@@ -159,6 +162,11 @@ class ApiCalls extends React.Component {
 
   componentDidUpdate(){
     console.log("API COMPONENT UPDATED")
+    console.log("~~~~this.state.initialData.searchMethod: " + this.state.initialData.searchMethod)
+    for([key,value] of Object.entries(this.state.ingredients_rough)){
+         console.log("key: " + key)
+         console.log("value: " + value)
+    }
 
     if(this.state.searchPaused){
 
@@ -722,6 +730,7 @@ class ApiCalls extends React.Component {
     var changing_tabs = this.state.changeTabs
     var subs = this.state.substitutesDict
 
+
     return(
 
             <SafeAreaView style={styles.container}>
@@ -730,6 +739,7 @@ class ApiCalls extends React.Component {
                   { alter_or_reorder_keywords && < AlterKeywords
                     keywords = {this.state.searchKeywords}
                     alteredKeywords = {this.keywordsAlteredHandler}
+                    searchMethod = {this.state.initialData.searchMethod}
                     />
                   }
 

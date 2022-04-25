@@ -22,6 +22,7 @@ class DryIngredientsList extends React.Component {
         "ingredients":[],
         "ingredientCount":0,
         "type":'',
+        "searchMethod": '',
       },
       both: false,
       ingredients_rough: {},
@@ -54,6 +55,7 @@ class DryIngredientsList extends React.Component {
 
    componentDidUpdate(){
      console.log("dries updated")
+     console.log("~~~~this.state.initialData.searchMethod: " + this.state.initialData.searchMethod)
      if(this.state.dries_updated === true){
        console.log("updating ingredients_rough")
        this.updateIngredientsRoughHandler()
@@ -144,6 +146,7 @@ class SauceIngredientsList extends React.Component {
         "ingredients":[],
         "ingredientCount":0,
         "type":'',
+        "searchMethod": '',
       },
       both: false,
       ingredients_rough: {},
@@ -247,6 +250,7 @@ class FruitAndVegList extends React.Component {
         "ingredients":[],
         "ingredientCount":0,
         "type":'',
+        "searchMethod": '',
       },
       both:false,
       ingredients_rough: {},
@@ -354,6 +358,7 @@ class HerbsAndSpicesList extends React.Component {
         "ingredients":[],
         "ingredientCount":0,
         "type":'',
+        "searchMethod": '',
       },
       both: false,
       ingredients_rough: {},
@@ -459,6 +464,7 @@ class TinnedGoodsList extends React.Component {
         "ingredients":[],
         "ingredientCount":0,
         "type":'',
+        "searchMethod": '',
       },
       both:false,
       ingredients_rough: {},
@@ -564,6 +570,7 @@ class CheeseList extends React.Component {
         "ingredients":[],
         "ingredientCount":0,
         "type":'',
+        "searchMethod": '',
       },
       both:false,
       ingredients_rough: {},
@@ -669,6 +676,7 @@ class TheRestList extends React.Component {
         "ingredients":[],
         "ingredientCount":0,
         "type":'',
+        "searchMethod": '',
       },
       both:false,
       ingredients_rough: {},
@@ -775,6 +783,7 @@ class AlcoholList extends React.Component {
         "ingredients":[],
         "ingredientCount":0,
         "type":'',
+        "searchMethod": '',
       },
       both:false,
       ingredients_rough: {},

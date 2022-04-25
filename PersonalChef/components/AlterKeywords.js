@@ -1,14 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable, SafeAreaView, ScrollView } from 'react-native';
 import { NativeRouter, Route, Link, Redirect } from "react-router-native";
-import { RankedDictionary } from "./IngredientsRanked.js";
+import { RankedDictionary } from "./PopularRanked.js";
+import { PerishableRankedDictionary } from "./PerishableRanked.js";
 
 
 class AlterKeywords extends React.Component {
     constructor(props){
       super(props);
       this.state = {
-        getRanked: true,
+        searchMethod: this.props.searchMethod,
+        getRanked: false,
+        getMostPerishable: false,
+        fiveIngreds: false,
         ready: false,
         passBack: false,
         backendRanks: [],
@@ -35,23 +39,37 @@ class AlterKeywords extends React.Component {
   componentDidMount(){
     console.log("AlterKeywords mounted")
     console.log("this.state.ingredients.length: " + this.state.ingredients.length)
+    console.log("~~~~did mount this.state.searchMethod: " + this.state.searchMethod)
     var length = this.state.ingredients.length
-    this.setState({
-      originalLength: length
-    })
+    if(this.state.searchMethod === 'frequently used'){
+      this.setState({
+        getRanked: true,
+        originalLength: length,
+      })
+    }else if(this.state.searchMethod === 'most perishable'){
+      this.setState({
+        getMostPerishable: true,
+        originalLength: length,
+      })
+    }else{
+      this.setState({
+        fiveIngreds: true,
+        originalLength: length,
+      })
+    }
   }
 
   componentWillUnmount(){
     console.log("AlterKeywords unmounting")
     this.setState({
-      getRanked: false
+      getRanked: false,
     })
   }
 
   componentDidUpdate(){
     console.log("AlterKeywords updated")
     console.log("### this.state.notFound: " + this.state.notFound)
-
+    console.log("~~~~alter this.state.searchMethod: " + this.state.searchMethod)
     // Triggers function to alter ingredient list, once rankedIngredients
     //   have been received from < RankedDictionary />:
     if(this.state.ready){
@@ -240,6 +258,10 @@ class AlterKeywords extends React.Component {
                         rank = {this.state.rank}
                         backendRanks = {this.state.backendRanks}
                         rankedIngs = {this.getRankedIngredients}
+                      />
+                    }
+                    {this.state.getmostPerishable &&
+                      < PerishableRankedDictionary
                       />
                     }
               </View>

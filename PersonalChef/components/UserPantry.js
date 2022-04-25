@@ -100,14 +100,14 @@ class UserPantry extends React.Component {
                                <View style={{alignItems:"center",textAlign:"center"}}>
                                    <Link accessible={true} accessibilityLabel= "Continue"
                                      accessibilityHint="Pantry confirmed - continue to next page"
-                                     to={{ pathname:"/type-time/", state:{ ingreds: ingreds, more_needed: true } }}
+                                     to={{ pathname:"/search-method/", state:{ ingreds: ingreds, more_needed: true } }}
                                      accessibilityRole="button" underlayColor="transparent">
                                       <Text style={styles.blueButton}>Add other ingredients</Text>
                                    </Link>
                                    <Text style={{alignItems:"center",marginVertical:5,fontWeight:"bold"}}>Or...</Text>
                                    <Link accessible={true} accessibilityLabel= "Continue"
                                      accessibilityHint="Pantry confirmed - continue to next page"
-                                     to={{ pathname:"/type-time/", state:{ ingreds: ingreds, more_needed: false } }}
+                                     to={{ pathname:"/search-method/", state:{ ingreds: ingreds, more_needed: false } }}
                                      accessibilityRole="button" underlayColor="transparent">
                                       <Text style={styles.blueButton}>Search with these ingredients</Text>
                                    </Link>

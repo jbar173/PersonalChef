@@ -12,6 +12,7 @@ class HomePage extends React.Component {
         savedRecipeList: [],
       }
       this.componentDidMount = this.componentDidMount.bind(this)
+      this.componentDidUpdate = this.componentDidUpdate.bind(this)
       this.getDeviceData = this.getDeviceData.bind(this)
   };
 
@@ -79,6 +80,133 @@ class HomePage extends React.Component {
 };
 
 
+
+
+
+class SearchMethod extends React.Component {
+      constructor(props){
+      super(props);
+      this.state = {
+        userId: 12345,
+        initialData: {
+          "time": '0',
+          "ingredients": [],
+          "ingredientCount": 0,
+          "type": '',
+          "searchMethod": ''
+        },
+        ingredients_rough: {},
+        moreNeeded:  false,
+      }
+      this.componentDidMount = this.componentDidMount.bind(this)
+      this.componentDidUpdate = this.componentDidUpdate.bind(this)
+      this.radioButtonPressedHandler = this.radioButtonPressedHandler.bind(this)
+  };
+
+  componentDidMount(){
+    console.log("Search method mounted")
+    var ingreds = this.props.location.state.ingreds
+    var more_needed = this.props.location.state.more_needed
+    var initial = this.props.location.state.initial_data
+    if(initial !== undefined){
+      this.setState({
+        initialData: initial,
+        ingredients_rough: ingreds,
+        moreNeeded: more_needed
+      })
+    }else{
+      this.setState({
+        ingredients_rough: ingreds,
+        moreNeeded: more_needed
+      })
+    }
+  }
+
+  componentDidUpdate(){
+    console.log("Search method updated")
+    // console.log("this.state.savedRecipeList: " + this.state.savedRecipeList)
+  }
+
+  radioButtonPressedHandler(value){
+    this.setState({
+        initialData:{
+          ...this.state.initialData,
+          searchMethod: value
+        },
+     })
+  }
+
+  render(){
+      var initial = this.state.initialData
+      var ingreds = this.state.ingredients_rough
+      var more_needed = this.state.moreNeeded
+      var search_type = this.state.initialData.searchMethod
+      return(
+        <View style={styles.container}>
+
+            <Text accessible={true} accessibilityLabel="Welcome to PersonalChef" accessibilityRole="text"
+             style={{marginBottom:30,marginTop:40,textAlign:"center"}}>How would you like us to search for recipes?</Text>
+
+             {search_type === "frequently used" &&
+                <TouchableHighlight accessible={true} accessibilityLabel="Most frequently used ingredients selected" accessibilityRole="button"
+                   underlayColor="white">
+                  <Text style={styles.greenButton}>By most frequently used ingredients</Text>
+                </TouchableHighlight>
+             }
+             {search_type !== "frequently used" &&
+                <TouchableHighlight accessible={true} accessibilityLabel="Most frequently used ingredients" accessibilityRole="button"
+                   underlayColor="white" onPress={() => this.radioButtonPressedHandler("frequently used")}>
+                  <Text style={styles.blueButton}>By most frequently used ingredients</Text>
+                </TouchableHighlight>
+             }
+             {search_type === "most perishable" &&
+              <TouchableHighlight accessible={true} accessibilityLabel="Most perishable ingredients selected" accessibilityRole="button"
+                 underlayColor="white">
+                <Text style={styles.greenButton}>By most perishable ingredients</Text>
+              </TouchableHighlight>
+              }
+              {search_type !== "most perishable" &&
+                <TouchableHighlight accessible={true} accessibilityLabel="Most perishable ingredients" accessibilityRole="button"
+                   underlayColor="white" onPress={() => this.radioButtonPressedHandler("most perishable")}>
+                  <Text style={styles.blueButton}>By most perishable ingredients</Text>
+                </TouchableHighlight>
+              }
+              {search_type === "user's choice" &&
+                <TouchableHighlight accessible={true} accessibilityLabel="Choose five ingredients to focus my search on selected" accessibilityRole="button"
+                   underlayColor="white" >
+                  <Text style={styles.greenButton}>Choose five ingredients to focus my search on</Text>
+                </TouchableHighlight>
+              }
+              {search_type !== "user's choice" &&
+                <TouchableHighlight accessible={true} accessibilityLabel="Choose five ingredients to focus my search on " accessibilityRole="button"
+                   underlayColor="white" onPress={() => this.radioButtonPressedHandler("user's choice")}>
+                  <Text style={styles.blueButton}>Choose five ingredients to focus my search on</Text>
+                </TouchableHighlight>
+              }
+
+              {search_type !== '' &&
+                <Link accessible={true} accessibilityLabel="Go to savoury ingredients" accessibilityRole="button"
+                  to={{pathname:"/type-time/", state:{ initial_data: initial, ingreds: ingreds, more_needed: more_needed, } }} underlayColor="transparent" >
+                    <Text accessible={true} accessibilityLabel="Go to savoury ingredients"
+                      style={styles.greenNextButton}>Next page</Text>
+                </Link>
+              }
+              <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                style={{marginTop:10}} to="/pantry/" underlayColor="transparent">
+                  <Text style={styles.backButton}>Back</Text>
+              </Link>
+
+        </View>
+      );
+   }
+};
+
+
+
+
+
+
+
 class TimeAndType extends React.Component {
     constructor(props){
     super(props);
@@ -89,6 +217,7 @@ class TimeAndType extends React.Component {
         "ingredients": [],
         "ingredientCount": 0,
         "type": '',
+        "searchMethod": ''
       },
       both: false,
       validHoursInput: true,
@@ -121,10 +250,13 @@ class TimeAndType extends React.Component {
     console.log("Time and Type did mount")
     var ingreds = this.props.location.state.ingreds
     var more_needed = this.props.location.state.more_needed
+    var initial = this.props.location.state.initial_data
     this.setState({
+      initialData: initial,
       ingredients_rough: ingreds,
       moreNeeded: more_needed
     })
+    var x
     for(x in ingreds){
       console.log("**** ingreds: " + ingreds[x])
     }
@@ -245,7 +377,7 @@ class TimeAndType extends React.Component {
   }
 
 
-    render(){
+   render(){
       var recipe_type = this.state.initialData.type
       var initial = this.state.initialData
       var either = this.state.both
@@ -253,7 +385,9 @@ class TimeAndType extends React.Component {
       var ingreds = this.state.ingredients_rough
       var valid = this.state.validTimes
       var more_needed = this.state.moreNeeded
-
+      console.log("this.state.initialData.time: " + this.state.initialData.time)
+      console.log("this.state.validTimes: " + this.state.validTimes)
+      console.log("this.state.moreNeeded: " + this.state.moreNeeded)
 
       return(
 
@@ -378,14 +512,14 @@ class TimeAndType extends React.Component {
                                                     <View>
                                                       {more_needed &&
                                                         <Link to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either,
-                                                           times: times, ingreds: ingreds } }} underlayColor="transparent">
+                                                           times: times, ingreds: ingreds, } }} underlayColor="transparent">
                                                              <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
                                                               accessibilityRole="button" style={styles.greenNextButton}>Next page</Text>
                                                         </Link>
                                                       }
                                                       {more_needed === false &&
                                                         <Link to={{pathname:"/confirm/", state:{ initial_data: initial, either: either,
-                                                           times: times, ingreds: ingreds } }} underlayColor="transparent">
+                                                           times: times, ingreds: ingreds, more_needed: more_needed } }} underlayColor="transparent">
                                                              <Text accessible={true} accessibilityLabel="Go to dessert ingredients"
                                                               accessibilityRole="button" style={styles.greenNextButton}>Next page</Text>
                                                         </Link>
@@ -431,7 +565,7 @@ class TimeAndType extends React.Component {
                                                          {more_needed === false &&
                                                            <Link accessible={true} accessibilityLabel="Go to savoury ingredients" accessibilityRole="button"
                                                              to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, times: times,
-                                                               ingreds: ingreds } }} underlayColor="transparent" >
+                                                               ingreds: ingreds, more_needed: more_needed } }} underlayColor="transparent" >
                                                                <Text accessible={true} accessibilityLabel="Go to savoury ingredients"
                                                                  style={styles.greenNextButton}>Next page</Text>
                                                            </Link>
@@ -462,7 +596,8 @@ class TimeAndType extends React.Component {
                          )
                      }
                      <Link accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                       style={{marginTop:10}} to="/pantry/" underlayColor="transparent">
+                       style={{marginTop:10}} to={{pathname:"/search-method/", state:{ initial_data: initial, either: either, times: times,
+                         ingreds: ingreds, more_needed: more_needed } }} underlayColor="transparent">
                          <Text style={styles.backButton}>Back</Text>
                      </Link>
 
@@ -563,4 +698,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export { HomePage, TimeAndType };
+export { HomePage, SearchMethod, TimeAndType };

@@ -17,6 +17,7 @@ class MeatIngredientsList extends React.Component {
         "ingredients":[],
         "ingredientCount":0,
         "type":'',
+        "searchMethod:": '',
       },
       both: false,
       times: {
@@ -55,6 +56,7 @@ class MeatIngredientsList extends React.Component {
 
     componentDidUpdate(){
       console.log("meats updated")
+      console.log("~~~~this.state.initialData.searchMethod: " + this.state.initialData.searchMethod)
 
       if(this.state.initialData.time === '0'){
         var hrs = parseInt(this.state.times.hours)
@@ -146,6 +148,7 @@ class FishIngredientsList extends React.Component {
         "ingredients":[],
         "ingredientCount":0,
         "type":'',
+        "searchMethod:": '',
       },
       both: false,
       ingredients_rough: {},

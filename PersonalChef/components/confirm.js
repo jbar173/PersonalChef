@@ -15,8 +15,10 @@ class ConfirmList extends React.Component {
         "ingredients": [],
         "ingredientCount": 0,
         "type": '',
+        "searchMethod": ''
       },
       both: false,
+      moreNeeded: true,
       confirmed: false,
       populate: false,
       ingredients_rough: {},
@@ -104,7 +106,7 @@ class ConfirmList extends React.Component {
     var initial_data = this.props.location.state.initial_data
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
-
+    var more_needed = this.props.location.state.more_needed
     var favourites_key = '@favourite-ingredients'
     var faves = this.getData(favourites_key)
     .then(faves => {
@@ -122,13 +124,21 @@ class ConfirmList extends React.Component {
         initialData: initial_data,
         ingredients_rough: ingreds,
         both: either,
+        moreNeeded: more_needed,
         times: times_from_start_page
+      })
+    }else if(more_needed === undefined){
+      this.setState({
+        initialData: initial_data,
+        ingredients_rough: ingreds,
+        both: either
       })
     }else{
       this.setState({
         initialData: initial_data,
         ingredients_rough: ingreds,
-        both: either
+        both: either,
+        moreNeeded: more_needed
       })
     }
   }
@@ -145,6 +155,7 @@ class ConfirmList extends React.Component {
   componentDidUpdate(){
     console.log("Confirm page updated")
     console.log("this.state.initialData.time: " + this.state.initialData.time)
+    console.log("~~~~this.state.initialData.searchMethod: " + this.state.initialData.searchMethod)
     if(this.state.initialData.time === '0'){
       var hrs = parseInt(this.state.times.hours)
       var mins = parseInt(this.state.times.mins)
@@ -309,6 +320,7 @@ class ConfirmList extends React.Component {
     var either = this.state.both
     var ingreds = this.state.ingredients_rough
     var redirect = this.state.readyToRedirect
+    var more_needed = this.state.moreNeeded
 
     return(
 
@@ -343,11 +355,21 @@ class ConfirmList extends React.Component {
                                    style={styles.blueButton}>Confirm</Text>
                               </Pressable>
 
-                              <Link to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds,} }}
-                                underlayColor="transparent">
-                                  <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
-                                    style={styles.blueButton}>Back</Text>
-                              </Link>
+                              { more_needed &&
+                                  <Link to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                                    underlayColor="transparent">
+                                      <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                        style={styles.blueButton}>Back</Text>
+                                  </Link>
+                              }
+
+                              { more_needed === false &&
+                                  <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds, more_needed: more_needed } }}
+                                    underlayColor="transparent">
+                                      <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                        style={styles.blueButton}>Back</Text>
+                                  </Link>
+                              }
 
                               { redirect === true && <Redirect to={{ pathname:'/api-calls/',
                                 state:{ initial_data: initial, either: either,

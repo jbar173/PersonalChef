@@ -17,6 +17,7 @@ class RecipeResults extends React.Component {
           "ingredients": [],
           "ingredientCount": 0,
           "type": '',
+          "searchMethod:": '',
         },
         both: false,
 
