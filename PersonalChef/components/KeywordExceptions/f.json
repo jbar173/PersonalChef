@@ -4,7 +4,6 @@
              "fig jam","fig jelly","fig roll","fruit and nut chocolate","fruit cake","fruit jellies","fruit loaf","fudge",
              "filo pastry","flax seeds","flour","frosties",
              "fresh bombay duck",
-             "faggot",
              "fiddleheads","fig","fresh coconut","fresh corn","fresh cranberries","fresh ginger","fresh horseradish","fresh pomegranate seeds","fresh quince",
 
              "fajita seasoning","fennel seeds","fish seasoning","fresh basil","fresh chervil","fresh coriander","fresh marjoram","fresh mint",
@@ -30,7 +29,7 @@
 
 
              "~~~ TO DO : ~~~",
-             "flaxseed flour",
+             "flaxseed flour", "fresh seaweed",
 
     ],
 
@@ -1162,22 +1161,6 @@
                 {
                   "word": "corn",
                   "substitution": false,
-                }
-              ],
-          },
-          {
-              "name": "faggot",
-              "type": "",
-              "exclude": [
-              ],
-              "include": [
-                {
-                  "word": "meatballs",
-                  "substitution": true,
-                },
-                {
-                  "word": "meat balls",
-                  "substitution": true,
                 }
               ],
           },

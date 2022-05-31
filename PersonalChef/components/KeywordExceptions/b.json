@@ -4649,6 +4649,14 @@
                   "substitution": false,
                 },
                 {
+                  "word": "côte de veau",
+                  "substitution": false,
+                },
+                {
+                  "word": "cote de veau",
+                  "substitution": false,
+                },
+                {
                   "word": "goat",
                   "substitution": true,
                 },

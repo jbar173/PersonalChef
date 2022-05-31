@@ -2,11 +2,9 @@
     "name": "meats_ingredients",
     "ingredients": [  "bacon", "beef", "beef mince", "black pudding", "burger",
 
-                      "chicken", "chicken mince", "corned beef", "cured sausage/sliced meat",
+                      "chicken", "chicken mince", "corned beef", "cured sausage/cured sliced meat",
 
                       "duck",
-
-                      "faggot",
 
                       "gammon", "goat", "goose", "grouse", "guinea fowl",
 
@@ -18,13 +16,15 @@
 
                       "offal", "ostrich",
 
-                      "pate", "partridge", "pancetta", "pheasant", "pigeon", "pork", "pork mince", "pork trotter", "prosciutto", "pulled pork",
+                      "pâté", "partridge", "pancetta", "pheasant", "pigeon", "pork", "pork mince", "pork trotter", "prosciutto", "pulled pork",
 
                       "quail",
 
                       "rabbit",
 
-                      "sausage", "sliced cooked meat", "smoked sausage/sliced meat", "spam", "squab", "steak and kidney",
+
+
+                      "sausage", "sliced cooked meat", "smoked sausage/smoked sliced meat", "spam", "squab", "steak and kidney",
 
                       "turkey", "turkey mince",
 

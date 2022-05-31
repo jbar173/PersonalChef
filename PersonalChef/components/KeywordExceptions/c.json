@@ -14,7 +14,7 @@
               "cornmeal","couscous","crackers","crispy onions","croutons","crumpets",
 
               "caviar","clams","cod","cockles","crab","crab stick","crayfish",
-              "chicken","chicken mince","cured sausage/sliced meat",
+              "chicken","chicken mince","cured sausage/cured sliced meat",
 
               "cabbage","cantaloupe","carrot","cauliflower","cauliflower rice","celeriac","celery","chard","chayote","cherries","chicory","chilli pepper","choi sum",
               "clementine","collard greens","courgette","cucumber",
@@ -7768,7 +7768,7 @@
             ],
         },
         {
-            "name": "cured sausage/sliced meat",
+            "name": "cured sausage/cured sliced meat",
             "type": "",
             "exclude": [
             ],
@@ -8816,6 +8816,10 @@
           "exclude": [
           ],
           "include": [
+            {
+              "word": "comté",
+              "substitution": false,
+            },
             {
               "word": "fontina",
               "substitution": true,

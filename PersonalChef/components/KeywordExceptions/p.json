@@ -11,7 +11,7 @@
               "pumpkin seeds",
 
               "pike","plaice","pollock","prawns",
-              "pancetta","partridge","pheasant","pigeon","pork","pork mince","prosciutto","pulled pork","pork trotter","pate",
+              "pancetta","partridge","pheasant","pigeon","pork","pork mince","prosciutto","pulled pork","pork trotter","pâté",
               "pak choi","parsnip","passion fruit","pea shoots","peach","pear","peas","persimmon","plantain","plum","pineapple","pomegranate","potato","pumpkin",
               "paris seasoning","plain paprika","pepper","piri piri seasoning","pork seasoning",
               "passata","pease pudding","pickles","pickled eggs","pickled red cabbage","pinto beans","pumpkin puree",
@@ -4712,14 +4712,31 @@
               ],
           },
           {
-              "name": "pate",
+              "name": "pâté",
               "type": "",
               "exclude": [
                 {
                   "word": "sucree",
+                },
+                {
+                  "word": "feuilletée",
+                },
+                {
+                  "word": "feuilletee",
+                },
+                {
+                  "word": "pastry",
                 }
               ],
               "include": [
+                {
+                  "word": "paté",
+                  "substitution": false,
+                },
+                {
+                  "word": "pate",
+                  "substitution": false,
+                },
                 {
                   "word": "liver sausage",
                   "substitution": false,
@@ -5086,6 +5103,10 @@
               "include": [
                 {
                   "word": "trotter",
+                  "substitution": false,
+                },
+                {
+                  "word": "pettitoe",
                   "substitution": false,
                 },
                 {

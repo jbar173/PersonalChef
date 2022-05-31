@@ -1303,6 +1303,10 @@
                 {
                   "word": "eggplant",
                   "substitution": false,
+                },
+                {
+                  "word": "brinjal",
+                  "substitution": true,
                 }
               ],
           },

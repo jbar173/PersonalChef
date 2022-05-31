@@ -8,7 +8,7 @@
 
               "scone mix","seed flour","sesame seeds","shortcrust pastry","shredded wheat cereal","spring roll wrapper","sunflower seeds",
               "salmon","scallops","sea bream","shrimp","skate","smoked trout","smoked salmon","snails","snapper","sole","sprat","squid","sturgeon","swai",
-              "sausage","smoked sausage/sliced meat","squab",
+              "sausage","smoked sausage/smoked sliced meat","squab",
 
               "salad leaves","salsify","samphire","shallot","skirret","soffrito mix","spinach","spring onions","star fruit","strawberries","summer squash","swede",
               "sweet potato",
@@ -5323,7 +5323,7 @@
               ],
           },
           {
-              "name": "smoked sausage/sliced meat",
+              "name": "smoked sausage/smoked sliced meat",
               "type": "",
               "exclude": [
               ],

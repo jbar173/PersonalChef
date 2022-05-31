@@ -8,11 +8,11 @@
                       "cabbage", "cantaloupe", "carrot", "cassava root", "cauliflower", "cauliflower rice", "celeriac", "celery", "chard", "chayote", "cherries", "chicory", "chilli pepper",
                       "choi sum", "clementine", "collard greens", "courgette", "cress", "cucumber",
 
-                      "daikon", "dried mulberries",
+                      "daikon",
 
                       "edamame beans", "elderberries", "endive",
 
-                      "fennel", "fiddleheads", "fig", "fresh coconut", "fresh corn", "fresh cranberries", "fresh ginger", "fresh horseradish", "fresh pomegranate seeds", "fresh quince",
+                      "fennel", "fiddleheads", "fig", "fresh coconut", "fresh corn", "fresh cranberries", "fresh ginger", "fresh horseradish", "fresh pomegranate seeds", "fresh quince", "fresh seaweed",
 
                       "galangal", "garlic", "gooseberries", "grapefruit", "grapes", "green beans", "guava",
 
@@ -28,13 +28,11 @@
 
                       "okra", "onion", "orange",
 
-                      "pak choi", "papaya", "parsnip", "passion fruit", "peach", "pear", "peas", "pea shoots", "persimmon", "pineapple", "plantain", "plum",
-                      "pomegranate", "potato", "pumpkin",
+                      "pak choi", "papaya", "parsnip", "passion fruit", "peach", "pear", "peas", "pea shoots", "persimmon", "pineapple", "plantain", "plum", "pomegranate", "potato", "pumpkin",
 
-                      "radish", "raddichio", "raspberries", "ratatouille", "redcurrants", "red cabbage", "rhubarb", "rocket",
+                      "radish", "radicchio", "raspberries", "ratatouille", "redcurrants", "red cabbage", "rhubarb", "rocket",
 
-                      "salad leaves", "salsify", "samphire", "seaweed", "shallot", "skirret", "soffrito mix", "spinach", "spring onions", "star fruit", "strawberries",
-                      "swede", "sweet potato",
+                      "salad leaves", "salsify", "samphire", "shallot", "skirret", "soffrito mix", "spinach", "spring onions", "star fruit", "strawberries", "swede", "sweet potato",
 
                       "tangerine", "taro root", "tomato", "turnip",
 
@@ -42,7 +40,6 @@
 
                       "watercress", "watermelon", "water chestnut",
 
-                      "yams",
-                      
+
     ]
 }
