@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, Pressable, View, SafeAreaView, ScrollView } from 'react-native';
+import * as perishable_list from './checklists/json_ingredient_lists/most_perishable.json';
 
 
 class PerishableRankedDictionary extends React.Component {
@@ -10,109 +11,184 @@ class PerishableRankedDictionary extends React.Component {
           "ingredients": [],
           "ingredientCount": 0,
         },
-        // rank: this.props.rank,
-        // backendRanks: this.props.backendRanks,
-        rankedIngredients: {},
-        finished: true,
-        error: false,
-        triggerSendBack: false,
+        ingredients: this.props.ingredients,
+        originalLength: null,
+        perishablesList: [],
+        fivePerishables: [],
+        ready: false,
+        finished: false,
+        notFound: false,
+        passBack: false,
+        // error: false,
+        // triggerSendBack: false,
       }
       this.componentDidMount = this.componentDidMount.bind(this)
-      // this.componentDidUpdate = this.componentDidUpdate.bind(this)
-      // this.componentWillUnmount = this.componentWillUnmount.bind(this)
-      // this.sendIngredientsDict = this.sendIngredientsDict.bind(this)
+      this.componentDidUpdate = this.componentDidUpdate.bind(this)
+      this.componentWillUnmount = this.componentWillUnmount.bind(this)
+      this.findMostPerishableKeywords = this.findMostPerishableKeywords.bind(this)
+      this.sendPerishablesKeywords = this.sendPerishablesKeywords.bind(this)
    };
 
-// Gets location for relevant rank list from directory, gets the list from that location,
-//   assigns to rankedIngredients:
-componentDidMount(){
-    console.log("Ranked dictionary mounted")
 
-    if(this.state.rank === null){
-          var ranks = Object.keys(ranked_files)
-          var word = ranks.pop()
-          console.log("FIRST RANK: " + word)
-
-          var converter = require('words-to-numbers');
-          var number = converter.wordsToNumbers(word)
-          console.log("NUMBER: " + number)
-          this.setState({
-            rank: number,
-            backendRanks: ranks
-          })
-          var ingrs_list = ranked_files[`${word}`]
-          console.log("1.ingrs_list: " + ingrs_list)
-
-    }else{
-          try{
-              var ranks = this.state.backendRanks
-              var new_rank = ranks.pop()
-              console.log("NEW RANK: " + new_rank)
-              var ingrs_list = ranked_files[`${new_rank}`]
-              console.log("2.ingrs_list: " + ingrs_list)
-              console.log("this.state.backendRanks.length is 0?: " + this.state.backendRanks.length === 0)
-         }catch(error){
-              console.log("Error getting next rank: " + error.message)
-              console.log("this.state.backendRanks.length is 0?: " + this.state.backendRanks.length === 0)
-              this.setState({
-                finished: false,
-                error: true
-              })
-         }
-    }
-
-    var list = ingrs_list.children
-    console.log("list.length: " + list.length)
-    // console.log("list[0]['name']: " + list[0]['name'])
-    console.log("~~~~~~~~~~~~~~~~~~")
-
-////////////////////////////////////// SET STATE (BELOW) FAILS/NEVER HAPPENS - so CdidUpdate never triggered again *** fix
+  componentDidMount(){
+    console.log("PERISHABLE dictionary mounted")
+    var perishables = perishable_list.ingredients
+    var length = this.state.ingredients.length
     this.setState({
-      rankedIngredients: list,
-      finished: false,
+      perishablesList: perishables,
+      originalLength: length,
+      ready: true
     })
-    console.log("END of didMount")
+    console.log("END of perishables didMount")
   }
-//
-//   componentDidUpdate(){
-//     console.log("Ranked dictionary updated")
-// // Triggers function that sends ranked dictionary to < AlterKeywords />:
-//     // if(this.state.finished === false && this.state.error === false && this.state.triggerSendBack === false){
-//     //   this.setState({
-//     //     triggerSendBack: true,
-//     //   })
-//     // }
-//     // if(this.state.triggerSendBack){
-//     //   this.sendIngredientsDict()
-//     // }
-//     if(this.state.finished === false && this.state.error === false){
-//       this.sendIngredientsDict()
-//     }
-//   }
-//
-//   componentWillUnmount(){
-//     console.log("Ranked dictionary unmounted")
-//   }
-//
-// // Function that sends rankedIngredients back to < AlterKeywords />:
-//   sendIngredientsDict(){
-//     console.log("R2")
-//     var ranked_dictionary = this.state.rankedIngredients
-//     var rank = this.state.rank
-//     var backend_ranks = this.state.backendRanks
-//     console.log("ranked ingredients.length: " + ranked_dictionary.length )
-//     // console.log("this.state.rankedIngredients[0].name: " + this.state.rankedIngredients[0].name)
-//     this.props.rankedIngs(backend_ranks,ranked_dictionary,rank)
-//     this.setState({
-//       finished: true,
-//       triggerSendBack: false
-//     })
-//     console.log("R23")
-//   }
+
+  componentDidUpdate(){
+    console.log("Perishable dictionary updated")
+    console.log("# THIS.STATE.PERISHABLESLIST.LENGTH: " + this.state.perishablesList.length)
+// Triggers function that sends ranked dictionary to < AlterKeywords />:
+    // if(this.state.finished === false && this.state.error === false && this.state.triggerSendBack === false){
+    //   this.setState({
+    //     triggerSendBack: true,
+    //   })
+    // }
+    // if(this.state.triggerSendBack){
+    //   this.sendIngredientsDict()
+    // }
+
+    // if(this.state.finished === true && this.state.error === false){
+    if(this.state.finished === true && this.state.notFound === false){
+      this.sendPerishablesKeywords()
+    }
+    if(this.state.ready){
+      this.findMostPerishableKeywords()
+        // this.setState({
+        //   // fivePerishables: ["fruit and veg", "cheese", "meat", "fish", "the rest",],
+        //   finished: true,
+        //   ready: false
+        // })
+    }
+  }
+
+  componentWillUnmount(){
+    console.log("Perishable dictionary unmounted")
+  }
+
+  findMostPerishableKeywords(){
+    var i
+    var j
+    var length = this.state.ingredients.length
+    var p_length = this.state.perishablesList.length - 1
+    var ingredients = this.state.ingredients
+    var searching = true
+    var not_found = false
+
+    while(searching){
+
+       for(j=0;j<p_length;j++){                 // Outer loop iterates through rankedIngredients from bottom (lowest rank) to top.
+
+            if(searching){
+                var inner = true
+            }else{
+                break;
+            }
+
+            var perishable_ingredient = this.state.perishablesList[j]
+            console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~# Looking for: " + perishable_ingredient)
+
+            while(inner){
+
+                  for(i=0;i<length;i++){                // Inner loop iterates through user's ingredients, looking for a match with current
+                                                        //   ranked ingredient (from above loop).
+                      var my_ingredient = ingredients[i]
+                      // console.log("A2")
+
+                      if(my_ingredient === perishable_ingredient){
+                            // console.log("A3")
+                            ingredients.splice(i,1)
+                            var new_keywords = this.state.fivePerishables
+                            new_keywords.push(my_ingredient)
+                            this.setState({
+                              fivePerishables: new_keywords,
+                              ready: false
+                            })
+                            if(new_keywords.length === 5 || new_keywords.length === this.state.originalLength){
+                                  console.log("Length is short enough!!!!!")
+                                  searching = false
+                                  inner = false
+                                  // this.setState({
+                                  //   finished: true,
+                                  //   ready: false
+                                  // })
+                                  break;
+                            }
+                            console.log("*******found match*********: " + my_ingredient)
+                            console.log("*******found most perishable********: " + perishable_ingredient)
+
+                      }else{
+                            // console.log("A4")
+                            if(i === length - 1){
+                                  inner = false
+                                  break;
+                            }
+                      }
+
+                   }
+
+            }
+
+        }
+
+        if(searching){
+            console.log("A5")
+            not_found = true
+        }
+        console.log("A6")
+        searching = false
+     }
+
+     if(not_found){
+       console.log("ERROR: Couldn't find user's ingredients in perishables list")
+       this.setState({
+          ready: false,
+          notFound: true,
+          finished: true
+        })
+        // console.log("/////////////////////")
+      }else{
+        console.log("Found five most perishable")
+        this.setState({
+          passBack: true,
+          finished: true
+        })
+       }
+  }
+
+// Function that sends rankedIngredients back to < AlterKeywords />:
+  sendPerishablesKeywords(){
+    // console.log("R2")
+    var new_perishable_keywords = this.state.fivePerishables
+    console.log("five perishable keywords:")
+    var perishable
+    for(perishable in new_perishable_keywords){
+      console.log(new_perishable_keywords[perishable])
+    }
+    this.props.perishableIngs(new_perishable_keywords)
+    // var ranked_dictionary = this.state.rankedIngredients
+    // var rank = this.state.rank
+    // var backend_ranks = this.state.backendRanks
+    // console.log("ranked ingredients.length: " + ranked_dictionary.length )
+    // console.log("this.state.rankedIngredients[0].name: " + this.state.rankedIngredients[0].name)
+    // this.props.rankedIngs(backend_ranks,ranked_dictionary,rank)
+    this.setState({
+      finished: false,
+      // triggerSendBack: false
+    })
+    console.log("R23")
+  }
 
 
  render(){
-   console.log("Ranked dictionary rendered")
+   console.log("Perishable dictionary rendered")
    return(
            <View>
               <Text></Text>

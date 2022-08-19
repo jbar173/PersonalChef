@@ -14,6 +14,9 @@ class AlterKeywords extends React.Component {
         getMostPerishable: false,
         fiveIngreds: false,
         ready: false,
+        // perishableReady: false,
+        // pass: false,
+        set: false,
         passBack: false,
         backendRanks: [],
         rankedIngredients: {},
@@ -31,6 +34,7 @@ class AlterKeywords extends React.Component {
       this.componentWillUnmount = this.componentWillUnmount.bind(this)
       this.getRankedIngredients = this.getRankedIngredients.bind(this)
       this.alterIngredients = this.alterIngredients.bind(this)
+      this.getPerishableIngredients = this.getPerishableIngredients.bind(this)
       this.sendAlteredListBack = this.sendAlteredListBack.bind(this)
       this.setStates = this.setStates.bind(this)
       this.twoSecondTimeout = this.twoSecondTimeout.bind(this)
@@ -41,6 +45,7 @@ class AlterKeywords extends React.Component {
     console.log("this.state.ingredients.length: " + this.state.ingredients.length)
     console.log("~~~~did mount this.state.searchMethod: " + this.state.searchMethod)
     var length = this.state.ingredients.length
+    console.log("initial keywords length: " + length)
     if(this.state.searchMethod === 'frequently used'){
       this.setState({
         getRanked: true,
@@ -50,6 +55,7 @@ class AlterKeywords extends React.Component {
       this.setState({
         getMostPerishable: true,
         originalLength: length,
+        set: true
       })
     }else{
       this.setState({
@@ -63,6 +69,7 @@ class AlterKeywords extends React.Component {
     console.log("AlterKeywords unmounting")
     this.setState({
       getRanked: false,
+      getMostPerishable: false,
     })
   }
 
@@ -70,6 +77,10 @@ class AlterKeywords extends React.Component {
     console.log("AlterKeywords updated")
     console.log("### this.state.notFound: " + this.state.notFound)
     console.log("~~~~alter this.state.searchMethod: " + this.state.searchMethod)
+    console.log("### this.state.newKeywords.length: " + this.state.newKeywords.length)
+    console.log("~~~~~~~~~~~~~~~~getMostPerishable: " + this.state.getMostPerishable)
+
+    // FOR RANKED:
     // Triggers function to alter ingredient list, once rankedIngredients
     //   have been received from < RankedDictionary />:
     if(this.state.ready){
@@ -82,11 +93,27 @@ class AlterKeywords extends React.Component {
     if(this.state.set){
         this.setStates()
     }
-    if(this.state.notFound && this.state.timerOn === false|| this.state.passBack && this.state.timerOn === false){
-        this.twoSecondTimeout()
+    if(this.state.searchMethod === 'frequently used'){
+      if(this.state.notFound && this.state.timerOn === false || this.state.passBack && this.state.timerOn === false){
+        console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~passBack == true~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+          this.twoSecondTimeout()
+      }
     }
+
+    // FOR PERISHABLE:
+    //
+
+    // if(this.state.perishableReady){
+    //     console.log("Ready triggered")
+    //     this.alterIngredients()
+    //     // console.log("ready triggered 2")
+    // }
+
+
+
+    // FOR BOTH RANKED AND PERISHABLE:
     // Triggers function that passes new list of keywords back to < ConfirmList />:
-    if(this.state.pass){
+    if(this.state.gotFive){
         console.log("Passing back to ApiCalls")
         this.sendAlteredListBack()
     }
@@ -109,7 +136,7 @@ class AlterKeywords extends React.Component {
         }
         else{
           comp.setState({
-            pass: true,
+            gotFive: true,
             passBack: false,
             timerOn: false
           })
@@ -119,10 +146,19 @@ class AlterKeywords extends React.Component {
 
   setStates(){
     console.log("*********setStates function")
-    this.setState({
-      getRanked: true,
-      set: false
-    })
+    if(this.state.searchMethod === 'frequently used'){
+      this.setState({
+        getRanked: true,
+        set: false
+      })
+    }else if(this.state.searchMethod === 'most perishable'){
+      this.setState({
+        getMostPerishable: true,
+        set: false
+      })
+    }else{
+      console.log("User's choice five ingredients state")
+    }
   }
 
 // Takes in a dictionary of all ingredients, ranked and sorted, from <RankedDictionary /> :
@@ -181,9 +217,6 @@ class AlterKeywords extends React.Component {
                             })
                             if(new_keywords.length === 5 || new_keywords.length === this.state.originalLength){
                                   console.log("Length is short enough!!!!!")
-                                  this.setState({
-                                    gotFive: true
-                                  })
                                   searching = false
                                   inner = false
                                   break;
@@ -233,8 +266,28 @@ class AlterKeywords extends React.Component {
 
   }
 
+//
+  getPerishableIngredients(new_perishable_keywords){
+    console.log("Getting perishable list")
+    //
+    //
+    //
+    console.log("Perishable keywords length:" + new_perishable_keywords.length)
+    this.setState({
+      newKeywords: new_perishable_keywords,
+      getMostPerishable: false,
+      gotFive: true
+    })
+    // this.setState({
+    //   newKeywords: new_perishable_keywords,
+    //   getMostPerishable: false,
+    //   gotFive: true
+    // })
+  }
+
  // Sends new ingredients list back to < ApiCalls />:
   sendAlteredListBack(){
+    console.log("sendAlteredListBack triggered")
     var status = true
     if(this.state.error){
         console.log("A7 error")
@@ -244,7 +297,7 @@ class AlterKeywords extends React.Component {
     console.log("new_keywords.length: " + new_keywords.length)
     this.props.alteredKeywords(new_keywords,status)
     this.setState({
-      pass: false
+      gotFive: false
     })
   }
 
@@ -260,8 +313,10 @@ class AlterKeywords extends React.Component {
                         rankedIngs = {this.getRankedIngredients}
                       />
                     }
-                    {this.state.getmostPerishable &&
+                    {this.state.getMostPerishable &&
                       < PerishableRankedDictionary
+                        ingredients = {this.state.ingredients}
+                        perishableIngs = {this.getPerishableIngredients}
                       />
                     }
               </View>

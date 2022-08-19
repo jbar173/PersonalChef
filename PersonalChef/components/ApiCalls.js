@@ -738,8 +738,8 @@ class ApiCalls extends React.Component {
 
                   { alter_or_reorder_keywords && < AlterKeywords
                     keywords = {this.state.searchKeywords}
-                    alteredKeywords = {this.keywordsAlteredHandler}
                     searchMethod = {this.state.initialData.searchMethod}
+                    alteredKeywords = {this.keywordsAlteredHandler}
                     />
                   }
 

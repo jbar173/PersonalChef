@@ -29,7 +29,7 @@ class RankedDictionary extends React.Component {
    };
 
 // Gets location for relevant rank list from directory, gets the list from that location,
-//   assigns to rankedIngredients:
+//   assigns to rankedIngredients (rank zero file contains the least used/least popular ingredients):
   componentDidMount(){
     console.log("Ranked dictionary mounted")
 

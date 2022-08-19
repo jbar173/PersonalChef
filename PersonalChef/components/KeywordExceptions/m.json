@@ -4481,6 +4481,26 @@
                 {
                   "word": "berries",
                   "substitution": false,
+                },
+                {
+                  "word": "blackberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "raspberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "strawberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "blueberries",
+                  "substitution": true,
+                },
+                {
+                  "word": "redcurrants",
+                  "substitution": true,
                 }
               ],
           },
