@@ -29,7 +29,6 @@ class ApiCalls extends React.Component {
       deleteOne: false,
       noMoreKeywords: false,
 
-      foundResults: true,
       apiError: false,
       tryAgain: false,
       keywordsError: false,
@@ -312,16 +311,14 @@ class ApiCalls extends React.Component {
       console.log("API h")
       this.setState({
         nextCall: false,
-        noMorePages: true,
-        foundResults: false
+        noMorePages: true
       })
     }else{
       console.log("API i")
       this.apiCall()
       console.log("API j")
       this.setState({
-        nextCall: false,
-        foundResults: true
+        nextCall: false
       })
     }
   }
@@ -359,6 +356,7 @@ class ApiCalls extends React.Component {
         console.log("API e")
       }else{
         console.log("status = false")
+        console.log("***keywords error")
         this.setState({
           savedRecipes: saved_recipes,
           initialData: {
@@ -474,12 +472,13 @@ class ApiCalls extends React.Component {
           var url = next_call['next']['href']
           console.log("next url: " + url)
 
-        }catch{
+        }catch(err){
           console.log("No next page")
+          console.log("errrrrrrrrrrrrrrrrrr: " + err)
           this.setState({
             noMorePages: true,
-            nextCall: false,
-            startRefine: true,
+            nextCall: false
+            // startRefine: true,
           })
           return 1;
         }
@@ -511,6 +510,7 @@ class ApiCalls extends React.Component {
       console.log("If undefined here don't overwrite 'next'") /////////////////////  Fix this
       this.setState({
         apiError: true,
+        // startRefine: false
       })
      });
     console.log("COUNT: " + this.state.count)
@@ -518,7 +518,6 @@ class ApiCalls extends React.Component {
 
   tryAgain(){
     console.log("TRY AGAIN function")
-    console.log("this.state.foundResults: " + this.state.foundResults)
     var ings = this.state.initialData.ingredients
     this.setState({
       tryAgain: true,
@@ -542,8 +541,7 @@ class ApiCalls extends React.Component {
         cmponent.setState({
           nextCall: true,
           stopwatchTriggered: false,
-          stopwatchRunning: false,
-          foundResults: true
+          stopwatchRunning: false
         })
       }, 6000)
     console.log("API l")
@@ -685,7 +683,7 @@ class ApiCalls extends React.Component {
       refinedRecipeList: relevants,
       almostList: almosts,
       substitutesDict: subs,
-      startRefine: false,
+      startRefine: false
     })
   }
 

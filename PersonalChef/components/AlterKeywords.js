@@ -14,8 +14,6 @@ class AlterKeywords extends React.Component {
         getMostPerishable: false,
         fiveIngreds: false,
         ready: false,
-        // perishableReady: false,
-        // pass: false,
         set: false,
         passBack: false,
         backendRanks: [],
@@ -95,21 +93,9 @@ class AlterKeywords extends React.Component {
     }
     if(this.state.searchMethod === 'frequently used'){
       if(this.state.notFound && this.state.timerOn === false || this.state.passBack && this.state.timerOn === false){
-        console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~passBack == true~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
           this.twoSecondTimeout()
       }
     }
-
-    // FOR PERISHABLE:
-    //
-
-    // if(this.state.perishableReady){
-    //     console.log("Ready triggered")
-    //     this.alterIngredients()
-    //     // console.log("ready triggered 2")
-    // }
-
-
 
     // FOR BOTH RANKED AND PERISHABLE:
     // Triggers function that passes new list of keywords back to < ConfirmList />:
@@ -173,11 +159,13 @@ class AlterKeywords extends React.Component {
       getRanked: false,
       ready: true
     })
-    console.log("Alter a")
   }
 
-// Searches for least popular ingredient in user's ingredient list,
-//  splices it from list, then triggers this.state.passBack:
+// Searches for most popular ingredient in user's ingredient list,
+//  splices it from list, then triggers either this.state.passBack
+//   (five most popular ingredients have been found),
+//    or this.state.notFound (need to get next rank of ingredients
+//    and search through them via setStates()-> this.state.getRanked = true):
   alterIngredients(){
     var i
     var j
@@ -205,10 +193,8 @@ class AlterKeywords extends React.Component {
                   for(i=0;i<length;i++){                // Inner loop iterates through user's ingredients, looking for a match with current
                                                         //   ranked ingredient (from above loop).
                       var my_ingredient = ingredients[i]
-                      // console.log("A2")
 
                       if(my_ingredient === ranked_ingredient){
-                            // console.log("A3")
                             ingredients.splice(i,1)
                             var new_keywords = this.state.newKeywords
                             new_keywords.push(my_ingredient)
@@ -225,7 +211,6 @@ class AlterKeywords extends React.Component {
                             console.log("*******found most popular********: " + ranked_ingredient)
 
                       }else{
-                            // console.log("A4")
                             if(i === length - 1){
                                   inner = false
                                   break;
@@ -253,7 +238,6 @@ class AlterKeywords extends React.Component {
           ready: false,
           notFound: true,
         })
-        // console.log("/////////////////////")
       }else{
         console.log("Found a match")
         this.setState({
@@ -266,23 +250,15 @@ class AlterKeywords extends React.Component {
 
   }
 
-//
+// Receives user's 5 most perishable ingredients from <PerishableRankedDictionary>,
+//  assigns to
   getPerishableIngredients(new_perishable_keywords){
-    console.log("Getting perishable list")
-    //
-    //
-    //
     console.log("Perishable keywords length:" + new_perishable_keywords.length)
     this.setState({
       newKeywords: new_perishable_keywords,
       getMostPerishable: false,
       gotFive: true
     })
-    // this.setState({
-    //   newKeywords: new_perishable_keywords,
-    //   getMostPerishable: false,
-    //   gotFive: true
-    // })
   }
 
  // Sends new ingredients list back to < ApiCalls />:

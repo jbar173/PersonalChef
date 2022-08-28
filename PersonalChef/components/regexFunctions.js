@@ -251,7 +251,7 @@ const FindExceptions = (ingredients,ingredient_lower,recipe_title,original_ingre
         var first_letter = ingredients[l][0]
         var exceptions = keys[`${first_letter}`]
         var next_ingredient = false
-        var length = ingredients.length
+        // var regex_ings_length = ingredients.length
         var count = 0
 
         for(m in exceptions){

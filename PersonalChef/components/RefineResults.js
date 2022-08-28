@@ -76,7 +76,9 @@ const RefineResults = props => {
       console.log("length: " + length)
 
       for(j=0;j<length;j++){
-
+             console.log("AAAAAAAAAAAAAAAAAAAA")
+             console.log("j: " + j)
+             console.log("*length: " + length)
              console.log("****Checking recipe: " + recipes[j]['recipe']['label'])
              var recipe_name = recipes[j]['recipe']['label']
              var recipe_url = recipes[j]['recipe']['url']
@@ -111,14 +113,15 @@ const RefineResults = props => {
              if(less){
 
                    try{
-
+                           console.log("BREAK OUT?????: " + break_out)
                            var match_count = 0
                            var x
                            var y
                            var not_found = []
                            var outer_ind = -1
 
-                  // Looks up and collects all ingredients to check against recipe ingredient, including 'include' words for each 'include' in user's original ingredient:
+                  // Looks up and collects all ingredients to check against recipe ingredient, including 'include' words for each 'include' in
+                  //   user's original ingredient:
                            for(x in checked_ingredients){
 
                                  outer_ind += 1
@@ -157,10 +160,6 @@ const RefineResults = props => {
                                        }
                                        var original_ingredient = user_ingredients[y]
 
-                                       // var include_words = [ user_ingredients[y], ]
-                                       // var original_ingredient = include_words[0]
-                                       // var substitution_by_index = [false,]
-
                                        var p
                                        var q
                                        var s
@@ -192,7 +191,6 @@ const RefineResults = props => {
                                                        for(s in word_exceptions){
                                                          var name_two = word_exceptions[s]['name']
                                                          if(name_two === word){
-                                                           // console.log("Found:" + name_two + " in kw-exceptions")
                                                            var include_two = word_exceptions[s]['include']
                                                            for(t in include_two){
                                                              var word_two = include_two[t]['word']
@@ -201,8 +199,6 @@ const RefineResults = props => {
                                                              }else{
                                                                var sub_two = include_two[t]['substitution']
                                                              }
-                                                             // console.log("New include_word: " + word_two)
-                                                             // console.log("Substitution?: " + sub_two)
                                                              include_words.push(word_two)
                                                              substitution_by_index.push(sub_two)
                                                            }
@@ -219,14 +215,9 @@ const RefineResults = props => {
                                            var ingredient = user_ingredients[y]
                                        }
 
-                                       // console.log("LOOKING FOR RECIPE ING: " + ingredient_lower + " in USER ING: " + user_ingredients[y])
-
                                        var find = FindIngredient(include_words,ingredient_lower)
                                        var result = find[0]
                                        var original_was_found = find[1]     // true or false
-                                       // console.log("~~~### LESS LOOP")
-                                       // console.log("~~~~~~~~~~~~~user_ingredients[y]: " + user_ingredients[y])
-                                       // console.log("~~~~~~~~~~~~~Original found?: " + find[1])
                                        var all_ingredients_found = find[2]
                                        var i
                                        for(i in all_ingredients_found){
@@ -295,8 +286,11 @@ const RefineResults = props => {
                                             console.log("not_found.length (less): " + not_found.length)
                                             if(not_found.length > 1){         // User is missing more than one of the recipe's ingredients
                                                 console.log("*NO MATCH*")
+                                                console.log("BBBBBBBBBBBBBBBBBBBBBB")
                                                 console.log("with: " + recipes[j]['recipe']['label'])
                                                 console.log("in less = false")
+                                                console.log("j: " + j)
+                                                console.log("**length: " + length)
                                                 break_out = true              // Both loops broken out of, move on to next recipe
                                                 break;
                                             }
@@ -315,7 +309,7 @@ const RefineResults = props => {
                                                              found_key = true
                                                              var existing_array = substitutes_dict[recipe_url]
                                                              console.log("1. existing_array.length: " + existing_array.length)
-                                                             var length = existing_array.length
+                                                             var array_length = existing_array.length
                                                              var new_value = [ingredient_lower, user_ingredients[y], all_ingredients_found[last], is_sub ]
                                                              existing_array.push(new_value)
                                                              console.log("2. existing_array.length: " + existing_array.length)
@@ -331,6 +325,7 @@ const RefineResults = props => {
                                                 }
                                                if(match_count === checked_length){ // Found all of the recipe's ingredients within the user's ingredients, add recipe to relevant list.
                                                     console.log("MATCH FOUND!")
+                                                    console.log("CCCCCCCCCCCCCCCCCCCCCCCCc")
                                                     console.log("for: " + recipes[j]['recipe']['label'])
                                                     console.log("in less = true")
                                                     var entry = []
@@ -343,6 +338,10 @@ const RefineResults = props => {
                                                     // Add to almosts:
                                                     console.log("ALMOST MATCH (less)!")
                                                     var entry = []
+                                                    console.log("DDDDDDDDDDDDDDDDDDDDDDD")
+                                                    console.log("~~~~ i: " + i)
+                                                    console.log("j: " + j)
+                                                    console.log("***length: " + length)
                                                     entry.push(recipes[j]['recipe']['label'])
                                                     entry.push(recipes[j]['recipe']['url'])
                                                     entry.push(not_found[0])
@@ -351,17 +350,20 @@ const RefineResults = props => {
                                                     break;
                                                }else if(not_found.length > 1){ // User is missing more than 1 ingredient, recipe isn't relevant for user
                                                     console.log("NO MATCH")
+                                                    console.log("EEEEEEEEEEEEEEEEEEEEEEEEEEEE")
                                                     console.log("with: " + recipes[j]['recipe']['label'])
                                                     console.log("in less = true")
                                                     break_out = true  // Both loops broken out of, move on to next recipe
                                                     break;
                                                }else{
-                                                    console.log("Match FINAL condition 1") // This recipe_ingredient has been found in user's ingredients, however still more recipe_ingredients to search for.
+                                                    console.log("Match FINAL condition 1") // This recipe_ingredient has been found in user's ingredients, however still
+                                                                                           //  more recipe_ingredients to search for.
                                                     break; // move onto next recipe_ingredient.
                                                }
                                          }else if(match === false && index === last_index){  // match is still false (the recipe_ingredient doesn't match with any of the user's ingredients)
                                                if(not_found.length > 1){  // If checking last ingredient in recipe, and user is missing more than one ingredient
                                                     console.log("**NO MATCH")
+                                                    console.log("FFFFFFFFFFFFFFFFFFFFFFFF")
                                                     console.log("with: " + recipes[j]['recipe']['label'])
                                                     console.log("in less = true")
                                                     break_out = true  // User is missing more than one ingredient in the recipe, break out of both loops, go to next recipe
@@ -370,6 +372,7 @@ const RefineResults = props => {
                                                     // add to almosts:
                                                     console.log("ALMOST MATCH! (less)")
                                                     var entry = []
+                                                    console.log("GGGGGGGGGGGGGGGGGGGGGGGGGGG")
                                                     entry.push(recipes[j]['recipe']['label'])
                                                     entry.push(recipes[j]['recipe']['url'])
                                                     entry.push(not_found[0])
@@ -377,8 +380,8 @@ const RefineResults = props => {
                                                     break_out = true  // Both loops broken out of, move on to next recipe
                                                     break;
                                                }
-                                         }else{   // match is still false but not yet finished checking all of the user's ingredients for the recipe ingredient (no need to break inner loop)
-                                               // console.log("No Match FINAL condition 2")
+                                         }else{   // match is still false but not yet finished checking all of the user's ingredients for the recipe
+                                                   // ingredient (no need to break inner loop)
                                          }
 
                                     }
@@ -435,7 +438,6 @@ const RefineResults = props => {
                                                 last_index_two = true
                                             }
                                             var match = false
-                                            // var found_random = false
 
                                             var include_words = []
                                             var substitution_by_index = []
@@ -452,10 +454,6 @@ const RefineResults = props => {
                                             }
                                             var original_ingredient = user_ingredients[ing]
 
-                                            // var include_words = [ user_ingredients[ing], ]
-                                            // var original_ingredient = include_words[0]
-                                            // var substitution_by_index = [false,]
-                                            // var is_key = false
                                             var p
                                             var q
 
@@ -467,7 +465,6 @@ const RefineResults = props => {
                                               for(p in exceptions){
                                                   var name = exceptions[p]['name']
                                                   if(name === user_ingredients[ing]){
-                                                      // is_key = true
                                                       var include = exceptions[p]['include']
                                                       for(q in include){
                                                           var word = include[q]['word']
@@ -480,17 +477,12 @@ const RefineResults = props => {
                                                             substitution_by_index.push(sub)
                                                           }
 
-                                                          // console.log("####~~~#####~~~### START OF TEST ###~~~#####~~~~####")
-                                                          // console.log("Original ingredient is: " + name)
-                                                          // console.log("Testing word: " + word)
-                                                          // console.log("Is substitution?: " + sub)
                                                           var f_letter_word = word[0]      // Finds second set of 'include' words: (searches for word that was pushed above),
                                                           var word_exceptions = keys[`${f_letter_word}`] // if found, adds each of its own 'include' words to include_words,
                                                           loopFour:                     //  directly underneath original word.
                                                             for(s in word_exceptions){
                                                               var name_two = word_exceptions[s]['name']
                                                               if(name_two === word){
-                                                                // console.log("Found:" + name_two + " in kw-exceptions")
                                                                 var include_two = word_exceptions[s]['include']
                                                                 for(t in include_two){
                                                                   var word_two = include_two[t]['word']
@@ -499,8 +491,6 @@ const RefineResults = props => {
                                                                   }else{
                                                                     var sub_two = include_two[t]['substitution']
                                                                   }
-                                                                  // console.log("New include_word: " + word_two)
-                                                                  // console.log("Substitution?: " + sub_two)
                                                                   include_words.push(word_two)
                                                                   substitution_by_index.push(sub_two)
                                                                 }
@@ -510,10 +500,9 @@ const RefineResults = props => {
                                                       }
                                                     break loopThree;
                                                   }
-                                              }                       //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ///////////////////////////////////
+                                              }
 
                                             var find = FindIngredient(include_words,ingredient_lower)
-                                            // console.log("~~~### SAME LOOP")
                                             var result = find[0]
                                             var original_was_found = find[1]
                                             var all_ingredients_found = find[2]
@@ -540,7 +529,6 @@ const RefineResults = props => {
                                                  var found = exception_check[0]
                                                  console.log("EXCEPTION FOUND? " + found)
                                                  var ingredients_with_exceptions = exception_check[1]
-                                                 // var found_random = exception_check[2]
 
                                                  if(found){
                                                       console.log( "NO MATCH FOR " + ingredient_lower )
@@ -564,6 +552,7 @@ const RefineResults = props => {
                                                   console.log("not_found.length (same): " + not_found.length)
                                                   if(not_found.length > 1){    // User is missing more than one of the recipe's ingredients
                                                       console.log("*NO MATCH*")
+                                                      console.log("HHHHHHHHHHHHHHHHHHHH")
                                                       console.log("with: " + recipes[j]['recipe']['label'])
                                                       console.log("in less = false")
                                                       done = true              // Both loops broken out of, move on to next recipe
@@ -585,7 +574,7 @@ const RefineResults = props => {
                                                                 found_key = true
                                                                 var existing_array = substitutes_dict[recipe_url]
                                                                 console.log("1. existing_array.length: " + existing_array.length)
-                                                                var length = existing_array.length
+                                                                var array_length = existing_array.length
                                                                 var new_value = [ingredient_lower, user_ingredients[y], all_ingredients_found[last], "test"]
                                                                 existing_array.push(new_value)
                                                                 console.log("2. existing_array.length: " + existing_array.length)
@@ -601,6 +590,7 @@ const RefineResults = props => {
 
                                                   }
                                                   if(ingredient_count === user_ings_length){      // User has all ingredients in the recipe, recipe is added to relevant_recipes
+                                                        console.log("IIIIIIIIIIIIIIIIIIIII")
                                                         console.log("INGREDIENTS MATCH for: " + recipes[j]['recipe']['label'])
                                                         console.log("in less = false")
                                                         var entry = []
@@ -611,6 +601,7 @@ const RefineResults = props => {
                                                         break;
                                                   }else if(last_index && not_found.length === 1){ // User has all ingredients except 1, recipe added to almosts
                                                         var entry = []
+                                                        console.log("JJJJJJJJJJJJJJJJJJJJJ")
                                                         entry.push(recipes[j]['recipe']['label'])
                                                         entry.push(recipes[j]['recipe']['url'])
                                                         entry.push(not_found[0])
@@ -618,6 +609,7 @@ const RefineResults = props => {
                                                         done = true            // Both loops broken out of, move on to next recipe
                                                         break;
                                                   }else if(last_index && not_found.length > 1){  // User is missing more than 1 ingredient
+                                                        console.log("KKKKKKKKKKKKKKKKKKKKKKKK")
                                                         console.log("NO MATCH")
                                                         console.log("with: " + recipes[j]['recipe']['label'])
                                                         console.log("in less = false")
@@ -628,12 +620,14 @@ const RefineResults = props => {
                                              }else if( match === false && last_index_two ) {
                                                   if(last_index && not_found.length > 1){        // If checking last ingredient in recipe, and user is missing more than one ingredient
                                                       console.log("**NO MATCH")
+                                                      console.log("LLLLLLLLLLLLLLLLLLLLLLLLL")
                                                       console.log("with: " + recipes[j]['recipe']['label'])
                                                       console.log("in less = false")
                                                       done = true              // User is missing more than one ingredient in the recipe, break out of both loops, go to next recipe
                                                       break;
                                                   }else if(last_index && not_found.length === 1){ // If checking last ingredient in recipe, and user is only missing one ingredient, recipe added to almosts
                                                       var entry = []
+                                                      console.log("MMMMMMMMMMMMMMMMMMMMM")
                                                       entry.push(recipes[j]['recipe']['label'])
                                                       entry.push(recipes[j]['recipe']['url'])
                                                       entry.push(not_found[0])
@@ -687,9 +681,6 @@ const RefineResults = props => {
                                     }
                                     var false_count = 0
 
-                                    // var include_words = [ user_ingredients[ing], ]
-                                    // var original_ingredient = include_words[0]
-                                    // var substitution_by_index = [ false,]
                                     var include_words = []
                                     var substitution_by_index = []
                                     var i
@@ -734,7 +725,6 @@ const RefineResults = props => {
                                                     for(s in word_exceptions){
                                                       var name_two = word_exceptions[s]['name']
                                                       if(name_two === word){
-                                                        // console.log("Found:" + name_two + " in kw-exceptions")
                                                         var include_two = word_exceptions[s]['include']
                                                         for(t in include_two){
                                                           var word_two = include_two[t]['word']
@@ -743,8 +733,6 @@ const RefineResults = props => {
                                                           }else{
                                                             var sub_two = include_two[t]['substitution']
                                                           }
-                                                          // console.log("New include_word: " + word_two)
-                                                          // console.log("Substitution?: " + sub_two)
                                                           include_words.push(word_two)
                                                           substitution_by_index.push(sub_two)
                                                         }
@@ -754,7 +742,7 @@ const RefineResults = props => {
                                               }
                                               break loopFive;
                                           }
-                                      }                           //////////////////////////////////////////////     Repeat this loop (so that search is 2x deep)    ////////////////////////////////////////
+                                      }    
 
                                     for(x in checked_ingredients){
 
@@ -765,10 +753,8 @@ const RefineResults = props => {
                                                 last_index_two = true
                                             }
                                             var match = false
-                                            // var found_random = false
 
                                             var find = FindIngredient(include_words,ingredient_lower)
-                                            // console.log("~~~### ONE-OVER LOOP")
                                             var result = find[0]
                                             var original_was_found = find[1]
                                             var all_ingredients_found = find[2]
@@ -830,7 +816,7 @@ const RefineResults = props => {
                                                                 found_key = true
                                                                 var existing_array = substitutes_dict[recipe_url]
                                                                 console.log("1. existing_array.length: " + existing_array.length)
-                                                                var length = existing_array.length
+                                                                var array_length = existing_array.length
                                                                 var new_value = [ingredient_lower, user_ingredients[y], all_ingredients_found[last], "test"]
                                                                 existing_array.push(new_value)
                                                                 console.log("2. existing_array.length: " + existing_array.length)
@@ -846,6 +832,7 @@ const RefineResults = props => {
                                                         }
                                                   }
                                                   if(ingredient_count === user_ings_length){     // All user ingredients have been found within the recipe.
+                                                        console.log("NNNNNNNNNNNNNNNNNNN")
                                                         console.log("INGREDIENTS MATCH for: " + recipes[j]['recipe']['label'])
                                                         console.log("in one_over")
                                                         var entry = []
