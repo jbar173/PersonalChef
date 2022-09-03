@@ -72,7 +72,11 @@ class PantryCheckList extends React.Component {
 
     populateInitialDict(){
       console.log("start")
+      if(!(this.state.empty)){
+        this.state.favourites.sort()
+      }
       var new_dictionary = {}
+      this.state.pantry.sort()
       var i
       var length = this.state.pantry.length
       for(i=0;i<length;i++){
@@ -157,6 +161,7 @@ class PantryCheckList extends React.Component {
           new_pantry.push(key)
         }
       }
+      new_pantry.sort()
       this.setState({
         confirmed: state,
         newPantry: new_pantry,

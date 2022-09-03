@@ -531,7 +531,7 @@ class TimeAndType extends React.Component {
 
                                                   (
                                                     <View>
-                                                        <TouchableHighlight accessible={true} accessibilityLabel="Go to savoury ingredients"
+                                                        <TouchableHighlight accessible={true} accessibilityLabel="Go to dessert ingredients"
                                                            accessibilityRole="button" underlayColor="white" onPress={ () => this.setState({ showInvalid: true }) }>
                                                            <Text style={styles.redButton}>Next page</Text>
                                                         </TouchableHighlight>

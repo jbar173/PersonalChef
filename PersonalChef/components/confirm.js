@@ -3,6 +3,9 @@ import { StyleSheet, Text, View, Button, TouchableWithoutFeedback, Pressable, Sa
 import { NativeRouter, Route, Link, Redirect } from "react-router-native";
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { FontAwesome } from '@expo/vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 
 
 class ConfirmList extends React.Component {
@@ -29,7 +32,10 @@ class ConfirmList extends React.Component {
       redirect: false,
       readyToRedirect: false,
       noIngredientsError: false,
-      times: ''
+      times: '',
+      fiveIngredients: [],
+      fiveChosen: false,
+      fiveConfirmed: false
     }
     this.abortController = new AbortController()
     this.componentDidMount = this.componentDidMount.bind(this)
@@ -38,6 +44,8 @@ class ConfirmList extends React.Component {
     this.confirmIngredients = this.confirmIngredients.bind(this)
     this.populateInitialData = this.populateInitialData.bind(this)
     this.updateFavourites = this.updateFavourites.bind(this)
+    this.fiveConfirmedChanged = this.fiveConfirmedChanged.bind(this)
+    this.ingredientCheck = this.ingredientCheck.bind(this)
 
     this.saveDeviceData = this.saveDeviceData.bind(this)
     this.getDeviceData = this.getDeviceData.bind(this)
@@ -105,13 +113,18 @@ class ConfirmList extends React.Component {
     console.log("Confirm page mounted")
     var initial_data = this.props.location.state.initial_data
     var ingreds = this.props.location.state.ingreds
+    for([key,value] of Object.entries(ingreds)){
+      console.log(key + ": " + value)
+      value.sort()
+      console.log("SORTED: " + key + ": " + value)
+    }
     var either = this.props.location.state.either
     var more_needed = this.props.location.state.more_needed
     var favourites_key = '@favourite-ingredients'
     var faves = this.getData(favourites_key)
     .then(faves => {
         this.setState({
-           favourites: faves,
+           favourites: faves
          })
      })
     .catch(error => {
@@ -227,6 +240,7 @@ class ConfirmList extends React.Component {
             var list = rough[key]
             console.log("list: " + list)
             // console.log("list.length: " + list.length)
+            var x
             for(x in list){
                   console.log("confirm m")
                   if(original_pantry.includes(list[x])){
@@ -313,14 +327,87 @@ class ConfirmList extends React.Component {
     console.log("confirm x")
   }
 
+  // Triggers when 'back' button is clicked (to re-select five ingredients):
+    fiveConfirmedChanged(status){
+      console.log("FIVE CONFIRMED?: " + this.state.fiveConfirmed)
+      if(status==="back"){
+        console.log("Five confirmed now false")
+        this.setState({
+          fiveConfirmed: false
+        })
+      }else{
+        var changed_state = !(this.state.fiveConfirmed)
+        console.log("----CHANGED STATE (five confirmed?): " + changed_state)
+        this.setState({
+          fiveConfirmed: changed_state
+        })
+      }
+    }
+
+    ingredientCheck(ingredient){
+      console.log("INGREDIENT: " + ingredient)
+      var add = true
+      var j
+      for(j in this.state.fiveIngredients){
+        console.log(j + ". " + this.state.fiveIngredients[j])
+      }
+      if(this.state.fiveIngredients.includes(ingredient)){
+          add = false
+          console.log("INGREDIENT ALREADY IN LIST!: " + ingredient)
+          var i
+          for(i in this.state.fiveIngredients){
+            if(this.state.fiveIngredients[i] === ingredient){
+              var five = this.state.fiveIngredients
+              five.splice(i,1)
+              this.setState({
+                fiveIngredients: five,
+                fiveChosen: false
+              })
+            }
+          }
+          console.log("this.state.fiveChosen: " + this.state.fiveChosen)
+          return;
+      }
+      console.log("ADD IS TRUE!")
+      if(this.state.fiveIngredients.length === 4){
+          console.log("LENGTH IS 4!!!!!!!!!")
+          this.setState({
+            fiveIngredients: [
+              ...this.state.fiveIngredients,
+              ingredient
+            ],
+            fiveChosen: true
+          })
+      }else{
+          console.log("!!!!!!!!LENGTH IS NOT 4!!!!!!!!!")
+          this.setState({
+            fiveIngredients: [
+              ...this.state.fiveIngredients,
+              ingredient
+            ],
+            fiveChosen: false
+          })
+      }
+      console.log("**this.state.fiveChosen: " + this.state.fiveChosen)
+    }
+
 
   render(){
     console.log("Confirm page rendered")
+    console.log("**this.state.fiveChosen: " + this.state.fiveChosen)
     var initial = this.state.initialData
     var either = this.state.both
     var ingreds = this.state.ingredients_rough
     var redirect = this.state.readyToRedirect
     var more_needed = this.state.moreNeeded
+    var self = this
+    var five_ingredients = this.state.fiveIngredients
+    console.log("five_ingredients.length: " + five_ingredients.length)
+    var a
+    console.log("RENDER 5 INGREDIENTS:")
+    for(a in five_ingredients){
+      console.log(a + ". " + five_ingredients[a])
+    }
 
     return(
 
@@ -328,7 +415,8 @@ class ConfirmList extends React.Component {
         <ScrollView>
 
               <View>
-                     {this.state.noIngredientsError === false && ingreds !== undefined &&
+                     {this.state.noIngredientsError === false && ingreds !== undefined && initial.searchMethod !== "user's choice" &&
+
                           <View style={styles.container}>
 
                               <Text accessible={true} accessibilityLabel="Confirm your ingredients here, or click go back to edit them."
@@ -373,31 +461,208 @@ class ConfirmList extends React.Component {
 
                               { redirect === true && <Redirect to={{ pathname:'/api-calls/',
                                 state:{ initial_data: initial, either: either,
-                                        ingreds: ingreds, } }} />
+                                        ingreds: ingreds, five_keywords: five_ingredients } }} />
                               }
 
                            </View>
                       }
 
 
-                      {this.state.noIngredientsError &&
+                      {this.state.noIngredientsError === false && ingreds !== undefined &&
+                        initial.searchMethod === "user's choice" && this.state.fiveConfirmed &&
 
-                            <View style={styles.container}>
+                           <View style={styles.container}>
 
-                                <Text accessible={true} accessibilityLabel="Error: No ingredients were selected!"
-                                  accessibilityRole="text" style={styles.mediTitle}> Error: No ingredients were selected! </Text>
+                               <Text accessible={true} accessibilityLabel="Confirm your ingredients here, or click go back to edit them."
+                                 accessibilityRole="text" style={styles.mainTitle}>Confirm pantry ingredients</Text>
 
-                                <Link accessible={true} accessibilityLabel= "Start again"
-                                  accessibilityHint="Click button to go back to homepage"
-                                  to="/" accessibilityRole="button" underlayColor="transparent">
-                                    <Text style={styles.blueButton}> Start again </Text>
-                                </Link>
+                                {Object.entries(ingreds).map(function(item,index){
+                                    return(
+                                       <View key={index} style={{ alignItems:"center", marginBottom:10 }}>
+                                         <Text style={{fontSize:20,fontWeight:"bold"}}>{item[0]}:</Text>
+                                             {item[1].map(function(ingredient){
+                                               return(
+                                                   <Text accessible={true} accessibilityLabel={ingredient} accessibilityRole="text"
+                                                     key={ingredient} >{ingredient}</Text>
+                                                 )
+                                               })
+                                             }
+                                       </View>
+                                     )
+                                   }
+                                )}
+
+                               <Pressable onPress={this.confirmIngredients}>
+                                   <Text accessible={true} accessibilityLabel="Confirm" accessibilityRole="button"
+                                    style={styles.blueButton}>Confirm</Text>
+                               </Pressable>
+
+
+                               <Pressable onPress={() => self.fiveConfirmedChanged("back")}>
+                                   <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                     style={styles.blueButton}>Back</Text>
+                               </Pressable>
+
+
+                               { redirect === true && <Redirect to={{ pathname:'/api-calls/',
+                                 state:{ initial_data: initial, either: either,
+                                         ingreds: ingreds, five_keywords: five_ingredients, } }} />
+                               }
+
+                            </View>
+                       }
+
+
+                       {initial.searchMethod === "user's choice" &&
+
+                            <View>
+
+                                 {this.state.fiveChosen && this.state.fiveConfirmed === false &&
+
+                                   <View style={styles.container}>
+
+                                        <Text accessible={true} accessibilityLabel="Select your five search focus ingredients here"
+                                          accessibilityRole="text" style={styles.mainTitle}>Select five search focus ingredients</Text>
+
+                                                 {Object.entries(ingreds).map(function(item,index){
+                                                     return(
+                                                        <View key={index} style={{ alignItems:"center", marginBottom:10 }}>
+                                                            {item[1].map(function(ingredient,ind){
+                                                              return(
+                                                                  <View key={ind} style={{ alignItems:"center", paddingVertical:10 }}>
+                                                                    { five_ingredients.includes(ingredient) &&
+                                                                      <View>
+                                                                          <Text accessible={true} accessibilityLabel={ingredient} accessibilityRole="text"
+                                                                             >{ingredient}     </Text>
+                                                                          <Pressable onPress={() => self.ingredientCheck(ingredient)}>
+                                                                             <Text><Icon name="check-square-o" size={20} color="black" /></Text>
+                                                                          </Pressable>
+                                                                      </View>
+                                                                    }
+                                                                    { !(five_ingredients.includes(ingredient)) &&
+                                                                      <View>
+                                                                          <Text accessible={true} accessibilityLabel={ingredient} accessibilityRole="text"
+                                                                             >{ingredient}      </Text>
+                                                                          <Pressable disabled={true}>
+                                                                             <Text><Icon name="square-o" size={20} color="black" /></Text>
+                                                                          </Pressable>
+                                                                      </View>
+                                                                    }
+                                                                  </View>
+                                                                )
+                                                              })
+                                                            }
+                                                        </View>
+                                                      )
+                                                    }
+                                                 )}
+                                                 <Pressable onPress={() => self.fiveConfirmedChanged("0")}>
+                                                     <Text accessible={true} accessibilityLabel="Confirm five" accessibilityRole="button"
+                                                      style={styles.blueButton}>Confirm five</Text>
+                                                 </Pressable>
+                                                 { more_needed &&
+                                                      <Link to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                                                        underlayColor="transparent">
+                                                          <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                            style={styles.blueButton}>Back</Text>
+                                                      </Link>
+                                                 }
+
+                                                 { more_needed === false &&
+                                                      <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds, more_needed: more_needed } }}
+                                                        underlayColor="transparent">
+                                                          <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                            style={styles.blueButton}>Back</Text>
+                                                      </Link>
+                                                 }
+                                        </View>
+                                 }
+
+                                 {this.state.fiveChosen === false &&
+
+                                   <View style={styles.container}>
+
+                                           <Text accessible={true} accessibilityLabel="Select your five search focus ingredients here"
+                                              accessibilityRole="text" style={styles.mainTitle}>Select five search focus ingredients</Text>
+
+                                           {Object.entries(ingreds).map(function(item,index){
+                                               return(
+                                                  <View key={index} style={{ justifyContent:"center", marginBottom:10 }}>
+                                                      {item[1].map(function(ingredient,ind){
+                                                        return(
+                                                                <View key={ind} style={{ alignItems:"center", paddingVertical:10 }}>
+                                                                  { five_ingredients.includes(ingredient) &&
+                                                                    <View>
+                                                                        <Text accessible={true} accessibilityLabel={ingredient} accessibilityRole="text"
+                                                                           >{ingredient}     </Text>
+                                                                        <Pressable onPress={() => self.ingredientCheck(ingredient)}>
+                                                                           <Text><Icon name="check-square-o" size={20} color="black" /></Text>
+                                                                        </Pressable>
+                                                                    </View>
+                                                                  }
+                                                                  { !(five_ingredients.includes(ingredient)) &&
+                                                                    <View>
+                                                                        <Text accessible={true} accessibilityLabel={ingredient} accessibilityRole="text"
+                                                                           >{ingredient}       </Text>
+                                                                        <Pressable onPress={() => self.ingredientCheck(ingredient)}>
+                                                                             <Text><Icon name="square-o" size={20} color="black" /></Text>
+                                                                        </Pressable>
+                                                                    </View>
+                                                                  }
+                                                                </View>
+                                                              )
+                                                            }
+                                                          )
+                                                        }
+                                                  </View>
+                                                  )
+                                                }
+                                              )
+                                           }
+                                           { more_needed &&
+                                                <Link to={{pathname:"/both-alcohol/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
+                                                  underlayColor="transparent">
+                                                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                      style={styles.blueButton}>Back</Text>
+                                                </Link>
+                                           }
+
+                                           { more_needed === false &&
+                                                <Link to={{pathname:"/type-time/", state:{ initial_data: initial, either: either, ingreds: ingreds, more_needed: more_needed } }}
+                                                  underlayColor="transparent">
+                                                    <Text accessible={true} accessibilityLabel="Go back" accessibilityRole="button"
+                                                      style={styles.blueButton}>Back</Text>
+                                                </Link>
+                                           }
+                                   </View>
+                                 }
+
+
+
 
                             </View>
 
-                       }
+                        }
 
-                </View>
+
+                        {this.state.noIngredientsError &&
+
+                              <View style={styles.container}>
+
+                                  <Text accessible={true} accessibilityLabel="Error: No ingredients were selected!"
+                                    accessibilityRole="text" style={styles.mediTitle}> Error: No ingredients were selected! </Text>
+
+                                  <Link accessible={true} accessibilityLabel= "Start again"
+                                    accessibilityHint="Click button to go back to homepage"
+                                    to="/" accessibilityRole="button" underlayColor="transparent">
+                                      <Text style={styles.blueButton}> Start again </Text>
+                                  </Link>
+
+                              </View>
+
+                        }
+
+            </View>
 
         </ScrollView>
       </SafeAreaView>
@@ -415,7 +680,18 @@ const styles = StyleSheet.create({
   },
   loadingContainer: {
     flex: 1,
-    flexWrap: 'wrap',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 280,
+    paddingVertical: 20,
+    paddingRight:20,
+    paddingLeft: 30,
+  },
+  twoColumns: {
+    flex: 1,
+    flexDirection: 'column',
+    flexWrap: 'nowrap',
     alignItems: 'center',
     justifyContent: 'center',
     marginVertical: 280,
@@ -455,6 +731,16 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     borderColor: "white",
     backgroundColor:'#d4ebf2',
+  },
+  redButton: {
+    padding: 10,
+    borderWidth: 1,
+    borderRadius: 6,
+    borderColor: 'white',
+    backgroundColor:'pink',
+    textAlign: "center",
+    // marginHorizontal: 128,
+    // marginTop: 50,
   },
 });
 

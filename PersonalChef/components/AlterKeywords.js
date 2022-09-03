@@ -12,7 +12,6 @@ class AlterKeywords extends React.Component {
         searchMethod: this.props.searchMethod,
         getRanked: false,
         getMostPerishable: false,
-        fiveIngreds: false,
         ready: false,
         set: false,
         passBack: false,
@@ -42,6 +41,7 @@ class AlterKeywords extends React.Component {
     console.log("AlterKeywords mounted")
     console.log("this.state.ingredients.length: " + this.state.ingredients.length)
     console.log("~~~~did mount this.state.searchMethod: " + this.state.searchMethod)
+    var ingredients = this.state.ingredients
     var length = this.state.ingredients.length
     console.log("initial keywords length: " + length)
     if(this.state.searchMethod === 'frequently used'){
@@ -57,8 +57,8 @@ class AlterKeywords extends React.Component {
       })
     }else{
       this.setState({
-        fiveIngreds: true,
-        originalLength: length,
+        newKeywords: ingredients,
+        gotFive: true,
       })
     }
   }

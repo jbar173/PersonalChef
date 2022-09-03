@@ -785,7 +785,7 @@ class AlcoholList extends React.Component {
         "type":'',
         "searchMethod": '',
       },
-      both:false,
+      both: false,
       ingredients_rough: {},
       alcohol: [],
       alcohol_updated: false,
@@ -852,6 +852,7 @@ class AlcoholList extends React.Component {
     var initial = this.state.initialData
     var either = this.state.both
     var ingreds = this.state.ingredients_rough
+    var search_method = this.state.initialData.searchMethod
 
     return(
 
@@ -862,11 +863,13 @@ class AlcoholList extends React.Component {
 
                     <AlcoholChecklist updateListHandler={this.updateListHandler} />
 
+
                     <Link style={{marginTop:30}} to={{pathname:"/confirm/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                      underlayColor="transparent">
                         <Text accessible={true} accessibilityLabel="Next page" accessibilityRole="button"
                          style={styles.greenNextButton}>Next</Text>
                     </Link>
+
 
                     <Link to={{pathname:"/both-the-rest/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
                      underlayColor="transparent">

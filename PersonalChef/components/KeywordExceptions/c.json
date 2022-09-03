@@ -7,8 +7,8 @@
               "candied orange","cherry compote","chocolate","chocolate biscuits","chocolate buttons","chocolate cake","chocolate caramel bar","chocolate cookies",
               "chocolate custard","chocolate decorating icing","chocolate drops","chocolate ganache","chocolate mousse","chocolate peanuts","chocolate raisins",
               "chocolate sauce","chocolate sprinkles","cocoa powder","coconut bar","coconut biscuits","coconut macaroons","coconut nectar","cola laces",
-              "coloured dusting sugar","condensed milk","cookies","cookie dough","creme egg","crunchie bar","crunchy cream biscuits","curd cheese","custard",
-              "custard powder",
+              "coloured dusting sugar","condensed milk","cookies","cookie dough","creme egg","crunchie bar","crunchy cream biscuits","curd cheese", "currants",
+              "custard", "custard powder",
 
               "candlenuts","cashew nuts","chana dal","chestnuts","chia seeds","chocolate cereal","cornflakes","cornstarch",
               "cornmeal","couscous","crackers","crispy onions","croutons","crumpets",
@@ -52,6 +52,37 @@
     "ingredients": [
 
 
+        {
+          "name": "currants",
+          "type": "",
+          "exclude": [
+            {
+              "word": "red currants",
+            }
+          ],
+          "include": [
+            {
+              "word": "raisins",
+              "substitution": true,
+            },
+            {
+              "word": "sultanas",
+              "substitution": true,
+            },
+            {
+              "word": "dried cranberries",
+              "substitution": true,
+            },
+            {
+              "word": "dried cherries",
+              "substitution": true,
+            },
+            {
+              "word": "dates",
+              "substitution": true,
+            }
+          ],
+        },
         {
             "name": "cashew flour",
             "type": "",

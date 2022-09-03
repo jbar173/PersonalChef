@@ -2483,6 +2483,10 @@
                   "substitution": false,
                 },
                 {
+                  "word": "crisped rice",
+                  "substitution": false,
+                },
+                {
                   "word": "puffed rice",
                   "substitution": false,
                 }
@@ -2816,10 +2820,16 @@
                 "word": "crispie",
               },
               {
+                "word": "crisped",
+              },
+              {
                 "word": "cereal",
               },
               {
                 "word": "puffed",
+              },
+              {
+                "word": "rice puffs",
               },
               {
                 "word": "noodle",
@@ -2863,6 +2873,9 @@
             "name": "raisins",
             "type": "",
             "exclude": [
+              {
+                "word": "red currants",
+              }
             ],
             "include": [
               {

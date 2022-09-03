@@ -54,6 +54,8 @@ const RefineResults = props => {
 
   var user_ingredients = props.userIngredients
   var user_ings_length = props.maxIngredients
+  var recipe_type = props.recipeType
+  console.log("~~~~ RECIPE TYPE: " + recipe_type)
 
   var relevant_recipes = []
   var almost_list = []
@@ -82,6 +84,19 @@ const RefineResults = props => {
              console.log("****Checking recipe: " + recipes[j]['recipe']['label'])
              var recipe_name = recipes[j]['recipe']['label']
              var recipe_url = recipes[j]['recipe']['url']
+
+             var d_type =  recipes[j]['recipe']['dishType']
+             var ty
+             for(ty in d_type){
+               console.log("********** d_type[ty]: " + d_type[ty])
+             }
+             var right_dishtype = true
+             if(recipe_type === 'other' && d_type.includes("desserts")){
+               console.log("************ RECIPE IS A DESSERT ******************")
+               console.log("************ NO MATCH ******************")
+               right_dishtype = false
+             }
+
              recipes_on_page.push(recipe_name)
              var recipe_ings = recipes[j]['recipe']['ingredients']
 
@@ -110,7 +125,7 @@ const RefineResults = props => {
 
              var break_out = false
 
-             if(less){
+             if(less && right_dishtype){
 
                    try{
                            console.log("BREAK OUT?????: " + break_out)
@@ -401,7 +416,7 @@ const RefineResults = props => {
 
               var done = false
 
-              if(same){
+              if(same && right_dishtype){
 
                       try{
 
@@ -652,7 +667,7 @@ const RefineResults = props => {
 
               var next_recipe = false
 
-              if(one_over){
+              if(one_over && right_dishtype){
 
                       contains_one_over = true
 
@@ -742,7 +757,7 @@ const RefineResults = props => {
                                               }
                                               break loopFive;
                                           }
-                                      }    
+                                      }
 
                                     for(x in checked_ingredients){
 

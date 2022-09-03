@@ -1324,6 +1324,18 @@
               "exclude": [
                 {
                   "word": "sauce",
+                },
+                {
+                  "word": "salad leaves",
+                },
+                {
+                  "word": "mixed leaves",
+                },
+                {
+                  "word": "mixed salad",
+                },
+                {
+                  "word": "mixed greens",
                 }
               ],
               "include": [

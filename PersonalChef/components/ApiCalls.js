@@ -141,16 +141,33 @@ class ApiCalls extends React.Component {
     var ingreds = this.props.location.state.ingreds
     var either = this.props.location.state.either
     var ingredients_alone = initial_data.ingredients
+    var five_keywords = this.props.location.state.five_keywords
+    var x
+    for(x in five_keywords){
+      console.log("keyword " + x + ". " + five_keywords[x])
+    }
     var saved_recipes = '@saved-recipes'
+    console.log("initial_data.searchMethod: " + initial_data.searchMethod)
     this.getData(saved_recipes)
-    this.setState({
-      initialData: initial_data,
-      ingredients_rough: ingreds,
-      searchKeywords: ingredients_alone,
-      reduceKeywords: true,
-      nextCall: false,
-      both: either,
-    })
+    if(initial_data.searchMethod === "user's choice"){
+      this.setState({
+        initialData: initial_data,
+        ingredients_rough: ingreds,
+        searchKeywords: five_keywords,
+        reduceKeywords: true,
+        nextCall: false,
+        both: either,
+      })
+    }else{
+        this.setState({
+          initialData: initial_data,
+          ingredients_rough: ingreds,
+          searchKeywords: ingredients_alone,
+          reduceKeywords: true,
+          nextCall: false,
+          both: either,
+        })
+    }
   }
 
   componentWillUnmount(){
@@ -199,42 +216,42 @@ class ApiCalls extends React.Component {
           }
 
     }else{
-        if(this.state.changeTabs){
-          var almost = this.state.almostClicked
-          this.setStates(almost)
-        }
-        if(this.state.count === undefined && this.state.next !== 'first'){
-          console.log("API a")
-          this.setStates('error')
-        }
-        // Checks whether api function has finished calling
-        //  each page, triggers next function if so:
-        if(this.state.noMorePages) {
-          console.log("API b")
-          this.finishedHandler()
-        }
-        if(this.state.nextCall && this.state.stopwatchRunning === false){
-          console.log("API c")
-          console.log("**this.state.next: " + this.state.next)
-          this.triggerNextCall()
-        }
-        if(this.state.deleteOne){
-          console.log("API d")
-          this.deleteAKeyword()
-        }
-        if(this.state.stopwatchRunning && this.state.stopwatchTriggered === false){
-          this.triggerStopwatch()
-        }
-        if(this.state.stopwatchTriggered){
-          this.sixSecondStopwatch()
-        }
-        if(this.state.saved){
-          console.log("Saved is TRUE")
-          this.setStates('saved')
-        }
-        if(this.state.refinedRecipeList.length === 0 && this.state.noMoreKeywords){
-          console.log("Re-jig search here if only a few results??")
-        }
+          if(this.state.changeTabs){
+            var almost = this.state.almostClicked
+            this.setStates(almost)
+          }
+          if(this.state.count === undefined && this.state.next !== 'first'){
+            console.log("API a")
+            this.setStates('error')
+          }
+          // Checks whether api function has finished calling
+          //  each page, triggers next function if so:
+          if(this.state.noMorePages) {
+            console.log("API b")
+            this.finishedHandler()
+          }
+          if(this.state.nextCall && this.state.stopwatchRunning === false){
+            console.log("API c")
+            console.log("**this.state.next: " + this.state.next)
+            this.triggerNextCall()
+          }
+          if(this.state.deleteOne){
+            console.log("API d")
+            this.deleteAKeyword()
+          }
+          if(this.state.stopwatchRunning && this.state.stopwatchTriggered === false){
+            this.triggerStopwatch()
+          }
+          if(this.state.stopwatchTriggered){
+            this.sixSecondStopwatch()
+          }
+          if(this.state.saved){
+            console.log("Saved is TRUE")
+            this.setStates('saved')
+          }
+          if(this.state.refinedRecipeList.length === 0 && this.state.noMoreKeywords){
+            console.log("Re-jig search here if only a few results??")
+          }
     }
   }
 
@@ -333,6 +350,7 @@ class ApiCalls extends React.Component {
       }
 
       var original_ingredients = this.state.initialData.ingredients
+      var x
       for(x in new_keywords){
         original_ingredients.push(new_keywords[x])
       }
@@ -764,7 +782,9 @@ class ApiCalls extends React.Component {
                        filteredResults={this.getRelevantRecipes}
                        thisRoundResponseList={this.state.fResponse}
                        maxIngredients={this.state.initialData.ingredientCount}
-                       userIngredients={this.state.initialData.ingredients}/>
+                       userIngredients={this.state.initialData.ingredients}
+                       recipeType={this.state.initialData.type}
+                       />
                    }
 
                    { show_searching &&

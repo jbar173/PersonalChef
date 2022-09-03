@@ -1761,6 +1761,9 @@
               "name": "sultanas",
               "type": "",
               "exclude": [
+                {
+                  "word": "red currants",
+                }
               ],
               "include": [
                 {

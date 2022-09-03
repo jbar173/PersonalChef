@@ -3653,6 +3653,9 @@
             "name": "dried mixed fruit",
             "type": "",
             "exclude": [
+              {
+                "word": "red currants",
+              }
             ],
             "include": [
               {

@@ -77,6 +77,7 @@ class HerbsAndSpicesChecklist extends React.Component {
              confirmed.push(key)
            }
        }
+      confirmed.sort()
       this.setState({
         updated: false,
         confirmedList: confirmed

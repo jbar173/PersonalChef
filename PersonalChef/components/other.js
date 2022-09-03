@@ -227,24 +227,7 @@ class FishIngredientsList extends React.Component {
 
                   <FishChecklist updateListHandler={this.updateListHandler} />
 
-                    { either === false ?
 
-                      (
-                        <View>
-                            <Link style={{marginTop:30}} to={{pathname:"/both-dry/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
-                             underlayColor="transparent">
-                               <Text accessible={true} accessibilityLabel="Next page"
-                                 accessibilityRole="button" style={styles.greenNextButton}>Next</Text>
-                            </Link>
-                            <Link to={{pathname:"/other-meat/", state:{ initial_data: initial, either: either, ingreds: ingreds } }}
-                             underlayColor="transparent">
-                                <Text accessible={true} accessibilityLabel="Go back"
-                                  accessibilityRole="button" style={styles.blueBackButton}>Back</Text>
-                            </Link>
-                        </View>
-                      )
-                      :
-                      (
                         <View>
                             <Link style={{marginTop:30}} to={{pathname:"/dessert-confectionary/", state:{ initial_data: initial, either: either, ingreds: ingreds} }}
                              underlayColor="transparent">
@@ -257,9 +240,7 @@ class FishIngredientsList extends React.Component {
                                 accessibilityRole="button" style={styles.blueBackButton}>Back</Text>
                             </Link>
                         </View>
-                       )
 
-                     }
 
              </ScrollView>
            </SafeAreaView>

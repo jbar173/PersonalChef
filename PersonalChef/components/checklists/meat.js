@@ -77,6 +77,7 @@ class MeatChecklist extends React.Component {
              confirmed.push(key)
            }
        }
+      confirmed.sort()
       this.setState({
         updated: false,
         confirmedList: confirmed
@@ -87,7 +88,7 @@ class MeatChecklist extends React.Component {
   confirmedHandler(){
     var new_state = !this.state.confirmed
     this.setState({
-      confirmed:new_state,
+      confirmed: new_state,
     })
   }
 
